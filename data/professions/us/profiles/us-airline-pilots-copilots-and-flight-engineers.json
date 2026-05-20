@@ -1,0 +1,344 @@
+{
+  "profession_id": "us-airline-pilots-copilots-and-flight-engineers",
+  "profession_name": "Airline Pilots, Copilots, and Flight Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Airline pilots operate large aircraft for Part 121 carriers. They conduct preflight checks, coordinate with ATC, navigate complex airspace, monitor systems, and manage crew. Typical schedule: 12-16 flying days/month with layovers, reserve duty, and mandated rest periods.",
+    "typical_tasks": [
+      "Preflight inspections: fuel, weight/balance, cargo, weather, NOTAMs, aircraft condition",
+      "Filing and reviewing flight plans with dispatch",
+      "Conducting preflight crew briefings on route, weather, duties",
+      "Communicating with ATC for clearances, in-flight adjustments, and approaches",
+      "Operating aircraft systems during all phases of flight (taxi, takeoff, cruise, descent, landing)",
+      "Monitoring avionics, autopilot, and flight management systems",
+      "Managing irregular operations: weather diversions, mechanical issues, passenger medical emergencies",
+      "Completing post-flight reports and maintenance write-ups",
+      "Reserve/standby duty — available on short notice for callout"
+    ],
+    "key_documents": [
+      "Flight plan and dispatch release",
+      "Weight and balance manifest",
+      "MEL (Minimum Equipment List) items",
+      "NOTAMs (Notices to Air Missions)",
+      "Weather briefing package (METARs, TAFs, SIGMETs)",
+      "Pilot logbook entries",
+      "Aircraft maintenance logbook entries",
+      "Crew scheduling and bid awards"
+    ],
+    "deadlines": {
+      "max_flight_time_daily": "8 hours (two-pilot crew, domestic)",
+      "max_duty_period": "Up to 16 hours depending on start time and rest",
+      "weekly_flight_limit": "30 hours in 7 consecutive days",
+      "annual_flight_limit": "1,000 hours per calendar year",
+      "minimum_rest": "10 consecutive hours between duty periods (8 hours uninterrupted sleep opportunity)",
+      "medical_certificate_renewal_under_40": "Every 12 months (First Class)",
+      "medical_certificate_renewal_over_40": "Every 6 months (First Class)",
+      "recurrent_training": "Every 6-12 months (simulator checks, line checks)"
+    },
+    "seasonality": "Peak flying during summer travel season (June-August) and holidays (Thanksgiving, Christmas). Junior pilots often assigned less desirable holiday schedules. Winter brings more weather-related disruptions."
+  },
+  "regulatory": {
+    "summary": "Heavily regulated by the FAA under 14 CFR Parts 61, 91, 117, and 121. Pilots must hold ATP certificates, First-Class Medical, and maintain currency. Post-2013 FOQ rule raised entry requirements to 1,500 hours. FAA flight/duty time rules (Part 117) manage fatigue.",
+    "key_laws": [
+      {
+        "name": "14 CFR Part 121 — Operating Requirements for Domestic, Flag, and Supplemental Operations",
+        "description": "Core regulations for airline operations including crew qualifications, training, and operational procedures",
+        "url": "https://www.ecfr.gov/current/title-14/chapter-I/subchapter-G/part-121"
+      },
+      {
+        "name": "14 CFR Part 117 — Flight and Duty Limitations and Rest Requirements",
+        "description": "Fatigue management rules: flight time limits, duty period limits, and mandatory rest",
+        "url": "https://www.ecfr.gov/current/title-14/chapter-I/subchapter-G/part-117"
+      },
+      {
+        "name": "14 CFR Part 61 — Certification: Pilots, Flight Instructors, and Ground Instructors",
+        "description": "Pilot certification requirements including ATP certificate, medical certificates",
+        "url": "https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61"
+      },
+      {
+        "name": "First Officer Qualification (FOQ) Rule (2013)",
+        "description": "Requires 1,500 hours total time and ATP certificate for Part 121 first officers",
+        "url": "https://www.federalregister.gov/documents/2013/07/15/2013-16849/pilot-certification-and-qualification-requirements-for-air-carrier-operations"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Airline Transport Pilot (ATP) certificate — minimum 1,500 total flight hours (reduced to 1,000 for military, 1,250 for aviation degree graduates)",
+        "ATP Certification Training Program (ATP CTP): 30 hours academic + 10 hours simulator",
+        "Type rating for specific aircraft (e.g., B737, A320)",
+        "First-Class FAA Medical Certificate",
+        "English language proficiency (ICAO Level 4 minimum)",
+        "Recurrent training and proficiency checks every 6-12 months",
+        "Line Oriented Flight Training (LOFT) and simulator evaluations"
+      ]
+    },
+    "recent_changes": "Effective February 2025, FAA requires ATP to be issued only in conjunction with a type rating. FAA updated Advisory Circular AC 91-78A in 2024 officially allowing EFBs for all phases of flight. Ongoing Congressional debate about reducing 1,500-hour requirement."
+  },
+  "tools": {
+    "summary": "Modern glass cockpits with integrated avionics suites, Electronic Flight Bags (iPads), and airline-specific dispatch and scheduling systems. EFB market valued at $3B+ in 2025.",
+    "primary_tools": [
+      {
+        "name": "Electronic Flight Bag (EFB)",
+        "description": "iPad-based system for charts, performance calculations, weight/balance, NOTAMs, weather. FAA-approved for all flight phases",
+        "examples": "Jeppesen FliteDeck Pro, Lido mPilot, airline-proprietary apps"
+      },
+      {
+        "name": "Flight Management System (FMS)",
+        "description": "Integrated avionics computer for navigation, performance optimization, and auto-flight programming"
+      },
+      {
+        "name": "Avionics Suite (Glass Cockpit)",
+        "description": "Primary Flight Display (PFD), Navigation Display (ND), Engine Indicating and Crew Alerting System (EICAS/ECAM)",
+        "examples": "Boeing 737 MAX display suite, Airbus A320neo cockpit, Garmin G5000"
+      },
+      {
+        "name": "ACARS (Aircraft Communications Addressing and Reporting System)",
+        "description": "Digital datalink between aircraft and airline operations center for flight plans, weather updates, gate assignments"
+      },
+      {
+        "name": "Crew Scheduling and Bidding Systems",
+        "description": "Airline-specific systems for monthly bid, schedule management, trip trading",
+        "examples": "PBS (Preferential Bidding System), airline crew apps"
+      }
+    ],
+    "secondary_tools": [
+      "ForeFlight or Garmin Pilot (personal flight planning)",
+      "AirlinePilotCentral.com (pay/contract comparison)",
+      "AOPA and FAA websites (regulatory updates)",
+      "Weather apps: Windy, turbulence forecasts",
+      "Union apps: ALPA, APA member portals"
+    ],
+    "pain_points": [
+      "Outdated crew scheduling systems at some airlines",
+      "EFB connectivity issues in-flight",
+      "Inconsistent automation interfaces between aircraft types",
+      "Paper-based processes still required in some legacy systems",
+      "Complex and fragmented information sources for weather/NOTAMs"
+    ]
+  },
+  "terminology": {
+    "summary": "Aviation has an extensive specialized vocabulary driven by safety, radio communication clarity, and international standardization (ICAO). Mix of formal terminology and informal pilot slang.",
+    "terms": {
+      "George": "Autopilot (informal nickname)",
+      "glass cockpit": "Cockpit with electronic digital flight displays instead of analog gauges",
+      "squawk": "Set a transponder code (e.g., 'squawk 1200' for VFR)",
+      "go-around": "Abandoned approach; pilot climbs away to re-attempt landing",
+      "heavy": "Call sign suffix for large aircraft generating significant wake turbulence",
+      "deadhead": "Traveling as a passenger to reposition for a flight assignment",
+      "slam-click": "Pilot who goes straight to the hotel room and doesn't socialize during layover",
+      "commuter": "Pilot who lives in a different city and commutes to their base via airline travel",
+      "crashpad": "Shared crash-sleeping arrangement near base for commuting pilots",
+      "Zulu time": "UTC/GMT — universal time reference in aviation",
+      "Roger": "Message received and understood",
+      "Wilco": "Will comply — acknowledged and will take action",
+      "NOTAM": "Notice to Air Missions — advisories about hazards or changes",
+      "METAR": "Meteorological Terminal Air Report — current weather observation",
+      "TAF": "Terminal Aerodrome Forecast — weather forecast for an airport",
+      "SIGMET": "Significant Meteorological Information — severe weather advisory",
+      "PIC": "Pilot in Command — the captain",
+      "SIC": "Second in Command — the first officer/copilot",
+      "MEL": "Minimum Equipment List — items that can be inoperative for dispatch",
+      "LOFT": "Line Oriented Flight Training — scenario-based simulator training",
+      "IOE": "Initial Operating Experience — supervised line flying for new pilots",
+      "PBS": "Preferential Bidding System — monthly schedule bidding",
+      "green time": "A new pilot's first months at an airline, often on reserve"
+    }
+  },
+  "career_psychology": {
+    "summary": "Seniority-driven career with dramatic pay progression from regional FO ($70-90K) to major airline captain ($350-550K). High entry costs ($80-150K training). Burnout is significant: 40% report high burnout, 54% report depression/anxiety symptoms. Mental health stigma due to FAA medical certification fears.",
+    "career_path": [
+      "Flight training: Private → Instrument → Commercial → Multi-engine → CFI (cost: $80,000-$150,000)",
+      "Flight instructor or time-building job (500-1,500 hours)",
+      "Regional airline First Officer (1,500+ hours, ATP-CTP, type rating)",
+      "Regional airline Captain (2-4 years at regional)",
+      "Major airline First Officer (competitive hiring, 3,000-5,000+ hours typical)",
+      "Major airline Captain (8-15+ years seniority at major)",
+      "Widebody/International Captain (senior seniority, highest pay)"
+    ],
+    "salary_range": {
+      "regional_first_officer_year_1": "$70,000 - $90,000",
+      "regional_captain": "$100,000 - $160,000",
+      "major_first_officer_year_1": "$90,000 - $120,000 + signing bonuses",
+      "major_captain": "$250,000 - $350,000",
+      "senior_widebody_captain": "$350,000 - $550,000+ (total compensation with profit sharing)",
+      "median_bls": "$226,600 (2025 BLS median for airline pilots)"
+    },
+    "fears": [
+      "Loss of medical certificate ending career",
+      "Failing a checkride or proficiency evaluation",
+      "Furlough during economic downturn or airline bankruptcy",
+      "Mental health disclosure leading to grounding",
+      "Age 65 mandatory retirement approaching (loss of identity)",
+      "Accident or incident responsibility"
+    ],
+    "motivation": [
+      "Love of flying and aviation passion",
+      "Exceptional compensation at senior levels",
+      "Travel benefits and global exposure",
+      "Structured schedule with significant days off",
+      "Pride in safely transporting passengers",
+      "Camaraderie and shared identity among pilots"
+    ],
+    "burnout_factors": [
+      "40% of airline pilots report high burnout levels",
+      "54% report depression or anxiety symptoms",
+      "Irregular sleep patterns and circadian disruption",
+      "Time away from family (10-18 nights/month)",
+      "Fear of reporting mental health issues (FAA medical consequences)",
+      "Junior pilot reserve schedules — unpredictable, lowest priority",
+      "Commuting to base adds fatigue and unpaid time"
+    ]
+  },
+  "community": {
+    "summary": "Strong professional community centered around ALPA (80,000+ members), APA, and CAPA unions. Active online presence on forums, subreddits, and YouTube aviation channels.",
+    "associations": [
+      {
+        "name": "Air Line Pilots Association, International (ALPA)",
+        "url": "https://www.alpa.org",
+        "type": "Union — largest pilot union in the world, 80,000+ members across 42 airlines"
+      },
+      {
+        "name": "Allied Pilots Association (APA)",
+        "url": "https://www.alliedpilots.org",
+        "type": "Union — represents 16,000 American Airlines pilots"
+      },
+      {
+        "name": "Coalition of Airline Pilots Associations (CAPA)",
+        "type": "Umbrella organization representing ~28,000 pilots"
+      },
+      {
+        "name": "Aircraft Owners and Pilots Association (AOPA)",
+        "url": "https://www.aopa.org",
+        "type": "General aviation advocacy and member services"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "r/flying",
+        "url": "https://reddit.com/r/flying",
+        "description": "Major Reddit community for pilots of all levels"
+      },
+      {
+        "name": "r/airlines",
+        "url": "https://reddit.com/r/airlines",
+        "description": "Airline industry discussions"
+      },
+      {
+        "name": "AirlinePilotCentral.com",
+        "url": "https://www.airlinepilotcentral.com",
+        "description": "Pay, contract, and hiring information for airline pilots"
+      },
+      {
+        "name": "Airline Pilot Forums (AVSIM, PPRuNe)",
+        "description": "Long-running aviation forums for professional pilots"
+      }
+    ],
+    "events": [
+      "ALPA Air Safety Forum (annual)",
+      "NBAA Business Aviation Convention",
+      "EAA AirVenture Oshkosh (annual, largest aviation gathering in the world)",
+      "Sun 'n Fun Aerospace Expo"
+    ]
+  },
+  "market": {
+    "summary": "Severe pilot shortage projected to peak in 2026 with 24,000 pilot shortfall. Major airlines hiring aggressively: United plans 2,500 pilots in 2026. Salaries at historic highs. Boeing projects 119,000 new pilots needed in North America over next 20 years.",
+    "demand_forecast": {
+      "shortage_peak_2026": "24,000 pilot shortfall (Oliver Wyman)",
+      "shortage_2032": "17,000 pilot shortfall projected",
+      "north_america_20_year_need": "119,000 pilots (Boeing Pilot Outlook 2025-2044)",
+      "major_hiring_2025_h1": "2,190 pilots hired at major airlines in first half of 2025"
+    },
+    "hiring_plans": [
+      "United Airlines: ~2,500 pilots planned for 2026",
+      "Delta Air Lines: 1,000+ pilots annually through 2026",
+      "United Express regionals: hiring up 36% year-over-year"
+    ],
+    "salary_market": {
+      "median": "$226,600 (BLS 2025)",
+      "entry_regional": "$70,000 - $90,000",
+      "senior_major": "$350,000 - $550,000+",
+      "salary_growth": "Up to 86% increases at some carriers since 2022"
+    },
+    "market_trends": [
+      "Pilot shortage is the dominant market force — driving salary increases",
+      "Mandatory retirement at age 65 creating wave of retirements",
+      "Regional airlines struggling to retain pilots as majors offer signing bonuses",
+      "Congressional debate on reducing 1,500-hour ATP requirement",
+      "Flow-through agreements between regional and major carriers increasing",
+      "AI and automation discussions in aviation but no near-term pilot replacement expected"
+    ]
+  },
+  "quality_score": 0.82,
+  "sources_count": 42,
+  "verified_sources": 15,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "airline pilots copilots flight engineers USA 2025 2026 typical workday tasks duties flight hours schedule fatigue rules",
+      "sources": [
+        {"title": "BLS Occupational Outlook Handbook — Airline Pilots", "url": "https://www.bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm"},
+        {"title": "How Do Airline Pilot Schedules Work?", "url": "https://pilotbible.com/how-do-airline-pilot-schedules-work/"},
+        {"title": "Aviation Safety: Pilot Fatigue (DOT)", "url": "https://www.transportation.gov/testimony/aviation-safety-pilot-fatigue"},
+        {"title": "O*NET — Airline Pilots, Copilots, and Flight Engineers", "url": "https://www.onetonline.org/link/summary/53-2011.00"}
+      ]
+    },
+    {
+      "query": "airline pilot USA 2025 2026 FAA regulations Part 121 ATP certificate medical requirements new rules",
+      "sources": [
+        {"title": "FAA Medical Certificate Requirements", "url": "https://atpflightschool.com/become-a-pilot/airline-career/faa-medical-certificate.html"},
+        {"title": "Part 121 Pilot Requirements", "url": "https://legalclarity.org/part-121-pilot-requirements-certificates-and-flight-hours/"},
+        {"title": "FAA Notice N 8900.225", "url": "https://www.faa.gov/documentlibrary/media/notice/n_8900.225.pdf"},
+        {"title": "14 CFR 61.23 Medical Certificates", "url": "https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-A/section-61.23"},
+        {"title": "FAA Lengthens Validity of Medical Certificates (NBAA)", "url": "https://nbaa.org/flight-department-administration/personnel/medical/faa-lengthens-validity-of-medical-certificates/"}
+      ]
+    },
+    {
+      "query": "airline pilot USA cockpit tools software EFB electronic flight bag avionics systems 2025 2026",
+      "sources": [
+        {"title": "EFB Market Forecast 2026-32", "url": "https://www.marknteladvisors.com/research-library/electronic-flight-bag-market"},
+        {"title": "Electronic Flight Bag — Wikipedia", "url": "https://en.wikipedia.org/wiki/Electronic_flight_bag"},
+        {"title": "EFB Legal Briefing for Pilots 2025", "url": "https://ipadpilotnews.com/2025/05/electronic-flight-bag-legal-briefing-for-pilots-2025-edition/"},
+        {"title": "NBAA Electronic Flight Bags", "url": "https://nbaa.org/aircraft-operations/communications-navigation-surveillance-cns/electronic-flight-bags/"}
+      ]
+    },
+    {
+      "query": "airline pilot aviation terminology slang jargon cockpit abbreviations common terms",
+      "sources": [
+        {"title": "Aviation Terms & Meanings: Complete Guide", "url": "https://epicflightacademy.com/aviation-terminology/"},
+        {"title": "Aviation Jargon: 52 Terms", "url": "https://charterflightgroup.com/blog/aviation-jargon-52-terms-aviation-enthusiasts-should-know"},
+        {"title": "Aviation Slang — Sierra Hotel Aeronautics", "url": "https://sierrahotel.net/pages/aviation-slang-pilot-slang"},
+        {"title": "Pilots Have Their Own Secret Language (TIME)", "url": "https://time.com/5538144/pilots-secret-language-meaning/"}
+      ]
+    },
+    {
+      "query": "airline pilot USA career path salary 2025 2026 seniority burnout mental health motivation regional vs major",
+      "sources": [
+        {"title": "Airline Pilot Salary 2026 Guide", "url": "https://acronaviationacademy.com/usa/how-to-become-a-pilot-in-the-usa/airline-pilot-salary/"},
+        {"title": "Complete Salary & Career Path Guide 2026", "url": "https://www.verticalvisionflight.com/news/how-much-do-airline-pilots-make-in-2026-complete-salary-amp-career-path-guide"},
+        {"title": "Airline Pilot Salary Breakdown 2026", "url": "https://epicflightacademy.com/airline-pilot-salary/"},
+        {"title": "Burnout among pilots: psychosocial factors", "url": "https://www.tandfonline.com/doi/full/10.1080/00140139.2018.1464667"},
+        {"title": "Barriers to Mental Health Support Among Airline Pilots (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12483124/"},
+        {"title": "NTSB chair discusses airline industry burnout (PBS)", "url": "https://www.pbs.org/newshour/show/ntsb-chair-discusses-airline-industry-burnout-and-risks-of-major-disaster"}
+      ]
+    },
+    {
+      "query": "airline pilot USA professional associations ALPA unions forums communities Reddit pilot groups",
+      "sources": [
+        {"title": "ALPA Official Website", "url": "https://www.alpa.org"},
+        {"title": "ALPA — Wikipedia", "url": "https://en.wikipedia.org/wiki/Air_Line_Pilots_Association,_International"},
+        {"title": "Allied Pilots Association", "url": "https://www.alliedpilots.org/Public-Pages/Public/About"},
+        {"title": "ALPA Pilot Groups", "url": "https://www.alpa.org/supporting-pilots/pilot-groups"}
+      ]
+    },
+    {
+      "query": "airline pilot USA job market 2025 2026 pilot shortage hiring salary trends demand forecast",
+      "sources": [
+        {"title": "ATP Flight School — Pilot Hiring Outlook", "url": "https://atpflightschool.com/become-a-pilot/airline-career/pilot-hiring-outlook.html"},
+        {"title": "Pilot Demand 2025: Shortage, Forecast & Career Outlook", "url": "https://pelicanflightschool.com/pilot-demand"},
+        {"title": "2026 Airline Pilot Hiring Announcements", "url": "https://atpflightschool.com/news/current-pilot-hiring-announcements.html"},
+        {"title": "Demand for airline pilots normalizes (AOPA)", "url": "https://www.aopa.org/news-and-media/all-news/2025/august/12/demand-for-airline-pilots-normalizes"},
+        {"title": "Aviation Salary Report 2026", "url": "https://theflyingengineer.com/salary-report/"}
+      ]
+    }
+  ]
+}

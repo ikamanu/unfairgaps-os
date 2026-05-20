@@ -1,0 +1,259 @@
+{
+  "profession_id": "us-magnetic-resonance-imaging-technologists",
+  "profession_name": "Magnetic Resonance Imaging Technologists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "MRI technologists operate MRI scanners to produce diagnostic images of patients' internal structures. They work in hospitals, imaging centers, and outpatient facilities. Standard 40-hour week with on-call for emergency imaging. Patient positioning, safety screening, and image quality are core responsibilities.",
+    "typical_tasks": [
+      "Screening patients for MRI safety: metal implants, pacemakers, claustrophobia",
+      "Positioning patients correctly within the MRI scanner",
+      "Selecting and programming appropriate MRI sequences for the ordered study",
+      "Administering contrast agents (gadolinium) via IV when ordered",
+      "Monitoring patients during scans for comfort and safety",
+      "Reviewing images for quality and diagnostic adequacy",
+      "Sending images to PACS for radiologist interpretation",
+      "Maintaining MRI equipment and performing quality control checks",
+      "Documenting procedures and patient information in EHR",
+      "Communicating with radiologists about image findings and protocols"
+    ],
+    "key_documents": [
+      "MRI safety screening questionnaire",
+      "Imaging protocol sheets",
+      "Patient consent forms (contrast administration)",
+      "PACS image archives",
+      "Equipment QC logs",
+      "Contrast reaction documentation",
+      "ACR accreditation documentation"
+    ],
+    "deadlines": {
+      "stat_mri": "Immediate — emergency cases (stroke, trauma)",
+      "routine_scan": "30-90 minutes per exam depending on body part",
+      "image_delivery": "Images to PACS within minutes of completion",
+      "equipment_qc": "Daily/weekly per ACR and manufacturer guidelines",
+      "arrt_renewal": "Biennially with 24 CE credits"
+    },
+    "seasonality": "No significant seasonality. Emergency MRI year-round. Elective scans may slow during holiday periods."
+  },
+  "regulatory": {
+    "summary": "ARRT certification is the primary credential (MR specialty). Some states require licensure. ACR accreditation governs MRI facility quality standards. Strict MRI safety protocols due to powerful magnetic fields.",
+    "key_laws": [
+      {
+        "name": "State radiologic technology licensure (varies by state)",
+        "description": "Many states require licensure for MRI technologists; requirements vary"
+      },
+      {
+        "name": "ACR MRI Accreditation Program",
+        "description": "American College of Radiology quality standards for MRI facilities"
+      },
+      {
+        "name": "ACR Guidance Document on MR Safe Practices",
+        "description": "Safety guidelines for MRI environments including Zone designations"
+      },
+      {
+        "name": "FDA regulation of MRI contrast agents",
+        "description": "FDA oversight of gadolinium-based contrast agents"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Associate's or bachelor's degree in radiologic technology or MRI technology",
+        "ARRT certification in Radiography (R) and/or MRI (MR)",
+        "ARMRIT (American Registry of Magnetic Resonance Imaging Technologists) certification alternative",
+        "CPR/BLS certification",
+        "24 CE credits biennially for ARRT renewal",
+        "State licensure where required",
+        "MRI safety training (ACR-mandated)"
+      ]
+    },
+    "recent_changes": "Growing emphasis on MRI safety culture. New gadolinium retention research impacting contrast protocols. 7T MRI systems entering clinical use. AI-assisted MRI reconstruction reducing scan times."
+  },
+  "tools": {
+    "summary": "MRI scanners from major manufacturers (GE, Siemens, Philips, Canon), PACS, EHR systems, and contrast injection equipment. AI and advanced reconstruction software emerging.",
+    "primary_tools": [
+      {
+        "name": "MRI scanners",
+        "description": "1.5T and 3T superconducting MRI systems; 7T emerging",
+        "examples": "GE SIGNA, Siemens MAGNETOM, Philips Ingenia, Canon Vantage"
+      },
+      {
+        "name": "MRI console and protocol software",
+        "description": "Scanner-specific software for sequence selection and image reconstruction"
+      },
+      {
+        "name": "PACS",
+        "description": "Picture archiving and communication system for image storage and distribution"
+      },
+      {
+        "name": "Power injector",
+        "description": "Automated system for administering contrast agents at controlled rates"
+      },
+      {
+        "name": "EHR systems",
+        "description": "Electronic health records for patient data and order management",
+        "examples": "Epic Radiant, Cerner RadNet"
+      },
+      {
+        "name": "Coils",
+        "description": "Specialized radiofrequency coils for different body parts (head, knee, spine, cardiac)"
+      }
+    ],
+    "secondary_tools": [
+      "MRI-compatible patient monitoring equipment",
+      "Ferromagnetic detection systems (safety screening)",
+      "Ear protection for patients (noise reduction)",
+      "Comfort aids (padding, wedges, blankets)",
+      "AI-assisted reconstruction software (reducing scan time)"
+    ],
+    "pain_points": [
+      "Claustrophobic and anxious patients delaying scans",
+      "Equipment downtime (quench events, cryogen issues)",
+      "Keeping up with rapidly evolving MRI technology",
+      "Multiple manufacturer-specific interfaces to learn",
+      "Noise exposure in MRI environment"
+    ]
+  },
+  "terminology": {
+    "summary": "MRI-specific physics and medical imaging terminology. Highly technical vocabulary combining electromagnetics, anatomy, and radiology.",
+    "terms": {
+      "ARRT": "American Registry of Radiologic Technologists",
+      "MR": "Magnetic Resonance (ARRT specialty credential)",
+      "Tesla (T)": "Unit of magnetic field strength (1.5T, 3T, 7T scanners)",
+      "T1-weighted": "MRI sequence emphasizing fat (bright) and fluid (dark)",
+      "T2-weighted": "MRI sequence emphasizing fluid (bright)",
+      "FLAIR": "Fluid-Attenuated Inversion Recovery — suppresses CSF signal",
+      "DWI": "Diffusion-Weighted Imaging — detects acute stroke",
+      "contrast": "Gadolinium-based agent injected IV to enhance visualization",
+      "artifact": "Unwanted distortion in MRI image (motion, metal, aliasing)",
+      "FOV": "Field of View — area of anatomy covered by the scan",
+      "slice thickness": "Thickness of each image plane",
+      "coil": "RF antenna placed on body part to detect MRI signal",
+      "quench": "Emergency shutdown of MRI magnet (releases cryogen)",
+      "ferromagnetic": "Material attracted by magnetic field — dangerous in MRI zone",
+      "Zone IV": "ACR designation for the MRI scan room (highest restriction)",
+      "SAR": "Specific Absorption Rate — RF energy deposited in patient tissue",
+      "MRA": "Magnetic Resonance Angiography — imaging blood vessels",
+      "fMRI": "Functional MRI — mapping brain activity"
+    }
+  },
+  "career_psychology": {
+    "summary": "Well-compensated imaging career (median $88,180). 7.1% growth projected. Requires strong technical and patient care skills. MRI safety expertise is a differentiator. Multiple advancement paths.",
+    "career_path": [
+      "Associate's or bachelor's degree in radiologic/MRI technology",
+      "ARRT certification (R and/or MR)",
+      "Entry-level MRI technologist",
+      "Experienced MRI tech with multi-system proficiency",
+      "Lead MRI technologist",
+      "MRI supervisor or department manager",
+      "MRI applications specialist for equipment manufacturer",
+      "MRI educator or program director"
+    ],
+    "salary_range": {
+      "entry_level": "$55,000 - $70,000",
+      "median_bls": "$88,180 (2024 BLS median)",
+      "experienced": "$80,000 - $100,000",
+      "top_10_percent": "$97,940+",
+      "average_hourly": "$47.44/hour (March 2026)"
+    },
+    "fears": [
+      "MRI safety incident (ferromagnetic projectile, patient with unreported implant)",
+      "Missing critical pathology on images",
+      "Contrast reaction in patient",
+      "Equipment failure during critical scan",
+      "Keeping up with rapidly changing MRI technology"
+    ],
+    "motivation": [
+      "Fascinating cutting-edge imaging technology",
+      "Non-ionizing radiation (safer than CT/X-ray)",
+      "Strong salary and job market",
+      "Critical role in diagnosis",
+      "Constant technology evolution keeps work interesting",
+      "Multiple career advancement pathways"
+    ],
+    "burnout_factors": [
+      "Repetitive scanning of similar body parts",
+      "Difficult patients (claustrophobia, inability to hold still)",
+      "On-call requirements at hospitals",
+      "Noise exposure in MRI suite",
+      "Standing for extended periods"
+    ]
+  },
+  "community": {
+    "summary": "Professional community through ARRT, SMRT (Section for MRI Technologists within ISMRM), and ASRT. Manufacturer-specific training communities also important.",
+    "associations": [
+      {
+        "name": "American Registry of Radiologic Technologists (ARRT)",
+        "url": "https://www.arrt.org",
+        "type": "Primary credentialing organization"
+      },
+      {
+        "name": "American Society of Radiologic Technologists (ASRT)",
+        "url": "https://www.asrt.org",
+        "type": "Professional membership society for radiologic technologists"
+      },
+      {
+        "name": "SMRT (Section for MRI Technologists, ISMRM)",
+        "url": "https://www.ismrm.org/smrt/",
+        "type": "MRI-specific professional section within ISMRM"
+      },
+      {
+        "name": "ARMRIT (American Registry of MRI Technologists)",
+        "url": "https://www.armrit.org",
+        "type": "Alternative MRI certification body"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "r/Radiology",
+        "url": "https://reddit.com/r/Radiology",
+        "description": "Reddit community for radiology professionals"
+      },
+      {
+        "name": "MRI technologist Facebook groups",
+        "description": "Multiple active groups for MRI professionals"
+      }
+    ],
+    "events": [
+      "RSNA Annual Meeting (Radiological Society of North America)",
+      "ISMRM/SMRT Annual Meeting",
+      "ASRT Annual Governance and House of Delegates"
+    ]
+  },
+  "market": {
+    "summary": "Growing field with 7.1% projected growth (2024-2034). ~3,100 new jobs expected. Driven by aging population, expanding clinical applications, and preference for non-ionizing imaging. AI not replacing MRI techs but enhancing capabilities.",
+    "demand_forecast": {
+      "growth_rate": "7.1% (2024-2034, BLS — faster than average)",
+      "new_jobs": "~3,100 expected",
+      "annual_openings": "~15,400/year (combined radiologic and MRI techs)",
+      "driver": "Aging population, expanded clinical MRI applications"
+    },
+    "salary_market": {
+      "median_bls": "$88,180 (2024)",
+      "range": "$47,760 - $97,940+",
+      "average_hourly": "$47.44/hour"
+    },
+    "market_trends": [
+      "AI-assisted image reconstruction reducing scan times",
+      "7T MRI entering clinical practice for neuroimaging",
+      "Point-of-care and portable MRI (Hyperfine) expanding access",
+      "Growing demand for cardiac MRI specialists",
+      "Research MRI roles expanding",
+      "MRI-guided interventional procedures creating new hybrid roles",
+      "Gadolinium alternatives being researched"
+    ]
+  },
+  "quality_score": 0.80,
+  "sources_count": 26,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "MRI technologist USA 2025 2026 salary duties ARRT certification career outlook demand",
+      "sources": [
+        {"title": "BLS OOH — Radiologic and MRI Technologists", "url": "https://www.bls.gov/ooh/healthcare/radiologic-technologists.htm"},
+        {"title": "MRI Certificate Salary and Career", "url": "https://www.ahu.edu/blog/mri-certificate-salary"},
+        {"title": "US News — MRI Technologist", "url": "https://money.usnews.com/careers/best-jobs/mri-technologist"},
+        {"title": "MRI Technologist Salary — Pulse Radiology", "url": "https://pulseradiology.com/mri-technologist-salary/"}
+      ]
+    }
+  ]
+}

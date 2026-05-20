@@ -1,0 +1,276 @@
+{
+  "profession_id": "us-music-therapists",
+  "profession_name": "Music Therapists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Music therapists use music-based interventions to address physical, emotional, cognitive, and social needs of clients in healthcare, education, and community settings. A typical day involves conducting individual and group sessions, documenting progress, and collaborating with treatment teams.",
+    "typical_tasks": [
+      "Conduct individual music therapy sessions — singing, instrument playing, songwriting, improvisation",
+      "Lead group music therapy sessions for various populations (geriatric, pediatric, mental health)",
+      "Assess new clients — evaluate musical preferences, functional abilities, therapeutic needs",
+      "Develop individualized treatment plans with measurable goals",
+      "Document session notes, progress reports, and treatment plan updates",
+      "Collaborate with treatment teams (physicians, nurses, OTs, PTs, SLPs, social workers)",
+      "Adapt musical interventions based on client responses and progress",
+      "Prepare session materials — select songs, prepare instruments, create visual aids",
+      "Maintain and transport musical instruments",
+      "Conduct discharge planning and summaries"
+    ],
+    "session_example": {
+      "morning": "Review notes, prepare sessions. 7-year-old with autism — social communication through interactive songs. Stroke patient — melodic intonation therapy for speech production.",
+      "afternoon": "Adolescent with depression — songwriting for emotional expression. Group session in geriatric unit — cognitive stimulation through familiar songs. Documentation and team meetings."
+    },
+    "key_documents": [
+      "Client assessments and intake evaluations",
+      "Individualized treatment plans (with measurable goals)",
+      "Session progress notes (SOAP notes format common)",
+      "Discharge summaries",
+      "Case summaries for treatment team meetings",
+      "Insurance authorization and billing documentation",
+      "Continuing education records for MT-BC recertification"
+    ],
+    "deadlines": {
+      "session_documentation": "Typically within 24-48 hours of session",
+      "treatment_plan_reviews": "Per facility schedule — often every 30-90 days",
+      "mt_bc_recertification": "Every 5 years — 100 CMTE credits required",
+      "insurance_authorizations": "Prior to treatment initiation and at renewal intervals"
+    },
+    "seasonality": "Generally steady year-round. School-based music therapists follow academic calendar. Some seasonal increase in hospice and geriatric settings during holidays (emotional support needs). Summer camps create seasonal employment for pediatric music therapy."
+  },
+  "regulatory": {
+    "summary": "Music therapy regulation varies significantly by state. The MT-BC (Music Therapist - Board Certified) credential from CBMT is the national standard. As of 2025, a growing number of states have established licensure, with Mississippi signing a license in June 2025.",
+    "national_certification": {
+      "credential": "MT-BC (Music Therapist - Board Certified)",
+      "body": "Certification Board for Music Therapists (CBMT)",
+      "recognition": "Nationally recognized by NCCA (National Commission for Certifying Agencies)",
+      "requirements": [
+        "Bachelor's degree or higher in music therapy from AMTA-approved program",
+        "Minimum 1,200 hours clinical training (including 900+ hour internship)",
+        "Pass CBMT Board Certification Examination"
+      ],
+      "recertification": "Every 5 years — 100 Continuing Music Therapy Education (CMTE) credits"
+    },
+    "state_licensure_2025": {
+      "licensed_states": [
+        "Georgia (2012)",
+        "New Jersey (2020)",
+        "Maryland (2021 — SB 82, Board of Audiologists/SLPs/Music Therapists)",
+        "Illinois (2022 — SB 2243, Dept of Financial and Professional Regulation)",
+        "Connecticut (2023 — HB 6733, title protection converted to license)",
+        "Mississippi (June 2025 — under State Board of Health)"
+      ],
+      "title_protection_states": [
+        "California (2019 — cannot use 'Board Certified Music Therapist' without MT-BC)",
+        "Iowa (2021 — HF 285)"
+      ],
+      "regulatory_types": "Four options: title protection, registration, state certification, or licensure",
+      "trend": "Movement toward state licensure accelerating — critical for insurance reimbursement and facility employment"
+    }
+  },
+  "tools": {
+    "summary": "Music therapists use musical instruments (primary tools), documentation/EHR software, and therapeutic apps. The profession is less technology-dependent than many healthcare fields, with the human-music connection being the core tool.",
+    "musical_instruments": [
+      "Guitar (acoustic) — most versatile and portable instrument for MT",
+      "Keyboard/piano — essential for accompaniment and melodic intonation therapy",
+      "Percussion instruments — drums, hand percussion, rhythm instruments",
+      "Ukulele — increasingly popular for accessibility",
+      "Autoharp — chord-based accompaniment",
+      "Voice — singing and vocalization",
+      "Adaptive instruments — for clients with physical limitations"
+    ],
+    "documentation_software": [
+      {
+        "name": "UnitusTI / Meet In The Music (MITM)",
+        "purpose": "Music therapy-specific documentation: scheduling, clinical reports, session notes, goals, assessments"
+      },
+      {
+        "name": "SimplePractice",
+        "purpose": "General therapy practice management — scheduling, billing, notes"
+      },
+      {
+        "name": "TherapyNotes / TheraNest",
+        "purpose": "EHR for therapy practices — not MT-specific but widely used"
+      },
+      {
+        "name": "Facility EHR systems (Epic, Cerner)",
+        "purpose": "Hospital/facility documentation — music therapists chart within institutional systems"
+      }
+    ],
+    "therapeutic_apps": [
+      "Anytune — slow down, speed up, transpose music for therapeutic use",
+      "Chordify — automatic chord charts for any song",
+      "GuitarTuna — instrument tuning",
+      "Glow Piano — light-up keys for visual learners",
+      "iPad music creation apps for client engagement"
+    ],
+    "pain_points": "Lack of music therapy-specific EHR/documentation software, difficulty integrating into hospital EHR systems, limited billing/coding options, need to transport multiple instruments between sessions/locations"
+  },
+  "terminology": {
+    "summary": "Music therapy has specialized clinical vocabulary combining music concepts with therapeutic and psychological terminology. Key frameworks include specific evidence-based approaches and techniques.",
+    "key_terms": {
+      "ISO Principle": "Matching music to client's current mood/state, then gradually shifting music to move toward desired state",
+      "Entrainment": "Auditory-motor coupling — the human motor system synchronizes to a steady rhythmic auditory pulse. Used in physical rehabilitation.",
+      "Melodic Intonation Therapy (MIT)": "Using melody and rhythm to facilitate speech production in aphasia patients",
+      "Neurologic Music Therapy (NMT)": "Evidence-based approach using music for sensory, motor, and cognitive disorders. Developed by Michael Thaut.",
+      "Nordoff-Robbins Music Therapy": "Creative, improvisational approach based on belief that everyone possesses innate musicality. Client actively creates music with therapist.",
+      "Guided Imagery and Music (GIM)": "Receptive technique using classical music to facilitate imagery and emotional exploration",
+      "Songwriting": "Therapeutic technique where clients create original songs to express thoughts and feelings",
+      "Improvisation": "Spontaneous musical creation between therapist and client for therapeutic purposes",
+      "Active music therapy": "Client directly participates in making music",
+      "Receptive music therapy": "Client listens to music selected by therapist"
+    },
+    "key_abbreviations": {
+      "MT-BC": "Music Therapist - Board Certified",
+      "CBMT": "Certification Board for Music Therapists",
+      "AMTA": "American Music Therapy Association",
+      "NMT": "Neurologic Music Therapy",
+      "GIM": "Guided Imagery and Music",
+      "MIT": "Melodic Intonation Therapy",
+      "CMTE": "Continuing Music Therapy Education",
+      "SOAP": "Subjective-Objective-Assessment-Plan (note format)",
+      "Tx": "Treatment",
+      "Hx": "History"
+    }
+  },
+  "career_psychology": {
+    "summary": "Music therapists are driven by passion for helping others through music. Early-career professionals face low salary satisfaction and higher burnout, while experienced therapists report moderate stress and general job satisfaction. The profession struggles with recognition and reimbursement challenges.",
+    "career_levels": [
+      {
+        "level": "Entry-level MT-BC (0-3 years)",
+        "description": "Direct client sessions, building clinical skills, working toward specialization",
+        "salary_range": "$40,000 - $52,000"
+      },
+      {
+        "level": "Mid-career (3-7 years)",
+        "description": "Advanced clinical skills, may supervise interns, developing specialized expertise",
+        "salary_range": "$52,000 - $65,000"
+      },
+      {
+        "level": "Senior / Advanced Practice (7+ years)",
+        "description": "Program development, clinical supervision, research, NMT fellowship",
+        "salary_range": "$65,000 - $80,000"
+      },
+      {
+        "level": "Director / Program Manager",
+        "description": "Department leadership, policy development, advocacy",
+        "salary_range": "$75,000 - $97,000"
+      },
+      {
+        "level": "Academic / Researcher",
+        "description": "University faculty, clinical research, publishing",
+        "salary_range": "$60,000 - $90,000"
+      }
+    ],
+    "key_fears": [
+      "Inability to sustain a living on music therapy salary alone",
+      "Profession not recognized or understood by other healthcare providers",
+      "State licensure not advancing — limiting insurance reimbursement",
+      "Position being cut during budget reductions",
+      "Vicarious trauma from working with vulnerable populations (hospice, trauma)"
+    ],
+    "burnout_factors": [
+      "Low salary relative to education and clinical training requirements",
+      "Early-career professionals experience highest stress and burnout",
+      "Emotional demands of working with terminally ill, traumatized, or severely disabled clients",
+      "Constant need to advocate and explain the profession to administrators",
+      "Limited career advancement opportunities in many settings",
+      "Physical demands — transporting instruments, performing music all day"
+    ],
+    "positive_factors": [
+      "Generally high job satisfaction among experienced therapists",
+      "Deep personal meaning in the work",
+      "Creative expression integrated into professional role",
+      "Growing evidence base and recognition of the field"
+    ]
+  },
+  "community": {
+    "summary": "AMTA (American Music Therapy Association) is the primary professional organization with 3,800+ members and 7 regional chapters. CBMT handles certification. The community is close-knit but relatively small.",
+    "professional_associations": [
+      {
+        "name": "American Music Therapy Association (AMTA)",
+        "website": "https://www.musictherapy.org/",
+        "description": "Primary professional organization. 3,800+ members. 7 regional chapters. National and regional conferences. Standards of Clinical Practice, Code of Ethics.",
+        "regions": "Great Lakes, Mid-Atlantic, New England, Southeastern, Southwestern, Western, Midwestern"
+      },
+      {
+        "name": "Certification Board for Music Therapists (CBMT)",
+        "website": "https://www.cbmt.org/",
+        "description": "National certification body. Administers MT-BC exam. Advocates for state licensure. NCCA-recognized."
+      },
+      {
+        "name": "AMTA Student Association (AMTAS)",
+        "description": "Student organization — Passages conferences at national and regional levels"
+      }
+    ],
+    "conferences": [
+      "AMTA National Conference (annual — November typically)",
+      "7 Regional AMTA Conferences (spring — February to April)",
+      "NER-AMTA: April 3-5, 2025, Portland, ME",
+      "MAR-AMTA: April 3-5, 2025 (virtual + satellite)",
+      "World Congress of Music Therapy (every 3 years)"
+    ],
+    "online_communities": [
+      "AMTA community forums and member resources",
+      "Music Therapy Maven (blog and resources)",
+      "Facebook groups for music therapists (several active groups)",
+      "Instagram music therapy community (#musictherapy)",
+      "Reddit — limited; some posts in r/musictherapy"
+    ],
+    "publications": [
+      "Journal of Music Therapy (AMTA)",
+      "Music Therapy Perspectives (AMTA)",
+      "Voices: A World Forum for Music Therapy",
+      "Nordic Journal of Music Therapy"
+    ]
+  },
+  "market": {
+    "summary": "Music therapy is a small but growing profession. Pay is modest compared to other healthcare fields, but demand is increasing driven by aging population, mental health awareness, and expanding evidence base. State licensure advancement is critical for market growth.",
+    "salary_by_level": {
+      "entry_level": "$40,000 - $52,000",
+      "mid_career": "$52,000 - $65,000",
+      "experienced": "$65,000 - $80,000",
+      "director_specialized": "$75,000 - $97,000"
+    },
+    "median_annual_wage_bls_2024": "$60,280 (Recreational Therapists category)",
+    "average_2026_salary_com": "$66,990",
+    "job_growth_2024_2034": "3% (about as fast as average — Recreational Therapists category)",
+    "annual_openings": "~1,300 for recreational therapists overall (music therapy is subset)",
+    "top_paying_states": "District of Columbia ($74,171), California ($73,890), Massachusetts ($72,905)",
+    "work_arrangements": "W-2 hospital/facility employment most common. Growing private practice. Contract and per-diem work. School-based positions follow academic calendar. Hospice companies hire MT-BCs.",
+    "employment_settings": [
+      "Hospitals and medical centers",
+      "Psychiatric facilities and behavioral health",
+      "Nursing homes and assisted living",
+      "Schools and special education programs",
+      "Hospice and palliative care",
+      "Rehabilitation centers",
+      "Private practice",
+      "Veterans Administration (VA) facilities"
+    ],
+    "market_trends": [
+      "State licensure expansion — critical for insurance reimbursement",
+      "Growing evidence base increasing acceptance by healthcare systems",
+      "Aging population driving demand in geriatric and hospice settings",
+      "Mental health awareness increasing demand for creative arts therapies",
+      "Telehealth music therapy emerging post-COVID",
+      "Integration into pain management and opioid alternative programs",
+      "VA system expanding music therapy services for veterans"
+    ]
+  },
+  "quality_score": 0.65,
+  "sources_count": 30,
+  "verified_sources": 5,
+  "confidence": "likely",
+  "sources": [
+    {"name": "O*NET — Music Therapists 29-1129.02", "url": "https://www.onetonline.org/link/summary/29-1129.02"},
+    {"name": "BLS OOH — Recreational Therapists", "url": "https://www.bls.gov/ooh/healthcare/recreational-therapists.htm"},
+    {"name": "CBMT — State Licensure Information", "url": "https://www.cbmt.org/state-requirements/"},
+    {"name": "CBMT — Advancing State Recognition", "url": "https://www.cbmt.org/about/advocacy/state-recognition/"},
+    {"name": "CBMT — Board Certification Exam", "url": "https://www.cbmt.org/candidates/examination/"},
+    {"name": "Voices — Workforce Characteristics, Burnout of Music Therapists", "url": "https://voices.no/index.php/voices/article/view/3366/3397"},
+    {"name": "CareersInPsychology — Music Therapist Career Guide 2026", "url": "https://careersinpsychology.org/getting-started-with-a-music-therapist-career/"},
+    {"name": "Salary.com — Music Therapist", "url": "https://www.salary.com/research/salary/recruiting/music-therapist-salary"},
+    {"name": "Cleveland Clinic — What Is Music Therapy", "url": "https://my.clevelandclinic.org/health/treatments/8817-music-therapy"},
+    {"name": "UnitusTI — Music Therapy Documentation Software", "url": "https://www.mundopato.com/mitm"}
+  ]
+}

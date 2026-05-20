@@ -1,0 +1,386 @@
+{
+  "profession_id": "us-waterwastewater-engineers",
+  "profession_name": "Water/Wastewater Engineers",
+  "country": "US",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Water/Wastewater Engineers design, build, and maintain infrastructure for the treatment, transportation, and distribution of water and wastewater. They work on projects ranging from designing new treatment plants to upgrading existing systems, balancing office-based design work with field inspections and regulatory compliance activities.",
+    "typical_tasks": [
+      "Design domestic or industrial water/wastewater treatment plants (SBR, membrane systems, lift stations, UV disinfection, aerobic digesters)",
+      "Review and critique proposals, plans, or designs related to water/wastewater treatment systems",
+      "Evaluate operation and maintenance of water/wastewater systems to identify efficiency improvements",
+      "Prepare detailed engineering plans, specifications, and cost estimates for infrastructure projects",
+      "Perform field inspections and assessments of existing water and wastewater infrastructure",
+      "Provide technical direction and supervision to junior engineers, CAD technicians, and field personnel",
+      "Conduct hydraulic modeling and water quality simulations using EPANET, WaterGEMS, and similar tools",
+      "Prepare NPDES permit applications and ensure compliance with discharge limits",
+      "Coordinate with EPA, state agencies, and municipal clients on project approvals",
+      "Perform day-to-day administrative tasks such as maintaining information files and processing paperwork"
+    ],
+    "key_documents": [
+      "NPDES Permit applications and compliance reports",
+      "Preliminary Engineering Reports (PER)",
+      "Facility Plans for water/wastewater treatment plants",
+      "Construction drawings and technical specifications",
+      "Operation and Maintenance (O&M) manuals",
+      "Stormwater Pollution Prevention Plans (SWPPP)",
+      "Environmental Impact Statements (EIS)",
+      "Discharge Monitoring Reports (DMR)",
+      "Water Quality Reports and Consumer Confidence Reports (CCR)",
+      "State Revolving Fund (SRF) loan applications"
+    ],
+    "deadlines": {
+      "npdes_permits": "5-year renewal cycle; Discharge Monitoring Reports (DMRs) due monthly or quarterly",
+      "construction_milestones": "Project-specific; typically governed by contract schedules and grant/loan funding timelines",
+      "regulatory_reporting": "Quarterly or annual compliance reports depending on permit type",
+      "budget_cycles": "Federal fiscal year ends September 30; state/municipal budgets vary",
+      "permit_applications": "Lead time of 6-18 months for new NPDES permits; renewals submitted 180 days before expiration"
+    },
+    "seasonality": "Construction and field work peak in spring/summer due to weather conditions. Stormwater management intensifies during rainy seasons. Budget cycles affect government-funded projects (federal fiscal year ends September 30). Year-end rush for design deadlines tied to state revolving fund application windows."
+  },
+  "regulatory": {
+    "summary": "Water/Wastewater Engineers operate under a complex federal and state regulatory framework centered on the Clean Water Act and Safe Drinking Water Act. The EPA administers NPDES permits, and PE licensure is required for signing and sealing engineering designs. As of 2025-2026, EPA is updating water quality certification regulations and proposing new NPDES Multi-Sector General Permits.",
+    "key_laws": [
+      {
+        "name": "Clean Water Act (CWA)",
+        "url": "https://www.epa.gov/laws-regulations/summary-clean-water-act",
+        "status": "Active — EPA proposed updates to water quality certification regulations (January 2025); new NPDES MSGP to replace current permit expiring February 2026"
+      },
+      {
+        "name": "Safe Drinking Water Act (SDWA)",
+        "url": "https://www.epa.gov/sdwa",
+        "status": "Active — governs public water system standards and MCLs for contaminants"
+      },
+      {
+        "name": "National Pollutant Discharge Elimination System (NPDES)",
+        "url": "https://www.epa.gov/npdes",
+        "status": "Active — Section 402 of CWA; permits required for all point source discharges"
+      },
+      {
+        "name": "Resource Conservation and Recovery Act (RCRA)",
+        "url": "https://www.epa.gov/rcra",
+        "status": "Active — governs treatment, storage, and disposal of solid and hazardous wastes including wastewater sludge/biosolids"
+      },
+      {
+        "name": "National Environmental Policy Act (NEPA)",
+        "url": "https://www.epa.gov/nepa",
+        "status": "Active — requires EIS for major federally-funded water/wastewater projects"
+      },
+      {
+        "name": "EPA National Water Program Guidance FY 2025-2026",
+        "url": "https://www.epa.gov/system/files/documents/2024-07/fy-2025-2026-ow-npg.pdf",
+        "status": "Active — sets national priorities for water programs including infrastructure investment and workforce development"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "ABET-accredited bachelor's degree in civil, environmental, or related engineering discipline",
+        "Pass the Fundamentals of Engineering (FE) exam administered by NCEES ($175) to earn Engineer-in-Training (EIT) designation",
+        "Accumulate 4 years of progressive, verifiable engineering experience under a licensed PE",
+        "Pass the Principles and Practice of Engineering (PE) exam in Civil: Water Resources and Environmental ($375-$400)",
+        "Obtain state-specific PE license (requirements vary by state; some require additional jurisprudence exam)",
+        "Optional: Board Certified Environmental Engineer (BCEE) through AAEES for advanced credential"
+      ]
+    },
+    "penalties": "Violations of the Clean Water Act can result in civil penalties up to $25,000+ per day per violation. Criminal penalties for knowing violations include fines up to $50,000/day and imprisonment up to 3 years (6 years for repeat offenders). Unpermitted discharges and NPDES violations are actively enforced by EPA and state agencies.",
+    "controlling_bodies": [
+      "U.S. Environmental Protection Agency (EPA)",
+      "State Environmental Quality Departments (e.g., state DEQ/DEP agencies)",
+      "State Professional Engineering Licensing Boards",
+      "National Council of Examiners for Engineering and Surveying (NCEES)",
+      "Army Corps of Engineers (Section 404 wetland permits)",
+      "State Drinking Water Programs (primacy states)"
+    ]
+  },
+  "tools": {
+    "summary": "Water/Wastewater Engineers rely on specialized hydraulic modeling software, CAD/GIS platforms, and process simulation tools. EPANET remains the industry-standard free tool from EPA, while commercial packages from Bentley (WaterGEMS, SewerGEMS) and Autodesk (Civil 3D, InfoWorks) dominate large engineering firms.",
+    "primary_tools": [
+      {
+        "name": "EPANET",
+        "description": "EPA-developed industry-standard software for modeling hydraulic and water quality behavior of water distribution networks. EPANET-RTX adds real-time analytics. Latest release includes MSX 2.0 engine for multi-species water quality modeling."
+      },
+      {
+        "name": "WaterGEMS / WaterCAD (Bentley)",
+        "description": "Commercial hydraulic modeling for water distribution systems. WaterGEMS runs inside ArcGIS, AutoCAD, MicroStation, or standalone — the preferred tool for large engineering firms working across CAD/GIS environments."
+      },
+      {
+        "name": "SewerGEMS / SewerCAD (Bentley)",
+        "description": "Sanitary and combined sewer system modeling for gravity and pressure networks, capacity analysis, and rehabilitation planning."
+      },
+      {
+        "name": "AutoCAD Civil 3D (Autodesk)",
+        "description": "Industry-standard CAD platform for civil engineering design of water/wastewater infrastructure, pipe networks, grading, and site design."
+      },
+      {
+        "name": "HAMMER (Bentley)",
+        "description": "Transient analysis software for water distribution systems — models water hammer and surge events to protect infrastructure."
+      },
+      {
+        "name": "HEC-RAS (USACE)",
+        "description": "US Army Corps of Engineers tool for hydrologic and hydraulic modeling, flood risk assessment, and stormwater analysis."
+      },
+      {
+        "name": "BioWin / GPS-X / SUMO",
+        "description": "Wastewater treatment process simulators for biological nutrient removal, activated sludge modeling, and plant optimization."
+      }
+    ],
+    "secondary_tools": [
+      "ArcGIS / QGIS — Geographic Information Systems for spatial analysis, asset mapping, and utility network management",
+      "InfoWorks ICM (Autodesk) — integrated catchment modeling for sewer and stormwater systems",
+      "SWMM (EPA) — Storm Water Management Model for runoff quantity and quality simulation",
+      "Microsoft Excel — ubiquitous for calculations, data management, and regulatory reporting",
+      "Bluebeam Revu — PDF markup, plan review, and construction document management",
+      "SCADA systems — supervisory control and data acquisition for real-time plant monitoring",
+      "R / Python — data analysis, statistical modeling, and automation of monitoring data",
+      "ProjectWise (Bentley) — engineering content management and collaboration platform"
+    ],
+    "pain_points": [
+      "Integrating legacy infrastructure data with modern modeling software",
+      "Lack of interoperability between different vendors' modeling platforms (Bentley vs Autodesk vs open-source)",
+      "Manual data entry from field sampling and SCADA into regulatory reporting systems",
+      "High licensing costs for commercial modeling software limiting small utility access",
+      "Keeping hydraulic models calibrated and updated as systems age and expand",
+      "Converting between CAD and GIS formats for asset management"
+    ]
+  },
+  "terminology": {
+    "summary": "Water/wastewater engineering is dense with regulatory acronyms from EPA, process-specific jargon from activated sludge and treatment operations, and infrastructure terminology. Professionals describe it as 'alphabet soup' that can overwhelm newcomers to the field.",
+    "terms": {
+      "BOD": "Biochemical Oxygen Demand — measure of oxygen consumed by microorganisms decomposing organic material in water; key effluent parameter",
+      "COD": "Chemical Oxygen Demand — measures total organic pollutants in wastewater, both biodegradable and non-biodegradable",
+      "TSS": "Total Suspended Solids — dry weight of particles not dissolved in water sample; critical discharge permit parameter",
+      "NPDES": "National Pollutant Discharge Elimination System — EPA permit program authorizing and regulating point source discharges under the CWA",
+      "POTW": "Publicly Owned Treatment Works — government-owned wastewater treatment facility",
+      "WWTP": "Wastewater Treatment Plant — facility for converting liquid wastes into acceptable effluent and disposing of solids",
+      "WTP": "Water Treatment Plant — facility for treating raw water to drinking water standards",
+      "SRT": "Solids Retention Time — average time activated sludge remains in the biological treatment system; critical for process control",
+      "HRT": "Hydraulic Retention Time — average time wastewater remains in a treatment reactor",
+      "MLSS": "Mixed Liquor Suspended Solids — concentration of suspended solids in activated sludge aeration basin (mg/L)",
+      "RAS": "Return Activated Sludge — settled sludge recycled back to aeration tank to maintain microbial population",
+      "WAS": "Waste Activated Sludge — excess biomass removed from the system to maintain target MLSS",
+      "F/M": "Food-to-Microorganism Ratio — operational parameter balancing organic loading with biomass in activated sludge",
+      "SBR": "Sequencing Batch Reactor — fill-and-draw activated sludge system for smaller treatment plants",
+      "MBR": "Membrane Bioreactor — combines activated sludge with membrane filtration for high-quality effluent",
+      "UV": "Ultraviolet Disinfection — chemical-free disinfection method using UV light to inactivate pathogens",
+      "MCL": "Maximum Contaminant Level — highest level of a contaminant allowed in drinking water under SDWA",
+      "DMR": "Discharge Monitoring Report — required periodic report of effluent quality to regulatory agencies",
+      "CCR": "Consumer Confidence Report — annual water quality report that public water systems must provide to customers",
+      "SRF": "State Revolving Fund — low-interest loan program for water/wastewater infrastructure projects",
+      "CWSRF": "Clean Water State Revolving Fund — federal-state partnership providing low-cost financing for water quality projects",
+      "DWSRF": "Drinking Water State Revolving Fund — funding program for public water system improvements",
+      "I&I": "Inflow and Infiltration — unwanted stormwater and groundwater entering sewer systems through defects",
+      "BNR": "Biological Nutrient Removal — treatment process removing nitrogen and phosphorus to prevent eutrophication",
+      "TMDL": "Total Maximum Daily Load — calculation of maximum amount of a pollutant a water body can receive and still meet standards",
+      "O&M": "Operations and Maintenance — ongoing activities to keep treatment systems functioning properly",
+      "GPD": "Gallons Per Day — common flow measurement unit for water/wastewater systems",
+      "MGD": "Million Gallons Per Day — flow measurement for larger treatment plants and distribution systems",
+      "PE": "Population Equivalent — measure of wastewater loading based on average per-capita contribution",
+      "SCADA": "Supervisory Control and Data Acquisition — computer-based system for monitoring and controlling treatment processes"
+    }
+  },
+  "career_psychology": {
+    "summary": "Water/Wastewater Engineering offers stable, mission-driven careers with growing demand driven by aging infrastructure and stricter regulations. Median salary around $104K with strong progression from EIT to PE to senior roles. The field attracts engineers motivated by public health impact but faces burnout from regulatory complexity and infrastructure funding challenges.",
+    "career_path": [
+      "Bachelor's degree in Civil, Environmental, or related engineering (ABET-accredited)",
+      "Engineer-in-Training (EIT) — pass FE exam during or after college",
+      "Junior/Staff Water/Wastewater Engineer (0-4 years) — design support, field work, modeling",
+      "Professional Engineer (PE) licensure — pass PE exam after 4 years supervised experience",
+      "Project Engineer / Mid-Level Engineer (4-8 years) — lead design projects, client interaction",
+      "Senior Water/Wastewater Engineer (8-15 years) — technical lead, mentoring, business development",
+      "Principal Engineer / Project Manager (15+ years) — program management, strategic leadership",
+      "Director of Water/Wastewater Services / VP of Engineering — executive leadership"
+    ],
+    "salary_range": {
+      "entry_level": "$65,000 - $86,000/year (EIT, 0-3 years experience)",
+      "mid_career": "$86,000 - $110,000/year (PE licensed, 4-8 years)",
+      "senior": "$110,000 - $140,000/year (8+ years, senior/principal roles)",
+      "average_2026": "$98,912/year (ZipRecruiter average, Feb 2026); $104,170/year (BLS median for environmental engineers, May 2024)"
+    },
+    "fears": [
+      "Design failure causing public health crisis (contaminated drinking water, untreated discharge)",
+      "NPDES permit violation leading to EPA enforcement action and personal liability",
+      "Career stagnation without PE license — cannot sign/seal designs independently",
+      "Budget constraints forcing suboptimal designs for critical public health infrastructure",
+      "Aging infrastructure failures (pipe breaks, treatment plant upsets) on projects under their responsibility",
+      "PFAS and emerging contaminant regulations creating unfamiliar compliance challenges"
+    ],
+    "motivation": [
+      "Directly protecting public health — every gallon treated keeps communities safe",
+      "Tangible impact: designing systems that serve thousands/millions of people daily",
+      "Solving complex technical challenges combining chemistry, biology, hydraulics, and civil engineering",
+      "Stable career with strong job security — water/wastewater is essential infrastructure",
+      "Growing demand driven by aging infrastructure, population growth, and climate adaptation",
+      "Variety of work environments — office design, field inspections, plant startups, community engagement"
+    ],
+    "burnout_factors": [
+      "Navigating complex and overlapping federal/state/local regulations",
+      "Chronic underfunding of water infrastructure creating constant compromise between ideal and affordable solutions",
+      "Extended project timelines (2-10 years from planning to construction completion)",
+      "Extensive documentation, reporting, and permitting paperwork",
+      "Emergency callouts for treatment plant upsets, overflows, or water main breaks",
+      "Public and political resistance to rate increases needed for infrastructure investment"
+    ]
+  },
+  "community": {
+    "summary": "Water/wastewater engineering has a strong, collaborative professional community anchored by two major organizations — the Water Environment Federation (WEF) and American Water Works Association (AWWA). The community emphasizes continuing education, operator certification, and knowledge sharing through annual conferences and technical publications.",
+    "associations": [
+      {
+        "name": "Water Environment Federation (WEF)",
+        "url": "https://www.wef.org/",
+        "type": "Professional association — 30,000+ members; technical education, publications, and advocacy for water quality professionals since 1928"
+      },
+      {
+        "name": "American Water Works Association (AWWA)",
+        "url": "https://www.awwa.org/",
+        "type": "Professional association — 50,000+ members; the largest organization for water supply professionals; standards development, training, and advocacy"
+      },
+      {
+        "name": "ASCE Environmental & Water Resources Institute (EWRI)",
+        "url": "https://www.asce.org/communities/institutes-and-technical-groups/environmental-and-water-resources-institute",
+        "type": "Technical institute — within American Society of Civil Engineers; research, standards, and technical community for water resources engineers"
+      },
+      {
+        "name": "American Academy of Environmental Engineers and Scientists (AAEES)",
+        "url": "https://www.aaees.org/",
+        "type": "Certification body — Board Certified Environmental Engineer (BCEE) credential and professional development"
+      },
+      {
+        "name": "National Association of Clean Water Agencies (NACWA)",
+        "url": "https://www.nacwa.org/",
+        "type": "Advocacy organization — represents public clean water utilities on regulatory and legislative issues"
+      },
+      {
+        "name": "American Society of Civil Engineers (ASCE)",
+        "url": "https://www.asce.org/",
+        "type": "Professional society — broad civil engineering community; publishes Journal of Environmental Engineering and Journal of Water Resources Planning and Management"
+      }
+    ],
+    "events": [
+      "WEFTEC 2026 — Water Environment Federation Technical Exhibition and Conference (largest annual water quality event in the world)",
+      "AWWA ACE 2026 — Annual Conference & Exposition, June 21-24, 2026, Washington, D.C.",
+      "WEF/AWWA Utility Management Conference 2026 — March 24-27, 2026, Charlotte, NC",
+      "AWWA Water Quality Technology Conference (WQTC) 2026 — November 15-19, 2026, Memphis, TN",
+      "AWWA Water Infrastructure Conference 2026 — August 30 - September 2, 2026, Indianapolis, IN",
+      "WEF Collection Systems & Stormwater Conference 2026 — July 8-11, 2026, Portland, OR",
+      "WEF/AWWA Young Professionals (YP) Summit 2026 — March 22-24, 2026, Charlotte, NC"
+    ],
+    "online_communities": [
+      "r/WaterTreatment — Reddit community for water/wastewater treatment professionals and operators",
+      "r/environmentalengineering — Reddit community for environmental and water resources engineers",
+      "WEF Connect — Water Environment Federation online member community and forums",
+      "AWWA Community — online forums and discussion groups for water professionals",
+      "LinkedIn Water & Wastewater Engineering groups — professional networking and job postings",
+      "Operator Certification Study Groups — state-level online communities for operator exam preparation",
+      "WaterOnline.com — industry news, webinars, and technical resources"
+    ]
+  },
+  "market": {
+    "summary": "Water/wastewater engineering shows strong, stable demand driven by aging US water infrastructure (average water main is 45+ years old), stricter EPA regulations, PFAS contamination remediation needs, and historic federal investment through the Infrastructure Investment and Jobs Act (IIJA). BLS projects 4% growth for environmental engineers 2024-2034 with approximately 3,000 annual openings. The field faces a growing workforce shortage as experienced engineers retire.",
+    "job_outlook": {
+      "growth_rate": "4% projected 2024-2034 (BLS, about as fast as average for all occupations)",
+      "annual_openings": "~3,000 openings per year for environmental engineers (BLS)",
+      "employment_drivers": "Aging infrastructure requiring replacement/upgrade; IIJA federal funding ($55B for water); stricter PFAS and nutrient regulations; population growth in water-stressed regions; climate adaptation needs",
+      "workforce_challenges": "Significant retirement wave in water/wastewater sector; EPA Water Sector Workforce Initiative addressing training and recruitment gaps; competition with private sector for engineering talent"
+    },
+    "salary_market": {
+      "min": "$65,000 - $70,000/year (entry-level, 0-3 years)",
+      "avg": "$98,912/year (ZipRecruiter, Feb 2026); $86,712/year (Glassdoor, 2026); $107,183/year (Indeed, 2026)",
+      "max": "$140,000 - $165,000+/year (senior/principal level, specialized roles, high-cost metro areas)"
+    },
+    "top_paying_metros": [
+      "San Francisco, CA — 27% above national average",
+      "Portland, OR — ~$124,000 average",
+      "Chicago, IL — ~$112,000 average",
+      "Denver, CO — ~$107,000 average"
+    ],
+    "market_trends": [
+      "Infrastructure Investment and Jobs Act (IIJA) providing $55 billion for water infrastructure — largest federal investment in water history",
+      "PFAS ('forever chemicals') contamination driving new treatment design and remediation projects nationwide",
+      "Aging water infrastructure: the American Society of Civil Engineers gave US drinking water a C- in its infrastructure report card",
+      "Growing demand for water reuse and recycling engineering as drought intensifies in western states",
+      "Digital transformation: smart water networks, SCADA modernization, AI/ML for process optimization",
+      "Emerging contaminants (microplastics, pharmaceuticals) requiring advanced treatment technologies",
+      "Climate resilience driving flood protection, stormwater management, and drought-proofing projects",
+      "Salary growth trending upward due to workforce shortage and increased federal funding"
+    ]
+  },
+  "quality_score": 0.75,
+  "sources_count": 28,
+  "verified_sources": 7,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Water Wastewater Engineers USA 2025 2026 daily work tasks responsibilities",
+      "sources": [
+        {"title": "O*NET — Water/Wastewater Engineers 17-2051.02", "url": "https://www.onetonline.org/link/summary/17-2051.02"},
+        {"title": "Science Buddies — Water or Wastewater Engineer Career", "url": "https://careerdiscovery.sciencebuddies.org/science-engineering-careers/engineering/water-or-wastewater-engineer"},
+        {"title": "Manatal — Water Wastewater Engineer Job Description", "url": "https://www.manatal.com/job-description/water-wastewater-engineer-job-description"},
+        {"title": "EBSCO — Water and Wastewater Engineer Research Starter", "url": "https://www.ebsco.com/research-starters/social-sciences-and-humanities/water-and-wastewater-engineer"},
+        {"title": "OwlGuru — What Do Water/Wastewater Engineers Do", "url": "https://www.owlguru.com/career/water-wastewater-engineers/job-description/"},
+        {"title": "SHRM — Water-Wastewater Engineer Job Description", "url": "https://www.shrm.org/topics-tools/tools/job-descriptions/water-wastewater-engineer"}
+      ]
+    },
+    {
+      "query": "Water Wastewater Engineers USA 2025 2026 licensing PE regulations EPA Clean Water Act requirements",
+      "sources": [
+        {"title": "Federal Register — Updating Water Quality Certification Regulations (2026)", "url": "https://www.federalregister.gov/documents/2026/01/15/2026-00754/updating-the-water-quality-certification-regulations"},
+        {"title": "EPA — Summary of the Clean Water Act", "url": "https://www.epa.gov/laws-regulations/summary-clean-water-act"},
+        {"title": "EPA — Regulatory and Guidance Information: Water", "url": "https://www.epa.gov/regulatory-information-topic/regulatory-and-guidance-information-topic-water"},
+        {"title": "Envirosight — List of Regulations in Water and Wastewater", "url": "https://inbound.envirosight.com/water-and-wastewater-regulations"},
+        {"title": "EPA — National Water Program Guidance FY 2025-2026", "url": "https://www.epa.gov/system/files/documents/2024-07/fy-2025-2026-ow-npg.pdf"},
+        {"title": "NCEES — PE Exam Requirements", "url": "https://ppi2pass.com/resources/pe-exam/qualifying"},
+        {"title": "NCEES — Exams", "url": "https://ncees.org/exams/"}
+      ]
+    },
+    {
+      "query": "Water Wastewater Engineers USA software tools EPANET AutoCAD hydraulic modeling 2025 2026",
+      "sources": [
+        {"title": "EPA — EPANET", "url": "https://www.epa.gov/water-research/epanet"},
+        {"title": "Autodesk — Desktop Hydraulic Modeling Software 2025 Releases", "url": "https://www.autodesk.com/blogs/water/2024/05/06/everything-new-in-autodesks-desktop-hydraulic-modeling-software-2025-releases/"},
+        {"title": "Hidrosoft — Top Hydraulic Modeling Software in 2026", "url": "https://www.hidrosoft.net/best-hydraulic-modeling-and-water-simulation-software-2026/"},
+        {"title": "World Civil Society — Top Water Engineering Software Tools", "url": "https://worldcivilsociety.com/top-water-engineering-software-tools/"},
+        {"title": "HidraSoftware — Design Water Distribution Networks with AutoCAD and EPANET", "url": "https://www.hidrasoftware.com/en/design-water-distribution-networks-with-autocad-and-epanet/"}
+      ]
+    },
+    {
+      "query": "Water wastewater engineering terminology abbreviations jargon BOD TSS NPDES professional",
+      "sources": [
+        {"title": "King County — Commonly Used Acronyms in Wastewater Treatment", "url": "https://kingcounty.gov/en/-/media/services/environment/wastewater/mwpaac/docs/resources/acronym-list-may-2016.pdf"},
+        {"title": "SolutionsTRAK — Wastewater Definitions Cheat Sheet", "url": "https://www.solutionstrak.com/blog/wastewater-definitions/"},
+        {"title": "Veolia — Glossary of Water Terminology", "url": "https://www.watertechnologies.com/blog/glossary-water-terminology"},
+        {"title": "LAR LLC — Water and Wastewater Industry Glossary", "url": "https://www.larllc.com/definitions.html"},
+        {"title": "eWorkOrders — Water & Wastewater Terms and Definitions Guide", "url": "https://eworkorders.com/cmms-industry-articles-eworkorders/water-watewater-terms-definitions/"}
+      ]
+    },
+    {
+      "query": "Water Wastewater Engineers USA career path salary 2025 2026",
+      "sources": [
+        {"title": "PayScale — Water/Wastewater Engineer Salary 2026", "url": "https://www.payscale.com/research/US/Job=Water%2FWastewater_Engineer/Salary"},
+        {"title": "ZipRecruiter — Water Wastewater Engineer Salary (Feb 2026)", "url": "https://www.ziprecruiter.com/Salaries/Water-Wastewater-Engineer-Salary"},
+        {"title": "Glassdoor — Water Wastewater Engineer Salary 2026", "url": "https://www.glassdoor.com/Salaries/water-wastewater-engineer-salary-SRCH_KO0,25.htm"},
+        {"title": "Indeed — Wastewater Engineer Salaries", "url": "https://www.indeed.com/career/wastewater-engineer/salaries"},
+        {"title": "ZipRecruiter — Entry Level Wastewater Engineer Salary (Feb 2026)", "url": "https://www.ziprecruiter.com/Salaries/Entry-Level-Wastewater-Engineer-Salary"}
+      ]
+    },
+    {
+      "query": "Water Wastewater Engineers USA professional associations WEF AWWA conferences 2025 2026",
+      "sources": [
+        {"title": "WEF — Utility Management 2026 Conference", "url": "https://www.wef.org/UtilityManagement"},
+        {"title": "AWWA — Conferences", "url": "https://www.awwa.org/conferences/"},
+        {"title": "AWWA — ACE Annual Conference", "url": "https://ace.awwa.org/"},
+        {"title": "AWWA — Water Quality Technology Conference", "url": "https://www.awwa.org/event/water-quality-technology/"},
+        {"title": "AWWA — Water Infrastructure Conference", "url": "https://www.awwa.org/event/water-infrastructure-conference/"}
+      ]
+    },
+    {
+      "query": "Water Wastewater Engineers USA job market demand salary outlook 2025 2026",
+      "sources": [
+        {"title": "BLS — Environmental Engineers Occupational Outlook", "url": "https://www.bls.gov/ooh/architecture-and-engineering/environmental-engineers.htm"},
+        {"title": "BLS — Water and Wastewater Treatment Plant Operators", "url": "https://www.bls.gov/ooh/production/water-and-wastewater-treatment-plant-and-system-operators.htm"},
+        {"title": "Zippia — Wastewater Engineer Job Outlook", "url": "https://www.zippia.com/wastewater-engineer-jobs/trends/"},
+        {"title": "Recruiter.com — Water and Wastewater Engineers Career Outlook", "url": "https://www.recruiter.com/careers/water-and-wastewater-engineers/outlook/"},
+        {"title": "SalaryExpert — Wastewater Engineer Salary 2026", "url": "https://www.salaryexpert.com/salary/job/wastewater-engineer/united-states"}
+      ]
+    }
+  ]
+}

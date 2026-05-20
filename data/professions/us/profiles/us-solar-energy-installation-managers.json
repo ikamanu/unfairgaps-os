@@ -1,0 +1,254 @@
+{
+  "profession_id": "us-solar-energy-installation-managers",
+  "profession_name": "Solar Energy Installation Managers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Solar energy installation managers oversee the installation of solar PV systems, managing crews, ensuring code compliance, coordinating with utilities, and handling project timelines and budgets for residential and commercial solar projects.",
+    "typical_tasks": [
+      "Manage and supervise solar installation crews on job sites",
+      "Review system designs and ensure compliance with NEC and local codes",
+      "Coordinate with utility companies for interconnection agreements",
+      "Schedule and manage multiple installation projects simultaneously",
+      "Conduct site assessments and evaluate roof/ground conditions",
+      "Ensure proper installation of panels, inverters, racking, and wiring",
+      "Manage project budgets, materials procurement, and timelines",
+      "Handle permitting processes with local jurisdictions",
+      "Conduct quality control inspections of completed installations",
+      "Coordinate with electricians for electrical connections",
+      "Manage safety compliance (OSHA fall protection, electrical safety)",
+      "Communicate with customers on project progress and commissioning"
+    ],
+    "key_documents": [
+      "Permit applications and approvals",
+      "System design drawings and single-line diagrams",
+      "Interconnection agreements with utilities",
+      "Project schedules and Gantt charts",
+      "Safety plans and OSHA documentation",
+      "Change orders and budget tracking",
+      "Commissioning reports and performance verification",
+      "Warranty documentation"
+    ],
+    "deadlines": {
+      "permit_submissions": "Before installation begins — typically 2-6 weeks processing",
+      "utility_interconnection": "Submit before system commissioning — varies by utility",
+      "itc_deadline": "Systems must be placed in service for federal tax credit eligibility",
+      "inspection_scheduling": "Building department final inspection before energization",
+      "project_completion": "Per customer contract and financing terms"
+    },
+    "seasonality": "Strong seasonal patterns — peak installation spring through fall (March-October) when weather permits roof work. Q4 push for year-end tax credit deadlines. Winter slowdown in northern states.",
+    "sources": [
+      {"url": "https://www.nabcep.org/certifications/", "fact": "NABCEP certifications defining solar installation professional competencies"},
+      {"url": "https://www.residentialsolarpanels.org/solar-business-and-careers/solar-industry-jobs-are-booming-your-path-to-a-sustainable-career/", "fact": "Solar industry career overview including installation manager roles"}
+    ]
+  },
+  "regulatory": {
+    "summary": "NABCEP (North American Board of Certified Energy Practitioners) provides industry-standard certifications. NEC Article 690 governs solar PV installation. State and local building codes, electrical licensing, and utility interconnection standards apply. Federal ITC drives market.",
+    "key_laws": [
+      {
+        "name": "National Electrical Code (NEC) Article 690",
+        "detail": "Solar PV installation requirements including wiring, grounding, disconnects, and rapid shutdown",
+        "status": "Updated on 3-year cycle (NEC 2023 current, 2026 in development)"
+      },
+      {
+        "name": "OSHA Construction Standards (29 CFR Part 1926)",
+        "detail": "Fall protection, electrical safety, scaffolding for solar installation work",
+        "status": "Active"
+      },
+      {
+        "name": "Federal Investment Tax Credit (ITC) / Inflation Reduction Act",
+        "detail": "30% federal tax credit for solar installations through 2032, with domestic content and labor bonuses",
+        "status": "Active through IRA (2022)"
+      },
+      {
+        "name": "State Net Metering / Interconnection Standards",
+        "detail": "Vary by state — define how solar systems connect to grid and compensation for excess generation",
+        "status": "Active, varies significantly by state and utility"
+      },
+      {
+        "name": "State Electrical Licensing Requirements",
+        "detail": "Most states require licensed electrician for solar electrical work",
+        "status": "Active in most states"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "NABCEP PV Installation Professional (PVIP) — gold standard industry certification",
+        "NABCEP Installation Lead Certification — mid-scale project management",
+        "State electrical contractor license (required in most states for solar work)",
+        "OSHA 10/30 construction safety certifications",
+        "State-specific solar installer certifications (varies)",
+        "5+ years field experience typical for manager role",
+        "Continuing education for NABCEP renewal"
+      ],
+      "certifying_bodies": [
+        "NABCEP — North American Board of Certified Energy Practitioners",
+        "State electrical licensing boards",
+        "OSHA for safety certifications"
+      ]
+    },
+    "penalties": "NEC violations can result in failed inspections and project delays. OSHA violations for fall protection: $16,131/serious, $161,323/willful. State contractor license violations include fines and license revocation. Improper installations create fire/electrical hazard liability.",
+    "sources": [
+      {"url": "https://www.nabcep.org/certifications/nabcep-board-certifications/", "fact": "NABCEP PVIP as gold standard certification for solar professionals"},
+      {"url": "https://www.energy.gov/eere/solar/project-profile-north-american-board-certified-energy-practitioners", "fact": "DOE profile of NABCEP and solar workforce certification"}
+    ]
+  },
+  "tools": {
+    "summary": "Solar installation managers use design software (Aurora Solar, Helioscope), project management tools, electrical testing equipment, and specialized solar installation hardware from major manufacturers (Enphase, SolarEdge, SunPower, Hanwha Q Cells).",
+    "primary_software": [
+      {"name": "Aurora Solar", "purpose": "Solar system design, shade analysis, sales proposals"},
+      {"name": "Helioscope (Folsom Labs)", "purpose": "Commercial solar PV system design and engineering"},
+      {"name": "SolarEdge Designer / Enphase System Estimator", "purpose": "Inverter and microinverter system design"},
+      {"name": "Project management tools (Scoop Solar, Bodhi, Monday.com)", "purpose": "Installation workflow, scheduling, crew management"},
+      {"name": "AutoCAD / SketchUp", "purpose": "Detailed engineering drawings and permit sets"},
+      {"name": "CRM systems (Salesforce, HubSpot)", "purpose": "Customer management and project tracking"},
+      {"name": "Fluke/Seaward IV curve tracers", "purpose": "Solar panel and string performance testing"},
+      {"name": "Thermal imaging cameras", "purpose": "Post-installation inspection for defective cells/connections"},
+      {"name": "Utility interconnection portals", "purpose": "Application submission for grid connection"}
+    ],
+    "pain_points": [
+      "Permitting delays and inconsistent local code interpretation",
+      "Supply chain disruptions for panels and inverters",
+      "Utility interconnection backlogs",
+      "Weather-dependent scheduling challenges",
+      "Workforce availability and skill gaps",
+      "Evolving NEC requirements requiring continuous learning"
+    ],
+    "sources": [
+      {"url": "https://www.nabcep.org/certifications/", "fact": "NABCEP certification competencies including design and installation tools"},
+      {"url": "https://everbluetraining.com/nabcep-installer-salary-how-much-more-money-can-you-make/", "fact": "NABCEP installer roles and salary impact"}
+    ]
+  },
+  "terminology": {
+    "summary": "Solar installation managers use electrical, construction, and renewable energy terminology covering PV system components, electrical codes, and utility interconnection.",
+    "key_terms": [
+      {"term": "PV", "meaning": "Photovoltaic — technology converting sunlight to electricity"},
+      {"term": "DC/AC", "meaning": "Direct Current / Alternating Current — solar panels produce DC, inverters convert to AC"},
+      {"term": "Inverter", "meaning": "Converts DC from panels to AC for home/grid use (string or micro)"},
+      {"term": "Microinverter", "meaning": "Panel-level DC-to-AC conversion (Enphase primary brand)"},
+      {"term": "Optimizer", "meaning": "DC-DC power optimizer for panel-level MPPT (SolarEdge primary brand)"},
+      {"term": "MPPT", "meaning": "Maximum Power Point Tracking — inverter algorithm optimizing power output"},
+      {"term": "Net metering", "meaning": "Billing arrangement crediting solar owners for excess grid-exported energy"},
+      {"term": "Interconnection", "meaning": "Agreement with utility to connect solar system to electrical grid"},
+      {"term": "Rapid shutdown", "meaning": "NEC 690.12 requirement to de-energize rooftop PV conductors in emergency"},
+      {"term": "AHJ", "meaning": "Authority Having Jurisdiction — local building/electrical inspector"},
+      {"term": "kW/kWh/MW", "meaning": "Kilowatt (power) / kilowatt-hour (energy) / Megawatt (large systems)"},
+      {"term": "String", "meaning": "Series-connected group of solar panels"},
+      {"term": "Racking", "meaning": "Mounting system that attaches panels to roof or ground"},
+      {"term": "PTO", "meaning": "Permission to Operate — utility approval to energize system"},
+      {"term": "ITC", "meaning": "Investment Tax Credit — federal 30% tax credit for solar"}
+    ],
+    "common_abbreviations": ["NABCEP", "PV", "PVIP", "NEC", "AHJ", "PTO", "ITC", "NEM", "STC (Standard Test Conditions)", "BOS (Balance of System)"],
+    "sources": [
+      {"url": "https://www.nabcep.org/certifications/", "fact": "NABCEP certification content areas defining solar terminology"},
+      {"url": "https://www.solarenergy.org/nabcep/", "fact": "SEI NABCEP training covering solar installation terminology"}
+    ]
+  },
+  "career_psychology": {
+    "summary": "Solar installation managers combine construction management with clean energy mission motivation. Industry growing at triple the rate of traditional energy. Physical outdoor work with project management responsibilities. NABCEP certification provides significant salary premium.",
+    "career_levels": [
+      {"level": "Solar Installer", "salary_range": "$35,000-$50,000", "responsibilities": "Panel installation, racking, wiring under supervision"},
+      {"level": "Lead Installer/Foreman", "salary_range": "$50,000-$65,000", "responsibilities": "Crew leadership, quality control, basic troubleshooting"},
+      {"level": "Installation Manager", "salary_range": "$65,000-$85,000", "responsibilities": "Multi-project management, permitting, utility coordination, budgets"},
+      {"level": "Director of Operations/VP", "salary_range": "$90,000-$130,000+", "responsibilities": "Company-wide installation operations, strategic planning, team building"}
+    ],
+    "main_fears": [
+      "Work site safety incidents (falls, electrocution)",
+      "Failed inspections and code violations",
+      "Customer complaints about system performance",
+      "Project cost overruns and schedule delays",
+      "Workforce retention in competitive market",
+      "Policy changes affecting solar incentives (ITC reduction)"
+    ],
+    "burnout_causes": [
+      "Physical outdoor work in extreme weather (heat, cold, wind)",
+      "Managing multiple projects with tight deadlines",
+      "Permitting frustrations with inconsistent AHJ requirements",
+      "Seasonal workload fluctuations (feast or famine)",
+      "Supply chain disruptions creating scheduling chaos",
+      "Customer expectation management"
+    ],
+    "growth_motivation": [
+      "NABCEP certification for professional recognition and salary premium",
+      "Mission-driven work combating climate change",
+      "Rapidly growing industry with advancement opportunities",
+      "Company ownership/entrepreneurship in solar",
+      "Transition to system design/engineering roles",
+      "Commercial/utility-scale project management"
+    ],
+    "sources": [
+      {"url": "https://everbluetraining.com/nabcep-installer-salary-how-much-more-money-can-you-make/", "fact": "NABCEP certification salary impact: $70,000-$80,000 for certified installers"},
+      {"url": "https://www.residentialsolarpanels.org/solar-business-and-careers/solar-industry-jobs-are-booming-your-path-to-a-sustainable-career/", "fact": "Solar industry growing at triple the rate of traditional energy"}
+    ]
+  },
+  "community": {
+    "summary": "SEIA (Solar Energy Industries Association) is the primary industry trade association. NABCEP provides certification community. IREC provides training standards. Active online communities on Reddit and solar industry forums.",
+    "professional_associations": [
+      {"name": "SEIA — Solar Energy Industries Association", "url": "https://www.seia.org", "membership_value": "Industry advocacy, market data, policy updates, networking events", "mandatory": false},
+      {"name": "NABCEP", "url": "https://www.nabcep.org", "membership_value": "Professional certification, CE courses, industry recognition", "mandatory": false},
+      {"name": "IREC — Interstate Renewable Energy Council", "url": "https://irecusa.org", "membership_value": "Training standards, workforce development, clean energy career resources", "mandatory": false},
+      {"name": "State solar energy associations", "detail": "e.g., CALSEIA (California), NYSEIA (New York), etc.", "mandatory": false}
+    ],
+    "conferences": [
+      {"name": "Solar Power International (RE+)", "detail": "Largest solar trade show in North America", "frequency": "Annual (September)"},
+      {"name": "Intersolar North America", "detail": "Solar industry conference and exhibition", "frequency": "Annual"},
+      {"name": "NABCEP Continuing Education Conference", "detail": "Professional development for certified solar professionals", "frequency": "Annual"}
+    ],
+    "online_communities": [
+      "Reddit r/solar (active community 300K+ members)",
+      "Reddit r/SolarDIY",
+      "EnergySage installer community",
+      "Facebook solar installer groups",
+      "LinkedIn renewable energy professionals",
+      "Solar Builder magazine online"
+    ],
+    "publications": [
+      "Solar Power World",
+      "Solar Builder",
+      "PV Magazine USA",
+      "Greentech Media / Canary Media"
+    ],
+    "sources": [
+      {"url": "https://www.nabcep.org/certifications/", "fact": "NABCEP as industry-standard certification body"},
+      {"url": "https://www.energy.gov/eere/solar/project-profile-north-american-board-certified-energy-practitioners", "fact": "DOE recognition of NABCEP and solar workforce development"}
+    ]
+  },
+  "market": {
+    "summary": "Installation managers earn $65,000-$85,000. Solar industry growing at triple the rate of traditional energy. IRA 30% ITC through 2032 driving strong demand. NABCEP certification provides $10,000-$20,000 salary premium.",
+    "salary_by_level": {
+      "entry_installer": "$35,000-$50,000",
+      "lead_foreman": "$50,000-$65,000",
+      "installation_manager": "$65,000-$85,000",
+      "director_vp": "$90,000-$130,000+"
+    },
+    "geographic_variation": {
+      "national_average_manager": "$70,000-$80,000",
+      "california": "$80,000-$100,000+ (highest demand)",
+      "massachusetts": "High demand with premium pay",
+      "texas_florida": "Growing rapidly with moderate pay"
+    },
+    "estimated_practitioners": "~260,000 solar workers total in US (2023 Solar Census), installation managers a subset",
+    "job_outlook": "Strong growth. Solar industry adding jobs 3x faster than traditional energy. IRA incentives securing demand through 2032+.",
+    "work_arrangements": {
+      "dominant": "W-2 employees at solar installation companies (SunPower, Sunrun, local/regional installers)",
+      "contractor": "Some independent contractors managing installations for multiple companies",
+      "entrepreneurship": "Solar installation company ownership common career goal"
+    },
+    "market_trends": [
+      "IRA 30% ITC with prevailing wage and domestic content bonuses driving demand",
+      "Battery storage integration adding complexity and value to installations",
+      "Community solar and commercial installations growing",
+      "Permitting reform (SolarAPP+) streamlining residential installations",
+      "Workforce shortage driving wage increases and training investment",
+      "EV charging integration with solar becoming standard offering"
+    ],
+    "sources": [
+      {"url": "https://www.payscale.com/research/US/Certification=NABCEP_Solar_PV_Installer_Certification/Salary", "fact": "NABCEP solar PV installer certification salary data"},
+      {"url": "https://asanify.com/blog/hiring-in-usa/hire-solar-photovoltaic-installer-in-usa-2025-guide/", "fact": "Solar PV installer hiring guide with salary data for 2025"}
+    ]
+  },
+  "quality_score": 0.4,
+  "sources_count": 12,
+  "verified_sources": 5,
+  "confidence": "likely",
+  "raw_responses": []
+}

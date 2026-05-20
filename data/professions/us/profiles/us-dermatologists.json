@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-dermatologists",
+  "profession_name": "Dermatologists",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "See 30-50 patients daily in clinic for skin examinations, biopsies, cosmetic procedures, and follow-ups. Morning: review charts, patient consultations for acne, eczema, psoriasis, skin cancer screening. Procedures: excisions, Mohs surgery referrals, cryotherapy, laser treatments, injectables (Botox, fillers). Documentation in EHR between patients. Average 40-51 hours/week. Mix of medical and cosmetic dermatology depending on practice type.",
+    "key_documents": ["Patient medical records (EHR)", "Biopsy/pathology reports", "Procedure notes", "Prescription records", "Prior authorization forms", "Insurance claim forms", "Consent forms for procedures", "Clinical photos (dermoscopy images)", "CME documentation"],
+    "deadlines": "Board certification maintenance (MOC). CME credit deadlines. Prior authorization turnaround. Biopsy result follow-up timelines. State license renewal. DEA registration renewal.",
+    "seasonality": "Skin cancer screening campaigns in spring/summer. Sun damage consultations increase in summer/fall. Cosmetic procedures peak before holidays and social events. Acne flare-ups common in certain seasons."
+  },
+  "regulatory": {
+    "laws_and_standards": ["State medical licensing requirements", "ABMS/ABD board certification", "CMS Medicare/Medicaid compliance", "HIPAA patient privacy", "MACRA/MIPS quality reporting", "State scope of practice laws (teledermatology)", "FDA regulations for cosmetic devices and injectables", "Stark Law and Anti-Kickback Statute"],
+    "licensing": "MD or DO degree required. Completion of dermatology residency (4 years: 1 year internal medicine + 3 years dermatology). State medical license. Board certification by American Board of Dermatology (ABD). Fellowship for subspecialties (Mohs surgery, dermatopathology, pediatric derm). DEA registration for prescribing.",
+    "penalties": "Malpractice liability (missed melanoma is common claim). State medical board disciplinary actions. CMS penalties for MIPS non-compliance. FDA enforcement for off-label cosmetic device use. Insurance fraud penalties.",
+    "regulatory_bodies": ["State Medical Boards", "ABD (American Board of Dermatology)", "CMS", "FDA", "DEA", "Joint Commission (for hospital-based)"]
+  },
+  "tools": {
+    "software": ["Epic - dominant EHR platform", "ModMed (Modernizing Medicine) - dermatology-specific EHR", "DrChrono - cloud-based EHR", "Nextech - dermatology practice management", "DermEngine - AI-assisted skin analysis", "PathagnostiX - dermatopathology tools"],
+    "platforms": ["Dermoscopy devices (DermLite, FotoFinder)", "Canfield VECTRA - 3D clinical photography", "Laser/light therapy devices (IPL, fractional CO2)", "Telehealth platforms (DermatologistOnCall, Doxy.me)", "Patient portals for results and scheduling"],
+    "gov_portals": ["CMS QPP Portal (MIPS reporting)", "State medical board licensing portals", "DEA registration portal", "FDA MedWatch (adverse event reporting)"]
+  },
+  "terminology": {
+    "jargon": ["Dermoscopy", "Mohs surgery", "Cryotherapy", "Excisional biopsy", "Shave biopsy", "Punch biopsy", "Phototherapy", "Biologics (for psoriasis)", "Melanoma staging", "Fitzpatrick skin type", "Actinic keratosis"],
+    "abbreviations": ["ABD - American Board of Dermatology", "AAD - American Academy of Dermatology", "BCC - Basal Cell Carcinoma", "SCC - Squamous Cell Carcinoma", "AK - Actinic Keratosis", "PDT - Photodynamic Therapy", "IPL - Intense Pulsed Light", "UV - Ultraviolet", "TNM - Tumor Node Metastasis staging", "RCM - Reflectance Confocal Microscopy", "KOH - Potassium Hydroxide prep", "Derm - Dermatology"]
+  },
+  "career_psychology": {
+    "career_levels": ["Dermatology Resident (4 years)", "Early-Career Dermatologist (0-5 years post-residency)", "Mid-Career (5-15 years)", "Senior/Established (15+ years)", "Academic: Assistant → Associate → Full Professor", "Practice Owner / Partner"],
+    "fears": ["Missing melanoma diagnosis (major malpractice risk)", "Private equity consolidation eroding practice autonomy", "Declining reimbursements (pay dropped 5% recently)", "Only 55% feel fairly compensated (down from 65% in 2023)", "Prior authorization burden delaying patient care", "Competition from telehealth and midlevel providers"],
+    "motivation": "Mix of medical and cosmetic work provides variety; strong work-life balance compared to other specialties; high earning potential; visible results for patients; intellectual challenge of pattern recognition. Second highest compensation satisfaction among 29 specialties.",
+    "burnout": "46% report burnout — lower than most specialties due to more predictable workflows. Bureaucratic tasks cited as primary cause. Compensation dissatisfaction increasing. AAD provides wellness resources and burnout prevention tools."
+  },
+  "community": {
+    "reddit": ["r/Dermatology", "r/medicine", "r/Residency", "r/physicians", "r/SkincareAddiction (patient community)"],
+    "linkedin": ["American Academy of Dermatology", "Dermatology Professionals group", "Cosmetic Dermatology network"],
+    "associations": ["AAD (American Academy of Dermatology)", "SID (Society for Investigative Dermatology)", "ASDS (American Society for Dermatologic Surgery)", "ACMS (American College of Mohs Surgery)", "Women's Dermatologic Society"],
+    "conferences": ["AAD Annual Meeting - March (2026: Denver, March 27-31)", "AAD Summer Meeting - July (2026: New York City, July 16-19)", "ASDS Annual Meeting", "Maui Derm - January/February", "Orlando Dermatology Aesthetic and Clinical Conference"]
+  },
+  "market": {
+    "salary_by_level": {
+      "early_career_usd": 350000,
+      "mid_career_usd": 454000,
+      "senior_usd": 640000,
+      "top_earners_usd": 1000000
+    },
+    "average_salary_usd": 508000,
+    "job_count_estimate": "About 12,850 dermatologists in the US. 1,834 active job openings. 308 listings identified across the country. Concentrated in urban/suburban areas with significant rural shortages.",
+    "work_arrangements": "Private practice (solo or group), hospital-employed, academic medical centers. Strong work-life balance with regular hours. Telehealth/teledermatology expanding. Some cosmetic-only practices. Part-time options common.",
+    "trends": ["Private equity consolidation changing practice landscape", "AI-assisted skin cancer detection (DermEngine, deep learning models)", "Teledermatology expanding access", "Biologics revolution for inflammatory conditions", "Pay dropped 5% but still high vs other specialties", "Compensation satisfaction declining (55% feel fairly paid)", "Cosmetic dermatology driving private practice income", "1,834 active job openings nationally"]
+  },
+  "quality_score": 0.85,
+  "sources_count": 7,
+  "verified_sources": 6
+}

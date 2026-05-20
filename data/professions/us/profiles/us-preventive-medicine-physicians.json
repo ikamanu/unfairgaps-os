@@ -1,0 +1,464 @@
+{
+  "profession_id": "us-preventive-medicine-physicians",
+  "profession_name": "Preventive Medicine Physicians",
+  "soc_code": "29-1229.05",
+  "sector": "healthcare",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Preventive medicine physicians focus on protecting, promoting, and maintaining health at both individual and population levels. Their daily work is uniquely varied, spanning clinical care, epidemiological investigations, program design, policy development, and public health education. They supervise multidisciplinary teams of physicians, nurses, statisticians, and other professionals. Unlike most medical specialists, they work more than 40 hours per week across diverse settings including government agencies, hospitals, academic institutions, and nonprofits.",
+    "typical_tasks": [
+      "Supervise and coordinate work of physicians, nurses, statisticians, and professional staff",
+      "Evaluate effectiveness of prescribed risk reduction measures and interventions",
+      "Direct public health education programs on preventable diseases, immunizations, nutrition, and sanitation",
+      "Document and review comprehensive patient histories emphasizing occupational or environmental risks",
+      "Identify groups at risk for specific preventable diseases or injuries",
+      "Perform epidemiological investigations of acute and chronic diseases",
+      "Conduct comprehensive health evaluations including medical history review, physical exams, and lab result analysis",
+      "Assess trends in health outcomes to target specific risks such as obesity, diabetes, or infectious diseases",
+      "Design, implement, and evaluate health service delivery systems for targeted populations",
+      "Design and use surveillance tools including screening programs, lab reports, and vital records",
+      "Deliver presentations to lay and professional audiences on preventive health topics",
+      "Teach and train medical staff regarding preventive medicine issues",
+      "Develop policy recommendations based on epidemiological data and population health analysis"
+    ],
+    "key_documents": [
+      "Epidemiological study reports and surveillance data",
+      "Public health program evaluation reports",
+      "Patient risk assessment documentation",
+      "Health policy briefs and recommendations",
+      "Grant proposals and research protocols",
+      "Population health data analyses and reports",
+      "CDC/state health department guidelines and advisories",
+      "Continuing certification documentation (ABPM)",
+      "Institutional review board (IRB) submissions"
+    ],
+    "deadlines": {
+      "disease_surveillance_reporting": "Often daily or weekly depending on condition (e.g., notifiable diseases)",
+      "grant_cycles": "Federal grants typically have annual submission deadlines (NIH, CDC, HRSA)",
+      "board_certification_renewal": "Continuing certification through ABPM (10-year cycle with annual requirements)",
+      "program_evaluations": "Quarterly or annual depending on institutional requirements",
+      "CME_requirements": "Varies by state, typically 50-100 hours per biennial renewal cycle",
+      "publication_deadlines": "Varies by journal and conference submission timelines"
+    },
+    "seasonality": "Preventive medicine work has notable seasonal patterns tied to public health cycles. Flu season (October-March) drives vaccination campaign planning and surveillance intensification. Back-to-school periods (August-September) focus on childhood immunization compliance. Summer brings increased focus on vector-borne disease surveillance and heat-related illness prevention. Budget cycles in government agencies (federal fiscal year October 1) drive program planning. Disease outbreak responses are unpredictable and can dominate workload at any time."
+  },
+  "regulatory": {
+    "summary": "Preventive medicine physicians must hold a valid medical license (MD or DO) in their state of practice and may pursue voluntary board certification through the American Board of Preventive Medicine (ABPM). The ABPM recognizes three subspecialties: Public Health and General Preventive Medicine, Occupational Medicine, and Aerospace Medicine. The 2026 certification exam application period runs March 11 through June 30, 2026. As physicians working in public health infrastructure, they operate under a complex regulatory framework spanning federal, state, and local public health laws.",
+    "key_laws": [
+      "State Medical Practice Acts (physician licensure requirements vary by state)",
+      "Public Health Service Act (42 U.S.C. ch.6A) - federal public health authority",
+      "Affordable Care Act preventive services mandates",
+      "HIPAA (Health Insurance Portability and Accountability Act) for patient and population health data",
+      "Occupational Safety and Health Act (OSHA) for occupational medicine subspecialists",
+      "Federal Food, Drug, and Cosmetic Act (relevant to preventive interventions)",
+      "Vaccine Injury Compensation Program (VICP) and National Childhood Vaccine Injury Act",
+      "Emergency declarations and quarantine authorities (federal and state)",
+      "Title 42 of the Code of Federal Regulations (public health regulations)",
+      "State-specific reportable disease laws and surveillance mandates"
+    ],
+    "licensing": {
+      "requirements": [
+        "Bachelor's degree (typically 4 years with pre-med coursework)",
+        "Doctor of Medicine (MD) or Doctor of Osteopathic Medicine (DO) degree (4 years)",
+        "USMLE (United States Medical Licensing Examination) or COMLEX passage for state licensure",
+        "Completion of ACGME-accredited preventive medicine residency (2-3 years, often including an MPH)",
+        "State medical license in the jurisdiction of practice",
+        "Board certification through ABPM (voluntary but strongly recommended)",
+        "ABPM 2026 application period: March 11 - June 30, 2026; exam registration beginning May 20, 2026",
+        "DEA registration if prescribing controlled substances",
+        "Continuing certification through ABPM's Continuing Certification Program",
+        "Many positions require a Master of Public Health (MPH) degree in addition to the MD/DO"
+      ]
+    },
+    "continuing_education": "Preventive medicine physicians must maintain state medical licensure through CME credits (typically 50-100 hours per biennial cycle depending on state). ABPM-certified physicians must participate in the Continuing Certification Program, which includes ongoing professional development, knowledge assessment, and practice improvement activities. The American College of Preventive Medicine (ACPM) offers free or discounted CME programming to members, including annual conferences and webinars covering critical areas in disease prevention and health promotion."
+  },
+  "tools": {
+    "summary": "Preventive medicine physicians leverage a unique mix of population health analytics, epidemiological software, electronic health records, and emerging AI/digital health technologies. Their toolkit emphasizes data analysis, surveillance systems, and program management rather than traditional clinical instruments. The field is being transformed by digital epidemiology, AI-driven predictive analytics, wearable health technology, and precision prevention approaches. The preventive medicine market is valued at over $450 billion (2025) and growing rapidly.",
+    "primary_tools": [
+      {
+        "name": "CDC WONDER (Wide-ranging Online Data for Epidemiologic Research)",
+        "category": "Epidemiological Data System",
+        "description": "Federal database system for accessing public health data including mortality, natality, cancer, and disease surveillance data"
+      },
+      {
+        "name": "SAS / R / Python (Statistical Software)",
+        "category": "Data Analysis",
+        "description": "Statistical programming languages used for epidemiological analysis, risk modeling, and population health research"
+      },
+      {
+        "name": "Electronic Health Records (EHR) Systems",
+        "category": "Clinical Informatics",
+        "description": "Epic, Cerner, and other major EHR platforms used for clinical preventive care delivery and population health management modules"
+      },
+      {
+        "name": "GIS (Geographic Information Systems)",
+        "category": "Spatial Epidemiology",
+        "description": "Mapping and spatial analysis tools (ArcGIS, QGIS) for visualizing disease distribution, environmental health risks, and health disparities"
+      },
+      {
+        "name": "REDCap (Research Electronic Data Capture)",
+        "category": "Research Data Management",
+        "description": "Secure web-based application for building and managing online surveys and databases in research and quality improvement studies"
+      },
+      {
+        "name": "National Electronic Disease Surveillance System (NEDSS)",
+        "category": "Disease Surveillance",
+        "description": "CDC-supported electronic disease surveillance system for tracking reportable diseases at state and national levels"
+      }
+    ],
+    "secondary_tools": [
+      {
+        "name": "Tableau / Power BI",
+        "category": "Data Visualization",
+        "description": "Business intelligence tools used for creating interactive dashboards and visualizing population health data"
+      },
+      {
+        "name": "Wearable Health Devices and Remote Monitoring",
+        "category": "Digital Health Technology",
+        "description": "Connected devices capturing physiological indicators for continuous health monitoring and early risk detection"
+      },
+      {
+        "name": "AI/ML Predictive Analytics Platforms",
+        "category": "Artificial Intelligence",
+        "description": "Machine learning algorithms for analyzing large datasets to identify health anomalies, predict outbreaks, and personalize prevention"
+      },
+      {
+        "name": "Genomic Analysis Tools",
+        "category": "Precision Prevention",
+        "description": "Tools for interpreting genetic data to inform personalized risk assessment and targeted preventive interventions"
+      },
+      {
+        "name": "Telehealth Platforms",
+        "category": "Remote Care Delivery",
+        "description": "Virtual care platforms for patient education, wellness counseling, and preventive care consultations"
+      },
+      {
+        "name": "Survey/Assessment Platforms (Qualtrics, SurveyMonkey)",
+        "category": "Data Collection",
+        "description": "Tools for designing and deploying population health surveys and community health needs assessments"
+      },
+      {
+        "name": "Epi Info (CDC)",
+        "category": "Epidemiological Analysis",
+        "description": "Free CDC software for epidemiologic data collection, analysis, and visualization designed for public health practitioners"
+      }
+    ],
+    "pain_points": [
+      "Data fragmentation across multiple surveillance systems, EHRs, and government databases making comprehensive analysis difficult",
+      "Lack of interoperability between clinical EHR systems and public health surveillance infrastructure",
+      "Administrative burden from operating across multiple institutional and governmental reporting requirements",
+      "Difficulty quantifying and demonstrating ROI of preventive interventions to justify funding",
+      "Limited clinical billing opportunities since much of the work is population-level rather than individual patient care",
+      "Outdated public health IT infrastructure at many state and local health departments",
+      "Challenges integrating new AI and digital health tools into established public health workflows",
+      "Data privacy and security concerns when working with population-level health data across jurisdictions"
+    ]
+  },
+  "terminology": {
+    "summary": "Preventive medicine uses specialized terminology drawn from epidemiology, biostatistics, public health, clinical medicine, and health policy. Practitioners must be fluent in concepts spanning all levels of prevention (primordial through tertiary), epidemiological methods, screening test characteristics, population health metrics, and health systems terminology.",
+    "terms": {
+      "Primary Prevention": "Measures that prevent the onset of disease before it occurs, such as immunization, health education, smoking cessation, and nutrition counseling",
+      "Secondary Prevention": "Early detection and intervention to halt disease progression through screening programs, routine check-ups, and early treatment of conditions like hypertension and diabetes",
+      "Tertiary Prevention": "Minimizing the impact of established diseases through rehabilitation, disease management, and supportive care to prevent complications and improve quality of life",
+      "Primordial Prevention": "Measures designed to prevent the development of risk factors themselves, acting early in life or even preconception to address root causes of disease",
+      "Epidemiology": "The study of the distribution and determinants of disease frequency in human populations; the core science of preventive medicine",
+      "Incidence": "The number of new cases of a disease occurring in a population over a specified period of time",
+      "Prevalence": "The total number of existing cases of a disease in a population at a given point in time or over a period",
+      "Relative Risk": "The ratio of the probability of disease in an exposed group to the probability in an unexposed group",
+      "Number Needed to Treat (NNT)": "The number of patients who need to be treated with an intervention to prevent one additional adverse outcome",
+      "Sensitivity": "The ability of a screening test to correctly identify those with the disease (true positive rate)",
+      "Specificity": "The ability of a screening test to correctly identify those without the disease (true negative rate)",
+      "Chemoprophylaxis": "The use of drugs or biological agents to prevent disease in individuals at risk (e.g., antimalarial prophylaxis, statin therapy)",
+      "Population Health Management": "Systematic approach to improving health outcomes across defined populations through data-driven interventions and policy",
+      "Health Disparities": "Preventable differences in health outcomes and their determinants experienced by disadvantaged populations",
+      "Social Determinants of Health (SDOH)": "The conditions in which people are born, grow, live, work, and age that influence health outcomes, including socioeconomic status, education, and environment",
+      "Precision Prevention": "Leveraging genomics, biomarkers, and individual risk profiles to deliver targeted preventive interventions rather than one-size-fits-all approaches",
+      "Digital Epidemiology": "Integration of real-time data streams, smart technologies, and advanced analytics to transform disease tracking and health assessment",
+      "ABPM": "American Board of Preventive Medicine, the certifying body that recognizes three subspecialties: Public Health/General Preventive Medicine, Occupational Medicine, and Aerospace Medicine",
+      "MPH": "Master of Public Health, an advanced degree in public health that is commonly required or expected for preventive medicine physicians",
+      "ACPM": "American College of Preventive Medicine, the national professional society for preventive medicine physicians"
+    }
+  },
+  "career_psychology": {
+    "summary": "Preventive medicine physicians occupy a unique position in medicine, focusing on population-level health rather than individual patient encounters. They report exceptionally high career satisfaction (4.1/5), with 100% saying they would choose this specialty again. The specialty offers one of the best work-life balance profiles in medicine with typically no call requirements, but compensation is among the lowest for physician specialties. Burnout rates are lower than most medical specialties, reflecting the more manageable lifestyle and mission-driven nature of the work.",
+    "career_path": [
+      "Undergraduate education (4 years) with pre-medical coursework",
+      "Medical school - MD or DO degree (4 years)",
+      "Clinical internship year (1 year, often in internal medicine or family medicine)",
+      "Preventive medicine residency (2-3 years, typically includes completion of MPH degree)",
+      "Optional fellowship in subspecialty (occupational medicine, aerospace medicine, clinical informatics)",
+      "Board certification through ABPM (voluntary but standard)",
+      "Early career positions: state/local health department, CDC EIS Officer, academic faculty, military preventive medicine",
+      "Mid-career: Chief Medical Officer, epidemiology director, department chair, senior federal positions (CDC, NIH, HRSA)",
+      "Senior leadership: State Health Officer, Surgeon General positions, public health institute director, global health leadership"
+    ],
+    "salary_range": {
+      "entry_level": "$150,000 - $200,000 per year (early career, government or academic positions)",
+      "mid_career": "$200,000 - $280,000 per year (5-15 years experience)",
+      "senior": "$250,000 - $350,000+ per year (leadership roles, CMO positions)",
+      "note": "Compensation is among the lowest of physician specialties because work focuses on population health, policy, and prevention rather than direct billable patient care. Many work for government agencies, academic institutions, or nonprofits with lower pay scales."
+    },
+    "fears": [
+      "Budget cuts to public health infrastructure threatening programs and positions",
+      "Political interference in evidence-based public health decision-making",
+      "Being undervalued by clinical colleagues who see preventive medicine as 'not real medicine'",
+      "Difficulty demonstrating the impact of prevention when success means disease does NOT happen",
+      "Lower compensation relative to clinical specialties despite equal training length",
+      "Erosion of public trust in public health institutions and recommendations",
+      "Rapid changes in health data regulations and privacy laws complicating research",
+      "Struggling to secure sustained funding for long-term prevention programs"
+    ],
+    "motivation": [
+      "Making health impact at scale - improving outcomes for entire communities and populations",
+      "Mission-driven work aligned with deeply held values about health equity and disease prevention",
+      "Exceptional work-life balance with typically no call requirements or overnight emergencies",
+      "Intellectual diversity of work spanning clinical care, research, policy, and program management",
+      "100% of practitioners report they would choose this specialty again (highest of all specialties)",
+      "Opportunity to influence health policy and shape public health systems",
+      "Growing relevance and demand driven by pandemic preparedness and chronic disease epidemics",
+      "Collaborative, interdisciplinary work environment with diverse professional teams"
+    ],
+    "burnout_factors": [
+      "Administrative burden from navigating bureaucratic processes in government and academic settings",
+      "Frustration with slow pace of systemic change and policy implementation",
+      "Underfunding of public health programs relative to the magnitude of health challenges",
+      "Feeling invisible in the medical profession due to the population-level focus of the work",
+      "Challenge of communicating complex epidemiological concepts to non-technical stakeholders and the public",
+      "Political pressures that may conflict with evidence-based recommendations",
+      "Grant writing and funding instability creating job security concerns",
+      "Moral distress when preventable diseases continue due to inadequate public health resources"
+    ]
+  },
+  "community": {
+    "summary": "The preventive medicine physician community is tight-knit and mission-driven, centered around the American College of Preventive Medicine (ACPM) and the American Board of Preventive Medicine (ABPM). Professional development opportunities include the annual Preventive Medicine conference series, lifestyle medicine events, and numerous public health conferences. The community is active in academic, government, and military settings, with strong online presence through professional organizations and public health networks.",
+    "associations": [
+      {
+        "name": "American College of Preventive Medicine (ACPM)",
+        "description": "The primary national professional society for preventive medicine physicians, providing advocacy, education, board certification support, and networking for over six decades",
+        "url": "https://www.acpm.org"
+      },
+      {
+        "name": "American Board of Preventive Medicine (ABPM)",
+        "description": "The board certification body promoting high standards through certification and continuing certification in preventive health subspecialties",
+        "url": "https://www.theabpm.org"
+      },
+      {
+        "name": "American Public Health Association (APHA)",
+        "description": "The largest public health organization in the world, bringing together diverse public health professionals including preventive medicine physicians",
+        "url": "https://www.apha.org"
+      },
+      {
+        "name": "American College of Lifestyle Medicine (ACLM)",
+        "description": "Professional medical association for physicians and practitioners using lifestyle interventions as primary prevention and treatment",
+        "url": "https://lifestylemedicine.org"
+      },
+      {
+        "name": "American College of Occupational and Environmental Medicine (ACOEM)",
+        "description": "Professional society for occupational medicine subspecialists within preventive medicine, supporting board certification through ABPM",
+        "url": "https://acoem.org"
+      },
+      {
+        "name": "Association for Prevention Teaching and Research (APTR)",
+        "description": "Organization focused on advancing prevention education and research in medical schools and residency programs"
+      },
+      {
+        "name": "Society for Epidemiologic Research (SER)",
+        "description": "Professional society fostering epidemiologic research and its applications to public health"
+      }
+    ],
+    "events": [
+      {
+        "name": "Preventive Medicine 2026 (ACPM Annual Conference)",
+        "date": "2026 (dates TBA)",
+        "location": "Baltimore, Maryland",
+        "description": "High-quality CME programming, plenary sessions, and networking positioning preventive medicine physicians as public health leaders across diverse sectors"
+      },
+      {
+        "name": "Preventive Medicine 2025 (ACPM Annual Conference)",
+        "date": "2025",
+        "location": "United States",
+        "description": "Brings together leaders across healthcare to collaborate and learn with high-quality CME programming and inspirational plenary sessions"
+      },
+      {
+        "name": "Lifestyle Medicine Conference 2026 (ACLM)",
+        "date": "2026",
+        "location": "Orlando, FL and Online",
+        "description": "Annual conference focused on lifestyle medicine interventions for disease prevention and health promotion"
+      },
+      {
+        "name": "APHA Annual Meeting & Expo",
+        "date": "Annual (typically October-November)",
+        "location": "Varies (major US cities)",
+        "description": "The largest gathering of public health professionals in the US with thousands of scientific sessions and networking events"
+      },
+      {
+        "name": "15th International Conference on Preventive Medicine & Public Health",
+        "date": "September 15-16, 2025",
+        "location": "Paris, France",
+        "description": "International conference uniting leading experts to explore pressing issues in preventive medicine and public health"
+      },
+      {
+        "name": "Preventive Medicine 2026 International Conference",
+        "date": "August 27-28, 2026",
+        "location": "Berlin, Germany",
+        "description": "International conference on preventive medicine and public health research"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "ACPM Member Community",
+        "description": "Exclusive networking and resource-sharing platform for ACPM members with webinars, forums, and professional development resources"
+      },
+      {
+        "name": "CDC Epidemic Intelligence Service (EIS) Alumni Network",
+        "description": "Powerful network of current and former EIS officers who have trained in applied epidemiology and preventive medicine"
+      },
+      {
+        "name": "Public Health Physicians LinkedIn Groups",
+        "description": "Professional networking groups including 'Preventive Medicine Physicians' and 'Public Health Professionals' on LinkedIn"
+      },
+      {
+        "name": "ACPM Webinar Series",
+        "description": "Regular online educational events covering critical areas in disease prevention, health promotion, and public health practice"
+      },
+      {
+        "name": "Society for Epidemiologic Research (SER) Online Community",
+        "description": "Professional community for epidemiologists and preventive medicine researchers"
+      },
+      {
+        "name": "PH SPOT (Public Health Career Community)",
+        "description": "Online platform connecting public health professionals with job opportunities, career resources, and professional development"
+      }
+    ]
+  },
+  "market": {
+    "summary": "The market for preventive medicine physicians is driven by an aging population, rising chronic disease burden, and heightened awareness of prevention following the COVID-19 pandemic. Overall physician employment is projected to grow 3% from 2024 to 2034, with preventive medicine seeing strong demand particularly in government, academic, and nonprofit settings. The AAMC projects a physician shortage of up to 86,000 by 2036. The broader preventive medicine market is valued at over $450 billion (2025) and growing rapidly, fueled by digital health investment, precision prevention, and public health infrastructure modernization.",
+    "job_outlook": {
+      "growth_rate": "3% projected growth for physicians and surgeons overall from 2024 to 2034",
+      "annual_openings": "Approximately 23,600 openings per year for all physicians/surgeons; preventive medicine is a niche subset",
+      "primary_drivers": "Aging population, chronic disease prevalence, pandemic preparedness, public health infrastructure investment",
+      "bls_source": "Bureau of Labor Statistics, Occupational Outlook Handbook 2024-2034",
+      "shortage_projection": "AAMC projects a physician shortage of up to 86,000 by 2036, with primary care and rural medicine facing steepest deficits"
+    },
+    "salary_market": {
+      "median_note": "Preventive medicine physicians often earn among the lowest salaries in medicine due to focus on population health, policy, and government/academic employment",
+      "compensation_range": "$150,000 - $350,000+ depending on setting, seniority, and subspecialty",
+      "highest_paying_settings": "Chief Medical Officer roles, healthcare consulting, pharmaceutical/biotech industry, senior federal positions",
+      "lowest_paying_settings": "State and local health departments, academic faculty positions, nonprofit organizations",
+      "trade_offs": "Lower compensation offset by exceptional lifestyle, no call, manageable hours, and high career satisfaction"
+    },
+    "demand_drivers": [
+      "Aging US population requiring more chronic disease management and preventive care",
+      "Rising chronic illness rates (diabetes, cardiovascular disease, obesity) demanding population-level interventions",
+      "Post-pandemic increased investment in public health infrastructure and preparedness",
+      "AAMC-projected physician shortage of 86,000 by 2036 creating opportunities across specialties",
+      "Growing employer demand for workplace wellness and occupational health programs",
+      "Expansion of value-based care models that reward prevention over treatment",
+      "Heightened focus on health equity and social determinants of health in policy",
+      "Federal and state funding for public health workforce development"
+    ],
+    "market_trends": [
+      "Preventive medicine market valued at over $450 billion (2025), growing through 2032 with investment in digital health and precision prevention",
+      "Physician job market stabilizing in 2026 after years of crisis management, with structural solutions emerging",
+      "AI integration enabling predictive analytics for disease surveillance and personalized prevention (94% accuracy in early-stage lung cancer detection)",
+      "Digital epidemiology transforming disease tracking through real-time data streams, wearables, and smart technologies",
+      "Precision and personalized prevention leveraging genomics for targeted risk assessment and intervention",
+      "Telemedicine expansion for preventive counseling and wellness visits",
+      "Value-based care shifting reimbursement models to favor prevention over treatment",
+      "Growing demand for preventive medicine expertise in corporate wellness and healthcare consulting"
+    ]
+  },
+  "quality_score": 0.80,
+  "sources_count": 32,
+  "verified_sources": 14,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "preventive medicine physician daily tasks responsibilities typical day US 2025 2026",
+      "sources": [
+        "https://www.owlguru.com/career/preventive-medicine-physicians/job-description/",
+        "https://www.indeed.com/career-advice/finding-a-job/what-is-preventive-medicine-physician",
+        "https://www.onetonline.org/link/summary/29-1229.05",
+        "https://www.mynextmove.org/profile/summary/29-1229.05",
+        "https://www.webmd.com/a-to-z-guides/what-is-a-preventive-medicine-physician",
+        "https://www.careerfittest.com/how-to-become-a-preventive-medicine-physician/",
+        "https://www.wvu.edu/academics/careers/preventive-medicine-physicians/"
+      ]
+    },
+    {
+      "query": "preventive medicine physician licensing board certification requirements US 2025 2026",
+      "sources": [
+        "https://www.cool.osd.mil/dciv/credential/index.html?cert=cphgpm755",
+        "https://www.theabpm.org/become-certified/certification-overview/",
+        "https://www.theabpm.org/become-certified/specialties/specialty-eligibility-requirements-table/",
+        "https://vault.com/professions/preventive-medicine-physicians/requirements",
+        "https://acoem.org/membership/board-certification",
+        "https://www.theabpm.org/become-certified/specialties/public-health-general-preventive-medicine/",
+        "https://www.ama-assn.org/medical-residents/transition-resident-attending/licensing-and-board-certification-what-residents",
+        "https://www.acpm.org/education-events/board-certification/"
+      ]
+    },
+    {
+      "query": "preventive medicine physician software tools technology epidemiology 2025 2026",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11907169/",
+        "https://www.jmir.org/2025/1/e59165",
+        "https://www.sermo.com/resources/healthcare-trends/",
+        "https://www.echelon.health/five-preventive-health-trends-2025/",
+        "https://www.theabpm.org/",
+        "https://www.weforum.org/stories/2026/01/preventive-medicine-longevity/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12888984/"
+      ]
+    },
+    {
+      "query": "preventive medicine public health physician terminology concepts key terms",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Preventive_healthcare",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2274388/",
+        "https://www.sgu.edu/school-of-medicine/blog/what-is-preventive-medicine/",
+        "https://www.ebsco.com/research-starters/health-and-medicine/preventive-medicine",
+        "https://preventivemedicine.pophealth.wisc.edu/what-is-preventive-medicine/",
+        "https://www.acpm.org/about-acpm/what-is-preventive-medicine/",
+        "https://freida.ama-assn.org/specialty/public-health-and-general-preventive-medicine"
+      ]
+    },
+    {
+      "query": "preventive medicine physician career path salary burnout satisfaction US 2025 2026",
+      "sources": [
+        "https://www.salarydr.com/specialty/preventive-medicine",
+        "https://www.themdpreferrednetwork.com/physician-burnout-2026/",
+        "https://www.ama-assn.org/practice-management/physician-health/burnout-eases-doctors-every-career-stage-support-rises",
+        "https://www.aha.org/aha-center-health-innovation-market-scan/2024-07-16-work-remains-physician-burnout-rates-are-coming-down",
+        "https://www.sermo.com/resources/physician-salary-by-specialty/",
+        "https://comphealth.com/resources/physician-salary-report",
+        "https://www.keragon.com/blog/physician-burnout-by-specialty",
+        "https://www.medscape.com/slideshow/2025-compensation-overview-6018103"
+      ]
+    },
+    {
+      "query": "preventive medicine physician professional associations conferences communities US 2025 2026",
+      "sources": [
+        "https://www.futurehealthcareconferences.com/",
+        "https://acpm.org/education-events/events/",
+        "https://preventivemedicine.healthconferences.org/",
+        "https://pm2025.acpm.org/",
+        "https://pm2026.acpm.org/",
+        "https://public-health.magnusconferences.com/program/scientific-sessions/preventive-medicine",
+        "https://lifestylemedicine.org/aclm-conference/"
+      ]
+    },
+    {
+      "query": "preventive medicine physician job outlook demand market trends US 2025 2026",
+      "sources": [
+        "https://medicushcs.com/locum-tenens/resources/healthcare-trends-insights-for-physicians-and-advanced-practitioners",
+        "https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm",
+        "https://www.doccafe.com/physician-job-market-trends",
+        "https://www.recruiter.com/careers/preventive-medicine-physicians/outlook/",
+        "https://www.salarydr.com/specialty/preventive-medicine",
+        "https://www.jacksonphysiciansearch.com/insights/2025-physician-job-market-insights/",
+        "https://www.aamc.org/data-reports/workforce/report/physician-workforce-projections",
+        "https://ladhsphysicianjobs.com/trends-in-u-s-physician-employment-the-2026-outlook/"
+      ]
+    }
+  ]
+}

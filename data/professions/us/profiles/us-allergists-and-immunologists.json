@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-allergists-and-immunologists",
+  "profession_name": "Allergists and Immunologists",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Average 42-44 hours/week, significantly lower than most medical specialties. Typical 8AM-5PM, four days/week for patient care. See 15-22 patients/day in outpatient settings. Day starts with answering patient cases (30 min), then physical exams, diagnostic tests (skin prick, intradermal, patch tests), prescribing medications, developing treatment plans. Lunch break for charting, calls, staff meetings. End day with charting and emails. Fridays often reserved for admin work, accounting, and CME. No or minimal overnight call. Very few inpatient responsibilities.",
+    "documents": ["Patient encounter notes (SOAP format)", "Allergy skin test results documentation", "Immunotherapy treatment plans and dosing schedules", "Pulmonary function test (spirometry) results", "Prior authorization forms for biologic medications", "Referral letters", "Lab orders (IgE panels, specific allergen testing)", "MIPS quality reporting", "Research protocols (academic settings)", "Insurance claim forms"],
+    "deadlines": ["ABAI board certification exam (within 5 years of fellowship)", "MOC 10-year cycles with annual requirements (25 CME credits/year)", "MIPS reporting deadlines", "Prior authorization responses", "Patient immunotherapy scheduling", "CME requirements (150 allergy-specific credits per 5 years)", "DEA license renewal", "State medical license renewal", "Malpractice insurance renewal"],
+    "seasonality": "Spring and fall allergy seasons (tree pollen March-May, ragweed August-October) create peak patient volumes. Asthma exacerbations increase in fall/winter. Food allergy consultations spike around holidays. Immunotherapy start-ups often clustered in winter. Year-round demand for immunodeficiency patients."
+  },
+  "regulatory": {
+    "laws": ["State Medical Practice Acts", "HIPAA", "MACRA/MIPS quality payment program", "21st Century Cures Act", "FDA regulations on allergen extracts and biologics", "State prescriptive authority laws", "Stark Law and Anti-Kickback Statute"],
+    "licensing": "MD or DO degree. Board certification in Internal Medicine (ABIM) or Pediatrics (ABP) first. 24+ months allergy/immunology fellowship (ACGME-accredited). ABAI Certification Examination ($2,650). 5-year window for certification after fellowship. MOC: 10-year cycles, 25 CME credits annually, Continuous Qualification Examination. DEA registration required.",
+    "penalties": "License revocation/suspension disqualifies from certification. Restricted licenses affect MOC status. MIPS non-compliance: negative payment adjustments. Solo practitioners face highest penalty rates (49.16%). Malpractice liability for anaphylaxis management errors. Exam misconduct: civil/criminal liability. CQE annual fee: $2,500; CCP annual fee: $400.",
+    "regulatory_bodies": ["ABAI (American Board of Allergy and Immunology)", "ABIM (American Board of Internal Medicine)", "ABP (American Board of Pediatrics)", "ACGME (residency/fellowship accreditation)", "CMS (MIPS/QPP)", "FDA (allergen extracts, biologics)", "State Medical Boards"]
+  },
+  "tools": {
+    "software": ["ModMed EMA (designed by allergists, #1 allergy-specific EHR, AI-powered scribe)", "Epic (large health systems)", "NextGen Healthcare (AI ambient listening)", "DrChrono (iPad-based, vaccine inventory)", "athenaOne (Best in KLAS for independent practices)", "eClinicalWorks (Sunoh.ai scribe)", "DocVilla (allergy-specific templates, spirometry integration)", "CareCloud"],
+    "platforms": ["UpToDate (clinical reference)", "Epocrates (drug reference)", "Xtract Solutions (immunotherapy management)", "AAAAI resources and guidelines", "Doximity (physician networking)", "Medscape Allergy & Immunology"],
+    "gov_portals": ["CMS QPP Portal (MIPS reporting)", "FDA MedWatch (adverse event reporting)", "CDC immunization schedules", "State medical board portals", "DEA CSOS", "NIH/NIAID research portals"]
+  },
+  "terminology": {
+    "jargon": ["Atopy (genetic tendency to allergies)", "Wheals and flare (skin test reactions)", "Anaphylaxis", "Desensitization", "Immunotherapy", "Biologic therapy", "Mast cell degranulation", "Histamine release", "Cross-reactivity", "Oral food challenge", "Component-resolved diagnostics", "Allergic cascade", "Type I-IV hypersensitivity"],
+    "abbreviations": ["AAAAI - American Academy of Allergy Asthma Immunology", "ACAAI - American College of Allergy Asthma Immunology", "ABAI - American Board of Allergy Immunology", "IgE - Immunoglobulin E", "SPT - Skin Prick Test", "RAST - Radioallergosorbent Test", "SCIT - Subcutaneous Immunotherapy (allergy shots)", "SLIT - Sublingual Immunotherapy", "OIT - Oral Immunotherapy", "FPIES - Food Protein-Induced Enterocolitis", "EoE - Eosinophilic Esophagitis", "CVID - Common Variable Immunodeficiency", "SCID - Severe Combined Immunodeficiency", "PFT - Pulmonary Function Test", "FAAAAI - Fellow of AAAAI"]
+  },
+  "career_psychology": {
+    "career_levels": ["Medical Student", "Internal Medicine or Pediatrics Resident (3 years)", "Allergy/Immunology Fellow (2 years)", "Board-Eligible Allergist", "Board-Certified Allergist", "Senior/Experienced Allergist (10+ years)", "Practice Owner/Partner", "Academic Faculty/Researcher", "Division Chief / Department Head", "FAAAAI (Fellow designation)"],
+    "fears": ["Anaphylaxis management errors (life-threatening reactions)", "Growing shortage of allergists (2,100 projected shortfall)", "Declining reimbursement rates (20-year trend)", "Administrative burden reducing clinical time", "Prior authorization delays harming patients", "Being replaced by primary care for simple cases", "Medical education debt ($193,000 average)", "Declining NIH grant support for researchers"],
+    "motivation": ["Excellent work-life balance (best lifestyle specialty in medicine)", "69-82% overall job satisfaction (higher than many specialties)", "Meaningful patient relationships", "73% would choose medicine again; 82% would stay in A&I", "Research opportunities in rapidly advancing field (biologics, immunotherapy)", "Clinical variety (allergy, asthma, immunodeficiency)", "Growing patient population due to increasing allergic disease prevalence"],
+    "burnout": "35-39% burnout rate (lower than 45-54% national physician average). Top causes: bureaucratic tasks (52%), EHR burden (25-40% excessive home EMR time), inadequate compensation (32%), decreasing reimbursements (28%). 50% report great deal of job stress. 60% say burnout affects personal relationships. Coping: 51% talk with family/friends, 39% exercise, 39% sleep. Private practice has less burnout than hospital employment. 50% would take salary reduction for better work-life balance."
+  },
+  "community": {
+    "reddit": ["r/Allergies", "r/medicine", "r/Residency", "r/immunology"],
+    "linkedin": ["AAAAI LinkedIn", "ACAAI LinkedIn", "Allergy and Immunology professional groups"],
+    "associations": ["AAAAI (American Academy of Allergy Asthma Immunology) — 7,000+ members, publishes JACI", "ACAAI (American College of Allergy Asthma Immunology) — 6,000+ members", "ABAI (American Board of Allergy Immunology — certification body)", "AAI (American Association of Immunologists) — 7,300+ members in 57 countries", "CIS (Clinical Immunology Society) — 650+ members", "JCAAI (Joint Council)", "WAO (World Allergy Organization — 89 societies, 100 countries)"],
+    "conferences": ["AAAAI Annual Meeting (7,000+ attendees)", "ACAAI Annual Scientific Meeting", "AAI IMMUNOLOGY Annual Meeting", "WAO International Scientific Conference", "CIS Annual Meeting"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "entry_level_post_fellowship": "180000-250000",
+      "mid_career": "250000-350000",
+      "experienced_15_plus_years": "350000-440000",
+      "private_practice_group": "342000-514000",
+      "academic": "236000-300000"
+    },
+    "national_average_usd": 298000,
+    "job_count": "Projected 72,500 new jobs by 2029; 2,100 allergist shortfall with no solution in sight",
+    "growth_rate": "3% projected (slower than average but critical shortage)",
+    "unemployment_rate": "Near 0% — demand far exceeds supply, especially rural (48% adequacy by 2035)",
+    "work_arrangements": ["Private practice (solo or group — highest paying)", "Academic medical centers (30-40% less pay but PSLF eligible)", "Hospital-employed", "Multi-specialty group practice", "Telehealth (emerging)", "Part-time/flexible schedules common"],
+    "trends": ["Salaries risen from $250K (2022) to $298K (2025) — 2.5% annual growth", "Sign-on bonuses average $18K (28% receive)", "Growing prevalence of allergic diseases driving demand", "Rural areas face acute shortage (48% adequacy)", "Biologic therapies expanding treatment options and revenue", "Private equity-backed practices attracting talent from academia", "AI tools (ModMed Scribe) reducing documentation burden", "Only 18% chose specialty for pay — work-life balance is primary motivator"]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "profession_id": "us-lawyers",
+  "profession_name": "Lawyers",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Lawyers work 42-54 hours per week at small-to-medium firms, significantly more at BigLaw (60-80+). 87% of firms offer remote work options; hybrid is the norm. Daily activities: legal research, drafting motions/briefs/contracts, client consultations, court appearances, depositions, negotiations, reviewing documents, case strategy meetings, and billing time. 78% report administrative tasks prevent focus on strategic work. 79% now use AI tools in some capacity.",
+    "documents": ["Legal briefs and motions", "Contracts and agreements", "Discovery documents", "Depositions", "Court filings", "Client correspondence", "Engagement letters", "Legal memoranda", "Settlement agreements", "Compliance opinions", "Billing records (time entries)"],
+    "deadlines": ["Court filing deadlines (statute of limitations, response deadlines)", "Discovery deadlines", "Trial dates", "Client deliverable deadlines", "Regulatory filing dates", "CLE (Continuing Legal Education) requirements", "Bar dues payment", "Trust account reconciliation (monthly)"],
+    "seasonality": "Tax law peaks January-April. Corporate M&A surges in Q4. Court calendars vary by jurisdiction. Patent filing deadlines create spikes. Year-end deal closings. Government fiscal year (October 1) affects regulatory work. Summer associate programs (May-August)."
+  },
+  "regulatory": {
+    "laws": ["State Bar Rules of Professional Conduct (Model Rules)", "Attorney-Client Privilege", "ABA Model Rules of Professional Conduct", "IOLTA (Interest on Lawyer Trust Accounts) regulations", "State-specific unauthorized practice of law (UPL) rules", "AI in legal practice regulations (emerging 2026)"],
+    "licensing": "J.D. degree from ABA-accredited law school. Pass state bar exam (NextGen UBE debuting July 2026 — shorter, computer-based, practical skills focus). Bar admission by state. CLE requirements vary by state (12-36 hours annually). Multi-state practice via reciprocity/waiver agreements. Federal court separate admission. Loan caps: $50K/year, $200K lifetime for professional degrees (2025 change).",
+    "penalties": "Disbarment, suspension, or public/private reprimand by state bar. Malpractice liability. Contempt of court for filing deadline violations. Trust account mishandling can result in criminal charges. Unauthorized practice of law penalties. Multiple malpractice settlements trigger state board investigations.",
+    "regulatory_bodies": ["State Bar Associations (mandatory membership)", "ABA (American Bar Association) — voluntary, standard-setting", "State Supreme Courts (ultimate licensing authority)", "NCBE (National Conference of Bar Examiners)", "State Disciplinary Boards", "Federal court admission committees"]
+  },
+  "tools": {
+    "software": ["Clio (leading practice management)", "PracticePanther", "Westlaw (Thomson Reuters legal research)", "Lexis+ AI (LexisNexis research)", "Microsoft 365", "CoCounsel (Thomson Reuters AI)", "Harvey AI", "Spellbook (contract AI)", "LeanLaw (legal accounting)", "NetDocuments (document management)", "Relativity (eDiscovery)"],
+    "platforms": ["Doximity/LinkedIn (professional networking)", "Fastcase/vLex", "PACER (federal court filings)", "State court e-filing systems", "Zoom/Teams (virtual hearings)", "Slack/Teams (firm communication)"],
+    "gov_portals": ["PACER (Public Access to Court Electronic Records)", "State court e-filing portals", "USPTO (Patent and Trademark Office)", "SEC EDGAR (securities filings)", "State bar member portals", "IRS e-Services (tax attorneys)"]
+  },
+  "terminology": {
+    "jargon": ["Billable hours", "Retainer", "Pro bono", "Discovery", "Deposition", "Voir dire", "Habeas corpus", "Brief", "Motion to dismiss", "Summary judgment", "Due diligence", "Escrow", "Fiduciary duty", "Precedent/stare decisis", "Privileged communication", "Conflict check"],
+    "abbreviations": ["J.D. - Juris Doctor", "LL.M. - Master of Laws", "Esq. - Esquire", "ABA - American Bar Association", "CLE - Continuing Legal Education", "IOLTA - Interest on Lawyer Trust Accounts", "UPL - Unauthorized Practice of Law", "M&A - Mergers and Acquisitions", "IP - Intellectual Property", "PI - Personal Injury", "FTC - Federal Trade Commission", "SCOTUS - Supreme Court of the United States", "PACER - Public Access to Court Electronic Records", "SOL - Statute of Limitations", "RFP - Request for Proposal"]
+  },
+  "career_psychology": {
+    "career_levels": ["Law Student (1L, 2L, 3L)", "Summer Associate", "Junior Associate (1st-3rd year)", "Mid-Level Associate (4th-6th year)", "Senior Associate (7th+ year)", "Of Counsel", "Non-Equity Partner", "Equity Partner", "Solo Practitioner", "In-House Counsel (General Counsel track)", "Government Attorney", "Judge"],
+    "fears": ["Malpractice claims", "Missing critical filing deadlines", "Losing a major case", "Disbarment or disciplinary action", "AI replacing legal work", "Not making partner", "Trust account errors", "Client confidentiality breach", "Unsustainable billable hour pressure", "Student loan debt ($200K+ average)"],
+    "motivation": ["Intellectual challenge and problem-solving", "Advocacy and justice for clients", "Financial rewards (especially BigLaw/partner track)", "Prestige and social standing", "Making a difference in society (pro bono, public interest)", "Autonomy as solo practitioner or partner", "Diverse practice area options"],
+    "burnout": "4 in 5 lawyers experience burnout. 60% have seriously considered leaving the profession due to stress. 48.4% report losing motivation. 78% say admin tasks prevent strategic work. Solo practitioners most affected by poor work-life balance (47%). Depression rate at 33% (lowest since 2019 but still high). Positive trend: firms taking mental health more seriously — 36% can use all vacation time (up 6 pts), 41% firms allow extended mental health leave (up 5 pts)."
+  },
+  "community": {
+    "reddit": ["r/lawyers (verified attorneys only)", "r/LawFirm (practice management)", "r/biglaw (large firm associates)", "r/LawSchool", "r/Ask_Lawyers"],
+    "linkedin": ["ABA (American Bar Association) LinkedIn", "State bar association groups", "Practice area-specific groups", "In-House Counsel Network"],
+    "associations": ["ABA (American Bar Association) — largest voluntary legal association globally", "State and local bar associations (mandatory in most states)", "Association of Corporate Counsel (ACC) — in-house counsel", "National Association of Women Lawyers (NAWL)", "National Bar Association (NBA) — African American attorneys", "Hispanic National Bar Association (HNBA)", "Federal Bar Association"],
+    "conferences": ["ABA Annual Meeting", "LegalTech", "ILTACON (International Legal Technology Association)", "ACC Annual Meeting", "State bar annual meetings"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "first_year_associate_biglaw": "225000-230000",
+      "mid_level_associate": "200000-350000",
+      "senior_associate": "300000-500000",
+      "partner_equity": "500000-1565000+",
+      "in_house_counsel": "150000-400000",
+      "solo_practitioner": "80000-250000",
+      "government_attorney": "70000-180000"
+    },
+    "national_average_usd": 176580,
+    "job_count": "159,600 legal job postings in 2025; 45,300 lawyer-specific jobs at firms",
+    "growth_rate": "8% projected through 2033 (faster than average); firms grew headcount 3% in 2025",
+    "unemployment_rate": "0.8% — well below national average",
+    "work_arrangements": ["BigLaw (hybrid dominant)", "Mid-size/small firms (increasingly remote)", "Solo practice", "In-house corporate", "Government (DOJ, SEC, state AG)", "Public interest/Legal aid", "Remote/fully virtual firms (growing)"],
+    "trends": ["NextGen bar exam launching July 2026 — practical skills focus", "AI adoption at 79% — ChatGPT (52%), CoCounsel (26%), Lexis+ AI (24%)", "Antitrust (+25%), Securities (+22%), IP Litigation (+20%) lead compensation premiums", "Hybrid/remote expanding talent pools nationally", "Student loan caps ($50K/year, $200K lifetime) reshaping law school economics", "Growing demand for AI-proficient attorneys", "Third consecutive year of historically strong hiring"]
+  }
+}

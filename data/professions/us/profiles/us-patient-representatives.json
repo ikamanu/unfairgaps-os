@@ -1,0 +1,232 @@
+{
+  "profession_id": "us-patient-representatives",
+  "profession_name": "Patient Representatives",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Patient representatives (patient advocates) assist patients in navigating healthcare systems, resolving complaints, managing insurance issues, and ensuring patient rights are upheld in hospitals, clinics, and insurance companies.",
+    "typical_tasks": [
+      "Meet one-on-one with patients to discuss healthcare, insurance, and procedure costs",
+      "Review insurance claims and help patients compile documentation",
+      "Communicate with healthcare professionals to find appropriate care",
+      "Contact insurance companies about denied claims and file appeals",
+      "Schedule appointments and organize medical records",
+      "Review hospital census to identify patients needing assistance",
+      "Investigate and resolve patient complaints",
+      "Ensure compliance with patient rights policies",
+      "Attend medical appointments with patients as advocates",
+      "Connect patients with doctors, specialists, and community resources",
+      "Mediate between patients and hospital staff",
+      "Document all patient interactions and resolutions"
+    ],
+    "key_documents": [
+      "Patient complaint/grievance forms",
+      "Insurance claim appeals",
+      "Patient rights documentation",
+      "Case resolution reports",
+      "Satisfaction survey results",
+      "Regulatory compliance reports (CMS Conditions of Participation)",
+      "HIPAA authorization forms"
+    ],
+    "deadlines": {
+      "grievance_response": "CMS requires written response to grievances within 7 days",
+      "complaint_resolution": "Internal policies typically 30-60 day resolution target",
+      "insurance_appeals": "Per insurance carrier timelines (30-180 days depending on type)",
+      "regulatory_reporting": "Quarterly patient experience data to CMS for HCAHPS"
+    },
+    "seasonality": "Higher volume during open enrollment (October-December), year-end insurance transitions, and post-holiday admissions. Complaints may spike after billing cycles.",
+    "sources": [
+      {"url": "https://www.indeed.com/hire/job-description/patient-advocate", "fact": "Patient advocate job description including daily responsibilities"},
+      {"url": "https://www.solace.health/articles/patient-advocate", "fact": "Patient advocate roles updated June 2025"}
+    ]
+  },
+  "regulatory": {
+    "summary": "No mandatory state licensure for patient representatives. CMS Conditions of Participation require hospitals to have grievance processes. CPXP (Certified Patient Experience Professional) is the primary voluntary certification. HIPAA compliance essential.",
+    "key_laws": [
+      {
+        "name": "CMS Conditions of Participation — Patient Rights",
+        "detail": "Hospitals must inform patients of their rights, establish grievance procedures, and respond to complaints",
+        "reference": "42 CFR § 482.13"
+      },
+      {
+        "name": "HIPAA",
+        "detail": "Patient information protection in all advocacy interactions",
+        "reference": "45 CFR Parts 160, 164"
+      },
+      {
+        "name": "EMTALA (Emergency Medical Treatment and Labor Act)",
+        "detail": "Patient advocates must ensure patients are aware of their rights to emergency care regardless of insurance",
+        "reference": "42 USC § 1395dd"
+      },
+      {
+        "name": "Patient Self-Determination Act",
+        "detail": "Requires healthcare facilities to inform patients about advance directives",
+        "status": "Active"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "No mandatory licensure in any state",
+        "CPXP (Certified Patient Experience Professional) — voluntary, offered by The Beryl Institute",
+        "CPXP requires 3+ years experience or 30 PXE continuing education credits",
+        "CPXP exam: 150 questions, $475 fee, valid 3 years",
+        "Bachelor's degree in healthcare administration, social work, or related field preferred",
+        "Some positions require CHAM (Certified Healthcare Access Manager) credential"
+      ],
+      "certifying_bodies": [
+        "The Beryl Institute (CPXP certification)",
+        "NAHAM — National Association of Healthcare Access Management (CHAM)",
+        "AAPT — American Association of Patient Technicians (varies)"
+      ]
+    },
+    "penalties": "CMS can cite hospitals for patient rights violations (deficiencies). HIPAA violations $141-$2,134,831 per violation. No direct penalties on individual patient representatives typically.",
+    "sources": [
+      {"url": "https://theberylinstitute.org/cpxp-exam-overview/", "fact": "CPXP exam: 150 questions, $475, 3-year certification, requires 3+ years experience"},
+      {"url": "https://tricare.mil/FAQs/General/GEN_PatientAdvocate", "fact": "TRICARE patient advocate role description"}
+    ]
+  },
+  "tools": {
+    "summary": "Patient representatives use hospital CRM/grievance tracking systems, EHR for case review, patient experience survey platforms (Press Ganey, NRC Health), and communication tools.",
+    "primary_software": [
+      {"name": "Press Ganey / NRC Health / Qualtrics XM", "purpose": "Patient satisfaction survey platforms and analytics"},
+      {"name": "Hospital EHR (Epic, Cerner/Oracle Health)", "purpose": "Patient record access for case review"},
+      {"name": "Grievance tracking systems (RL Solutions, Quantros)", "purpose": "Log, track, and resolve patient complaints"},
+      {"name": "Insurance verification systems", "purpose": "Check patient coverage and benefits"},
+      {"name": "Microsoft Office / Google Workspace", "purpose": "Documentation, reporting, communication"},
+      {"name": "CMS HCAHPS reporting tools", "purpose": "Submit patient experience data to CMS"}
+    ],
+    "pain_points": [
+      "Fragmented systems requiring multiple logins",
+      "Limited EHR access for non-clinical staff",
+      "Manual complaint tracking in some facilities",
+      "Difficulty measuring resolution effectiveness",
+      "Communication gaps between departments"
+    ],
+    "sources": [
+      {"url": "https://www.coursera.org/articles/patient-advocate", "fact": "Patient advocate tools and workplace description"},
+      {"url": "https://www.advisory.com/daily-briefing/2019/10/03/patient-advocates", "fact": "Hospital ombudsman roles and systems used"}
+    ]
+  },
+  "terminology": {
+    "summary": "Patient representatives use healthcare administration, patient rights, and insurance terminology including grievance procedures, patient experience metrics, and regulatory compliance language.",
+    "key_terms": [
+      {"term": "HCAHPS", "meaning": "Hospital Consumer Assessment of Healthcare Providers and Systems — standardized patient satisfaction survey"},
+      {"term": "Grievance", "meaning": "Formal written complaint that triggers CMS-required response process"},
+      {"term": "Patient rights", "meaning": "CMS-mandated rights including informed consent, privacy, and complaint resolution"},
+      {"term": "Prior authorization", "meaning": "Insurance company pre-approval required before certain procedures"},
+      {"term": "EOB", "meaning": "Explanation of Benefits — insurance document detailing coverage decisions"},
+      {"term": "Appeal", "meaning": "Formal request to reverse insurance denial"},
+      {"term": "Advance directive", "meaning": "Patient's documented healthcare wishes (living will, healthcare proxy)"},
+      {"term": "Patient experience", "meaning": "Comprehensive measure of patient interactions with healthcare system"},
+      {"term": "SDOH", "meaning": "Social Determinants of Health — non-medical factors affecting health outcomes"},
+      {"term": "Care coordination", "meaning": "Organizing patient care across providers and settings"},
+      {"term": "Discharge planning", "meaning": "Process of preparing patient for safe transition from hospital"},
+      {"term": "PX", "meaning": "Patient Experience — commonly used abbreviation in the field"}
+    ],
+    "common_abbreviations": ["CPXP", "HCAHPS", "CMS", "EMTALA", "EOB", "PA (Prior Authorization)", "SDOH", "PX", "CHAM"],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/", "fact": "Healthcare occupation terminology from BLS"},
+      {"url": "https://theberylinstitute.org/cpxp-exam-overview/", "fact": "CPXP exam content areas defining patient experience terminology"}
+    ]
+  },
+  "career_psychology": {
+    "summary": "Patient representatives navigate emotional patient situations daily while working within bureaucratic healthcare systems. Career spans from entry-level rep to patient experience director. Emotional labor is significant.",
+    "career_levels": [
+      {"level": "Patient Services Representative", "salary_range": "$35,000-$45,000", "responsibilities": "Front-desk patient interaction, scheduling, basic complaint handling"},
+      {"level": "Patient Advocate/Representative", "salary_range": "$40,000-$55,000", "responsibilities": "Complaint resolution, insurance assistance, patient rights education"},
+      {"level": "Senior Patient Advocate/Ombudsman", "salary_range": "$55,000-$75,000", "responsibilities": "Complex case management, regulatory compliance, staff training"},
+      {"level": "Patient Experience Director/VP", "salary_range": "$100,000-$160,000+", "responsibilities": "Strategic PX initiatives, HCAHPS scores, CMS compliance, team leadership"}
+    ],
+    "main_fears": [
+      "HIPAA violations when advocating across departments",
+      "Failure to resolve patient complaints leading to regulatory citations",
+      "Emotional burnout from constant exposure to patient suffering",
+      "Being caught between patient needs and institutional policies",
+      "Regulatory non-compliance with CMS grievance requirements"
+    ],
+    "burnout_causes": [
+      "Emotional labor from daily exposure to patient distress",
+      "Bureaucratic frustration navigating insurance and hospital systems",
+      "Feeling powerless against institutional barriers",
+      "High volume of complaints with limited resolution authority",
+      "Secondary trauma from patient stories",
+      "Undervalued role with relatively low compensation"
+    ],
+    "growth_motivation": [
+      "CPXP certification for career advancement",
+      "Patient experience leadership/director roles",
+      "Healthcare administration advancement",
+      "Consulting/independent patient advocacy practice",
+      "Graduate education in healthcare administration or social work"
+    ],
+    "sources": [
+      {"url": "https://research.com/advice/how-to-become-a-patient-experience-manager-education-salary-and-job-outlook", "fact": "Patient experience manager salary $144,468 average"},
+      {"url": "https://www.salary.com/research/salary/listing/patient-service-representative-psr-salary", "fact": "Patient services representative salary $53,518 average"}
+    ]
+  },
+  "community": {
+    "summary": "The Beryl Institute is the primary patient experience professional community. NAHAM serves healthcare access management. Limited dedicated online communities compared to clinical professions.",
+    "professional_associations": [
+      {"name": "The Beryl Institute", "url": "https://theberylinstitute.org", "membership_value": "CPXP certification, PX Journal, conferences, networking, resources", "mandatory": false},
+      {"name": "NAHAM — National Association of Healthcare Access Management", "url": "https://www.naham.org", "membership_value": "CHAM certification, advocacy, networking for healthcare access professionals", "mandatory": false},
+      {"name": "SHCA — Society for Healthcare Consumer Advocacy", "url": "#", "membership_value": "Now part of AHA (American Hospital Association)", "mandatory": false}
+    ],
+    "conferences": [
+      {"name": "Patient Experience Conference (The Beryl Institute)", "detail": "Premier patient experience event", "frequency": "Annual"},
+      {"name": "NAHAM Annual Conference", "detail": "Healthcare access management focus", "frequency": "Annual"},
+      {"name": "AHA Annual Meeting", "detail": "Broader hospital administration with PX tracks", "frequency": "Annual"}
+    ],
+    "online_communities": [
+      "The Beryl Institute online community",
+      "LinkedIn patient experience groups",
+      "NAHAM online resources",
+      "Reddit r/healthcare (limited PX-specific content)",
+      "Facebook patient advocacy groups"
+    ],
+    "publications": [
+      "Patient Experience Journal (The Beryl Institute)",
+      "Becker's Hospital Review (patient experience articles)",
+      "Healthcare Executive magazine"
+    ],
+    "sources": [
+      {"url": "https://theberylinstitute.org/cpxp-exam-overview/", "fact": "The Beryl Institute as primary patient experience professional organization"},
+      {"url": "https://www.cpxp.pro/", "fact": "CPXP certification community and resources"}
+    ]
+  },
+  "market": {
+    "summary": "Patient services representatives earn $35,000-$55,000. Patient experience directors/VPs earn $100,000-$160,000+. Growing emphasis on patient experience metrics (HCAHPS) driving demand.",
+    "salary_by_level": {
+      "entry_representative": "$35,000-$45,000",
+      "mid_advocate": "$45,000-$60,000",
+      "senior_ombudsman": "$60,000-$80,000",
+      "director_vp": "$100,000-$160,000+"
+    },
+    "geographic_variation": {
+      "national_average_representative": "$53,518",
+      "national_average_experience_manager": "$144,468",
+      "high_cost_markets": "20-30% premium in NYC, SF, Boston, DC"
+    },
+    "estimated_practitioners": "Tens of thousands across healthcare systems (no single BLS category — split across multiple SOC codes)",
+    "job_outlook": "Growing demand driven by CMS value-based purchasing, HCAHPS score importance, and consumer expectations in healthcare. Patient experience roles expanding.",
+    "work_arrangements": {
+      "dominant": "W-2 employees at hospitals, health systems, insurance companies",
+      "independent": "Independent patient advocacy practices growing (hourly/retainer basis)",
+      "consulting": "PX consulting firms serving health systems"
+    },
+    "market_trends": [
+      "CMS value-based purchasing tying reimbursement to patient experience scores",
+      "AI chatbots handling routine patient inquiries, shifting advocates to complex cases",
+      "Telehealth creating new patient experience challenges",
+      "Health equity and SDOH integration into patient advocacy",
+      "Consumer expectation of transparency in pricing and quality"
+    ],
+    "sources": [
+      {"url": "https://www.salary.com/research/salary/listing/patient-service-representative-psr-salary", "fact": "Patient service representative salary $53,518 average"},
+      {"url": "https://research.com/advice/how-to-become-a-patient-experience-manager-education-salary-and-job-outlook", "fact": "Patient experience manager salary $144,468 average"}
+    ]
+  },
+  "quality_score": 0.35,
+  "sources_count": 10,
+  "verified_sources": 3,
+  "confidence": "likely",
+  "raw_responses": []
+}

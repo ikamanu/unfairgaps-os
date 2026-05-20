@@ -1,0 +1,309 @@
+{
+  "profession_id": "us-health-and-safety-engineers-except-mining-safety-engineers-and-inspectors",
+  "profession_name": "Health and Safety Engineers, Except Mining Safety Engineers and Inspectors",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Health and safety engineers design and evaluate systems, processes, and workplace environments to prevent injuries, illnesses, and property damage. They conduct risk assessments, ensure OSHA compliance, investigate incidents, and develop safety programs across manufacturing, construction, energy, and other industries.",
+    "typical_tasks": [
+      "Inspect buildings, equipment, and machinery for potential hazards",
+      "Conduct workplace risk assessments and hazard analyses",
+      "Develop and implement safety training programs",
+      "Ensure compliance with OSHA and other safety regulations",
+      "Investigate workplace accidents and determine root causes",
+      "Evaluate blueprints and project plans for safety concerns",
+      "Design engineering controls to eliminate or reduce hazards",
+      "Conduct safety audits and compliance inspections",
+      "Prepare safety reports and regulatory documentation",
+      "Manage emergency response and evacuation planning"
+    ],
+    "key_documents": [
+      "Job Safety Analysis (JSA) reports",
+      "Risk assessment and hazard analysis documents",
+      "Safety Data Sheets (SDS) management",
+      "OSHA injury and illness logs (Form 300/300A/301)",
+      "Incident investigation reports",
+      "Safety training records and certifications",
+      "Process Safety Management (PSM) documentation",
+      "Emergency action and evacuation plans",
+      "Safety audit and inspection checklists",
+      "Lockout/Tagout (LOTO) procedures"
+    ],
+    "deadlines": {
+      "osha_300a_posting": "February 1 - April 30 annually",
+      "osha_electronic_reporting": "March 2 annually for establishments with 250+ employees",
+      "incident_reporting": "Within 8 hours for fatalities, 24 hours for hospitalizations",
+      "psm_audit": "Every 3 years for covered facilities",
+      "training_renewals": "Annual refresher training for many OSHA standards"
+    },
+    "seasonality": "Construction safety intensifies in spring/summer. Year-end safety audits and reporting deadlines in Q4/Q1. OSHA inspection campaigns align with industry-specific hazard seasons."
+  },
+  "regulatory": {
+    "summary": "Heavily regulated by OSHA standards (29 CFR 1910/1926). CSP and ASP certifications from BCSP are the gold-standard credentials. PE licensure available but less common than CSP. OSHA enforcement drives demand.",
+    "key_laws": [
+      {
+        "name": "OSH Act of 1970",
+        "description": "Foundational law requiring employers to provide safe workplaces, establishes OSHA"
+      },
+      {
+        "name": "29 CFR 1910 — General Industry Standards",
+        "description": "OSHA safety standards for general industry workplaces"
+      },
+      {
+        "name": "29 CFR 1926 — Construction Standards",
+        "description": "OSHA safety standards for construction industry"
+      },
+      {
+        "name": "Process Safety Management (PSM) — 29 CFR 1910.119",
+        "description": "Comprehensive safety management for highly hazardous chemicals"
+      },
+      {
+        "name": "ANSI/ASSP Z10 — OHS Management System",
+        "description": "American National Standard for Occupational Health and Safety Management Systems"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Bachelor's degree in safety engineering, industrial engineering, or related field",
+        "ASP certification (Associate Safety Professional) — entry-level credential",
+        "CSP certification (Certified Safety Professional) — gold standard, requires 4 years experience",
+        "PE licensure optional — through NCEES (FE + PE exam)"
+      ],
+      "csp_update_2025": "Starting August 2025, CSP exam reorganized into 7 domains (previously 9) under CSP11 blueprint",
+      "certifications": [
+        "CSP — Certified Safety Professional (BCSP)",
+        "ASP — Associate Safety Professional (BCSP)",
+        "CIH — Certified Industrial Hygienist (ABIH)",
+        "OHST — Occupational Health and Safety Technologist (BCSP)",
+        "OSHA 30-Hour / 10-Hour training cards"
+      ]
+    },
+    "penalties": "OSHA penalties up to $16,131 per serious violation (2025), $161,323 per willful/repeat violation. Criminal penalties for willful violations causing death."
+  },
+  "tools": {
+    "summary": "EHS management software platforms dominate daily workflow for incident tracking, compliance management, and risk assessment. Field tools include monitoring instruments, PPE, and inspection equipment.",
+    "primary_tools": [
+      {
+        "name": "VelocityEHS Accelerate Platform",
+        "description": "Unified EHS platform for safety, chemical management, ergonomics, and operational risk with built-in AI"
+      },
+      {
+        "name": "Vector EHS Management Software",
+        "description": "Incident management, inspections, audits, corrective actions, and compliance tracking"
+      },
+      {
+        "name": "SafetyCulture (iAuditor)",
+        "description": "Mobile inspection and audit platform for field safety assessments"
+      },
+      {
+        "name": "HSI EHS Software",
+        "description": "AI-powered cloud-based EHS management with customizable workflows"
+      },
+      {
+        "name": "Intelex / Gensuite / Enablon",
+        "description": "Enterprise EHS management systems for large organizations"
+      }
+    ],
+    "secondary_tools": [
+      "Noise dosimeters and sound level meters",
+      "Air sampling pumps and gas monitors (4-gas detectors)",
+      "Thermal imaging cameras for electrical hazard detection",
+      "Fall protection equipment and anchor point testing",
+      "Microsoft Excel — data tracking and incident analysis",
+      "Power BI / Tableau — safety performance dashboards"
+    ],
+    "pain_points": [
+      "Managing compliance across multiple regulatory frameworks simultaneously",
+      "Inconsistent incident reporting from front-line workers",
+      "Integrating EHS software with existing enterprise systems (ERP, HR)",
+      "Keeping up with frequent OSHA standard updates and interpretations"
+    ]
+  },
+  "terminology": {
+    "summary": "Health and safety engineering uses extensive regulatory and operational acronyms centered around OSHA standards, hazard analysis methods, and workplace safety management.",
+    "terms": {
+      "OSHA": "Occupational Safety and Health Administration",
+      "EHS": "Environment, Health, and Safety",
+      "PPE": "Personal Protective Equipment",
+      "LOTO": "Lockout/Tagout — energy isolation safety procedure",
+      "JSA": "Job Safety Analysis — task-level hazard assessment",
+      "JHA": "Job Hazard Analysis (same as JSA)",
+      "SDS": "Safety Data Sheet — chemical hazard information document",
+      "PSM": "Process Safety Management — OSHA standard for hazardous chemicals",
+      "PHA": "Process Hazard Analysis",
+      "HAZOP": "Hazard and Operability Study",
+      "FMEA": "Failure Mode and Effects Analysis",
+      "RCA": "Root Cause Analysis — incident investigation method",
+      "MOC": "Management of Change — process for evaluating changes to operations",
+      "TRIR": "Total Recordable Incident Rate — key safety performance metric",
+      "DART": "Days Away, Restricted, or Transferred — OSHA injury metric",
+      "EMR": "Experience Modification Rate — workers' comp insurance metric",
+      "CSP": "Certified Safety Professional",
+      "ASP": "Associate Safety Professional",
+      "CIH": "Certified Industrial Hygienist",
+      "BBS": "Behavior-Based Safety — observation-driven safety approach"
+    }
+  },
+  "career_psychology": {
+    "summary": "Stable, meaningful career with median salary ~$104K. CSP certification significantly boosts earning potential. Job satisfaction rated 3.6/5. The role carries high responsibility as decisions directly impact worker safety and lives.",
+    "career_path": [
+      "Bachelor's degree in Safety Engineering, Industrial Engineering, or related field",
+      "Entry-level Safety Engineer / Coordinator",
+      "ASP Certification",
+      "Mid-level Safety Engineer (3-5 years)",
+      "CSP Certification (4+ years experience)",
+      "Senior Safety Engineer / Safety Manager",
+      "Director of EHS / VP of Safety",
+      "Chief Safety Officer / Corporate EHS leadership"
+    ],
+    "salary_range": {
+      "entry_level": "$60,000 - $75,000/year",
+      "mid_level": "$85,000 - $105,000/year",
+      "senior": "$105,000 - $140,000/year",
+      "director_level": "$140,000 - $180,000+/year",
+      "median_bls": "$103,690/year (BLS 2023)"
+    },
+    "fears": [
+      "Worker fatality or serious injury on their watch",
+      "Missing a critical hazard in assessment",
+      "OSHA citation reflecting poorly on their competence",
+      "Budget constraints preventing needed safety improvements",
+      "Being ignored by management when raising safety concerns"
+    ],
+    "motivation": [
+      "Directly protecting workers' lives and health",
+      "Preventing accidents and injuries before they occur",
+      "Stable career with growing demand and good compensation",
+      "Making workplaces measurably safer through engineering solutions",
+      "Professional respect and high responsibility"
+    ],
+    "burnout_factors": [
+      "Constant vigilance and responsibility for others' safety",
+      "Pushback from operations when safety slows production",
+      "Emotional toll of investigating serious accidents",
+      "Regulatory compliance pressure and documentation load",
+      "Multiple simultaneous projects across facilities"
+    ]
+  },
+  "community": {
+    "summary": "Strong professional community centered around ASSP (formerly ASSE), with 151 local chapters in 75 countries, and BCSP for certification. Annual Safety Conference + Expo is the premier industry event.",
+    "associations": [
+      {
+        "name": "American Society of Safety Professionals (ASSP)",
+        "url": "https://www.assp.org/",
+        "description": "Founded 1911, global OSH organization with 151 chapters in 75 countries, specialty communities"
+      },
+      {
+        "name": "Board of Certified Safety Professionals (BCSP)",
+        "url": "https://www.bcsp.org/",
+        "description": "Certifying body for CSP, ASP, OHST, and other safety credentials"
+      },
+      {
+        "name": "National Safety Council (NSC)",
+        "description": "Non-profit focused on workplace and community safety since 1913"
+      },
+      {
+        "name": "American Industrial Hygiene Association (AIHA)",
+        "description": "Professional association for industrial hygiene and exposure science"
+      }
+    ],
+    "online_communities": [
+      "ASSP community forums and specialty groups",
+      "r/OSHA and r/SafetyProfessionals — Reddit communities",
+      "LinkedIn EHS and safety engineering groups",
+      "SafetyProfessionals.org forums"
+    ],
+    "conferences": [
+      "ASSP Safety Conference + Expo 2026 — premier OSH event (60+ year history)",
+      "NSC Safety Congress & Expo",
+      "AIHA AIHce Annual Conference",
+      "ASSP regional chapter events and webinars"
+    ]
+  },
+  "market": {
+    "summary": "Stable demand with 5% projected growth 2023-2033. Median salary $103,690. Stricter OSHA enforcement and increasing industrial complexity drive demand. CSP certification essential for career advancement.",
+    "growth_rate": "5% projected 2023-2033 (faster than average)",
+    "salary_market": {
+      "average": "$85,000 - $120,000/year",
+      "median_bls": "$103,690/year",
+      "senior_lead": "$140,000+/year",
+      "csp_premium": "CSP holders earn significantly more than non-certified peers"
+    },
+    "top_employers": [
+      "Manufacturing companies (automotive, aerospace, chemical)",
+      "Construction and engineering firms",
+      "Oil & gas and energy companies",
+      "Government agencies (OSHA, DOD, DOE)",
+      "Insurance companies and risk management firms",
+      "Consulting firms specializing in EHS"
+    ],
+    "market_trends": [
+      "Stricter OSHA enforcement and increasing penalty amounts",
+      "AI and IoT integration into safety monitoring (predictive safety)",
+      "Growing focus on worker well-being beyond injury prevention",
+      "ESG reporting requirements driving corporate safety investment",
+      "Automation creating new safety challenges (human-robot interaction)",
+      "CSP11 exam blueprint update (August 2025) — 7 domains"
+    ]
+  },
+  "quality_score": 0.77,
+  "sources_count": 28,
+  "verified_sources": 9,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Health Safety Engineers USA daily work tasks OSHA compliance",
+      "sources": [
+        {"title": "BLS — Health and Safety Engineers", "url": "https://www.bls.gov/ooh/architecture-and-engineering/health-and-safety-engineers.htm"},
+        {"title": "HSE Study Guide — Duties of Safety Engineer", "url": "https://www.hsestudyguide.com/duties-of-safety-engineer/"},
+        {"title": "EHSCareers — Safety Engineer Career", "url": "https://ehscareers.com/career/safety-engineer"}
+      ]
+    },
+    {
+      "query": "Health Safety Engineers USA OSHA regulations CSP ASP certification",
+      "sources": [
+        {"title": "BCSP — CSP Certification", "url": "https://www.bcsp.org/certified-safety-professional-csp"},
+        {"title": "BCSP — ASP Certification", "url": "https://www.bcsp.org/associate-safety-professional-asp"},
+        {"title": "OSHA Education Center — Certification Guide", "url": "https://www.oshaeducationcenter.com/associate-safety-professional-training/"}
+      ]
+    },
+    {
+      "query": "Health Safety Engineers USA software tools EHS management",
+      "sources": [
+        {"title": "Gartner — Best EHS Software 2026", "url": "https://www.gartner.com/reviews/market/ehs-software"},
+        {"title": "Capterra — EHS Management Software 2026", "url": "https://www.capterra.com/ehs-management-software/"},
+        {"title": "VelocityEHS", "url": "https://www.ehs.com/"}
+      ]
+    },
+    {
+      "query": "Health Safety Engineers terminology OSHA EHS PPE LOTO JSA",
+      "sources": [
+        {"title": "360OSHA30 — Safety Abbreviations", "url": "https://www.360osha30.com/blog/safety-abbreviations-acronyms/"},
+        {"title": "HSI — EHS Acronyms Guide", "url": "https://hsi.com/blog/guide-to-environmental-health-safety-ehs-acronyms"},
+        {"title": "HSEWatch — Health and Safety Abbreviations", "url": "https://hsewatch.com/health-and-safety-abbreviations/"}
+      ]
+    },
+    {
+      "query": "Health Safety Engineers USA salary career path burnout CSP",
+      "sources": [
+        {"title": "BLS — Health and Safety Engineers", "url": "https://www.bls.gov/ooh/architecture-and-engineering/health-and-safety-engineers.htm"},
+        {"title": "HSE Study Guide — OSHA Safety Engineer Salary 2026", "url": "https://www.hsestudyguide.com/osha-safety-engineer-salary-2026/"},
+        {"title": "EHSCareers — CSP Certification Career Guide", "url": "https://ehscareers.com/employer-blog/csp-certification-career-guide-salary-job-opportunities/"}
+      ]
+    },
+    {
+      "query": "Health Safety Engineers USA associations ASSP BCSP conferences",
+      "sources": [
+        {"title": "ASSP", "url": "https://www.assp.org/"},
+        {"title": "ASSP Safety 2026 Conference", "url": "https://safety.assp.org/"},
+        {"title": "ASSP Wikipedia", "url": "https://en.wikipedia.org/wiki/American_Society_of_Safety_Professionals"}
+      ]
+    },
+    {
+      "query": "Health Safety Engineers USA job market outlook demand salary trends BLS",
+      "sources": [
+        {"title": "BLS — Health and Safety Engineers", "url": "https://www.bls.gov/ooh/architecture-and-engineering/health-and-safety-engineers.htm"},
+        {"title": "HSE Study Guide — OSHA Safety Engineer Salary 2026", "url": "https://www.hsestudyguide.com/osha-safety-engineer-salary-2026/"}
+      ]
+    }
+  ]
+}

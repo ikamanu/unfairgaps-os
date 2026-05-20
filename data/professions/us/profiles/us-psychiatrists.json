@@ -1,0 +1,312 @@
+{
+  "profession_id": "us-psychiatrists",
+  "profession_name": "Psychiatrists",
+  "country": "US",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Psychiatrists diagnose and treat mental health disorders through medication management, psychotherapy, and consultation. They see 10-20 patients/day in outpatient settings with 15-30 minute medication checks and longer initial evaluations. Telepsychiatry is now a major delivery model.",
+    "typical_tasks": [
+      "Conduct psychiatric evaluations and diagnostic assessments",
+      "Prescribe and manage psychotropic medications (antidepressants, antipsychotics, mood stabilizers, anxiolytics)",
+      "Monitor medication efficacy and side effects in follow-up visits",
+      "Provide psychotherapy (CBT, psychodynamic, supportive therapy)",
+      "Conduct telepsychiatry video sessions",
+      "Review lab results (lithium levels, metabolic panels, drug screens)",
+      "Collaborate with primary care, psychologists, social workers, and case managers",
+      "Complete clinical documentation in EHR systems",
+      "Handle psychiatric emergencies and crisis consultations",
+      "Conduct capacity evaluations and involuntary commitment assessments"
+    ],
+    "key_documents": [
+      "Psychiatric evaluation reports",
+      "Treatment plans and progress notes",
+      "Prescription records and controlled substance logs",
+      "Involuntary hold/commitment documentation (5150, Baker Act, etc.)",
+      "Insurance prior authorization forms",
+      "Disability/FMLA evaluation letters",
+      "Collaborative care consultation notes",
+      "Informed consent for medications and treatment"
+    ],
+    "deadlines": {
+      "emergency_response": "Immediate for psychiatric emergencies (suicidal patients, acute psychosis)",
+      "initial_evaluation": "60-90 minute initial evaluation documented same day",
+      "medication_follow_up": "15-30 minute visits every 1-4 weeks for acute cases",
+      "prior_authorization": "Within 48-72 hours to avoid treatment delays",
+      "controlled_substance_monitoring": "State PDMP check before every controlled substance prescription"
+    },
+    "seasonality": "Increased demand during holiday season (November-January) and seasonal depression periods. Post-pandemic sustained high demand. Summer slightly lower volume due to patient vacations."
+  },
+  "regulatory": {
+    "summary": "Psychiatrists require MD/DO degree, 4-year residency, state medical license, DEA registration for controlled substances. Telepsychiatry flexibilities extended through December 2026. Board certification through ABPN is standard.",
+    "key_laws": [
+      {
+        "name": "State Medical Practice Acts (licensing)",
+        "url": "https://www.fsmb.org",
+        "status": "Active — each state regulates independently"
+      },
+      {
+        "name": "DEA Controlled Substances Act — Registration Required",
+        "url": "https://www.deadiversion.usdoj.gov",
+        "status": "Active — DEA telemedicine extension through December 2026"
+      },
+      {
+        "name": "Ryan Haight Online Pharmacy Consumer Protection Act",
+        "url": "https://www.congress.gov/bill/110th-congress/house-bill/6353",
+        "status": "Active — modified by COVID telemedicine extensions"
+      },
+      {
+        "name": "42 CFR Part 2 — Confidentiality of Substance Use Disorder Records",
+        "url": "https://www.ecfr.gov",
+        "status": "Active — stricter than HIPAA for SUD records"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "MD or DO degree from accredited medical school",
+        "4-year psychiatry residency (ACGME-accredited)",
+        "USMLE or COMLEX licensing exams",
+        "State medical license",
+        "DEA registration for controlled substances",
+        "Board certification through ABPN (American Board of Psychiatry and Neurology)",
+        "CME requirements (varies by state, typically 50+ hours per cycle)",
+        "State PDMP registration (Prescription Drug Monitoring Program)"
+      ]
+    },
+    "penalties": "Practicing without license: felony in most states. DEA violations: fines up to $500K, imprisonment up to 20 years. HIPAA violations: $100-$50K per incident. Malpractice average settlement: $250K-$400K for psychiatry.",
+    "controlling_bodies": [
+      "State Medical Boards (licensing authority)",
+      "DEA (Drug Enforcement Administration — controlled substances)",
+      "ABPN (American Board of Psychiatry and Neurology — certification)",
+      "CMS (Centers for Medicare & Medicaid Services — billing compliance)",
+      "State PDMP (Prescription Drug Monitoring Programs)"
+    ]
+  },
+  "tools": {
+    "summary": "Psychiatrists use specialty EHR systems (ICANotes, Valant, SimplePractice), telepsychiatry platforms, e-prescribing tools, and clinical assessment instruments (PHQ-9, GAD-7, DSM-5-TR criteria).",
+    "primary_tools": [
+      {
+        "name": "ICANotes",
+        "url": "https://www.icanotes.com",
+        "description": "Leading behavioral health EHR with psychiatry-specific templates and note-writing tools"
+      },
+      {
+        "name": "Valant",
+        "url": "https://www.valant.io",
+        "description": "Psychiatry-specific EHR with outcome tracking, measurement-based care dashboards"
+      },
+      {
+        "name": "SimplePractice / TherapyNotes",
+        "description": "Popular practice management and EHR platforms for outpatient psychiatry"
+      },
+      {
+        "name": "Telepsychiatry Platforms (Doxy.me, Zoom for Healthcare)",
+        "description": "HIPAA-compliant video platforms for remote psychiatric consultations"
+      },
+      {
+        "name": "E-Prescribing (EPCS) Systems",
+        "description": "Electronic prescribing of controlled substances — required in most states"
+      }
+    ],
+    "secondary_tools": [
+      "PHQ-9, GAD-7, AUDIT — standardized screening instruments",
+      "State PDMP portals — prescription drug monitoring",
+      "AIMS (Abnormal Involuntary Movement Scale) for tardive dyskinesia monitoring",
+      "UpToDate / Lexicomp — clinical decision support and drug references",
+      "Prior authorization portals (CoverMyMeds, Surescripts)"
+    ],
+    "pain_points": [
+      "Excessive prior authorization requirements for medications",
+      "EHR documentation burden — 2+ hours/day on notes for some psychiatrists",
+      "Poor interoperability between behavioral health and medical EHRs",
+      "Complex controlled substance prescribing regulations varying by state",
+      "Insurance reimbursement rates not keeping pace with demand"
+    ]
+  },
+  "terminology": {
+    "summary": "Psychiatry uses DSM-5-TR diagnostic criteria, psychopharmacology terminology, and clinical assessment jargon. Unique combination of medical and psychological terminology.",
+    "terms": {
+      "DSM-5-TR": "Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision — the standard diagnostic reference",
+      "MDD": "Major Depressive Disorder",
+      "GAD": "Generalized Anxiety Disorder",
+      "PTSD": "Post-Traumatic Stress Disorder",
+      "ADHD": "Attention Deficit Hyperactivity Disorder",
+      "SI/HI": "Suicidal Ideation / Homicidal Ideation",
+      "ASD": "Autism Spectrum Disorder (or Acute Stress Disorder depending on context)",
+      "SSRI": "Selective Serotonin Reuptake Inhibitor (antidepressant class)",
+      "SNRI": "Serotonin-Norepinephrine Reuptake Inhibitor",
+      "SGA": "Second-Generation Antipsychotic (atypical antipsychotic)",
+      "PRN": "Pro re nata — as needed (medication dosing)",
+      "MSE": "Mental Status Examination",
+      "PHQ-9": "Patient Health Questionnaire-9 (depression screening tool)",
+      "GAD-7": "Generalized Anxiety Disorder 7-item scale",
+      "5150": "California involuntary psychiatric hold (72 hours) — used colloquially nationwide",
+      "anhedonia": "Inability to experience pleasure — key symptom of depression",
+      "anosognosia": "Lack of insight into one's illness",
+      "EPCS": "Electronic Prescribing of Controlled Substances"
+    }
+  },
+  "career_psychology": {
+    "summary": "12-year training pathway (undergrad + med school + residency). Average salary $360K-$382K with strong growth. Severe national shortage (43,660 projected by 2038) creates excellent job security. High burnout risk from emotional burden and administrative load.",
+    "career_path": [
+      "Bachelor's degree (4 years — pre-med)",
+      "Medical school — MD or DO (4 years)",
+      "Psychiatry residency (4 years — ACGME-accredited)",
+      "Optional fellowship (1-2 years: child/adolescent, addiction, forensic, geriatric, etc.)",
+      "Board certification — ABPN",
+      "Staff psychiatrist / Private practice",
+      "Medical Director / Department Chair / Academic faculty"
+    ],
+    "salary_range": {
+      "entry_level": "$280,000 - $315,000/year (starting salary)",
+      "mid_career": "$340,000 - $395,000/year (5-10 years)",
+      "senior": "$400,000 - $800,000+/year (leadership, high-volume private practice)",
+      "average_2026": "$360,000 - $382,196/year (median-to-average)"
+    },
+    "fears": [
+      "Patient suicide — most dreaded outcome in psychiatry",
+      "Violence from patients in acute settings",
+      "Malpractice suits related to medication side effects or missed diagnoses",
+      "Burnout from emotional burden and vicarious trauma",
+      "Losing DEA license — career-ending consequence"
+    ],
+    "motivation": [
+      "Transforming lives of patients with severe mental illness",
+      "Strong job security due to massive national shortage",
+      "Growing societal acceptance and destigmatization of mental health",
+      "Flexible practice models (telepsychiatry, part-time, locum tenens)",
+      "Intellectually stimulating — intersection of neuroscience, psychology, and medicine"
+    ],
+    "burnout_factors": [
+      "Emotional burden of treating severely ill and suicidal patients",
+      "Administrative overload (prior authorizations, documentation)",
+      "High caseloads in community mental health settings (250-500 patients)",
+      "Stigma within medicine — psychiatry historically undervalued by peers",
+      "Isolation — often sole psychiatrist in a practice or facility"
+    ]
+  },
+  "community": {
+    "summary": "Highly organized professional community led by the American Psychiatric Association (APA). Multiple subspecialty organizations. APA Annual Meeting is the flagship event (16,000+ attendees).",
+    "associations": [
+      {
+        "name": "American Psychiatric Association (APA)",
+        "url": "https://www.psychiatry.org",
+        "type": "Primary professional organization — 37,000+ members"
+      },
+      {
+        "name": "American Academy of Child and Adolescent Psychiatry (AACAP)",
+        "url": "https://www.aacap.org",
+        "type": "Subspecialty organization for child/adolescent psychiatry"
+      },
+      {
+        "name": "American Board of Psychiatry and Neurology (ABPN)",
+        "url": "https://www.abpn.com",
+        "type": "Certifying board for psychiatrists"
+      },
+      {
+        "name": "American Association for Academic Psychiatry (AAP)",
+        "url": "https://www.academicpsychiatry.org",
+        "type": "Organization for academic psychiatrists and educators"
+      }
+    ],
+    "events": [
+      "APA Annual Meeting 2026 (May 16-20, San Francisco — Moscone Center)",
+      "AACAP Annual Meeting 2026 (October 26-31, Atlanta)",
+      "AAP Annual Meeting 2026 (Salt Lake City)",
+      "APA Institute on Psychiatric Services (annual, fall)",
+      "Psych Congress (annual, CME-focused conference)"
+    ],
+    "online_communities": [
+      "APA Communities (members-only platform)",
+      "Reddit r/psychiatry and r/Residency",
+      "Student Doctor Network — Psychiatry forums",
+      "Psychiatry Twitter/X community",
+      "Doximity — physician social network with psychiatry groups"
+    ]
+  },
+  "market": {
+    "summary": "Severe psychiatrist shortage in the US — 43,660 projected deficit by 2038. Average salary $360K-$382K in 2026. 12.5% employment growth projected through 2032. Telepsychiatry expanding access and compensation.",
+    "job_outlook": {
+      "growth_rate": "12.5% projected through 2032 (BLS) — much faster than average",
+      "current_practitioners": "51,000+ practicing psychiatrists in the US",
+      "projected_shortage": "43,660 adult psychiatrist shortage by 2038 (HRSA)",
+      "new_openings": "~1,700 new job openings projected 2024-2034",
+      "demand_drivers": "Mental health crisis, aging population, destigmatization, telehealth access"
+    },
+    "salary_market": {
+      "min": "$280,000",
+      "avg": "$360,000 - $382,196",
+      "max": "$800,000+",
+      "top_paying_states": ["North Dakota", "Indiana", "Rural/shortage areas"]
+    },
+    "market_trends": [
+      "Telepsychiatry as standard care delivery model — DEA extensions through 2026",
+      "Collaborative care models embedding psychiatrists in primary care",
+      "Growing subspecialty demand in addiction psychiatry (opioid crisis)",
+      "Child/adolescent psychiatry shortage even more severe than adult",
+      "Measurement-based care and AI-assisted diagnostics emerging",
+      "Psychedelic-assisted therapy (psilocybin, MDMA) creating new treatment paradigms"
+    ]
+  },
+  "quality_score": 0.75,
+  "sources_count": 30,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Psychiatrists USA 2025 2026 daily work routine responsibilities patient caseload",
+      "sources": [
+        {"title": "ResidencyAdvisor — Outpatient Psychiatry Caseload", "url": "https://residencyadvisor.com/resources/lowest-paid-specialties/outpatient-psychiatry-in-cmhcs-caseload-burnout-and-pay-structure"},
+        {"title": "Psychiatrist-to-Patient Ratios", "url": "https://www.thecouch.com/blog/psychiatrist-to-patient-ratios-and-quality-care"},
+        {"title": "MGMA — Meeting Mental Healthcare Demand", "url": "https://www.mgma.com/articles/meeting-mental-healthcare-demand"}
+      ]
+    },
+    {
+      "query": "Psychiatrists USA 2025 2026 licensing regulations DEA state medical board requirements",
+      "sources": [
+        {"title": "APA — DEA Special Registration for Telemedicine", "url": "https://www.psychiatry.org/psychiatrists/practice/telepsychiatry/blog/dea-special-registration-for-telemedicine"},
+        {"title": "DEA Telemedicine Rules 2025", "url": "https://www.hchlawyers.com/blog/2025/may/the-dea-s-new-telemedicine-rules-on-prescribing-/"},
+        {"title": "APA Licensing and Board Certification Guide", "url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/Practice-Management/Starting-a-Practice/Online-Practice-Handbook/StartingOut-Licensing.pdf"}
+      ]
+    },
+    {
+      "query": "Psychiatrists USA EHR software tools telepsychiatry platforms technology 2025 2026",
+      "sources": [
+        {"title": "ICANotes — Best EHR for Psychiatry 2026", "url": "https://www.icanotes.com/2026/03/10/best-ehr-for-psychiatry-practices/"},
+        {"title": "OmniMD — Top 10 Mental Health EHR 2026", "url": "https://omnimd.com/blog/top-mental-health-ehr-software-comparison/"},
+        {"title": "CapMinds — Top 10 EHR for Behavioral Health 2026", "url": "https://www.capminds.com/blog/top-10-ehr-software-for-behavioral-health-practices-in-2026/"}
+      ]
+    },
+    {
+      "query": "Psychiatry terminology abbreviations jargon DSM-5 clinical terms professional",
+      "sources": [
+        {"title": "UCLA SMHP Glossary", "url": "https://smhp.psych.ucla.edu/pdfdocs/mhsbhc/glossary.pdf"},
+        {"title": "Mental Health @ Home Glossary", "url": "https://mentalhealthathome.org/2018/04/18/glossary-psychiatric-terms/"},
+        {"title": "APA DSM-5 Fact Sheets", "url": "https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/dsm-5-fact-sheets"}
+      ]
+    },
+    {
+      "query": "Psychiatrists USA career path salary 2025 2026 burnout physician wellness",
+      "sources": [
+        {"title": "AMN Healthcare Psychiatrist Salary Guide 2025", "url": "https://www.amnhealthcare.com/blog/physician/perm/psychiatrist-salary-guide-2025/"},
+        {"title": "SalaryDr — Psychiatrist Salary 2026", "url": "https://www.salarydr.com/blog/psychiatrist-salary-2025"},
+        {"title": "Psychiatric News — Money, Burnout, Wellness", "url": "https://psychiatryonline.org/doi/10.1176/appi.pn.2025.04.4.10"}
+      ]
+    },
+    {
+      "query": "Psychiatrists USA professional associations APA communities conferences 2025 2026",
+      "sources": [
+        {"title": "APA 2026 Annual Meeting", "url": "https://www.psychiatry.org/psychiatrists/meetings/annual-meeting"},
+        {"title": "AACAP Future Annual Meetings", "url": "https://www.aacap.org/aacap/CME_and_Meetings/Future_Annual_Meetings.aspx"},
+        {"title": "APA 2026 Moscone Center", "url": "https://apa2026.org/"}
+      ]
+    },
+    {
+      "query": "Psychiatrists USA job market demand shortage salary outlook 2025 2026",
+      "sources": [
+        {"title": "PracticeSeeker — Demand for Psychiatrists", "url": "https://practiceseeker.com/resources/demand-for-psychiatrists-addressing-the-shortage-and-job-outlook"},
+        {"title": "SalaryDr — Psychiatrist Salary 2026", "url": "https://www.salarydr.com/blog/psychiatrist-salary-2025"},
+        {"title": "Medicus — Understanding Psychiatry Shortage", "url": "https://medicushcs.com/locum-tenens-agency/resources/understanding-the-psychiatry-shortage"}
+      ]
+    }
+  ]
+}

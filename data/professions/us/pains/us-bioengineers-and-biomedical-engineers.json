@@ -1,0 +1,746 @@
+[
+  {
+    "id": "us-bioengineers-and-biomedical-engineers-p01",
+    "title": "FDA 510(k) Submission Readiness Checklist",
+    "problem": "Biomedical engineers preparing FDA 510(k) premarket notifications must assemble dozens of documents across design controls, biocompatibility, performance testing, and predicate device comparisons. Missing a single element causes FDA refusal-to-accept, wasting 3-6 months. Engineers often rely on tribal knowledge or outdated internal checklists that don't reflect current eSTAR requirements.",
+    "who": "Mid-level and senior biomedical engineers responsible for regulatory submissions",
+    "frequency": "quarterly",
+    "time_waste_h": 20,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "FDA 510(k) Submission Readiness Checker",
+      "one_liner": "Step-by-step checklist ensuring all required elements are present before submitting a 510(k) via eSTAR",
+      "steps": [
+        "Step 1: Confirm device classification and identify product code using FDA database",
+        "Step 2: Select and justify predicate device(s) with substantial equivalence argument",
+        "Step 3: Verify device description with engineering drawings, specifications, and materials list",
+        "Step 4: Complete performance testing summary (bench, animal, clinical as applicable)",
+        "Step 5: Compile biocompatibility evaluation per ISO 10993",
+        "Step 6: Include software documentation (if applicable) per FDA guidance on Software as Medical Device",
+        "Step 7: Attach sterilization validation (if applicable)",
+        "Step 8: Prepare labeling including IFU, package labels, and contraindications",
+        "Step 9: Complete eSTAR template sections and attach all referenced documents",
+        "Step 10: Conduct internal review - regulatory, quality, and engineering sign-offs",
+        "Step 11: Verify eCopy requirements and submission fee payment",
+        "Step 12: Submit via FDA CDRH portal and log submission tracking number"
+      ],
+      "warnings": [
+        "Warning: eSTAR is now required for all 510(k) submissions - paper submissions are rejected",
+        "Warning: Predicate device must be legally marketed - check FDA 510(k) database for status",
+        "Warning: Missing biocompatibility data is the #1 cause of Additional Information requests"
+      ],
+      "regulatory_refs": [
+        "21 CFR 807 Subpart E",
+        "FDA eSTAR guidance 2025",
+        "ISO 10993-1"
+      ]
+    },
+    "example_queries": [
+      "What documents do I need for a 510(k) submission for a Class II device?",
+      "Help me check if my 510(k) package is complete before I submit to FDA",
+      "What are the eSTAR requirements for a 510(k) in 2026?"
+    ]
+  },
+  {
+    "id": "us-bioengineers-and-biomedical-engineers-p02",
+    "title": "ISO 14971 Risk Analysis FMEA Calculator",
+    "problem": "Biomedical engineers must perform Failure Mode and Effects Analysis (FMEA) as part of ISO 14971 risk management for every medical device. Calculating Risk Priority Numbers (RPN), determining risk acceptability against predefined matrices, and tracking residual risk after mitigations is tedious and error-prone when done manually in spreadsheets. Incorrect risk scores can lead to FDA audit findings.",
+    "who": "Design engineers and quality engineers working on medical device development",
+    "frequency": "weekly",
+    "time_waste_h": 6,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Medical Device FMEA Risk Calculator",
+      "one_liner": "Calculates Risk Priority Numbers and risk acceptability for medical device FMEA per ISO 14971",
+      "inputs": [
+        {
+          "name": "severity",
+          "type": "number",
+          "label": "Severity rating (1-10)"
+        },
+        {
+          "name": "occurrence",
+          "type": "number",
+          "label": "Occurrence probability rating (1-10)"
+        },
+        {
+          "name": "detection",
+          "type": "number",
+          "label": "Detection rating (1-10)"
+        },
+        {
+          "name": "risk_threshold",
+          "type": "number",
+          "label": "Acceptable RPN threshold (default 100)"
+        },
+        {
+          "name": "mitigation_severity",
+          "type": "number",
+          "label": "Post-mitigation severity (1-10)"
+        },
+        {
+          "name": "mitigation_occurrence",
+          "type": "number",
+          "label": "Post-mitigation occurrence (1-10)"
+        },
+        {
+          "name": "mitigation_detection",
+          "type": "number",
+          "label": "Post-mitigation detection (1-10)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "initial_rpn",
+          "label": "Initial Risk Priority Number"
+        },
+        {
+          "name": "risk_level",
+          "label": "Risk level (Acceptable/ALARP/Unacceptable)"
+        },
+        {
+          "name": "residual_rpn",
+          "label": "Residual RPN after mitigation"
+        },
+        {
+          "name": "risk_reduction_pct",
+          "label": "Risk reduction percentage"
+        },
+        {
+          "name": "acceptability",
+          "label": "Final risk acceptability determination"
+        }
+      ],
+      "formula_hint": "RPN = severity * occurrence * detection. Risk matrix: severity >= 8 AND occurrence >= 4 = Unacceptable regardless of RPN. RPN > threshold = requires mitigation.",
+      "rates": {
+        "max_rpn": 1000,
+        "default_threshold": 100,
+        "critical_severity": 8
+      }
+    },
+    "example_queries": [
+      "Calculate RPN for severity 7, occurrence 4, detection 6 for my catheter design",
+      "Is my residual risk acceptable if severity stays at 8 but occurrence drops to 2?",
+      "What risk reduction percentage do I get if I add a detection mechanism rated 3?"
+    ]
+  },
+  {
+    "id": "us-bioengineers-and-biomedical-engineers-p03",
+    "title": "QMSR Transition Compliance Checklist",
+    "problem": "As of February 2, 2026, FDA transitioned from 21 CFR Part 820 (CGMP) to the new QMSR aligned with ISO 13485. Biomedical engineers and quality teams must map their existing quality systems to the new regulation. Many companies are uncertain about gap areas, documentation changes, and inspection readiness under QMSR. Non-compliance during FDA inspections results in Form 483 observations and Warning Letters.",
+    "who": "Quality engineers and regulatory affairs specialists at medical device companies",
+    "frequency": "once",
+    "time_waste_h": 40,
+    "money_risk_usd": 100000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "QMSR Transition Gap Analysis Checklist",
+      "one_liner": "Maps existing 21 CFR 820 quality system elements to new QMSR requirements aligned with ISO 13485",
+      "steps": [
+        "Step 1: Review current QMS documentation against ISO 13485:2016 clause structure",
+        "Step 2: Map existing 21 CFR 820 procedures to corresponding QMSR/ISO 13485 clauses",
+        "Step 3: Identify gaps in management responsibility documentation (Clause 5)",
+        "Step 4: Verify resource management procedures including competence records (Clause 6)",
+        "Step 5: Audit product realization processes - design controls, purchasing, production (Clause 7)",
+        "Step 6: Verify measurement, analysis, and improvement procedures - CAPA, internal audits (Clause 8)",
+        "Step 7: Update document control and record-keeping to ISO 13485 terminology",
+        "Step 8: Review and update risk management integration per ISO 14971",
+        "Step 9: Validate software used in QMS per updated requirements",
+        "Step 10: Conduct mock internal audit using QMSR inspection criteria",
+        "Step 11: Train all relevant personnel on QMSR changes",
+        "Step 12: Document transition completion and management review"
+      ],
+      "warnings": [
+        "Warning: QMSR is effective February 2, 2026 - FDA inspections now use QMSR criteria",
+        "Warning: ISO 13485 certification alone does NOT guarantee QMSR compliance - FDA-specific requirements remain",
+        "Warning: Design control requirements are largely preserved but terminology has changed"
+      ],
+      "regulatory_refs": [
+        "21 CFR Part 820 (QMSR)",
+        "ISO 13485:2016",
+        "FDA QMSR Final Rule 2024"
+      ]
+    },
+    "example_queries": [
+      "What changed between old Part 820 and the new QMSR?",
+      "Help me do a gap analysis for QMSR transition at my company",
+      "What does FDA inspect under QMSR that's different from old CGMP?"
+    ]
+  },
+  {
+    "id": "us-bioengineers-and-biomedical-engineers-p04",
+    "title": "Biocompatibility Testing Requirements Reference",
+    "problem": "Selecting the correct biocompatibility tests for a medical device requires cross-referencing device contact type (surface, external communicating, implant), contact duration, and material composition against ISO 10993-1 and FDA guidance. Engineers frequently over-test (wasting $50K+ on unnecessary studies) or under-test (triggering FDA additional information requests). The evaluation matrix is complex and updated periodically.",
+    "who": "Design engineers and regulatory specialists selecting biocompatibility testing for new devices",
+    "frequency": "monthly",
+    "time_waste_h": 5,
+    "money_risk_usd": 60000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Biocompatibility Test Selection Guide",
+      "one_liner": "Determines required biocompatibility tests based on device contact type, duration, and material per ISO 10993-1 and FDA guidance",
+      "data_domain": "ISO 10993-1 biocompatibility evaluation matrix for medical devices",
+      "lookup_keys": [
+        "device_category",
+        "contact_type",
+        "contact_duration",
+        "material_type"
+      ],
+      "data_hints": {
+        "source_law": "ISO 10993-1:2018, FDA Guidance on Biocompatibility 2023",
+        "key_sections": [
+          "Table A.1 - Evaluation tests for consideration",
+          "Annex A - Categorization of devices"
+        ],
+        "categories": {
+          "contact_type": [
+            "Surface (skin, mucosal, breached surface)",
+            "External communicating (blood path indirect, tissue/bone/dentin, circulating blood)",
+            "Implant (tissue/bone, blood)"
+          ],
+          "duration": [
+            "Limited (<24h)",
+            "Prolonged (24h-30d)",
+            "Permanent (>30d)"
+          ]
+        },
+        "common_tests": [
+          "Cytotoxicity",
+          "Sensitization",
+          "Irritation",
+          "Systemic toxicity",
+          "Genotoxicity",
+          "Implantation",
+          "Hemocompatibility"
+        ]
+      }
+    },
+    "example_queries": [
+      "What biocompatibility tests do I need for a permanent blood-contacting implant?",
+      "Which ISO 10993 tests are required for a skin-contact device used for 48 hours?",
+      "Do I need hemocompatibility testing for an external communicating catheter?"
+    ]
+  },
+  {
+    "id": "us-bioengineers-and-biomedical-engineers-p05",
+    "title": "Medical Device Classification Lookup",
+    "problem": "Engineers developing new medical devices must determine FDA classification (Class I, II, or III) to know which regulatory pathway to follow (exempt, 510(k), De Novo, or PMA). Misclassification leads to choosing the wrong submission pathway, wasting months of work. The classification system involves product codes, regulation numbers, and predicate device analysis across thousands of device types.",
+    "who": "Biomedical engineers and regulatory affairs professionals planning device submissions",
+    "frequency": "monthly",
+    "time_waste_h": 3,
+    "money_risk_usd": 30000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "FDA Medical Device Classification Guide",
+      "one_liner": "Determines FDA device classification, product code, and appropriate regulatory pathway for medical devices",
+      "data_domain": "FDA medical device classification and regulatory pathways",
+      "lookup_keys": [
+        "device_description",
+        "intended_use",
+        "product_code",
+        "device_class"
+      ],
+      "data_hints": {
+        "source_law": "21 CFR Parts 862-892 (Device Classification Regulations)",
+        "key_sections": [
+          "21 CFR 860 - Classification procedures",
+          "FDA Product Classification Database"
+        ],
+        "pathways": {
+          "class_I": "Most exempt from 510(k); general controls only",
+          "class_II": "510(k) required; general + special controls",
+          "class_II_de_novo": "De Novo for novel low-moderate risk devices without predicate",
+          "class_III": "PMA required; general + special controls + premarket approval"
+        },
+        "common_panels": [
+          "Cardiovascular",
+          "Orthopedic",
+          "Radiology",
+          "General Hospital",
+          "Neurological"
+        ]
+      }
+    },
+    "example_queries": [
+      "What FDA class is a wearable ECG monitor?",
+      "Is my 3D-printed surgical guide Class I or Class II?",
+      "What regulatory pathway should I use for a novel AI-based diagnostic device with no predicate?"
+    ]
+  },
+  {
+    "id": "us-bioengineers-and-biomedical-engineers-p06",
+    "title": "Design Verification & Validation Protocol Generator",
+    "problem": "Biomedical engineers must write V&V protocols for every design output, linking requirements to test methods, acceptance criteria, and traceability matrices. These protocols follow strict formatting per 21 CFR 820 design controls and must withstand FDA audit scrutiny. Writing them from scratch is repetitive and takes 4-8 hours per protocol, with the risk of missing required sections.",
+    "who": "Design engineers and V&V engineers at medical device companies",
+    "frequency": "weekly",
+    "time_waste_h": 6,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "V&V Protocol Generator",
+      "one_liner": "Generates verification and validation test protocols with proper structure for FDA design control compliance",
+      "doc_name": "Verification and Validation Test Protocol",
+      "variables": [
+        {
+          "name": "protocol_number",
+          "label": "Protocol number (e.g., VP-001)"
+        },
+        {
+          "name": "device_name",
+          "label": "Device name"
+        },
+        {
+          "name": "test_type",
+          "label": "Test type (Verification/Validation)"
+        },
+        {
+          "name": "requirement_id",
+          "label": "Design requirement ID being tested"
+        },
+        {
+          "name": "requirement_description",
+          "label": "Requirement description"
+        },
+        {
+          "name": "test_method",
+          "label": "Test method description"
+        },
+        {
+          "name": "acceptance_criteria",
+          "label": "Acceptance criteria"
+        },
+        {
+          "name": "sample_size",
+          "label": "Sample size and rationale"
+        },
+        {
+          "name": "equipment_list",
+          "label": "Test equipment required"
+        }
+      ],
+      "structure_hint": "Header (protocol #, device, revision) -> Purpose -> Scope -> References (standards, requirements) -> Equipment & Materials -> Sample Size Rationale -> Test Procedure (numbered steps) -> Acceptance Criteria -> Data Recording Forms -> Approval Signatures"
+    },
+    "example_queries": [
+      "Generate a verification protocol for tensile strength testing of a suture anchor",
+      "Create a validation protocol template for a wearable blood pressure monitor",
+      "Help me write a V&V protocol for biocompatibility testing of a silicone implant"
+    ]
+  },
+  {
+    "id": "us-bioengineers-and-biomedical-engineers-p07",
+    "title": "Engineering Change Order Document Generator",
+    "problem": "Medical device changes require formal Engineering Change Orders (ECOs) documenting the change description, risk assessment impact, affected documents, V&V impact analysis, and regulatory impact. ECOs must be thorough enough to withstand FDA audit but are tedious to write. Incomplete ECOs delay production and can trigger CAPA findings during quality audits.",
+    "who": "Design engineers and sustaining engineers making device modifications",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Engineering Change Order Generator",
+      "one_liner": "Generates structured ECO documents with regulatory impact analysis for medical device changes",
+      "doc_name": "Engineering Change Order",
+      "variables": [
+        {
+          "name": "eco_number",
+          "label": "ECO number"
+        },
+        {
+          "name": "device_name",
+          "label": "Device name and model"
+        },
+        {
+          "name": "change_description",
+          "label": "Description of proposed change"
+        },
+        {
+          "name": "change_reason",
+          "label": "Reason for change (CAPA, improvement, cost reduction)"
+        },
+        {
+          "name": "affected_documents",
+          "label": "List of affected documents (DHF, DMR, specs)"
+        },
+        {
+          "name": "risk_impact",
+          "label": "Impact on risk analysis (new hazards, changed RPN)"
+        },
+        {
+          "name": "regulatory_impact",
+          "label": "Does this require new 510(k) or FDA notification?"
+        },
+        {
+          "name": "vv_impact",
+          "label": "V&V impact - new testing required?"
+        }
+      ],
+      "structure_hint": "Header (ECO#, date, originator) -> Change Description -> Reason/Justification -> Affected Documents List -> Risk Assessment Impact -> Regulatory Impact Analysis -> V&V Impact -> Implementation Plan -> Approval Signatures (Engineering, Quality, Regulatory)"
+    },
+    "example_queries": [
+      "Generate an ECO for changing the material of a catheter tip from PEEK to PPSU",
+      "Help me write an engineering change order for a software update to our infusion pump",
+      "Create an ECO template for a manufacturing process change on our Class II device"
+    ]
+  },
+  {
+    "id": "us-bioengineers-and-biomedical-engineers-p08",
+    "title": "FDA Warning Letter and 483 Response Advisor",
+    "problem": "When FDA issues Form 483 observations or Warning Letters, biomedical engineers must help craft responses with root cause analysis, corrective actions, and timelines. Responses must be submitted within 15 business days for 483s. Poor responses escalate enforcement. Engineers often lack experience with FDA inspection language and expectations for adequate responses.",
+    "who": "Quality and regulatory engineers responding to FDA inspection findings",
+    "frequency": "quarterly",
+    "time_waste_h": 30,
+    "money_risk_usd": 200000,
+    "source": "regulatory",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "FDA Inspection Response Advisor",
+      "one_liner": "Guides biomedical engineers through crafting effective responses to FDA Form 483 observations and Warning Letters",
+      "expertise_area": "FDA enforcement action response strategy for medical device companies",
+      "decision_criteria": [
+        "observation_type",
+        "device_class",
+        "severity_level",
+        "history_of_observations",
+        "capa_status"
+      ],
+      "context_needed": [
+        "regulatory.penalties",
+        "regulatory.laws_and_standards",
+        "daily_reality.key_documents"
+      ]
+    },
+    "example_queries": [
+      "FDA cited us for inadequate design validation - how should I structure the 483 response?",
+      "What's the best approach to respond to a Warning Letter about CAPA process failures?",
+      "How do I write a root cause analysis for a 483 observation on complaint handling?"
+    ]
+  },
+  {
+    "id": "us-bioengineers-and-biomedical-engineers-p09",
+    "title": "Design Control Traceability Matrix Generator",
+    "problem": "FDA requires full traceability from user needs through design inputs, design outputs, verification, and validation. Building and maintaining a traceability matrix across hundreds of requirements is manual, error-prone, and critical for audits. A broken trace link is a common 483 observation. Engineers spend hours updating these matrices in spreadsheets as designs evolve.",
+    "who": "Design engineers managing requirements traceability throughout device development",
+    "frequency": "weekly",
+    "time_waste_h": 4,
+    "money_risk_usd": 20000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Design Control Traceability Matrix Builder",
+      "one_liner": "Generates a structured traceability matrix linking user needs to design inputs, outputs, V&V, and risk controls",
+      "doc_name": "Design Control Traceability Matrix",
+      "variables": [
+        {
+          "name": "device_name",
+          "label": "Device name"
+        },
+        {
+          "name": "user_need_id",
+          "label": "User need ID and description"
+        },
+        {
+          "name": "design_input_id",
+          "label": "Design input requirement ID"
+        },
+        {
+          "name": "design_input_spec",
+          "label": "Design input specification"
+        },
+        {
+          "name": "design_output_id",
+          "label": "Design output document/drawing ID"
+        },
+        {
+          "name": "verification_protocol",
+          "label": "Verification protocol reference"
+        },
+        {
+          "name": "validation_protocol",
+          "label": "Validation protocol reference"
+        },
+        {
+          "name": "risk_control_id",
+          "label": "Associated risk control measure ID"
+        }
+      ],
+      "structure_hint": "Matrix format: User Need -> Design Input -> Design Output -> Verification (protocol + result) -> Validation (protocol + result) -> Risk Control. Include gap analysis column flagging incomplete traces."
+    },
+    "example_queries": [
+      "Help me build a traceability matrix for my orthopedic implant design controls",
+      "Generate a requirements traceability template for a Class II wearable device",
+      "Check my traceability - I have 15 design inputs but only 12 verification protocols"
+    ]
+  },
+  {
+    "id": "us-bioengineers-and-biomedical-engineers-p10",
+    "title": "Sterilization Validation Parameter Calculator",
+    "problem": "Biomedical engineers must calculate sterilization parameters including D-values, Sterility Assurance Levels (SAL), bioburden-based cycle development, and EO residual limits. Incorrect calculations can result in non-sterile product reaching patients or over-processing that degrades materials. Each sterilization method (EO, radiation, steam) has different calculation requirements per ISO 11135, ISO 11137, or ISO 17665.",
+    "who": "Manufacturing and quality engineers responsible for sterilization validation",
+    "frequency": "monthly",
+    "time_waste_h": 8,
+    "money_risk_usd": 75000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Sterilization Parameter Calculator",
+      "one_liner": "Calculates sterilization cycle parameters, SAL, and dose requirements for medical device sterilization validation",
+      "inputs": [
+        {
+          "name": "sterilization_method",
+          "type": "string",
+          "label": "Sterilization method (EO/Gamma/E-beam/Steam)"
+        },
+        {
+          "name": "bioburden_count",
+          "type": "number",
+          "label": "Average bioburden count (CFU)"
+        },
+        {
+          "name": "target_sal",
+          "type": "number",
+          "label": "Target SAL (e.g., 10^-6)"
+        },
+        {
+          "name": "d_value",
+          "type": "number",
+          "label": "D-value of biological indicator (minutes or kGy)"
+        },
+        {
+          "name": "sample_size",
+          "type": "number",
+          "label": "Number of samples tested"
+        },
+        {
+          "name": "product_density",
+          "type": "number",
+          "label": "Product density (g/cm3, for radiation)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "minimum_dose",
+          "label": "Minimum sterilization dose/time"
+        },
+        {
+          "name": "sal_achieved",
+          "label": "SAL achieved with given parameters"
+        },
+        {
+          "name": "overkill_dose",
+          "label": "Overkill approach dose (if applicable)"
+        },
+        {
+          "name": "vd_max",
+          "label": "VDmax verification dose (for radiation)"
+        },
+        {
+          "name": "cycle_parameters",
+          "label": "Recommended cycle parameters"
+        }
+      ],
+      "formula_hint": "SAL = 10^(-D_value_cycles). For radiation: VDmax25 from ISO 11137-2 Table 9 based on bioburden and SAL. For EO: minimum exposure = D-value * (log(bioburden) + log(1/SAL)). Overkill: 12D approach with BI D-value.",
+      "rates": {
+        "target_sal_standard": 1e-06,
+        "overkill_spore_log_reduction": 12,
+        "eo_residual_limit_mg": 4.0
+      }
+    },
+    "example_queries": [
+      "Calculate the minimum radiation dose for SAL 10^-6 with bioburden of 100 CFU",
+      "What EO exposure time do I need with a D-value of 2.5 minutes and bioburden of 500?",
+      "Help me determine VDmax verification dose for my gamma sterilization validation"
+    ]
+  },
+  {
+    "id": "us-bioengineers-and-biomedical-engineers-p11",
+    "title": "FDA Regulatory Pathway Decision Advisor",
+    "problem": "Choosing between 510(k), De Novo, PMA, or exemption requires analyzing device novelty, risk profile, predicate availability, and intended use. The wrong pathway choice wastes 6-18 months and hundreds of thousands of dollars. With emerging technologies like AI/ML-based SaMD and combination products, pathway decisions are increasingly complex. Junior engineers and startups frequently misjudge the appropriate pathway.",
+    "who": "Engineers and regulatory professionals at startups and companies bringing novel devices to market",
+    "frequency": "quarterly",
+    "time_waste_h": 10,
+    "money_risk_usd": 150000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "FDA Regulatory Pathway Advisor",
+      "one_liner": "Recommends the optimal FDA regulatory pathway based on device characteristics, risk, and predicate analysis",
+      "expertise_area": "FDA regulatory submission pathway selection for medical devices",
+      "decision_criteria": [
+        "device_class",
+        "predicate_availability",
+        "device_novelty",
+        "risk_level",
+        "software_component",
+        "combination_product"
+      ],
+      "context_needed": [
+        "regulatory.laws_and_standards",
+        "regulatory.penalties",
+        "market.trends"
+      ]
+    },
+    "example_queries": [
+      "Should I go 510(k) or De Novo for an AI-powered retinal screening device?",
+      "My device has no predicate but is low risk - what's the best FDA pathway?",
+      "Is my wearable continuous glucose monitor a Class II 510(k) or does it need PMA?"
+    ]
+  },
+  {
+    "id": "us-bioengineers-and-biomedical-engineers-p12",
+    "title": "Product Recall Risk Assessment Calculator",
+    "problem": "When a device quality issue is identified, engineers must rapidly assess recall classification (Class I, II, or III), estimate affected units, calculate financial exposure from recall logistics, and determine FDA reporting obligations. Delays in this assessment can escalate from voluntary recall to FDA-mandated recall with civil penalties. The financial and reputational calculation involves direct costs, regulatory fines, and liability exposure.",
+    "who": "Quality and regulatory engineers managing post-market surveillance and recalls",
+    "frequency": "quarterly",
+    "time_waste_h": 15,
+    "money_risk_usd": 500000,
+    "source": "career_psychology",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Device Recall Impact Calculator",
+      "one_liner": "Estimates recall classification, financial exposure, and FDA reporting timeline for medical device quality issues",
+      "inputs": [
+        {
+          "name": "health_consequence",
+          "type": "string",
+          "label": "Potential health consequence (death/serious injury/unlikely harm)"
+        },
+        {
+          "name": "units_distributed",
+          "type": "number",
+          "label": "Number of units distributed"
+        },
+        {
+          "name": "unit_cost",
+          "type": "number",
+          "label": "Cost per unit (USD)"
+        },
+        {
+          "name": "distribution_channels",
+          "type": "number",
+          "label": "Number of distribution points"
+        },
+        {
+          "name": "device_class",
+          "type": "string",
+          "label": "FDA device class (I/II/III)"
+        },
+        {
+          "name": "complaints_received",
+          "type": "number",
+          "label": "Number of complaints received"
+        },
+        {
+          "name": "adverse_events",
+          "type": "number",
+          "label": "Number of adverse events/MDRs"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "recall_class",
+          "label": "Estimated recall classification (I/II/III)"
+        },
+        {
+          "name": "direct_cost",
+          "label": "Direct recall cost estimate (USD)"
+        },
+        {
+          "name": "regulatory_cost",
+          "label": "Estimated regulatory/penalty cost (USD)"
+        },
+        {
+          "name": "total_exposure",
+          "label": "Total financial exposure (USD)"
+        },
+        {
+          "name": "reporting_deadline",
+          "label": "FDA MDR reporting deadline"
+        },
+        {
+          "name": "fda_notification",
+          "label": "FDA notification requirements"
+        }
+      ],
+      "formula_hint": "Direct cost = units * (retrieval_cost + replacement_cost + notification_cost). Class I recall adds ~30% regulatory overhead. MDR reporting required within 30 days of awareness (or 5 days for emergencies). Recall logistics ~$15-50 per unit for notification + retrieval.",
+      "rates": {
+        "mdr_deadline_days": 30,
+        "emergency_mdr_days": 5,
+        "recall_logistics_per_unit_low": 15,
+        "recall_logistics_per_unit_high": 50
+      }
+    },
+    "example_queries": [
+      "Estimate recall cost if we have to pull back 10,000 infusion pump units due to software bug",
+      "Is a battery overheating issue in our wearable device a Class I or Class II recall?",
+      "What's our total financial exposure for a recall of 5,000 Class III implants?"
+    ]
+  },
+  {
+    "id": "us-bioengineers-and-biomedical-engineers-p13",
+    "title": "CAPA Investigation Document Generator",
+    "problem": "Corrective and Preventive Action (CAPA) documentation is one of the most frequently cited areas in FDA inspections. Engineers must document the problem description, investigation methodology, root cause analysis, corrective actions, effectiveness checks, and closure evidence. Poorly documented CAPAs are the #1 Form 483 observation category. Each CAPA takes 4-8 hours just for documentation.",
+    "who": "Quality engineers and design engineers handling non-conformances and complaints",
+    "frequency": "weekly",
+    "time_waste_h": 6,
+    "money_risk_usd": 20000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "CAPA Investigation Report Generator",
+      "one_liner": "Generates structured CAPA investigation reports with root cause analysis templates compliant with FDA/ISO 13485",
+      "doc_name": "CAPA Investigation Report",
+      "variables": [
+        {
+          "name": "capa_number",
+          "label": "CAPA number"
+        },
+        {
+          "name": "problem_description",
+          "label": "Problem/non-conformance description"
+        },
+        {
+          "name": "source",
+          "label": "CAPA source (complaint, audit, NCR, trend)"
+        },
+        {
+          "name": "affected_product",
+          "label": "Affected product/process"
+        },
+        {
+          "name": "root_cause_method",
+          "label": "Root cause method (5-Why, Fishbone, Fault Tree)"
+        },
+        {
+          "name": "root_cause",
+          "label": "Identified root cause"
+        },
+        {
+          "name": "corrective_action",
+          "label": "Corrective action(s)"
+        },
+        {
+          "name": "preventive_action",
+          "label": "Preventive action(s)"
+        },
+        {
+          "name": "effectiveness_criteria",
+          "label": "Effectiveness check criteria and timeline"
+        }
+      ],
+      "structure_hint": "Header (CAPA#, date, owner) -> Problem Description -> Impact Assessment (product, patient, regulatory) -> Investigation (data collected, analysis method) -> Root Cause Analysis (with diagram) -> Corrective Actions (with responsible party + due date) -> Preventive Actions -> Effectiveness Check Plan -> Verification of Effectiveness -> Closure Approval Signatures"
+    },
+    "example_queries": [
+      "Generate a CAPA report for a recurring sterility test failure on our catheter line",
+      "Help me write a root cause analysis section for a CAPA on mislabeled devices",
+      "Create a CAPA template for a customer complaint about device malfunction"
+    ]
+  }
+]

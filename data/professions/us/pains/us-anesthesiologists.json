@@ -1,0 +1,663 @@
+[
+  {
+    "id": "us-anesthesiologists-p01",
+    "title": "Anesthesia Billing Unit Calculation",
+    "problem": "Anesthesiologists must calculate reimbursement for every case using a complex formula: base units (CPT code) + time units (minutes/15) + modifying units, multiplied by the conversion factor. Errors lead to underbilling or claim denials. With the 2025 conversion factor dropping 2.83% to $32.3465, accurate calculation is even more critical to avoid revenue loss.",
+    "who": "Anesthesiologists in private practice and group practices handling their own billing",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Anesthesia Billing Calculator",
+      "one_liner": "Calculates anesthesia reimbursement from CPT code base units, time units, and modifiers using the current CMS conversion factor",
+      "inputs": [
+        {
+          "name": "cpt_code",
+          "type": "string",
+          "label": "Anesthesia CPT code (00100-01999)"
+        },
+        {
+          "name": "anesthesia_minutes",
+          "type": "number",
+          "label": "Total anesthesia time (minutes)"
+        },
+        {
+          "name": "modifiers",
+          "type": "string",
+          "label": "Modifiers (e.g., AA, QK, QZ, AD, P1-P6)"
+        },
+        {
+          "name": "conversion_factor",
+          "type": "number",
+          "label": "Conversion factor (default $32.3465)"
+        },
+        {
+          "name": "additional_units",
+          "type": "number",
+          "label": "Additional modifying units (e.g., physical status P3+)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "base_units",
+          "label": "Base units for CPT code"
+        },
+        {
+          "name": "time_units",
+          "label": "Time units (minutes / 15)"
+        },
+        {
+          "name": "total_units",
+          "label": "Total anesthesia units"
+        },
+        {
+          "name": "reimbursement",
+          "label": "Expected reimbursement (USD)"
+        },
+        {
+          "name": "modifier_impact",
+          "label": "Modifier adjustment explanation"
+        }
+      ],
+      "formula_hint": "Total units = base_units + time_units + modifying_units; Reimbursement = total_units * conversion_factor * modifier_percentage (AA=100%, QK=50%, QZ=100%)",
+      "rates": {
+        "conversion_factor_2025": 32.3465,
+        "time_unit_minutes": 15,
+        "modifier_AA": 1.0,
+        "modifier_QK": 0.5,
+        "modifier_QZ": 1.0,
+        "modifier_AD": 1.0
+      }
+    },
+    "example_queries": [
+      "Calculate reimbursement for CPT 00740, 90 minutes, modifier AA, physical status P3",
+      "How much will Medicare pay for a 2-hour anesthesia case with base units of 6?",
+      "What's the billing for a QK-modified case, CPT 00300, 45 minutes?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologists-p02",
+    "title": "Weight-Based Anesthesia Drug Dosage Calculation",
+    "problem": "Anesthesiologists must rapidly calculate precise drug dosages based on patient weight, age, renal/hepatic function, and comorbidities for induction, maintenance, and emergency medications. Dosing errors are a leading cause of anesthesia-related adverse events. Manual calculation under time pressure in the OR increases risk of mistakes that can cause patient harm or death.",
+    "who": "All practicing anesthesiologists, especially during emergencies and pediatric cases",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Anesthesia Drug Dosage Calculator",
+      "one_liner": "Calculates weight-based dosages for common anesthesia induction, maintenance, and emergency drugs with adjustment factors",
+      "inputs": [
+        {
+          "name": "patient_weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        },
+        {
+          "name": "patient_age",
+          "type": "number",
+          "label": "Patient age (years)"
+        },
+        {
+          "name": "drug_name",
+          "type": "string",
+          "label": "Drug name (e.g., propofol, succinylcholine, rocuronium, fentanyl)"
+        },
+        {
+          "name": "ideal_body_weight",
+          "type": "number",
+          "label": "Ideal body weight (kg, for obese patients)"
+        },
+        {
+          "name": "renal_impairment",
+          "type": "boolean",
+          "label": "Renal impairment (yes/no)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "induction_dose",
+          "label": "Induction dose (mg or mcg)"
+        },
+        {
+          "name": "maintenance_range",
+          "label": "Maintenance infusion range"
+        },
+        {
+          "name": "max_dose",
+          "label": "Maximum recommended dose"
+        },
+        {
+          "name": "pediatric_adjustment",
+          "label": "Pediatric dose adjustment if applicable"
+        },
+        {
+          "name": "warnings",
+          "label": "Drug-specific warnings and contraindications"
+        }
+      ],
+      "formula_hint": "Propofol induction: 1.5-2.5 mg/kg IV; Fentanyl: 1-2 mcg/kg; Succinylcholine: 1-1.5 mg/kg; Rocuronium: 0.6-1.2 mg/kg; Ketamine: 1-2 mg/kg IV",
+      "rates": {
+        "propofol_induction_mg_per_kg": "1.5-2.5",
+        "fentanyl_mcg_per_kg": "1-2",
+        "succinylcholine_mg_per_kg": "1-1.5",
+        "rocuronium_mg_per_kg": "0.6-1.2"
+      }
+    },
+    "example_queries": [
+      "Calculate propofol induction dose for an 80kg adult patient",
+      "What's the rocuronium dose for a 25kg pediatric patient?",
+      "Fentanyl dosing for a 95kg patient with renal impairment"
+    ]
+  },
+  {
+    "id": "us-anesthesiologists-p03",
+    "title": "Preoperative Assessment and ASA Classification",
+    "problem": "Before every surgical case, anesthesiologists must conduct a systematic preoperative evaluation: review medical history, medications, allergies, airway assessment, labs, and assign an ASA physical status classification. Missing a step can lead to intraoperative complications, cancelled cases, or malpractice claims. There is no standardized quick-reference for the complete assessment workflow.",
+    "who": "All anesthesiologists, especially residents and those covering unfamiliar cases",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Preoperative Anesthesia Assessment Checklist",
+      "one_liner": "Systematic preoperative evaluation checklist with ASA classification guidance and red flags",
+      "steps": [
+        "Step 1: Review patient medical history (cardiac, pulmonary, hepatic, renal, neurological conditions)",
+        "Step 2: Review current medications - identify anticoagulants, MAOIs, herbal supplements requiring hold",
+        "Step 3: Allergy assessment - document all drug allergies and type of reaction",
+        "Step 4: Airway assessment - Mallampati score, thyromental distance, neck mobility, dental status",
+        "Step 5: Review laboratory results - CBC, BMP, coagulation studies, ECG, chest X-ray as indicated",
+        "Step 6: NPO status verification - clear liquids 2h, light meal 6h, full meal 8h",
+        "Step 7: Assign ASA Physical Status Classification (I-VI)",
+        "Step 8: Assess anesthesia-specific risks - difficult airway, MH susceptibility, PONV risk",
+        "Step 9: Develop anesthetic plan - GA vs regional vs MAC, monitoring needs",
+        "Step 10: Informed consent - risks, alternatives, plan discussed with patient"
+      ],
+      "warnings": [
+        "Warning: Stop anticoagulants per protocol - verify with surgical team",
+        "Warning: Family history of malignant hyperthermia requires trigger-free technique",
+        "Warning: Obstructive sleep apnea patients need post-op monitoring plan",
+        "Warning: Document Mallampati score and backup airway plan for all patients"
+      ],
+      "regulatory_refs": [
+        "42 CFR 482.52",
+        "ASA Practice Advisory for Preanesthesia Evaluation"
+      ]
+    },
+    "example_queries": [
+      "What's the complete preoperative assessment checklist before a general anesthesia case?",
+      "Patient is on warfarin and needs surgery in 3 days - what should I check?",
+      "How do I classify a diabetic patient with controlled hypertension on ASA scale?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologists-p04",
+    "title": "Malignant Hyperthermia Crisis Management",
+    "problem": "Malignant hyperthermia (MH) is a rare but life-threatening emergency triggered by volatile anesthetics or succinylcholine. Mortality without rapid treatment exceeds 70%. Anesthesiologists must recall a complex multi-step protocol under extreme time pressure. Even experienced providers can miss critical steps during the chaos of an MH crisis, leading to patient death.",
+    "who": "All anesthesiologists, OR staff, anesthesia residents",
+    "frequency": "yearly",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 500000,
+    "source": "career_psychology",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Malignant Hyperthermia Emergency Protocol",
+      "one_liner": "Step-by-step MH crisis management protocol based on MHAUS guidelines with drug doses and team assignments",
+      "steps": [
+        "Step 1: STOP all triggering agents immediately (volatile anesthetics, succinylcholine)",
+        "Step 2: Hyperventilate with 100% O2 at high fresh gas flows (10+ L/min)",
+        "Step 3: Call for MH cart and extra help - assign roles",
+        "Step 4: Administer dantrolene 2.5 mg/kg IV bolus - repeat every 5 min up to 10 mg/kg",
+        "Step 5: Mix dantrolene: each vial (20mg) requires 60mL sterile water - WARM water only",
+        "Step 6: Active cooling: iced IV saline, ice packs to axillae/groin, cooling blanket",
+        "Step 7: Treat hyperkalemia: calcium chloride 10mg/kg, insulin + glucose, sodium bicarbonate",
+        "Step 8: Monitor: arterial line, core temp, ETCO2, ABG every 10 min, urine output",
+        "Step 9: Treat arrhythmias - NO calcium channel blockers with dantrolene",
+        "Step 10: Contact MHAUS Hotline: 1-800-644-9737",
+        "Step 11: ICU admission for 24-72h monitoring - MH can recur",
+        "Step 12: Dantrolene 1 mg/kg IV every 4-6h for at least 24 hours post-event"
+      ],
+      "warnings": [
+        "Warning: NEVER use calcium channel blockers with dantrolene - risk of fatal hyperkalemia and cardiovascular collapse",
+        "Warning: Change anesthesia circuit and CO2 absorber if possible",
+        "Warning: Goal temperature 38.5C - stop active cooling to avoid hypothermia",
+        "Warning: Send blood for CK levels every 6h for 36h post-event"
+      ],
+      "regulatory_refs": [
+        "MHAUS Clinical Guidelines",
+        "ASA Difficult Airway Algorithm"
+      ]
+    },
+    "example_queries": [
+      "Patient's ETCO2 is rising rapidly and temp is 39.5 during a GA case - what do I do?",
+      "How much dantrolene do I give for a 70kg patient with suspected MH?",
+      "What labs do I need to monitor after a malignant hyperthermia episode?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologists-p05",
+    "title": "ASA CPT Codes and Base Units Reference",
+    "problem": "Anesthesia billing requires knowing the correct CPT code (00100-01999) and its associated base unit value for every surgical procedure. There are hundreds of codes, and choosing the wrong one causes claim denials or underpayment. Anesthesiologists waste time looking up codes in the ASA Crosswalk or RVG manual, especially for uncommon procedures.",
+    "who": "Anesthesiologists, billing staff, practice managers in anesthesia groups",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 10000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Anesthesia CPT Code & Base Unit Lookup",
+      "one_liner": "Quick lookup of anesthesia CPT codes, base unit values, and surgical procedure crosswalk",
+      "data_domain": "ASA Relative Value Guide - anesthesia CPT codes 00100-01999 with base unit assignments",
+      "lookup_keys": [
+        "cpt_code",
+        "surgical_procedure",
+        "body_region",
+        "base_units"
+      ],
+      "data_hints": {
+        "source_law": "CMS Medicare Anesthesia Base Units, ASA Relative Value Guide",
+        "key_sections": [
+          "CPT 00100-01999",
+          "ASA Crosswalk",
+          "CMS Conversion Factor"
+        ],
+        "examples": "00100 (head) = 5 units, 00300 (head/neck) = 5 units, 00400 (chest) = 6 units, 01961 (cesarean) = 7 units"
+      }
+    },
+    "example_queries": [
+      "What's the base unit value for anesthesia CPT code 00740?",
+      "Which anesthesia CPT code do I use for a laparoscopic cholecystectomy?",
+      "Look up base units for a total knee replacement anesthesia"
+    ]
+  },
+  {
+    "id": "us-anesthesiologists-p06",
+    "title": "Medicare Anesthesia Reimbursement Estimator",
+    "problem": "With the 2025 CMS conversion factor cut to $32.3465 (down 2.83%), anesthesiologists need to quickly estimate the revenue impact across their case mix. Practices must model how the rate change affects monthly and annual revenue, evaluate whether certain case types are still profitable, and compare Medicare vs commercial payer rates. Manual spreadsheet analysis is error-prone and time-consuming.",
+    "who": "Anesthesia practice managers, group practice owners, private practice anesthesiologists",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Medicare Anesthesia Revenue Impact Calculator",
+      "one_liner": "Estimates Medicare anesthesia revenue based on case volume, case mix, and current conversion factor with year-over-year comparison",
+      "inputs": [
+        {
+          "name": "monthly_cases",
+          "type": "number",
+          "label": "Average monthly Medicare anesthesia cases"
+        },
+        {
+          "name": "avg_base_units",
+          "type": "number",
+          "label": "Average base units per case"
+        },
+        {
+          "name": "avg_time_minutes",
+          "type": "number",
+          "label": "Average anesthesia time per case (minutes)"
+        },
+        {
+          "name": "modifier_mix",
+          "type": "string",
+          "label": "Modifier distribution (% AA, QK, QZ, AD)"
+        },
+        {
+          "name": "prior_conversion_factor",
+          "type": "number",
+          "label": "Prior year conversion factor ($33.2875)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "monthly_revenue_current",
+          "label": "Monthly Medicare revenue at current CF"
+        },
+        {
+          "name": "monthly_revenue_prior",
+          "label": "Monthly revenue at prior year CF"
+        },
+        {
+          "name": "annual_revenue_loss",
+          "label": "Annual revenue impact from CF change"
+        },
+        {
+          "name": "revenue_per_case",
+          "label": "Average reimbursement per case"
+        },
+        {
+          "name": "breakeven_cases",
+          "label": "Additional cases needed to offset revenue loss"
+        }
+      ],
+      "formula_hint": "Revenue = cases * (avg_base_units + avg_time/15 + modifying_units) * CF * modifier_%; Delta = revenue_prior - revenue_current",
+      "rates": {
+        "cf_2025": 32.3465,
+        "cf_2024": 33.2875,
+        "cf_decrease_pct": 2.83
+      }
+    },
+    "example_queries": [
+      "If I do 200 Medicare cases per month averaging 5 base units and 60 minutes, what's my annual revenue loss from the CF cut?",
+      "Compare my expected Medicare reimbursement for 2024 vs 2025 conversion factor",
+      "How many extra cases do I need per month to make up for the 2.83% conversion factor decrease?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologists-p07",
+    "title": "Preoperative Anesthesia Evaluation Note Template",
+    "problem": "Anesthesiologists must document a comprehensive preoperative evaluation note for every patient, meeting both clinical standards and billing/compliance requirements. Writing these notes from scratch in the EMR is repetitive and time-consuming. Incomplete documentation can lead to claim denials, failed audits under 42 CFR 482.52, and malpractice liability.",
+    "who": "All practicing anesthesiologists, especially those without robust EMR templates",
+    "frequency": "daily",
+    "time_waste_h": 1.5,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Preoperative Anesthesia Evaluation Note Generator",
+      "one_liner": "Generates a structured preoperative anesthesia evaluation note from patient data inputs",
+      "doc_name": "Preoperative Anesthesia Evaluation",
+      "variables": [
+        {
+          "name": "patient_age",
+          "label": "Patient age"
+        },
+        {
+          "name": "patient_weight_kg",
+          "label": "Weight (kg)"
+        },
+        {
+          "name": "patient_height_cm",
+          "label": "Height (cm)"
+        },
+        {
+          "name": "surgical_procedure",
+          "label": "Planned surgical procedure"
+        },
+        {
+          "name": "medical_history",
+          "label": "Relevant medical history"
+        },
+        {
+          "name": "medications",
+          "label": "Current medications"
+        },
+        {
+          "name": "allergies",
+          "label": "Allergies"
+        },
+        {
+          "name": "airway_assessment",
+          "label": "Airway assessment (Mallampati, TMD, etc.)"
+        },
+        {
+          "name": "asa_class",
+          "label": "ASA Physical Status (I-VI)"
+        },
+        {
+          "name": "anesthesia_plan",
+          "label": "Planned anesthesia type (GA/Regional/MAC)"
+        },
+        {
+          "name": "lab_results",
+          "label": "Relevant lab results"
+        }
+      ],
+      "structure_hint": "Header (date, provider) -> Patient demographics -> Procedure -> HPI/PMH -> Medications -> Allergies -> Physical exam (airway, cardiopulmonary) -> Labs/studies -> ASA classification -> Risk assessment -> Anesthetic plan -> Informed consent documentation"
+    },
+    "example_queries": [
+      "Generate a preop eval note for a 65-year-old diabetic patient scheduled for a total hip replacement",
+      "Create an anesthesia evaluation for a pediatric patient, age 4, for tonsillectomy",
+      "Write a preoperative note for an ASA III patient with COPD and hypertension for laparoscopic surgery"
+    ]
+  },
+  {
+    "id": "us-anesthesiologists-p08",
+    "title": "CMS Anesthesia Compliance and Audit Preparation",
+    "problem": "Anesthesia practices face CMS audits for Medicare billing compliance, including proper documentation of medical direction (QK modifier), supervision ratios, and time documentation. Non-compliance with 42 CFR 482.52 and NCCI policies results in claims recoupment, penalties, and potential exclusion from Medicare. Many anesthesiologists don't know all the documentation requirements until they fail an audit.",
+    "who": "Anesthesia group practice owners, compliance officers, billing managers",
+    "frequency": "quarterly",
+    "time_waste_h": 8,
+    "money_risk_usd": 100000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "CMS Anesthesia Billing Compliance Checklist",
+      "one_liner": "Comprehensive compliance checklist for Medicare anesthesia billing, medical direction, and documentation requirements",
+      "steps": [
+        "Step 1: Verify medical direction ratio - physician directing no more than 4 concurrent cases (QK modifier)",
+        "Step 2: Confirm 7 required medical direction activities are documented for each case",
+        "Step 3: Verify start/stop times documented to the minute for all anesthesia cases",
+        "Step 4: Confirm correct modifier usage: AA (personally performed), QK (medical direction), QY (direction of one CRNA), AD (supervision 5+ concurrent), QZ (CRNA without direction)",
+        "Step 5: Verify physical status modifier (P1-P6) documented and supported by medical record",
+        "Step 6: Check that pre-anesthesia evaluation is documented and signed before induction",
+        "Step 7: Confirm post-anesthesia evaluation documented within 48 hours",
+        "Step 8: Verify anesthesia record includes all required elements per CMS guidelines",
+        "Step 9: Audit sample of claims for correct CPT code selection and base unit assignment",
+        "Step 10: Review CRNA documentation for compliance with state scope-of-practice laws",
+        "Step 11: Verify no separate billing for services bundled into anesthesia (per NCCI edits)",
+        "Step 12: Maintain audit trail and corrective action documentation"
+      ],
+      "warnings": [
+        "Warning: Medical direction requires documentation of ALL 7 conditions per CMS - missing even one invalidates the QK modifier",
+        "Warning: Concurrent case overlap must not violate the 4:1 ratio at any point during the case",
+        "Warning: Post-operative E&M services related to surgery are NOT separately reportable except for critical care"
+      ],
+      "regulatory_refs": [
+        "42 CFR 482.52",
+        "CMS NCCI Medicare Policy Manual Chapter 2",
+        "ASA Payment Policies"
+      ]
+    },
+    "example_queries": [
+      "What are the 7 required conditions for medical direction under Medicare?",
+      "How do I prepare for a CMS audit of our anesthesia billing practices?",
+      "Can I bill separately for a post-op visit after an anesthesia case under Medicare?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologists-p09",
+    "title": "Difficult Airway Management Protocol",
+    "problem": "Failed airway management is the leading cause of anesthesia-related brain injury and death. When a difficult airway is encountered unexpectedly, anesthesiologists must rapidly navigate the ASA Difficult Airway Algorithm with multiple decision points. Under stress, critical steps are missed, alternative devices are not tried in the correct order, and the decision to perform a surgical airway is delayed. Having a structured protocol instantly accessible saves lives.",
+    "who": "All anesthesiologists, especially those in emergency and trauma settings",
+    "frequency": "weekly",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 250000,
+    "source": "career_psychology",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Difficult Airway Management Protocol",
+      "one_liner": "ASA Difficult Airway Algorithm with decision tree, device sequence, and surgical airway criteria",
+      "steps": [
+        "Step 1: Recognize difficult airway indicators - Mallampati III/IV, limited mouth opening, short TMD, obesity, neck immobility",
+        "Step 2: If anticipated difficult airway - consider awake intubation (fiberoptic, video laryngoscopy)",
+        "Step 3: Direct laryngoscopy attempt #1 - optimize position (ramping, BURP maneuver), use bougie",
+        "Step 4: If failed - switch to video laryngoscope, limit to 3 total attempts",
+        "Step 5: If failed VL - insert supraglottic airway (LMA, i-gel) for oxygenation",
+        "Step 6: Call for help - activate difficult airway response team",
+        "Step 7: If cannot intubate, CAN ventilate via SGA - consider waking patient vs proceeding with SGA",
+        "Step 8: If CANNOT intubate, CANNOT ventilate - declare emergency, prepare surgical airway",
+        "Step 9: Surgical cricothyrotomy - identify CTM, vertical skin incision, horizontal membrane incision, insert 6.0 cuffed tube",
+        "Step 10: Post-event documentation and notification - document all attempts, devices used, plan for future anesthetics"
+      ],
+      "warnings": [
+        "Warning: Limit total intubation attempts to 3+1 (3 by primary, 1 by most experienced available)",
+        "Warning: Maintain oxygenation between attempts - SpO2 must recover before next attempt",
+        "Warning: Do NOT delay surgical airway in CICV scenario - brain damage begins in 3-5 minutes",
+        "Warning: Document difficult airway in patient chart and provide MedicalAlert bracelet information"
+      ],
+      "regulatory_refs": [
+        "ASA Practice Guidelines for Management of the Difficult Airway (2022 Update)",
+        "NAP4 Recommendations"
+      ]
+    },
+    "example_queries": [
+      "Patient is Mallampati IV with a short neck - what's my airway plan?",
+      "Failed two intubation attempts, can ventilate with LMA - what should I do next?",
+      "When exactly should I move to a surgical cricothyrotomy?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologists-p10",
+    "title": "Anesthesia Medical Direction Requirements",
+    "problem": "Anesthesiologists who medically direct CRNAs must meet specific CMS requirements to bill under the QK modifier. The rules around concurrent cases (4:1 ratio), 7 required conditions for medical direction, and the distinction between direction vs supervision are confusing. Billing errors result in claim denials, recoupment demands, and potential fraud allegations. The 2025 UnitedHealthcare 15% QZ reimbursement cut makes correct modifier usage even more financially critical.",
+    "who": "Anesthesiologists in care team model practices directing CRNAs",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 30000,
+    "source": "regulatory",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Anesthesia Medical Direction Advisor",
+      "one_liner": "Advises on CMS medical direction requirements, modifier selection, and concurrent case compliance",
+      "expertise_area": "CMS medical direction vs supervision rules, modifier selection (AA/QK/QY/QZ/AD), concurrent case management",
+      "decision_criteria": [
+        "number_of_concurrent_cases",
+        "crna_supervision_type",
+        "documentation_completeness",
+        "state_scope_of_practice",
+        "payer_type"
+      ],
+      "context_needed": [
+        "regulatory.medicare_regulations",
+        "regulatory.relevant_cfr_sections",
+        "regulatory.2025_regulatory_changes"
+      ]
+    },
+    "example_queries": [
+      "I'm directing 3 CRNAs simultaneously - which modifier do I use and what must I document?",
+      "What are the 7 conditions I need to meet for medical direction under Medicare?",
+      "Can a CRNA bill independently in Texas without physician direction?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologists-p11",
+    "title": "Anesthesia Regulatory Compliance Reference",
+    "problem": "Anesthesiologists must navigate a complex regulatory landscape including 42 CFR 482.52, CMS NCCI policies, state scope-of-practice laws for CRNAs, ABA certification requirements, and constantly changing Medicare rules. The 2025 changes alone include conversion factor cuts, telehealth restriction expiration, and UHC reimbursement reductions. Finding current, accurate regulatory information is difficult and time-consuming.",
+    "who": "Anesthesia practice administrators, compliance officers, anesthesiologists in leadership roles",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 20000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Anesthesia Regulatory Quick Reference",
+      "one_liner": "Quick lookup of federal anesthesia regulations, CMS policies, billing rules, and 2025-2026 regulatory changes",
+      "data_domain": "Federal and state anesthesia regulations, CMS Medicare policies, NCCI edits, ABA certification requirements",
+      "lookup_keys": [
+        "regulation_topic",
+        "cfr_section",
+        "cms_policy",
+        "state",
+        "effective_date"
+      ],
+      "data_hints": {
+        "source_law": "42 CFR 482.52, CMS NCCI Medicare Policy Manual, ASA Payment Policies",
+        "key_sections": [
+          "42 CFR 482.52",
+          "NCCI Chapter 2",
+          "CMS Conversion Factor",
+          "State opt-out provisions"
+        ],
+        "recent_changes": "2025 CF $32.3465 (-2.83%), UHC 15% QZ cut, telehealth restrictions Oct 2025, ABA 80-day absence policy"
+      }
+    },
+    "example_queries": [
+      "What are the current CMS requirements for anesthesia services under 42 CFR 482.52?",
+      "What changed in Medicare anesthesia reimbursement for 2025?",
+      "Which states allow CRNAs to practice independently without physician supervision?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologists-p12",
+    "title": "Locum Tenens Compensation Comparison",
+    "problem": "Anesthesiologists considering locum tenens work need to compare hourly rates across states, factor in travel expenses, malpractice coverage, and calculate the true annual equivalent compensation vs employed positions. With rates varying from $275/hr nationally to $375/hr in New York, and employed median compensation at $535K, the math is complex and often done on napkins. Poor analysis leads to suboptimal career and financial decisions.",
+    "who": "Anesthesiologists evaluating locum tenens vs employment, those negotiating contracts",
+    "frequency": "quarterly",
+    "time_waste_h": 4,
+    "money_risk_usd": 30000,
+    "source": "market",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Locum Tenens vs Employment Compensation Calculator",
+      "one_liner": "Compares locum tenens hourly rates to employed positions factoring in benefits, taxes, and expenses for anesthesiologists",
+      "inputs": [
+        {
+          "name": "locum_hourly_rate",
+          "type": "number",
+          "label": "Locum tenens hourly rate (USD)"
+        },
+        {
+          "name": "weeks_per_year",
+          "type": "number",
+          "label": "Planned working weeks per year"
+        },
+        {
+          "name": "hours_per_week",
+          "type": "number",
+          "label": "Hours per week"
+        },
+        {
+          "name": "travel_monthly_cost",
+          "type": "number",
+          "label": "Monthly travel/housing costs (USD)"
+        },
+        {
+          "name": "employed_salary",
+          "type": "number",
+          "label": "Comparable employed annual salary (USD)"
+        },
+        {
+          "name": "benefits_value",
+          "type": "number",
+          "label": "Estimated annual benefits value (health, retirement, CME)"
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "label": "State of practice"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "locum_gross_annual",
+          "label": "Locum gross annual income"
+        },
+        {
+          "name": "locum_net_after_expenses",
+          "label": "Locum net after expenses"
+        },
+        {
+          "name": "self_employment_tax",
+          "label": "Additional self-employment tax (1099)"
+        },
+        {
+          "name": "employed_total_comp",
+          "label": "Total employed compensation (salary + benefits)"
+        },
+        {
+          "name": "comparison_summary",
+          "label": "Side-by-side comparison and recommendation"
+        }
+      ],
+      "formula_hint": "Locum gross = rate * hours * weeks; SE tax = gross * 15.3% (up to SS cap); Net = gross - expenses - SE_tax; Employed total = salary + benefits",
+      "rates": {
+        "se_tax_rate": 0.153,
+        "ss_wage_base_2025": 176100,
+        "national_avg_locum_rate": 300
+      }
+    },
+    "example_queries": [
+      "Compare $325/hr locum tenens working 45 weeks vs a $550K employed position with $80K benefits",
+      "What's the annual equivalent of a $350/hr locum rate working 40 weeks at 50 hours?",
+      "Factor in self-employment tax for a 1099 locum tenens anesthesiologist making $300/hr"
+    ]
+  }
+]

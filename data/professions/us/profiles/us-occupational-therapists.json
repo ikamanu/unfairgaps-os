@@ -1,0 +1,484 @@
+{
+  "profession_id": "us-occupational-therapists",
+  "profession_name": "Occupational Therapists",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "OTs work 8-hour days across diverse settings including hospitals, SNFs, outpatient clinics, schools, home health, and mental health facilities. The day begins with reviewing patient charts, checking schedules, and prioritizing caseloads. Core tasks include conducting initial evaluations and functional assessments, developing individualized treatment plans, delivering direct therapy sessions (typically 30-60 minutes each), training patients on adaptive equipment and compensatory strategies, modifying environments for accessibility, and consulting with interdisciplinary teams. Medical OTs see 6-12 patients daily; school-based OTs manage caseloads of 30-60+ students. Documentation consumes 25-40% of the workday, with SOAP notes, evaluation reports, progress notes, and discharge summaries required for every patient encounter. Productivity requirements in many settings demand 80-95% billable time, leaving minimal room for documentation, collaboration, and self-care. Over 133,000 licensed OTs are employed in the US as of 2025, with approximately 9,800 new openings projected each year through 2033.",
+    "documents": [
+      "Initial evaluation reports",
+      "Occupational profiles",
+      "Treatment/intervention plans",
+      "SOAP progress notes (Subjective, Objective, Assessment, Plan)",
+      "Daily treatment/session notes",
+      "Re-evaluation reports",
+      "Discharge summaries",
+      "Individualized Education Programs (IEPs) — school-based",
+      "Individualized Family Service Plans (IFSPs) — early intervention",
+      "Medicare Plan of Care (POC) certifications",
+      "Prior authorization requests",
+      "Letters of medical necessity",
+      "Functional outcome measures (FIM, MDS, OASIS)",
+      "Home safety assessment reports",
+      "Assistive technology recommendations",
+      "Caregiver training documentation",
+      "Billing records and CPT code documentation",
+      "Incident reports",
+      "Fieldwork supervision logs"
+    ],
+    "deadlines": [
+      "Medicare Plan of Care recertification every 90 days",
+      "Progress notes within 24-72 hours of treatment (facility-dependent)",
+      "Evaluation reports within 48 hours to 1 week of initial visit",
+      "IEP annual reviews and triennial re-evaluations (school-based)",
+      "Insurance pre-authorization renewal timelines",
+      "MDS assessment windows (SNF: days 5, 14, 30, 60, 90)",
+      "OASIS assessments within 5 calendar days (home health)",
+      "State license renewal (every 1-2 years, varies by state)",
+      "NBCOT certification renewal every 3 years (36 PDUs)",
+      "Continuing education completion before renewal deadline",
+      "Medicaid/Medicare billing submission windows (typically 12 months from date of service)",
+      "Discharge summaries within 7-14 days of last visit"
+    ],
+    "seasonality": "School-based OTs follow the academic calendar with heavy evaluation periods in fall (September-October) and spring (March-April) for IEP meetings. Extended School Year (ESY) services may run during summer for qualifying students. SNF and hospital settings maintain year-round demand with slight increases during winter months (falls, hip fractures, stroke). Home health referrals spike after hospital discharge surges following holiday seasons. Outpatient clinics see increased volume in January (new insurance deductibles reset) and post-summer (return from vacations). Medicare year-end therapy threshold considerations in November-December. Flu season and winter weather increase fall-related injuries driving inpatient rehab volume."
+  },
+  "regulatory": {
+    "laws": [
+      "State Occupational Therapy Practice Acts (all 50 states + DC)",
+      "HIPAA (Health Insurance Portability and Accountability Act)",
+      "IDEA (Individuals with Disabilities Education Act) — school-based OT",
+      "FERPA (Family Educational Rights and Privacy Act) — school-based",
+      "ADA (Americans with Disabilities Act)",
+      "Section 504 of the Rehabilitation Act",
+      "Medicare Part A (SNF coverage under PDPM) and Part B (outpatient) regulations",
+      "Medicaid therapy services regulations (state-specific)",
+      "CMS Physician Fee Schedule and therapy payment policies",
+      "AOTA Occupational Therapy Code of Ethics (2020)",
+      "AOTA Standards of Practice for Occupational Therapy",
+      "OT Interstate Compact (expanding licensure portability, enacted in multiple states as of 2025-2026)",
+      "State telepractice/telehealth regulations",
+      "PDPM (Patient-Driven Payment Model) for SNF reimbursement",
+      "Anti-Kickback Statute and Stark Law (federal fraud and abuse)",
+      "False Claims Act"
+    ],
+    "licensing": "Entry requires either a Master's (MOT/MSOT, 2-3 years) or Doctoral (OTD, 3-3.5 years) degree from an ACOTE-accredited program. Both degrees are accepted as entry-level; AOTA's Representative Assembly placed the 2027 doctoral mandate on hold indefinitely, maintaining dual entry-level pathways. Must complete Level I and Level II fieldwork (minimum 24 weeks of full-time Level II fieldwork). Must pass the NBCOT OTR certification exam. All 50 states and DC require state licensure; core requirements are uniform (accredited degree, fieldwork, NBCOT exam) but states may add specific requirements. Most state licenses renew every 2 years with varying continuing education requirements (typically 12-24 CE hours per renewal cycle). NBCOT certification renewal requires 36 Professional Development Units (PDUs) every 3 years. OTAs (Occupational Therapy Assistants) work under OT supervision with their own NBCOT COTA certification. CMS finalized a change from direct to general supervision of OTAs in private/group practice settings in 2025-2026, aligning with institutional settings.",
+    "penalties": "Practicing without a license: state-specific fines ($1,000-$10,000+), potential misdemeanor/felony charges, and cease-and-desist orders. HIPAA violations: $100 to $50,000 per violation, up to $1.5 million annually per category. AOTA Code of Ethics violations: NBCOT disciplinary action including reprimand, probation, suspension, or revocation of OTR certification. Medicare/Medicaid fraud (upcoding, billing for services not rendered): federal criminal prosecution under False Claims Act, fines up to $50,000 per false claim, treble damages, and exclusion from federal healthcare programs. Failure to maintain continuing education: license suspension or non-renewal. Inadequate supervision of OTAs: disciplinary action by state regulatory board. Productivity-driven ethical violations (double-booking, billing for unseen patients): professional sanctions, license revocation, and potential federal fraud charges. OIG actively audits SNFs for PDPM upcoding and improper therapy billing.",
+    "regulatory_bodies": [
+      "NBCOT (National Board for Certification in Occupational Therapy) — national certification",
+      "State Occupational Therapy Licensing/Regulatory Boards",
+      "AOTA (American Occupational Therapy Association) — professional standards, not licensing authority",
+      "ACOTE (Accreditation Council for Occupational Therapy Education) — program accreditation",
+      "CMS (Centers for Medicare & Medicaid Services) — reimbursement and coverage rules",
+      "State Departments of Education (school-based OT regulation)",
+      "State Health Departments",
+      "OIG (Office of Inspector General) — fraud and abuse enforcement",
+      "OT Interstate Compact Commission (emerging)"
+    ]
+  },
+  "tools": {
+    "software": [
+      "WebPT (leading rehab therapy EMR; OT-specific templates, HEP tools, billing; 155,000+ therapists across 27,000+ clinics; from $99/month; Best in KLAS Outpatient Therapy 2024)",
+      "Net Health (Optima Therapy for SNF, ReDoc for outpatient; widely used in post-acute and hospital settings)",
+      "SpryPT (AI-powered documentation and practice management; claims 70% documentation time reduction; from $150/month)",
+      "Fusion by Ensora Health (rehab therapy EHR for PT/OT/SLP)",
+      "SimplePractice (telehealth, billing, scheduling; popular for private practice OTs)",
+      "Clinicient/WebPT Agile (enterprise rehab EMR)",
+      "TheraPlatform (telepractice + documentation platform)",
+      "PointClickCare (SNF/long-term care EHR with therapy modules)",
+      "MatrixCare (senior living and SNF EHR)",
+      "Casamba (rehab therapy documentation for hospital and post-acute settings)",
+      "EPIC / Cerner (hospital-based EHR systems with OT modules)",
+      "Medbridge (HEP builder, patient engagement, and CEU platform)",
+      "Ambiki (practice management for OTs, PTs, SLPs)"
+    ],
+    "platforms": [
+      "AOTA.org (practice guidelines, evidence-based resources, advocacy updates)",
+      "NBCOT Navigator (certification management, PDU tracking)",
+      "OT Potential (CEU courses, clinical resources, research summaries)",
+      "Medbridge (online CEU platform, HEP builder, patient education)",
+      "OccupationalTherapy.com (CEU courses and professional development)",
+      "AOTA CommunOT (online community for AOTA members)",
+      "MyOTspot.com (career resources, clinical tips, job board)",
+      "OT Flourish (clinical resources and business coaching for OTs)",
+      "OT Toolkit (treatment guides and patient handouts)",
+      "Teachers Pay Teachers (school-based OT materials and resources)",
+      "Medicare PECOS (Provider Enrollment, Chain, and Ownership System)",
+      "State licensing board online portals"
+    ],
+    "gov_portals": [
+      "CMS.gov (Medicare billing, PDPM resources, therapy services guidance)",
+      "State occupational therapy licensing board portals",
+      "Medicaid provider enrollment portals (state-specific)",
+      "NPI Registry (National Provider Identifier)",
+      "PECOS (Medicare Provider Enrollment)",
+      "State Department of Education portals (school-based OTs)",
+      "O*NET OnLine — 29-1122.00 (occupation data)",
+      "BLS Occupational Outlook Handbook — Occupational Therapists",
+      "SAM.gov (System for Award Management — federal contract eligibility)"
+    ]
+  },
+  "terminology": {
+    "jargon": [
+      "Occupational profile (comprehensive client history and goals assessment)",
+      "Occupation-based intervention (using meaningful activities as therapy)",
+      "Client-centered practice",
+      "Activity analysis (breaking down tasks to identify performance demands)",
+      "Grading and adapting activities (modifying difficulty level)",
+      "Therapeutic use of self",
+      "Just-right challenge (optimal difficulty for skill development)",
+      "Splinting / orthotic fabrication",
+      "Sensory integration / sensory processing",
+      "Neurodevelopmental treatment (NDT)",
+      "Constraint-induced movement therapy (CIMT)",
+      "Weight-bearing / non-weight-bearing activities",
+      "Functional transfers (bed-to-wheelchair, sit-to-stand)",
+      "Compensatory strategies",
+      "Energy conservation / work simplification",
+      "Joint protection techniques",
+      "Home modification / environmental adaptation",
+      "Discharge planning",
+      "Skilled vs. unskilled services (Medicare distinction)",
+      "Medical necessity (payer requirement for reimbursement)",
+      "Productivity percentage (billable time / total time)",
+      "Units billed (15-minute increments for most CPT codes)",
+      "8-minute rule (Medicare billing threshold per unit)"
+    ],
+    "abbreviations": [
+      "OT - Occupational Therapy / Occupational Therapist",
+      "OTR - Occupational Therapist, Registered (NBCOT-certified)",
+      "OTR/L - Occupational Therapist, Registered/Licensed",
+      "OTD - Doctor of Occupational Therapy (entry-level or post-professional)",
+      "MOT/MSOT - Master of Occupational Therapy / Master of Science in OT",
+      "OTA / COTA - Occupational Therapy Assistant / Certified OTA",
+      "NBCOT - National Board for Certification in Occupational Therapy",
+      "AOTA - American Occupational Therapy Association",
+      "ACOTE - Accreditation Council for Occupational Therapy Education",
+      "ADL - Activities of Daily Living (bathing, dressing, eating, toileting, grooming)",
+      "IADL - Instrumental Activities of Daily Living (cooking, finances, transportation)",
+      "ROM - Range of Motion (AROM = Active, PROM = Passive)",
+      "MMT - Manual Muscle Testing",
+      "FIM - Functional Independence Measure",
+      "MDS - Minimum Data Set (SNF assessment tool)",
+      "OASIS - Outcome and Assessment Information Set (home health)",
+      "PDPM - Patient-Driven Payment Model (SNF reimbursement)",
+      "POC - Plan of Care",
+      "HEP - Home Exercise Program",
+      "SOAP - Subjective, Objective, Assessment, Plan (note format)",
+      "Tx - Treatment",
+      "Dx - Diagnosis",
+      "Hx - History",
+      "Fx - Fracture / Function",
+      "WNL - Within Normal Limits",
+      "WFL - Within Functional Limits",
+      "I - Independent",
+      "SBA - Stand-By Assist",
+      "CGA - Contact Guard Assist",
+      "MIN A - Minimal Assist (patient does 75%+)",
+      "MOD A - Moderate Assist (patient does 50-74%)",
+      "MAX A - Maximal Assist (patient does 25-49%)",
+      "DEP - Dependent (patient needs full assistance)",
+      "MOD I - Modified Independent (uses assistive device)",
+      "UE - Upper Extremity",
+      "LE - Lower Extremity",
+      "B/L - Bilateral",
+      "DME - Durable Medical Equipment",
+      "AFO - Ankle-Foot Orthosis",
+      "AE - Adaptive Equipment",
+      "SNF - Skilled Nursing Facility",
+      "IRF - Inpatient Rehabilitation Facility",
+      "LTACH - Long-Term Acute Care Hospital",
+      "ALF - Assisted Living Facility",
+      "HH - Home Health",
+      "OP - Outpatient",
+      "IP - Inpatient",
+      "D/C - Discharge",
+      "CPT - Current Procedural Terminology",
+      "ICD-10 - International Classification of Diseases, 10th Revision",
+      "KX modifier - Medicare therapy threshold exceeded (medical necessity affirmed)",
+      "PDU - Professional Development Unit (NBCOT)",
+      "CE/CEU - Continuing Education / Continuing Education Unit",
+      "IEP - Individualized Education Program",
+      "IFSP - Individualized Family Service Plan",
+      "EI - Early Intervention",
+      "ASD - Autism Spectrum Disorder",
+      "TBI - Traumatic Brain Injury",
+      "CVA - Cerebrovascular Accident (stroke)",
+      "SCI - Spinal Cord Injury",
+      "THR/TKR - Total Hip/Knee Replacement",
+      "CTS - Carpal Tunnel Syndrome",
+      "RTC - Return to Clinic"
+    ]
+  },
+  "career_psychology": {
+    "career_levels": [
+      "Graduate Student (MOT/MSOT or entry-level OTD, 2-3.5 years)",
+      "Level II Fieldwork Student (minimum 24 weeks full-time supervised practice)",
+      "New Graduate OTR/L (passed NBCOT, first state license, 0-2 years)",
+      "Staff OT / School-Based OT (2-5 years, developing clinical expertise)",
+      "Senior OT / Advanced Clinician (5-10 years, mentoring, specialized caseload)",
+      "Specialized OT (hand therapy CHT, pediatric, neuro rehab, mental health, driving rehab, low vision)",
+      "OT Supervisor / Lead Therapist (clinical and administrative oversight)",
+      "Rehab Director / Department Manager",
+      "Private Practice Owner",
+      "Certified Hand Therapist (CHT) — advanced specialty via HTCC",
+      "Board Certified in Pediatrics (BCP) via AOTA",
+      "Post-Professional OTD / PhD Researcher",
+      "University Faculty / Academic Program Director",
+      "Travel OT (contract positions in shortage areas)",
+      "Telehealth OT (remote service delivery, growing post-COVID)",
+      "OT Consultant (ergonomics, accessibility, assistive technology)"
+    ],
+    "fears": [
+      "Unrealistic productivity requirements compromising patient care quality (85-95% billable time demands)",
+      "Documentation burden consuming therapy time and personal time (25-40% of workday)",
+      "Losing NBCOT certification or state license due to CEU/renewal lapses",
+      "Medicare/insurance denials and reimbursement rate declines (40% inflation-adjusted decrease since 2002)",
+      "Ethical pressure to bill for unnecessary services or upcoded units (especially in SNFs)",
+      "Student loan debt ($80,000-$150,000+ for OTD) relative to salary potential",
+      "OTD vs MOT debate creating credential confusion and degree inflation without salary benefit",
+      "Being replaced or devalued relative to OTAs and PTAs due to cost-cutting",
+      "Workplace injuries from patient handling (back injuries, repetitive strain)",
+      "Burnout from emotional demands of working with chronically ill, disabled, or dying patients",
+      "Feeling undervalued by administrators who do not understand OT's scope of practice",
+      "Scope-of-practice encroachment from PT, SLP, recreational therapy",
+      "AI and automation reducing demand for certain OT documentation and evaluation tasks",
+      "Audit and compliance risk from OIG investigations of therapy billing"
+    ],
+    "motivation": [
+      "Making a tangible, visible difference in patients' daily independence and quality of life",
+      "Diverse career paths across pediatrics, geriatrics, mental health, hand therapy, neuro, and more",
+      "Strong job security with 11% projected growth (faster than average)",
+      "Intellectually stimulating work requiring creative problem-solving",
+      "Holistic, client-centered philosophy distinguishing OT from other rehab professions",
+      "Flexibility for part-time, PRN, travel, or telehealth work arrangements",
+      "Helping children with developmental disabilities reach milestones",
+      "Restoring independence after stroke, TBI, or spinal cord injury",
+      "Growing recognition of OT value in mental health, driver rehab, and ergonomics",
+      "Relatively low unemployment rate and consistent demand across all regions",
+      "Specialization opportunities (CHT, BCP, assistive technology, low vision) for career advancement",
+      "Meaningful relationships with patients and families over treatment episodes"
+    ],
+    "burnout": "OT burnout is a significant and growing concern, with research showing 69% of occupational therapists experiencing burnout symptoms. Key drivers include: (1) Unrealistic productivity standards — SNFs commonly require 90-95% billable productivity, outpatient clinics 80-90%, leaving minimal time for documentation, collaboration, and breaks. (2) Documentation burden — many OTs spend 2-3 hours daily on paperwork beyond patient contact hours, often completing notes at home after hours. (3) Value conflicts — pressure to bill maximum units or treat patients who may not need skilled services (particularly in SNFs under PDPM). (4) Declining reimbursement — Medicare conversion factor cuts (2.83% decrease in 2025, proposed 1% RVU cut in 2026) increasing financial pressure on employers who pass it to clinicians. (5) Student loan debt — OTD graduates carrying $80,000-$150,000+ in loans with no significant salary premium over MOT holders. (6) Emotional toll — working with patients experiencing chronic illness, disability, cognitive decline, or end-of-life transitions. OTs with fewer than 10 years of experience report higher burnout. Those working with older adults and in childcare settings report the highest burnout levels, while physical rehabilitation and intellectual disability settings report the lowest. The OTD vs MOT debate adds professional identity stress without clear career benefit."
+  },
+  "community": {
+    "reddit": [
+      "r/OccupationalTherapy (~41,000+ members — largest OT subreddit, discussions on interventions, pay, settings, school advice)",
+      "r/OTstudents (occupational therapy student community)",
+      "r/OccupationalTherapy frequent topics: salary negotiation, setting comparisons, burnout, OTD vs MOT, productivity complaints"
+    ],
+    "linkedin": [
+      "AOTA LinkedIn page",
+      "Occupational Therapy networking groups",
+      "OT specialty groups (hand therapy, pediatrics, neuro rehab)",
+      "School-based OT communities",
+      "Travel OT and PRN OT groups"
+    ],
+    "associations": [
+      "AOTA (American Occupational Therapy Association) — the national professional association; provides advocacy, practice resources, ethics guidance, CEU opportunities; membership includes access to AJOT (American Journal of Occupational Therapy) and CommunOT online community",
+      "State Occupational Therapy Associations (e.g., OTAC — Occupational Therapy Association of California, NYOTA — New York, etc.) — state-level advocacy, networking, annual conferences",
+      "NBCOT (National Board for Certification in Occupational Therapy) — certification body, not a membership association, but central to professional identity",
+      "WFOT (World Federation of Occupational Therapists) — international OT network and advocacy",
+      "AOTF (American Occupational Therapy Foundation) — research funding and scholarships",
+      "HTCC (Hand Therapy Certification Commission) — CHT specialty certification",
+      "AOTA Special Interest Sections (SIS) — focused communities within AOTA for specialty areas (mental health, gerontology, technology, etc.)",
+      "Pi Theta Epsilon (national OT honor society)",
+      "Coalition of Occupational Therapy Advocates for Diversity (COTAD)"
+    ],
+    "conferences": [
+      "AOTA INSPIRE 2026 — Annual Conference & Expo, April 23-25, 2026 (preconference April 22); the largest gathering of OT professionals worldwide",
+      "AOTA INSPIRE 2025 — held April 3-5, 2025 in Philadelphia, PA",
+      "State OT Association Annual Conferences (held in each state, typically fall or spring)",
+      "AOTA Specialty Conferences (e.g., AOTA Children & Youth Conference)",
+      "NBCOT Professional Development Events",
+      "RESNA (Rehabilitation Engineering and Assistive Technology Society of North America) Annual Conference",
+      "ACRM (American Congress of Rehabilitation Medicine) Annual Conference",
+      "OccupationalTherapy.com virtual conferences and webinar series",
+      "Medbridge virtual learning events and summits",
+      "WFOT Congress (international, held every 4 years)"
+    ]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "entry_level_new_grad": "65000-80000",
+      "staff_ot_2_5_years": "78000-95000",
+      "school_based_ot": "65000-85000",
+      "outpatient_clinic_ot": "78000-98000",
+      "hospital_based_ot": "82000-105000",
+      "snf_skilled_nursing": "85000-110000",
+      "home_health_ot": "85000-110000",
+      "senior_experienced_10_plus": "95000-130000",
+      "certified_hand_therapist_cht": "90000-120000",
+      "rehab_director_manager": "95000-130000",
+      "private_practice_owner": "80000-150000+",
+      "travel_ot": "90000-130000+",
+      "top_10_percent": "129830+"
+    },
+    "national_average_usd": 98340,
+    "job_count": "133,000 licensed OTs employed (2025); projected ~9,800 annual openings through 2033; 50,000 OTAs also employed",
+    "growth_rate": "11% projected 2023-2033 (much faster than average for all occupations per BLS); 24% workforce growth over the past decade",
+    "unemployment_rate": "Below 2% — strong demand across all settings and regions, particularly in rural and underserved areas",
+    "work_arrangements": [
+      "Hospitals (inpatient rehab, acute care, NICU)",
+      "Skilled Nursing Facilities (SNFs) — post-acute rehabilitation",
+      "Outpatient clinics / Rehabilitation centers",
+      "Public and private schools (K-12, early intervention)",
+      "Home health agencies",
+      "Inpatient Rehabilitation Facilities (IRFs)",
+      "Long-Term Acute Care Hospitals (LTACHs)",
+      "Assisted living and memory care facilities",
+      "Private practice",
+      "Telehealth / Telepractice (growing significantly post-COVID)",
+      "Travel OT assignments (contract, 8-13 week assignments)",
+      "Mental health and behavioral health settings",
+      "Ergonomics and workplace injury prevention consulting",
+      "Driver rehabilitation programs",
+      "Community-based programs and nonprofits",
+      "University clinics and academic faculty positions"
+    ],
+    "trends": [
+      "Median salary $98,340 (2024 BLS data); top 10% earn $129,830+; lowest 10% earn $67,090",
+      "Highest-paying states: California ($118,790), DC ($119,253), Massachusetts ($117,210), Nevada, New Jersey",
+      "Medicare reimbursement declining in real terms — 40% inflation-adjusted decrease since 2002; 2.83% conversion factor cut in 2025; proposed 1% RVU reduction for 2026",
+      "2026 Medicare therapy threshold: $2,480 for OT services (up $70 from 2025); KX modifier required above threshold",
+      "PDPM reimbursement model in SNFs shifting focus from volume-based to patient-driven care; FY2026 SNF PPS rates increasing 3.2% ($1.16B increase)",
+      "OTD vs MOT debate continues: AOTA 2027 doctoral mandate on hold indefinitely; both degrees accepted as entry-level; minimal salary difference in clinical practice",
+      "AI-powered documentation tools (SpryPT, etc.) emerging to reduce documentation burden by up to 70%",
+      "Over 30% of OT facilities have integrated AI to enhance clinical workflows by 2025",
+      "Telehealth becoming established practice modality; CMS finalizing expanded telehealth coverage",
+      "OT Interstate Compact expanding licensure portability across state lines",
+      "CMS changed OTA supervision from direct to general in private practice settings (2025-2026)",
+      "Growing demand driven by aging Baby Boomer population, rising autism diagnosis rates, and increasing recognition of OT value in mental health",
+      "Student loan debt ($80K-$150K+ for OTD) vs salary creating financial pressure, especially for school-based and early-career OTs",
+      "Occupational therapy industry projected to grow from $31.22 billion to $40.05 billion by 2028",
+      "OIG actively auditing SNFs for PDPM upcoding and therapy billing compliance",
+      "Productivity standard concerns driving advocacy for ethical practice guidelines; AOTA has spoken against pressure to bill for unnecessary services"
+    ]
+  },
+  "quality_score": 0.78,
+  "sources_count": 52,
+  "verified_sources": 12,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "occupational therapist daily routine tasks documentation burden productivity requirements United States 2025 2026",
+      "sources": [
+        {"title": "Occupational Therapy Documentation - OT Notes (With Examples) - Mentalyc", "url": "https://www.mentalyc.com/blog/occupational-therapy-documentation"},
+        {"title": "Occupational Therapist Work in 2026 - Hansel Union", "url": "https://hanselunion.com/occupational-therapist-work/"},
+        {"title": "7 Powerful Facts About What Occupational Therapists Do", "url": "https://www.sprypt.com/blog/what-do-ots-do"},
+        {"title": "OT Documentation Cheat Sheet - Medbridge", "url": "https://www.medbridge.com/blog/ot-documentation-cheat-sheet-a-practical-guide-for-everyday-charting"},
+        {"title": "Occupational Therapists - BLS Occupational Outlook Handbook", "url": "https://www.bls.gov/ooh/healthcare/occupational-therapists.htm"},
+        {"title": "AOTA Official Documents", "url": "https://www.aota.org/practice/practice-essentials/aota-official-documents"},
+        {"title": "Typical Workday for an Occupational Therapist - Centra Healthcare", "url": "https://www.centrahealthcare.com/typical-workday-for-an-occupational-therapist/"},
+        {"title": "AI, Automation, and the Future of OT Careers - Research.com", "url": "https://research.com/advice/ai-automation-and-the-future-of-occupational-therapy-degree-careers"}
+      ]
+    },
+    {
+      "query": "occupational therapy regulatory requirements state licensing NBCOT AOTA certification United States 2025 2026",
+      "sources": [
+        {"title": "State Occupational Therapy Licensure - AOTA", "url": "https://www.aota.org/career/state-licensure"},
+        {"title": "FAQ about State Licensure - AOTA", "url": "https://www.aota.org/career/state-licensure/frequently-asked-questions"},
+        {"title": "NBCOT Occupational Therapy Certification", "url": "https://www.nbcot.org/"},
+        {"title": "NBCOT Certification", "url": "https://www.nbcot.org/certification"},
+        {"title": "OT CEU Requirements and Licensure Renewal by State - OT Potential", "url": "https://otpotential.com/ot-continuing-education-requirements"},
+        {"title": "Steps to Occupational Therapy State Licensure - AOTA", "url": "https://www.aota.org/career/state-licensure/learn-the-steps-to-licensure"},
+        {"title": "Steps to Get Your OT License State by State - myotspot.com", "url": "https://www.myotspot.com/occupational-therapy-license/"}
+      ]
+    },
+    {
+      "query": "occupational therapy software tools EMR documentation systems Net Health WebPT United States 2025 2026",
+      "sources": [
+        {"title": "WebPT: Pricing, Free Demo & Features (2026) - Software Finder", "url": "https://softwarefinder.com/emr-software/webpt"},
+        {"title": "WebPT OT Software", "url": "https://www.webpt.com/lp/occupational-therapy-software"},
+        {"title": "Best EMR For Occupational Therapy In 2026 - Software Finder", "url": "https://softwarefinder.com/resources/best-ehr-emr-for-occupational-therapy"},
+        {"title": "7 Best EMR Systems for OT 2025 - SPRY", "url": "https://www.sprypt.com/blog/best-emr-platforms-occupational-therapy-ot-clinics"},
+        {"title": "Best OT Software 2026 - SPRY", "url": "https://www.sprypt.com/blog/occupational-therapy-software"},
+        {"title": "WebPT Occupational Therapy Solutions", "url": "https://www.webpt.com/occupational-therapy"}
+      ]
+    },
+    {
+      "query": "occupational therapy terminology abbreviations ADL IADL FIM MDS clinical jargon 2025 2026",
+      "sources": [
+        {"title": "Occupational Therapy Medical Terms and Abbreviations - St. Kate", "url": "https://otaonline.stkate.edu/blog/occupational-therapy-medical-terms/"},
+        {"title": "OT Abbreviations Every Therapist Needs (200+ List) - SPRY", "url": "https://www.sprypt.com/blog/occupational-therapy-acronyms-abbreviations"},
+        {"title": "OT Medical Abbreviations - OT Mastery", "url": "https://www.otmastery.com/resources/occupational-therapy-medical-abbreviations.php"},
+        {"title": "Must-Know OT Medical Abbreviations - myotspot.com", "url": "https://www.myotspot.com/occupational-therapy-medical-abbreviations/"},
+        {"title": "Most Common OT Abbreviations - WebPT", "url": "https://www.webpt.com/blog/the-most-common-occupational-therapy-abbreviations"},
+        {"title": "OT Abbreviations - OT Potential", "url": "https://otpotential.com/blog/ot-abbreviations"},
+        {"title": "OT Abbreviation Guide - Clinicient", "url": "https://www.clinicient.com/guide/occupational-therapy-acronyms/"}
+      ]
+    },
+    {
+      "query": "occupational therapist career levels burnout stress OTD vs MOT debate career psychology 2025 2026",
+      "sources": [
+        {"title": "Feel the Burn, Heal the Burn: Job Crafting and Burnout Among OT Professionals - AJOT 2025", "url": "https://research.aota.org/ajot/article/79/1/7901205080/26010/Feel-the-Burn-Heal-the-Burn-Job-Crafting-and"},
+        {"title": "Burnout Among OT Professionals - PMC", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740873/"},
+        {"title": "Factors that Contribute to Occupational Burnout Among OTs - University of St. Augustine", "url": "https://soar.usa.edu/cgi/viewcontent.cgi?article=1016&context=otdcapstonessummer2025"},
+        {"title": "OT Burnout — What It Is and How to Fix It - OT Potential", "url": "https://otpotential.com/blog/occupational-therapy-burnout"},
+        {"title": "Productivity in OT: Ethical Practice? - OT Flourish", "url": "https://otflourish.com/productivity-in-occupational-therapy/"},
+        {"title": "OTD vs MOT: MSOT vs OTD - Belmont University", "url": "https://www.belmont.edu/stories/articles/2025/msot-vs-otd.html"},
+        {"title": "MOT vs OTD: Which Degree To Pursue? - myotspot.com", "url": "https://www.myotspot.com/pursue-mot-vs-otd/"},
+        {"title": "Do I need my OTD by 2027? - North Central College", "url": "https://www.northcentralcollege.edu/news/2020/10/01/do-i-need-my-doctor-occupational-therapy-degree-2027"}
+      ]
+    },
+    {
+      "query": "occupational therapy professional community AOTA conference online forums Reddit OT communities 2025 2026",
+      "sources": [
+        {"title": "AOTA INSPIRE 2026 Annual Conference & Expo", "url": "https://inspire.aota.org/"},
+        {"title": "AOTA Events Calendar", "url": "https://www.aota.org/events"},
+        {"title": "AOTA INSPIRE 2026 Details", "url": "https://www.aota.org/events/calendar/2026-aota-annual-conference-and-expo"},
+        {"title": "6 Best Occupational Therapy Forums - myotspot.com", "url": "https://www.myotspot.com/occupational-therapy-forums/"},
+        {"title": "r/OccupationalTherapy - Subreddit Stats", "url": "https://gummysearch.com/r/OccupationalTherapy/"},
+        {"title": "OT Forums and Communities - OT Potential", "url": "https://otpotential.com/blog/ot-forums-and-communities"},
+        {"title": "OccupationalTherapy.forum", "url": "https://occupationaltherapy.forum/"},
+        {"title": "Student Doctor Network - OT Forums", "url": "https://forums.studentdoctor.net/forums/occupational-therapy-o-t-d.513/"}
+      ]
+    },
+    {
+      "query": "occupational therapist salary job growth market trends Bureau Labor Statistics United States 2025 2026",
+      "sources": [
+        {"title": "Occupational Therapists - BLS Occupational Outlook Handbook", "url": "https://www.bls.gov/ooh/healthcare/occupational-therapists.htm"},
+        {"title": "OT Job Outlook 2025 - University of Cincinnati", "url": "https://online.uc.edu/blog/occupational-therapy-job-outlook/"},
+        {"title": "OT Salary Guide 2026 - OT Potential", "url": "https://otpotential.com/blog/occupational-therapy-salary-guide"},
+        {"title": "Occupational Therapist Salary 2025 - US News Best Jobs", "url": "https://money.usnews.com/careers/best-jobs/occupational-therapist/salary"},
+        {"title": "OT Statistics 2025 - Beaming Health", "url": "https://beaminghealth.com/article/occupational-therapy-statistics"},
+        {"title": "BLS Occupational Employment Statistics - 29-1122", "url": "https://www.bls.gov/oes/2023/may/oes291122.htm"},
+        {"title": "OT Salary Overview - Zippia", "url": "https://www.zippia.com/salaries/occupational-therapist/"},
+        {"title": "Career Outlook OT - Baylor University", "url": "https://otd.robbins.baylor.edu/entry-level-otd/career-outlook-and-program-outcomes"}
+      ]
+    },
+    {
+      "query": "occupational therapy Medicare reimbursement rates insurance billing CPT codes 2025 2026",
+      "sources": [
+        {"title": "The 2026 Therapy Reimbursement Guide - OT Potential", "url": "https://otpotential.com/blog/therapy-reimbursement"},
+        {"title": "7 Essential OT Billing Codes - SPRY", "url": "https://www.sprypt.com/blog/ot-billing-codes-reimbursement-rates"},
+        {"title": "OT and CPT Codes - OT Potential", "url": "https://otpotential.com/blog/occupational-therapy-and-cpt-codes"},
+        {"title": "Final Medicare Payments for Outpatient Therapy in 2026 - Gawenda Seminars", "url": "https://gawendaseminars.com/final-medicare-payments-for-outpatient-therapy-in-2026/"},
+        {"title": "Key Changes for OT in 2026 Medicare Part B Proposed Rule - AOTA", "url": "https://www.aota.org/advocacy/advocacy-news/2025/key-changes-for-ot-in-the-2026-medicare-part-b-proposed-rule"},
+        {"title": "Comment Letter Against Proposed PT/OT Medicare Reimbursement Decrease - OT Potential", "url": "https://otpotential.com/blog/medicare-comment-letter-2026"},
+        {"title": "Annual Therapy Update - CMS", "url": "https://www.cms.gov/medicare/coding-billing/therapy-services/annual-therapy-update"},
+        {"title": "OT Billing in 2026 - HealthQuest Billing", "url": "https://www.healthquestbilling.com/occupational-therapy-billing-coding-tip/"}
+      ]
+    },
+    {
+      "query": "occupational therapy productivity standards ethical concerns SNF units billed 2025",
+      "sources": [
+        {"title": "Tips for Working in a SNF - myotspot.com", "url": "https://www.myotspot.com/tips-for-working-in-a-skilled-nursing-facility/"},
+        {"title": "Advice for Achieving OT Productivity - myotspot.com", "url": "https://www.myotspot.com/advice-achieving-occupational-therapy-productivity/"},
+        {"title": "Productivity is Ruining Healthcare - Provider Connect", "url": "https://www.providerconnect.com/post/productivity-is-ruining-healthcare"},
+        {"title": "Productivity in OT: Ethical Practice? - OT Flourish", "url": "https://otflourish.com/productivity-in-occupational-therapy/"},
+        {"title": "SNF Occupational Therapy - OT Potential", "url": "https://otpotential.com/blog/occupational-therapy-snf"},
+        {"title": "Ethics In OT - OccupationalTherapy.com", "url": "https://www.occupationaltherapy.com/articles/ethics-in-occupational-therapy-5835"}
+      ]
+    },
+    {
+      "query": "occupational therapy key regulations IDEA HIPAA ADA Medicare Part B PDPM SNF 2025 2026",
+      "sources": [
+        {"title": "SNF Billing Rule 2026 - Reenix Excellence", "url": "https://reenixexcellence.com/blog/snf-billing-rule-2026/"},
+        {"title": "SNF PDPM, MDS & Part A Changes October 2025 - Montero Therapy", "url": "https://www.monterotherapyservices.com/info-blast/snf-pdpm-mds-part-a-changes-for-october-1st-2025-what-therapy-mds-professionals-need-to-know/"},
+        {"title": "FY 2026 SNF PPS Final Rule - CMS", "url": "https://www.cms.gov/newsroom/fact-sheets/fy-2026-skilled-nursing-facility-snf-prospective-payment-system-final-rule-cms-1827-f"},
+        {"title": "Key Changes for OT in 2026 Medicare Part B Proposed Rule - AOTA", "url": "https://www.aota.org/advocacy/advocacy-news/2025/key-changes-for-ot-in-the-2026-medicare-part-b-proposed-rule"},
+        {"title": "Therapy Requirements for SNFs in 2025 - ExaCare", "url": "https://www.exacare.com/article/therapy-requirements-skilled-nursing-facility"},
+        {"title": "FY 2026 SNF PPS Proposed Rule - CMS", "url": "https://www.cms.gov/newsroom/fact-sheets/fiscal-year-2026-skilled-nursing-facility-prospective-payment-system-proposed-rule-cms-1827-p-fact"}
+      ]
+    }
+  ]
+}

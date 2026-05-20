@@ -1,0 +1,248 @@
+{
+  "profession_id": "us-dietetic-technicians",
+  "profession_name": "Dietetic Technicians",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Dietetic Technicians, Registered (DTR/NDTR) work under supervision of registered dietitians providing nutrition services in healthcare, food service, and community settings. They screen patients, gather dietary data, assist with nutrition care plans, and manage food service operations.",
+    "typical_tasks": [
+      "Screening patients for nutritional risk and gathering dietary intake data",
+      "Assisting registered dietitians with nutrition assessments and care plans",
+      "Conducting diet history interviews with patients",
+      "Educating patients and families on dietary modifications",
+      "Managing food service employees and operations",
+      "Participating in menu planning and ensuring nutritional standards",
+      "Ensuring food safety compliance (HACCP, sanitation standards)",
+      "Preparing budgets and overseeing food purchasing",
+      "Supervising meal preparation to meet therapeutic diet requirements",
+      "Documenting nutrition interventions in patient records"
+    ],
+    "key_documents": [
+      "Nutrition screening forms",
+      "Dietary intake records and assessments",
+      "Menu plans and recipes",
+      "Food safety logs (temperature, sanitation)",
+      "Patient nutrition care plans",
+      "Food service budget and purchasing records",
+      "HACCP compliance documentation"
+    ],
+    "deadlines": {
+      "initial_screening": "Within 24 hours of hospital admission (Joint Commission standard)",
+      "reassessment": "Per care plan, typically every 3-7 days for inpatients",
+      "food_safety_checks": "Multiple daily temperature checks and logs",
+      "menu_cycle": "Typically 3-6 week rotating menu cycles",
+      "ce_renewal": "75 CPEUs every 5-year recertification cycle"
+    },
+    "seasonality": "No strong seasonality. Hospital nutrition services operate year-round. School food service follows academic calendar."
+  },
+  "regulatory": {
+    "summary": "DTR/NDTR certification through CDR (Commission on Dietetic Registration) after completing ACEND-accredited program. State licensure varies — states with licensure typically offer higher salaries. Supervised by registered dietitians in clinical settings.",
+    "key_laws": [
+      {
+        "name": "State dietetic licensure laws (varies by state)",
+        "description": "Many states require licensure or certification for nutrition professionals; requirements vary significantly"
+      },
+      {
+        "name": "ACEND accreditation standards",
+        "description": "Accreditation Council for Education in Nutrition and Dietetics sets educational program standards"
+      },
+      {
+        "name": "Joint Commission nutrition standards",
+        "description": "Hospital accreditation requires nutrition screening within 24 hours of admission"
+      },
+      {
+        "name": "USDA/FDA food safety regulations",
+        "description": "Federal food safety standards for food service operations"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Associate's degree minimum from ACEND-accredited program",
+        "450-hour supervised practice experience",
+        "Pass CDR Registration Examination for Dietetic Technicians",
+        "Obtain NDTR (Nutrition and Dietetics Technician, Registered) credential",
+        "75 continuing professional education units (CPEUs) every 5 years",
+        "State licensure/certification where required",
+        "Food safety certification (ServSafe or equivalent) often required"
+      ]
+    },
+    "recent_changes": "ACEND updated competency standards. Growing movement to expand NDTR scope of practice. Some states adding new licensure requirements for nutrition professionals."
+  },
+  "tools": {
+    "summary": "Mix of nutrition analysis software, food service management systems, EHR for clinical documentation, and food safety monitoring tools.",
+    "primary_tools": [
+      {
+        "name": "Nutrition analysis software",
+        "description": "Software for analyzing nutrient content and creating meal plans",
+        "examples": "Computrition, CBORD, Food Processor, Nutritics"
+      },
+      {
+        "name": "Food service management systems",
+        "description": "Systems for menu planning, inventory, purchasing, and production",
+        "examples": "CBORD, Computrition, Dietary Manager Pro"
+      },
+      {
+        "name": "EHR systems (nutrition modules)",
+        "description": "Electronic health records for clinical nutrition documentation",
+        "examples": "Epic, Cerner nutrition modules"
+      },
+      {
+        "name": "Food safety monitoring tools",
+        "description": "Temperature logging, HACCP tracking systems",
+        "examples": "Digital thermometers, ComplianceMate, FoodSafe"
+      }
+    ],
+    "secondary_tools": [
+      "MyPlate.gov resources for patient education",
+      "Body composition analysis tools",
+      "Calorie counting apps (for patient education)",
+      "Microsoft Office for reports and presentations",
+      "Patient education handouts and visual aids"
+    ],
+    "pain_points": [
+      "Outdated nutrition software in some facilities",
+      "Limited integration between food service and clinical systems",
+      "Manual documentation processes",
+      "Insufficient technology training",
+      "Budget constraints limiting tool upgrades"
+    ]
+  },
+  "terminology": {
+    "summary": "Nutrition and dietetics terminology combining medical nutrition therapy language with food service management vocabulary.",
+    "terms": {
+      "NDTR": "Nutrition and Dietetics Technician, Registered (formerly DTR)",
+      "DTR": "Dietetic Technician, Registered (legacy credential name)",
+      "RDN": "Registered Dietitian Nutritionist (supervising credential)",
+      "MNT": "Medical Nutrition Therapy — individualized nutritional treatment",
+      "HACCP": "Hazard Analysis Critical Control Point — food safety system",
+      "TPN": "Total Parenteral Nutrition — IV nutrition",
+      "enteral nutrition": "Feeding through a tube directly into the GI tract",
+      "BMI": "Body Mass Index — weight-to-height ratio",
+      "kcal": "Kilocalorie — unit of food energy",
+      "macros": "Macronutrients — carbohydrates, proteins, fats",
+      "therapeutic diet": "Medically prescribed dietary modification (e.g., renal diet, cardiac diet)",
+      "dysphagia": "Difficulty swallowing — requires modified texture diets",
+      "IDDSI": "International Dysphagia Diet Standardisation Initiative",
+      "NPO": "Nothing by mouth (Nil Per Os) — patient fasting status",
+      "calorie count": "Tracking actual food intake for nutritional assessment",
+      "tube feeding": "Delivery of nutrition through nasogastric or PEG tube",
+      "CPEU": "Continuing Professional Education Unit — required for recertification"
+    }
+  },
+  "career_psychology": {
+    "summary": "Entry-level nutrition career often used as stepping stone to RDN. Moderate salary ($39,560-$54,700 median). Growing field with 7.4% projected increase. Many DTRs pursue further education while working.",
+    "career_path": [
+      "Associate's degree in dietetics or food service (ACEND-accredited)",
+      "Complete 450-hour supervised practice",
+      "Pass CDR exam → earn NDTR credential",
+      "Entry-level dietetic technician in hospital, long-term care, or food service",
+      "Specialized DTR: clinical, food service management, community nutrition",
+      "Bachelor's degree completion → pathway to RDN credential",
+      "RDN (Registered Dietitian Nutritionist) with additional education and internship"
+    ],
+    "salary_range": {
+      "entry_level": "$32,000 - $40,000",
+      "median_bls": "$39,560 (BLS May 2024)",
+      "median_survey": "$54,700 (CDR 2024 Compensation Survey)",
+      "experienced": "$45,000 - $60,000",
+      "food_service_management": "$40,000 - $55,000"
+    },
+    "fears": [
+      "Low wages relative to education and responsibility",
+      "Limited career advancement without RDN credential",
+      "Scope of practice limitations in clinical settings",
+      "Job competition from RDNs in clinical roles",
+      "Physical demands of food service management"
+    ],
+    "motivation": [
+      "Passion for nutrition and helping people eat healthier",
+      "Stepping stone to registered dietitian career",
+      "Meaningful patient interaction in clinical settings",
+      "Variety of work settings (clinical, food service, community)",
+      "Growing demand for nutrition professionals",
+      "Employer tuition assistance for further education"
+    ],
+    "burnout_factors": [
+      "Low compensation relative to workload",
+      "Limited autonomy under RDN supervision",
+      "Fast-paced food service environments",
+      "Emotional demands of working with seriously ill patients",
+      "Staffing shortages increasing workload"
+    ]
+  },
+  "community": {
+    "summary": "Part of the Academy of Nutrition and Dietetics (AND) community. NDTR-specific resources through CDR and ACEND. Growing professional identity separate from RDNs.",
+    "associations": [
+      {
+        "name": "Academy of Nutrition and Dietetics (AND)",
+        "url": "https://www.eatright.org",
+        "type": "Primary professional organization for nutrition professionals including NDTRs"
+      },
+      {
+        "name": "Commission on Dietetic Registration (CDR)",
+        "url": "https://www.cdrnet.org",
+        "type": "Credentialing agency for RDNs and NDTRs"
+      },
+      {
+        "name": "Association of Nutrition & Foodservice Professionals (ANFP)",
+        "url": "https://www.anfponline.org",
+        "type": "Organization for food service management professionals"
+      },
+      {
+        "name": "School Nutrition Association (SNA)",
+        "url": "https://schoolnutrition.org",
+        "type": "Organization for school food service professionals"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "r/dietetics",
+        "url": "https://reddit.com/r/dietetics",
+        "description": "Reddit community for dietetics professionals"
+      },
+      {
+        "name": "AND Dietetic Practice Groups (DPGs)",
+        "description": "Specialty groups within AND for networking and CE"
+      }
+    ],
+    "events": [
+      "AND Food & Nutrition Conference & Expo (FNCE, annual)",
+      "ANFP Annual Conference",
+      "State dietetic association meetings"
+    ]
+  },
+  "market": {
+    "summary": "Growing nutrition field with 7.4% projected job increase through 2033. States with licensure typically offer higher salaries. Strong pathway to RDN career. Healthcare and food service sectors are primary employers.",
+    "demand_forecast": {
+      "growth_rate": "7.4% through 2033 (BLS, for nutrition field overall)",
+      "driver": "Aging population, chronic disease management, wellness focus"
+    },
+    "salary_market": {
+      "median_bls": "$39,560 (May 2024)",
+      "median_survey": "$54,700 (CDR 2024)",
+      "average_ziprecruiter": "$44,073 (2026)"
+    },
+    "market_trends": [
+      "Growing recognition of nutrition's role in chronic disease management",
+      "Expanding telehealth nutrition counseling",
+      "Increased demand in long-term care and senior living facilities",
+      "School nutrition programs expanding quality standards",
+      "States adding new nutrition professional licensure requirements",
+      "AI-powered nutrition planning tools emerging"
+    ]
+  },
+  "quality_score": 0.76,
+  "sources_count": 24,
+  "verified_sources": 8,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "dietetic technician USA 2025 2026 DTR certification duties salary career NDTR ACEND job outlook",
+      "sources": [
+        {"title": "Dietetic Technician Registered: Career Guide 2026", "url": "https://www.nutritioned.org/dietetic-technician-registered/"},
+        {"title": "BLS — Dietetic Technicians", "url": "https://www.bls.gov/oes/current/oes292051.htm"},
+        {"title": "RD vs DTR Guide 2026", "url": "https://www.nutritioned.org/rd-vs-dtr/"},
+        {"title": "ExploreHealthCareers — Dietetic Technician", "url": "https://explorehealthcareers.org/careers/nutrition-and-dietetics/nutrition-and-dietetic-technician/"}
+      ]
+    }
+  ]
+}

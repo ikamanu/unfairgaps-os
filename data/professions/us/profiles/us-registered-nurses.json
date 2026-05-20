@@ -1,0 +1,54 @@
+{
+  "profession_id": "us-registered-nurses",
+  "profession_name": "Registered Nurses",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "RNs work 8-12 hour shifts depending on setting — hospitals typically use 12-hour shifts, offices use 8-hour days. Day starts with shift handoff/record review, checking patient tests and coordinating schedules with doctors. Core tasks: taking vitals, administering medications, patient assessments, charting in EHR, educating patients and families, coordinating with physicians and specialists, responding to emergencies. Work frequently interrupted by urgent situations. Over 5 million RNs in the US; 70% work full-time, 11% part-time, 8% per diem.",
+    "documents": ["Patient assessment notes", "Medication administration records (MAR)", "Nursing care plans", "Physician orders", "Lab and diagnostic results", "Discharge planning documentation", "Incident reports", "Patient education forms", "Shift handoff reports", "Quality metrics documentation"],
+    "deadlines": ["Medication administration windows", "Shift documentation completion", "Patient rounding schedules", "CE/CEU requirements for license renewal", "NCLEX-RN (for initial licensure)", "Annual competency assessments", "State license renewal (every 1-2 years depending on state)", "Specialty certification renewal"],
+    "seasonality": "Flu and respiratory season (October-March) increases patient volume. Summer brings more trauma and ER visits. Holiday periods often short-staffed. Back-to-school immunization clinics in August. Year-round demand due to aging population and chronic disease management."
+  },
+  "regulatory": {
+    "laws": ["State Nurse Practice Acts", "HIPAA", "EMTALA", "Nurse Licensure Compact (NLC — 41+ states)", "State staffing ratio laws (California, Oregon)", "Nurse Staffing Standards Act (federal 2025)", "OSHA workplace safety standards"],
+    "licensing": "BSN (4-year) or ADN (2-year) degree from accredited nursing program. Pass NCLEX-RN exam (2026 test plan with minor updates, emphasis on infection prevention). State licensure through Boards of Nursing. NLC allows multistate practice. 2025 first-time pass rate: 86.7% (down from 91.2% in 2024). 20+ hours CE per renewal cycle. Practicing without license results in fines and criminal charges.",
+    "penalties": "Practicing without license: fines and criminal charges. HIPAA violations: up to $50,000 per incident. Staffing ratio violations: $15,000-$50,000 (state/federal). License suspension/revocation for practice violations. Medication errors: disciplinary action, potential criminal liability in extreme cases.",
+    "regulatory_bodies": ["State Boards of Nursing", "NCSBN (National Council of State Boards of Nursing)", "Joint Commission", "CMS (Centers for Medicare & Medicaid Services)", "OSHA", "ANA (advocacy role)", "State Health Departments"]
+  },
+  "tools": {
+    "software": ["Epic (dominant hospital EHR)", "Oracle Cerner", "MEDITECH", "athenahealth", "AdvancedMD", "Nuance DAX Copilot (AI documentation)", "Pyxis MedStation (medication dispensing)", "Smart Square (scheduling)", "Alaris IV pumps"],
+    "platforms": ["AllNurses (forum — 13M+ users)", "Nursing Network", "UpToDate (clinical reference)", "Lippincott NursingCenter", "Nurse.org", "Medscape Nursing"],
+    "gov_portals": ["Nursys (license verification — NCSBN)", "State Board of Nursing portals", "CDC NHSN (infection reporting)", "CMS Quality Reporting", "State immunization registries"]
+  },
+  "terminology": {
+    "jargon": ["Bedside manner", "Charge nurse", "Patient acuity", "Med pass", "Code Blue", "Rapid Response", "Triage", "Admission/Discharge", "PRN (as needed)", "Floor nurse", "Float pool", "Precepting (training new nurses)", "Scope of practice", "Chain of command"],
+    "abbreviations": ["RN - Registered Nurse", "BSN - Bachelor of Science in Nursing", "ADN - Associate Degree in Nursing", "MSN - Master of Science in Nursing", "DNP - Doctor of Nursing Practice", "APRN - Advanced Practice RN", "NCLEX-RN - National Council Licensure Examination", "NLC - Nurse Licensure Compact", "CE/CEU - Continuing Education Units", "MAR - Medication Administration Record", "SOAP - Subjective Objective Assessment Plan", "I&O - Intake and Output", "VS - Vital Signs", "BMP/CMP - Basic/Comprehensive Metabolic Panel", "H&P - History and Physical"]
+  },
+  "career_psychology": {
+    "career_levels": ["Nursing Student", "New Graduate RN", "Staff Nurse (1-3 years)", "Charge Nurse / Senior RN", "Clinical Nurse Leader (CNL)", "Nurse Educator", "Nurse Manager", "Advanced Practice RN (NP, CNS, CRNA, CNM)", "Director of Nursing", "Chief Nursing Officer (CNO)", "Travel Nurse", "Per Diem / PRN Nurse"],
+    "fears": ["Making a medication error harming a patient", "49% worry weekly that exhaustion could cause a grave mistake", "Understaffing leading to preventable harm", "Losing nursing license", "Workplace violence from patients", "Burnout forcing career exit", "19% avoid mental health services fearing career harm", "Not keeping up with rapidly changing medical knowledge"],
+    "motivation": ["Making a direct difference in patients' lives", "75% report being satisfied with career choice", "Job security and high demand", "Diverse career paths and specializations", "Community respect and trust", "Tuition reimbursement and career advancement programs", "Travel nursing opportunities", "Ability to work anywhere in the country"],
+    "burnout": "58% of nurses feel burnout most days; 74% feel emotionally drained multiple times weekly. 56% report experiencing burnout. 28% of Gen Z nurses feel burnt out every day. 41.5% cite stress/burnout as reason for leaving. 39.9% of RNs intend to leave workforce or retire within 5 years. Despite this, 75% are satisfied with career choice. Key improvement levers: fewer patients per nurse, hybrid roles, scheduling flexibility, mental health support."
+  },
+  "community": {
+    "reddit": ["r/nursing (~600k+ members)", "r/StudentNurse", "r/NursePractitioner", "r/travel_nursing", "r/Nurses"],
+    "linkedin": ["ANA (American Nurses Association) LinkedIn", "Specialty nursing groups", "Nursing leadership groups", "Travel nursing communities"],
+    "associations": ["ANA (American Nurses Association) — represents 5M+ RNs, 54 constituent member associations", "ASRN (American Society of Registered Nurses) — 180,000+ members, founded 1974", "AACN (American Association of Critical-Care Nurses) — 120,000+ members", "ANPD (Association of Nursing Professional Development)", "NBNA (National Black Nurses Association)", "NAHN (National Association of Hispanic Nurses)", "ENA (Emergency Nurses Association)", "Sigma Theta Tau International Honor Society"],
+    "conferences": ["ANA Membership Assembly", "AACN NTI", "ENA Annual Conference", "Magnet Conference", "National Nurses Week events (May)", "State nursing association conferences"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "new_graduate": "60000-75000",
+      "staff_nurse_2_5_years": "70000-90000",
+      "senior_experienced": "85000-110000",
+      "travel_nurse": "90000-150000+",
+      "nurse_manager": "95000-130000",
+      "aprn_np": "110000-170000"
+    },
+    "national_average_usd": 98430,
+    "job_count": "3.1M+ employed RNs; 189,100 openings projected annually; 500,000+ shortage",
+    "growth_rate": "5% projected 2024-2034 (faster than average)",
+    "unemployment_rate": "Below 2% — severe shortage nationwide",
+    "work_arrangements": ["Hospital (largest employer)", "Physician offices", "Home healthcare", "Outpatient clinics", "Nursing facilities", "Schools", "Travel nursing", "Telehealth/remote triage", "Per diem/agency"],
+    "trends": ["Average salary rose 48% over 14 years (2009-2025) to $98,430", "2022-2023 saw 7% and 5.8% salary jumps", "Healthcare added 82,000 jobs in January 2026 (63% of all new US jobs)", "Sign-on bonuses now reserved for experienced/niche roles", "89% of licensed RNs employed in nursing roles (up from 84% in 2020)", "AI documentation tools reducing administrative burden", "BSN increasingly preferred over ADN for hospital roles", "Travel nursing normalizing post-COVID but still pays premium"]
+  }
+}

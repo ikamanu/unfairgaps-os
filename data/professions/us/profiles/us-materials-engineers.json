@@ -1,0 +1,92 @@
+{
+  "profession_id": "us-materials-engineers",
+  "profession_name": "Materials Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Materials engineers develop, process, and test materials (metals, ceramics, polymers, composites, nanomaterials) used in products from aircraft wings to biomedical devices. They study material properties and select optimal materials for specific applications.",
+    "typical_tasks": ["Evaluate and select materials for product designs based on mechanical, electrical, and chemical properties", "Conduct materials testing (tensile, fatigue, impact, hardness, corrosion)", "Perform failure analysis on failed components", "Develop new materials and manufacturing processes", "Use computational and machine learning tools for material selection and property prediction", "Characterize materials using microscopy (SEM, TEM), spectroscopy, and diffraction", "Ensure materials compliance with industry standards and specifications", "Support quality control and incoming material inspection programs", "Write technical reports and material specifications", "Collaborate with design and manufacturing engineers on material selection"],
+    "key_documents": ["Material specifications and datasheets", "Test reports (mechanical, chemical, metallurgical)", "Failure analysis reports", "Material certification documents", "Process qualification records", "Research papers and patent applications", "Quality control inspection records"],
+    "deadlines": {"project_milestones": "Aligned with product development cycles", "testing_turnaround": "Days to weeks depending on test type", "failure_analysis": "Often urgent — days to weeks", "standards_compliance": "Per audit schedules"},
+    "seasonality": "Generally steady year-round. Aerospace and automotive program milestones create periodic peaks."
+  },
+  "regulatory": {
+    "summary": "Material specifications governed by ASTM, SAE/AMS, MIL-SPEC standards. PE licensure available but not common. ASM International provides professional development and certifications.",
+    "key_laws": [
+      {"name": "ASTM Standards", "description": "Voluntary consensus standards for materials testing and properties"},
+      {"name": "SAE/AMS Specifications", "description": "Aerospace material specifications"},
+      {"name": "MIL-SPEC/MIL-STD", "description": "Military material and process standards"},
+      {"name": "REACH / RoHS", "description": "EU material restrictions affecting US manufacturers of export products"}
+    ],
+    "licensing": {
+      "requirements": ["Bachelor's degree in Materials Science/Engineering (ABET-accredited)", "PE licensure optional (FE + PE exam)", "ASM International certificate programs available"],
+      "certifications": ["PE — Professional Engineer", "ASM International Certificate Programs (metallurgy, failure analysis)", "ASNT NDT certifications for non-destructive testing", "Six Sigma certifications for quality-focused roles"]
+    },
+    "penalties": "Material non-compliance can result in product recalls, contract penalties, and litigation. Aerospace material fraud carries criminal penalties."
+  },
+  "tools": {
+    "summary": "Materials characterization instruments, mechanical testing equipment, computational modeling, and analytical software.",
+    "primary_tools": [
+      {"name": "SEM/TEM (Scanning/Transmission Electron Microscope)", "description": "Microstructural characterization"},
+      {"name": "Universal Testing Machine (Instron, MTS)", "description": "Mechanical testing — tensile, compression, fatigue"},
+      {"name": "X-ray Diffraction (XRD)", "description": "Crystal structure and phase identification"},
+      {"name": "Optical Microscope (metallograph)", "description": "Microstructure examination and grain size analysis"},
+      {"name": "CALPHAD / Thermo-Calc", "description": "Computational thermodynamics for phase diagram calculation"},
+      {"name": "ANSYS / ABAQUS", "description": "FEA for structural and thermal analysis"}
+    ],
+    "secondary_tools": ["EDS/WDS — compositional analysis (electron microprobe)", "DSC/TGA — thermal analysis", "Hardness testers (Rockwell, Vickers, Brinell)", "Corrosion testing equipment (salt spray, electrochemical)", "Python / MATLAB for data analysis and ML material property prediction", "JMatPro / Materials Design for integrated computational materials engineering"],
+    "pain_points": ["Long materials qualification cycles for critical applications", "Expensive testing equipment requiring specialized maintenance", "Bridging gap between laboratory research and production scale", "Keeping pace with emerging materials (nanomaterials, metamaterials)"]
+  },
+  "terminology": {
+    "summary": "Materials engineering terminology spans metallurgy, polymer science, ceramics, composites, and materials characterization methods.",
+    "terms": {
+      "alloy": "Metal mixture with enhanced properties", "microstructure": "Internal structure of material at microscopic level",
+      "grain size": "Average size of crystalline grains in metals", "phase": "Homogeneous portion of a material system",
+      "heat treatment": "Controlled heating/cooling to modify material properties",
+      "tensile strength": "Maximum stress a material can withstand while being stretched",
+      "yield strength": "Stress at which material begins permanent deformation",
+      "fatigue": "Progressive structural damage from repeated loading",
+      "creep": "Time-dependent deformation under constant stress at elevated temperature",
+      "corrosion": "Degradation of materials by chemical reaction with environment",
+      "NDT/NDE": "Non-Destructive Testing/Evaluation",
+      "ICME": "Integrated Computational Materials Engineering",
+      "CALPHAD": "Calculation of Phase Diagrams — computational thermodynamics method",
+      "SEM": "Scanning Electron Microscope", "TEM": "Transmission Electron Microscope",
+      "XRD": "X-ray Diffraction", "EDS": "Energy Dispersive Spectroscopy",
+      "composite": "Material made from two or more distinct materials",
+      "polymer": "Large molecule composed of repeating structural units",
+      "ceramic": "Inorganic, non-metallic solid material",
+      "ASM": "ASM International (formerly American Society for Metals)"
+    }
+  },
+  "career_psychology": {
+    "summary": "Specialized engineering career with median salary $108K and 5% growth. Intellectual satisfaction from understanding material behavior at fundamental level. Strong demand in aerospace, semiconductors, and energy.",
+    "career_path": ["Bachelor's in Materials Science / Metallurgical Engineering", "Junior Materials Engineer", "MS/PhD for advanced R&D positions", "Senior Materials Engineer (5-10 years)", "Principal Engineer / Technical Fellow", "Director of Materials Engineering / CTO"],
+    "salary_range": {"entry_level": "$65,000 - $80,000/year", "mid_level": "$90,000 - $115,000/year", "senior": "$115,000 - $150,000/year", "director": "$150,000 - $200,000+/year", "median_bls": "$108,310/year"},
+    "fears": ["Material failure causing catastrophic product failure", "Slow career advancement without advanced degree", "Niche specialization limiting job mobility", "Outsourcing of routine testing work"],
+    "motivation": ["Understanding material behavior at fundamental level", "Enabling breakthrough products through new materials", "Failure analysis detective work — finding root causes", "Growing importance of advanced materials in technology", "Intellectually challenging multidisciplinary work"],
+    "burnout_factors": ["Long qualification cycles with uncertain outcomes", "Pressure to approve materials on tight schedules", "Repetitive testing work at junior levels", "Limited number of positions in some geographic areas"]
+  },
+  "community": {
+    "summary": "ASM International is the primary professional society. TMS and ACerS serve specific material subcommunities. Strong academic-industry collaboration.",
+    "associations": [
+      {"name": "ASM International", "url": "https://www.asminternational.org/", "description": "Premier materials society — conferences, publications, certifications, 30,000+ members"},
+      {"name": "TMS (The Minerals, Metals & Materials Society)", "description": "Minerals, metals, and materials professional society"},
+      {"name": "ACerS (American Ceramic Society)", "description": "Ceramic and glass materials community"},
+      {"name": "SAMPE (Society for the Advancement of Material and Process Engineering)", "description": "Advanced materials and composites community"}
+    ],
+    "online_communities": ["ASM International online community", "r/materials — Reddit", "LinkedIn materials engineering groups", "Materials Today community"],
+    "conferences": ["ASM International IMAT Conference", "TMS Annual Meeting", "MS&T (Materials Science and Technology Conference)", "SAMPE Conference"]
+  },
+  "market": {
+    "summary": "Steady 5% growth 2023-2033. Median salary $108K. Demand driven by semiconductor manufacturing, aerospace, electric vehicles, and advanced manufacturing.",
+    "growth_rate": "5% projected 2023-2033",
+    "salary_market": {"median": "$108,310/year", "range": "$69,000 - $178,000/year", "top_states": "California ($140K+), Maryland"},
+    "top_employers": ["Aerospace (Boeing, Lockheed Martin, RTX)", "Semiconductor companies (Intel, TSMC, Applied Materials)", "Automotive (EV battery materials — Tesla, GM, Ford)", "National laboratories (ORNL, Sandia, PNNL)", "Materials companies (Corning, 3M, Dupont)", "Biomedical/medical device companies"],
+    "market_trends": ["EV battery materials (lithium, solid-state) driving demand", "Semiconductor materials engineering for advanced chips", "Additive manufacturing materials development", "Computational materials science and ML for materials discovery", "Sustainable and recycled materials focus"]
+  },
+  "quality_score": 0.76,
+  "sources_count": 18,
+  "verified_sources": 6,
+  "confidence": "verified",
+  "raw_responses": [{"query": "Materials Engineers USA salary career outlook ASM International", "sources": [{"title": "BLS — Materials Engineers", "url": "https://www.bls.gov/ooh/architecture-and-engineering/materials-engineers.htm"}, {"title": "Research.com — Materials Engineer Career", "url": "https://research.com/advice/how-to-become-a-materials-engineer-education-salary-and-job-outlook"}, {"title": "ASM International", "url": "https://www.asminternational.org/"}]}]
+}

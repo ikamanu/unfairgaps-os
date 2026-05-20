@@ -1,0 +1,310 @@
+{
+  "profession_id": "us-physical-therapists",
+  "profession_name": "Physical Therapists",
+  "soc_code": "29-1123.00",
+  "industry": "healthcare",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Physical therapists (PTs) help patients improve movement, manage pain, and restore functional abilities through therapeutic exercise, manual therapy, and patient education. They work primarily in outpatient clinics (47.2% of jobs), hospitals, nursing homes, and rehabilitation facilities. A typical day involves direct patient care sessions, documentation, treatment planning, and care coordination, with the balance between clinical and administrative work being a constant challenge.",
+    "typical_tasks": [
+      "Conducting initial patient evaluations including movement analysis, strength testing, and functional assessments",
+      "Developing individualized treatment plans with measurable goals and timelines",
+      "Performing therapeutic exercises with patients (stretching, strengthening, balance training)",
+      "Applying manual therapy techniques (joint mobilization, soft tissue mobilization, myofascial release)",
+      "Administering modalities including ultrasound, electrical stimulation, and hot/cold therapy",
+      "Providing gait training and mobility assistance using assistive devices",
+      "Educating patients and families on home exercise programs and injury prevention",
+      "Documenting patient evaluations, daily treatment notes, and progress reports",
+      "Communicating with physicians, insurance companies, and other healthcare providers",
+      "Supervising physical therapist assistants (PTAs) and support staff",
+      "Reviewing and pre-charting patient information before appointments",
+      "Completing discharge summaries and outcome measurements"
+    ],
+    "key_documents": [
+      "Initial evaluation and plan of care documentation",
+      "Daily treatment notes (SOAP format)",
+      "Progress notes (typically every 10 visits or 30 days)",
+      "Discharge summaries with outcome measurements",
+      "Prior authorization and insurance verification forms",
+      "Home exercise program handouts",
+      "Referral and prescription for physical therapy",
+      "ICD-10 diagnostic coding documentation",
+      "CPT procedure coding for billing"
+    ],
+    "deadlines": {
+      "daily": "Complete documentation for all patient encounters; ideally same-day completion to avoid after-hours charting",
+      "weekly": "Review patient progress toward goals; coordinate with referring physicians as needed",
+      "monthly": "Submit progress notes for insurance authorization renewals; complete productivity reports",
+      "quarterly": "Outcome measurement reporting; quality improvement metrics",
+      "annually": "State license renewal; continuing education credit documentation; professional development goals"
+    },
+    "seasonality": "Moderate seasonal variation: increased sports injury patients in spring/fall athletic seasons, post-holiday orthopedic surgery rehabilitation peaks in January-February, and higher fall-related injury cases in winter among elderly patients. Outpatient clinics may see slight decreases during summer vacation periods."
+  },
+  "regulatory": {
+    "summary": "Physical therapists must hold a Doctor of Physical Therapy (DPT) degree from a CAPTE-accredited program, pass the NPTE, and obtain state licensure. All 50 states, DC, and US territories require licensure. The PT Compact now encompasses 39 states allowing cross-state practice privileges. Direct access provisions (ability to treat without physician referral) vary by state but have expanded significantly in recent years.",
+    "key_laws": [
+      "State Physical Therapy Practice Acts (vary by state, governing scope of practice and licensure)",
+      "PT Compact (interstate licensure compact enabling practice across 39 member states)",
+      "HIPAA (Health Insurance Portability and Accountability Act) for patient data protection",
+      "Medicare/Medicaid billing regulations including therapy caps and modifiers",
+      "Direct Access laws (varying by state, determining if patients can see a PT without physician referral)",
+      "OSHA workplace safety regulations for clinical environments",
+      "State Workers' Compensation laws affecting PT treatment authorization",
+      "ADA compliance requirements in clinical settings"
+    ],
+    "licensing": {
+      "requirements": [
+        "Earn a Doctor of Physical Therapy (DPT) degree from a CAPTE-accredited program (typically 3 years post-bachelor's)",
+        "Pass the National Physical Therapy Examination (NPTE) administered by FSBPT ($485 exam fee)",
+        "Complete state-specific application process including background check and fingerprinting",
+        "Pass state jurisprudence exam (required in many states) testing knowledge of state PT laws",
+        "Obtain state license from the state board of physical therapy",
+        "Maintain active licensure through regular renewal with continuing education credits",
+        "Optional: Apply for PT Compact privilege for multi-state practice (39 participating states)"
+      ]
+    },
+    "continuing_education": "Most states require continuing education for license renewal, typically 20-40 hours per renewal cycle (1-2 years depending on state). Common requirements include ethics education, cultural competency, and state-specific topics. Board-certified specialists (OCS, NCS, SCS, etc.) through ABPTS must complete additional requirements including 150 hours of continuing education over 10 years."
+  },
+  "tools": {
+    "summary": "Physical therapists rely heavily on practice management and EMR software for documentation, scheduling, and billing. The market is dominated by rehab-specific platforms like WebPT, with increasing adoption of AI-powered ambient documentation tools that capture clinical notes during sessions. Technology trends in 2025-2026 include AI scribes, VR-based rehabilitation, and telehealth platforms for remote patient monitoring.",
+    "primary_tools": [
+      {"name": "WebPT", "category": "EMR/Practice Management", "description": "Purpose-built rehab therapy EMR platform making charting 30% faster; dominant market share in outpatient physical therapy"},
+      {"name": "SPRY EMR", "category": "EMR/Practice Management", "description": "All-in-one platform for PT documentation ensuring compliance and interoperability; rated #1 PT solution"},
+      {"name": "HelloNote", "category": "Practice Management", "description": "Web-based therapy practice management software for comprehensive patient documentation with integrated EMR"},
+      {"name": "Empower EMR", "category": "EMR/Patient Portal", "description": "Modern all-in-one PT EMR with built-in patient portal and marketing automation features"},
+      {"name": "Raintree", "category": "EMR/AI Documentation", "description": "Therapy EMR featuring ScribeIQ, the first AI scribe solution built directly within a therapy EMR"}
+    ],
+    "secondary_tools": [
+      {"name": "Telehealth Platforms (Doxy.me/TheraNest)", "category": "Telemedicine", "description": "HIPAA-compliant video platforms for remote PT consultations and exercise monitoring"},
+      {"name": "Home Exercise Program Apps (MedBridge/PT Pal)", "category": "Patient Education", "description": "Digital exercise prescription tools with video demonstrations for patient home programs"},
+      {"name": "Goniometers/Inclinometers", "category": "Assessment Tools", "description": "Physical measurement instruments for range of motion and joint angle assessment"},
+      {"name": "Therapeutic Modalities Equipment", "category": "Treatment Devices", "description": "Ultrasound machines, electrical stimulation units, laser therapy devices, and traction systems"},
+      {"name": "Balance/Motion Analysis Systems", "category": "Assessment Technology", "description": "Advanced motion capture and balance assessment platforms for objective movement analysis"}
+    ],
+    "pain_points": [
+      "Documentation burden consuming 1-2 hours daily beyond patient care time",
+      "Insurance prior authorization delays and denials limiting patient access to needed visits",
+      "Productivity expectations (number of patients/day) conflicting with quality documentation",
+      "EMR templates not adequately capturing the complexity of PT evaluations and treatments",
+      "Billing complexity with CPT codes, modifiers, and insurance-specific requirements",
+      "After-hours charting needed to complete documentation that couldn't be finished during patient hours",
+      "AI ambient documentation tools still maturing and requiring manual review/editing",
+      "Reimbursement rates not keeping pace with rising practice costs"
+    ]
+  },
+  "terminology": {
+    "summary": "Physical therapy uses a specialized vocabulary combining medical terminology, biomechanical concepts, and coding systems. PTs must be fluent in ICD-10 diagnostic codes, CPT procedure codes, and hundreds of clinical abbreviations used in daily documentation. The profession's terminology bridges medical diagnosis and functional rehabilitation.",
+    "terms": {
+      "DPT (Doctor of Physical Therapy)": "Entry-level doctoral degree required for PT practice since 2015; replaces former master's degree requirement",
+      "AROM/PROM (Active/Passive Range of Motion)": "AROM is joint movement initiated by the patient; PROM is movement performed by the therapist or external force",
+      "CPT Codes": "Current Procedural Terminology codes used for billing; key PT codes include 97110 (Therapeutic Exercise), 97112 (Neuromuscular Re-education), 97116 (Gait Training)",
+      "ICD-10 Codes": "International Classification of Diseases codes describing patient diagnoses; alphanumeric codes with 3-7 characters",
+      "SOAP Note": "Documentation format: Subjective (patient report), Objective (measurable findings), Assessment (clinical judgment), Plan (treatment plan)",
+      "MMT (Manual Muscle Testing)": "Grading system (0-5) assessing muscle strength through resistance testing",
+      "RICE (Rest, Ice, Compression, Elevation)": "Acute injury management protocol commonly prescribed to patients",
+      "WNL (Within Normal Limits)": "Documentation abbreviation indicating findings are within expected normal parameters",
+      "ER/IR (External/Internal Rotation)": "Rotational movements of joints measured in degrees during ROM assessment",
+      "SLR (Straight Leg Raise)": "Diagnostic test for lumbar radiculopathy and sciatic nerve involvement",
+      "TENS (Transcutaneous Electrical Nerve Stimulation)": "Pain management modality using electrical currents delivered through skin electrodes",
+      "Gait Analysis": "Systematic assessment of walking patterns to identify deviations and guide treatment interventions",
+      "Functional Capacity Evaluation (FCE)": "Comprehensive battery of tests measuring a patient's ability to perform work-related activities",
+      "Direct Access": "Legal provision allowing patients to see a PT without a physician referral; varies by state",
+      "Plan of Care (POC)": "Comprehensive treatment plan including diagnosis, goals, interventions, frequency, and duration"
+    }
+  },
+  "career_psychology": {
+    "summary": "Physical therapists are driven by a desire to help people recover and improve their physical function. The profession offers high job satisfaction, particularly among those with residency/fellowship training, but faces growing concerns about student debt burden relative to salary, documentation overload, and productivity pressure. The DPT degree requirement has raised educational costs significantly while salary growth has been more modest.",
+    "career_path": [
+      {"stage": "Pre-PT Education", "duration": "4 years", "description": "Bachelor's degree with prerequisite coursework in anatomy, physiology, biology, chemistry, and physics"},
+      {"stage": "DPT Program", "duration": "3 years", "description": "Doctor of Physical Therapy degree from CAPTE-accredited program including clinical rotations"},
+      {"stage": "Licensure", "duration": "2-3 months", "description": "Pass NPTE, state jurisprudence exam, complete background check, obtain state license"},
+      {"stage": "New Graduate/Early Career", "duration": "1-3 years", "description": "First clinical position; developing clinical skills, efficiency, and documentation speed; often in general outpatient setting"},
+      {"stage": "Clinical Residency (Optional)", "duration": "1 year", "description": "Post-professional residency for advanced clinical training in a specialty area (orthopedics, neurology, sports, etc.)"},
+      {"stage": "Board Certification (Optional)", "duration": "After 2,000+ hours", "description": "ABPTS specialist certification (OCS, NCS, SCS, GCS, etc.) requiring experience and examination"},
+      {"stage": "Mid-Career/Senior Clinician", "duration": "5-15 years", "description": "Clinical specialist, mentor, possible clinic director or academic role; some pursue fellowship training"},
+      {"stage": "Leadership/Advanced Roles", "duration": "15+ years", "description": "Clinic owner, department director, academic faculty, researcher, or consultant"}
+    ],
+    "salary_range": {
+      "entry_level": "$78,000 - $85,000",
+      "median": "$102,800",
+      "experienced": "$124,500 (outpatient specialty clinic)",
+      "top_10_percent": "$130,870+",
+      "notes": "National average officially stabilized above $100,000 in 2026. 25-35% salary increase with 10+ years experience typically tied to board certifications (OCS, NCS) or administrative leadership. Hospital settings average $105,800 with stronger benefits packages."
+    },
+    "fears": [
+      "Student loan debt burden (average $150,000+ for DPT) relative to starting salary",
+      "Declining reimbursement rates from Medicare and private insurers",
+      "Increasing productivity demands reducing quality of patient care",
+      "Scope of practice encroachment from less-trained practitioners",
+      "Physical demands of the job leading to occupational injuries (back, shoulder, hands)",
+      "AI and technology potentially reducing demand for certain PT services",
+      "Burnout from documentation burden and work-home balance challenges"
+    ],
+    "motivation": [
+      "Helping patients recover from injuries and regain independence",
+      "Seeing tangible improvements in patient function and mobility",
+      "Building meaningful therapeutic relationships with patients",
+      "Working in a healthcare field without the emotional burden of end-of-life care",
+      "Flexible work settings (outpatient, hospital, home health, sports, schools)",
+      "Strong job market with consistent demand and multiple career paths",
+      "Ability to specialize through board certification and residency training"
+    ],
+    "burnout_factors": [
+      "Documentation demands consuming 1-2 hours daily beyond scheduled patient care",
+      "Productivity metrics requiring 80-90% utilization rates with minimal downtime",
+      "Physical demands of manual therapy and patient handling leading to occupational injuries",
+      "Insurance authorization battles and claim denials creating frustration and lost revenue",
+      "Student loan debt stress relative to salary, especially in early career years",
+      "Emotional toll of patients not achieving expected outcomes or losing motivation",
+      "Schedule rigidity with limited flexibility for unplanned administrative needs"
+    ]
+  },
+  "community": {
+    "summary": "The physical therapy profession has a robust community anchored by the American Physical Therapy Association (APTA), which represents over 100,000 members. Strong state-level associations provide local networking and advocacy. The profession has an active conference circuit and growing online communities for clinical education and peer support.",
+    "associations": [
+      {"name": "American Physical Therapy Association (APTA)", "url": "https://www.apta.org/", "description": "National professional organization representing PTs and PTAs; advocacy, education, research, and practice resources"},
+      {"name": "Federation of State Boards of Physical Therapy (FSBPT)", "url": "https://www.fsbpt.org/", "description": "National organization administering the NPTE and supporting state licensing boards; manages PT Compact"},
+      {"name": "American Board of Physical Therapy Specialties (ABPTS)", "url": "https://www.abpts.org/", "description": "Certification board for PT specialist certifications (OCS, NCS, SCS, GCS, PCS, etc.)"},
+      {"name": "State PT Associations (e.g., TPTA, FPTA, CCAPTA)", "url": "https://tpta.org/", "description": "State-level associations providing local advocacy, continuing education, and networking events"},
+      {"name": "APTA Sections/Academies", "url": "https://www.apta.org/", "description": "Specialty practice sections (Orthopaedic, Neurologic, Sports, Geriatric, etc.) within APTA providing focused resources"}
+    ],
+    "events": [
+      {"name": "APTA Combined Sections Meeting (CSM)", "frequency": "Annual (February)", "description": "Largest PT conference in the US featuring research presentations, educational sessions, and exhibit hall; future dates available at csm.apta.org"},
+      {"name": "APTA NEXT Conference", "frequency": "Annual (June)", "description": "APTA's annual conference and expo focusing on practice innovation and professional development"},
+      {"name": "State Association Annual Conferences", "frequency": "Annual", "description": "State-level conferences (e.g., TPTA Sept 2026, FPTA Sept 2026, CCAPTA Sept 2025) with local CE opportunities"},
+      {"name": "Orthopedic Value-Based Care (OVBC) Conference", "frequency": "Annual", "description": "Multidisciplinary conference including PTs focusing on value-based orthopedic care models"},
+      {"name": "APTA MA 2026 Annual Conference", "frequency": "Annual", "description": "Massachusetts state association conference with continuing education programming"}
+    ],
+    "online_communities": [
+      {"name": "r/physicaltherapy", "platform": "Reddit", "description": "Active subreddit with 100,000+ members discussing clinical questions, career advice, and industry issues"},
+      {"name": "PT-specific Facebook Groups", "platform": "Facebook", "description": "Multiple private groups including 'Physical Therapy Nation,' 'New Grad PT,' and specialty-specific communities"},
+      {"name": "MedBridge Education Platform", "platform": "MedBridge", "description": "Online CE platform with community features, clinical courses, and patient education resources"},
+      {"name": "CovalentCareers/NewGradPT", "platform": "Web/Social Media", "description": "Career resources and community for new graduate physical therapists navigating early career challenges"},
+      {"name": "APTA Learning Center", "platform": "APTA website", "description": "Online continuing education platform with courses, webinars, and professional development resources"}
+    ]
+  },
+  "market": {
+    "summary": "The physical therapy job market is one of the strongest in healthcare, with BLS projecting 11-14% growth from 2023-2033. The national average salary has officially crossed the $100,000 mark in 2026. Key drivers include aging baby boomers, chronic disease prevalence, the shift away from opioid pain management, and expanding direct access legislation. APTA workforce forecasting indicates shortages through 2037, ensuring sustained demand for qualified PTs.",
+    "job_outlook": {
+      "growth_rate": "11-14% from 2023-2033 (much faster than average for all occupations)",
+      "projected_openings": "Approximately 12,600 annual openings from growth and replacement needs",
+      "bls_rating": "Much faster than average",
+      "notes": "APTA microsimulation study forecasts workforce shortages through 2037. Travel PT positions remain in high demand. Telehealth expanding access to underserved areas."
+    },
+    "salary_market": {
+      "national_average": "$102,800 (2026)",
+      "entry_level_range": "$78,000 - $85,000",
+      "experienced_range": "$105,800 - $124,500",
+      "top_10_percent": "$130,870+",
+      "highest_paying_settings": "Outpatient specialty clinics ($124,500 average), home health, and travel PT positions"
+    },
+    "demand_drivers": [
+      "Aging baby boomer population requiring rehabilitation services for age-related conditions",
+      "Increasing prevalence of chronic conditions (diabetes, obesity, musculoskeletal disorders)",
+      "National shift toward non-opioid pain management approaches favoring PT interventions",
+      "Expansion of direct access laws allowing patients to see PTs without physician referral",
+      "Growing recognition of PT value in preventive care and wellness programs",
+      "Post-COVID emphasis on rehabilitation for long-COVID and deconditioning patients",
+      "APTA-projected workforce shortages through 2037"
+    ],
+    "market_trends": [
+      "Telehealth and remote patient monitoring creating new service delivery models",
+      "AI-powered ambient documentation tools reducing administrative burden",
+      "Virtual reality (VR) rehabilitation gaining adoption for patient engagement and gamification",
+      "Travel PT positions commanding premium pay rates in underserved markets",
+      "Value-based care models shifting focus from volume to patient outcomes",
+      "Board-certified specialists (OCS, NCS, SCS) commanding salary premiums of 10-20%",
+      "Practice ownership models evolving with private equity investment in outpatient PT chains",
+      "AI-powered motion analysis personalizing rehabilitation protocols"
+    ]
+  },
+  "quality_score": 0.84,
+  "sources_count": 32,
+  "verified_sources": 14,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "category": "daily_reality",
+      "query": "Physical Therapists daily tasks workflow typical day routine 2025 2026 US",
+      "sources": [
+        "https://www.bls.gov/ooh/healthcare/physical-therapists.htm",
+        "https://www.allalliedhealthschools.com/physical-therapy/physical-therapy-career/",
+        "https://www.athletico.com/2024/09/11/day-in-the-life-of-a-physical-therapist/",
+        "https://www.masmedicalstaffing.com/blog/a-day-in-the-life-of-a-physical-therapist/",
+        "https://www.indeed.com/career-advice/finding-a-job/day-in-the-life-of-physical-therapist"
+      ]
+    },
+    {
+      "category": "regulatory",
+      "query": "Physical Therapists licensing regulations requirements state US 2025 2026",
+      "sources": [
+        "https://www.apta.org/your-practice/licensure/pt-and-pta-licensure",
+        "https://www.apta.org/your-practice/licensure",
+        "https://www.vivian.com/community/allied-health/physical-therapist-licensing-requirements-by-state/",
+        "https://fsrehab.com/physical-therapy-license-requirements-by-state-2025-guide/",
+        "https://www.trustedhealth.com/allied-career-guide/physical-therapy/licensure-guide",
+        "https://www.fsbpt.org/Secondary-Pages/Licensees/Getting-Licensed"
+      ]
+    },
+    {
+      "category": "tools",
+      "query": "Physical Therapists software tools EMR documentation technology 2025 2026",
+      "sources": [
+        "https://www.webpt.com",
+        "https://www.sprypt.com/blog/how-does-emr-software-improve-physical-therapy",
+        "https://www.capterra.com/physical-therapy-software/",
+        "https://www.empoweremr.com",
+        "https://softwarefinder.com/emr-software/physical-therapy",
+        "https://www.sprypt.com/blog/advancements-in-physical-therapy"
+      ]
+    },
+    {
+      "category": "terminology",
+      "query": "Physical Therapy key terminology clinical terms documentation codes",
+      "sources": [
+        "https://www.sprypt.com/blog/physical-therapy-medical-abbreviations",
+        "https://www.empoweremr.com/blog/physical-therapy-abbreviations-170-common-terms-for-pts",
+        "https://www.nethealth.com/blog/physical-therapy-diagnosis-codes-decoding-language/",
+        "https://www.sprypt.com/blog/physical-therapy-cpt-codes-reference-sheet",
+        "https://www.webpt.com/blog/the-most-common-physical-therapy-abbreviations",
+        "https://www.webpt.com/guides/cpt-codes"
+      ]
+    },
+    {
+      "category": "career_psychology",
+      "query": "Physical Therapists career path salary burnout 2025 2026 US statistics",
+      "sources": [
+        "https://www.bls.gov/ooh/healthcare/physical-therapists.htm",
+        "https://www.empoweremr.com/blog/physical-therapy-growth-rate-and-career-outlook-for-2025",
+        "https://pioneer-healthcare.com/blog/physical-therapist-salary-trends-what-to-expect-in-your-career/",
+        "https://www.apta.org/apta-and-you/news-publications/reports/2025/incomes-profession",
+        "https://www.sprypt.com/blog/pt-industry-in-2025",
+        "https://www.trytwofold.com/blog/physical-therapist-salaries-2025"
+      ]
+    },
+    {
+      "category": "community",
+      "query": "Physical Therapists professional associations conferences communities 2025 2026 US",
+      "sources": [
+        "https://www.allconferencealert.com/usa/physical-therapy-conference.html",
+        "https://tpta.org/",
+        "https://csm.apta.org/future-dates",
+        "https://www.ccapta.org/events/EventDetails.aspx?id=1877618",
+        "https://cefortherapy.com/physical-therapy-conferences/",
+        "https://www.aptaofma.org/annual-conference/"
+      ]
+    },
+    {
+      "category": "market",
+      "query": "Physical Therapists job outlook market demand trends 2025 2026 US BLS",
+      "sources": [
+        "https://www.empoweremr.com/blog/physical-therapy-growth-rate-and-career-outlook-for-2025",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11879330/",
+        "https://www.sprypt.com/blog/pt-industry-in-2025",
+        "https://www.andersgroup.org/blog/travel-physical-therapy-jobs-2025-trends-2026-predictions-future-outlook",
+        "https://academic.oup.com/ptj/article/105/3/pzaf014/8047019",
+        "https://www.bls.gov/ooh/healthcare/physical-therapists.htm"
+      ]
+    }
+  ]
+}

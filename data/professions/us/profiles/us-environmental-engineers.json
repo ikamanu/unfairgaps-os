@@ -1,0 +1,327 @@
+{
+  "profession_id": "us-environmental-engineers",
+  "profession_name": "Environmental Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Environmental engineers design systems for water treatment, air pollution control, and waste management. They conduct environmental assessments, collect field samples, oversee project implementation, and ensure regulatory compliance with EPA and state regulations.",
+    "typical_tasks": [
+      "Design environmental systems (water treatment plants, air pollution controls, waste facilities)",
+      "Conduct environmental site assessments (Phase I/II ESAs)",
+      "Collect soil, water, and air samples in the field",
+      "Perform data analysis and environmental modeling",
+      "Prepare environmental impact reports and permit applications",
+      "Ensure compliance with EPA regulations (Clean Water Act, Clean Air Act, RCRA)",
+      "Supervise construction and installation of environmental systems",
+      "Review and approve remediation plans for contaminated sites",
+      "Coordinate with regulatory agencies on permit approvals"
+    ],
+    "key_documents": [
+      "Environmental Impact Statement (EIS)",
+      "Phase I / Phase II Environmental Site Assessment",
+      "NPDES Permit applications",
+      "Stormwater Pollution Prevention Plan (SWPPP)",
+      "Spill Prevention Control and Countermeasure (SPCC) Plan",
+      "Corrective Action Plan (CAP)",
+      "Air Quality Permit applications",
+      "RCRA compliance reports",
+      "Remedial Investigation/Feasibility Study (RI/FS)"
+    ],
+    "deadlines": {
+      "permit_renewals": "Varies by state, typically 5-year cycles for NPDES",
+      "epa_reporting": "Quarterly or annual depending on permit type",
+      "eis_review": "45-day public comment period",
+      "spcc_plan_review": "Every 5 years or upon significant change",
+      "superfund_milestones": "Defined by EPA consent decrees"
+    },
+    "seasonality": "Field work peaks in spring/summer due to weather. Stormwater management intensifies during rainy seasons. Budget cycles affect government-funded projects (federal fiscal year ends September 30)."
+  },
+  "regulatory": {
+    "summary": "Environmental engineers operate under a complex federal/state regulatory framework including the Clean Water Act, Clean Air Act, RCRA, CERCLA (Superfund), and NEPA. PE licensure is required for signing off on engineering designs and reports.",
+    "key_laws": [
+      {
+        "name": "Clean Water Act (CWA)",
+        "description": "Regulates discharges of pollutants into waters of the US, establishes NPDES permits",
+        "agency": "EPA"
+      },
+      {
+        "name": "Clean Air Act (CAA)",
+        "description": "Regulates air emissions from stationary and mobile sources",
+        "agency": "EPA"
+      },
+      {
+        "name": "Resource Conservation and Recovery Act (RCRA)",
+        "description": "Governs hazardous waste management from generation to disposal",
+        "agency": "EPA"
+      },
+      {
+        "name": "CERCLA (Superfund)",
+        "description": "Addresses cleanup of contaminated sites and liability for hazardous substance releases",
+        "agency": "EPA"
+      },
+      {
+        "name": "National Environmental Policy Act (NEPA)",
+        "description": "Requires Environmental Impact Statements for major federal actions",
+        "agency": "CEQ"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "ABET-accredited bachelor's degree in environmental or related engineering",
+        "Pass Fundamentals of Engineering (FE) exam ($175)",
+        "4 years of supervised engineering experience",
+        "Pass Professional Engineer (PE) exam ($300-$400)",
+        "State-specific PE license application"
+      ],
+      "pe_exam_update_2026": "Beginning April 1, 2026, the NCEES PE Environmental exam adds Sustainability as a dedicated topic (7-11 questions), emphasizing applied knowledge and real-world problem-solving",
+      "board_certification": "AAEES offers Board Certified Environmental Engineer (BCEE) credential"
+    },
+    "penalties": "Violations of environmental regulations can result in significant civil penalties (up to $25,000+ per day per violation under CWA) and criminal penalties including imprisonment for knowing violations."
+  },
+  "tools": {
+    "summary": "Environmental engineers use CAD, GIS, and specialized modeling software for design and analysis, along with field monitoring equipment for sampling and data collection.",
+    "primary_tools": [
+      {
+        "name": "AutoCAD Civil 3D",
+        "description": "Design and modeling of civil/environmental engineering projects"
+      },
+      {
+        "name": "ArcGIS / QGIS",
+        "description": "Geographic Information Systems for spatial analysis, site mapping, and environmental data visualization"
+      },
+      {
+        "name": "EPANET",
+        "description": "EPA-developed water distribution system modeling software"
+      },
+      {
+        "name": "HEC-RAS",
+        "description": "US Army Corps of Engineers tool for hydrologic and hydraulic modeling"
+      },
+      {
+        "name": "StormCAD",
+        "description": "Stormwater drainage and sanitary sewer design modeling"
+      },
+      {
+        "name": "MODFLOW",
+        "description": "USGS groundwater flow modeling system"
+      }
+    ],
+    "secondary_tools": [
+      "MATLAB — numerical computing and data analysis",
+      "R / Python — statistical analysis and data processing",
+      "Tableau / Power BI — data visualization and reporting dashboards",
+      "Microsoft Excel — data management, calculations, and reporting",
+      "Bluebeam Revu — PDF markup and plan review",
+      "Water quality test kits, air pollution samplers, survey equipment"
+    ],
+    "pain_points": [
+      "Integrating data from multiple field monitoring systems",
+      "Legacy software compatibility with modern operating systems",
+      "Manual data entry from field sampling into reporting systems",
+      "Keeping up with changing regulatory reporting formats"
+    ]
+  },
+  "terminology": {
+    "summary": "Environmental engineering uses extensive regulatory acronyms from EPA and state agencies, plus technical jargon related to contamination assessment, remediation, and water/air quality management.",
+    "terms": {
+      "NIMBY": "Not In My Back Yard — community opposition to nearby projects",
+      "GOOMBY": "Get Out Of My Backyard — stronger opposition than NIMBY",
+      "REC": "Recognized Environmental Condition — issues identified in Phase I ESA",
+      "NFA": "No Further Action — contamination addressed, no more cleanup needed",
+      "CAP": "Corrective Action Plan — describes how contamination will be remediated",
+      "BTEX": "Benzene, Toluene, Ethylbenzene, Xylenes — common fuel contaminants",
+      "UST": "Underground Storage Tank",
+      "LUST": "Leaking Underground Storage Tank",
+      "BOD": "Biochemical Oxygen Demand — water quality metric",
+      "BACT": "Best Available Control Technology",
+      "BMP": "Best Management Practices",
+      "SWPPP": "Stormwater Pollution Prevention Plan",
+      "NPDES": "National Pollutant Discharge Elimination System",
+      "TCLP": "Toxicity Characteristic Leaching Procedure",
+      "MCL": "Maximum Contaminant Level",
+      "EPCRA": "Emergency Planning and Community Right-to-Know Act",
+      "RI/FS": "Remedial Investigation / Feasibility Study",
+      "ROD": "Record of Decision — EPA cleanup decision document",
+      "O&M": "Operations and Maintenance",
+      "QA/QC": "Quality Assurance / Quality Control"
+    }
+  },
+  "career_psychology": {
+    "summary": "Environmental engineering offers stable career growth with median salary ~$100K. The field attracts mission-driven professionals passionate about environmental protection. Burnout risk exists from regulatory complexity, stakeholder conflicts, and slow project timelines.",
+    "career_path": [
+      "Bachelor's degree in Environmental Engineering (ABET-accredited)",
+      "Engineer-in-Training (EIT) — pass FE exam",
+      "Junior/Staff Environmental Engineer (0-4 years)",
+      "Professional Engineer (PE) — pass PE exam after 4 years experience",
+      "Senior Environmental Engineer (5-10 years)",
+      "Principal Engineer / Project Manager (10+ years)",
+      "Director of Environmental Services / VP Engineering"
+    ],
+    "salary_range": {
+      "entry_level": "$55,000 - $70,000/year",
+      "mid_level": "$75,000 - $100,000/year",
+      "senior": "$100,000 - $140,000/year",
+      "principal_director": "$130,000 - $180,000+/year",
+      "median_bls": "$100,090/year (BLS median)"
+    },
+    "fears": [
+      "Making a design error that causes environmental contamination",
+      "Liability for failed remediation or permit violations",
+      "Career stagnation without PE license",
+      "Budget cuts to environmental programs affecting job security",
+      "Public backlash on controversial projects"
+    ],
+    "motivation": [
+      "Making a tangible positive impact on the environment",
+      "Solving complex technical and regulatory challenges",
+      "Protecting public health and communities",
+      "Variety of work — field, office, and stakeholder engagement",
+      "Growing demand driven by climate change and sustainability"
+    ],
+    "burnout_factors": [
+      "Navigating complex and constantly changing regulations",
+      "Stakeholder conflicts (community, industry, government)",
+      "Long project timelines with slow visible progress",
+      "Extensive documentation and reporting requirements",
+      "Budget constraints limiting optimal solutions"
+    ]
+  },
+  "community": {
+    "summary": "Strong professional community with multiple national associations, certification bodies, and technical institutes offering conferences, publications, and networking.",
+    "associations": [
+      {
+        "name": "American Academy of Environmental Engineers and Scientists (AAEES)",
+        "url": "https://www.aaees.org/",
+        "description": "Board certification, workshops, awards, university accreditation"
+      },
+      {
+        "name": "National Association of Environmental Professionals (NAEP)",
+        "url": "https://www.naep.org/",
+        "description": "Multi-disciplinary association for environmental planning and management"
+      },
+      {
+        "name": "Air & Waste Management Association (A&WMA)",
+        "description": "Conferences, training, networking for air quality and waste professionals"
+      },
+      {
+        "name": "Water Environment Federation (WEF)",
+        "description": "Technical education and training for water quality professionals since 1928"
+      },
+      {
+        "name": "ASCE Environmental & Water Resources Institute (EWRI)",
+        "url": "https://www.asce.org/communities/institutes-and-technical-groups/environmental-and-water-resources-institute",
+        "description": "Technical community within ASCE for environmental and water resources engineers"
+      },
+      {
+        "name": "Association of Environmental Engineering and Science Professors (AEESP)",
+        "url": "https://aeesp.org/",
+        "description": "Academic and research community, biennial conferences"
+      }
+    ],
+    "online_communities": [
+      "r/environmentalengineering — Reddit community for professionals and students",
+      "r/environmental_science — broader environmental science discussions",
+      "ASCE Collaborate — peer-to-peer technical forum",
+      "LinkedIn Environmental Engineering groups"
+    ],
+    "conferences": [
+      "WEFTEC — Water Environment Federation Technical Exhibition and Conference",
+      "AEESP Biennial Research and Education Conference",
+      "A&WMA Annual Conference & Exhibition",
+      "NAEP Annual Conference"
+    ]
+  },
+  "market": {
+    "summary": "Environmental engineering shows steady growth with ~48,900 employed in the US. BLS projects 7% growth 2023-2033. Rising demand driven by climate change, infrastructure investment, and sustainability regulations.",
+    "employment_total": 48877,
+    "job_openings": 24787,
+    "growth_rate": "7% projected 2023-2033 (faster than average)",
+    "salary_market": {
+      "median": "$100,090/year (BLS)",
+      "average": "$75,700 - $94,800/year (various sources)",
+      "25th_percentile": "$77,000/year",
+      "75th_percentile": "$107,000/year"
+    },
+    "top_employers": [
+      "Environmental consulting firms (AECOM, Arcadis, WSP, Jacobs, Tetra Tech)",
+      "Federal agencies (EPA, Army Corps of Engineers, DOE)",
+      "State environmental agencies",
+      "Manufacturing and industrial companies",
+      "Water and wastewater utilities"
+    ],
+    "market_trends": [
+      "Growing demand for sustainability and ESG expertise",
+      "Infrastructure Investment and Jobs Act driving remediation projects",
+      "PFAS contamination creating new remediation demand",
+      "Climate change adaptation and resilience engineering",
+      "Salary growth of 9% over last 5 years for environmental engineers"
+    ]
+  },
+  "quality_score": 0.78,
+  "sources_count": 30,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Environmental Engineers USA 2025 2026 typical daily work tasks responsibilities projects deadlines",
+      "sources": [
+        {"title": "BLS Occupational Outlook Handbook — Environmental Engineers", "url": "https://www.bls.gov/ooh/architecture-and-engineering/environmental-engineers.htm"},
+        {"title": "O*NET — Environmental Engineers 17-2081.00", "url": "https://www.onetonline.org/link/summary/17-2081.00"},
+        {"title": "TRS Staffing — Responsibilities of Environmental Engineer", "url": "https://www.trsstaffing.com/blogs/2025-12/what-the-responsibilities-of-an-environmental-engineer"},
+        {"title": "Indeed — Environmental Engineer Job Description", "url": "https://www.indeed.com/hire/job-description/environmental-engineer"}
+      ]
+    },
+    {
+      "query": "Environmental Engineers USA 2025 2026 regulations EPA permits licensing PE certification requirements",
+      "sources": [
+        {"title": "NCEES — PE Environmental Exam", "url": "https://ncees.org/exams/pe-exam/environmental/"},
+        {"title": "Research.com — PE License Requirements 2026", "url": "https://research.com/careers/professional-engineer-license-requirements"},
+        {"title": "PEwise — PE Exam Requirements by State 2026", "url": "https://pewise.com/blog/pe-exam-requirements-by-state-2025"},
+        {"title": "AAEES — Board Certification", "url": "https://www.aaees.org/becomeboardcertified"}
+      ]
+    },
+    {
+      "query": "Environmental Engineers USA software tools AutoCAD GIS modeling programs technology stack",
+      "sources": [
+        {"title": "CypressEI — Tools Environmental Engineers Use 2026", "url": "https://cypressei.com/engineering/what-tools-environmental-engineers-use/"},
+        {"title": "American Profession Guide — Environmental Engineering Software", "url": "https://americanprofessionguide.com/environmental-engineering-software-and-tools/"},
+        {"title": "WGI — Software Programs in Civil Engineering", "url": "https://wginc.com/10-software-programs-to-know-in-civil-engineering-2/"}
+      ]
+    },
+    {
+      "query": "Environmental Engineers USA professional jargon terminology acronyms slang",
+      "sources": [
+        {"title": "RRMSC — Glossary of Environmental Engineering Terms", "url": "https://www.rrmsc.com/resources/glossary"},
+        {"title": "AGC — Environmental Acronyms", "url": "https://www.agc.org/environmental-acronyms"},
+        {"title": "PM Environmental — Understanding Environmental Acronyms", "url": "https://www.pmenv.com/articles/understanding-environmental-acronyms-infographic/"},
+        {"title": "RSB Environmental — Glossary", "url": "https://rsbenv.com/environmental-definitions-explanation-glossary-of-acronyms/"}
+      ]
+    },
+    {
+      "query": "Environmental Engineers USA 2025 2026 career path salary range burnout stress",
+      "sources": [
+        {"title": "US News — Environmental Engineer Career", "url": "https://money.usnews.com/careers/best-jobs/environmental-engineer"},
+        {"title": "PayScale — Environmental Engineer Salary 2026", "url": "https://www.payscale.com/research/US/Job=Environmental_Engineer/Salary"},
+        {"title": "Research.com — How to Become Environmental Engineer", "url": "https://research.com/careers/how-to-become-an-environmental-engineer-salary-and-career-paths"},
+        {"title": "BLS — Environmental Engineers", "url": "https://www.bls.gov/ooh/architecture-and-engineering/environmental-engineers.htm"}
+      ]
+    },
+    {
+      "query": "Environmental Engineers USA professional associations communities conferences",
+      "sources": [
+        {"title": "AAEES — American Academy of Environmental Engineers and Scientists", "url": "https://www.aaees.org/"},
+        {"title": "NAEP — National Association of Environmental Professionals", "url": "https://www.naep.org/"},
+        {"title": "ASCE EWRI", "url": "https://www.asce.org/communities/institutes-and-technical-groups/environmental-and-water-resources-institute"},
+        {"title": "AEESP", "url": "https://aeesp.org/"}
+      ]
+    },
+    {
+      "query": "Environmental Engineers USA 2025 2026 job market outlook vacancies demand salary trends BLS",
+      "sources": [
+        {"title": "BLS — Environmental Engineers Outlook", "url": "https://www.bls.gov/ooh/architecture-and-engineering/environmental-engineers.htm"},
+        {"title": "US News — Environmental Engineer Salary 2026", "url": "https://careers.usnews.com/best-jobs/environmental-engineer/salary"},
+        {"title": "Zippia — Environmental Engineer Job Outlook", "url": "https://www.zippia.com/environmental-engineer-jobs/trends/"},
+        {"title": "Design News — Engineering Employment Surges", "url": "https://www.designnews.com/industry/engineering-employment-surges-in-job-openings-and-premium-salaries"}
+      ]
+    }
+  ]
+}

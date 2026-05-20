@@ -1,0 +1,211 @@
+{
+  "profession_id": "us-ophthalmic-medical-technologists",
+  "profession_name": "Ophthalmic Medical Technologists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Ophthalmic medical technologists (COMTs) perform advanced ophthalmic diagnostic procedures including fluorescein angiography, OCT, A/B scans, ophthalmic photography, and complex testing. They represent the highest non-physician allied ophthalmic credential.",
+    "typical_tasks": [
+      "Perform advanced OCT imaging and analysis",
+      "Conduct fluorescein angiography of the eye",
+      "Perform A/B scan ultrasonography and optical biometry (IOL Master)",
+      "Clinical ophthalmic photography for retinal/corneal documentation",
+      "Slit lamp biomicroscopy for anterior and posterior segment",
+      "Advanced visual field testing and interpretation",
+      "Keratometry, pachymetry, and topography",
+      "Assist in complex ophthalmic surgical procedures",
+      "Calibrate and maintain advanced diagnostic equipment",
+      "Train and mentor COA/COT staff",
+      "Quality assurance for diagnostic testing protocols"
+    ],
+    "key_documents": [
+      "Advanced diagnostic test reports (OCT, FA, VF)",
+      "Surgical assistance documentation",
+      "Equipment calibration and QC logs",
+      "Patient imaging archives",
+      "Training and competency records for junior staff"
+    ],
+    "deadlines": {
+      "equipment_calibration": "Daily checks before first patient",
+      "ce_requirements": "Ongoing CE credits for COMT recertification",
+      "quality_reviews": "Monthly QA review of diagnostic testing accuracy"
+    },
+    "seasonality": "Similar to ophthalmic technicians — steady year-round with slight increases during insurance benefit periods. Surgical assisting volume may vary with surgeon scheduling.",
+    "sources": [
+      {"url": "https://www.onetonline.org/link/summary/29-2099.05", "fact": "O*NET occupation profile for ophthalmic medical technologists SOC 29-2099.05"},
+      {"url": "https://www.jcahpo.org/certification/certifications/certified-ophthalmic-medical-technologist/", "fact": "IJCAHPO COMT certification as highest allied ophthalmic designation"}
+    ]
+  },
+  "regulatory": {
+    "summary": "COMT (Certified Ophthalmic Medical Technologist) is the advanced IJCAHPO certification requiring progression through COA and COT levels. No mandatory state licensure but certification strongly expected by employers for advanced roles.",
+    "key_laws": [
+      {
+        "name": "HIPAA",
+        "detail": "Patient health information protection for all ophthalmic records and images",
+        "reference": "45 CFR Parts 160, 164"
+      },
+      {
+        "name": "State Medical Practice Acts",
+        "detail": "Define scope of practice for advanced ophthalmic personnel under physician supervision",
+        "status": "Varies by state"
+      },
+      {
+        "name": "FDA Medical Device Regulations",
+        "detail": "Applicable to diagnostic equipment operation and reporting",
+        "status": "Active"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "COMT requires progression through COA → COT levels",
+        "3 years practice as COT + additional CE credits",
+        "Pass IJCAHPO COMT examination",
+        "Alternatively: graduation from COMT-level ICA-accredited program",
+        "Recertification through continuing education"
+      ],
+      "certifying_bodies": [
+        "IJCAHPO — International Joint Commission on Allied Health Personnel in Ophthalmology"
+      ]
+    },
+    "penalties": "No direct regulatory penalties on technologists. Facility-level HIPAA fines apply. Scope-of-practice violations could result in physician liability.",
+    "sources": [
+      {"url": "https://www.jcahpo.org/certification/certifications/certified-ophthalmic-medical-technologist/", "fact": "COMT is the advanced level designation requiring COA and COT progression"},
+      {"url": "https://documents.jcahpo.org/documents/Certification/Criteria_For_Certification.pdf", "fact": "JCAHPO criteria for certification document"}
+    ]
+  },
+  "tools": {
+    "summary": "Advanced diagnostic equipment including OCT systems (Zeiss, Heidelberg, Topcon), fundus cameras (Optos, Topcon), IOL biometry (Zeiss IOLMaster), visual field analyzers (Humphrey), and fluorescein angiography systems. Same manufacturers as ophthalmic technicians but with more advanced modalities.",
+    "primary_software": [
+      {"name": "ZEISS CIRRUS HD-OCT 6000", "purpose": "Advanced retinal OCT with angiography (OCT-A) capabilities"},
+      {"name": "Heidelberg Spectralis", "purpose": "Multimodal imaging: OCT, FA, ICG, autofluorescence"},
+      {"name": "Zeiss IOLMaster 700", "purpose": "Optical biometry for IOL power calculation pre-cataract surgery"},
+      {"name": "Humphrey Field Analyzer (HFA3)", "purpose": "Advanced visual field perimetry with progression analysis"},
+      {"name": "Optos California/Silverstone", "purpose": "Ultra-widefield retinal imaging"},
+      {"name": "Topcon Maestro2", "purpose": "Automated OCT with built-in fundus camera"},
+      {"name": "Canon/Nidek Fundus Cameras", "purpose": "Stereo fundus photography and FA imaging"},
+      {"name": "Ophthalmology EHR (NextGen, Compulink, ModMed)", "purpose": "Specialty EHR with image integration"}
+    ],
+    "pain_points": [
+      "High equipment costs ($200,000+ per advanced imaging device)",
+      "Multiple vendor systems requiring different training",
+      "EHR-imaging system integration challenges",
+      "Rapid technology evolution requiring continuous learning"
+    ],
+    "sources": [
+      {"url": "https://seaophthalmic.com/ophthalmic-equipment/top-diagnostic-devices-every-ophthalmologist/", "fact": "Top diagnostic devices for ophthalmology 2025"},
+      {"url": "https://www.onetonline.org/link/summary/29-2099.05", "fact": "O*NET lists equipment and tools for ophthalmic medical technologists"}
+    ]
+  },
+  "terminology": {
+    "summary": "Advanced ophthalmic terminology building on COT-level knowledge, adding fluorescein angiography, OCT-A, biometry, and surgical assistance terminology.",
+    "key_terms": [
+      {"term": "FA", "meaning": "Fluorescein Angiography — dye-based retinal vascular imaging"},
+      {"term": "ICG", "meaning": "Indocyanine Green Angiography — choroidal vascular imaging"},
+      {"term": "OCT-A", "meaning": "OCT Angiography — non-invasive retinal vascular imaging without dye"},
+      {"term": "IOL", "meaning": "Intraocular Lens — implanted during cataract surgery"},
+      {"term": "Biometry", "meaning": "Measurement of eye dimensions for IOL power calculation"},
+      {"term": "Phaco", "meaning": "Phacoemulsification — ultrasonic cataract removal technique"},
+      {"term": "ERG", "meaning": "Electroretinography — electrical response testing of the retina"},
+      {"term": "UBM", "meaning": "Ultrasound Biomicroscopy — high-frequency imaging of anterior segment"},
+      {"term": "Autofluorescence", "meaning": "FAF imaging showing RPE lipofuscin distribution"},
+      {"term": "RNFL", "meaning": "Retinal Nerve Fiber Layer — key OCT measurement for glaucoma"},
+      {"term": "GCC", "meaning": "Ganglion Cell Complex — OCT layer analysis for early glaucoma detection"},
+      {"term": "Specular microscopy", "meaning": "Endothelial cell count and morphology assessment"}
+    ],
+    "common_abbreviations": ["COMT", "IJCAHPO", "OCT-A", "FA", "ICG", "IOL", "UWF (Ultra-Wide Field)", "ERG", "VEP (Visual Evoked Potential)"],
+    "sources": [
+      {"url": "https://www.onetonline.org/link/summary/29-2099.05", "fact": "O*NET tasks and tools for ophthalmic medical technologists"},
+      {"url": "https://practicequiz.com/certified-ophthalmic-medical-technologist", "fact": "COMT exam content areas defining scope of advanced terminology"}
+    ]
+  },
+  "career_psychology": {
+    "summary": "COMT represents the pinnacle of allied ophthalmic careers. Salary premium over COT of $10,000-$20,000. Growth limited without pursuing optometry/medical degree. Satisfaction from advanced clinical role and mentoring.",
+    "career_levels": [
+      {"level": "COA (entry)", "salary_range": "$35,000-$45,000", "responsibilities": "Basic testing and patient prep"},
+      {"level": "COT (intermediate)", "salary_range": "$45,000-$55,000", "responsibilities": "Full diagnostic testing"},
+      {"level": "COMT (advanced)", "salary_range": "$55,000-$80,000", "responsibilities": "Advanced diagnostics, surgical assistance, training, QA"},
+      {"level": "Practice Manager/Director", "salary_range": "$70,000-$90,000+", "responsibilities": "Department management, hiring, budgets, protocols"}
+    ],
+    "main_fears": [
+      "Missing critical pathology in diagnostic images",
+      "Equipment malfunction during procedures",
+      "Scope-of-practice violations",
+      "Falling behind on new technology skills"
+    ],
+    "burnout_causes": [
+      "High patient volume pressure",
+      "Repetitive advanced testing with high accuracy demands",
+      "Limited career ceiling without additional degrees",
+      "Pay disparity compared to effort and expertise required"
+    ],
+    "growth_motivation": [
+      "COMT certification as career pinnacle in allied ophthalmology",
+      "Specialization in retinal imaging or surgical assisting",
+      "Practice management or industry roles",
+      "Teaching and mentoring",
+      "Transition to optometry or medical school"
+    ],
+    "sources": [
+      {"url": "https://www.glassdoor.com/Salaries/certified-ophthalmic-medical-technologist-salary-SRCH_KO0,41.htm", "fact": "Average COMT salary $83,605/year (Glassdoor 2026)"},
+      {"url": "https://www.ziprecruiter.com/Salaries/Certified-Ophthalmic-Medical-Technologist-Comt-Salary", "fact": "COMT salary range $46,000-$90,000 with average $62,523"}
+    ]
+  },
+  "community": {
+    "summary": "Same professional community as ophthalmic technicians — ATPO, IJCAHPO, and AAO. COMTs often serve as mentors and leaders within ophthalmic technician communities.",
+    "professional_associations": [
+      {"name": "ATPO — Association of Technical Personnel in Ophthalmology", "url": "https://www.atpo.org", "membership_value": "CE courses, career resources, networking", "mandatory": false},
+      {"name": "IJCAHPO", "url": "https://www.jcahpo.org", "membership_value": "Certification, CE programs, career advancement", "mandatory": false},
+      {"name": "AAO — American Academy of Ophthalmology", "url": "https://www.aao.org", "membership_value": "Annual meeting, clinical guidelines, allied health resources", "mandatory": false}
+    ],
+    "conferences": [
+      {"name": "AAO Annual Meeting", "detail": "Largest ophthalmology conference with allied health tracks", "frequency": "Annual"},
+      {"name": "ASCRS Annual Meeting", "detail": "Cataract and refractive surgery focus — relevant for surgical COMTs", "frequency": "Annual"}
+    ],
+    "online_communities": [
+      "ATPO online community",
+      "IJCAHPO career resources",
+      "Facebook COMT groups",
+      "LinkedIn ophthalmic professionals"
+    ],
+    "sources": [
+      {"url": "https://www.jcahpo.org/certification/", "fact": "IJCAHPO certification and community resources"},
+      {"url": "https://careers.jcahpo.org/jobs/function/Certified-Ophthalmic-Medical-Technologist-(COMT)/", "fact": "JCAHPO job board for COMT positions"}
+    ]
+  },
+  "market": {
+    "summary": "COMT average salary $62,000-$84,000 depending on source. Part of broader ophthalmic technician market (56,400 employed). Growing demand from aging population and advanced imaging expansion.",
+    "salary_by_level": {
+      "entry_comt": "$55,000-$65,000",
+      "experienced_comt": "$65,000-$80,000",
+      "lead_director": "$75,000-$90,000+"
+    },
+    "geographic_variation": {
+      "national_average": "$62,500-$84,000",
+      "high_cost_markets": "$75,000-$100,000+ (NYC, SF, Boston)",
+      "25th_percentile": "$46,000",
+      "75th_percentile": "$73,000",
+      "90th_percentile": "$90,000"
+    },
+    "estimated_practitioners": "Part of 56,400 ophthalmic medical technicians (BLS 2023). COMTs are a smaller subset.",
+    "job_outlook": "Rapid growth outlook. Advanced imaging skills increasingly demanded. AI integration creating new roles in image quality oversight.",
+    "work_arrangements": {
+      "dominant": "W-2 employees in ophthalmology practices and academic medical centers",
+      "ambulatory_surgery": "Surgical assisting roles in ASCs",
+      "industry": "Some transition to ophthalmic device companies"
+    },
+    "market_trends": [
+      "Growing demand for OCT-A and multimodal imaging expertise",
+      "AI-assisted diagnostics shifting COMT role toward quality oversight",
+      "Retinal telehealth programs expanding remote imaging opportunities",
+      "Aging population driving cataract and glaucoma service demand"
+    ],
+    "sources": [
+      {"url": "https://www.salary.com/research/salary/hiring/certified-ophthalmic-medical-technologist-salary", "fact": "Average COMT salary $58,521 (Salary.com December 2025)"},
+      {"url": "https://www.bls.gov/oes/2023/may/oes292057.htm", "fact": "BLS: 56,400 ophthalmic medical technicians employed nationally in 2023"}
+    ]
+  },
+  "quality_score": 0.4,
+  "sources_count": 12,
+  "verified_sources": 5,
+  "confidence": "likely",
+  "raw_responses": []
+}

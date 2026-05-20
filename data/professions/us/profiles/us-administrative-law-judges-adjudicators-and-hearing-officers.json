@@ -1,0 +1,398 @@
+{
+  "profession_id": "us-administrative-law-judges-adjudicators-and-hearing-officers",
+  "profession_name": "Administrative Law Judges, Adjudicators, and Hearing Officers",
+  "country": "US",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Administrative Law Judges (ALJs) serve as independent triers of fact presiding over administrative hearings for federal, state, and local government agencies. They held about 17,500 jobs in 2024. Most work full time, often exceeding 40 hours per week. Their work involves conducting formal and informal adjudication proceedings, reviewing evidence, issuing subpoenas, ruling on evidentiary objections, and writing detailed opinions containing findings of fact and conclusions of law. ALJs handle cases covering Social Security disability, workers' compensation, employment discrimination, environmental violations, securities enforcement, immigration, and regulatory compliance. The job is mentally demanding — ALJs must sit in hearings for extended periods and give undivided attention to complex legal and factual issues.",
+    "typical_tasks": [
+      "Presiding over formal administrative hearings and conducting pre-hearing conferences",
+      "Administering oaths and affirmations to witnesses",
+      "Issuing subpoenas for documents and witness testimony",
+      "Ruling on motions, evidentiary objections, and procedural matters",
+      "Reviewing case files, claims, applications, and supporting documentation",
+      "Researching applicable laws, regulations, policies, and precedent decisions",
+      "Conducting witness examinations and managing hearing procedures",
+      "Preparing written opinions, recommended decisions, and final orders with findings of fact and conclusions of law",
+      "Managing case dockets and scheduling hearing calendars",
+      "Holding settlement conferences and exploring alternative resolutions",
+      "Reviewing briefs and post-hearing submissions from parties",
+      "Performing day-to-day administrative tasks including maintaining case files and processing paperwork",
+      "Supervising Attorney Advisors who assist with research, drafting, and hearing administration",
+      "Handling depositions and discovery disputes"
+    ],
+    "key_documents": [
+      "Initial decisions and recommended decisions",
+      "Final orders and opinions",
+      "Findings of fact and conclusions of law",
+      "Pre-hearing orders and scheduling orders",
+      "Subpoenas duces tecum and ad testificandum",
+      "Evidentiary rulings and procedural orders",
+      "Settlement agreements and consent orders",
+      "Hearing transcripts",
+      "Briefs and memoranda of law",
+      "Agency complaint and answer filings",
+      "Discovery orders",
+      "Motions and responses (summary judgment, dismissal, continuance)"
+    ],
+    "deadlines": {
+      "initial_decision": "Typically 60-120 days after hearing record closes (varies by agency)",
+      "recommended_decision": "30-90 days after close of record (agency-specific timelines)",
+      "pre_hearing_order": "Issued within 30-60 days of case assignment",
+      "discovery_completion": "Usually 60-90 days before hearing date",
+      "post_hearing_briefs": "Typically 30-45 days after hearing transcript is available",
+      "ssa_hearings": "Social Security targets hearing within 270 days of request (backlog issues persist)"
+    },
+    "seasonality": "No strong seasonality but agency-specific patterns exist. Social Security disability cases maintain constant high volume year-round. Environmental and regulatory enforcement cases may spike around fiscal year-end (September 30 for federal). Workers' compensation claims may increase after seasonal employment peaks. End-of-fiscal-year push for agencies to clear case backlogs."
+  },
+  "regulatory": {
+    "summary": "The ALJ function was created by the Administrative Procedure Act (APA) of 1946 to ensure fairness in administrative proceedings. ALJs are protected by statutory independence — they may only be removed for cause as established by the Merit Systems Protection Board. Executive Order 13,843 (2018) moved ALJ hiring from competitive service to excepted service, allowing agencies to hire directly. The Supreme Court in Lucia v. SEC (2018) confirmed that at least some ALJs are 'inferior Officers' under the Appointments Clause, requiring appointment by agency heads.",
+    "key_laws": [
+      {
+        "name": "Administrative Procedure Act (APA) — 5 U.S.C. §§ 553-559",
+        "url": "https://www.law.cornell.edu/uscode/text/5/part-I/chapter-5/subchapter-II",
+        "status": "Active — foundational statute governing ALJ authority and procedures since 1946"
+      },
+      {
+        "name": "Executive Order 13,843 — Excepting Administrative Law Judges from the Competitive Service",
+        "url": "https://www.federalregister.gov/documents/2018/07/13/2018-15202/excepting-administrative-law-judges-from-the-competitive-service",
+        "status": "Active since 2018 — moved ALJs to excepted service"
+      },
+      {
+        "name": "5 CFR Part 930 Subpart B — Administrative Law Judge Program",
+        "url": "https://www.ecfr.gov/current/title-5/chapter-I/subchapter-B/part-930/subpart-B",
+        "status": "Active — OPM regulations governing ALJ program administration"
+      },
+      {
+        "name": "Lucia v. Securities and Exchange Commission, 585 U.S. 237 (2018)",
+        "url": "https://supreme.justia.com/cases/federal/us/585/237/",
+        "status": "Binding precedent — ALJs are inferior officers requiring Appointments Clause compliance"
+      },
+      {
+        "name": "Agency-Specific Enabling Statutes (e.g., Social Security Act, Clean Air Act, Securities Exchange Act)",
+        "url": "https://www.law.cornell.edu/uscode",
+        "status": "Active — individual statutes granting agencies adjudicative authority"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Must be a licensed attorney (required by Executive Order 13,843)",
+        "Active bar membership and good standing with at least one state bar association",
+        "Juris Doctor (J.D.) from an ABA-accredited law school (standard expectation)",
+        "Typically 7+ years of legal experience, with substantial trial or hearing experience preferred",
+        "Desirable qualities per EO 13,843: appropriate temperament, legal acumen, impartiality, and ability to clearly communicate decisions",
+        "No single national licensing exam — agencies set their own selection criteria under excepted service",
+        "Former OPM competitive exam (pre-2018): 4-hour written exam plus oral panel examination — no longer required",
+        "Some state ALJ positions require state-specific bar admission and additional qualifications",
+        "Federal ALJs must pass background investigation and security clearance appropriate to agency"
+      ]
+    },
+    "penalties": "ALJs themselves have judicial immunity for acts within their judicial capacity. Agencies face penalties for attempting to improperly influence ALJ decisions — the APA protects ALJ decisional independence. ALJ decisions may be appealed or reversed by agency heads or reviewing boards. ALJs can be removed only for good cause as established by the Merit Systems Protection Board after a formal hearing. Misconduct may result in suspension, reprimand, or removal proceedings.",
+    "controlling_bodies": [
+      "U.S. Office of Personnel Management (OPM) — administers ALJ program, pay system, and qualification standards",
+      "Merit Systems Protection Board (MSPB) — handles ALJ removal and disciplinary proceedings",
+      "Administrative Conference of the United States (ACUS) — advisory body on administrative process improvements",
+      "Individual agency heads — appointing authority and may review/modify ALJ decisions",
+      "Federal courts — judicial review of final agency actions under APA § 706"
+    ]
+  },
+  "tools": {
+    "summary": "ALJs use a mix of government case management systems, legal research platforms, and general office technology. The federal judiciary is actively modernizing its Case Management/Electronic Case Files (CM/ECF) system as of 2025-2026. AI-powered legal research tools are increasingly adopted. Agency-specific electronic filing and docketing systems are standard, though technology varies significantly between federal and state agencies.",
+    "primary_tools": [
+      {
+        "name": "Agency-Specific Case Management Systems",
+        "description": "Each federal agency maintains its own electronic case management and docketing system (e.g., SSA's CPMS for Social Security cases, EPA's hearing docket system)"
+      },
+      {
+        "name": "CM/ECF (Case Management/Electronic Case Files)",
+        "description": "Federal court electronic filing system being modernized in 2025-2026 to replace the 30-year-old legacy platform"
+      },
+      {
+        "name": "Westlaw Edge / Thomson Reuters",
+        "description": "Primary legal research platform with AI-enhanced features for case law, statutes, and regulatory research"
+      },
+      {
+        "name": "Lexis+ AI / LexisNexis",
+        "description": "AI-powered legal research with judicial analytics providing insights into ruling patterns and case outcomes"
+      },
+      {
+        "name": "Microsoft 365 (Word, Outlook, Teams)",
+        "description": "Standard office suite for drafting decisions, correspondence, scheduling, and virtual hearings"
+      },
+      {
+        "name": "Zoom / Microsoft Teams / WebEx",
+        "description": "Virtual hearing platforms increasingly used for remote proceedings, pre-hearing conferences, and oral arguments"
+      }
+    ],
+    "secondary_tools": [
+      "PACER (Public Access to Court Electronic Records) — access to federal court filings",
+      "Fastcase / vLex — alternative legal research databases",
+      "Adobe Acrobat Pro — PDF management for case documents and evidence",
+      "Digital audio recording systems — for hearing transcription",
+      "Court reporter / stenography services — official hearing records",
+      "Government email and scheduling systems (Outlook/Exchange)",
+      "Lex Machina — legal analytics and predictive case outcome data",
+      "CoCounsel / Thomson Reuters AI — AI-assisted legal research and document review"
+    ],
+    "pain_points": [
+      "Outdated agency-specific case management systems with limited interoperability",
+      "Massive Social Security disability case backlog (1+ million pending cases) straining technology resources",
+      "Inconsistent technology standards across 30+ federal agencies employing ALJs",
+      "Limited AI adoption within government systems compared to private sector legal tech",
+      "Virtual hearing technology challenges including connectivity issues and evidence presentation difficulties",
+      "Document management burden with voluminous administrative records (medical records, regulatory files)",
+      "Slow pace of government IT modernization and procurement cycles",
+      "Cybersecurity restrictions limiting use of modern cloud-based tools"
+    ]
+  },
+  "terminology": {
+    "summary": "Administrative law has a specialized vocabulary rooted in the Administrative Procedure Act, blending traditional legal terminology with agency-specific jargon. The field was renamed from 'hearing examiners' to 'administrative law judges' by Congress in 1978, reflecting increased professional stature. Key distinctions exist between formal/informal adjudication, APA-protected ALJs, and non-APA hearing officers.",
+    "terms": {
+      "ALJ": "Administrative Law Judge — an independent judge who presides over administrative hearings under the APA",
+      "APA": "Administrative Procedure Act — the 1946 federal statute establishing the framework for administrative adjudication and rulemaking",
+      "OALJ": "Office of Administrative Law Judges — the division within an agency that houses ALJ operations (e.g., DOL OALJ, EPA OALJ)",
+      "OPM": "Office of Personnel Management — federal agency administering the ALJ program and pay system",
+      "MSPB": "Merit Systems Protection Board — adjudicates appeals of adverse personnel actions and ALJ removal cases",
+      "ACUS": "Administrative Conference of the United States — independent federal agency studying and recommending improvements to administrative process",
+      "formal adjudication": "APA-governed hearing process requiring decision on the record with ALJ presiding; triggered by statute requiring hearing 'on the record'",
+      "informal adjudication": "Agency decision-making not subject to APA formal hearing requirements; ALJs may still preside",
+      "initial decision": "The ALJ's decision in a formal adjudication that becomes the agency's final decision unless appealed",
+      "recommended decision": "An ALJ decision that is advisory to the agency head, who makes the final determination",
+      "hearing examiner": "Original title for ALJs under the 1946 APA; replaced by 'administrative law judge' in 1978",
+      "hearing officer": "Non-APA adjudicator who conducts hearings but lacks the statutory protections afforded to ALJs",
+      "bench trial": "Hearing conducted by the ALJ without a jury, serving as both judge and trier of fact",
+      "ex parte communication": "Prohibited one-sided communication between an ALJ and an interested party or agency official about a pending case",
+      "Attorney Advisor": "Staff attorney serving ALJs in a role similar to a judicial law clerk — assists with research, drafting, and hearing administration",
+      "on the record": "Statutory trigger phrase requiring formal APA adjudication with an ALJ presiding",
+      "substantial evidence": "Standard of judicial review for ALJ factual findings — whether a reasonable mind would accept the evidence as adequate",
+      "excepted service": "Federal employment category for ALJs since Executive Order 13,843 (2018), allowing direct agency hiring",
+      "competitive service": "Former employment category for ALJs (pre-2018) requiring OPM examination and certification",
+      "SSA ODAR": "Office of Disability Adjudication and Review — Social Security Administration division managing disability hearings (largest employer of ALJs)",
+      "preponderance of evidence": "Common evidentiary standard in administrative hearings — more likely than not"
+    }
+  },
+  "career_psychology": {
+    "summary": "ALJ positions are highly coveted, typically representing the culmination of a distinguished legal career. Most ALJs enter after 10-20+ years of legal practice, government service, or prior judicial experience. The role offers significant intellectual satisfaction, judicial independence, and job security. Federal ALJs enjoy structured pay (AL-3 through AL-1 levels) ranging from approximately $126,000 to $204,000+ with locality pay. The largest employer is the Social Security Administration. Burnout factors include enormous case backlogs, emotional toll of disability and employment cases, and political pressures on agency independence.",
+    "career_path": [
+      "Law school (J.D. from ABA-accredited institution) and state bar admission",
+      "5-10 years as practicing attorney (litigation, administrative law, or agency counsel preferred)",
+      "Government attorney or agency counsel positions (common pathway into administrative law)",
+      "10-15+ years of substantial legal experience with focus on administrative proceedings or trial practice",
+      "Application for ALJ position through agency hiring (excepted service since 2018)",
+      "Appointment as ALJ by agency head — background investigation and confirmation",
+      "Career progression from AL-3/A to AL-3/F through tenure-based rate increases",
+      "Promotion to AL-2 and AL-1 levels based on experience and agency structure",
+      "Senior ALJ or Chief ALJ roles within agency OALJ",
+      "Post-career: retirement, private ADR practice, or academic appointments"
+    ],
+    "salary_range": {
+      "entry_level": "$75,000 - $95,000 (state/local hearing officers and entry-level adjudicators)",
+      "mid_career": "$115,000 - $160,000 (experienced ALJs, BLS median $115,230 in May 2024)",
+      "senior": "$170,000 - $210,000+ (senior federal ALJs with locality pay, AL-1 level)",
+      "average_2026": "$91,574 (PayScale all adjudicators) / $176,648 (Glassdoor federal ALJs) — wide range reflects mix of state/local hearing officers and federal ALJs"
+    },
+    "fears": [
+      "Having decisions reversed on appeal or by agency review boards, damaging professional reputation",
+      "Political interference with judicial independence — agency pressure to decide cases in a particular way",
+      "Overwhelming case backlogs making thorough adjudication impossible (especially SSA disability cases)",
+      "Changes to ALJ status through executive orders or legislation reducing independence protections",
+      "AI and automation potentially reducing need for human adjudicators in routine cases",
+      "Erosion of APA protections under shifting political administrations",
+      "Accusations of bias or ex parte communications leading to disciplinary proceedings",
+      "Workplace restructuring or agency reorganization affecting ALJ positions"
+    ],
+    "motivation": [
+      "Exercising judicial independence — making consequential decisions that affect lives",
+      "Intellectual challenge of mastering complex regulatory and factual issues",
+      "Public service mission — ensuring due process and fair hearings for all parties",
+      "Job security — removal only for cause as determined by MSPB",
+      "Structured federal pay with locality adjustments and benefits",
+      "Professional prestige and respect within the legal community",
+      "Autonomy in managing docket and hearing procedures",
+      "Meaningful impact on administrative law and policy development"
+    ],
+    "burnout_factors": [
+      "Crushing SSA disability case backlog — some ALJs face 500-700+ pending cases",
+      "Emotional toll of disability, employment discrimination, and deportation cases",
+      "Repetitive nature of high-volume adjudication (especially Social Security)",
+      "Pressure to increase case disposition rates conflicting with thoroughness",
+      "Isolation — ALJs work independently with limited peer interaction",
+      "Political and public scrutiny of decision patterns and allowance/denial rates",
+      "Administrative burden of managing large dockets with limited staff support",
+      "Sedentary work requiring prolonged sitting during hearings and decision writing"
+    ]
+  },
+  "community": {
+    "summary": "ALJs have several dedicated professional associations, with the Federal Administrative Law Judges Conference (FALJC), Forum of U.S. Administrative Law Judges, and National Association of Administrative Law Judiciary (NAALJ) being the most prominent. The community is relatively small and collegial, with active conference participation, mentoring programs, and educational initiatives including emerging AI training for ALJs.",
+    "associations": [
+      {
+        "name": "Federal Administrative Law Judges Conference (FALJC)",
+        "url": "https://www.faljc.org/",
+        "type": "Voluntary professional association for federal ALJs — advocates before Congress and OPM"
+      },
+      {
+        "name": "National Association of Administrative Law Judiciary (NAALJ)",
+        "url": "https://www.naalj.org/",
+        "type": "Professional organization for administrative law judges at all levels — offers conferences, mentoring, and educational programs"
+      },
+      {
+        "name": "Forum of U.S. Administrative Law Judges",
+        "url": "https://www.forumalj.org/",
+        "type": "Professional organization for current and retired federal ALJs across 30+ agencies — $25/year dues, advocacy focus"
+      },
+      {
+        "name": "American Bar Association (ABA) Section of Administrative Law and Regulatory Practice",
+        "url": "https://www.americanbar.org/groups/administrative_law/",
+        "type": "ABA section focused on administrative law practice, policy, and scholarship"
+      },
+      {
+        "name": "Administrative Conference of the United States (ACUS)",
+        "url": "https://www.acus.gov/",
+        "type": "Independent federal agency studying and improving administrative processes — publishes recommendations and best practices"
+      },
+      {
+        "name": "American Judges Association (AJA)",
+        "url": "https://www.amjudges.org/",
+        "type": "National organization serving all judges including administrative law judges — hosts conferences and educational programs"
+      }
+    ],
+    "events": [
+      "NAALJ Annual Conference — October 4-7, 2026, Hilton New Orleans (speaker lineup, exhibitor booths, silent auction)",
+      "NAALJ Midyear Conference — May 15, 2026, online via Zoom",
+      "FALJC Annual Conference — September 23-24, 2026, Washington, DC",
+      "Forum of U.S. ALJs Annual Membership Luncheon — Washington, DC",
+      "ABA Section of Administrative Law Annual Meeting",
+      "American Judges Association Annual Conferences",
+      "Administrative Law Conferences (various academic and professional, see conferenceindex.org)"
+    ],
+    "online_communities": [
+      {
+        "name": "NAALJ Online Resources",
+        "url": "https://www.naalj.org/",
+        "description": "Educational materials including wellness resources, evidentiary guidance, AI applications for ALJs, and interpreter training"
+      },
+      {
+        "name": "NAALJ Foundation Programs",
+        "description": "John Hardwicke Mentor Program, conference grants, and fellowship opportunities for ALJs"
+      },
+      {
+        "name": "ABA Administrative Law LinkedIn Groups",
+        "description": "Professional networking groups for administrative law practitioners and judges"
+      },
+      {
+        "name": "r/law and r/lawyers (Reddit)",
+        "description": "General legal communities where administrative law topics are discussed"
+      },
+      {
+        "name": "ACUS Publications and Research",
+        "url": "https://www.acus.gov/",
+        "description": "Research papers, recommendations, and policy resources on administrative adjudication"
+      }
+    ]
+  },
+  "market": {
+    "summary": "The ALJ job market shows slow but stable growth. BLS projects 1% growth for judges and hearing officers from 2024 to 2034, slower than average for all occupations. About 1,500 openings are projected annually over the decade, primarily from retirements and replacements. The field is affected by political decisions regarding agency staffing, the massive SSA disability backlog, and debates about administrative state reform. Federal ALJ positions offer competitive compensation through the structured AL pay system, while state-level hearing officer positions pay significantly less. The 2018 shift to excepted service hiring changed the competitive landscape.",
+    "job_outlook": {
+      "growth_rate": "1% projected 2024-2034 (slower than average for all occupations)",
+      "total_employment": "~17,500 positions (2024)",
+      "annual_openings": "~1,500 openings per year (primarily replacement demand from retirements)",
+      "trend": "Stable but slow growth — limited new positions; openings driven by turnover and retirement of aging workforce"
+    },
+    "salary_market": {
+      "min": "$49,000 (10th percentile — state/local hearing officers)",
+      "avg": "$115,230 (BLS median, May 2024) / $176,648 (Glassdoor average for federal ALJs, 2026)",
+      "max": "$210,000+ (senior federal ALJs AL-1 with DC locality pay)"
+    },
+    "market_trends": [
+      "Executive Order 13,843 (2018) moved ALJ hiring to excepted service — agencies now hire directly without OPM competitive exam",
+      "SSA disability hearing backlog remains the largest driver of ALJ demand — over 1 million pending cases at peak",
+      "Federal judiciary investing in CM/ECF modernization (2025-2026) to replace 30-year-old case management system",
+      "AI and legal technology adoption accelerating — NAALJ offering training on AI applications for ALJs",
+      "Political debates about administrative state reform could reshape ALJ independence protections",
+      "Virtual and hybrid hearings becoming standard practice post-pandemic, expanding geographic flexibility",
+      "Aging ALJ workforce creating steady replacement demand — many current ALJs nearing retirement eligibility",
+      "Washington, DC remains highest-paying locality ($162,400 average) followed by Denver, CO ($122,126)",
+      "State-level administrative hearing officer positions growing in healthcare, environmental, and employment regulation"
+    ]
+  },
+  "quality_score": 0.72,
+  "sources_count": 28,
+  "verified_sources": 8,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Administrative Law Judges USA 2025 2026 daily work tasks responsibilities hearings",
+      "sources": [
+        {"title": "BLS Occupational Outlook Handbook — Judges and Hearing Officers", "url": "https://www.bls.gov/ooh/legal/judges-and-hearing-officers.htm"},
+        {"title": "O*NET — Administrative Law Judges, Adjudicators, and Hearing Officers (23-1021.00)", "url": "https://www.onetonline.org/link/summary/23-1021.00"},
+        {"title": "OPM — Administrative Law Judge Positions Qualification Standards", "url": "https://www.opm.gov/policy-data-oversight/classification-qualifications/general-schedule-qualification-standards/specialty-areas/administrative-law-judge-positions/"},
+        {"title": "DEA Administrative Law Judges", "url": "https://www.dea.gov/administrative-law-judges"},
+        {"title": "Justia — Administrative Law Judges", "url": "https://www.justia.com/administrative-law/administrative-law-judges/"},
+        {"title": "Cornell LII — Administrative Law Judge (ALJ)", "url": "https://www.law.cornell.edu/wex/administrative_law_judge_(alj)"}
+      ]
+    },
+    {
+      "query": "Administrative Law Judges USA 2025 2026 APA regulations qualifications appointment requirements",
+      "sources": [
+        {"title": "OPM — Administrative Law Judge Positions", "url": "https://www.opm.gov/policy-data-oversight/classification-qualifications/general-schedule-qualification-standards/specialty-areas/administrative-law-judge-positions/"},
+        {"title": "ACUS — Agency Recruitment and Selection of Administrative Law Judges", "url": "https://www.acus.gov/document/agency-recruitment-and-selection-administrative-law-judges"},
+        {"title": "eCFR — 5 CFR Part 930 Subpart B — ALJ Program", "url": "https://www.ecfr.gov/current/title-5/chapter-I/subchapter-B/part-930/subpart-B"},
+        {"title": "Federal Register — Administrative Law Judges (2020)", "url": "https://www.federalregister.gov/documents/2020/09/21/2020-17684/administrative-law-judges"},
+        {"title": "EveryCRSReport — Administrative Law Judges: An Overview", "url": "https://www.everycrsreport.com/reports/RL34607.html"},
+        {"title": "ACUS — Administrative Law Judge Basics", "url": "https://www.acus.gov/sites/default/files/documents/35_ALJ%20Basics.pdf"}
+      ]
+    },
+    {
+      "query": "Administrative Law Judges USA software tools case management legal technology 2025 2026",
+      "sources": [
+        {"title": "U.S. Courts — Judges Outline Accelerated Modernization of Case Management System", "url": "https://www.uscourts.gov/data-news/judiciary-news/2026/03/10/judges-outline-accelerated-modernization-case-management-system"},
+        {"title": "U.S. Courts — Long Range Plan for Information Technology FY2026", "url": "https://www.uscourts.gov/sites/default/files/document/it_long_range_plan_fy2026.pdf"},
+        {"title": "LexisNexis — Lex Machina Legal Analytics", "url": "https://www.lexisnexis.com/en-us/products/lex-machina.page"},
+        {"title": "Rev — 11 Legal Technology Trends For 2026", "url": "https://www.rev.com/blog/legal-technology-trends"},
+        {"title": "Spellbook — 9 Best Legal AI Tools for Lawyers in 2026", "url": "https://www.spellbook.legal/learn/legal-ai-tools"}
+      ]
+    },
+    {
+      "query": "Administrative law judge terminology abbreviations jargon ALJ APA hearing officer professional",
+      "sources": [
+        {"title": "Wikipedia — Administrative Law Judge", "url": "https://en.wikipedia.org/wiki/Administrative_law_judge"},
+        {"title": "Cornell LII — ALJ Definition", "url": "https://www.law.cornell.edu/wex/alj"},
+        {"title": "Ballotpedia — Administrative Law Judge", "url": "https://ballotpedia.org/Administrative_law_judge"},
+        {"title": "EPA — About Office of Administrative Law Judges", "url": "https://www.epa.gov/aboutepa/about-office-administrative-law-judges-oalj"},
+        {"title": "Merriam-Webster Legal — ALJ Definition", "url": "https://www.merriam-webster.com/legal/ALJ"}
+      ]
+    },
+    {
+      "query": "Administrative Law Judges USA career path salary 2025 2026",
+      "sources": [
+        {"title": "PayScale — ALJ Salary 2026", "url": "https://www.payscale.com/research/US/Job=Administrative_Law_Judge%2C_Adjudicator%2C_or_Hearing_Officer/Salary"},
+        {"title": "OPM — Administrative Law Judge Pay System", "url": "https://www.opm.gov/policy-data-oversight/pay-leave/pay-administration/fact-sheets/administrative-law-judge-pay-system/"},
+        {"title": "Glassdoor — Administrative Law Judge Salary 2026", "url": "https://www.glassdoor.com/Salaries/administrative-law-judge-salary-SRCH_KO0,24.htm"},
+        {"title": "OPM — 2026 Locality Rates of Pay for ALJs", "url": "https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/salary-tables/pdf/2026/ALJ_LOC.pdf"},
+        {"title": "OPM — 2025 Locality Rates of Pay for ALJs", "url": "https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/salary-tables/25Tables/exec/pdf/ALJ_LOC.pdf"},
+        {"title": "BLS — Occupational Employment and Wages for SOC 23-1021", "url": "https://www.bls.gov/oes/2023/may/oes231021.htm"}
+      ]
+    },
+    {
+      "query": "Administrative Law Judges USA professional associations FALJC conferences 2025 2026",
+      "sources": [
+        {"title": "FALJC — Federal Administrative Law Judges Conference", "url": "https://www.faljc.org/"},
+        {"title": "NAALJ — National Association of Administrative Law Judiciary", "url": "https://www.naalj.org/"},
+        {"title": "Forum of U.S. Administrative Law Judges", "url": "https://www.forumalj.org/"},
+        {"title": "ACUS — Federal Administrative Law Judges Conference", "url": "https://www.acus.gov/agencies/federal-administrative-law-judges-conference"},
+        {"title": "American Judges Association — Conferences", "url": "https://www.amjudges.org/conferences-aja"},
+        {"title": "Conference Index — Administrative Law Conferences 2025/2026/2027", "url": "https://conferenceindex.org/conferences/administrative-law"}
+      ]
+    },
+    {
+      "query": "Administrative Law Judges USA job market demand salary outlook 2025 2026",
+      "sources": [
+        {"title": "Zippia — Administrative Law Judge Job Outlook 2026", "url": "https://www.zippia.com/administrative-law-judge-jobs/trends/"},
+        {"title": "BLS OOH — Judges and Hearing Officers", "url": "https://www.bls.gov/ooh/legal/judges-and-hearing-officers.htm"},
+        {"title": "Kaplan — Administrative Law Judge Salary February 2026", "url": "https://jobs.community.kaplan.com/salary/administrative-law-judge"},
+        {"title": "RaiseMe — Administrative Law Judges Career", "url": "https://www.raise.me/careers/legal/judges-and-hearing-officers/administrative-law-judges/"},
+        {"title": "Comparably — Administrative Law Judge Salary June 2025", "url": "https://www.comparably.com/salaries/salaries-for-administrative-law-judge"}
+      ]
+    }
+  ]
+}

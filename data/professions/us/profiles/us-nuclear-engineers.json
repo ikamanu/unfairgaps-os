@@ -1,0 +1,71 @@
+{
+  "profession_id": "us-nuclear-engineers",
+  "profession_name": "Nuclear Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Split between office/design work, control room oversight, and facility inspections. Office time: running reactor simulations (MCNP, RELAP5-3D, SCALE), analyzing radiation data, writing safety analyses, reviewing technical documents. Control room time: monitoring reactor operations, verifying safety system parameters, directing operating or maintenance activities. Field time: inspecting systems and components, overseeing fuel handling, conducting radiation surveys. Regular participation in design reviews, safety committee meetings, and NRC regulatory interactions. Many engineers work more than 40 hours per week, especially during outages, refueling, or licensing activities.",
+    "key_documents": ["Safety Analysis Reports (SAR/FSAR)", "Technical Specifications (Tech Specs)", "Updated Final Safety Analysis Reports (UFSAR)", "10 CFR 50/52 licensing applications", "Probabilistic Risk Assessments (PRA)", "Radiation Protection Programs", "Emergency Operating Procedures (EOPs)", "NRC Regulatory Guides compliance documentation", "Environmental Impact Statements (EIS)", "Quality Assurance Program descriptions", "Corrective Action Reports (CARs)", "Condition Reports (CRs)"],
+    "deadlines": "NRC regulatory submission deadlines for license renewals and amendments; refueling outage schedules (typically 18-24 month fuel cycles); periodic safety review cycles; annual radiation dose reporting; emergency drill schedules mandated by NRC; decommissioning milestone schedules. Outages are high-pressure periods with 24/7 operations lasting 3-6 weeks.",
+    "seasonality": "Refueling outages typically scheduled in spring and fall (avoiding peak summer demand); NRC inspection cycles throughout the year; PE exam offered annually in October; ANS conferences in June and November; budget and capital planning cycles in Q4. New reactor licensing activities have intensified year-round due to SMR and advanced reactor development."
+  },
+  "regulatory": {
+    "laws_and_standards": ["10 CFR Part 50 - Domestic Licensing of Production and Utilization Facilities", "10 CFR Part 52 - Licenses, Certifications, and Approvals for Nuclear Power Plants", "10 CFR Part 20 - Standards for Protection Against Radiation", "10 CFR Part 55 - Operators' Licenses", "10 CFR Part 61 - Licensing Requirements for Land Disposal of Radioactive Waste", "10 CFR Part 71 - Packaging and Transportation of Radioactive Material", "10 CFR Part 100 - Reactor Site Criteria", "ASME Boiler and Pressure Vessel Code Section III (Nuclear Components)", "IEEE nuclear power plant standards", "DOE Order 5480 series (for DOE facilities)", "Nuclear Energy Innovation and Modernization Act (NEIMA)", "Atomic Energy Act of 1954 (as amended)"],
+    "licensing": "Professional Engineer (PE) license in Nuclear Engineering available through NCEES; 9.5-hour computer-based exam offered annually in October with 85 questions. ABET-accredited bachelor's degree required; FE exam followed by 4 years experience then PE exam. NRC Reactor Operator (RO) and Senior Reactor Operator (SRO) licenses required for control room operators, involving written exam and operating test including simulator demonstration. SRO supervises reactor operators. PE not mandatory to practice but valued for design signoff authority and career advancement.",
+    "penalties": "NRC enforcement actions range from Notice of Violation (NOV) to civil penalties up to $375,000 per violation per day for most licensees. Severity Levels I-IV with escalating consequences. Criminal penalties possible for willful violations including fines and imprisonment. Orders for plant shutdown or license modification. Increased NRC inspection (Column 3-4 of Action Matrix) for significant safety findings. Individual operator licenses can be revoked or suspended. NRC Enforcement Manual Revision 12 issued December 2025 updated guidance.",
+    "regulatory_bodies": ["NRC (Nuclear Regulatory Commission)", "DOE (Department of Energy)", "EPA (Environmental Protection Agency - radiation standards)", "OSHA (Occupational Safety and Health Administration)", "NRC Agreement States (37 states with delegated authority)", "IAEA (International Atomic Energy Agency - international standards)", "NCEES (National Council of Examiners for Engineering and Surveying)"]
+  },
+  "tools": {
+    "software": ["MCNP (Monte Carlo N-Particle Transport Code) - particle transport simulation, shielding analysis, criticality safety", "SCALE (Standardized Computer Analyses for Licensing Evaluation) - NRC-supported nuclear safety analysis suite", "RELAP5-3D - reactor system thermal-hydraulic simulation (Idaho National Laboratory)", "TRACE (TRAC/RELAP Advanced Computational Engine) - NRC best-estimate reactor system code", "PARCS - NRC reactor core neutronics simulator", "MELCOR - severe accident analysis code (NRC)", "SERPENT - Monte Carlo reactor physics burnup calculation", "SIMULATE/CASMO - core design and fuel management", "ANSYS/COMSOL - structural and thermal analysis", "MATLAB/Python - data analysis, automation, custom calculations", "AutoCAD/MicroStation - plant layout and design drawings", "GOTHIC - containment analysis"],
+    "platforms": ["Maximo/SAP - plant asset management and work order systems", "Corrective Action Program (CAP) databases", "NRC ADAMS (Agencywide Documents Access and Management System)", "ERDS (Emergency Response Data System)", "RiskSpectrum/CAFTA - probabilistic risk assessment tools", "JIRA/MS Project - project management", "Plant process computer and control systems (vendor-specific)"],
+    "gov_portals": ["NRC ADAMS public document library", "NRC Electronic Information Exchange (EIE)", "NRC Operating Experience (OpE) portal", "NRC Reactor Operational Experience Results and Databases (nrcoe.inl.gov)", "DOE OSTI (Office of Scientific and Technical Information)", "RSICC (Radiation Safety Information Computational Center) - code distribution"]
+  },
+  "terminology": {
+    "jargon": ["Criticality - self-sustaining nuclear chain reaction", "SCRAM - emergency reactor shutdown", "Reactivity - measure of deviation from criticality", "Burnup - measure of nuclear fuel consumption (MWd/MTU)", "Decay heat - residual heat from radioactive decay after shutdown", "Defense in depth - multiple independent safety barriers", "Containment - structure preventing radioactive release", "ALARA - As Low As Reasonably Achievable (radiation dose principle)", "Hot leg / Cold leg - primary coolant loop piping", "Refueling outage - scheduled shutdown for fuel replacement", "Cladding - protective fuel rod outer layer (typically zircaloy)", "Core damage frequency (CDF) - probabilistic safety metric", "Digital twin - virtual reactor model for real-time monitoring", "Small Modular Reactor (SMR) - reactors under 300 MWe", "Spent fuel pool (SFP) - storage for used fuel assemblies"],
+    "abbreviations": ["BWR - Boiling Water Reactor", "PWR - Pressurized Water Reactor", "SMR - Small Modular Reactor", "NRC - Nuclear Regulatory Commission", "FSAR - Final Safety Analysis Report", "PRA - Probabilistic Risk Assessment", "CDF - Core Damage Frequency", "LERF - Large Early Release Frequency", "RO - Reactor Operator", "SRO - Senior Reactor Operator", "ALARA - As Low As Reasonably Achievable", "LLW - Low-Level Waste", "HLW - High-Level Waste", "SNF - Spent Nuclear Fuel", "LOCA - Loss of Coolant Accident", "EOP - Emergency Operating Procedure", "ECCS - Emergency Core Cooling System", "MOX - Mixed Oxide Fuel", "ISFSI - Independent Spent Fuel Storage Installation", "FLEX - diverse and flexible coping strategies (post-Fukushima)", "DBA - Design Basis Accident", "BDBA - Beyond Design Basis Accident", "CAP - Corrective Action Program", "PE - Professional Engineer", "FE - Fundamentals of Engineering"]
+  },
+  "career_psychology": {
+    "career_levels": ["Entry-Level/Junior Nuclear Engineer (0-3 years)", "Nuclear Engineer (3-7 years)", "Senior Nuclear Engineer (7-12 years)", "Principal/Staff Nuclear Engineer (12-20 years)", "Engineering Manager / Reactor Engineering Manager", "Director of Engineering / Site VP", "Chief Nuclear Officer (CNO) / VP Nuclear"],
+    "fears": ["Catastrophic nuclear incident and personal liability/criminal prosecution", "NRC enforcement actions and license revocation", "Plant closure or early decommissioning (economic shutdown)", "Public opposition and anti-nuclear sentiment affecting career stability", "Radiation exposure exceeding dose limits", "Aging workforce retirement wave creating knowledge gaps", "AI and automation reducing traditional engineering roles", "Regulatory delays killing advanced reactor projects", "Spent fuel and waste disposal political uncertainty"],
+    "motivation": "Contributing to clean energy and climate change mitigation; solving complex physics and engineering problems at massive scale; working on cutting-edge SMR and advanced reactor technology; strong compensation and job security in operating fleet; sense of mission in ensuring public safety; growing national importance of nuclear energy for energy independence. The nuclear renaissance of 2025-2026 driven by AI data center power demand is creating unprecedented opportunities.",
+    "burnout": "Extended hours during refueling outages (12-hour shifts, 6-7 days/week for 3-6 weeks); constant regulatory scrutiny and documentation burden (NuScale's 12,000-page application illustrates the scale); on-call requirements for emergency response; high-consequence work environment where errors can have severe safety implications; relocation to remote plant sites limiting work-life balance; slow-moving regulatory approval processes creating frustration; prescriptive NRC standards requiring extensive exemption requests for new designs."
+  },
+  "community": {
+    "reddit": ["r/NuclearPower", "r/nuclear", "r/NuclearEnergy", "r/AskEngineers", "r/engineering"],
+    "linkedin": ["Nuclear Energy Institute (NEI) community", "American Nuclear Society (ANS) group", "Nuclear Engineering Professionals", "Women in Nuclear (WiN)", "North American Young Generation in Nuclear (NAYGN)"],
+    "associations": ["ANS (American Nuclear Society)", "NEI (Nuclear Energy Institute)", "NAYGN (North American Young Generation in Nuclear)", "WiN (Women in Nuclear)", "HPS (Health Physics Society)", "ASME Nuclear Engineering Division", "NSPE (National Society of Professional Engineers)", "INMM (Institute of Nuclear Materials Management)"],
+    "conferences": ["NECX - Nuclear Energy Conference & Expo (ANS/NEI joint) - August 2026, Dallas TX", "ANS Annual Conference - June 2025, Chicago; 2026 TBD", "ANS Winter Conference & Expo - November 2025, Washington DC (theme: Building the Nuclear Century)", "ANS Student Conference - annually at university hosts", "MiNES 2025 - Materials in Nuclear Energy Systems", "INMM & ESARDA Joint Annual Meeting", "NRC Regulatory Information Conference (RIC) - annually in March, Bethesda MD", "Top Fuel - nuclear fuel performance conference"]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 85000,
+      "mid_level_usd": 120000,
+      "senior_level_usd": 148000,
+      "principal_director_usd": 188000
+    },
+    "average_salary_usd": 148225,
+    "job_count_estimate": "Approximately 16,500 nuclear engineers employed in the US. Industry needs 3,200-4,800 new nuclear engineers annually due to aging workforce, new reactor construction, and clean energy expansion. About 700 openings annually projected by BLS. Top employment states: Washington (1,410), New Mexico (1,190), Virginia (1,190), South Carolina (970), Pennsylvania (730).",
+    "work_arrangements": "Predominantly on-site at nuclear power plants, national laboratories, government facilities, or engineering offices. Plant operations roles require on-site presence with shift work. Design and consulting roles may offer hybrid arrangements. Some regulatory and analysis roles at NRC headquarters (Rockville, MD) or regional offices. National lab positions (INL, ORNL, ANL, SNL) often in less urban locations. Remote work limited due to security classifications and classified information handling.",
+    "trends": ["Nuclear renaissance driven by AI data center electricity demand (2025-2026)", "SMR development accelerating (NuScale 77-MWe approved, others in pipeline)", "Plant life extensions to 80 years (subsequent license renewal) creating sustained demand", "Advanced reactor technologies (molten salt, high-temperature gas, sodium-cooled) entering NRC review", "Workforce shortage as Baby Boomer generation retires (40% of workforce eligible in 5 years)", "Federal policy support through IRA tax credits and ADVANCE Act of 2024", "Fusion energy investment growing but commercialization still decade+ away", "Microreactor development for defense and remote applications", "Nuclear medicine and isotope production expanding career options", "Salary growth of 4-6% annually driven by talent competition"]
+  },
+  "quality_score": 0.85,
+  "sources_count": 10,
+  "verified_sources": 8,
+  "confidence": 0.87,
+  "sources": [
+    "https://www.bls.gov/ooh/architecture-and-engineering/nuclear-engineers.htm",
+    "https://www.bls.gov/oes/2023/may/oes172161.htm",
+    "https://www.nrc.gov/about-nrc/regulatory",
+    "https://www.nrc.gov/reading-rm/doc-collections/cfr/index",
+    "https://www.nrc.gov/reading-rm/basic-ref/glossary",
+    "https://www.ans.org/pe/",
+    "https://www.ans.org/meetings/",
+    "https://inl.gov/relap53d/",
+    "https://nuclearenergyconference.org/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9880971/",
+    "https://www.nrc.gov/about-nrc/regulatory/enforcement/guidance",
+    "https://thebreakthrough.org/press/nuscales-success-highlights-pain-points-for-nrc",
+    "https://www.ziprecruiter.com/Salaries/Nuclear-Engineering-Salary",
+    "https://www.environmentalscience.org/career/nuclear-engineer",
+    "https://www.nukeworker.com/forum/index.php"
+  ]
+}

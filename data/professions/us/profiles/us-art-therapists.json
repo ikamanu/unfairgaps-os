@@ -1,0 +1,1491 @@
+{
+  "profession_id": "us-art-therapists",
+  "profession_name": "Art Therapists",
+  "tier": "A",
+  "daily_reality": {
+    "data_availability": "INCOMPLETE",
+    "note": "The provided search results contain general information about art therapist duties but lack specific operational details requested: hour-by-hour schedules, workplace forms/documents, quarterly filings, annual reporting deadlines, and real-world practitioner examples.",
+    "available_information": {
+      "general_daily_tasks": [
+        "Initial and follow-up client assessments",
+        "Individualized treatment plan development",
+        "Guided art exercises and sessions with clients",
+        "Clinical note entry and record-keeping",
+        "Communication with team members",
+        "Observation and analysis of client artwork",
+        "Progress reports for colleagues and physicians",
+        "Supply maintenance and ordering"
+      ],
+      "session_formats": [
+        "Individual appointments",
+        "Group workshops (regularly scheduled)"
+      ],
+      "work_schedule": {
+        "typical_hours": "Regular daytime hours",
+        "exceptions": "Evenings and weekends possible based on client needs"
+      },
+      "training_requirements": "At least 100 hours supervised practicum + 600 hours supervised clinical internship",
+      "certification_credentials": [
+        "Registered Art Therapist (ATR)",
+        "Registered Art Therapist-Board Certified (ATR-BC)",
+        "Art Therapy Certified Supervisor (ATCS)"
+      ]
+    },
+    "missing_specifics": [
+      "Hour-by-hour task breakdown",
+      "Specific form names and templates used",
+      "Quarterly filing requirements",
+      "Annual reporting deadlines",
+      "Seasonal workload patterns with months identified",
+      "Named organizational departments and personnel interactions",
+      "Regulatory compliance deadlines",
+      "Real practitioner schedule examples"
+    ]
+  },
+  "regulatory": {
+    "federal_laws": {
+      "cfr_references": [
+        {
+          "citation": "34 C.F.R. § 668.43",
+          "description": "Federal regulations governing professional licensure and credentialing disclosures for educational programs",
+          "applicability": "Art therapy master's degree programs"
+        }
+      ],
+      "note": "Search results do not contain specific USC titles or comprehensive federal statutory framework"
+    },
+    "state_licensing_status_2025_2026": {
+      "professional_licenses_15_states_plus_dc": [
+        "Connecticut",
+        "Delaware",
+        "District of Columbia",
+        "Kentucky",
+        "Maryland",
+        "Mississippi",
+        "New Jersey",
+        "New Mexico",
+        "Oregon",
+        "Tennessee",
+        "Virginia"
+      ],
+      "related_professional_licenses_5_states": [
+        {
+          "state": "New York",
+          "regulatory_mechanism": "Creative Arts Therapist license under Education Law § 8404",
+          "year_confirmed": 2025
+        },
+        {
+          "state": "Texas",
+          "regulatory_mechanism": "Related professional license"
+        },
+        {
+          "state": "Pennsylvania",
+          "regulatory_mechanism": "Related professional license"
+        },
+        {
+          "state": "Wisconsin",
+          "regulatory_mechanism": "Related professional license"
+        },
+        {
+          "state": "Utah",
+          "regulatory_mechanism": "Associate Clinical Mental Health Counselor License",
+          "regulatory_body": "Utah Division of Occupational and Professional Licensing (DOLP)"
+        }
+      ],
+      "title_protection_3_states": [
+        "Arizona",
+        "Louisiana",
+        "New Hampshire"
+      ]
+    },
+    "licensing_requirements_2025_2026": {
+      "education_requirements": {
+        "master_degree": "Minimum master's degree required",
+        "studio_art_prerequisite": "18 semester credits in studio art courses (per ATCB 2025 standards)",
+        "clinical_training": "700 hours supervised art therapy practicum/internship including minimum 350 hours direct client provision"
+      },
+      "credential_requirements": {
+        "primary": "Board Certified Art Therapist (ATR-BC) credential from Art Therapy Credentials Board required in most regulated states",
+        "supervision_credentials": "Art Therapy Certified Supervisor (ATCS) or Board Certified Art Therapist (ATR-BC)"
+      },
+      "supervision_2025_standards": {
+        "accredited_programs": "100 hours minimum supervision, with 50 hours from ATR-BC or ATCS",
+        "non_accredited_programs": "150 hours minimum supervision, with 75 hours from ATR-BC or ATCS",
+        "note": "These 2025 standards expire December 31, 2025; 2026 standards required for applications after that date"
+      },
+      "connecticut_specific_2025_2026": {
+        "proposed_changes": "Amendment to scope of practice to include assessment, diagnosis, and independent practice",
+        "accredited_program_supervision": "100 hours for CAAHEP-accredited program graduates",
+        "non_accredited_program_supervision": "150 hours for non-accredited master's program graduates",
+        "removal_of_national_credential_cost": "Proposed changes remove requirement for national credential as prerequisite to state licensure",
+        "associates_license_proposal": "Associates license to replace temporary permit for new graduates"
+      }
+    },
+    "regulatory_bodies": {
+      "federal": "U.S. Bureau of Labor Statistics (created new SOC code for distinct art therapy classification)",
+      "state_examples": [
+        {
+          "state": "Utah",
+          "body": "Division of Occupational and Professional Licensing (DOLP)"
+        },
+        {
+          "state": "Connecticut",
+          "body": "Department of Public Health (DPH)"
+        }
+      ],
+      "credentialing_body": "Art Therapy Credentials Board, Inc. (ATCB)"
+    },
+    "inspections_audits_penalties": {
+      "scheduled_inspections": "Search results do not contain information about scheduled inspection protocols",
+      "random_audits": "Search results do not contain information about random audit procedures",
+      "triggered_inspections": "Search results do not contain information about triggered inspection mechanisms",
+      "penalty_amounts": "Search results do not contain specific dollar amounts for violations",
+      "enforcement_references": "Connecticut scope of practice document references public health and safety protections but does not specify penalty structures"
+    },
+    "new_regulations_2025_2026": {
+      "oregon": {
+        "description": "Art Therapy Rules Hearing held December 2, 2025",
+        "status": "Regulatory update in process"
+      },
+      "connecticut": {
+        "description": "Scope of Practice Review Request for revision submitted 2025-2026",
+        "proposed_elements": [
+          "Updated scope to include assessment, diagnosis, independent practice",
+          "Entry requirement changes to remove national credential cost barrier",
+          "Associates license establishment"
+        ]
+      },
+      "federal_soc_code": {
+        "description": "New Standard Occupational Classification code created for art therapy",
+        "impact": "Requires federal and state agencies and private employers to redefine job descriptions, pay levels, and hiring guidelines"
+      },
+      "new_york": {
+        "statute": "Education Law § 8404 (2025)",
+        "regulation": "Creative Arts Therapist professional license"
+      }
+    },
+    "continuing_education": {
+      "status": "Search results do not provide specific continuing education hour requirements by state"
+    },
+    "reciprocity_agreements": {
+      "status": "Search results do not contain information about interstate reciprocity agreements"
+    },
+    "scope_of_practice_issues": {
+      "assessment_diagnosis": "Limited state scope of practice currently restricts art therapists from conducting assessments and diagnoses despite training",
+      "insurance_reimbursement": "Insurance companies refusing to recognize art therapists as mental health service providers in some contexts",
+      "employment_conflicts": "Art therapists being hired for recreation therapist positions in VA hospitals and supervised by practitioners with less therapeutic training",
+      "state_hiring_changes": "Hospital hiring guidelines in several states requiring art therapists to obtain Therapeutic Recreation Specialist certification when hired for recreation therapist positions"
+    }
+  },
+  "tools": {
+    "primary_professional_software": {
+      "ehr_emr_systems": [
+        {
+          "name": "Simple Practice",
+          "purpose": "Electronic health records, patient charting, billing, telehealth, educational resources access",
+          "source_index": 1
+        },
+        {
+          "name": "NextGen",
+          "purpose": "Electronic health records, patient charting, billing, telehealth, educational resources access",
+          "source_index": 1
+        }
+      ],
+      "practice_management_systems": [
+        {
+          "name": "IntakeQ",
+          "purpose": "Form-filling, billing, telehealth enablement",
+          "source_index": 1
+        }
+      ],
+      "telemedicine_platforms": [
+        {
+          "name": "Doxy.me",
+          "purpose": "Remote sessions with HIPAA compliance",
+          "source_index": 1
+        }
+      ],
+      "note": "QuickBooks, Salesforce, Epic, AutoCAD not mentioned in available search results for art therapy professionals"
+    },
+    "ai_and_specialized_tools": [
+      {
+        "name": "DALL-E 3 (via Pocket Picasso)",
+        "purpose": "AI-generated images for customized art therapy, reduces anxiety and pain, enables more regular sessions",
+        "developer": "CareYaya Health Technologies",
+        "launch_date": "November 2023",
+        "source_index": 2
+      },
+      {
+        "name": "DeepThInk",
+        "purpose": "Human-AI cocreation promoting user creativity while lowering barriers to artistic proficiency",
+        "source_index": 4
+      },
+      {
+        "name": "Coco Sketch, Drawing Apprentice, DuetDraw, GauGAN, SmartPaint",
+        "purpose": "Collaborative art-making platforms",
+        "source_index": 4
+      },
+      {
+        "name": "Mind Palette",
+        "purpose": "Mobile app merging art therapy with generative AI for mental health support",
+        "source_index": 4
+      },
+      {
+        "name": "Computer Art Therapy app",
+        "purpose": "Art therapy application",
+        "developer": "AAA Lab (Artificial Intelligence, Applied Statistics, Art Therapy), Korea University",
+        "source_index": 6
+      }
+    ],
+    "technology_usage_by_purpose": {
+      "clinical_management": "Documentation, billing, telehealth facilitation",
+      "session_planning_management": "Client data organization, progress notes, treatment plans",
+      "therapeutic_interventions": "Digital art creation tools, AI-assisted image generation",
+      "source_index": 1
+    },
+    "identified_problems_and_challenges": [
+      {
+        "issue": "Training needs and cost barriers",
+        "source_index": 1
+      },
+      {
+        "issue": "HIPAA compliance burden - some private practitioners use non-HIPAA-compliant programs to reduce costs",
+        "source_index": 1
+      },
+      {
+        "issue": "Need for collaboration between therapists and developers to improve ease of use and efficiency",
+        "source_index": 1
+      }
+    ],
+    "government_portals_filing_systems": "No information found in available search results",
+    "communication_tools_slack_teams_email": "No information found in available search results",
+    "spreadsheets_custom_templates": "No specific details found in available search results"
+  },
+  "terminology": {
+    "credentials_and_professional_designations": {
+      "ATR-P": "Provisional Registered Art Therapist - credential for individuals completing post-graduate supervision",
+      "ATR": "Registered Art Therapist - credential confirming established professional standards have been met",
+      "ATR-BC": "Board Certified Registered Art Therapist - highest professional distinction awarded to Registered Art Therapists who pass national board certification examination",
+      "ATCS": "Art Therapy Credentialed Supervisor - recognizes qualified supervisors meeting ATCB requirements"
+    },
+    "accreditation_and_regulatory": {
+      "CAAHEP": "Accreditation of Allied Health Education Programs - accredits art therapy master's degree programs",
+      "ATCB": "Art Therapy Credentials Board, Inc. - organization that issues art therapy credentials and certifications",
+      "HIPAA": "Health Insurance Portability and Accountability Act - privacy and documentation requirements"
+    },
+    "clinical_documentation": {
+      "SOAP": "Structured note format (Subjective, Objective, Assessment, Plan) used by art therapists",
+      "DSM-5": "Diagnostic and Statistical Manual of Mental Disorders - diagnostic criteria referenced in clinical practice",
+      "ICD-10": "International Classification of Diseases coding system for diagnostic coding",
+      "medical_necessity": "Documentation requirement for proving treatment necessity to insurance payers"
+    },
+    "educational_requirements": {
+      "master's_degree": "Required foundation for credentialing pathway",
+      "1000_hours_supervised_practice": "Minimum required direct client contact hours for credentialing",
+      "100_hours_direct_supervision": "Minimum required for CAAHEP-accredited program graduates",
+      "150_hours_direct_supervision": "Minimum required for non-accredited master's program graduates"
+    },
+    "clinical_practice_areas": {
+      "interdisciplinary_teams": "Collaborative practice context in hospitals and cancer centers",
+      "scope_of_practice": "Professional definition including evaluation, assessment, diagnosis, and treatment"
+    }
+  },
+  "career_psychology": {
+    "data_availability": "Insufficient search results",
+    "note": "The provided search results contain limited information about art therapist careers. They cover educational requirements, certifications, and general job responsibilities, but do not include specific data on career level progression, professional fears, burnout causes, growth motivations, common early-career mistakes, or salary information.",
+    "available_information": {
+      "career_entry_point": {
+        "requirement": "Master's degree in art therapy required for entry-level practice",
+        "practicum_hours": "Minimum 700 hours of supervised art therapy practice required",
+        "clinical_internship": "Minimum 600 hours of supervised clinical internship required",
+        "sources_referenced": [
+          2,
+          6
+        ]
+      },
+      "credentials_progression": {
+        "stage_1": "Provisional Art Therapy Registration (ATR-P)",
+        "stage_2": "Art Therapy Registration (ATR)",
+        "stage_3": "Art Therapy Board Certification (ATR-BC)",
+        "certification_body": "Art Therapy Credentials Board (ATCB)",
+        "sources_referenced": [
+          1,
+          2
+        ]
+      },
+      "employment_settings": [
+        "Hospitals",
+        "Mental health clinics",
+        "Schools",
+        "Treatment programs",
+        "Private practice",
+        "Nursing homes",
+        "Rehabilitation centers",
+        "Community centers"
+      ],
+      "job_growth": "4% increase predicted between 2023-2033",
+      "licensing_status": "Art therapy is regulated as licensed profession in 20 states plus D.C."
+    },
+    "unavailable_information": [
+      "Career level progression (entry/junior → mid-level → senior → director/partner) with specific responsibility differences",
+      "Professional fears (malpractice, audit, license revocation, lawsuit, reputation damage)",
+      "Growth motivations (salary progression, partner track availability)",
+      "Burnout causes specific to art therapists",
+      "Common mistakes by early-career professionals and consequences",
+      "Salary data by career level",
+      "Partner/ownership track structures"
+    ]
+  },
+  "community": {
+    "professional_associations": [
+      {
+        "name": "American Art Therapy Association (AATA)",
+        "website": "arttherapy.org",
+        "membership_benefits": [
+          "Unlimited virtual access to Art Therapy: Journal of the American Art Therapy Association",
+          "Access to MyAATA Community (online forum)",
+          "Registration discounts on conferences and continuing education courses",
+          "Art Therapy Career Center with free resume posting and job listings",
+          "Free referrals through Art Therapist Locator tool",
+          "Discounts on art supplies (30% Faber-Castell, 20% Grabie)"
+        ],
+        "mandatory": "Not specified in available sources"
+      },
+      {
+        "name": "International Expressive Arts Therapy Association (IEATA)",
+        "website": "ieata.org",
+        "description": "International community of artists, therapists, educators, consultants, and advocates"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "MyAATA Community",
+        "type": "Online forum",
+        "description": "Members-only space to connect, support each other, and share resources"
+      }
+    ],
+    "conferences_2025_2026": [
+      {
+        "name": "AATA2025 Annual Conference",
+        "location": "Portland, Oregon",
+        "dates": "October 8-11, 2025",
+        "format": "In-person",
+        "program_tracks": 9,
+        "details": "150+ sessions, Advanced Practice Courses, Master-Level Clinical Supervision Sessions"
+      },
+      {
+        "name": "AATA2025 Virtual Conference",
+        "dates": "October 25-26, 2025",
+        "format": "Virtual",
+        "description": "All-new sessions on platform designed for art therapy community"
+      },
+      {
+        "name": "AATA2026 Annual Conference",
+        "location": "Charlotte, North Carolina",
+        "dates": "October 14-17, 2026",
+        "format": "In-person"
+      },
+      {
+        "name": "AATA2026 Virtual Conference",
+        "dates": "November 14-15, 2026",
+        "format": "Virtual"
+      },
+      {
+        "name": "World Art Therapy Conference 2025",
+        "dates": "February 8-9, 2025",
+        "focus": "Arts Therapies and Neuroscience"
+      },
+      {
+        "name": "Creative & Expressive Arts Therapies Summit 2025",
+        "type": "Virtual event",
+        "description": "Premier event exploring innovations and practices in creative and expressive arts therapy"
+      }
+    ],
+    "continuing_education": [
+      {
+        "name": "AATA Online Learning Academy",
+        "type": "CE provider",
+        "description": "Continuing education courses available for AATA members"
+      }
+    ],
+    "newsletters": [
+      {
+        "name": "Art Therapy Today",
+        "description": "Digest of important news selected for AATA from thousands of sources"
+      },
+      {
+        "name": "AATA News",
+        "description": "Monthly news updates from American Art Therapy Association"
+      }
+    ],
+    "reddit_communities": "Not found in search results",
+    "linkedin_groups": "Not found in search results",
+    "youtube_channels": "Not found in search results",
+    "slack_discord_communities": "Not found in search results"
+  },
+  "market": {
+    "salary_data": {
+      "national_average_2026": {
+        "annual_usd": 48000,
+        "range_min": 38500,
+        "range_max": 63100,
+        "hourly_usd": 15.0,
+        "source": "VelvetJobs 2026"
+      },
+      "alternative_estimates_2026": [
+        {
+          "source": "ZipRecruiter",
+          "annual_usd": 66321,
+          "hourly_usd": 31.89,
+          "percentile_25": 51500,
+          "percentile_75": 74000,
+          "top_earners_90th": 87000
+        },
+        {
+          "source": "PayScale",
+          "annual_usd": 51905
+        },
+        {
+          "source": "Salary.com (Licensed Art Therapist)",
+          "annual_usd": 64586,
+          "hourly_usd": 31
+        }
+      ],
+      "by_level": "Data not available in search results",
+      "by_major_cities": {
+        "available_data": "Partial ZipRecruiter city data",
+        "cities": [
+          {
+            "city": "Sitka, AK",
+            "annual_usd": 79895,
+            "hourly_usd": 38.41
+          },
+          {
+            "city": "San Francisco, CA",
+            "annual_usd": 78137,
+            "hourly_usd": 37.57
+          },
+          {
+            "city": "Santa Clara, CA",
+            "annual_usd": 77889,
+            "hourly_usd": 37.45
+          }
+        ]
+      }
+    },
+    "number_of_practitioners": "BLS data not available in search results",
+    "job_openings": "Data from Indeed, LinkedIn, Glassdoor not available in search results",
+    "work_arrangements": "Distribution by W-2, 1099, partnership, solo practice not available in search results",
+    "private_practice": {
+      "billing_rate": "Not available in search results",
+      "prevalence": "Not available in search results"
+    },
+    "market_trends": {
+      "demand_growth": "Not available in search results",
+      "automation_impact": "Not available in search results",
+      "ai_disruption": "Not available in search results"
+    },
+    "related_profession_comparison": {
+      "art_therapist_assistant": 42504,
+      "drama_therapist": 66131,
+      "dance_therapist": 63551,
+      "activity_therapist": 45500,
+      "behavior_therapist": 58900
+    }
+  },
+  "quality_score": 0.163,
+  "sources_count": 43,
+  "verified_sources": 7,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query_num": 1,
+      "key": "daily_reality",
+      "parsed": {
+        "daily_reality": {
+          "data_availability": "INCOMPLETE",
+          "note": "The provided search results contain general information about art therapist duties but lack specific operational details requested: hour-by-hour schedules, workplace forms/documents, quarterly filings, annual reporting deadlines, and real-world practitioner examples.",
+          "available_information": {
+            "general_daily_tasks": [
+              "Initial and follow-up client assessments",
+              "Individualized treatment plan development",
+              "Guided art exercises and sessions with clients",
+              "Clinical note entry and record-keeping",
+              "Communication with team members",
+              "Observation and analysis of client artwork",
+              "Progress reports for colleagues and physicians",
+              "Supply maintenance and ordering"
+            ],
+            "session_formats": [
+              "Individual appointments",
+              "Group workshops (regularly scheduled)"
+            ],
+            "work_schedule": {
+              "typical_hours": "Regular daytime hours",
+              "exceptions": "Evenings and weekends possible based on client needs"
+            },
+            "training_requirements": "At least 100 hours supervised practicum + 600 hours supervised clinical internship",
+            "certification_credentials": [
+              "Registered Art Therapist (ATR)",
+              "Registered Art Therapist-Board Certified (ATR-BC)",
+              "Art Therapy Certified Supervisor (ATCS)"
+            ]
+          },
+          "missing_specifics": [
+            "Hour-by-hour task breakdown",
+            "Specific form names and templates used",
+            "Quarterly filing requirements",
+            "Annual reporting deadlines",
+            "Seasonal workload patterns with months identified",
+            "Named organizational departments and personnel interactions",
+            "Regulatory compliance deadlines",
+            "Real practitioner schedule examples"
+          ]
+        },
+        "sources": [
+          {
+            "name": "Indeed Career Advice",
+            "url": "https://www.indeed.com/career-advice/careers/what-does-an-art-therapist-do",
+            "fact": "Art therapists complete initial assessments to determine client needs, develop individualized treatment plans, establish session goals, use art to open discussions about client challenges, instruct clients on mediums, and customize programs for various settings including schools, nursing homes, wellness centers, prisons, hospitals, military bases and shelters"
+          },
+          {
+            "name": "Bureau of Labor Statistics Career Outlook",
+            "url": "https://www.bls.gov/careeroutlook/2015/youre-a-what/art-therapist.htm",
+            "fact": "Art therapists do assessments, write treatment plans and summary reports, discuss client progress with colleagues, and keep up with research and techniques"
+          },
+          {
+            "name": "Salem Press - Careers Working With Children",
+            "url": "https://salempress.com/Media/SalemPress/samples/careers_workingwchildren_pgs.pdf",
+            "fact": "Most art therapists work during regular daytime hours, although evenings and weekends may be part of their schedules based on client needs; they work with individuals by appointment or with groups in regularly scheduled workshops"
+          },
+          {
+            "name": "Indeed Career Advice",
+            "url": "https://www.indeed.com/career-advice/careers/what-does-an-art-therapist-do",
+            "fact": "Training includes at least 100 hours of supervised practicum and 600 hours of supervised art therapy clinical internship"
+          },
+          {
+            "name": "Salem Press - Careers Working With Children",
+            "url": "https://salempress.com/Media/SalemPress/samples/careers_workingwchildren_pgs.pdf",
+            "fact": "The art therapist's first task is to assess the needs of the patient and devise a treatment program; art therapists maintain supplies and tools, make purchases when necessary, and some do their own billing and other paperwork"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Indeed Career Advice",
+          "url": "https://www.indeed.com/career-advice/careers/what-does-an-art-therapist-do",
+          "fact": "Art therapists complete initial assessments to determine client needs, develop individualized treatment plans, establish session goals, use art to open discussions about client challenges, instruct clients on mediums, and customize programs for various settings including schools, nursing homes, wellness centers, prisons, hospitals, military bases and shelters"
+        },
+        {
+          "name": "Bureau of Labor Statistics Career Outlook",
+          "url": "https://www.bls.gov/careeroutlook/2015/youre-a-what/art-therapist.htm",
+          "fact": "Art therapists do assessments, write treatment plans and summary reports, discuss client progress with colleagues, and keep up with research and techniques"
+        },
+        {
+          "name": "Salem Press - Careers Working With Children",
+          "url": "https://salempress.com/Media/SalemPress/samples/careers_workingwchildren_pgs.pdf",
+          "fact": "Most art therapists work during regular daytime hours, although evenings and weekends may be part of their schedules based on client needs; they work with individuals by appointment or with groups in regularly scheduled workshops"
+        },
+        {
+          "name": "Indeed Career Advice",
+          "url": "https://www.indeed.com/career-advice/careers/what-does-an-art-therapist-do",
+          "fact": "Training includes at least 100 hours of supervised practicum and 600 hours of supervised art therapy clinical internship"
+        },
+        {
+          "name": "Salem Press - Careers Working With Children",
+          "url": "https://salempress.com/Media/SalemPress/samples/careers_workingwchildren_pgs.pdf",
+          "fact": "The art therapist's first task is to assess the needs of the patient and devise a treatment program; art therapists maintain supplies and tools, make purchases when necessary, and some do their own billing and other paperwork"
+        }
+      ]
+    },
+    {
+      "query_num": 2,
+      "key": "regulatory",
+      "parsed": {
+        "regulatory": {
+          "federal_laws": {
+            "cfr_references": [
+              {
+                "citation": "34 C.F.R. § 668.43",
+                "description": "Federal regulations governing professional licensure and credentialing disclosures for educational programs",
+                "applicability": "Art therapy master's degree programs"
+              }
+            ],
+            "note": "Search results do not contain specific USC titles or comprehensive federal statutory framework"
+          },
+          "state_licensing_status_2025_2026": {
+            "professional_licenses_15_states_plus_dc": [
+              "Connecticut",
+              "Delaware",
+              "District of Columbia",
+              "Kentucky",
+              "Maryland",
+              "Mississippi",
+              "New Jersey",
+              "New Mexico",
+              "Oregon",
+              "Tennessee",
+              "Virginia"
+            ],
+            "related_professional_licenses_5_states": [
+              {
+                "state": "New York",
+                "regulatory_mechanism": "Creative Arts Therapist license under Education Law § 8404",
+                "year_confirmed": 2025
+              },
+              {
+                "state": "Texas",
+                "regulatory_mechanism": "Related professional license"
+              },
+              {
+                "state": "Pennsylvania",
+                "regulatory_mechanism": "Related professional license"
+              },
+              {
+                "state": "Wisconsin",
+                "regulatory_mechanism": "Related professional license"
+              },
+              {
+                "state": "Utah",
+                "regulatory_mechanism": "Associate Clinical Mental Health Counselor License",
+                "regulatory_body": "Utah Division of Occupational and Professional Licensing (DOLP)"
+              }
+            ],
+            "title_protection_3_states": [
+              "Arizona",
+              "Louisiana",
+              "New Hampshire"
+            ]
+          },
+          "licensing_requirements_2025_2026": {
+            "education_requirements": {
+              "master_degree": "Minimum master's degree required",
+              "studio_art_prerequisite": "18 semester credits in studio art courses (per ATCB 2025 standards)",
+              "clinical_training": "700 hours supervised art therapy practicum/internship including minimum 350 hours direct client provision"
+            },
+            "credential_requirements": {
+              "primary": "Board Certified Art Therapist (ATR-BC) credential from Art Therapy Credentials Board required in most regulated states",
+              "supervision_credentials": "Art Therapy Certified Supervisor (ATCS) or Board Certified Art Therapist (ATR-BC)"
+            },
+            "supervision_2025_standards": {
+              "accredited_programs": "100 hours minimum supervision, with 50 hours from ATR-BC or ATCS",
+              "non_accredited_programs": "150 hours minimum supervision, with 75 hours from ATR-BC or ATCS",
+              "note": "These 2025 standards expire December 31, 2025; 2026 standards required for applications after that date"
+            },
+            "connecticut_specific_2025_2026": {
+              "proposed_changes": "Amendment to scope of practice to include assessment, diagnosis, and independent practice",
+              "accredited_program_supervision": "100 hours for CAAHEP-accredited program graduates",
+              "non_accredited_program_supervision": "150 hours for non-accredited master's program graduates",
+              "removal_of_national_credential_cost": "Proposed changes remove requirement for national credential as prerequisite to state licensure",
+              "associates_license_proposal": "Associates license to replace temporary permit for new graduates"
+            }
+          },
+          "regulatory_bodies": {
+            "federal": "U.S. Bureau of Labor Statistics (created new SOC code for distinct art therapy classification)",
+            "state_examples": [
+              {
+                "state": "Utah",
+                "body": "Division of Occupational and Professional Licensing (DOLP)"
+              },
+              {
+                "state": "Connecticut",
+                "body": "Department of Public Health (DPH)"
+              }
+            ],
+            "credentialing_body": "Art Therapy Credentials Board, Inc. (ATCB)"
+          },
+          "inspections_audits_penalties": {
+            "scheduled_inspections": "Search results do not contain information about scheduled inspection protocols",
+            "random_audits": "Search results do not contain information about random audit procedures",
+            "triggered_inspections": "Search results do not contain information about triggered inspection mechanisms",
+            "penalty_amounts": "Search results do not contain specific dollar amounts for violations",
+            "enforcement_references": "Connecticut scope of practice document references public health and safety protections but does not specify penalty structures"
+          },
+          "new_regulations_2025_2026": {
+            "oregon": {
+              "description": "Art Therapy Rules Hearing held December 2, 2025",
+              "status": "Regulatory update in process"
+            },
+            "connecticut": {
+              "description": "Scope of Practice Review Request for revision submitted 2025-2026",
+              "proposed_elements": [
+                "Updated scope to include assessment, diagnosis, independent practice",
+                "Entry requirement changes to remove national credential cost barrier",
+                "Associates license establishment"
+              ]
+            },
+            "federal_soc_code": {
+              "description": "New Standard Occupational Classification code created for art therapy",
+              "impact": "Requires federal and state agencies and private employers to redefine job descriptions, pay levels, and hiring guidelines"
+            },
+            "new_york": {
+              "statute": "Education Law § 8404 (2025)",
+              "regulation": "Creative Arts Therapist professional license"
+            }
+          },
+          "continuing_education": {
+            "status": "Search results do not provide specific continuing education hour requirements by state"
+          },
+          "reciprocity_agreements": {
+            "status": "Search results do not contain information about interstate reciprocity agreements"
+          },
+          "scope_of_practice_issues": {
+            "assessment_diagnosis": "Limited state scope of practice currently restricts art therapists from conducting assessments and diagnoses despite training",
+            "insurance_reimbursement": "Insurance companies refusing to recognize art therapists as mental health service providers in some contexts",
+            "employment_conflicts": "Art therapists being hired for recreation therapist positions in VA hospitals and supervised by practitioners with less therapeutic training",
+            "state_hiring_changes": "Hospital hiring guidelines in several states requiring art therapists to obtain Therapeutic Recreation Specialist certification when hired for recreation therapist positions"
+          }
+        },
+        "sources": [
+          {
+            "name": "Connecticut Department of Public Health Scope of Practice Review Request",
+            "url": "https://portal.ct.gov/dph/-/media/dph/scope-of-practice/2025-2026-documents/art-therapy-scope-of-practice-request.pdf",
+            "fact": "Connecticut art therapy scope of practice review request proposed that licensed art therapists be able to conduct assessment, diagnosis, and independent practice; supervision requirements are 100 hours for CAAHEP-accredited program graduates and 150 hours for non-accredited program graduates"
+          },
+          {
+            "name": "Adler University Mandatory Professional Licensure Disclosure",
+            "url": "https://www.adler.edu/wp-content/uploads/2025/10/Mandatory-Professional-Licensure-and-Credentialing-Disclosure_Art-Therapy-2025.pdf",
+            "fact": "Utah regulates art therapists under the Associate Clinical Mental Health Counselor License through the Division of Occupational and Professional Licensing (DOLP)"
+          },
+          {
+            "name": "American Art Therapy Association State Advocacy",
+            "url": "https://arttherapy.org/state-advocacy/",
+            "fact": "Art therapy is regulated as a professional license in 15 states and the District of Columbia: Connecticut, Delaware, District of Columbia, Kentucky, Maryland, Mississippi, New Jersey, New Mexico, Oregon, Tennessee, and Virginia"
+          },
+          {
+            "name": "American Art Therapy Association State Advocacy",
+            "url": "https://arttherapy.org/state-advocacy/",
+            "fact": "Art therapists are regulated under related professional licenses in Texas, New York, Pennsylvania, Wisconsin, and Utah; and are recognized for state hiring/title protection in Arizona, Louisiana, and New Hampshire"
+          },
+          {
+            "name": "American Art Therapy Association State Advocacy",
+            "url": "https://arttherapy.org/state-advocacy/",
+            "fact": "A new Standard Occupational Classification (SOC) code was created for art therapy, requiring federal and state agencies and private employers to redefine job descriptions, pay levels, and hiring guidelines"
+          },
+          {
+            "name": "Art Therapy Credentials Board 2025 ATR Education Requirements",
+            "url": "https://atcb.org/registered-art-therapist-lp/education-standard-atr-p-and-atr/",
+            "fact": "ATCB 2025 standards require 18 semester credits in studio art courses and a minimum of 700 hours of supervised art therapy practicum/internship including at least 350 hours of direct client provision"
+          },
+          {
+            "name": "Art Therapy Credentials Board 2025 Post-Education Experience Requirements",
+            "url": "https://atcb.org/registered-art-therapist-lp/post-education-experience-requirements/",
+            "fact": "ATCB 2025 supervision requirements are 100 hours minimum with ATR-BC or ATCS providing 50 hours for accredited programs, and 150 hours minimum with ATR-BC or ATCS providing 75 hours for non-accredited programs; these standards expired December 31, 2025"
+          },
+          {
+            "name": "New York Education Law § 8404 (2025)",
+            "url": "https://law.justia.com/codes/new-york/edn/title-8/article-163/8404/",
+            "fact": "New York Education Law § 8404 (2025) establishes Creative Arts Therapist professional license"
+          },
+          {
+            "name": "Connecticut Department of Public Health Scope of Practice Review Request",
+            "url": "https://portal.ct.gov/dph/-/media/dph/scope-of-practice/2025-2026-documents/art-therapy-scope-of-practice-request.pdf",
+            "fact": "Connecticut proposed changes include establishing an associates license to replace the temporary permit for new graduates and removing the requirement for national credentials as a prerequisite to state licensure"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Connecticut Department of Public Health Scope of Practice Review Request",
+          "url": "https://portal.ct.gov/dph/-/media/dph/scope-of-practice/2025-2026-documents/art-therapy-scope-of-practice-request.pdf",
+          "fact": "Connecticut art therapy scope of practice review request proposed that licensed art therapists be able to conduct assessment, diagnosis, and independent practice; supervision requirements are 100 hours for CAAHEP-accredited program graduates and 150 hours for non-accredited program graduates"
+        },
+        {
+          "name": "Adler University Mandatory Professional Licensure Disclosure",
+          "url": "https://www.adler.edu/wp-content/uploads/2025/10/Mandatory-Professional-Licensure-and-Credentialing-Disclosure_Art-Therapy-2025.pdf",
+          "fact": "Utah regulates art therapists under the Associate Clinical Mental Health Counselor License through the Division of Occupational and Professional Licensing (DOLP)"
+        },
+        {
+          "name": "American Art Therapy Association State Advocacy",
+          "url": "https://arttherapy.org/state-advocacy/",
+          "fact": "Art therapy is regulated as a professional license in 15 states and the District of Columbia: Connecticut, Delaware, District of Columbia, Kentucky, Maryland, Mississippi, New Jersey, New Mexico, Oregon, Tennessee, and Virginia"
+        },
+        {
+          "name": "American Art Therapy Association State Advocacy",
+          "url": "https://arttherapy.org/state-advocacy/",
+          "fact": "Art therapists are regulated under related professional licenses in Texas, New York, Pennsylvania, Wisconsin, and Utah; and are recognized for state hiring/title protection in Arizona, Louisiana, and New Hampshire"
+        },
+        {
+          "name": "American Art Therapy Association State Advocacy",
+          "url": "https://arttherapy.org/state-advocacy/",
+          "fact": "A new Standard Occupational Classification (SOC) code was created for art therapy, requiring federal and state agencies and private employers to redefine job descriptions, pay levels, and hiring guidelines"
+        },
+        {
+          "name": "Art Therapy Credentials Board 2025 ATR Education Requirements",
+          "url": "https://atcb.org/registered-art-therapist-lp/education-standard-atr-p-and-atr/",
+          "fact": "ATCB 2025 standards require 18 semester credits in studio art courses and a minimum of 700 hours of supervised art therapy practicum/internship including at least 350 hours of direct client provision"
+        },
+        {
+          "name": "Art Therapy Credentials Board 2025 Post-Education Experience Requirements",
+          "url": "https://atcb.org/registered-art-therapist-lp/post-education-experience-requirements/",
+          "fact": "ATCB 2025 supervision requirements are 100 hours minimum with ATR-BC or ATCS providing 50 hours for accredited programs, and 150 hours minimum with ATR-BC or ATCS providing 75 hours for non-accredited programs; these standards expired December 31, 2025"
+        },
+        {
+          "name": "New York Education Law § 8404 (2025)",
+          "url": "https://law.justia.com/codes/new-york/edn/title-8/article-163/8404/",
+          "fact": "New York Education Law § 8404 (2025) establishes Creative Arts Therapist professional license"
+        },
+        {
+          "name": "Connecticut Department of Public Health Scope of Practice Review Request",
+          "url": "https://portal.ct.gov/dph/-/media/dph/scope-of-practice/2025-2026-documents/art-therapy-scope-of-practice-request.pdf",
+          "fact": "Connecticut proposed changes include establishing an associates license to replace the temporary permit for new graduates and removing the requirement for national credentials as a prerequisite to state licensure"
+        }
+      ]
+    },
+    {
+      "query_num": 3,
+      "key": "tools",
+      "parsed": {
+        "tools": {
+          "primary_professional_software": {
+            "ehr_emr_systems": [
+              {
+                "name": "Simple Practice",
+                "purpose": "Electronic health records, patient charting, billing, telehealth, educational resources access",
+                "source_index": 1
+              },
+              {
+                "name": "NextGen",
+                "purpose": "Electronic health records, patient charting, billing, telehealth, educational resources access",
+                "source_index": 1
+              }
+            ],
+            "practice_management_systems": [
+              {
+                "name": "IntakeQ",
+                "purpose": "Form-filling, billing, telehealth enablement",
+                "source_index": 1
+              }
+            ],
+            "telemedicine_platforms": [
+              {
+                "name": "Doxy.me",
+                "purpose": "Remote sessions with HIPAA compliance",
+                "source_index": 1
+              }
+            ],
+            "note": "QuickBooks, Salesforce, Epic, AutoCAD not mentioned in available search results for art therapy professionals"
+          },
+          "ai_and_specialized_tools": [
+            {
+              "name": "DALL-E 3 (via Pocket Picasso)",
+              "purpose": "AI-generated images for customized art therapy, reduces anxiety and pain, enables more regular sessions",
+              "developer": "CareYaya Health Technologies",
+              "launch_date": "November 2023",
+              "source_index": 2
+            },
+            {
+              "name": "DeepThInk",
+              "purpose": "Human-AI cocreation promoting user creativity while lowering barriers to artistic proficiency",
+              "source_index": 4
+            },
+            {
+              "name": "Coco Sketch, Drawing Apprentice, DuetDraw, GauGAN, SmartPaint",
+              "purpose": "Collaborative art-making platforms",
+              "source_index": 4
+            },
+            {
+              "name": "Mind Palette",
+              "purpose": "Mobile app merging art therapy with generative AI for mental health support",
+              "source_index": 4
+            },
+            {
+              "name": "Computer Art Therapy app",
+              "purpose": "Art therapy application",
+              "developer": "AAA Lab (Artificial Intelligence, Applied Statistics, Art Therapy), Korea University",
+              "source_index": 6
+            }
+          ],
+          "technology_usage_by_purpose": {
+            "clinical_management": "Documentation, billing, telehealth facilitation",
+            "session_planning_management": "Client data organization, progress notes, treatment plans",
+            "therapeutic_interventions": "Digital art creation tools, AI-assisted image generation",
+            "source_index": 1
+          },
+          "identified_problems_and_challenges": [
+            {
+              "issue": "Training needs and cost barriers",
+              "source_index": 1
+            },
+            {
+              "issue": "HIPAA compliance burden - some private practitioners use non-HIPAA-compliant programs to reduce costs",
+              "source_index": 1
+            },
+            {
+              "issue": "Need for collaboration between therapists and developers to improve ease of use and efficiency",
+              "source_index": 1
+            }
+          ],
+          "government_portals_filing_systems": "No information found in available search results",
+          "communication_tools_slack_teams_email": "No information found in available search results",
+          "spreadsheets_custom_templates": "No specific details found in available search results"
+        },
+        "sources": [
+          {
+            "name": "Exploring the Integration of Technology in Art Therapy",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/07421656.2024.2383826",
+            "fact": "Art therapists use EHR/EMR systems such as Simple Practice and NextGen to facilitate patient charting, billing, telehealth, and provide access to educational resources"
+          },
+          {
+            "name": "Exploring the Integration of Technology in Art Therapy",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/07421656.2024.2383826",
+            "fact": "PMS such as IntakeQ streamlines form-filling, billing, and enables telehealth, while Telemedicine like Doxy.me ensure HIPAA compliance during remote sessions"
+          },
+          {
+            "name": "Exploring the Integration of Technology in Art Therapy",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/07421656.2024.2383826",
+            "fact": "Technology presents challenges like training needs and cost barriers; therapists in private practice sometimes use non-HIPAA-compliant programs to reduce costs"
+          },
+          {
+            "name": "Artificial Intelligence Tools Enhance Visual Arts Therapy",
+            "url": "https://www.openpr.com/news/3939057/artificial-intelligence-tools-enhance-visual-arts-therapy",
+            "fact": "CareYaya Health Technologies introduced Pocket Picasso in November 2023, using OpenAI's DALL-E 3 to generate images from patient prompts for customized art therapy"
+          },
+          {
+            "name": "Insights From Art Therapists on Using AI-Generated Art in Art Therapy",
+            "url": "https://formative.jmir.org/2024/1/e63038",
+            "fact": "Technologies such as DeepThInk, Coco Sketch, Drawing Apprentice, DuetDraw, GauGAN, SmartPaint enable collaborative art-making, while Mind Palette merges art therapy with generative AI"
+          },
+          {
+            "name": "Art Therapy: There's an App for That",
+            "url": "https://www.psychologytoday.com/us/blog/arts-and-health/201202/art-therapy-there-s-app",
+            "fact": "Computer Art Therapy is an app developed by the AAA Lab at Korea University in Seoul"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Exploring the Integration of Technology in Art Therapy",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/07421656.2024.2383826",
+          "fact": "Art therapists use EHR/EMR systems such as Simple Practice and NextGen to facilitate patient charting, billing, telehealth, and provide access to educational resources"
+        },
+        {
+          "name": "Exploring the Integration of Technology in Art Therapy",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/07421656.2024.2383826",
+          "fact": "PMS such as IntakeQ streamlines form-filling, billing, and enables telehealth, while Telemedicine like Doxy.me ensure HIPAA compliance during remote sessions"
+        },
+        {
+          "name": "Exploring the Integration of Technology in Art Therapy",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/07421656.2024.2383826",
+          "fact": "Technology presents challenges like training needs and cost barriers; therapists in private practice sometimes use non-HIPAA-compliant programs to reduce costs"
+        },
+        {
+          "name": "Artificial Intelligence Tools Enhance Visual Arts Therapy",
+          "url": "https://www.openpr.com/news/3939057/artificial-intelligence-tools-enhance-visual-arts-therapy",
+          "fact": "CareYaya Health Technologies introduced Pocket Picasso in November 2023, using OpenAI's DALL-E 3 to generate images from patient prompts for customized art therapy"
+        },
+        {
+          "name": "Insights From Art Therapists on Using AI-Generated Art in Art Therapy",
+          "url": "https://formative.jmir.org/2024/1/e63038",
+          "fact": "Technologies such as DeepThInk, Coco Sketch, Drawing Apprentice, DuetDraw, GauGAN, SmartPaint enable collaborative art-making, while Mind Palette merges art therapy with generative AI"
+        },
+        {
+          "name": "Art Therapy: There's an App for That",
+          "url": "https://www.psychologytoday.com/us/blog/arts-and-health/201202/art-therapy-there-s-app",
+          "fact": "Computer Art Therapy is an app developed by the AAA Lab at Korea University in Seoul"
+        }
+      ]
+    },
+    {
+      "query_num": 4,
+      "key": "terminology",
+      "parsed": {
+        "terminology": {
+          "credentials_and_professional_designations": {
+            "ATR-P": "Provisional Registered Art Therapist - credential for individuals completing post-graduate supervision",
+            "ATR": "Registered Art Therapist - credential confirming established professional standards have been met",
+            "ATR-BC": "Board Certified Registered Art Therapist - highest professional distinction awarded to Registered Art Therapists who pass national board certification examination",
+            "ATCS": "Art Therapy Credentialed Supervisor - recognizes qualified supervisors meeting ATCB requirements"
+          },
+          "accreditation_and_regulatory": {
+            "CAAHEP": "Accreditation of Allied Health Education Programs - accredits art therapy master's degree programs",
+            "ATCB": "Art Therapy Credentials Board, Inc. - organization that issues art therapy credentials and certifications",
+            "HIPAA": "Health Insurance Portability and Accountability Act - privacy and documentation requirements"
+          },
+          "clinical_documentation": {
+            "SOAP": "Structured note format (Subjective, Objective, Assessment, Plan) used by art therapists",
+            "DSM-5": "Diagnostic and Statistical Manual of Mental Disorders - diagnostic criteria referenced in clinical practice",
+            "ICD-10": "International Classification of Diseases coding system for diagnostic coding",
+            "medical_necessity": "Documentation requirement for proving treatment necessity to insurance payers"
+          },
+          "educational_requirements": {
+            "master's_degree": "Required foundation for credentialing pathway",
+            "1000_hours_supervised_practice": "Minimum required direct client contact hours for credentialing",
+            "100_hours_direct_supervision": "Minimum required for CAAHEP-accredited program graduates",
+            "150_hours_direct_supervision": "Minimum required for non-accredited master's program graduates"
+          },
+          "clinical_practice_areas": {
+            "interdisciplinary_teams": "Collaborative practice context in hospitals and cancer centers",
+            "scope_of_practice": "Professional definition including evaluation, assessment, diagnosis, and treatment"
+          }
+        },
+        "sources": [
+          {
+            "name": "Connecticut Department of Public Health - Scope of Practice Review Request for Art Therapist",
+            "url": "https://portal.ct.gov/dph/-/media/dph/scope-of-practice/2025-2026-documents/art-therapy-scope-of-practice-request.pdf",
+            "fact": "CAAHEP curriculum standards starting in 2026 consist of four core areas: History, Theory & Influential Frameworks; Art Therapy Practice; and other competency areas requiring 21 competency requirements"
+          },
+          {
+            "name": "Connecticut Department of Public Health - Scope of Practice Review Request for Art Therapist",
+            "url": "https://portal.ct.gov/dph/-/media/dph/scope-of-practice/2025-2026-documents/art-therapy-scope-of-practice-request.pdf",
+            "fact": "Graduates must complete minimum 1,000 hours supervised practice and pass ATCB proficiency examination for Board Certified Registered Art Therapist (ATR-BC) credential; 100 hours direct supervision required for CAAHEP-accredited programs, 150 hours for non-accredited programs"
+          },
+          {
+            "name": "Art Therapy Credentials Board, Inc.",
+            "url": "https://atcb.org",
+            "fact": "ATCB offers four credential levels: Provisional Registered Art Therapist (ATR-P), Registered Art Therapist (ATR), Board Certified Registered Art Therapist (ATR-BC), and Art Therapy Certified Supervisor (ATCS)"
+          },
+          {
+            "name": "Mentalyc - Best Art Therapy Note Taker (2026)",
+            "url": "https://www.mentalyc.com/blog/best-art-therapy-note-taker",
+            "fact": "Art therapists use SOAP notes, DSM-5 diagnostic criteria, and ICD-10 coding; documentation must support HIPAA requirements and demonstrate medical necessity for insurance payers"
+          },
+          {
+            "name": "U.S. National Center for Education Statistics - CIP Code 51.2301",
+            "url": "https://nces.ed.gov/ipeds/cipcode/cipdetail.aspx?y=55&cipid=88854",
+            "fact": "Art Therapy programs prepare individuals to use drawing and art media to assess, treat, and rehabilitate individuals with mental, emotional, developmental, or physical disorders"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Connecticut Department of Public Health - Scope of Practice Review Request for Art Therapist",
+          "url": "https://portal.ct.gov/dph/-/media/dph/scope-of-practice/2025-2026-documents/art-therapy-scope-of-practice-request.pdf",
+          "fact": "CAAHEP curriculum standards starting in 2026 consist of four core areas: History, Theory & Influential Frameworks; Art Therapy Practice; and other competency areas requiring 21 competency requirements"
+        },
+        {
+          "name": "Connecticut Department of Public Health - Scope of Practice Review Request for Art Therapist",
+          "url": "https://portal.ct.gov/dph/-/media/dph/scope-of-practice/2025-2026-documents/art-therapy-scope-of-practice-request.pdf",
+          "fact": "Graduates must complete minimum 1,000 hours supervised practice and pass ATCB proficiency examination for Board Certified Registered Art Therapist (ATR-BC) credential; 100 hours direct supervision required for CAAHEP-accredited programs, 150 hours for non-accredited programs"
+        },
+        {
+          "name": "Art Therapy Credentials Board, Inc.",
+          "url": "https://atcb.org",
+          "fact": "ATCB offers four credential levels: Provisional Registered Art Therapist (ATR-P), Registered Art Therapist (ATR), Board Certified Registered Art Therapist (ATR-BC), and Art Therapy Certified Supervisor (ATCS)"
+        },
+        {
+          "name": "Mentalyc - Best Art Therapy Note Taker (2026)",
+          "url": "https://www.mentalyc.com/blog/best-art-therapy-note-taker",
+          "fact": "Art therapists use SOAP notes, DSM-5 diagnostic criteria, and ICD-10 coding; documentation must support HIPAA requirements and demonstrate medical necessity for insurance payers"
+        },
+        {
+          "name": "U.S. National Center for Education Statistics - CIP Code 51.2301",
+          "url": "https://nces.ed.gov/ipeds/cipcode/cipdetail.aspx?y=55&cipid=88854",
+          "fact": "Art Therapy programs prepare individuals to use drawing and art media to assess, treat, and rehabilitate individuals with mental, emotional, developmental, or physical disorders"
+        }
+      ]
+    },
+    {
+      "query_num": 5,
+      "key": "career_psychology",
+      "parsed": {
+        "career_psychology": {
+          "data_availability": "Insufficient search results",
+          "note": "The provided search results contain limited information about art therapist careers. They cover educational requirements, certifications, and general job responsibilities, but do not include specific data on career level progression, professional fears, burnout causes, growth motivations, common early-career mistakes, or salary information.",
+          "available_information": {
+            "career_entry_point": {
+              "requirement": "Master's degree in art therapy required for entry-level practice",
+              "practicum_hours": "Minimum 700 hours of supervised art therapy practice required",
+              "clinical_internship": "Minimum 600 hours of supervised clinical internship required",
+              "sources_referenced": [
+                2,
+                6
+              ]
+            },
+            "credentials_progression": {
+              "stage_1": "Provisional Art Therapy Registration (ATR-P)",
+              "stage_2": "Art Therapy Registration (ATR)",
+              "stage_3": "Art Therapy Board Certification (ATR-BC)",
+              "certification_body": "Art Therapy Credentials Board (ATCB)",
+              "sources_referenced": [
+                1,
+                2
+              ]
+            },
+            "employment_settings": [
+              "Hospitals",
+              "Mental health clinics",
+              "Schools",
+              "Treatment programs",
+              "Private practice",
+              "Nursing homes",
+              "Rehabilitation centers",
+              "Community centers"
+            ],
+            "job_growth": "4% increase predicted between 2023-2033",
+            "licensing_status": "Art therapy is regulated as licensed profession in 20 states plus D.C."
+          },
+          "unavailable_information": [
+            "Career level progression (entry/junior → mid-level → senior → director/partner) with specific responsibility differences",
+            "Professional fears (malpractice, audit, license revocation, lawsuit, reputation damage)",
+            "Growth motivations (salary progression, partner track availability)",
+            "Burnout causes specific to art therapists",
+            "Common mistakes by early-career professionals and consequences",
+            "Salary data by career level",
+            "Partner/ownership track structures"
+          ]
+        },
+        "sources": [
+          {
+            "name": "Edgewood University - Art Therapy Career Guide",
+            "url": "https://online.edgewood.edu/blog/art-therapy-careers-in-us/",
+            "fact": "The Bureau of Labor Statistics predicts a 4% increase in the job growth rate for art therapists between 2023 and 2033"
+          },
+          {
+            "name": "Explore Healthcare Careers - Art Therapist",
+            "url": "https://explorehealthcareers.org/careers/mental-health/art-therapist/",
+            "fact": "AATA-approved art therapy programs generally consist of 48 to 60 semester credits (or approximately 18 months to 2 years of full-time education) and require minimum of 700 hours of supervised art therapy practice"
+          },
+          {
+            "name": "American Art Therapy Association - Becoming an Art Therapist",
+            "url": "https://arttherapy.org/becoming-art-therapist/",
+            "fact": "A master's degree is necessary for entry-level practice in art therapy; students must complete minimum 100 hours of supervised practicum and 600 hours of supervised art therapy clinical internship"
+          },
+          {
+            "name": "NYU Steinhardt - Art Therapy Careers",
+            "url": "https://steinhardt.nyu.edu/programs/art-therapy/careers",
+            "fact": "Art therapy is a regulated mental health profession in 20 states (including New York) and the District of Columbia"
+          },
+          {
+            "name": "Bureau of Labor Statistics - Art Therapist Career Outlook",
+            "url": "https://www.bls.gov/careeroutlook/2015/youre-a-what/art-therapist.htm",
+            "fact": "Licensing varies by state; some states require art therapists to be licensed, others allow practice with licensure in related fields like professional counseling, and some require Art Therapy Board Certification (ATR-BC)"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Edgewood University - Art Therapy Career Guide",
+          "url": "https://online.edgewood.edu/blog/art-therapy-careers-in-us/",
+          "fact": "The Bureau of Labor Statistics predicts a 4% increase in the job growth rate for art therapists between 2023 and 2033"
+        },
+        {
+          "name": "Explore Healthcare Careers - Art Therapist",
+          "url": "https://explorehealthcareers.org/careers/mental-health/art-therapist/",
+          "fact": "AATA-approved art therapy programs generally consist of 48 to 60 semester credits (or approximately 18 months to 2 years of full-time education) and require minimum of 700 hours of supervised art therapy practice"
+        },
+        {
+          "name": "American Art Therapy Association - Becoming an Art Therapist",
+          "url": "https://arttherapy.org/becoming-art-therapist/",
+          "fact": "A master's degree is necessary for entry-level practice in art therapy; students must complete minimum 100 hours of supervised practicum and 600 hours of supervised art therapy clinical internship"
+        },
+        {
+          "name": "NYU Steinhardt - Art Therapy Careers",
+          "url": "https://steinhardt.nyu.edu/programs/art-therapy/careers",
+          "fact": "Art therapy is a regulated mental health profession in 20 states (including New York) and the District of Columbia"
+        },
+        {
+          "name": "Bureau of Labor Statistics - Art Therapist Career Outlook",
+          "url": "https://www.bls.gov/careeroutlook/2015/youre-a-what/art-therapist.htm",
+          "fact": "Licensing varies by state; some states require art therapists to be licensed, others allow practice with licensure in related fields like professional counseling, and some require Art Therapy Board Certification (ATR-BC)"
+        }
+      ]
+    },
+    {
+      "query_num": 6,
+      "key": "community",
+      "parsed": {
+        "community": {
+          "professional_associations": [
+            {
+              "name": "American Art Therapy Association (AATA)",
+              "website": "arttherapy.org",
+              "membership_benefits": [
+                "Unlimited virtual access to Art Therapy: Journal of the American Art Therapy Association",
+                "Access to MyAATA Community (online forum)",
+                "Registration discounts on conferences and continuing education courses",
+                "Art Therapy Career Center with free resume posting and job listings",
+                "Free referrals through Art Therapist Locator tool",
+                "Discounts on art supplies (30% Faber-Castell, 20% Grabie)"
+              ],
+              "mandatory": "Not specified in available sources"
+            },
+            {
+              "name": "International Expressive Arts Therapy Association (IEATA)",
+              "website": "ieata.org",
+              "description": "International community of artists, therapists, educators, consultants, and advocates"
+            }
+          ],
+          "online_communities": [
+            {
+              "name": "MyAATA Community",
+              "type": "Online forum",
+              "description": "Members-only space to connect, support each other, and share resources"
+            }
+          ],
+          "conferences_2025_2026": [
+            {
+              "name": "AATA2025 Annual Conference",
+              "location": "Portland, Oregon",
+              "dates": "October 8-11, 2025",
+              "format": "In-person",
+              "program_tracks": 9,
+              "details": "150+ sessions, Advanced Practice Courses, Master-Level Clinical Supervision Sessions"
+            },
+            {
+              "name": "AATA2025 Virtual Conference",
+              "dates": "October 25-26, 2025",
+              "format": "Virtual",
+              "description": "All-new sessions on platform designed for art therapy community"
+            },
+            {
+              "name": "AATA2026 Annual Conference",
+              "location": "Charlotte, North Carolina",
+              "dates": "October 14-17, 2026",
+              "format": "In-person"
+            },
+            {
+              "name": "AATA2026 Virtual Conference",
+              "dates": "November 14-15, 2026",
+              "format": "Virtual"
+            },
+            {
+              "name": "World Art Therapy Conference 2025",
+              "dates": "February 8-9, 2025",
+              "focus": "Arts Therapies and Neuroscience"
+            },
+            {
+              "name": "Creative & Expressive Arts Therapies Summit 2025",
+              "type": "Virtual event",
+              "description": "Premier event exploring innovations and practices in creative and expressive arts therapy"
+            }
+          ],
+          "continuing_education": [
+            {
+              "name": "AATA Online Learning Academy",
+              "type": "CE provider",
+              "description": "Continuing education courses available for AATA members"
+            }
+          ],
+          "newsletters": [
+            {
+              "name": "Art Therapy Today",
+              "description": "Digest of important news selected for AATA from thousands of sources"
+            },
+            {
+              "name": "AATA News",
+              "description": "Monthly news updates from American Art Therapy Association"
+            }
+          ],
+          "reddit_communities": "Not found in search results",
+          "linkedin_groups": "Not found in search results",
+          "youtube_channels": "Not found in search results",
+          "slack_discord_communities": "Not found in search results"
+        },
+        "sources": [
+          {
+            "name": "AATA News Newsletter",
+            "url": "https://www.naylornetwork.com/artt-nwl/newsletter.asp?issueID=95787",
+            "fact": "AATA offers members unlimited virtual access to Art Therapy: Journal of the American Art Therapy Association, access to MyAATA Community online forum, registration discounts, and free referrals through Art Therapist Locator tool"
+          },
+          {
+            "name": "AATA2025 Annual Conference",
+            "url": "https://arttherapy.org/aata2025-annual-conference/",
+            "fact": "AATA2025 in Portland includes 9 program tracks and 150+ sessions, with Advanced Practice Courses on October 8 and Core Program Days October 9-11, 2025"
+          },
+          {
+            "name": "AATA2025 Virtual Conference Schedule",
+            "url": "https://arttherapy.org/aata2025-virtual-conference-schedule/",
+            "fact": "AATA2025 Virtual Conference scheduled for October 25-26, 2025"
+          },
+          {
+            "name": "AATA Annual Conferences",
+            "url": "https://arttherapy.org/annual-conferences/",
+            "fact": "AATA2026 in-person conference in Charlotte, NC October 14-17, 2026 and virtual conference November 14-15, 2026"
+          },
+          {
+            "name": "World Art Therapy Conference 2025",
+            "url": "https://www.artstherapies.org/course/world-art-therapy-conference-2025",
+            "fact": "World Art Therapy Conference 2025 scheduled for February 8-9, 2025 focusing on Arts Therapies and Neuroscience"
+          },
+          {
+            "name": "International Expressive Arts Therapy Association",
+            "url": "https://www.ieata.org",
+            "fact": "IEATA is an international community of artists, therapists, educators, consultants, and advocates"
+          },
+          {
+            "name": "Creative & Expressive Arts Therapies Summit 2025",
+            "url": "https://www.inspirees.com/event/creative-expressive-arts-therapies-summit-2025/",
+            "fact": "Creative & Expressive Arts Therapies Summit 2025 is a premier virtual event exploring innovations in creative and expressive arts therapy"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "AATA News Newsletter",
+          "url": "https://www.naylornetwork.com/artt-nwl/newsletter.asp?issueID=95787",
+          "fact": "AATA offers members unlimited virtual access to Art Therapy: Journal of the American Art Therapy Association, access to MyAATA Community online forum, registration discounts, and free referrals through Art Therapist Locator tool"
+        },
+        {
+          "name": "AATA2025 Annual Conference",
+          "url": "https://arttherapy.org/aata2025-annual-conference/",
+          "fact": "AATA2025 in Portland includes 9 program tracks and 150+ sessions, with Advanced Practice Courses on October 8 and Core Program Days October 9-11, 2025"
+        },
+        {
+          "name": "AATA2025 Virtual Conference Schedule",
+          "url": "https://arttherapy.org/aata2025-virtual-conference-schedule/",
+          "fact": "AATA2025 Virtual Conference scheduled for October 25-26, 2025"
+        },
+        {
+          "name": "AATA Annual Conferences",
+          "url": "https://arttherapy.org/annual-conferences/",
+          "fact": "AATA2026 in-person conference in Charlotte, NC October 14-17, 2026 and virtual conference November 14-15, 2026"
+        },
+        {
+          "name": "World Art Therapy Conference 2025",
+          "url": "https://www.artstherapies.org/course/world-art-therapy-conference-2025",
+          "fact": "World Art Therapy Conference 2025 scheduled for February 8-9, 2025 focusing on Arts Therapies and Neuroscience"
+        },
+        {
+          "name": "International Expressive Arts Therapy Association",
+          "url": "https://www.ieata.org",
+          "fact": "IEATA is an international community of artists, therapists, educators, consultants, and advocates"
+        },
+        {
+          "name": "Creative & Expressive Arts Therapies Summit 2025",
+          "url": "https://www.inspirees.com/event/creative-expressive-arts-therapies-summit-2025/",
+          "fact": "Creative & Expressive Arts Therapies Summit 2025 is a premier virtual event exploring innovations in creative and expressive arts therapy"
+        }
+      ]
+    },
+    {
+      "query_num": 7,
+      "key": "market",
+      "parsed": {
+        "market": {
+          "salary_data": {
+            "national_average_2026": {
+              "annual_usd": 48000,
+              "range_min": 38500,
+              "range_max": 63100,
+              "hourly_usd": 15.0,
+              "source": "VelvetJobs 2026"
+            },
+            "alternative_estimates_2026": [
+              {
+                "source": "ZipRecruiter",
+                "annual_usd": 66321,
+                "hourly_usd": 31.89,
+                "percentile_25": 51500,
+                "percentile_75": 74000,
+                "top_earners_90th": 87000
+              },
+              {
+                "source": "PayScale",
+                "annual_usd": 51905
+              },
+              {
+                "source": "Salary.com (Licensed Art Therapist)",
+                "annual_usd": 64586,
+                "hourly_usd": 31
+              }
+            ],
+            "by_level": "Data not available in search results",
+            "by_major_cities": {
+              "available_data": "Partial ZipRecruiter city data",
+              "cities": [
+                {
+                  "city": "Sitka, AK",
+                  "annual_usd": 79895,
+                  "hourly_usd": 38.41
+                },
+                {
+                  "city": "San Francisco, CA",
+                  "annual_usd": 78137,
+                  "hourly_usd": 37.57
+                },
+                {
+                  "city": "Santa Clara, CA",
+                  "annual_usd": 77889,
+                  "hourly_usd": 37.45
+                }
+              ]
+            }
+          },
+          "number_of_practitioners": "BLS data not available in search results",
+          "job_openings": "Data from Indeed, LinkedIn, Glassdoor not available in search results",
+          "work_arrangements": "Distribution by W-2, 1099, partnership, solo practice not available in search results",
+          "private_practice": {
+            "billing_rate": "Not available in search results",
+            "prevalence": "Not available in search results"
+          },
+          "market_trends": {
+            "demand_growth": "Not available in search results",
+            "automation_impact": "Not available in search results",
+            "ai_disruption": "Not available in search results"
+          },
+          "related_profession_comparison": {
+            "art_therapist_assistant": 42504,
+            "drama_therapist": 66131,
+            "dance_therapist": 63551,
+            "activity_therapist": 45500,
+            "behavior_therapist": 58900
+          }
+        },
+        "sources": [
+          {
+            "name": "VelvetJobs",
+            "url": "https://www.velvetjobs.com/salaries/art-therapist-salary",
+            "fact": "Average Art Therapist Salary in the United States is $48,000 per year with salaries ranging from $38,500 to $63,100 and average hourly wage of $15.00"
+          },
+          {
+            "name": "ZipRecruiter",
+            "url": "https://www.ziprecruiter.com/Salaries/Art-Therapists-Salary",
+            "fact": "As of March 2026, average annual pay for Art Therapists is $66,321 per year ($31.89 per hour), with 25th percentile at $51,500, 75th percentile at $74,000, and top earners at $87,000"
+          },
+          {
+            "name": "PayScale",
+            "url": "https://www.payscale.com/research/US/Job=Art_Therapist/Salary",
+            "fact": "Average salary for an Art Therapist is $51,905 in 2026"
+          },
+          {
+            "name": "Salary.com",
+            "url": "https://www.salary.com/research/salary/position/licensed-art-therapist-salary",
+            "fact": "As of March 1, 2026, average salary for a Licensed Art Therapist in the United States is $64,586 per year ($31 hourly rate)"
+          },
+          {
+            "name": "All Psychology Schools",
+            "url": "https://www.allpsychologyschools.com/how-to-become-an-art-therapist/",
+            "fact": "State-by-state salary data available: Alaska median $107,070, Kentucky $99,060, Alabama $69,320, California $71,190"
+          },
+          {
+            "name": "ZipRecruiter (Related Roles)",
+            "url": "https://www.ziprecruiter.com/Salaries/Art-Therapists-Salary",
+            "fact": "Art Therapist Assistant earns $42,504 annually, Drama Therapist $66,131, Dance Therapist $63,551"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "VelvetJobs",
+          "url": "https://www.velvetjobs.com/salaries/art-therapist-salary",
+          "fact": "Average Art Therapist Salary in the United States is $48,000 per year with salaries ranging from $38,500 to $63,100 and average hourly wage of $15.00"
+        },
+        {
+          "name": "ZipRecruiter",
+          "url": "https://www.ziprecruiter.com/Salaries/Art-Therapists-Salary",
+          "fact": "As of March 2026, average annual pay for Art Therapists is $66,321 per year ($31.89 per hour), with 25th percentile at $51,500, 75th percentile at $74,000, and top earners at $87,000"
+        },
+        {
+          "name": "PayScale",
+          "url": "https://www.payscale.com/research/US/Job=Art_Therapist/Salary",
+          "fact": "Average salary for an Art Therapist is $51,905 in 2026"
+        },
+        {
+          "name": "Salary.com",
+          "url": "https://www.salary.com/research/salary/position/licensed-art-therapist-salary",
+          "fact": "As of March 1, 2026, average salary for a Licensed Art Therapist in the United States is $64,586 per year ($31 hourly rate)"
+        },
+        {
+          "name": "All Psychology Schools",
+          "url": "https://www.allpsychologyschools.com/how-to-become-an-art-therapist/",
+          "fact": "State-by-state salary data available: Alaska median $107,070, Kentucky $99,060, Alabama $69,320, California $71,190"
+        },
+        {
+          "name": "ZipRecruiter (Related Roles)",
+          "url": "https://www.ziprecruiter.com/Salaries/Art-Therapists-Salary",
+          "fact": "Art Therapist Assistant earns $42,504 annually, Drama Therapist $66,131, Dance Therapist $63,551"
+        }
+      ]
+    }
+  ]
+}

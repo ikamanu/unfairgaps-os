@@ -1,0 +1,1475 @@
+{
+  "profession_id": "us-anesthesiologists",
+  "profession_name": "Anesthesiologists",
+  "tier": "A",
+  "daily_reality": {
+    "status": "INSUFFICIENT_DATA",
+    "explanation": "The provided search results contain clinical role information but lack the specific administrative, regulatory, and operational details requested (hourly breakdown, form names, filing deadlines, seasonal patterns, regulatory interactions).",
+    "available_information": {
+      "work_schedule": {
+        "typical_week_hours": "40 hours (some work 12-hour shifts or 24-hour in-house call)[4]",
+        "time_allocation": "Time spent in surgery, preoperative/postoperative consultations, chronic pain management, meetings, administration, consulting with specialists, research, studying, and teaching[4]",
+        "on_call_status": "Anesthesiologists are not typically on-call while away from work; may have several weeks of free time to compensate for long work weeks[4]"
+      },
+      "preoperative_tasks": {
+        "patient_assessment": "Medical history review, physical examination (airway, heart, lungs, pulse), review of blood tests, X-rays, ultrasounds, EKGs[3]",
+        "planning": "Develop tailored anesthetic plan based on patient health and surgical requirements[1]"
+      },
+      "intraoperative_tasks": {
+        "monitoring": "Heart rate, rhythm, breathing, blood pressure, body temperature, fluid balance, blood oxygen, consciousness level[2][5]",
+        "management": "Administer and adjust anesthesia medications, manage pain, provide general/regional/local anesthesia, administer fluids and blood products[3][5]",
+        "emergency_response": "Address medical emergencies (chest pain, heart attack, atrial fibrillation, seizures, strokes, etc.)[5]"
+      },
+      "postoperative_tasks": {
+        "recovery_monitoring": "Monitor breathing, circulation, blood oxygen, consciousness during recovery[1]",
+        "pain_management": "Develop post-operative pain management plans[1]"
+      },
+      "work_settings": "Operating rooms, intensive care units, pain clinics, hospitals, medical offices, private practice, ambulatory surgical centers[4][5]"
+    },
+    "missing_data": {
+      "hour_by_hour_breakdown": "Not found in search results",
+      "specific_forms_and_documents": "Not found in search results (e.g., no mention of W-2, 1099, 10-K, or other forms)",
+      "filing_deadlines": "Not found in search results",
+      "quarterly_or_annual_reporting": "Not found in search results",
+      "seasonal_workload_patterns": "Not found in search results",
+      "regulatory_interactions": "Not found in search results",
+      "real_practitioner_examples": "Not found in search results"
+    }
+  },
+  "regulatory": {
+    "overview": "The anesthesiologist regulatory environment in the United States is governed by multiple federal and state authorities, with significant changes implemented in 2025.",
+    "federal_regulatory_bodies": [
+      {
+        "body": "Centers for Medicare & Medicaid Services (CMS)",
+        "authority": "Administers Medicare regulations and payment policies affecting anesthesia services",
+        "2025_changes": "Implemented 2.83% reduction in conversion factor (from $33.2875 to $32.3465) effective 2025"
+      },
+      {
+        "body": "American Board of Anesthesiology (ABA)",
+        "authority": "Establishes training and certification policies for anesthesiology residencies and fellowships",
+        "2025_changes": "Updated Absence From Training Policy from 60 working days to 80 working days during CB-CA3 years; modified BASIC Exam failure reporting requirements; removed notification requirements for training away rotations of four weeks or less under specific conditions"
+      },
+      {
+        "body": "Accreditation Council for Graduate Medical Education (ACGME)",
+        "authority": "Establishes program requirements for anesthesiology training",
+        "2025_requirements": "Physicians must hold either a valid ECFMG certificate or full and unrestricted US medical license"
+      },
+      {
+        "body": "HHS Office of Inspector General",
+        "authority": "Conducts compliance audits and enforcement actions",
+        "proposed_authority": "Proposed legislation (Anesthesia For All Act) would expand OIG authority to audit payer compliance with anesthesia reimbursement policies"
+      }
+    ],
+    "relevant_cfr_sections": [
+      {
+        "citation": "42 CFR 482.52",
+        "title": "Condition of participation: Anesthesia services",
+        "requirement": "Hospital anesthesia services must be provided under direction of qualified physician and organized manner"
+      },
+      {
+        "citation": "42 CFR (Medicare Anesthesia Rules)",
+        "requirement": "Prohibit separate payment for anesthesia services when provided by physician performing the procedure (CPT codes 00100-01999, 62320-62327, 64400-64530 cannot be separately reported)"
+      }
+    ],
+    "medicare_regulations": {
+      "coding_authority": "CMS NCCI (National Correct Coding Initiative) Medicare Policy Manual Chapter 2 (Revision Date 1/1/2025)",
+      "key_policies": [
+        "Anesthesia services may be provided by physicians, CRNAs with or without medical direction, or anesthesia assistants",
+        "CRNAs may bill E&M services in critical care if state law permits",
+        "Non-medically directed CRNAs may separately report procedural services within state licensing parameters",
+        "Post-operative E&M services related to surgery not separately reportable except for anesthesiologists providing critical care"
+      ]
+    },
+    "federal_legislation_2025": [
+      {
+        "bill": "Anesthesia For All Act (introduced by Rep. Ritchie Torres, D-N.Y.)",
+        "status": "Proposed",
+        "provisions": "Would ban time caps on reimbursement for anesthesia services and direct HHS Inspector General to audit payer compliance"
+      }
+    ],
+    "2025_regulatory_changes": [
+      {
+        "area": "Medicare Reimbursement",
+        "change": "Conversion factor decreased 2.83% to $32.3465",
+        "effective_date": "2025"
+      },
+      {
+        "area": "Federal Government Shutdown Impact (Oct 1, 2025)",
+        "change": "CMS implemented temporary hold on claims tied to expiring legislative provisions; Medicare maintains 14-day payment floor",
+        "affected_providers": "CRNA/nurse anesthesiologists subject to potential payment delays"
+      },
+      {
+        "area": "Telehealth Coverage",
+        "change": "Pandemic-era flexibilities expired Oct 1, 2025; Medicare now limits to real-time audiovisual communication in rural/shortage areas only",
+        "affected_providers": "CRNAs eligible but face tighter restrictions for pain management and preoperative consultations"
+      },
+      {
+        "area": "Private Payer Reimbursement (UnitedHealthcare)",
+        "change": "15% reduction in QZ reimbursement for CRNA services",
+        "effective_date": "October 1, 2025"
+      },
+      {
+        "area": "ABA Absence From Training Policy",
+        "change": "Extended from 60 to 80 working days (12 to 16 weeks) for CB-CA3 years; removed notification requirements for certain training rotations",
+        "effective_date": "January 1, 2025"
+      }
+    ],
+    "certification_requirements": {
+      "residency_training": "Accredited anesthesiology residency per ACGME Program Requirements",
+      "board_certification": "American Board of Anesthesiology certification required for many positions",
+      "continuing_education": "ABA policies updated for 2025 but specific state-by-state CE requirements not detailed in available search results"
+    },
+    "reciprocity_and_licensing": {
+      "note": "State-specific licensing requirements and reciprocity agreements not detailed in available search results",
+      "federal_license_requirement": "ACGME-accredited programs require full and unrestricted license to practice medicine in the US jurisdiction where program is located"
+    },
+    "inspection_and_audit_framework": {
+      "hospital_accreditation": "42 CFR 482.52 compliance inspections for hospital anesthesia services",
+      "cms_audits": "CMS conducts claims audits; OIG may expand audit authority per proposed legislation",
+      "program_accreditation": "ACGME conducts accreditation reviews of anesthesiology training programs",
+      "specific_procedures": "Detailed inspection and audit procedures not specified in available search results"
+    },
+    "penalties_framework": {
+      "note": "Specific dollar amounts and detailed statutory penalties not provided in search results",
+      "medicare_enforcement": "Claims denial and payment recoupment under Medicare policy",
+      "compliance_violation": "Hospital non-compliance with 42 CFR 482.52 subject to CMS enforcement actions"
+    },
+    "limitation": "Search results do not provide comprehensive coverage of state-specific regulations, complete USC title references, detailed penalty amounts, or complete continuing education requirements by state. Information provided is limited to federal Medicare regulations and national accreditation standards."
+  },
+  "tools": {
+    "primary_professional_software": {
+      "emr_ehr_systems": [
+        {
+          "name": "Epic EMR",
+          "category": "Electronic Medical Records",
+          "reviews": 280,
+          "year": 2025
+        },
+        {
+          "name": "eClinicalWorks EMR",
+          "category": "Electronic Medical Records",
+          "reviews": 241,
+          "year": 2025
+        },
+        {
+          "name": "Cerner EMR Software",
+          "category": "Electronic Medical Records",
+          "reviews": 194,
+          "year": 2025
+        },
+        {
+          "name": "AdvancedMD",
+          "category": "Electronic Medical Records",
+          "reviews": 192,
+          "year": 2025
+        },
+        {
+          "name": "athenahealth EMR",
+          "category": "Electronic Medical Records",
+          "year": 2025
+        }
+      ],
+      "emr_core_features": [
+        "Medical billing modules with claim scrubbing and e-claim submission",
+        "Patient scheduling with automated reminders",
+        "E-prescribing capabilities",
+        "Voice recognition",
+        "Tablet support and device integration"
+      ]
+    },
+    "industry_specific_systems": {
+      "anesthesiology_specialized_tools": [
+        {
+          "name": "Preoperative Assessment Tools",
+          "purpose": "Integrate with hospital information systems providing comprehensive patient histories",
+          "feature": "Enhanced assessment capabilities"
+        },
+        {
+          "name": "Real-Time Monitoring Interfaces",
+          "purpose": "Documentation of vital signs and anesthesia events",
+          "integrations": "Heart rate monitors, blood pressure monitors, oxygen saturation monitors"
+        },
+        {
+          "name": "Postoperative Pain Management Modules",
+          "purpose": "Tracking of analgesia plans and patient responses"
+        },
+        {
+          "name": "AI-Driven Decision Support",
+          "purpose": "Predict patient responses to anesthesia, aiding in personalized dosage planning",
+          "capability": "Synthesize decades of patient data in seconds to predict surgical risk and optimize anesthetic dosing"
+        },
+        {
+          "name": "AI-Assisted Ultrasound",
+          "purpose": "Improving regional blocks, vascular access, and gastric content assessments"
+        }
+      ],
+      "clinical_decision_support_tools_2025": [
+        {
+          "name": "AI-Powered Diagnostic Assistants",
+          "use": "Analyzing complex patient data from imaging, lab results, and medical histories"
+        },
+        {
+          "name": "Predictive Analytics for Patient Deterioration",
+          "use": "Anticipating patient deterioration such as sepsis or heart failure"
+        },
+        {
+          "name": "Context-Aware Alert Systems",
+          "use": "Prioritizing alerts based on patient specifics and clinical urgency"
+        }
+      ]
+    },
+    "access_and_deployment": {
+      "cloud_based_emr": "Available on Smartphones (Android & iOS), iPhones, iPads, laptops, and desktop computers"
+    },
+    "market_context": {
+      "emr_market_growth_2025": "6-7% year-over-year",
+      "growth_drivers": "Advanced technologies like AI and cloud computing within EMR systems"
+    }
+  },
+  "terminology": {
+    "anesthesia_specific_abbreviations": [
+      {
+        "abbreviation": "GA",
+        "meaning": "General Anesthesia",
+        "context": "Primary anesthetic technique"
+      },
+      {
+        "abbreviation": "PACU",
+        "meaning": "Post Anesthesia Care Unit",
+        "context": "Recovery area for post-operative patients"
+      },
+      {
+        "abbreviation": "ASA",
+        "meaning": "American Society of Anesthesiologists",
+        "context": "Primary professional organization"
+      },
+      {
+        "abbreviation": "AANA",
+        "meaning": "American Association of Nurse Anesthetists",
+        "context": "Professional organization for nurse anesthetists"
+      },
+      {
+        "abbreviation": "AED",
+        "meaning": "Antiepileptic drug; automated external defibrillator",
+        "context": "Emergency equipment and medications"
+      }
+    ],
+    "general_medical_abbreviations_used_in_anesthesia": [
+      {
+        "abbreviation": "NPO",
+        "meaning": "Nothing by mouth",
+        "context": "Pre-operative patient preparation"
+      },
+      {
+        "abbreviation": "STAT",
+        "meaning": "Immediately",
+        "context": "Emergency situations"
+      },
+      {
+        "abbreviation": "PRN",
+        "meaning": "As needed",
+        "context": "Medication dosing"
+      },
+      {
+        "abbreviation": "p.o.",
+        "meaning": "By mouth",
+        "context": "Route of administration"
+      }
+    ],
+    "data_limitations": "Search results do not contain specific information about anesthesiologist forum discussions (Reddit, LinkedIn, Slack), typical colleague questions, or accounting/regulatory abbreviations (CPA, GAAP, HIPAA, OSHA, SOX, CFR) in anesthesia practice context."
+  },
+  "career_psychology": {
+    "status": "INSUFFICIENT_DATA",
+    "note": "The provided search results contain salary and employment data but do not include information about career progression psychology, professional fears, burnout causes, growth motivation, or common early-career mistakes.",
+    "career_levels": {
+      "entry_level": {
+        "average_salary": "$295,891",
+        "source_index": 1,
+        "note": "Based on salary data only; responsibilities not detailed in search results"
+      },
+      "mid_level": {
+        "average_salary": "$311,183",
+        "source_index": 1,
+        "note": "Based on salary data only; responsibilities not detailed in search results"
+      },
+      "specialized": {
+        "salary_range": "$450,000 - $682,000",
+        "examples": [
+          "Cardiac anesthesiologist: $592,190",
+          "Critical care anesthesiologist: $547,835",
+          "Pediatric anesthesiologist: $538,545"
+        ],
+        "source_index": 3,
+        "note": "Based on specialization; specific responsibilities not detailed in search results"
+      },
+      "employment_settings": {
+        "academic": {
+          "median_compensation": "$450,000",
+          "source_index": 3
+        },
+        "nonacademic": {
+          "median_compensation": "$500,000",
+          "source_index": 3
+        },
+        "offices_of_physicians": {
+          "annual_mean_wage": "$358,560",
+          "employment": 26460,
+          "source_index": 5
+        }
+      }
+    },
+    "professional_concerns": "Not addressed in search results",
+    "growth_motivation": {
+      "salary_progression": "Data shows progression from entry-level ($295,891) to specialized roles ($682,000)",
+      "job_outlook": "4% employment growth projected from 2023-2033",
+      "geographic_opportunities": "High demand in Florida, Texas, North Carolina, Georgia, and Pennsylvania"
+    },
+    "burnout_and_challenges": "Not addressed in search results",
+    "early_career_mistakes": "Not addressed in search results"
+  },
+  "community": {
+    "note": "Search results contain limited information on professional communities and channels. Only ASA and associated conference details are available from provided sources.",
+    "professional_associations": [
+      {
+        "name": "American Society of Anesthesiologists (ASA)",
+        "website": "https://www.asahq.org",
+        "details": "Primary professional organization for anesthesiologists in the United States",
+        "membership_value": "Access to annual meeting, educational resources, CME opportunities"
+      }
+    ],
+    "conferences_and_events": [
+      {
+        "name": "ANESTHESIOLOGY 2025",
+        "location": "San Antonio, Texas",
+        "dates": "October 10-14, 2025",
+        "organizer": "American Society of Anesthesiologists",
+        "features": [
+          "Featured lectures",
+          "Exhibit Hall",
+          "Anesthesiology Career Fair",
+          "Hot topic sessions on research, emerging technologies, AI, physician well-being, perioperative medicine"
+        ],
+        "virtual_option": "Available with 12 months online access to select lectures and panels",
+        "website": "https://www.asahq.org/annualmeeting"
+      }
+    ],
+    "data_not_found_in_search_results": [
+      "Reddit communities (subreddit names and subscriber counts)",
+      "LinkedIn groups and influencers",
+      "YouTube channels for anesthesiology education",
+      "Slack/Discord communities",
+      "Industry newsletters",
+      "Other professional organizations (ABA, AICPA, AMA, IEEE presence in anesthesiology)"
+    ]
+  },
+  "market": {
+    "salary_by_experience_level_2026": {
+      "entry_level_1_3_years": {
+        "range_usd": "$300,000 - $350,000",
+        "note": "Based on 2025 data"
+      },
+      "mid_career_4_9_years": {
+        "range_usd": "$375,000 - $450,000"
+      },
+      "experienced_10_plus_years": {
+        "range_usd": "$450,000 - $550,000+"
+      },
+      "director_partner": {
+        "note": "Not separately detailed in available sources"
+      }
+    },
+    "national_average_2026": {
+      "median": "$535,000",
+      "mean": "$573,585",
+      "interquartile_range": "$480,000 - $625,000",
+      "data_source": "128 verified physician submissions as of March 2026"
+    },
+    "salary_by_major_cities_and_states": {
+      "highest_paying_states": [
+        {
+          "rank": 1,
+          "state": "Wyoming",
+          "salary": "$725,000",
+          "note": "Based on job postings from June 2025"
+        },
+        {
+          "rank": 2,
+          "state": "North Dakota",
+          "salary": "$675,000"
+        },
+        {
+          "rank": 3,
+          "state": "Alaska",
+          "salary": "$650,000"
+        },
+        {
+          "rank": 4,
+          "state": "Louisiana",
+          "salary": "$648,125"
+        }
+      ],
+      "major_metropolitan_areas": [
+        {
+          "city": "San Jose, California",
+          "salary": "$504,031"
+        }
+      ],
+      "major_states_salary_ranges": {
+        "california": "$450,000 - $500,000",
+        "texas": "$425,000 - $475,000",
+        "florida": "$420,000 - $470,000",
+        "new_york": "$400,000 - $450,000"
+      }
+    },
+    "work_arrangements": {
+      "employment_settings": {
+        "hospital_employed": {
+          "compensation": "Highest earnings reported",
+          "note": "Tend to earn the most according to 2026 data"
+        },
+        "academic_settings": {
+          "total_compensation": "$527,500",
+          "as_of": "March 2026"
+        },
+        "non_academic_settings": {
+          "total_compensation": "$546,500",
+          "as_of": "March 2026"
+        }
+      },
+      "alternative_arrangements": {
+        "locum_tenens": {
+          "hourly_rate_national": "$275 - $325/hour",
+          "annual_equivalent": "~$572,000 for 52-week, 40-hour work weeks",
+          "high_paying_states": {
+            "new_york": "$375/hour",
+            "washington": "$350/hour",
+            "massachusetts": "$350/hour"
+          }
+        }
+      },
+      "solo_practice_partnership_data": "Not detailed in available sources"
+    },
+    "practitioner_population": {
+      "estimated_total": "Data not available in search results",
+      "source_needed": "Bureau of Labor Statistics official occupational data"
+    },
+    "job_market": {
+      "job_openings_indeed_linkedin_glassdoor": "Specific numbers not available in search results",
+      "market_growth": "Growing job market with multidisciplinary opportunities noted for 2025",
+      "demand_trends": "High demand drives up salaries; fewer providers in rural areas creates geographic variations"
+    },
+    "billing_and_revenue": {
+      "private_practice_billing_rates": "Not detailed in available sources",
+      "note": "Data on independent practice fees not available"
+    },
+    "market_trends_and_disruption": {
+      "automation_and_ai_impact": "Not discussed in available sources",
+      "demand_outlook": "Positive; described as high-demand specialization with growing opportunities",
+      "specialization_impact": "Subspecializations (cardiac, pediatric anesthesiology) can reach $682,000 annually"
+    },
+    "data_limitations": "Search results lack: (1) Total practitioner population from BLS, (2) Job opening counts from major platforms, (3) Work arrangement breakdown (W-2 vs 1099 vs partnership prevalence), (4) Private practice billing/service fees, (5) Automation/AI disruption analysis"
+  },
+  "quality_score": 0.087,
+  "sources_count": 46,
+  "verified_sources": 4,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query_num": 1,
+      "key": "daily_reality",
+      "parsed": {
+        "daily_reality": {
+          "status": "INSUFFICIENT_DATA",
+          "explanation": "The provided search results contain clinical role information but lack the specific administrative, regulatory, and operational details requested (hourly breakdown, form names, filing deadlines, seasonal patterns, regulatory interactions).",
+          "available_information": {
+            "work_schedule": {
+              "typical_week_hours": "40 hours (some work 12-hour shifts or 24-hour in-house call)[4]",
+              "time_allocation": "Time spent in surgery, preoperative/postoperative consultations, chronic pain management, meetings, administration, consulting with specialists, research, studying, and teaching[4]",
+              "on_call_status": "Anesthesiologists are not typically on-call while away from work; may have several weeks of free time to compensate for long work weeks[4]"
+            },
+            "preoperative_tasks": {
+              "patient_assessment": "Medical history review, physical examination (airway, heart, lungs, pulse), review of blood tests, X-rays, ultrasounds, EKGs[3]",
+              "planning": "Develop tailored anesthetic plan based on patient health and surgical requirements[1]"
+            },
+            "intraoperative_tasks": {
+              "monitoring": "Heart rate, rhythm, breathing, blood pressure, body temperature, fluid balance, blood oxygen, consciousness level[2][5]",
+              "management": "Administer and adjust anesthesia medications, manage pain, provide general/regional/local anesthesia, administer fluids and blood products[3][5]",
+              "emergency_response": "Address medical emergencies (chest pain, heart attack, atrial fibrillation, seizures, strokes, etc.)[5]"
+            },
+            "postoperative_tasks": {
+              "recovery_monitoring": "Monitor breathing, circulation, blood oxygen, consciousness during recovery[1]",
+              "pain_management": "Develop post-operative pain management plans[1]"
+            },
+            "work_settings": "Operating rooms, intensive care units, pain clinics, hospitals, medical offices, private practice, ambulatory surgical centers[4][5]"
+          },
+          "missing_data": {
+            "hour_by_hour_breakdown": "Not found in search results",
+            "specific_forms_and_documents": "Not found in search results (e.g., no mention of W-2, 1099, 10-K, or other forms)",
+            "filing_deadlines": "Not found in search results",
+            "quarterly_or_annual_reporting": "Not found in search results",
+            "seasonal_workload_patterns": "Not found in search results",
+            "regulatory_interactions": "Not found in search results",
+            "real_practitioner_examples": "Not found in search results"
+          }
+        },
+        "sources": [
+          {
+            "name": "American University of the Caribbean School of Medicine",
+            "url": "https://www.aucmed.edu/blog/what-is-an-anesthesiologist",
+            "fact": "During an operation, anesthesiologists monitor heart rate, breathing, blood pressure, and general level of awareness, and adjust medication as necessary"
+          },
+          {
+            "name": "University of Maryland School of Medicine",
+            "url": "https://www.medschool.umaryland.edu/anesthesiology/patient-information/role-of-the-anesthesiologist/",
+            "fact": "Primary roles during surgery include providing continual medical assessment, monitoring and controlling vital life functions (heart rate, rhythm, breathing, blood pressure, temperature, fluid balance), and controlling pain and consciousness level"
+          },
+          {
+            "name": "Cleveland Clinic",
+            "url": "https://my.clevelandclinic.org/health/articles/22540-anesthesiologist",
+            "fact": "Before surgery, anesthesiologists assess health, review test results, determine fitness for surgery, and establish the safest anesthesia plan; during surgery they monitor vital signs, manage medical conditions, and administer fluids, blood products and medications"
+          },
+          {
+            "name": "Ross University School of Medicine",
+            "url": "https://medical.rossu.edu/about/blog/what-is-an-anesthesiologist-roles-responsibilities",
+            "fact": "Work schedule varies: some anesthesiologists work 40-hour weeks while others work 12-hour shifts or 24-hour in-house call; anesthesiologists are not typically on-call while away from work and may have several weeks of free time"
+          },
+          {
+            "name": "Texas Society of Anesthesiologists",
+            "url": "https://tsa.org/anesthesiologist-role/",
+            "fact": "Nearly 40 million anesthetics are administered annually in the United States, with anesthesiologists providing or participating in more than 90 percent of these; they manage patients in operating rooms, post-anesthesia care units, intensive care units, and non-operating room locations"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "American University of the Caribbean School of Medicine",
+          "url": "https://www.aucmed.edu/blog/what-is-an-anesthesiologist",
+          "fact": "During an operation, anesthesiologists monitor heart rate, breathing, blood pressure, and general level of awareness, and adjust medication as necessary"
+        },
+        {
+          "name": "University of Maryland School of Medicine",
+          "url": "https://www.medschool.umaryland.edu/anesthesiology/patient-information/role-of-the-anesthesiologist/",
+          "fact": "Primary roles during surgery include providing continual medical assessment, monitoring and controlling vital life functions (heart rate, rhythm, breathing, blood pressure, temperature, fluid balance), and controlling pain and consciousness level"
+        },
+        {
+          "name": "Cleveland Clinic",
+          "url": "https://my.clevelandclinic.org/health/articles/22540-anesthesiologist",
+          "fact": "Before surgery, anesthesiologists assess health, review test results, determine fitness for surgery, and establish the safest anesthesia plan; during surgery they monitor vital signs, manage medical conditions, and administer fluids, blood products and medications"
+        },
+        {
+          "name": "Ross University School of Medicine",
+          "url": "https://medical.rossu.edu/about/blog/what-is-an-anesthesiologist-roles-responsibilities",
+          "fact": "Work schedule varies: some anesthesiologists work 40-hour weeks while others work 12-hour shifts or 24-hour in-house call; anesthesiologists are not typically on-call while away from work and may have several weeks of free time"
+        },
+        {
+          "name": "Texas Society of Anesthesiologists",
+          "url": "https://tsa.org/anesthesiologist-role/",
+          "fact": "Nearly 40 million anesthetics are administered annually in the United States, with anesthesiologists providing or participating in more than 90 percent of these; they manage patients in operating rooms, post-anesthesia care units, intensive care units, and non-operating room locations"
+        }
+      ]
+    },
+    {
+      "query_num": 2,
+      "key": "regulatory",
+      "parsed": {
+        "regulatory": {
+          "overview": "The anesthesiologist regulatory environment in the United States is governed by multiple federal and state authorities, with significant changes implemented in 2025.",
+          "federal_regulatory_bodies": [
+            {
+              "body": "Centers for Medicare & Medicaid Services (CMS)",
+              "authority": "Administers Medicare regulations and payment policies affecting anesthesia services",
+              "2025_changes": "Implemented 2.83% reduction in conversion factor (from $33.2875 to $32.3465) effective 2025"
+            },
+            {
+              "body": "American Board of Anesthesiology (ABA)",
+              "authority": "Establishes training and certification policies for anesthesiology residencies and fellowships",
+              "2025_changes": "Updated Absence From Training Policy from 60 working days to 80 working days during CB-CA3 years; modified BASIC Exam failure reporting requirements; removed notification requirements for training away rotations of four weeks or less under specific conditions"
+            },
+            {
+              "body": "Accreditation Council for Graduate Medical Education (ACGME)",
+              "authority": "Establishes program requirements for anesthesiology training",
+              "2025_requirements": "Physicians must hold either a valid ECFMG certificate or full and unrestricted US medical license"
+            },
+            {
+              "body": "HHS Office of Inspector General",
+              "authority": "Conducts compliance audits and enforcement actions",
+              "proposed_authority": "Proposed legislation (Anesthesia For All Act) would expand OIG authority to audit payer compliance with anesthesia reimbursement policies"
+            }
+          ],
+          "relevant_cfr_sections": [
+            {
+              "citation": "42 CFR 482.52",
+              "title": "Condition of participation: Anesthesia services",
+              "requirement": "Hospital anesthesia services must be provided under direction of qualified physician and organized manner"
+            },
+            {
+              "citation": "42 CFR (Medicare Anesthesia Rules)",
+              "requirement": "Prohibit separate payment for anesthesia services when provided by physician performing the procedure (CPT codes 00100-01999, 62320-62327, 64400-64530 cannot be separately reported)"
+            }
+          ],
+          "medicare_regulations": {
+            "coding_authority": "CMS NCCI (National Correct Coding Initiative) Medicare Policy Manual Chapter 2 (Revision Date 1/1/2025)",
+            "key_policies": [
+              "Anesthesia services may be provided by physicians, CRNAs with or without medical direction, or anesthesia assistants",
+              "CRNAs may bill E&M services in critical care if state law permits",
+              "Non-medically directed CRNAs may separately report procedural services within state licensing parameters",
+              "Post-operative E&M services related to surgery not separately reportable except for anesthesiologists providing critical care"
+            ]
+          },
+          "federal_legislation_2025": [
+            {
+              "bill": "Anesthesia For All Act (introduced by Rep. Ritchie Torres, D-N.Y.)",
+              "status": "Proposed",
+              "provisions": "Would ban time caps on reimbursement for anesthesia services and direct HHS Inspector General to audit payer compliance"
+            }
+          ],
+          "2025_regulatory_changes": [
+            {
+              "area": "Medicare Reimbursement",
+              "change": "Conversion factor decreased 2.83% to $32.3465",
+              "effective_date": "2025"
+            },
+            {
+              "area": "Federal Government Shutdown Impact (Oct 1, 2025)",
+              "change": "CMS implemented temporary hold on claims tied to expiring legislative provisions; Medicare maintains 14-day payment floor",
+              "affected_providers": "CRNA/nurse anesthesiologists subject to potential payment delays"
+            },
+            {
+              "area": "Telehealth Coverage",
+              "change": "Pandemic-era flexibilities expired Oct 1, 2025; Medicare now limits to real-time audiovisual communication in rural/shortage areas only",
+              "affected_providers": "CRNAs eligible but face tighter restrictions for pain management and preoperative consultations"
+            },
+            {
+              "area": "Private Payer Reimbursement (UnitedHealthcare)",
+              "change": "15% reduction in QZ reimbursement for CRNA services",
+              "effective_date": "October 1, 2025"
+            },
+            {
+              "area": "ABA Absence From Training Policy",
+              "change": "Extended from 60 to 80 working days (12 to 16 weeks) for CB-CA3 years; removed notification requirements for certain training rotations",
+              "effective_date": "January 1, 2025"
+            }
+          ],
+          "certification_requirements": {
+            "residency_training": "Accredited anesthesiology residency per ACGME Program Requirements",
+            "board_certification": "American Board of Anesthesiology certification required for many positions",
+            "continuing_education": "ABA policies updated for 2025 but specific state-by-state CE requirements not detailed in available search results"
+          },
+          "reciprocity_and_licensing": {
+            "note": "State-specific licensing requirements and reciprocity agreements not detailed in available search results",
+            "federal_license_requirement": "ACGME-accredited programs require full and unrestricted license to practice medicine in the US jurisdiction where program is located"
+          },
+          "inspection_and_audit_framework": {
+            "hospital_accreditation": "42 CFR 482.52 compliance inspections for hospital anesthesia services",
+            "cms_audits": "CMS conducts claims audits; OIG may expand audit authority per proposed legislation",
+            "program_accreditation": "ACGME conducts accreditation reviews of anesthesiology training programs",
+            "specific_procedures": "Detailed inspection and audit procedures not specified in available search results"
+          },
+          "penalties_framework": {
+            "note": "Specific dollar amounts and detailed statutory penalties not provided in search results",
+            "medicare_enforcement": "Claims denial and payment recoupment under Medicare policy",
+            "compliance_violation": "Hospital non-compliance with 42 CFR 482.52 subject to CMS enforcement actions"
+          },
+          "limitation": "Search results do not provide comprehensive coverage of state-specific regulations, complete USC title references, detailed penalty amounts, or complete continuing education requirements by state. Information provided is limited to federal Medicare regulations and national accreditation standards."
+        },
+        "sources": [
+          {
+            "name": "American Board of Anesthesiology 2025 Policy Book",
+            "url": "https://www.theaba.org/2025/02/2025-policy-book-now-live/",
+            "fact": "ABA updated Absence From Training Policy from 60 working days (12 weeks) to 80 working days (16 weeks) during CB-CA3 years of training, effective January 1, 2025"
+          },
+          {
+            "name": "American Board of Anesthesiology 2025 Policy Book",
+            "url": "https://www.theaba.org/2025/02/2025-policy-book-now-live/",
+            "fact": "Effective January 1, 2025, ABA no longer addresses how programs utilize resident performance on BASIC Exam; individual programs set requirements at their discretion"
+          },
+          {
+            "name": "American Board of Anesthesiology 2025 Policy Book",
+            "url": "https://www.theaba.org/2025/02/2025-policy-book-now-live/",
+            "fact": "ABA removed requirement that program directors inform ABA about residents' and fellows' training away of four weeks or less for established international rotations, advocacy rotations, and instances with satisfactory CCC reports"
+          },
+          {
+            "name": "AANA 2025 Federal Government Shutdown Analysis",
+            "url": "https://www.aana.com/news/5-key-takeaways-for-crna-nurse-anesthesiologists-from-the-2025-federal-government-shutdown/",
+            "fact": "As of October 1, 2025, federal government shutdown caused CMS to announce temporary hold on claims tied to expiring legislative provisions; Medicare has 14-day payment floor for CRNA/nurse anesthesiologist payments"
+          },
+          {
+            "name": "AANA 2025 Federal Government Shutdown Analysis",
+            "url": "https://www.aana.com/news/5-key-takeaways-for-crna-nurse-anesthesiologists-from-the-2025-federal-government-shutdown/",
+            "fact": "As of October 1, 2025, Medicare telehealth coverage limited to real-time audiovisual communication in rural or shortage areas; home-based visits excluded elsewhere; pandemic-era flexibilities expired"
+          },
+          {
+            "name": "AANA 2025 Federal Government Shutdown Analysis",
+            "url": "https://www.aana.com/news/5-key-takeaways-for-crna-nurse-anesthesiologists-from-the-2025-federal-government-shutdown/",
+            "fact": "UnitedHealthcare implemented 15% reduction in QZ reimbursement for CRNA/nurse anesthesiologists on October 1, 2025"
+          },
+          {
+            "name": "CMS NCCI Medicare Policy Manual Chapter 2",
+            "url": "https://www.cms.gov/files/document/02-chapter2-ncci-medicare-policy-manual-2025finalcleanpdf.pdf",
+            "fact": "42 CFR Medicare anesthesia rules with limited exceptions do not permit separate payment for anesthesia services when provided by physician performing the procedure; CPT codes 00100-01999, 62320-62327, 64400-64530 cannot be separately reported"
+          },
+          {
+            "name": "CMS NCCI Medicare Policy Manual Chapter 2",
+            "url": "https://www.cms.gov/files/document/02-chapter2-ncci-medicare-policy-manual-2025finalcleanpdf.pdf",
+            "fact": "CRNAs may be paid for E&M services in critical care area if state law and/or regulation permits; non-medically directed CRNAs may separately report certain procedural services if furnished within parameters of state licensing laws"
+          },
+          {
+            "name": "Coronis Health 2025 PFS Final Rule Analysis",
+            "url": "https://www.coronishealth.com/blog/2025-pfs-final-rule-implications-for-anesthesia/",
+            "fact": "2025 RBRVS conversion factor is $32.3465, a decrease of $0.94 (2.83 percent) from 2024 conversion factor of $33.2875"
+          },
+          {
+            "name": "Becker's ASC Anesthesia 2025 Issues",
+            "url": "https://www.beckersasc.com/anesthesia/5-issues-shaping-anesthesia-in-2025/",
+            "fact": "Representative Ritchie Torres (D-N.Y.) introduced the Anesthesia For All Act, a four-page bill that would prohibit time caps on anesthesia service reimbursement and direct HHS inspector general to conduct audits ensuring payer compliance"
+          },
+          {
+            "name": "ACGME Program Requirements for Graduate Medical Education in Anesthesiology",
+            "url": "https://www.acgme.org/globalassets/pfassets/programrequirements/2025-reformatted-requirements/040_anesthesiology_2025_reformatted.pdf",
+            "fact": "ACGME anesthesiology program requirements require physicians to hold either current valid ECFMG certificate or full and unrestricted license to practice medicine in United States licensing jurisdiction where program is located"
+          },
+          {
+            "name": "42 CFR 482.52 Condition of Participation",
+            "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-D/section-482.52",
+            "fact": "42 CFR 482.52 requires that if hospital furnishes anesthesia services, they must be provided in well-organized manner under direction of qualified doctor of medicine"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "American Board of Anesthesiology 2025 Policy Book",
+          "url": "https://www.theaba.org/2025/02/2025-policy-book-now-live/",
+          "fact": "ABA updated Absence From Training Policy from 60 working days (12 weeks) to 80 working days (16 weeks) during CB-CA3 years of training, effective January 1, 2025"
+        },
+        {
+          "name": "American Board of Anesthesiology 2025 Policy Book",
+          "url": "https://www.theaba.org/2025/02/2025-policy-book-now-live/",
+          "fact": "Effective January 1, 2025, ABA no longer addresses how programs utilize resident performance on BASIC Exam; individual programs set requirements at their discretion"
+        },
+        {
+          "name": "American Board of Anesthesiology 2025 Policy Book",
+          "url": "https://www.theaba.org/2025/02/2025-policy-book-now-live/",
+          "fact": "ABA removed requirement that program directors inform ABA about residents' and fellows' training away of four weeks or less for established international rotations, advocacy rotations, and instances with satisfactory CCC reports"
+        },
+        {
+          "name": "AANA 2025 Federal Government Shutdown Analysis",
+          "url": "https://www.aana.com/news/5-key-takeaways-for-crna-nurse-anesthesiologists-from-the-2025-federal-government-shutdown/",
+          "fact": "As of October 1, 2025, federal government shutdown caused CMS to announce temporary hold on claims tied to expiring legislative provisions; Medicare has 14-day payment floor for CRNA/nurse anesthesiologist payments"
+        },
+        {
+          "name": "AANA 2025 Federal Government Shutdown Analysis",
+          "url": "https://www.aana.com/news/5-key-takeaways-for-crna-nurse-anesthesiologists-from-the-2025-federal-government-shutdown/",
+          "fact": "As of October 1, 2025, Medicare telehealth coverage limited to real-time audiovisual communication in rural or shortage areas; home-based visits excluded elsewhere; pandemic-era flexibilities expired"
+        },
+        {
+          "name": "AANA 2025 Federal Government Shutdown Analysis",
+          "url": "https://www.aana.com/news/5-key-takeaways-for-crna-nurse-anesthesiologists-from-the-2025-federal-government-shutdown/",
+          "fact": "UnitedHealthcare implemented 15% reduction in QZ reimbursement for CRNA/nurse anesthesiologists on October 1, 2025"
+        },
+        {
+          "name": "CMS NCCI Medicare Policy Manual Chapter 2",
+          "url": "https://www.cms.gov/files/document/02-chapter2-ncci-medicare-policy-manual-2025finalcleanpdf.pdf",
+          "fact": "42 CFR Medicare anesthesia rules with limited exceptions do not permit separate payment for anesthesia services when provided by physician performing the procedure; CPT codes 00100-01999, 62320-62327, 64400-64530 cannot be separately reported"
+        },
+        {
+          "name": "CMS NCCI Medicare Policy Manual Chapter 2",
+          "url": "https://www.cms.gov/files/document/02-chapter2-ncci-medicare-policy-manual-2025finalcleanpdf.pdf",
+          "fact": "CRNAs may be paid for E&M services in critical care area if state law and/or regulation permits; non-medically directed CRNAs may separately report certain procedural services if furnished within parameters of state licensing laws"
+        },
+        {
+          "name": "Coronis Health 2025 PFS Final Rule Analysis",
+          "url": "https://www.coronishealth.com/blog/2025-pfs-final-rule-implications-for-anesthesia/",
+          "fact": "2025 RBRVS conversion factor is $32.3465, a decrease of $0.94 (2.83 percent) from 2024 conversion factor of $33.2875"
+        },
+        {
+          "name": "Becker's ASC Anesthesia 2025 Issues",
+          "url": "https://www.beckersasc.com/anesthesia/5-issues-shaping-anesthesia-in-2025/",
+          "fact": "Representative Ritchie Torres (D-N.Y.) introduced the Anesthesia For All Act, a four-page bill that would prohibit time caps on anesthesia service reimbursement and direct HHS inspector general to conduct audits ensuring payer compliance"
+        },
+        {
+          "name": "ACGME Program Requirements for Graduate Medical Education in Anesthesiology",
+          "url": "https://www.acgme.org/globalassets/pfassets/programrequirements/2025-reformatted-requirements/040_anesthesiology_2025_reformatted.pdf",
+          "fact": "ACGME anesthesiology program requirements require physicians to hold either current valid ECFMG certificate or full and unrestricted license to practice medicine in United States licensing jurisdiction where program is located"
+        },
+        {
+          "name": "42 CFR 482.52 Condition of Participation",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-D/section-482.52",
+          "fact": "42 CFR 482.52 requires that if hospital furnishes anesthesia services, they must be provided in well-organized manner under direction of qualified doctor of medicine"
+        }
+      ]
+    },
+    {
+      "query_num": 3,
+      "key": "tools",
+      "parsed": {
+        "tools": {
+          "primary_professional_software": {
+            "emr_ehr_systems": [
+              {
+                "name": "Epic EMR",
+                "category": "Electronic Medical Records",
+                "reviews": 280,
+                "year": 2025
+              },
+              {
+                "name": "eClinicalWorks EMR",
+                "category": "Electronic Medical Records",
+                "reviews": 241,
+                "year": 2025
+              },
+              {
+                "name": "Cerner EMR Software",
+                "category": "Electronic Medical Records",
+                "reviews": 194,
+                "year": 2025
+              },
+              {
+                "name": "AdvancedMD",
+                "category": "Electronic Medical Records",
+                "reviews": 192,
+                "year": 2025
+              },
+              {
+                "name": "athenahealth EMR",
+                "category": "Electronic Medical Records",
+                "year": 2025
+              }
+            ],
+            "emr_core_features": [
+              "Medical billing modules with claim scrubbing and e-claim submission",
+              "Patient scheduling with automated reminders",
+              "E-prescribing capabilities",
+              "Voice recognition",
+              "Tablet support and device integration"
+            ]
+          },
+          "industry_specific_systems": {
+            "anesthesiology_specialized_tools": [
+              {
+                "name": "Preoperative Assessment Tools",
+                "purpose": "Integrate with hospital information systems providing comprehensive patient histories",
+                "feature": "Enhanced assessment capabilities"
+              },
+              {
+                "name": "Real-Time Monitoring Interfaces",
+                "purpose": "Documentation of vital signs and anesthesia events",
+                "integrations": "Heart rate monitors, blood pressure monitors, oxygen saturation monitors"
+              },
+              {
+                "name": "Postoperative Pain Management Modules",
+                "purpose": "Tracking of analgesia plans and patient responses"
+              },
+              {
+                "name": "AI-Driven Decision Support",
+                "purpose": "Predict patient responses to anesthesia, aiding in personalized dosage planning",
+                "capability": "Synthesize decades of patient data in seconds to predict surgical risk and optimize anesthetic dosing"
+              },
+              {
+                "name": "AI-Assisted Ultrasound",
+                "purpose": "Improving regional blocks, vascular access, and gastric content assessments"
+              }
+            ],
+            "clinical_decision_support_tools_2025": [
+              {
+                "name": "AI-Powered Diagnostic Assistants",
+                "use": "Analyzing complex patient data from imaging, lab results, and medical histories"
+              },
+              {
+                "name": "Predictive Analytics for Patient Deterioration",
+                "use": "Anticipating patient deterioration such as sepsis or heart failure"
+              },
+              {
+                "name": "Context-Aware Alert Systems",
+                "use": "Prioritizing alerts based on patient specifics and clinical urgency"
+              }
+            ]
+          },
+          "access_and_deployment": {
+            "cloud_based_emr": "Available on Smartphones (Android & iOS), iPhones, iPads, laptops, and desktop computers"
+          },
+          "market_context": {
+            "emr_market_growth_2025": "6-7% year-over-year",
+            "growth_drivers": "Advanced technologies like AI and cloud computing within EMR systems"
+          }
+        },
+        "sources": [
+          {
+            "name": "EMRSystems - Best Anesthesiology EMR/EHR Software 2026",
+            "url": "https://www.emrsystems.net/anesthesiology-emr/",
+            "fact": "In 2025, the demand for EMR Software Solutions for healthcare practices has continued to rise, with market growth estimated at around 6-7% year-over-year"
+          },
+          {
+            "name": "EMRFinder - Best Anesthesia EMR Software 2026",
+            "url": "https://emrfinder.com/anesthesiology-emr/",
+            "fact": "Medical billing modules manage the development of patient statements and submission of insurance claims with functions including claim scrubbing, e-claim submission, coding, payment posting, and eligibility inquiry"
+          },
+          {
+            "name": "FindEMR - Best Anesthesiology EMR/EHR Software (2025)",
+            "url": "https://www.findemr.com/anesthesiology-ehr-software",
+            "fact": "Epic EMR has 280 reviews, eClinicalWorks EMR has 241 reviews, Cerner EMR Software has 194 reviews, and AdvancedMD has 192 reviews"
+          },
+          {
+            "name": "Becker's ASC - The anesthesia breakthroughs that defined 2025",
+            "url": "https://www.beckersasc.com/anesthesia/the-anesthesia-breakthroughs-that-defined-2025/",
+            "fact": "AI-driven decision support systems can synthesize decades of patient data in seconds to predict surgical risk, optimize anesthetic dosing and automate documentation"
+          },
+          {
+            "name": "EMRSystems - Best Anesthesiology EMR/EHR Software 2026",
+            "url": "https://www.emrsystems.net/anesthesiology-emr/",
+            "fact": "Anesthesiology EHR Software includes enhanced preoperative assessment tools that integrate with hospital information systems, real-time monitoring interfaces for documentation of vital signs, and postoperative pain management modules"
+          },
+          {
+            "name": "EMRSystems - Best Anesthesiology EMR/EHR Software 2026",
+            "url": "https://www.emrsystems.net/anesthesiology-emr/",
+            "fact": "EMR Software is integrated with critical care monitoring equipment like heart rate, blood pressure, and oxygen saturation monitors that automatically stores physiologic data in patient files"
+          },
+          {
+            "name": "ClinicalGate - Top Clinical Decision Support Tools in 2025",
+            "url": "https://clinicalgate.com/top-clinical-decision-support-tools-in-2025-improve-patient-care-workflow/",
+            "fact": "AI-Powered Diagnostic Assistants analyze complex patient data such as imaging, lab results, and medical histories to help clinicians identify potential conditions more accurately and quickly"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "EMRSystems - Best Anesthesiology EMR/EHR Software 2026",
+          "url": "https://www.emrsystems.net/anesthesiology-emr/",
+          "fact": "In 2025, the demand for EMR Software Solutions for healthcare practices has continued to rise, with market growth estimated at around 6-7% year-over-year"
+        },
+        {
+          "name": "EMRFinder - Best Anesthesia EMR Software 2026",
+          "url": "https://emrfinder.com/anesthesiology-emr/",
+          "fact": "Medical billing modules manage the development of patient statements and submission of insurance claims with functions including claim scrubbing, e-claim submission, coding, payment posting, and eligibility inquiry"
+        },
+        {
+          "name": "FindEMR - Best Anesthesiology EMR/EHR Software (2025)",
+          "url": "https://www.findemr.com/anesthesiology-ehr-software",
+          "fact": "Epic EMR has 280 reviews, eClinicalWorks EMR has 241 reviews, Cerner EMR Software has 194 reviews, and AdvancedMD has 192 reviews"
+        },
+        {
+          "name": "Becker's ASC - The anesthesia breakthroughs that defined 2025",
+          "url": "https://www.beckersasc.com/anesthesia/the-anesthesia-breakthroughs-that-defined-2025/",
+          "fact": "AI-driven decision support systems can synthesize decades of patient data in seconds to predict surgical risk, optimize anesthetic dosing and automate documentation"
+        },
+        {
+          "name": "EMRSystems - Best Anesthesiology EMR/EHR Software 2026",
+          "url": "https://www.emrsystems.net/anesthesiology-emr/",
+          "fact": "Anesthesiology EHR Software includes enhanced preoperative assessment tools that integrate with hospital information systems, real-time monitoring interfaces for documentation of vital signs, and postoperative pain management modules"
+        },
+        {
+          "name": "EMRSystems - Best Anesthesiology EMR/EHR Software 2026",
+          "url": "https://www.emrsystems.net/anesthesiology-emr/",
+          "fact": "EMR Software is integrated with critical care monitoring equipment like heart rate, blood pressure, and oxygen saturation monitors that automatically stores physiologic data in patient files"
+        },
+        {
+          "name": "ClinicalGate - Top Clinical Decision Support Tools in 2025",
+          "url": "https://clinicalgate.com/top-clinical-decision-support-tools-in-2025-improve-patient-care-workflow/",
+          "fact": "AI-Powered Diagnostic Assistants analyze complex patient data such as imaging, lab results, and medical histories to help clinicians identify potential conditions more accurately and quickly"
+        }
+      ]
+    },
+    {
+      "query_num": 4,
+      "key": "terminology",
+      "parsed": {
+        "terminology": {
+          "anesthesia_specific_abbreviations": [
+            {
+              "abbreviation": "GA",
+              "meaning": "General Anesthesia",
+              "context": "Primary anesthetic technique"
+            },
+            {
+              "abbreviation": "PACU",
+              "meaning": "Post Anesthesia Care Unit",
+              "context": "Recovery area for post-operative patients"
+            },
+            {
+              "abbreviation": "ASA",
+              "meaning": "American Society of Anesthesiologists",
+              "context": "Primary professional organization"
+            },
+            {
+              "abbreviation": "AANA",
+              "meaning": "American Association of Nurse Anesthetists",
+              "context": "Professional organization for nurse anesthetists"
+            },
+            {
+              "abbreviation": "AED",
+              "meaning": "Antiepileptic drug; automated external defibrillator",
+              "context": "Emergency equipment and medications"
+            }
+          ],
+          "general_medical_abbreviations_used_in_anesthesia": [
+            {
+              "abbreviation": "NPO",
+              "meaning": "Nothing by mouth",
+              "context": "Pre-operative patient preparation"
+            },
+            {
+              "abbreviation": "STAT",
+              "meaning": "Immediately",
+              "context": "Emergency situations"
+            },
+            {
+              "abbreviation": "PRN",
+              "meaning": "As needed",
+              "context": "Medication dosing"
+            },
+            {
+              "abbreviation": "p.o.",
+              "meaning": "By mouth",
+              "context": "Route of administration"
+            }
+          ],
+          "data_limitations": "Search results do not contain specific information about anesthesiologist forum discussions (Reddit, LinkedIn, Slack), typical colleague questions, or accounting/regulatory abbreviations (CPA, GAAP, HIPAA, OSHA, SOX, CFR) in anesthesia practice context."
+        },
+        "sources": [
+          {
+            "name": "Anesthesiology Abbreviations in Anesthesia - All Acronyms",
+            "url": "https://www.allacronyms.com/anesthesiology/abbreviations/anesthesia",
+            "fact": "GA = General Anesthesia; AANA = American Association of Nurse Anesthetists; ASA = American Society of Anesthesiologists"
+          },
+          {
+            "name": "Charleston Area Medical Center Abbreviations List",
+            "url": "https://www.camc.org/sites/default/files/Abbreviations-List.pdf",
+            "fact": "PACU = post anesthesia care unit"
+          },
+          {
+            "name": "Common Medical Abbreviations - ASHA",
+            "url": "https://www.asha.org/practice-portal/professional-issues/documentation-in-health-care/common-medical-abbreviations/",
+            "fact": "NPO = nothing by mouth; STAT = immediately; PRN = as often as necessary, as needed; p.o. = by mouth"
+          },
+          {
+            "name": "Abbreviations, Acronyms, and Symbols - Edward G. Miner Library",
+            "url": "https://www.urmc.rochester.edu/libraries/miner/abbreviation-glossary",
+            "fact": "AED = antiepileptic drug; automated external defibrillator"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Anesthesiology Abbreviations in Anesthesia - All Acronyms",
+          "url": "https://www.allacronyms.com/anesthesiology/abbreviations/anesthesia",
+          "fact": "GA = General Anesthesia; AANA = American Association of Nurse Anesthetists; ASA = American Society of Anesthesiologists"
+        },
+        {
+          "name": "Charleston Area Medical Center Abbreviations List",
+          "url": "https://www.camc.org/sites/default/files/Abbreviations-List.pdf",
+          "fact": "PACU = post anesthesia care unit"
+        },
+        {
+          "name": "Common Medical Abbreviations - ASHA",
+          "url": "https://www.asha.org/practice-portal/professional-issues/documentation-in-health-care/common-medical-abbreviations/",
+          "fact": "NPO = nothing by mouth; STAT = immediately; PRN = as often as necessary, as needed; p.o. = by mouth"
+        },
+        {
+          "name": "Abbreviations, Acronyms, and Symbols - Edward G. Miner Library",
+          "url": "https://www.urmc.rochester.edu/libraries/miner/abbreviation-glossary",
+          "fact": "AED = antiepileptic drug; automated external defibrillator"
+        }
+      ]
+    },
+    {
+      "query_num": 5,
+      "key": "career_psychology",
+      "parsed": {
+        "career_psychology": {
+          "status": "INSUFFICIENT_DATA",
+          "note": "The provided search results contain salary and employment data but do not include information about career progression psychology, professional fears, burnout causes, growth motivation, or common early-career mistakes.",
+          "career_levels": {
+            "entry_level": {
+              "average_salary": "$295,891",
+              "source_index": 1,
+              "note": "Based on salary data only; responsibilities not detailed in search results"
+            },
+            "mid_level": {
+              "average_salary": "$311,183",
+              "source_index": 1,
+              "note": "Based on salary data only; responsibilities not detailed in search results"
+            },
+            "specialized": {
+              "salary_range": "$450,000 - $682,000",
+              "examples": [
+                "Cardiac anesthesiologist: $592,190",
+                "Critical care anesthesiologist: $547,835",
+                "Pediatric anesthesiologist: $538,545"
+              ],
+              "source_index": 3,
+              "note": "Based on specialization; specific responsibilities not detailed in search results"
+            },
+            "employment_settings": {
+              "academic": {
+                "median_compensation": "$450,000",
+                "source_index": 3
+              },
+              "nonacademic": {
+                "median_compensation": "$500,000",
+                "source_index": 3
+              },
+              "offices_of_physicians": {
+                "annual_mean_wage": "$358,560",
+                "employment": 26460,
+                "source_index": 5
+              }
+            }
+          },
+          "professional_concerns": "Not addressed in search results",
+          "growth_motivation": {
+            "salary_progression": "Data shows progression from entry-level ($295,891) to specialized roles ($682,000)",
+            "job_outlook": "4% employment growth projected from 2023-2033",
+            "geographic_opportunities": "High demand in Florida, Texas, North Carolina, Georgia, and Pennsylvania"
+          },
+          "burnout_and_challenges": "Not addressed in search results",
+          "early_career_mistakes": "Not addressed in search results"
+        },
+        "sources": [
+          {
+            "name": "MedCadre",
+            "url": "https://medcadre.com/the-anesthesiologist-salary-outlook-for-2025-trends-and-insights/",
+            "fact": "Entry-level anesthesiologists average $295,891 and mid-level specialists make $311,183 yearly, with subspecialization reaching maximum of $682,000 annually"
+          },
+          {
+            "name": "Wellhart",
+            "url": "https://www.wellhart.com/blog/job-outlook-anesthesiologist-employment-opportunities/",
+            "fact": "Total anesthesiologist employment projected to increase by 4% from 2023 to 2033, from 36,100 jobs to 37,600"
+          },
+          {
+            "name": "Becker's ASC",
+            "url": "https://www.beckersasc.com/anesthesia/anesthesiologist-pay-in-2025-10-stats/",
+            "fact": "Anesthesiologists in academic settings earn median total compensation of $450,000, compared to $500,000 in nonacademic roles"
+          },
+          {
+            "name": "Bureau of Labor Statistics",
+            "url": "https://www.bls.gov/oes/2023/may/oes291211.htm",
+            "fact": "In offices of physicians, 26,460 anesthesiologists earned annual mean wage of $358,560 as of May 2023"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "MedCadre",
+          "url": "https://medcadre.com/the-anesthesiologist-salary-outlook-for-2025-trends-and-insights/",
+          "fact": "Entry-level anesthesiologists average $295,891 and mid-level specialists make $311,183 yearly, with subspecialization reaching maximum of $682,000 annually"
+        },
+        {
+          "name": "Wellhart",
+          "url": "https://www.wellhart.com/blog/job-outlook-anesthesiologist-employment-opportunities/",
+          "fact": "Total anesthesiologist employment projected to increase by 4% from 2023 to 2033, from 36,100 jobs to 37,600"
+        },
+        {
+          "name": "Becker's ASC",
+          "url": "https://www.beckersasc.com/anesthesia/anesthesiologist-pay-in-2025-10-stats/",
+          "fact": "Anesthesiologists in academic settings earn median total compensation of $450,000, compared to $500,000 in nonacademic roles"
+        },
+        {
+          "name": "Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/oes/2023/may/oes291211.htm",
+          "fact": "In offices of physicians, 26,460 anesthesiologists earned annual mean wage of $358,560 as of May 2023"
+        }
+      ]
+    },
+    {
+      "query_num": 6,
+      "key": "community",
+      "parsed": {
+        "community": {
+          "note": "Search results contain limited information on professional communities and channels. Only ASA and associated conference details are available from provided sources.",
+          "professional_associations": [
+            {
+              "name": "American Society of Anesthesiologists (ASA)",
+              "website": "https://www.asahq.org",
+              "details": "Primary professional organization for anesthesiologists in the United States",
+              "membership_value": "Access to annual meeting, educational resources, CME opportunities"
+            }
+          ],
+          "conferences_and_events": [
+            {
+              "name": "ANESTHESIOLOGY 2025",
+              "location": "San Antonio, Texas",
+              "dates": "October 10-14, 2025",
+              "organizer": "American Society of Anesthesiologists",
+              "features": [
+                "Featured lectures",
+                "Exhibit Hall",
+                "Anesthesiology Career Fair",
+                "Hot topic sessions on research, emerging technologies, AI, physician well-being, perioperative medicine"
+              ],
+              "virtual_option": "Available with 12 months online access to select lectures and panels",
+              "website": "https://www.asahq.org/annualmeeting"
+            }
+          ],
+          "data_not_found_in_search_results": [
+            "Reddit communities (subreddit names and subscriber counts)",
+            "LinkedIn groups and influencers",
+            "YouTube channels for anesthesiology education",
+            "Slack/Discord communities",
+            "Industry newsletters",
+            "Other professional organizations (ABA, AICPA, AMA, IEEE presence in anesthesiology)"
+          ]
+        },
+        "sources": [
+          {
+            "name": "American Society of Anesthesiologists Annual Meeting",
+            "url": "https://www.asahq.org/annualmeeting",
+            "fact": "ANESTHESIOLOGY 2025 conference held October 10-14 in San Antonio, Texas, first time meeting held in San Antonio"
+          },
+          {
+            "name": "ASA Virtual Experience",
+            "url": "https://www.asahq.org/annualmeeting/attend/virtual",
+            "fact": "ANESTHESIOLOGY 2025 offers virtual sessions with 12 months of online access available through October 16, 2026"
+          },
+          {
+            "name": "Becker's ASC - Anesthesia News 2025",
+            "url": "https://www.beckersasc.com/anesthesia/the-biggest-anesthesia-news-of-2025/",
+            "fact": "Minnesota reported highest hourly mean wage for anesthesiologists at $223.72 in 2025"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "American Society of Anesthesiologists Annual Meeting",
+          "url": "https://www.asahq.org/annualmeeting",
+          "fact": "ANESTHESIOLOGY 2025 conference held October 10-14 in San Antonio, Texas, first time meeting held in San Antonio"
+        },
+        {
+          "name": "ASA Virtual Experience",
+          "url": "https://www.asahq.org/annualmeeting/attend/virtual",
+          "fact": "ANESTHESIOLOGY 2025 offers virtual sessions with 12 months of online access available through October 16, 2026"
+        },
+        {
+          "name": "Becker's ASC - Anesthesia News 2025",
+          "url": "https://www.beckersasc.com/anesthesia/the-biggest-anesthesia-news-of-2025/",
+          "fact": "Minnesota reported highest hourly mean wage for anesthesiologists at $223.72 in 2025"
+        }
+      ]
+    },
+    {
+      "query_num": 7,
+      "key": "market",
+      "parsed": {
+        "market": {
+          "salary_by_experience_level_2026": {
+            "entry_level_1_3_years": {
+              "range_usd": "$300,000 - $350,000",
+              "note": "Based on 2025 data"
+            },
+            "mid_career_4_9_years": {
+              "range_usd": "$375,000 - $450,000"
+            },
+            "experienced_10_plus_years": {
+              "range_usd": "$450,000 - $550,000+"
+            },
+            "director_partner": {
+              "note": "Not separately detailed in available sources"
+            }
+          },
+          "national_average_2026": {
+            "median": "$535,000",
+            "mean": "$573,585",
+            "interquartile_range": "$480,000 - $625,000",
+            "data_source": "128 verified physician submissions as of March 2026"
+          },
+          "salary_by_major_cities_and_states": {
+            "highest_paying_states": [
+              {
+                "rank": 1,
+                "state": "Wyoming",
+                "salary": "$725,000",
+                "note": "Based on job postings from June 2025"
+              },
+              {
+                "rank": 2,
+                "state": "North Dakota",
+                "salary": "$675,000"
+              },
+              {
+                "rank": 3,
+                "state": "Alaska",
+                "salary": "$650,000"
+              },
+              {
+                "rank": 4,
+                "state": "Louisiana",
+                "salary": "$648,125"
+              }
+            ],
+            "major_metropolitan_areas": [
+              {
+                "city": "San Jose, California",
+                "salary": "$504,031"
+              }
+            ],
+            "major_states_salary_ranges": {
+              "california": "$450,000 - $500,000",
+              "texas": "$425,000 - $475,000",
+              "florida": "$420,000 - $470,000",
+              "new_york": "$400,000 - $450,000"
+            }
+          },
+          "work_arrangements": {
+            "employment_settings": {
+              "hospital_employed": {
+                "compensation": "Highest earnings reported",
+                "note": "Tend to earn the most according to 2026 data"
+              },
+              "academic_settings": {
+                "total_compensation": "$527,500",
+                "as_of": "March 2026"
+              },
+              "non_academic_settings": {
+                "total_compensation": "$546,500",
+                "as_of": "March 2026"
+              }
+            },
+            "alternative_arrangements": {
+              "locum_tenens": {
+                "hourly_rate_national": "$275 - $325/hour",
+                "annual_equivalent": "~$572,000 for 52-week, 40-hour work weeks",
+                "high_paying_states": {
+                  "new_york": "$375/hour",
+                  "washington": "$350/hour",
+                  "massachusetts": "$350/hour"
+                }
+              }
+            },
+            "solo_practice_partnership_data": "Not detailed in available sources"
+          },
+          "practitioner_population": {
+            "estimated_total": "Data not available in search results",
+            "source_needed": "Bureau of Labor Statistics official occupational data"
+          },
+          "job_market": {
+            "job_openings_indeed_linkedin_glassdoor": "Specific numbers not available in search results",
+            "market_growth": "Growing job market with multidisciplinary opportunities noted for 2025",
+            "demand_trends": "High demand drives up salaries; fewer providers in rural areas creates geographic variations"
+          },
+          "billing_and_revenue": {
+            "private_practice_billing_rates": "Not detailed in available sources",
+            "note": "Data on independent practice fees not available"
+          },
+          "market_trends_and_disruption": {
+            "automation_and_ai_impact": "Not discussed in available sources",
+            "demand_outlook": "Positive; described as high-demand specialization with growing opportunities",
+            "specialization_impact": "Subspecializations (cardiac, pediatric anesthesiology) can reach $682,000 annually"
+          },
+          "data_limitations": "Search results lack: (1) Total practitioner population from BLS, (2) Job opening counts from major platforms, (3) Work arrangement breakdown (W-2 vs 1099 vs partnership prevalence), (4) Private practice billing/service fees, (5) Automation/AI disruption analysis"
+        },
+        "sources": [
+          {
+            "name": "SalaryDr",
+            "url": "https://www.salarydr.com/specialty/anesthesiology",
+            "fact": "The median anesthesiologist salary in the United States is $535,000 per year as of March 2026, based on 128 verified physician submissions"
+          },
+          {
+            "name": "SalaryDr",
+            "url": "https://www.salarydr.com/specialty/anesthesiology",
+            "fact": "The average anesthesiologist salary is $573,585, with the 25th percentile at $480,000 and the 75th percentile at $625,000"
+          },
+          {
+            "name": "GoUpilo",
+            "url": "https://www.goupilo.com/blog/how-much-do-anesthesiologists-make-in-2025-salary-breakdown-by-state-and-experience/",
+            "fact": "Entry-level anesthesiologists (1-3 years) earn $300,000 – $350,000; Mid-career (4-9 years) earn $375,000 – $450,000; Experienced (10+ years) earn $450,000 – $550,000+"
+          },
+          {
+            "name": "BagMask",
+            "url": "https://bagmask.com/anesthesia-job-search-advice/top-10-highest-paying-states-for-anesthesiologists-in-2025/",
+            "fact": "Wyoming ranks first for highest-paying state for anesthesiologists at $725,000 average salary based on job postings from June 2025"
+          },
+          {
+            "name": "BagMask",
+            "url": "https://bagmask.com/anesthesia-job-search-advice/top-10-highest-paying-states-for-anesthesiologists-in-2025/",
+            "fact": "North Dakota ranks second at $675,000, Alaska third at $650,000, and Louisiana fourth at $648,125"
+          },
+          {
+            "name": "MedCadre",
+            "url": "https://medcadre.com/the-anesthesiologist-salary-outlook-for-2025-trends-and-insights/",
+            "fact": "Subspecialization such as cardiac or pediatric anesthesiology can increase incomes to a maximum of $682,000 annually"
+          },
+          {
+            "name": "MedCadre",
+            "url": "https://medcadre.com/the-anesthesiologist-salary-outlook-for-2025-trends-and-insights/",
+            "fact": "San Jose, California offers a maximum anesthesiologist salary of $504,031"
+          },
+          {
+            "name": "GoUpilo",
+            "url": "https://www.goupilo.com/blog/how-much-do-anesthesiologists-make-in-2025-salary-breakdown-by-state-and-experience/",
+            "fact": "California anesthesiologists earn $450,000 – $500,000; Texas $425,000 – $475,000; Florida $420,000 – $470,000; New York $400,000 – $450,000"
+          },
+          {
+            "name": "Marit Health",
+            "url": "https://www.marithealth.com/o/-/anesthesiologist/salary",
+            "fact": "Anesthesiologists in non-academic settings earn $546,500 in total compensation, while those in academic settings earn $527,500 as of March 2026"
+          },
+          {
+            "name": "Anesthesia On Call",
+            "url": "https://anesthesiaoncall.com/locum-tenens-anesthesiologist-salary-guide-2025/",
+            "fact": "Locum tenens anesthesiologists earn $275-$325/hour nationwide, translating to about $572,000 for a 52-week year of 40-hour work weeks"
+          },
+          {
+            "name": "Anesthesia On Call",
+            "url": "https://anesthesiaoncall.com/locum-tenens-anesthesiologist-salary-guide-2025/",
+            "fact": "Locum tenens rates in New York are $375/hour (36.4% higher than national average), in Washington $350/hour, and Massachusetts $350/hour"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "SalaryDr",
+          "url": "https://www.salarydr.com/specialty/anesthesiology",
+          "fact": "The median anesthesiologist salary in the United States is $535,000 per year as of March 2026, based on 128 verified physician submissions"
+        },
+        {
+          "name": "SalaryDr",
+          "url": "https://www.salarydr.com/specialty/anesthesiology",
+          "fact": "The average anesthesiologist salary is $573,585, with the 25th percentile at $480,000 and the 75th percentile at $625,000"
+        },
+        {
+          "name": "GoUpilo",
+          "url": "https://www.goupilo.com/blog/how-much-do-anesthesiologists-make-in-2025-salary-breakdown-by-state-and-experience/",
+          "fact": "Entry-level anesthesiologists (1-3 years) earn $300,000 – $350,000; Mid-career (4-9 years) earn $375,000 – $450,000; Experienced (10+ years) earn $450,000 – $550,000+"
+        },
+        {
+          "name": "BagMask",
+          "url": "https://bagmask.com/anesthesia-job-search-advice/top-10-highest-paying-states-for-anesthesiologists-in-2025/",
+          "fact": "Wyoming ranks first for highest-paying state for anesthesiologists at $725,000 average salary based on job postings from June 2025"
+        },
+        {
+          "name": "BagMask",
+          "url": "https://bagmask.com/anesthesia-job-search-advice/top-10-highest-paying-states-for-anesthesiologists-in-2025/",
+          "fact": "North Dakota ranks second at $675,000, Alaska third at $650,000, and Louisiana fourth at $648,125"
+        },
+        {
+          "name": "MedCadre",
+          "url": "https://medcadre.com/the-anesthesiologist-salary-outlook-for-2025-trends-and-insights/",
+          "fact": "Subspecialization such as cardiac or pediatric anesthesiology can increase incomes to a maximum of $682,000 annually"
+        },
+        {
+          "name": "MedCadre",
+          "url": "https://medcadre.com/the-anesthesiologist-salary-outlook-for-2025-trends-and-insights/",
+          "fact": "San Jose, California offers a maximum anesthesiologist salary of $504,031"
+        },
+        {
+          "name": "GoUpilo",
+          "url": "https://www.goupilo.com/blog/how-much-do-anesthesiologists-make-in-2025-salary-breakdown-by-state-and-experience/",
+          "fact": "California anesthesiologists earn $450,000 – $500,000; Texas $425,000 – $475,000; Florida $420,000 – $470,000; New York $400,000 – $450,000"
+        },
+        {
+          "name": "Marit Health",
+          "url": "https://www.marithealth.com/o/-/anesthesiologist/salary",
+          "fact": "Anesthesiologists in non-academic settings earn $546,500 in total compensation, while those in academic settings earn $527,500 as of March 2026"
+        },
+        {
+          "name": "Anesthesia On Call",
+          "url": "https://anesthesiaoncall.com/locum-tenens-anesthesiologist-salary-guide-2025/",
+          "fact": "Locum tenens anesthesiologists earn $275-$325/hour nationwide, translating to about $572,000 for a 52-week year of 40-hour work weeks"
+        },
+        {
+          "name": "Anesthesia On Call",
+          "url": "https://anesthesiaoncall.com/locum-tenens-anesthesiologist-salary-guide-2025/",
+          "fact": "Locum tenens rates in New York are $375/hour (36.4% higher than national average), in Washington $350/hour, and Massachusetts $350/hour"
+        }
+      ]
+    }
+  ]
+}

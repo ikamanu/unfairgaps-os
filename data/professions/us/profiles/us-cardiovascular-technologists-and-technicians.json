@@ -1,0 +1,286 @@
+{
+  "profession_id": "us-cardiovascular-technologists-and-technicians",
+  "profession_name": "Cardiovascular Technologists and Technicians",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "CV techs perform diagnostic cardiac and vascular tests including EKGs, echocardiograms, stress tests, and assist with cardiac catheterization. They work in hospitals, cath labs, and outpatient clinics. Typical 40-hour week with on-call requirements for cath lab staff.",
+    "typical_tasks": [
+      "Attaching electrodes and operating EKG machines to record heart rhythms",
+      "Performing echocardiograms using ultrasound equipment",
+      "Assisting cardiologists during cardiac catheterization procedures",
+      "Preparing patients: shaving, cleansing insertion sites, administering topical anesthesia",
+      "Monitoring patients' blood pressure, heart rate, and oxygen saturation during procedures",
+      "Operating and interpreting vascular ultrasound (duplex scanning)",
+      "Performing stress tests (exercise and pharmacological)",
+      "Maintaining and troubleshooting cardiology equipment",
+      "Entering data into PACS and EHR systems",
+      "Transcribing and distributing diagnostic reports for physician interpretation"
+    ],
+    "key_documents": [
+      "EKG/ECG tracings and interpretation worksheets",
+      "Echocardiography reports (ejection fraction, valve assessments)",
+      "Cardiac catheterization procedure logs",
+      "Vascular ultrasound reports",
+      "Stress test reports",
+      "Equipment maintenance logs",
+      "Patient medical records in EHR"
+    ],
+    "deadlines": {
+      "stat_ekg": "Immediate — results needed within minutes for emergencies",
+      "routine_echo_report": "24-48 hours turnaround typical",
+      "cath_lab_report": "Same-day documentation usually required",
+      "equipment_calibration": "Per manufacturer schedule and facility protocol",
+      "ce_renewal": "30 CME units every 3 years (ARDMS) or 16-36 CEUs every 3 years (CCI)"
+    },
+    "seasonality": "Heart-related emergencies have no strict seasonality but cardiac events increase in winter months. Elective procedures may slow during holiday periods. Cath lab on-call is year-round."
+  },
+  "regulatory": {
+    "summary": "Certification through CCI or ARDMS is the industry standard though not legally required in most states. Only 5 states mandate licensure (NH, NM, ND, OR, WA). CAAHEP accredits training programs. Continuing education required for credential maintenance.",
+    "key_laws": [
+      {
+        "name": "State licensure laws (NH, NM, ND, OR, WA)",
+        "description": "Only 5 states currently mandate licensure for cardiovascular technologists"
+      },
+      {
+        "name": "CAAHEP accreditation standards",
+        "description": "Commission on Accreditation of Allied Health Education Programs accredits CV tech training programs",
+        "url": "https://www.caahep.org/profession-description-and-certification-information/cardiovascular-technology"
+      },
+      {
+        "name": "CMS Conditions of Participation",
+        "description": "Medicare/Medicaid standards requiring qualified staff for cardiac diagnostic services"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Associate's or bachelor's degree in cardiovascular technology (CAAHEP-accredited preferred)",
+        "CCI credentials: RCIS (Registered Cardiovascular Invasive Specialist), RCS (Registered Cardiac Sonographer), RVS (Registered Vascular Specialist), RCES (Registered Cardiac Electrophysiology Specialist)",
+        "ARDMS credentials: RDCS (Registered Diagnostic Cardiac Sonographer), RVT (Registered Vascular Technologist)",
+        "CPR/BLS certification required",
+        "Continuing education: 30 CME/3 years (ARDMS) or 16-36 CEU/3 years (CCI)",
+        "Annual ARDMS renewal fee by December 31"
+      ]
+    },
+    "recent_changes": "Increasing employer requirements for certification even in states without licensure mandates. Growing push for standardized national certification requirements."
+  },
+  "tools": {
+    "summary": "Specialized cardiology equipment including echocardiography machines, EKG systems, cardiac catheterization lab equipment, and vascular ultrasound. Software centers on Cardiology PACS and EHR integration using DICOM, HL7, and FHIR standards.",
+    "primary_tools": [
+      {
+        "name": "Echocardiography machines",
+        "description": "Ultrasound systems for cardiac imaging — GE Vivid, Philips EPIQ, Siemens ACUSON",
+        "capabilities": "2D/3D echo, Doppler, strain imaging, TEE"
+      },
+      {
+        "name": "EKG/ECG machines",
+        "description": "12-lead electrocardiograph systems for rhythm analysis",
+        "examples": "GE MAC, Philips PageWriter, Mortara"
+      },
+      {
+        "name": "Cardiac catheterization lab equipment",
+        "description": "Fluoroscopy systems, hemodynamic monitoring, IVUS, FFR measurement tools"
+      },
+      {
+        "name": "Cardiology PACS",
+        "description": "Picture archiving system for cardiac imaging — stores and distributes echo, cath, and CT images",
+        "examples": "Intelerad, Novarad NovaCardio, UltraLinQ"
+      },
+      {
+        "name": "EHR systems (cardiology modules)",
+        "description": "Electronic health records with cardiology-specific templates and data integration",
+        "examples": "Epic Cardiology, Cerner, MEDITECH"
+      },
+      {
+        "name": "Vascular ultrasound systems",
+        "description": "Duplex/color Doppler systems for arterial and venous assessment"
+      }
+    ],
+    "secondary_tools": [
+      "Holter monitors and event recorders for ambulatory monitoring",
+      "Stress testing equipment (treadmills, pharmacological agents)",
+      "Hemodynamic monitoring systems",
+      "DICOM viewers and reporting software",
+      "Cardiac CT/MRI viewing workstations"
+    ],
+    "pain_points": [
+      "Multiple non-integrated software systems (PACS, EHR, reporting)",
+      "Aging equipment in smaller facilities",
+      "Complex workflows for data transfer between systems",
+      "High volume of documentation requirements",
+      "On-call demands with no dedicated workspace"
+    ]
+  },
+  "terminology": {
+    "summary": "Highly technical medical vocabulary combining cardiology, ultrasound physics, and hemodynamics. Many abbreviations used in daily communication.",
+    "terms": {
+      "EKG/ECG": "Electrocardiogram — recording of heart's electrical activity",
+      "echo": "Echocardiogram — ultrasound of the heart",
+      "TEE": "Transesophageal echocardiogram — echo via esophagus probe",
+      "TTE": "Transthoracic echocardiogram — standard chest-wall echo",
+      "EF": "Ejection fraction — percentage of blood pumped per heartbeat (normal 55-70%)",
+      "cath lab": "Cardiac catheterization laboratory",
+      "RCIS": "Registered Cardiovascular Invasive Specialist",
+      "RDCS": "Registered Diagnostic Cardiac Sonographer",
+      "RVT": "Registered Vascular Technologist",
+      "IVUS": "Intravascular ultrasound — catheter-based imaging inside vessels",
+      "FFR": "Fractional flow reserve — measures pressure across coronary blockage",
+      "STEMI": "ST-Elevation Myocardial Infarction — heart attack requiring emergency cath",
+      "PCI": "Percutaneous coronary intervention — stenting/angioplasty",
+      "Doppler": "Ultrasound technique measuring blood flow velocity and direction",
+      "hemodynamics": "Study of blood flow and pressure in the cardiovascular system",
+      "sheath": "Tube inserted into artery/vein for catheter access",
+      "wall motion": "Assessment of heart muscle movement patterns on echo",
+      "regurgitation": "Backward leaking of blood through a heart valve",
+      "stenosis": "Narrowing of a blood vessel or heart valve"
+    }
+  },
+  "career_psychology": {
+    "summary": "Hands-on healthcare career with moderate education (associate's degree). Strong job security due to aging population and cardiovascular disease prevalence. Median salary ~$62,000. Career advancement through specialization (invasive, echo, vascular) and additional credentials.",
+    "career_path": [
+      "Associate's degree in cardiovascular technology (2 years, CAAHEP-accredited)",
+      "Entry-level EKG technician or non-invasive CV tech",
+      "CCI or ARDMS certification (specialty-specific)",
+      "Specialized technologist: echocardiography, invasive (cath lab), or vascular",
+      "Senior technologist / lead tech",
+      "Supervisor / manager of cardiology department",
+      "Educator or applications specialist for equipment vendors"
+    ],
+    "salary_range": {
+      "entry_ekg_tech": "$35,000 - $45,000",
+      "non_invasive_tech": "$50,000 - $65,000",
+      "echo_tech_certified": "$60,000 - $80,000",
+      "invasive_cath_lab": "$65,000 - $90,000",
+      "lead_supervisor": "$75,000 - $100,000",
+      "median_bls": "$62,740 (2024 BLS median for cardiovascular technologists)"
+    },
+    "fears": [
+      "Patient adverse event during procedure",
+      "Radiation exposure in cath lab",
+      "Losing certification due to insufficient CE credits",
+      "Being replaced by AI-assisted automated readings",
+      "Physical strain from standing and patient positioning"
+    ],
+    "motivation": [
+      "Direct role in life-saving cardiac care",
+      "Fascinating technology and diagnostic imaging",
+      "Multiple specialization pathways",
+      "Stable healthcare employment",
+      "Patient interaction and relationship building"
+    ],
+    "burnout_factors": [
+      "High-stress emergency cath lab cases",
+      "On-call nights and weekends",
+      "Physical demands of patient positioning and long procedures",
+      "High patient volume with tight schedules",
+      "Documentation burden"
+    ]
+  },
+  "community": {
+    "summary": "Professional community organized through credentialing bodies (CCI, ARDMS), the Society for Cardiovascular Angiography and Interventions (SCAI), and the American Society of Echocardiography (ASE).",
+    "associations": [
+      {
+        "name": "Cardiovascular Credentialing International (CCI)",
+        "url": "https://cci-online.org",
+        "type": "Primary credentialing body for cardiovascular technologists"
+      },
+      {
+        "name": "American Registry for Diagnostic Medical Sonography (ARDMS)",
+        "url": "https://www.ardms.org",
+        "type": "Credentialing body for cardiac and vascular sonographers"
+      },
+      {
+        "name": "American Society of Echocardiography (ASE)",
+        "url": "https://www.asecho.org",
+        "type": "Professional society for echocardiography practitioners"
+      },
+      {
+        "name": "Society for Cardiovascular Angiography and Interventions (SCAI)",
+        "url": "https://scai.org",
+        "type": "Professional society for interventional cardiology"
+      },
+      {
+        "name": "Society for Vascular Ultrasound (SVU)",
+        "url": "https://www.svunet.org",
+        "type": "Professional society for vascular technology"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "r/echocardiography",
+        "url": "https://reddit.com/r/echocardiography",
+        "description": "Reddit community for echo technologists"
+      },
+      {
+        "name": "Echo Journal Club groups",
+        "description": "Online study groups for echo case reviews"
+      }
+    ],
+    "events": [
+      "ASE Scientific Sessions (annual)",
+      "SCAI Annual Conference",
+      "CCI Annual Meeting",
+      "SVU Annual Conference on Vascular Ultrasound"
+    ]
+  },
+  "market": {
+    "summary": "Growing demand driven by aging population and cardiovascular disease prevalence. BLS projects 7% growth 2023-2033. Cardiovascular disease remains #1 cause of death in the US, sustaining demand for diagnostic services.",
+    "demand_forecast": {
+      "growth_rate": "7% (2023-2033, BLS — faster than average)",
+      "total_employment": "~58,000 positions",
+      "annual_openings": "~5,600/year (BLS)"
+    },
+    "salary_market": {
+      "median": "$62,740 (BLS 2024)",
+      "echo_specialist": "$65,000 - $85,000",
+      "cath_lab_specialist": "$70,000 - $95,000",
+      "top_10_percent": "$95,000+"
+    },
+    "market_trends": [
+      "Aging baby boomer population increasing cardiovascular diagnostic volume",
+      "Point-of-care ultrasound (POCUS) expanding into more settings",
+      "AI-assisted echo interpretation emerging but not replacing techs",
+      "Hybrid cardiovascular procedures requiring cross-trained technologists",
+      "Telehealth/remote interpretation expanding geographic reach",
+      "Growing demand in outpatient and ambulatory settings"
+    ]
+  },
+  "quality_score": 0.79,
+  "sources_count": 30,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "cardiovascular technologist technician USA 2025 2026 typical workday tasks duties EKG echocardiography catheterization",
+      "sources": [
+        {"title": "BLS OOH — Cardiovascular Technologists", "url": "https://www.bls.gov/ooh/healthcare/cardiovascular-technologists-and-technicians.htm"},
+        {"title": "O*NET — Cardiovascular Technologists", "url": "https://www.onetonline.org/link/summary/29-2031.00"},
+        {"title": "ExploreHealthCareers — CV Tech", "url": "https://explorehealthcareers.org/careers/technologists-and-technicians/cardiovascular-technologist-technician/"}
+      ]
+    },
+    {
+      "query": "cardiovascular technologist USA 2025 2026 certification CCI ARDMS regulations licensure requirements",
+      "sources": [
+        {"title": "CV Tech Certification — CCI, ARDMS", "url": "https://www.medicaltechnologyschools.com/cardiovascular-technologist/cardiovascular-tech-certification"},
+        {"title": "CCI Official Site", "url": "https://cci-online.org/"},
+        {"title": "CAAHEP — Cardiovascular Technology", "url": "https://www.caahep.org/profession-description-and-certification-information/cardiovascular-technology"}
+      ]
+    },
+    {
+      "query": "cardiovascular technologist equipment tools software echocardiography machines PACS EHR 2025",
+      "sources": [
+        {"title": "Cardiology PACS — Nuvodia", "url": "https://nuvodia.com/cardiology-pacs/"},
+        {"title": "Cardiology PACS Systems and Features", "url": "https://blog.medicai.io/en/cardiology-pacs-systems/"},
+        {"title": "Compare Cardiology EHR Software 2025", "url": "https://www.ehrinpractice.com/cardiology-ehr.html"},
+        {"title": "UltraLinQ Cardiology PACS", "url": "https://ultralinq.com/cardiology-suite/cardiology-pacs-system/"}
+      ]
+    },
+    {
+      "query": "cardiovascular technologist career salary community market",
+      "sources": [
+        {"title": "BLS OOH — Cardiovascular Technologists", "url": "https://www.bls.gov/ooh/healthcare/cardiovascular-technologists-and-technicians.htm"},
+        {"title": "CCI Online", "url": "https://cci-online.org/"},
+        {"title": "ARDMS", "url": "https://www.ardms.org"}
+      ]
+    }
+  ]
+}

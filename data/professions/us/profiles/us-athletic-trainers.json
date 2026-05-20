@@ -1,0 +1,196 @@
+{
+  "profession_id": "us-athletic-trainers",
+  "profession_name": "Athletic Trainers",
+  "tier": "B",
+  "daily_reality": {
+    "typical_schedule": "More than 40 hours per week; includes evenings, weekends, and extensive travel especially for those with sports teams",
+    "daily_tasks": [
+      "Apply protective or injury preventive devices (tape, bandages, braces) to body parts such as ankles, fingers, wrists",
+      "Care for athletic injuries using physical therapy equipment, techniques, or medication",
+      "Conduct initial assessments of athlete's injury or illness to provide emergency or continued care",
+      "Evaluate athletes' readiness to play and provide participation clearances when necessary",
+      "Perform general administrative tasks such as keeping records or writing reports"
+    ],
+    "morning_prep": [
+      "Ensure radios are on",
+      "Clean and organize athletic training room",
+      "Stock necessary equipment",
+      "Review game and practice schedules for the day"
+    ],
+    "high_school_example": "Arrive before student school day ends; allow students to be seen during day for PE injuries or prior-day events; at 3:00 pm school bell, training room becomes busy with student-athletes signing in for treatment"
+  },
+  "regulatory": {
+    "boc_certification": "ATC credential and BOC requirements recognized by 49 states plus DC for eligibility/regulation; BOC exam recognized by all state regulatory agencies",
+    "education_requirement": "Must graduate with master's degree from accredited professional athletic training education program and pass comprehensive BOC test",
+    "state_licensing": "Must be legally recognized by appropriate state regulatory agency prior to practicing; compliance with state regulatory requirements is mandatory and only avenue to legal practice",
+    "state_variation": "Each state differs in legislation affecting various athletic training domains, though many states have similar requirements",
+    "continuing_education": "Must meet ongoing continuing education requirements to retain certification",
+    "annual_renewal_fee": "Required to pay annual BOC certification renewal fee supporting administrative, disciplinary, regulatory and professional development activities",
+    "interstate_compact_2025": "CSG partnering with BOC through DoD cooperative agreement to develop new interstate compact; legislative summit held August 28, 2025; will allow ATs to practice across state lines both physically and remotely (digital health), improving continuity of care"
+  },
+  "tools": {
+    "emr_platforms": [
+      {
+        "name": "ATGenius",
+        "description": "EMR system developed by athletic trainer; includes SOAP notes, Treatment Sign-in, Concussion Evaluation and RTP documentation, Injury Statistics Reports"
+      },
+      {
+        "name": "SportsWareOnLine (SWOL)",
+        "description": "Secure, web-based documentation software specifically for athletic trainers; accessible from any web-enabled smart device"
+      },
+      {
+        "name": "Healthy Roster",
+        "description": "Outreach EMR platform specifically designed for athletic trainers; includes injury documentation, patient engagement, reporting, care coordination, telemedicine"
+      },
+      {
+        "name": "CORE-AT",
+        "description": "Web-based EMR and injury surveillance system designed by athletic trainers; managed in partnership with RippleGroup"
+      },
+      {
+        "name": "AthleteMonitoring",
+        "description": "Manages every aspect of sports injury practice: tracking injuries, illnesses, treatments, SOAP notes, scheduling appointments, sharing rehab programs"
+      },
+      {
+        "name": "BigTeams Med Central",
+        "description": "Injury and treatment tracking software"
+      }
+    ],
+    "key_features": "Specialized features include injury templates, treatment logs, sideline documentation tools; voice recognition technology achieves 160 words/min with 98-99% accuracy",
+    "automation_benefits": "Can automate 80% of workflows, reduce denials by 75%, secure approvals one week before appointments; preparing for CMS 2026 mandate"
+  },
+  "market": {
+    "average_salary_annual": 64381,
+    "by_experience": {
+      "entry_level_under_3_years": 37740,
+      "entry_level_range": "43000-48000",
+      "mid_career_4_9_years": 40400,
+      "senior_10_20_years": 51460,
+      "senior_20_plus_years": 57450,
+      "high_end_potential": "80000+ in professional sports, spectator sports, or senior leadership"
+    },
+    "salary_range": {
+      "percentile_25": 61000,
+      "percentile_75": 70000,
+      "percentile_90": 77500
+    },
+    "major_cities": {
+      "new_york_ny": 69248,
+      "dallas_tx": 59006,
+      "redwood_city_ca": "National average +$16,317 (25.3%)"
+    },
+    "top_states": ["D.C.", "New Jersey", "California", "New York", "Illinois"],
+    "highest_paying_cities": ["Chapin, SC", "San Francisco, CA", "Redwood City, CA"],
+    "education_note": "Master's degree now required entry point as of 2022"
+  },
+  "automation_potential": {
+    "program_design": "AI reduces by up to 80% the time required to design programs and analyze user behavior; automates program personalization allowing trainers to focus on coaching and human connection",
+    "administrative_tasks": "Save up to 94% in production time through AI; trainers spend less time writing programs and scheduling, more time building relationships and hands-on coaching",
+    "automated_operations": "Member check-ins, FAQs, renewals handled by chatbots or AI receptionists, freeing trainers to focus on actual coaching",
+    "data_analytics": "AI analytics track KPIs (heart rate, recovery times, consistency) with ease; AI algorithms analyze movement patterns to predict injury risks",
+    "injury_prevention": "Increased demand for sports science professionals in clinical and research settings as graduates develop personalized recovery programs integrating automation",
+    "adoption_trend": "65% of sports organizations plan to increase AI use by 2025",
+    "productivity_impact": "Personal trainers using AI see 30% increase in client load while maintaining service quality",
+    "overall_impact": "AI designed to augment rather than replace trainers, enabling focus on coaching and client relationships"
+  },
+  "compliance_calendar": {
+    "current_renewal_deadline": "Monday, February 2, 2026",
+    "current_renewal_cycle": "January 1, 2024 through February 2, 2026",
+    "late_deadline": "March 2, 2026 (with $20 late fee)",
+    "ceu_january_2026_flexibility": "CEUs earned in January 2026 may be applied to either 2024-2025 renewal period or upcoming cycle ending 2028",
+    "ceu_requirements": {
+      "certified_2023_or_before": "50 CEUs total",
+      "certified_2024": "25 CEUs total"
+    },
+    "new_cpc_pathway": {
+      "name": "Continuing Professional Certification (CPC) Renewal (Pathfinder)",
+      "launch": "2026",
+      "description": "New renewal pathway combining targeted professional development through Pathfinder with traditional CEUs",
+      "requirement": "Expectation for maintaining certification for all ATs certified after January 1, 2026"
+    },
+    "state_requirements": "Check with state licensing board for additional requirements; typically must comply with continuing education requirements for home state license"
+  },
+  "error_patterns": {
+    "documentation_issues": [
+      "Failing to maintain accurate and up-to-date documentation of medical records",
+      "Not keeping patient medical information and records in secure manner (digital or paper)",
+      "Incomplete records of services provided"
+    ],
+    "scope_of_practice": "Athletic trainers need clear understanding of state laws regarding what they can and can't do when providing patient care",
+    "informed_consent": [
+      "Not ensuring patient is fully aware of all aspects associated with treatment",
+      "Failing to inform patients of likely benefits and potential risks",
+      "Not providing written notices of treatment options and alternatives",
+      "Not verifying patient is competent and not under pressure to receive care"
+    ],
+    "liability_areas": "Claims may arise from injury evaluation, emergency response, return-to-play decisions, equipment use, documentation issues, or communication misunderstandings",
+    "compliance_standard": "Must comply with BOC Standards of Professional Practice: Practice Standards and Code of Professional Responsibility",
+    "best_practices": [
+      "Maintain accurate and detailed records - essential for defending against claims",
+      "Stay up-to-date with continuing education to reduce risk of negligence claims",
+      "Standardization of contemporary documentation practices is gold standard"
+    ]
+  },
+  "quality_score": 0.85,
+  "sources_count": 58,
+  "verified_sources": 14,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Typical workday tasks by hour",
+      "sources": [
+        "https://www.bls.gov/ooh/healthcare/athletic-trainers.htm",
+        "https://www.owlguru.com/career/athletic-trainers/job-description/",
+        "https://www.athletico.com/2023/03/27/a-day-in-the-life-of-an-athletic-trainer/"
+      ]
+    },
+    {
+      "query": "Regulatory environment BOC certification licensing",
+      "sources": [
+        "https://bocatc.org/state-regulation/",
+        "https://www.nata.org/about/athletic-training/obtain-certification",
+        "https://bocatc.org/"
+      ]
+    },
+    {
+      "query": "Software tools EMR injury management",
+      "sources": [
+        "https://www.sprypt.com/blog/how-athletic-training-emr-systems-cut-documentation-time",
+        "https://sportswareonline.com/",
+        "https://atgenius.com/",
+        "https://www.healthyroster.com/"
+      ]
+    },
+    {
+      "query": "Labor market salary 2025-2026",
+      "sources": [
+        "https://www.salary.com/research/salary/benchmark/athletic-trainer-salary",
+        "https://www.payscale.com/research/US/Job=Athletic_Trainer/Salary",
+        "https://www.ziprecruiter.com/Salaries/Athletic-Trainer-Salary"
+      ]
+    },
+    {
+      "query": "Automation AI impact technology adoption",
+      "sources": [
+        "https://research.com/advice/ai-automation-and-the-future-of-sports-science-degree-careers",
+        "https://wsc-sports.com/blog/industry-insights/ai-sports-revolution-12-innovations-changing-everything/",
+        "https://truecoach.co/blog/how-advanced-tech-and-artificial-intelligence-will-impact-personal-training-in-2025/"
+      ]
+    },
+    {
+      "query": "BOC CEU deadlines state licensing renewal",
+      "sources": [
+        "https://bocatc.org/athletic-trainer-life-cycle-2/",
+        "https://bocatc.org/newsroom/athletic-trainer-certification-renewal-new-deadline-announcement/",
+        "https://www.medbridge.com/blog/2025-at-ce-renewal-faqs"
+      ]
+    },
+    {
+      "query": "Common mistakes documentation compliance liability",
+      "sources": [
+        "https://www.nata.org/practice-patient-care/risk-and-liability",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3445119/",
+        "https://atstudybuddy.com/navigating-athletic-trainer-liability-understanding-the-risks/"
+      ]
+    }
+  ]
+}

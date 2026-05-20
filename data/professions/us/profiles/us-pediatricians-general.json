@@ -1,0 +1,319 @@
+{
+  "profession_id": "us-pediatricians-general",
+  "profession_name": "Pediatricians, General",
+  "soc_code": "29-1221.00",
+  "industry": "healthcare",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "General pediatricians serve as primary care providers for children from birth through young adulthood, spending their days conducting well-child visits, diagnosing acute and chronic conditions, administering vaccinations, and counseling families. They balance outpatient clinic work with hospital rounds, documentation, and consultations with specialists. Many work a typical 40-hour week with on-call responsibilities for nights and weekends.",
+    "typical_tasks": [
+      "Conducting well-child check-ups and developmental screenings",
+      "Diagnosing and treating acute illnesses (respiratory infections, GI disorders, ear infections)",
+      "Administering immunizations and booster shots per CDC schedule",
+      "Performing physical examinations and ordering diagnostic tests",
+      "Assessing developmental milestones (physical, emotional, social)",
+      "Counseling parents on nutrition, safety, and behavioral issues",
+      "Managing chronic conditions such as asthma, ADHD, and allergies",
+      "Documenting patient encounters in EHR systems",
+      "Consulting with pediatric subspecialists for complex cases",
+      "Reviewing lab results and imaging studies",
+      "Coordinating care with schools, social workers, and therapists",
+      "Participating in hospital rounds for admitted patients"
+    ],
+    "key_documents": [
+      "Patient medical records and EHR documentation",
+      "Growth charts and developmental screening forms",
+      "Immunization records and CDC vaccine schedules",
+      "Referral letters to specialists",
+      "Insurance prior authorization forms",
+      "Prescription orders and medication documentation",
+      "School and sports physical forms",
+      "CPT and ICD-10 billing codes documentation"
+    ],
+    "deadlines": {
+      "daily": "Complete patient encounter documentation same day; review and sign off on lab results",
+      "weekly": "Process referrals, follow-up on pending lab/imaging orders",
+      "monthly": "CME tracking, quality metrics review, peer review participation",
+      "annual": "Board certification maintenance, state license renewal, DEA registration renewal, malpractice insurance renewal"
+    },
+    "seasonality": "Heavy flu season from October to March drives higher patient volumes. Back-to-school physicals peak in July-August. Allergy season (spring) increases visits. Summer brings injury-related visits. RSV season overlaps with winter months, increasing hospital admissions for infants."
+  },
+  "regulatory": {
+    "summary": "Pediatricians must hold an unrestricted state medical license, complete an ACGME-accredited pediatric residency (3 years), and pass the American Board of Pediatrics (ABP) certifying examination. Board certification is voluntary but strongly expected by employers and insurers. Ongoing Maintenance of Certification (MOC) is required to remain board-certified. Federal DEA registration is needed for prescribing controlled substances.",
+    "key_laws": [
+      "State Medical Practice Acts governing physician licensing",
+      "HIPAA (Health Insurance Portability and Accountability Act) for patient privacy",
+      "Stark Law and Anti-Kickback Statute for referral and financial relationships",
+      "EMTALA (Emergency Medical Treatment and Labor Act) for emergency care obligations",
+      "Affordable Care Act provisions for pediatric essential health benefits",
+      "State-specific vaccine mandate laws and exemption policies",
+      "Child abuse and neglect mandatory reporting laws",
+      "MACRA/MIPS (Medicare Access and CHIP Reauthorization Act) quality reporting"
+    ],
+    "licensing": {
+      "requirements": [
+        "Doctor of Medicine (MD) or Doctor of Osteopathic Medicine (DO) degree from LCME or AOA-accredited school",
+        "Completion of 3-year ACGME-accredited pediatric residency program",
+        "Pass USMLE Step 1, 2, and 3 (or COMLEX equivalents)",
+        "State medical license - requirements vary by state",
+        "DEA registration for prescribing controlled substances",
+        "ABP Initial Certifying Examination in General Pediatrics",
+        "Effective January 2025: Canadian-trained applicants must complete full 4-year residency",
+        "Training must be completed within previous 7 years for initial certification eligibility"
+      ]
+    },
+    "continuing_education": "Board-certified pediatricians must participate in ABP's Maintenance of Certification (MOC) program, which includes ongoing professional development, self-assessment activities, and periodic examination. Most states require 25-50 CME hours annually for license renewal. MOC Part 1 requires maintaining professional standing and licensure, Part 2 involves lifelong learning and self-assessment, Part 3 covers assessment of knowledge/judgment/skills, and Part 4 focuses on improvement in medical practice."
+  },
+  "tools": {
+    "summary": "Pediatricians rely heavily on Electronic Health Record (EHR) systems with pediatric-specific features such as growth chart tracking, immunization forecasting, and age-based dosing. PCC (Physician's Computer Company) is the dominant pediatric-specific EHR, winning its 8th consecutive Best in KLAS award in 2026. AI-powered clinical tools are emerging rapidly, including AI scribing solutions. Standard medical equipment includes otoscopes, stethoscopes, pulse oximeters, and point-of-care testing devices.",
+    "primary_tools": [
+      "PCC EHR (Best in KLAS 2026, score 94.8 - 8th consecutive year)",
+      "Epic Systems (widely used in hospital-based practices)",
+      "athenahealth (cloud-based EHR and practice management)",
+      "Praxis EMR (AI-based, template-free, AAP protocols embedded)",
+      "PrognoCIS (cloud EHR with CDC-based immunization record)",
+      "Practice management and billing software",
+      "E-prescribing systems",
+      "Patient portal platforms"
+    ],
+    "secondary_tools": [
+      "ChartLogic (voice-recognition charting, notes in under 90 seconds)",
+      "Telemedicine platforms (Doxy.me, Zoom Health)",
+      "AI scribing solutions (PCC announcing AI scribing for 2026)",
+      "CDC immunization scheduling tools",
+      "Growth chart and developmental screening software",
+      "Drug reference databases (Lexicomp, Epocrates, UpToDate)",
+      "Secure messaging and patient communication platforms",
+      "Medical imaging viewers for X-rays and ultrasounds"
+    ],
+    "pain_points": [
+      "Excessive documentation burden consuming clinical time - 62% of physicians cite charting as top burnout source",
+      "EHR usability issues and workflow inefficiencies",
+      "Insurance prior authorization delays and administrative hassle",
+      "Interoperability gaps between different EHR systems",
+      "Vaccine inventory management and cold chain compliance",
+      "Keeping up with frequent billing code changes (annual CPT and ICD-10 updates)",
+      "Integration of developmental screening tools into workflow",
+      "Managing patient portal messages and after-hours communications"
+    ]
+  },
+  "terminology": {
+    "summary": "Pediatric medicine uses a specialized vocabulary encompassing developmental stages, age-specific conditions, immunization schedules, growth metrics, and billing codes. Key terminology spans clinical procedures, diagnostic codes (ICD-10-CM), procedure codes (CPT), and medical abbreviations used in daily documentation and communication with families.",
+    "terms": {
+      "Well-child visit": "Scheduled preventive care visit to monitor growth, development, and administer age-appropriate immunizations per AAP Bright Futures guidelines",
+      "Developmental milestone": "Expected skill or behavior that most children achieve by a certain age (e.g., walking by 12 months, first words by 12-18 months)",
+      "Growth chart/percentile": "CDC or WHO standardized charts plotting a child's height, weight, and head circumference against population norms",
+      "CPT 99381-99385": "Initial comprehensive preventive evaluation codes for new patients, categorized by age group",
+      "CPT 99391-99395": "Established patient preventive care codes for ongoing well-child visits by age group",
+      "ICD-10-CM": "International Classification of Diseases, 10th Revision, Clinical Modification - diagnostic coding system updated annually October 1",
+      "ADHD": "Attention Deficit Hyperactivity Disorder - one of the most common neurodevelopmental disorders in children",
+      "RSV": "Respiratory Syncytial Virus - common respiratory infection particularly dangerous for infants",
+      "G-tube": "Gastric tube placed surgically through abdominal wall for feeding and medication administration",
+      "Nasal cannula": "Soft plastic tube fitting into nose to deliver supplemental oxygen",
+      "Bright Futures": "AAP national health promotion and disease prevention initiative providing guidelines for well-child care",
+      "Catch-up immunization": "Accelerated vaccination schedule for children who have fallen behind on recommended immunizations",
+      "Failure to thrive (FTT)": "Insufficient weight gain or growth in a child compared to expected norms",
+      "Anticipatory guidance": "Proactive counseling provided to families about upcoming developmental stages and safety concerns"
+    }
+  },
+  "career_psychology": {
+    "summary": "Pediatricians report high job satisfaction (4.0/5) driven by deep relationships with patients and families, but face significant challenges including relatively lower compensation compared to other physician specialties, heavy administrative burden, and rising burnout rates. Only 42% are happy with their pay. The profession attracts individuals motivated by child advocacy and long-term patient relationships, but the lengthy training path (11+ years post-high school) and educational debt create financial stress.",
+    "career_path": [
+      "Pre-medical undergraduate education (4 years)",
+      "Medical school - MD or DO degree (4 years)",
+      "Pediatric residency - ACGME accredited (3 years)",
+      "Optional fellowship for subspecialization (2-3 years)",
+      "ABP Board Certification examination",
+      "Junior attending/staff pediatrician (years 1-5)",
+      "Senior pediatrician/partner (years 5-15)",
+      "Practice owner, department chief, or academic faculty (years 15+)"
+    ],
+    "salary_range": {
+      "entry_level": "$220,000 - $250,000",
+      "mid_career": "$275,000 - $310,000",
+      "senior": "$310,000 - $400,000",
+      "median_2026": "$310,000 total compensation (SalaryDr, 261 verified physicians)",
+      "25th_percentile": "$275,000",
+      "75th_percentile": "$350,000",
+      "base_salary_avg": "$277,871",
+      "bonus_avg": "$63,238 (19% receive bonuses)"
+    },
+    "fears": [
+      "Missing a serious diagnosis in a child",
+      "Medical malpractice litigation, especially in pediatric cases",
+      "Increasing administrative burden reducing time with patients",
+      "Financial viability of independent practice",
+      "Vaccine hesitancy and misinformation from parents",
+      "Rising student loan debt with lower specialty compensation",
+      "Burnout leading to career dissatisfaction or early retirement",
+      "Changes in healthcare policy affecting reimbursement rates"
+    ],
+    "motivation": [
+      "Deep, long-term relationships with patients and families",
+      "Advocating for children's health and well-being",
+      "Seeing children grow and develop over years of care",
+      "Gratitude from patients and families (top satisfaction source)",
+      "Being skilled at diagnosis and finding answers",
+      "Preventive care impact - immunizations, screenings, early intervention",
+      "Variety of conditions and age groups in daily practice",
+      "Teaching and mentoring medical students and residents"
+    ],
+    "burnout_factors": [
+      "Administrative work and documentation burden (62% cite charting as #1 burnout source)",
+      "Long hours and demanding on-call schedules",
+      "Lower compensation relative to other medical specialties",
+      "Insurance prior authorization battles",
+      "Emotional toll of treating seriously ill children",
+      "Managing difficult parent interactions and vaccine refusals",
+      "Increasing patient panel sizes with less time per visit",
+      "EHR inefficiencies and inbox management overload"
+    ]
+  },
+  "community": {
+    "summary": "The pediatric community is anchored by the American Academy of Pediatrics (AAP) with over 67,000 members, supported by academic societies including APA, APS, and SPR. The field has a strong conference culture with major national events and four regional pediatric research societies. Online communities thrive on medical forums, social media physician groups, and AAP chapter networks.",
+    "associations": [
+      "American Academy of Pediatrics (AAP) - largest pediatric professional organization (67,000+ members)",
+      "Academic Pediatric Association (APA)",
+      "American Pediatric Society (APS)",
+      "Society for Pediatric Research (SPR)",
+      "Association of Pediatric Program Directors (APPD)",
+      "National Association of Pediatric Nurse Practitioners (NAPNAP)",
+      "American Board of Pediatrics (ABP) - certification body"
+    ],
+    "events": [
+      "AAP National Conference & Exhibition - October 2-6, 2026, San Diego, CA (350+ educational sessions)",
+      "Pediatric Academic Societies (PAS) Meeting - April 24-27, 2026, Boston, MA (8,000+ attendees)",
+      "Western Society for Pediatric Research - January 15-17, 2026, Carmel, CA",
+      "Southern Society for Pediatric Research - February 26-28, 2026, New Orleans, LA",
+      "Eastern Society for Pediatric Research - March 13-15, 2026, Philadelphia, PA",
+      "Midwest Society for Pediatric Research - September 16-18, 2026, Indianapolis, IN",
+      "3rd Annual Pediatric Medical Education Conference (APPD) - September 25-26, 2026, Arlington, VA",
+      "15th Annual Southeastern Pediatric Research Conference - August 28, 2026"
+    ],
+    "online_communities": [
+      "AAP Community (members-only forums and discussion boards)",
+      "Pediatric-specific subreddits (r/Pediatrics, r/medicine)",
+      "Doximity (physician social network with pediatrics groups)",
+      "Physician Facebook groups (Pediatric Hospital Medicine, General Pediatrics)",
+      "AAP Section listservs and interest groups",
+      "PediaLink (AAP's online CME and learning platform)",
+      "KevinMD and medical blogs with pediatric focus"
+    ]
+  },
+  "market": {
+    "summary": "The pediatrician job market shows modest growth of 2-3% projected through 2032, below the overall average for all occupations. Demand is driven by continued population growth and the essential nature of pediatric care, but constrained by declining birth rates in some regions and shifts toward nurse practitioners in primary care. Compensation averages $310,000 total with significant geographic variation. The field is stable but faces competition from mid-level providers.",
+    "job_outlook": {
+      "growth_rate": "2-3% (2022-2032), below average for all occupations",
+      "projected_openings": "Approximately 2,200 openings annually from retirements and growth",
+      "bls_category": "Slower than average",
+      "demand_trend": "Stable with regional variations; rural areas face shortages"
+    },
+    "salary_market": {
+      "national_median": "$310,000 total compensation (2026)",
+      "entry_range": "$220,000 - $250,000",
+      "experienced_range": "$310,000 - $400,000",
+      "top_paying_states": ["California", "New York", "Texas", "Florida"],
+      "bls_median_2024": "$222,340"
+    },
+    "demand_drivers": [
+      "Growing child population requiring ongoing preventive care",
+      "Expanding scope of pediatric preventive services and mental health screening",
+      "Increasing complexity of childhood chronic conditions (obesity, ADHD, autism)",
+      "Telehealth expansion increasing access in underserved areas",
+      "State mandates for school-entry physicals and immunizations",
+      "Growing recognition of early childhood developmental screening importance"
+    ],
+    "market_trends": [
+      "Consolidation of independent practices into hospital-employed models",
+      "Rise of pediatric urgent care centers and retail clinics",
+      "Telehealth integration becoming standard for follow-up visits",
+      "AI-assisted documentation reducing administrative burden",
+      "Increasing competition from nurse practitioners and physician assistants in primary care",
+      "Value-based care models shifting from fee-for-service to outcome-based reimbursement",
+      "Growing demand for pediatric mental health services",
+      "EHR market growth of 6-7% year-over-year driven by AI and cloud computing"
+    ]
+  },
+  "quality_score": 0.82,
+  "sources_count": 31,
+  "verified_sources": 14,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "pediatricians general daily routine tasks responsibilities US 2025 2026",
+      "sources": [
+        "https://medical.rossu.edu/about/blog/what-is-a-pediatrician",
+        "https://www.indeed.com/hire/job-description/pediatrician",
+        "https://www.sgu.edu/school-of-medicine/blog/a-day-in-the-life-of-a-pediatrician/",
+        "https://www.onlinemeded.com/blog/day-in-the-life-of-a-pediatrician",
+        "https://drolfa.com/duties-and-responsibilities-of-a-pediatrician/",
+        "https://100hires.com/pediatrician-job-description.html",
+        "https://www.careerexplorer.com/careers/pediatrician/",
+        "https://medschool.ucla.edu/blog-post/a-day-in-the-life-of-a-pediatrician-at-ucla"
+      ]
+    },
+    {
+      "query": "pediatricians US regulatory requirements licensing board certification 2025 2026",
+      "sources": [
+        "https://www.abp.org/content/professional-standing-and-licensure-part-1",
+        "https://www.abp.org/faq/are-all-pediatricians-board-certified",
+        "https://www.abp.org/content/exam-dates-and-fees-general-pediatrics",
+        "https://www.abp.org/content/what-board-certification",
+        "https://www.abp.org/content/admission-requirements",
+        "https://www.abp.org/content/time-limited-eligibility-general-pediatrics"
+      ]
+    },
+    {
+      "query": "pediatricians EHR software tools technology used daily practice 2025 2026",
+      "sources": [
+        "https://www.pcc.com/",
+        "https://www.meditab.com/specialties/pediatric-ehr",
+        "https://softwarefinder.com/emr-software/pediatrics",
+        "https://softwarefinder.com/resources/best-pediatric-emr-ehr",
+        "https://emrfinder.com/pediatrics-emr/",
+        "https://develo.com/blog/best-emr-for-small-pediatric-practice"
+      ]
+    },
+    {
+      "query": "pediatrics medical terminology common terms procedures codes 2025",
+      "sources": [
+        "https://www.amazon.com/Coding-Pediatrics-2025-Pediatric-Documentation/dp/1610027493",
+        "https://downloads.aap.org/AAP/PDF/Coding%20Preventive%20Care.pdf",
+        "https://medexmbs.com/the-complete-2025-pediatric-cpt-coding-guide/",
+        "https://www.cincinnatichildrens.org/service/p/picu/terminology",
+        "https://www.docvilla.com/2025/03/27/common-icd-10-codes-for-pediatrics/"
+      ]
+    },
+    {
+      "query": "pediatrician career path salary burnout job satisfaction US 2025 2026",
+      "sources": [
+        "https://www.salarydr.com/specialty/pediatrics",
+        "https://research.com/careers/how-to-become-a-pediatrician",
+        "https://www.themdpreferrednetwork.com/physician-burnout-2026/",
+        "https://money.usnews.com/careers/best-jobs/pediatrician",
+        "https://careers.usnews.com/best-jobs/pediatrician/salary",
+        "https://weatherbyhealthcare.com/blog/pediatrician-salary-2024"
+      ]
+    },
+    {
+      "query": "pediatrician professional associations conferences communities US 2025 2026",
+      "sources": [
+        "https://aapexperience.org/",
+        "https://www.societyforpediatricresearch.org/events/",
+        "https://www.academicpeds.org/events/pediatric-academic-society-meeting/",
+        "https://conferenceindex.org/conferences/pediatrics/united-states",
+        "https://www.appd.org/meetings-education/pedsmededconference/"
+      ]
+    },
+    {
+      "query": "pediatrician job outlook market demand salary trends US 2025 2026",
+      "sources": [
+        "https://www.zippia.com/pediatrician-jobs/trends/",
+        "https://www.careerexplorer.com/careers/pediatrician/job-market/",
+        "https://careers.usnews.com/best-jobs/pediatrician/salary",
+        "https://money.usnews.com/careers/best-jobs/pediatrician",
+        "https://www.salarydr.com/specialty/pediatrics"
+      ]
+    }
+  ]
+}

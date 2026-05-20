@@ -1,0 +1,288 @@
+{
+  "profession_id": "us-obstetricians-and-gynecologists",
+  "profession_name": "Obstetricians and Gynecologists",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Work divided between clinic, labor & delivery (L&D), and operating room. Typical day starts with 6-7 AM hospital rounds checking on postpartum patients and laboring mothers. Morning clinic: 15-25 patients including prenatal visits, annual well-woman exams, Pap smears, contraception counseling, and gynecologic complaints. Afternoon may shift to scheduled surgeries — C-sections, hysterectomies, laparoscopic procedures, D&Cs, tubal ligations. On-call nights handling emergency deliveries, ruptured ectopics, placental abruptions. Most full-time OB-GYNs work 50-60 hours per week with 1-2 on-call nights per month. Significant time spent on EHR documentation, insurance prior authorizations, and results review. Unpredictable schedule — a single complicated delivery can derail an entire day's clinic.",
+    "key_documents": [
+      "Patient medical records (EHR)",
+      "Prenatal care records and flow sheets",
+      "Ultrasound and imaging reports",
+      "Labor and delivery notes (partograms)",
+      "Operative reports (C-section, hysterectomy)",
+      "Informed consent forms",
+      "Prior authorization forms for procedures",
+      "Birth certificates",
+      "ACOG Practice Bulletins and Committee Opinions",
+      "CME and Continuing Certification documentation (ABOG)",
+      "Malpractice insurance documentation",
+      "State-mandated reporting forms (maternal mortality reviews)"
+    ],
+    "deadlines": "ABOG Continuing Certification (CC) 6-year cycle with annual requirements; state medical license renewal (typically biennial); CME credit deadlines (varies by state, 50-100 hours per 2-year cycle); hospital credentialing renewal (every 2 years); DEA registration renewal (every 3 years); ACOG membership renewal; malpractice insurance renewal annually; CMS MIPS/QPP quality reporting deadlines (March for prior year).",
+    "seasonality": "Birth rates show seasonal patterns — highest in late summer/early fall (August-October), lowest in January-February. Flu season increases obstetric complications. ACOG Annual Meeting in May. Residency match season (October-March) affects academic programs. Open enrollment season (November-January) shifts patient insurance panels. Holiday periods often see increased on-call burden. Summer months bring more elective gynecologic surgeries as patients schedule around school/vacation."
+  },
+  "regulatory": {
+    "laws_and_standards": [
+      "State medical licensing requirements (varies by state)",
+      "ABOG board certification (American Board of Obstetrics and Gynecology)",
+      "EMTALA (Emergency Medical Treatment and Labor Act) — must stabilize any patient in labor",
+      "HIPAA patient privacy compliance",
+      "Dobbs v. Jackson Women's Health Organization (2022) — overturned Roe v. Wade, state-by-state abortion laws",
+      "State-specific abortion restrictions and bans (14 states with near-total bans as of 2025)",
+      "Born-Alive Infants Protection Act",
+      "CMS Medicare/Medicaid compliance and MIPS/QPP quality reporting",
+      "MACRA (Medicare Access and CHIP Reauthorization Act)",
+      "Stark Law and Anti-Kickback Statute",
+      "FDA regulations for drugs, devices, and biologics used in OB-GYN",
+      "Title X Family Planning Program requirements",
+      "State mandatory reporting laws (child abuse, communicable diseases)",
+      "Maternal mortality review committee requirements (state-level)",
+      "Informed consent laws (state-specific, many with mandatory waiting periods for certain procedures)"
+    ],
+    "licensing": "MD or DO degree required (4 years undergraduate + 4 years medical school). Completion of accredited OB-GYN residency (4 years). USMLE Step 1, 2, and 3 (or COMLEX for DO). State medical license from state medical board. Board certification through ABOG: Specialty Qualifying Examination (written, taken during PGY-4 or after residency) followed by Certifying Examination (oral, within 5 years of qualifying exam). Continuing Certification (CC, formerly MOC) on 6-year cycle — renamed from Maintenance of Certification in January 2025 — includes lifelong learning articles, self-assessment, and practice improvement activities. Optional subspecialty fellowships and certification: Maternal-Fetal Medicine (MFM), Gynecologic Oncology, Reproductive Endocrinology and Infertility (REI), Female Pelvic Medicine and Reconstructive Surgery (FPMRS), Complex Family Planning. DEA registration for controlled substances.",
+    "penalties": "Malpractice lawsuits — OB-GYN has among the highest litigation rates of any specialty; approximately 85% of OB-GYNs face at least one malpractice claim during their career. Average malpractice insurance premiums $46,000/year nationally, ranging from $30,000 in low-risk states to $205,000+ in high-litigation areas (Miami-Dade County, Long Island). Post-Dobbs criminal liability risk for performing abortions in restrictive states — penalties range from felony charges to prison time (up to 99 years in some states). Medical board disciplinary actions: suspension, restriction, revocation of license. CMS penalties for quality reporting non-compliance. Hospital privilege revocation. Loss of board certification for failure to complete Continuing Certification requirements.",
+    "regulatory_bodies": [
+      "State Medical Boards",
+      "ABOG (American Board of Obstetrics and Gynecology)",
+      "ACGME (Accreditation Council for Graduate Medical Education)",
+      "CMS (Centers for Medicare & Medicaid Services)",
+      "FDA (Food and Drug Administration)",
+      "DEA (Drug Enforcement Administration)",
+      "Joint Commission (hospital accreditation)",
+      "CDC (Centers for Disease Control and Prevention — maternal mortality tracking)",
+      "HRSA (Health Resources and Services Administration)",
+      "State Departments of Health"
+    ]
+  },
+  "tools": {
+    "software": [
+      "Epic — dominant EHR platform for hospital-based OB-GYN, includes Stork (obstetric module) for antepartum, intrapartum, and postpartum documentation",
+      "Oracle Health (Cerner) — second-largest hospital EHR with OB-specific workflows",
+      "eClinicalWorks — popular in outpatient OB-GYN practices, OB-specific templates",
+      "Greenway Health (Intergy) — OB-GYN specialty EHR with flowsheets and prenatal tracking",
+      "NextGen Healthcare — ambulatory OB-GYN practice management and EHR",
+      "athenahealth — cloud-based EHR with OB-GYN templates",
+      "Centricity (GE Healthcare) — legacy system still in some practices",
+      "PeriGen PeriCALM — perinatal surveillance and decision support system",
+      "Tricefy — cloud-based ultrasound image management and sharing",
+      "ViewPoint (GE Healthcare) — OB-GYN ultrasound reporting software",
+      "QPath (Telexy Healthcare) — ultrasound reporting and quality assurance"
+    ],
+    "platforms": [
+      "UpToDate — clinical decision support for evidence-based OB-GYN practice",
+      "ACOG Practice Bulletins and Committee Opinions (online access)",
+      "Doximity — physician networking and telehealth platform",
+      "Epocrates — drug reference and interaction checker",
+      "MDCalc — clinical calculators (Bishop score, estimated fetal weight, due date)",
+      "PubMed/MEDLINE — medical literature searches",
+      "CochranLibrary — systematic reviews for evidence-based practice",
+      "Zoom/Doxy.me/Amwell — telehealth platforms",
+      "OBG Project — curated OB-GYN literature summaries"
+    ],
+    "gov_portals": [
+      "CMS QPP Portal (Quality Payment Program / MIPS)",
+      "NPDB (National Practitioner Data Bank)",
+      "DEA registration portal (CSOS)",
+      "State medical board licensing portals",
+      "CDC MMRIA (Maternal Mortality Review Information Application)",
+      "FDA MedWatch — adverse event reporting",
+      "State vital records systems (birth certificate filing)"
+    ],
+    "hardware_and_devices": [
+      "Ultrasound machines (GE Voluson, Philips EPIQ, Samsung HERA) — essential for OB and GYN imaging",
+      "Fetal heart rate monitors (electronic fetal monitoring / cardiotocography)",
+      "Colposcope — cervical examination",
+      "Hysteroscope — intrauterine visualization",
+      "Laparoscopic towers (Stryker, Karl Storz, Olympus) — minimally invasive surgery",
+      "da Vinci Surgical System (Intuitive Surgical) — robotic-assisted gynecologic surgery",
+      "Fetal scalp electrode and intrauterine pressure catheter",
+      "Vacuum extractors and forceps — assisted vaginal delivery",
+      "LEEP (Loop Electrosurgical Excision Procedure) equipment"
+    ],
+    "pain_points": "Interoperability between ultrasound systems and EHR remains a major friction point despite 2026 improvements — 60% faster chart prep when integrated, but many practices still lack full integration. Prior authorization burden consumes hours weekly. EHR documentation demands (clicking through OB flowsheets, fetal monitoring strips) detract from patient interaction. Multiple disconnected systems for labs, imaging, and clinical notes. State-by-state variation in reporting requirements creates compliance complexity, especially post-Dobbs."
+  },
+  "terminology": {
+    "jargon": [
+      "Gravida/Para (G/P) — pregnancy and birth history notation (e.g., G3P2 = 3 pregnancies, 2 deliveries)",
+      "GTPAL — Gravida, Term, Preterm, Abortions, Living children",
+      "Primip/Multip — primipara (first birth) / multipara (multiple births)",
+      "Cerclage — cervical stitch to prevent preterm birth",
+      "Pit drip — Pitocin (oxytocin) infusion for labor induction/augmentation",
+      "Strip — fetal heart rate monitoring tracing",
+      "Decels — decelerations in fetal heart rate (early, variable, late)",
+      "Category I/II/III — fetal heart rate tracing classification",
+      "TOLAC — Trial of Labor After Cesarean",
+      "Crash section — emergency cesarean delivery",
+      "Complete / Incomplete — cervical dilation status",
+      "Effacement — thinning of the cervix",
+      "Station — fetal head position relative to ischial spines (-3 to +3)",
+      "Boggy uterus — soft, poorly contracted uterus (postpartum hemorrhage risk)",
+      "Fundal height — measurement of uterine growth during pregnancy",
+      "Leopold maneuvers — abdominal palpation to determine fetal position",
+      "Montevideo units — measurement of uterine contraction adequacy"
+    ],
+    "abbreviations": [
+      "OB-GYN — Obstetrics and Gynecology",
+      "C/S or C-section — Cesarean Section",
+      "SVD or NSVD — Normal Spontaneous Vaginal Delivery",
+      "FHR — Fetal Heart Rate",
+      "EFM — Electronic Fetal Monitoring",
+      "NST — Non-Stress Test",
+      "BPP — Biophysical Profile",
+      "AFI — Amniotic Fluid Index",
+      "GBS — Group B Streptococcus",
+      "GDM — Gestational Diabetes Mellitus",
+      "PIH — Pregnancy-Induced Hypertension",
+      "HELLP — Hemolysis, Elevated Liver enzymes, Low Platelets",
+      "PPROM — Preterm Premature Rupture of Membranes",
+      "IUGR/FGR — Intrauterine Growth Restriction / Fetal Growth Restriction",
+      "PPH — Postpartum Hemorrhage",
+      "D&C — Dilation and Curettage",
+      "D&E — Dilation and Evacuation",
+      "LEEP — Loop Electrosurgical Excision Procedure",
+      "BSO — Bilateral Salpingo-Oophorectomy",
+      "TAH — Total Abdominal Hysterectomy",
+      "TLH — Total Laparoscopic Hysterectomy",
+      "IUD/IUC — Intrauterine Device / Intrauterine Contraception",
+      "LARC — Long-Acting Reversible Contraception",
+      "EDD — Estimated Due Date (Estimated Date of Delivery)",
+      "LMP — Last Menstrual Period",
+      "AMA — Advanced Maternal Age (35+)",
+      "MFM — Maternal-Fetal Medicine",
+      "REI — Reproductive Endocrinology and Infertility",
+      "ACOG — American College of Obstetricians and Gynecologists",
+      "ABOG — American Board of Obstetrics and Gynecology",
+      "VBAC — Vaginal Birth After Cesarean",
+      "BMI — Body Mass Index (critical for OB risk stratification)",
+      "IOL — Induction of Labor"
+    ]
+  },
+  "career_psychology": {
+    "career_levels": [
+      "Medical Student with OB-GYN interest (MS3-MS4 clerkship and sub-internship)",
+      "OB-GYN Resident (PGY-1 through PGY-4, 4-year program)",
+      "Subspecialty Fellow (MFM, GYN-ONC, REI, FPMRS, Complex Family Planning — 2-3 additional years)",
+      "Early-Career OB-GYN (0-5 years post-residency, establishing practice)",
+      "Mid-Career OB-GYN (5-15 years, partnership track or established employed physician)",
+      "Senior OB-GYN (15-25 years, often shift toward GYN-only as call burden increases)",
+      "Late-Career OB-GYN (25+ years, many drop obstetrics and maintain GYN-only practice)",
+      "Academic Track: Instructor → Assistant Professor → Associate Professor → Professor → Division/Department Chief"
+    ],
+    "fears": [
+      "Malpractice lawsuits — 85% face at least one claim; OB claims have longest tail (birth injury suits filed up to 21 years later when child reaches majority)",
+      "Catastrophic maternal or neonatal outcome (maternal death, birth injury, neonatal death)",
+      "Post-Dobbs criminal prosecution for providing abortion care in restrictive states",
+      "Missing an ectopic pregnancy or preeclampsia progression",
+      "Shoulder dystocia and brachial plexus injury during delivery",
+      "Burnout leading to medical errors during exhausted on-call shifts",
+      "Declining reimbursements while malpractice premiums and overhead rise",
+      "Workforce shortage leading to unsustainable patient volumes and call schedules",
+      "Loss of procedural skills if shifting to GYN-only later in career",
+      "AI and scope-of-practice expansion reducing traditional OB-GYN role"
+    ],
+    "motivation": [
+      "Delivering babies and sharing in one of life's most meaningful moments",
+      "Long-term patient relationships spanning decades of women's health",
+      "Dual specialty offers variety — surgery, primary care, and acute care in one field",
+      "Ability to save lives in obstetric emergencies (eclampsia, hemorrhage, ectopic rupture)",
+      "Advocacy for women's health and reproductive rights",
+      "Intellectual stimulation from complex medical decision-making",
+      "Procedural satisfaction from surgeries (laparoscopy, robotic surgery, hysteroscopy)",
+      "Community impact — serving as the primary or sole physician for many women"
+    ],
+    "burnout": "Nearly 30% of OB-GYNs report burnout, with 23% reporting burnout combined with depression (Medscape 2025). OB-GYN ranks among the top specialties for burnout. Key drivers: unpredictable hours with overnight L&D call; emotionally taxing outcomes (stillbirth, maternal death, birth injury); excessive EHR documentation; prior authorization battles; malpractice anxiety (constant litigation threat); post-Dobbs moral distress in restrictive states (42% concerned about personal legal risk); 40% report worsened work-life balance over past 3 years; 66% would accept a pay cut for better work-life balance. Female OB-GYNs (who comprise ~60% of the workforce) face 27% higher burnout risk. Many OB-GYNs drop obstetrics mid-career (shift to GYN-only) to reduce call burden, accelerating the OB shortage."
+  },
+  "community": {
+    "reddit": [
+      "r/obgyn",
+      "r/medicine",
+      "r/Residency",
+      "r/medicalschool",
+      "r/physicians",
+      "r/gynecology"
+    ],
+    "linkedin": [
+      "American College of Obstetricians and Gynecologists (ACOG)",
+      "OB-GYN professionals groups",
+      "Society for Maternal-Fetal Medicine",
+      "Women in Medicine groups"
+    ],
+    "associations": [
+      "ACOG (American College of Obstetricians and Gynecologists) — primary professional organization, 62,000+ members",
+      "ABOG (American Board of Obstetrics and Gynecology) — board certification body",
+      "ACOOG (American College of Osteopathic Obstetricians and Gynecologists) — for DO OB-GYNs",
+      "SMFM (Society for Maternal-Fetal Medicine) — high-risk obstetrics subspecialty",
+      "SGO (Society of Gynecologic Oncology) — gynecologic cancer subspecialty",
+      "ASRM (American Society for Reproductive Medicine) — fertility and REI",
+      "AAGL (American Association of Gynecologic Laparoscopists) — minimally invasive GYN surgery",
+      "SFP (Society of Family Planning) — contraception and abortion research",
+      "AUGS (American Urogynecologic Society) — pelvic floor disorders",
+      "AMA (American Medical Association) — general physician advocacy",
+      "NMAAHP (National Medical Association) — Black physicians advocacy"
+    ],
+    "conferences": [
+      "ACOG Annual Clinical & Scientific Meeting (ACSM) — May 2025 Minneapolis, MN; May 1-3 2026 Washington, DC. Focus areas: menopause, mental health, emergency obstetrics, well-being",
+      "SMFM Annual Pregnancy Meeting — January/February, largest gathering of MFM specialists",
+      "SGO Annual Meeting — March, gynecologic oncology",
+      "AAGL Global Congress — November, minimally invasive GYN surgery",
+      "ASRM Scientific Congress — October, reproductive medicine",
+      "ACOG District/Section Meetings — regional meetings throughout the year",
+      "ACOG Cefalo National Leadership Institute — March 18-22 2026, Durham NC"
+    ],
+    "online_communities": [
+      "ACOG Community Forums (members only)",
+      "OBG Project (curated literature reviews)",
+      "OBG Management journal community",
+      "Doximity OB-GYN communities",
+      "Figure 1 (medical image sharing app)",
+      "Student Doctor Network OB-GYN forums",
+      "The OB-GYN Podcast communities"
+    ]
+  },
+  "market": {
+    "salary_by_level": {
+      "resident_usd": 65000,
+      "entry_level_usd": 275000,
+      "mid_level_usd": 350000,
+      "senior_level_usd": 420000,
+      "subspecialty_mfm_usd": 450000,
+      "subspecialty_gyn_onc_usd": 500000,
+      "subspecialty_rei_usd": 475000
+    },
+    "average_salary_usd": 372000,
+    "malpractice_insurance_avg_usd": 46000,
+    "malpractice_insurance_range": "$30,000 (low-risk states with tort reform) to $205,000+ (Miami-Dade County, Long Island NY)",
+    "job_count_estimate": "Approximately 22,000-24,000 active OB-GYN job postings. Nearly half of US counties lack a single obstetrician, midwife, or birthing facility — maternity care deserts. HRSA projects only 82% of OB-GYN demand will be met by 2037; 46% shortage in non-metro areas by 2038.",
+    "work_arrangements": "Hospital-employed (growing trend, now majority), private practice (declining but still significant), academic medical centers, group practices, locum tenens. On-call requirements are standard for those practicing obstetrics. Growing trend of OB-GYN hospitalists (laborists) who work scheduled shifts on L&D. Telehealth expanding for routine GYN follow-ups, contraception counseling, and postpartum visits. Some OB-GYNs shift to GYN-only practice mid-career to eliminate call.",
+    "trends": [
+      "Critical OB-GYN shortage worsening — supply projected to decrease 7% while demand increases 4% by 2030",
+      "Post-Dobbs physician migration from restrictive to protective states, accelerating maternity care deserts",
+      "64% of OB-GYNs believe Dobbs has worsened maternal mortality; 40% in ban states feel constrained in emergency care",
+      "US maternal mortality rate: 17.9 per 100,000 live births (2024) — highest among wealthy nations; Black women face 3x higher rate (44.8 vs 14.2 for White women)",
+      "Rise of OB-GYN hospitalist (laborist) model reducing individual call burden",
+      "Robotic surgery adoption expanding (da Vinci) for hysterectomy, myomectomy, sacrocolpopexy",
+      "AI integration in fetal monitoring interpretation, ultrasound analysis, and EHR clinical decision support",
+      "Telehealth adoption for prenatal care, postpartum follow-up, and GYN consultations",
+      "EHR-ultrasound interoperability becoming standard in 2026 — 60% faster chart prep when integrated",
+      "Increasing midwife and APP (Advanced Practice Provider) collaboration to address workforce gaps",
+      "Value-based care models shifting reimbursement from fee-for-service to bundled maternity payments",
+      "Growing demand for menopause specialists as Baby Boomer and Gen X populations age"
+    ]
+  },
+  "quality_score": 0.91,
+  "sources_count": 10,
+  "verified_sources": 9,
+  "confidence": "high",
+  "sources": [
+    "https://www.acog.org/ — American College of Obstetricians and Gynecologists, primary professional organization",
+    "https://www.abog.org/ — American Board of Obstetrics and Gynecology, board certification body",
+    "https://www.cdc.gov/nchs/data/hestat/hestat113.htm — CDC Maternal Mortality Rates in the United States 2024",
+    "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2814017 — JAMA Network: OB-GYN Perceived Impacts of Post-Dobbs State Abortion Bans",
+    "https://www.aamc.org/news/fallout-dobbs-field-ob-gyn — AAMC: The Fallout of Dobbs on the Field of OB-GYN",
+    "https://www.amnhealthcare.com/blog/physician/perm/obgyn-salary-report-and-2025-outlook/ — AMN Healthcare OB-GYN Salary Report 2025",
+    "https://www.caliberhealth.com/blog/ob-gyn-shortage — Caliber Health: The OB-GYN Shortage in 2025 and Beyond",
+    "https://www.medscape.com/viewarticle/ob-gyn-workforce-projections-suggest-substantial-shortfalls-2026a100023e — Medscape: Severe OB-GYN Workforce Shortages Predicted by 2035",
+    "https://www.commonwealthfund.org/publications/issue-briefs/2025/jul/maternal-mortality-united-states-2025 — Commonwealth Fund: Maternal Mortality in the United States 2025",
+    "https://hitconsultant.net/2026/01/13/ob-gyn-ultrasound-interoperability-standard-2026/ — HIT Consultant: OB-GYN Ultrasound Interoperability Standard 2026"
+  ]
+}

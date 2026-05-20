@@ -1,0 +1,397 @@
+{
+  "profession_id": "us-recreational-therapists",
+  "profession_name": "Recreational Therapists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Recreational therapists plan, direct, and coordinate recreation-based medical treatment programs for people with disabilities, injuries, or illnesses. They work in hospitals, nursing homes, rehabilitation centers, psychiatric facilities, and community settings. About 40% work full time in hospital or nursing home settings, using activities like sports, art, music, dance, and community outings as therapeutic interventions.",
+    "typical_tasks": [
+      "Assess patients' needs through observation, medical records, standardized tests, and interviews with patients, families, and care team",
+      "Develop individualized treatment plans aligned with patients' therapeutic goals and interests",
+      "Conduct therapy sessions using arts and crafts, sports, games, music, dance, drama, and relaxation techniques",
+      "Lead community integration exercises (riding public transit, restaurant visits, navigating public spaces)",
+      "Teach stress reduction techniques including meditation, deep breathing, and progressive muscle relaxation",
+      "Lead group fitness activities including stretching, aerobic exercise, strength training, and team sports",
+      "Plan and supervise therapeutic field trips and outdoor recreation activities",
+      "Document patient progress and adjust treatment plans based on observed outcomes",
+      "Confer with interdisciplinary treatment team members (physicians, nurses, OTs, PTs, social workers)",
+      "Develop discharge plans and recommend community leisure resources for patients",
+      "Prepare and submit reports and charts reflecting patient reactions, progress, or regression",
+      "Educate patients and families on adaptive recreation techniques and community resources"
+    ],
+    "key_documents": [
+      "Individualized treatment plan (ITP)",
+      "Patient assessment reports (using LCM, CERT, FACTR-R)",
+      "SOAP notes and progress notes",
+      "Discharge planning documentation",
+      "MDS 3.0 (Minimum Data Set) assessments for nursing home residents",
+      "Insurance authorization and billing documentation (CPT codes)",
+      "Interdisciplinary care plan contributions",
+      "Activity program schedules and participation records",
+      "Incident and adverse event reports"
+    ],
+    "deadlines": {
+      "patient_reassessment": "Every 30-90 days depending on facility and payer requirements",
+      "mds_assessment": "MDS 3.0 required at admission, quarterly, annually, and upon significant change",
+      "progress_notes": "Weekly to monthly depending on setting and treatment intensity",
+      "treatment_plan_review": "Every 30 days in acute care; every 90 days in long-term care",
+      "certification_renewal": "Every 5 years for CTRS certification through NCTRC",
+      "continuing_education": "50 clock hours per 5-year CTRS certification cycle"
+    },
+    "seasonality": "National Recreation Therapy Month is celebrated in February. Summer brings increased outdoor therapeutic programming and community reintegration activities. Holiday seasons can intensify psychiatric caseloads. Long-term care facilities maintain steady year-round demand. Conference season peaks in fall (ATRA Annual Conference typically October)."
+  },
+  "regulatory": {
+    "summary": "Recreational therapists are nationally certified through NCTRC as Certified Therapeutic Recreation Specialists (CTRS). Five states (New Hampshire, New Jersey, North Carolina, Oklahoma, Utah) require state licensure. Other states are actively pursuing licensure legislation. The CTRS credential is the recognized professional standard, and most employers require or strongly prefer it.",
+    "key_laws": [
+      {
+        "name": "NCTRC National Certification Standards",
+        "description": "National credentialing standards for Certified Therapeutic Recreation Specialists, including education, internship, and examination requirements",
+        "url": "https://nctrc.org/how-to-become-a-ctrs/path-to-professional-certification/",
+        "status": "Active — primary national credential"
+      },
+      {
+        "name": "State Licensure Laws (5 states)",
+        "description": "New Hampshire, New Jersey, North Carolina, Oklahoma, and Utah require state licensure to practice recreational therapy; additional states pursuing legislation",
+        "url": "https://www.atra-online.com/certification-and-licensure",
+        "status": "Active in 5 states; expanding"
+      },
+      {
+        "name": "CMS Conditions of Participation",
+        "description": "Centers for Medicare & Medicaid Services requirements for activity professionals in skilled nursing facilities, relevant to RT/TR practice in long-term care",
+        "status": "Active — federal regulation"
+      },
+      {
+        "name": "ATRA Standards of Practice",
+        "description": "Professional practice standards and code of ethics governing recreational therapy service delivery",
+        "url": "https://www.atra-online.com/",
+        "status": "Active — professional standard"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Baccalaureate degree or higher with major in Therapeutic Recreation or related field",
+        "Minimum 18 semester hours (24 quarter hours) of RT/TR content coursework across at least 6 courses",
+        "Minimum 560-hour, 14-week supervised internship under an active CTRS",
+        "Pass the NCTRC Certification Exam (3-hour exam, available in English, French-Canadian, Spanish)",
+        "State licensure in NH, NJ, NC, OK, or UT (where applicable)",
+        "50 clock hours of continuing education per 5-year certification cycle for renewal"
+      ],
+      "certifications": [
+        "CTRS — Certified Therapeutic Recreation Specialist (NCTRC)",
+        "CPRP — Certified Park and Recreation Professional (NRPA, for community-based RT)",
+        "State-specific RT/TR licenses (varies by state)"
+      ]
+    },
+    "penalties": "Practicing without required state licensure in the five licensure states can result in fines, injunctions, and legal action. Loss of CTRS certification for failure to meet continuing education requirements or ethical violations. Employers in non-licensure states typically will not hire practitioners without CTRS certification.",
+    "controlling_bodies": [
+      "National Council for Therapeutic Recreation Certification (NCTRC)",
+      "American Therapeutic Recreation Association (ATRA)",
+      "State licensing boards (NH, NJ, NC, OK, UT)",
+      "Centers for Medicare & Medicaid Services (CMS)"
+    ]
+  },
+  "tools": {
+    "summary": "Recreational therapists use standardized assessment instruments specific to therapeutic recreation, combined with facility-wide EHR/EMR systems for documentation. Activity planning, adaptive equipment, and increasingly AI-powered documentation tools support daily practice.",
+    "primary_tools": [
+      {
+        "name": "Leisure Competence Measure (LCM)",
+        "description": "Behavior-anchored rating scale with 8 subscales measuring leisure functioning levels, used across rehab, geriatric, psych, and long-term care settings"
+      },
+      {
+        "name": "CERT (Comprehensive Evaluation in Recreational Therapy)",
+        "description": "Assessment tool for psychiatric and short-term acute care settings, observing general behavior, individual performance, and group performance"
+      },
+      {
+        "name": "FACTR-R (Functional Assessment of Characteristics for Therapeutic Recreation - Revised)",
+        "description": "Measures functional skills for leisure involvement across 11 areas in physical, cognitive, and social/emotional domains"
+      },
+      {
+        "name": "FIM (Functional Independence Measure)",
+        "description": "Standardized assessment of functional independence in ADLs including self-care, mobility, communication, and cognition; used in interdisciplinary team settings"
+      },
+      {
+        "name": "PointClickCare EHR",
+        "description": "Cloud-based electronic health record platform widely used in long-term care and skilled nursing facilities for documentation, care plans, and MDS assessments"
+      },
+      {
+        "name": "MDS 3.0 (Minimum Data Set)",
+        "description": "Federally mandated standardized assessment for nursing home residents, used for care planning and Medicare reimbursement"
+      }
+    ],
+    "secondary_tools": [
+      "TheraScribe — treatment planning and progress note documentation for behavioral health settings",
+      "TherapyNotes / TheraPlatform — practice management and EHR for outpatient therapy settings",
+      "Epic / Cerner (Oracle Health) — hospital-based EMR systems for interdisciplinary documentation",
+      "Microsoft Office / Google Workspace — activity scheduling, reporting, and communication",
+      "Adaptive recreation equipment (modified sports gear, sensory stimulation tools, art supplies)",
+      "AI-powered note-taking tools for clinical documentation automation",
+      "Assessment Tools for Recreational Therapy and Related Fields (reference text by Burlingame & Blaschko, 4th ed.)",
+      "Activity planning and scheduling software"
+    ],
+    "pain_points": [
+      "Limited RT-specific EHR modules — most documentation systems are designed for PT/OT/nursing, not therapeutic recreation",
+      "Time-consuming documentation requirements that reduce direct patient contact time",
+      "Difficulty quantifying therapeutic recreation outcomes in formats recognized by insurance payers",
+      "Integration of RT-specific assessment data into facility-wide EHR systems",
+      "Lack of standardized billing codes specific to recreational therapy services",
+      "Manual tracking of group activity participation and individual progress",
+      "Limited technology budgets for adaptive recreation equipment and software"
+    ]
+  },
+  "terminology": {
+    "summary": "Recreational therapy uses specialized terminology combining healthcare clinical language with recreation and leisure science concepts. Key abbreviations center around certification (CTRS, NCTRC), assessment tools (LCM, CERT, FACTR-R), and treatment documentation standards.",
+    "terms": {
+      "CTRS": "Certified Therapeutic Recreation Specialist — national professional credential from NCTRC",
+      "NCTRC": "National Council for Therapeutic Recreation Certification — the certifying body for recreational therapists",
+      "ATRA": "American Therapeutic Recreation Association — primary professional membership organization",
+      "RT": "Recreational Therapy — the clinical practice of using recreation as therapeutic intervention",
+      "TR": "Therapeutic Recreation — used interchangeably with RT; systematic use of recreation to address assessed needs",
+      "LCM": "Leisure Competence Measure — standardized assessment tool measuring leisure functioning across 8 domains",
+      "CERT": "Comprehensive Evaluation in Recreational Therapy — psychiatric/acute care assessment tool",
+      "FACTR-R": "Functional Assessment of Characteristics for Therapeutic Recreation (Revised) — functional skills assessment across 3 domains",
+      "FIM": "Functional Independence Measure — standardized functional assessment used in interdisciplinary settings",
+      "MDS": "Minimum Data Set — federally mandated assessment for nursing home residents (current version 3.0)",
+      "ITP": "Individualized Treatment Plan — patient-specific therapeutic recreation program plan",
+      "ADL": "Activities of Daily Living — basic self-care tasks (bathing, dressing, eating, toileting)",
+      "IADL": "Instrumental Activities of Daily Living — complex tasks like cooking, shopping, managing finances",
+      "SOAP": "Subjective, Objective, Assessment, Plan — standard clinical note format",
+      "CMS": "Centers for Medicare & Medicaid Services — federal agency regulating healthcare reimbursement",
+      "CPT": "Current Procedural Terminology — billing codes used for therapy service reimbursement",
+      "IDT": "Interdisciplinary Team — collaborative care team including physicians, nurses, PT, OT, RT, SW",
+      "CE/CEU": "Continuing Education / Continuing Education Unit — required for CTRS certification maintenance",
+      "TRT": "Therapeutic Recreation Technician — paraprofessional position (certificate level, no bachelor's degree)",
+      "APIE": "Assessment, Planning, Implementation, Evaluation — the therapeutic recreation process model",
+      "QoL": "Quality of Life — holistic outcome measure frequently referenced in RT interventions"
+    }
+  },
+  "career_psychology": {
+    "summary": "Recreational therapists earn a median salary around $55,000-$68,000 with 3-4% projected job growth. The profession offers deep personal fulfillment through helping patients regain independence and joy through recreation, but faces challenges including limited professional recognition, modest salaries relative to education requirements, and burnout driven by high caseloads and administrative burdens.",
+    "career_path": [
+      "Bachelor's degree in Therapeutic Recreation or Recreation/Leisure with TR option",
+      "560-hour supervised internship under active CTRS",
+      "Pass NCTRC exam and earn CTRS credential",
+      "Entry-level Recreational Therapist (hospitals, nursing homes, rehab centers)",
+      "Senior Recreational Therapist / Lead Therapist (3-5 years experience)",
+      "Recreation Therapy Supervisor / Program Coordinator",
+      "Recreation Therapy Director / Department Manager",
+      "Master's degree for advanced clinical roles, education, or research",
+      "Clinical Specialist / Consultant in specialized populations (pediatric, TBI, behavioral health)",
+      "Academic faculty / Research (doctoral pathway)"
+    ],
+    "salary_range": {
+      "entry_level": "$42,000 - $50,000/year",
+      "mid_career": "$55,000 - $68,000/year",
+      "senior": "$70,000 - $97,000/year",
+      "top_earners": "Up to $132,000/year (90th percentile)",
+      "average_2026": "$67,955 - $73,740/year (Salary.com / ZipRecruiter 2026)",
+      "median_bls": "$60,910/year (BLS recent data)"
+    },
+    "fears": [
+      "Low salary relative to education and certification requirements compared to PT/OT peers",
+      "Limited professional recognition — often confused with recreation/activities directors",
+      "Scope of practice encroachment by activity professionals without CTRS credentials",
+      "Elimination of RT positions in budget cuts due to perception as 'non-essential' service",
+      "Patient safety incidents during community outings or physical activities",
+      "Insurance reimbursement challenges and justifying RT services to payers",
+      "Limited licensure protections in 45 states without RT licensure laws"
+    ],
+    "motivation": [
+      "Witnessing patients regain independence, confidence, and joy through recreation",
+      "Creative and varied daily work using diverse therapeutic modalities",
+      "Making meaningful connections with patients through shared activities",
+      "Helping patients reintegrate into their communities post-injury or illness",
+      "Working as part of an interdisciplinary healthcare team",
+      "Advocating for the therapeutic value of leisure and recreation in healthcare",
+      "Improving quality of life for individuals with disabilities and chronic conditions"
+    ],
+    "burnout_factors": [
+      "High caseloads with increasing documentation requirements reducing direct patient time",
+      "Emotional toll of working with seriously ill, injured, or cognitively impaired populations",
+      "Frustration with limited professional recognition and being undervalued in healthcare hierarchy",
+      "Salary dissatisfaction relative to education investment and clinical responsibilities",
+      "Administrative burden including scheduling, billing justification, and compliance reporting",
+      "Staffing shortages leading to coverage of multiple units or facilities",
+      "Over 60% of therapists across the field report burnout symptoms (2026 industry surveys)"
+    ]
+  },
+  "community": {
+    "summary": "The recreational therapy community is organized primarily around ATRA and NCTRC, with active state-level associations and growing online communities. The ATRA Annual Conference is the largest national gathering, and February is celebrated as National Recreation Therapy Month.",
+    "associations": [
+      {
+        "name": "American Therapeutic Recreation Association (ATRA)",
+        "url": "https://www.atra-online.com/",
+        "type": "Primary national professional membership organization, founded 1984"
+      },
+      {
+        "name": "National Council for Therapeutic Recreation Certification (NCTRC)",
+        "url": "https://nctrc.org/",
+        "type": "National certifying body for CTRS credential"
+      },
+      {
+        "name": "National Recreation and Park Association (NRPA)",
+        "url": "https://www.nrpa.org/",
+        "type": "Broader recreation profession association; relevant for community-based RT"
+      },
+      {
+        "name": "State Recreational Therapy Associations",
+        "url": "https://www.atra-online.com/",
+        "type": "State-level chapters (e.g., WSTRA, ILRTA, RT-Indiana) providing local networking and CE"
+      },
+      {
+        "name": "Task Force for Licensure of Recreational Therapy Practice",
+        "url": "https://nctrc.org/professional-organizations/task-force-for-licensure-of-recreational-therapy-practice/",
+        "type": "Multi-organization coalition advancing RT licensure in all states"
+      }
+    ],
+    "events": [
+      "ATRA Annual Conference 2025 — San Antonio, TX (Menger Hotel) — SOLD OUT",
+      "ATRA Annual Conference 2026 — Brea, Orange County, CA (October 17-19, 2026)",
+      "National Recreation Therapy Month — February (annual awareness campaign)",
+      "ATRA Virtual Summits and Webinar Series (ongoing CE opportunities)",
+      "State association conferences and workshops (various dates throughout year)"
+    ],
+    "online_communities": [
+      "Rec Therapy Today (rectherapytoday.com) — news, resources, and CE for RT professionals",
+      "ATRA Facebook community and social media channels",
+      "Reddit r/recreationaltherapy — community discussions and career advice",
+      "LinkedIn Recreational Therapy / Therapeutic Recreation professional groups",
+      "NCTRC online resources and certification candidate forums",
+      "State association websites and email listservs"
+    ]
+  },
+  "market": {
+    "summary": "Recreational therapy is a small but stable occupation with approximately 17,900 employed professionals and 1,300 annual openings. Growth is projected at 3-4% from 2024-2034 (about as fast as average). Demand is driven by aging population needs, increasing mental health awareness, and expansion of rehabilitation services. Competition is moderate due to the relatively small size of the profession.",
+    "job_outlook": {
+      "growth_rate": "3-4% projected 2024-2034 (about as fast as average for all occupations)",
+      "annual_openings": "Approximately 1,300 per year",
+      "employment_total": "Approximately 17,900 recreational therapists employed in the US",
+      "primary_growth_drivers": [
+        "Aging baby boomer population increasing demand in nursing homes and rehabilitation",
+        "Growing recognition of mental health needs expanding RT applications",
+        "Substance abuse treatment center expansion",
+        "Community-based mental health facility growth",
+        "Replacement of retiring therapists and those transitioning to other careers"
+      ]
+    },
+    "salary_market": {
+      "min": "$42,000/year (entry level / 10th percentile)",
+      "avg": "$60,910 - $67,955/year (BLS / Salary.com 2026)",
+      "max": "$97,000 - $132,000/year (75th-90th percentile)",
+      "25th_percentile": "$47,500/year",
+      "75th_percentile": "$97,000/year",
+      "90th_percentile": "$132,000/year"
+    },
+    "top_employers": [
+      "Hospitals (general medical and surgical)",
+      "Nursing care facilities / Skilled nursing facilities",
+      "Psychiatric and substance abuse hospitals",
+      "State and local government agencies",
+      "Community care facilities for the elderly",
+      "Residential intellectual and developmental disability facilities",
+      "VA (Veterans Affairs) Medical Centers",
+      "Outpatient rehabilitation centers"
+    ],
+    "market_trends": [
+      "Steady demand driven by aging population requiring long-term care and rehabilitation",
+      "Expansion of recreational therapy into mental health and substance abuse treatment settings",
+      "Growing advocacy for state licensure to strengthen professional standing and reimbursement",
+      "Integration of technology (VR, adaptive gaming, telehealth) into therapeutic recreation practice",
+      "Increasing evidence base for recreational therapy outcomes driving payer acceptance",
+      "AI-powered documentation tools reducing administrative burden on therapists",
+      "Workforce diversity initiatives addressing underrepresentation in the profession"
+    ]
+  },
+  "quality_score": 0.70,
+  "sources_count": 25,
+  "verified_sources": 6,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Recreational Therapists USA 2025 2026 daily work tasks responsibilities typical day",
+      "sources": [
+        {"title": "BLS — Recreational Therapists: Occupational Outlook Handbook", "url": "https://www.bls.gov/ooh/healthcare/recreational-therapists.htm"},
+        {"title": "Cleveland Clinic — Recreational Therapist: Definition & Role", "url": "https://my.clevelandclinic.org/health/articles/22583-recreational-therapist"},
+        {"title": "OwlGuru — What Do Recreational Therapists Do", "url": "https://www.owlguru.com/career/recreational-therapists/job-description/"},
+        {"title": "O*NET — 29-1125.00 Recreational Therapists", "url": "https://www.onetonline.org/link/summary/29-1125.00"},
+        {"title": "NCBRTL — Recreational Therapist Job Description", "url": "https://www.ncbrtl.org/downloads/Practice_resources/Recreational%20Therapist%20Job%20Description.pdf"}
+      ]
+    },
+    {
+      "query": "Recreational Therapists USA 2025 2026 licensing NCTRC certification regulations requirements",
+      "sources": [
+        {"title": "NCTRC — CTRS Professional Certification Path and Requirements", "url": "https://nctrc.org/how-to-become-a-ctrs/path-to-professional-certification/"},
+        {"title": "NCTRC — National Council for Therapeutic Recreation Certification", "url": "https://nctrc.org/"},
+        {"title": "ATRA — Certification & Licensure", "url": "https://www.atra-online.com/certification-and-licensure"},
+        {"title": "NCTRC — Task Force for Licensure of Recreational Therapy", "url": "https://nctrc.org/professional-organizations/task-force-for-licensure-of-recreational-therapy-practice/"}
+      ]
+    },
+    {
+      "query": "Recreational Therapists USA software tools assessment documentation technology 2025 2026",
+      "sources": [
+        {"title": "Idyll Arbor — Assessment Tools for Recreational Therapy, 4th Edition", "url": "https://idyllarbor.com/product/assessment-tools-for-recreational-therapy-and-related-fields-4th-edition/"},
+        {"title": "Capterra — Best Physical Therapy Software 2026", "url": "https://www.capterra.com/physical-therapy-software/"},
+        {"title": "SimplePractice — Top 6 Trends Shaping Therapy in 2026", "url": "https://www.simplepractice.com/blog/trends-shaping-therapy-2026/"}
+      ]
+    },
+    {
+      "query": "recreational therapy terminology abbreviations jargon CTRS professional",
+      "sources": [
+        {"title": "Quizlet — Therapeutic Recreation Acronyms Flashcards", "url": "https://quizlet.com/159329301/therapeutic-recreation-acronyms-flash-cards/"},
+        {"title": "Wikipedia — Recreational therapy", "url": "https://en.wikipedia.org/wiki/Recreational_therapy"},
+        {"title": "NCTRC — About Recreational Therapy", "url": "https://www.nctrc.org/about-ncrtc/about-recreational-therapy/"},
+        {"title": "NCTRC — CTRS Qualified Provider Information", "url": "https://www.nctrc.org/about-certification/ctrs-the-qualified-provider/"}
+      ]
+    },
+    {
+      "query": "Recreational Therapists USA career path salary 2025 2026 burnout motivation",
+      "sources": [
+        {"title": "Salary.com — Recreational Therapist Salary (January 2026)", "url": "https://www.salary.com/research/salary/benchmark/recreational-therapist-salary"},
+        {"title": "ZipRecruiter — Recreational Therapist Salary (January 2026)", "url": "https://www.ziprecruiter.com/Salaries/Recreational-Therapist-Salary"},
+        {"title": "BLS — Recreational Therapists", "url": "https://www.bls.gov/ooh/healthcare/recreational-therapists.htm"},
+        {"title": "Rolling Out — Therapist burnout drives mass exodus from the field (Feb 2026)", "url": "https://rollingout.com/2026/02/25/therapist-burnout-drives-from-field/"}
+      ]
+    },
+    {
+      "query": "Recreational Therapists USA professional associations ATRA conferences 2025 2026",
+      "sources": [
+        {"title": "ATRA — Elevate Your Career with ATRA", "url": "https://www.atra-online.com/"},
+        {"title": "Rec Therapy Today — 2025 ATRA Annual Conference", "url": "https://www.rectherapytoday.com/11136-rec-therapy-today-sponsors-the-2025-atra-annual-conference.html"},
+        {"title": "ATRA — San Antonio Conference 2025", "url": "https://www.atra-online.com/san-antonio"},
+        {"title": "ATRA — Past Conferences", "url": "https://www.atra-online.com/past-conferences"}
+      ]
+    },
+    {
+      "query": "Recreational Therapists USA job market demand salary outlook 2025 2026",
+      "sources": [
+        {"title": "Zippia — Recreation Therapist Job Outlook 2025", "url": "https://www.zippia.com/recreation-therapist-jobs/trends/"},
+        {"title": "BLS — Recreational Therapists OOH", "url": "https://www.bls.gov/ooh/healthcare/recreational-therapists.htm"},
+        {"title": "BLS OES — Recreational Therapists (May 2023)", "url": "https://www.bls.gov/oes/2023/may/oes291125.htm"},
+        {"title": "ZipRecruiter — Recreational Therapist Job Outlook", "url": "https://www.ziprecruiter.com/e/What-Is-the-Recreational-Therapist-Job-Outlook"},
+        {"title": "Recruiter.com — Career Outlook for Recreational Therapists", "url": "https://www.recruiter.com/careers/recreational-therapists/outlook/"}
+      ]
+    },
+    {
+      "query": "recreational therapy EHR software PointClickCare TheraScribe documentation",
+      "sources": [
+        {"title": "TheraScribe — EHR for Mental Health Practitioners", "url": "https://www.therascribe.com/"},
+        {"title": "PointClickCare — Healthcare Software for Smarter Care Delivery", "url": "https://pointclickcare.com/"},
+        {"title": "TherapyNotes — Behavioral Health EHR", "url": "https://www.therapynotes.com/"}
+      ]
+    },
+    {
+      "query": "recreational therapy state licensure which states 2025",
+      "sources": [
+        {"title": "ATRA — Certification & Licensure", "url": "https://www.atra-online.com/certification-and-licensure"},
+        {"title": "NCTRC — Task Force for Licensure", "url": "https://nctrc.org/professional-organizations/task-force-for-licensure-of-recreational-therapy-practice/"},
+        {"title": "NumberAnalytics — Recreation Therapy Licensure Guide", "url": "https://www.numberanalytics.com/blog/recreation-therapy-state-licensure-guide"}
+      ]
+    },
+    {
+      "query": "recreational therapy assessment tools FACIT CERT leisure competence measure FIM",
+      "sources": [
+        {"title": "Stuvia — Assessment Process CTRS 2025/2026 Exam Questions", "url": "https://www.stuvia.com/en-us/doc/9091386/assessment-process-ctrs-20252026-100-verified-exam-questions-on-lcm-cert-factr-r-fim-mds-3.0-observation-methods-en-client-placement"},
+        {"title": "BCTRA — Leisure Competence Measure: Development and Reliability", "url": "https://www.bctra.org/wp-content/uploads/tr_journals/1214-4760-1-PB.pdf"},
+        {"title": "Temple University — RT Assessment Tools", "url": "https://sites.temple.edu/rtassessment/njepatra-conference/"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "profession_id": "us-industrial-engineers",
+  "profession_name": "Industrial Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Industrial engineers optimize complex systems, processes, and organizations by integrating workers, machines, materials, information, and energy. They apply lean manufacturing, Six Sigma, and operations research to improve efficiency and reduce waste across manufacturing, healthcare, logistics, and technology sectors.",
+    "typical_tasks": [
+      "Analyze production processes and workflows for efficiency improvements",
+      "Design facility layouts and production line configurations",
+      "Conduct time-motion studies and work measurement analysis",
+      "Implement lean manufacturing and continuous improvement (kaizen) initiatives",
+      "Develop quality control systems and statistical process control (SPC)",
+      "Create capacity planning models and production schedules",
+      "Apply operations research methods (simulation, optimization, queuing theory)",
+      "Lead Six Sigma projects (DMAIC methodology)",
+      "Design ergonomic workstations and evaluate workplace safety",
+      "Develop cost estimation models and ROI analyses"
+    ],
+    "key_documents": ["Process flow diagrams", "Value stream maps", "Time study reports", "Capacity planning models", "Six Sigma project charters and reports", "Facility layout drawings", "Work standards documentation", "Quality control plans", "Cost-benefit analyses"],
+    "deadlines": {"project_milestones": "Aligned with production schedules and fiscal quarters", "continuous_improvement": "Monthly/quarterly kaizen events", "quality_audits": "Annual ISO/AS9100 audits"},
+    "seasonality": "Manufacturing seasons and product launch cycles create peaks. Year-end inventory and production pushes. Capital project budgeting in Q4."
+  },
+  "regulatory": {
+    "summary": "Less directly regulated than other engineering disciplines. PE licensure available but not required for most positions. Six Sigma and lean certifications are primary credentials. ISO standards govern quality systems.",
+    "key_laws": [
+      {"name": "OSHA Standards", "description": "Workplace safety regulations affecting facility and workstation design"},
+      {"name": "ISO 9001 / AS9100", "description": "Quality management system standards"},
+      {"name": "ISO 45001", "description": "Occupational health and safety management systems"}
+    ],
+    "licensing": {
+      "requirements": ["Bachelor's degree in Industrial Engineering (ABET-accredited)", "PE licensure optional (FE + PE exam)", "Six Sigma certification increasingly expected"],
+      "certifications": ["Six Sigma Green Belt / Black Belt (ASQ)", "Lean Certification (SME/AME)", "Certified Industrial Engineer (IISE)", "PMP — Project Management Professional", "CPIM — Certified in Planning and Inventory Management (APICS)"]
+    },
+    "penalties": "OSHA citations for workplace safety violations. Product liability for design-related failures. Contract penalties for production efficiency shortfalls."
+  },
+  "tools": {
+    "summary": "Process simulation, CAD, statistical analysis, ERP systems, and lean/Six Sigma tools for process optimization and facility design.",
+    "primary_tools": [
+      {"name": "Arena / FlexSim / AnyLogic", "description": "Discrete event simulation for process modeling"},
+      {"name": "AutoCAD / SolidWorks", "description": "Facility layout and workstation design"},
+      {"name": "Minitab / JMP", "description": "Statistical analysis for Six Sigma and quality control"},
+      {"name": "SAP / Oracle ERP", "description": "Enterprise resource planning for production management"},
+      {"name": "Microsoft Excel / Power BI", "description": "Data analysis, dashboards, and reporting"},
+      {"name": "Python / R", "description": "Data science and operations research optimization"}
+    ],
+    "secondary_tools": ["Visio / Lucidchart for process mapping", "MATLAB for optimization modeling", "Tableau for data visualization", "Time study equipment (stopwatch, video analysis)", "MES (Manufacturing Execution Systems)"],
+    "pain_points": ["Resistance to change from production floor workers and managers", "Legacy systems difficult to integrate with modern analytics", "Quantifying soft benefits of process improvements", "Balancing optimization with worker satisfaction"]
+  },
+  "terminology": {
+    "summary": "Industrial engineering terminology spans lean manufacturing, operations research, quality management, and production systems.",
+    "terms": {
+      "lean": "Systematic method for waste minimization without sacrificing productivity",
+      "Six Sigma": "Data-driven methodology for eliminating defects (3.4 DPMO target)",
+      "DMAIC": "Define, Measure, Analyze, Improve, Control — Six Sigma project methodology",
+      "kaizen": "Continuous improvement philosophy and events",
+      "VSM": "Value Stream Mapping — visualizing material and information flow",
+      "OEE": "Overall Equipment Effectiveness — productivity metric (availability × performance × quality)",
+      "takt time": "Rate at which products must be produced to meet customer demand",
+      "cycle time": "Time to complete one unit of work",
+      "WIP": "Work in Process — inventory in various stages of production",
+      "bottleneck": "Process step that limits overall throughput",
+      "5S": "Sort, Set in order, Shine, Standardize, Sustain — workplace organization",
+      "kanban": "Visual signal system for pull-based production control",
+      "poka-yoke": "Error-proofing mechanism to prevent defects",
+      "SPC": "Statistical Process Control",
+      "DPMO": "Defects Per Million Opportunities",
+      "Cpk": "Process capability index",
+      "JIT": "Just-In-Time production",
+      "FMEA": "Failure Mode and Effects Analysis",
+      "IE": "Industrial Engineer",
+      "IISE": "Institute of Industrial and Systems Engineers"
+    }
+  },
+  "career_psychology": {
+    "summary": "Strong career with median salary ~$108K and 12% projected growth. Versatile degree applicable across many industries. Six Sigma certification significantly boosts earning potential. Satisfaction from measurable process improvements.",
+    "career_path": ["Bachelor's in Industrial Engineering", "Junior IE / Process Engineer", "Six Sigma Green Belt certification", "Senior Industrial Engineer (5+ years)", "Six Sigma Black Belt / PE optional", "Engineering Manager / Director of Operations", "VP of Manufacturing / Operations / Supply Chain"],
+    "salary_range": {"entry_level": "$60,000 - $75,000/year", "mid_level": "$85,000 - $110,000/year", "senior": "$110,000 - $140,000/year", "director": "$140,000 - $180,000+/year", "median": "$107,900/year (BLS 2024)"},
+    "fears": ["Automation eliminating the need for process optimization roles", "Resistance to change undermining improvement projects", "Career pigeon-holing in one industry", "Difficulty demonstrating impact of efficiency improvements"],
+    "motivation": ["Making processes measurably more efficient", "Versatility across industries (manufacturing, healthcare, tech, logistics)", "Seeing direct impact of improvements on bottom line", "Problem-solving with data-driven approaches", "Strong salary and career growth potential"],
+    "burnout_factors": ["Constant pressure to reduce costs and improve efficiency", "Change management challenges with resistant organizations", "Multiple concurrent improvement projects", "Travel between facilities for multi-site operations"]
+  },
+  "community": {
+    "summary": "IISE (Institute of Industrial and Systems Engineers) is the primary professional society. ASQ provides Six Sigma certification. Strong academic and industry community.",
+    "associations": [
+      {"name": "Institute of Industrial and Systems Engineers (IISE)", "url": "https://www.iise.org/", "description": "Primary professional society, conferences, publications, certifications"},
+      {"name": "American Society for Quality (ASQ)", "url": "https://asq.org/", "description": "Six Sigma certification body, quality management community"},
+      {"name": "Association for Manufacturing Excellence (AME)", "description": "Lean manufacturing community and events"},
+      {"name": "APICS/ASCM", "description": "Supply chain management association and certifications"}
+    ],
+    "online_communities": ["r/industrialengineering — Reddit", "IISE online communities", "LinkedIn lean/Six Sigma groups", "Lean Enterprise Institute resources"],
+    "conferences": ["IISE Annual Conference & Expo", "ASQ World Conference on Quality and Improvement", "AME International Conference", "Lean Summits"]
+  },
+  "market": {
+    "summary": "Strong 12% projected growth 2022-2032. Median salary $107,900. Growing demand across manufacturing, healthcare, logistics, and tech. Industry 4.0 and automation driving new roles.",
+    "growth_rate": "12% projected 2022-2032 (significantly faster than average)",
+    "salary_market": {"median": "$107,900/year", "range": "$60,000 - $180,000+/year", "six_sigma_premium": "Green Belt positions: $95,600 median; Black Belt: $120,200 median"},
+    "top_employers": ["Manufacturing companies (automotive, aerospace, consumer goods)", "Technology companies (Amazon, Apple, Tesla)", "Healthcare systems (process improvement roles)", "Logistics and supply chain (FedEx, UPS, Amazon)", "Consulting firms (McKinsey, Deloitte, BCG)", "Government and military"],
+    "market_trends": ["Industry 4.0 and smart manufacturing driving demand", "Healthcare process improvement roles expanding", "Supply chain optimization post-pandemic", "AI and ML integration with traditional IE methods", "Data science skills increasingly valued alongside traditional IE"]
+  },
+  "quality_score": 0.78,
+  "sources_count": 18,
+  "verified_sources": 7,
+  "confidence": "verified",
+  "raw_responses": [{"query": "Industrial Engineers USA 2025 2026 salary career outlook", "sources": [{"title": "BLS — Industrial Engineers", "url": "https://www.bls.gov/ooh/architecture-and-engineering/industrial-engineers.htm"}, {"title": "Research.com — Industrial Engineering Careers 2026", "url": "https://research.com/careers/industrial-engineering-careers"}, {"title": "US News — Industrial Engineer Salary", "url": "https://careers.usnews.com/best-jobs/industrial-engineer/salary"}]}]
+}

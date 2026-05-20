@@ -1,0 +1,243 @@
+{
+  "profession_id": "us-pharmacy-technicians",
+  "profession_name": "Pharmacy Technicians",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Pharmacy technicians assist pharmacists in dispensing medications, processing prescriptions, managing inventory, and serving patients in retail pharmacies, hospitals, and specialty pharmacies. They work on their feet in fast-paced environments, often including nights and weekends.",
+    "typical_tasks": [
+      "Receive and process prescription orders from patients and healthcare providers",
+      "Count, measure, and prepare medications for dispensing",
+      "Label and package prescriptions",
+      "Process insurance claims and handle prior authorizations",
+      "Manage patient profiles and medication records",
+      "Stock and manage medication inventory",
+      "Operate pharmacy information systems and automated dispensing machines",
+      "Answer phone calls and assist patients at pickup window",
+      "Prepare IV admixtures and TPNs in hospital settings",
+      "Stock Omnicell/Pyxis automated dispensing cabinets (hospital)",
+      "Remove expired medications from stock",
+      "Assist pharmacist with medication therapy management documentation"
+    ],
+    "key_documents": [
+      "Prescription orders (paper and electronic)",
+      "Insurance claim forms",
+      "Controlled substance logs (Schedule II-V)",
+      "Inventory records and ordering documents",
+      "Patient medication profiles",
+      "Compound preparation logs",
+      "Temperature monitoring logs for medications"
+    ],
+    "deadlines": {
+      "prescription_filling": "Most filled within 15-30 minutes for waiting patients",
+      "insurance_claims": "Real-time adjudication at point of sale",
+      "controlled_substance_counts": "Daily or per-shift counts",
+      "inventory_ordering": "Daily automatic and manual reorder",
+      "ce_requirements": "20 hours every 2 years for PTCB recertification"
+    },
+    "seasonality": "Flu season (October-March) increases volume. Open enrollment brings insurance plan changes. Year-end sees medication stockpiling. January brings plan resets and coverage confusion.",
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/pharmacy-technicians.htm", "fact": "BLS Occupational Outlook Handbook for pharmacy technicians"},
+      {"url": "https://fvi.edu/pharmacy-techs/typical-day-of-a-pharmacy-technician/", "fact": "Typical day of a pharmacy technician in retail and hospital settings"}
+    ]
+  },
+  "regulatory": {
+    "summary": "Most states require pharmacy technician licensure (not just registration). PTCB and NHA ExCPT are the two national certifications. State boards of pharmacy regulate scope of practice. DEA controlled substance regulations apply.",
+    "key_laws": [
+      {
+        "name": "State Pharmacy Practice Acts",
+        "detail": "Most states require licensure with PTCB or ExCPT certification. Only DE, HI, PA, DC require only registration.",
+        "status": "Active in all states"
+      },
+      {
+        "name": "DEA Controlled Substances Act",
+        "detail": "Pharmacy technicians handle Schedule II-V medications under pharmacist supervision",
+        "reference": "21 USC § 801 et seq."
+      },
+      {
+        "name": "FDA Drug Quality and Security Act (DSCSA)",
+        "detail": "Track-and-trace requirements for medication supply chain",
+        "reference": "H.R.3204"
+      },
+      {
+        "name": "State Board of Pharmacy Regulations",
+        "detail": "Define technician-to-pharmacist ratios, scope of practice, supervisory requirements",
+        "status": "Varies by state, typically 3:1 or 4:1 ratio"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "State licensure or registration (most states require licensure)",
+        "PTCB PTCE certification ($129 exam) or NHA ExCPT certification",
+        "Complete accredited pharmacy technician training program or 500-1,200 hours work experience",
+        "Pass background check (required in most states)",
+        "20 hours CE every 2 years for PTCB recertification",
+        "Some states require additional state-specific exams",
+        "Annual license renewal with state board"
+      ],
+      "certifying_bodies": [
+        "PTCB — Pharmacy Technician Certification Board",
+        "NHA — National Healthcareer Association (ExCPT exam)",
+        "State Boards of Pharmacy"
+      ]
+    },
+    "penalties": "State board can suspend/revoke license for medication errors, controlled substance diversion, or scope violations. DEA criminal penalties for drug diversion. Pharmacy fines for ratio violations.",
+    "sources": [
+      {"url": "https://pharmacytechacademy.com/state-requirements", "fact": "2026 pharmacy technician license requirements by state"},
+      {"url": "https://research.com/degrees/nha-ex-cpt-vs-ptcb-ptce-pharmacy-technician-certifications", "fact": "PTCB vs ExCPT certification comparison 2026"}
+    ]
+  },
+  "tools": {
+    "summary": "Pharmacy technicians operate pharmacy information systems (ScriptPro, QS/1, McKesson), automated dispensing machines (Omnicell, Pyxis, Parata), and insurance adjudication systems in fast-paced retail and hospital environments.",
+    "primary_software": [
+      {"name": "Pharmacy Management Systems (QS/1, McKesson, Rx30, PioneerRx)", "purpose": "Prescription processing, patient profiles, insurance adjudication"},
+      {"name": "Hospital Pharmacy Systems (Epic Willow, Cerner Pharmacy)", "purpose": "Inpatient medication ordering and verification"},
+      {"name": "Automated Dispensing Cabinets (Omnicell, BD Pyxis)", "purpose": "Decentralized medication storage and dispensing in hospitals"},
+      {"name": "ScriptPro, Parata, TCGRx", "purpose": "Automated counting and dispensing machines for retail"},
+      {"name": "Insurance Adjudication Systems", "purpose": "Real-time claim processing with PBMs (Express Scripts, CVS Caremark, Optum)"},
+      {"name": "IVX Workflow / DoseEdge", "purpose": "IV room preparation documentation and barcode verification"},
+      {"name": "Inventory Management (Cardinal Health, McKesson)", "purpose": "Automated ordering and inventory tracking"}
+    ],
+    "pain_points": [
+      "Insurance claim rejections requiring manual intervention",
+      "Multiple PBM systems with different rules",
+      "Prior authorization delays frustrating patients",
+      "Automated dispensing machine downtime",
+      "Medication shortage management",
+      "Drug pricing confusion and patient sticker shock"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/pharmacy-technicians.htm", "fact": "BLS describes pharmacy technician equipment and technology use"},
+      {"url": "https://www.concorde.edu/blog/day-life-pharmacy-technician", "fact": "Day in the life including technology and systems used"}
+    ]
+  },
+  "terminology": {
+    "summary": "Pharmacy technicians use pharmaceutical, insurance, and regulatory terminology covering drug dispensing, controlled substances, compounding, and insurance adjudication.",
+    "key_terms": [
+      {"term": "Rx", "meaning": "Prescription"},
+      {"term": "OTC", "meaning": "Over-the-counter medication (no prescription needed)"},
+      {"term": "DAW", "meaning": "Dispense As Written — brand name only, no generic substitution"},
+      {"term": "NDC", "meaning": "National Drug Code — unique product identifier"},
+      {"term": "SIG", "meaning": "Signa — directions for use on prescription label"},
+      {"term": "PBM", "meaning": "Pharmacy Benefit Manager — manages drug insurance benefits"},
+      {"term": "PA", "meaning": "Prior Authorization — insurance approval before dispensing"},
+      {"term": "BIN/PCN", "meaning": "Bank Identification Number / Processor Control Number — insurance claim routing"},
+      {"term": "Schedule II-V", "meaning": "DEA controlled substance classifications by abuse potential"},
+      {"term": "Compound", "meaning": "Custom-prepared medication mixed by pharmacy staff"},
+      {"term": "USP 797/800", "meaning": "Standards for sterile (797) and hazardous (800) drug compounding"},
+      {"term": "Pyxis/Omnicell", "meaning": "Automated dispensing cabinet brands used in hospitals"},
+      {"term": "Stat", "meaning": "Immediately — urgent medication needed"},
+      {"term": "TPN", "meaning": "Total Parenteral Nutrition — IV nutrition solution"},
+      {"term": "MAR", "meaning": "Medication Administration Record"}
+    ],
+    "common_abbreviations": ["CPhT", "PTCB", "ExCPT", "RPh", "PharmD", "PBM", "NDC", "DAW", "SIG", "USP", "IV", "IM", "PO (by mouth)", "PRN (as needed)"],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/pharmacy-technicians.htm", "fact": "BLS pharmacy technician scope and terminology"},
+      {"url": "https://www.pharmacytechnicianguide.com/Pharmacy-Technician-Duties.html", "fact": "Pharmacy technician duties with terminology context"}
+    ]
+  },
+  "career_psychology": {
+    "summary": "Pharmacy technicians face high-volume, fast-paced work with accuracy demands. Certified techs earn significantly more ($14,000+/year premium). Burnout from customer interactions and insurance frustrations common.",
+    "career_levels": [
+      {"level": "Pharmacy Technician (uncertified)", "salary_range": "$28,000-$34,000", "responsibilities": "Basic dispensing assistance under close supervision"},
+      {"level": "Certified Pharmacy Technician (CPhT)", "salary_range": "$38,000-$44,000", "responsibilities": "Independent dispensing, insurance processing, inventory"},
+      {"level": "Senior/Lead Pharmacy Technician", "salary_range": "$44,000-$55,000", "responsibilities": "IV room, compounding, technician training, scheduling"},
+      {"level": "Pharmacy Technician Supervisor", "salary_range": "$50,000-$65,000+", "responsibilities": "Team leadership, workflow optimization, compliance"}
+    ],
+    "main_fears": [
+      "Medication dispensing errors (wrong drug, wrong dose, wrong patient)",
+      "Controlled substance discrepancies (accusation of diversion)",
+      "License revocation for errors or violations",
+      "Patient harm from dispensing mistakes",
+      "Insurance fraud allegations"
+    ],
+    "burnout_causes": [
+      "High prescription volume with accuracy pressure",
+      "Difficult customer interactions (insurance denials, wait times)",
+      "Standing all day with minimal breaks",
+      "Low pay relative to responsibility and stress",
+      "Insurance claim frustrations and prior authorization burden",
+      "Staffing shortages increasing workload",
+      "Night and weekend shift requirements"
+    ],
+    "growth_motivation": [
+      "PTCB certification for $14,000+ salary premium",
+      "Advanced certifications (IV, compounding, chemotherapy)",
+      "Hospital pharmacy positions (better pay and benefits)",
+      "Specialty pharmacy roles (oncology, transplant)",
+      "Pathway to pharmacy school (PharmD)",
+      "Pharmacy technician educator roles"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/pharmacy-technicians.htm", "fact": "BLS pharmacy technician career and salary information"},
+      {"url": "https://www.stepful.com/post/pharmacy-technician-job-outlook", "fact": "Pharmacy technician job outlook and demand statistics"}
+    ]
+  },
+  "community": {
+    "summary": "PTCB and PhTCA are primary organizations. Strong Reddit community (r/PharmacyTechnician). ASHP provides standards and guidelines. High accessibility of online resources.",
+    "professional_associations": [
+      {"name": "PTCB — Pharmacy Technician Certification Board", "url": "https://www.ptcb.org", "membership_value": "National certification, CE resources, career development", "mandatory": false},
+      {"name": "ASHP — American Society of Health-System Pharmacists", "url": "https://www.ashp.org", "membership_value": "Practice standards, accreditation, midyear meeting, technician resources", "mandatory": false},
+      {"name": "NHA — National Healthcareer Association", "url": "https://www.nhanow.com", "membership_value": "ExCPT certification and exam resources", "mandatory": false}
+    ],
+    "conferences": [
+      {"name": "ASHP Midyear Clinical Meeting", "detail": "Largest pharmacy conference in the US with technician programming", "frequency": "Annual (December)"},
+      {"name": "PTCB Pharmacy Technician Day", "detail": "Celebration and recognition event", "frequency": "Annual (October)"}
+    ],
+    "online_communities": [
+      "Reddit r/PharmacyTechnician (active community)",
+      "Reddit r/pharmacy",
+      "Facebook pharmacy technician groups",
+      "PharmacyTimes.com technician resources",
+      "LinkedIn pharmacy professionals groups"
+    ],
+    "publications": [
+      "Pharmacy Times",
+      "Drug Topics",
+      "ASHP Publications"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/pharmacy-technicians.htm", "fact": "BLS pharmacy technician professional resources"},
+      {"url": "https://www.ptcb.org", "fact": "PTCB as primary certification body for pharmacy technicians"}
+    ]
+  },
+  "market": {
+    "summary": "Median salary $40,300 (BLS 2023), certified techs earn $44,000+. 6% growth projected 2024-2034. About 472,400 employed — one of the largest healthcare technician occupations.",
+    "salary_by_level": {
+      "entry_uncertified": "$28,000-$34,000",
+      "certified_cpht": "$38,000-$44,000",
+      "senior_lead": "$44,000-$55,000",
+      "supervisor": "$50,000-$65,000+"
+    },
+    "geographic_variation": {
+      "national_median": "$40,300 (BLS 2023)",
+      "high_cost_markets": "$50,000-$60,000+ (CA, WA, AK, DC)",
+      "lowest_10_percent": "Less than $29,640",
+      "highest_10_percent": "More than $54,000+"
+    },
+    "estimated_practitioners": "472,400 pharmacy technicians employed in US (BLS)",
+    "job_outlook": "6% growth 2024-2034, faster than average. Expanding scope of practice in many states. About 44,600 openings per year.",
+    "work_arrangements": {
+      "dominant": "W-2 employees at retail pharmacies (CVS, Walgreens, Walmart), hospitals, specialty pharmacies",
+      "retail": "Major employers: CVS Health, Walgreens, Walmart, Rite Aid, Kroger",
+      "hospital": "Health system pharmacy departments",
+      "specialty": "Specialty and mail-order pharmacies growing"
+    },
+    "market_trends": [
+      "Expanded scope of practice (vaccine administration in many states)",
+      "Automation reducing counting tasks, shifting to clinical support",
+      "Specialty pharmacy growth creating higher-paid positions",
+      "Mail-order and central fill pharmacy consolidation",
+      "Tech-check-tech programs expanding in hospital settings",
+      "AI-powered drug interaction checking and clinical decision support"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/pharmacy-technicians.htm", "fact": "BLS: 472,400 employed, median $40,300, 6% growth 2024-2034"},
+      {"url": "https://www.bls.gov/oes/current/oes292052.htm", "fact": "BLS OES current employment and wage data for pharmacy technicians"}
+    ]
+  },
+  "quality_score": 0.55,
+  "sources_count": 14,
+  "verified_sources": 8,
+  "confidence": "verified",
+  "raw_responses": []
+}

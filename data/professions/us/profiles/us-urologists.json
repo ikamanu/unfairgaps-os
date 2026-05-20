@@ -1,0 +1,409 @@
+{
+  "profession_id": "us-urologists",
+  "profession_name": "Urologists",
+  "country": "US",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Urologists balance clinic-based patient consultations with surgical procedures. Median workweek is 55 hours, with over 35% working 60+ hours/week. A typical day starts with hospital rounds, moves to outpatient clinic (evaluating BPH, kidney stones, prostate cancer, incontinence), and includes scheduled OR time for procedures ranging from cystoscopies to complex robotic-assisted surgeries. Only a portion of time is direct patient care; significant hours go to EHR documentation, prior authorizations, and administrative tasks. Burnout rate stands at 36.7%, though 93% would choose the specialty again.",
+    "typical_tasks": [
+      "Outpatient clinic consultations — evaluate new and follow-up patients for urologic conditions (BPH, kidney stones, UTIs, prostate cancer, bladder cancer, incontinence)",
+      "Perform cystoscopies and in-office diagnostic procedures",
+      "Interpret lab results (PSA, urinalysis, urine cultures, metabolic panels)",
+      "Perform surgical procedures — TURP, radical prostatectomy, nephrectomy, cystectomy, ureteroscopy, lithotripsy",
+      "Robotic-assisted surgery (da Vinci 5 system) — radical prostatectomy, partial nephrectomy, cystectomy",
+      "Review and interpret imaging studies (CT urogram, MRI prostate, renal ultrasound)",
+      "Hospital rounds — assess post-surgical and admitted patients",
+      "Multidisciplinary tumor board participation for cancer cases",
+      "EHR documentation, procedure notes, and operative reports",
+      "Prior authorization paperwork for procedures and medications",
+      "Supervise residents and fellows in teaching settings",
+      "On-call coverage for urologic emergencies (testicular torsion, urinary retention, ureteral obstruction)"
+    ],
+    "key_documents": [
+      "Patient medical records (EHR)",
+      "Operative reports and procedure notes",
+      "Pathology reports (biopsy results, surgical specimens)",
+      "Imaging reports (CT, MRI, ultrasound)",
+      "Lab results (PSA, urinalysis, BMP)",
+      "Prior authorization forms for procedures and medications",
+      "Informed consent documents",
+      "Discharge summaries",
+      "Referral documentation",
+      "CME documentation for board maintenance",
+      "Practice logs and complication narratives (for ABU certification)"
+    ],
+    "deadlines": {
+      "emergencies": "Immediate response for testicular torsion (4-6 hour window), acute urinary retention, urosepsis",
+      "surgical_scheduling": "OR block time management — weekly/biweekly scheduled slots",
+      "pathology_follow_up": "Within 1-2 weeks of biopsy for cancer results discussion with patient",
+      "board_certification": "ABU recertification cycles — Lifelong Learning and Self-Assessment (LLSA) requirements",
+      "prior_authorizations": "Variable turnaround 24-72 hours, often delays patient care",
+      "CME": "Annual continuing medical education credit requirements for state licensure"
+    },
+    "seasonality": "Kidney stone presentations peak in summer months due to dehydration. Prostate cancer screening campaigns often align with Movember (November) and Urology Awareness Month (September). Conference season peaks April-May (AUA Annual Meeting). Year-end sees rush for patients meeting insurance deductibles."
+  },
+  "regulatory": {
+    "summary": "Urologists must hold MD/DO degree, complete 5-6 year urology residency, obtain state medical license, and achieve board certification through the American Board of Urology (ABU). ABU certification involves a two-part exam process with a 6-year completion window. CMS regulates Medicare/Medicaid reimbursement through MACRA/MIPS. FDA oversees surgical devices including robotic platforms and implantable devices.",
+    "key_laws": [
+      {
+        "name": "State Medical Practice Acts (licensing)",
+        "url": "https://www.fsmb.org",
+        "status": "Active — each state regulates medical practice independently"
+      },
+      {
+        "name": "ABU Board Certification Requirements",
+        "url": "https://abu.org/initial-certification/",
+        "status": "Active — 2026 Part 1 Qualifying Exam: July 16-18, 2026"
+      },
+      {
+        "name": "MACRA/MIPS Quality Payment Program",
+        "url": "https://qpp.cms.gov",
+        "status": "Active — mandatory quality reporting for Medicare reimbursement"
+      },
+      {
+        "name": "HIPAA Patient Privacy",
+        "url": "https://www.hhs.gov/hipaa",
+        "status": "Active — all patient health information protected"
+      },
+      {
+        "name": "Stark Law and Anti-Kickback Statute",
+        "url": "https://oig.hhs.gov/compliance/physician-education/fraud-abuse-laws/",
+        "status": "Active — prohibits physician self-referral and kickbacks"
+      },
+      {
+        "name": "FDA Regulation of Surgical Robotic Devices",
+        "url": "https://www.fda.gov/medical-devices",
+        "status": "Active — January 2025 draft guidance on AI-enabled surgical decision support"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "MD or DO degree from accredited medical school",
+        "1-2 years of pre-urology surgical training (PGY-1/PGY-2)",
+        "4-year ACGME-accredited urology residency (total 5-6 years post-graduate training)",
+        "Optional 1-2 year fellowship (urologic oncology, pediatric urology, female pelvic medicine, endourology)",
+        "Unrestricted state medical license",
+        "ABU Qualifying Examination (Part 1) — computer-based at Pearson VUE centers ($1,300 fee)",
+        "16 months of independent practice in single community after residency",
+        "6-month practice log with complication narratives and peer review references",
+        "ABU Certifying Examination (Part 2) — held annually in March in Raleigh, NC",
+        "6-year window from end of residency to complete entire certification (max 3 attempts per part)",
+        "DEA registration for prescribing controlled substances",
+        "Lifelong Learning and Self-Assessment (LLSA) for certification maintenance"
+      ]
+    },
+    "penalties": "Practicing without license: felony with criminal penalties. Malpractice liability — urology ranks moderate among surgical specialties for claims. HIPAA violations: $100 to $50,000 per incident. CMS penalties for MIPS non-compliance. ABU certification revocation for examination fraud or professional misconduct. State medical board actions include suspension, restriction, or revocation of license.",
+    "controlling_bodies": [
+      "American Board of Urology (ABU — board certification)",
+      "State Medical Boards (licensing and discipline)",
+      "CMS (Centers for Medicare & Medicaid Services — reimbursement)",
+      "FDA (surgical devices, robotic systems, implantables)",
+      "DEA (Drug Enforcement Administration — controlled substances)",
+      "ACGME (Accreditation Council for Graduate Medical Education — residency oversight)",
+      "Joint Commission (hospital accreditation)",
+      "AUA (American Urological Association — practice guidelines)"
+    ]
+  },
+  "tools": {
+    "summary": "Urologists rely on EHR systems for documentation, robotic surgical platforms (primarily da Vinci) for minimally invasive surgery, endoscopic equipment for diagnostic and therapeutic procedures, and specialized imaging. The da Vinci 5 system with AI-enhanced capabilities is the dominant robotic platform with 10,000+ installations globally. Competing robotic platforms (Hugo, Versius) are entering the market. EHR burden is a major pain point across the specialty.",
+    "primary_tools": [
+      {
+        "name": "da Vinci 5 Robotic Surgical System (Intuitive Surgical)",
+        "description": "Latest generation robotic platform with 10,000x more on-board computing, force feedback, AI-powered SureForm stapler, and enhanced 3D visualization. Used for radical prostatectomy, partial nephrectomy, cystectomy. Over 10,000 systems installed globally."
+      },
+      {
+        "name": "Epic EHR",
+        "description": "Dominant enterprise EHR platform used by major health systems (Mayo Clinic, Cleveland Clinic, Kaiser Permanente). Comprehensive clinical documentation, order management, and billing."
+      },
+      {
+        "name": "Cystoscopes and Ureteroscopes (Olympus, Karl Storz, Richard Wolf)",
+        "description": "Rigid and flexible endoscopic instruments for bladder examination, ureteral stone treatment, and transurethral surgery. Core diagnostic and therapeutic tools."
+      },
+      {
+        "name": "Holmium/Thulium Laser Systems (Lumenis, Boston Scientific)",
+        "description": "Surgical lasers for lithotripsy (stone fragmentation), BPH treatment (HoLEP), and tissue ablation during endoscopic procedures."
+      },
+      {
+        "name": "UroChart / Urology-Specific EHR Templates",
+        "description": "Specialty EHR modules with tailored templates for conditions like BPH, prostate cancer, UTIs, kidney stones — structured documentation for urology workflows."
+      }
+    ],
+    "secondary_tools": [
+      "Athenahealth — cloud-based EHR popular in small-to-mid urology practices",
+      "Extracorporeal Shock Wave Lithotripsy (ESWL) machines — non-invasive stone treatment",
+      "Urodynamics testing equipment (UDS) — bladder function assessment",
+      "Transrectal/Transperineal Ultrasound — prostate biopsy guidance",
+      "MRI Fusion Biopsy Systems (Artemis, UroNav) — targeted prostate biopsy",
+      "Hugo RAS (Medtronic), Versius (CMR Surgical) — competing robotic platforms",
+      "Doximity — physician networking and telehealth",
+      "UpToDate — clinical decision support",
+      "AUA Guidelines App — evidence-based practice guidelines",
+      "MDCalc — clinical calculators (GFR, stone risk)",
+      "Zoom/Teams — telehealth for follow-up consultations"
+    ],
+    "pain_points": [
+      "Excessive EHR documentation time — clicks and typing consume hours per day",
+      "Prior authorization burden delays surgical scheduling and patient care",
+      "Limited OR block time despite overflowing clinic demand",
+      "High cost of robotic system acquisition and maintenance ($1-2M+ per system)",
+      "Learning curve for new robotic platforms and technology transitions",
+      "Integration gaps between EHR, imaging, and surgical systems",
+      "Administrative overhead (coding, billing, compliance) consuming clinical time",
+      "Telehealth limitations for physical exam-dependent urology encounters"
+    ]
+  },
+  "terminology": {
+    "summary": "Urology has extensive specialized terminology covering urinary tract anatomy, surgical procedures, diagnostic tests, and disease conditions. Abbreviations are critical for efficient clinical communication, operative reports, and coding. Understanding these terms is essential for navigating urology practice, billing, and medical records.",
+    "terms": {
+      "BPH": "Benign Prostatic Hyperplasia — non-cancerous enlargement of the prostate causing urinary obstruction",
+      "PSA": "Prostate-Specific Antigen — blood protein marker used for prostate cancer screening (normal <4.0 ng/mL)",
+      "TURP": "Transurethral Resection of the Prostate — gold standard surgical treatment for BPH via endoscopic coring of prostate tissue",
+      "LUTS": "Lower Urinary Tract Symptoms — constellation of urinary symptoms (frequency, urgency, hesitancy, nocturia)",
+      "DRE": "Digital Rectal Examination — physical exam to assess prostate size and consistency",
+      "GU": "Genitourinary — relating to urinary and reproductive organs",
+      "ED": "Erectile Dysfunction — inability to achieve or maintain erection sufficient for sexual activity",
+      "RP": "Radical Prostatectomy — complete surgical removal of the prostate gland for cancer",
+      "RARP": "Robot-Assisted Radical Prostatectomy — da Vinci-assisted minimally invasive prostatectomy",
+      "RPLND": "Retroperitoneal Lymph Node Dissection — surgical removal of lymph nodes behind the peritoneum, primarily for testicular cancer",
+      "UDS": "Urodynamic Study — diagnostic testing to evaluate bladder filling, storage, and emptying function",
+      "PCN": "Percutaneous Nephrostomy — drainage tube placed through the back into the kidney",
+      "SWL/ESWL": "Shock Wave Lithotripsy / Extracorporeal Shock Wave Lithotripsy — non-invasive stone fragmentation",
+      "URS": "Ureteroscopy — endoscopic examination and treatment of the ureter and kidney",
+      "HoLEP": "Holmium Laser Enucleation of the Prostate — laser-based BPH surgical treatment",
+      "OAB": "Overactive Bladder — syndrome of urgency, frequency, and urge incontinence",
+      "UTI": "Urinary Tract Infection — bacterial infection of the urinary system",
+      "CKD": "Chronic Kidney Disease — progressive loss of kidney function over time",
+      "GFR": "Glomerular Filtration Rate — measure of kidney function (mL/min/1.73m²)",
+      "BCG": "Bacillus Calmette-Guérin — intravesical immunotherapy for non-muscle-invasive bladder cancer",
+      "NMIBC": "Non-Muscle-Invasive Bladder Cancer — early-stage bladder cancer confined to mucosa",
+      "MIBC": "Muscle-Invasive Bladder Cancer — bladder cancer invading muscle wall, requires cystectomy",
+      "PI-RADS": "Prostate Imaging Reporting and Data System — standardized MRI scoring for prostate cancer suspicion (1-5 scale)",
+      "Gleason Score": "Grading system for prostate cancer aggressiveness based on biopsy histology (6-10 scale)",
+      "ISUP Grade Group": "International Society of Urological Pathology grading — simplified Gleason grouping (1-5)",
+      "PVR": "Post-Void Residual — volume of urine remaining in bladder after voiding (measured by ultrasound or catheterization)",
+      "AUA-SI": "AUA Symptom Index — standardized 7-question BPH symptom severity score (0-35)",
+      "wRVU": "Work Relative Value Unit — physician productivity and compensation measurement metric"
+    }
+  },
+  "career_psychology": {
+    "summary": "Becoming a urologist requires 13-14 years of post-secondary education (4 years undergrad, 4 years medical school, 5-6 years residency, optional 1-2 year fellowship). Urology is among the most competitive residency matches. Compensation is high ($400K-$650K+), with strong job satisfaction (82% satisfied, 93% would choose specialty again). However, 36.7% report burnout, driven by administrative burden, long hours, and increasing patient volumes amid a growing workforce shortage.",
+    "career_path": [
+      "Bachelor's degree (4 years — pre-med)",
+      "Medical school — MD or DO (4 years)",
+      "PGY-1/PGY-2 general surgery or surgical preliminary training (1-2 years)",
+      "Urology residency (4 years, total 5-6 years post-graduate)",
+      "Optional subspecialty fellowship (1-2 years: urologic oncology, pediatric urology, female pelvic medicine/reconstructive surgery, endourology/minimally invasive surgery, sexual medicine/infertility)",
+      "ABU board certification (Part 1 during/after residency, Part 2 after 16 months practice)",
+      "Early-career urologist — hospital employed or private practice (0-5 years)",
+      "Mid-career urologist — partnership track or academic promotion (5-15 years)",
+      "Senior urologist — practice leadership, department chief, or division director (15+ years)",
+      "Academic track: Assistant Professor → Associate Professor → Full Professor"
+    ],
+    "salary_range": {
+      "entry_level": "$330,000 - $525,000/year (new residency graduate, varies by setting and location)",
+      "mid_career": "$450,000 - $590,000/year (5-15 years experience)",
+      "senior": "$590,000 - $800,000+/year (established practice, partnership, leadership roles)",
+      "average_2026": "$500,000 - $627,000/year (median varies by source — SalaryDr median $590K, Doximity $506K, Salary.com ~$400K)"
+    },
+    "fears": [
+      "Malpractice lawsuits — surgical complications, missed cancer diagnoses, retained surgical items",
+      "Growing patient demand with declining urologist supply — unsustainable workload",
+      "Burnout leading to medical errors and career dissatisfaction",
+      "Declining reimbursements despite rising practice costs and overhead",
+      "Loss of autonomy — private practices being acquired by health systems and private equity",
+      "Technology disruption — need to continuously learn new robotic platforms and AI tools",
+      "On-call burden — handling emergencies (testicular torsion, urinary retention) at all hours"
+    ],
+    "motivation": [
+      "High job satisfaction — 82% report career satisfaction, 93% would choose urology again",
+      "Procedural variety — combination of clinic, endoscopy, open surgery, and robotics",
+      "Life-saving cancer surgery and meaningful long-term patient relationships",
+      "Strong compensation among surgical specialties",
+      "Intellectual challenge spanning oncology, reconstruction, pediatrics, and stone disease",
+      "Technologically innovative field — at forefront of robotic surgery and minimally invasive techniques",
+      "High demand ensures job security and geographic flexibility"
+    ],
+    "burnout_factors": [
+      "36.7% burnout rate per AUA Census",
+      "55+ hour median workweeks with 35%+ working over 60 hours",
+      "Administrative burden — EHR documentation, prior authorizations, coding",
+      "On-call demands including nighttime and weekend emergencies",
+      "Patient volume exceeding available appointment and OR slots",
+      "Insurance company friction — prior authorizations delaying procedures",
+      "Increasing non-clinical responsibilities (committees, compliance, quality metrics)"
+    ]
+  },
+  "community": {
+    "summary": "The American Urological Association (AUA) is the central professional organization with significant educational, advocacy, and research functions. Regional AUA sections provide additional networking. Multiple subspecialty societies serve focused interests. The AUA Annual Meeting is the flagship event drawing thousands of urologists worldwide.",
+    "associations": [
+      {
+        "name": "American Urological Association (AUA)",
+        "url": "https://www.auanet.org",
+        "type": "Primary professional organization — education, guidelines, advocacy, research"
+      },
+      {
+        "name": "American Board of Urology (ABU)",
+        "url": "https://abu.org",
+        "type": "Board certification organization"
+      },
+      {
+        "name": "Society of Urologic Oncology (SUO)",
+        "url": "https://suonet.org",
+        "type": "Subspecialty society for urologic cancer treatment"
+      },
+      {
+        "name": "Endourological Society",
+        "url": "https://www.endourology.org",
+        "type": "Subspecialty society for minimally invasive and endoscopic urology"
+      },
+      {
+        "name": "Society for Urodynamics, Female Pelvic Medicine & Urogenital Reconstruction (SUFU)",
+        "url": "https://sufuorg.com",
+        "type": "Subspecialty society for functional and reconstructive urology"
+      },
+      {
+        "name": "Society of Academic Urologists (SAU)",
+        "url": "https://sauweb.org",
+        "type": "Organization for academic urology department chairs and program directors"
+      },
+      {
+        "name": "Large Urology Group Practice Association (LUGPA)",
+        "url": "https://www.lugpa.org",
+        "type": "Advocacy organization for large urology group practices"
+      },
+      {
+        "name": "Sexual Medicine Society of North America (SMSNA)",
+        "url": "https://www.smsna.org",
+        "type": "Subspecialty society for sexual medicine and male reproductive health"
+      }
+    ],
+    "events": [
+      "AUA Annual Meeting 2025 (April 26-29, Las Vegas — Sands Expo & Convention Center)",
+      "AUA Annual Meeting 2026 (May 15-18, Washington DC — Walter E. Washington Convention Center)",
+      "Western Section AUA 102nd Annual Meeting 2026 (October 25-30, Hyatt Regency Maui Resort)",
+      "AUA Summit 2026 (advocacy and policy sessions — Washington DC)",
+      "SUO Annual Meeting (urologic oncology — annually in fall)",
+      "World Congress of Endourology (WCE — annually, global location rotation)",
+      "SUFU Annual Meeting (winter meeting — functional urology)",
+      "AUA Update Series / AUA University — ongoing education"
+    ],
+    "online_communities": [
+      "AUA Communities (members-only forums and discussion groups)",
+      "Reddit r/urology and r/medicine",
+      "Doximity — physician networking and urology-specific groups",
+      "AUA News (auanews.net) — monthly news and clinical updates",
+      "UroToday (urotoday.com) — comprehensive urology news and conference coverage",
+      "Urology Times (urologytimes.com) — industry news and practice management",
+      "#UroSoMe — urology social media community on Twitter/X",
+      "AUA Residents and Fellows Committee — early-career networking"
+    ]
+  },
+  "market": {
+    "summary": "Urology faces a severe and growing workforce shortage — projected deficit of 3,630 urologists by 2025, with 62% of US counties lacking an active urologist. Nearly 30% of the current workforce is over age 65. Demand is rising due to an aging population while supply is declining. Urology ranks 3rd in absolute recruitment difficulty. Compensation is strong and rising, with starting salaries of $330K-$525K and experienced practitioners earning $590K-$800K+. The specialty offers excellent job security with multiple practice setting options.",
+    "job_outlook": {
+      "growth_rate": "Demand increasing while supply decreasing 2025-2037 — BLS projects 3% overall physician growth but urology faces structural shortage",
+      "shortage": "Projected deficit of 3,630 urologists by 2025; 62% of US counties have no active urologist; 30% of workforce over age 65",
+      "recruitment_difficulty": "Ranks 3rd in absolute demand among specialties to recruit (AMN Healthcare 2024)",
+      "demand_drivers": "Aging population (baby boomers driving prostate, bladder, kidney disease volume), increased healthcare access, urologist retirements outpacing new graduates, government reducing residency programs by 10%"
+    },
+    "salary_market": {
+      "min": "$330,000 (entry-level / new residency graduate)",
+      "avg": "$500,000 - $590,000 (mid-career median, varies by source)",
+      "max": "$800,000 - $1,000,000+ (high-volume practice, partnership, desirable markets)"
+    },
+    "market_trends": [
+      "Critical urologist shortage worsening through 2037 and beyond",
+      "Robotic surgery becoming standard of care — da Vinci 5 and competing platforms (Hugo, Versius) expanding access",
+      "AI integration in diagnostics (MRI fusion biopsy, pathology AI, clinical decision support) — FDA January 2025 draft guidance on AI-enabled surgical tools",
+      "Private equity consolidation of urology practices — changing employment landscape",
+      "Advanced practice providers (PAs, NPs) increasingly performing outpatient urology procedures to extend urologist capacity",
+      "Telemedicine adoption for follow-up visits and initial consultations",
+      "Rising compensation driven by supply-demand imbalance — starting salaries up significantly",
+      "Shift from private practice to hospital/health system employment (though large group practices remain strong)",
+      "Rural urology access crisis — major geographic maldistribution of urologists",
+      "Subspecialization increasing — urologic oncology, female pelvic medicine, pediatric urology fellowships growing"
+    ]
+  },
+  "quality_score": 0.82,
+  "sources_count": 40,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Urologists USA 2025 2026 daily work tasks responsibilities surgical caseload",
+      "sources": [
+        {"title": "Physicians and Surgeons - Occupational Outlook Handbook - BLS", "url": "https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm"},
+        {"title": "29-1229.03 - Urologists - O*NET OnLine", "url": "https://www.onetonline.org/link/summary/29-1229.03"},
+        {"title": "Exploring the Demands of Urology: On-Call Compensation - AUA Journals", "url": "https://www.auajournals.org/doi/10.1097/UPJ.0000000000000542"},
+        {"title": "Navigating the Urology Workforce Crisis - Urology Times", "url": "https://www.urologytimes.com/view/navigating-the-urology-workforce-crisis-a-call-to-action"},
+        {"title": "Urology Outpatient Procedures by PAs and NPs - PMC", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11664870/"},
+        {"title": "Projected US Urology Workforce per Capita 2020-2060 - JAMA", "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2786183"}
+      ]
+    },
+    {
+      "query": "Urologists USA 2025 2026 licensing board certification ABU regulations requirements",
+      "sources": [
+        {"title": "Certifying Examination (Part 2) - ABU", "url": "https://abu.org/certifying-examination-part-2/"},
+        {"title": "Qualifying Examination (Part 1) - ABU", "url": "https://abu.org/qualifying-examination-part-1/"},
+        {"title": "Initial Certification - ABU", "url": "https://abu.org/initial-certification/"},
+        {"title": "2026 Information for Applicants - ABU Handbook (PDF)", "url": "https://abu.org/wp-content/uploads/pt1/2026CertHandbook.pdf"},
+        {"title": "Navigating the ABU Certification Journey - Urology Times", "url": "https://www.urologytimes.com/view/navigating-the-abu-certification-journey-the-value-of-recertification-and-upcoming-changes"},
+        {"title": "ABU Certification Testing - Pearson VUE", "url": "https://www.pearsonvue.com/us/en/abu.html"}
+      ]
+    },
+    {
+      "query": "Urologists USA EHR software tools robotic surgery da Vinci technology 2025 2026",
+      "sources": [
+        {"title": "What's Next in Urology Robotics: Future Perspectives - AUA News", "url": "https://auanews.net/issues/articles/2025/march-2025/whats-next-in-urology-robotics-future-perspectives"},
+        {"title": "Robotic Urologic Surgery for Surgeons - Intuitive", "url": "https://www.intuitive.com/en-us/healthcare-professionals/surgeons/urology"},
+        {"title": "Beyond Da Vinci: Comparative Review of Next-Gen Robotic Platforms - MDPI", "url": "https://www.mdpi.com/2077-0383/14/19/6775"},
+        {"title": "The Future of Robotics in Surgery: 2026 Trends - Sermo", "url": "https://www.sermo.com/resources/robotics-in-surgery/"},
+        {"title": "Best Urology EMR Software List 2026 - EMRFinder", "url": "https://emrfinder.com/urology-emr/"},
+        {"title": "Best Urology EMR/EHR Software 2025 - FindEMR", "url": "https://www.findemr.com/urology-ehr-software"}
+      ]
+    },
+    {
+      "query": "Urology terminology abbreviations jargon BPH PSA TURP professional",
+      "sources": [
+        {"title": "Medical Abbreviations in Urology - Urology Textbook", "url": "https://www.urology-textbook.com/medical-abbreviations.html"},
+        {"title": "Glossary of Terms in Urology and Prostate Health - Urologix", "url": "https://urologix.com/glossary.php"},
+        {"title": "Urologic Glossary - Lowcountry Urology Clinics", "url": "https://lowcountryurology.com/for-patients/glossary/"},
+        {"title": "Urological Terminology - Center for Advanced Urology", "url": "https://www.centerforadvancedurology.com/glossary/"},
+        {"title": "Translating Urologic Acronyms - AAPC Coding", "url": "https://www.aapc.com/codes/coding-newsletters/my-urology-coding-alert/translating-urologic-acronyms-is-your-key-to-deciphering-operative-reports-article"}
+      ]
+    },
+    {
+      "query": "Urologists USA career path salary 2025 2026 burnout motivation",
+      "sources": [
+        {"title": "Average Urologist Salary in the US - Physician on FIRE", "url": "https://www.physicianonfire.com/average-urologist-salary/"},
+        {"title": "Doximity 2025 Physician Compensation Report", "url": "https://www.doximity.com/reports/physician-compensation-report/2025"},
+        {"title": "Urology Salary 2026 - SalaryDr", "url": "https://www.salarydr.com/specialty/urology"},
+        {"title": "Navigating the Growing Demand: Top Career Opportunities for Urologists 2025 - Momentum HCS", "url": "https://momentumhcs.com/navigating-the-growing-demand-top-career-opportunities-for-urologists-in-2025/"},
+        {"title": "Urologist Salary - ZipRecruiter", "url": "https://www.ziprecruiter.com/Salaries/Urologist-Salary"},
+        {"title": "Urologist Salary 2025 - Salary.com", "url": "https://www.salary.com/research/salary/alternate/urologist-salary"}
+      ]
+    },
+    {
+      "query": "Urologists USA professional associations AUA conferences 2025 2026",
+      "sources": [
+        {"title": "AUA 2025 Annual Meeting", "url": "https://www.auanet.org/AUA2025"},
+        {"title": "AUA 2026 Annual Meeting - Washington DC", "url": "https://pr-medicalevents.com/event/aua-2025-2/"},
+        {"title": "AUA 2025 Annual Meeting - UroToday", "url": "https://www.urotoday.com/calendar-events/american-urological-association-aua-2025-annual-meeting.html"},
+        {"title": "Western Section AUA Meetings", "url": "https://wsaua.org/meetings/"},
+        {"title": "Conference Preview: AUA 2025 - Urology Times", "url": "https://www.urologytimes.com/view/conference-preview-american-urological-association-2025"},
+        {"title": "AUA 2025 Annual Meeting Recap - Guideline Central", "url": "https://www.guidelinecentral.com/insights/aua-2025-annual-meeting-recap/"}
+      ]
+    },
+    {
+      "query": "Urologists USA job market demand salary shortage outlook 2025 2026",
+      "sources": [
+        {"title": "Addressing the Physician and Urology Workforce Shortage - LUGPA", "url": "https://www.lugpa.org/addressing-the-physician-and-urology-workforce-shortage"},
+        {"title": "Our Priority: Address the Urologic Workforce Shortage - AUA", "url": "https://www.auanet.org/advocacy/federal-advocacy/workforce-shortages"},
+        {"title": "Earlier Planned Retirement May Exacerbate Urology Shortage - ScienceDirect", "url": "https://www.sciencedirect.com/science/article/abs/pii/S0090429524002796"},
+        {"title": "Aging Urology Workforce & Staffing - AMN Healthcare", "url": "https://www.amnhealthcare.com/amn-insights/physician/blog/the-impact-of-an-aging-physician-workforce-on-urology-and-healthcare-staffing-needs/"},
+        {"title": "8 Things to Know About the Urologist Shortage - Healthgrades", "url": "https://resources.healthgrades.com/pro/8-things-to-know-about-the-urologist-shortage"},
+        {"title": "Urologist Salaries and Specialties - AMN Healthcare", "url": "https://www.amnhealthcare.com/blog/physician/perm/urologist-salaries-and-specialties/"}
+      ]
+    }
+  ]
+}

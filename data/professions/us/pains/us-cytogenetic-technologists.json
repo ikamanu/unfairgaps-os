@@ -1,0 +1,614 @@
+[
+  {
+    "id": "us-cytogenetic-technologists-p01",
+    "title": "FISH Signal Counting & Ratio Calculator",
+    "problem": "Cytogenetic technologists manually count FISH signals across dozens of cells per case and calculate signal ratios to determine amplification, deletion, or translocation status. Manual counting is tedious, error-prone, and time-consuming, especially for cases requiring 200+ cell counts. Miscounts can lead to incorrect cancer diagnoses or missed abnormalities.",
+    "who": "Cytogenetic technologists performing FISH analysis in oncology and prenatal labs",
+    "frequency": "daily",
+    "time_waste_h": 3,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "FISH Signal Calculator",
+      "one_liner": "Calculates FISH signal ratios, percentages of abnormal cells, and determines positive/negative cutoff status from raw cell counts",
+      "inputs": [
+        {
+          "name": "probe_name",
+          "type": "text",
+          "label": "Probe name (e.g., HER2/CEP17, BCR/ABL)"
+        },
+        {
+          "name": "total_cells_counted",
+          "type": "number",
+          "label": "Total cells scored"
+        },
+        {
+          "name": "signal_counts",
+          "type": "text",
+          "label": "Signal pattern counts (e.g., 2R2G=150, 1R2G=30, 2R1G=20)"
+        },
+        {
+          "name": "cutoff_percentage",
+          "type": "number",
+          "label": "Lab-established cutoff percentage for abnormal"
+        },
+        {
+          "name": "test_type",
+          "type": "text",
+          "label": "Test type (fusion, deletion, amplification, enumeration)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "abnormal_percentage",
+          "label": "Percentage of abnormal cells"
+        },
+        {
+          "name": "signal_ratio",
+          "label": "Signal ratio (for amplification probes)"
+        },
+        {
+          "name": "result_status",
+          "label": "Positive/Negative based on cutoff"
+        },
+        {
+          "name": "cell_breakdown",
+          "label": "Detailed signal pattern breakdown"
+        }
+      ],
+      "formula_hint": "abnormal_pct = (abnormal_cells / total_cells) * 100; ratio = target_signals / reference_signals; positive if abnormal_pct > cutoff OR ratio > 2.0 for HER2",
+      "rates": {
+        "her2_amplification_ratio": 2.0,
+        "typical_deletion_cutoff_pct": 7.0,
+        "typical_fusion_cutoff_pct": 5.0
+      }
+    },
+    "example_queries": [
+      "I scored 200 cells for BCR/ABL: 185 showed 2R2G, 12 showed 1R1G1F, 3 showed 2R2G1F. Is this positive?",
+      "Calculate HER2 amplification ratio: 200 cells, total HER2 signals 890, total CEP17 signals 410"
+    ]
+  },
+  {
+    "id": "us-cytogenetic-technologists-p02",
+    "title": "Culture Setup & Harvest Time Calculator",
+    "problem": "Cytogenetic technologists must calculate precise culture setup times, mitotic arrest agent addition times, and harvest schedules for different specimen types (blood, bone marrow, amniotic fluid, solid tissue). Each specimen type requires different culture durations, media volumes, and synchronization protocols. Miscalculating timing leads to poor metaphase yields and repeat cultures, delaying critical diagnoses.",
+    "who": "Cytogenetic technologists in hospital and reference cytogenetics labs",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 3000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Cytogenetic Culture & Harvest Scheduler",
+      "one_liner": "Calculates optimal culture setup, colcemid addition, and harvest times based on specimen type and protocol",
+      "inputs": [
+        {
+          "name": "specimen_type",
+          "type": "text",
+          "label": "Specimen type (peripheral blood, bone marrow, amniotic fluid, CVS, tissue)"
+        },
+        {
+          "name": "setup_datetime",
+          "type": "text",
+          "label": "Culture setup date/time"
+        },
+        {
+          "name": "protocol",
+          "type": "text",
+          "label": "Protocol (unstimulated, PHA-stimulated, synchronized, direct)"
+        },
+        {
+          "name": "number_of_cultures",
+          "type": "number",
+          "label": "Number of cultures to set up"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "colcemid_add_time",
+          "label": "Colcemid addition date/time"
+        },
+        {
+          "name": "harvest_time",
+          "label": "Harvest date/time"
+        },
+        {
+          "name": "culture_duration",
+          "label": "Total culture duration (hours)"
+        },
+        {
+          "name": "schedule_summary",
+          "label": "Full schedule with all steps"
+        }
+      ],
+      "formula_hint": "PHA blood=72h culture, colcemid 30min before harvest; bone marrow unstim=24h; amniotic fluid=7-10 days with feeding schedule; sync protocol adds thymidine block times",
+      "rates": {
+        "pha_blood_hours": 72,
+        "bone_marrow_unstim_hours": 24,
+        "colcemid_pretreat_min": 30,
+        "amniotic_fluid_days_min": 7
+      }
+    },
+    "example_queries": [
+      "I'm setting up a PHA-stimulated blood culture at 2pm today, when should I add colcemid and harvest?",
+      "Calculate harvest schedule for 3 bone marrow cultures: 1 direct, 1 unstimulated 24h, 1 synchronized"
+    ]
+  },
+  {
+    "id": "us-cytogenetic-technologists-p03",
+    "title": "Karyotype ISCN Nomenclature Builder",
+    "problem": "Writing karyotype descriptions using ISCN (International System for Cytogenomic Nomenclature) notation is complex and error-prone. Technologists must correctly describe chromosome number, sex chromosomes, structural and numerical abnormalities using strict formatting rules. Nomenclature errors in reports can cause misinterpretation by ordering physicians, leading to incorrect treatment decisions.",
+    "who": "Cytogenetic technologists and lab supervisors writing karyotype reports",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "ISCN Karyotype Nomenclature Advisor",
+      "one_liner": "Helps build correct ISCN notation for karyotype descriptions and validates existing nomenclature strings",
+      "expertise_area": "ISCN 2024 cytogenomic nomenclature for constitutional and acquired abnormalities",
+      "decision_criteria": [
+        "abnormality type (numerical, structural, mosaic)",
+        "constitutional vs acquired",
+        "number of clones",
+        "composite karyotype rules"
+      ],
+      "context_needed": [
+        "ISCN 2024 rules",
+        "common abbreviations (del, dup, inv, t, der, add, mar)",
+        "clone definition rules",
+        "mosaic notation"
+      ]
+    },
+    "example_queries": [
+      "How do I write the ISCN for a male with a translocation between chromosomes 9 and 22 in 18 of 20 cells?",
+      "Is this nomenclature correct: 46,XX,del(5)(q13q33)[15]/46,XX[5]?",
+      "How do I describe a complex karyotype with 3 clones in a bone marrow sample?"
+    ]
+  },
+  {
+    "id": "us-cytogenetic-technologists-p04",
+    "title": "CAP Accreditation Inspection Checklist",
+    "problem": "CAP (College of American Pathologists) accreditation inspections require cytogenetics labs to demonstrate compliance across dozens of checklist requirements covering personnel qualifications, QC, proficiency testing, SOPs, and safety. Preparing for an inspection is stressful and time-consuming, and missing even one requirement can result in deficiencies that require corrective action or threaten accreditation.",
+    "who": "Lab supervisors and managers preparing for CAP cytogenetics inspections",
+    "frequency": "quarterly",
+    "time_waste_h": 20,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "CAP Cytogenetics Inspection Prep Checklist",
+      "one_liner": "Comprehensive pre-inspection checklist covering all CAP cytogenetics laboratory accreditation requirements",
+      "steps": [
+        "Step 1: Verify all personnel qualifications and licensure are current (CG(ASCP) certification, state licenses)",
+        "Step 2: Confirm continuing education records are up to date for all staff",
+        "Step 3: Review and update all SOPs - ensure annual review signatures are current",
+        "Step 4: Verify QC records are complete for all reagents, stains, and media",
+        "Step 5: Confirm proficiency testing enrollment and results are documented (CAP surveys)",
+        "Step 6: Check instrument calibration and maintenance logs (microscopes, ovens, centrifuges)",
+        "Step 7: Verify specimen tracking - accession to final report chain of custody",
+        "Step 8: Review turnaround time compliance data",
+        "Step 9: Confirm safety documentation (chemical hygiene, biosafety, OSHA compliance)",
+        "Step 10: Audit recent karyotype and FISH reports for nomenclature accuracy",
+        "Step 11: Verify competency assessment records for all technical staff",
+        "Step 12: Check corrective action documentation for any previous deficiencies"
+      ],
+      "warnings": [
+        "Warning: All SOPs must have documented annual review even if no changes were made",
+        "Warning: Proficiency testing failures require documented root cause analysis and corrective action",
+        "Warning: Personnel who have not completed required CE hours cannot perform testing"
+      ],
+      "regulatory_refs": [
+        "42 CFR Part 493 (CLIA)",
+        "CAP Cytogenetics Checklist (CYG)",
+        "CAP Laboratory General Checklist (GEN)"
+      ]
+    },
+    "example_queries": [
+      "We have a CAP inspection next month, what do I need to prepare for cytogenetics?",
+      "What are the most common CAP deficiencies in cytogenetics labs?"
+    ]
+  },
+  {
+    "id": "us-cytogenetic-technologists-p05",
+    "title": "QC Documentation & Levy-Jennings Tracker",
+    "problem": "Cytogenetic technologists must document daily quality control for reagents, stains, culture media, and probe performance. Tracking QC trends over time using Levy-Jennings charts is required for CAP/CLIA compliance but is often done manually in spreadsheets, which is tedious and makes it hard to spot out-of-range trends before they cause testing failures.",
+    "who": "Cytogenetic technologists responsible for daily QC and lab supervisors reviewing QC data",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 8000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Cytogenetics QC Trend Calculator",
+      "one_liner": "Calculates QC statistics, detects Westgard rule violations, and tracks reagent/probe performance trends",
+      "inputs": [
+        {
+          "name": "qc_parameter",
+          "type": "text",
+          "label": "QC parameter (e.g., band resolution, FISH signal intensity, mitotic index)"
+        },
+        {
+          "name": "values",
+          "type": "text",
+          "label": "QC values (comma-separated, most recent 20-30 data points)"
+        },
+        {
+          "name": "established_mean",
+          "type": "number",
+          "label": "Established mean (if known)"
+        },
+        {
+          "name": "established_sd",
+          "type": "number",
+          "label": "Established SD (if known)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mean",
+          "label": "Calculated mean"
+        },
+        {
+          "name": "sd",
+          "label": "Standard deviation"
+        },
+        {
+          "name": "cv",
+          "label": "Coefficient of variation (%)"
+        },
+        {
+          "name": "westgard_violations",
+          "label": "Westgard rule violations detected"
+        },
+        {
+          "name": "trend_assessment",
+          "label": "Trend assessment (stable, shift, drift)"
+        }
+      ],
+      "formula_hint": "mean = sum(values)/n; SD = sqrt(sum((x-mean)^2)/(n-1)); CV = (SD/mean)*100; Westgard rules: 1-2s warning, 1-3s reject, 2-2s reject, R-4s reject, 4-1s reject, 10x reject",
+      "rates": {
+        "warning_1_2s": 2.0,
+        "reject_1_3s": 3.0
+      }
+    },
+    "example_queries": [
+      "Check these QC values for Westgard violations: 98, 101, 99, 103, 97, 105, 108, 110, 112, 109",
+      "Calculate mean and SD for my FISH probe signal intensity QC data from the last month"
+    ]
+  },
+  {
+    "id": "us-cytogenetic-technologists-p06",
+    "title": "Karyotype Analysis Report Generator",
+    "problem": "Cytogenetic technologists prepare detailed karyotype analysis reports for each patient case, including clinical indication, specimen information, methodology, results in ISCN notation, and interpretive comments. Writing these reports is repetitive and time-consuming, especially for common abnormalities where standard interpretive language exists. Inconsistent report language across technologists can confuse clinicians.",
+    "who": "Cytogenetic technologists and lab supervisors preparing final reports",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Cytogenetic Report Generator",
+      "one_liner": "Generates standardized karyotype and FISH analysis reports with appropriate interpretive comments based on findings",
+      "doc_name": "Cytogenetic Analysis Report",
+      "variables": [
+        {
+          "name": "patient_id",
+          "label": "Patient ID / accession number"
+        },
+        {
+          "name": "specimen_type",
+          "label": "Specimen type (blood, bone marrow, amniotic fluid)"
+        },
+        {
+          "name": "clinical_indication",
+          "label": "Clinical indication / reason for testing"
+        },
+        {
+          "name": "test_type",
+          "label": "Test type (karyotype, FISH, both)"
+        },
+        {
+          "name": "karyotype_result",
+          "label": "ISCN karyotype notation"
+        },
+        {
+          "name": "cells_analyzed",
+          "label": "Number of cells analyzed / counted"
+        },
+        {
+          "name": "band_resolution",
+          "label": "Band resolution achieved"
+        },
+        {
+          "name": "abnormality_type",
+          "label": "Abnormality type (normal, trisomy, translocation, deletion, etc.)"
+        }
+      ],
+      "structure_hint": "Header (lab info, patient info) -> Clinical Indication -> Specimen Info -> Methodology -> Results (ISCN) -> Interpretation -> Recommendation for follow-up testing if applicable -> Technologist/Director signatures"
+    },
+    "example_queries": [
+      "Generate a karyotype report for a bone marrow sample showing Philadelphia chromosome t(9;22) in a CML patient",
+      "Write a FISH report for prenatal trisomy 21 detected in amniotic fluid"
+    ]
+  },
+  {
+    "id": "us-cytogenetic-technologists-p07",
+    "title": "CLIA/CAP Penalty & Sanctions Reference",
+    "problem": "Cytogenetics labs face complex regulatory consequences for non-compliance with CLIA and CAP requirements. Understanding the specific penalties - from directed plans of correction to certificate revocation - and their triggers helps lab managers prioritize compliance efforts. Finding this information requires digging through multiple federal and state regulations.",
+    "who": "Lab managers, supervisors, and quality assurance officers in cytogenetics labs",
+    "frequency": "quarterly",
+    "time_waste_h": 3,
+    "money_risk_usd": 25000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "CLIA/CAP Cytogenetics Sanctions Reference",
+      "one_liner": "Quick lookup of CLIA enforcement actions, CAP deficiency categories, and penalties for cytogenetics lab non-compliance",
+      "data_domain": "CLIA sanctions, CAP accreditation deficiency levels, and state laboratory penalties for cytogenetics",
+      "lookup_keys": [
+        "violation_type",
+        "severity_level",
+        "deficiency_category",
+        "enforcement_action"
+      ],
+      "data_hints": {
+        "source_law": "42 CFR Part 493 Subpart R (Enforcement Procedures)",
+        "key_sections": [
+          "493.1800-493.1850 (CLIA sanctions)",
+          "CAP Cytogenetics Checklist phases I and II deficiencies"
+        ]
+      }
+    },
+    "example_queries": [
+      "What are the CLIA penalties for failing proficiency testing in cytogenetics?",
+      "What happens if our lab gets a Phase II deficiency on CAP inspection?"
+    ]
+  },
+  {
+    "id": "us-cytogenetic-technologists-p08",
+    "title": "ASCP Continuing Education Tracker",
+    "problem": "Cytogenetic technologists with CG(ASCP) certification must complete continuing education credits within specific timeframes and categories to maintain certification. Tracking credits across multiple providers, ensuring category requirements are met, and calculating remaining credits needed before the deadline is confusing and often done last-minute, risking certification lapse.",
+    "who": "All certified cytogenetic technologists (CG(ASCP))",
+    "frequency": "monthly",
+    "time_waste_h": 2,
+    "money_risk_usd": 5000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "ASCP CE Credit Tracker",
+      "one_liner": "Calculates remaining CE credits needed for CG(ASCP) certification maintenance by category and deadline",
+      "inputs": [
+        {
+          "name": "certification_cycle_end",
+          "type": "text",
+          "label": "Certification cycle end date"
+        },
+        {
+          "name": "credits_earned",
+          "type": "text",
+          "label": "Credits earned by category (e.g., cytogenetics=12, general lab=6, safety=2)"
+        },
+        {
+          "name": "total_required",
+          "type": "number",
+          "label": "Total CE credits required for cycle"
+        },
+        {
+          "name": "category_requirements",
+          "type": "text",
+          "label": "Category-specific requirements if known"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "credits_remaining",
+          "label": "Total credits still needed"
+        },
+        {
+          "name": "category_gaps",
+          "label": "Credits needed per category"
+        },
+        {
+          "name": "months_remaining",
+          "label": "Months until deadline"
+        },
+        {
+          "name": "credits_per_month",
+          "label": "Credits needed per remaining month to stay on track"
+        }
+      ],
+      "formula_hint": "remaining = required - earned; months_left = deadline - today in months; pace = remaining / months_left; check each category meets minimum",
+      "rates": {
+        "ascp_cycle_years": 3,
+        "typical_total_credits": 36
+      }
+    },
+    "example_queries": [
+      "I need 36 CE credits by December 2027, I have 14 so far. How many do I need per month?",
+      "I have 20 cytogenetics credits and 4 safety credits. Am I meeting ASCP category requirements?"
+    ]
+  },
+  {
+    "id": "us-cytogenetic-technologists-p09",
+    "title": "Chromosome Abnormality & Clinical Significance Reference",
+    "problem": "Cytogenetic technologists encounter a wide variety of chromosomal abnormalities and must quickly determine their clinical significance for report interpretation. Technologists need to look up whether a specific translocation, deletion, or gain is associated with a particular cancer subtype, syndrome, or is a normal variant. This information is scattered across multiple databases and textbooks.",
+    "who": "Cytogenetic technologists interpreting karyotypes and FISH results",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 8000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Cytogenetic Abnormality Clinical Reference",
+      "one_liner": "Quick lookup of chromosome abnormalities, associated diseases/syndromes, genes involved, and clinical significance",
+      "data_domain": "Recurrent chromosome abnormalities in cancer and constitutional genetics, WHO classification of hematologic neoplasms",
+      "lookup_keys": [
+        "abnormality_iscn",
+        "disease_type",
+        "chromosome_region",
+        "gene_name"
+      ],
+      "data_hints": {
+        "source_law": "WHO Classification of Tumours of Haematopoietic and Lymphoid Tissues (5th edition)",
+        "key_sections": [
+          "Recurrent genetic abnormalities in AML",
+          "Recurrent genetic abnormalities in ALL",
+          "Constitutional trisomies and monosomies",
+          "Microdeletion syndromes"
+        ]
+      }
+    },
+    "example_queries": [
+      "What is the clinical significance of t(15;17)(q24;q21) in a bone marrow sample?",
+      "What cancers are associated with deletion of 5q?",
+      "Is inv(9)(p11q13) a normal variant or pathogenic?"
+    ]
+  },
+  {
+    "id": "us-cytogenetic-technologists-p10",
+    "title": "Specimen Rejection Criteria Advisor",
+    "problem": "Cytogenetic technologists must evaluate incoming specimens to determine if they meet acceptance criteria for testing. Decisions about whether to reject, accept with disclaimer, or request a recollect depend on specimen type, transport conditions, age, volume, and clinical urgency. Incorrect rejection of a critical specimen delays diagnosis; accepting a poor specimen wastes resources and may produce unreliable results.",
+    "who": "Cytogenetic technologists receiving and accessioning specimens",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 4000,
+    "source": "daily_reality",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Specimen Acceptance/Rejection Advisor",
+      "one_liner": "Advises on specimen acceptability for cytogenetic testing based on type, condition, transport, and clinical urgency",
+      "expertise_area": "Cytogenetic specimen requirements, rejection criteria, and exception handling for urgent cases",
+      "decision_criteria": [
+        "specimen_type",
+        "transport_temperature",
+        "time_since_collection",
+        "volume_received",
+        "clinical_urgency",
+        "anticoagulant_type"
+      ],
+      "context_needed": [
+        "CAP specimen handling requirements",
+        "CLIA pre-analytic standards",
+        "lab-specific SOPs for specimen acceptance"
+      ]
+    },
+    "example_queries": [
+      "Bone marrow arrived 36 hours after collection in sodium heparin, room temp. Can I still culture it?",
+      "Amniotic fluid sample is blood-tinged and only 8mL. Should I reject or try to set up?",
+      "Blood for karyotype came in EDTA instead of heparin. Can I use it?"
+    ]
+  },
+  {
+    "id": "us-cytogenetic-technologists-p11",
+    "title": "Troubleshooting Failed Cultures & Poor Preparations",
+    "problem": "When cell cultures fail to grow, metaphase spreads are poor quality, or banding is suboptimal, technologists must diagnose the root cause and determine corrective action. Troubleshooting involves evaluating multiple variables (media, temperature, reagents, technique) and the knowledge is often tribal, learned through years of experience. Failed cultures delay critical diagnoses.",
+    "who": "Cytogenetic technologists dealing with culture failures or poor slide quality",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 6000,
+    "source": "tools",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Cytogenetics Troubleshooting Checklist",
+      "one_liner": "Systematic troubleshooting guide for failed cultures, poor metaphases, suboptimal banding, and FISH failures",
+      "steps": [
+        "Step 1: Identify the problem category (no growth, poor mitotic index, poor morphology, poor banding, FISH failure)",
+        "Step 2: For no growth - check specimen viability (collection time, transport), media QC, incubator temp/CO2, contamination",
+        "Step 3: For low mitotic index - verify colcemid concentration and exposure time, check culture duration, evaluate cell density",
+        "Step 4: For poor chromosome morphology - evaluate hypotonic treatment time and temperature, fixation technique, humidity during spreading",
+        "Step 5: For poor banding - check trypsin age/concentration, Giemsa stain preparation, slide aging time, destaining if needed",
+        "Step 6: For FISH failure - verify probe hybridization conditions, check denaturation temperature, evaluate slide pretreatment",
+        "Step 7: Review QC records for reagent lot changes or equipment issues",
+        "Step 8: Document troubleshooting steps and corrective action taken",
+        "Step 9: Determine if specimen recollection is needed and communicate to ordering physician"
+      ],
+      "warnings": [
+        "Warning: Always save remaining specimen material before troubleshooting in case recollection is not possible",
+        "Warning: Document all troubleshooting for CLIA/CAP compliance",
+        "Warning: For oncology specimens, prioritize FISH on direct preparations if culture fails"
+      ],
+      "regulatory_refs": [
+        "CAP CYG checklist - corrective action requirements",
+        "CLIA 42 CFR 493.1256 - standard operating procedures"
+      ]
+    },
+    "example_queries": [
+      "My bone marrow culture has no metaphases after 24 hours. What should I check?",
+      "G-banding looks washed out on today's slides. How do I troubleshoot?",
+      "FISH signals are very faint and background is high. What went wrong?"
+    ]
+  },
+  {
+    "id": "us-cytogenetic-technologists-p12",
+    "title": "Turnaround Time Compliance Monitor",
+    "problem": "Cytogenetics labs must meet turnaround time (TAT) targets for different test types - STAT FISH within 24 hours, routine FISH 48-72 hours, karyotypes 7-14 days. Tracking compliance across multiple specimen types and test categories is complex, and TAT failures can trigger CAP deficiencies, affect patient care, and require documented corrective action plans.",
+    "who": "Lab supervisors and managers responsible for TAT compliance reporting",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Cytogenetics TAT Compliance Calculator",
+      "one_liner": "Calculates turnaround time compliance rates by test type and identifies cases exceeding target TAT",
+      "inputs": [
+        {
+          "name": "test_type",
+          "type": "text",
+          "label": "Test type (STAT FISH, routine FISH, karyotype, prenatal)"
+        },
+        {
+          "name": "cases_data",
+          "type": "text",
+          "label": "Case data: received date/time and reported date/time pairs"
+        },
+        {
+          "name": "target_tat_hours",
+          "type": "number",
+          "label": "Target TAT in hours for this test type"
+        },
+        {
+          "name": "reporting_period",
+          "type": "text",
+          "label": "Reporting period (e.g., Q1 2026)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "compliance_rate",
+          "label": "TAT compliance rate (%)"
+        },
+        {
+          "name": "average_tat",
+          "label": "Average TAT (hours/days)"
+        },
+        {
+          "name": "median_tat",
+          "label": "Median TAT"
+        },
+        {
+          "name": "outliers",
+          "label": "Cases exceeding target TAT with details"
+        },
+        {
+          "name": "trend_vs_prior",
+          "label": "Trend compared to prior period"
+        }
+      ],
+      "formula_hint": "TAT = report_datetime - received_datetime; compliance_rate = (cases_within_target / total_cases) * 100; flag outliers > 1.5x target",
+      "rates": {
+        "stat_fish_target_hours": 24,
+        "routine_fish_target_hours": 72,
+        "karyotype_target_days": 14,
+        "prenatal_karyotype_target_days": 10
+      }
+    },
+    "example_queries": [
+      "Calculate our FISH TAT compliance for this month: 45 cases, 42 reported within 48 hours, 3 took 72+ hours",
+      "What is our average karyotype turnaround time if these are my case TATs: 8, 10, 9, 14, 11, 7, 12, 15, 9, 10 days?"
+    ]
+  }
+]

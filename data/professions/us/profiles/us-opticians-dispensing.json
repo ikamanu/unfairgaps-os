@@ -1,0 +1,233 @@
+{
+  "profession_id": "us-opticians-dispensing",
+  "profession_name": "Opticians, Dispensing",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Dispensing opticians fit eyeglasses and contact lenses following prescriptions from ophthalmologists or optometrists. They work in optical stores, eye care practices, and hospitals, helping patients select frames, taking precise measurements, and ensuring proper lens fit.",
+    "typical_tasks": [
+      "Interpret prescriptions from ophthalmologists and optometrists",
+      "Help patients select eyeglass frames based on face shape, lifestyle, and prescription",
+      "Take precise measurements: pupillary distance, vertex distance, seg height",
+      "Fit and adjust eyeglass frames for proper alignment",
+      "Measure eye shape and size for contact lens fitting",
+      "Teach patients proper contact lens insertion, removal, and care",
+      "Complete work orders for optical laboratories",
+      "Perform minor frame repairs (nose pads, temples, screws)",
+      "Maintain inventory of frames and lenses",
+      "Process insurance claims and payments",
+      "Keep prescription records and work orders"
+    ],
+    "key_documents": [
+      "Optical prescriptions (Rx)",
+      "Work orders for laboratories",
+      "Patient fitting records",
+      "Insurance claim forms",
+      "Inventory records",
+      "Payment and sales records"
+    ],
+    "deadlines": {
+      "patient_service": "~25 minutes per patient interaction, 20+ patients/day",
+      "lab_orders": "Submit same-day for standard turnaround",
+      "insurance_claims": "Process within billing cycle",
+      "ce_requirements": "Per state and ABO/NCLE recertification schedules"
+    },
+    "seasonality": "Busiest during back-to-school season (August-September), year-end insurance benefit spending (November-December), and after annual eye exam peaks. Tax refund season (February-April) also drives sales.",
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/opticians-dispensing.htm", "fact": "BLS Occupational Outlook Handbook for dispensing opticians"},
+      {"url": "https://www.optifyonline.com/post/optician-shortage-website-pre-shop", "fact": "20 patients/day through dispensary, 25 minutes each = 8.3 hours of optician time"}
+    ]
+  },
+  "regulatory": {
+    "summary": "Licensing requirements vary significantly by state — some require state licensure with ABO/NCLE exams, others have no requirements. ABO and NCLE provide national certifications for spectacle and contact lens dispensing respectively.",
+    "key_laws": [
+      {
+        "name": "State Opticianry Licensing Laws",
+        "detail": "Requirements vary by state — some require full licensure, others have no requirements. Over 20 states have some form of regulation.",
+        "status": "Active, varies significantly by state"
+      },
+      {
+        "name": "FTC Eyeglass Rule (16 CFR Part 456)",
+        "detail": "Requires prescribers to provide copy of eyeglass prescription to patient",
+        "status": "Active federal regulation"
+      },
+      {
+        "name": "FTC Contact Lens Rule (16 CFR Part 315)",
+        "detail": "Requires prescribers to provide and verify contact lens prescriptions",
+        "status": "Active federal regulation"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "State-dependent: some states require licensure, others do not",
+        "ABO (American Board of Opticianry) NOCE exam for spectacle dispensing",
+        "NCLE (National Contact Lens Examiners) CLRE exam for contact lens dispensing",
+        "Some states require associate degree in opticianry or apprenticeship",
+        "Continuing education required for certification and licensure renewal",
+        "Some states require both ABO and NCLE plus practical exams"
+      ],
+      "certifying_bodies": [
+        "ABO — American Board of Opticianry",
+        "NCLE — National Contact Lens Examiners",
+        "State licensing boards (varies)"
+      ]
+    },
+    "penalties": "State board penalties for practicing without license where required. FTC fines for prescription rule violations. HIPAA penalties for patient data breaches.",
+    "sources": [
+      {"url": "https://www.abo-ncle.org/ABONCLE/ABONCLE/Communities/State-Licensing-Boards.aspx", "fact": "ABO-NCLE state licensing board directory"},
+      {"url": "https://opticaltraining.com/state-regulations/", "fact": "State-by-state optician regulation requirements"},
+      {"url": "https://www.onlytradeschools.com/optician-license-requirement-by-state/", "fact": "2026 optician license requirement guide by state"}
+    ]
+  },
+  "tools": {
+    "summary": "Dispensing opticians use optical measurement instruments (lensometers, pupillometers), frame adjustment tools, digital measuring devices, and optical lab management software. Increasing adoption of digital lens measurement and virtual try-on technology.",
+    "primary_software": [
+      {"name": "Lensometer/Lensmeter", "purpose": "Verify lens power and optical center of finished lenses"},
+      {"name": "Pupillometer", "purpose": "Digital measurement of pupillary distance"},
+      {"name": "Digital measuring devices (Zeiss i.Terminal, Essilor Visioffice)", "purpose": "Precise frame and lens positioning measurements"},
+      {"name": "Frame adjustment tools", "purpose": "Pliers, heating units for frame fitting and repair"},
+      {"name": "Optical POS/Practice Management Software (Eyefinity, Crystal PM, ABB Optical)", "purpose": "Patient records, inventory management, insurance billing, lab orders"},
+      {"name": "Virtual try-on platforms", "purpose": "Digital frame selection tools for patient experience"},
+      {"name": "Lab management/ordering systems", "purpose": "Electronic work order submission to optical laboratories"}
+    ],
+    "pain_points": [
+      "Legacy POS systems with poor integration",
+      "Insurance billing complexity (vision vs medical plans)",
+      "Frame inventory management challenges",
+      "Online competition from Warby Parker, Zenni, etc.",
+      "Digital measurement device costs ($15,000-$50,000)"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/opticians-dispensing.htm", "fact": "BLS describes optician tools and work environment"},
+      {"url": "https://www.medicaleyecenter.com/dispensing-optician-job-description/", "fact": "Dispensing optician job description with tool requirements"}
+    ]
+  },
+  "terminology": {
+    "summary": "Dispensing opticians use terminology from optics, frame design, lens technology, and contact lens fitting.",
+    "key_terms": [
+      {"term": "PD", "meaning": "Pupillary Distance — distance between pupil centers"},
+      {"term": "OC", "meaning": "Optical Center — point of no prismatic effect in a lens"},
+      {"term": "Seg height", "meaning": "Segment height — position of bifocal/progressive reading zone"},
+      {"term": "Vertex distance", "meaning": "Distance from back surface of lens to cornea"},
+      {"term": "Pantoscopic tilt", "meaning": "Angle of frame front relative to vertical"},
+      {"term": "Wrap angle", "meaning": "Curvature of frame front"},
+      {"term": "Progressive/PAL", "meaning": "Progressive Addition Lens — no-line multifocal"},
+      {"term": "AR coating", "meaning": "Anti-reflective coating to reduce glare"},
+      {"term": "High-index", "meaning": "Thinner, lighter lens material for strong prescriptions"},
+      {"term": "Polycarbonate", "meaning": "Impact-resistant lens material, mandatory for children"},
+      {"term": "BC", "meaning": "Base Curve — curvature of contact lens fitting surface"},
+      {"term": "DIA", "meaning": "Diameter of contact lens"},
+      {"term": "OD/OS", "meaning": "Right eye (Oculus Dexter) / Left eye (Oculus Sinister)"},
+      {"term": "SPH/CYL/AXIS", "meaning": "Sphere, Cylinder, Axis — prescription components for correcting refractive error"},
+      {"term": "ADD", "meaning": "Addition power — near reading correction added to distance Rx"},
+      {"term": "Prism", "meaning": "Prescribed lens displacement for binocular vision issues"}
+    ],
+    "common_abbreviations": ["ABO", "NCLE", "PD", "OC", "PAL", "AR", "Rx", "CL (Contact Lens)", "OD/OS/OU"],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/opticians-dispensing.htm", "fact": "BLS description of optician measurements and terminology"},
+      {"url": "https://explorehealthcareers.org/careers/technologists-and-technicians/optician-dispensing/", "fact": "Optician career overview with professional terminology"}
+    ]
+  },
+  "career_psychology": {
+    "summary": "Dispensing opticians blend healthcare knowledge with retail/sales skills. Career progression from apprentice to certified to manager/owner. Online competition creating existential career anxiety.",
+    "career_levels": [
+      {"level": "Apprentice/Entry-level Optician", "salary_range": "$28,000-$35,000", "responsibilities": "Basic dispensing, frame selection assistance, learning under supervision"},
+      {"level": "Certified Optician (ABO)", "salary_range": "$38,000-$48,000", "responsibilities": "Independent dispensing, contact lens fitting, lab order management"},
+      {"level": "Senior/Lead Optician", "salary_range": "$48,000-$58,000", "responsibilities": "Complex prescriptions, specialty lenses, mentoring, quality control"},
+      {"level": "Manager/Practice Owner", "salary_range": "$55,000-$75,000+", "responsibilities": "Business management, hiring, P&L, vendor relationships"}
+    ],
+    "main_fears": [
+      "Incorrect measurements leading to poorly fitting lenses",
+      "Contact lens fitting complications (corneal issues)",
+      "Insurance claim denials",
+      "Online optical retail competition threatening job security",
+      "Prescription interpretation errors"
+    ],
+    "burnout_causes": [
+      "Retail pressure with healthcare responsibilities",
+      "Repetitive frame adjustments and measurements",
+      "Difficult customers with unrealistic expectations",
+      "Insurance billing frustrations",
+      "Relatively low pay for healthcare-adjacent profession",
+      "On-feet all day in busy optical shops"
+    ],
+    "growth_motivation": [
+      "ABO/NCLE certification for professional recognition and pay bump",
+      "Management/ownership of optical practice",
+      "Specialty areas (low vision, sports optics, pediatric)",
+      "Transition to optical industry sales/management",
+      "Further education toward optometry"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/opticians-dispensing.htm", "fact": "BLS median wage $46,560 and career outlook"},
+      {"url": "https://www.salary.com/research/salary/alternate/dispensing-optician-salary", "fact": "Dispensing optician salary breakdown by experience level"}
+    ]
+  },
+  "community": {
+    "summary": "OAA (Opticians Association of America) and state optician associations are primary organizations. ABO-NCLE provides certification framework and CE resources. Online communities growing but fragmented.",
+    "professional_associations": [
+      {"name": "OAA — Opticians Association of America", "url": "https://www.oaa.org", "membership_value": "Advocacy, CE courses, annual meetings, networking", "mandatory": false},
+      {"name": "ABO-NCLE", "url": "https://www.abo-ncle.org", "membership_value": "National certification, CE tracking, exam resources", "mandatory": false},
+      {"name": "State optician associations", "detail": "e.g., CADO (California), NYSSO (New York), etc.", "mandatory": false}
+    ],
+    "conferences": [
+      {"name": "Vision Expo East/West", "detail": "Major optical industry trade show with CE opportunities", "frequency": "Twice annually"},
+      {"name": "OAA Annual Conference", "detail": "Professional development and advocacy", "frequency": "Annual"},
+      {"name": "State association meetings", "detail": "Local CE and networking", "frequency": "Annual/quarterly"}
+    ],
+    "online_communities": [
+      "Reddit r/optician (small community)",
+      "Opticianworks.com forums and resources",
+      "Facebook optician groups",
+      "LinkedIn optical professionals",
+      "OptiBoard forums"
+    ],
+    "publications": [
+      "20/20 Magazine",
+      "Vision Monday",
+      "Eyecare Business"
+    ],
+    "sources": [
+      {"url": "https://www.abo-ncle.org/ABONCLE/ABONCLE/Communities/State-Licensing-Boards.aspx", "fact": "ABO-NCLE state licensing boards and community resources"},
+      {"url": "https://www.bls.gov/ooh/healthcare/opticians-dispensing.htm", "fact": "BLS optician career information and work environment"}
+    ]
+  },
+  "market": {
+    "summary": "Median salary $46,560 (BLS May 2024). 3% growth projected 2024-2034 with ~6,800 annual openings. About 69,600 employed nationally. Online competition threatening traditional optical retail.",
+    "salary_by_level": {
+      "entry": "$28,000-$35,000",
+      "mid_certified": "$38,000-$48,000",
+      "senior": "$48,000-$58,000",
+      "manager": "$55,000-$75,000+"
+    },
+    "geographic_variation": {
+      "national_median": "$46,560 (BLS May 2024)",
+      "high_cost_markets": "$55,000-$70,000+ (NYC, SF, DC)",
+      "lowest_10_percent": "Less than $30,070",
+      "highest_10_percent": "More than $64,910"
+    },
+    "estimated_practitioners": "69,600 dispensing opticians employed in US (BLS)",
+    "job_outlook": "3% growth 2024-2034 with ~6,800 annual openings. Growth driven by aging population needing corrective lenses.",
+    "work_arrangements": {
+      "dominant": "W-2 employees at optical chains (LensCrafters, Pearle Vision), independent practices, Walmart/Costco optical",
+      "independent": "Self-employed opticians owning optical shops (declining)",
+      "retail_hours": "Evening and weekend work common"
+    },
+    "market_trends": [
+      "Online optical retail (Warby Parker, Zenni) disrupting traditional dispensing",
+      "Digital measurement technology improving precision and efficiency",
+      "Virtual try-on reducing need for in-person frame selection",
+      "Aging population increasing demand for progressive lenses",
+      "Specialty lens demand growing (blue light, occupational)",
+      "Optician shortage in some markets despite overall moderate growth"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/opticians-dispensing.htm", "fact": "BLS: median wage $46,560, 3% growth, 6,800 annual openings, 69,600 employed"},
+      {"url": "https://www.optifyonline.com/post/optician-shortage-website-pre-shop", "fact": "Optician shortage in practices creating efficiency challenges"}
+    ]
+  },
+  "quality_score": 0.5,
+  "sources_count": 12,
+  "verified_sources": 6,
+  "confidence": "verified",
+  "raw_responses": []
+}

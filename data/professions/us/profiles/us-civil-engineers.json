@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-civil-engineers",
+  "profession_name": "Civil Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Split between office design work, site visits, and meetings. Office: CAD/BIM modeling, structural calculations, reviewing plans and specifications, writing reports. Site: inspecting construction progress, coordinating with contractors, ensuring compliance with plans. Meetings: client discussions, project coordination, regulatory agency consultations. Regular engagement with project managers, architects, and contractors.",
+    "key_documents": ["Engineering drawings and specifications", "Structural calculations", "Geotechnical reports", "Environmental impact assessments", "Construction permits and approvals", "Project management plans", "Cost estimates and bids", "Inspection reports", "As-built drawings", "Stormwater management plans"],
+    "deadlines": "Project milestones and construction schedules; permit application deadlines; regulatory compliance reporting; bid submission deadlines; PE license renewal cycles. Often work beyond 40 hours during critical project phases.",
+    "seasonality": "Construction season (spring through fall in northern US); budget and capital project approval cycles; government fiscal year deadlines affect public works projects. Reduced outdoor work in winter months in cold climates."
+  },
+  "regulatory": {
+    "laws_and_standards": ["State PE licensing laws", "Building codes (IBC, local codes)", "ASCE 7 (Minimum Design Loads)", "ACI 318 (Concrete design)", "AISC (Steel construction)", "EPA stormwater regulations (NPDES)", "ADA accessibility requirements", "State DOT standards for transportation projects", "NEPA (National Environmental Policy Act)"],
+    "licensing": "PE (Professional Engineer) license is critical — required to sign and seal drawings, offer services to public. Path: ABET-accredited BS in civil engineering → FE exam → 4 years experience → PE exam. PE license increases salary by ~$40,000. Some states require SE (Structural Engineer) license for structural work.",
+    "penalties": "Practicing without PE license is illegal and subject to fines/prosecution. Professional liability for design failures. State board disciplinary actions. Code violations can result in stop-work orders and fines. Personal liability for stamped/sealed documents.",
+    "regulatory_bodies": ["State Boards of Professional Engineers", "NCEES (National Council of Examiners for Engineering and Surveying)", "Local building departments", "State DOTs", "EPA", "Army Corps of Engineers", "FEMA"]
+  },
+  "tools": {
+    "software": ["AutoCAD Civil 3D - industry standard for civil design", "Revit - BIM modeling", "MicroStation (Bentley) - infrastructure design", "HEC-RAS - hydraulic modeling", "GIS (ArcGIS/QGIS) - geospatial analysis", "STAAD Pro/SAP2000/ETABS - structural analysis", "Primavera P6/MS Project - project management", "Bluebeam Revu - PDF markup and collaboration"],
+    "platforms": ["ProjectWise (Bentley) - document management", "BIM 360 (Autodesk) - cloud collaboration", "Procore - construction management", "PlanGrid - field collaboration", "OpenRoads Designer - road design"],
+    "gov_portals": ["State DOT project portals", "EPA NPDES permit system", "USACE regulatory portal", "FEMA flood map service center", "Sam.gov - federal contracting"]
+  },
+  "terminology": {
+    "jargon": ["Right-of-way (ROW)", "Easement", "Grading", "Cut and fill", "Retaining wall", "Bearing capacity", "Shear force/bending moment", "Dead load/live load", "Geotechnical investigation", "Stormwater detention/retention"],
+    "abbreviations": ["PE - Professional Engineer", "EIT - Engineer in Training", "FE - Fundamentals of Engineering", "BIM - Building Information Modeling", "ROW - Right of Way", "RFP/RFQ - Request for Proposal/Qualifications", "NPDES - National Pollutant Discharge Elimination System", "IBC - International Building Code", "DOT - Department of Transportation", "QA/QC - Quality Assurance/Quality Control", "SE - Structural Engineer", "GI - Geotechnical Investigation"]
+  },
+  "career_psychology": {
+    "career_levels": ["EIT/Graduate Engineer (0-4 years, pre-PE)", "Project Engineer (PE, 4-8 years)", "Senior Engineer (8-15 years)", "Principal/Associate (15+ years)", "Project Manager/Director", "VP/Partner/Practice Leader"],
+    "fears": ["Liability for structural failures", "PE license jeopardy from errors", "Project delays and cost overruns", "Infrastructure funding uncertainty", "Automation/AI replacing design roles", "Burnout from long hours and tight deadlines"],
+    "motivation": "Building tangible infrastructure that serves communities; bridges, roads, buildings that last decades; strong salary growth (6-7% annually); PE license as professional milestone. Nearly 90% report job satisfaction.",
+    "burnout": "High responsibility and accountability; tight deadlines; long hours during construction phases; coordination across multiple stakeholders. High turnover rates signal need for workplace reforms. BIM roles earn up to 40% more, creating pressure to upskill."
+  },
+  "community": {
+    "reddit": ["r/civilengineering", "r/AskEngineers", "r/engineering", "r/Construction", "r/StructuralEngineering"],
+    "linkedin": ["ASCE community", "Civil Engineering group", "Structural Engineering Professionals", "Transportation Engineering network"],
+    "associations": ["ASCE (American Society of Civil Engineers)", "ACI (American Concrete Institute)", "AISC (American Institute of Steel Construction)", "NSPE (National Society of Professional Engineers)", "AASHTO (American Association of State Highway and Transportation Officials)"],
+    "conferences": ["ASCE CI & CRC Joint Conference 2026 (San Antonio, TX)", "ASCE Earth and Space 2026 (Texas A&M, April)", "ASCE ICTD (Transportation & Development)", "World of Concrete - Las Vegas", "ACI Convention - biannual"]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 77000,
+      "mid_level_usd": 105000,
+      "senior_pe_usd": 148000,
+      "principal_director_usd": 185000
+    },
+    "average_salary_usd": 95000,
+    "job_count_estimate": "About 316,100 civil engineers employed in the US (BLS). Strong demand driven by Infrastructure Investment and Jobs Act funding. Employment projected to grow 5-7% through 2034.",
+    "work_arrangements": "Mix of office and field work. Site visits required during construction. Some hybrid options for design-focused roles. Government, consulting firms, and construction companies are primary employers.",
+    "trends": ["Infrastructure Investment and Jobs Act driving demand", "Salary growth 6-7% annually (outpacing US workforce)", "BIM adoption creating 40% salary premium", "Climate resilience and sustainable infrastructure", "AI and AR/VR transforming design visualization", "PE license providing $40k+ salary boost", "Deloitte 2026 outlook positive for engineering and construction"]
+  },
+  "quality_score": 0.85,
+  "sources_count": 7,
+  "verified_sources": 6
+}

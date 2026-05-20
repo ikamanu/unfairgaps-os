@@ -1,0 +1,250 @@
+{
+  "profession_id": "us-robotics-engineers",
+  "profession_name": "Robotics Engineers",
+  "soc_code": "17-2199.08",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Split between design work, programming, prototyping, and testing. Office: CAD modeling, algorithm development, simulation, writing control software in C++/Python. Lab/shop floor: building and configuring robots, calibrating sensors, debugging hardware-software integration. Meetings: cross-functional coordination with mechanical, electrical, and software teams; project reviews with stakeholders. Entry-level engineers focus on component-level tasks under supervision, while senior engineers lead system architecture decisions, manage teams, and drive R&D strategy. Most work standard 40-hour weeks, but overtime is common during testing phases and project deadlines.",
+    "key_documents": ["Robot design specifications and CAD drawings", "Control system architecture documents", "Software requirements and algorithm documentation", "Risk assessments and safety analyses", "Test plans and validation reports", "Integration and commissioning protocols", "Maintenance and troubleshooting manuals", "Project schedules and milestone reports", "Compliance documentation (ANSI/A3 R15.06, ISO 10218)", "End-effector specifications"],
+    "deadlines": "Product development milestones and sprint cycles; prototype delivery dates; testing and validation phases; safety certification timelines; production launch deadlines; grant and research proposal submissions. Agile sprints common in software-heavy roles, while hardware timelines follow traditional project management.",
+    "seasonality": "Relatively stable year-round demand. Conference season peaks in spring (ICRA in May) and fall (IROS in October). Academic hiring aligns with university calendars. Manufacturing automation projects may ramp up in Q1 aligned with capital budgets. Trade shows like Automate drive industry activity cycles."
+  },
+  "regulatory": {
+    "laws_and_standards": [
+      "ANSI/A3 R15.06-2025 (Industrial Robots and Robot Systems - Safety Requirements)",
+      "ISO 10218-1:2025 (Robots and Robotic Devices - Safety Requirements for Industrial Robots - Part 1: Robots)",
+      "ISO 10218-2:2025 (Robots and Robotic Devices - Safety Requirements - Part 2: Robot Systems and Integration)",
+      "ISO/TS 15066 (Robots and Robotic Devices - Collaborative Robots - now integrated into R15.06-2025)",
+      "OSHA General Duty Clause (Section 5(a)(1) of the OSH Act)",
+      "OSHA 29 CFR 1910.147 (Lockout/Tagout - Control of Hazardous Energy)",
+      "OSHA 29 CFR 1910.212 (General Requirements for All Machines)",
+      "NFPA 79 (Electrical Standard for Industrial Machinery)",
+      "IEC 62443 (Industrial Automation and Control Systems Security)"
+    ],
+    "licensing": "No specific professional license required for robotics engineers in the US. However, a PE (Professional Engineer) license is available and valued for those with mechanical or electrical engineering backgrounds. Path: ABET-accredited BS in engineering -> FE exam -> 4 years supervised experience -> PE exam. Most employers require a bachelor's degree in robotics engineering, mechanical engineering, electrical engineering, or computer science as a minimum. Master's degrees and PhDs are strongly preferred for R&D and senior positions. Specialized certifications include: A3 Certified Robot Integrator, FANUC/ABB/KUKA vendor-specific certifications, and Certified Automation Professional (CAP) from ISA.",
+    "penalties": "OSHA can issue citations and fines for safety violations in robot work cells ranging from $16,131 per serious violation up to $161,323 per willful violation (2025 rates). Employers face liability for workplace injuries involving robots. Product liability exposure for robot manufacturers if design defects cause harm. Non-compliance with ANSI/A3 R15.06 can be cited under OSHA General Duty Clause. Criminal charges possible in cases of willful negligence leading to worker fatalities.",
+    "regulatory_bodies": ["OSHA (Occupational Safety and Health Administration)", "ANSI (American National Standards Institute)", "Association for Advancing Automation (A3, formerly RIA)", "NIST (National Institute of Standards and Technology)", "ISO (International Organization for Standardization)", "FDA (for medical robotics)", "FAA (for drone/UAV robotics)", "NHTSA (for autonomous vehicle robotics)", "State engineering licensing boards (for PE holders)"]
+  },
+  "tools": {
+    "software": [
+      "ROS 2 (Robot Operating System) - open-source middleware framework, de facto standard for robotics development. Current LTS: Jazzy Jalisco, latest release: Kilted Kaiju",
+      "MATLAB/Simulink - mathematical modeling, control system design, and simulation",
+      "SolidWorks/Autodesk Inventor - mechanical CAD design of robot components",
+      "Python - scripting, prototyping, machine learning integration, ROS nodes",
+      "C++ - real-time control software, performance-critical robot programming",
+      "NVIDIA Isaac Sim - AI training and high-fidelity physics simulation with RTX GPU acceleration",
+      "Gazebo Harmonic (formerly Ignition) - ROS-integrated robot simulation, de facto standard for ROS-based development",
+      "MuJoCo - physics simulation for contact-rich manipulation and locomotion research",
+      "Webots - open-source robot simulator, popular in education and multi-robot systems",
+      "PTC Creo/CATIA - advanced CAD for complex mechanical assemblies"
+    ],
+    "platforms": [
+      "ROS-Industrial - extends ROS capabilities to manufacturing automation",
+      "NVIDIA Isaac Platform - end-to-end robotics AI development",
+      "AWS RoboMaker - cloud robotics simulation and deployment",
+      "Azure IoT / Digital Twins - cloud-based robot fleet management",
+      "Git/GitHub - version control for robotics codebases",
+      "Docker/Kubernetes - containerized deployment of robot software stacks",
+      "Jenkins/CI-CD pipelines - automated testing and deployment"
+    ],
+    "vendor_specific": [
+      "FANUC ROBOGUIDE - offline programming for FANUC industrial robots",
+      "ABB RobotStudio - simulation and programming for ABB robots",
+      "KUKA.Sim - KUKA robot simulation",
+      "Universal Robots PolyScope - collaborative robot programming interface",
+      "Boston Dynamics Orbit - fleet management for Spot robots"
+    ]
+  },
+  "terminology": {
+    "jargon": ["Degrees of Freedom (DOF) - number of independent movements a robot can perform", "Kinematics - equations describing robot motion without considering forces", "Inverse Kinematics (IK) - computing joint angles to achieve a desired end-effector position", "Forward Kinematics (FK) - computing end-effector position from joint angles", "End-Effector - gripper or tool at the end of a robot arm", "Workspace/Reach Envelope - the total volume a robot arm can access", "Payload - maximum weight a robot can carry at its end-effector", "Teach Pendant - handheld device for manually programming robot positions", "Singularity - a configuration where the robot loses one or more degrees of freedom", "Compliance - the ability of a robot to yield or conform under force"],
+    "abbreviations": [
+      "DOF - Degrees of Freedom",
+      "ROS - Robot Operating System",
+      "SLAM - Simultaneous Localization and Mapping",
+      "IMU - Inertial Measurement Unit",
+      "LIDAR - Light Detection and Ranging",
+      "PID - Proportional-Integral-Derivative (control loop)",
+      "TCP - Tool Center Point",
+      "EE - End-Effector",
+      "SCARA - Selective Compliance Articulated Robot Arm",
+      "AGV - Automated Guided Vehicle",
+      "AMR - Autonomous Mobile Robot",
+      "HRI - Human-Robot Interaction",
+      "MPC - Model Predictive Control",
+      "URDF - Unified Robot Description Format",
+      "CAD - Computer-Aided Design",
+      "CAM - Computer-Aided Manufacturing",
+      "PLC - Programmable Logic Controller",
+      "IO - Input/Output",
+      "EOAT - End of Arm Tooling",
+      "OLP - Offline Programming",
+      "SIL - Safety Integrity Level",
+      "cobot - Collaborative Robot",
+      "PWM - Pulse Width Modulation",
+      "FEA - Finite Element Analysis",
+      "SRP/CS - Safety-Related Parts of Control Systems"
+    ]
+  },
+  "career_psychology": {
+    "career_levels": [
+      "Junior/Entry-Level Robotics Engineer (0-2 years): component-level tasks, programming and debugging under supervision, conducting experiments and tests",
+      "Robotics Engineer (2-5 years): independent design and development, system integration, leading subsystem efforts",
+      "Senior Robotics Engineer (5-10 years): system architecture ownership, mentoring juniors, driving technical decisions, cross-functional leadership",
+      "Staff/Principal Robotics Engineer (10-15 years): defining technology roadmaps, leading critical R&D programs, deep domain expertise",
+      "Engineering Manager/Director (12+ years): managing engineering teams, project portfolios, budgets, and strategic direction",
+      "VP of Engineering/CTO (15+ years): executive leadership, company-wide technology strategy, industry thought leadership"
+    ],
+    "fears": [
+      "Liability for robot malfunctions causing workplace injuries or fatalities",
+      "Rapid pace of AI/ML advancement making current skills obsolete",
+      "Complex system failures that are difficult to diagnose and debug",
+      "Project cancellations or funding cuts in capital-intensive robotics programs",
+      "Safety certification failures delaying product launches",
+      "Competition from lower-cost international robotics talent",
+      "Hardware supply chain disruptions affecting project timelines"
+    ],
+    "motivation": "Creating cutting-edge technology that solves real-world problems; seeing physical robots perform tasks autonomously; working at the intersection of mechanical, electrical, and software engineering; strong salary growth and high demand; being part of a rapidly growing field with transformative potential in manufacturing, healthcare, logistics, and space exploration. The collaborative and interdisciplinary nature of the work is a major draw.",
+    "burnout": "Complex projects with tight deadlines and high expectations for quality create pressure; hardware debugging can be unpredictable and time-consuming; integration issues between mechanical, electrical, and software systems cause frustration; context-switching between design, coding, and hands-on work is mentally taxing; on-call responsibilities for production robot systems; pressure to stay current with rapidly evolving technologies (AI, ML, computer vision). However, many robotics engineers report lower-than-average stress levels due to high job satisfaction and the creative nature of the work."
+  },
+  "community": {
+    "reddit": ["r/robotics", "r/ROS", "r/AskEngineers", "r/engineering", "r/ControlTheory", "r/arduino", "r/raspberry_pi", "r/MachineLearning"],
+    "linkedin": ["IEEE Robotics and Automation Society", "Association for Advancing Automation (A3)", "Robotics Engineering Professionals", "ROS Industrial Consortium", "Industrial Automation Network"],
+    "associations": [
+      "Association for Advancing Automation (A3, formerly RIA) - North America's largest automation trade association with 1,450+ member organizations",
+      "IEEE Robotics and Automation Society (IEEE RAS) - premier professional society for robotics research and development",
+      "ASME (American Society of Mechanical Engineers) - relevant for mechanical aspects of robotics",
+      "ACM SIGCHI / SIGHRI - human-robot interaction research community",
+      "Open Robotics - stewards of ROS and Gazebo open-source projects",
+      "ROS-Industrial Consortium - bridging ROS to manufacturing applications"
+    ],
+    "conferences": [
+      "ICRA 2025 (IEEE International Conference on Robotics and Automation) - Atlanta, GA, USA, May 2025",
+      "ICRA 2026 - Vienna, Austria, June 1-5, 2026",
+      "IROS 2025/2026 (IEEE/RSJ International Conference on Intelligent Robots and Systems)",
+      "Automate 2025 - Detroit, MI (A3's flagship trade show)",
+      "ROSCon 2025/2026 - annual ROS developer conference",
+      "RSS (Robotics: Science and Systems) - premier robotics research conference",
+      "CoRL (Conference on Robot Learning) - machine learning for robotics",
+      "HRI (ACM/IEEE International Conference on Human-Robot Interaction)"
+    ],
+    "online_communities": [
+      "ROS Discourse (discourse.ros.org) - official ROS community forum",
+      "Hugging Face Discord - robotics and open-source ML channels",
+      "Hardware Theory Slack - IoT, robotics, and 3D printing community",
+      "Robotics Stack Exchange - Q&A for robotics professionals",
+      "The Robot Report - industry news and analysis",
+      "Robotics 24/7 - robotics industry news platform"
+    ]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 86000,
+      "mid_level_usd": 112000,
+      "senior_usd": 142000,
+      "principal_staff_usd": 185000,
+      "management_director_usd": 230000
+    },
+    "average_salary_usd": 133130,
+    "salary_range": {
+      "min_usd": 60207,
+      "median_usd": 105605,
+      "avg_usd": 133130,
+      "max_usd": 443000
+    },
+    "job_count_estimate": "Approximately 3,700+ dedicated robotics engineer positions open at any given time (2025-2026). BLS projects 9-10% employment growth for robotics-related engineering roles from 2022-2032, faster than the average for all occupations. Industrial robotics market projected to reach $73 billion by 2029, up from $50.8 billion in 2025.",
+    "work_arrangements": "Primarily on-site or hybrid due to hardware requirements. Lab and factory floor access needed for prototyping, testing, and deployment. Some software-focused roles (simulation, algorithm development) offer remote options. Major employers include automotive (Tesla, Ford, GM), tech (NVIDIA, Google/Alphabet, Amazon), defense (Lockheed Martin, Northrop Grumman), healthcare robotics (Intuitive Surgical, Stryker), logistics (Amazon Robotics, Locus Robotics), and dedicated robotics companies (Boston Dynamics, iRobot, Fanuc, ABB).",
+    "trends": [
+      "AI and machine learning integration driving demand for robotics engineers with ML skills",
+      "Collaborative robots (cobots) expanding into SME manufacturing",
+      "Healthcare robotics (surgical, rehabilitation, eldercare) as fastest-growing sector",
+      "Autonomous mobile robots (AMRs) transforming warehouse logistics",
+      "ROS 2 becoming industry standard beyond just research",
+      "NVIDIA Isaac platform accelerating sim-to-real transfer learning",
+      "Humanoid robots gaining serious investment (Tesla Optimus, Figure, 1X)",
+      "Industrial robotics market projected to reach $73B by 2029",
+      "Demand outpacing supply of qualified robotics engineers",
+      "New ANSI/A3 R15.06-2025 safety standard published, modernizing compliance requirements",
+      "Cybersecurity becoming integral to robot safety planning"
+    ]
+  },
+  "quality_score": 0.80,
+  "sources_count": 28,
+  "verified_sources": 7,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Robotics Engineers USA 2025 2026 daily work tasks responsibilities typical day",
+      "sources": [
+        {"title": "What is a Robotics Engineer? Explore the Robotics Engineer Career Path in 2025", "url": "https://www.tealhq.com/career-paths/robotics-engineer"},
+        {"title": "Robotics Engineer Job Description [Updated for 2026]", "url": "https://www.indeed.com/hire/job-description/robotics-engineer"},
+        {"title": "Exploring careers in robotics engineering: A path to the future - University of Cincinnati", "url": "https://www.uc.edu/news/articles/2025/03/exploring-careers-in-robotics-engineering--a-path-to-the-future.html"},
+        {"title": "What Do Robotics Engineers Do (including Their Typical Day At Work)", "url": "https://www.owlguru.com/career/robotics-engineers/job-description/"},
+        {"title": "Working as a robotics engineer | Randstad USA", "url": "https://www.randstadusa.com/job-seeker/career-advice/job-profiles/robotics-engineer/"},
+        {"title": "What Do Robotics Engineers Do? | NEIT", "url": "https://www.neit.edu/blog/robotics-engineer-job-description"}
+      ]
+    },
+    {
+      "query": "Robotics Engineers USA 2025 2026 regulations safety standards OSHA requirements",
+      "sources": [
+        {"title": "Robotics - Standards | OSHA", "url": "https://www.osha.gov/robotics/standards"},
+        {"title": "Guidelines For Robotics Safety | OSHA", "url": "https://www.osha.gov/enforcement/directives/std-01-12-002"},
+        {"title": "Robotics - Overview | OSHA", "url": "https://www.osha.gov/robotics"},
+        {"title": "ISO 10218-1:2025 Robots And Robotic Devices Safety - ANSI Blog", "url": "https://blog.ansi.org/ansi/iso-10218-1-2025-robots-and-robotic-devices-safety/"},
+        {"title": "What Is ANSI/A3 R15.06-2025? - ANSI Blog", "url": "https://blog.ansi.org/ansi/ansi-a3-r15-06-2025-robot-safety/"},
+        {"title": "OSHA and Robotics: What You Need to Know About Safety", "url": "https://www.robotics247.com/article/osha_robotics_what_you_should_know_about_safety"}
+      ]
+    },
+    {
+      "query": "Robotics Engineers USA software tools ROS simulation platforms technology 2025 2026",
+      "sources": [
+        {"title": "ROS: Home", "url": "https://www.ros.org/"},
+        {"title": "Best simulation tools for robotics engineers - RoboticsBiz", "url": "https://roboticsbiz.com/best-simulation-tools-for-robotics-engineers-a-comprehensive-review/"},
+        {"title": "Robot Simulation Software: Best Tools, Platforms, and Use Cases for 2025", "url": "https://helpforce.ai/news/robot-simulation-software-best-tools-2025"},
+        {"title": "Top 10 AI Robotics Platforms Tools in 2026", "url": "https://www.devopsschool.com/blog/top-10-ai-robotics-platforms-tools-in-2025-features-pros-cons-comparison/"},
+        {"title": "NVIDIA Robotics Platform", "url": "https://www.nvidia.com/en-us/industries/robotics/"},
+        {"title": "ROS-Industrial", "url": "https://rosindustrial.org/"}
+      ]
+    },
+    {
+      "query": "Robotics engineering terminology abbreviations jargon DOF kinematics professional",
+      "sources": [
+        {"title": "Glossary of robotics - Wikipedia", "url": "https://en.wikipedia.org/wiki/Glossary_of_robotics"},
+        {"title": "Robot Terms Explained: A-Z Glossary for Beginners", "url": "https://learn.g2.com/robot-terms"},
+        {"title": "Robotics Glossary - ROBOTS Guide", "url": "https://robotsguide.com/learn/robotics-glossary"},
+        {"title": "ATI Industrial Automation: Glossary of Robotic Terminology", "url": "https://www.ati-ia.com/library/Glossary_of_Robotic_Terminology.aspx"},
+        {"title": "Key Terms and Acronyms - Robotics Observer", "url": "https://roboticsobserver.com/glossary-terminology/key-terms-acronyms/"}
+      ]
+    },
+    {
+      "query": "Robotics Engineers USA career path salary 2025 2026 burnout motivation",
+      "sources": [
+        {"title": "Robotics Engineer Salary in 2026 | PayScale", "url": "https://www.payscale.com/research/US/Job=Robotics_Engineer/Salary"},
+        {"title": "Robotics Engineer: Average Salary & Pay Trends 2026 | Glassdoor", "url": "https://www.glassdoor.com/Salaries/robotics-engineer-salary-SRCH_KO0,17.htm"},
+        {"title": "Salary: Robotics Engineer (January, 2026) | ZipRecruiter", "url": "https://www.ziprecruiter.com/Salaries/Robotics-Engineer-Salary"},
+        {"title": "2026 What is Robotics Engineering: Career Paths, Skills & Salary | Research.com", "url": "https://research.com/careers/what-is-robotics-engineering-career-paths-skills-and-salary"},
+        {"title": "Do Robotics Engineers Have a Good Work-Life Balance in 2025?", "url": "https://www.tealhq.com/work-life-balance/robotics-engineer"},
+        {"title": "Robotics Engineer Salary in the USA: 2025 Guide | upGrad", "url": "https://www.upgrad.com/study-abroad/articles/robotics-engineer-salary-in-usa/"}
+      ]
+    },
+    {
+      "query": "Robotics Engineers USA professional associations RIA IEEE conferences 2025 2026",
+      "sources": [
+        {"title": "ICRA 2026 - IEEE International Conference on Robotics and Automation", "url": "https://2026.ieee-icra.org/"},
+        {"title": "Upcoming Robotics Conferences in USA 2026", "url": "https://www.allconferencealert.com/usa/robotics-conference.html"},
+        {"title": "Best Robotics Conferences and Events to Attend in 2026 - Clearpath Robotics", "url": "https://clearpathrobotics.com/blog/2025/12/best-robotics-conferences-and-events-to-attend-in-2026/"},
+        {"title": "Conferences & Workshops - IEEE RAS", "url": "https://www.ieee-ras.org/conferences-workshops/"},
+        {"title": "A3 Association for Advancing Automation", "url": "https://www.automate.org/"}
+      ]
+    },
+    {
+      "query": "Robotics Engineers USA job market demand salary outlook 2025 2026",
+      "sources": [
+        {"title": "Is Robotics Engineering a Good Career in 2026?", "url": "https://www.apollotechnical.com/is-robotics-engineering-a-good-career/"},
+        {"title": "Robotics Engineer Job Outlook And Growth In The US [2026]", "url": "https://www.zippia.com/robotics-engineer-jobs/trends/"},
+        {"title": "The job market for robotics engineers in the United States - CareerExplorer", "url": "https://www.careerexplorer.com/careers/robotics-engineer/job-market/"},
+        {"title": "Robotics Engineers Income and Hiring - BigFuture", "url": "https://bigfuture.collegeboard.org/careers/robotics-engineer/income-and-hiring"},
+        {"title": "Robotics Engineer Career Guide 2026 Skills Salary and Future Outlook", "url": "https://www.netcomlearning.com/blog/robotics-engineer"}
+      ]
+    }
+  ]
+}

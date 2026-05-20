@@ -1,0 +1,259 @@
+{
+  "profession_id": "us-medical-records-specialists",
+  "profession_name": "Medical Records Specialists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Medical records specialists (health information technicians) organize, manage, and code patient health data. They work in hospitals, physician offices, insurance companies, and government agencies. Primarily computer-based work ensuring accuracy, completeness, and security of medical records.",
+    "typical_tasks": [
+      "Reviewing patient records for accuracy and completeness",
+      "Assigning diagnostic and procedure codes (ICD-10-CM, CPT, HCPCS)",
+      "Maintaining electronic health records (EHR) systems",
+      "Processing release of information (ROI) requests",
+      "Ensuring HIPAA compliance for all records handling",
+      "Auditing medical records for coding accuracy and compliance",
+      "Abstracting clinical data for registries and reporting",
+      "Resolving coding discrepancies with clinical staff",
+      "Managing document scanning and indexing",
+      "Generating reports on coding, quality, and compliance metrics"
+    ],
+    "key_documents": [
+      "Patient medical records and discharge summaries",
+      "Coding worksheets (ICD-10-CM, CPT, HCPCS)",
+      "Release of information (ROI) authorization forms",
+      "HIPAA compliance documentation",
+      "Audit reports and findings",
+      "Quality metrics and reporting dashboards",
+      "Denial management and appeals documentation"
+    ],
+    "deadlines": {
+      "coding_turnaround": "Typically 3-5 business days from discharge",
+      "roi_requests": "30 days standard (state laws vary)",
+      "hipaa_breach_notification": "60 days from discovery",
+      "cms_reporting": "Quarterly and annual deadlines for quality measures",
+      "credential_renewal": "Varies: RHIT every 2 years with 20 CE credits"
+    },
+    "seasonality": "Year-end coding pushes for fiscal year reporting. ICD-10 annual updates (October 1). Open enrollment periods create insurance-related volume."
+  },
+  "regulatory": {
+    "summary": "HIPAA is the foundational privacy and security law. AHIMA credentials (RHIT, RHIA, CCS) are industry standards. ICD-10-CM/PCS coding follows CMS guidelines. Growing regulatory complexity with value-based care and quality reporting requirements.",
+    "key_laws": [
+      {
+        "name": "HIPAA (Health Insurance Portability and Accountability Act)",
+        "description": "Federal law governing patient health information privacy and security"
+      },
+      {
+        "name": "HITECH Act",
+        "description": "Strengthened HIPAA enforcement and promoted EHR adoption"
+      },
+      {
+        "name": "CMS ICD-10-CM/PCS Official Guidelines",
+        "description": "Federal coding guidelines updated annually"
+      },
+      {
+        "name": "State health information laws",
+        "description": "State-specific regulations on medical records retention, release, and privacy"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Associate's degree minimum from CAHIIM-accredited program (RHIT pathway)",
+        "Bachelor's degree for RHIA credential",
+        "Pass AHIMA certification exam (RHIT, RHIA, CCS, CCA)",
+        "20 CE credits every 2 years for RHIT renewal",
+        "HIPAA training required",
+        "No state licensure required in most states"
+      ]
+    },
+    "recent_changes": "Annual ICD-10-CM updates (October 1, 2025). Growing use of computer-assisted coding (CAC) and AI in coding workflows. Value-based care models increasing data quality demands. CMS expanding quality reporting requirements."
+  },
+  "tools": {
+    "summary": "EHR systems, coding software with encoder/grouper tools, HIPAA compliance platforms, and increasingly AI-powered computer-assisted coding (CAC).",
+    "primary_tools": [
+      {
+        "name": "EHR systems",
+        "description": "Electronic health record platforms where medical data is stored and managed",
+        "examples": "Epic, Cerner, MEDITECH, athenahealth"
+      },
+      {
+        "name": "Coding encoder/grouper software",
+        "description": "Tools for assigning ICD-10, CPT, and HCPCS codes",
+        "examples": "3M CodeFinder, Optum EncoderPro, TruCode"
+      },
+      {
+        "name": "Computer-Assisted Coding (CAC) software",
+        "description": "AI-powered tools suggesting codes from clinical documentation",
+        "examples": "3M M*Modal, Optum CAC, nThrive"
+      },
+      {
+        "name": "Release of Information (ROI) systems",
+        "description": "Platforms for managing patient record release requests",
+        "examples": "Ciox Health, MRO, HealthMark"
+      },
+      {
+        "name": "CDI (Clinical Documentation Improvement) software",
+        "description": "Tools for improving clinical documentation quality",
+        "examples": "3M CDI, Optum CDI, Nuance DAX"
+      }
+    ],
+    "secondary_tools": [
+      "HIPAA compliance management platforms",
+      "Data analytics and reporting tools",
+      "Document scanning and indexing systems",
+      "Denial management and appeals tracking",
+      "Reference tools: ICD-10 codebooks, CPT manuals, AHA Coding Clinic"
+    ],
+    "pain_points": [
+      "Constant regulatory and coding guideline changes",
+      "EHR system complexity and interoperability issues",
+      "High volume of records with tight turnaround deadlines",
+      "Physician documentation quality affecting coding accuracy",
+      "Concerns about AI/CAC replacing manual coding roles"
+    ]
+  },
+  "terminology": {
+    "summary": "Health information management terminology combining medical coding, privacy/security, and healthcare administration vocabulary.",
+    "terms": {
+      "RHIT": "Registered Health Information Technician (AHIMA credential)",
+      "RHIA": "Registered Health Information Administrator (higher AHIMA credential)",
+      "CCS": "Certified Coding Specialist (AHIMA credential)",
+      "CCA": "Certified Coding Associate (entry-level AHIMA credential)",
+      "ICD-10-CM": "International Classification of Diseases, 10th Revision, Clinical Modification — diagnosis codes",
+      "ICD-10-PCS": "ICD-10 Procedure Coding System — inpatient procedure codes",
+      "CPT": "Current Procedural Terminology — outpatient procedure/service codes",
+      "HCPCS": "Healthcare Common Procedure Coding System — Medicare/Medicaid codes",
+      "DRG": "Diagnosis-Related Group — hospital reimbursement classification",
+      "HIPAA": "Health Insurance Portability and Accountability Act — privacy law",
+      "PHI": "Protected Health Information — patient data covered by HIPAA",
+      "ROI": "Release of Information — authorized disclosure of medical records",
+      "CDI": "Clinical Documentation Improvement — enhancing physician documentation for coding",
+      "CAC": "Computer-Assisted Coding — AI-suggested coding from documentation",
+      "EHR/EMR": "Electronic Health Record / Electronic Medical Record",
+      "abstracting": "Extracting and summarizing key data from medical records",
+      "encoder": "Software tool that assists with code assignment",
+      "compliance": "Adherence to coding guidelines, HIPAA, and billing regulations"
+    }
+  },
+  "career_psychology": {
+    "summary": "Fast-growing field (15% projected growth) with strong remote work potential. Median salary varies widely: $45K-$75K for RHIT, higher with coding specialization (CCS: $75K+). AI is changing but not eliminating coding roles. Strong demand for certified professionals.",
+    "career_path": [
+      "Associate's degree in health information technology (CAHIIM-accredited)",
+      "Pass AHIMA exam → earn RHIT or CCA credential",
+      "Entry-level medical records specialist or coding technician",
+      "Certified Coding Specialist (CCS) with experience",
+      "Senior coder, coding auditor, or CDI specialist",
+      "Bachelor's degree → RHIA credential",
+      "HIM department supervisor or manager",
+      "Director of Health Information Management",
+      "Compliance officer or privacy officer"
+    ],
+    "salary_range": {
+      "entry_cca": "$35,000 - $45,000",
+      "rhit_average": "$45,000 - $62,000",
+      "ccs_coding_specialist": "$57,000 - $75,000",
+      "rhia": "$65,000 - $90,000",
+      "him_director": "$80,000 - $120,000+",
+      "remote_coder": "$50,000 - $75,000"
+    },
+    "fears": [
+      "AI/CAC replacing manual coding jobs",
+      "Coding errors leading to compliance audits and fines",
+      "Rapid regulatory changes making skills obsolete",
+      "HIPAA breach liability",
+      "Decreasing reimbursement pressuring coding productivity"
+    ],
+    "motivation": [
+      "Growing field with 15% projected growth",
+      "Strong remote work opportunities",
+      "Detail-oriented work with clear quality metrics",
+      "Critical role in healthcare revenue cycle",
+      "Multiple certification paths for advancement",
+      "Stable healthcare employment"
+    ],
+    "burnout_factors": [
+      "High-volume coding with productivity quotas",
+      "Constant regulatory and guideline changes",
+      "Sedentary computer-based work",
+      "Pressure to meet turnaround deadlines",
+      "Repetitive nature of coding work"
+    ]
+  },
+  "community": {
+    "summary": "AHIMA is the primary professional organization. Active coding forums and communities online. AAPC provides alternative certification pathway.",
+    "associations": [
+      {
+        "name": "American Health Information Management Association (AHIMA)",
+        "url": "https://www.ahima.org",
+        "type": "Primary professional organization for HIM professionals"
+      },
+      {
+        "name": "AAPC (formerly American Academy of Professional Coders)",
+        "url": "https://www.aapc.com",
+        "type": "Professional organization for medical coders (CPC, CRC credentials)"
+      },
+      {
+        "name": "CAHIIM (Commission on Accreditation for Health Informatics and Information Management Education)",
+        "url": "https://www.cahiim.org",
+        "type": "Accrediting body for HIM educational programs"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "AAPC Forums",
+        "url": "https://www.aapc.com/community/",
+        "description": "Active coding community and forums"
+      },
+      {
+        "name": "r/CodingandBilling",
+        "url": "https://reddit.com/r/CodingandBilling",
+        "description": "Reddit community for medical coding and billing"
+      },
+      {
+        "name": "AHIMA Engage",
+        "description": "AHIMA's online community platform"
+      }
+    ],
+    "events": [
+      "AHIMA Annual Conference",
+      "AAPC HEALTHCON (annual)",
+      "State AHIMA chapter meetings",
+      "Annual ICD-10 update training events"
+    ]
+  },
+  "market": {
+    "summary": "Fastest-growing HIM field: 15% growth projected 2024-2034. ~3,200 annual openings. Remote coding positions expanding. AI/CAC changing but not eliminating roles — shifting to oversight and quality assurance. Value-based care increasing data quality demands.",
+    "demand_forecast": {
+      "growth_rate": "15% (2024-2034, BLS — much faster than average)",
+      "annual_openings": "~3,200/year",
+      "driver": "EHR adoption, value-based care, regulatory complexity"
+    },
+    "salary_market": {
+      "rhit_average": "$45,000 - $62,000",
+      "ccs": "$57,000 - $75,000",
+      "rhia": "$65,000 - $90,000"
+    },
+    "market_trends": [
+      "15% growth rate — one of the fastest in healthcare",
+      "AI/CAC augmenting but not replacing certified coders",
+      "Remote work becoming standard for coding positions",
+      "Value-based care increasing data quality demands",
+      "Annual ICD-10 updates requiring continuous learning",
+      "CDI roles expanding as documentation quality becomes critical",
+      "Healthcare data analytics creating new career pathways"
+    ]
+  },
+  "quality_score": 0.80,
+  "sources_count": 24,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "medical records specialist health information technician USA 2025 2026 salary RHIT AHIMA coding career outlook",
+      "sources": [
+        {"title": "RHIT Salary 2026 Guide", "url": "https://passitexams.com/salaries/rhit-salary/"},
+        {"title": "Salary.com — RHIT Salary", "url": "https://www.salary.com/research/salary/posting/registered-health-information-technician-salary"},
+        {"title": "AHIMA — RHIT Credential", "url": "https://www.ahima.org/certification-careers/certifications-overview/rhit/"},
+        {"title": "Research.com — Health Information Technician Career 2026", "url": "https://research.com/careers/what-is-a-health-information-technician-salary-and-career-paths"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-chiropractors",
+  "profession_name": "Chiropractors",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Patient consultations and spinal adjustments throughout the day. Typical schedule 30-40 hours per week in direct patient care. Review patient histories, perform examinations, order and interpret diagnostic imaging (X-rays). Document treatments in EHR. Administrative tasks: billing, insurance claims, practice management. Many own their own practices, combining clinical work with business operations.",
+    "key_documents": ["Patient intake forms and health histories", "SOAP notes (Subjective, Objective, Assessment, Plan)", "Treatment plans", "X-ray and diagnostic imaging reports", "Insurance claim forms (CMS-1500)", "Progress notes", "Informed consent forms", "State-required documentation for continuing education"],
+    "deadlines": "Continuing education credits for license renewal (varies by state, typically every 1-2 years). Insurance claim filing deadlines. State license renewal cycles. Documentation must be completed same-day for compliance.",
+    "seasonality": "Steady patient flow year-round. Slight increases after holidays (New Year's resolutions), sports seasons, and seasonal activities. Practice building efforts often tied to community events and health fairs."
+  },
+  "regulatory": {
+    "laws_and_standards": ["State chiropractic practice acts", "State licensing board regulations", "Medicare/Medicaid billing compliance", "HIPAA patient privacy", "Scope of practice limitations (varies by state)", "State-specific X-ray requirements", "Informed consent requirements"],
+    "licensing": "Doctor of Chiropractic (DC) degree from accredited chiropractic college required (4-year doctoral program after undergraduate). National Board of Chiropractic Examiners (NBCE) exams (Parts I-IV). State-specific licensing through state chiropractic boards. Continuing education required for renewal (varies by state). Some states allow additional modalities (acupuncture, physiotherapy).",
+    "penalties": "License suspension or revocation for non-compliance. Malpractice liability. State board disciplinary actions for scope violations. Insurance fraud penalties. New 2026 malpractice laws in several states changing damage limits.",
+    "regulatory_bodies": ["State Boards of Chiropractic Examiners", "NBCE (National Board of Chiropractic Examiners)", "Federation of Chiropractic Licensing Boards (FCLB)", "CMS (for Medicare compliance)", "State Insurance Commissioners"]
+  },
+  "tools": {
+    "software": ["ChiroFusion - cloud-based EHR ($99/mo)", "PayDC - chiropractic-specific EHR and practice management", "WebPT - rehab-focused EHR", "ChiroTouch - practice management", "ECLIPSE - scheduling and billing", "ProgNoCIS - AI-powered chiropractic EHR", "Jane App - practice management"],
+    "platforms": ["Office Ally - insurance billing clearinghouse", "Chiromatrix/Perfect Patients - practice websites", "TeleDent/Doxy.me - telehealth", "Square/Stripe - payment processing", "Google Workspace/Outlook - scheduling"],
+    "gov_portals": ["State chiropractic board licensing portals", "CMS Medicare provider enrollment portal", "NPPES (NPI registry)", "NBCE exam portal"]
+  },
+  "terminology": {
+    "jargon": ["Subluxation", "Adjustment/Manipulation", "Spinal decompression", "Diversified technique", "Activator method", "Thompson drop technique", "Flexion-distraction", "Maintenance care", "Corrective care", "Wellness care"],
+    "abbreviations": ["DC - Doctor of Chiropractic", "SOAP - Subjective, Objective, Assessment, Plan", "CMT - Chiropractic Manipulative Treatment", "ROM - Range of Motion", "NCV - Nerve Conduction Velocity", "EMG - Electromyography", "PI - Personal Injury", "MVA - Motor Vehicle Accident", "WC - Workers' Compensation", "DRX - Digital Radiography", "EBP - Evidence-Based Practice"]
+  },
+  "career_psychology": {
+    "career_levels": ["Associate Chiropractor (0-3 years)", "Solo Practitioner (3-10 years)", "Multi-location Practice Owner (10+ years)", "Specialist (sports, pediatric, orthopedic)", "Educator/Researcher"],
+    "fears": ["Insurance reimbursement declining", "Scope of practice encroachment from PTs and other providers", "Student loan debt burden ($150k-250k for DC degree)", "Building and maintaining patient base", "Malpractice lawsuits (especially cervical manipulation)"],
+    "motivation": "Helping patients with pain relief without drugs or surgery; practice ownership and entrepreneurial freedom; flexible schedules; holistic health philosophy. Income scales with experience — chiropractors in 50s average ~$148k vs $75k in 30s.",
+    "burnout": "Lower burnout compared to physicians; physical demands of performing adjustments all day; administrative burden of insurance claims; isolation in solo practice. Flexibility in scheduling is a protective factor."
+  },
+  "community": {
+    "reddit": ["r/Chiropractic", "r/chiropracticstudents", "r/physicaltherapy (crossover discussions)", "r/healthcare"],
+    "linkedin": ["American Chiropractic Association", "Chiropractic professionals group", "Sports Chiropractic network"],
+    "associations": ["ACA (American Chiropractic Association)", "ICA (International Chiropractors Association)", "State chiropractic associations", "FCLB (Federation of Chiropractic Licensing Boards)", "ACBSP (Association of Chiropractic Board Presidents)"],
+    "conferences": ["ACA Conference - annual", "Parker Seminars - Las Vegas (major CE event)", "FCLB Annual Conference", "State chiropractic association meetings", "FCA National Convention"]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 55000,
+      "mid_level_usd": 85000,
+      "senior_level_usd": 107000,
+      "established_practice_usd": 148000
+    },
+    "average_salary_usd": 85000,
+    "job_count_estimate": "About 38,300 chiropractors employed in the US (BLS). Most are in private practice (solo or small group). Growing number employed by health systems and multidisciplinary clinics.",
+    "work_arrangements": "Predominantly private practice (solo or small group). Growing integration into health systems, VA hospitals, and multidisciplinary clinics. Telehealth expanding for consultations. Flexible scheduling is a major perk.",
+    "trends": ["Telehealth expansion for initial consultations", "Integration into mainstream healthcare systems", "New diagnosis codes for 2026 (abdominal/pelvic pain, remote monitoring)", "Evidence-based practice gaining ground", "AI-assisted documentation reducing admin burden", "Income growth with optimism in profession", "All-in-one EHR platforms streamlining practice management"]
+  },
+  "quality_score": 0.78,
+  "sources_count": 7,
+  "verified_sources": 5
+}

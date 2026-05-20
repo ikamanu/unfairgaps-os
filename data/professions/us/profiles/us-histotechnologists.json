@@ -1,0 +1,204 @@
+{
+  "profession_id": "us-histotechnologists",
+  "profession_name": "Histotechnologists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Histotechnologists prepare microscope slides from tissue samples for pathologists to examine. They process, embed, section, stain, and mount tissue specimens using specialized techniques essential for disease diagnosis, especially cancer. Most work in hospital pathology labs.",
+    "typical_tasks": [
+      "Process tissue samples through fixation, dehydration, and paraffin embedding",
+      "Cut ultrathin tissue sections using microtomes (3-5 micrometers)",
+      "Apply staining techniques (H&E, special stains, immunohistochemistry)",
+      "Perform immunohistochemistry (IHC) for tumor marker detection",
+      "Operate and maintain tissue processors, embedding centers, and cryostats",
+      "Prepare frozen sections for intraoperative consultations",
+      "Perform quality control on reagents, equipment, and staining results",
+      "Maintain laboratory records and documentation per CAP/CLIA requirements",
+      "Troubleshoot staining and processing issues"
+    ],
+    "key_documents": [
+      "Laboratory procedure manuals (SOPs)",
+      "Quality control logs and records",
+      "CAP/CLIA compliance documentation",
+      "Equipment maintenance and calibration records",
+      "Specimen tracking and chain-of-custody records",
+      "Immunohistochemistry protocol sheets",
+      "Continuing education documentation"
+    ],
+    "deadlines": {
+      "frozen_sections": "15-20 minutes turnaround during surgery",
+      "routine_processing": "Overnight tissue processing, next-day sectioning",
+      "stat_specimens": "Same-day processing and staining",
+      "cap_inspections": "Biennial laboratory accreditation inspections",
+      "certification_renewal": "Every 3 years for ASCP certification"
+    },
+    "seasonality": "No strong seasonality. Workflow driven by surgical schedules. Year-end may see reduced elective surgeries affecting specimen volume."
+  },
+  "regulatory": {
+    "summary": "Regulated by CLIA (Clinical Laboratory Improvement Amendments) and accredited by CAP (College of American Pathologists). ASCP Board of Certification offers HT and HTL credentials. State licensing requirements vary.",
+    "key_laws": [
+      {"name": "CLIA 1988", "description": "Federal standards for clinical laboratory testing quality and personnel"},
+      {"name": "CAP Accreditation", "description": "Voluntary but widely required laboratory accreditation standard"},
+      {"name": "State licensing requirements", "description": "Varies by state; some require specific histotechnology licensure"}
+    ],
+    "licensing": {
+      "requirements": [
+        "HT (Histotechnician): High school diploma + accredited HT program or equivalent training",
+        "HTL (Histotechnologist): Bachelor's degree + accredited HTL program",
+        "ASCP Board of Certification (BOC) exam",
+        "Continuing education credits every 3 years for certification maintenance"
+      ],
+      "certifications": [
+        "HT(ASCP) — Histotechnician",
+        "HTL(ASCP) — Histotechnologist",
+        "QIHC(ASCP) — Qualification in Immunohistochemistry"
+      ]
+    },
+    "penalties": "Non-compliance with CLIA/CAP standards can result in lab sanctions, loss of accreditation, or closure. Improperly prepared slides can lead to misdiagnosis."
+  },
+  "tools": {
+    "summary": "Histotechnologists use specialized laboratory equipment for tissue processing, sectioning, and staining, along with laboratory information systems for specimen tracking.",
+    "primary_tools": [
+      {"name": "Microtome (rotary and sliding)", "description": "Cuts ultrathin tissue sections for mounting on slides"},
+      {"name": "Tissue processor", "description": "Automated fixation, dehydration, and infiltration of tissue"},
+      {"name": "Embedding center", "description": "Paraffin wax embedding station for tissue block preparation"},
+      {"name": "Cryostat", "description": "Freezing microtome for rapid frozen section preparation"},
+      {"name": "Automated stainer", "description": "H&E and special stain application (Leica, Sakura, Ventana)"},
+      {"name": "IHC/ISH staining platform (Ventana, Dako)", "description": "Automated immunohistochemistry and in situ hybridization"}
+    ],
+    "secondary_tools": [
+      "Laboratory Information System (LIS) — specimen tracking and reporting",
+      "Microscope — slide quality assessment",
+      "Coverslipping machine — mounting and sealing slides",
+      "pH meters and chemical reagent preparation",
+      "Digital pathology scanners (emerging technology)"
+    ],
+    "pain_points": [
+      "Repetitive motion injuries from microtomy",
+      "Chemical exposure (formalin, xylene) requiring ventilation and PPE",
+      "High-volume throughput pressure affecting quality",
+      "Aging equipment requiring frequent maintenance"
+    ]
+  },
+  "terminology": {
+    "summary": "Histotechnology uses specialized terminology related to tissue processing, staining chemistry, and microscopy.",
+    "terms": {
+      "H&E": "Hematoxylin and Eosin — most common histological stain",
+      "IHC": "Immunohistochemistry — antibody-based tissue staining",
+      "ISH": "In Situ Hybridization — nucleic acid detection in tissue",
+      "FFPE": "Formalin-Fixed Paraffin-Embedded — standard tissue preservation",
+      "frozen section": "Rapid cryostat-cut tissue for intraoperative diagnosis",
+      "microtome": "Instrument for cutting ultrathin tissue sections",
+      "embedding": "Process of infiltrating tissue with paraffin wax",
+      "fixation": "Chemical preservation of tissue (typically 10% formalin)",
+      "decalcification": "Removing calcium from bone specimens before sectioning",
+      "special stains": "Non-H&E stains for specific tissue components (PAS, Trichrome, GMS)",
+      "grossing": "Macroscopic examination and trimming of tissue specimens",
+      "cassette": "Plastic container holding tissue during processing",
+      "block": "Paraffin-embedded tissue specimen ready for sectioning",
+      "ribbon": "Continuous strip of tissue sections from microtome",
+      "artifact": "Unwanted defect in tissue section (folding, tearing, chattering)",
+      "CAP": "College of American Pathologists",
+      "CLIA": "Clinical Laboratory Improvement Amendments",
+      "ASCP": "American Society for Clinical Pathology",
+      "QC": "Quality Control",
+      "HT/HTL": "Histotechnician / Histotechnologist certifications"
+    }
+  },
+  "career_psychology": {
+    "summary": "Hands-on laboratory career with median salary ~$77K. Essential but behind-the-scenes role in disease diagnosis. Satisfaction comes from contributing to accurate patient diagnoses. Challenges include chemical exposure, repetitive work, and limited advancement.",
+    "career_path": [
+      "Associate degree or certificate program (HT)",
+      "Bachelor's degree program (HTL)",
+      "ASCP Board of Certification (HT or HTL)",
+      "Staff Histotechnologist",
+      "Senior Histotechnologist / Lead Tech",
+      "Histology Laboratory Supervisor",
+      "Histology Laboratory Manager / Director"
+    ],
+    "salary_range": {
+      "entry_level": "$50,000 - $60,000/year",
+      "mid_level": "$65,000 - $80,000/year",
+      "senior": "$80,000 - $103,000/year",
+      "average": "$77,080/year (Salary.com 2026)"
+    },
+    "fears": [
+      "Misprocessed specimen leading to misdiagnosis",
+      "Chemical exposure health effects (formalin classified as carcinogen)",
+      "Repetitive strain injuries from microtomy",
+      "Lab staffing shortages increasing workload",
+      "Automation threatening job security"
+    ],
+    "motivation": [
+      "Critical role in cancer and disease diagnosis",
+      "Hands-on technical work with tangible results",
+      "Seeing the direct impact on patient care",
+      "Intellectually engaging staining and technique optimization",
+      "Growing field with digital pathology opportunities"
+    ],
+    "burnout_factors": [
+      "High-volume specimen throughput with time pressure",
+      "Repetitive physical tasks (sectioning, staining)",
+      "Chemical exposure concerns despite safety measures",
+      "Limited visibility and recognition compared to other healthcare roles",
+      "Staff shortages creating overtime demands"
+    ]
+  },
+  "community": {
+    "summary": "Professional community organized around NSH (National Society for Histotechnology), ASCP, and CAP, with annual symposia and continuing education programs.",
+    "associations": [
+      {"name": "National Society for Histotechnology (NSH)", "description": "Primary professional society for histotechnology, annual symposium, CE programs"},
+      {"name": "American Society for Clinical Pathology (ASCP)", "url": "https://www.ascp.org/", "description": "Board certification, continuing education, advocacy"},
+      {"name": "College of American Pathologists (CAP)", "description": "Laboratory accreditation, proficiency testing"},
+      {"name": "Histochemical Society", "description": "Scientific society for histochemistry and related fields"}
+    ],
+    "online_communities": [
+      "NSH HistoNet — email listserv for histology professionals",
+      "r/labrats and r/medlabprofessionals — Reddit communities",
+      "Facebook histology tech groups",
+      "LinkedIn histotechnology professional groups"
+    ],
+    "conferences": [
+      "NSH Annual Symposium/Convention",
+      "ASCP Annual Meeting",
+      "CAP Laboratory Accreditation Program workshops"
+    ]
+  },
+  "market": {
+    "summary": "Growing field with 2-5% projected growth driven by aging population and cancer diagnostics demand. ~$77K average salary. Workforce shortage of qualified histotechnologists creates opportunities. Digital pathology emerging as transformative technology.",
+    "growth_rate": "2-5% projected growth (clinical lab technologists category)",
+    "salary_market": {
+      "average": "$77,080/year",
+      "range": "$60,000 - $103,000/year",
+      "highest_paying_states": "DC ($85,340), California ($85,010), Massachusetts ($83,880)"
+    },
+    "top_employers": [
+      "Hospital pathology laboratories (largest employer)",
+      "Commercial reference laboratories (Quest, LabCorp)",
+      "Academic medical centers",
+      "Government agencies (VA hospitals, military labs)",
+      "Pharmaceutical/biotech companies (research histology)"
+    ],
+    "market_trends": [
+      "Workforce shortage of qualified histotechnologists nationwide",
+      "Digital pathology and whole-slide imaging adoption growing",
+      "Automation of staining and processing increasing efficiency",
+      "Companion diagnostic testing expanding IHC demand",
+      "Molecular pathology integration requiring new skills"
+    ]
+  },
+  "quality_score": 0.74,
+  "sources_count": 18,
+  "verified_sources": 6,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Histotechnologists USA 2025 2026 daily work tasks salary job outlook certification",
+      "sources": [
+        {"title": "Salary.com — Histotechnologist Salary 2026", "url": "https://www.salary.com/research/salary/alternate/histotechnologist-salary"},
+        {"title": "Indeed — Histotech Certification", "url": "https://www.indeed.com/career-advice/finding-a-job/histotech-certification"},
+        {"title": "MedicalTechnologySchools — Becoming a Histotechnologist", "url": "https://www.medicaltechnologyschools.com/histotechnologist/interview-with-an-expert"},
+        {"title": "TrustedHealth — Histotechnologist Salary Guide", "url": "https://www.trustedhealth.com/allied-career-guide/histotechnologist/salary-guide"}
+      ]
+    }
+  ]
+}

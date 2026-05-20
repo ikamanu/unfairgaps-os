@@ -1,0 +1,786 @@
+[
+  {
+    "id": "us-acupuncturists-p01",
+    "title": "Insurance claim and superbill generation",
+    "problem": "Acupuncturists spend significant time manually filling out CMS-1500 forms and superbills for each patient visit. Incorrect codes or missing information leads to claim denials and delayed reimbursement. Solo practitioners without billing staff lose hours weekly on paperwork instead of treating patients.",
+    "who": "Solo and small-practice acupuncturists accepting insurance",
+    "frequency": "daily",
+    "time_waste_h": 8,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Acupuncture Superbill & CMS-1500 Generator",
+      "one_liner": "Generates completed superbills and CMS-1500 claim forms from visit details with correct CPT and ICD-10 codes",
+      "doc_name": "Superbill / CMS-1500 Claim Form",
+      "variables": [
+        {
+          "name": "patient_name",
+          "label": "Patient name"
+        },
+        {
+          "name": "date_of_service",
+          "label": "Date of service"
+        },
+        {
+          "name": "diagnosis",
+          "label": "TCM diagnosis / Western diagnosis"
+        },
+        {
+          "name": "procedures",
+          "label": "Procedures performed (acupuncture, cupping, moxa, etc.)"
+        },
+        {
+          "name": "num_needles",
+          "label": "Number of needle insertions"
+        },
+        {
+          "name": "duration_minutes",
+          "label": "Treatment duration (minutes)"
+        },
+        {
+          "name": "provider_npi",
+          "label": "Provider NPI number"
+        },
+        {
+          "name": "insurance_info",
+          "label": "Insurance company and policy number"
+        }
+      ],
+      "structure_hint": "Patient demographics -> ICD-10 codes (mapped from diagnosis) -> CPT codes (97810, 97811, 97813, 97814 for acupuncture) -> units based on duration -> provider info -> fee schedule -> total charges"
+    },
+    "example_queries": [
+      "Generate a superbill for a patient with low back pain, 30-minute acupuncture session with 12 needles and cupping",
+      "Fill out a CMS-1500 for initial acupuncture evaluation with e-stim, ICD-10 M54.5"
+    ]
+  },
+  {
+    "id": "us-acupuncturists-p02",
+    "title": "Practice revenue and session pricing calculator",
+    "problem": "Acupuncturists struggle to price their services profitably, especially when balancing insurance reimbursements with self-pay rates. Many undercharge because they don't account for overhead, taxes, and self-employment costs. Financial instability is the top fear in the profession.",
+    "who": "Solo practice owners and new graduates starting practices",
+    "frequency": "monthly",
+    "time_waste_h": 5,
+    "money_risk_usd": 20000,
+    "source": "career_psychology",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Acupuncture Session Pricing Calculator",
+      "one_liner": "Calculates optimal session pricing based on overhead, target income, patient volume, and tax obligations",
+      "inputs": [
+        {
+          "name": "monthly_rent",
+          "type": "number",
+          "label": "Monthly rent/office costs (USD)"
+        },
+        {
+          "name": "monthly_supplies",
+          "type": "number",
+          "label": "Monthly supplies cost (USD)"
+        },
+        {
+          "name": "monthly_insurance_malpractice",
+          "type": "number",
+          "label": "Monthly malpractice + liability insurance (USD)"
+        },
+        {
+          "name": "other_monthly_overhead",
+          "type": "number",
+          "label": "Other monthly overhead (USD)"
+        },
+        {
+          "name": "target_annual_income",
+          "type": "number",
+          "label": "Target annual take-home income (USD)"
+        },
+        {
+          "name": "patients_per_week",
+          "type": "number",
+          "label": "Expected patients per week"
+        },
+        {
+          "name": "weeks_worked",
+          "type": "number",
+          "label": "Weeks worked per year"
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "label": "State (for tax estimate)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "minimum_session_rate",
+          "label": "Minimum session rate to break even (USD)"
+        },
+        {
+          "name": "recommended_rate",
+          "label": "Recommended session rate (USD)"
+        },
+        {
+          "name": "annual_gross_needed",
+          "label": "Annual gross revenue needed (USD)"
+        },
+        {
+          "name": "self_employment_tax",
+          "label": "Estimated self-employment tax (USD)"
+        },
+        {
+          "name": "effective_hourly_rate",
+          "label": "Effective hourly rate (USD)"
+        }
+      ],
+      "formula_hint": "annual_overhead = (rent + supplies + insurance + other) * 12; SE_tax = gross * 0.9235 * 0.153; federal_tax = bracket-based; gross_needed = (target_income + annual_overhead + SE_tax + federal_tax) / (1 - state_tax_rate); min_rate = gross_needed / (patients_per_week * weeks_worked)",
+      "rates": {
+        "se_tax_rate": 0.153,
+        "se_tax_base_factor": 0.9235
+      }
+    },
+    "example_queries": [
+      "I want to take home $80,000/year seeing 20 patients a week. My rent is $1,500/month. What should I charge per session?",
+      "Calculate my minimum session rate with $3,000 monthly overhead and 25 patients per week in California"
+    ]
+  },
+  {
+    "id": "us-acupuncturists-p03",
+    "title": "Self-employment quarterly tax estimation",
+    "problem": "Most acupuncturists are self-employed and must calculate and pay quarterly estimated taxes to the IRS. Many miscalculate, leading to underpayment penalties or cash flow problems. They juggle federal income tax, self-employment tax, and state taxes without dedicated accounting support.",
+    "who": "Self-employed solo practitioners and practice owners",
+    "frequency": "quarterly",
+    "time_waste_h": 6,
+    "money_risk_usd": 8000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Acupuncturist Quarterly Tax Estimator",
+      "one_liner": "Calculates quarterly estimated tax payments for self-employed acupuncturists including SE tax, federal income tax, and state tax",
+      "inputs": [
+        {
+          "name": "quarterly_gross_income",
+          "type": "number",
+          "label": "Quarterly gross income (USD)"
+        },
+        {
+          "name": "quarterly_expenses",
+          "type": "number",
+          "label": "Quarterly deductible business expenses (USD)"
+        },
+        {
+          "name": "filing_status",
+          "type": "string",
+          "label": "Filing status (single, married_joint, married_separate, head_of_household)"
+        },
+        {
+          "name": "other_income",
+          "type": "number",
+          "label": "Other annual income (USD, 0 if none)"
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "label": "State"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "net_self_employment_income",
+          "label": "Net self-employment income (USD)"
+        },
+        {
+          "name": "self_employment_tax",
+          "label": "Self-employment tax (USD)"
+        },
+        {
+          "name": "federal_income_tax",
+          "label": "Federal income tax (USD)"
+        },
+        {
+          "name": "state_income_tax",
+          "label": "Estimated state income tax (USD)"
+        },
+        {
+          "name": "total_quarterly_payment",
+          "label": "Total quarterly payment due (USD)"
+        },
+        {
+          "name": "form_1040es_amount",
+          "label": "Form 1040-ES payment amount (USD)"
+        }
+      ],
+      "formula_hint": "net_income = gross - expenses; SE_tax = net_income * 0.9235 * 0.153; SE_deduction = SE_tax / 2; AGI = net_income - SE_deduction + other_income; federal_tax = bracket_based(AGI, filing_status); quarterly = (federal_tax + SE_tax + state_tax) / 4",
+      "rates": {
+        "se_tax_rate": 0.153,
+        "se_tax_base": 0.9235,
+        "ss_wage_base_2026": 176100
+      }
+    },
+    "example_queries": [
+      "I made $22,000 this quarter with $5,000 in expenses, single filer in New York. What's my quarterly estimated tax?",
+      "Calculate my 1040-ES payment - $90,000 annual practice income, $20,000 expenses, married filing jointly in Oregon"
+    ]
+  },
+  {
+    "id": "us-acupuncturists-p04",
+    "title": "NCCAOM recertification PDA tracking",
+    "problem": "Acupuncturists must earn 60 PDA points over 4 years for NCCAOM recertification, spread across specific categories (safety, ethics, core competencies). Tracking which categories are fulfilled and what's still needed is confusing. Missing the deadline means loss of certification and potentially licensure.",
+    "who": "All NCCAOM-certified acupuncturists (required by 48 states)",
+    "frequency": "quarterly",
+    "time_waste_h": 3,
+    "money_risk_usd": 10000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "NCCAOM PDA Points Tracker & Calculator",
+      "one_liner": "Tracks PDA points earned across categories and calculates remaining requirements for NCCAOM recertification",
+      "inputs": [
+        {
+          "name": "recert_cycle_end",
+          "type": "string",
+          "label": "Recertification cycle end date"
+        },
+        {
+          "name": "safety_pdas",
+          "type": "number",
+          "label": "Safety PDA points completed"
+        },
+        {
+          "name": "ethics_pdas",
+          "type": "number",
+          "label": "Ethics PDA points completed"
+        },
+        {
+          "name": "core_competency_pdas",
+          "type": "number",
+          "label": "Core competency PDA points completed"
+        },
+        {
+          "name": "professional_development_pdas",
+          "type": "number",
+          "label": "Professional development PDA points completed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "total_completed",
+          "label": "Total PDA points completed"
+        },
+        {
+          "name": "total_remaining",
+          "label": "Total PDA points remaining"
+        },
+        {
+          "name": "category_deficits",
+          "label": "Points still needed per category"
+        },
+        {
+          "name": "months_remaining",
+          "label": "Months until recertification deadline"
+        },
+        {
+          "name": "monthly_pace_needed",
+          "label": "PDA points needed per month to stay on track"
+        }
+      ],
+      "formula_hint": "total_required = 60; safety_min = 4 (CNT); ethics_min = 2; core_min = 30; remaining = 60 - total_completed; monthly_pace = remaining / months_left; check each category minimum separately",
+      "rates": {
+        "total_required": 60,
+        "safety_minimum": 4,
+        "ethics_minimum": 2,
+        "core_competency_minimum": 30
+      }
+    },
+    "example_queries": [
+      "I have 35 PDA points with 18 months left in my cycle. Am I on track? I have 4 safety, 1 ethics, 20 core",
+      "How many PDA points per month do I need if my recertification is due in March 2027 and I have 22 points?"
+    ]
+  },
+  {
+    "id": "us-acupuncturists-p05",
+    "title": "State licensure requirements lookup",
+    "problem": "Acupuncture licensing varies dramatically across 47 states - different titles (LAc, AP, CA), different CE requirements, different scope of practice (herbs, dry needling, injection therapy). Practitioners relocating or maintaining multi-state licenses waste hours researching each state's specific rules.",
+    "who": "Acupuncturists relocating, adding state licenses, or new graduates choosing where to practice",
+    "frequency": "yearly",
+    "time_waste_h": 10,
+    "money_risk_usd": 5000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "State Acupuncture Licensure Reference",
+      "one_liner": "Quick lookup of state-specific acupuncture licensure requirements, titles, scope, and renewal rules",
+      "data_domain": "State acupuncture practice acts, licensing requirements, and scope of practice across all US states",
+      "lookup_keys": [
+        "state",
+        "license_title",
+        "scope_item",
+        "ce_requirements"
+      ],
+      "data_hints": {
+        "source_law": "Individual state acupuncture practice acts",
+        "key_sections": [
+          "License titles by state",
+          "NCCAOM requirement by state",
+          "Scope of practice (herbs, dry needling, injection)",
+          "CE hours per renewal cycle",
+          "Renewal frequency and fees",
+          "States without regulation (AL, OK, SD)"
+        ]
+      }
+    },
+    "example_queries": [
+      "What are the licensure requirements for acupuncture in Texas? Do they require NCCAOM?",
+      "Which states allow acupuncturists to prescribe herbal medicine?",
+      "I'm licensed in California - what do I need to also practice in New York?"
+    ]
+  },
+  {
+    "id": "us-acupuncturists-p06",
+    "title": "SOAP notes and treatment plan documentation",
+    "problem": "Acupuncturists must document every visit with detailed SOAP notes including TCM diagnoses, point selection rationale, and treatment outcomes. Insurance requires Western diagnosis codes alongside TCM patterns. Writing thorough notes for 15-30 patients weekly is exhausting and cuts into clinical time.",
+    "who": "All practicing acupuncturists, especially those accepting insurance",
+    "frequency": "daily",
+    "time_waste_h": 10,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Acupuncture SOAP Note Generator",
+      "one_liner": "Generates professional SOAP notes with TCM and Western diagnoses, point prescriptions, and treatment rationale",
+      "doc_name": "SOAP Note / Progress Note",
+      "variables": [
+        {
+          "name": "patient_initials",
+          "label": "Patient initials"
+        },
+        {
+          "name": "visit_date",
+          "label": "Visit date"
+        },
+        {
+          "name": "visit_number",
+          "label": "Visit number in treatment series"
+        },
+        {
+          "name": "chief_complaint",
+          "label": "Chief complaint"
+        },
+        {
+          "name": "subjective",
+          "label": "Patient-reported symptoms and changes since last visit"
+        },
+        {
+          "name": "tongue_diagnosis",
+          "label": "Tongue diagnosis (color, coating, shape)"
+        },
+        {
+          "name": "pulse_diagnosis",
+          "label": "Pulse diagnosis (quality, rate, positions)"
+        },
+        {
+          "name": "tcm_pattern",
+          "label": "TCM pattern differentiation"
+        },
+        {
+          "name": "icd10_code",
+          "label": "ICD-10 diagnosis code"
+        },
+        {
+          "name": "points_used",
+          "label": "Acupuncture points used"
+        },
+        {
+          "name": "additional_modalities",
+          "label": "Additional modalities (cupping, moxa, e-stim, tui na)"
+        },
+        {
+          "name": "treatment_duration",
+          "label": "Treatment duration (minutes)"
+        },
+        {
+          "name": "patient_response",
+          "label": "Patient response to treatment"
+        }
+      ],
+      "structure_hint": "S: Subjective (symptoms, changes) -> O: Objective (tongue, pulse, palpation, vitals) -> A: Assessment (TCM pattern + ICD-10) -> P: Plan (points rationale, modalities, frequency, home care recommendations)"
+    },
+    "example_queries": [
+      "Write a SOAP note for a migraine patient - Liver Yang Rising, tongue red with thin yellow coating, wiry pulse, used LV3, LI4, GB20, GB41, Taiyang",
+      "Generate progress notes for visit 5 of a low back pain patient showing 60% improvement with Kidney Qi deficiency pattern"
+    ]
+  },
+  {
+    "id": "us-acupuncturists-p07",
+    "title": "Insurance claim denial appeal",
+    "problem": "Insurance claim denials are a top frustration for acupuncturists. Common denial reasons include medical necessity, incorrect coding, exceeded visit limits, or missing prior authorization. Writing effective appeal letters requires knowledge of payer-specific rules and clinical documentation standards.",
+    "who": "Acupuncturists billing insurance, especially those without billing staff",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 12000,
+    "source": "career_psychology",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Insurance Denial Appeal Letter Generator",
+      "one_liner": "Generates professional appeal letters for denied acupuncture insurance claims with clinical justification",
+      "doc_name": "Insurance Claim Appeal Letter",
+      "variables": [
+        {
+          "name": "insurance_company",
+          "label": "Insurance company name"
+        },
+        {
+          "name": "claim_number",
+          "label": "Claim/reference number"
+        },
+        {
+          "name": "patient_name",
+          "label": "Patient name"
+        },
+        {
+          "name": "date_of_service",
+          "label": "Date(s) of service"
+        },
+        {
+          "name": "denial_reason",
+          "label": "Denial reason (medical necessity, coding, visit limit, etc.)"
+        },
+        {
+          "name": "cpt_codes",
+          "label": "CPT codes billed"
+        },
+        {
+          "name": "icd10_codes",
+          "label": "ICD-10 diagnosis codes"
+        },
+        {
+          "name": "clinical_justification",
+          "label": "Clinical justification for treatment"
+        },
+        {
+          "name": "treatment_outcomes",
+          "label": "Documented treatment outcomes/improvements"
+        },
+        {
+          "name": "provider_name",
+          "label": "Provider name and credentials"
+        },
+        {
+          "name": "provider_npi",
+          "label": "Provider NPI"
+        }
+      ],
+      "structure_hint": "Formal header -> Claim identification -> Denial reason acknowledgment -> Clinical justification with evidence -> Reference to payer's own coverage policy -> Treatment necessity argument citing outcomes -> Research citations if applicable -> Request for reconsideration -> Provider signature"
+    },
+    "example_queries": [
+      "Write an appeal letter for a denied claim - Aetna says acupuncture for chronic low back pain is not medically necessary after 12 visits",
+      "Help me appeal a Blue Cross denial for acupuncture migraine treatment, claim number BC-2026-445521"
+    ]
+  },
+  {
+    "id": "us-acupuncturists-p08",
+    "title": "CPT and ICD-10 coding for acupuncture",
+    "problem": "Acupuncturists frequently struggle with correct CPT and ICD-10 code selection. Using wrong codes causes claim denials and potential audit flags. Mapping TCM diagnoses to ICD-10 codes is not intuitive, and acupuncture-specific CPT codes (97810-97814) have specific time and needle requirements.",
+    "who": "All acupuncturists billing insurance or creating superbills",
+    "frequency": "daily",
+    "time_waste_h": 3,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Acupuncture CPT & ICD-10 Code Reference",
+      "one_liner": "Quick lookup of correct CPT codes for acupuncture procedures and ICD-10 mappings from TCM diagnoses",
+      "data_domain": "Acupuncture CPT procedure codes, ICD-10 diagnosis codes, and TCM-to-ICD-10 mapping",
+      "lookup_keys": [
+        "procedure_type",
+        "tcm_diagnosis",
+        "western_condition",
+        "body_area"
+      ],
+      "data_hints": {
+        "source_law": "AMA CPT Code Manual, WHO ICD-10-CM",
+        "key_sections": [
+          "97810 - Initial acupuncture (15 min, 1+ needles)",
+          "97811 - Re-insertion without electrical stimulation",
+          "97813 - Initial electroacupuncture",
+          "97814 - Re-insertion with e-stim",
+          "97140 - Manual therapy",
+          "Common TCM-to-ICD-10 mappings",
+          "Modifier usage (-25, -59)",
+          "Time-based billing rules"
+        ]
+      }
+    },
+    "example_queries": [
+      "What CPT code do I use for a 45-minute acupuncture session with electroacupuncture?",
+      "What ICD-10 code maps to Liver Qi Stagnation with headache?",
+      "Can I bill 97810 and 97140 together for acupuncture plus tui na?"
+    ]
+  },
+  {
+    "id": "us-acupuncturists-p09",
+    "title": "Informed consent form generation",
+    "problem": "Acupuncturists need comprehensive informed consent forms covering needle risks (pneumothorax, nerve damage, bruising), herbal medicine interactions, and state-specific disclosure requirements. Generic templates may not cover state-mandated disclosures, creating legal liability.",
+    "who": "All practicing acupuncturists, especially new practitioners setting up their practice",
+    "frequency": "yearly",
+    "time_waste_h": 4,
+    "money_risk_usd": 25000,
+    "source": "regulatory",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Acupuncture Informed Consent Generator",
+      "one_liner": "Generates state-compliant informed consent forms for acupuncture, herbal medicine, and adjunctive therapies",
+      "doc_name": "Informed Consent for Acupuncture Treatment",
+      "variables": [
+        {
+          "name": "practice_name",
+          "label": "Practice name"
+        },
+        {
+          "name": "practitioner_name",
+          "label": "Practitioner name and credentials"
+        },
+        {
+          "name": "state",
+          "label": "State of practice"
+        },
+        {
+          "name": "modalities",
+          "label": "Modalities offered (acupuncture, herbs, cupping, moxa, e-stim, tui na)"
+        },
+        {
+          "name": "includes_herbs",
+          "label": "Includes herbal medicine? (yes/no)"
+        },
+        {
+          "name": "telehealth",
+          "label": "Includes telehealth consultations? (yes/no)"
+        }
+      ],
+      "structure_hint": "Practice identification -> Description of acupuncture and TCM -> Procedures offered -> Potential risks and side effects (bruising, fainting, pneumothorax, nerve injury, infection) -> Herbal medicine risks (if applicable) -> Alternative treatments available -> Right to refuse -> HIPAA notice -> State-specific disclosures -> Patient acknowledgment and signature -> Date"
+    },
+    "example_queries": [
+      "Generate an informed consent form for my acupuncture practice in Florida that includes herbs and cupping",
+      "Create a consent form for a California LAc offering acupuncture, moxa, and e-stim - what state-specific disclosures do I need?"
+    ]
+  },
+  {
+    "id": "us-acupuncturists-p10",
+    "title": "Herbal formula interaction and safety check",
+    "problem": "Acupuncturists prescribing Chinese herbal formulas must check for drug-herb interactions, contraindications, and pregnancy safety. With patients on multiple Western medications, the risk of adverse interactions is significant. Manual cross-referencing across pharmacopeias is time-consuming and error-prone.",
+    "who": "Acupuncturists with herbal prescribing privileges (Dipl.CH, states allowing herbs)",
+    "frequency": "daily",
+    "time_waste_h": 4,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Chinese Herbal Formula Safety Advisor",
+      "one_liner": "Checks Chinese herbal formulas for drug-herb interactions, contraindications, pregnancy safety, and dosage guidance",
+      "expertise_area": "Chinese herbal medicine pharmacology, drug-herb interactions, and safety",
+      "decision_criteria": [
+        "herbs_in_formula",
+        "patient_medications",
+        "patient_conditions",
+        "pregnancy_status",
+        "age"
+      ],
+      "context_needed": [
+        "Known drug-herb interactions database",
+        "Chinese Materia Medica contraindications",
+        "FDA herb safety alerts",
+        "Bensky Materia Medica reference"
+      ]
+    },
+    "example_queries": [
+      "Is it safe to prescribe Xiao Yao San for a patient taking warfarin and metformin?",
+      "Check interactions for Bu Zhong Yi Qi Tang with lisinopril and atorvastatin",
+      "Which herbs in Gui Pi Tang are contraindicated during pregnancy?"
+    ]
+  },
+  {
+    "id": "us-acupuncturists-p11",
+    "title": "New practice setup checklist",
+    "problem": "Opening an acupuncture practice involves dozens of steps across licensing, business formation, insurance credentialing, HIPAA compliance, and space setup. New graduates often miss critical steps like NPI registration, CLIA waiver, or proper waste disposal contracts. Mistakes cause costly delays.",
+    "who": "New graduates and acupuncturists transitioning to solo practice",
+    "frequency": "once",
+    "time_waste_h": 80,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Acupuncture Practice Setup Checklist",
+      "one_liner": "Complete step-by-step checklist for opening an acupuncture practice from licensing through first patient",
+      "steps": [
+        "Step 1: Verify state license is active and in good standing",
+        "Step 2: Register business entity (LLC, PLLC, or S-Corp) with state",
+        "Step 3: Get EIN from IRS (Form SS-4)",
+        "Step 4: Apply for NPI number (Type 1 individual provider)",
+        "Step 5: Open business bank account",
+        "Step 6: Obtain malpractice insurance (ASCA, CM&F, or state-specific)",
+        "Step 7: Get general liability and property insurance",
+        "Step 8: Secure office space with proper zoning for healthcare",
+        "Step 9: Set up sharps disposal and biohazard waste contract",
+        "Step 10: Implement HIPAA compliance (privacy policy, BAAs, secure records)",
+        "Step 11: Credential with insurance panels (Aetna, BCBS, Cigna, UHC, etc.)",
+        "Step 12: Enroll as Medicare provider (if accepting Medicare)",
+        "Step 13: Set up EHR/practice management software",
+        "Step 14: Create intake forms, consent forms, and HIPAA notice of privacy",
+        "Step 15: Establish fee schedule and sliding scale policy",
+        "Step 16: Order supplies (needles, moxa, cups, herbs, linens)",
+        "Step 17: Set up online scheduling and payment processing",
+        "Step 18: Register with state sales tax (if selling herbs/products)",
+        "Step 19: Create Google Business profile and directory listings",
+        "Step 20: Set up quarterly estimated tax payments (IRS Form 1040-ES)"
+      ],
+      "warnings": [
+        "Warning: Insurance credentialing can take 90-180 days - start early",
+        "Warning: HIPAA violations can result in fines from $100 to $50,000 per violation",
+        "Warning: Sharps disposal without proper contract may violate OSHA regulations",
+        "Warning: Some states require separate herb dispensing license"
+      ],
+      "regulatory_refs": [
+        "State Acupuncture Practice Act",
+        "HIPAA Privacy Rule 45 CFR 164",
+        "OSHA Bloodborne Pathogens 29 CFR 1910.1030",
+        "IRS Publication 505"
+      ]
+    },
+    "example_queries": [
+      "I just passed my NCCAOM exams and want to open a practice in Colorado. What do I need to do?",
+      "What's the complete checklist for setting up an acupuncture clinic? I don't want to miss anything"
+    ]
+  },
+  {
+    "id": "us-acupuncturists-p12",
+    "title": "Insurance reimbursement rate comparison",
+    "problem": "Acupuncturists negotiate with multiple insurance companies but lack visibility into typical reimbursement rates for their CPT codes. They often accept unfavorable contracts because they don't know what others are getting. Comparing rates across payers is critical for deciding which panels to join.",
+    "who": "Acupuncturists credentialing with insurance companies or renegotiating contracts",
+    "frequency": "yearly",
+    "time_waste_h": 8,
+    "money_risk_usd": 15000,
+    "source": "career_psychology",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Acupuncture Reimbursement Rate Analyzer",
+      "one_liner": "Calculates and compares insurance reimbursement rates per visit against your costs to determine panel profitability",
+      "inputs": [
+        {
+          "name": "cpt_97810_rate",
+          "type": "number",
+          "label": "Reimbursement rate for CPT 97810 (USD)"
+        },
+        {
+          "name": "cpt_97811_rate",
+          "type": "number",
+          "label": "Reimbursement rate for CPT 97811 (USD)"
+        },
+        {
+          "name": "cpt_97813_rate",
+          "type": "number",
+          "label": "Reimbursement rate for CPT 97813 (USD)"
+        },
+        {
+          "name": "cpt_97814_rate",
+          "type": "number",
+          "label": "Reimbursement rate for CPT 97814 (USD)"
+        },
+        {
+          "name": "avg_units_per_visit",
+          "type": "number",
+          "label": "Average number of units billed per visit"
+        },
+        {
+          "name": "avg_visit_duration_min",
+          "type": "number",
+          "label": "Average visit duration (minutes)"
+        },
+        {
+          "name": "cost_per_hour",
+          "type": "number",
+          "label": "Your cost per clinical hour (overhead + target income)"
+        },
+        {
+          "name": "payer_name",
+          "type": "string",
+          "label": "Insurance company name"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "revenue_per_visit",
+          "label": "Expected revenue per visit (USD)"
+        },
+        {
+          "name": "cost_per_visit",
+          "label": "Your cost per visit (USD)"
+        },
+        {
+          "name": "profit_per_visit",
+          "label": "Profit per visit (USD)"
+        },
+        {
+          "name": "effective_hourly_rate",
+          "label": "Effective hourly rate (USD)"
+        },
+        {
+          "name": "panel_recommendation",
+          "label": "Join/avoid recommendation"
+        }
+      ],
+      "formula_hint": "revenue_per_visit = initial_code_rate + (additional_units * reinsertion_rate); cost_per_visit = cost_per_hour * (visit_duration / 60); profit = revenue - cost; effective_hourly = revenue / (visit_duration / 60); recommend if effective_hourly > cost_per_hour * 1.3",
+      "rates": {
+        "medicare_97810_national_avg": 38.0,
+        "medicare_97811_national_avg": 28.0
+      }
+    },
+    "example_queries": [
+      "Aetna offers $45 for 97810 and $32 for 97811. My overhead is $85/hour. Is this panel worth joining?",
+      "Compare my BCBS rates to Medicare rates for acupuncture codes - am I getting a fair deal?"
+    ]
+  },
+  {
+    "id": "us-acupuncturists-p13",
+    "title": "Adverse event response procedure",
+    "problem": "When a patient experiences an adverse event (stuck needle, pneumothorax, severe bruising, fainting, allergic reaction to herbs), acupuncturists must follow specific clinical and legal protocols. Panic in the moment leads to documentation failures that increase malpractice exposure.",
+    "who": "All practicing acupuncturists",
+    "frequency": "yearly",
+    "time_waste_h": 2,
+    "money_risk_usd": 100000,
+    "source": "career_psychology",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Acupuncture Adverse Event Response Protocol",
+      "one_liner": "Step-by-step emergency response protocol for adverse events during acupuncture treatment",
+      "steps": [
+        "Step 1: STOP treatment immediately - remove all needles if safe to do so",
+        "Step 2: Assess patient condition (consciousness, breathing, vital signs)",
+        "Step 3: Call 911 if life-threatening (suspected pneumothorax, cardiac event, severe allergic reaction)",
+        "Step 4: Administer first aid as appropriate (pressure for bleeding, position for fainting)",
+        "Step 5: Stay with patient - do NOT leave them unattended",
+        "Step 6: Document everything in real-time with timestamps",
+        "Step 7: Notify patient's emergency contact if condition is serious",
+        "Step 8: Complete incident report form within 24 hours",
+        "Step 9: Notify malpractice insurance carrier within required timeframe",
+        "Step 10: Do NOT admit fault or make statements about causation",
+        "Step 11: Preserve all treatment records and needle packaging/lot numbers",
+        "Step 12: Report to state board if required by state law",
+        "Step 13: Schedule follow-up with patient within 24-48 hours",
+        "Step 14: Review and update safety protocols based on incident"
+      ],
+      "warnings": [
+        "Warning: Suspected pneumothorax (sudden chest pain, difficulty breathing) - CALL 911 IMMEDIATELY",
+        "Warning: Never destroy or alter records after an adverse event",
+        "Warning: Contact your malpractice insurer BEFORE discussing the incident with the patient's attorney",
+        "Warning: Some states mandate reporting adverse events to the state board within specific timeframes"
+      ],
+      "regulatory_refs": [
+        "State Acupuncture Practice Act adverse event reporting",
+        "OSHA incident documentation requirements",
+        "Malpractice policy notification requirements"
+      ]
+    },
+    "example_queries": [
+      "A patient is complaining of sharp chest pain after needling near the upper back - what do I do?",
+      "My patient fainted during treatment and hit their head. Walk me through the proper protocol"
+    ]
+  }
+]

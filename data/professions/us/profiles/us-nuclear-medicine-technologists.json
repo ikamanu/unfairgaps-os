@@ -1,0 +1,250 @@
+{
+  "profession_id": "us-nuclear-medicine-technologists",
+  "profession_name": "Nuclear Medicine Technologists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Nuclear medicine technologists prepare and administer radiopharmaceuticals, operate gamma cameras and PET/CT scanners, process diagnostic images, and ensure radiation safety in hospitals and outpatient imaging centers.",
+    "typical_tasks": [
+      "Prepare and calculate dosages of radiopharmaceuticals",
+      "Administer radiopharmaceuticals by injection, oral, or inhalation",
+      "Position patients under gamma cameras for SPECT imaging",
+      "Operate PET/CT scanners for metabolic imaging",
+      "Process and manipulate images on computer workstations",
+      "Send images electronically via PACS to interpreting physicians",
+      "Conduct daily radiation surveys of hot lab, exam rooms, and equipment",
+      "Maintain and calibrate radioisotope and laboratory equipment",
+      "Document radionuclide receipt, use, and disposal records",
+      "Follow NRC/State radiation safety guidelines"
+    ],
+    "key_documents": [
+      "Radiopharmaceutical dose logs",
+      "Radiation survey records",
+      "Personnel dosimetry records",
+      "Equipment QC logs",
+      "Patient imaging reports",
+      "Radioactive materials inventory",
+      "Waste disposal documentation"
+    ],
+    "deadlines": {
+      "daily_qa": "Equipment QC checks before first patient each day",
+      "dose_calibrator_checks": "Daily constancy, quarterly linearity, annual accuracy",
+      "radiation_surveys": "Daily for hot lab and camera rooms",
+      "personnel_dosimetry": "Monthly badge exchange and quarterly dose review",
+      "nrc_reporting": "Annual ALARA review, immediate reporting for spills/overexposures"
+    },
+    "seasonality": "No strong seasonal variation. Oncology PET scans steady year-round. Cardiac stress testing may increase in Q4 with end-of-year insurance benefits. Staffing shortages (18.1% vacancy rate) create year-round workload pressure.",
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/nuclear-medicine-technologists.htm", "fact": "BLS occupational outlook handbook for nuclear medicine technologists"},
+      {"url": "https://www.onetonline.org/link/summary/29-2033.00", "fact": "O*NET detailed task listing for SOC 29-2033.00"},
+      {"url": "https://snmmi.org/common/Uploaded%20files/Advocacy/NMT%20Scope%20of%20Practice%203rd%20Edition%20Final%2011.11.24.pdf", "fact": "SNMMI NMT Scope of Practice 3rd Edition November 2024"}
+    ]
+  },
+  "regulatory": {
+    "summary": "Nuclear medicine technologists face dual regulation: NRC/Agreement State radioactive materials licensing for facilities, and state professional licensure in 30+ states. ARRT and NMTCB provide national certifications. Strict radiation safety protocols under 10 CFR Part 20 and 35.",
+    "key_laws": [
+      {
+        "name": "10 CFR Part 20 — Standards for Protection Against Radiation",
+        "detail": "NRC radiation protection standards including ALARA, dose limits (5 rem/year occupational whole body)",
+        "status": "Active federal regulation"
+      },
+      {
+        "name": "10 CFR Part 35 — Medical Use of Byproduct Material",
+        "detail": "Governs medical use of radioactive materials, authorized user requirements, misadministration reporting",
+        "status": "Active federal regulation"
+      },
+      {
+        "name": "State Professional Licensure",
+        "detail": "30+ states require NMT licensure before employment. Most accept ARRT or NMTCB certification in lieu of state exam",
+        "status": "Active, varies by state"
+      },
+      {
+        "name": "HIPAA",
+        "detail": "Patient imaging data protection requirements",
+        "reference": "45 CFR Parts 160, 164"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Associate's or bachelor's degree from JRCNMT-accredited program",
+        "ARRT Nuclear Medicine Technology certification OR NMTCB certification",
+        "State licensure in 30+ states (many accept national certification)",
+        "24 hours CE every 2 years for NMTCB; annual renewal",
+        "ARRT annual renewal with biennial CE requirements",
+        "NRC Authorized User supervision for radioactive materials handling"
+      ],
+      "certifying_bodies": [
+        "ARRT — American Registry of Radiologic Technologists",
+        "NMTCB — Nuclear Medicine Technology Certification Board"
+      ]
+    },
+    "penalties": "NRC violations for facilities: $100,000+ per violation for willful violations. HIPAA violations $141-$2,134,831 per violation. State board actions can include license suspension/revocation for individual technologists.",
+    "sources": [
+      {"url": "https://www.nrc.gov/materials/miau/licensing", "fact": "NRC licensing requirements for medical use of nuclear materials"},
+      {"url": "https://www.nmtcb.org/faqs/state-licensure", "fact": "NMTCB state licensure FAQ indicating 30+ states require NMT licensure"},
+      {"url": "https://www.arrt.org/pages/earn-arrt-credentials/credential-options/nuclear-medicine-technology", "fact": "ARRT Nuclear Medicine Technology credential requirements"}
+    ]
+  },
+  "tools": {
+    "summary": "Primary equipment includes gamma cameras and PET/CT scanners from GE Healthcare, Siemens Healthineers, and Philips. Software includes MIM, Hermes, and vendor-specific processing workstations. Equipment costs $50,000-$500,000+.",
+    "primary_software": [
+      {"name": "GE Healthcare NM/CT 850 and NM/CT 870 CZT", "purpose": "SPECT/CT systems with SmartConsole productivity hub and LEHRS collimators"},
+      {"name": "Siemens Symbia Evo/Intevo", "purpose": "SPECT/CT systems with xSPECT technology for quantitative imaging"},
+      {"name": "Philips BrightView", "purpose": "SPECT and SPECT/CT gamma camera systems"},
+      {"name": "MIM Software", "purpose": "Vendor-neutral quantitative imaging analysis and treatment planning"},
+      {"name": "Hermes Medical Solutions", "purpose": "Nuclear medicine image processing and quantification"},
+      {"name": "PACS (Picture Archiving and Communication System)", "purpose": "Digital image storage, retrieval, and distribution"},
+      {"name": "Dose calibrator (Capintec, Biodex)", "purpose": "Radiopharmaceutical dose measurement and verification"}
+    ],
+    "government_portals": [
+      "NRC NSTS (National Source Tracking System) for sealed source tracking",
+      "State radiation control program portals for licensure",
+      "CMS Medicare billing portals"
+    ],
+    "equipment_costs": "Nuclear gamma cameras range from $50,000 to $500,000. New PET/CT systems can exceed $2 million.",
+    "pain_points": [
+      "Legacy equipment interoperability challenges",
+      "High cost of equipment replacement and maintenance",
+      "Complex regulatory compliance documentation",
+      "Integration gaps between nuclear medicine systems and hospital RIS/PACS"
+    ],
+    "sources": [
+      {"url": "https://www.blockimaging.com/nuclear-camera-price-cost-guide", "fact": "Nuclear camera price guide: $50K-$500K range"},
+      {"url": "https://www.gehealthcare.com/products/molecular-imaging/nuclear-medicine/nm-ct-870-czt", "fact": "GE Healthcare NM/CT 870 CZT SPECT/CT system"},
+      {"url": "https://www.siemens-healthineers.com/en-us/molecular-imaging/spect-ct-scanners", "fact": "Siemens SPECT/CT scanner product line with xSPECT technology"}
+    ]
+  },
+  "terminology": {
+    "summary": "Nuclear medicine technologists use specialized terminology from radiation physics, pharmacology, and medical imaging covering radiopharmaceutical preparation, quantitative measurements, and imaging protocols.",
+    "key_terms": [
+      {"term": "SUV", "meaning": "Standardized Uptake Value — quantifies radiopharmaceutical tissue uptake in PET imaging"},
+      {"term": "Radiopharmaceutical", "meaning": "Radioactive drug used for diagnostic imaging or therapeutic purposes"},
+      {"term": "Tc-99m", "meaning": "Technetium-99m — most commonly used radionuclide in nuclear medicine"},
+      {"term": "F-18 FDG", "meaning": "Fluorodeoxyglucose — primary PET radiopharmaceutical for cancer imaging"},
+      {"term": "SPECT", "meaning": "Single Photon Emission Computed Tomography"},
+      {"term": "PET/CT", "meaning": "Positron Emission Tomography/Computed Tomography — hybrid imaging"},
+      {"term": "Gamma camera", "meaning": "Anger camera — detects gamma radiation from radiopharmaceuticals in the body"},
+      {"term": "ROI", "meaning": "Region of Interest — area drawn on image for quantitative measurement"},
+      {"term": "ALARA", "meaning": "As Low As Reasonably Achievable — radiation safety principle"},
+      {"term": "Hot lab", "meaning": "Designated room for radiopharmaceutical preparation and storage"},
+      {"term": "Cold kit", "meaning": "Non-radioactive reagent reconstituted with radioactive pertechnetate"},
+      {"term": "Collimator", "meaning": "Lead device on gamma camera that filters scattered radiation"},
+      {"term": "Photopeak", "meaning": "Energy window setting for gamma camera acquisition"},
+      {"term": "Biodistribution", "meaning": "Pattern of radiopharmaceutical distribution in the body"},
+      {"term": "Eluate/Elution", "meaning": "Process of extracting Tc-99m from molybdenum generator"},
+      {"term": "MBq/mCi", "meaning": "Megabecquerel/millicurie — units of radioactivity"},
+      {"term": "Ejection fraction", "meaning": "Cardiac function measurement from MUGA/gated blood pool scan"}
+    ],
+    "common_abbreviations": ["NMT", "ARRT", "NMTCB", "NRC", "CNMT", "RSO (Radiation Safety Officer)", "AU (Authorized User)", "QC", "MUGA", "MAA"],
+    "sources": [
+      {"url": "https://snmmi.org/common/Uploaded%20files/Advocacy/NMT%20Scope%20of%20Practice%203rd%20Edition%20Final%2011.11.24.pdf", "fact": "SNMMI scope of practice defining NMT terminology and quantitative measurement responsibilities"},
+      {"url": "https://jnm.snmjournals.org/content/51/2/173", "fact": "Journal of Nuclear Medicine article on SUV — from 'Silly Useless Value to Smart Uptake Value'"}
+    ]
+  },
+  "career_psychology": {
+    "summary": "Nuclear medicine technologists have moderate burnout risk (lower than radiologic technologists). Career progression from entry NMT to senior/lead/PET specialist/manager. Radiation exposure is a chronic psychological concern despite strict safety protocols.",
+    "career_levels": [
+      {"level": "Entry-level NMT", "salary_range": "$65,000-$80,000", "responsibilities": "Basic gamma camera operation, routine imaging under supervision"},
+      {"level": "Certified NMT (ARRT/NMTCB)", "salary_range": "$80,000-$97,000", "responsibilities": "Independent imaging, all modalities, radiopharmaceutical preparation"},
+      {"level": "Senior/PET Specialist", "salary_range": "$97,000-$115,000", "responsibilities": "PET/CT expertise, complex protocols, student supervision"},
+      {"level": "Lead Technologist/Manager", "salary_range": "$110,000-$130,000+", "responsibilities": "Department management, QC program, regulatory compliance, budgeting"}
+    ],
+    "main_fears": [
+      "Cumulative radiation exposure over career",
+      "Radiopharmaceutical misadministration or wrong-patient errors",
+      "NRC regulatory violations leading to facility penalties",
+      "License revocation for negligence",
+      "Equipment malfunction during patient procedures",
+      "Extravasation (failed injection) affecting image quality and patient dose"
+    ],
+    "burnout_causes": [
+      "Staffing shortages with 18.1% vacancy rate nationally",
+      "Increasing workload from growing PET/CT demand",
+      "Evolving regulations adding compliance burden",
+      "On-call and weekend requirements",
+      "Chronic concern about personal radiation exposure",
+      "Physical demands — on feet all day, lifting patients"
+    ],
+    "growth_motivation": [
+      "PET/CT specialty certification for higher pay",
+      "Radiation safety officer (RSO) career track",
+      "Management and education positions",
+      "Industry roles in radiopharmaceutical sales/applications",
+      "Advanced degree in health physics or medical physics"
+    ],
+    "sources": [
+      {"url": "https://research.com/advice/how-to-become-a-nuclear-medicine-technologist-education-salary-and-job-outlook", "fact": "Career path overview including burnout risk lower than radiologic technologists at 15%"},
+      {"url": "https://www.bls.gov/ooh/healthcare/nuclear-medicine-technologists.htm", "fact": "BLS career and radiation safety information for nuclear medicine technologists"}
+    ]
+  },
+  "community": {
+    "summary": "SNMMI (Society of Nuclear Medicine and Molecular Imaging) is the primary organization with 15,000 members. SNMMI-TS is the technologist section. Annual meeting draws 6,000+ in-person and 1,700+ virtual attendees.",
+    "professional_associations": [
+      {"name": "SNMMI — Society of Nuclear Medicine and Molecular Imaging", "url": "https://www.snmmi.org", "membership_value": "JNMT journal, CE courses, annual meeting, regional chapters, advocacy", "members": "15,000 worldwide", "mandatory": false},
+      {"name": "SNMMI-TS — Technologist Section", "url": "https://www.snmmi.org", "membership_value": "Technologist-specific education, scope of practice advocacy, career resources", "mandatory": false},
+      {"name": "ASRT — American Society of Radiologic Technologists", "url": "https://www.asrt.org", "membership_value": "CE courses, advocacy for state licensure, career resources", "mandatory": false}
+    ],
+    "conferences": [
+      {"name": "SNMMI Annual Meeting", "detail": "Major nuclear medicine conference, 6,077 in-person + 1,691 virtual attendees in 2025 (New Orleans)", "frequency": "Annual (June)"},
+      {"name": "SNMMI Mid-Winter Meeting", "detail": "Technologist-focused education and advocacy", "frequency": "Annual (January)"},
+      {"name": "RSNA Annual Meeting", "detail": "Large radiology conference with nuclear medicine track", "frequency": "Annual (December)"},
+      {"name": "Regional SNMMI Chapter Meetings", "detail": "Local networking and CE opportunities", "frequency": "Annual per chapter"}
+    ],
+    "online_communities": [
+      "SNMMI Connect (members-only online community)",
+      "Reddit r/nuclearmed (small but active community)",
+      "Facebook nuclear medicine technologist groups",
+      "LinkedIn Nuclear Medicine professionals groups"
+    ],
+    "publications": [
+      "JNMT — Journal of Nuclear Medicine Technology (peer-reviewed, quarterly)",
+      "JNM — Journal of Nuclear Medicine",
+      "SNMMI Newsline"
+    ],
+    "sources": [
+      {"url": "https://snmmi.org/", "fact": "SNMMI is the primary professional organization with 15,000 members worldwide"},
+      {"url": "https://www.siemens-healthineers.com/en-us/molecular-imaging/news/snmmi-annual-meeting-2025", "fact": "SNMMI 2025 annual meeting drew 6,077 in-person and 1,691 virtual attendees"}
+    ]
+  },
+  "market": {
+    "summary": "Median salary $97,020 (BLS 2024). 3% job growth projected 2024-2034 with ~900 annual openings. High geographic salary variation ($75K-$144K by state). Outpatient care centers pay premium ($158,510 median).",
+    "salary_by_level": {
+      "entry": "$65,000-$80,000",
+      "mid": "$88,000-$97,000",
+      "senior": "$97,000-$115,000",
+      "lead_manager": "$115,000-$130,000+"
+    },
+    "geographic_variation": {
+      "national_median": "$97,020 (BLS May 2024)",
+      "california": "$144,490",
+      "washington": "$121,670",
+      "hawaii": "$113,920",
+      "oregon": "$109,230",
+      "lowest_10_percent": "$75,570",
+      "highest_10_percent": "$128,090+"
+    },
+    "estimated_practitioners": "About 17,900 nuclear medicine technologists employed in the US (BLS 2023)",
+    "job_outlook": "3% growth 2024-2034, about as fast as average. ~900 openings per year from growth and replacements.",
+    "work_arrangements": {
+      "dominant": "W-2 employees at hospitals (60%+), outpatient imaging centers, physicians' offices",
+      "outpatient_premium": "Outpatient care centers pay median $158,510 — highest by employer type",
+      "travel_positions": "Travel NMT positions available through staffing agencies at premium rates"
+    },
+    "market_trends": [
+      "Growing demand for PET/CT oncology imaging",
+      "Theranostics (Lu-177 PSMA, Ac-225) creating new technologist roles",
+      "Staffing shortages with 18.1% vacancy rate driving wage increases",
+      "AI integration for automated image processing and quantification",
+      "Aging population increasing cardiac and neurological imaging demand"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/nuclear-medicine-technologists.htm", "fact": "BLS projects 3% growth 2024-2034, median wage $97,020 May 2024"},
+      {"url": "https://www.bls.gov/oes/2023/may/oes292033.htm", "fact": "BLS OES data: 17,900 employed, mean wage $99,690"},
+      {"url": "https://careers.usnews.com/best-jobs/nuclear-medicine-technologist/salary", "fact": "US News salary data and job outlook for nuclear medicine technologists"}
+    ]
+  },
+  "quality_score": 0.6,
+  "sources_count": 16,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "raw_responses": []
+}

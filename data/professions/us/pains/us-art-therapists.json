@@ -1,0 +1,649 @@
+[
+  {
+    "id": "us-art-therapists-p01",
+    "title": "Session billing and reimbursement calculation",
+    "problem": "Art therapists in private practice must calculate session fees, insurance reimbursements, sliding scale adjustments, and track unpaid balances manually. Errors lead to revenue loss or client disputes. Many use spreadsheets or mental math, wasting time each billing cycle.",
+    "who": "Private practice art therapists handling their own billing",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Art Therapy Session Billing Calculator",
+      "one_liner": "Calculates session fees, insurance reimbursements, sliding scale rates, and monthly revenue projections for art therapy private practice",
+      "inputs": [
+        {
+          "name": "session_rate",
+          "type": "number",
+          "label": "Standard session rate (USD)"
+        },
+        {
+          "name": "sessions_per_week",
+          "type": "number",
+          "label": "Number of sessions per week"
+        },
+        {
+          "name": "insurance_reimbursement_pct",
+          "type": "number",
+          "label": "Insurance reimbursement rate (%)"
+        },
+        {
+          "name": "sliding_scale_clients",
+          "type": "number",
+          "label": "Number of sliding scale clients"
+        },
+        {
+          "name": "sliding_scale_discount_pct",
+          "type": "number",
+          "label": "Sliding scale discount (%)"
+        },
+        {
+          "name": "no_show_rate_pct",
+          "type": "number",
+          "label": "Estimated no-show rate (%)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "gross_monthly_revenue",
+          "label": "Gross monthly revenue (USD)"
+        },
+        {
+          "name": "insurance_expected",
+          "label": "Expected insurance reimbursement (USD)"
+        },
+        {
+          "name": "sliding_scale_loss",
+          "label": "Sliding scale revenue reduction (USD)"
+        },
+        {
+          "name": "no_show_loss",
+          "label": "Estimated no-show loss (USD)"
+        },
+        {
+          "name": "net_monthly_revenue",
+          "label": "Net projected monthly revenue (USD)"
+        }
+      ],
+      "formula_hint": "gross = session_rate * sessions_per_week * 4.33; insurance = insured_sessions * rate * reimbursement_pct; sliding_loss = sliding_clients * rate * discount_pct * 4.33; no_show_loss = gross * no_show_rate",
+      "rates": {
+        "avg_session_rate": 150,
+        "typical_insurance_reimbursement": 0.7,
+        "avg_no_show_rate": 0.1
+      }
+    },
+    "example_queries": [
+      "Calculate my monthly revenue if I charge $150/session, see 20 clients a week, and insurance reimburses 70%",
+      "How much am I losing with 5 sliding scale clients at 40% discount and a 12% no-show rate?"
+    ]
+  },
+  {
+    "id": "us-art-therapists-p02",
+    "title": "Supervised practice hours tracking for credentialing",
+    "problem": "Art therapists pursuing ATR or ATR-BC credentials must track hundreds of supervised practice hours across multiple categories (direct client contact, supervision hours, accredited vs non-accredited program requirements). Miscounting delays credentialing by months and costs application fees.",
+    "who": "ATR-P provisional art therapists working toward full registration",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 2000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "ATCB Credential Hours Tracker",
+      "one_liner": "Calculates remaining supervised practice and supervision hours needed for ATR and ATR-BC credentials based on ATCB 2025-2026 standards",
+      "inputs": [
+        {
+          "name": "program_type",
+          "type": "select",
+          "label": "Program type (CAAHEP-accredited / non-accredited)"
+        },
+        {
+          "name": "target_credential",
+          "type": "select",
+          "label": "Target credential (ATR / ATR-BC)"
+        },
+        {
+          "name": "direct_client_hours_completed",
+          "type": "number",
+          "label": "Direct client contact hours completed"
+        },
+        {
+          "name": "supervision_hours_completed",
+          "type": "number",
+          "label": "Supervision hours completed"
+        },
+        {
+          "name": "atr_bc_supervision_hours",
+          "type": "number",
+          "label": "Hours supervised by ATR-BC or ATCS"
+        },
+        {
+          "name": "hours_per_week",
+          "type": "number",
+          "label": "Hours per week currently working"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "direct_hours_remaining",
+          "label": "Direct client hours remaining"
+        },
+        {
+          "name": "supervision_hours_remaining",
+          "label": "Supervision hours remaining"
+        },
+        {
+          "name": "atr_bc_supervision_remaining",
+          "label": "ATR-BC/ATCS supervision hours remaining"
+        },
+        {
+          "name": "estimated_weeks_to_completion",
+          "label": "Estimated weeks to completion"
+        },
+        {
+          "name": "eligible_date",
+          "label": "Estimated eligibility date"
+        }
+      ],
+      "formula_hint": "Accredited: 1000 direct + 100 supervision (50 from ATR-BC/ATCS); Non-accredited: 1000 direct + 150 supervision (75 from ATR-BC/ATCS); weeks = max(remaining_direct / weekly_hours, remaining_supervision / weekly_supervision_rate)",
+      "rates": {
+        "accredited_direct_hours": 1000,
+        "accredited_supervision": 100,
+        "accredited_atrbc_min": 50,
+        "non_accredited_supervision": 150,
+        "non_accredited_atrbc_min": 75
+      }
+    },
+    "example_queries": [
+      "I graduated from a CAAHEP-accredited program, have 650 direct hours and 60 supervision hours. How much more do I need for ATR?",
+      "How many weeks until I can apply for ATR-BC if I'm doing 25 client hours per week?"
+    ]
+  },
+  {
+    "id": "us-art-therapists-p03",
+    "title": "SOAP clinical note writing for art therapy sessions",
+    "problem": "Art therapists must write detailed SOAP notes after every session, documenting client behavior, art process observations, clinical interpretations, and treatment progress. This documentation takes 15-30 minutes per client and must meet HIPAA and insurance audit standards. Poor notes lead to denied insurance claims.",
+    "who": "All practicing art therapists, especially those billing insurance",
+    "frequency": "daily",
+    "time_waste_h": 8,
+    "money_risk_usd": 3000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Art Therapy SOAP Note Generator",
+      "one_liner": "Generates structured SOAP clinical notes for art therapy sessions with art-specific observations and medical necessity language",
+      "doc_name": "Art Therapy SOAP Progress Note",
+      "variables": [
+        {
+          "name": "client_initials",
+          "label": "Client initials"
+        },
+        {
+          "name": "session_date",
+          "label": "Session date"
+        },
+        {
+          "name": "session_number",
+          "label": "Session number"
+        },
+        {
+          "name": "art_medium_used",
+          "label": "Art medium/materials used"
+        },
+        {
+          "name": "presenting_issue",
+          "label": "Presenting issue / diagnosis"
+        },
+        {
+          "name": "client_statements",
+          "label": "Key client statements (subjective)"
+        },
+        {
+          "name": "art_process_observations",
+          "label": "Observations of art-making process (colors, pressure, engagement)"
+        },
+        {
+          "name": "artwork_description",
+          "label": "Brief artwork description"
+        },
+        {
+          "name": "clinical_assessment",
+          "label": "Clinical assessment / progress toward goals"
+        },
+        {
+          "name": "plan_next_session",
+          "label": "Plan for next session"
+        }
+      ],
+      "structure_hint": "S: Client statements, mood, self-report -> O: Art medium, process observations, behavioral observations, artwork description -> A: Clinical interpretation, progress toward treatment goals, medical necessity -> P: Next session plan, interventions to continue/modify, referrals"
+    },
+    "example_queries": [
+      "Write a SOAP note for a session where my client used watercolors to explore grief, was tearful but engaged",
+      "Generate a progress note for a group art therapy session with 6 adolescents working on self-esteem through collage"
+    ]
+  },
+  {
+    "id": "us-art-therapists-p04",
+    "title": "State licensing requirements lookup",
+    "problem": "Art therapy licensing varies dramatically across 20+ states - some require ATR-BC, others accept related licenses, some only offer title protection. Therapists relocating or seeking telehealth clients across state lines waste hours researching requirements and risk practicing without proper credentials.",
+    "who": "Art therapists relocating, pursuing telehealth, or advising students",
+    "frequency": "quarterly",
+    "time_waste_h": 4,
+    "money_risk_usd": 10000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Art Therapy State Licensing Guide",
+      "one_liner": "Quick lookup of art therapy licensing requirements, credential recognition, and scope of practice by state (2025-2026 data)",
+      "data_domain": "State-by-state art therapy licensing requirements, credential types, and regulatory bodies",
+      "lookup_keys": [
+        "state",
+        "license_type",
+        "credential_required",
+        "telehealth_allowed"
+      ],
+      "data_hints": {
+        "source_law": "State practice acts and ATCB requirements",
+        "key_sections": [
+          "Professional license states (15+DC)",
+          "Related professional license states (5)",
+          "Title protection states (3)"
+        ],
+        "categories": [
+          "Full professional license",
+          "Related professional license",
+          "Title protection only",
+          "No regulation"
+        ]
+      }
+    },
+    "example_queries": [
+      "What are the licensing requirements for art therapists in New York?",
+      "Can I practice art therapy via telehealth with clients in Texas if I'm licensed in Connecticut?",
+      "Which states accept ATR-BC as sufficient for licensure without additional state exams?"
+    ]
+  },
+  {
+    "id": "us-art-therapists-p05",
+    "title": "HIPAA compliance checklist for private practice",
+    "problem": "Private practice art therapists must comply with HIPAA but many use non-compliant tools to reduce costs. They risk $100-$50,000+ fines per violation. Many don't know what constitutes a violation - storing client artwork photos on personal phones, using regular Zoom instead of HIPAA-compliant platforms, or emailing client information without encryption.",
+    "who": "Art therapists in private practice, especially solo practitioners",
+    "frequency": "monthly",
+    "time_waste_h": 3,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Art Therapy HIPAA Compliance Checklist",
+      "one_liner": "Step-by-step HIPAA compliance audit for art therapy private practice covering digital records, artwork storage, telehealth, and communication",
+      "steps": [
+        "Step 1: Verify EHR system has signed Business Associate Agreement (BAA)",
+        "Step 2: Confirm telehealth platform is HIPAA-compliant (e.g., Doxy.me, not regular Zoom)",
+        "Step 3: Review client artwork photo storage - must be on encrypted, BAA-covered platform, not personal phone",
+        "Step 4: Check email encryption for any client communications containing PHI",
+        "Step 5: Verify physical artwork storage is in locked location with access controls",
+        "Step 6: Review intake forms for required Notice of Privacy Practices acknowledgment",
+        "Step 7: Confirm all staff/contractors have signed confidentiality agreements",
+        "Step 8: Check that client records retention policy meets state requirements (typically 7 years)",
+        "Step 9: Verify breach notification procedures are documented",
+        "Step 10: Review and update Security Risk Assessment annually"
+      ],
+      "warnings": [
+        "Warning: Storing client artwork photos on personal devices without encryption violates HIPAA",
+        "Warning: Using free video platforms without BAA for telehealth sessions is a HIPAA violation",
+        "Warning: HIPAA fines range from $100 to $50,000 per violation, up to $1.5M annually per category"
+      ],
+      "regulatory_refs": [
+        "45 CFR Part 160",
+        "45 CFR Part 164",
+        "HITECH Act"
+      ]
+    },
+    "example_queries": [
+      "Is it a HIPAA violation to photograph client artwork with my personal phone?",
+      "What do I need to check to make sure my private practice is HIPAA compliant?",
+      "Can I use Google Drive to store client session notes?"
+    ]
+  },
+  {
+    "id": "us-art-therapists-p06",
+    "title": "Treatment plan development from assessment",
+    "problem": "Art therapists must create individualized treatment plans that align with DSM-5 diagnoses, include measurable goals, specify art-based interventions, and satisfy insurance requirements for medical necessity. Writing a comprehensive plan takes 1-2 hours per client and must be updated regularly.",
+    "who": "All clinical art therapists, especially those new to practice",
+    "frequency": "weekly",
+    "time_waste_h": 5,
+    "money_risk_usd": 2000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Art Therapy Treatment Plan Generator",
+      "one_liner": "Generates individualized art therapy treatment plans with DSM-5 aligned goals, art-based interventions, and medical necessity documentation",
+      "doc_name": "Individualized Art Therapy Treatment Plan",
+      "variables": [
+        {
+          "name": "client_age_group",
+          "label": "Client age group (child/adolescent/adult/geriatric)"
+        },
+        {
+          "name": "primary_diagnosis",
+          "label": "Primary diagnosis (DSM-5 code)"
+        },
+        {
+          "name": "presenting_concerns",
+          "label": "Presenting concerns"
+        },
+        {
+          "name": "treatment_setting",
+          "label": "Treatment setting (outpatient/inpatient/school/group home)"
+        },
+        {
+          "name": "session_frequency",
+          "label": "Session frequency"
+        },
+        {
+          "name": "treatment_goals",
+          "label": "Primary treatment goals (2-3)"
+        },
+        {
+          "name": "preferred_art_media",
+          "label": "Preferred or recommended art media"
+        },
+        {
+          "name": "contraindications",
+          "label": "Any contraindications or limitations"
+        }
+      ],
+      "structure_hint": "Client demographics -> Diagnosis & presenting concerns -> Measurable treatment goals (SMART format) -> Art therapy interventions matched to goals -> Session frequency & duration -> Progress measurement criteria -> Review schedule -> Medical necessity justification"
+    },
+    "example_queries": [
+      "Create a treatment plan for a 10-year-old with anxiety disorder using art therapy interventions",
+      "Generate a treatment plan for an adult trauma survivor, DSM-5 309.81, for weekly outpatient art therapy"
+    ]
+  },
+  {
+    "id": "us-art-therapists-p07",
+    "title": "ICD-10 and CPT code lookup for art therapy billing",
+    "problem": "Art therapists billing insurance must use correct ICD-10 diagnostic codes and CPT procedure codes, but art therapy doesn't have its own CPT codes and must bill under psychotherapy codes. Using wrong codes leads to claim denials. Different insurers accept different code combinations, creating confusion.",
+    "who": "Art therapists billing insurance, especially in private practice",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 8000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Art Therapy Billing Code Reference",
+      "one_liner": "Quick lookup of ICD-10 diagnostic codes and CPT procedure codes commonly used for art therapy insurance billing",
+      "data_domain": "ICD-10-CM diagnostic codes and CPT psychotherapy codes applicable to art therapy sessions",
+      "lookup_keys": [
+        "diagnosis_category",
+        "session_type",
+        "session_duration",
+        "group_vs_individual"
+      ],
+      "data_hints": {
+        "source_law": "AMA CPT Code Set, WHO ICD-10-CM",
+        "key_sections": [
+          "CPT 90832 (16-37 min)",
+          "CPT 90834 (38-52 min)",
+          "CPT 90837 (53+ min)",
+          "CPT 90853 (group)",
+          "CPT 96130-96131 (psychological testing)"
+        ],
+        "categories": [
+          "Individual psychotherapy",
+          "Group psychotherapy",
+          "Assessment/evaluation",
+          "Crisis intervention",
+          "Family therapy"
+        ]
+      }
+    },
+    "example_queries": [
+      "What CPT code do I use for a 50-minute individual art therapy session?",
+      "Which ICD-10 codes are commonly paired with art therapy for anxiety in children?",
+      "Can I bill CPT 90837 for a 60-minute art therapy session?"
+    ]
+  },
+  {
+    "id": "us-art-therapists-p08",
+    "title": "Art supply budget and inventory management",
+    "problem": "Art therapists must maintain diverse art supplies across multiple media (paints, clay, markers, paper, collage materials, etc.). They struggle to track inventory, budget for replenishment, and justify material costs to employers or for tax deductions. Running out of supplies mid-session disrupts therapeutic work.",
+    "who": "Art therapists managing their own supply budgets in any setting",
+    "frequency": "monthly",
+    "time_waste_h": 3,
+    "money_risk_usd": 1500,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Art Therapy Supply Budget Calculator",
+      "one_liner": "Calculates monthly and annual art supply costs based on client volume, media types used, and session frequency",
+      "inputs": [
+        {
+          "name": "clients_per_week",
+          "type": "number",
+          "label": "Number of clients per week"
+        },
+        {
+          "name": "group_sessions_per_week",
+          "type": "number",
+          "label": "Number of group sessions per week"
+        },
+        {
+          "name": "avg_group_size",
+          "type": "number",
+          "label": "Average group size"
+        },
+        {
+          "name": "media_types",
+          "type": "multiselect",
+          "label": "Art media used (paint, clay, drawing, collage, mixed media)"
+        },
+        {
+          "name": "setting",
+          "type": "select",
+          "label": "Practice setting (private practice / agency / school)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "monthly_supply_cost",
+          "label": "Estimated monthly supply cost (USD)"
+        },
+        {
+          "name": "annual_supply_cost",
+          "label": "Estimated annual supply cost (USD)"
+        },
+        {
+          "name": "cost_per_client_session",
+          "label": "Average supply cost per client session (USD)"
+        },
+        {
+          "name": "tax_deductible_amount",
+          "label": "Potential tax-deductible amount (USD) for private practice"
+        }
+      ],
+      "formula_hint": "Base per-session cost by media type (paint=$5, clay=$4, drawing=$2, collage=$3, mixed=$6); total = (individual_sessions + group_sessions * group_size) * weighted_media_cost * 4.33; tax_deduction = total if private practice (Schedule C)",
+      "rates": {
+        "paint_per_session": 5,
+        "clay_per_session": 4,
+        "drawing_per_session": 2,
+        "collage_per_session": 3,
+        "mixed_media_per_session": 6
+      }
+    },
+    "example_queries": [
+      "How much should I budget for art supplies if I see 18 individual clients and run 3 groups of 6 per week?",
+      "What's the per-session cost of supplies if I mainly use painting and clay?"
+    ]
+  },
+  {
+    "id": "us-art-therapists-p09",
+    "title": "Insurance credentialing and panel application",
+    "problem": "Art therapists seeking insurance reimbursement must navigate complex credentialing processes with each insurance company. Many insurers don't recognize art therapists as providers, requiring them to credential under mental health counselor or psychotherapy categories. Missing steps delays revenue by months.",
+    "who": "Art therapists in private practice seeking insurance panel acceptance",
+    "frequency": "quarterly",
+    "time_waste_h": 10,
+    "money_risk_usd": 15000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Insurance Credentialing Checklist for Art Therapists",
+      "one_liner": "Step-by-step guide for art therapists to apply for insurance panel credentialing, including required documents and common pitfalls",
+      "steps": [
+        "Step 1: Verify your state license type is accepted by target insurer (check if art therapy is recognized vs. mental health counselor category)",
+        "Step 2: Obtain NPI (National Provider Identifier) number if not already registered",
+        "Step 3: Register with CAQH ProView and complete provider profile",
+        "Step 4: Gather required documents: license, ATR-BC certificate, malpractice insurance, DEA (if applicable), diplomas, CV",
+        "Step 5: Submit credentialing application to each insurance panel individually",
+        "Step 6: Follow up every 2 weeks - average processing time is 90-120 days",
+        "Step 7: Once approved, verify your listing in provider directory is correct",
+        "Step 8: Set up electronic claims submission through your EHR or clearinghouse",
+        "Step 9: Submit test claim and verify payment within 30 days",
+        "Step 10: Calendar re-credentialing dates (typically every 2-3 years)"
+      ],
+      "warnings": [
+        "Warning: Some states do not recognize art therapists as independent mental health providers for insurance purposes",
+        "Warning: Billing for services before credentialing is complete may not be retroactively reimbursed",
+        "Warning: Each insurer has different taxonomy codes - verify correct code for art therapy"
+      ],
+      "regulatory_refs": [
+        "42 CFR Part 410",
+        "State mental health practice acts"
+      ]
+    },
+    "example_queries": [
+      "How do I get credentialed with Blue Cross Blue Shield as an art therapist?",
+      "What documents do I need to apply for insurance panels?",
+      "How long does insurance credentialing typically take for art therapists?"
+    ]
+  },
+  {
+    "id": "us-art-therapists-p10",
+    "title": "Continuing education requirements tracking",
+    "problem": "Art therapists must complete continuing education hours to maintain ATR-BC certification and state licenses, but requirements differ between ATCB and each state. Tracking CE credits across multiple providers and ensuring they meet specific category requirements (ethics, cultural competency, supervision) is confusing and time-consuming.",
+    "who": "ATR-BC certified art therapists maintaining credentials",
+    "frequency": "quarterly",
+    "time_waste_h": 2,
+    "money_risk_usd": 3000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Art Therapy CE Requirements Tracker",
+      "one_liner": "Tracks continuing education progress against ATCB and state-specific requirements with category breakdowns and deadline reminders",
+      "steps": [
+        "Step 1: Identify your renewal cycle dates for ATCB credential and state license",
+        "Step 2: List total CE hours required (ATCB: 100 hours per 5-year cycle for ATR-BC)",
+        "Step 3: Check state-specific additional requirements (ethics hours, cultural competency, etc.)",
+        "Step 4: Log completed CE hours by category and provider",
+        "Step 5: Verify CE provider is approved by ATCB or state board",
+        "Step 6: Calculate remaining hours needed by category",
+        "Step 7: Check for overlap - some CEs satisfy both ATCB and state requirements",
+        "Step 8: Calendar deadline reminders 90 days before renewal",
+        "Step 9: Gather certificates of completion for submission",
+        "Step 10: Submit renewal application with documentation before deadline"
+      ],
+      "warnings": [
+        "Warning: Lapsed ATR-BC requires additional fees and potentially retaking the board exam",
+        "Warning: Not all online CE courses are ATCB-approved - verify before purchasing",
+        "Warning: Some states require specific ethics hours that general CEs don't satisfy"
+      ],
+      "regulatory_refs": [
+        "ATCB Recertification Standards",
+        "State licensing board CE requirements"
+      ]
+    },
+    "example_queries": [
+      "How many CE hours do I need to renew my ATR-BC?",
+      "Do AATA conference sessions count toward my state CE requirements?",
+      "My ATR-BC renewal is in 6 months and I have 45 of 100 hours. What categories should I focus on?"
+    ]
+  },
+  {
+    "id": "us-art-therapists-p11",
+    "title": "Scope of practice compliance by state",
+    "problem": "Art therapists face scope of practice conflicts - some states restrict them from conducting assessments or diagnoses despite their clinical training. Practicing outside scope risks license revocation and legal liability. The rules change frequently with new legislation in multiple states.",
+    "who": "Art therapists practicing in states with restrictive scope of practice laws",
+    "frequency": "monthly",
+    "time_waste_h": 2,
+    "money_risk_usd": 25000,
+    "source": "regulatory",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Art Therapy Scope of Practice Advisor",
+      "one_liner": "Advises art therapists on what clinical activities are within their scope of practice by state, including assessment, diagnosis, and independent practice",
+      "expertise_area": "Art therapy scope of practice regulations, state-by-state clinical activity permissions",
+      "decision_criteria": [
+        "state_of_practice",
+        "license_type",
+        "clinical_activity",
+        "supervision_status",
+        "employment_setting"
+      ],
+      "context_needed": [
+        "regulatory.scope_of_practice_issues",
+        "regulatory.state_licensing_status_2025_2026",
+        "regulatory.new_regulations_2025_2026"
+      ]
+    },
+    "example_queries": [
+      "Can I conduct psychological assessments as an art therapist in Connecticut under the new proposed scope changes?",
+      "Am I allowed to diagnose clients independently as a licensed art therapist in New York?",
+      "What happens if I'm hired as a recreation therapist at a VA hospital but I'm trained as an art therapist?"
+    ]
+  },
+  {
+    "id": "us-art-therapists-p12",
+    "title": "Client intake and informed consent documentation",
+    "problem": "Art therapists need comprehensive intake forms that cover both standard mental health intake AND art therapy-specific consent (use of artwork, photography of art, artwork ownership/storage). Missing art-specific consent elements creates legal liability. Templates from generic therapy practices don't include these elements.",
+    "who": "Art therapists starting private practice or updating intake procedures",
+    "frequency": "monthly",
+    "time_waste_h": 4,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Art Therapy Intake & Consent Form Generator",
+      "one_liner": "Generates customized intake forms and informed consent documents with art therapy-specific clauses for artwork use, storage, and confidentiality",
+      "doc_name": "Art Therapy Informed Consent and Intake Form",
+      "variables": [
+        {
+          "name": "therapist_name",
+          "label": "Therapist name and credentials"
+        },
+        {
+          "name": "practice_name",
+          "label": "Practice name"
+        },
+        {
+          "name": "state",
+          "label": "State of practice"
+        },
+        {
+          "name": "client_population",
+          "label": "Client population (adults/children/both)"
+        },
+        {
+          "name": "telehealth_offered",
+          "label": "Telehealth services offered (yes/no)"
+        },
+        {
+          "name": "artwork_policy",
+          "label": "Artwork retention policy (client keeps / therapist retains / shared)"
+        },
+        {
+          "name": "photography_policy",
+          "label": "Artwork photography policy"
+        },
+        {
+          "name": "insurance_accepted",
+          "label": "Insurance accepted (yes/no)"
+        }
+      ],
+      "structure_hint": "Practice information -> Therapist credentials & license -> Nature of art therapy (explanation) -> Confidentiality & HIPAA notice -> Artwork ownership & storage consent -> Permission to photograph artwork -> Telehealth consent (if applicable) -> Fees & cancellation policy -> Emergency procedures -> Client rights -> Signatures"
+    },
+    "example_queries": [
+      "Generate an informed consent form for my art therapy private practice in Maryland that includes artwork photography consent",
+      "Create intake paperwork for a children's art therapy practice that parents need to sign"
+    ]
+  }
+]

@@ -1,0 +1,144 @@
+{
+  "profession_id": "us-sports-medicine-physicians",
+  "profession_name": "Sports Medicine Physicians",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Sports medicine physicians work approximately 46 hours per week, often with irregular schedules including evenings and weekends for game/event coverage. A typical day involves 15-25 patient encounters in clinic settings, performing musculoskeletal examinations, ordering and interpreting MRI/X-ray/ultrasound imaging, administering joint injections (including ultrasound-guided PRP and corticosteroid injections), conducting concussion evaluations, making return-to-play (RTP) decisions for injured athletes, prescribing rehabilitation protocols, collaborating with athletic trainers and physical therapists, and communicating with coaches and families. Team physician roles add sideline coverage duties on game days. Many physicians split time between office-based clinics and on-field/sideline coverage. 47% work in private practice settings, with satisfaction ratings averaging 4.3/5.",
+    "documents": ["Patient encounter notes (SOAP format)", "Preparticipation Physical Evaluation (PPE) forms", "Return-to-Play (RTP) clearance forms", "Concussion evaluation protocols and documentation", "Imaging orders (MRI, X-ray, ultrasound)", "Prescription orders (NSAIDs, analgesics, rehabilitation protocols)", "Referral letters to orthopedic surgeons and physical therapists", "Ultrasound-guided injection documentation with stored images", "Insurance prior authorization forms", "MIPS quality reporting documentation", "Athletic team medical records", "Disability/workers' compensation evaluations", "CME certificates and board certification records"],
+    "deadlines": ["Same-day sideline clearance/return-to-play decisions during events", "Concussion RTP graduated protocol documentation (24-hour step intervals)", "Daily patient documentation completion", "Prescription refill requests (24-48 hour turnaround)", "Lab and imaging result follow-up", "Prior authorization responses", "MIPS quality reporting (annual, threshold 75 points in 2025, 80 in 2026)", "CME requirements (ongoing, specialty-specific)", "Board recertification (CAQ renewal every 10 years)", "DEA license renewal", "State medical license renewal", "Pre-season PPE completion deadlines"],
+    "seasonality": "Workload heavily tied to sports seasons. Fall football season brings peak concussion evaluations and sideline coverage. Winter sports (basketball, hockey, wrestling) maintain high injury volume. Spring sports (baseball, track, lacrosse) bring overuse injury surge. Summer features pre-season physicals (PPEs) and training camp coverage. Off-season allows more elective procedures, PRP injections, and clinic-based work. Professional and college team physicians have year-round commitments with varying intensity."
+  },
+  "regulatory": {
+    "laws": ["State Medical Practice Acts", "HIPAA (patient privacy)", "Stark Law (physician self-referral restrictions)", "Anti-Kickback Statute", "MACRA/MIPS (Merit-based Incentive Payment System)", "State concussion laws (all 50 states plus DC)", "State prescriptive authority laws", "21st Century Cures Act (information blocking)", "NCAA/NAIA/high school athletic association medical protocols", "State return-to-play legislation for concussions", "Workers' compensation laws (occupational sports injuries)", "FDA regulations on PRP and regenerative medicine products"],
+    "licensing": "MD or DO degree from accredited medical school. Completion of residency in a qualifying primary specialty (Family Medicine, Internal Medicine, Pediatrics, Emergency Medicine, Physical Medicine & Rehabilitation, or Orthopedic Surgery). 12-month ACGME-accredited Sports Medicine fellowship. Certificate of Added Qualification (CAQ) in Sports Medicine from the relevant ABMS member board (ABFM, ABIM, ABP, ABEM, ABPMR, or ABOS). State medical license (unrestricted). DEA registration for controlled substance prescribing. Orthopedic sports medicine pathway requires 115+ operative cases and 10+ non-operative cases during fellowship. Board recertification required per parent board schedule. Continuous CME maintenance.",
+    "penalties": "Malpractice lawsuits (particularly for missed concussions, inappropriate RTP clearance, or missed fractures). State medical board disciplinary actions for negligence. HIPAA violations up to $50,000 per incident. Stark Law violations: $15,000 per claim plus treble damages. Anti-Kickback violations: criminal penalties up to $100,000 and 10 years imprisonment. MIPS non-compliance results in negative Medicare payment adjustments (up to -9%). Failure to follow state concussion return-to-play laws can result in legal liability. Improper PRP/regenerative medicine marketing can trigger FDA enforcement.",
+    "regulatory_bodies": ["State Medical Boards", "FSMB (Federation of State Medical Boards)", "ABFM (American Board of Family Medicine)", "ABOS (American Board of Orthopaedic Surgery)", "ABPMR (American Board of Physical Medicine & Rehabilitation)", "ABEM (American Board of Emergency Medicine)", "ABP (American Board of Pediatrics)", "CMS (Centers for Medicare & Medicaid Services)", "DEA (Drug Enforcement Administration)", "FDA (Food and Drug Administration)", "NCAA (National Collegiate Athletic Association)", "State High School Athletic Associations"]
+  },
+  "tools": {
+    "software": ["Epic (dominant hospital/large practice EHR)", "Praxis EMR (AI-powered, learns individual physician patterns via Concept Processor)", "NextGen Healthcare (specialty-specific orthopedics/sports medicine features, AI-enhanced)", "DrChrono (integrated EHR, billing, practice management, telehealth)", "PrognoCIS (cloud-based, HIPAA-compliant orthopedic EHR)", "DocVilla (sports medicine-specific EHR)", "ATGenius (athletic training-specific EMR)", "SportsWareOnLine (athletic training documentation)", "Medicat Sports Medicine EHR (collegiate athletics)", "Healthy Roster (team-based athlete health management)", "Nuance DAX Copilot (ambient AI clinical documentation)"],
+    "platforms": ["UpToDate (clinical reference)", "Epocrates (drug reference)", "DynaMed (evidence-based clinical reference)", "Doximity (physician networking)", "Medscape (CME and clinical reference)", "SCAT6 (Sport Concussion Assessment Tool, 6th edition)", "PACS systems (Picture Archiving and Communication Systems for imaging)", "Musculoskeletal ultrasound equipment (GE, Philips, Butterfly iQ+)", "Motion analysis software", "Telehealth platforms (for remote follow-up consultations)"],
+    "gov_portals": ["CMS QPP Portal (MIPS quality reporting)", "DEA CSOS (Controlled Substance Ordering System)", "State PDMP (Prescription Drug Monitoring Programs)", "State medical board licensing portals", "NPDB (National Practitioner Data Bank)", "O*NET OnLine (SOC 29-1229.06 occupation data)"]
+  },
+  "terminology": {
+    "jargon": ["Return-to-play (RTP) clearance", "Preparticipation Physical Evaluation (PPE)", "Concussion protocol", "Graduated return-to-play", "Sideline evaluation", "Musculoskeletal examination", "Proprioception assessment", "Kinetic chain analysis", "Overuse injury", "Acute traumatic injury", "Sports-specific rehabilitation", "Functional movement screen (FMS)", "Clearance evaluation", "Non-operative management", "Team physician", "Regenerative medicine", "Ultrasound-guided procedure", "Exercise prescription"],
+    "abbreviations": ["ACL - Anterior Cruciate Ligament", "PCL - Posterior Cruciate Ligament", "MCL - Medial Collateral Ligament", "LCL - Lateral Collateral Ligament", "PRP - Platelet-Rich Plasma", "MSK - Musculoskeletal", "MRI - Magnetic Resonance Imaging", "RTP - Return to Play", "PPE - Preparticipation Physical Evaluation", "RICE - Rest, Ice, Compression, Elevation", "ROM - Range of Motion", "NSAID - Non-Steroidal Anti-Inflammatory Drug", "ATFL - Anterior Talofibular Ligament", "UCL - Ulnar Collateral Ligament", "TOS - Thoracic Outlet Syndrome", "SLAP - Superior Labrum Anterior to Posterior (tear)", "OCD - Osteochondritis Dissecans", "EMG - Electromyography", "DEXA - Dual-Energy X-ray Absorptiometry", "BMI - Body Mass Index", "SCAT - Sport Concussion Assessment Tool", "BESS - Balance Error Scoring System", "ImPACT - Immediate Post-Concussion Assessment and Cognitive Testing", "CAQ - Certificate of Added Qualification", "ACGME - Accreditation Council for Graduate Medical Education", "MIPS - Merit-based Incentive Payment System", "RVU - Relative Value Unit", "CPT - Current Procedural Terminology", "ICD-10 - International Classification of Diseases, 10th Revision", "CME - Continuing Medical Education", "PCSM - Primary Care Sports Medicine"]
+  },
+  "career_psychology": {
+    "career_levels": ["Medical Student", "Residency (3-5 years depending on primary specialty: FM, IM, Peds, EM, PM&R, or Ortho Surgery)", "Sports Medicine Fellow (1-year ACGME-accredited fellowship)", "Early-Career Sports Medicine Physician (1-5 years post-fellowship)", "Mid-Career Sports Medicine Physician (6-15 years)", "Senior Sports Medicine Physician (15+ years)", "Head Team Physician (professional or collegiate)", "Medical Director (sports medicine clinic or program)", "Fellowship Program Director", "Division Chief / Department Chair", "Chief Medical Officer (sports organization or health system)"],
+    "fears": ["Malpractice for missed concussion diagnosis or premature RTP clearance", "Catastrophic outcome from return-to-play decision (second impact syndrome)", "Being pressured by coaches, teams, or athletes to clear players prematurely", "Diagnostic errors on subtle fractures or ligament injuries", "Administrative burden consuming clinical and sideline time", "Income gap compared to surgical subspecialties", "AI/imaging technology replacing clinical judgment", "Regenerative medicine regulatory uncertainty (PRP, stem cells)", "Loss of team physician contracts to competing practices", "Burnout from irregular hours and weekend/evening event coverage"],
+    "motivation": ["Helping athletes return to the sports they love", "Working with elite and professional athletes", "Variety of clinical work (clinic, sideline, procedures, rehab)", "Long-term relationships with athletes and teams", "Intellectual challenge of complex musculoskeletal diagnosis", "Immediate impact of sideline decisions", "Promoting physical activity and preventive health", "Team environment and camaraderie with athletic training staff", "Growing field with expanding scope (regenerative medicine, ultrasound)", "Lifestyle satisfaction (4.3/5 average) compared to many specialties"],
+    "burnout": "Nearly 50% of all physicians report burnout symptoms in 2026, with sports medicine physicians somewhat protected by high job satisfaction (4.3/5) and the variety in their work. Key burnout drivers include: nights/weekends/holiday event coverage demands, extensive EHR documentation burden, prior authorization battles with insurers, pressure to see high patient volumes in clinic, and the emotional weight of high-stakes return-to-play decisions. Mid-career physicians (6-15 years post-training) are most vulnerable. Surgical sports medicine subspecialties report higher burnout than primary care sports medicine. Average workload of 46 hours/week is moderate for medicine but includes unpredictable event coverage schedules."
+  },
+  "community": {
+    "reddit": ["r/sportsmedicine", "r/medicine", "r/Residency", "r/physicians", "r/orthopedics", "r/physicaltherapy"],
+    "linkedin": ["AMSSM (American Medical Society for Sports Medicine)", "AOSSM (American Orthopaedic Society for Sports Medicine)", "ACSM (American College of Sports Medicine)", "Doximity (physician social network)", "Sports Medicine physician specialty groups"],
+    "associations": ["AMSSM (American Medical Society for Sports Medicine) - primary care sports medicine focus, founded 1991", "AOSSM (American Orthopaedic Society for Sports Medicine) - 4,000+ members, surgical sports medicine focus", "ACSM (American College of Sports Medicine) - ~50,000 members, world's largest sports medicine and exercise science organization", "NATA (National Athletic Trainers' Association) - 45,000+ members, allied health professionals", "AOASM (American Osteopathic Academy of Sports Medicine) - osteopathic sports medicine", "AAPMR (American Academy of Physical Medicine & Rehabilitation)", "AAFP (American Academy of Family Physicians) - parent organization for FM-trained sports medicine docs"],
+    "conferences": ["AMSSM Annual Meeting (April 22-27, 2025, Kansas City; April 24-29, 2026, Seattle)", "AOSSM Annual Meeting (2025 and 2026 scheduled)", "ACSM Annual Meeting", "AMSSM Advanced Team Physician Course (December 11-13, 2025)", "AMSSM/South Bend Sports Program (January 9-11, 2026)", "AOSSM Specialty Day at AAOS Annual Meeting", "NFL/NFLPA Medical Committee meetings", "FIMS (International Federation of Sports Medicine) World Congress"],
+    "podcasts_and_media": ["Easy Reider (AOSSM podcast with Bruce Reider, MD)", "NATA-Cast (National Athletic Trainers' Association podcast)", "BJSM Podcast (British Journal of Sports Medicine)", "AMSSM educational webinars and CME content"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "entry_level": "97500-220000",
+      "mid_career": "250000-375000",
+      "senior_experienced": "375000-450000+",
+      "team_physician_professional": "400000-600000+",
+      "orthopedic_sports_medicine": "500000-800000+",
+      "academic": "200000-350000"
+    },
+    "national_average_usd": 294817,
+    "median_total_compensation_usd": 375000,
+    "job_count": "Growing demand driven by aging population, increased sports participation, and expanded access to healthcare",
+    "growth_rate": "7.2% projected through 2034 for healthcare occupations including sports medicine physicians",
+    "unemployment_rate": "Near 0% — strong demand especially in underserved areas and growing metropolitan regions",
+    "work_arrangements": ["Private practice (47% of sports medicine physicians)", "Employed by health systems/hospitals", "Academic medical centers and university athletics", "Professional sports team physician", "Collegiate athletics (Division I, II, III)", "Military sports medicine", "Telehealth/virtual consultations", "Locum tenens (temporary/travel)", "Multi-specialty orthopedic groups", "Concierge/direct care sports medicine"],
+    "trends": ["Median total compensation $375,000 in 2026 (25th percentile $310K, 75th percentile $450K)", "Base salary accounts for ~81% of total compensation; bonuses at 19%", "Regenerative medicine (PRP, stem cell therapy) expanding scope and revenue", "Point-of-care musculoskeletal ultrasound becoming standard of care", "AI-powered clinical documentation reducing after-hours paperwork burden", "Concussion management protocols increasingly standardized across states", "Telehealth follow-ups growing for post-injury monitoring and rehab guidance", "Athletic training EMR systems cutting documentation time by 47%", "MIPS scoring thresholds increasing from 60 to 70 points (2025) to 80 points (2026)", "Female representation in sports medicine growing steadily", "Demand for non-operative sports medicine expertise rising as conservative management preferred"]
+  },
+  "raw_responses": [
+    {
+      "query": "Sports Medicine Physicians USA 2025 2026 daily work tasks responsibilities typical day",
+      "sources": [
+        {"title": "What is a Sports Medicine Physician and What They Do | SGU", "url": "https://www.sgu.edu/school-of-medicine/blog/what-does-sports-medicine-physician-do/"},
+        {"title": "Sports Medicine Physician Job Description [Updated for 2025] | Indeed", "url": "https://www.indeed.com/hire/job-description/sports-medicine-physician"},
+        {"title": "What Is a Sports Medicine Physician? | Cleveland Clinic", "url": "https://my.clevelandclinic.org/health/articles/24627-sports-medicine-physician"},
+        {"title": "Sports Medicine Physicians Tasks, Knowledge, Skills | CollegeBoard BigFuture", "url": "https://bigfuture.collegeboard.org/careers/sports-medicine-physician/tasks-knowledge-skills"},
+        {"title": "Duties of a Sports Medicine Doctor | Center for Ortho Surgery", "url": "https://www.centerfororthosurgery.com/expected-duties-of-a-sports-medicine-doctor/"},
+        {"title": "What Do Sports Medicine Physicians Do | OwlGuru", "url": "https://www.owlguru.com/career/sports-medicine-physicians/job-description/"},
+        {"title": "29-1229.06 - Sports Medicine Physicians | O*NET OnLine", "url": "https://www.onetonline.org/link/summary/29-1229.06"}
+      ]
+    },
+    {
+      "query": "Sports Medicine Physicians USA 2025 2026 licensing board certification ABMS fellowship requirements",
+      "sources": [
+        {"title": "Sports Medicine Certification | American Board of Pediatrics", "url": "https://www.abp.org/content/sports-medicine-certification"},
+        {"title": "Sports Medicine | American Board of Family Medicine", "url": "https://www.theabfm.org/added-qualifications/sports-medicine/"},
+        {"title": "Sports Medicine | ABPMR", "url": "https://www.abpmr.org/Subspecialties/Sports"},
+        {"title": "Sports Medicine | ABEM", "url": "https://www.abem.org/subspecialty-get-certified/sports-medicine-2/"},
+        {"title": "Orthopaedic Sports Medicine | ABOS", "url": "https://www.abos.org/subspecialties/orthopaedic-sports-medicine/"},
+        {"title": "Getting Board Certified | ABMS", "url": "https://www.abms.org/board-certification/getting-board-certified/"},
+        {"title": "Sports Medicine FAQ | AOASM", "url": "https://aoasm.org/sports-medicine-faq/"}
+      ]
+    },
+    {
+      "query": "Sports Medicine Physicians USA software tools EHR musculoskeletal imaging technology 2025 2026",
+      "sources": [
+        {"title": "Best Orthopedics & Sports Medicine EMR/EHR Software 2026 | EMRSystems", "url": "https://www.emrsystems.net/orthopedics-sports-medicine-emr/"},
+        {"title": "The Best EHR for Orthopedics | Praxis EMR", "url": "https://www.praxisemr.com/best-ehr-for-orthopedics.html"},
+        {"title": "Best Orthopedics EMR/EHR Software | PrognoCIS", "url": "https://prognocis.com/orthopedics-ehr/"},
+        {"title": "Top Orthopedics/Sports Medicine EMR Software 2026 | EMRFinder", "url": "https://emrfinder.com/guide/orthopedics-emr-software/"},
+        {"title": "Best EHR for Orthopedics & Sports Medicine | DocVilla", "url": "https://www.docvilla.com/ehr-for-orthopedics/"},
+        {"title": "Athletic Training EMR Systems (2025) | Sprypt", "url": "https://www.sprypt.com/blog/how-athletic-training-emr-systems-cut-documentation-time"},
+        {"title": "NextGen Healthcare", "url": "https://www.nextgen.com"}
+      ]
+    },
+    {
+      "query": "Sports medicine physician terminology abbreviations jargon ACL PRP MSK professional",
+      "sources": [
+        {"title": "Sports Medicine Glossary | University of Georgia Athletics", "url": "https://georgiadogs.com/news/2006/7/31/Sports_Medicine_Glossary"},
+        {"title": "Orthopedic Sports Medicine Terminology | Musculoskeletal Key", "url": "https://musculoskeletalkey.com/orthopedic-sports-medicine-terminology/"},
+        {"title": "Orthopedic Definitions | Scripps Health", "url": "https://www.scripps.org/services/orthopedics/glossary"},
+        {"title": "Glossary | Pursuit Sports Medicine", "url": "https://www.pursuitsportsmedicine.com/glossary/"},
+        {"title": "Common Physical Therapy Abbreviations | Medbridge", "url": "https://www.medbridge.com/blog/your-guide-to-the-most-common-physical-therapy-abbreviations"},
+        {"title": "Sports Medicine Abbreviations List | StudyLib", "url": "https://studylib.net/doc/8934422/sports-medicine-abbreviations"}
+      ]
+    },
+    {
+      "query": "Sports Medicine Physicians USA career path salary 2025 2026 burnout motivation",
+      "sources": [
+        {"title": "2026 Sports Medicine Careers | Research.com", "url": "https://research.com/advice/sports-medicine-careers-skills-education-salary-job-outlook"},
+        {"title": "Physician/Doctor Sports Medicine Salary 2026 | PayScale", "url": "https://www.payscale.com/research/US/Job=Physician_%2F_Doctor%2C_Sports_Medicine/Salary"},
+        {"title": "Sports Medicine Physician Salary 2026 | SalaryDr", "url": "https://www.salarydr.com/specialty/sports-medicine"},
+        {"title": "Physician Burnout in 2026 | MD Preferred Network", "url": "https://www.themdpreferrednetwork.com/physician-burnout-2026/"},
+        {"title": "Sports Medicine Physician Salary | Salary.com", "url": "https://www.salary.com/research/salary/benchmark/sports-medicine-physician-salary"},
+        {"title": "Sports Medicine Physicians Income and Hiring | CollegeBoard BigFuture", "url": "https://bigfuture.collegeboard.org/careers/sports-medicine-physician/income-and-hiring"},
+        {"title": "Career Outlook for Sports Medicine Physicians | Recruiter.com", "url": "https://www.recruiter.com/careers/sports-medicine-physicians/outlook/"}
+      ]
+    },
+    {
+      "query": "Sports Medicine Physicians USA professional associations AMSSM conferences 2025 2026",
+      "sources": [
+        {"title": "AMSSM Conferences | AMSSM", "url": "https://www.amssm.org/ConferencesDetails.php?IDconf=2586"},
+        {"title": "AMSSM Annual Meeting", "url": "https://annualmeeting.amssm.org/"},
+        {"title": "AMSSM 2026 Annual Meeting | eMedEvents", "url": "https://www.emedevents.com/c/medical-conferences-2026/2026-american-medical-society-for-sports-medicine-amssm-36th-annual-meeting"},
+        {"title": "AOSSM 2026 Annual Meeting", "url": "https://events.sportsmed.org/am2026"},
+        {"title": "AMSSM Annual Meeting Apr 2026 Seattle | 10times", "url": "https://10times.com/e1z5-53d4-srdd"},
+        {"title": "AOSSM 2025 Annual Meeting", "url": "https://events.sportsmed.org/am2025"}
+      ]
+    },
+    {
+      "query": "Sports Medicine Physicians USA job market demand salary outlook 2025 2026",
+      "sources": [
+        {"title": "Sports Medicine Physician Salary 2026 | SalaryDr", "url": "https://www.salarydr.com/specialty/sports-medicine"},
+        {"title": "2026 Sports Medicine Careers | Research.com", "url": "https://research.com/advice/sports-medicine-careers-skills-education-salary-job-outlook"},
+        {"title": "Physician/Doctor Sports Medicine Salary 2026 | PayScale", "url": "https://www.payscale.com/research/US/Job=Physician_%2F_Doctor%2C_Sports_Medicine/Salary"},
+        {"title": "Sports Medicine Physician Job Outlook | Zippia", "url": "https://www.zippia.com/sports-medicine-physician-jobs/trends/"},
+        {"title": "The Job Market for Sports Medicine Physicians | CareerExplorer", "url": "https://www.careerexplorer.com/careers/sports-medicine-physician/job-market/"},
+        {"title": "Career Outlook for Sports Medicine Physicians | Recruiter.com", "url": "https://www.recruiter.com/careers/sports-medicine-physicians/outlook/"},
+        {"title": "Salary of a Sports Medicine Physician | MedContractReview", "url": "https://medcontractreview.com/salary-of-a-sports-medicine-physician-factors-trends-and-future-projections/"}
+      ]
+    }
+  ],
+  "quality_score": 0.75,
+  "sources_count": 47,
+  "verified_sources": 7,
+  "confidence": "verified"
+}

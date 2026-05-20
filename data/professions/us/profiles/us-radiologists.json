@@ -1,0 +1,314 @@
+{
+  "profession_id": "us-radiologists",
+  "profession_name": "Radiologists",
+  "country": "US",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Radiologists interpret medical images (CT, MRI, X-ray, ultrasound, nuclear medicine) to diagnose conditions. They generate 10,000-14,000 wRVUs annually, reading 30-50+ studies per day. Work hours average 46/week. AI tools increasingly integrated into workflow.",
+    "typical_tasks": [
+      "Interpret diagnostic imaging studies (CT, MRI, X-ray, ultrasound, mammography, PET)",
+      "Generate radiology reports with findings and recommendations",
+      "Consult with referring physicians on imaging findings",
+      "Perform image-guided procedures (biopsies, drainages) — interventional radiology",
+      "Review prior imaging for comparison",
+      "Participate in tumor boards and multidisciplinary case conferences",
+      "Supervise radiology technologists and trainees",
+      "Review and approve imaging protocols",
+      "Monitor radiation dose and safety compliance",
+      "Manage worklist priorities and turnaround times"
+    ],
+    "key_documents": [
+      "Radiology reports (structured and narrative)",
+      "Critical/urgent findings communication logs (RADPEER, ACR guidelines)",
+      "Imaging protocol orders",
+      "Peer review documentation",
+      "Informed consent for contrast and procedures",
+      "Quality assurance and radiation dose reports",
+      "CME and board certification documentation"
+    ],
+    "deadlines": {
+      "stat_reads": "Within 1 hour for emergency/critical studies",
+      "routine_reports": "Same day or next day turnaround",
+      "critical_findings": "Immediate verbal communication to referring physician (ACR Practice Parameter)",
+      "peer_review": "Quarterly or annual depending on institution",
+      "board_certification": "52 OLA questions/year for continuing certification"
+    },
+    "seasonality": "Imaging volume fluctuates slightly — higher during flu season and post-holiday periods. Summer slightly lower. On-call workload has grown 297% between 2006 and 2020."
+  },
+  "regulatory": {
+    "summary": "Radiologists must have MD/DO, complete 5-year radiology residency, and obtain ABR board certification. State medical license required. FDA regulates imaging equipment. Radiation safety governed by NRC and state agencies. AI in radiology faces evolving FDA oversight.",
+    "key_laws": [
+      {
+        "name": "State Medical Practice Acts (licensing)",
+        "url": "https://www.fsmb.org",
+        "status": "Active — each state regulates independently"
+      },
+      {
+        "name": "ABR Board Certification Requirements",
+        "url": "https://www.theabr.org/diagnostic-radiology/initial-certification/certification-requirements",
+        "status": "Active — effective July 2026: 4-year residency must be completed within 8 years"
+      },
+      {
+        "name": "Mammography Quality Standards Act (MQSA)",
+        "url": "https://www.fda.gov/radiation-emitting-products/mammography-quality-standards-act-and-program",
+        "status": "Active — FDA-regulated mammography quality standards"
+      },
+      {
+        "name": "NRC/State Radiation Safety Regulations",
+        "url": "https://www.nrc.gov",
+        "status": "Active — Agreement States regulate medical radiation use"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "MD or DO degree from accredited medical school",
+        "1-year clinical internship (PGY-1)",
+        "4-year diagnostic radiology residency (ACGME-accredited)",
+        "Optional 1-2 year fellowship (neuroradiology, MSK, body, breast, etc.)",
+        "ABR Qualifying (Core) Exam and Certifying Exam",
+        "State medical license",
+        "DEA registration (if performing procedures with sedation)",
+        "Continuing certification: 52 OLA questions/year"
+      ]
+    },
+    "penalties": "Practicing without license: felony. Failure to communicate critical findings: malpractice liability (radiology is #4 in malpractice claims). HIPAA violations: $100-$50K per incident. MQSA violations for mammography: facility sanctions.",
+    "controlling_bodies": [
+      "American Board of Radiology (ABR — certification)",
+      "State Medical Boards (licensing)",
+      "FDA (imaging equipment and AI device clearance)",
+      "NRC / Agreement States (radiation safety)",
+      "CMS (Medicare/Medicaid reimbursement)",
+      "ACR (American College of Radiology — practice standards)"
+    ]
+  },
+  "tools": {
+    "summary": "Radiologists work primarily through PACS (Picture Archiving and Communication System), RIS (Radiology Information System), and AI-assisted diagnostic tools. 2026 trend is unified RIS/PACS/AI platforms. Cloud-based solutions growing rapidly.",
+    "primary_tools": [
+      {
+        "name": "PACS (GE Centricity, Philips IntelliSpace, Sectra, Fujifilm Synapse)",
+        "description": "Picture Archiving and Communication System — core platform for viewing and managing medical images"
+      },
+      {
+        "name": "RIS (Radiology Information System)",
+        "description": "Manages scheduling, workflow, reporting, and billing for radiology departments"
+      },
+      {
+        "name": "Voice Recognition / Dictation (Nuance PowerScribe)",
+        "description": "AI-powered speech recognition for radiology report generation"
+      },
+      {
+        "name": "AI Diagnostic Tools (FDA-cleared algorithms)",
+        "description": "Automated detection for findings like pulmonary embolism, fractures, intracranial hemorrhage — 500+ FDA-cleared AI devices for radiology"
+      },
+      {
+        "name": "3D Visualization and Advanced Post-Processing (TeraRecon, Vitrea)",
+        "description": "3D reconstruction, MPR, MIP for complex case review"
+      }
+    ],
+    "secondary_tools": [
+      "Structured reporting templates (ACR, RSNA RadReport)",
+      "Clinical decision support (ACR Select, ACR Appropriateness Criteria)",
+      "Dose monitoring systems (DoseWatch, Radimetrics)",
+      "Teaching file and case management systems",
+      "Teleradiology platforms for remote reading"
+    ],
+    "pain_points": [
+      "Relentlessly increasing study volumes with flat staffing",
+      "Alert fatigue from AI tools generating excessive notifications",
+      "Poor integration between PACS, RIS, and EHR systems",
+      "Lack of standardization in AI algorithm validation and governance",
+      "Teleradiology creating 24/7 expectation for after-hours coverage"
+    ]
+  },
+  "terminology": {
+    "summary": "Radiology uses extensive medical imaging terminology, standardized reporting lexicons (BI-RADS, LI-RADS, PI-RADS), and modality-specific jargon. ACR publishes practice parameters and appropriateness criteria.",
+    "terms": {
+      "PACS": "Picture Archiving and Communication System — digital image management",
+      "RIS": "Radiology Information System — workflow and scheduling management",
+      "CT": "Computed Tomography — X-ray cross-sectional imaging",
+      "MRI": "Magnetic Resonance Imaging — magnetic field-based imaging",
+      "wRVU": "Work Relative Value Unit — productivity measurement ($58/wRVU average)",
+      "STAT": "Urgent/immediate priority study",
+      "BI-RADS": "Breast Imaging Reporting and Data System (ACR standardized reporting)",
+      "LI-RADS": "Liver Imaging Reporting and Data System",
+      "PI-RADS": "Prostate Imaging Reporting and Data System",
+      "contrast": "Intravenous or oral agent to enhance imaging visibility",
+      "enhancement": "Increased signal/brightness in tissue after contrast administration",
+      "lesion": "Abnormal area identified on imaging",
+      "stenosis": "Narrowing of a vessel or passage",
+      "edema": "Swelling from fluid buildup visible on imaging",
+      "MPR": "Multi-Planar Reconstruction — reformatted CT/MRI views",
+      "DICOM": "Digital Imaging and Communications in Medicine — standard image format",
+      "OLA": "Online Longitudinal Assessment — ABR continuing certification requirement"
+    }
+  },
+  "career_psychology": {
+    "summary": "13-year training path (undergrad + med school + residency + fellowship). Among highest-paid medical specialties ($470K-$580K). 54% burnout rate. AI augmenting rather than replacing radiologists. Severe workforce shortage projected through 2055.",
+    "career_path": [
+      "Bachelor's degree (4 years — pre-med)",
+      "Medical school — MD or DO (4 years)",
+      "PGY-1 clinical internship (1 year)",
+      "Diagnostic radiology residency (4 years)",
+      "Optional subspecialty fellowship (1-2 years: neuroradiology, body, breast, IR, etc.)",
+      "ABR board certification",
+      "Staff radiologist / Private practice partner",
+      "Section chief / Division director / Department chair"
+    ],
+    "salary_range": {
+      "entry_level": "$350,000 - $450,000/year (new attending)",
+      "mid_career": "$450,000 - $571,000/year (5-10 years)",
+      "senior": "$571,000 - $800,000+/year (private practice, leadership)",
+      "average_2026": "$470,000 - $580,000/year (median varies by source)"
+    },
+    "fears": [
+      "AI replacing radiologists — persistent existential concern despite evidence against it",
+      "Missed critical findings on imaging — leading to malpractice",
+      "Increasing workload without proportional staffing",
+      "Commoditization through teleradiology driving down compensation",
+      "Burnout — 54% reported burnout symptoms in 2022"
+    ],
+    "motivation": [
+      "Intellectual challenge of diagnostic puzzle-solving",
+      "High compensation among medical specialties",
+      "Lifestyle — fewer direct patient confrontations compared to surgical specialties",
+      "Technology-forward field with constant innovation",
+      "Critical role in patient diagnosis and treatment planning"
+    ],
+    "burnout_factors": [
+      "Relentless volume growth — on-call workload up 297% since 2006",
+      "69% report understaffing in their organizations",
+      "Isolation of reading room environment",
+      "Pressure for fast turnaround times (TAT metrics)",
+      "Documentation and compliance burden"
+    ]
+  },
+  "community": {
+    "summary": "Large and well-organized professional community. RSNA Annual Meeting is the world's largest radiology conference (~50,000 attendees). ACR sets practice standards. Multiple subspecialty societies.",
+    "associations": [
+      {
+        "name": "Radiological Society of North America (RSNA)",
+        "url": "https://www.rsna.org",
+        "type": "World's largest radiology organization — research, education, annual meeting"
+      },
+      {
+        "name": "American College of Radiology (ACR)",
+        "url": "https://www.acr.org",
+        "type": "Professional organization — practice standards, appropriateness criteria, advocacy"
+      },
+      {
+        "name": "American Board of Radiology (ABR)",
+        "url": "https://www.theabr.org",
+        "type": "Board certification organization"
+      },
+      {
+        "name": "Society of Interventional Radiology (SIR)",
+        "url": "https://www.sirweb.org",
+        "type": "Subspecialty society for interventional radiology"
+      },
+      {
+        "name": "American Roentgen Ray Society (ARRS)",
+        "url": "https://www.arrs.org",
+        "type": "Oldest radiology society in the US"
+      }
+    ],
+    "events": [
+      "RSNA Annual Meeting 2026 (Nov 29 - Dec 3, Chicago — McCormick Place)",
+      "ACR Annual Meeting 2026 (May 2-6, Washington DC)",
+      "SIR Annual Scientific Meeting 2026 (April 11-15, Toronto)",
+      "ARRS Annual Meeting 2026 (April 12-15, Pittsburgh)",
+      "AUR/AMSER Annual Meeting (academic radiology education)"
+    ],
+    "online_communities": [
+      "AuntMinnie.com — largest radiology forum",
+      "Reddit r/Radiology and r/medicine",
+      "Radiopaedia — collaborative radiology resource and case library",
+      "ACR Communities (members-only)",
+      "Radiology Twitter/X — #RadTwitter community"
+    ]
+  },
+  "market": {
+    "summary": "Structural radiologist shortage projected through 2055. Average salary $470K-$580K. 4% employment growth projected. AI augmenting not replacing — 500+ FDA-cleared radiology AI devices. 130 days average to fill a radiology position.",
+    "job_outlook": {
+      "growth_rate": "4% projected 2023-2033 (BLS) — 1,200 new positions",
+      "shortage": "Significant projected through 2055 — exacerbated by post-COVID attrition",
+      "time_to_fill": "130 days average to fill a full-time radiology position",
+      "demand_drivers": "Aging population, chronic disease, imaging utilization growth, rural access gaps"
+    },
+    "salary_market": {
+      "min": "$350,000",
+      "avg": "$470,000 - $580,000",
+      "max": "$800,000+",
+      "wRVU_rate": "$58/wRVU average, median 10,500 wRVUs/year"
+    },
+    "market_trends": [
+      "AI integration as workflow augmentation — 500+ FDA-cleared devices",
+      "Unified RIS/PACS/AI platforms replacing siloed systems",
+      "Cloud-based PACS adoption growing rapidly ($3B+ market by 2032)",
+      "Teleradiology enabling remote reading but creating 24/7 demand",
+      "Subspecialization increasingly preferred over general diagnostic radiology",
+      "Only 10% of radiologists practice in rural areas serving 20% of population"
+    ]
+  },
+  "quality_score": 0.78,
+  "sources_count": 32,
+  "verified_sources": 12,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Radiologists USA 2025 2026 daily work routine responsibilities workload RVU",
+      "sources": [
+        {"title": "FastRVU — Radiology RVU Calculator 2026", "url": "https://fastrvu.com/specialties/radiology"},
+        {"title": "RSNA — Mandating Limits on Radiology Workload", "url": "https://pubs.rsna.org/doi/full/10.1148/radiol.212631"},
+        {"title": "SalaryDr — Radiologist Salary 2026", "url": "https://www.salarydr.com/specialty/radiology"}
+      ]
+    },
+    {
+      "query": "Radiologists USA 2025 2026 licensing regulations ABR board certification requirements",
+      "sources": [
+        {"title": "ABR — DR Certification Requirements", "url": "https://www.theabr.org/diagnostic-radiology/initial-certification/certification-requirements"},
+        {"title": "ABR — Board Certification", "url": "https://www.theabr.org/about/abr-board-certification"},
+        {"title": "ABR — Continuing Certification Update Feb 2026", "url": "https://www.theabr.org/beam/continuing-certification-update-february-2026/"}
+      ]
+    },
+    {
+      "query": "Radiologists USA PACS RIS AI tools software technology 2025 2026",
+      "sources": [
+        {"title": "EverrTech — Radiology Software 2026", "url": "https://www.everrtech.com/blog/radiology-software-2026-unified-future"},
+        {"title": "VestaRad — Radiology AI 2026", "url": "https://vestarad.com/radiology-ai-in-2026-from-cool-tools-to-governance-workflow-quality/"},
+        {"title": "Nature — AI Solutions to Radiology Shortage", "url": "https://www.nature.com/articles/s44401-025-00023-6"}
+      ]
+    },
+    {
+      "query": "Radiology terminology abbreviations jargon CT MRI imaging professional",
+      "sources": [
+        {"title": "UW Medicine — Radiology Terminology", "url": "https://www.uwmedicine.org/specialties/radiology/interventional-radiology/common-radiology-terminology"},
+        {"title": "RTStudents — Radiology Abbreviations A-Z", "url": "http://www.rtstudents.com/radiology/radiology-abbreviations.htm"},
+        {"title": "RadiologyInfo.org Glossary", "url": "https://www.radiologyinfo.org/en/glossary-index"}
+      ]
+    },
+    {
+      "query": "Radiologists USA career path salary 2025 2026 burnout AI impact",
+      "sources": [
+        {"title": "SalaryDr — Radiologist Salary 2026", "url": "https://www.salarydr.com/blog/radiology-salary-2025"},
+        {"title": "CaliberHealth — Future of Radiology Jobs", "url": "https://www.caliberhealth.com/blog/radiologist-job-outlook"},
+        {"title": "Nature — AI and Radiology Workforce", "url": "https://www.nature.com/articles/s44401-025-00023-6"}
+      ]
+    },
+    {
+      "query": "Radiologists USA professional associations ACR RSNA conferences 2025 2026",
+      "sources": [
+        {"title": "RSNA — Annual Meeting", "url": "https://www.rsna.org/annual-meeting"},
+        {"title": "ACR at RSNA", "url": "https://www.acr.org/Education-and-CME/Calendar/RSNA-conference-bag"},
+        {"title": "RSNA — Future Meetings", "url": "https://www.rsna.org/annual-meeting/future-and-past-meetings"}
+      ]
+    },
+    {
+      "query": "Radiologists USA job market demand salary shortage outlook 2025 2026",
+      "sources": [
+        {"title": "Neiman HPI — Radiologist Workforce Shortage", "url": "https://www.neimanhpi.org/press-releases/new-studies-shed-light-on-the-future-radiologist-workforce-shortage"},
+        {"title": "JACR — Projected US Radiologist Supply 2025-2055", "url": "https://www.jacr.org/article/S1546-1440(24)00909-8/fulltext"},
+        {"title": "AJR — US Radiology Hiring Landscape 2025", "url": "https://www.ajronline.org/doi/10.2214/AJR.25.32712"}
+      ]
+    }
+  ]
+}

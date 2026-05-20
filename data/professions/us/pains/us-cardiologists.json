@@ -1,0 +1,756 @@
+[
+  {
+    "id": "us-cardiologists-p01",
+    "title": "Cardiovascular Risk Score Calculator",
+    "problem": "Cardiologists must calculate 10-year ASCVD risk scores, Framingham scores, and HEART scores manually or toggle between MDCalc tabs during patient visits. This slows consultations and introduces transcription errors. Incorrect risk stratification can lead to under- or over-treatment of patients.",
+    "who": "All practicing cardiologists during outpatient consultations",
+    "frequency": "daily",
+    "time_waste_h": 3,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Cardio Risk Calculator",
+      "one_liner": "Calculates ASCVD 10-year risk, Framingham Risk Score, and HEART score from patient parameters",
+      "inputs": [
+        {
+          "name": "age",
+          "type": "number",
+          "label": "Patient age (years)"
+        },
+        {
+          "name": "sex",
+          "type": "select",
+          "label": "Sex (male/female)"
+        },
+        {
+          "name": "total_cholesterol",
+          "type": "number",
+          "label": "Total cholesterol (mg/dL)"
+        },
+        {
+          "name": "hdl_cholesterol",
+          "type": "number",
+          "label": "HDL cholesterol (mg/dL)"
+        },
+        {
+          "name": "systolic_bp",
+          "type": "number",
+          "label": "Systolic blood pressure (mmHg)"
+        },
+        {
+          "name": "bp_treatment",
+          "type": "boolean",
+          "label": "On BP medication?"
+        },
+        {
+          "name": "diabetes",
+          "type": "boolean",
+          "label": "Diabetes?"
+        },
+        {
+          "name": "smoker",
+          "type": "boolean",
+          "label": "Current smoker?"
+        },
+        {
+          "name": "race",
+          "type": "select",
+          "label": "Race (White/African American/Other)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "ascvd_10yr_risk",
+          "label": "10-Year ASCVD Risk (%)"
+        },
+        {
+          "name": "risk_category",
+          "label": "Risk Category (Low/Borderline/Intermediate/High)"
+        },
+        {
+          "name": "statin_recommendation",
+          "label": "Statin therapy recommendation per ACC/AHA guidelines"
+        }
+      ],
+      "formula_hint": "Pooled Cohort Equations (2013 ACC/AHA) with race/sex-specific coefficients. Log-transformed variables, Cox regression model. Low <5%, Borderline 5-7.5%, Intermediate 7.5-20%, High >=20%.",
+      "rates": {
+        "low_threshold": 0.05,
+        "borderline_threshold": 0.075,
+        "intermediate_threshold": 0.2
+      }
+    },
+    "example_queries": [
+      "Calculate ASCVD risk for a 58-year-old white male, total cholesterol 240, HDL 42, systolic BP 148, on BP meds, non-diabetic, non-smoker",
+      "What's the 10-year heart risk for a 65-year-old African American woman with diabetes and cholesterol of 210?"
+    ]
+  },
+  {
+    "id": "us-cardiologists-p02",
+    "title": "Drug Dosing & Interaction Calculator for Cardiac Medications",
+    "problem": "Cardiologists prescribe complex multi-drug regimens (anticoagulants, antiarrhythmics, heart failure drugs) that require weight-based dosing, renal adjustment, and interaction checking. Errors in anticoagulant dosing can cause fatal bleeding or stroke. Calculating CrCl-adjusted doses during a busy clinic is error-prone.",
+    "who": "All cardiologists prescribing anticoagulants, antiarrhythmics, and heart failure medications",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 100000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Cardiac Drug Dose Calculator",
+      "one_liner": "Calculates renal-adjusted doses for cardiac drugs including DOACs, antiarrhythmics, and heart failure medications with interaction warnings",
+      "inputs": [
+        {
+          "name": "drug_name",
+          "type": "text",
+          "label": "Drug name (e.g., apixaban, amiodarone, carvedilol)"
+        },
+        {
+          "name": "patient_weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        },
+        {
+          "name": "age",
+          "type": "number",
+          "label": "Patient age (years)"
+        },
+        {
+          "name": "serum_creatinine",
+          "type": "number",
+          "label": "Serum creatinine (mg/dL)"
+        },
+        {
+          "name": "sex",
+          "type": "select",
+          "label": "Sex (male/female)"
+        },
+        {
+          "name": "concurrent_drugs",
+          "type": "text",
+          "label": "Current medications (comma-separated)"
+        },
+        {
+          "name": "indication",
+          "type": "text",
+          "label": "Indication (AFib, DVT, heart failure, etc.)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "crcl",
+          "label": "Creatinine Clearance (mL/min)"
+        },
+        {
+          "name": "recommended_dose",
+          "label": "Recommended dose with renal adjustment"
+        },
+        {
+          "name": "interaction_warnings",
+          "label": "Drug interaction warnings"
+        },
+        {
+          "name": "monitoring_parameters",
+          "label": "Key monitoring parameters"
+        }
+      ],
+      "formula_hint": "CrCl via Cockcroft-Gault. Dose tables per FDA labeling for each drug. DOAC dosing: apixaban reduce if 2+ of age>=80, weight<=60kg, Cr>=1.5. Amiodarone loading vs maintenance. Check CYP3A4/P-gp interactions.",
+      "rates": {
+        "cockcroft_gault_male": 1.0,
+        "cockcroft_gault_female": 0.85
+      }
+    },
+    "example_queries": [
+      "What dose of apixaban for a 82-year-old woman, 55 kg, creatinine 1.6, with AFib?",
+      "Calculate amiodarone loading dose for a 90 kg patient with new-onset atrial fibrillation, currently on warfarin and digoxin"
+    ]
+  },
+  {
+    "id": "us-cardiologists-p03",
+    "title": "MIPS Quality Reporting Score Estimator",
+    "problem": "Cardiologists must report quality measures under CMS MACRA/MIPS or face payment adjustments up to -9%. Tracking performance across 4 categories (Quality, Improvement Activities, Promoting Interoperability, Cost) is complex. Many cardiologists lose thousands in Medicare reimbursement due to poor MIPS scores they didn't track proactively.",
+    "who": "All cardiologists billing Medicare, especially small/independent practices",
+    "frequency": "quarterly",
+    "time_waste_h": 8,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "MIPS Score Estimator",
+      "one_liner": "Estimates MIPS composite score and projected Medicare payment adjustment based on reported measures",
+      "inputs": [
+        {
+          "name": "quality_measures",
+          "type": "number",
+          "label": "Number of quality measures reported (max 6)"
+        },
+        {
+          "name": "quality_score_avg",
+          "type": "number",
+          "label": "Average quality measure performance (0-10 per measure)"
+        },
+        {
+          "name": "ia_activities",
+          "type": "number",
+          "label": "Number of Improvement Activities completed"
+        },
+        {
+          "name": "pi_score",
+          "type": "number",
+          "label": "Promoting Interoperability score (0-100)"
+        },
+        {
+          "name": "cost_score",
+          "type": "number",
+          "label": "Cost category score (0-100, CMS calculated)"
+        },
+        {
+          "name": "medicare_revenue",
+          "type": "number",
+          "label": "Annual Medicare Part B revenue (USD)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "composite_score",
+          "label": "MIPS Composite Score (0-100)"
+        },
+        {
+          "name": "payment_adjustment",
+          "label": "Projected payment adjustment (%)"
+        },
+        {
+          "name": "adjustment_dollars",
+          "label": "Estimated impact (USD)"
+        },
+        {
+          "name": "recommendations",
+          "label": "Actions to improve score"
+        }
+      ],
+      "formula_hint": "Quality=30% weight, Cost=30%, Improvement Activities=15%, Promoting Interoperability=25%. Threshold ~75 for neutral adjustment. Max penalty -9%, max bonus varies. Quality score = sum of decile scores / max possible * 100.",
+      "rates": {
+        "quality_weight": 0.3,
+        "cost_weight": 0.3,
+        "ia_weight": 0.15,
+        "pi_weight": 0.25,
+        "max_penalty": -0.09
+      }
+    },
+    "example_queries": [
+      "Estimate my MIPS score: 6 quality measures averaging 8/10, 4 improvement activities, PI score 85, cost score 60, Medicare revenue $400,000",
+      "What payment adjustment will I face with a MIPS composite of 45?"
+    ]
+  },
+  {
+    "id": "us-cardiologists-p04",
+    "title": "Prior Authorization Request Generator",
+    "problem": "Cardiologists spend 7.3 hours per week on prior authorization and insurance tasks - the single biggest administrative burden. Each prior auth for cardiac procedures (catheterization, stress tests, cardiac MRI, device implantation) requires specific clinical justification language that insurers accept. Denials delay critical cardiac care and can endanger patients.",
+    "who": "All cardiologists and their support staff dealing with commercial and Medicare Advantage insurers",
+    "frequency": "daily",
+    "time_waste_h": 7,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Prior Auth Letter Generator",
+      "one_liner": "Generates prior authorization letters with clinical justification for cardiac procedures using ACC Appropriate Use Criteria",
+      "doc_name": "Prior Authorization Request Letter",
+      "variables": [
+        {
+          "name": "patient_name",
+          "label": "Patient name"
+        },
+        {
+          "name": "patient_dob",
+          "label": "Patient date of birth"
+        },
+        {
+          "name": "insurance_company",
+          "label": "Insurance company"
+        },
+        {
+          "name": "member_id",
+          "label": "Member ID"
+        },
+        {
+          "name": "procedure_requested",
+          "label": "Procedure requested (e.g., cardiac catheterization, cardiac MRI)"
+        },
+        {
+          "name": "cpt_code",
+          "label": "CPT code(s)"
+        },
+        {
+          "name": "icd10_codes",
+          "label": "ICD-10 diagnosis codes"
+        },
+        {
+          "name": "clinical_summary",
+          "label": "Brief clinical summary (symptoms, test results, EF if known)"
+        },
+        {
+          "name": "prior_treatments",
+          "label": "Prior treatments attempted"
+        },
+        {
+          "name": "urgency",
+          "label": "Urgency level (routine/urgent/emergent)"
+        }
+      ],
+      "structure_hint": "Physician header -> Date/To insurer -> RE: patient info -> Medical necessity statement citing ACC AUC -> Clinical history -> Prior treatments failed -> Requested procedure with CPT/ICD-10 -> Literature support -> Urgency statement -> Physician signature block"
+    },
+    "example_queries": [
+      "Write a prior auth letter for cardiac catheterization for a 62-year-old with unstable angina, positive stress test, EF 40%, failed medical therapy",
+      "Generate prior authorization for cardiac MRI, patient has new CHF diagnosis, echo inconclusive, need tissue characterization"
+    ]
+  },
+  {
+    "id": "us-cardiologists-p05",
+    "title": "Ejection Fraction & Heart Failure Stage Classification",
+    "problem": "Heart failure classification involves multiple overlapping systems (NYHA class, ACC/AHA stages, LVEF categories) that were updated in 2022 Universal Definition. Quickly determining HFrEF vs HFmrEF vs HFpEF, appropriate stage, and guideline-directed medical therapy (GDMT) recommendations during a visit requires mental juggling of multiple parameters.",
+    "who": "All cardiologists managing heart failure patients, especially early-career",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Heart Failure Classification & GDMT Reference",
+      "one_liner": "Classifies heart failure by EF category, NYHA class, ACC/AHA stage and recommends guideline-directed medical therapy",
+      "data_domain": "Heart failure classification and GDMT per 2022 AHA/ACC/HFSA Guidelines",
+      "lookup_keys": [
+        "ejection_fraction",
+        "nyha_class",
+        "acc_aha_stage",
+        "hf_type",
+        "comorbidities"
+      ],
+      "data_hints": {
+        "source_law": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+        "key_sections": [
+          "Universal Definition of HF",
+          "GDMT Four Pillars",
+          "Device Therapy Criteria"
+        ],
+        "categories": "HFrEF (EF<=40%), HFmrEF (EF 41-49%), HFpEF (EF>=50%), HFimpEF (previously reduced, now >40%)"
+      }
+    },
+    "example_queries": [
+      "Patient has EF 35%, NYHA class III, what's the ACC/AHA stage and recommended GDMT?",
+      "What are the four pillars of heart failure therapy for HFrEF and when do I add each one?"
+    ]
+  },
+  {
+    "id": "us-cardiologists-p06",
+    "title": "Anticoagulation for AFib - CHA2DS2-VASc & HAS-BLED Calculator",
+    "problem": "Every atrial fibrillation patient requires stroke risk (CHA2DS2-VASc) and bleeding risk (HAS-BLED) assessment to decide on anticoagulation. Cardiologists see dozens of AFib patients weekly and must balance stroke prevention against bleeding risk. Calculation errors or forgetting a risk factor can lead to inappropriate therapy - either a preventable stroke or a major bleed.",
+    "who": "All cardiologists managing atrial fibrillation patients",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 75000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "AFib Anticoagulation Decision Calculator",
+      "one_liner": "Calculates CHA2DS2-VASc and HAS-BLED scores with anticoagulation recommendation per ACC/AHA guidelines",
+      "inputs": [
+        {
+          "name": "age",
+          "type": "number",
+          "label": "Patient age (years)"
+        },
+        {
+          "name": "sex",
+          "type": "select",
+          "label": "Sex (male/female)"
+        },
+        {
+          "name": "chf_history",
+          "type": "boolean",
+          "label": "CHF or LVEF <=40%?"
+        },
+        {
+          "name": "hypertension",
+          "type": "boolean",
+          "label": "Hypertension?"
+        },
+        {
+          "name": "diabetes",
+          "type": "boolean",
+          "label": "Diabetes?"
+        },
+        {
+          "name": "stroke_tia_history",
+          "type": "boolean",
+          "label": "Prior stroke/TIA/thromboembolism?"
+        },
+        {
+          "name": "vascular_disease",
+          "type": "boolean",
+          "label": "Vascular disease (prior MI, PAD, aortic plaque)?"
+        },
+        {
+          "name": "abnormal_renal",
+          "type": "boolean",
+          "label": "Abnormal renal function?"
+        },
+        {
+          "name": "abnormal_liver",
+          "type": "boolean",
+          "label": "Abnormal liver function?"
+        },
+        {
+          "name": "bleeding_history",
+          "type": "boolean",
+          "label": "Prior bleeding history?"
+        },
+        {
+          "name": "labile_inr",
+          "type": "boolean",
+          "label": "Labile INR (if on warfarin)?"
+        },
+        {
+          "name": "drugs_alcohol",
+          "type": "boolean",
+          "label": "Drugs or alcohol excess?"
+        },
+        {
+          "name": "antiplatelet_nsaid",
+          "type": "boolean",
+          "label": "On antiplatelet or NSAID?"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "cha2ds2_vasc",
+          "label": "CHA2DS2-VASc Score"
+        },
+        {
+          "name": "annual_stroke_risk",
+          "label": "Annual stroke risk (%)"
+        },
+        {
+          "name": "has_bled",
+          "label": "HAS-BLED Score"
+        },
+        {
+          "name": "bleeding_risk_category",
+          "label": "Bleeding risk (low/intermediate/high)"
+        },
+        {
+          "name": "recommendation",
+          "label": "Anticoagulation recommendation per 2023 ACC/AHA AFib guidelines"
+        }
+      ],
+      "formula_hint": "CHA2DS2-VASc: CHF=1, HTN=1, Age>=75=2, DM=1, Stroke=2, Vasc=1, Age65-74=1, Female=1. HAS-BLED: HTN=1, Renal=1, Liver=1, Stroke=1, Bleeding=1, Labile INR=1, Age>65=1, Drugs=1, Alcohol=1. Males: anticoag if >=2. Females: anticoag if >=3.",
+      "rates": {
+        "stroke_risk_per_score": [
+          0,
+          1.3,
+          2.2,
+          3.2,
+          4.0,
+          6.7,
+          9.8,
+          9.6,
+          12.5,
+          15.2
+        ]
+      }
+    },
+    "example_queries": [
+      "CHA2DS2-VASc for 72-year-old woman with hypertension and diabetes, no prior stroke",
+      "Should I anticoagulate a 68-year-old male with lone AFib, no other risk factors? Calculate both stroke and bleeding risk"
+    ]
+  },
+  {
+    "id": "us-cardiologists-p07",
+    "title": "Cardiac Procedure Coding & Billing Reference",
+    "problem": "Cardiac procedures have complex CPT coding with frequent modifiers, bundling rules, and payer-specific requirements. Incorrect coding leads to claim denials (losing $2,000-$50,000 per procedure), audits, or fraud allegations. Interventional cardiologists performing catheterization, stenting, and device implants face the highest coding complexity.",
+    "who": "Interventional cardiologists and practice billing staff",
+    "frequency": "daily",
+    "time_waste_h": 3,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Cardiac CPT Coding Reference",
+      "one_liner": "Quick lookup of CPT codes, modifiers, and bundling rules for cardiac procedures with 2026 updates",
+      "data_domain": "CPT codes for cardiology procedures, E/M coding, bundling/unbundling rules, CCI edits",
+      "lookup_keys": [
+        "procedure_name",
+        "cpt_code",
+        "modifier",
+        "bundling_rule",
+        "procedure_category"
+      ],
+      "data_hints": {
+        "source_law": "AMA CPT 2026, CMS NCCI Policy Manual, ACC Coding Guidelines",
+        "key_sections": [
+          "Cardiac catheterization codes (93451-93572)",
+          "Interventional codes (92920-92944)",
+          "EP study codes (93600-93662)",
+          "Device codes (33202-33275)",
+          "Echo/stress codes (93303-93355)"
+        ],
+        "common_issues": "Cath + PCI same session bundling, modifier -59 vs -XE/XS/XP/XU, bilateral procedure reporting"
+      }
+    },
+    "example_queries": [
+      "What CPT code for diagnostic left heart cath with coronary angiography and LV gram?",
+      "Can I bill cath and PCI together same session? What modifiers do I need?"
+    ]
+  },
+  {
+    "id": "us-cardiologists-p08",
+    "title": "Discharge Summary Generator for Cardiac Patients",
+    "problem": "Cardiologists must write detailed discharge summaries for cardiac inpatients including procedure results, medication reconciliation, follow-up plans, and patient education. Documentation consumes hours beyond the 57.8-hour workweek. Incomplete discharge summaries lead to readmissions (CMS penalizes hospitals for 30-day cardiac readmissions) and continuity-of-care gaps.",
+    "who": "Hospital-based cardiologists managing inpatient admissions",
+    "frequency": "daily",
+    "time_waste_h": 5,
+    "money_risk_usd": 20000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Cardiac Discharge Summary Generator",
+      "one_liner": "Generates structured discharge summaries for cardiac patients including procedure results, med reconciliation, and follow-up plans",
+      "doc_name": "Cardiac Discharge Summary",
+      "variables": [
+        {
+          "name": "patient_name",
+          "label": "Patient name"
+        },
+        {
+          "name": "admission_date",
+          "label": "Admission date"
+        },
+        {
+          "name": "discharge_date",
+          "label": "Discharge date"
+        },
+        {
+          "name": "primary_diagnosis",
+          "label": "Primary diagnosis (e.g., NSTEMI, CHF exacerbation)"
+        },
+        {
+          "name": "secondary_diagnoses",
+          "label": "Secondary diagnoses"
+        },
+        {
+          "name": "procedures_performed",
+          "label": "Procedures performed with results"
+        },
+        {
+          "name": "key_findings",
+          "label": "Key findings (EF, cath results, labs)"
+        },
+        {
+          "name": "discharge_medications",
+          "label": "Discharge medications with doses"
+        },
+        {
+          "name": "medication_changes",
+          "label": "Medications changed (added/stopped/adjusted)"
+        },
+        {
+          "name": "activity_restrictions",
+          "label": "Activity restrictions"
+        },
+        {
+          "name": "follow_up_plan",
+          "label": "Follow-up appointments and timeline"
+        }
+      ],
+      "structure_hint": "Admission diagnosis -> Hospital course (chronological) -> Procedures & results -> Key labs/imaging -> Discharge condition -> Medication reconciliation (changes highlighted) -> Activity restrictions -> Diet instructions -> Warning signs to return to ER -> Follow-up plan -> Code status"
+    },
+    "example_queries": [
+      "Write discharge summary: 58M admitted for NSTEMI, troponin peaked 2.4, cath showed 90% LAD stenosis, DES placed, EF 45%, started on DAPT and statin",
+      "Generate discharge summary for CHF exacerbation, EF 25%, IV diuresis x3 days, transitioned to oral lasix 80mg BID, added entresto"
+    ]
+  },
+  {
+    "id": "us-cardiologists-p09",
+    "title": "Board Recertification & MOC Tracking Checklist",
+    "problem": "ABIM Maintenance of Certification (MOC) requires tracking CME credits, self-assessment modules, practice improvement activities, and exam scheduling across multi-year cycles. The new ABCVM pathway adds complexity. Failure to maintain certification risks hospital privileges, insurance panel participation, and career advancement. Many cardiologists scramble at deadline.",
+    "who": "All board-certified cardiologists, especially mid-career and senior",
+    "frequency": "quarterly",
+    "time_waste_h": 6,
+    "money_risk_usd": 25000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Board MOC Tracker Checklist",
+      "one_liner": "Step-by-step checklist for ABIM cardiovascular disease MOC requirements with timeline and deadlines",
+      "steps": [
+        "Step 1: Verify current ABIM certification status and expiration date at abim.org",
+        "Step 2: Confirm CME credit requirements - minimum 100 points per 5-year cycle, including at least 20 self-assessment points",
+        "Step 3: Complete required Knowledge Check-In (KCI) or traditional exam by deadline - 5-year rolling cycle",
+        "Step 4: Log qualifying CME activities (ACC, AHA, ASE courses count for ABIM credit)",
+        "Step 5: Complete at least one Practice Improvement Module or Quality Improvement activity",
+        "Step 6: Verify state medical license is current and matches ABIM records",
+        "Step 7: Evaluate ABCVM alternative certification pathway if applicable",
+        "Step 8: Submit attestation of medical licensure and hospital privileges",
+        "Step 9: Pay MOC fees (budget ~$220/year for ABIM)",
+        "Step 10: Document completion and save certificates for hospital credentialing"
+      ],
+      "warnings": [
+        "Warning: ABIM certification lapses if MOC requirements not met by expiration - reinstatement requires full exam",
+        "Warning: Many hospitals require active board certification for privileges - lapsed cert = lost privileges",
+        "Warning: Some states now require MOC participation for license renewal"
+      ],
+      "regulatory_refs": [
+        "ABIM MOC Policy",
+        "ABCVM Certification Standards (2026)",
+        "Hospital Credentialing Standards (Joint Commission)"
+      ]
+    },
+    "example_queries": [
+      "My ABIM cardiovascular certification expires in 18 months, what do I need to complete?",
+      "What's the difference between ABIM MOC and the new ABCVM certification?"
+    ]
+  },
+  {
+    "id": "us-cardiologists-p10",
+    "title": "Malpractice Risk Assessment Advisor",
+    "problem": "Malpractice is the top fear for cardiologists, with climbing awards under new 2026 state laws. Common allegations include missed MI diagnosis, catheterization complications, medication errors, and failure to follow up on abnormal results. Cardiologists need to understand their specific risk factors and adopt documentation and communication practices that protect them.",
+    "who": "All cardiologists, especially interventional and those in high-liability states",
+    "frequency": "monthly",
+    "time_waste_h": 3,
+    "money_risk_usd": 500000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Cardiology Malpractice Risk Advisor",
+      "one_liner": "Analyzes malpractice risk scenarios and provides documentation and practice recommendations to reduce liability",
+      "expertise_area": "Cardiology malpractice risk reduction, documentation best practices, informed consent, and high-risk clinical scenarios",
+      "decision_criteria": [
+        "procedure_type",
+        "clinical_scenario",
+        "state_laws",
+        "patient_risk_factors",
+        "documentation_quality"
+      ],
+      "context_needed": [
+        "regulatory.penalties",
+        "regulatory.laws_and_standards",
+        "career_psychology.fears"
+      ]
+    },
+    "example_queries": [
+      "Patient had a complication during cath - guide dissection. What should I document and how should I handle informed consent review?",
+      "I'm worried about missing an aortic dissection. What's my documentation checklist for chest pain patients to reduce malpractice risk?"
+    ]
+  },
+  {
+    "id": "us-cardiologists-p11",
+    "title": "Cardiac Device Selection & Criteria Reference",
+    "problem": "Selecting the right cardiac device (ICD, CRT-D, CRT-P, pacemaker, LVAD, Watchman) requires matching patient criteria to CMS coverage determinations and ACC/AHA/HRS guidelines. Each device has specific EF thresholds, QRS duration requirements, NYHA class criteria, and waiting periods. Getting it wrong means a denied procedure or inappropriate therapy.",
+    "who": "Electrophysiologists and heart failure cardiologists implanting devices",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 40000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Cardiac Device Indication Reference",
+      "one_liner": "Quick lookup of indications, contraindications, and CMS coverage criteria for cardiac implantable devices",
+      "data_domain": "ACC/AHA/HRS device therapy guidelines and CMS National Coverage Determinations for cardiac devices",
+      "lookup_keys": [
+        "device_type",
+        "ejection_fraction",
+        "nyha_class",
+        "qrs_duration",
+        "rhythm",
+        "indication"
+      ],
+      "data_hints": {
+        "source_law": "2018 ACC/AHA/HRS Bradycardia Guidelines, 2022 AHA/ACC/HFSA HF Guidelines, CMS NCD 20.4",
+        "key_sections": [
+          "ICD primary prevention (EF<=35%, NYHA II-III, on GDMT >=90 days)",
+          "CRT criteria (EF<=35%, QRS>=150ms LBBB)",
+          "Watchman (CHA2DS2-VASc>=2, contraindication to long-term anticoag)",
+          "LVAD (Stage D HF, bridge or destination)"
+        ],
+        "common_issues": "40-day post-MI waiting period for ICD, 90-day GDMT optimization requirement, CRT QRS threshold debate"
+      }
+    },
+    "example_queries": [
+      "Does my patient qualify for an ICD? EF 30%, NYHA class II, 3 months post-MI, on max GDMT",
+      "What are the CRT-D criteria? Patient has EF 32%, QRS 142ms with LBBB, NYHA III"
+    ]
+  },
+  {
+    "id": "us-cardiologists-p12",
+    "title": "STEMI & Acute Coronary Syndrome Response Checklist",
+    "problem": "STEMI and ACS management requires rapid, protocol-driven decisions under extreme time pressure - door-to-balloon time must be <90 minutes. Missing a step in the acute phase (dual antiplatelet loading, anticoagulation, cath lab activation, contraindication screening) can be fatal. Even experienced cardiologists benefit from a systematic checklist during high-stress acute events.",
+    "who": "All cardiologists on call and managing acute cardiac events",
+    "frequency": "weekly",
+    "time_waste_h": 1,
+    "money_risk_usd": 250000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "ACS/STEMI Response Protocol",
+      "one_liner": "Step-by-step acute coronary syndrome management protocol from ER presentation through cath lab and post-PCI care",
+      "steps": [
+        "Step 1: Confirm STEMI on 12-lead ECG (ST elevation >=1mm in 2+ contiguous leads, or new LBBB)",
+        "Step 2: Activate cath lab - note door time, target D2B <90 min (or <120 min if transfer)",
+        "Step 3: Aspirin 325mg chewed (if not already given) + P2Y12 inhibitor loading (ticagrelor 180mg or prasugrel 60mg preferred over clopidogrel 600mg)",
+        "Step 4: Anticoagulation - heparin bolus 60 U/kg (max 4000 U) + infusion or bivalirudin per protocol",
+        "Step 5: Check contraindications: active bleeding, recent surgery, known allergy, prior ICH, severe thrombocytopenia",
+        "Step 6: Beta-blocker if no cardiogenic shock, decompensated HF, or bradycardia (metoprolol 5mg IV x3 prn)",
+        "Step 7: Obtain emergency labs: troponin, CBC, BMP, coagulation, type & screen",
+        "Step 8: Proceed to cath lab - perform coronary angiography and PCI of culprit lesion",
+        "Step 9: Post-PCI: confirm TIMI-3 flow, document stent details, start DAPT plan",
+        "Step 10: Admit CCU, serial troponins q6h, echo within 24-48h, initiate GDMT (ACEi/ARB, beta-blocker, high-intensity statin)"
+      ],
+      "warnings": [
+        "Warning: Do NOT delay cath for additional testing in clear STEMI",
+        "Warning: Prasugrel contraindicated if prior stroke/TIA or age >=75 or weight <60kg",
+        "Warning: Check for fibrinolytic eligibility if PCI not available within 120 minutes"
+      ],
+      "regulatory_refs": [
+        "2021 ACC/AHA Chest Pain Guidelines",
+        "2013 ACCF/AHA STEMI Guidelines (updated)",
+        "CMS Core Measures for AMI"
+      ]
+    },
+    "example_queries": [
+      "STEMI just came in, 55-year-old male, walk me through the acute protocol step by step",
+      "Patient presenting with NSTEMI, troponin 0.8, what's the management checklist? High risk features?"
+    ]
+  },
+  {
+    "id": "us-cardiologists-p13",
+    "title": "Burnout Self-Assessment & Practice Optimization Advisor",
+    "problem": "72% of physicians experience burnout, and cardiologists face unique drivers: 7.3 hours/week on prior auths, 57.8-hour workweeks, 3,500-4,000 patient panels, and EHR documentation burden. Burnout leads to medical errors, early retirement, and worsens the projected 17% cardiologist shortage by 2035. Many cardiologists don't recognize burnout until it's severe.",
+    "who": "All cardiologists, especially mid-career with heavy clinical loads",
+    "frequency": "quarterly",
+    "time_waste_h": 4,
+    "money_risk_usd": 200000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Cardiologist Burnout & Practice Optimization Advisor",
+      "one_liner": "Assesses burnout risk factors and provides evidence-based recommendations for workload optimization and wellbeing",
+      "expertise_area": "Physician burnout assessment, practice efficiency optimization, delegation strategies, and workload management specific to cardiology",
+      "decision_criteria": [
+        "hours_per_week",
+        "patient_panel_size",
+        "admin_hours",
+        "call_frequency",
+        "practice_setting",
+        "career_stage"
+      ],
+      "context_needed": [
+        "career_psychology.burnout",
+        "daily_reality.typical_workday",
+        "market.work_arrangements"
+      ]
+    },
+    "example_queries": [
+      "I'm working 60+ hours, spending half my time on documentation and prior auths. How do I restructure my practice?",
+      "I'm a mid-career cardiologist feeling burned out. What are evidence-based strategies to reduce admin burden without cutting patient volume?"
+    ]
+  }
+]

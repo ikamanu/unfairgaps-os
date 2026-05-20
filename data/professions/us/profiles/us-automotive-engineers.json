@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-automotive-engineers",
+  "profession_name": "Automotive Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Start with 15-30 min daily stand-up/team meeting for status updates and blockers; sync with project managers, designers, manufacturing, or test teams. Review email and project tracking tools (JIRA, PLM, Asana) for new requests, engineering change notices (ECNs), RFQs, and test results. Core work involves CAD modeling, FEA/CFD simulation, design reviews, and prototype testing. Afternoon focused on cross-functional collaboration, supplier meetings, and documentation.",
+    "key_documents": ["CAD models and engineering drawings", "FEA/CFD simulation reports", "Bill of Materials (BOM)", "Engineering Change Notices (ECN)", "DFMEA (Design Failure Mode and Effects Analysis)", "Test reports and validation data", "Cost estimates and RFQs", "PDR/CDR review packages"],
+    "deadlines": "Project milestones tied to vehicle program timelines (concept, design freeze, prototype, SoP). Heavy compliance and formal review cycles. Typically work 40+ hours/week with additional hours as project deadlines approach.",
+    "seasonality": "Aligned with vehicle program launch cycles; auto show season (January-March) drives concept deadlines; SoP deadlines are fixed and immovable."
+  },
+  "regulatory": {
+    "laws_and_standards": ["FMVSS (Federal Motor Vehicle Safety Standards)", "EPA emissions regulations", "NHTSA safety requirements", "SAE International standards", "ISO 26262 (functional safety)", "IATF 16949 (quality management)"],
+    "licensing": "Professional Engineer (PE) license optional but valued; ABET-accredited bachelor's degree in mechanical, automotive, or related engineering required. No mandatory state license to practice as an automotive engineer, but PE stamp needed for certain certifications.",
+    "penalties": "Manufacturing non-compliance can result in significant fines, recalls, and litigation. Stronger enforcement with increased penalties for emissions and safety violations. Individual engineers rarely face personal penalties but bear professional responsibility.",
+    "regulatory_bodies": ["NHTSA (National Highway Traffic Safety Administration)", "EPA (Environmental Protection Agency)", "SAE International", "AIAG (Automotive Industry Action Group)", "OSHA"]
+  },
+  "tools": {
+    "software": ["CATIA (Dassault Systemes) - industry standard for OEMs", "NX CAD (Siemens) - comprehensive CAD with PLM integration", "Creo (PTC) - parametric CAD platform", "Fusion 360 (Autodesk) - integrated CAD/CAE/CAM", "ANSYS - FEA/CFD simulation", "MATLAB/Simulink - controls and modeling", "SolidWorks - design and simulation"],
+    "platforms": ["Teamcenter PLM (Siemens)", "3DEXPERIENCE (Dassault Systemes)", "Windchill (PTC)", "JIRA/Confluence - project tracking", "SAP - ERP and manufacturing"],
+    "gov_portals": ["NHTSA Vehicle Safety portal", "EPA MOVES (Motor Vehicle Emission Simulator)", "OSHA compliance resources"]
+  },
+  "terminology": {
+    "jargon": ["SoP (Start of Production)", "DFMEA (Design Failure Mode and Effects Analysis)", "ECN (Engineering Change Notice)", "BOM (Bill of Materials)", "NVH (Noise, Vibration, and Harshness)", "PDR/CDR (Preliminary/Critical Design Review)", "Class-A surface", "Digital twin", "Homologation"],
+    "abbreviations": ["SOHC/DOHC - Single/Dual Overhead Camshaft", "ECU/ECM - Electronic Control Unit/Module", "TCM - Transmission Control Module", "BCM - Body Control Module", "ABS - Anti-Lock Braking System", "CVT - Continuously Variable Transmission", "Cd - Coefficient of Drag", "CC - Critical Characteristic", "8D - 8 Disciplines problem-solving", "PPAP - Production Part Approval Process", "APQP - Advanced Product Quality Planning"]
+  },
+  "career_psychology": {
+    "career_levels": ["Entry-Level Engineer (0-3 years)", "Mid-Level Engineer (3-7 years)", "Senior Engineer (7-12 years)", "Staff/Principal Engineer (12+ years)", "Engineering Manager/Director", "VP of Engineering / CTO"],
+    "fears": ["Obsolescence due to EV transition", "Outsourcing and offshoring of engineering work", "Layoffs during industry downturns", "Failure in safety-critical systems leading to recalls"],
+    "motivation": "Working on cutting-edge automotive technology (EVs, autonomous driving, AI); seeing vehicles go from concept to production; 90% would recommend engineering as a career to young people.",
+    "burnout": "50% of engineers cite burnout as reason for considering leaving; long hours during launch cycles; heavy documentation and compliance burden; 39% cite lack of advancement and wanting higher pay. Despite this, 82% report job satisfaction."
+  },
+  "community": {
+    "reddit": ["r/AskEngineers", "r/MechanicalEngineering", "r/AutomotiveEngineering", "r/cars", "r/electricvehicles"],
+    "linkedin": ["Automotive Engineering group", "SAE International", "AIAG community", "EV Engineering Professionals"],
+    "associations": ["SAE International (Society of Automotive Engineers)", "AIAG (Automotive Industry Action Group)", "ASME (American Society of Mechanical Engineers)", "IEEE (for electronics/controls engineers)"],
+    "conferences": ["CES (Consumer Electronics Show) - Las Vegas, January", "Detroit Auto Show (NAIAS) - January", "SAE WCX World Congress - Detroit, April", "American Automotive Summit (AAS)", "Automotive Manufacturing North America - Dearborn, MI", "AutoTech Conference"]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 87000,
+      "mid_level_usd": 110000,
+      "senior_level_usd": 137000,
+      "principal_management_usd": 165000
+    },
+    "average_salary_usd": 128000,
+    "job_count_estimate": "Mechanical engineers (including automotive) hold about 299,200 jobs in the US (BLS). Automotive-specific roles concentrated in Michigan, California, and Ohio.",
+    "work_arrangements": "Primarily on-site at OEM facilities, R&D centers, and test tracks. Hybrid arrangements increasing post-COVID for design/simulation roles. Manufacturing-adjacent roles remain on-site.",
+    "trends": ["Rapid shift to EV powertrain engineering", "Autonomous driving systems and ADAS development", "Software-defined vehicles increasing demand for embedded systems engineers", "AI integration in CAD/simulation tools", "Tesla, Rivian, and EV startups competing for talent with traditional OEMs"]
+  },
+  "quality_score": 0.8,
+  "sources_count": 7,
+  "verified_sources": 5
+}

@@ -1,0 +1,246 @@
+{
+  "profession_id": "us-radiation-therapists",
+  "profession_name": "Radiation Therapists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Radiation therapists operate linear accelerators and other equipment to deliver precise radiation treatments to cancer patients. They position patients, verify treatment plans, monitor patients during treatment, and maintain detailed dose records.",
+    "typical_tasks": [
+      "Position patients on treatment table using immobilization devices and imaging",
+      "Operate linear accelerators (linacs) to deliver radiation treatments",
+      "Verify treatment plans match physician-prescribed doses and targets",
+      "Perform image-guided radiation therapy (IGRT) for daily position verification",
+      "Monitor patients during treatment for adverse reactions",
+      "Maintain detailed radiation dose records for each patient",
+      "Perform daily quality assurance checks on treatment machines",
+      "Educate patients about treatment process, side effects, and skin care",
+      "Calculate and deliver prescribed radiation doses",
+      "Communicate with radiation oncologists and medical physicists about treatment plans",
+      "Assist with treatment simulation and CT scanning for planning",
+      "Provide emotional support to cancer patients throughout treatment course"
+    ],
+    "key_documents": [
+      "Treatment plans (from treatment planning system)",
+      "Daily treatment logs and dose records",
+      "Machine QA logs",
+      "Patient consent forms",
+      "Treatment verification images (CBCT, portal images)",
+      "Incident reports for treatment errors",
+      "Patient education documentation"
+    ],
+    "deadlines": {
+      "daily_qa": "Machine checks before first patient each morning",
+      "patient_treatments": "Schedule of 20-40 patients per day per machine",
+      "treatment_records": "Updated after each fraction",
+      "monthly_qa": "Comprehensive machine quality assurance",
+      "annual_qa": "Full calibration verification",
+      "arrt_renewal": "Annual certification renewal with biennial CE"
+    },
+    "seasonality": "Relatively steady year-round — cancer treatment doesn't follow seasonal patterns. Some patients delay starting treatment around holidays. Machine maintenance shutdowns may create scheduling pressure.",
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/radiation-therapists.htm", "fact": "BLS Occupational Outlook Handbook for radiation therapists"},
+      {"url": "https://www.indeed.com/hire/job-description/radiation-therapist", "fact": "Radiation therapist job description updated 2025"}
+    ]
+  },
+  "regulatory": {
+    "summary": "ARRT certification required in most states. Associate's or bachelor's degree from JRCERT-accredited program required. NRC and state radiation regulations govern equipment and safety. Strict quality assurance requirements.",
+    "key_laws": [
+      {
+        "name": "10 CFR Part 35 — Medical Use of Byproduct Material",
+        "detail": "NRC regulations for therapeutic use of radioactive materials (brachytherapy)",
+        "status": "Active"
+      },
+      {
+        "name": "State Radiation Control Programs",
+        "detail": "State licensing of radiation therapy equipment and personnel",
+        "status": "Active in all states"
+      },
+      {
+        "name": "NRC/Agreement State Licensing",
+        "detail": "Facility licensing for therapeutic radiation sources",
+        "status": "Active"
+      },
+      {
+        "name": "Joint Commission Standards",
+        "detail": "Quality standards for radiation therapy departments including timeout procedures",
+        "status": "Active for accredited facilities"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Associate's or bachelor's degree from JRCERT-accredited program",
+        "ARRT Radiation Therapy certification (required in most states)",
+        "Pass ARRT certification examination",
+        "Annual ARRT renewal with biennial CE (24 credits/2 years)",
+        "State licensure required in most states",
+        "CPR certification",
+        "Some states require additional state examinations"
+      ],
+      "certifying_bodies": [
+        "ARRT — American Registry of Radiologic Technologists",
+        "JRCERT — Joint Review Committee on Education in Radiologic Technology (program accreditation)",
+        "State radiation control programs"
+      ]
+    },
+    "penalties": "Treatment delivery errors can result in facility citations, NRC violations ($100,000+), malpractice lawsuits, and loss of ARRT certification. Patient misadministration requires NRC reporting.",
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/radiation-therapists.htm", "fact": "BLS: ARRT certification and associate's/bachelor's degree required"},
+      {"url": "https://www.healthcaredegree.com/physical/radiation-therapist", "fact": "Radiation therapist certification and licensing requirements"}
+    ]
+  },
+  "tools": {
+    "summary": "Radiation therapists operate linear accelerators (Varian, Elekta), treatment planning systems (Eclipse, Pinnacle, RayStation), and image guidance systems (CBCT, MR-linac). Equipment costs $2-8 million per linac.",
+    "primary_software": [
+      {"name": "Linear Accelerators (Varian TrueBeam, Elekta Versa HD, Varian Halcyon)", "purpose": "Primary treatment delivery machines for external beam radiation"},
+      {"name": "MR-Linac (Elekta Unity, ViewRay MRIdian)", "purpose": "MRI-guided adaptive radiation therapy"},
+      {"name": "Treatment Planning Systems (Varian Eclipse, Elekta Monaco, RaySearch RayStation)", "purpose": "Dose calculation and treatment plan optimization"},
+      {"name": "Record & Verify Systems (Varian ARIA, Elekta MOSAIQ)", "purpose": "Treatment scheduling, documentation, and safety interlocks"},
+      {"name": "CBCT/IGRT Systems", "purpose": "On-board imaging for daily treatment position verification"},
+      {"name": "CT Simulator (GE, Siemens, Philips)", "purpose": "Treatment planning CT scans with immobilization"},
+      {"name": "Brachytherapy afterloaders (Varian, Elekta)", "purpose": "Internal radiation therapy delivery for cervical, prostate, breast cancers"},
+      {"name": "Radiation Oncology EHR/EMR", "purpose": "Patient records and treatment documentation"}
+    ],
+    "pain_points": [
+      "Complex treatment plans requiring precise execution",
+      "Machine downtime affecting patient schedules",
+      "Integration challenges between planning and delivery systems",
+      "Cost of equipment maintenance and upgrades ($2-8M per linac)",
+      "Software version updates requiring revalidation"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/radiation-therapists.htm", "fact": "BLS describes linear accelerator operation and treatment delivery"},
+      {"url": "https://www.sunbeltstaffing.com/resources/allied/radiation-therapist-job-description-salary-certification-more/", "fact": "Radiation therapist job description with equipment details"}
+    ]
+  },
+  "terminology": {
+    "summary": "Radiation therapists use radiation physics, oncology, and treatment delivery terminology covering dose specification, treatment techniques, and quality assurance.",
+    "key_terms": [
+      {"term": "Linac", "meaning": "Linear accelerator — primary external beam radiation treatment machine"},
+      {"term": "IMRT", "meaning": "Intensity-Modulated Radiation Therapy — advanced dose shaping technique"},
+      {"term": "VMAT", "meaning": "Volumetric Modulated Arc Therapy — rotational IMRT delivery"},
+      {"term": "IGRT", "meaning": "Image-Guided Radiation Therapy — imaging before each treatment for positioning"},
+      {"term": "CBCT", "meaning": "Cone Beam CT — on-board imaging for position verification"},
+      {"term": "SBRT/SRS", "meaning": "Stereotactic Body/Radiosurgery — high-dose, few-fraction treatments"},
+      {"term": "Gy (Gray)", "meaning": "Unit of absorbed radiation dose"},
+      {"term": "Fraction", "meaning": "Single treatment session (courses typically 15-35 fractions)"},
+      {"term": "PTV", "meaning": "Planning Target Volume — treatment target area with margins"},
+      {"term": "OAR", "meaning": "Organs At Risk — normal tissues to spare from radiation"},
+      {"term": "DVH", "meaning": "Dose-Volume Histogram — graphical treatment plan evaluation"},
+      {"term": "Isocenter", "meaning": "Point in space where radiation beams converge"},
+      {"term": "Bolus", "meaning": "Tissue-equivalent material placed on skin to modify dose"},
+      {"term": "Setup error", "meaning": "Patient positioning deviation from planned position"},
+      {"term": "Timeout", "meaning": "Safety verification procedure before treatment delivery"}
+    ],
+    "common_abbreviations": ["RT", "ARRT", "RTT", "TPS", "R&V", "MLC (Multi-Leaf Collimator)", "MU (Monitor Units)", "DVH", "IGRT", "SBRT", "SRS", "HDR/LDR"],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/radiation-therapists.htm", "fact": "BLS radiation therapist scope and equipment terminology"},
+      {"url": "https://www.campusexplorer.com/careers/radiation-therapists/", "fact": "Radiation therapist career description with technical terminology"}
+    ]
+  },
+  "career_psychology": {
+    "summary": "Radiation therapists earn above-average healthcare salaries ($102K median). Emotionally rewarding but challenging work treating cancer patients daily. High accuracy demands create performance pressure.",
+    "career_levels": [
+      {"level": "Entry Radiation Therapist", "salary_range": "$70,000-$85,000", "responsibilities": "Treatment delivery under supervision, basic setup and imaging"},
+      {"level": "Radiation Therapist (experienced)", "salary_range": "$90,000-$105,000", "responsibilities": "Independent treatment delivery, all techniques, patient education"},
+      {"level": "Senior/Lead Therapist", "salary_range": "$100,000-$120,000", "responsibilities": "Complex cases (SBRT, SRS), student supervision, QA leadership"},
+      {"level": "Chief Therapist/Manager", "salary_range": "$110,000-$140,000+", "responsibilities": "Department management, staffing, equipment procurement, protocol development"}
+    ],
+    "main_fears": [
+      "Treatment delivery errors (wrong patient, wrong site, wrong dose)",
+      "Machine malfunction during treatment",
+      "Long-term radiation exposure despite protective measures",
+      "Patient deterioration during treatment course",
+      "Liability for treatment errors",
+      "ARRT certification loss"
+    ],
+    "burnout_causes": [
+      "Emotional toll of treating cancer patients daily (some don't survive)",
+      "High precision demands with zero tolerance for errors",
+      "Repetitive nature of daily treatment sessions",
+      "Standing all day and physically positioning patients",
+      "Machine downtime creating scheduling pressure",
+      "Dealing with anxious, fearful, or terminally ill patients"
+    ],
+    "growth_motivation": [
+      "Specialization in advanced techniques (proton therapy, MR-linac, SBRT)",
+      "Medical dosimetry certification (CMD) for treatment planning",
+      "Management/chief therapist positions",
+      "Vendor applications specialist roles",
+      "Medical physics pathway (with graduate education)",
+      "Education/clinical instructor roles"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/radiation-therapists.htm", "fact": "BLS: median wage $101,990 (May 2024)"},
+      {"url": "https://www.coursera.org/articles/radiation-therapist", "fact": "Radiation therapist career duties, pay, and growth information"}
+    ]
+  },
+  "community": {
+    "summary": "ASRT (American Society of Radiologic Technologists) is the primary professional society. ASTRO serves radiation oncology broadly. ARRT provides certification. Strong clinical community but limited dedicated online spaces.",
+    "professional_associations": [
+      {"name": "ASRT — American Society of Radiologic Technologists", "url": "https://www.asrt.org", "membership_value": "CE courses, advocacy, journal, annual meeting, career resources", "mandatory": false},
+      {"name": "ASTRO — American Society for Radiation Oncology", "url": "https://www.astro.org", "membership_value": "Clinical guidelines, annual meeting, Red Journal, therapist resources", "mandatory": false},
+      {"name": "ARRT — American Registry of Radiologic Technologists", "url": "https://www.arrt.org", "membership_value": "Certification and CE tracking", "mandatory": true}
+    ],
+    "conferences": [
+      {"name": "ASTRO Annual Meeting", "detail": "Premier radiation oncology conference with therapist programming", "frequency": "Annual (October)"},
+      {"name": "ASRT Annual Conference", "detail": "Radiologic technology education and networking", "frequency": "Annual"},
+      {"name": "AAPM Annual Meeting", "detail": "Medical physics — relevant for therapists interested in advanced technology", "frequency": "Annual"}
+    ],
+    "online_communities": [
+      "Reddit r/RadiationTherapy (growing community)",
+      "ASRT online community",
+      "LinkedIn radiation therapy professionals groups",
+      "Facebook radiation therapist groups",
+      "RadiationTherapist.com resources"
+    ],
+    "publications": [
+      "Radiation Therapist journal (ASRT)",
+      "International Journal of Radiation Oncology (Red Journal)",
+      "RT Image newsletter"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/radiation-therapists.htm", "fact": "BLS radiation therapist professional context and associations"},
+      {"url": "https://www.arrt.org", "fact": "ARRT as mandatory certification body"}
+    ]
+  },
+  "market": {
+    "summary": "Median salary $101,990 (BLS May 2024). 2% growth projected 2024-2034 with ~900 annual openings. About 17,600 employed. High salary but slower growth due to treatment technology advances.",
+    "salary_by_level": {
+      "entry": "$70,000-$85,000",
+      "mid": "$90,000-$105,000",
+      "senior": "$105,000-$125,000",
+      "chief_manager": "$120,000-$150,000+"
+    },
+    "geographic_variation": {
+      "national_median": "$101,990 (BLS May 2024)",
+      "california": "Highest paying state (~$130,000+)",
+      "new_jersey": "Top 5 paying state",
+      "lowest_10_percent": "Less than $69,000",
+      "highest_10_percent": "More than $137,000+"
+    },
+    "estimated_practitioners": "17,600 radiation therapists employed in US (BLS 2023)",
+    "job_outlook": "2% growth 2024-2034, slower than average. ~900 annual openings from growth and replacements.",
+    "work_arrangements": {
+      "dominant": "W-2 employees at hospitals (50%+) and freestanding cancer centers",
+      "outpatient": "Outpatient radiation oncology practices",
+      "proton_centers": "Proton therapy centers (limited but growing)",
+      "travel": "Travel radiation therapist positions available at premium"
+    },
+    "market_trends": [
+      "Proton therapy center expansion creating specialized positions",
+      "MR-linac technology requiring new skill sets",
+      "AI-assisted treatment planning and adaptive therapy",
+      "Hypofractionation (fewer fractions) reducing per-patient treatment sessions",
+      "Flash therapy research potentially changing treatment paradigm",
+      "Radiopharmaceutical therapy (theranostics) expanding oncology treatment options"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/radiation-therapists.htm", "fact": "BLS: median $101,990, 2% growth 2024-2034, 900 annual openings, 17,600 employed"},
+      {"url": "https://www.bls.gov/oes/2023/may/oes291124.htm", "fact": "BLS OES employment and wage data for radiation therapists"}
+    ]
+  },
+  "quality_score": 0.55,
+  "sources_count": 12,
+  "verified_sources": 7,
+  "confidence": "verified",
+  "raw_responses": []
+}

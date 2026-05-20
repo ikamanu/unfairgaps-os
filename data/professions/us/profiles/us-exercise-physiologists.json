@@ -1,0 +1,310 @@
+{
+  "profession_id": "us-exercise-physiologists",
+  "profession_name": "Exercise Physiologists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Exercise physiologists develop personalized fitness and exercise programs to help patients recover from chronic diseases and improve physical function. About 50% work in hospitals; others in outpatient clinics, fitness centers, and research labs.",
+    "typical_tasks": [
+      "Conduct fitness assessments (body fat, blood pressure, oxygen usage, flexibility)",
+      "Perform stress tests using EKG machines",
+      "Measure oxygen consumption and lung function with spirometers",
+      "Develop individualized exercise prescriptions for patients",
+      "Lead group exercise classes for low-, medium-, or high-risk clients",
+      "Interview patients to obtain medical history and assess goals",
+      "Conduct preparticipation health screenings",
+      "Teach behavior modification (stress management, weight control)",
+      "Monitor patients during cardiac rehabilitation sessions",
+      "Document patient progress and adjust exercise programs"
+    ],
+    "key_documents": [
+      "Exercise prescription/program plan",
+      "Fitness assessment report",
+      "Stress test results (EKG/ECG)",
+      "VO2max test report",
+      "Patient medical history intake form",
+      "Cardiac rehabilitation progress notes",
+      "Preparticipation health screening questionnaire (PAR-Q+)",
+      "Insurance authorization and billing documentation"
+    ],
+    "deadlines": {
+      "patient_reassessment": "Every 4-12 weeks depending on program",
+      "cardiac_rehab_sessions": "Typically 36 sessions over 12 weeks",
+      "certification_renewal": "Every 3 years for ACSM certifications",
+      "cpr_renewal": "Every 2 years for BLS/CPR"
+    },
+    "seasonality": "New Year resolution surge (January-March). Cardiac rehab referrals steady year-round. Summer may see increased sports performance testing. Medicare billing cycles affect hospital-based positions."
+  },
+  "regulatory": {
+    "summary": "Exercise physiologists require ACSM or equivalent certification. Licensure varies by state (Louisiana requires state licensure). Scope of practice defined by ACSM and ASEP standards. ACSM exams align with GETP 12th edition starting July 2025.",
+    "key_laws": [
+      {
+        "name": "State Licensure Requirements",
+        "description": "Varies by state; Louisiana requires state licensure for exercise physiologists",
+        "status": "State-dependent"
+      },
+      {
+        "name": "ACSM Scope of Practice",
+        "description": "Defines clinical and non-clinical exercise physiology practice boundaries",
+        "agency": "ACSM"
+      },
+      {
+        "name": "ASEP Standards of Practice",
+        "description": "American Society of Exercise Physiologists professional practice standards",
+        "agency": "ASEP"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Bachelor's degree minimum in Exercise Science, Exercise Physiology, or Kinesiology (ACSM-EP)",
+        "Master's degree + 600 clinical hours OR Bachelor's + 1,200 clinical hours (ACSM-CEP)",
+        "Current BLS/CPR certification",
+        "Pass ACSM-EP or ACSM-CEP certification exam",
+        "State licensure where required"
+      ],
+      "certification_update_2025": "Effective July 10, 2025, ACSM certification exams align with Guidelines for Exercise Testing and Prescription 12th edition (GETP 12)",
+      "certifications": [
+        "ACSM Certified Exercise Physiologist (ACSM-EP)",
+        "ACSM Certified Clinical Exercise Physiologist (ACSM-CEP)",
+        "NSCA Certified Strength and Conditioning Specialist (CSCS)"
+      ]
+    },
+    "penalties": "Practicing without required licensure (in states that require it) can result in fines and injunctions. Malpractice liability for clinical exercise physiologists working with high-risk patients."
+  },
+  "tools": {
+    "summary": "Exercise physiologists use metabolic testing systems, EKG machines, heart rate monitors, and specialized software for fitness assessment, exercise prescription, and patient monitoring.",
+    "primary_tools": [
+      {
+        "name": "Metabolic Cart (Vyntus CPX, COSMED K5)",
+        "description": "Cardiopulmonary exercise testing (CPET) systems for VO2max measurement and metabolic analysis"
+      },
+      {
+        "name": "EKG/ECG Machine",
+        "description": "Electrocardiograph for stress testing and cardiac monitoring during exercise"
+      },
+      {
+        "name": "LabChart with Metabolic Module (ADInstruments)",
+        "description": "Software for recording and analyzing respiratory gases, VO2, VCO2, RER, and ventilation"
+      },
+      {
+        "name": "BIOPAC AcqKnowledge",
+        "description": "Heart Rate Variability (HRV) analysis and respiratory gas analysis software"
+      },
+      {
+        "name": "Spirometer",
+        "description": "Measures lung function and oxygen consumption"
+      },
+      {
+        "name": "Heart Rate Monitors (Polar, Garmin)",
+        "description": "Chest strap and wearable HR monitoring during exercise and testing"
+      }
+    ],
+    "secondary_tools": [
+      "Body composition analyzers (DEXA, BIA, skinfold calipers)",
+      "Blood pressure monitors (manual and automatic)",
+      "Pulse oximeters",
+      "Treadmills and cycle ergometers for exercise testing",
+      "EMR/EHR systems (Epic, Cerner) for patient documentation",
+      "Microsoft Excel / SPSS for data analysis"
+    ],
+    "pain_points": [
+      "Integrating metabolic testing data with hospital EMR systems",
+      "High cost of metabolic cart equipment and maintenance",
+      "Limited insurance reimbursement for certain exercise testing services",
+      "Manual data transfer between testing devices and reporting software"
+    ]
+  },
+  "terminology": {
+    "summary": "Exercise physiology uses extensive clinical and exercise science terminology centered around cardiorespiratory fitness testing, metabolic measurements, and clinical exercise prescription.",
+    "terms": {
+      "VO2max": "Maximal oxygen consumption — gold standard measure of cardiorespiratory fitness",
+      "VO2peak": "Highest oxygen consumption observed during exercise test (when true plateau not reached)",
+      "MET": "Metabolic Equivalent of Task — 1 MET = 3.5 mL·kg⁻¹·min⁻¹ resting oxygen consumption",
+      "RER": "Respiratory Exchange Ratio — VCO2/VO2, indicates fuel substrate utilization",
+      "RPE": "Rating of Perceived Exertion — Borg scale for subjective exercise intensity",
+      "GXT": "Graded Exercise Test — progressive intensity protocol for VO2max determination",
+      "CPET/CPX": "Cardiopulmonary Exercise Test — comprehensive metabolic and cardiac assessment",
+      "HRmax": "Maximum Heart Rate — predicted (220-age) or measured during GXT",
+      "HRR": "Heart Rate Reserve — difference between HRmax and resting HR (Karvonen method)",
+      "AT/VT": "Anaerobic/Ventilatory Threshold — point where lactate begins accumulating",
+      "BLa": "Blood Lactate concentration",
+      "VE": "Minute Ventilation — volume of air breathed per minute",
+      "FITT": "Frequency, Intensity, Time, Type — exercise prescription framework",
+      "PAR-Q+": "Physical Activity Readiness Questionnaire — pre-exercise screening tool",
+      "ACSM-EP": "ACSM Certified Exercise Physiologist",
+      "ACSM-CEP": "ACSM Certified Clinical Exercise Physiologist",
+      "CR": "Cardiac Rehabilitation",
+      "EF": "Ejection Fraction — percentage of blood pumped from heart per beat",
+      "1RM": "One Repetition Maximum — maximal weight for single lift",
+      "GETP": "Guidelines for Exercise Testing and Prescription (ACSM reference)"
+    }
+  },
+  "career_psychology": {
+    "summary": "Exercise physiologists earn median $58K with 9% projected growth. Job satisfaction is moderate — meaningful work but salary dissatisfaction is common. Government sector pays significantly more (~$88K) than hospital settings (~$56K).",
+    "career_path": [
+      "Bachelor's degree in Exercise Science / Kinesiology",
+      "ACSM-EP certification + entry-level position",
+      "Master's degree in Clinical Exercise Physiology (optional but recommended)",
+      "ACSM-CEP certification for clinical roles",
+      "Senior Exercise Physiologist / Cardiac Rehab Specialist (5+ years)",
+      "Program Director / Department Manager",
+      "Research faculty or PhD track (academic path)"
+    ],
+    "salary_range": {
+      "entry_level": "$42,000 - $50,000/year",
+      "mid_level": "$55,000 - $65,000/year",
+      "senior": "$70,000 - $88,000/year",
+      "government": "$88,000/year average",
+      "hospital": "$56,000/year average",
+      "median_bls": "$58,160/year (BLS May 2024)"
+    },
+    "fears": [
+      "Patient adverse event during exercise testing or rehabilitation",
+      "Low salary relative to education investment",
+      "Limited career advancement opportunities",
+      "Scope of practice encroachment by personal trainers and PTs",
+      "Insurance reimbursement cuts for exercise-based services"
+    ],
+    "motivation": [
+      "Changing lives through exercise and rehabilitation",
+      "Seeing patients achieve fitness and health goals",
+      "Working in diverse settings (hospitals, clinics, sports, research)",
+      "Growing preventive medicine and wellness focus in healthcare",
+      "Meaningful work rated 3.3/5 on satisfaction scales"
+    ],
+    "burnout_factors": [
+      "Salary dissatisfaction (rated 2.7/5)",
+      "High volume of patient interactions daily",
+      "Administrative and insurance billing burden",
+      "Emotional weight of working with chronically ill patients",
+      "Limited professional recognition compared to PTs and RNs"
+    ]
+  },
+  "community": {
+    "summary": "Primary professional community organized around ACSM and CEPA, with annual conferences, certification programs, and online forums for knowledge exchange.",
+    "associations": [
+      {
+        "name": "American College of Sports Medicine (ACSM)",
+        "url": "https://acsm.org/",
+        "description": "Largest sports medicine and exercise science organization globally, 50,000+ members"
+      },
+      {
+        "name": "Clinical Exercise Physiology Association (CEPA)",
+        "url": "https://www.acsm-cepa.org/",
+        "description": "Advocacy, education, and career development for clinical exercise physiologists"
+      },
+      {
+        "name": "American Society of Exercise Physiologists (ASEP)",
+        "url": "https://www.asep.org/",
+        "description": "Professional standards, accreditation, and practice guidelines"
+      },
+      {
+        "name": "National Strength and Conditioning Association (NSCA)",
+        "description": "Strength and conditioning professionals, CSCS certification"
+      }
+    ],
+    "online_communities": [
+      "ACSM Facebook community for EP certification candidates",
+      "r/exercisescience — Reddit community",
+      "CEPA online forums and newsletters",
+      "LinkedIn Exercise Physiology professional groups"
+    ],
+    "conferences": [
+      "ACSM Annual Meeting — largest sports medicine conference",
+      "CEPA Annual Conference — clinical exercise physiology focus",
+      "NSCA National Conference",
+      "World Clinical Exercise Physiology Day (annual awareness event)"
+    ]
+  },
+  "market": {
+    "summary": "Small but growing occupation with 9% projected growth 2024-2034 (much faster than average). ~1,700 annual openings. Demand driven by preventive care emphasis and aging population, but competition is high due to small field size.",
+    "employment_total": 38633,
+    "annual_openings": 1700,
+    "growth_rate": "9% projected 2024-2034 (much faster than average)",
+    "salary_market": {
+      "median": "$58,160/year (BLS May 2024)",
+      "average": "$58,974/year (ZipRecruiter 2026)",
+      "glassdoor_avg": "$71,423/year",
+      "5_year_growth": "6% salary increase over last 5 years"
+    },
+    "top_employers": [
+      "General Medical and Surgical Hospitals (50.4% of jobs)",
+      "Outpatient cardiac rehabilitation centers",
+      "Fitness and recreational sports centers",
+      "Government agencies (VA hospitals, military)",
+      "University research laboratories",
+      "Corporate wellness programs"
+    ],
+    "market_trends": [
+      "Healthcare shift toward preventive care and wellness driving demand",
+      "Aging population increasing cardiac rehabilitation needs",
+      "Telehealth and remote exercise monitoring growing",
+      "Integration of wearable technology in exercise prescription",
+      "Competition remains high due to small occupation size"
+    ]
+  },
+  "quality_score": 0.75,
+  "sources_count": 28,
+  "verified_sources": 8,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Exercise Physiologists USA 2025 2026 daily work tasks responsibilities clinical settings",
+      "sources": [
+        {"title": "BLS — Exercise Physiologists", "url": "https://www.bls.gov/ooh/healthcare/exercise-physiologists.htm"},
+        {"title": "O*NET — Exercise Physiologists 29-1128.00", "url": "https://www.onetonline.org/link/summary/29-1128.00"},
+        {"title": "Franklin.edu — What Do Clinical Exercise Physiologists Do", "url": "https://www.franklin.edu/career-guide/exercise-physiologists/what-do-clinical-exercise-physiologists-do"},
+        {"title": "Indeed — Exercise Physiologist Job Description 2026", "url": "https://www.indeed.com/hire/job-description/exercise-physiologist"}
+      ]
+    },
+    {
+      "query": "Exercise Physiologists USA certification ACSM licensure regulations scope of practice",
+      "sources": [
+        {"title": "ACSM — Exercise Physiologist Certification", "url": "https://acsm.org/certification/get-certified/exercise-physiologist/"},
+        {"title": "ACSM — Clinical Exercise Physiologist", "url": "https://acsm.org/certification/get-certified/clinical-exercise-physiologist/"},
+        {"title": "ACSM — Updated EP and CEP Requirements", "url": "https://acsm.org/updated-acsm-ep-and-acsm-cep-certifications-requirements-and-accreditation/"},
+        {"title": "ASEP — Standards of Practice", "url": "https://www.asep.org/about-asep/practice"}
+      ]
+    },
+    {
+      "query": "Exercise Physiologists USA software tools equipment metabolic testing",
+      "sources": [
+        {"title": "ADInstruments — Exercise Physiology Metabolic Software", "url": "https://www.adinstruments.com/products/metabolic"},
+        {"title": "COSMED K5 Wearable Metabolic System", "url": "https://www.cosmed.com/en/products/cardio-pulmonary-exercise-test/k5"},
+        {"title": "Vyntus CPX Metabolic Cart", "url": "https://www.jaegerrdx.com/us/en-us/products/vyntus-cpx-metabolic-cart"},
+        {"title": "BIOPAC — Exercise Physiology Research", "url": "https://www.biopac.com/application/exercise-physiology/"}
+      ]
+    },
+    {
+      "query": "Exercise Physiologists USA terminology jargon acronyms VO2max MET",
+      "sources": [
+        {"title": "PMC — Graded Exercise Testing Protocols for VO2max", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5221270/"},
+        {"title": "Physiopedia — VO2 Max", "url": "https://www.physio-pedia.com/VO2_Max"},
+        {"title": "ODPHP — Glossary of Terms", "url": "https://odphp.health.gov/sites/default/files/2019-09/19_H_Appendix_1_Glossary_of_Terms.pdf"}
+      ]
+    },
+    {
+      "query": "Exercise Physiologists USA career path salary burnout job satisfaction",
+      "sources": [
+        {"title": "BLS — Exercise Physiologists", "url": "https://www.bls.gov/ooh/healthcare/exercise-physiologists.htm"},
+        {"title": "CareerExplorer — Exercise Physiologist Satisfaction", "url": "https://www.careerexplorer.com/careers/exercise-physiologist/satisfaction/"},
+        {"title": "PayScale — Exercise Physiologist Hourly Pay", "url": "https://www.payscale.com/research/US/Job=Exercise_Physiologist/Hourly_Rate"}
+      ]
+    },
+    {
+      "query": "Exercise Physiologists USA professional associations ACSM conferences communities",
+      "sources": [
+        {"title": "ACSM Home", "url": "https://acsm.org/"},
+        {"title": "CEPA — Clinical Exercise Physiology Association", "url": "https://www.acsm-cepa.org/"},
+        {"title": "CEPA Annual Conference 2026", "url": "https://www.acsm-cepa.org/content.aspx?page_id=22&club_id=324409&module_id=744870"}
+      ]
+    },
+    {
+      "query": "Exercise Physiologists USA 2025 2026 job market outlook demand salary trends BLS",
+      "sources": [
+        {"title": "BLS — Exercise Physiologists Outlook", "url": "https://www.bls.gov/ooh/healthcare/exercise-physiologists.htm"},
+        {"title": "Zippia — Exercise Physiologist Job Outlook", "url": "https://www.zippia.com/exercise-physiologist-jobs/trends/"},
+        {"title": "ZipRecruiter — Exercise Physiologist Salary 2026", "url": "https://www.ziprecruiter.com/Salaries/Exercise-Physiologist-Salary"}
+      ]
+    }
+  ]
+}

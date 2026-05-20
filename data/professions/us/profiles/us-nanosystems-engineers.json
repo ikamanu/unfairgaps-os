@@ -1,0 +1,374 @@
+{
+  "profession_id": "us-nanosystems-engineers",
+  "profession_name": "Nanosystems Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Nanosystems engineers design, develop, and supervise production of materials, devices, or systems at the molecular or macromolecular scale, applying principles of nanoscale physics and electrical, chemical, or biological engineering. They split time between computational modeling (offices), nanofabrication labs (cleanrooms), and characterization facilities. Work weeks commonly exceed 40 hours, especially during research milestones or publication deadlines.",
+    "typical_tasks": [
+      "Design nanoscale systems with components such as nanocatalysts, nanofiltration devices, or nanostructured sensors",
+      "Synthesize, process, and characterize nanomaterials using advanced tools (SEM, TEM, AFM, XPS)",
+      "Run molecular dynamics simulations (LAMMPS, GROMACS) and multiphysics models (COMSOL) to predict nanoscale behavior",
+      "Design and conduct tests of new nanotechnology products, processes, or systems",
+      "Supervise technologists and technicians engaged in nanotechnology research or production",
+      "Provide scientific or technical guidance to scientists, engineers, and technicians on chemical, analytical, or biological processes at the nanoscale",
+      "Design nano-enabled products with reduced toxicity, increased durability, or improved energy efficiency",
+      "Prepare reports, deliver presentations, and participate in program review activities",
+      "Write proposals to secure external funding or establish partnerships with other organizations",
+      "Develop process documentation for nanofabrication and characterization protocols"
+    ],
+    "key_documents": [
+      "Nanomaterial synthesis and characterization reports",
+      "Molecular dynamics simulation output files and analysis",
+      "Process flow documents for nanofabrication",
+      "Pre-manufacture notices (PMN) for EPA/TSCA compliance",
+      "Safety Data Sheets (SDS) for nanomaterials",
+      "Patent applications and IP disclosures",
+      "Grant proposals (NSF, DOE, DARPA, NIH)",
+      "Technical publications and conference papers",
+      "Export control documentation (ITAR/EAR compliance)",
+      "Design review presentations and project milestone reports"
+    ],
+    "deadlines": {
+      "grant_proposals": "Agency-specific cycles — NSF (quarterly), NIH (three cycles/year), DOE (varies)",
+      "pre_manufacture_notices": "90-day EPA review period before manufacturing or importing new nanomaterials",
+      "publication_deadlines": "Conference submission deadlines typically 4-6 months before event",
+      "project_milestones": "Quarterly reviews typical for federally funded research",
+      "patent_filings": "Time-sensitive — prior art risk increases with delay; provisional filings within 12 months"
+    },
+    "seasonality": "No strong seasonal pattern. Conference deadlines (IEEE-NANO summer, ACS spring/fall, MRS fall/spring) create preparation peaks. Federal funding cycles (October fiscal year start) affect proposal workload. NNI budget planning aligns with federal calendar."
+  },
+  "regulatory": {
+    "summary": "Nanosystems engineers navigate a complex regulatory landscape where nanomaterials often fall between existing frameworks. The EPA regulates nanoscale materials under TSCA with pre-manufacture notice requirements. The FDA oversees nanotechnology-enabled health products but has no official nanoparticle definition. OSHA standards apply to lab safety. Export controls (ITAR/EAR) affect defense-related nanotechnology work.",
+    "key_regulations": [
+      {
+        "name": "TSCA — Toxic Substances Control Act (15 U.S.C. 2601 et seq.)",
+        "description": "Manufacturers of new nanomaterials must submit pre-manufacture notices (PMN) to EPA before manufacturing or importing. EPA has issued Significant New Use Rules (SNURs) specifically for nanoscale materials. Nanomaterials already approved in bulk form may not require additional testing — a regulatory gap.",
+        "agency": "Environmental Protection Agency (EPA)"
+      },
+      {
+        "name": "FDA Nanotechnology Guidance",
+        "description": "FDA regulates nanotechnology-enabled health products through CDER and CBER. Products categorized as medicinal products or medical devices based on principal mechanism of action. No official FDA definition for nanoparticles exists, but comprehensive evaluation methods are applied.",
+        "agency": "Food and Drug Administration (FDA)"
+      },
+      {
+        "name": "ITAR — International Traffic in Arms Regulations (22 CFR 120-130)",
+        "description": "Controls export of defense articles including certain nanotechnology-enabled sensors, coatings, and materials on the USML.",
+        "agency": "State Department / DDTC"
+      },
+      {
+        "name": "EAR — Export Administration Regulations (15 CFR 730-774)",
+        "description": "Controls dual-use nanotechnologies including advanced materials, manufacturing equipment, and nanoscale characterization tools",
+        "agency": "Bureau of Industry and Security (BIS)"
+      },
+      {
+        "name": "OSHA Laboratory and Chemical Safety Standards",
+        "description": "Applies to handling of nanomaterials in labs and cleanrooms — inhalation hazards from nanoparticles, chemical exposure from synthesis processes",
+        "agency": "OSHA"
+      },
+      {
+        "name": "NIOSH Nanotechnology Safety Guidelines",
+        "description": "NIOSH provides recommended exposure limits and best practices for working with engineered nanomaterials including CNTs, metal oxide nanoparticles, and quantum dots",
+        "agency": "National Institute for Occupational Safety and Health (NIOSH)"
+      }
+    ],
+    "licensing_certification": {
+      "pe_license": "Professional Engineer (PE) license optional but valued in some industry roles",
+      "security_clearance": "Often required for defense-related nanotechnology work (DOD, national labs)",
+      "education": "Master's or PhD typically required (Job Zone 5 per O*NET). PhD strongly preferred for R&D positions.",
+      "nni_compliance": "Familiarity with National Nanotechnology Initiative (NNI) guidelines and EHS research strategy expected"
+    },
+    "penalties": "TSCA violations: civil penalties up to $51,489 per day per violation (2025 adjusted). ITAR violations: civil fines up to $500,000 per violation, criminal penalties up to $1,000,000 and 20 years imprisonment. EAR penalties: up to $374,474 per violation or 2x transaction value."
+  },
+  "tools": {
+    "summary": "Nanosystems engineers use a diverse tool stack spanning molecular simulation software, multiphysics modeling platforms, nanofabrication equipment, and advanced characterization instruments. The field requires bridging computational and experimental workflows at scales from individual atoms to device-level systems.",
+    "primary_software": [
+      {
+        "name": "LAMMPS (Large-scale Atomic/Molecular Massively Parallel Simulator)",
+        "purpose": "Classical molecular dynamics simulation for nanomaterials — metals, semiconductors, polymers, biomolecules. Open-source, actively developed (latest stable July 2025, feature release Dec 2025). Now includes LAMMPS-GUI.",
+        "vendor": "Sandia National Laboratories (open source)"
+      },
+      {
+        "name": "COMSOL Multiphysics",
+        "purpose": "Finite element analysis for coupled multiphysics simulation — electrical, mechanical, fluid, thermal, and chemical phenomena at nano/micro scale",
+        "vendor": "COMSOL Inc."
+      },
+      {
+        "name": "GROMACS",
+        "purpose": "Molecular dynamics for biochemical molecules — protein folding, lipid membranes, nanomedicine applications",
+        "vendor": "Open source (University of Groningen origin)"
+      },
+      {
+        "name": "VASP (Vienna Ab initio Simulation Package)",
+        "purpose": "Ab initio quantum mechanical molecular dynamics using density functional theory (DFT)",
+        "vendor": "University of Vienna (academic license)"
+      },
+      {
+        "name": "Gaussian / ORCA",
+        "purpose": "Quantum chemistry calculations for electronic structure of nanomaterials",
+        "vendor": "Gaussian Inc. / Open source (ORCA)"
+      },
+      {
+        "name": "MATLAB / Python (NumPy, SciPy, ASE)",
+        "purpose": "Data analysis, simulation scripting, automation of computational workflows, Atomic Simulation Environment",
+        "vendor": "MathWorks / Open source"
+      }
+    ],
+    "other_tools": [
+      "SEM (Scanning Electron Microscopy) — nanoscale imaging and morphology analysis",
+      "TEM (Transmission Electron Microscopy) — atomic-resolution structural characterization",
+      "AFM (Atomic Force Microscopy) — surface topography and nanomechanical property measurement",
+      "XPS (X-ray Photoelectron Spectroscopy) — surface chemical composition analysis",
+      "DLS (Dynamic Light Scattering) — nanoparticle size distribution measurement",
+      "ICP-MS (Inductively Coupled Plasma Mass Spectrometry) — elemental analysis at trace levels",
+      "Field-Flow Fractionation (FFF/AF4/CF3) systems — separating and analyzing nano-objects per ISO 21362:2026",
+      "Cleanroom fabrication equipment — e-beam lithography, sputtering, CVD/PVD deposition systems",
+      "UV-Vis Spectroscopy — optical characterization of nanomaterials",
+      "MALS (Multi-Angle Light Scattering) — molecular weight and size characterization",
+      "Additive manufacturing / 3D printing platforms — prototyping nanosystem components"
+    ],
+    "pain_points": "Extremely expensive characterization equipment ($500K-$5M per instrument) limits access. Simulation-to-experiment gap is significant at nanoscale — quantum effects not captured by classical models. Long synthesis/fabrication cycles with high failure rates. Software license costs for commercial simulation tools (COMSOL, VASP). Need for HPC cluster access for large-scale molecular dynamics. Reproducibility challenges in nanomaterial synthesis. Limited standardization of characterization protocols across labs."
+  },
+  "terminology": {
+    "summary": "Nanosystems engineering combines vocabulary from physics, chemistry, materials science, and biological engineering at the nanoscale (1-100 nm). The field uses extensive abbreviations from nanofabrication, molecular simulation, characterization techniques, and quantum mechanics.",
+    "key_abbreviations": {
+      "NNI": "National Nanotechnology Initiative — US federal R&D program coordinating nanotechnology across agencies",
+      "NEMS": "Nano-Electro-Mechanical Systems — nanoscale devices integrating electrical and mechanical components",
+      "NBIC": "Nanotechnology, Biotechnology, Information Technology, Cognitive Science — converging technology framework",
+      "CNT": "Carbon Nanotube — cylindrical carbon nanostructure with extraordinary properties",
+      "SWNT": "Single-Walled Carbon Nanotube",
+      "MWNT": "Multi-Walled Carbon Nanotube",
+      "DWNT": "Double-Walled Carbon Nanotube",
+      "QD": "Quantum Dot — semiconductor nanocrystal with size-dependent optical properties",
+      "DFT": "Density Functional Theory — quantum mechanical method for electronic structure calculations",
+      "MD": "Molecular Dynamics — computational method simulating physical movements of atoms",
+      "AFM": "Atomic Force Microscopy — scanning probe technique for nanoscale surface characterization",
+      "SEM": "Scanning Electron Microscopy — imaging with focused electron beam",
+      "TEM": "Transmission Electron Microscopy — atomic-resolution structural imaging",
+      "XPS": "X-ray Photoelectron Spectroscopy — surface chemical composition analysis",
+      "CVD": "Chemical Vapor Deposition — thin film growth technique",
+      "PVD": "Physical Vapor Deposition — sputtering, evaporation-based thin film deposition",
+      "ALD": "Atomic Layer Deposition — angstrom-precision thin film technique",
+      "EBL": "Electron Beam Lithography — nanoscale patterning",
+      "SAM": "Self-Assembled Monolayer — spontaneously formed molecular film on surfaces",
+      "PMN": "Pre-Manufacture Notice — EPA filing required before producing new nanomaterials"
+    },
+    "common_jargon": [
+      "Bottom-up assembly — building nanostructures atom by atom or molecule by molecule",
+      "Top-down fabrication — carving nanoscale features from bulk material (lithography, etching)",
+      "Self-assembly — spontaneous organization of molecules into ordered structures",
+      "Functionalization — chemically modifying nanoparticle surfaces to add specific properties",
+      "Quantum confinement — size-dependent electronic properties when dimensions approach de Broglie wavelength",
+      "Surface-to-volume ratio — critical parameter at nanoscale driving unique reactivity and properties",
+      "Nanofabrication — general term for creating nanoscale structures",
+      "Nanofluidics — fluid flow through nanoscale channels",
+      "Nanotribology — study of friction, lubrication, and wear at the nanoscale",
+      "Nanoremediation — using nanomaterials for environmental pollutant removal",
+      "Force field — mathematical function describing interatomic interactions in MD simulations",
+      "Potential energy surface — energy landscape governing molecular configurations",
+      "Dispersity / polydispersity — variation in nanoparticle size within a sample",
+      "Agglomeration — clustering of nanoparticles reducing effective surface area",
+      "Passivation — surface treatment to prevent unwanted chemical reactions"
+    ]
+  },
+  "career_psychology": {
+    "summary": "Nanosystems engineers are highly specialized professionals, typically with advanced degrees (MS required, PhD strongly preferred). The field demands deep expertise across multiple disciplines — physics, chemistry, materials science, and engineering. Career paths range from R&D in national labs and academia to industry roles in semiconductor, pharmaceutical, and energy companies. The intersection of cutting-edge science and practical engineering drives intellectual motivation but also creates unique pressures.",
+    "career_levels": [
+      {
+        "level": "Junior / Entry-Level Engineer (MS degree, 0-3 years)",
+        "description": "Nanomaterial characterization, assisting with synthesis and simulation, learning instrumentation and lab protocols, running experiments under supervision",
+        "salary_range": "$55,000 - $80,000"
+      },
+      {
+        "level": "Mid-Level Engineer (3-7 years or PhD entry)",
+        "description": "Independent research and design, leading small projects, developing new nanomaterials or processes, publishing and presenting at conferences",
+        "salary_range": "$80,000 - $112,000"
+      },
+      {
+        "level": "Senior Engineer (8+ years)",
+        "description": "Complex nanosystem design and architecture, mentoring junior staff, technical leadership, significant patent portfolio, principal investigator on grants",
+        "salary_range": "$120,000 - $155,000"
+      },
+      {
+        "level": "Principal / Staff Scientist",
+        "description": "Setting technical direction and research strategy, cross-team and cross-organization collaboration, recognized subject matter expert, editorial board roles",
+        "salary_range": "$150,000 - $195,000"
+      },
+      {
+        "level": "Director / VP of R&D",
+        "description": "Research portfolio management, strategic partnerships, budget ownership, translating nanotechnology research to commercial products",
+        "salary_range": "$180,000 - $250,000+"
+      }
+    ],
+    "key_fears": [
+      "EHS (Environment, Health, Safety) liability — unknown long-term toxicity of novel nanomaterials",
+      "Regulatory uncertainty — FDA/EPA may reclassify or restrict nanomaterials mid-development",
+      "Funding cuts — nanotechnology R&D heavily dependent on federal funding (NNI budget ~$2B/year)",
+      "Export control violations — ITAR/EAR penalties can be career-ending",
+      "Reproducibility failures — inability to replicate published nanomaterial synthesis results",
+      "Technology commoditization — breakthrough becoming commodity before commercialization"
+    ],
+    "burnout_factors": [
+      "Extremely long R&D timelines (years from concept to functional nanosystem)",
+      "High failure rates in nanomaterial synthesis and device fabrication",
+      "Pressure to publish, patent, and secure grants simultaneously",
+      "Cross-disciplinary demands — must stay current in physics, chemistry, biology, and engineering",
+      "Expensive equipment failures (TEM filaments, AFM tips, cleanroom contamination)",
+      "Physical demands of cleanroom and lab work (gowning, standing, chemical exposure risks)",
+      "Small specialized field with limited job mobility — relocation often required"
+    ],
+    "growth_motivation": [
+      "Contributing to revolutionary technologies (nanomedicine, quantum computing, clean energy)",
+      "Solving previously impossible problems at the atomic scale",
+      "NNI and CHIPS Act funding creating new opportunities and facilities in the US",
+      "Patent generation and potential for startup spin-offs",
+      "Academic prestige — Nature, Science, Nano Letters publications",
+      "Growing industry demand in semiconductor, pharma, and energy sectors",
+      "Interdisciplinary nature keeps work intellectually stimulating"
+    ]
+  },
+  "community": {
+    "summary": "The nanosystems engineering community spans academic research, national laboratories, and industry R&D. Professional organizations like IEEE Nanotechnology Council, ACS, and MRS serve as primary networking venues. The field is relatively small and globally connected, with key conferences and publications serving as essential career touchpoints.",
+    "professional_associations": [
+      {
+        "name": "IEEE Nanotechnology Council",
+        "website": "https://ieeenano.org/",
+        "description": "Sponsors premier international conferences (IEEE-NANO, IEEE-NEMS, IEEE-NANOMED, NMDC). Publishes IEEE Transactions on Nanotechnology."
+      },
+      {
+        "name": "American Chemical Society (ACS) — Nanoscience and Nanotechnology Division",
+        "website": "https://www.acs.org/",
+        "description": "Publishes ACS Nano and Nano Letters — top journals in the field. Hosts nanotechnology sessions at national meetings."
+      },
+      {
+        "name": "Materials Research Society (MRS)",
+        "website": "https://www.mrs.org/",
+        "description": "Fall and spring meetings feature extensive nanomaterials programming. Publishes MRS Bulletin and Journal of Materials Research."
+      },
+      {
+        "name": "National Nanotechnology Coordination Office (NNCO)",
+        "website": "https://www.nano.gov/",
+        "description": "Coordinates the NNI across 20+ federal agencies. Provides education resources, glossary, and acronym references."
+      },
+      {
+        "name": "AVS — Science and Technology of Materials, Interfaces, and Processing",
+        "website": "https://avs.org/",
+        "description": "Focuses on surface science, thin films, and nanoscale science. Hosts International Symposium annually."
+      },
+      {
+        "name": "International Institute for Nanotechnology (IIN) at Northwestern",
+        "website": "https://www.iinano.org/",
+        "description": "Leading research institute providing glossary resources, educational programs, and industry connections"
+      }
+    ],
+    "conferences": [
+      {
+        "name": "IEEE International Conference on Nanotechnology (IEEE-NANO)",
+        "description": "Flagship conference of IEEE Nanotechnology Council — nanomaterials, nanofabrication, nanoelectronics, nanobiomedicine, nanoenergy, nanosensors"
+      },
+      {
+        "name": "IEEE-NEMS (Nano/Micro Engineered and Molecular Systems)",
+        "description": "Premier annual conference co-sponsored by IEEE Nanotechnology Council advancing MEMS, nanotechnology, and molecular technology research"
+      },
+      {
+        "name": "IEEE-NANOMED (Nano/Molecular Medicine & Engineering)",
+        "description": "Brings together physicians, scientists, and engineers advancing clinical research through nano and molecular technologies"
+      },
+      {
+        "name": "IEEE NMDC (Nanomaterials and Devices Conference)",
+        "description": "Focused on advances in nanomaterials, nanoelectronics, nanophotonics, devices, and integration"
+      },
+      {
+        "name": "ACS National Meetings (Spring & Fall)",
+        "description": "Major chemistry conferences with extensive nanotechnology programming. Multiple US cities annually."
+      },
+      {
+        "name": "MRS Fall/Spring Meetings",
+        "description": "Broad materials research with significant nanomaterials symposia"
+      },
+      {
+        "name": "Nano 2026 (United Scientific Group)",
+        "description": "International nanotechnology and nanomaterials conference series with US-based events"
+      },
+      {
+        "name": "LAMMPS Workshop and Symposium",
+        "description": "Biennial meeting for molecular dynamics simulation community. 9th edition held August 12-14, 2025, Albuquerque, NM."
+      }
+    ],
+    "online_communities": [
+      "nano.gov — National Nanotechnology Initiative hub with glossary, acronyms, and education resources",
+      "Nanowerk.com — nanotechnology news and community",
+      "NanoHUB.org — NSF-funded platform for nanotechnology simulation tools and educational resources",
+      "LinkedIn groups for nanotechnology professionals",
+      "Reddit r/nanotechnology and r/materials science",
+      "ResearchGate nanotechnology topic communities"
+    ]
+  },
+  "market": {
+    "summary": "Nanosystems engineers occupy a specialized niche within engineering, with approximately 170,300 professionals in the US (broader category). The field is projected to grow steadily, driven by demand in semiconductors, nanomedicine, clean energy, and advanced materials. Geographic concentration in tech hubs (CA, MA, DC/MD/VA) with highest salaries in San Jose, District of Columbia, and Boston areas.",
+    "salary_by_level": {
+      "entry_level_0_3_years": "$55,000 - $80,000",
+      "mid_career_3_7_years": "$95,000 - $112,000",
+      "senior_8_plus_years": "$128,000 - $155,000",
+      "principal_staff": "$150,000 - $195,000",
+      "average_overall": "$97,547 - $116,267"
+    },
+    "job_growth": "3.3% projected growth 2022-2032, with approximately 8,500 new positions expected. Average of 9,500 annual job openings. Salary potential projected to increase 12% over 5 years. Fastest growth states: Nevada, Utah, North Dakota.",
+    "work_arrangements": "Primarily W-2 employees in corporate R&D, national laboratories (Argonne CNM, Sandia, ORNL, NIST), or university research groups. Remote work limited due to cleanroom, lab, and characterization equipment requirements. Some computational-focused roles allow hybrid arrangements. Contract and consulting roles emerging in regulatory compliance.",
+    "market_trends": [
+      "NNI federal investment ~$2B annually across 20+ agencies sustaining basic research pipeline",
+      "CHIPS and Science Act funding driving semiconductor and nanofabrication infrastructure in US",
+      "Nanomedicine applications expanding — drug delivery, diagnostics, gene therapy nanocarriers",
+      "AI/ML integration accelerating nanomaterial discovery and computational nanoscience workflows",
+      "ISO standardization efforts (e.g., ISO 21362:2026 for field-flow fractionation) professionalizing characterization",
+      "Growing demand in clean energy — nanocatalysts, nanostructured batteries, solar cell enhancements",
+      "Regulatory landscape evolving — potential for new EPA/FDA nano-specific rules creating compliance demand",
+      "Workforce shortage in specialized nanofabrication and characterization skills",
+      "Highest-paying industries: mining/oil ($128,070), semiconductor manufacturing, pharmaceutical R&D",
+      "Geographic premium: San Jose ($192,595), DC metro ($139,050-$147,010), Massachusetts ($121,760)"
+    ]
+  },
+  "quality_score": 0.68,
+  "sources_count": 38,
+  "verified_sources": 12,
+  "confidence": "verified",
+  "sources": [
+    {"name": "O*NET — Nanosystems Engineers 17-2199.09", "url": "https://www.onetonline.org/link/summary/17-2199.09"},
+    {"name": "CareerExplorer — Nanosystems Engineer", "url": "https://www.careerexplorer.com/careers/nanosystems-engineer/"},
+    {"name": "CareerExplorer — Nanosystems Engineer Job Market", "url": "https://www.careerexplorer.com/careers/nanosystems-engineer/job-market/"},
+    {"name": "CareerExplorer — Nanosystems Engineer Work Environment", "url": "https://www.careerexplorer.com/careers/nanosystems-engineer/work-environment/"},
+    {"name": "OwlGuru — What Do Nanosystems Engineers Do", "url": "https://www.owlguru.com/career/nanosystems-engineers/job-description/"},
+    {"name": "OwlGuru — A Day in the Life of Nanosystems Engineers", "url": "https://www.owlguru.com/day-in-life-of-nanosystems-engineers/"},
+    {"name": "BetterTeam — Nanosystems Engineer Job Description", "url": "https://www.betterteam.com/nanosystems-engineer-job-description"},
+    {"name": "CareerOneStop — Nanosystems Engineers Occupation Profile", "url": "https://www.careeronestop.org/Toolkit/Careers/Occupations/occupation-profile.aspx?keyword=Nanosystems+Engineers&onetcode=17-2199.09"},
+    {"name": "EPA — Control of Nanoscale Materials under TSCA", "url": "https://www.epa.gov/reviewing-new-chemicals-under-toxic-substances-control-act-tsca/control-nanoscale-materials-under"},
+    {"name": "Frontiers in Medicine — Regulatory Pathways for Nanotechnology-Enabled Health Products (2025)", "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1544393/full"},
+    {"name": "FDA — Approach to Regulation of Nanotechnology Products", "url": "https://www.fda.gov/science-research/nanotechnology-programs-fda/fdas-approach-regulation-nanotechnology-products"},
+    {"name": "NNI — Glossary of Nanotechnology Terms", "url": "https://www.nano.gov/about-nni/glossary"},
+    {"name": "NNI — Acronyms", "url": "https://www.nano.gov/about-nni/acronyms/"},
+    {"name": "NNI — FY25 Budget Supplement", "url": "https://www.nano.gov/sites/default/files/NNI-FY25-Budget-Supplement.pdf"},
+    {"name": "Wikipedia — Regulation of Nanotechnology", "url": "https://en.wikipedia.org/wiki/Regulation_of_nanotechnology"},
+    {"name": "Bergeson & Campbell — Federal Nanotechnology Developments Jan 2026", "url": "https://www.lawbc.com/recent-federal-developments-for-january-2026/"},
+    {"name": "IEEE Nanotechnology Council — Conferences", "url": "https://ieeenano.org/conferences/"},
+    {"name": "Conference Index — Nanotechnology Conferences in USA 2025/2026/2027", "url": "https://conferenceindex.org/conferences/nanotechnology/united-states"},
+    {"name": "LAMMPS — Molecular Dynamics Simulator", "url": "https://www.lammps.org/"},
+    {"name": "DOE — LAMMPS Open-Source Molecular Dynamics Code", "url": "https://www.energy.gov/eere/h2awsm/lammps-open-source-high-performance-and-high-fidelity-molecular-dynamics-code"},
+    {"name": "COMSOL — Multiphysics Simulation Software", "url": "https://www.comsol.com/"},
+    {"name": "ERI Economic Research Institute — Nanosystems Engineer Salary", "url": "https://www.erieri.com/salary/job/nanosystems-engineer/united-states"},
+    {"name": "ZipRecruiter — Nano Engineer Salary (March 2026)", "url": "https://www.ziprecruiter.com/Salaries/Nano-Engineer-Salary"},
+    {"name": "Comparably — Nanosystems Engineer Salary (May 2025)", "url": "https://www.comparably.com/salaries/salaries-for-nanosystems-engineer"},
+    {"name": "SalaryExpert — Nanosystems Engineer Salary US (2025)", "url": "https://www.salaryexpert.com/salary/job/nanosystems-engineer/united-states"},
+    {"name": "ZipRecruiter — Nanotechnology Engineer Salary (Feb 2026)", "url": "https://www.ziprecruiter.com/Salaries/Nanotechnology-Engineer-Salary"},
+    {"name": "Glassdoor — Nanotechnology Engineer Salary Trends 2026", "url": "https://www.glassdoor.com/Salaries/nanotechnology-engineer-salary-SRCH_KO0,23.htm"},
+    {"name": "Recruiter.com — Nanosystems Engineers Salary", "url": "https://www.recruiter.com/salaries/nanosystems-engineers-salary/"},
+    {"name": "JobzMall — Nanosystems Engineer Career Guide 2025", "url": "https://www.jobzmall.com/careers/nanosystems-engineer"},
+    {"name": "International Institute for Nanotechnology — Glossary", "url": "https://www.iinano.org/glossary/"},
+    {"name": "Nanotech-Now — Nanotechnology Glossary", "url": "https://www.nanotech-now.com/nanotechnology-glossary-N.htm"},
+    {"name": "ISO 21362:2026 — Nanotechnologies Field-Flow Fractionation", "url": "https://standards.iteh.ai/articles/blog/latest-news/nanotechnology-biotechnology-feb-2026"},
+    {"name": "Argonne CNM FY26 Strategic Plan", "url": "https://cnm.anl.gov/assets/pdfs/CNM_FY26_strategic_plan.pdf"},
+    {"name": "COMSOL + LAMMPS Integration Paper", "url": "https://www.comsol.com/paper/simulation-of-possible-scenarios-of-the-development-of-laser-induce-periodic-surface-structures-lipps-with-comsol-multiphysics-and-the-molecular-dynamic-code-lammps-82131"},
+    {"name": "Science Buddies — Nanosystems Engineer Career", "url": "https://careerdiscovery.sciencebuddies.org/science-engineering-careers/engineering/nanosystems-engineer"},
+    {"name": "EBSCO Research — Nanosystems Engineer", "url": "https://www.ebsco.com/research-starters/technology/nanosystems-engineer"},
+    {"name": "Course Advisor — Nanosystems Engineers", "url": "https://courseadvisor.com/careers/nanosystems-engineers-focus/"},
+    {"name": "Mizzou Online — Nanosystems Engineers Career Explorer", "url": "https://online.missouri.edu/career-explorer/career/nanosystems-engineer"}
+  ]
+}

@@ -1,0 +1,675 @@
+[
+  {
+    "id": "us-aerospace-engineers-p01",
+    "title": "Structural/Thermal Load Calculator",
+    "problem": "Aerospace engineers frequently perform hand calculations for structural and thermal loads during preliminary design phases - estimating stress, strain, factors of safety, and thermal margins before running full FEA. These back-of-envelope calculations are error-prone and time-consuming, yet critical for design review packages (PDR/CDR). A mistake can send weeks of FEA work in the wrong direction.",
+    "who": "Mid-career and senior aerospace engineers doing structural/thermal analysis",
+    "frequency": "weekly",
+    "time_waste_h": 5,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Aerospace Structural Load Calculator",
+      "one_liner": "Calculates structural loads, stress, factor of safety, and thermal margins for preliminary aerospace design",
+      "inputs": [
+        {
+          "name": "material",
+          "type": "select",
+          "label": "Material (Al 7075-T6, Ti-6Al-4V, Inconel 718, CFRP, etc.)"
+        },
+        {
+          "name": "applied_load_n",
+          "type": "number",
+          "label": "Applied load (N)"
+        },
+        {
+          "name": "cross_section_area_m2",
+          "type": "number",
+          "label": "Cross-section area (m²)"
+        },
+        {
+          "name": "temperature_c",
+          "type": "number",
+          "label": "Operating temperature (°C)"
+        },
+        {
+          "name": "design_factor_of_safety",
+          "type": "number",
+          "label": "Required factor of safety (default 1.5 for flight, 2.0 for ultimate)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "applied_stress_mpa",
+          "label": "Applied stress (MPa)"
+        },
+        {
+          "name": "allowable_stress_mpa",
+          "label": "Allowable stress at temperature (MPa)"
+        },
+        {
+          "name": "margin_of_safety",
+          "label": "Margin of Safety"
+        },
+        {
+          "name": "pass_fail",
+          "label": "Pass/Fail status"
+        }
+      ],
+      "formula_hint": "stress = load / area; MS = (allowable / (FoS * applied)) - 1; temperature derating from material curves",
+      "rates": {
+        "al_7075_t6_yield_mpa": 503,
+        "ti_6al4v_yield_mpa": 880,
+        "inconel_718_yield_mpa": 1034,
+        "flight_fos": 1.5,
+        "ultimate_fos": 2.0
+      }
+    },
+    "example_queries": [
+      "Calculate margin of safety for an Al 7075-T6 bracket with 15kN load on 0.002 m² cross-section at 150°C",
+      "What's the max load a Ti-6Al-4V fitting can take with 0.0005 m² area and FoS of 1.5?",
+      "Check if my Inconel 718 turbine blade passes at 650°C with 80kN applied to 0.001 m²"
+    ]
+  },
+  {
+    "id": "us-aerospace-engineers-p02",
+    "title": "Orbital Mechanics & Delta-V Calculator",
+    "problem": "Spacecraft engineers regularly compute delta-V budgets, transfer orbits, and launch window parameters during mission planning. These calculations require combining the Tsiolkovsky rocket equation, Hohmann transfer math, and gravity losses. Manual calculation is tedious and mistakes in delta-V budget propagate through the entire mission design.",
+    "who": "Spacecraft and launch vehicle engineers at commercial space companies and NASA",
+    "frequency": "weekly",
+    "time_waste_h": 4,
+    "money_risk_usd": 100000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Delta-V & Orbital Transfer Calculator",
+      "one_liner": "Computes delta-V budgets, Hohmann transfers, and propellant mass for orbital maneuvers",
+      "inputs": [
+        {
+          "name": "orbit_1_altitude_km",
+          "type": "number",
+          "label": "Initial orbit altitude (km)"
+        },
+        {
+          "name": "orbit_2_altitude_km",
+          "type": "number",
+          "label": "Target orbit altitude (km)"
+        },
+        {
+          "name": "spacecraft_dry_mass_kg",
+          "type": "number",
+          "label": "Spacecraft dry mass (kg)"
+        },
+        {
+          "name": "isp_s",
+          "type": "number",
+          "label": "Engine specific impulse (s)"
+        },
+        {
+          "name": "central_body",
+          "type": "select",
+          "label": "Central body (Earth, Moon, Mars)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "delta_v_total_ms",
+          "label": "Total delta-V (m/s)"
+        },
+        {
+          "name": "propellant_mass_kg",
+          "label": "Required propellant mass (kg)"
+        },
+        {
+          "name": "transfer_time_s",
+          "label": "Transfer time (seconds)"
+        },
+        {
+          "name": "glow_kg",
+          "label": "Gross Liftoff Weight (kg)"
+        }
+      ],
+      "formula_hint": "Hohmann dV1 = sqrt(mu/r1)*(sqrt(2*r2/(r1+r2))-1); dV2 = sqrt(mu/r2)*(1-sqrt(2*r1/(r1+r2))); Tsiolkovsky: dV = Isp*g0*ln(m0/mf)",
+      "rates": {
+        "earth_mu_km3s2": 398600.4418,
+        "earth_radius_km": 6371,
+        "g0_ms2": 9.80665,
+        "moon_mu_km3s2": 4902.8,
+        "mars_mu_km3s2": 42828.37
+      }
+    },
+    "example_queries": [
+      "Calculate delta-V for LEO (400km) to GEO transfer with Isp 320s and 2000kg dry mass",
+      "How much propellant do I need to go from 200km to 35786km orbit with a 500kg satellite?",
+      "What's the Hohmann transfer time from LEO to Moon orbit?"
+    ]
+  },
+  {
+    "id": "us-aerospace-engineers-p03",
+    "title": "ITAR Compliance Checklist",
+    "problem": "ITAR violations carry penalties up to $1.27M per violation and criminal charges up to 20 years. Aerospace engineers must ensure every technical data exchange, presentation, and collaboration follows ITAR. Yet the rules are complex and engineers are not lawyers - they frequently face situations where they're unsure if sharing data with a colleague or subcontractor triggers an export control violation.",
+    "who": "All aerospace engineers at defense contractors and dual-use companies",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 1271078,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "ITAR Compliance Quick-Check",
+      "one_liner": "Step-by-step checklist to verify ITAR compliance before sharing technical data or hardware",
+      "steps": [
+        "Step 1: Identify if the item/data is on the US Munitions List (USML Categories I-XXI)",
+        "Step 2: Determine if the recipient is a US Person (citizen, permanent resident, or protected person)",
+        "Step 3: If recipient is a foreign person - check if a valid export license or exemption exists",
+        "Step 4: Verify the foreign person's country is not on the ITAR Prohibited Countries list (22 CFR 126.1)",
+        "Step 5: Check if a Technical Assistance Agreement (TAA) or Manufacturing License Agreement (MLA) is in place",
+        "Step 6: Verify the specific data being shared is within the scope of the license/agreement",
+        "Step 7: Confirm proper markings are on all documents (ITAR controlled, distribution statements)",
+        "Step 8: Log the transfer in your export control records",
+        "Step 9: If any step fails - STOP and contact your Empowered Official (EO) or export compliance team"
+      ],
+      "warnings": [
+        "Warning: 'Deemed exports' - showing ITAR data to a foreign national on US soil IS an export",
+        "Warning: Conference presentations, academic papers, and emails can all be ITAR violations",
+        "Warning: Cloud storage accessible from abroad may constitute an export",
+        "Warning: Raytheon paid $950M in 2024 for ITAR violations - penalties are enforced"
+      ],
+      "regulatory_refs": [
+        "22 CFR 120-130 (ITAR)",
+        "USML Categories I-XXI",
+        "22 CFR 126.1"
+      ]
+    },
+    "example_queries": [
+      "Can I share this propulsion test data with our UK subcontractor?",
+      "Is it an ITAR violation to present my turbine blade design at an international conference?",
+      "Our team has a foreign national intern - what data can they access?"
+    ]
+  },
+  {
+    "id": "us-aerospace-engineers-p04",
+    "title": "PDR/CDR Review Package Preparation",
+    "problem": "Preparing for Preliminary Design Review (PDR) and Critical Design Review (CDR) gates is one of the most stressful tasks for aerospace engineers. These milestone reviews require assembling extensive documentation packages with specific content requirements that vary by program and customer. Missing a required artifact can delay the review gate and cost the program weeks.",
+    "who": "Systems engineers and lead engineers preparing for design reviews",
+    "frequency": "quarterly",
+    "time_waste_h": 40,
+    "money_risk_usd": 200000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "PDR/CDR Review Package Checklist",
+      "one_liner": "Complete checklist of required artifacts and entrance criteria for aerospace design review gates",
+      "steps": [
+        "Step 1: Confirm review entrance criteria are met (all predecessor milestones closed)",
+        "Step 2: Verify Requirements Traceability Matrix (RTM) is current - all requirements allocated and traced",
+        "Step 3: Assemble design description documents (architecture, interfaces, trade studies)",
+        "Step 4: Include all analysis results (structural, thermal, mass budget, power budget)",
+        "Step 5: Prepare risk register with mitigations for open technical risks",
+        "Step 6: Compile test planning documentation (test matrix, verification cross-reference)",
+        "Step 7: Ensure Interface Control Documents (ICDs) are signed by all parties",
+        "Step 8: Generate mass/power/data budget roll-ups with margin assessment",
+        "Step 9: Prepare manufacturing/producibility assessment (CDR only)",
+        "Step 10: Schedule and distribute review package to all reviewers 2 weeks prior",
+        "Step 11: Prepare Review Item Discrepancy (RID) tracking system",
+        "Step 12: Confirm all action items from previous reviews are closed or have disposition"
+      ],
+      "warnings": [
+        "Warning: NASA NPR 7123.1 and MIL-STD-1521 have specific content requirements - verify against your program's DID",
+        "Warning: CDR requires higher fidelity analysis than PDR - check that FEA/CFD models match final design intent",
+        "Warning: Unresolved RIDs from PDR will block CDR entrance"
+      ],
+      "regulatory_refs": [
+        "NASA NPR 7123.1",
+        "MIL-STD-1521",
+        "SAE AS6500"
+      ]
+    },
+    "example_queries": [
+      "What documents do I need for a CDR package on a satellite subsystem?",
+      "We have PDR in 3 weeks - give me the full checklist of what I need to prepare",
+      "What are the entrance criteria for CDR?"
+    ]
+  },
+  {
+    "id": "us-aerospace-engineers-p05",
+    "title": "CMMC Level 2 Compliance Readiness",
+    "problem": "As of the November 2025 CMMC final rule, defense contractors must achieve CMMC Level 2 certification through third-party assessment. Aerospace engineers working on DoD contracts must ensure their systems, processes, and data handling meet 110 NIST SP 800-171 practices. Non-compliance disqualifies the company from DoD contracts entirely, threatening revenue and jobs.",
+    "who": "Engineering leads and IT liaisons at defense contractors",
+    "frequency": "monthly",
+    "time_waste_h": 8,
+    "money_risk_usd": 500000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "CMMC Level 2 Engineering Compliance Checklist",
+      "one_liner": "Checklist for aerospace engineers to verify CMMC Level 2 compliance in their engineering workflows",
+      "steps": [
+        "Step 1: Identify all CUI (Controlled Unclassified Information) in your engineering workflows",
+        "Step 2: Verify CUI is stored only on authorized systems within the security boundary",
+        "Step 3: Confirm multi-factor authentication is enabled on all systems accessing CUI",
+        "Step 4: Check that CAD/PLM systems (Teamcenter, Windchill) meet access control requirements",
+        "Step 5: Verify encryption of CUI at rest and in transit (FIPS 140-2 validated)",
+        "Step 6: Ensure audit logs are enabled for all CUI access and modifications",
+        "Step 7: Confirm incident response plan exists and has been tested within 12 months",
+        "Step 8: Verify that external collaboration tools (email, file sharing) are within the boundary",
+        "Step 9: Check that removable media policies are enforced (USB drives, external HDDs)",
+        "Step 10: Validate that all personnel with CUI access have completed security awareness training"
+      ],
+      "warnings": [
+        "Warning: CMMC Level 2 requires third-party assessment (C3PAO) - self-assessment is no longer sufficient",
+        "Warning: Engineering tools like MATLAB, Python scripts processing CUI must be on authorized systems",
+        "Warning: Subcontractor flow-down - your subs must also be CMMC compliant"
+      ],
+      "regulatory_refs": [
+        "NIST SP 800-171 Rev 2",
+        "CMMC 2.0 Final Rule (32 CFR Part 170)",
+        "DFARS 252.204-7012"
+      ]
+    },
+    "example_queries": [
+      "What do I need to do to make sure my engineering team is CMMC Level 2 compliant?",
+      "Can I use a personal laptop to work on CUI data at home?",
+      "Our subcontractor doesn't have CMMC yet - can we still share design data?"
+    ]
+  },
+  {
+    "id": "us-aerospace-engineers-p06",
+    "title": "Mass/Power/Thermal Budget Calculator",
+    "problem": "Aerospace engineers maintain mass, power, and thermal budgets throughout the design lifecycle. These budgets must track current best estimates (CBE), contingency margins, and allocation limits across all subsystems. Manual spreadsheet management leads to version control issues and calculation errors, especially when rolling up from subsystem to system level.",
+    "who": "Systems engineers and subsystem leads on spacecraft and aircraft programs",
+    "frequency": "weekly",
+    "time_waste_h": 6,
+    "money_risk_usd": 150000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Aerospace Budget Roll-Up Calculator",
+      "one_liner": "Calculates mass, power, and thermal budgets with margins and contingencies per NASA/AIAA standards",
+      "inputs": [
+        {
+          "name": "subsystem_name",
+          "type": "text",
+          "label": "Subsystem name"
+        },
+        {
+          "name": "cbe_mass_kg",
+          "type": "number",
+          "label": "Current Best Estimate mass (kg)"
+        },
+        {
+          "name": "cbe_power_w",
+          "type": "number",
+          "label": "Current Best Estimate power (W)"
+        },
+        {
+          "name": "cbe_heat_dissipation_w",
+          "type": "number",
+          "label": "Current Best Estimate heat dissipation (W)"
+        },
+        {
+          "name": "maturity_level",
+          "type": "select",
+          "label": "Design maturity (concept/preliminary/detailed/flight)"
+        },
+        {
+          "name": "allocation_mass_kg",
+          "type": "number",
+          "label": "Allocated mass limit (kg)"
+        },
+        {
+          "name": "allocation_power_w",
+          "type": "number",
+          "label": "Allocated power limit (W)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "contingency_pct",
+          "label": "Recommended contingency (%)"
+        },
+        {
+          "name": "mev_mass_kg",
+          "label": "Maximum Expected Value mass (kg)"
+        },
+        {
+          "name": "mev_power_w",
+          "label": "Maximum Expected Value power (W)"
+        },
+        {
+          "name": "mass_margin_pct",
+          "label": "Mass margin (%)"
+        },
+        {
+          "name": "power_margin_pct",
+          "label": "Power margin (%)"
+        },
+        {
+          "name": "status",
+          "label": "Green/Yellow/Red status"
+        }
+      ],
+      "formula_hint": "MEV = CBE * (1 + contingency%); margin% = (allocation - MEV) / allocation * 100; contingency by maturity: concept=30%, prelim=20%, detailed=10%, flight=5%",
+      "rates": {
+        "concept_contingency": 0.3,
+        "preliminary_contingency": 0.2,
+        "detailed_contingency": 0.1,
+        "flight_contingency": 0.05,
+        "green_margin_threshold": 0.1,
+        "yellow_margin_threshold": 0.05
+      }
+    },
+    "example_queries": [
+      "My structure subsystem CBE is 45kg against an allocation of 60kg at preliminary design - what's my margin?",
+      "Calculate power budget rollup: ADCS 120W, propulsion 80W, comms 50W, payload 200W - all at concept maturity",
+      "What contingency should I use for a CDR-level thermal budget?"
+    ]
+  },
+  {
+    "id": "us-aerospace-engineers-p07",
+    "title": "Simulation Report Generator",
+    "problem": "After every CFD or FEA simulation run, engineers must write detailed reports documenting the setup, boundary conditions, mesh quality, results, and conclusions. These reports follow a standard format but take 2-4 hours to write each time. With dozens of simulation runs per design iteration, documentation becomes a massive time sink that takes engineers away from actual analysis work.",
+    "who": "Stress analysts, thermal engineers, and aerodynamicists running simulations",
+    "frequency": "weekly",
+    "time_waste_h": 4,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "CFD/FEA Simulation Report Generator",
+      "one_liner": "Generates structured simulation analysis reports from user-provided parameters and results",
+      "doc_name": "Simulation Analysis Report",
+      "variables": [
+        {
+          "name": "analysis_type",
+          "label": "Analysis type (CFD/FEA/Thermal/Modal)"
+        },
+        {
+          "name": "software_version",
+          "label": "Software and version (e.g., ANSYS 2025 R1)"
+        },
+        {
+          "name": "part_name",
+          "label": "Part/assembly name and drawing number"
+        },
+        {
+          "name": "load_cases",
+          "label": "Load cases analyzed"
+        },
+        {
+          "name": "boundary_conditions",
+          "label": "Boundary conditions description"
+        },
+        {
+          "name": "mesh_details",
+          "label": "Mesh type, element count, quality metrics"
+        },
+        {
+          "name": "material_properties",
+          "label": "Material properties used"
+        },
+        {
+          "name": "results_summary",
+          "label": "Key results (max stress, max displacement, etc.)"
+        },
+        {
+          "name": "conclusion",
+          "label": "Pass/fail and recommendations"
+        }
+      ],
+      "structure_hint": "Title page -> Revision history -> Scope & Objectives -> Model description -> Mesh quality summary -> Boundary conditions -> Load cases -> Results (with placeholders for figures) -> Margin of Safety summary table -> Conclusions -> Appendices"
+    },
+    "example_queries": [
+      "Generate a FEA report for a bracket analysis in ANSYS - max stress 280MPa, Al 7075-T6, 1.2M elements",
+      "Write a CFD simulation report template for a wing section analysis at Mach 0.85",
+      "I need a thermal analysis report for a satellite radiator panel - help me structure it"
+    ]
+  },
+  {
+    "id": "us-aerospace-engineers-p08",
+    "title": "ITAR/EAR Export Classification Reference",
+    "problem": "Aerospace engineers constantly need to determine whether a specific technology, component, or dataset falls under ITAR (USML) or EAR (CCL) export controls. The USML has 21 categories and the CCL has 10 categories with complex sub-entries. Misclassification leads to either over-restriction (slowing collaboration) or under-restriction (risking violations up to $1.27M per incident).",
+    "who": "All aerospace engineers dealing with international collaboration or foreign nationals",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 1271078,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "ITAR/EAR Export Classification Guide",
+      "one_liner": "Quick reference for USML categories, CCL ECCNs, and export control classification of aerospace technologies",
+      "data_domain": "ITAR USML categories, EAR CCL entries, and jurisdiction/classification guidance for aerospace items",
+      "lookup_keys": [
+        "technology_type",
+        "usml_category",
+        "eccn",
+        "item_description"
+      ],
+      "data_hints": {
+        "source_law": "22 CFR 121 (USML), 15 CFR 774 (CCL)",
+        "key_sections": [
+          "USML Cat IV (Launch Vehicles)",
+          "USML Cat VIII (Aircraft)",
+          "USML Cat XI (Military Electronics)",
+          "USML Cat XV (Spacecraft)",
+          "ECCN 9A004 (Gas turbine engines)",
+          "ECCN 9E003 (Propulsion technology)"
+        ]
+      }
+    },
+    "example_queries": [
+      "Is a satellite reaction wheel ITAR or EAR controlled?",
+      "What USML category covers hypersonic vehicle thermal protection systems?",
+      "Our sensor operates at 10 micron wavelength - is it ITAR Category XII?"
+    ]
+  },
+  {
+    "id": "us-aerospace-engineers-p09",
+    "title": "Aerospace Unit Conversion & Standards Calculator",
+    "problem": "Aerospace engineering uses a chaotic mix of unit systems - imperial for legacy FAA/aircraft programs, metric for space/international, and specialized units (slugs, knots, nautical miles, BTU). Engineers waste time converting between systems and risk catastrophic errors (Mars Climate Orbiter, $328M loss). Quick, reliable conversions with aerospace-specific units are essential.",
+    "who": "All aerospace engineers, especially those working across aircraft and space programs",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Aerospace Unit Converter",
+      "one_liner": "Converts between aerospace-specific unit systems including imperial, metric, and specialized aviation/space units",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "number",
+          "label": "Value to convert"
+        },
+        {
+          "name": "from_unit",
+          "type": "text",
+          "label": "Source unit"
+        },
+        {
+          "name": "to_unit",
+          "type": "text",
+          "label": "Target unit"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "converted_value",
+          "label": "Converted value"
+        },
+        {
+          "name": "formula_used",
+          "label": "Conversion formula applied"
+        }
+      ],
+      "formula_hint": "Covers: lbf/N, slug/kg, ft/m, knots/m-per-s, psi/Pa/atm, BTU/J, lbm/kg, nautical-mile/km, Mach-to-velocity (altitude-dependent), degrees-to-radians",
+      "rates": {
+        "lbf_to_n": 4.44822,
+        "slug_to_kg": 14.5939,
+        "ft_to_m": 0.3048,
+        "knot_to_ms": 0.514444,
+        "psi_to_pa": 6894.76,
+        "btu_to_j": 1055.06,
+        "nautical_mile_to_km": 1.852
+      }
+    },
+    "example_queries": [
+      "Convert 250 knots to m/s",
+      "What is 35,000 ft in meters?",
+      "Convert 150 psi to MPa and atmospheres"
+    ]
+  },
+  {
+    "id": "us-aerospace-engineers-p10",
+    "title": "Technology Readiness Level Assessment",
+    "problem": "Aerospace programs must assess and report Technology Readiness Levels (TRL 1-9) for all critical technologies. Engineers struggle with subjective TRL assessments - different reviewers assign different levels for the same technology, leading to disputes at design reviews and inaccurate risk assessments. NASA and DoD have specific TRL definitions but applying them to specific cases requires interpretation.",
+    "who": "Systems engineers and technology development leads",
+    "frequency": "monthly",
+    "time_waste_h": 4,
+    "money_risk_usd": 100000,
+    "source": "daily_reality",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "TRL Assessment Advisor",
+      "one_liner": "Guides engineers through Technology Readiness Level assessment with NASA/DoD criteria and evidence requirements",
+      "expertise_area": "Technology readiness assessment per NASA NPR 7123.1B and DoD TRL definitions",
+      "decision_criteria": [
+        "technology_description",
+        "testing_completed",
+        "environment_tested_in",
+        "integration_level",
+        "program_phase"
+      ],
+      "context_needed": [
+        "NASA TRL definitions",
+        "DoD TRA Guidance",
+        "Evidence requirements per TRL level"
+      ]
+    },
+    "example_queries": [
+      "We tested our new alloy in a lab furnace simulating re-entry temps - what TRL is that?",
+      "What evidence do I need to claim TRL 6 for our new propulsion system?",
+      "Our composite structure passed PDR and we have subscale test data - is that TRL 4 or 5?"
+    ]
+  },
+  {
+    "id": "us-aerospace-engineers-p11",
+    "title": "CDRL Document Template Generator",
+    "problem": "Contract Data Requirements Lists (CDRLs) define the deliverable documents on DoD contracts. Each CDRL has specific Data Item Description (DID) requirements that dictate format, content, and delivery schedule. Engineers spend hours formatting documents to meet DID requirements, and non-compliant deliverables get rejected, delaying payments and milestone acceptance.",
+    "who": "Engineers and technical writers on DoD contracts",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "CDRL Document Template Generator",
+      "one_liner": "Generates document templates compliant with DoD Data Item Descriptions (DIDs) for aerospace CDRLs",
+      "doc_name": "CDRL-Compliant Technical Document",
+      "variables": [
+        {
+          "name": "did_number",
+          "label": "DID number (e.g., DI-SESS-81521A)"
+        },
+        {
+          "name": "cdrl_number",
+          "label": "CDRL sequence number"
+        },
+        {
+          "name": "contract_number",
+          "label": "Contract number"
+        },
+        {
+          "name": "program_name",
+          "label": "Program name"
+        },
+        {
+          "name": "subsystem",
+          "label": "Subsystem or WBS element"
+        },
+        {
+          "name": "classification",
+          "label": "Classification level (Unclassified/CUI/Secret)"
+        }
+      ],
+      "structure_hint": "Cover page (per DID format) -> Distribution statement -> Revision history -> Table of contents -> Content sections per DID requirements -> Appendices -> DD Form 1423 reference"
+    },
+    "example_queries": [
+      "Generate a System Engineering Plan template per DI-SESS-81785A",
+      "I need a test report template for DI-NDTI-80809B on our radar program",
+      "What sections are required for a CDRL compliance document under DI-SESS-81521A?"
+    ]
+  },
+  {
+    "id": "us-aerospace-engineers-p12",
+    "title": "FAA Certification Requirements Reference",
+    "problem": "FAA certification (14 CFR Part 23/25/27/29/33) is an enormous body of regulations that aerospace engineers must navigate when designing aircraft or components. Finding the specific airworthiness requirement for a particular design feature requires digging through thousands of pages. Engineers waste significant time searching for applicable regulations and often miss requirements that surface late in the design process.",
+    "who": "Design engineers and DERs working on FAA-certified aircraft and engines",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 300000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "FAA Airworthiness Requirements Reference",
+      "one_liner": "Quick lookup of FAA certification requirements by aircraft type, system, and design feature",
+      "data_domain": "14 CFR Parts 23, 25, 27, 29, 33 airworthiness standards and Advisory Circulars",
+      "lookup_keys": [
+        "aircraft_category",
+        "system_type",
+        "design_feature",
+        "cfr_section"
+      ],
+      "data_hints": {
+        "source_law": "14 CFR (Federal Aviation Regulations)",
+        "key_sections": [
+          "Part 25 Subpart C (Structure)",
+          "Part 25 Subpart D (Design and Construction)",
+          "Part 25 Subpart F (Equipment)",
+          "Part 33 (Aircraft Engines)",
+          "AC 25.571-1D (Damage Tolerance)"
+        ]
+      }
+    },
+    "example_queries": [
+      "What are the bird strike requirements for a Part 25 transport aircraft windshield?",
+      "Which FAR section covers lightning protection for composite aircraft structures?",
+      "What's the damage tolerance requirement for a wing spar per Part 25?"
+    ]
+  },
+  {
+    "id": "us-aerospace-engineers-p13",
+    "title": "Aerospace Career Transition Advisor",
+    "problem": "With 13% industry attrition rate (vs 3.8% national), 25% of the workforce nearing retirement, and frequent layoff cycles, aerospace engineers regularly face career transitions. They need guidance on leveraging their security clearances, transitioning between defense/commercial/space sectors, negotiating offers, and understanding which certifications and skills increase their market value.",
+    "who": "Engineers facing layoffs, considering career moves, or planning advancement",
+    "frequency": "quarterly",
+    "time_waste_h": 10,
+    "money_risk_usd": 30000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Aerospace Career Transition Advisor",
+      "one_liner": "Provides guidance on aerospace career transitions, salary negotiation, and skill development based on current market data",
+      "expertise_area": "Aerospace engineering career paths, defense-to-commercial transitions, security clearance value, salary benchmarks",
+      "decision_criteria": [
+        "current_role",
+        "years_experience",
+        "security_clearance",
+        "target_sector",
+        "location"
+      ],
+      "context_needed": [
+        "market.salary_by_level_usd",
+        "market.trends",
+        "career_psychology.career_levels",
+        "career_psychology.fears"
+      ]
+    },
+    "example_queries": [
+      "I'm a senior stress analyst at Lockheed with TS/SCI - what's my market value at SpaceX or Blue Origin?",
+      "Should I get my PE license or focus on Python/ML skills for career growth?",
+      "I was laid off from Boeing - what defense contractors are hiring in the Seattle area?"
+    ]
+  }
+]

@@ -1,0 +1,305 @@
+{
+  "profession_id": "us-physical-medicine-and-rehabilitation-physicians",
+  "profession_name": "Physical Medicine and Rehabilitation Physicians",
+  "soc_code": "29-1229.04",
+  "industry": "healthcare",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "PM&R physicians (physiatrists) evaluate and treat injuries, illnesses, and disabilities affecting the brain, spinal cord, nerves, bones, joints, ligaments, muscles, and tendons. They work in both inpatient rehabilitation facilities and outpatient clinics, designing comprehensive patient-centered treatment plans to maximize function and quality of life. Their daily workflow balances diagnostic assessments, procedural interventions, team leadership, and extensive documentation.",
+    "typical_tasks": [
+      "Conducting comprehensive patient evaluations including functional assessments and setting rehabilitation goals",
+      "Performing and interpreting electromyography (EMG) and nerve conduction studies",
+      "Ordering and reviewing diagnostic imaging (X-rays, MRI, CT scans) and laboratory tests",
+      "Prescribing medications for pain, muscle/nerve problems, and attention/memory issues",
+      "Performing targeted injections (trigger point, joint, epidural, botulinum toxin)",
+      "Prescribing and managing braces, splints, assistive devices (canes, walkers, wheelchairs)",
+      "Leading interdisciplinary rehabilitation team meetings (PT, OT, SLP, nursing, social work)",
+      "Managing nonsurgical orthopedic/musculoskeletal conditions (strains, sprains, bursitis, tendonitis)",
+      "Treating chronic conditions including arthritis, neck/low back pain, and nerve disorders",
+      "Documenting patient encounters, treatment plans, and progress notes in EMR systems",
+      "Coordinating care with surgeons, primary care physicians, and other specialists",
+      "Supervising residents and medical students during clinical rotations"
+    ],
+    "key_documents": [
+      "Initial evaluation and rehabilitation goal-setting documentation",
+      "EMG/nerve conduction study reports",
+      "Functional Independence Measure (FIM) scores",
+      "Rehabilitation treatment plans and team conference notes",
+      "Prior authorization requests for durable medical equipment",
+      "Disability evaluations and impairment ratings (AMA Guides)",
+      "Progress notes and discharge summaries",
+      "Referral letters to and from other specialists"
+    ],
+    "deadlines": {
+      "daily": "Complete documentation for all patient encounters; review and sign off on team notes",
+      "weekly": "Attend and lead interdisciplinary team conferences; review patient progress toward goals",
+      "monthly": "Complete continuing medical education (CME) activities; submit billing/coding reconciliation",
+      "quarterly": "Quality metrics reporting; peer review participation",
+      "annually": "State medical license renewal; DEA registration renewal; CME credit documentation for board maintenance"
+    },
+    "seasonality": "Generally consistent year-round demand, with slight increases in sports-related injuries during athletic seasons (spring/fall) and increased stroke/fall rehabilitation cases in winter months among elderly patients."
+  },
+  "regulatory": {
+    "summary": "PM&R physicians must hold an active state medical license, maintain board certification through the ABPMR or AOBPMR, and comply with DEA registration for prescribing controlled substances. Practice is governed by state medical boards with requirements varying by jurisdiction. Federal regulations including HIPAA, Medicare/Medicaid billing rules, and CMS inpatient rehabilitation facility requirements also apply.",
+    "key_laws": [
+      "State Medical Practice Acts (vary by state) governing physician licensure and scope of practice",
+      "HIPAA (Health Insurance Portability and Accountability Act) for patient data privacy",
+      "CMS Inpatient Rehabilitation Facility (IRF) regulations including the 60% Rule",
+      "Medicare/Medicaid billing and documentation requirements",
+      "DEA Controlled Substances Act for prescribing authority",
+      "ADA (Americans with Disabilities Act) compliance in rehabilitation settings",
+      "OSHA workplace safety regulations for clinical settings",
+      "State Workers' Compensation laws affecting disability evaluations"
+    ],
+    "licensing": {
+      "requirements": [
+        "Graduate from LCME- or COCA-accredited medical school (MD or DO degree)",
+        "Complete ACGME-accredited 4-year PM&R residency program",
+        "Pass USMLE (Steps 1, 2, 3) for MDs or COMLEX-USA for DOs",
+        "Obtain state medical license (requirements vary by state; includes application, fees, background check)",
+        "Obtain DEA registration for controlled substance prescribing",
+        "Board certification through ABPMR (written and oral exams) or AOBPMR",
+        "Optional subspecialty fellowship and certification (pain medicine, spinal cord injury, brain injury, sports medicine, pediatric rehabilitation, neuromuscular medicine)"
+      ]
+    },
+    "continuing_education": "Board-certified PM&R physicians must participate in the ABPMR Continuing Certification (CC) Program, which includes completing CME credits, self-assessment activities, and periodic recertification examinations. Most states require 25-50 CME credits annually for medical license renewal. DEA-registered physicians must also complete opioid prescribing education in many states."
+  },
+  "tools": {
+    "summary": "Physiatrists rely on a combination of EMR/EHR systems for documentation and billing, specialized diagnostic equipment for electrodiagnostic studies, and imaging technologies. The field is increasingly adopting AI-powered documentation tools and telehealth platforms, with specialty-specific EMR solutions gaining market share over generic platforms.",
+    "primary_tools": [
+      {"name": "Epic Systems", "category": "EMR/EHR", "description": "Dominant hospital-based EHR system used by over 35% of the market, especially in large multi-specialty organizations and academic medical centers"},
+      {"name": "Praxis EMR", "category": "EMR/EHR", "description": "Top-rated EHR for physiatry, enabling streamlined documentation with concept-based charting that reduces charting time"},
+      {"name": "AdvancedMD", "category": "Practice Management/EMR", "description": "Unified EHR with practice management and patient engagement, offering independent healthcare payment technology for faster billing"},
+      {"name": "EMG/NCS Equipment (Natus/Cadwell)", "category": "Diagnostic Equipment", "description": "Electrodiagnostic equipment for electromyography and nerve conduction studies, essential for diagnosing neuromuscular conditions"},
+      {"name": "Fluoroscopy/Ultrasound", "category": "Imaging Guidance", "description": "Image guidance systems used for interventional procedures including spinal injections and joint injections"}
+    ],
+    "secondary_tools": [
+      {"name": "Dragon Medical One", "category": "Voice Recognition", "description": "AI-powered medical dictation software for real-time clinical documentation"},
+      {"name": "Telehealth Platforms (Zoom Health/Doxy.me)", "category": "Telemedicine", "description": "HIPAA-compliant video platforms for remote patient consultations and follow-ups"},
+      {"name": "FIM/WeeFIM Assessment Tools", "category": "Functional Assessment", "description": "Standardized instruments measuring functional independence in rehabilitation settings"},
+      {"name": "AMA Guides to the Evaluation of Permanent Impairment", "category": "Reference/Assessment", "description": "Standard reference for disability evaluation and impairment rating"},
+      {"name": "Point-of-Care Ultrasound (POCUS)", "category": "Diagnostic/Procedural", "description": "Portable ultrasound devices used for musculoskeletal diagnosis and procedure guidance"}
+    ],
+    "pain_points": [
+      "Excessive documentation burden reducing direct patient care time",
+      "EMR systems not optimized for rehabilitation-specific workflows and team-based care documentation",
+      "Prior authorization requirements for medications, procedures, and durable medical equipment causing treatment delays",
+      "Difficulty integrating data from multiple rehabilitation team members into a cohesive patient record",
+      "Lack of interoperability between hospital and outpatient EMR systems during care transitions",
+      "Complex and time-consuming disability evaluation paperwork",
+      "Billing code complexity for bundled rehabilitation services"
+    ]
+  },
+  "terminology": {
+    "summary": "PM&R has a specialized lexicon combining neuroscience, musculoskeletal medicine, and rehabilitation science terminology. Physiatrists use functional outcome measures, electrodiagnostic terminology, and rehabilitation-specific concepts that distinguish the specialty from other medical fields.",
+    "terms": {
+      "Physiatrist": "A physician specializing in physical medicine and rehabilitation; the term derives from Greek 'physio' (nature) and 'iatrke' (medicine)",
+      "ADLs (Activities of Daily Living)": "Basic self-care tasks including grooming, bathing, dressing, feeding, and toileting that rehabilitation aims to restore",
+      "IADLs (Instrumental Activities of Daily Living)": "Complex functional tasks including cooking, cleaning, shopping, managing medications, finances, and transportation",
+      "FIM (Functional Independence Measure)": "Standardized assessment tool measuring disability level and functional outcomes in rehabilitation",
+      "EMG (Electromyography)": "Diagnostic procedure assessing electrical activity of muscles to detect neuromuscular abnormalities",
+      "NCS (Nerve Conduction Studies)": "Electrodiagnostic test measuring speed and strength of electrical signals traveling through peripheral nerves",
+      "Spasticity": "Velocity-dependent increase in muscle tone caused by upper motor neuron lesions, commonly treated by physiatrists",
+      "Neuroplasticity": "The brain's ability to reorganize neural pathways, a key principle underlying rehabilitation interventions",
+      "ROM (Range of Motion)": "The full movement potential of a joint, measured in degrees; includes active (AROM) and passive (PROM)",
+      "Orthotic": "External device applied to the body to support, align, or correct musculoskeletal deformities or improve function",
+      "Prosthetic": "Artificial device replacing a missing body part, prescribed and managed as part of rehabilitation programs",
+      "IRF (Inpatient Rehabilitation Facility)": "Hospital-based rehabilitation unit providing intensive multidisciplinary rehabilitation, requiring minimum 3 hours of therapy daily",
+      "60% Rule": "CMS requirement that at least 60% of IRF admissions must have qualifying diagnoses to maintain IRF status",
+      "Functional Capacity Evaluation (FCE)": "Comprehensive assessment of a patient's ability to perform work-related tasks for return-to-work planning",
+      "Trigger Point Injection": "Injection of anesthetic/steroid into myofascial trigger points to relieve chronic muscle pain"
+    }
+  },
+  "career_psychology": {
+    "summary": "PM&R physicians are motivated by the ability to help patients regain function and return to meaningful activities. The specialty attracts physicians who value holistic, patient-centered care and long-term therapeutic relationships. While offering better work-life balance than many surgical specialties, physiatrists face burnout from documentation burden, prior authorization battles, and the emotional toll of managing chronic conditions and severe disabilities.",
+    "career_path": [
+      {"stage": "Pre-Medical Education", "duration": "4 years", "description": "Bachelor's degree with pre-med coursework"},
+      {"stage": "Medical School", "duration": "4 years", "description": "MD or DO degree from accredited medical school"},
+      {"stage": "PM&R Residency", "duration": "4 years", "description": "ACGME-accredited residency including 1 year internship; training in inpatient and outpatient rehabilitation"},
+      {"stage": "Fellowship (Optional)", "duration": "1-2 years", "description": "Subspecialty training in pain medicine, spinal cord injury, brain injury, sports medicine, pediatric rehabilitation, or neuromuscular medicine"},
+      {"stage": "Early Career", "duration": "1-5 years post-training", "description": "Building patient panel, establishing practice patterns; often employed by hospital systems or group practices"},
+      {"stage": "Mid-Career", "duration": "5-15 years", "description": "Established practice; potential leadership roles, teaching responsibilities, or subspecialty focus"},
+      {"stage": "Senior/Leadership", "duration": "15+ years", "description": "Department chair, program director, medical director of rehabilitation facility, or private practice partner"}
+    ],
+    "salary_range": {
+      "entry_level": "$243,500",
+      "median": "$285,244",
+      "senior": "$390,000",
+      "private_practice_owner": "$482,000",
+      "notes": "Pain management is the highest-paying PM&R subspecialty. Private practice owners/partners earn significantly more than employed physicians ($482K vs $345K average). Significant gender pay gap exists: male physiatrists earn ~25% more ($411K vs $329K)."
+    },
+    "fears": [
+      "Declining reimbursement rates for rehabilitation services",
+      "Increasing prior authorization denials limiting patient access to needed care",
+      "Replacement of in-person evaluations by AI-driven or algorithm-based treatment decisions",
+      "Medical malpractice risk especially with interventional pain procedures",
+      "Burnout from administrative burden and documentation requirements",
+      "Scope creep from non-physician providers in rehabilitation settings",
+      "Student loan debt burden relative to specialty salary (lower than surgical specialties)"
+    ],
+    "motivation": [
+      "Helping patients regain independence and return to meaningful activities",
+      "Seeing tangible functional improvements in patients over time",
+      "Holistic approach to patient care considering the whole person",
+      "Better work-life balance compared to surgical specialties",
+      "Intellectual diversity treating conditions across multiple organ systems",
+      "Leadership role in coordinating multidisciplinary rehabilitation teams",
+      "Growing demand and job security driven by aging population"
+    ],
+    "burnout_factors": [
+      "Approximately 45% of physicians report at least one symptom of burnout",
+      "62% of physicians cite administrative work (charting and paperwork) as top burnout source",
+      "Prior authorization battles consuming significant non-clinical time",
+      "EMR documentation requirements reducing face-to-face patient interaction",
+      "Emotional toll of working with severely disabled patients and managing chronic pain",
+      "Pressure to see more patients in less time due to productivity metrics",
+      "Work-home interference from after-hours documentation completion"
+    ]
+  },
+  "community": {
+    "summary": "PM&R physicians have a strong professional community supported by national and international organizations. The AAPM&R serves as the primary professional society, while the Association of Academic Physiatrists supports education and research. Multiple subspecialty societies and international organizations provide additional networking and continuing education opportunities.",
+    "associations": [
+      {"name": "American Academy of Physical Medicine and Rehabilitation (AAPM&R)", "url": "https://www.aapmr.org/", "description": "Primary national professional society for physiatrists; advocacy, education, and practice resources"},
+      {"name": "Association of Academic Physiatrists (AAP)", "url": "https://www.physiatry.org/", "description": "Professional organization supporting academic physiatrists in education, research, and mentorship"},
+      {"name": "American Board of Physical Medicine and Rehabilitation (ABPMR)", "url": "https://www.abpmr.org/", "description": "Board certification body establishing standards for PM&R physician competency"},
+      {"name": "International Society of Physical and Rehabilitation Medicine (ISPRM)", "url": "https://isprm.org/", "description": "Global organization advancing PM&R through international collaboration and congresses"},
+      {"name": "American Osteopathic Board of Physical Medicine and Rehabilitation (AOBPMR)", "url": "https://certification.osteopathic.org/physical-medicine-rehabilitation/", "description": "Board certification for osteopathic PM&R physicians"}
+    ],
+    "events": [
+      {"name": "AAPM&R Annual Assembly", "frequency": "Annual", "description": "Largest national PM&R conference featuring CME sessions, research presentations, and networking"},
+      {"name": "ISPRM World Congress", "frequency": "Annual", "description": "20th Anniversary World Congress in Vancouver, Canada (2026); global gathering of rehabilitation medicine professionals"},
+      {"name": "AAP Annual Meeting", "frequency": "Annual", "description": "Academic physiatry conference focused on education, research, and mentorship"},
+      {"name": "Global Conference on Physical Medicine and Rehabilitation (GCPR) 2026", "frequency": "Annual", "description": "4th Edition in London, September 24-26, 2026; hybrid format"},
+      {"name": "World Congress on Physical Medicine and Rehabilitation (WCPR) 2026", "frequency": "Annual", "description": "3rd World Congress in Osaka, Japan, March 26-27, 2026; theme: exploring progress in PM&R research"}
+    ],
+    "online_communities": [
+      {"name": "AAPM&R Online Community", "platform": "AAPM&R website", "description": "Member forums and resource sharing for practicing physiatrists"},
+      {"name": "r/physiatry", "platform": "Reddit", "description": "Subreddit for PM&R physicians and trainees discussing cases, career questions, and specialty issues"},
+      {"name": "PM&R physician groups", "platform": "Facebook", "description": "Private professional groups for physiatrists sharing clinical pearls and practice management tips"},
+      {"name": "Physiatry LinkedIn Network", "platform": "LinkedIn", "description": "Professional networking groups for PM&R physicians and rehabilitation professionals"},
+      {"name": "Doximity PM&R Community", "platform": "Doximity", "description": "Physician networking platform with PM&R-specific discussion forums and news feeds"}
+    ]
+  },
+  "market": {
+    "summary": "The PM&R physician market shows steady growth driven by aging demographics, increasing prevalence of chronic conditions, and expansion of rehabilitation services. The field benefits from physician shortages projected to reach 124,000 by 2034, with physiatrists well-positioned to fill gaps in non-surgical musculoskeletal and neurological care. Residency positions are increasing and subspecialization (particularly pain medicine) offers premium compensation.",
+    "job_outlook": {
+      "growth_rate": "3% from 2022-2032 (aligned with average for all occupations)",
+      "projected_openings": "Steady annual openings driven by both growth and replacement needs",
+      "bls_rating": "Average growth",
+      "notes": "Despite modest overall growth rate, the broader physician shortage (projected 124,000 by 2034) creates favorable conditions. Over 1,200 inpatient rehabilitation facilities and growing number of skilled nursing facilities drive institutional demand."
+    },
+    "salary_market": {
+      "national_average": "$285,244 (February 2026)",
+      "entry_level_range": "$243,500 - $277,000",
+      "experienced_range": "$341,500 - $390,000",
+      "top_earners": "$390,000 - $482,000 (practice owners/partners)",
+      "highest_paying_subspecialty": "Pain Medicine"
+    },
+    "demand_drivers": [
+      "Aging baby boomer population requiring more rehabilitation services",
+      "Rising incidence of stroke, traumatic brain injury, and spinal cord injury",
+      "Expansion of inpatient rehabilitation facilities (1,200+ nationally)",
+      "Growing emphasis on non-opioid pain management approaches",
+      "Increased access to healthcare driving more referrals to PM&R",
+      "Telemedicine expanding access to physiatry in rural/underserved areas",
+      "Projected physician shortage of up to 124,000 by 2034"
+    ],
+    "market_trends": [
+      "Steady increase in PM&R residency positions indicating growing institutional investment",
+      "Subspecialization in pain medicine commanding highest compensation premiums",
+      "Telehealth integration enabling remote consultations and follow-up care",
+      "AI and digital health technologies transforming clinical documentation and diagnostics",
+      "Growing emphasis on value-based care and functional outcomes measurement",
+      "Expansion of outpatient rehabilitation services with emphasis on early intervention",
+      "Increasing demand for physiatrists in skilled nursing facilities"
+    ]
+  },
+  "quality_score": 0.82,
+  "sources_count": 30,
+  "verified_sources": 12,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "category": "daily_reality",
+      "query": "Physical Medicine and Rehabilitation Physicians daily tasks workflow routine 2025 2026 US",
+      "sources": [
+        "https://libraryguides.mayo.edu/pmrehab",
+        "https://medlineplus.gov/ency/article/007448.htm",
+        "https://www.va.gov/lovell-federal-health-care-va/programs-va/physical-medicine-and-rehabilitation/",
+        "https://www.merckmanuals.com/professional/special-subjects/rehabilitation/overview-of-rehabilitation",
+        "https://www.medicaleconomics.com/view/-getting-people-back-to-their-lives-how-physical-medicine-and-rehabilitation-are-evolving-in-u-s-health-care",
+        "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/what-is-physical-medicine-and-rehabilitation"
+      ]
+    },
+    {
+      "category": "regulatory",
+      "query": "Physical Medicine and Rehabilitation Physicians regulations licensing requirements US 2025 2026",
+      "sources": [
+        "https://www.onetonline.org/link/summary/29-1229.04",
+        "https://www.indeed.com/career-advice/finding-a-job/how-to-become-physiatrist",
+        "https://floridasurgeryconsultants.com/how-to-become-a-physical-medicine-doctor/",
+        "https://www.abpmr.org/",
+        "https://www.acgme.org/specialties/physical-medicine-and-rehabilitation/program-requirements-and-faqs-and-applications/",
+        "https://certification.osteopathic.org/physical-medicine-rehabilitation/"
+      ]
+    },
+    {
+      "category": "tools",
+      "query": "Physical Medicine and Rehabilitation Physicians software tools EMR technology 2025 2026",
+      "sources": [
+        "https://www.advancedmd.com/specialties/physical-medicine-rehabilitation/ehr-emr-software/",
+        "https://www.emrsystems.net/physical-medicine-physiatry-emr/",
+        "https://www.praxisemr.com/best-ehr-for-physiatry.html",
+        "https://1stproviderschoice.com/emr-for-practices-clinics/physical-medicine-emr-software.php",
+        "https://www.empoweremr.com",
+        "https://www.raintreeinc.com/"
+      ]
+    },
+    {
+      "category": "terminology",
+      "query": "Physical Medicine and Rehabilitation Physicians medical terminology key terms physiatry",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Physical_medicine_and_rehabilitation",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3309231/",
+        "https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/overview-of-physical-medicine-and-rehabilitation",
+        "https://www.aapmr.org/about-physiatry/about-physical-medicine-rehabilitation/what-is-physiatry",
+        "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/what-is-physical-medicine-and-rehabilitation"
+      ]
+    },
+    {
+      "category": "career_psychology",
+      "query": "Physical Medicine and Rehabilitation Physicians career path salary burnout 2025 2026 US",
+      "sources": [
+        "https://www.ziprecruiter.com/Salaries/Physical-Medicine-And-Rehabilitation-Physician-Salary",
+        "https://www.resolve.com/the-data/physician-salaries-for-physiatry-physical-medicine-and-rehabilitation",
+        "https://www.salary.com/research/salary/alternate/physical-medicine-and-rehab-physician-salary",
+        "https://farrhealthcare.com/compensation/",
+        "https://www.themdpreferrednetwork.com/physician-burnout-2026/",
+        "https://medrina.com/news/physiatrist-salary"
+      ]
+    },
+    {
+      "category": "community",
+      "query": "Physical Medicine and Rehabilitation Physicians associations conferences communities 2025 2026",
+      "sources": [
+        "https://physical-medicine.magnusconferences.com/",
+        "https://isprm.org/",
+        "https://www.aapmr.org/education/annual-assembly",
+        "https://www.physiatry.org/",
+        "https://www.clocate.com/conferences-on+physiatry/c3UtNDIy/"
+      ]
+    },
+    {
+      "category": "market",
+      "query": "Physical Medicine and Rehabilitation Physicians job outlook market demand trends 2025 2026 US",
+      "sources": [
+        "https://medrina.com/news/physiatrist-career-outlook-and-trends",
+        "https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm",
+        "https://www.mynextmove.org/profile/summary/29-1229.04",
+        "https://farrhealthcare.com/demand-for-physical-medicine-and-rehabilitation-physicians/",
+        "https://farrhealthcare.com/hiring-trends-in-physiatry/",
+        "https://www.recruiter.com/careers/physical-medicine-and-rehabilitation-physicians/outlook/"
+      ]
+    }
+  ]
+}

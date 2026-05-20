@@ -1,0 +1,279 @@
+{
+  "profession_id": "us-emergency-medical-technicians",
+  "profession_name": "Emergency Medical Technicians",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "EMTs respond to emergency 911 calls providing basic life support, patient assessment, and transport. They work 12-24 hour shifts in ambulances, fire departments, and hospitals. High-stress, physically demanding work with unpredictable schedules.",
+    "typical_tasks": [
+      "Responding to 911 emergency calls via ambulance",
+      "Performing patient assessment: vitals, chief complaint, medical history",
+      "Administering basic life support: CPR, AED defibrillation, airway management",
+      "Controlling bleeding, splinting fractures, managing spinal immobilization",
+      "Starting IVs and administering approved medications (scope varies by state)",
+      "Transporting patients safely to emergency departments",
+      "Communicating patient status to receiving hospital via radio",
+      "Completing patient care reports (PCRs) and documentation",
+      "Maintaining and checking ambulance equipment at shift start",
+      "Performing interfacility transfers",
+      "Participating in public education and community CPR training"
+    ],
+    "key_documents": [
+      "Patient care reports (PCR/ePCR)",
+      "Run sheets and call logs",
+      "Controlled substance logs",
+      "Vehicle check-off forms",
+      "Equipment maintenance logs",
+      "Continuing education documentation",
+      "Medical protocols and standing orders"
+    ],
+    "deadlines": {
+      "response_time": "6-8 minutes average target for emergency calls",
+      "pcr_completion": "Typically within 24 hours of call",
+      "nremt_recertification": "Every 2 years — 40 hours CE for EMT, 48 hours for AEMT",
+      "state_license_renewal": "Varies by state — typically every 2-4 years",
+      "vehicle_checks": "Beginning of each shift"
+    },
+    "seasonality": "Summer brings increased trauma (vehicle accidents, outdoor injuries, heat-related illness). Winter brings hypothermia, slip-and-fall injuries. Holiday periods see increased alcohol-related calls."
+  },
+  "regulatory": {
+    "summary": "National certification through NREMT. State licensing varies. Three EMT levels: EMT-Basic, AEMT (Advanced), Paramedic. Scope of practice defined by state medical director protocols. OSHA standards for bloodborne pathogens and PPE.",
+    "key_laws": [
+      {
+        "name": "National EMS Scope of Practice Model",
+        "description": "NHTSA document defining four EMS certification levels and their scope of practice"
+      },
+      {
+        "name": "NREMT certification requirements",
+        "description": "National Registry of Emergency Medical Technicians sets national certification standards",
+        "url": "https://www.nremt.org"
+      },
+      {
+        "name": "State EMS licensing laws (varies by state)",
+        "description": "Each state has its own EMS board regulating EMT licensing and scope"
+      },
+      {
+        "name": "OSHA Bloodborne Pathogens Standard (29 CFR 1910.1030)",
+        "description": "Workplace safety standard for exposure to blood and body fluids"
+      },
+      {
+        "name": "Good Samaritan laws (vary by state)",
+        "description": "Legal protection for emergency responders acting in good faith"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Complete state-approved EMT course (120-150 hours for EMT-Basic)",
+        "Pass NREMT cognitive exam (computer-adaptive, 70-120 questions)",
+        "Pass NREMT psychomotor skills exam",
+        "Obtain state EMS license",
+        "CPR/BLS certification",
+        "Background check and medical clearance",
+        "Recertification every 2 years with 40 hours CE"
+      ]
+    },
+    "recent_changes": "Growing advocacy for higher EMT wages at federal level. Some states expanding EMT scope of practice. Community paramedicine programs expanding. Ongoing debate about EMS workforce crisis and funding models."
+  },
+  "tools": {
+    "summary": "Ambulance-based medical equipment, ePCR documentation systems, radio communications, and patient monitoring devices. Technology focused on field reliability and rapid deployment.",
+    "primary_tools": [
+      {
+        "name": "Automated External Defibrillator (AED/Monitor)",
+        "description": "Cardiac monitoring and defibrillation device",
+        "examples": "ZOLL X Series, Philips HeartStart, Physio-Control LIFEPAK"
+      },
+      {
+        "name": "ePCR (Electronic Patient Care Report) software",
+        "description": "Tablet-based documentation for all patient encounters",
+        "examples": "ImageTrend, ESO Solutions, ZOLL RescueNet"
+      },
+      {
+        "name": "Airway management equipment",
+        "description": "BVM (bag-valve mask), supraglottic airways, suction devices, oxygen systems"
+      },
+      {
+        "name": "Radio communication systems",
+        "description": "Radio for dispatch, hospital notification, and crew coordination"
+      },
+      {
+        "name": "Vital signs monitoring equipment",
+        "description": "Pulse oximeters, blood pressure cuffs, glucometers, thermometers"
+      },
+      {
+        "name": "Patient transport equipment",
+        "description": "Power stretchers, stair chairs, backboards, scoop stretchers"
+      }
+    ],
+    "secondary_tools": [
+      "CAD (Computer-Aided Dispatch) systems",
+      "GPS navigation for routing",
+      "Triage tags and mass casualty incident kits",
+      "Trauma kits (tourniquets, hemostatic dressings)",
+      "Personal protective equipment (gloves, gowns, N95 masks)"
+    ],
+    "pain_points": [
+      "Outdated equipment and ambulances in underfunded agencies",
+      "Bulky ePCR systems that slow down documentation",
+      "Radio dead zones and communication failures",
+      "Lack of ergonomic patient lifting equipment",
+      "Limited technology integration between agencies and hospitals"
+    ]
+  },
+  "terminology": {
+    "summary": "EMS-specific vocabulary combining medical terminology, radio communication codes, and field operations language.",
+    "terms": {
+      "BLS": "Basic Life Support — EMT-level care",
+      "ALS": "Advanced Life Support — paramedic-level care",
+      "NREMT": "National Registry of Emergency Medical Technicians",
+      "PCR": "Patient Care Report — documentation for each call",
+      "ePCR": "Electronic Patient Care Report",
+      "GCS": "Glasgow Coma Scale — consciousness assessment (3-15)",
+      "AVPU": "Alert, Verbal, Pain, Unresponsive — rapid consciousness assessment",
+      "SAMPLE": "Signs/Symptoms, Allergies, Medications, Past history, Last intake, Events — history mnemonic",
+      "OPQRST": "Onset, Provocation, Quality, Radiation, Severity, Time — pain assessment",
+      "AED": "Automated External Defibrillator",
+      "BVM": "Bag-Valve Mask — manual ventilation device",
+      "MCI": "Mass Casualty Incident",
+      "START triage": "Simple Triage and Rapid Treatment — field triage system",
+      "code": "Cardiac arrest / resuscitation in progress",
+      "transport": "Moving patient to hospital by ambulance",
+      "mutual aid": "Assistance from neighboring EMS agencies",
+      "IFT": "Interfacility transfer — transport between medical facilities",
+      "rig": "Ambulance (informal slang)",
+      "medic": "Paramedic (informal)"
+    }
+  },
+  "career_psychology": {
+    "summary": "Mission-driven but severely underpaid profession. 76% burnout rate. 37% planning to leave within 5 years. 45% earn $19/hour or less. NYC projected to lose 1/3 of EMTs in 2026 due to pay disparity. High emotional and physical toll offset by deep sense of purpose.",
+    "career_path": [
+      "EMT-Basic course (120-150 hours, 3-6 months)",
+      "NREMT certification and state license",
+      "Entry-level EMT at ambulance service, fire department, or hospital",
+      "Advanced EMT (AEMT) certification with additional training",
+      "Paramedic certification (1,200-1,800 hours additional training)",
+      "Field Training Officer (FTO) or supervisor",
+      "EMS captain / battalion chief / operations manager",
+      "Transition to nursing, physician assistant, or other healthcare career"
+    ],
+    "salary_range": {
+      "emt_basic_entry": "$30,000 - $38,000",
+      "emt_experienced": "$38,000 - $48,000",
+      "national_average_hourly": "$21.20/hour ($49,364 annualized)",
+      "emt_basic_median": "$42,135 (2025 estimate)",
+      "paramedic_median": "$58,410",
+      "fire_department_emt": "$45,000 - $65,000 (with fire duties)"
+    },
+    "fears": [
+      "PTSD from traumatic calls (pediatric deaths, mass casualties)",
+      "Personal safety on scene (violence, traffic, hazmat)",
+      "Inadequate pay to support family",
+      "Physical injuries from lifting and patient handling",
+      "Liability from clinical decisions in high-pressure situations",
+      "Career-ending burnout"
+    ],
+    "motivation": [
+      "Saving lives and making immediate difference",
+      "Adrenaline and excitement of emergency response",
+      "Brotherhood/sisterhood among EMS crews",
+      "Gateway to healthcare careers",
+      "Community service and public safety mission",
+      "Every day is different"
+    ],
+    "burnout_factors": [
+      "76% of EMS professionals report burnout",
+      "73% report burnout or compassion fatigue",
+      "37% plan to leave EMS within 5 years",
+      "45% earn $19/hour or less base wage",
+      "49% work more than 40 hours/week",
+      "Only 27% meet CDC sleep guidelines",
+      "61% cite lack of time for physical health",
+      "Only 59% of agencies have enough staff to answer 911 calls",
+      "NYC: 1/3 of EMTs expected to quit in 2026 due to pay"
+    ]
+  },
+  "community": {
+    "summary": "Community organized through NAEMT, NREMT, state EMS associations, and fire service unions. Strong online presence on EMS forums and social media. EMS Week (third week of May) is the major professional celebration.",
+    "associations": [
+      {
+        "name": "National Association of Emergency Medical Technicians (NAEMT)",
+        "url": "https://www.naemt.org",
+        "type": "Professional membership organization for EMS personnel"
+      },
+      {
+        "name": "National Registry of Emergency Medical Technicians (NREMT)",
+        "url": "https://www.nremt.org",
+        "type": "National EMS certification organization"
+      },
+      {
+        "name": "International Association of Fire Fighters (IAFF)",
+        "url": "https://www.iaff.org",
+        "type": "Union representing fire-based EMS providers"
+      },
+      {
+        "name": "American Ambulance Association (AAA)",
+        "url": "https://ambulance.org",
+        "type": "Trade association for ambulance services"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "r/ems",
+        "url": "https://reddit.com/r/ems",
+        "description": "Major Reddit community for EMS providers"
+      },
+      {
+        "name": "EMS1.com",
+        "url": "https://www.ems1.com",
+        "description": "Leading EMS news, education, and community site"
+      },
+      {
+        "name": "JEMS (Journal of Emergency Medical Services)",
+        "url": "https://www.jems.com",
+        "description": "Major EMS publication and online community"
+      }
+    ],
+    "events": [
+      "EMS Week (third week of May)",
+      "EMS World Expo (annual)",
+      "NAEMT Annual Meeting",
+      "FDIC (Fire Department Instructors Conference)"
+    ]
+  },
+  "market": {
+    "summary": "Growing demand (11% projected growth) but severe workforce crisis. 76% burnout rate and low wages driving mass exodus. Only 59% of agencies fully staffed. NYC projected to lose 1/3 of workforce in 2026. Industry needs ~439,000 additional workers.",
+    "demand_forecast": {
+      "growth_rate": "11% (2020-2030, BLS — faster than average)",
+      "workforce_crisis": "Only 59% of agencies report adequate staffing",
+      "nyc_exodus": "1/3 of NYC EMTs expected to quit in 2026"
+    },
+    "salary_market": {
+      "emt_median": "$42,135 (2025 estimate)",
+      "paramedic_median": "$58,410",
+      "average_hourly": "$21.20/hour"
+    },
+    "market_trends": [
+      "Severe EMS workforce crisis — 76% burnout rate driving departures",
+      "Growing community paramedicine programs (expanded EMT roles)",
+      "Advocacy for higher wages and benefits at federal/state level",
+      "Telemedicine integration in ambulance care",
+      "Increasing demand from aging population",
+      "Mental health support programs expanding in EMS agencies",
+      "Some agencies offering signing bonuses and tuition reimbursement"
+    ]
+  },
+  "quality_score": 0.83,
+  "sources_count": 32,
+  "verified_sources": 12,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "emergency medical technician EMT USA 2025 2026 salary career duties NREMT certification job outlook shortage burnout",
+      "sources": [
+        {"title": "BLS OOH — EMTs and Paramedics", "url": "https://www.bls.gov/ooh/healthcare/emts-and-paramedics.htm"},
+        {"title": "Top EMS workforce challenges 2025", "url": "https://www.ems1.com/ems-trend-report/were-not-ok-the-what-paramedics-want-in-2025-report-pulls-no-punches"},
+        {"title": "NYC EMS workforce exodus 2026", "url": "https://www.ems1.com/labor-issues/unions-low-pay-could-drive-1-3-of-nyc-ems-workforce-out-the-door-in-2026"},
+        {"title": "EMS workforce crisis (JEMS)", "url": "https://www.jems.com/ems-management/ems-recruitment-retention/unveiling-the-national-ems-workforce-crisis/"},
+        {"title": "EMT Shortage — HASC EMS Corps", "url": "https://hasc.org/2025/05/12/help-address-the-emt-shortage-with-ems-corps/"}
+      ]
+    }
+  ]
+}

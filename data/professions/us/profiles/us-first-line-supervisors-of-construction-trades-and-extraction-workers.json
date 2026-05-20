@@ -1,0 +1,273 @@
+{
+  "profession_id": "us-first-line-supervisors-of-construction-trades-and-extraction-workers",
+  "profession_name": "First-Line Supervisors of Construction Trades and Extraction Workers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Construction supervisors (foremen, superintendents) directly supervise and coordinate construction or extraction crews on job sites. They manage schedules, ensure safety compliance, read blueprints, and solve field problems. Early starts (6-7 AM), outdoor work in all weather, typically 40-50+ hour weeks.",
+    "typical_tasks": [
+      "Scheduling workers, assigning tasks, and coordinating crew activities",
+      "Reading and interpreting blueprints, specifications, and work orders",
+      "Ensuring OSHA safety compliance on job sites",
+      "Conducting daily toolbox talks and safety briefings",
+      "Ordering and tracking materials and equipment",
+      "Inspecting work quality and ensuring code compliance",
+      "Communicating with project managers, engineers, and inspectors",
+      "Resolving field problems and making on-site decisions",
+      "Training new workers and apprentices",
+      "Completing daily logs, timesheets, and progress reports",
+      "Managing subcontractor coordination"
+    ],
+    "key_documents": [
+      "Daily field reports and progress logs",
+      "Timesheets and labor tracking",
+      "Safety inspection checklists and incident reports",
+      "Blueprints, shop drawings, and specifications",
+      "Material requisitions and delivery receipts",
+      "Change orders and RFIs (Requests for Information)",
+      "OSHA compliance documentation",
+      "Permits and inspection records"
+    ],
+    "deadlines": {
+      "daily_reports": "End of each work day",
+      "safety_toolbox_talks": "Daily at shift start",
+      "osha_incident_reporting": "Within 8 hours for fatalities, 24 hours for hospitalizations",
+      "weekly_progress": "Weekly to project managers",
+      "inspection_readiness": "Per project schedule milestones",
+      "osha_30_card": "Required before starting supervisory work (in many jurisdictions)"
+    },
+    "seasonality": "Construction peaks spring through fall. Winter weather slows or stops outdoor work in northern states. Year-end push to complete projects before deadlines. Extraction work may have different cycles based on commodity prices."
+  },
+  "regulatory": {
+    "summary": "OSHA is the primary regulatory framework (29 CFR 1926 for construction). OSHA 30 card recommended/required for supervisors. State licensing varies. No single national certification required but many employers require specific trade certifications.",
+    "key_laws": [
+      {
+        "name": "OSHA Construction Standards (29 CFR 1926)",
+        "description": "Federal workplace safety standards specific to construction industry",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926"
+      },
+      {
+        "name": "OSHA 30-Hour Construction Outreach Training",
+        "description": "Recommended/required training for construction supervisors covering safety hazards",
+        "url": "https://www.osha.gov/training/outreach/construction"
+      },
+      {
+        "name": "State contractor licensing laws",
+        "description": "Many states require contractor licenses for supervising construction work"
+      },
+      {
+        "name": "Local building codes and permits",
+        "description": "Municipal regulations governing construction quality and safety"
+      },
+      {
+        "name": "Davis-Bacon Act (federal projects)",
+        "description": "Requires prevailing wages on federally funded construction projects"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "High school diploma or equivalent (minimum)",
+        "Extensive construction trade experience (typically 5-10+ years)",
+        "OSHA 30-Hour Construction Safety card (strongly recommended/often required)",
+        "First Aid/CPR certification",
+        "State contractor license (where required)",
+        "Trade-specific certifications (e.g., electrical, plumbing, welding)",
+        "OSHA Competent Person designation for specific hazards (fall protection, excavation, scaffolding)"
+      ]
+    },
+    "recent_changes": "OSHA increasing enforcement actions. Growing focus on heat illness prevention regulations. Silica dust exposure standards being more strictly enforced. Some states requiring Site Safety Training (SST) cards (e.g., NYC requires 62-hour SST for supervisors)."
+  },
+  "tools": {
+    "summary": "Mix of construction management software, field communication tools, safety equipment, and traditional construction instruments. Mobile technology increasingly replacing paper-based processes.",
+    "primary_tools": [
+      {
+        "name": "Construction project management software",
+        "description": "Scheduling, tracking, and documentation platforms",
+        "examples": "Procore, PlanGrid (Autodesk Build), Buildertrend, CoConstruct"
+      },
+      {
+        "name": "Blueprint and plan viewers",
+        "description": "Digital plan viewing on tablets and phones",
+        "examples": "PlanGrid, Bluebeam, AutoCAD mobile"
+      },
+      {
+        "name": "Scheduling and workforce management",
+        "description": "Crew scheduling and labor tracking tools",
+        "examples": "Microsoft Project, Primavera P6, Smartsheet"
+      },
+      {
+        "name": "Safety management platforms",
+        "description": "Digital safety checklists, incident reporting, toolbox talks",
+        "examples": "Safety Culture (iAuditor), SALUS, GoCanvas"
+      },
+      {
+        "name": "Communication tools",
+        "description": "Radios, smartphones, and messaging apps for field coordination",
+        "examples": "Two-way radios, WhatsApp/GroupMe for crew, Procore messaging"
+      }
+    ],
+    "secondary_tools": [
+      "Laser levels and surveying equipment",
+      "Drones for site inspection and progress monitoring",
+      "Personal protective equipment (PPE)",
+      "Weather monitoring apps",
+      "GPS fleet tracking for equipment"
+    ],
+    "pain_points": [
+      "Resistance to digital tools among experienced tradespeople",
+      "Poor cellular/internet connectivity on some job sites",
+      "Multiple disconnected software systems",
+      "Paper-dependent processes at smaller companies",
+      "High cost of technology adoption for small contractors"
+    ]
+  },
+  "terminology": {
+    "summary": "Construction industry vocabulary combining trade-specific terms, safety language, and project management concepts.",
+    "terms": {
+      "GC": "General Contractor — firm responsible for overall project execution",
+      "sub": "Subcontractor — specialty contractor hired by GC",
+      "foreman": "First-line supervisor of a construction crew",
+      "super": "Superintendent — senior field supervisor overseeing multiple crews",
+      "punch list": "List of deficiencies to fix before project completion",
+      "RFI": "Request for Information — formal question about plans/specs",
+      "CO": "Change Order — modification to the original contract/scope",
+      "submittals": "Shop drawings, samples, or data submitted for approval",
+      "as-builts": "Drawings showing actual constructed conditions",
+      "rough-in": "Installation of mechanical/electrical systems before walls are closed",
+      "trim-out": "Finishing work: fixtures, hardware, final connections",
+      "toolbox talk": "Brief daily safety meeting at start of shift",
+      "competent person": "OSHA designation: person capable of identifying hazards and authorized to correct them",
+      "fall protection": "Systems preventing falls from heights (harness, guardrails, nets)",
+      "PPE": "Personal Protective Equipment",
+      "SWPPP": "Storm Water Pollution Prevention Plan",
+      "prevailing wage": "Government-mandated minimum wage rate for public construction projects",
+      "man-hours": "Unit of labor measurement (one person working one hour)",
+      "mobilization": "Setting up equipment and personnel at a construction site"
+    }
+  },
+  "career_psychology": {
+    "summary": "Experience-based career with strong earning potential ($79,000-$110,000). Comes up through the trades — no degree required. High demand due to construction boom and workforce shortage (~439,000 workers needed). Physical and weather exposure are main challenges.",
+    "career_path": [
+      "Apprentice or entry-level construction worker in specific trade",
+      "Journeyman-level trade worker (3-5 years experience)",
+      "Lead worker or crew leader",
+      "Foreman / first-line supervisor (5-10+ years experience)",
+      "General superintendent or area manager",
+      "Project manager (often requires additional education/certifications)",
+      "Operations director or business owner"
+    ],
+    "salary_range": {
+      "foreman_entry": "$55,000 - $70,000",
+      "average": "$79,415 (BLS 2023)",
+      "experienced_supervisor": "$80,000 - $110,000",
+      "top_10_percent": "$109,980+",
+      "union_supervisor": "Often higher with benefits and overtime"
+    },
+    "fears": [
+      "Worker injury or fatality on their watch",
+      "OSHA violations and fines",
+      "Project delays and budget overruns reflecting on performance",
+      "Difficulty finding and retaining skilled workers",
+      "Physical toll of years in construction",
+      "Liability exposure"
+    ],
+    "motivation": [
+      "Seeing tangible results — buildings, infrastructure",
+      "Leadership and mentoring younger workers",
+      "Good income without college degree",
+      "Outdoor work and variety every day",
+      "Pride in craftsmanship and trade skills",
+      "Strong demand and job security"
+    ],
+    "burnout_factors": [
+      "Long hours (50-60+ hour weeks common during peak)",
+      "Physical demands and weather exposure",
+      "Stress of managing tight schedules and budgets",
+      "Responsibility for worker safety",
+      "Dealing with labor shortages and unskilled workers",
+      "Administrative paperwork increasing"
+    ]
+  },
+  "community": {
+    "summary": "Community organized through trade unions, contractor associations (AGC, ABC), and OSHA training networks. Strong apprenticeship tradition and mentorship culture.",
+    "associations": [
+      {
+        "name": "Associated General Contractors of America (AGC)",
+        "url": "https://www.agc.org",
+        "type": "Major trade association for construction firms and supervisors"
+      },
+      {
+        "name": "Associated Builders and Contractors (ABC)",
+        "url": "https://www.abc.org",
+        "type": "Trade association emphasizing merit-shop (non-union) construction"
+      },
+      {
+        "name": "Building and Construction Trades Department (BCTD, AFL-CIO)",
+        "url": "https://bfraughton.wixsite.com/bctd",
+        "type": "Umbrella organization for construction trade unions"
+      },
+      {
+        "name": "National Center for Construction Education and Research (NCCER)",
+        "url": "https://www.nccer.org",
+        "type": "Provider of construction training, assessment, and certification"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "r/Construction",
+        "url": "https://reddit.com/r/Construction",
+        "description": "Active Reddit community for construction professionals"
+      },
+      {
+        "name": "Construction Junkie",
+        "url": "https://www.constructionjunkie.com",
+        "description": "Construction industry news and community"
+      }
+    ],
+    "events": [
+      "World of Concrete (annual, Las Vegas)",
+      "CONEXPO-CON/AGG (triennial)",
+      "AGC Annual Convention",
+      "ABC Annual Convention",
+      "OSHA National Safety Stand-Down (annual)"
+    ]
+  },
+  "market": {
+    "summary": "Strong demand. Construction industry needs ~439,000 additional workers in 2025, jumping to ~500,000 in 2026. 9% growth projected for construction managers 2024-2034. Infrastructure spending and housing demand driving opportunities.",
+    "demand_forecast": {
+      "workers_needed_2025": "~439,000 additional construction workers (ABC)",
+      "workers_needed_2026": "~500,000 projected",
+      "growth_rate": "9% for construction managers (2024-2034, BLS — much faster than average)",
+      "annual_openings": "~46,800/year for construction managers"
+    },
+    "salary_market": {
+      "average": "$79,415 (BLS 2023)",
+      "range": "$43,570 - $109,980",
+      "glassdoor_average": "$107,128 (construction supervisor)"
+    },
+    "market_trends": [
+      "Massive infrastructure spending (IIJA, CHIPS Act) driving demand",
+      "Severe skilled labor shortage across all trades",
+      "Technology adoption: drones, BIM, mobile project management",
+      "Growing focus on safety culture and mental health in construction",
+      "Prefabrication and modular construction changing field operations",
+      "Increasing demand for bilingual supervisors",
+      "Green building and sustainability creating new specializations"
+    ]
+  },
+  "quality_score": 0.80,
+  "sources_count": 28,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "first-line supervisor construction trades extraction workers USA 2025 2026 salary duties OSHA certification career outlook",
+      "sources": [
+        {"title": "BLS OES — First-Line Supervisors", "url": "https://www.bls.gov/oes/current/oes471011.htm"},
+        {"title": "O*NET — First-Line Supervisors", "url": "https://www.onetonline.org/link/summary/47-1011.00"},
+        {"title": "AGC 2025 Construction Hiring Outlook", "url": "https://www.agc.org/2025-construction-hiring-and-business-outlook"},
+        {"title": "Construction Outlook 2026", "url": "https://thebirmgroup.com/construction-industry-outlook-2026/"},
+        {"title": "OSHA Construction Safety Training", "url": "https://www.osha.gov/training/outreach/construction"}
+      ]
+    }
+  ]
+}

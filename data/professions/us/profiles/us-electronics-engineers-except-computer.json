@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-electronics-engineers-except-computer",
+  "profession_name": "Electronics Engineers, Except Computer",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Design and develop electronic components, circuits, and systems for non-computer applications (telecommunications, defense, medical devices, industrial controls, consumer electronics). Morning: review designs, team meetings. Core work: circuit design, PCB layout, prototype testing, signal analysis. Lab work with oscilloscopes, spectrum analyzers, network analyzers. Collaborate with mechanical engineers on packaging, manufacturing on production. Standard 40-hour week with overtime during product development crunch.",
+    "key_documents": ["Circuit schematics", "PCB layout files", "Test plans and reports", "Design specifications", "Bill of Materials (BOM)", "Compliance documentation (FCC, UL, MIL-STD)", "Engineering change orders", "Datasheets", "Simulation reports"],
+    "deadlines": "Product development milestones; prototype review cycles; compliance testing schedules; production release dates; military/defense contract deadlines; patent filing deadlines.",
+    "seasonality": "Defense contract cycles (government fiscal year Oct-Sept). Consumer electronics product launches. Trade show season (CES January, IMS June). Budget planning in Q4."
+  },
+  "regulatory": {
+    "laws_and_standards": ["FCC Part 15 and Part 18 (electromagnetic emissions)", "MIL-STD standards (for defense applications)", "UL/CSA safety standards", "IPC standards (PCB manufacturing)", "RoHS and REACH (hazardous substances)", "ITAR/EAR (export controls)", "ISO 9001 (quality management)", "FDA 21 CFR (for medical electronics)"],
+    "licensing": "No mandatory professional license. ABET-accredited degree in electrical/electronics engineering typical. PE license available but less common than in power engineering. Certifications: Six Sigma, PMP, vendor-specific (TI, Analog Devices), security clearance for defense work.",
+    "penalties": "FCC fines for emissions violations. ITAR violations carry severe criminal penalties. Product recalls for safety issues. Patent infringement litigation. Military contract compliance failures.",
+    "regulatory_bodies": ["FCC (Federal Communications Commission)", "DoD/ITAR (for defense electronics)", "UL (Underwriters Laboratories)", "IPC (electronics manufacturing standards)", "FDA (for medical electronics)", "NIST"]
+  },
+  "tools": {
+    "software": ["Altium Designer - PCB design", "Cadence OrCAD/Allegro - circuit and PCB design", "Mentor Graphics (Siemens EDA) - EDA tools", "LTspice - circuit simulation", "Keysight ADS - RF/microwave design", "MATLAB/Simulink - signal processing", "LabVIEW - test automation", "ANSYS HFSS - electromagnetic simulation"],
+    "platforms": ["Test equipment: oscilloscopes, spectrum analyzers, network analyzers, logic analyzers", "JIRA/Confluence - project management", "GitHub/GitLab - version control", "PLM systems (Arena, Teamcenter)", "Manufacturing: pick-and-place, reflow ovens, AOI"],
+    "gov_portals": ["FCC equipment authorization portal", "ITAR/DDTC registration", "SAM.gov (defense contracting)", "NIST standards database"]
+  },
+  "terminology": {
+    "jargon": ["RF (Radio Frequency) design", "Analog vs digital", "Signal integrity", "Power integrity", "Impedance matching", "Noise figure", "S-parameters", "Mixed-signal design", "EMI/EMC compliance", "DFM/DFT (Design for Manufacturing/Test)"],
+    "abbreviations": ["RF - Radio Frequency", "PCB - Printed Circuit Board", "EMI/EMC - Electromagnetic Interference/Compatibility", "ADC/DAC - Analog-to-Digital/Digital-to-Analog Converter", "DSP - Digital Signal Processing", "SNR - Signal-to-Noise Ratio", "BOM - Bill of Materials", "SMD/SMT - Surface Mount Device/Technology", "IC - Integrated Circuit", "FPGA - Field-Programmable Gate Array", "EDA - Electronic Design Automation", "NRE - Non-Recurring Engineering"]
+  },
+  "career_psychology": {
+    "career_levels": ["Junior Electronics Engineer (0-3 years)", "Electronics Engineer (3-6 years)", "Senior Electronics Engineer (6-12 years)", "Staff/Principal Engineer (12+ years)", "Engineering Manager/Director", "VP of Engineering / Fellow"],
+    "fears": ["Offshoring of electronics design work", "Rapid technology obsolescence", "Defense budget cuts affecting contracts", "Supply chain disruptions (component shortages)", "AI tools automating design tasks", "Stiff competition for top positions at leading companies"],
+    "motivation": "Creating cutting-edge electronic systems; defense/aerospace applications with national importance; strong demand in telecom, medical devices, and industrial sectors; intellectual challenge of analog/RF design; good compensation trajectory.",
+    "burnout": "Crunch periods before product releases and trade shows; defense contract pressures; high complexity of debugging analog/RF issues; 45% of engineering workers report mental health impacts. Better than pure software due to tangible physical outcomes."
+  },
+  "community": {
+    "reddit": ["r/ECE", "r/AskElectronics", "r/rfelectronics", "r/PrintedCircuitBoard", "r/engineering"],
+    "linkedin": ["IEEE community", "Electronics Design Engineers", "RF Engineering Professionals", "Defense Electronics network"],
+    "associations": ["IEEE (Institute of Electrical and Electronics Engineers)", "IPC (Association Connecting Electronics Industries)", "SMTA (Surface Mount Technology Association)", "AES (Audio Engineering Society)", "SPIE (for optical electronics)"],
+    "conferences": ["IEEE International Microwave Symposium (IMS) - June", "CES - January, Las Vegas", "IPC APEX EXPO - January", "Design Automation Conference (DAC)", "Embedded World - March", "IEEE MTT-S conferences"]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 70000,
+      "mid_level_usd": 100000,
+      "senior_level_usd": 135000,
+      "principal_staff_usd": 171000
+    },
+    "average_salary_usd": 115000,
+    "job_count_estimate": "About 133,200 electronics engineers (except computer) in the US (BLS). Employment projected to grow 7% through 2034. Strong demand in defense, telecom, medical devices, and industrial automation.",
+    "work_arrangements": "Primarily on-site due to lab and test equipment needs. Defense roles often require on-site with security clearance. Some hybrid options for design/simulation phases. Major employers: defense contractors (Raytheon, Lockheed Martin, L3Harris), semiconductor companies, medical device firms, telecom companies.",
+    "trends": ["5G/6G telecommunications driving RF engineering demand", "Defense modernization creating electronics roles", "Electric vehicles requiring power electronics expertise", "IoT and edge computing expanding embedded electronics", "7% projected job growth through 2034", "Salary growth 4.2% average, up to 10% for senior roles", "CHIPS Act boosting domestic electronics manufacturing", "AI/ML integration in electronic systems"]
+  },
+  "quality_score": 0.82,
+  "sources_count": 7,
+  "verified_sources": 5
+}

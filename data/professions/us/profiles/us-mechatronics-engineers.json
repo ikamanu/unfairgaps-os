@@ -1,0 +1,88 @@
+{
+  "profession_id": "us-mechatronics-engineers",
+  "profession_name": "Mechatronics Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Mechatronics engineers integrate mechanical, electrical, computer, and control engineering to design intelligent systems — robotics, automation, smart devices, and autonomous systems. They work at the intersection of hardware and software.",
+    "typical_tasks": ["Design and develop automated systems combining mechanical, electrical, and software components", "Program PLCs, microcontrollers, and embedded systems", "Integrate sensors, actuators, and control systems", "Develop and test robotic systems and automated equipment", "Design human-machine interfaces (HMI) and control panels", "Troubleshoot and debug integrated electromechanical systems", "Conduct simulation and modeling of mechatronic systems", "Program industrial robots (FANUC, ABB, KUKA)", "Develop control algorithms for motion control and automation", "Write code for data acquisition and system monitoring"],
+    "key_documents": ["System design specifications", "Electrical schematics and wiring diagrams", "PLC/HMI programs and documentation", "Control system architecture documents", "Test protocols and validation reports", "Software version control and release notes", "Safety risk assessments for automated systems"],
+    "deadlines": {"project_milestones": "Aligned with automation project schedules", "commissioning": "Fixed installation and start-up dates", "production_deadlines": "Driven by manufacturing schedules", "safety_certification": "Required before system operation"},
+    "seasonality": "Capital expenditure cycles (Q3-Q4 budget approvals). Manufacturing shutdown periods for installation. Automotive model changeover periods."
+  },
+  "regulatory": {
+    "summary": "Machine safety standards (ANSI/RIA, ISO) govern automated system design. PE licensure available through mechanical or electrical PE pathways. ISA provides automation certifications.",
+    "key_laws": [
+      {"name": "ANSI/RIA 15.06 (Robot Safety)", "description": "Safety requirements for industrial robot systems"},
+      {"name": "NFPA 79 (Electrical Standard for Industrial Machinery)", "description": "Electrical safety for manufacturing equipment"},
+      {"name": "ISO 13849 / IEC 62443", "description": "Safety and cybersecurity of machinery control systems"},
+      {"name": "OSHA Machine Guarding (29 CFR 1910.212)", "description": "Workplace machine safety requirements"}
+    ],
+    "licensing": {
+      "requirements": ["Bachelor's degree in Mechatronics, Mechanical, Electrical, or Robotics Engineering", "PE licensure through Mechanical or Electrical discipline", "ISA certifications for automation professionals"],
+      "certifications": ["CAP — Certified Automation Professional (ISA)", "CMSA — Certified Mechatronics Systems Associate (MSSC)", "CRSA — Certified Robotics System Architect (RIA)", "PE — Mechanical or Electrical (NCEES)", "FANUC / ABB / KUKA robot programming certifications"]
+    },
+    "penalties": "Machine safety non-compliance can result in OSHA citations. Liability for automation system failures causing injury. Regulatory compliance required for CE marking (exports)."
+  },
+  "tools": {
+    "summary": "Integration of CAD, electrical design, PLC programming, simulation, and embedded systems development tools reflecting the multidisciplinary nature of the field.",
+    "primary_tools": [
+      {"name": "SolidWorks / CATIA / Inventor", "description": "3D mechanical design of mechatronic assemblies"},
+      {"name": "Allen-Bradley RSLogix / Studio 5000", "description": "PLC programming for industrial automation"},
+      {"name": "Siemens TIA Portal", "description": "Integrated automation platform — PLC, HMI, drives"},
+      {"name": "MATLAB / Simulink", "description": "Control system design, simulation, and algorithm development"},
+      {"name": "LabVIEW", "description": "Data acquisition, test automation, and measurement systems"},
+      {"name": "Arduino / Raspberry Pi / STM32", "description": "Embedded systems prototyping and development"}
+    ],
+    "secondary_tools": ["Robot programming (FANUC TP, ABB RAPID, KUKA KRL)", "Altium / Eagle for PCB design", "Python / C++ for embedded and control software", "EPLAN / AutoCAD Electrical for electrical schematics", "ROS (Robot Operating System) for robotics development", "ADAMS / ANSYS for multibody dynamics simulation"],
+    "pain_points": ["Integrating hardware and software from multiple vendors", "Debugging complex systems with mechanical, electrical, and software interactions", "Keeping skills current across multiple engineering domains", "Safety certification complexity for automated systems"]
+  },
+  "terminology": {
+    "summary": "Mechatronics terminology spans mechanical, electrical, control, and computer engineering domains with automation-specific jargon.",
+    "terms": {
+      "PLC": "Programmable Logic Controller", "HMI": "Human-Machine Interface",
+      "SCADA": "Supervisory Control and Data Acquisition", "DCS": "Distributed Control System",
+      "actuator": "Device converting control signal to physical motion", "sensor": "Device measuring physical quantity",
+      "servo": "Motor with position/velocity feedback control", "stepper": "Motor moving in discrete steps",
+      "PID": "Proportional-Integral-Derivative controller", "feedback loop": "Closed-loop control using sensor data",
+      "end effector": "Tool at the end of a robot arm", "DOF": "Degrees of Freedom",
+      "kinematics": "Study of motion without considering forces", "dynamics": "Study of forces and motion",
+      "embedded system": "Computer system within a larger mechanical/electrical system",
+      "CAN bus": "Controller Area Network — vehicle/industrial communication protocol",
+      "I/O": "Input/Output — signal interface between PLC and field devices",
+      "ladder logic": "Graphical PLC programming language", "SFC": "Sequential Function Chart",
+      "ISA": "International Society of Automation", "RIA": "Robotic Industries Association"
+    }
+  },
+  "career_psychology": {
+    "summary": "High-demand, well-compensated field with average salary $118K-$132K. Combines hardware and software skills making it one of the most versatile engineering roles. Automation and robotics boom driving strong demand.",
+    "career_path": ["Bachelor's in Mechatronics / Robotics / Mechanical / Electrical Engineering", "Junior Mechatronics Engineer / Controls Engineer", "ISA CAP or vendor certifications", "Senior Mechatronics Engineer (5+ years)", "Lead Systems Engineer / Automation Architect", "Engineering Manager / Director of Automation", "VP of Engineering / CTO (robotics/automation companies)"],
+    "salary_range": {"entry_level": "$70,000 - $90,000/year", "mid_level": "$100,000 - $130,000/year", "senior": "$130,000 - $170,000/year", "director": "$170,000 - $220,000+/year", "average": "$118,190 - $132,172/year", "top_companies": "Meta, Apple, Waymo pay top of range"},
+    "fears": ["System failure causing safety incident with automated equipment", "Rapid technology changes making skills obsolete", "Complexity of debugging multi-domain systems", "AI/ML automating control engineering tasks", "Liability for autonomous system decisions"],
+    "motivation": ["Building intelligent systems that combine hardware and software", "Working at the cutting edge of robotics and automation", "Strong demand and excellent compensation", "Seeing physical machines come to life through engineering", "Variety of industries and applications"],
+    "burnout_factors": ["Commissioning pressure with tight installation deadlines", "On-call support for production automation systems", "Travel to customer sites for installation and troubleshooting", "Constant learning across multiple engineering domains", "Complex debugging sessions spanning hardware and software"]
+  },
+  "community": {
+    "summary": "Community spans ISA (automation), RIA (robotics), IEEE (electronics), and ASME (mechanical) professional societies reflecting the multidisciplinary nature.",
+    "associations": [
+      {"name": "ISA (International Society of Automation)", "description": "Automation professionals, CAP certification, standards"},
+      {"name": "Robotic Industries Association (RIA)", "description": "Robotics industry trade group, now part of A3 (Association for Advancing Automation)"},
+      {"name": "IEEE Robotics and Automation Society", "description": "Academic and industry robotics community"},
+      {"name": "ASME (for mechanical aspects)", "description": "Mechanical engineering professional society"},
+      {"name": "PMMI (Packaging Machinery Manufacturers Institute)", "description": "Packaging automation industry and mechatronics certification"}
+    ],
+    "online_communities": ["r/PLC and r/robotics — Reddit", "Control.com forums", "LinkedIn automation and robotics groups", "ROS community forums"],
+    "conferences": ["Automate (A3 show) — largest automation event in North America", "ICRA — IEEE International Conference on Robotics and Automation", "ISA Automation Summit", "Hannover Messe (global industrial technology)"]
+  },
+  "market": {
+    "summary": "Strong and growing market with ~3.3% annual growth. Average salary $118-132K with top companies paying $170K+. Automation and robotics boom, Industry 4.0, and autonomous systems driving exceptional demand.",
+    "growth_rate": "3.3% annual (19,920 new jobs by 2029); automation engineer is 2nd most in-demand",
+    "salary_market": {"average": "$118,190 - $132,172/year", "25th_percentile": "$103,135/year", "75th_percentile": "$171,341/year", "top_earners": "$200,000+/year at leading tech companies"},
+    "top_employers": ["Technology companies (Apple, Meta, Waymo, Tesla)", "Automotive manufacturers (EV and autonomous vehicles)", "Amazon and logistics companies (warehouse automation)", "Robot manufacturers (FANUC, ABB, KUKA, Boston Dynamics)", "Aerospace and defense contractors", "Medical device and pharmaceutical companies (automated manufacturing)"],
+    "market_trends": ["Warehouse and logistics automation boom (Amazon effect)", "Autonomous vehicles driving mechatronics demand", "Collaborative robots (cobots) expanding to new industries", "Industry 4.0 and IIoT creating smart factory roles", "AI integration with physical systems (embodied AI)", "Second most in-demand engineering specialization in automation"]
+  },
+  "quality_score": 0.77,
+  "sources_count": 18,
+  "verified_sources": 6,
+  "confidence": "verified",
+  "raw_responses": [{"query": "Mechatronics Engineers USA salary career outlook certification robotics automation", "sources": [{"title": "PayScale — Mechatronics Engineer Salary 2026", "url": "https://www.payscale.com/research/US/Job=Mechatronics_Engineer/Salary"}, {"title": "Glassdoor — Mechatronics Engineer Salary 2026", "url": "https://www.glassdoor.com/Salaries/mechatronics-engineer-salary-SRCH_KO0,21.htm"}, {"title": "ZipRecruiter — Mechatronics Engineer Salary 2026", "url": "https://www.ziprecruiter.com/Salaries/Mechatronics-Engineer-Salary"}, {"title": "CareerExplorer — Mechatronics Engineer Job Market", "url": "https://www.careerexplorer.com/careers/mechatronics-engineer/job-market/"}]}]
+}

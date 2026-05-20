@@ -1,0 +1,306 @@
+{
+  "profession_id": "us-orthotists-and-prosthetists",
+  "profession_name": "Orthotists and Prosthetists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Orthotists design and fit orthopedic braces/splints; prosthetists design and fit artificial limbs. Work split between clinical patient care (assessment, fitting, follow-up) and lab fabrication (casting, molding, assembly). ~10,100 practitioners nationwide.",
+    "typical_tasks": [
+      "Evaluate patients and take measurements/impressions for device fitting",
+      "Design orthoses (braces) or prostheses (artificial limbs) based on physician prescriptions",
+      "Fabricate devices using thermoplastics, carbon fiber, acrylic, epoxy resins",
+      "Cast plaster molds or capture digital scans of affected limbs",
+      "Fit and adjust devices on patients — check alignment, comfort, function",
+      "Train patients in device use, care, and maintenance",
+      "Perform device repairs and modifications",
+      "Collaborate with physicians, physical therapists, and rehabilitation team",
+      "Use CAD/CAM software for digital design and modification",
+      "Document patient assessments and treatment progress in EMR"
+    ],
+    "key_documents": [
+      "Physician prescriptions/referrals for O&P devices",
+      "Patient assessment and measurement records",
+      "Device specifications and design documentation",
+      "Insurance authorization and claims forms (L-codes)",
+      "Patient education and consent materials",
+      "Follow-up and maintenance records"
+    ],
+    "deadlines": {
+      "abc_certification_renewal": "Every 5 years with CE requirements",
+      "residency_completion": "12 months per discipline, 18 months dual",
+      "insurance_preauth": "Varies — can take 2-6 weeks",
+      "device_delivery": "Typically 2-6 weeks from initial assessment to delivery"
+    },
+    "seasonality": "Relatively steady year-round. Some seasonal patterns: increased orthotics needs for sports injuries in spring/fall, prosthetics demand consistent. Medicare/insurance renewal cycles can affect Q4-Q1 ordering."
+  },
+  "regulatory": {
+    "summary": "Requires master's degree from CAAHEP-accredited program plus 12-18 month NCOPE-accredited residency. National certification through ABC or BOC. ~20 states require state licensure. ISPO international accreditation recognizes US pathway as meeting highest standards.",
+    "key_laws": [
+      {
+        "name": "American Board for Certification (ABC)",
+        "url": "https://www.abcop.org",
+        "description": "Primary certifying body — offers CO (Certified Orthotist), CP (Certified Prosthetist), CPO (dual) credentials",
+        "status": "Active"
+      },
+      {
+        "name": "Board of Certification/Accreditation (BOC)",
+        "url": "https://www.bocusa.org",
+        "description": "Alternative national certifying body",
+        "status": "Active"
+      },
+      {
+        "name": "NCOPE (National Commission on Orthotic and Prosthetic Education)",
+        "url": "https://ncope.org",
+        "description": "Accredits residency programs; CAAHEP accredits academic programs",
+        "status": "Active"
+      },
+      {
+        "name": "State Licensure Laws",
+        "description": "~20 states require state licensure; others rely on national certification",
+        "status": "Varies by state"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Bachelor's degree with prerequisites (biology, chemistry, physics, anatomy)",
+        "Master's degree from CAAHEP-accredited O&P program (includes 500+ clinical hours)",
+        "12-month NCOPE-accredited residency (per discipline) or 18 months for dual CPO",
+        "Pass ABC or BOC certification examinations",
+        "State licensure where required (~20 states)",
+        "ISPO-recognized international accreditation"
+      ]
+    },
+    "continuing_education": "Required for certification renewal; ABC requires CE credits every 5-year cycle; attendance at AAOP/AOPA meetings common"
+  },
+  "tools": {
+    "summary": "Transitioning from traditional plaster casting and hand fabrication to digital CAD/CAM workflows. 30% of prostheses now incorporate CAD/CAM (up from 23% in 2015). 3D printing emerging but not yet mainstream for definitive devices.",
+    "primary_tools": [
+      {
+        "name": "CAD/CAM Systems (Qwadra, formerly Rodin4D/Vorum)",
+        "url": "https://qwadra.com",
+        "description": "Leading digital design and manufacturing platform for O&P — 97% of practitioners report positive patient care impact"
+      },
+      {
+        "name": "3D Scanners",
+        "description": "Handheld and stationary scanners for digital limb impressions — replacing plaster casting. Some work with iPhone/iPad."
+      },
+      {
+        "name": "Traditional Fabrication Tools",
+        "description": "Drills, sanders, grinders, vacuum forming equipment, ovens — still essential for many devices"
+      },
+      {
+        "name": "CNC Carvers",
+        "description": "Computer-controlled carving machines for producing positive models from digital designs"
+      }
+    ],
+    "secondary_tools": [
+      "3D printers (emerging — Fused Deposition Modeling, SLS for socket production)",
+      "Reverse engineering software (Rhinoceros, Geomagic, LeiosMesh)",
+      "Practice management and EMR software",
+      "Thermoplastic forming equipment",
+      "Alignment tools and gait analysis systems",
+      "Materials: carbon fiber, polypropylene, silicone, titanium components"
+    ],
+    "pain_points": [
+      "CAD/CAM adoption slower for orthotics than prosthetics",
+      "Software user-friendliness not optimized for direct device construction",
+      "High cost of digital scanning and CNC equipment",
+      "Insurance reimbursement doesn't always cover digital workflow costs",
+      "Learning curve for transitioning from manual to digital fabrication"
+    ]
+  },
+  "terminology": {
+    "summary": "Rich specialized vocabulary covering anatomical levels of amputation, device types, biomechanical concepts, and fitting terminology. Heavy abbreviation use in clinical notes and insurance coding.",
+    "terms": {
+      "AFO": "Ankle-Foot Orthosis — brace for lower leg and foot",
+      "KAFO": "Knee-Ankle-Foot Orthosis — brace for entire leg",
+      "SMO": "Supramalleolar Orthosis — ankle/foot device below malleoli",
+      "TLSO": "Thoraco-Lumbar-Sacral Orthosis — spinal brace",
+      "BKA/BK": "Below-Knee Amputation (transtibial)",
+      "AKA/AK": "Above-Knee Amputation (transfemoral)",
+      "transtibial": "Amputation below the knee",
+      "transfemoral": "Amputation above the knee",
+      "socket": "The part of prosthesis that fits over the residual limb",
+      "residual limb": "Remaining portion of amputated limb (formerly 'stump')",
+      "pylon": "Structural component connecting socket to foot/knee unit",
+      "check socket": "Transparent test socket for initial fitting assessment",
+      "definitive device": "Final, permanent orthosis or prosthesis",
+      "L-codes": "HCPCS Level II codes for O&P billing (L0000-L9999)",
+      "donning/doffing": "Putting on / taking off a prosthesis or orthosis",
+      "gait deviation": "Abnormal walking pattern (e.g., vaulting, circumduction)",
+      "alignment": "Angular relationship of prosthetic components for optimal gait",
+      "suspension": "How prosthesis stays attached to residual limb",
+      "microprocessor knee": "Computer-controlled prosthetic knee (e.g., C-Leg, Genium)",
+      "myoelectric": "Prosthetic hand/arm controlled by muscle electrical signals"
+    }
+  },
+  "career_psychology": {
+    "summary": "Meaningful career restoring mobility and independence. Master's degree now required (raised from bachelor's). 12% projected job growth (faster than average). Moderate salary with strong purpose-driven satisfaction. Workforce shortage creates job security.",
+    "career_path": [
+      "Bachelor's degree with science prerequisites (4 years)",
+      "Master's degree in O&P from CAAHEP-accredited program (2-3 years)",
+      "NCOPE-accredited residency (12-18 months)",
+      "ABC/BOC certification exams",
+      "Staff orthotist or prosthetist in clinical setting",
+      "Senior clinician / clinical manager",
+      "Practice owner / business owner",
+      "Academic faculty / researcher / program director"
+    ],
+    "salary_range": {
+      "entry_level": "$65,000 - $80,000/year",
+      "mid_career": "$80,000 - $95,000/year",
+      "senior": "$95,000 - $120,000/year",
+      "practice_owner": "$120,000 - $200,000+/year"
+    },
+    "fears": [
+      "Insurance reimbursement cuts (L-code denials, prior auth hassles)",
+      "Liability for device failure or patient injury",
+      "Keeping up with rapidly changing technology (CAD/CAM, 3D printing)",
+      "Workforce shortage increasing patient loads",
+      "Physical demands of lab work (standing, lifting, repetitive motions)"
+    ],
+    "motivation": [
+      "Life-changing impact — restoring mobility and independence",
+      "Combination of clinical care and hands-on craftsmanship",
+      "Strong interpersonal relationships with patients over long treatment",
+      "Growing field with strong job security",
+      "Cutting-edge technology adoption (robotics, myoelectrics, 3D printing)"
+    ],
+    "burnout_factors": [
+      "High patient loads due to workforce shortage (60% demand vs supply gap by 2025)",
+      "Insurance/Medicare reimbursement challenges",
+      "Physical demands of fabrication and fitting",
+      "Emotional weight of working with amputees and trauma patients",
+      "Balancing clinical care with business management"
+    ]
+  },
+  "community": {
+    "summary": "Two main organizations: AAOP (for individual practitioners, research) and AOPA (for businesses, 2,000+ facilities). Major conferences in February/March (AAOP) and September (AOPA National Assembly). Growing community with strong professional identity.",
+    "associations": [
+      {
+        "name": "American Academy of Orthotists and Prosthetists (AAOP)",
+        "url": "https://www.oandp.org",
+        "type": "Professional association for individual O&P practitioners"
+      },
+      {
+        "name": "American Orthotic & Prosthetic Association (AOPA)",
+        "url": "https://aopanet.org",
+        "type": "Trade association for O&P businesses (2,000+ facilities)"
+      },
+      {
+        "name": "American Board for Certification (ABC)",
+        "url": "https://www.abcop.org",
+        "type": "Certifying body"
+      },
+      {
+        "name": "Orthotics and Prosthetics Foundation",
+        "url": "https://oandpfoundation.org",
+        "type": "Foundation — scholarships and education support"
+      }
+    ],
+    "events": [
+      "AAOP Annual Meeting & Scientific Symposium (Feb/Mar — 190+ sessions)",
+      "AOPA National Assembly (September — largest O&P trade show, 100,000 sq ft exhibit)",
+      "ABC Exam Preparation Seminars (held at AAOP meetings)",
+      "Pedorthic Footcare Association joining AAOP2026"
+    ],
+    "online_communities": [
+      "O&P Edge (oandp.com) — industry news and community",
+      "O&P professional groups on LinkedIn and Facebook",
+      "Amputee Coalition — patient advocacy with professional overlap"
+    ]
+  },
+  "market": {
+    "summary": "Strong growth outlook: 13% projected job growth 2024-2034 (much faster than average). Significant workforce shortage — 60% demand-supply gap projected. Aging population driving demand. ~10,100 jobs with ~900 new openings annually.",
+    "job_outlook": {
+      "growth_rate": "13% projected 2024-2034 (much faster than average)",
+      "current_employment": "10,100 jobs (2024)",
+      "annual_openings": "~900 projected per year",
+      "workforce_gap": "60% higher demand than supply projected by 2025"
+    },
+    "salary_market": {
+      "average": "$81,000 - $96,000/year",
+      "certified_cpo": "Up to $120,000/year",
+      "top_markets": "DC ($104K), CA ($104K), MS ($98K)"
+    },
+    "demand_drivers": [
+      "Aging baby boomer population (diabetes, cardiovascular disease = limb loss)",
+      "Increasing diabetes prevalence (leading cause of amputation)",
+      "Military veterans returning from service",
+      "Active lifestyle expectations driving orthotic demand",
+      "Advancing technology making devices more functional"
+    ],
+    "market_trends": [
+      "CAD/CAM adoption accelerating (30% prostheses, growing for orthotics)",
+      "3D printing emerging for custom devices",
+      "Microprocessor-controlled prosthetics becoming standard",
+      "Consolidation of O&P practices into larger groups",
+      "Telehealth consultations for follow-up care",
+      "Medicare reimbursement policies under constant scrutiny"
+    ]
+  },
+  "quality_score": 0.78,
+  "sources_count": 28,
+  "verified_sources": 12,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Orthotist Prosthetist USA 2025 2026 typical day tasks patient care prosthetics orthotics fitting fabrication",
+      "sources": [
+        {"title": "BLS - Orthotists and Prosthetists", "url": "https://www.bls.gov/ooh/healthcare/orthotists-and-prosthetists.htm"},
+        {"title": "Indeed - Job Description 2026", "url": "https://www.indeed.com/hire/job-description/orthotist-prosthetist"},
+        {"title": "NCOPE - Our Profession", "url": "https://ncope.org/index.php/home-page-v2/academic-programs/the-orthotic-prosthetic-profession/"},
+        {"title": "Cleveland Clinic - Orthotist Prosthetist", "url": "https://my.clevelandclinic.org/health/articles/orthotist-prosthetist"}
+      ]
+    },
+    {
+      "query": "Orthotist Prosthetist USA licensing certification ABC BOC NCOPE requirements accreditation 2025",
+      "sources": [
+        {"title": "ABC - Eligibility", "url": "https://www.abcop.org/individual-certification/get-certified/orthotist-prosthetist/eligibility"},
+        {"title": "ISPO - ABC/NCOPE Pathway", "url": "https://www.ispoint.org/training-programme/ncope-american-board-for-certification-in-orthotics-and-prosthetics/"},
+        {"title": "LicenseMap - State Requirements 2026", "url": "https://www.getlicensemap.com/states/orthotist-prosthetist"}
+      ]
+    },
+    {
+      "query": "Orthotist Prosthetist USA tools CAD CAM 3D printing scanning technology software 2025",
+      "sources": [
+        {"title": "Physiopedia - CAD/CAM in P&O", "url": "https://www.physio-pedia.com/Computer-Aided_Design_(CAD)_and_Computer-Aided_Manufacturing_(CAM)_in_Prosthetics_and_Orthotics"},
+        {"title": "Qwadra", "url": "https://qwadra.com/"},
+        {"title": "Boston O&P - CAD/CAM", "url": "https://www.bostonoandp.com/for-providers/cad-cam-technology/"},
+        {"title": "PMC - 3D Printing in O&P", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11168594/"}
+      ]
+    },
+    {
+      "query": "Orthotics prosthetics terminology jargon abbreviations AFO KAFO BKA AKA transtibial transfemoral",
+      "sources": [
+        {"title": "Creative P&O - Glossary", "url": "https://creativep-o.com/glossary/"},
+        {"title": "Boston O&P - Terminology", "url": "https://www.bostonoandp.com/Customer-Content/www/CMS/files/BasicOPTerminologyWithDiagrams.pdf"},
+        {"title": "ABC - Orthotic Care Glossary", "url": "https://www.abcop.org/oandpcare/information-for-all/orthotic-care/orthotic-care-glossary"}
+      ]
+    },
+    {
+      "query": "Orthotist Prosthetist USA salary 2025 2026 career path burnout residency master degree",
+      "sources": [
+        {"title": "US News - Salary 2026", "url": "https://careers.usnews.com/best-jobs/orthotist-and-prosthetist/salary"},
+        {"title": "Salary.com - CPO 2026", "url": "https://www.salary.com/research/salary/benchmark/prosthetist-orthotist-salary"},
+        {"title": "BLS - Occupational Data", "url": "https://www.bls.gov/oes/2023/may/oes292091.htm"}
+      ]
+    },
+    {
+      "query": "Orthotics Prosthetics professional associations AOPA AAOP conferences community 2025",
+      "sources": [
+        {"title": "AOPA", "url": "https://aopanet.org/"},
+        {"title": "AAOP", "url": "https://www.oandp.org/"},
+        {"title": "AOPA 2025 National Assembly", "url": "https://aopaassembly25.eventscribe.net/"},
+        {"title": "AAOP 2025 Annual Meeting", "url": "https://aaop2025.eventscribe.net/"}
+      ]
+    },
+    {
+      "query": "Orthotist Prosthetist USA job market 2025 2026 demand outlook growth shortage workforce",
+      "sources": [
+        {"title": "BLS - Occupational Outlook", "url": "https://www.bls.gov/ooh/healthcare/orthotists-and-prosthetists.htm"},
+        {"title": "VGM - State of O&P", "url": "https://www.vgm.com/communities/opga/the-state-of-op-demand-forecasting-statistics-and-workforce-projections/"},
+        {"title": "Research.com - How to Become 2026", "url": "https://research.com/advice/how-to-become-an-orthotist-or-prosthetist-education-salary-and-job-outlook"}
+      ]
+    }
+  ]
+}

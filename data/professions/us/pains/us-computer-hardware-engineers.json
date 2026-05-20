@@ -1,0 +1,755 @@
+[
+  {
+    "id": "us-computer-hardware-engineers-p01",
+    "title": "BOM Cost and Component Analysis",
+    "problem": "Hardware engineers manually calculate Bill of Materials costs across hundreds of components, factoring in quantity discounts, lead times, and alternate parts. Spreadsheet errors lead to budget overruns discovered late in development. A single miscalculated BOM line can cascade into thousands of dollars of NRE waste.",
+    "who": "Hardware engineers managing BOM for PCB and system designs",
+    "frequency": "weekly",
+    "time_waste_h": 6,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "BOM Cost Calculator",
+      "one_liner": "Calculates total BOM cost with quantity tiers, NRE allocation, and per-unit manufacturing cost breakdown",
+      "inputs": [
+        {
+          "name": "components",
+          "type": "array",
+          "label": "List of components (part number, unit cost, quantity)"
+        },
+        {
+          "name": "production_volume",
+          "type": "number",
+          "label": "Target production volume (units)"
+        },
+        {
+          "name": "nre_cost",
+          "type": "number",
+          "label": "Non-Recurring Engineering cost (USD)"
+        },
+        {
+          "name": "pcb_fab_cost",
+          "type": "number",
+          "label": "PCB fabrication cost per board (USD)"
+        },
+        {
+          "name": "assembly_cost_per_unit",
+          "type": "number",
+          "label": "Assembly cost per unit (USD)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "total_bom_cost",
+          "label": "Total BOM cost (USD)"
+        },
+        {
+          "name": "per_unit_cost",
+          "label": "Per-unit cost including NRE amortization (USD)"
+        },
+        {
+          "name": "cost_breakdown",
+          "label": "Cost breakdown by category (ICs, passives, connectors, PCB, assembly)"
+        },
+        {
+          "name": "margin_analysis",
+          "label": "Margin analysis at target retail price"
+        }
+      ],
+      "formula_hint": "per_unit = (sum(component_cost * qty) + pcb_fab + assembly) + (nre / production_volume). Category breakdown by component type. Margin = (retail - per_unit) / retail * 100",
+      "rates": {
+        "typical_markup": 2.5,
+        "scrap_rate": 0.02
+      }
+    },
+    "example_queries": [
+      "Calculate BOM cost for a board with 150 components at 10,000 unit volume with $50,000 NRE",
+      "What's my per-unit cost if I have $12.50 in ICs, $3.20 in passives, $8 PCB, and $5 assembly at 5,000 units?",
+      "Break down manufacturing cost for a 500-unit prototype run vs 50,000 production run"
+    ]
+  },
+  {
+    "id": "us-computer-hardware-engineers-p02",
+    "title": "Power Budget and Thermal Dissipation Calculation",
+    "problem": "Engineers must calculate power consumption across all components on a board to size power supplies, regulators, and thermal solutions. Errors in power budgeting lead to thermal throttling, system instability, or costly board respins. Each iteration costs weeks and tens of thousands in prototype fabrication.",
+    "who": "PCB and system-level hardware engineers designing power delivery networks",
+    "frequency": "weekly",
+    "time_waste_h": 5,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Power Budget & Thermal Calculator",
+      "one_liner": "Calculates total power consumption, per-rail power budgets, thermal dissipation requirements, and heatsink sizing",
+      "inputs": [
+        {
+          "name": "components",
+          "type": "array",
+          "label": "Components with voltage rail and current draw (typ/max)"
+        },
+        {
+          "name": "ambient_temp_c",
+          "type": "number",
+          "label": "Ambient temperature (Celsius)"
+        },
+        {
+          "name": "max_junction_temp_c",
+          "type": "number",
+          "label": "Maximum junction temperature (Celsius)"
+        },
+        {
+          "name": "airflow_lfm",
+          "type": "number",
+          "label": "Available airflow (LFM)"
+        },
+        {
+          "name": "regulator_efficiency",
+          "type": "number",
+          "label": "Voltage regulator efficiency (0-1)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "total_power_w",
+          "label": "Total system power (Watts, typical and max)"
+        },
+        {
+          "name": "per_rail_budget",
+          "label": "Power budget per voltage rail"
+        },
+        {
+          "name": "thermal_dissipation_w",
+          "label": "Total thermal dissipation (Watts)"
+        },
+        {
+          "name": "heatsink_requirement",
+          "label": "Required thermal resistance (C/W)"
+        },
+        {
+          "name": "regulator_sizing",
+          "label": "Recommended regulator current rating per rail"
+        }
+      ],
+      "formula_hint": "P_rail = sum(V * I_component). P_total = sum(P_rail / efficiency). Theta_sa = (T_jmax - T_ambient) / P_dissipated - Theta_jc. Regulator headroom = I_max * 1.2",
+      "rates": {
+        "derating_factor": 0.8,
+        "typical_regulator_efficiency": 0.87
+      }
+    },
+    "example_queries": [
+      "Calculate power budget for a board with 3.3V rail at 2A, 1.8V at 5A, and 12V at 1.5A",
+      "What heatsink do I need for a 15W SoC with Tj max 105C in 40C ambient?",
+      "Size my voltage regulators for a design with 6 power rails"
+    ]
+  },
+  {
+    "id": "us-computer-hardware-engineers-p03",
+    "title": "PCB Trace Width and Impedance Calculation",
+    "problem": "Engineers need to calculate trace widths for current carrying capacity and controlled impedance for high-speed signals. Manual calculations using IPC-2152 charts are time-consuming and error-prone. Incorrect impedance causes signal integrity failures requiring expensive board respins.",
+    "who": "PCB layout engineers and hardware designers working on high-speed designs",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "PCB Trace Width & Impedance Calculator",
+      "one_liner": "Calculates PCB trace width for current capacity per IPC-2152 and controlled impedance for microstrip/stripline geometries",
+      "inputs": [
+        {
+          "name": "current_a",
+          "type": "number",
+          "label": "Required current (Amps)"
+        },
+        {
+          "name": "temp_rise_c",
+          "type": "number",
+          "label": "Allowable temperature rise (Celsius)"
+        },
+        {
+          "name": "copper_weight_oz",
+          "type": "number",
+          "label": "Copper weight (oz/ft2)"
+        },
+        {
+          "name": "target_impedance_ohm",
+          "type": "number",
+          "label": "Target impedance (Ohms)"
+        },
+        {
+          "name": "dielectric_constant",
+          "type": "number",
+          "label": "Substrate dielectric constant (Er)"
+        },
+        {
+          "name": "dielectric_height_mm",
+          "type": "number",
+          "label": "Dielectric height (mm)"
+        },
+        {
+          "name": "trace_type",
+          "type": "string",
+          "label": "Trace type (microstrip/stripline/differential)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "min_trace_width_mm",
+          "label": "Minimum trace width for current (mm)"
+        },
+        {
+          "name": "impedance_trace_width_mm",
+          "label": "Trace width for target impedance (mm)"
+        },
+        {
+          "name": "actual_impedance_ohm",
+          "label": "Actual impedance at given width (Ohms)"
+        },
+        {
+          "name": "propagation_delay_ps_in",
+          "label": "Propagation delay (ps/inch)"
+        }
+      ],
+      "formula_hint": "IPC-2152: I = k * dT^0.44 * A^0.725 (A = cross section area). Microstrip Z0 = (87/sqrt(Er+1.41)) * ln(5.98*h/(0.8*w+t)). Stripline Z0 = (60/sqrt(Er)) * ln(4*h/(0.67*pi*(0.8*w+t)))",
+      "rates": {
+        "copper_1oz_thickness_mm": 0.035,
+        "fr4_er": 4.5
+      }
+    },
+    "example_queries": [
+      "What trace width do I need for 3A on a 1oz copper inner layer with 10C rise?",
+      "Calculate microstrip width for 50 ohm impedance on FR-4 with 0.2mm dielectric height",
+      "What's the differential impedance for two 5-mil traces with 5-mil spacing on 4-layer stackup?"
+    ]
+  },
+  {
+    "id": "us-computer-hardware-engineers-p04",
+    "title": "FCC Part 15 EMC Pre-Compliance Checklist",
+    "problem": "Hardware products must pass FCC Part 15 emissions testing before sale in the US. Engineers often discover compliance failures during expensive third-party testing ($5,000-$15,000 per test), requiring redesign and retesting. A structured pre-compliance checklist prevents costly late-stage failures.",
+    "who": "Hardware engineers preparing products for FCC certification",
+    "frequency": "quarterly",
+    "time_waste_h": 20,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "FCC Part 15 Pre-Compliance Checklist",
+      "one_liner": "Step-by-step EMC design review and pre-compliance checklist to maximize chances of passing FCC testing on first attempt",
+      "steps": [
+        "Step 1: Classify device - intentional radiator (Part 15 Subpart C) vs unintentional radiator (Subpart B) vs digital device (Class A industrial or Class B consumer)",
+        "Step 2: Review PCB layout - verify ground plane continuity, no splits under high-speed traces, proper decoupling cap placement",
+        "Step 3: Check clock signal routing - shortest paths, series termination resistors, avoid routing near board edges",
+        "Step 4: Verify I/O connector filtering - common mode chokes, TVS diodes, proper shield grounding on all external connectors",
+        "Step 5: Review power supply design - input filtering, snubber circuits, spread-spectrum clocking enabled",
+        "Step 6: Check enclosure shielding - gasket continuity, vent hole sizing (< lambda/20), cable shield grounding",
+        "Step 7: Perform pre-scan with near-field probe - identify hot spots above FCC limits",
+        "Step 8: Document test configuration - cable routing, peripheral connections, operating modes per FCC test procedure",
+        "Step 9: Prepare FCC filing documents - schematics, block diagram, operational description, label placement",
+        "Step 10: Submit to accredited test lab with all required documentation and samples"
+      ],
+      "warnings": [
+        "Warning: Class B (consumer) limits are 10 dB stricter than Class A - verify correct classification",
+        "Warning: FCC fines up to $100,000 per violation for marketing non-compliant devices",
+        "Warning: All cable assemblies used during testing must match production configuration"
+      ],
+      "regulatory_refs": [
+        "47 CFR Part 15",
+        "ANSI C63.4",
+        "FCC KDB publications"
+      ]
+    },
+    "example_queries": [
+      "What do I need to check before sending my PCB design for FCC testing?",
+      "Walk me through FCC Part 15 pre-compliance for a consumer IoT device",
+      "What are the most common reasons hardware fails FCC EMC testing?"
+    ]
+  },
+  {
+    "id": "us-computer-hardware-engineers-p05",
+    "title": "Hardware Design Review Document Generator",
+    "problem": "Engineers spend hours preparing formal design review documents for schematic and PCB layout reviews. These documents require consistent formatting, comprehensive coverage of all design aspects, and clear action item tracking. Incomplete reviews lead to bugs escaping into prototypes.",
+    "who": "Senior hardware engineers and engineering leads conducting design reviews",
+    "frequency": "monthly",
+    "time_waste_h": 8,
+    "money_risk_usd": 20000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Hardware Design Review Document Generator",
+      "one_liner": "Generates structured hardware design review document covering schematic, PCB layout, power, signal integrity, thermal, and compliance",
+      "doc_name": "Hardware Design Review Report",
+      "variables": [
+        {
+          "name": "project_name",
+          "label": "Project name"
+        },
+        {
+          "name": "board_revision",
+          "label": "Board revision (e.g., Rev B)"
+        },
+        {
+          "name": "review_type",
+          "label": "Review type (schematic/layout/system)"
+        },
+        {
+          "name": "reviewer_name",
+          "label": "Lead reviewer name"
+        },
+        {
+          "name": "design_description",
+          "label": "Brief design description"
+        },
+        {
+          "name": "key_components",
+          "label": "Key ICs and critical components"
+        },
+        {
+          "name": "power_rails",
+          "label": "List of power rails and voltages"
+        },
+        {
+          "name": "high_speed_interfaces",
+          "label": "High-speed interfaces (PCIe, DDR, USB, etc.)"
+        },
+        {
+          "name": "known_risks",
+          "label": "Known design risks or concerns"
+        }
+      ],
+      "structure_hint": "Header (project, date, attendees, revision) -> Design overview -> Schematic review (power, clocks, reset, I/O, ESD) -> PCB layout review (stackup, impedance, placement, routing, thermal) -> Compliance review (FCC, UL, RoHS) -> Risk register -> Action items table (ID, description, owner, priority, due date) -> Sign-off section"
+    },
+    "example_queries": [
+      "Generate a design review document for our Rev C motherboard schematic review",
+      "Create a PCB layout review checklist document for a 12-layer DDR5 design",
+      "I need a design review template covering power integrity and signal integrity"
+    ]
+  },
+  {
+    "id": "us-computer-hardware-engineers-p06",
+    "title": "ITAR/EAR Export Control Classification",
+    "problem": "Hardware engineers working on defense or dual-use technology must determine if their products fall under ITAR (USML) or EAR (CCL) export controls. Misclassification can result in criminal penalties up to $1M per violation and 20 years imprisonment. Engineers lack easy access to classification guidance.",
+    "who": "Hardware engineers at defense contractors and companies with international customers",
+    "frequency": "quarterly",
+    "time_waste_h": 10,
+    "money_risk_usd": 500000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "ITAR/EAR Export Control Quick Reference",
+      "one_liner": "Quick lookup of export control classifications, ECCN codes, and licensing requirements for hardware components and systems",
+      "data_domain": "US export control regulations for hardware products - ITAR USML categories and EAR CCL categories",
+      "lookup_keys": [
+        "product_type",
+        "technology_category",
+        "destination_country",
+        "end_use"
+      ],
+      "data_hints": {
+        "source_law": "International Traffic in Arms Regulations (ITAR) 22 CFR 120-130, Export Administration Regulations (EAR) 15 CFR 730-774",
+        "key_sections": [
+          "USML Categories I-XXI",
+          "CCL Categories 0-9",
+          "EAR Part 740 License Exceptions",
+          "Denied Persons List screening"
+        ]
+      }
+    },
+    "example_queries": [
+      "Is an FPGA-based signal processing board ITAR or EAR controlled?",
+      "What ECCN category does a custom AI accelerator chip fall under?",
+      "Do I need an export license to ship networking hardware to Taiwan?"
+    ]
+  },
+  {
+    "id": "us-computer-hardware-engineers-p07",
+    "title": "Decoupling Capacitor Selection and Placement",
+    "problem": "Selecting the right decoupling capacitors and placement strategy for power integrity is critical but time-consuming. Engineers must consider IC requirements, frequency ranges, ESR/ESL characteristics, and placement constraints. Poor decoupling causes power integrity failures, noise coupling, and costly debugging.",
+    "who": "PCB designers and hardware engineers working on digital designs",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Decoupling Capacitor Calculator",
+      "one_liner": "Calculates optimal decoupling capacitor values, quantities, and target impedance for power delivery network design",
+      "inputs": [
+        {
+          "name": "ic_current_a",
+          "type": "number",
+          "label": "IC transient current demand (Amps)"
+        },
+        {
+          "name": "voltage_rail_v",
+          "type": "number",
+          "label": "Supply voltage (V)"
+        },
+        {
+          "name": "ripple_tolerance_pct",
+          "type": "number",
+          "label": "Allowable voltage ripple (%)"
+        },
+        {
+          "name": "switching_freq_mhz",
+          "type": "number",
+          "label": "IC switching frequency (MHz)"
+        },
+        {
+          "name": "rise_time_ns",
+          "type": "number",
+          "label": "Current transient rise time (ns)"
+        },
+        {
+          "name": "num_power_pins",
+          "type": "number",
+          "label": "Number of power pins on IC"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "target_impedance_mohm",
+          "label": "Target PDN impedance (milliOhms)"
+        },
+        {
+          "name": "bulk_cap_uf",
+          "label": "Bulk capacitance required (uF)"
+        },
+        {
+          "name": "decoupling_caps",
+          "label": "Recommended decoupling cap values and quantities"
+        },
+        {
+          "name": "bandwidth_ghz",
+          "label": "Required PDN bandwidth (GHz)"
+        },
+        {
+          "name": "placement_guidance",
+          "label": "Placement distance guidance"
+        }
+      ],
+      "formula_hint": "Z_target = V_ripple / I_transient. C_bulk = I * dt / dV. BW = 0.35 / rise_time. Cap per pin with ESL consideration. Placement: < lambda/20 at max frequency",
+      "rates": {
+        "typical_mlcc_esl_ph": 500,
+        "typical_via_inductance_ph": 100
+      }
+    },
+    "example_queries": [
+      "Calculate decoupling for an FPGA with 5A transient current on 1.0V core rail with 3% ripple",
+      "What's my target impedance for a 1.8V rail with 2A switching current?",
+      "How many 100nF caps do I need for a processor with 64 power pins?"
+    ]
+  },
+  {
+    "id": "us-computer-hardware-engineers-p08",
+    "title": "Engineering Change Order (ECO) Generator",
+    "problem": "When hardware designs need modifications, engineers must create formal ECOs documenting changes, justifications, and impacts. ECOs are critical for traceability but preparing them is tedious and inconsistent formatting leads to miscommunication with manufacturing. Missing ECOs cause production errors.",
+    "who": "Hardware engineers managing design changes across schematic, layout, and BOM",
+    "frequency": "biweekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Engineering Change Order Generator",
+      "one_liner": "Generates formal ECO documents with change description, affected documents, impact analysis, and approval routing",
+      "doc_name": "Engineering Change Order",
+      "variables": [
+        {
+          "name": "eco_number",
+          "label": "ECO number"
+        },
+        {
+          "name": "project_name",
+          "label": "Project/product name"
+        },
+        {
+          "name": "change_type",
+          "label": "Change type (schematic/layout/BOM/firmware/mechanical)"
+        },
+        {
+          "name": "change_description",
+          "label": "Detailed description of change"
+        },
+        {
+          "name": "reason",
+          "label": "Reason for change (bug fix/cost reduction/compliance/feature)"
+        },
+        {
+          "name": "affected_documents",
+          "label": "List of affected documents and revisions"
+        },
+        {
+          "name": "bom_changes",
+          "label": "BOM changes (add/remove/substitute components)"
+        },
+        {
+          "name": "board_revision",
+          "label": "Current and new board revision"
+        }
+      ],
+      "structure_hint": "Header (ECO#, date, originator, urgency) -> Change description -> Reason/justification -> Affected documents list -> BOM impact (old part -> new part) -> Cost impact analysis -> Risk assessment -> Test/validation requirements -> Approval signatures (engineering, quality, manufacturing, program manager)"
+    },
+    "example_queries": [
+      "Generate an ECO for swapping a voltage regulator due to end-of-life notification",
+      "Create an engineering change order for adding ESD protection to USB port",
+      "I need an ECO document for a PCB layout change fixing a signal integrity issue"
+    ]
+  },
+  {
+    "id": "us-computer-hardware-engineers-p09",
+    "title": "RoHS and REACH Compliance Verification",
+    "problem": "Hardware engineers must verify that all components in their BOM comply with RoHS restricted substance limits and REACH SVHC requirements. Non-compliance can block product sales in the EU and result in costly component substitutions late in development. Tracking compliance across hundreds of components is tedious.",
+    "who": "Hardware engineers and compliance teams managing product certifications",
+    "frequency": "monthly",
+    "time_waste_h": 8,
+    "money_risk_usd": 40000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "RoHS/REACH Compliance Verification Checklist",
+      "one_liner": "Step-by-step verification process for ensuring BOM compliance with RoHS and REACH substance restrictions",
+      "steps": [
+        "Step 1: Identify applicable regulations - RoHS 2 (EU 2011/65/EU), RoHS amendments, REACH (EC 1907/2006), and any customer-specific requirements",
+        "Step 2: Export full BOM with manufacturer part numbers and supplier information",
+        "Step 3: For each component - obtain RoHS compliance declaration from manufacturer datasheet or compliance database",
+        "Step 4: Check for RoHS exemptions - verify applicable exemptions (Annex III/IV) and expiration dates",
+        "Step 5: Verify REACH SVHC (Substances of Very High Concern) - check latest SVHC candidate list against component materials",
+        "Step 6: Check solder and surface finish - verify lead-free solder compatibility, check for tin whisker risk",
+        "Step 7: Review PCB laminate and substrate materials - verify halogen-free requirements if applicable",
+        "Step 8: Document compliance evidence - collect certificates, declarations, and test reports per component",
+        "Step 9: Create compliance matrix spreadsheet with part number, status, exemption, and evidence reference",
+        "Step 10: Prepare Declaration of Conformity for the finished product"
+      ],
+      "warnings": [
+        "Warning: RoHS exemptions have expiration dates - verify current validity",
+        "Warning: REACH SVHC candidate list is updated twice per year - recheck before each product release",
+        "Warning: Solder paste and flux are often overlooked - these must also be RoHS compliant"
+      ],
+      "regulatory_refs": [
+        "EU Directive 2011/65/EU (RoHS 2)",
+        "EC Regulation 1907/2006 (REACH)",
+        "IEC 62321 (substance testing methods)"
+      ]
+    },
+    "example_queries": [
+      "Walk me through RoHS compliance verification for a new PCB design with 200 components",
+      "What are the current RoHS restricted substances and their limits?",
+      "How do I check if my BOM has any REACH SVHC substances?"
+    ]
+  },
+  {
+    "id": "us-computer-hardware-engineers-p10",
+    "title": "High-Speed Signal Integrity Advisor",
+    "problem": "Engineers encounter signal integrity problems (ringing, crosstalk, reflections, timing violations) during prototype bring-up and debugging. Diagnosing root causes from oscilloscope waveforms and design parameters requires deep expertise. Incorrect diagnosis leads to wrong fixes and additional board respins.",
+    "who": "Hardware engineers debugging high-speed interfaces (PCIe, DDR, USB, Ethernet)",
+    "frequency": "weekly",
+    "time_waste_h": 10,
+    "money_risk_usd": 40000,
+    "source": "daily_reality",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Signal Integrity Troubleshooting Advisor",
+      "one_liner": "Diagnoses signal integrity problems from symptoms and design parameters, recommends specific fixes for high-speed digital interfaces",
+      "expertise_area": "High-speed digital signal integrity - PCIe, DDR4/DDR5, USB 3.x, Ethernet, HDMI",
+      "decision_criteria": [
+        "interface_type",
+        "symptom_description",
+        "signal_speed_gbps",
+        "pcb_stackup",
+        "trace_length",
+        "termination_scheme"
+      ],
+      "context_needed": [
+        "tools.software",
+        "terminology.jargon",
+        "daily_reality.typical_workday"
+      ]
+    },
+    "example_queries": [
+      "My DDR4 interface is failing timing at 3200 MT/s - I see ringing on DQ signals. What should I check?",
+      "Getting crosstalk on adjacent PCIe lanes - traces are 5 mils apart on a 4-layer board. How do I fix this?",
+      "USB 3.0 link keeps dropping to USB 2.0 speed - what are the common signal integrity causes?"
+    ]
+  },
+  {
+    "id": "us-computer-hardware-engineers-p11",
+    "title": "NRE and Prototype Cost Estimation",
+    "problem": "Engineers and engineering managers must estimate non-recurring engineering costs and prototype budgets for new projects. Inaccurate estimates lead to budget overruns and delayed approvals. Cost components span PCB fabrication, assembly, components, test fixtures, tooling, and certifications.",
+    "who": "Senior engineers and engineering managers preparing project budgets",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 100000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "NRE & Prototype Budget Calculator",
+      "one_liner": "Estimates total NRE and prototype costs including PCB fabrication, assembly, components, tooling, testing, and certification fees",
+      "inputs": [
+        {
+          "name": "pcb_layers",
+          "type": "number",
+          "label": "Number of PCB layers"
+        },
+        {
+          "name": "board_size_sqin",
+          "type": "number",
+          "label": "Board size (square inches)"
+        },
+        {
+          "name": "prototype_qty",
+          "type": "number",
+          "label": "Number of prototype boards"
+        },
+        {
+          "name": "component_cost_per_board",
+          "type": "number",
+          "label": "Estimated component cost per board (USD)"
+        },
+        {
+          "name": "num_bga_components",
+          "type": "number",
+          "label": "Number of BGA components (affects assembly cost)"
+        },
+        {
+          "name": "needs_fcc",
+          "type": "boolean",
+          "label": "Requires FCC testing?"
+        },
+        {
+          "name": "needs_ul",
+          "type": "boolean",
+          "label": "Requires UL safety testing?"
+        },
+        {
+          "name": "num_iterations",
+          "type": "number",
+          "label": "Expected number of prototype iterations"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pcb_fab_cost",
+          "label": "PCB fabrication cost (USD)"
+        },
+        {
+          "name": "assembly_cost",
+          "label": "Assembly cost (USD)"
+        },
+        {
+          "name": "component_total",
+          "label": "Total component cost (USD)"
+        },
+        {
+          "name": "stencil_tooling",
+          "label": "Stencil and tooling cost (USD)"
+        },
+        {
+          "name": "certification_cost",
+          "label": "Certification testing cost (USD)"
+        },
+        {
+          "name": "total_nre",
+          "label": "Total NRE budget (USD)"
+        },
+        {
+          "name": "per_iteration_cost",
+          "label": "Cost per prototype iteration (USD)"
+        }
+      ],
+      "formula_hint": "PCB fab = base_rate * layers * area * qty. Assembly = setup_fee + (per_placement * components + bga_surcharge * bgas) * qty. Certifications: FCC ~$10K, UL ~$15K. Total NRE = (pcb + assembly + components) * iterations + certifications + 15% contingency",
+      "rates": {
+        "pcb_base_per_sqin_per_layer": 1.5,
+        "assembly_setup": 500,
+        "per_smt_placement": 0.03,
+        "bga_surcharge": 15,
+        "contingency_pct": 0.15
+      }
+    },
+    "example_queries": [
+      "Estimate prototype cost for a 10-layer board, 25 sq in, with 3 BGAs, 10 boards, FCC required",
+      "What's the NRE budget for 3 prototype iterations of a 6-layer IoT board?",
+      "How much should I budget for FCC and UL certification testing?"
+    ]
+  },
+  {
+    "id": "us-computer-hardware-engineers-p12",
+    "title": "Hardware Compliance Standards Quick Reference",
+    "problem": "Engineers need to quickly look up which standards apply to their product (FCC, UL, CE, ENERGY STAR, IEEE) and what the specific limits, test procedures, and filing requirements are. Information is scattered across multiple standards documents costing hundreds of dollars each. Quick access saves hours of searching.",
+    "who": "Hardware engineers preparing products for compliance certification",
+    "frequency": "monthly",
+    "time_waste_h": 4,
+    "money_risk_usd": 20000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Hardware Compliance Standards Reference",
+      "one_liner": "Quick lookup of applicable compliance standards, emission limits, test methods, and filing requirements for electronic hardware products",
+      "data_domain": "US and international hardware compliance standards - FCC, UL, CE, RoHS, ENERGY STAR, IEEE",
+      "lookup_keys": [
+        "product_type",
+        "market_region",
+        "standard_name",
+        "test_type"
+      ],
+      "data_hints": {
+        "source_law": "47 CFR Part 15 (FCC), UL 60950/62368, EU EMC Directive 2014/30/EU, EU LVD 2014/35/EU",
+        "key_sections": [
+          "FCC Class A/B radiated limits",
+          "FCC conducted emission limits",
+          "UL safety test categories",
+          "CE marking requirements",
+          "ENERGY STAR efficiency tiers"
+        ]
+      }
+    },
+    "example_queries": [
+      "What are the FCC Class B radiated emission limits for a consumer device?",
+      "Which UL standard applies to a power supply for IT equipment?",
+      "Do I need CE marking if I'm only selling in the US but the customer wants to export to Europe?"
+    ]
+  },
+  {
+    "id": "us-computer-hardware-engineers-p13",
+    "title": "Prototype Bring-Up Procedure",
+    "problem": "First power-on of a new prototype board is high-risk - incorrect bring-up sequence can damage expensive components or mask design bugs. Engineers rely on tribal knowledge and experience rather than systematic procedures. A missed step during bring-up can destroy a $5,000+ prototype board.",
+    "who": "Hardware engineers performing first-article prototype bring-up and validation",
+    "frequency": "quarterly",
+    "time_waste_h": 16,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Prototype Board Bring-Up Procedure",
+      "one_liner": "Systematic bring-up checklist for safely powering on and validating a new prototype PCB from visual inspection through functional testing",
+      "steps": [
+        "Step 1: Visual inspection - check solder joints under microscope, look for bridges, missing components, polarity errors, BGA alignment",
+        "Step 2: Continuity checks - verify power and ground nets are not shorted (measure resistance between all power rails and GND)",
+        "Step 3: Verify power supply connections - confirm correct voltage at regulator inputs with board unpowered",
+        "Step 4: Current-limited power-on - apply power through current-limited supply, start at reduced voltage, monitor current draw",
+        "Step 5: Power rail verification - measure all voltage rails with multimeter, verify within spec (typically +/-5%)",
+        "Step 6: Power sequencing - verify power-up sequence matches IC requirements using oscilloscope",
+        "Step 7: Clock verification - probe all clock outputs, verify frequency and amplitude",
+        "Step 8: Reset and boot - verify reset circuit timing, check processor boot indicators (LEDs, UART output)",
+        "Step 9: JTAG/debug interface - establish debug connection, verify processor ID, read device registers",
+        "Step 10: Peripheral bring-up - systematically test each interface (I2C scan, SPI loopback, UART echo, Ethernet link)",
+        "Step 11: Thermal check - run stress test, monitor temperatures with thermal camera or thermocouples",
+        "Step 12: Document all measurements and anomalies in bring-up log"
+      ],
+      "warnings": [
+        "Warning: ALWAYS current-limit power supply during first power-on - set limit to 50% of expected draw",
+        "Warning: Check for shorted power rails BEFORE applying power - a shorted rail can destroy multiple ICs instantly",
+        "Warning: If current draw exceeds expected value, IMMEDIATELY remove power and investigate"
+      ],
+      "regulatory_refs": [
+        "IPC-A-610 (acceptability of electronic assemblies)",
+        "IPC J-STD-001 (soldering requirements)"
+      ]
+    },
+    "example_queries": [
+      "Give me a bring-up checklist for a new FPGA development board prototype",
+      "What's the safe procedure for first power-on of a prototype with DDR4 memory?",
+      "What should I check before and during board bring-up to avoid damaging components?"
+    ]
+  }
+]

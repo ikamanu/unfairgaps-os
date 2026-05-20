@@ -1,0 +1,152 @@
+{
+  "profession_id": "us-auto-detailers",
+  "profession_name": "Auto Detailers",
+  "tier": "B",
+  "daily_reality": {
+    "typical_workday": "7-9 hours, mostly outdoor work. Morning: client intake, vehicle condition assessment, written estimate. Day: 2-6 vehicles depending on service mix - basic wash/wax (1-2h each), interior detail (1.5-4h), full detail (4-8h), paint correction (4-12h), ceramic coating (1-2 day cure). Mobile detailers add 30-90 min route/setup per stop. End: chemical inventory check, equipment rinse, scheduling tomorrow.",
+    "documents": ["Written estimate/quote per vehicle", "Service invoice", "Vehicle intake checklist (existing damage)", "Liability waiver", "Ceramic coating warranty docs (CarPro, Gtechniq, IGL registration)", "PPF installation forms", "Customer release form", "SDS binder (Safety Data Sheets) per OSHA 1910.1200"],
+    "deadlines": ["Quarterly estimated tax IRS Form 1040-ES (Apr 15, Jun 15, Sep 15, Jan 15)", "Annual self-employment tax Schedule SE", "California Car Wash registration renewal annual ($300)", "New York Car Wash license renewal biennial ($137.50-$550)", "NPDES stormwater permit renewals (varies by state)", "Annual insurance renewal (GL + garage keepers + commercial auto for mobile)"],
+    "seasonality": "Spring (Mar-May) peak - pollen removal, post-winter salt removal. Summer (Jun-Aug) peak - UV protection, ceramic coating, tree sap/bug removal. Fall (Sep-Nov) mid - winter prep. Winter (Dec-Feb) slow - 50-70% revenue drop in northern states, salt-removal niche only.",
+    "external_interactions": ["Retail customers (one-off)", "Dealerships (B2B recon contracts)", "Body shops (post-repair detail)", "Insurance adjusters (claim cleanups)", "EPA/state environmental agency (audits if industrial)", "OSHA (if employees)", "Labor Commissioner (CA - wage/registration enforcement)"]
+  },
+  "regulatory": {
+    "laws": [
+      "Clean Water Act 33 USC 1251 et seq. - NPDES stormwater discharge prohibition; wash water cannot enter storm drains",
+      "EPA NPDES Multi-Sector General Permit (MSGP) 2026 - draft includes PFAS quarterly monitoring across 40 compounds for industrial facilities",
+      "California Labor Code Sections 2050-2067 (Car Wash and Polishing Act / AB 1066) - mandatory annual registration $300, surety bond required if employees",
+      "New York Car Wash Accountability Act - biennial license $137.50-$550 + surety bond + workers' comp",
+      "OSHA 29 CFR 1910.1200 (Hazard Communication) - SDS binder, GHS labels, employee training",
+      "OSHA 29 CFR 1910.134 (Respiratory Protection) - written respirator program if PPE used with solvents/isocyanates",
+      "OSHA 29 CFR 1910.95 (Noise) - hearing conservation if >85 dBA (buffers, compressors)",
+      "IRS Schedule C / Schedule SE (self-employment 15.3% FICA+Medicare)",
+      "State sales tax on services (varies - WA, HI, NM, SD tax services; most states tax tangible products only)"
+    ],
+    "licensing": "Federal: EIN required. Most states: general business license only ($50-$200). California: Car Washing and Polishing license $300/yr annual + $15,000 surety wage bond + Labor Commissioner registration (solo mobile = exempt). New York: Car Wash license biennial $137.50-$550, surety bond, workers' comp, GL with additional insured endorsement. IDA voluntary certification (IDA Certified Detailer, SV-CD Skills-Validated) - 10 written exams Phase I.",
+    "penalties": [
+      "Clean Water Act unauthorized discharge: civil penalty up to $64,618/day per violation (2024 inflation-adjusted); criminal up to $50,000/day + 1yr jail (knowing); EPA has shut down mobile detailers and 'put some out of business'",
+      "OSHA HazCom violations: serious $16,131/violation, willful/repeat $161,323/violation (2024 max)",
+      "California Car Wash unregistered: up to $100/day plus back-wage liability; criminal misdemeanor",
+      "New York unlicensed car wash: up to $1,000/violation + closure",
+      "PFAS monitoring failure under 2026 MSGP (proposed): NPDES enforcement up to $64,618/day"
+    ],
+    "regulatory_bodies": ["US EPA (federal Clean Water Act, NPDES, RCRA hazardous waste)", "State environmental agencies (TCEQ Texas, CalEPA California, NYSDEC New York)", "OSHA (worker safety)", "California Labor Commissioner / Division of Labor Standards Enforcement (DLSE)", "NY Dept of Consumer and Worker Protection", "IRS (self-employment, sales tax pass-through)", "State department of revenue (sales tax)"],
+    "new_2025_2026": [
+      "EPA proposed 2026 MSGP - 40 PFAS compounds quarterly monitoring; finalization expected after May 2025 comment period",
+      "OSHA HazCom 2024 revision - aligned to GHS Rev 7; updated SDS Section 11 toxicology data; effective 2026",
+      "Various state PFAS bans in car care chemicals (CA, ME, MN, NY) - effective 2025-2027"
+    ]
+  },
+  "tools": {
+    "software": [
+      "Urable - all-in-one CRM/scheduling/invoicing specific to detailing (unlimited users flat fee)",
+      "Mobile Tech RX - mobile-first detailing app with pre-set packages, deposit collection",
+      "QuoteIQ - 2026 top mobile CRM with route-aware scheduling",
+      "Jobber - generic field service CRM heavily used",
+      "Housecall Pro - alternative field service",
+      "QuickBooks Self-Employed - tax tracking",
+      "Square / Stripe - payment processing"
+    ],
+    "platforms": ["Google Business Profile (lead source #1)", "Yelp", "Thumbtack", "Instagram (paint correction before/after content)", "TikTok"],
+    "gov_portals": [
+      "IRS e-file / Direct Pay",
+      "EPA NPDES eNOI permit system",
+      "California Department of Industrial Relations - Car Wash registration portal",
+      "NY DCWP licensing portal",
+      "State sales tax portals (per state)"
+    ],
+    "pain_points": [
+      "Pricing assistance lacking - most owners guess instead of cost-plus formula",
+      "No-shows and late cancellations destroy mobile schedule",
+      "Deposit collection inconsistent",
+      "Chemical inventory waste - over-buying, expiration",
+      "Route optimization for mobile - unaccounted travel kills margin",
+      "EPA/OSHA compliance docs scattered or missing",
+      "Estimating ceramic/PPF jobs - paint condition assessment varies hugely",
+      "Seasonal cash flow gap (winter slow) catches owners unprepared"
+    ]
+  },
+  "terminology": {
+    "jargon": ["paint correction", "compounding", "polishing", "single-stage", "two-stage", "clay bar / clay mitt", "iron decon", "tar remover", "swirls / marring / RIDS (random isolated deep scratches)", "holograms", "buffer trail", "orange peel", "ceramic coating / SiO2 / SiC", "graphene coating", "topper", "PPF (paint protection film)", "XPEL / 3M / SunTek", "self-healing film", "wrap", "pre-cut kit", "bulk install", "wet sanding", "compound burn / strike-through", "feather edge", "leveler", "QD (quick detailer)", "IPA wipedown", "panel wipe", "machine polisher / DA / rotary", "foam cannon", "two-bucket method", "grit guard", "drying towel", "wash mitt", "PH-neutral shampoo", "ONR (optimum no-rinse)", "rinseless wash", "interior shampoo / extraction", "ozone treatment", "headliner cleaning", "engine bay dressing", "tire dressing / shine", "wheel decontamination", "fallout"],
+    "abbreviations": ["IDA - International Detailing Association", "CD - Certified Detailer (IDA)", "SV-CD - Skills-Validated Certified Detailer", "PPF - Paint Protection Film", "PDR - Paint Defect Removal / Paintless Dent Repair", "DA - Dual Action polisher", "OPL - Orange Peel Level", "RIDS - Random Isolated Deep Scratches", "QD - Quick Detailer", "IPA - Isopropyl Alcohol", "SDS - Safety Data Sheet", "BMP - Best Management Practices", "NPDES - National Pollutant Discharge Elimination System", "MSGP - Multi-Sector General Permit", "GHS - Globally Harmonized System", "ETD - Estimated Time of Delivery", "GL - General Liability", "GKL - Garage Keepers Liability"]
+  },
+  "career_psychology": {
+    "career_levels": [
+      "Apprentice/lot porter at dealership ($14-$17/hr) - basic wash, vacuum, dealer prep",
+      "Detailer at shop ($16-$22/hr) - interior + exterior detail, machine polish basics",
+      "Senior detailer / lead ($22-$30/hr) - paint correction, training juniors",
+      "Solo mobile operator ($60-$120K gross, 50-70% margin) - own clients, owns tools and van",
+      "Shop owner (1-5 bay) - $100-$400K gross, hires 1-4 detailers",
+      "Studio / boutique (high-end coatings + PPF) - $300K-$2M+ gross, ceramic/PPF specialization"
+    ],
+    "fears": [
+      "Burning customer's paint with rotary buffer (compound strike-through, clear coat damage)",
+      "Damaging interior leather/electronics with wrong chemical",
+      "EPA fine for wash water in storm drain (mobile detailers especially)",
+      "Customer claims swirls/scratches that pre-existed (no intake photos)",
+      "Ceramic coating fails / streaks / spider-webs - warranty replacement cost",
+      "Cash flow gap during winter slow season",
+      "Underpricing job and losing money after materials/time",
+      "Worker injury - chemical burn, slip, respiratory issue - no comp coverage",
+      "License/registration lapse - back fees, closure (CA, NY)",
+      "Tax surprise - quarterly estimates not paid, owe IRS huge bill April"
+    ],
+    "motivation": ["Higher ticket per car (paint correction + ceramic = $1500-$3500)", "IDA Certified Detailer credential", "Becoming authorized installer (XPEL Elite, CQuartz Finest, Gtechniq Crystal Serum Ultra)", "Studio buildout from mobile", "Hiring first employee", "Recurring maintenance contracts (dealerships, fleets)"],
+    "burnout": "Outdoor work in heat/cold, physical labor (squatting, scrubbing, lifting), undercutting competitors keeps prices flat while costs rise, chemical exposure long-term, scope creep on full details ('can you also do this?'), customer disputes on swirls/damage, 6-7 day weeks during peak season."
+  },
+  "community": {
+    "reddit": ["r/AutoDetailing (~600K members)", "r/Detailing", "r/CarDetailing", "r/MobileDetailing"],
+    "forums": ["AutoGeek Online Detailing Forum", "Detailing World (UK + US)", "DetailingWiki"],
+    "youtube": ["Pan The Organizer", "AMMO NYC (Larry Kosilla)", "ESOTERIC Detail", "Apex Detail", "The Rag Company", "Stauffer Garage", "Wax Kits"],
+    "linkedin": ["Auto Detailing Professionals group", "International Detailing Association group"],
+    "associations": ["International Detailing Association (IDA) - voluntary certification, ~2000 members, the-ida.com", "Mobile Workforce Alliance"],
+    "conferences": ["SEMA Show (Las Vegas, Nov) - aftermarket auto including detailing", "Mobile Tech Expo (Orlando, Jan)", "Detail Mafia events"],
+    "slack_discord": ["Various IG/Discord coatings installer groups (CQuartz, Gtechniq private channels)"],
+    "newsletters": ["Auto Detailing News", "Pro Carwashing & Detailing magazine"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "entry_employee": "$28,000-$34,000 ($14-$17/hr at dealership lot)",
+      "shop_detailer": "$34,000-$45,000 ($16-$22/hr)",
+      "senior_lead": "$45,000-$62,000 ($22-$30/hr)",
+      "solo_mobile_owner": "$60,000-$120,000 gross, $45,000-$85,000 net",
+      "shop_owner": "$100,000-$400,000 gross",
+      "studio_owner": "$300,000-$2,000,000+ gross"
+    },
+    "national_average_usd": 35000,
+    "national_hourly_bls_2024": 16.96,
+    "job_count": "~430,000 vehicle cleaners and equipment cleaners in US (BLS 53-7061 occupation includes auto detailers); separate ~80,000-100,000 self-employed mobile detailers and shop owners (estimate)",
+    "shop_revenue_per_car": {
+      "basic_wash": "$30-$80",
+      "interior_detail": "$100-$300",
+      "exterior_detail": "$100-$250",
+      "full_detail": "$150-$500",
+      "paint_correction": "$200-$1,000",
+      "ceramic_coating": "$450-$2,000",
+      "ppf_full_front": "$1,500-$3,500",
+      "ppf_full_vehicle": "$5,000-$9,000"
+    },
+    "profit_margin": "15-35% typical, 50-70% on labor-only services, ceramic/PPF can hit 60%+",
+    "growth_rate": "US car detailing market ~$15B in 2024, projected ~6-7% CAGR through 2030 driven by ceramic coatings, EV care, mobile services",
+    "work_arrangement": "Mostly 1099 self-employed (mobile + solo shops); dealership detailers W-2; high-end studios mix W-2 + 1099 contractors",
+    "trends": ["Mobile-first dominant for new entrants (low overhead)", "Ceramic + PPF upsell now standard - shop margin compression on basic detail", "EV interior care growing (Tesla owners high willingness-to-pay)", "AI-generated estimates from vehicle photos emerging", "Subscription detailing models (monthly maintenance) growing"]
+  },
+  "sources": [
+    {"name": "EPA NPDES 2026 MSGP", "url": "https://www.epa.gov/npdes/stormwater-discharges-industrial-activities-epas-proposed-2026-msgp", "fact": "Draft 2026 MSGP would require operators in 23 industrial sectors to monitor for 40 PFAS compounds quarterly; replaces 2021 MSGP expiring Feb 28 2026"},
+    {"name": "BLS OOH 53-7061", "url": "https://www.bls.gov/oes/current/oes537061.htm", "fact": "Median hourly wage car detailers $16.96 (2024)"},
+    {"name": "California DIR Car Wash", "url": "https://www.dir.ca.gov/dlse/Car_Wash/Car_Wash.html", "fact": "Annual registration $300, wage bond $15,000 minimum, exemption for solo mobile no-employee operators (AB 1066)"},
+    {"name": "NY DCWP Car Wash License", "url": "https://www.nyc.gov/site/dca/businesses/license-checklist-car-wash.page", "fact": "Biennial license $137.50-$550 plus surety bond, workers' comp, GL insurance with additional insured endorsement"},
+    {"name": "OSHA 1910.1200 HazCom", "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200", "fact": "Written hazard communication program, SDS for each chemical, employee training, GHS labels mandatory"},
+    {"name": "OSHA Penalties 2024", "url": "https://www.osha.gov/penalties", "fact": "Serious violation max $16,131; willful/repeated max $161,323 per violation (2024 inflation-adjusted)"},
+    {"name": "Clean Water Act Civil Penalties", "url": "https://www.epa.gov/enforcement/civil-monetary-penalty-inflation-adjustments", "fact": "CWA Section 309(d) civil penalty up to $64,618 per day per violation (2024)"},
+    {"name": "Getjobber Pricing 2026", "url": "https://www.getjobber.com/academy/auto-detailing/how-much-to-charge-for-car-detailing/", "fact": "Full detail $150-$500, ceramic $450-$2000, paint correction $200-$1000; cost-plus formula (labor x rate) + materials + overhead + markup"},
+    {"name": "IDA Certification", "url": "https://the-ida.com/page/certification", "fact": "IDA Certified Detailer = 10 written exams Phase I; voluntary, ~2000 members"},
+    {"name": "Urable / Mobile Tech RX", "url": "https://urable.com/vehicle-care/", "fact": "Detailing-specific CRMs - Urable unlimited users flat fee, Mobile Tech RX deposit collection + pre-set packages"},
+    {"name": "Carwash.com seasonality", "url": "https://www.carwash.com/seasonality-mobile-car-detailing/", "fact": "Winter 50-70% revenue drop northern states; spring pollen, summer UV/sap/bugs, winter salt removal niche"},
+    {"name": "Detail King EPA", "url": "https://blog.detailking.com/local-epa-restrictions-you-need-to-know-for-your-auto-detailing-business/", "fact": "EPA has put mobile detailers out of business via Clean Water Act fines for storm drain runoff"}
+  ],
+  "coverage_gaps": [
+    "Specific named EPA enforcement cases against detailers not retrievable from secondary sources - would need EPA ECHO database query for primary actions",
+    "Texas and Florida licensing specifics under-covered - general business license only confirmed",
+    "Reddit member count r/AutoDetailing approximate (~600K) - not verified against subreddit metadata"
+  ]
+}

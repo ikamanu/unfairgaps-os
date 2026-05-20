@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-cytotechnologists",
+  "profession_name": "Cytotechnologists",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Eight-hour days, five days per week, primarily at microscope. Screen Pap smears and other specimens for abnormal cells. Process gynecological cases (cervical cancer screening), non-gynecological cases (body fluids, respiratory, urinary specimens), and fine needle aspirations (tumor diagnosis). Collaborate with pathologists on findings. Document results, perform quality control checks. CLIA-regulated workload limits apply.",
+    "key_documents": ["Cytology screening reports", "Quality control logs", "Proficiency testing records", "Standard operating procedures (SOPs)", "Accreditation documentation (CAP/CLIA)", "Case logs and workload records", "Patient specimen tracking records"],
+    "deadlines": "Turnaround times for cytology results (Pap smears typically 1-2 weeks). Proficiency testing deadlines. ASCP certification renewal every 3 years. CLIA compliance deadlines. CAP accreditation cycles.",
+    "seasonality": "Relatively consistent year-round workload. Cervical cancer screening campaigns may create periodic volume increases. Academic lab work follows semester cycles."
+  },
+  "regulatory": {
+    "laws_and_standards": ["CLIA '88 regulations (42 CFR 493.1274) - cytology-specific standards", "CAP accreditation standards", "State clinical laboratory personnel licensing", "HIPAA patient privacy", "CLIA workload limits (max 100 slides per 24 hours)", "Proficiency testing requirements"],
+    "licensing": "CT(ASCP) certification from American Society for Clinical Pathology required. Bachelor's degree in cytotechnology or related field. Completion of accredited cytotechnology program. $250 exam fee, 100 multiple-choice questions. Renewal every 3 years with continuing education. Transitioning to Master's degree requirement (some programs starting Fall 2026). Some states require additional state licensure.",
+    "penalties": "CLIA sanctions: fines, suspension, or revocation of lab certificate. Loss of ASCP certification for CE non-compliance. CAP accreditation loss. New CMS guidance (Sept 2025) discontinuing remote digital slide review discretion — labs must have separate CLIA certificates by March 2026.",
+    "regulatory_bodies": ["CMS/CLIA", "CAP (College of American Pathologists)", "ASCP (American Society for Clinical Pathology)", "State departments of health", "FDA (for diagnostic reagents/kits)"]
+  },
+  "tools": {
+    "software": ["ThinPrep Imaging System (Hologic) - automated Pap smear screening", "BD FocalPoint Slide Profiler - automated screening", "CytoVision (Leica) - digital imaging", "Laboratory Information Systems (LIS) - Epic Beaker, Cerner PathNet, Sunquest", "Digital pathology/telepathology platforms", "Microsoft Office - reporting"],
+    "platforms": ["Hospital/reference lab LIS systems", "Digital microscopy imaging platforms", "Telepathology systems for remote consultation", "ASCP Learning Center - continuing education", "Quality management software"],
+    "gov_portals": ["CMS CLIA certification portal", "CAP accreditation portal", "State laboratory licensing portals", "CDC screening guidelines resources"]
+  },
+  "terminology": {
+    "jargon": ["Pap smear/Pap test", "ASCUS (Atypical Squamous Cells of Undetermined Significance)", "LSIL (Low-grade Squamous Intraepithelial Lesion)", "HSIL (High-grade Squamous Intraepithelial Lesion)", "ThinPrep", "Conventional smear", "FNA (Fine Needle Aspiration)", "Bethesda System", "Adequacy assessment", "Screening vs. diagnostic cytology"],
+    "abbreviations": ["CT - Cytotechnologist", "SCT - Specialist in Cytotechnology", "ASCP - American Society for Clinical Pathology", "ASCUS - Atypical Squamous Cells of Undetermined Significance", "LSIL - Low-grade SIL", "HSIL - High-grade SIL", "FNA - Fine Needle Aspiration", "HPV - Human Papillomavirus", "LBP - Liquid-Based Preparation", "QC - Quality Control", "PT - Proficiency Testing", "CLIA - Clinical Laboratory Improvement Amendments"]
+  },
+  "career_psychology": {
+    "career_levels": ["Cytotechnologist I (0-3 years)", "Cytotechnologist II/Senior (3-7 years)", "Lead/Supervisory Cytotechnologist (7-12 years)", "Cytology Laboratory Manager/Director (12+ years)", "Transition to molecular cytology or pathology assistant roles"],
+    "fears": ["HPV primary screening reducing Pap smear volumes", "Automation and AI replacing manual screening", "~500 unfilled positions nationally with 16% expected to retire in 5 years", "Physical toll of microscopy work (eye strain, musculoskeletal issues)", "Profession transitioning to master's degree requirement"],
+    "motivation": "Critical role in cancer detection (cervical, lung, thyroid); detective-like work identifying abnormal cells; direct impact on patient outcomes; specialized expertise valued in healthcare.",
+    "burnout": "Repetitive microscopy causing eye strain and physical fatigue; staffing shortages forcing overtime and double shifts; high-stakes work (missed cancer diagnosis); CLIA workload caps help but understaffing creates pressure. Profession exploring career advancement opportunities and technology integration to mitigate burnout."
+  },
+  "community": {
+    "reddit": ["r/medlabprofessionals", "r/labrats", "r/cytology", "r/pathology"],
+    "linkedin": ["ASCP community", "Cytotechnology professionals", "Clinical Laboratory Scientists group"],
+    "associations": ["ASCT (American Society of Cytopathology)", "ASCP (American Society for Clinical Pathology)", "CAP (College of American Pathologists)", "ASCLS (American Society for Clinical Laboratory Science)"],
+    "conferences": ["ASC Annual Scientific Meeting", "ASCP Annual Meeting", "CAP Conference", "United States and Canadian Academy of Pathology (USCAP) Annual Meeting"]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 65000,
+      "mid_level_usd": 82000,
+      "senior_level_usd": 97000,
+      "supervisor_director_usd": 120000
+    },
+    "average_salary_usd": 97000,
+    "job_count_estimate": "Small niche within ~340,000 medical laboratory technologists. ~500 unfilled positions nationally. 16% expected to retire within 5 years. Concentrated in hospitals, reference labs, and academic medical centers.",
+    "work_arrangements": "Primarily laboratory-based on-site work. Standard daytime shifts. Some reference labs offer evening/weekend coverage. Remote digital slide review being limited by new CMS guidance (March 2026 deadline for separate CLIA certificates). Profession transitioning from bachelor's to master's degree requirement.",
+    "trends": ["Transition to Master of Science degree requirement (Fall 2026 at some programs)", "AI-assisted automated screening reducing manual review", "HPV primary screening changing Pap smear volume", "Critical workforce shortage (~500 unfilled positions)", "Digital pathology and telepathology expanding", "New CMS guidance restricting remote slide review without CLIA cert", "5% projected employment growth for clinical lab technologists"]
+  },
+  "quality_score": 0.78,
+  "sources_count": 7,
+  "verified_sources": 5
+}

@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-accountants-and-auditors",
+  "profession_name": "Accountants and Auditors",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Most accountants work full time in office/hybrid settings, spending 96% of the day seated. Work is self-paced for 73.5% of professionals. Daily tasks include reconciling bank accounts, maintaining general ledgers, processing payroll, preparing and examining financial records, and identifying areas of opportunity and risk. During tax season (January-April) and quarterly audits, overtime of 50-80 hours/week is common.",
+    "documents": ["Financial statements", "Tax returns (1040, 1120, 1065)", "Audit workpapers", "General ledgers", "Trial balances", "Bank reconciliations", "W-2 and 1099 forms", "10-K/10-Q SEC filings"],
+    "deadlines": ["April 15 - Individual tax filing deadline", "March 15 - Partnership/S-Corp tax deadline", "Quarterly estimated tax payments", "Quarterly audit reviews", "Year-end financial close", "SEC filing deadlines for public companies"],
+    "seasonality": "Extremely seasonal. Peak workload January-April (tax season) and during quarterly/annual audit cycles. Summer months are relatively lighter. Year-end close creates another peak in December-January."
+  },
+  "regulatory": {
+    "laws": ["Sarbanes-Oxley Act (SOX)", "Internal Revenue Code (IRC)", "Securities Exchange Act", "Dodd-Frank Act", "State accountancy laws"],
+    "licensing": "CPA license required for public accounting. Requirements: 150 credit hours of education, pass the Uniform CPA Exam, 1-2 years supervised experience. California signed a bill adding alternative pathways to CPA licensure effective January 1, 2026. Enrolled Agents (EA) can represent taxpayers before the IRS.",
+    "penalties": "In 2025, PCAOB and SEC together initiated 39 enforcement actions (33% decrease from 2024), with total monetary sanctions of $17.9 million (66% drop from prior year). PCAOB's 2026 budget reflects a 15% reduction in enforcement funding. Individual penalties can include license revocation, fines, and criminal charges for fraud.",
+    "regulatory_bodies": ["PCAOB (Public Company Accounting Oversight Board)", "SEC (Securities and Exchange Commission)", "AICPA (American Institute of CPAs)", "State Boards of Accountancy", "IRS (Internal Revenue Service)", "FASB (Financial Accounting Standards Board)", "GASB (Governmental Accounting Standards Board)"]
+  },
+  "tools": {
+    "software": ["QuickBooks Online Accountant", "AuditBoard", "Workiva", "MindBridge AI", "IDEA (data analysis)", "Trullion", "DataSnipper", "Digits AI", "Thomson Reuters UltraTax", "CCH Axcess", "Xero", "Sage Intacct"],
+    "platforms": ["SEC EDGAR", "IRS e-Services", "Bloomberg Tax", "Checkpoint by Thomson Reuters", "PwC Aura", "Deloitte Omnia"],
+    "gov_portals": ["IRS e-file", "SEC EDGAR filing system", "State tax portals", "SAM.gov (for government contracts)"]
+  },
+  "terminology": {
+    "jargon": ["GAAP (Generally Accepted Accounting Principles)", "Materiality", "Going concern", "Tick marks", "Above/below the line", "True up", "Accruals", "Depreciation schedule", "Write-off", "Reconciliation", "Substantive testing", "Walk-through"],
+    "abbreviations": ["CPA - Certified Public Accountant", "EA - Enrolled Agent", "AR - Accounts Receivable", "AP - Accounts Payable", "GL - General Ledger", "TB - Trial Balance", "BS - Balance Sheet", "P&L - Profit and Loss", "EBITDA - Earnings Before Interest Taxes Depreciation Amortization", "SOX - Sarbanes-Oxley", "GAAP - Generally Accepted Accounting Principles", "PCAOB - Public Company Accounting Oversight Board", "FASB - Financial Accounting Standards Board", "SURL - Search for Unrecorded Liabilities", "PF - Permanent File", "WIP - Work in Progress"]
+  },
+  "career_psychology": {
+    "career_levels": ["Staff Accountant/Auditor", "Senior Accountant/Auditor", "Manager", "Senior Manager", "Director", "Partner/Principal", "CFO/Controller (industry track)"],
+    "fears": ["Making errors in financial statements or tax returns", "Audit deficiencies and regulatory penalties", "Being replaced by AI and automation", "Losing CPA license", "Client audit flags", "Missing filing deadlines"],
+    "motivation": ["Job stability and demand", "Clear career progression path", "Competitive compensation", "Intellectual challenge of complex transactions", "Helping businesses succeed", "Professional prestige of CPA designation"],
+    "burnout": "99% of accountants suffer from burnout per Maslach Burnout Inventory study, with 24% reporting medium-high levels. 66% suffer from anxiety, 59% are stressed, 34% are depressed. Tax season hours of 50-80/week are a primary driver. 17% decline in employed accountants/auditors over the past two years reflects attrition from burnout."
+  },
+  "community": {
+    "reddit": ["r/Accounting (~350k members)", "r/CPA", "r/Bookkeeping", "r/taxpros", "r/Audit"],
+    "linkedin": ["AICPA LinkedIn Group", "Accounting & Finance Professionals", "Big 4 Alumni networks", "CPA Exam study groups"],
+    "associations": ["AICPA (American Institute of CPAs) - 597,000+ members across 188 countries", "IIA (Institute of Internal Auditors)", "IMA (Institute of Management Accountants)", "AAA (American Accounting Association)", "NASBA (National Association of State Boards of Accountancy)", "State CPA societies"],
+    "conferences": ["AICPA ENGAGE", "IIA International Conference", "Accounting Today Summit", "AccountingWEB Live"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "entry_level": "55000-65000",
+      "mid_level": "65000-85000",
+      "senior": "85000-120000",
+      "manager": "100000-150000",
+      "director_partner": "150000-300000+"
+    },
+    "national_average_usd": 73402,
+    "job_count": "About 1.6 million employed; ~130,000 openings projected annually",
+    "growth_rate": "6% projected through 2033 (faster than average)",
+    "unemployment_rate": "2.0% in 2025",
+    "work_arrangements": ["Office-based", "Hybrid (growing trend)", "Remote (selective roles)", "Client-site for auditors"],
+    "trends": ["Severe talent shortage - open roles surged 150% in one year", "87% of leaders cite talent shortage", "Salaries rising 3.7% year-over-year in public accounting", "AI and data analytics skills commanding premium pay (87% of leaders offer higher salaries for specialized skills)", "Alternative CPA pathways being introduced (California 2026)", "61% of hiring managers say finding skilled professionals is much harder than a year ago"]
+  }
+}

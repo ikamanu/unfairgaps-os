@@ -1,0 +1,287 @@
+{
+  "profession_id": "us-medical-dosimetrists",
+  "profession_name": "Medical Dosimetrists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Medical dosimetrists design and calculate radiation dose distributions for cancer patients, collaborating closely with radiation oncologists and medical physicists. They work primarily at computers in hospitals or cancer treatment centers on a standard 40-hour week.",
+    "typical_tasks": [
+      "Import diagnostic CT/MRI scans into treatment planning software (Eclipse, RayStation, Pinnacle)",
+      "Contour organs at risk (OARs) adjacent to tumors — spinal cord, lungs, heart, kidneys, bladder",
+      "Design and optimize IMRT, VMAT, SBRT, and SRS treatment plans",
+      "Calculate radiation dose distributions ensuring target coverage while minimizing healthy tissue exposure",
+      "Evaluate dose-volume histograms (DVHs) for plan quality assessment",
+      "Perform quality assurance (QA) testing on treatment machines",
+      "Document treatment plans comprehensively — archiving patient files and assisting with chart checks",
+      "Assist with patient simulation — positioning patients for treatment delivery",
+      "Collaborate with radiation oncologists on plan modifications and adaptations",
+      "Resolve errors in treatment delivery systems (ARIA, Mosaiq)"
+    ],
+    "key_documents": [
+      "Treatment plans with dose calculations",
+      "DVH reports (Dose-Volume Histograms)",
+      "Patient simulation records",
+      "QA measurement documentation",
+      "Chart check forms",
+      "Archived patient treatment files",
+      "Beam configuration data",
+      "Plan approval documentation from radiation oncologist"
+    ],
+    "deadlines": {
+      "treatment_plan_initial": "Typically within 24-48 hours of simulation",
+      "plan_review_approval": "Before first treatment fraction — same day or next business day",
+      "chart_checks": "Weekly and at treatment completion",
+      "qa_measurements": "Monthly machine QA, daily output checks",
+      "documentation_archival": "Ongoing throughout treatment course"
+    },
+    "seasonality": "No significant seasonal variation. Cancer treatment is year-round. Slight dips around major holidays when patient starts may be deferred. Equipment upgrade/maintenance windows may create temporary workload shifts."
+  },
+  "regulatory": {
+    "summary": "Medical dosimetrists are certified by the Medical Dosimetrist Certification Board (MDCB). State licensing requirements vary — some states require licensure as radiologic technicians. The field is governed by NRC regulations for radiation safety and JCAHO standards for healthcare quality.",
+    "key_regulations": [
+      {
+        "name": "NRC 10 CFR Part 35 — Medical Use of Byproduct Material",
+        "description": "Federal regulations governing medical use of radioactive materials",
+        "agency": "Nuclear Regulatory Commission (NRC)"
+      },
+      {
+        "name": "State radiation control programs",
+        "description": "Agreement States regulate radiation-producing machines and radioactive materials",
+        "agency": "State health departments"
+      },
+      {
+        "name": "Joint Commission (JCAHO) standards",
+        "description": "Healthcare quality and patient safety standards",
+        "agency": "Joint Commission"
+      }
+    ],
+    "licensing_certification": {
+      "primary_certification": "Certified Medical Dosimetrist (CMD) — administered by MDCB",
+      "requirements": [
+        "Bachelor's degree or higher",
+        "Graduation from JRCERT-accredited Medical Dosimetry program (minimum 12 months)",
+        "Pass MDCB certification examination"
+      ],
+      "exam_changes_2026": "Beginning January 2026, candidates who fail have a 5-year period for up to 2 additional attempts. After 3rd failure, ineligible for 2 calendar years.",
+      "international_route_terminated": "MDCB terminated international eligibility route after September 2025 administration",
+      "state_licensing": "No universal state licensing specifically for dosimetrists — some states require licensure as radiologic technician or nuclear medicine technologist",
+      "continuing_education": "Required for CMD maintenance of certification"
+    },
+    "penalties": "Radiation safety violations can result in NRC enforcement actions, civil penalties up to $375,000 per violation per day, and potential criminal prosecution for willful violations."
+  },
+  "tools": {
+    "summary": "Medical dosimetrists primarily use treatment planning systems (TPS) to design radiation therapy plans, supported by record-and-verify systems, contouring tools, and quality assurance software.",
+    "primary_software": [
+      {
+        "name": "Varian Eclipse",
+        "purpose": "Treatment planning system — dose calculation, plan optimization, contouring",
+        "vendor": "Varian Medical Systems (Siemens Healthineers)"
+      },
+      {
+        "name": "RayStation",
+        "purpose": "Treatment planning system with automated planning (ECHO algorithm in v2025), multi-criteria optimization",
+        "vendor": "RaySearch Laboratories"
+      },
+      {
+        "name": "Philips Pinnacle",
+        "purpose": "Treatment planning system — collapsed cone convolution algorithm",
+        "vendor": "Philips Healthcare"
+      },
+      {
+        "name": "Elekta Monaco",
+        "purpose": "Treatment planning system — Monte Carlo dose calculation",
+        "vendor": "Elekta"
+      }
+    ],
+    "record_verify_systems": [
+      {
+        "name": "ARIA",
+        "purpose": "Record-and-verify system for treatment delivery, patient records",
+        "vendor": "Varian Medical Systems"
+      },
+      {
+        "name": "Mosaiq",
+        "purpose": "Oncology information system and record-and-verify",
+        "vendor": "Elekta"
+      }
+    ],
+    "ai_tools": [
+      {
+        "name": "Plan AI (Sun Nuclear)",
+        "purpose": "Predicts ideal dose, auto-creates AI-guided optimization objectives via Eclipse and RayStation scripting"
+      },
+      {
+        "name": "Auto-contouring AI",
+        "purpose": "Delineates organs at risk — reduces contouring time from half a day to under an hour"
+      }
+    ],
+    "other_tools": [
+      "DICOM imaging viewers",
+      "Patient QA software (MapCHECK, ArcCHECK, SNC Patient)",
+      "Spreadsheets for dose tracking and plan comparisons",
+      "Communication tools (Teams, email, clinical messaging)"
+    ],
+    "pain_points": "Integration between different vendor TPS systems, learning curves for multiple platforms, software bugs during plan optimization, high cost of TPS licenses"
+  },
+  "terminology": {
+    "summary": "Medical dosimetry has highly technical vocabulary rooted in radiation physics, oncology, and treatment planning. Practitioners use extensive acronyms in daily communication.",
+    "key_abbreviations": {
+      "IMRT": "Intensity-Modulated Radiation Therapy — variable intensity beams for homogeneous dose distribution",
+      "VMAT": "Volumetric Modulated Arc Therapy — rotating cone beam with dynamic MLC, variable dose rate and gantry speed",
+      "SBRT": "Stereotactic Body Radiation Therapy — high-dose, few-fraction treatments",
+      "SRS": "Stereotactic Radiosurgery — single-fraction high-dose cranial treatment",
+      "DVH": "Dose-Volume Histogram — graphical plan quality assessment tool",
+      "OAR": "Organs at Risk — healthy structures near the tumor to be spared",
+      "PTV": "Planning Target Volume — includes clinical target plus margins for uncertainty",
+      "CTV": "Clinical Target Volume — tumor plus microscopic disease spread",
+      "GTV": "Gross Tumor Volume — visible tumor on imaging",
+      "MLC": "Multi-Leaf Collimator — beam shaping device",
+      "CMD": "Certified Medical Dosimetrist",
+      "TPS": "Treatment Planning System",
+      "QA": "Quality Assurance",
+      "MU": "Monitor Units — machine output measurement",
+      "Gy": "Gray — unit of absorbed radiation dose",
+      "cGy": "Centigray — 1/100 of a Gray",
+      "DICOM": "Digital Imaging and Communications in Medicine"
+    },
+    "common_jargon": [
+      "Hot spot — area receiving higher-than-prescribed dose",
+      "Cold spot — area receiving lower-than-prescribed dose",
+      "Conform the dose — shape radiation to match tumor geometry",
+      "Inverse planning — optimizer adjusts beam parameters to meet dose constraints",
+      "Dose painting — varying dose across the target based on biological characteristics",
+      "Plan optimization — iterative process of adjusting parameters to meet dosimetric goals",
+      "Chart check — weekly verification of treatment delivery accuracy"
+    ]
+  },
+  "career_psychology": {
+    "summary": "Medical dosimetrists are analytical healthcare professionals who work behind the scenes in radiation oncology. Career progression moves from junior dosimetrist to senior/chief dosimetrist to management or education roles.",
+    "career_levels": [
+      {
+        "level": "Entry-level / Junior Dosimetrist",
+        "description": "New graduates learning clinical workflows, creating basic plans under supervision"
+      },
+      {
+        "level": "Mid-level Dosimetrist (3-5 years)",
+        "description": "Independent plan creation for complex cases, mentoring juniors"
+      },
+      {
+        "level": "Senior / Lead Dosimetrist (7+ years)",
+        "description": "Complex SRS/SBRT plans, protocol development, training new staff"
+      },
+      {
+        "level": "Chief Dosimetrist / Manager",
+        "description": "Department management, policy creation, equipment evaluation, budgeting"
+      },
+      {
+        "level": "Education / Research",
+        "description": "Academic positions, clinical research, AAMD leadership roles"
+      }
+    ],
+    "key_fears": [
+      "Treatment planning errors causing patient harm",
+      "Machine malfunction delivering incorrect dose",
+      "Falling behind on new technologies (AI, proton therapy)",
+      "Job displacement by AI automation",
+      "Liability for dosimetric errors"
+    ],
+    "burnout_factors": [
+      "High-stakes work — errors directly affect patient outcomes",
+      "Repetitive computer-intensive work",
+      "Time pressure to complete plans before treatment start dates",
+      "Staffing shortages increasing individual workload",
+      "Expected retirement wave 2025-2030 straining remaining workforce"
+    ],
+    "growth_motivation": [
+      "Salary growth with experience (wide $92K range in compensation)",
+      "CMD certification advancement",
+      "Transition to management, education, or vendor roles",
+      "Proton therapy specialization",
+      "AI/automation tool development and oversight"
+    ]
+  },
+  "community": {
+    "summary": "The AAMD (American Association of Medical Dosimetrists) is the primary professional organization, with ASTRO serving as the broader radiation oncology society. Online communities are more niche compared to larger healthcare fields.",
+    "professional_associations": [
+      {
+        "name": "American Association of Medical Dosimetrists (AAMD)",
+        "website": "https://www.medicaldosimetry.org/",
+        "description": "Primary professional organization for dosimetrists. Provides CE, advocacy, workforce surveys, and networking.",
+        "annual_meeting": "50th Annual Meeting: June 15-18, 2025, Caesars Palace, Las Vegas — 500+ attendees",
+        "fall_meeting": "2-day in-person learning event, 100+ attendees",
+        "member_benefits": "CMD Connect online forum, regional meet-ups, 12 CE credits, Journal of Medical Dosimetry"
+      },
+      {
+        "name": "American Society for Radiation Oncology (ASTRO)",
+        "website": "https://www.astro.org/",
+        "description": "Broader radiation oncology society — dosimetrists attend as allied health members"
+      },
+      {
+        "name": "Medical Dosimetrist Certification Board (MDCB)",
+        "website": "https://mdcb.org/",
+        "description": "Certification body — administers CMD exam and maintenance of certification"
+      }
+    ],
+    "online_communities": [
+      "CMD Connect (AAMD members-only forum)",
+      "AAMD Regional Representative virtual meet-ups",
+      "Student Doctor Network — dosimetry forums",
+      "Reddit — no dedicated dosimetry subreddit; discussions in r/RadiationTherapy, r/RadiationOncology"
+    ],
+    "conferences": [
+      "AAMD Annual Meeting (June 2025, Las Vegas)",
+      "AAMD Fall Meeting (2-day event)",
+      "ASTRO Annual Meeting",
+      "AAPM Annual Meeting (medical physics, relevant to dosimetrists)"
+    ]
+  },
+  "market": {
+    "summary": "Medical dosimetrists are a small but in-demand profession with strong salaries. The field faces a workforce shortage due to retirements, while AI is augmenting rather than replacing the role.",
+    "salary_by_level": {
+      "entry_level": "$95,000 - $115,000",
+      "mid_career": "$120,000 - $145,000",
+      "senior": "$145,000 - $175,000",
+      "chief_manager": "$165,000 - $200,000+"
+    },
+    "median_annual_wage_bls_2024": "$138,110",
+    "average_2026_ziprecruiter": "$161,013",
+    "top_paying_states": [
+      "Washington: $177,710 annual mean",
+      "California, New York, Massachusetts among top earners"
+    ],
+    "employment_count_2024": "~4,800 jobs in the US",
+    "job_growth_2024_2034": "3% (about as fast as average)",
+    "annual_openings": "~200 per year (primarily replacement due to retirements and transfers)",
+    "workforce_shortage": "AAMD projects annual shortage of 50 dosimetrists by 2035. Peak retirement rate expected between 2025-2030.",
+    "work_arrangements": "Primarily W-2 hospital/cancer center employees. Growing remote dosimetry positions ($122K-$210K for remote roles). Some per-diem and contract positions.",
+    "ai_impact": "AI is augmenting, not replacing dosimetrists. Auto-contouring reduces contouring time from half a day to under an hour. AI-guided optimization assists plan creation. Work has 'not decreased but shifted to more review of AI and collaboration with physicians.' Dosimetrists ranked among top 10 jobs AI will most likely augment and assist.",
+    "market_trends": [
+      "Growing cancer incidence driving treatment demand",
+      "Proton therapy expansion creating specialized roles",
+      "Remote dosimetry positions increasing",
+      "AI integration changing workflow from creation to review/oversight",
+      "Workforce shortage due to retirement wave"
+    ]
+  },
+  "quality_score": 0.7,
+  "sources_count": 35,
+  "verified_sources": 8,
+  "confidence": "verified",
+  "sources": [
+    {"name": "BLS Occupational Outlook Handbook — Medical Dosimetrists", "url": "https://www.bls.gov/ooh/healthcare/medical-dosimetrists.htm"},
+    {"name": "BLS OES — Medical Dosimetrists May 2023", "url": "https://www.bls.gov/oes/2023/may/oes292036.htm"},
+    {"name": "O*NET — Medical Dosimetrists 29-2036.00", "url": "https://www.onetonline.org/link/summary/29-2036.00"},
+    {"name": "AAMD — What Types of Work", "url": "https://www.medicaldosimetry.org/about/types-of-work/"},
+    {"name": "AAMD — Becoming Certified", "url": "https://www.medicaldosimetry.org/about/becoming-certified/"},
+    {"name": "MDCB Applicant Handbook 2026", "url": "https://mdcb.org/sites/mdcb/files/docs/2025/Exam%20Handbook_2026.1_final_5.pdf"},
+    {"name": "MDCB — Eligibility", "url": "https://mdcb.org/certification-exam-information/eligibility"},
+    {"name": "AAMD Practice Standards 2023", "url": "https://pubs.medicaldosimetry.org/pub/0D4F14CE-F3FE-DC5B-3329-9A7658229EEB"},
+    {"name": "ASTRO — State of Medical Dosimetry 2024", "url": "https://www.astro.org/news-and-publications/astronews/2024/summer-astronews/features/state-of-medical-dosimetry"},
+    {"name": "ZipRecruiter — Medical Dosimetrists Salary Feb 2026", "url": "https://www.ziprecruiter.com/Salaries/Medical-Dosimetrists-Salary"},
+    {"name": "Salary.com — Medical Dosimetrist", "url": "https://www.salary.com/research/salary/alternate/medical-dosimetrist-salary"},
+    {"name": "Plan AI — Sun Nuclear", "url": "https://www.sunnuclear.com/products/plan-ai"},
+    {"name": "RaySearch Automated Treatment Planning", "url": "https://www.raysearchlabs.com/automated-treatment-planning/"},
+    {"name": "AAMD 50th Annual Meeting 2025", "url": "https://www.emedevents.com/c/medical-conferences-2025/american-association-of-medical-dosimetrists-aamd-50th-annual-meeting"},
+    {"name": "MDCB — AI and CMDs", "url": "https://mdcb.org/artificial-intelligence-cmds-and-importance-continuing-education"},
+    {"name": "BLS Career Outlook — Medical Dosimetrist", "url": "https://www.bls.gov/careeroutlook/2023/interview/medical-dosimetrist.htm"}
+  ]
+}

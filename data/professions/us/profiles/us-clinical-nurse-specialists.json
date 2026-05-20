@@ -1,0 +1,52 @@
+{
+  "profession_id": "us-clinical-nurse-specialists",
+  "profession_name": "Clinical Nurse Specialists",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "CNSs spend approximately 26.6% of day providing direct patient care, 22.1% consulting with nurses/staff, 26.5% teaching nurses/staff, and 19.7% leading evidence-based practice projects. No two days are the same — work alternates between office-based planning, research, and writing to being on the unit helping nurses, running codes, running simulations, teaching classes, and running meetings. Work in hospitals, physicians' offices, outpatient clinics, and home healthcare.",
+    "documents": ["Evidence-based practice guidelines", "Clinical protocols and policies", "Quality improvement reports", "Patient outcomes data analysis", "Staff education materials", "Research proposals and publications", "Nursing care plans", "Competency assessment tools", "Regulatory compliance documentation"],
+    "deadlines": ["Quality improvement project milestones", "Staff competency assessment cycles", "Policy review and update schedules", "Accreditation preparation deadlines (Joint Commission)", "Research publication timelines", "Continuing education requirements", "License and certification renewal"],
+    "seasonality": "Less seasonal than bedside nursing. Quality improvement projects may align with fiscal year cycles. Accreditation surveys create peak preparation periods. New graduate orientations increase workload in spring/summer hiring cycles."
+  },
+  "regulatory": {
+    "laws": ["State Nurse Practice Acts", "APRN Consensus Model", "State-specific CNS scope of practice laws", "HIPAA", "State prescriptive authority laws (expanding — Maryland 2025 allows CNS prescribing)"],
+    "licensing": "Requires MSN or DNP with CNS specialization. National certification through ANCC or specialty-specific boards. 28 states + DC have full practice authority for APRNs. Maryland (2025) now allows CNS prescribing authority. Wisconsin considering full practice authority legislation. Practice authority varies significantly by state — some require physician collaboration.",
+    "penalties": "License revocation/suspension for practice outside scope. State Board of Nursing disciplinary actions. Malpractice liability. Penalties vary by state — governed by individual Nurse Practice Acts. Wisconsin bill aims to remove physician supervision barriers.",
+    "regulatory_bodies": ["State Boards of Nursing", "NCSBN (National Council of State Boards of Nursing)", "ANCC (American Nurses Credentialing Center)", "Joint Commission", "CMS", "NACNS (advocacy role)"]
+  },
+  "tools": {
+    "software": ["Epic (hospital EHR)", "Oracle Cerner", "MEDITECH", "Nuance DAX Copilot (AI documentation)", "Microsoft Office/SharePoint (research and reporting)", "SPSS/R (data analysis for research)", "REDCap (research data capture)", "HealthStream (staff education platform)"],
+    "platforms": ["UpToDate (clinical reference)", "Cochrane Library (evidence-based research)", "PubMed/MEDLINE", "CINAHL (nursing research database)", "Nursing Network", "symplr (compliance platform)"],
+    "gov_portals": ["Nursys (license verification)", "State Board of Nursing portals", "CMS Quality Reporting", "CDC guidelines portals", "NIH/AHRQ (research funding)"]
+  },
+  "terminology": {
+    "jargon": ["Evidence-based practice (EBP)", "Clinical ladder", "Spheres of influence (patient, nursing, organization)", "Practice inquiry", "Outcomes management", "Competency validation", "Root cause analysis", "PDSA cycle (Plan-Do-Study-Act)", "Shared governance", "Magnet designation", "Nurse-sensitive indicators", "Interprofessional collaboration"],
+    "abbreviations": ["CNS - Clinical Nurse Specialist", "AGCNS - Adult-Gerontology CNS", "AOCNS - Advanced Oncology Certified CNS", "DCNS - Diabetic CNS", "HHCNS - Home Health CNS", "NCNS - Neonatal CNS", "APRN - Advanced Practice Registered Nurse", "CNL - Clinical Nurse Leader", "CNE - Certified Nurse Educator", "EBP - Evidence-Based Practice", "QI - Quality Improvement", "NDNQI - National Database of Nursing Quality Indicators", "HCAHPS - Hospital Consumer Assessment of Healthcare Providers"]
+  },
+  "career_psychology": {
+    "career_levels": ["Staff RN", "Charge Nurse / Senior RN", "CNS Student (MSN/DNP program)", "New CNS", "Experienced CNS", "Senior CNS / Lead CNS", "Director of Nursing Practice", "VP of Nursing / CNO", "CNS Educator / Faculty", "Researcher / Published Author"],
+    "fears": ["Role ambiguity and being undervalued in organization", "Lack of clear career advancement pathways", "Being seen as overhead rather than essential", "Scope of practice restrictions limiting effectiveness", "Inability to demonstrate ROI of CNS role to administrators", "Job elimination during budget cuts"],
+    "motivation": ["Improving patient outcomes through evidence-based practice", "Mentoring and developing the next generation of nurses", "Leading transformational change in healthcare organizations", "Intellectual stimulation from research and innovation", "Bridging gap between research and clinical practice", "Autonomy in shaping nursing practice at organizational level"],
+    "burnout": "CNS burnout driven by role ambiguity, high workload from combining clinical, educational, and leadership responsibilities, and lack of organizational support. Career calling serves as protective factor. Institutions offering leadership tracks and clinical ladder programs see improved morale. CNSs may experience burnout when stuck in routine tasks without advancement opportunities. Recovery experiences and fostering sense of professional calling identified as key mitigation strategies."
+  },
+  "community": {
+    "reddit": ["r/nursing", "r/nursepractitioner", "r/AdvancedPractice", "r/NursingEducation"],
+    "linkedin": ["NACNS (National Association of Clinical Nurse Specialists) LinkedIn", "State CNS associations (CACNS, MACNS, VaCNS)", "Advanced Practice Nursing Groups"],
+    "associations": ["NACNS (National Association of Clinical Nurse Specialists) — represents 89,000 CNSs, founded 1995", "CACNS (California Association of CNS)", "MACNS (Maryland Association of CNS)", "VaCNS (Virginia Association of CNS)", "ANA (American Nurses Association)", "Sigma Theta Tau International Honor Society", "Specialty-specific associations (ONS for oncology, AACN for critical care, etc.)"],
+    "conferences": ["NACNS Annual Conference", "Magnet Conference", "ANCC Pathway to Excellence Conference", "Specialty-specific conferences (ONS Congress, AACN NTI)"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "entry_level": "85000-100000",
+      "mid_level": "100000-120000",
+      "senior": "110000-140000",
+      "director_level": "130000-170000"
+    },
+    "national_average_usd": 114000,
+    "job_count": "89,000 active CNSs; 268,303 active job openings",
+    "growth_rate": "6% for RNs through 2033; CNS salaries increased 10% in last 5 years",
+    "unemployment_rate": "Very low — high demand across healthcare settings",
+    "work_arrangements": ["Hospital-based (primary)", "Ambulatory/outpatient clinics", "Academic medical centers", "Home healthcare", "Consulting", "Remote (quality improvement, research roles)"],
+    "trends": ["Healthcare added 82,000 jobs in January 2026 (63% of all new US jobs)", "Ambulatory care leading growth (+50,000 jobs)", "Expanding prescriptive authority in more states", "Signing bonuses and tuition reimbursement common", "AI tools reducing documentation burden", "Regional pay variation: $96/hr (West) vs $69/hr (Northeast)", "Growing emphasis on value-based care increasing CNS demand"]
+  }
+}

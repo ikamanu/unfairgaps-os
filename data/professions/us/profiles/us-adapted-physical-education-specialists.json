@@ -1,0 +1,189 @@
+{
+  "profession_id": "us-adapted-physical-education-specialists",
+  "profession_name": "Adapted Physical Education Specialists",
+  "tier": "B",
+  "daily_reality": {
+    "typical_schedule": "40-hour work week during school hours, following traditional 10-month school year schedule",
+    "daily_tasks": [
+      "Prepare lesson plans in accordance with IEPs and functional abilities/needs of students",
+      "Provide adapted physical education services to students with intellectual disabilities, autism, traumatic brain injury, orthopedic impairments, or other disabling conditions",
+      "Instruct students using adapted PE techniques to improve physical fitness, gross motor skills, perceptual motor skills, or sports/game achievement",
+      "Maintain thorough student records to document attendance, participation, or progress, ensuring confidentiality"
+    ],
+    "weekly_monthly_tasks": [
+      "Write or modify IEPs for students with intellectual or physical disabilities",
+      "Communicate behavioral observations and student progress reports to students, parents, teachers, or administrators",
+      "Write reports to summarize student performance, social growth, or physical development",
+      "Advise education professionals of students' physical abilities/disabilities and accommodations required"
+    ]
+  },
+  "regulatory": {
+    "federal_mandate": "IDEA Federal Regulations (300.108) requires physical education services, specially designed if necessary, must be made available to every child with a disability receiving FAPE",
+    "certification_landscape": "Only 14 states have specific endorsement/certification in adapted physical education (California, New York, Connecticut among them); 36 states have yet to address APE teacher qualifications",
+    "state_examples": {
+      "california": "Requires valid prerequisite teaching credential authorizing teaching of physical education K-12 or credential authorizing instruction/services in special education",
+      "washington": "References WAC 392-172A-02090(i) regarding special education qualifications; specialty endorsement provides professional recognition"
+    },
+    "national_standards": "NCPERID created national standards and voluntary national certification exam (APENS) with fifteen standards",
+    "iep_requirements": "If specially designed PE is required, services must be stated in IEP, delivered in LRE, and provided by qualified teacher"
+  },
+  "tools": {
+    "software_categories": [
+      "Database software",
+      "Individualized Educational Program (IEP) software",
+      "Student record software"
+    ],
+    "specific_tools": [
+      {
+        "name": "Frontline Special Education & Interventions",
+        "purpose": "Builds continuum of services"
+      },
+      {
+        "name": "PowerSchool Unified Classroom Special Programs",
+        "purpose": "Improves support for students with unique needs"
+      },
+      {
+        "name": "Playground IEP",
+        "purpose": "AI tools for IEP Goal Writer, Present Levels, BIPs, Progress Monitoring, Caseload Management"
+      },
+      {
+        "name": "AbleSpace",
+        "purpose": "Data collection, progress monitoring, tracking service minutes"
+      }
+    ],
+    "assessment_focus": "All PE evaluations should be individualized and examine: Participation, Fitness, Gross Motor Skills, Motor Pattern Development"
+  },
+  "market": {
+    "average_salary_hourly": 34.67,
+    "average_salary_annual": 72120,
+    "salary_range": {
+      "percentile_25": 40000,
+      "percentile_75": 90000,
+      "percentile_90": 118000
+    },
+    "by_experience": {
+      "entry_level_1_3_years": 47520,
+      "mid_level_california_2_4_years": 58232,
+      "senior_level_california_5_8_years": 60454,
+      "senior_level_8_plus_years": 79975,
+      "california_entry_1_3_years": 53609,
+      "california_senior_8_plus_years": 90222
+    },
+    "major_cities": {
+      "san_jose_ca": 66571,
+      "san_francisco_ca": 65917,
+      "oakland_ca": 64455,
+      "new_york_ny": 61166,
+      "boston_ma": 58865
+    },
+    "highest_paying_cities": ["Milford, MA", "New York, NY", "Pacifica, CA"],
+    "labor_outlook": {
+      "new_jobs_by_2026": 4100,
+      "estimated_annual_positions": 3400,
+      "job_growth_rate": "9.9% (above national average)",
+      "top_growth_states": ["Utah", "Arizona", "Hawaii"]
+    }
+  },
+  "automation_potential": {
+    "automation_risk": "0-20% (minimal risk)",
+    "reason": "Requires complex problem-solving, creativity, strong interpersonal skills, high degree of manual dexterity",
+    "job_openings_trend": "Expected to rise 6.8% by 2031",
+    "tasks_being_automated": [
+      {
+        "task": "Administrative Tasks",
+        "description": "AI assists with lesson planning, equipment management, attendance tracking"
+      },
+      {
+        "task": "Data Analysis and Monitoring",
+        "description": "Smart wearable AI devices for real-time health monitoring, injury prevention, personalized training"
+      },
+      {
+        "task": "Performance Analysis and Feedback",
+        "description": "AI algorithms analyze students' motor activity in real time and provide immediate corrective feedback"
+      }
+    ],
+    "emerging_technologies": "VR, AR, gamification create interactive learning environments particularly helpful for students with learning difficulties",
+    "future_outlook": "AI complements rather than replaces specialists; specialists create personalized fitness plans through data analytics; specialized certifications in AI-related competencies becoming important"
+  },
+  "compliance_calendar": {
+    "annual_review": "IEP reviewed each year; must be current at beginning of each school year",
+    "federal_meeting_notice": "At least 7 days written notice required for any IEP meeting",
+    "evaluation_timeline": "45 school days to complete evaluations and hold eligibility meeting after consent form signed",
+    "service_implementation": "IEP started as soon as possible but no later than 30 calendar days after child qualified for special education",
+    "triennial_evaluations": "New evaluations at least every 3 years",
+    "ape_specialist_role": "Write or modify IEPs; write reports to summarize student performance, social growth, physical development; review APE programs/practices to ensure compliance"
+  },
+  "error_patterns": {
+    "iep_documentation_requirements": "Must include summary of present level of performance in PE content, frequency and duration (minutes and days per week), goals, objectives, description of student's physical development per Section 200.1(kk)",
+    "critical_compliance_issue": "Adapted PE is NOT a related service; OT and PT cannot substitute for physical education",
+    "common_errors": [
+      "Failure to provide parents and specialists with copies of progress report",
+      "Special education teachers not setting up timely IEP meetings involving classroom teachers, district reps, student's parents/guardians",
+      "Not being able to keep up or meet goal deadlines",
+      "Failure to inform parents about any IEP changes"
+    ]
+  },
+  "quality_score": 0.82,
+  "sources_count": 61,
+  "verified_sources": 12,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Typical workday of Adapted Physical Education Specialists in the United States 2025-2026",
+      "sources": [
+        "https://www.owlguru.com/career/adapted-physical-education-specialists/job-description/",
+        "https://www.mynextmove.org/profile/summary/25-2059.01",
+        "https://www.onetonline.org/link/summary/25-2059.01"
+      ]
+    },
+    {
+      "query": "Regulatory environment IDEA certification",
+      "sources": [
+        "https://www.nysed.gov/standards-instruction/adapted-physical-education",
+        "https://www.ctc.ca.gov/credentials/leaflets/adapted-physical-education-(cl-623)",
+        "https://education.stateuniversity.com/pages/1733/Adapted-Physical-Education.html"
+      ]
+    },
+    {
+      "query": "Software tools IEP assessment",
+      "sources": [
+        "https://www.pecentral.org/adapted/adaptedinstruments.html",
+        "https://eunasolutions.com/solutions/special-education/iep-software/",
+        "https://www.ablespace.io/",
+        "https://www.playgroundiep.com/"
+      ]
+    },
+    {
+      "query": "Labor market salary 2025-2026",
+      "sources": [
+        "https://www.ziprecruiter.com/Salaries/Adapted-Physical-Education-Specialist-Salary",
+        "https://www.payscale.com/research/US/Job=Adapted_Physical_Education_Specialist/Salary",
+        "https://www.salaryexpert.com/salary/job/adapted-physical-education-teacher/united-states"
+      ]
+    },
+    {
+      "query": "Automation AI impact technology adoption",
+      "sources": [
+        "https://research.com/advice/ai-automation-and-the-future-of-physical-education-degree-careers",
+        "https://willrobotstakemyjob.com/adapted-physical-education-specialists",
+        "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1490966/full"
+      ]
+    },
+    {
+      "query": "IEP deadlines annual reviews reporting",
+      "sources": [
+        "https://kidslegal.org/special-education-timelines",
+        "https://sites.ed.gov/idea/files/policy_speced_guid_idea_iep-qa-2010.pdf",
+        "https://www.ed.gov/laws-and-policy/individuals-disabilities/idea"
+      ]
+    },
+    {
+      "query": "Common mistakes IEP compliance documentation",
+      "sources": [
+        "https://dese.mo.gov/special-education/compliance/adapted-physical-education",
+        "https://www.nysed.gov/sites/default/files/programs/standards-instruction/qa_0.pdf",
+        "https://www.ablespace.io/blog/iep-compliance-issues-pay-attention/"
+      ]
+    }
+  ]
+}

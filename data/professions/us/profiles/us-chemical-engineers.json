@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-chemical-engineers",
+  "profession_name": "Chemical Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Split between lab work, office/design work, and plant floor. Lab time: conducting experiments, testing hypotheses, gathering data. Office time: process simulation, data analysis, documentation, collaboration with multidisciplinary teams. Plant time: monitoring processes, troubleshooting, ensuring safety compliance. Regular meetings with project teams, safety reviews, and management updates.",
+    "key_documents": ["Process flow diagrams (PFDs)", "Piping and instrumentation diagrams (P&IDs)", "Material safety data sheets (MSDS/SDS)", "Process hazard analyses (PHA)", "Environmental impact assessments", "Operating procedures", "Equipment specifications", "Regulatory compliance reports (EPA, OSHA)"],
+    "deadlines": "Project milestones tied to plant construction/modification schedules; regulatory compliance reporting deadlines (EPA, OSHA); safety review cycles; budget and capital expenditure approval deadlines. May work beyond 40 hours during plant startups or emergencies.",
+    "seasonality": "Plant turnaround/maintenance seasons (typically spring and fall); budget cycles drive capital project approvals; some industries seasonal (agriculture-related chemicals). Conference season in fall (AIChE Annual Meeting)."
+  },
+  "regulatory": {
+    "laws_and_standards": ["EPA regulations (Clean Air Act, Clean Water Act, TSCA)", "OSHA Process Safety Management (PSM) standard 29 CFR 1910.119", "EPA Risk Management Program (RMP)", "OSHA workplace chemical exposure limits (PELs/STELs)", "State environmental regulations", "DOT hazardous materials transportation", "REACH (for exports to EU)"],
+    "licensing": "Professional Engineer (PE) license valued and sometimes required, especially for signing off on designs. ABET-accredited bachelor's degree in chemical engineering required. FE exam → 4 years experience → PE exam. No mandatory license to practice, but PE needed for certain certifications and public-facing work.",
+    "penalties": "EPA: fines for environmental violations (significantly increased penalties). OSHA: up to $16,131 per serious violation, up to $161,323 for willful/repeat violations (2025 adjusted). New 2026 appropriations bill may shift EPA-OSHA coordination on chemical safety regulation. PSM violations can result in multi-million dollar fines.",
+    "regulatory_bodies": ["EPA (Environmental Protection Agency)", "OSHA (Occupational Safety and Health Administration)", "DOT (Department of Transportation)", "State environmental agencies", "NCEES (National Council of Examiners for Engineering and Surveying)"]
+  },
+  "tools": {
+    "software": ["Aspen HYSYS - process simulation for oil & gas, refining", "Aspen Plus - specialty chemicals, fine chemicals, biomass", "COMSOL Multiphysics - multiphysics simulation", "MATLAB - data analysis and modeling", "CHEMCAD - process simulation", "Python - data science and automation", "DWSIM - open-source process simulator", "AutoCAD/MicroStation - plant design"],
+    "platforms": ["SAP - ERP for manufacturing", "OSIsoft PI (AVEVA PI) - process data historian", "Emerson DeltaV/Honeywell DCS - process control", "Aspen Online - real-time optimization", "JIRA/MS Project - project management"],
+    "gov_portals": ["EPA ECHO (Enforcement and Compliance History Online)", "OSHA compliance portal", "EPA TRI (Toxics Release Inventory)", "EPA RMP*Info"]
+  },
+  "terminology": {
+    "jargon": ["Unit operation", "Mass balance / energy balance", "Distillation column", "Heat exchanger", "Reactor design (CSTR, PFR, batch)", "Azeotrope", "Scale-up", "Digital twin", "Process intensification", "Turnaround (plant maintenance shutdown)"],
+    "abbreviations": ["CSTR - Continuous Stirred Tank Reactor", "PFR - Plug Flow Reactor", "PFD - Process Flow Diagram", "P&ID - Piping and Instrumentation Diagram", "PSM - Process Safety Management", "MOC - Management of Change", "PHA - Process Hazard Analysis", "HAZOP - Hazard and Operability Study", "SDS/MSDS - Safety Data Sheet", "PPE - Personal Protective Equipment", "DCS - Distributed Control System", "FE/PE - Fundamentals of Engineering / Professional Engineer"]
+  },
+  "career_psychology": {
+    "career_levels": ["Entry-Level/Junior Engineer (0-3 years)", "Process Engineer (3-7 years)", "Senior Engineer (7-12 years)", "Principal/Staff Engineer (12+ years)", "Engineering Manager/Director", "VP of Engineering / Plant Manager"],
+    "fears": ["Industry cutbacks and downsizing (2025-2026 market uncertainty)", "Environmental disasters and personal liability", "Automation and AI replacing process design roles", "Plant safety incidents (explosions, chemical releases)", "Salary stagnation in flat market"],
+    "motivation": "Solving complex process problems; developing sustainable technologies (carbon capture, green chemistry); high impact on industrial scale; strong earning potential especially with PE license and advanced degrees.",
+    "burnout": "Extended hours during plant startups and turnarounds; on-call for emergency situations; regulatory compliance burden; job market uncertainty in 2025-2026 creating anxiety. Balance generally better than healthcare but worse during plant operations."
+  },
+  "community": {
+    "reddit": ["r/ChemicalEngineering", "r/AskEngineers", "r/engineering", "r/ChemE"],
+    "linkedin": ["Chemical Engineering group", "AIChE community", "Process Safety professionals", "Energy Transition Engineers"],
+    "associations": ["AIChE (American Institute of Chemical Engineers)", "ACS (American Chemical Society)", "ASME (American Society of Mechanical Engineers)", "SPE (Society of Petroleum Engineers)", "NSPE (National Society of Professional Engineers)"],
+    "conferences": ["AIChE Annual Meeting - October/November (2025: Boston; 2026 TBD)", "AIChE Spring Meeting & Global Congress on Process Safety - April (2026: Houston, TX)", "ACS National Meeting - twice yearly", "Chemical Ventures Conference - 2026", "ACHEMA - Frankfurt (global process engineering)"]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 79000,
+      "mid_level_usd": 107000,
+      "senior_level_usd": 133000,
+      "principal_phd_usd": 174000
+    },
+    "average_salary_usd": 113000,
+    "job_count_estimate": "About 16,138 chemical engineers employed in the US; 42,176 active job openings. Median salary for new graduates: $79,000 (up 6% from 2023).",
+    "work_arrangements": "Primarily on-site at plants, refineries, labs, or offices. Some hybrid options for design/simulation roles. Manufacturing and plant operations require on-site presence. Shift work common in continuous operations.",
+    "trends": ["Carbon capture and sustainable chemistry demand growing", "AI and automation transforming process design", "Digital twins for plant optimization", "Base compensation up 4.7% (Dec 2024 to Dec 2025)", "Market flat in 2025, slight improvement expected mid-2026", "Biotech and semiconductor sectors facing cutbacks", "New graduates finding first jobs in ~4.3 months (improving)"]
+  },
+  "quality_score": 0.82,
+  "sources_count": 7,
+  "verified_sources": 5
+}

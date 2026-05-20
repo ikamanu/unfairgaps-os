@@ -1,0 +1,288 @@
+{
+  "profession_id": "us-mining-and-geological-engineers-including-mining-safety-engineers",
+  "profession_name": "Mining and Geological Engineers, Including Mining Safety Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Mining and geological engineers design mines, plan extraction operations, and ensure safety compliance. They split time between offices (mine planning, analysis), field sites (inspections, surveying), and meetings with operations teams. Work often involves remote locations and challenging conditions.",
+    "typical_tasks": [
+      "Design mine plans — open pit and underground layouts, extraction sequences",
+      "Analyze geological data to assess ore quality, quantity, and economic viability",
+      "Conduct mine site inspections for safety and regulatory compliance",
+      "Plan and optimize drilling and blasting operations",
+      "Create production schedules and resource models",
+      "Review and update mine ventilation, ground control, and water management plans",
+      "Prepare and submit regulatory permits (SMCRA, state mining permits)",
+      "Collaborate with geologists, environmental engineers, and operations staff",
+      "Supervise mining operations and equipment deployment",
+      "Prepare technical reports, feasibility studies, and cost estimates",
+      "Conduct accident investigations and safety training"
+    ],
+    "key_documents": [
+      "Mine plans and design drawings",
+      "SMCRA permit applications and reclamation plans",
+      "MSHA inspection reports and violation responses",
+      "Geological/geotechnical reports",
+      "Production reports and reconciliation",
+      "Ventilation plans (underground)",
+      "Ground control plans",
+      "Environmental monitoring reports",
+      "Blast design plans",
+      "Feasibility and pre-feasibility studies"
+    ],
+    "deadlines": {
+      "msha_inspections": "4 inspections/year for underground mines, 2/year for surface mines",
+      "permit_renewals": "Per state schedule — typically every 5 years for SMCRA permits",
+      "reclamation_bonding": "Before mining begins and updates per regulatory schedule",
+      "production_reporting": "Monthly/quarterly to management and regulators",
+      "incident_reporting": "15 minutes for fatal/life-threatening events to MSHA"
+    },
+    "seasonality": "Seasonal variation depends on climate and mining type. Surface mining in northern states slows in winter. Exploration drilling peaks in summer. Budget and planning cycles follow fiscal year (January or October depending on company)."
+  },
+  "regulatory": {
+    "summary": "Mining is one of the most heavily regulated industries in the US, governed by MSHA (Federal Mine Safety and Health Act), SMCRA (surface mining reclamation), EPA environmental regulations, and state mining agencies. Penalties for violations are substantial.",
+    "key_regulations": [
+      {
+        "name": "Federal Mine Safety and Health Act of 1977 (Mine Act), amended by MINER Act 2006",
+        "description": "Primary safety law. Establishes MSHA authority, inspection requirements, penalty framework.",
+        "agency": "MSHA (Mine Safety and Health Administration)"
+      },
+      {
+        "name": "SMCRA — Surface Mining Control and Reclamation Act of 1977 (30 CFR 700+)",
+        "description": "Requires permits, reclamation plans, bonding for surface coal mining. Administered by OSMRE and state agencies.",
+        "agency": "OSMRE (Office of Surface Mining Reclamation and Enforcement)"
+      },
+      {
+        "name": "MSHA 30 CFR Parts 56-57 (surface/underground metal/nonmetal)",
+        "description": "Safety standards for metal and nonmetal mines",
+        "agency": "MSHA"
+      },
+      {
+        "name": "MSHA 30 CFR Parts 70-90 (coal mining)",
+        "description": "Safety and health standards for coal mines including dust and respirable silica",
+        "agency": "MSHA"
+      }
+    ],
+    "penalties_2025": {
+      "standard_violations": "$112 to $70,000 per violation",
+      "flagrant_violations": "Up to $332,376 per violation (2025 inflation-adjusted)",
+      "failure_to_notify": "$5,000 to $65,000 for not reporting fatal/life-threatening events within 15 minutes",
+      "inflation_adjustment_2025": "2.6% increase effective January 15, 2025",
+      "silica_rule": "New respirable crystalline silica standards — compliance deadline April 8, 2026"
+    },
+    "licensing_certification": {
+      "pe_license": "PE in Mining and Mineral Processing — NCEES exam, computer-based, offered annually. Required for signing engineering documents in some states.",
+      "requirements": [
+        "Bachelor's degree in mining engineering or related field",
+        "4 years progressive experience under licensed PE supervision",
+        "Pass FE (Fundamentals of Engineering) then PE exam"
+      ],
+      "msha_training": "40-hour new miner training, 8-hour annual refresher required for all mine workers",
+      "blaster_certification": "State-specific certification required for blasting operations"
+    }
+  },
+  "tools": {
+    "summary": "Mining engineers use specialized mine planning software for geological modeling, pit design, scheduling, and production optimization. GIS and survey tools complement core mine planning platforms.",
+    "primary_software": [
+      {
+        "name": "Maptek Vulcan",
+        "purpose": "3D mine planning and geological modeling — dominant for open pit operations. Integrates with surveying and GIS.",
+        "vendor": "Maptek"
+      },
+      {
+        "name": "Dassault GEOVIA Surpac",
+        "purpose": "Resource estimation, mine planning, geological modeling — versatile and widely used",
+        "vendor": "Dassault Systèmes"
+      },
+      {
+        "name": "Deswik",
+        "purpose": "Mine scheduling and planning — industry leader for scheduling. Requires companion geology software.",
+        "vendor": "Deswik (Sandvik)"
+      },
+      {
+        "name": "Leapfrog Geo",
+        "purpose": "Implicit geological modeling — standard for exploration",
+        "vendor": "Seequent (Bentley Systems)"
+      },
+      {
+        "name": "Micromine (Origin, Beyond, Alastri, Spry)",
+        "purpose": "Full suite: geology, estimation, mine design, scheduling. Acquired by Weir Group April 2025 for £624M.",
+        "vendor": "Micromine (Weir Group)"
+      }
+    ],
+    "other_tools": [
+      "AutoCAD / Civil 3D — general engineering drawings",
+      "ArcGIS / QGIS — geospatial analysis and mapping",
+      "Datamine — geological modeling and mine planning",
+      "MinePlan (Hexagon) — formerly MineSight",
+      "Whittle (Dassault GEOVIA) — open pit optimization",
+      "FLAC/UDEC (Itasca) — geotechnical and ground stability analysis",
+      "Promine — mining plugin for AutoCAD",
+      "Microsoft Excel — ubiquitous for cost analysis, production tracking"
+    ],
+    "pain_points": "High software license costs, steep learning curves for specialized tools, integration challenges between different vendor platforms, data migration between legacy and modern systems"
+  },
+  "terminology": {
+    "summary": "Mining engineering has deep historical vocabulary from centuries of practice, combined with modern technical terms for geology, blasting, safety, and resource estimation.",
+    "key_terms": {
+      "Stope": "Underground excavation from which ore is extracted",
+      "Adit": "Horizontal or nearly horizontal entrance to an underground mine",
+      "Drift": "Horizontal underground passage following a vein or formation",
+      "Crosscut": "Horizontal opening driven across rock formation (perpendicular to drift)",
+      "Bench": "Step or level in an open pit mine; also a lift in underground thick-bed mining",
+      "Overburden": "Rock and soil above the ore body in surface mining",
+      "Stripping ratio": "Ratio of waste material to ore in surface mining",
+      "Block model": "3D grid of estimated grades used for resource estimation and mine planning",
+      "Cut-off grade": "Minimum grade of ore that can be mined economically",
+      "Ore reserve": "Economically mineable part of a mineral resource (measured + indicated, modified by modifying factors)",
+      "Reclamation": "Restoration of mined land to productive use per SMCRA requirements",
+      "Drawpoint": "Location where blasted ore is loaded from a stope"
+    },
+    "key_abbreviations": {
+      "MSHA": "Mine Safety and Health Administration",
+      "SMCRA": "Surface Mining Control and Reclamation Act",
+      "OSMRE": "Office of Surface Mining Reclamation and Enforcement",
+      "PE": "Professional Engineer",
+      "NI 43-101": "Canadian standard for mineral resource/reserve disclosure (used internationally)",
+      "JORC": "Joint Ore Reserves Committee (Australian reporting code)",
+      "ROM": "Run of Mine — ore as it comes from the mine before processing",
+      "LOM": "Life of Mine",
+      "NPV": "Net Present Value — economic evaluation metric",
+      "PFS": "Pre-Feasibility Study",
+      "FS / BFS": "Feasibility Study / Bankable Feasibility Study",
+      "DFS": "Definitive Feasibility Study"
+    }
+  },
+  "career_psychology": {
+    "summary": "Mining engineers work in a high-risk, cyclical industry with remote work locations. Career progression moves from site-level engineering to management to corporate leadership. The field offers high pay but demands sacrifice in lifestyle.",
+    "career_levels": [
+      {
+        "level": "Junior / Graduate Engineer",
+        "description": "On-site work under supervision, learning mine operations, data collection",
+        "salary_range": "$65,000 - $80,000"
+      },
+      {
+        "level": "Mid-Level / Mine Engineer (3-7 years)",
+        "description": "Independent mine design, production planning, project management",
+        "salary_range": "$80,000 - $110,000"
+      },
+      {
+        "level": "Senior Engineer / Chief Engineer",
+        "description": "Technical leadership, feasibility studies, PE-stamped documents",
+        "salary_range": "$110,000 - $140,000"
+      },
+      {
+        "level": "Mine Manager / General Manager",
+        "description": "Full operational responsibility for mine site",
+        "salary_range": "$140,000 - $200,000+"
+      },
+      {
+        "level": "VP / Corporate Director",
+        "description": "Multi-site oversight, corporate strategy, investor relations",
+        "salary_range": "$180,000 - $300,000+"
+      }
+    ],
+    "key_fears": [
+      "Mine accidents and fatalities — personal liability and emotional toll",
+      "MSHA violations and regulatory shutdowns",
+      "Commodity price crashes making projects uneconomical",
+      "Environmental incidents (tailings dam failures, water contamination)",
+      "Career disruption from mine closures in commodity downturns"
+    ],
+    "burnout_factors": [
+      "Remote and FIFO (fly-in/fly-out) work arrangements — time away from family",
+      "High-risk work environment creating constant vigilance and stress",
+      "Irregular schedules — 12-hour shifts, rotation schedules",
+      "Cyclical industry — boom-bust cycles create job insecurity",
+      "Pressure to meet production targets while maintaining safety",
+      "Project-based work — contract uncertainty between projects"
+    ],
+    "growth_motivation": [
+      "Critical minerals boom creating new projects and career opportunities",
+      "High earning potential at management levels",
+      "Global mobility — mining expertise is internationally transferable",
+      "Contributing to energy transition (lithium, copper, cobalt mining)",
+      "PE licensure opening consulting and leadership doors"
+    ]
+  },
+  "community": {
+    "summary": "SME (Society for Mining, Metallurgy & Exploration) is the dominant US professional organization with 13,000+ global members. AIME is the parent umbrella organization.",
+    "professional_associations": [
+      {
+        "name": "Society for Mining, Metallurgy & Exploration (SME)",
+        "website": "https://www.smenet.org/",
+        "description": "Primary US mining professional society. 13,000+ members. Publishes Mining Engineering magazine and Tunneling & Underground Construction. 14,000+ member directory.",
+        "annual_meeting": "MINEXCHANGE Annual Conference & Expo — Denver, CO (co-located with CMA and World Gold)"
+      },
+      {
+        "name": "American Institute of Mining, Metallurgical, and Petroleum Engineers (AIME)",
+        "website": "https://aimehq.org/",
+        "description": "Umbrella organization for SME, AIST, TMS, and SPE"
+      },
+      {
+        "name": "National Mining Association (NMA)",
+        "website": "https://nma.org/",
+        "description": "Industry advocacy organization representing mining companies"
+      }
+    ],
+    "conferences": [
+      "MINEXCHANGE SME Annual Conference & Expo (February/March, Denver)",
+      "MXC 2026 — Save on MXC promoted by SME",
+      "SME Minnesota Conference — Iron Ore region focused",
+      "Haulage & Loading Conference",
+      "CMA National Western Mining Conference"
+    ],
+    "online_communities": [
+      "Reddit r/mining — active community for mining professionals",
+      "SME Community online forums — 14,000+ members",
+      "LinkedIn mining engineering groups",
+      "Mining.com forums and news"
+    ],
+    "member_benefits": "SME Midweek Member Mixer (bi-monthly virtual networking), technical conferences, short courses, webinars, Mining Engineering magazine, career center"
+  },
+  "market": {
+    "summary": "Mining engineering faces a workforce shortage as nearly half the workforce approaches retirement by 2029. The critical minerals boom (lithium, copper, cobalt) is driving new demand, but the cyclical nature of commodity markets creates uncertainty.",
+    "salary_by_level": {
+      "entry_level": "$65,000 - $80,000",
+      "mid_career": "$80,000 - $110,000",
+      "senior": "$110,000 - $140,000",
+      "management": "$140,000 - $200,000+",
+      "executive": "$180,000 - $300,000+"
+    },
+    "median_annual_wage_bls_2024": "$101,020",
+    "average_2026_payscale": "$84,880",
+    "job_growth_2024_2034": "1% — slower than average",
+    "annual_openings": "~400 per year (primarily replacement)",
+    "workforce_crisis": "Nearly half of current mining workforce will retire by 2029, creating critical need to attract and train new talent.",
+    "work_arrangements": "Primarily on-site W-2 employment. FIFO (fly-in/fly-out) common for remote operations. Consulting and contract engineering roles available. Limited remote work — field presence required.",
+    "critical_minerals_demand": "Lithium, copper, cobalt, nickel demand for EVs and renewable energy driving mining resurgence. New domestic mining projects creating engineering demand.",
+    "market_trends": [
+      "Critical minerals boom driving new projects (lithium, copper, cobalt, rare earths)",
+      "Aging workforce — massive retirement wave by 2029",
+      "Automation and autonomous mining equipment adoption",
+      "Increased environmental and ESG scrutiny on mining operations",
+      "Domestic mining resurgence supported by government policy",
+      "Electric and hybrid mining equipment adoption",
+      "Digital twins and real-time mine monitoring"
+    ]
+  },
+  "quality_score": 0.72,
+  "sources_count": 36,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "sources": [
+    {"name": "BLS OOH — Mining and Geological Engineers", "url": "https://www.bls.gov/ooh/architecture-and-engineering/mining-and-geological-engineers.htm"},
+    {"name": "BLS OES — Mining and Geological Engineers May 2023", "url": "https://www.bls.gov/oes/2023/may/oes172151.htm"},
+    {"name": "O*NET — Mining and Geological Engineers 17-2151.00", "url": "https://www.onetonline.org/link/summary/17-2151.00"},
+    {"name": "MSHA — Regulations", "url": "https://www.msha.gov/regulations"},
+    {"name": "MSHA — Penalty Assessments and Payments", "url": "https://www.msha.gov/compliance-and-enforcement/penalty-assessments-and-payments"},
+    {"name": "OSMRE — Laws and Regulations", "url": "https://www.osmre.gov/laws-and-regulations"},
+    {"name": "Federal Register — SMCRA Applicability Nov 2025", "url": "https://www.federalregister.gov/documents/2025/11/28/2025-21449/applicability-of-federal-regulations-implementing-the-surface-mining-control-and-reclamation-act-of"},
+    {"name": "NCEES — Mining and Mineral Processing PE Exam", "url": "https://ncees.org/exams/pe-exam/mining-and-mineral-processing/"},
+    {"name": "SME — Professional Engineer Program", "url": "https://www.smenet.org/Professional-Development/Professional-Engineer-(PE)-Program"},
+    {"name": "SME — Workforce Trends in US Mining", "url": "https://www.smenet.org/What-We-Do/Technical-Briefings/Workforce-Trends-in-the-US-Mining-Industry"},
+    {"name": "Rangefront — Mining Jobs Outlook 2025", "url": "https://rangefront.com/blog/mining-job-demand-us-2025/"},
+    {"name": "Mining Technology — MSHA/OSHA 2025 Penalty Increases", "url": "https://www.mining-technology.com/sponsored/msha-osha-2025-civil-penalty-price-increase-how-to-avoid-falling-foul/"},
+    {"name": "Maptek Vulcan", "url": "https://www.maptek.com/products/vulcan/"},
+    {"name": "Deswik — Mine Planning Software", "url": "https://www.deswik.com/products/planning"}
+  ]
+}

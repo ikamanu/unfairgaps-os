@@ -1,0 +1,237 @@
+{
+  "profession_id": "us-neurodiagnostic-technologists",
+  "profession_name": "Neurodiagnostic Technologists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Neurodiagnostic technologists use specialized equipment to monitor and assess nervous system function, performing EEG, PSG, NCS, EMG, and IOM tests in hospitals, clinics, and sleep labs.",
+    "typical_tasks": [
+      "Perform EEG tests measuring and recording brain wave patterns using encephalograph",
+      "Conduct polysomnography (PSG) for sleep studies, often 12-hour shifts",
+      "Perform nerve conduction studies (NCS) and electromyography (EMG)",
+      "Intraoperative neurophysiological monitoring (IOM) during surgeries",
+      "Explain procedures to patients and collect medical history",
+      "Apply electrodes to patient scalp and set up montages",
+      "Calibrate and maintain EEG/EMG equipment",
+      "Report test results to physicians and maintain documentation",
+      "Summarize technical data to assist physicians in diagnosing neurological disorders"
+    ],
+    "key_documents": [
+      "EEG recording reports",
+      "Sleep study (PSG) reports",
+      "NCS/EMG test results",
+      "Intraoperative monitoring logs",
+      "Patient medical history intake forms",
+      "Equipment calibration logs",
+      "Quality assurance documentation"
+    ],
+    "deadlines": {
+      "stat_eeg_results": "Same day for urgent/stat orders",
+      "routine_eeg_reports": "24-48 hours turnaround",
+      "sleep_study_reports": "Within 1 week",
+      "equipment_calibration": "Per manufacturer schedule, typically monthly",
+      "continuing_education": "Annual CE requirements for ABRET recertification"
+    },
+    "seasonality": "No strong seasonal variation, but demand increases during flu season and when neurological disorder diagnoses spike. Sleep lab demand steady year-round. On-call requirements common for emergency EEG monitoring.",
+    "sources": [
+      {"url": "https://www.onetonline.org/link/summary/29-2099.01", "fact": "O*NET detailed task listing for neurodiagnostic technologists SOC 29-2099.01"},
+      {"url": "https://college.mayo.edu/academics/explore-health-care-careers/careers-a-z/neurodiagnostic-technologist/", "fact": "Mayo Clinic career overview describing daily responsibilities and work settings"}
+    ]
+  },
+  "regulatory": {
+    "summary": "No mandatory state licensure for neurodiagnostic technologists in most states (exception: polysomnography requires licensure in 10 states). ABRET voluntary certification is industry standard. CAAHEP accredits educational programs.",
+    "key_laws": [
+      {
+        "name": "State Polysomnography Licensure Laws",
+        "detail": "10 US states require polysomnography license for sleep study technologists",
+        "status": "Active, varies by state"
+      },
+      {
+        "name": "HIPAA (Health Insurance Portability and Accountability Act)",
+        "detail": "Patient data protection requirements apply to all neurodiagnostic records",
+        "reference": "45 CFR Parts 160, 164"
+      },
+      {
+        "name": "CMS Conditions of Participation",
+        "detail": "Medicare-participating hospitals must meet quality standards for diagnostic services",
+        "reference": "42 CFR Part 482"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Completion of CAAHEP-accredited neurodiagnostic technology program (preferred)",
+        "ABRET R. EEG T. certification (voluntary but strongly preferred by employers)",
+        "ABRET CNIM certification for intraoperative monitoring",
+        "ABRET CLTM for long-term monitoring",
+        "Registration valid for 5 years with recertification required",
+        "State polysomnography license in 10 states for sleep studies"
+      ],
+      "certifying_bodies": [
+        "ABRET — American Board of Registration of Electroencephalographic and Evoked Potential Technologists",
+        "AAET — American Association of Electrodiagnostic Technologists"
+      ]
+    },
+    "penalties": "No direct regulatory penalties on technologists (penalties flow through employer/facility). HIPAA violations can result in fines of $141-$2,134,831 per violation for the facility.",
+    "sources": [
+      {"url": "https://abret.org/", "fact": "ABRET is the primary credentialing body for neurodiagnostic technologists"},
+      {"url": "https://abret.org/application/files/2217/6176/4893/REEGT_Handbook_2026.pdf", "fact": "2026 ABRET handbook details R.EEG T. exam requirements and 5-year renewal cycle"},
+      {"url": "https://www.aset.org/wp-content/uploads/2025/01/Scope-of-Practice-for-Neurodiagnostic-Technology-11.14.2024.pdf", "fact": "ASET 2024 scope of practice document for neurodiagnostic technology"}
+    ]
+  },
+  "tools": {
+    "summary": "Neurodiagnostic technologists primarily use EEG machines from Nihon Kohden, Natus/Neuropace, and Cadwell, along with Persyst AI-powered EEG analysis software. Equipment market valued at $1.52B in 2025.",
+    "primary_software": [
+      {"name": "Nihon Kohden Neurofax EEG-1200/EEG-9100/EEG-9200", "purpose": "Primary EEG recording systems, recently FDA 510(k) cleared JE-940 amplifier with cybersecurity features"},
+      {"name": "Nihon Kohden Live View Panel Pro", "purpose": "Remote EEG monitoring and review software"},
+      {"name": "Nihon Kohden VitalEEG Wireless Headset", "purpose": "Nurse-placed wireless EEG for remote monitoring by technologists"},
+      {"name": "Persyst EEG Software", "purpose": "AI-powered EEG trending, seizure detection, and artifact reduction — integrated with all major EEG manufacturers"},
+      {"name": "Natus Xltek/Nicolet", "purpose": "EEG and long-term monitoring systems"},
+      {"name": "Cadwell Sierra Summit", "purpose": "EMG/NCS and evoked potential testing systems"},
+      {"name": "Compumedics", "purpose": "Sleep diagnostics and EEG systems"}
+    ],
+    "government_portals": [
+      "CMS Medicare portal for billing/compliance",
+      "State health department licensure portals (for PSG states)"
+    ],
+    "equipment_trends": "Equipment revenue growing at 10.45% CAGR through 2030 as hospitals refresh with AI-ready consoles. Next-gen equipment ships with cloud APIs and embedded inference chips for software-based algorithm updates.",
+    "pain_points": [
+      "Legacy EEG systems lack interoperability",
+      "Electrode application remains highly manual and time-consuming",
+      "Integration gaps between EEG systems and hospital EHR",
+      "Cybersecurity concerns with networked medical devices"
+    ],
+    "sources": [
+      {"url": "https://us.nihonkohden.com/products/neurology/eeg-software/", "fact": "Nihon Kohden EEG software product line"},
+      {"url": "https://www.persyst.com/", "fact": "Persyst is integrated with every major EEG manufacturer"},
+      {"url": "https://www.precedenceresearch.com/electroencephalography-devices-market", "fact": "EEG devices market at $1.52B in 2025, projected $3.65B by 2034"}
+    ]
+  },
+  "terminology": {
+    "summary": "Neurodiagnostic technologists use highly specialized terminology related to electrophysiology, brain wave patterns, and neurological testing procedures.",
+    "key_terms": [
+      {"term": "EEG", "meaning": "Electroencephalography — recording brain electrical activity via scalp electrodes"},
+      {"term": "EMG", "meaning": "Electromyography — assessing electrical activity of muscles"},
+      {"term": "NCS", "meaning": "Nerve Conduction Studies — evaluating peripheral nerve function"},
+      {"term": "PSG", "meaning": "Polysomnography — comprehensive sleep study recording"},
+      {"term": "IOM/IONM", "meaning": "Intraoperative Neurophysiological Monitoring — real-time monitoring during surgery"},
+      {"term": "EP/SEP/VEP/AEP", "meaning": "Evoked Potentials (Somatosensory/Visual/Auditory) — testing sensory pathways"},
+      {"term": "Montage", "meaning": "Specific arrangement of electrode pairs for recording brain activity patterns"},
+      {"term": "CLTM", "meaning": "Certified Long-Term Monitoring Technologist"},
+      {"term": "CNIM", "meaning": "Certification in Neurophysiologic Intraoperative Monitoring"},
+      {"term": "R. EEG T.", "meaning": "Registered Electroencephalographic Technologist"},
+      {"term": "R.NCS.T.", "meaning": "Registered Nerve Conduction Study Technologist"},
+      {"term": "CAP", "meaning": "Certified in Autonomic and Peripheral Nerve Testing"},
+      {"term": "TCD", "meaning": "Transcranial Doppler — measuring blood flow velocity in brain arteries"},
+      {"term": "MEG", "meaning": "Magnetoencephalography — recording magnetic fields from brain activity"},
+      {"term": "Artifact", "meaning": "Unwanted electrical signals contaminating recordings (eye blinks, muscle, electrode)"},
+      {"term": "Spike-and-wave", "meaning": "EEG pattern characteristic of epileptic seizures"},
+      {"term": "10-20 system", "meaning": "International standard for electrode placement on the scalp"}
+    ],
+    "common_abbreviations": ["ABRET", "ASET", "AAET", "CAAHEP", "END (Electroneurodiagnostic)", "NDT (Neurodiagnostic Technology)"],
+    "sources": [
+      {"url": "https://www.onetonline.org/link/summary/29-2099.01", "fact": "O*NET occupation profile with standard terminology"},
+      {"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10150627/", "fact": "Joint position statement on qualifications of neurodiagnostic personnel defining roles and scope"}
+    ]
+  },
+  "career_psychology": {
+    "summary": "Neurodiagnostic technologists face burnout from staffing shortages, unpredictable emergency situations, and emotional toll of caring for patients with life-threatening neurological conditions. Career progression from entry tech to senior/lead/manager roles.",
+    "career_levels": [
+      {"level": "Entry-level NDT", "salary_range": "$40,000-$50,000", "responsibilities": "Perform routine EEGs under supervision, electrode application"},
+      {"level": "Certified NDT (R. EEG T.)", "salary_range": "$50,000-$65,000", "responsibilities": "Independent EEG recording and interpretation assistance, mentoring students"},
+      {"level": "Senior/Specialist NDT", "salary_range": "$65,000-$85,000", "responsibilities": "IOM, long-term monitoring, complex cases, multiple ABRET credentials"},
+      {"level": "Lead Technologist/Manager", "salary_range": "$80,000-$101,000+", "responsibilities": "Department management, quality assurance, training, equipment procurement"}
+    ],
+    "main_fears": [
+      "Missing critical seizure activity during monitoring",
+      "Equipment malfunction during intraoperative monitoring",
+      "HIPAA violations with patient data",
+      "Losing ABRET certification",
+      "Staffing shortages leading to unsafe patient monitoring ratios"
+    ],
+    "burnout_causes": [
+      "Chronic staffing shortages across neurodiagnostic departments",
+      "Unpredictable emergency situations requiring immediate response",
+      "Emotional toll of caring for patients with life-threatening neurological disorders",
+      "12-hour shifts for sleep studies and on-call duties",
+      "Repetitive nature of routine EEG recordings",
+      "Lack of career visibility compared to other allied health professions"
+    ],
+    "growth_motivation": [
+      "Additional ABRET certifications (CNIM, CLTM) for higher pay",
+      "Transition to IONM for higher compensation",
+      "Management/education track",
+      "Travel tech opportunities with premium pay"
+    ],
+    "sources": [
+      {"url": "https://zeto-inc.com/blog/how-to-alleviate-burnout-for-eeg-technologists/", "fact": "Article on EEG technologist burnout from staffing shortages and unpredictable situations"},
+      {"url": "https://www.trustedhealth.com/allied-career-guide/neurodiagnostic-tech/salary-guide", "fact": "Salary ranges and career progression data for neurodiagnostic techs"}
+    ]
+  },
+  "community": {
+    "summary": "ASET (The Neurodiagnostic Society) is the primary professional organization. ABRET provides credentialing. Annual ASET conference is the largest neurodiagnostic educational event worldwide.",
+    "professional_associations": [
+      {"name": "ASET — The Neurodiagnostic Society", "url": "https://www.aset.org", "membership_value": "Journal access, CE courses, conference discounts, Special Interest Groups, ASET Central online community", "mandatory": false},
+      {"name": "ABRET — Neurodiagnostic Credentialing and Accreditation", "url": "https://abret.org", "membership_value": "Professional credentialing (R.EEG T., CNIM, CLTM, etc.)", "mandatory": false},
+      {"name": "ACNS — American Clinical Neurophysiology Society", "url": "https://www.acns.org", "membership_value": "Clinical standards, guidelines for EEG interpretation", "mandatory": false},
+      {"name": "ASNM — American Society of Neurophysiological Monitoring", "url": "https://www.asnm.org", "membership_value": "IOM-focused resources and networking", "mandatory": false}
+    ],
+    "conferences": [
+      {"name": "ASET Annual Conference", "detail": "Largest neurodiagnostic education and networking event globally, covers all NDT disciplines, scholarships available", "frequency": "Annual (July)"},
+      {"name": "AES Annual Meeting (American Epilepsy Society)", "detail": "Major epilepsy research conference, relevant vendor exhibits for EEG equipment", "frequency": "Annual (December)"},
+      {"name": "ACNS Annual Meeting", "detail": "Clinical neurophysiology focused", "frequency": "Annual"}
+    ],
+    "online_communities": [
+      "ASET Central (members-only online forum)",
+      "ASET Special Interest Groups",
+      "Reddit r/eeg and r/neuroscience (limited NDT-specific activity)",
+      "Facebook groups for EEG technologists",
+      "LinkedIn neurodiagnostic technology groups"
+    ],
+    "publications": [
+      "The Neurodiagnostic Journal (ASET)",
+      "NeuroCurrents magazine (ASET)"
+    ],
+    "sources": [
+      {"url": "https://www.aset.org/", "fact": "ASET is the primary professional society for neurodiagnostic technologists"},
+      {"url": "https://www.aset.org/annual-conference-2025/", "fact": "ASET Annual Conference covers all neurodiagnostic disciplines with 2 dozen scholarships for 2026"}
+    ]
+  },
+  "market": {
+    "summary": "Average salary $55,000-$65,000 nationally with top earners at $101,000+. Growing demand driven by aging population and increased neurological disorder diagnoses. EEG device market growing at 10.45% CAGR.",
+    "salary_by_level": {
+      "entry": "$40,000-$50,000",
+      "mid": "$55,000-$65,000",
+      "senior": "$70,000-$85,000",
+      "lead_manager": "$85,000-$101,000+"
+    },
+    "geographic_variation": {
+      "national_average": "$55,000-$65,000",
+      "california": "$63,253",
+      "new_york": "$70,120",
+      "top_metro_areas": "Major academic medical centers pay premium"
+    },
+    "estimated_practitioners": "Approximately 15,000-20,000 neurodiagnostic technologists in the US (combined EEG, sleep, IOM techs)",
+    "job_outlook": "Allied health careers projected to grow 14% (faster than national average). Increasing demand from aging population, epilepsy monitoring, sleep medicine growth.",
+    "work_arrangements": {
+      "dominant": "W-2 hospital/clinic employees (majority)",
+      "travel_tech": "Travel NDT positions available with premium pay through staffing agencies",
+      "contractor": "IOM technologists sometimes work as 1099 contractors through monitoring companies"
+    },
+    "market_trends": [
+      "AI-powered EEG analysis reducing manual interpretation burden",
+      "Wireless/portable EEG devices expanding ambulatory monitoring",
+      "Remote monitoring capabilities (tele-neurodiagnostics) growing post-COVID",
+      "EEG device market at $1.52B in 2025, projected $3.65B by 2034",
+      "Staffing shortages creating high demand for certified technologists"
+    ],
+    "sources": [
+      {"url": "https://www.salary.com/research/salary/hiring/neurodiagnostic-technologist-salary", "fact": "Average salary $64,093/year as of January 2026"},
+      {"url": "https://www.trustedhealth.com/allied-career-guide/neurodiagnostic-tech/salary-guide", "fact": "Average neurodiagnostic tech salary at $54,220 annually"},
+      {"url": "https://www.precedenceresearch.com/electroencephalography-devices-market", "fact": "EEG devices market $1.52B in 2025, 10.45% CAGR to $3.65B by 2034"}
+    ]
+  },
+  "quality_score": 0.5,
+  "sources_count": 14,
+  "verified_sources": 7,
+  "confidence": "likely",
+  "raw_responses": []
+}

@@ -1,0 +1,333 @@
+{
+  "profession_id": "us-arbitrators-mediators-and-conciliators",
+  "profession_name": "Arbitrators, Mediators, and Conciliators",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "ADR professionals facilitate dispute resolution outside of court. Arbitrators conduct hearings and issue binding decisions; mediators help parties reach voluntary agreements; conciliators meet parties separately and make recommendations. Most work full time in private offices or meeting rooms.",
+    "typical_tasks": [
+      "Conducting initial meetings with disputants to outline procedures, settle fees, and determine logistics",
+      "Reviewing claims, applications, contracts, and supporting documents",
+      "Researching applicable laws, regulations, policies, and precedent decisions",
+      "Scheduling and facilitating mediation or arbitration hearings",
+      "Interviewing claimants, agents, and witnesses to gather information",
+      "Managing hearing procedures: evidence submission, witness testimony, opening/closing statements",
+      "Drafting settlement agreements and arbitration awards",
+      "Managing virtual and hybrid hearing platforms",
+      "Conducting post-hearing analysis and writing reasoned decisions"
+    ],
+    "key_documents": [
+      "Arbitration demand/claim applications",
+      "Mediation agreements to mediate",
+      "Settlement agreements",
+      "Arbitration awards (interim and final)",
+      "Procedural orders",
+      "Discovery orders and subpoenas",
+      "Confidentiality agreements",
+      "Fee schedules and retainer agreements"
+    ],
+    "deadlines": {
+      "arbitration_award": "Typically 30-60 days after hearing closes (varies by forum rules)",
+      "aaa_consumer_response": "30 days for respondent to submit answering statement",
+      "jams_arbitration_award": "Within 30 days of hearing close",
+      "mediation_session": "Typically 1-3 sessions spanning 2-8 hours each",
+      "scheduling_order": "Issued within 60 days of appointment"
+    },
+    "seasonality": "No strong seasonality. Case filings tend to increase at year-end and Q1 as businesses close books. Employment disputes may spike after annual performance review cycles."
+  },
+  "regulatory": {
+    "summary": "Regulated at both federal and state levels. Federal Arbitration Act (FAA) governs enforcement. AAA and JAMS updated rules in 2025 to default to virtual hearings and expand employment/workplace coverage. State-level mediator certification varies: typically 20-40 hours training required.",
+    "key_laws": [
+      {
+        "name": "Federal Arbitration Act (FAA) — 9 U.S.C. §§ 1-16",
+        "description": "Federal law governing enforceability of arbitration agreements and awards",
+        "url": "https://www.law.cornell.edu/uscode/text/9"
+      },
+      {
+        "name": "Uniform Mediation Act (UMA)",
+        "description": "Model state law providing mediation confidentiality protections, adopted by ~12 states"
+      },
+      {
+        "name": "AAA Consumer & Employment Arbitration Rules (May 2025 update)",
+        "description": "Major rule updates: default virtual hearings, expanded workplace coverage, arbitrator subpoena authority",
+        "url": "https://go.adr.org/2025-consumer-employment-rules-update.html"
+      },
+      {
+        "name": "JAMS Comprehensive Arbitration Rules",
+        "description": "Rules governing JAMS-administered arbitrations",
+        "url": "https://www.jamsadr.com/rules-comprehensive-arbitration"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Bachelor's degree minimum; JD strongly preferred for arbitration",
+        "State-level mediator certification: typically 20-40 hours of mediation training",
+        "Some states require additional specialty training hours",
+        "AAA panelists: typically 10-15 years legal practice, 30-50% practice focus in relevant area",
+        "Continuing education: typically 4+ hours/year of mediation CE",
+        "No single national licensing body — varies by state and forum"
+      ]
+    },
+    "recent_changes": "May 2025: AAA updated Consumer and Employment/Workplace rules — virtual hearings now default, arbitrators can issue subpoenas and order depositions, Employment rules renamed to cover independent contractor disputes. AAA launched AI arbitrator pilot for two-party documents-only construction cases."
+  },
+  "tools": {
+    "summary": "Mix of ADR-specific case management platforms, virtual hearing technology, and legal research tools. Major shift to virtual/hybrid hearings post-pandemic. AAA investing in AI tools.",
+    "primary_tools": [
+      {
+        "name": "AAA WebFile / CaseShield",
+        "description": "AAA's secure online case management portal for filing, document exchange, and case tracking",
+        "url": "https://www.adr.org/TechnologyServices/aaa-icdr-software-and-online-tools"
+      },
+      {
+        "name": "JAMS Resolution Center",
+        "description": "JAMS online platform for case administration, scheduling, and document management",
+        "url": "https://www.jamsadr.com"
+      },
+      {
+        "name": "Casedoc",
+        "description": "ADR-specific case management software for mediators and arbitrators",
+        "url": "https://casedoc.com/mediation-and-arbitration/"
+      },
+      {
+        "name": "ADR Notable",
+        "description": "Affordable case management platform built for dispute resolution professionals",
+        "url": "https://www.adrnotable.com"
+      },
+      {
+        "name": "Zoom / Microsoft Teams / Webex",
+        "description": "Virtual hearing platforms — now the default under AAA 2025 rules"
+      },
+      {
+        "name": "AAA ClauseBuilder AI (Beta)",
+        "description": "AI-powered tool for drafting arbitration and mediation clauses",
+        "url": "https://www.adr.org/ai-tools-and-technology/"
+      }
+    ],
+    "secondary_tools": [
+      "Westlaw / LexisNexis — legal research",
+      "New Era ADR — fully digital end-to-end ADR platform",
+      "NAM myADR — case management for ADR programs",
+      "DocuSign / Adobe Sign — electronic agreement execution",
+      "Calendar/scheduling tools (Calendly, Outlook)"
+    ],
+    "pain_points": [
+      "Technology gaps for older neutrals unfamiliar with virtual platforms",
+      "Document management across multiple case platforms",
+      "No standardized cross-platform case management system",
+      "Virtual hearing fatigue and screen-time burden",
+      "Cybersecurity concerns with confidential case materials"
+    ]
+  },
+  "terminology": {
+    "summary": "ADR has specialized vocabulary blending legal terminology with process-specific terms. Three main tracks (arbitration, mediation, conciliation) each have distinct procedural language.",
+    "terms": {
+      "ADR": "Alternative Dispute Resolution — umbrella term for non-litigation dispute resolution methods",
+      "neutral": "Third-party arbitrator, mediator, or conciliator acting impartially",
+      "claimant": "Party initiating the arbitration or mediation",
+      "respondent": "Party against whom a claim is filed",
+      "demand for arbitration": "Formal filing that initiates an arbitration case",
+      "award": "Arbitrator's binding decision resolving the dispute",
+      "med-arb": "Hybrid process: mediation first, then arbitration if mediation fails",
+      "arb-med": "Arbitration hearing first, award sealed; then mediation attempt; award opened only if mediation fails",
+      "baseball arbitration": "Each party submits a final offer; arbitrator must choose one (no splitting)",
+      "high-low arbitration": "Parties agree on a binding range; arbitrator's award falls within it",
+      "caucus": "Private meeting between mediator and one party during mediation",
+      "impasse": "Point where mediation negotiations reach a deadlock",
+      "BATNA": "Best Alternative To a Negotiated Agreement — party's fallback option",
+      "WATNA": "Worst Alternative To a Negotiated Agreement",
+      "discovery": "Pre-hearing exchange of information and documents",
+      "interim measures": "Temporary relief ordered by an arbitrator before final award",
+      "manifest disregard": "Legal standard for challenging arbitration awards (extremely limited)",
+      "panel": "Group of arbitrators (typically 3) hearing a case together",
+      "sole arbitrator": "Single arbitrator hearing a case",
+      "submission agreement": "Agreement to submit an existing dispute to arbitration"
+    }
+  },
+  "career_psychology": {
+    "summary": "Second-career profession for many — most enter after 10-20+ years in law, retired judges, or subject matter experts. Moderate median salary ($67,710 BLS) but top arbitrators at JAMS/AAA earn $300-1,000+/hour. Intellectual satisfaction is high; workload control is a key motivator.",
+    "career_path": [
+      "Law degree (JD) or advanced degree in relevant field",
+      "10-20+ years of legal practice or subject matter expertise",
+      "Mediation training (40+ hours) and state certification",
+      "Court-annexed mediation roster (volunteer or low-fee cases for experience)",
+      "ADR provider panel application (AAA, JAMS, NAM)",
+      "Independent practice as mediator/arbitrator",
+      "Senior panelist at major ADR provider / retired judge neutral"
+    ],
+    "salary_range": {
+      "entry_mediator": "$40,000 - $60,000 (court-connected, government)",
+      "median_bls": "$67,710 (2024 BLS median)",
+      "experienced_independent": "$100,000 - $200,000",
+      "top_jams_aaa_neutral": "$300 - $1,000+/hour ($300,000 - $1,000,000+ annually)",
+      "average_payscale": "$60,261 (2026 PayScale average)"
+    },
+    "fears": [
+      "Insufficient caseload to sustain independent practice",
+      "Being removed from provider panels for low ratings",
+      "Issuing a challenged or vacated award damaging reputation",
+      "Breach of confidentiality allegations",
+      "Difficulty building initial reputation without established network"
+    ],
+    "motivation": [
+      "Intellectual stimulation from complex disputes",
+      "Helping parties resolve conflicts constructively",
+      "Autonomy and schedule flexibility",
+      "Continued engagement after retirement from bench/practice",
+      "High hourly rates at senior levels",
+      "Less adversarial than litigation"
+    ],
+    "burnout_factors": [
+      "Emotional weight of contentious disputes (family, employment)",
+      "High-stakes cases with resistant parties",
+      "Administrative burden of managing independent practice",
+      "Screen fatigue from virtual hearings",
+      "Isolation of independent practice without firm support"
+    ]
+  },
+  "community": {
+    "summary": "Professional community organized through major ADR providers (AAA, JAMS), the ABA Dispute Resolution Section, and specialized associations. Growing online presence and CLE/conference ecosystem.",
+    "associations": [
+      {
+        "name": "American Arbitration Association (AAA)",
+        "url": "https://www.adr.org",
+        "type": "Largest global ADR provider — administers cases, trains and certifies neutrals"
+      },
+      {
+        "name": "JAMS (Judicial Arbitration and Mediation Services)",
+        "url": "https://www.jamsadr.com",
+        "type": "Largest private ADR provider worldwide — 25+ US locations"
+      },
+      {
+        "name": "ABA Section of Dispute Resolution",
+        "url": "https://www.americanbar.org/groups/dispute_resolution/",
+        "type": "Professional community within the American Bar Association"
+      },
+      {
+        "name": "Association for Conflict Resolution (ACR)",
+        "type": "Professional association for mediators, arbitrators, and conflict resolution practitioners"
+      },
+      {
+        "name": "National Academy of Arbitrators (NAA)",
+        "type": "Honorary organization for experienced labor arbitrators"
+      },
+      {
+        "name": "FINRA Dispute Resolution",
+        "url": "https://www.finra.org",
+        "type": "Securities industry arbitration and mediation"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "Mediate.com",
+        "url": "https://www.mediate.com",
+        "description": "Leading ADR portal — articles, directory, forums"
+      },
+      {
+        "name": "r/mediation",
+        "url": "https://reddit.com/r/mediation",
+        "description": "Reddit community for mediation practitioners"
+      },
+      {
+        "name": "ADR LinkedIn Groups",
+        "description": "Multiple active groups for ADR professionals"
+      }
+    ],
+    "events": [
+      "ABA Dispute Resolution Conference (annual, spring)",
+      "AAA Annual Meeting",
+      "JAMS Arbitration Training Institute",
+      "ABA Section of Dispute Resolution Annual Spring Conference"
+    ]
+  },
+  "market": {
+    "summary": "Stable growth market. BLS projects 4% growth 2024-2034 (~9,500 total positions). ADR expanding into gig economy, tech, and healthcare disputes. AAA piloting AI arbitration. Virtual hearings now standard. Top neutrals earn very high fees; entry-level market more competitive.",
+    "demand_forecast": {
+      "growth_rate": "4% (2024-2034, BLS)",
+      "total_employment": "~9,500 positions",
+      "openings_annual": "~800 openings/year (replacements + growth)"
+    },
+    "salary_market": {
+      "median": "$67,710 (BLS 2024)",
+      "average": "$60,261 (PayScale 2026)",
+      "top_earners": "$300-$1,000+/hour at JAMS/AAA",
+      "government_mediators": "$50,000 - $90,000"
+    },
+    "market_trends": [
+      "Virtual hearings now default under AAA 2025 rules — expanding geographic reach",
+      "AAA piloting AI arbitrator for small construction disputes",
+      "Employment/Workplace rules expanded to cover independent contractors and gig workers",
+      "Mass arbitration claims from consumer tech creating new demand",
+      "Healthcare and technology sectors increasingly using in-house arbitrators",
+      "Growing demand for international arbitration specialists",
+      "Some legislative efforts to restrict mandatory arbitration clauses"
+    ]
+  },
+  "quality_score": 0.78,
+  "sources_count": 35,
+  "verified_sources": 12,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "arbitrators mediators conciliators USA 2025 2026 typical workday tasks duties case load hearing process",
+      "sources": [
+        {"title": "BLS Occupational Outlook Handbook — Arbitrators", "url": "https://www.bls.gov/ooh/legal/arbitrators-mediators-and-conciliators.htm"},
+        {"title": "O*NET — Arbitrators, Mediators, and Conciliators", "url": "https://www.onetonline.org/link/summary/23-1022.00"},
+        {"title": "CareerOneStop — Occupation Profile", "url": "https://www.careeronestop.org/Toolkit/Careers/Occupations/occupation-profile.aspx?keyword=Arbitrators,+Mediators,+and+Conciliators&location=US&onetcode=23-1022.00"}
+      ]
+    },
+    {
+      "query": "arbitrator mediator USA 2025 2026 regulations ADR laws licensing certification requirements state federal",
+      "sources": [
+        {"title": "AAA 2025 Consumer & Employment Rules Update", "url": "https://go.adr.org/2025-consumer-employment-rules-update.html"},
+        {"title": "AAA Arbitrator and Mediator Qualification Criteria", "url": "https://roster.adr.org/system/production/assets/459710/original/Arbitrator_and_Mediator_Qualification_Criteria.pdf"},
+        {"title": "Court-Certified Mediator Requirements by State", "url": "https://onlinemasteroflegalstudies.com/career-guides/become-a-mediator/court-certified-mediation-requirements-by-state/"},
+        {"title": "JAMS Comprehensive Arbitration Rules", "url": "https://www.jamsadr.com/rules-comprehensive-arbitration"}
+      ]
+    },
+    {
+      "query": "arbitrator mediator USA software tools case management platforms technology ADR 2025",
+      "sources": [
+        {"title": "Casedoc — ADR Case Management Software", "url": "https://casedoc.com/mediation-and-arbitration/"},
+        {"title": "ADR Notable", "url": "https://www.adrnotable.com/"},
+        {"title": "AAA AI Tools & Technology", "url": "https://www.adr.org/ai-tools-and-technology/"},
+        {"title": "AAA Software and Online Tools", "url": "https://www.adr.org/index.php/TechnologyServices/aaa-icdr-software-and-online-tools"},
+        {"title": "New Era ADR", "url": "https://www.neweraadr.com/"}
+      ]
+    },
+    {
+      "query": "arbitration mediation terminology jargon legal terms ADR abbreviations common phrases",
+      "sources": [
+        {"title": "ADR Glossary — NAM", "url": "https://www.namadr.com/resources/adr-glossary/"},
+        {"title": "Glossary — ADR Services Inc.", "url": "https://www.adrservices.com/services-2/glossary/"},
+        {"title": "Mediation, Arbitration and Common ADR terms", "url": "https://www.brendawaugh.com/blog/mediation-arbitration-and-some-common-terms-used-in-adr"},
+        {"title": "The BOOK of JARGON — International Arbitration", "url": "https://www.lw.com/admin/upload/Documents/Book-of-Jargon_International-Arbitraton-Dec_2020.pdf"}
+      ]
+    },
+    {
+      "query": "arbitrator mediator USA career path salary 2025 2026 burnout stress job satisfaction motivation",
+      "sources": [
+        {"title": "PayScale — Arbitrator/Mediator Salary 2026", "url": "https://www.payscale.com/research/US/Job=Arbitrator_%2F_Mediator_%2F_Conciliator/Salary"},
+        {"title": "How to Become an Arbitrator 2026", "url": "https://research.com/advice/how-to-become-an-arbitrator-education-salary-and-job-outlook"},
+        {"title": "BLS — Arbitrators, Mediators, and Conciliators OOH", "url": "https://www.bls.gov/ooh/legal/arbitrators-mediators-and-conciliators.htm"},
+        {"title": "Salary.com — Arbitrator Salary", "url": "https://www.salary.com/research/salary/hiring/arbitrator-salary"}
+      ]
+    },
+    {
+      "query": "arbitrator mediator USA professional associations AAA JAMS ABA dispute resolution communities forums",
+      "sources": [
+        {"title": "American Arbitration Association", "url": "https://www.adr.org/"},
+        {"title": "JAMS ADR Services", "url": "https://www.jamsadr.com/"},
+        {"title": "ABA Section of Dispute Resolution — JAMS", "url": "https://www.jamsadr.com/the-aba-section-of-dispute-resolution"},
+        {"title": "FINRA Arbitration Forums", "url": "https://www.aboutsecuritieslaw.com/arbitration-forums-finra-aaa-or-jams.html"}
+      ]
+    },
+    {
+      "query": "arbitrator mediator USA job market 2025 2026 demand growth salary trends ADR industry outlook",
+      "sources": [
+        {"title": "BLS OOH — Arbitrators", "url": "https://www.bls.gov/ooh/legal/arbitrators-mediators-and-conciliators.htm"},
+        {"title": "PayScale — 2026 Salary", "url": "https://www.payscale.com/research/US/Job=Arbitrator_%2F_Mediator_%2F_Conciliator/Salary"},
+        {"title": "How to Become an Arbitrator 2026 — Research.com", "url": "https://research.com/advice/how-to-become-an-arbitrator-education-salary-and-job-outlook"},
+        {"title": "O*NET — Arbitrators", "url": "https://www.onetonline.org/link/summary/23-1022.00"}
+      ]
+    }
+  ]
+}

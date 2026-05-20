@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-dentists-general",
+  "profession_name": "Dentists, General",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "See 15-25 patients daily for examinations, cleanings supervision, fillings, crowns, extractions, and other procedures. Morning huddle with staff to review schedule. Patient exams with hygienist handoffs. Procedure blocks for restorative work. Administrative time for treatment planning, reviewing X-rays, and documentation. Practice owners also handle business operations, staff management, and marketing.",
+    "key_documents": ["Patient dental records (EHR)", "Treatment plans", "Dental X-rays (periapical, panoramic, CBCT)", "Insurance claim forms (ADA dental claim form)", "Consent forms", "Prescription records", "Lab orders for prosthetics", "OSHA compliance documentation", "State dental board CE records"],
+    "deadlines": "State license renewal cycles. DEA registration renewal. Continuing education credits (varies by state, typically 30-60 hours biennially). Insurance claim submission deadlines. Lab case turnaround times. OSHA compliance training annual updates.",
+    "seasonality": "Year-end insurance benefit rush (November-December). Back-to-school season for child dental visits. Summer tends to be busier for elective procedures. Holiday periods typically slower."
+  },
+  "regulatory": {
+    "laws_and_standards": ["State dental practice acts", "State Board of Dentistry regulations", "OSHA bloodborne pathogen standard", "HIPAA patient privacy", "DEA registration for controlled substances", "Dental Compact (2026 operational rollout) — interstate practice", "State radiation safety regulations", "EPA dental amalgam waste rule"],
+    "licensing": "DDS or DMD degree from ADA-accredited dental school (4 years post-college). National Board Dental Examinations (NBDE/INBDE). State or regional clinical licensing examination. State dental license required to practice. DEA registration for prescribing. Continuing education required for renewal. Dental Compact (2026) allows cross-state practice in participating states.",
+    "penalties": "State board disciplinary actions (suspension, revocation). Malpractice liability. OSHA fines for infection control violations. DEA penalties for controlled substance violations. Insurance fraud prosecution. Advertising regulation violations.",
+    "regulatory_bodies": ["State Boards of Dentistry", "ADA (American Dental Association) — standards body", "OSHA", "DEA", "State Insurance Commissioners", "EPA (amalgam waste)"]
+  },
+  "tools": {
+    "software": ["Dentrix (Henry Schein) - leading practice management", "Eaglesoft (Patterson) - practice management and imaging", "Open Dental - open-source practice management", "Curve Dental - cloud-based EHR", "Pearl AI - AI-assisted diagnostics", "DEXIS imaging software", "Apteryx/XVWeb - imaging"],
+    "platforms": ["CAD/CAM systems (CEREC, exocad) - same-day restorations", "3D printing platforms (dental models, surgical guides)", "Dental imaging (CBCT, intraoral scanners: iTero, 3Shape)", "Insurance clearinghouses (DentalXChange, NEA)", "Patient communication (Weave, RevenueWell, Solutionreach)"],
+    "gov_portals": ["State dental board licensing portals", "DEA registration portal", "OSHA compliance resources", "CMS Medicare provider enrollment", "EPA amalgam waste reporting"]
+  },
+  "terminology": {
+    "jargon": ["Crown and bridge", "Root canal (endodontic therapy)", "Scaling and root planing (SRP)", "Composite/amalgam restoration", "Implant", "Veneer", "Occlusion", "Periodontal probing", "Bitewing X-ray", "Same-day crown (CAD/CAM)"],
+    "abbreviations": ["DDS - Doctor of Dental Surgery", "DMD - Doctor of Medicine in Dentistry", "RDA - Registered Dental Assistant", "RDH - Registered Dental Hygienist", "CDT - Current Dental Terminology", "ADA - American Dental Association", "CEREC - Chairside Economical Restoration of Esthetic Ceramics", "CBCT - Cone Beam Computed Tomography", "SRP - Scaling and Root Planing", "PPO/HMO - dental insurance types", "DSO - Dental Service Organization", "FMX - Full Mouth X-ray"]
+  },
+  "career_psychology": {
+    "career_levels": ["Associate Dentist (0-5 years)", "Practice Owner / Partner (5-15 years)", "Multi-location Practice Owner (15+ years)", "DSO-affiliated Dentist", "Specialist (after additional residency)", "Academic / Educator"],
+    "fears": ["Student loan debt burden ($300k+ average)", "Declining insurance reimbursements", "DSO consolidation squeezing independent practices", "Staffing crisis (62% report hiring as #1 concern)", "Malpractice lawsuits", "Physical toll (back, neck, hand injuries)"],
+    "motivation": "Practice ownership and entrepreneurship; helping patients with tangible results; good work-life balance potential; high income for practice owners ($320k+ average). Practice owners earned $320,316 in 2024 (up 10%).",
+    "burnout": "Burnout is a significant and growing concern. ADA launched new CE course 'Putting Your Oxygen Mask on First' in March 2026 for mental health. Higher cost of supplies and lower income requiring more hours. Staffing shortages reduced practice capacity ~10% nationally. 47% of associates considering job change. Physical strain from repetitive positioning."
+  },
+  "community": {
+    "reddit": ["r/dentistry", "r/Dentists", "r/dentalschool", "r/OralSurgery"],
+    "linkedin": ["American Dental Association", "Dental Professionals group", "DSO industry network", "Dental Technology innovators"],
+    "associations": ["ADA (American Dental Association)", "AGD (Academy of General Dentistry)", "State dental associations", "ADEA (American Dental Education Association)", "ADS (American Dental Society)"],
+    "conferences": ["ADA SmileCon - annual (October)", "Chicago Dental Society Midwinter Meeting - February", "Greater New York Dental Meeting - November", "Yankee Dental Congress - January", "State dental association meetings"]
+  },
+  "market": {
+    "salary_by_level": {
+      "associate_usd": 226000,
+      "practice_owner_usd": 320000,
+      "specialist_usd": 339000,
+      "new_graduate_usd": 167000
+    },
+    "average_salary_usd": 180000,
+    "job_count_estimate": "About 155,000 dentists in the US. BLS projects 4% growth with ~4,500 openings/year. Two-thirds work in group practices. DSO affiliation reached 16.1% in 2024. HRSA projects 6% increase in dentist supply through 2030, concentrated in metro areas.",
+    "work_arrangements": "Private practice (solo, group, or DSO-affiliated). Hospital-based dentistry. Community health centers. Academic positions. Flexible scheduling is common. Part-time options available. Growing telehealth for consultations.",
+    "trends": ["Dental Compact launching 2026 for interstate practice", "AI diagnostics (Pearl AI) becoming central", "CAD/CAM same-day restorations becoming norm", "DSO consolidation continuing (16.1% affiliation)", "62% cite hiring as #1 concern", "Practice owner income up 10% in 2024", "3D printing transforming dental lab work", "Associate salary up 9% to $225,929"]
+  },
+  "quality_score": 0.85,
+  "sources_count": 7,
+  "verified_sources": 6
+}

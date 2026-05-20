@@ -1,0 +1,338 @@
+{
+  "profession_id": "us-oral-and-maxillofacial-surgeons",
+  "profession_name": "Oral and Maxillofacial Surgeons",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Oral and maxillofacial surgeons treat the entire craniomaxillofacial complex — mouth, jaws, face, skull, and neck. Most work in private practices or outpatient surgery centers; hospital-based surgeons handle trauma and complex reconstructive cases.",
+    "typical_tasks": [
+      "Evaluate patients using X-rays, CT scans, CBCT, and MRIs for diagnosis",
+      "Perform wisdom tooth extractions (most common procedure)",
+      "Place dental implants and perform bone grafting",
+      "Orthognathic surgery (Le Fort I, BSSO) for jaw realignment",
+      "Treat facial trauma — fractures of mandible, maxilla, zygoma, orbit",
+      "Excise tumors and cysts of the jaws and oral cavity",
+      "Administer local anesthesia, IV sedation, and general anesthesia",
+      "Perform cleft lip/palate repairs and craniofacial reconstruction",
+      "TMJ surgery and temporomandibular disorder management",
+      "Facial cosmetic procedures — rhinoplasty, facial rejuvenation"
+    ],
+    "key_documents": [
+      "Treatment plans and surgical consents",
+      "Operative notes and surgical reports",
+      "Anesthesia records",
+      "Referral letters from general dentists",
+      "Insurance pre-authorizations",
+      "Pathology requisition forms",
+      "CBCT and imaging reports"
+    ],
+    "deadlines": {
+      "board_certification_maintenance": "Annual registration by March 31",
+      "state_license_renewal": "Varies by state, typically biennial",
+      "cme_requirements": "50-60 hours per 2-year cycle (varies by state)",
+      "sedation_permit_renewal": "Varies by state",
+      "aboms_certificate_renewal": "10-year certification cycle"
+    },
+    "seasonality": "Steady year-round demand. Slight increase in wisdom tooth extractions during summer (students on break) and holiday periods. Trauma cases spike during holidays and weekends."
+  },
+  "regulatory": {
+    "summary": "Dual-licensed under both dental and often medical boards. Regulated by state dental boards with additional permits for anesthesia and surgical procedures. Board certification through ABOMS is voluntary but strongly encouraged.",
+    "key_laws": [
+      {
+        "name": "State Dental Practice Acts",
+        "description": "Each state's dental board regulates OMS licensure, scope of practice, and anesthesia permits",
+        "status": "Active, varies by state"
+      },
+      {
+        "name": "ABOMS Board Certification",
+        "url": "https://www.aboms.org",
+        "description": "Only certifying board for OMS in the US — Qualifying Exam (300 questions, 11 areas) + Oral Certifying Exam (144 minutes, 12 cases)",
+        "status": "Active"
+      },
+      {
+        "name": "CODA Accreditation Standards",
+        "description": "Commission on Dental Accreditation sets standards for OMS residency programs",
+        "status": "Active"
+      },
+      {
+        "name": "DEA Registration",
+        "description": "Required for prescribing controlled substances (opioids, sedatives)",
+        "status": "Active, renewed every 3 years"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "DMD or DDS degree from CODA-accredited dental school (4 years)",
+        "4-6 year hospital-based OMS residency",
+        "Many programs include MD degree (6-year integrated track)",
+        "State dental license (pass NBDE/INBDE + state clinical exam)",
+        "Anesthesia/sedation permit from state dental board",
+        "DEA registration for controlled substances",
+        "ABOMS board certification (recommended but not required)"
+      ]
+    },
+    "continuing_education": "50-60 CME hours per biennial cycle; ABOMS requires yearly Certification Maintenance activities including Annual Registration"
+  },
+  "tools": {
+    "summary": "Highly technology-dependent specialty using advanced imaging (CBCT, CT), virtual surgical planning, 3D printing, and specialized surgical instruments. Digital workflows are transforming the field.",
+    "primary_tools": [
+      {
+        "name": "CBCT (Cone Beam Computed Tomography)",
+        "description": "3D imaging essential for implant planning, impacted teeth assessment, pathology evaluation"
+      },
+      {
+        "name": "Planmeca Romexis CMF Surgery",
+        "url": "https://www.planmeca.com",
+        "description": "Virtual treatment planning for orthognathic surgery, merges CBCT with intraoral scans"
+      },
+      {
+        "name": "3D Systems VSP (Virtual Surgical Planning)",
+        "url": "https://www.3dsystems.com",
+        "description": "Interactive service for simulating procedures with engineers, producing surgical splints"
+      },
+      {
+        "name": "Carestream Dental OMS Imaging",
+        "url": "https://www.carestreamdental.com",
+        "description": "Imaging platform with prosthetic-driven implant planning and CBCT integration"
+      },
+      {
+        "name": "Dolphin Imaging",
+        "description": "Comprehensive tools for cephalometric analysis, 3D surgical simulation, and treatment planning"
+      },
+      {
+        "name": "DEXIS Digital Ecosystem",
+        "url": "https://dexis.com",
+        "description": "AI-powered platform combining 2D/3D imaging, intraoral scanning, and diagnostics"
+      }
+    ],
+    "secondary_tools": [
+      "DSN Software — AI-assisted CBCT analysis, nerve detection, implant planning",
+      "Diagnocat AI — automated CBCT segmentation and 3D STL model generation",
+      "Practice management software (Dentrix, Open Dental, Eaglesoft)",
+      "Intraoral scanners (iTero, 3Shape TRIOS, Medit)",
+      "3D printers for surgical guides and models",
+      "Piezoelectric surgical units for precision bone cutting",
+      "Surgical navigation systems for complex cases"
+    ],
+    "pain_points": [
+      "High cost of CBCT equipment and software licenses",
+      "Learning curve for virtual surgical planning platforms",
+      "Insurance pre-authorization delays for complex procedures",
+      "Integration issues between dental and medical software systems",
+      "Maintaining proficiency across rapid technology changes"
+    ]
+  },
+  "terminology": {
+    "summary": "Highly specialized surgical vocabulary blending dental, medical, and surgical terminology. Heavy use of abbreviations for procedures, anatomy, and clinical findings.",
+    "terms": {
+      "OMS/OMFS": "Oral and Maxillofacial Surgery/Surgeon",
+      "BSSO": "Bilateral Sagittal Split Osteotomy — mandibular correction procedure",
+      "Le Fort I/II/III": "Classification of maxillary fractures and osteotomy levels",
+      "ORIF": "Open Reduction Internal Fixation — fracture repair with plates/screws",
+      "TMJ": "Temporomandibular Joint",
+      "TMD": "Temporomandibular Disorder",
+      "CBCT": "Cone Beam Computed Tomography",
+      "VSP": "Virtual Surgical Planning",
+      "thirds": "Third molars (wisdom teeth)",
+      "I&D": "Incision and Drainage (for abscesses)",
+      "IANB": "Inferior Alveolar Nerve Block",
+      "OPG/Pano": "Orthopantomogram/Panoramic radiograph",
+      "MAC": "Monitored Anesthesia Care",
+      "IV sedation": "Intravenous sedation (hallmark of OMS anesthesia training)",
+      "bone graft": "Autogenous, allograft, or synthetic bone for ridge augmentation",
+      "impaction": "Tooth embedded in bone (soft tissue vs. partial vs. full bony)",
+      "orthognathic": "Literally 'straight jaws' — corrective jaw surgery",
+      "mandibulectomy": "Surgical removal of part/all of the mandible (tumor cases)",
+      "free flap": "Microvascular tissue transfer for reconstruction",
+      "intermaxillary fixation": "Wiring jaws together (IMF) for fracture healing"
+    }
+  },
+  "career_psychology": {
+    "summary": "One of the longest and most demanding training paths in healthcare (10-14 years post-college). High compensation but significant stress. Over 91% report career satisfaction, though burnout exists especially in residency.",
+    "career_path": [
+      "Bachelor's degree (4 years, pre-dental/pre-med track)",
+      "Dental school — DMD/DDS (4 years)",
+      "OMS residency (4-year or 6-year MD-integrated track)",
+      "Optional fellowship (head & neck oncology, craniofacial, cosmetic)",
+      "Associate in established practice or hospital (1-3 years)",
+      "Practice owner / partner in private OMS practice",
+      "Academic OMS — program director, department chair"
+    ],
+    "salary_range": {
+      "resident": "$60,000 - $75,000/year",
+      "entry_level": "$250,000 - $350,000/year (first 1-3 years in practice)",
+      "mid_career": "$350,000 - $550,000/year",
+      "senior_established": "$500,000 - $800,000+/year",
+      "practice_owner": "$600,000 - $1,200,000+/year (depending on volume and scope)"
+    },
+    "fears": [
+      "Nerve damage during surgery (inferior alveolar, lingual nerve)",
+      "Anesthesia complications — airway emergencies",
+      "Malpractice lawsuits",
+      "Losing manual dexterity with age",
+      "Falling behind on rapidly evolving technology",
+      "Patient death under general anesthesia"
+    ],
+    "motivation": [
+      "Transformative impact on patients' lives (jaw surgery, trauma repair)",
+      "Unique dual-trained (dental + medical) skill set",
+      "High income potential and practice autonomy",
+      "Variety of procedures from simple extractions to complex reconstruction",
+      "Immediate visible surgical results"
+    ],
+    "burnout_factors": [
+      "Extremely long training path (10-14 years after college)",
+      "On-call responsibilities for trauma cases",
+      "High-stakes procedures with low margin for error",
+      "Dealing with complex insurance and pre-authorization",
+      "Work-home conflict, especially early career",
+      ">50% of OMS residents report moderate to severe anxiety"
+    ]
+  },
+  "community": {
+    "summary": "Strong professional community centered around AAOMS (9,000+ members, 90%+ of US oral surgeons). Multiple specialty societies, active journal, and state/regional chapters.",
+    "associations": [
+      {
+        "name": "American Association of Oral and Maxillofacial Surgeons (AAOMS)",
+        "url": "https://aaoms.org",
+        "type": "Primary professional association",
+        "members": "9,000+ fellows, members, and residents"
+      },
+      {
+        "name": "American Board of Oral and Maxillofacial Surgery (ABOMS)",
+        "url": "https://www.aboms.org",
+        "type": "Certifying board"
+      },
+      {
+        "name": "American College of Oral and Maxillofacial Surgeons (ACOMS)",
+        "url": "https://www.acoms.org",
+        "type": "Professional organization"
+      },
+      {
+        "name": "American Society of Maxillofacial Surgeons (ASMS)",
+        "url": "https://maxface.org",
+        "type": "Specialty society"
+      },
+      {
+        "name": "International Association of Oral and Maxillofacial Surgeons (IAOMS)",
+        "url": "https://www.iaoms.org",
+        "type": "International organization"
+      }
+    ],
+    "publications": [
+      {
+        "name": "Journal of Oral and Maxillofacial Surgery (JOMS)",
+        "url": "https://www.joms.org",
+        "description": "Flagship peer-reviewed journal of the specialty"
+      }
+    ],
+    "events": [
+      "AAOMS Annual Meeting, Scientific Sessions and Exhibition",
+      "AAOMS Day on the Hill (advocacy)",
+      "State and regional OMS society meetings (50 state + 8 regional chapters)"
+    ],
+    "online_communities": [
+      "AAOMS Member Community and Podcast",
+      "r/oralsurgery and r/dentistry on Reddit",
+      "OMS-specific Facebook and LinkedIn groups"
+    ]
+  },
+  "market": {
+    "summary": "Strong job market with high demand driven by aging population, dental implant growth, and trauma care needs. Ranked #6 in Best-Paying Jobs. Over 1,500 active job openings nationwide.",
+    "job_outlook": {
+      "growth_rate": "6% projected growth (faster than average)",
+      "active_openings": "1,500+ nationwide (2026)",
+      "ranking": "#6 in Best-Paying Jobs (US News 2025)"
+    },
+    "salary_market": {
+      "average": "$360,000 - $500,000/year",
+      "range": "$250,000 - $800,000+/year",
+      "top_earners": "$1,000,000+/year (high-volume practice owners)"
+    },
+    "demand_drivers": [
+      "Growing demand for dental implants (aging population)",
+      "Increased access to elective facial surgeries",
+      "Corrective jaw surgery demand (orthognathic)",
+      "Trauma care needs in hospitals",
+      "Sleep apnea surgical interventions growing"
+    ],
+    "market_trends": [
+      "Shift toward digital workflows and virtual surgical planning",
+      "AI integration in imaging and treatment planning",
+      "Growth of multi-specialty group practices",
+      "Increasing insurance coverage for orthognathic surgery",
+      "Teledentistry for pre-surgical consultations"
+    ]
+  },
+  "quality_score": 0.78,
+  "sources_count": 30,
+  "verified_sources": 12,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Oral and Maxillofacial Surgeon USA 2025 2026 typical day tasks procedures caseload schedule",
+      "sources": [
+        {"title": "AAOMS - OMS Procedures", "url": "https://aaoms.org/education-meetings/academics/become-an-oms/oms-procedures/"},
+        {"title": "O*NET - 29-1022.00", "url": "https://www.onetonline.org/link/summary/29-1022.00"},
+        {"title": "Cleveland Clinic - Maxillofacial Surgery", "url": "https://my.clevelandclinic.org/health/procedures/maxillofacial-surgery"},
+        {"title": "CareerExplorer - OMS", "url": "https://www.careerexplorer.com/careers/oral-and-maxillofacial-surgeon/"}
+      ]
+    },
+    {
+      "query": "Oral and Maxillofacial Surgeon USA 2025 2026 licensing regulations board certification requirements state",
+      "sources": [
+        {"title": "ABOMS - Become Certified", "url": "https://www.aboms.org/become-certified"},
+        {"title": "ABOMS - Patient Information", "url": "https://www.aboms.org/who-we-are/patient-information"},
+        {"title": "California Dental Board - OMS Permits", "url": "https://www.dbc.ca.gov/licensees/dds/permits/oral_maxillofacial_surgery.shtml"},
+        {"title": "ABOMS - How Many Years", "url": "https://www.aboms.org/news/how-many-years-to-become-maxillofacial-surgeon"}
+      ]
+    },
+    {
+      "query": "Oral and Maxillofacial Surgeon USA software tools CBCT imaging digital planning technology 2025",
+      "sources": [
+        {"title": "Planmeca Romexis CMF", "url": "https://www.planmeca.com/dental-software/planmeca-romexis/cmf-surgery-planning-software/"},
+        {"title": "Carestream OMS Imaging", "url": "https://www.carestreamdental.com/en-us/discover/clinical-software/imaging-software/oms-imaging/"},
+        {"title": "DSN Software", "url": "https://www.dsn.com/"},
+        {"title": "3D Systems VSP", "url": "https://www.3dsystems.com/healthcare/craniomaxillofacial-solutions"},
+        {"title": "DEXIS", "url": "https://dexis.com/en-us"},
+        {"title": "Diagnocat CBCT Segmentation", "url": "https://diagnocat.com/us/products/cbct-segmentation/"}
+      ]
+    },
+    {
+      "query": "Oral and Maxillofacial Surgery terminology jargon abbreviations slang OMS Le Fort BSSO",
+      "sources": [
+        {"title": "UW School of Dentistry - OMS Glossary", "url": "https://dental.washington.edu/oral-surgery/glossary/"},
+        {"title": "JOMS - Acronym Acrimony", "url": "https://www.joms.org/article/S0278-2391(13)00197-3/fulltext"},
+        {"title": "LSU GME - OMS Terms", "url": "https://lsugme.atlassian.net/wiki/spaces/Terms/pages/12517626"}
+      ]
+    },
+    {
+      "query": "Oral and Maxillofacial Surgeon USA salary 2025 2026 career path burnout residency fellowship",
+      "sources": [
+        {"title": "ZipRecruiter - OMS Salary 2026", "url": "https://www.ziprecruiter.com/Salaries/Oral-And-Maxillofacial-Surgeon-Salary"},
+        {"title": "US News - OMS Salary 2026", "url": "https://careers.usnews.com/best-jobs/oral-and-maxillofacial-surgeon/salary"},
+        {"title": "Panacea Financial - OMS Salary", "url": "https://panaceafinancial.com/resources/average-oral-maxillofacial-surgeon-salary/"},
+        {"title": "PubMed - Work-Life Balance for OMS", "url": "https://pubmed.ncbi.nlm.nih.gov/34364748/"},
+        {"title": "MedPro - Burnout in OMS", "url": "https://oms.medprodental.com/risk-tips/burnout-in-oms-what-to-look-for-what-to-do-about-it"}
+      ]
+    },
+    {
+      "query": "Oral Maxillofacial Surgery professional associations AAOMS conferences community forums",
+      "sources": [
+        {"title": "AAOMS", "url": "https://aaoms.org/"},
+        {"title": "ACOMS", "url": "https://www.acoms.org/"},
+        {"title": "IAOMS", "url": "https://www.iaoms.org/"},
+        {"title": "JOMS", "url": "https://www.joms.org/"},
+        {"title": "ASMS", "url": "https://maxface.org/"}
+      ]
+    },
+    {
+      "query": "Oral and Maxillofacial Surgeon USA job market 2025 2026 demand vacancies outlook growth",
+      "sources": [
+        {"title": "BLS - OMS Occupational Data", "url": "https://www.bls.gov/oes/2023/may/oes291022.htm"},
+        {"title": "US News - Best Jobs 2025", "url": "https://money.usnews.com/careers/best-jobs/oral-and-maxillofacial-surgeon"},
+        {"title": "Zippia - OMS Job Outlook", "url": "https://www.zippia.com/oral-and-maxillofacial-surgeon-jobs/trends/"},
+        {"title": "HireSmiles - OMS Salary 2026", "url": "https://hiresmiles.com/salary-report/oral-maxillofacial-surgeon-salary-in-us/"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "profession_id": "us-low-vision-therapists-orientation-and-mobility-specialists-and-vision-rehabilitation-therapists",
+  "profession_name": "Low Vision Therapists, Orientation and Mobility Specialists, and Vision Rehabilitation Therapists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "These professionals help people with vision loss maximize their remaining vision, navigate environments safely, and regain independence. They work in hospitals, rehabilitation centers, schools, and client homes. Critical workforce shortage — fewer than 600 CVRTs in the entire US.",
+    "typical_tasks": ["Assess functional vision and determine rehabilitation needs", "Teach orientation and mobility techniques (cane travel, GPS navigation)", "Prescribe and train patients on low vision optical devices (magnifiers, telescopes)", "Teach adaptive living skills (cooking, reading, personal care)", "Modify home and work environments for visual accessibility", "Develop individualized rehabilitation plans", "Train clients on assistive technology (screen readers, magnification software)", "Document patient progress and outcomes", "Collaborate with ophthalmologists and occupational therapists"],
+    "key_documents": ["Functional vision assessment reports", "Individualized rehabilitation/education plans", "Orientation and mobility evaluation reports", "Assistive technology recommendations", "Progress notes and outcome measures", "Insurance authorization documentation"],
+    "deadlines": {"initial_assessment": "Within 1-2 weeks of referral", "rehab_plan": "Developed within 30 days of assessment", "progress_reviews": "Every 30-90 days", "certification_renewal": "Every 5 years for ACVREP certifications"},
+    "seasonality": "Steady demand year-round. School-year creates peaks for pediatric services. Aging population ensures growing demand."
+  },
+  "regulatory": {
+    "summary": "ACVREP provides professional certification (CLVT, COMS, CVRT). State licensure varies. Medicare/Medicaid cover certain services. ADA and IDEA mandate services for persons with disabilities.",
+    "key_laws": [
+      {"name": "Americans with Disabilities Act (ADA)", "description": "Ensures accessibility and reasonable accommodations"},
+      {"name": "IDEA", "description": "Ensures vision services in schools for children with disabilities"},
+      {"name": "Rehabilitation Act Section 504", "description": "Prohibits discrimination against persons with disabilities"},
+      {"name": "State licensure requirements", "description": "Varies by state; some require specific O&M or rehabilitation licensure"}
+    ],
+    "licensing": {
+      "requirements": ["Master's degree in vision rehabilitation, O&M, or related field", "350-hour supervised internship", "ACVREP certification exam"],
+      "certifications": ["COMS — Certified Orientation and Mobility Specialist", "CLVT — Certified Low Vision Therapist", "CVRT — Certified Vision Rehabilitation Therapist", "CATIS — Certified Assistive Technology Instructional Specialist"]
+    },
+    "penalties": "State licensing violations. Liability for inadequate mobility training leading to injury."
+  },
+  "tools": {
+    "summary": "Low vision optical devices, assistive technology, mobility aids, and environmental modification tools.",
+    "primary_tools": [
+      {"name": "Long white cane / ID cane", "description": "Primary mobility aid for O&M training"},
+      {"name": "Low vision optical devices", "description": "Magnifiers, telescopes, prism glasses, CCTVs"},
+      {"name": "Screen magnification software (ZoomText, MAGic)", "description": "Computer access for low vision users"},
+      {"name": "Screen readers (JAWS, NVDA, VoiceOver)", "description": "Computer and mobile access for blind users"},
+      {"name": "Electronic magnifiers (portable CCTVs)", "description": "Desktop and handheld video magnification"},
+      {"name": "GPS/wayfinding apps (BlindSquare, Seeing AI)", "description": "Smartphone navigation aids"}
+    ],
+    "secondary_tools": ["Contrast enhancement and lighting tools", "Tactile maps and models", "Adaptive kitchen and daily living devices", "Braille instruction materials", "Eye charts and functional vision assessment tools"],
+    "pain_points": ["Limited awareness of services among referring physicians", "Insurance coverage gaps for rehabilitation services", "High travel burden for home-based services", "Rapid technology changes requiring constant learning"]
+  },
+  "terminology": {
+    "summary": "Specialized terminology blending ophthalmology, rehabilitation, and assistive technology fields.",
+    "terms": {
+      "O&M": "Orientation and Mobility — teaching safe independent travel",
+      "CLVT": "Certified Low Vision Therapist",
+      "COMS": "Certified Orientation and Mobility Specialist",
+      "CVRT": "Certified Vision Rehabilitation Therapist",
+      "ACVREP": "Academy for Certification of Vision Rehabilitation & Education Professionals",
+      "low vision": "Visual impairment not correctable by standard glasses/surgery",
+      "legal blindness": "Visual acuity ≤20/200 or visual field ≤20 degrees",
+      "functional vision": "How a person uses their remaining vision in daily life",
+      "eccentric viewing": "Technique using peripheral retina when central vision is lost",
+      "sighted guide": "Technique for walking safely with a sighted companion",
+      "trailing": "Using hand contact with walls/surfaces for orientation",
+      "landmark": "Permanent object used for orientation reference",
+      "AT": "Assistive Technology",
+      "CCTV": "Closed Circuit Television — video magnification system",
+      "AMD": "Age-related Macular Degeneration — leading cause of vision loss in elderly",
+      "VRT": "Vision Rehabilitation Therapy",
+      "TVI": "Teacher of the Visually Impaired (school setting)",
+      "deafblind": "Combined hearing and vision loss requiring specialized services",
+      "wayfinding": "Process of navigating from one location to another",
+      "daily living skills": "Adaptive techniques for cooking, cleaning, personal care"
+    }
+  },
+  "career_psychology": {
+    "summary": "Meaningful rehabilitation career with salary range $55K-$121K. Critical workforce shortage creates strong demand. 23.8% job growth projected. Deep satisfaction from restoring independence to vision-impaired individuals.",
+    "career_path": ["Bachelor's degree (relevant field)", "Master's degree in Vision Rehabilitation / O&M", "350-hour supervised internship", "ACVREP certification (COMS, CLVT, or CVRT)", "Staff therapist/specialist", "Senior specialist / Program coordinator", "Director of Vision Rehabilitation Services"],
+    "salary_range": {"entry_level": "$50,000 - $65,000/year", "mid_level": "$65,000 - $85,000/year", "senior": "$85,000 - $121,000/year"},
+    "fears": ["Client injury during mobility training", "Insufficient reimbursement for services", "Isolation as sole specialist in an organization", "Keeping up with rapid assistive technology changes"],
+    "motivation": ["Directly restoring independence and quality of life", "Working one-on-one with clients in meaningful ways", "Critical shortage means high demand and job security", "Making a tangible difference in daily functioning", "Diverse work settings (clinic, home, community, schools)"],
+    "burnout_factors": ["Heavy travel for home-based services", "Emotional weight of working with newly vision-impaired individuals", "Administrative burden of insurance documentation", "Small field with limited peer support", "Physical demands of mobility instruction"]
+  },
+  "community": {
+    "summary": "Small but dedicated professional community organized around ACVREP for certification, AER for education, and various blindness organizations.",
+    "associations": [
+      {"name": "ACVREP", "url": "https://www.acvrep.org/", "description": "Certification body for vision rehabilitation professionals"},
+      {"name": "Association for Education and Rehabilitation of the Blind and Visually Impaired (AER)", "description": "Professional development, conferences, and advocacy"},
+      {"name": "American Foundation for the Blind (AFB)", "description": "Research, advocacy, and professional resources"},
+      {"name": "National Federation of the Blind (NFB)", "description": "Consumer organization with professional partnerships"}
+    ],
+    "online_communities": ["AER online communities", "VisionAware professional resources (AFB)", "LinkedIn vision rehabilitation groups", "Facebook O&M and vision rehab groups"],
+    "conferences": ["AER International Conference", "ACVREP certification workshops", "Envision Conference", "CSUN Assistive Technology Conference"]
+  },
+  "market": {
+    "summary": "Critical workforce shortage (fewer than 600 CVRTs nationally). 23.8% projected growth driven by aging population and AMD prevalence. 31,000 new jobs projected. Salary $55K-$121K.",
+    "growth_rate": "23.8% projected (well above national average), 31,000 new jobs",
+    "salary_market": {"range": "$55,490 - $120,750/year"},
+    "top_employers": ["VA Healthcare System (largest employer of vision rehab professionals)", "State rehabilitation agencies", "Hospitals and academic medical centers", "Schools for the blind and mainstream school districts", "Non-profit blindness organizations (Lighthouse, Perkins)"],
+    "market_trends": ["Critical nationwide shortage of qualified professionals", "Aging baby boomers driving AMD-related demand explosion", "Telerehabilitation expanding service delivery options", "Assistive technology advances requiring new training", "Growing awareness of vision rehabilitation services"]
+  },
+  "quality_score": 0.72,
+  "sources_count": 16,
+  "verified_sources": 5,
+  "confidence": "verified",
+  "raw_responses": [{"query": "Low Vision Therapists O&M Specialists Vision Rehabilitation USA salary career certification ACVREP", "sources": [{"title": "ACVREP", "url": "https://www.acvrep.org/"}, {"title": "O*NET — 29-1122.01", "url": "https://www.onetonline.org/link/summary/29-1122.01"}, {"title": "OIB-TAC Vision Rehabilitation Professionals", "url": "https://www.oib-tac.org/technical-assistance/personnel-management/vision-rehabilitation-professionals"}]}]
+}

@@ -1,0 +1,716 @@
+[
+  {
+    "id": "us-advanced-practice-psychiatric-nurses-p01",
+    "title": "Psychotropic Medication Dosage Calculator",
+    "problem": "PMHNPs spend significant time calculating medication dosages, especially for titration schedules, weight-based dosing, and cross-tapering between psychotropic medications. Errors in dosage calculations can lead to adverse drug reactions, serotonin syndrome, or therapeutic failure. Manual calculations during busy 15-patient days increase the risk of prescribing errors.",
+    "who": "All PMHNPs prescribing psychotropic medications, especially new graduates",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Psychotropic Dosage & Titration Calculator",
+      "one_liner": "Calculates medication dosages, titration schedules, and cross-taper plans for common psychotropic medications",
+      "inputs": [
+        {
+          "name": "medication_name",
+          "type": "string",
+          "label": "Medication name"
+        },
+        {
+          "name": "patient_weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        },
+        {
+          "name": "current_dose_mg",
+          "type": "number",
+          "label": "Current dose (mg)"
+        },
+        {
+          "name": "target_dose_mg",
+          "type": "number",
+          "label": "Target dose (mg)"
+        },
+        {
+          "name": "renal_function",
+          "type": "string",
+          "label": "Renal function (normal/mild/moderate/severe)"
+        },
+        {
+          "name": "age_group",
+          "type": "string",
+          "label": "Age group (pediatric/adult/geriatric)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "recommended_dose",
+          "label": "Recommended dose (mg)"
+        },
+        {
+          "name": "titration_schedule",
+          "label": "Titration schedule with weekly steps"
+        },
+        {
+          "name": "max_daily_dose",
+          "label": "Maximum daily dose (mg)"
+        },
+        {
+          "name": "dose_adjustment",
+          "label": "Dose adjustment for renal/hepatic/age factors"
+        }
+      ],
+      "formula_hint": "Weight-based: dose_mg = weight_kg * mg_per_kg_rate. Titration: increment by 25-50% of starting dose per interval. Geriatric: start at 50% of adult dose. Renal adjustment per GFR ranges.",
+      "rates": {
+        "geriatric_factor": 0.5,
+        "pediatric_weight_threshold_kg": 40
+      }
+    },
+    "example_queries": [
+      "Calculate titration schedule for Lamotrigine from 25mg to 200mg",
+      "What's the cross-taper plan switching from Lexapro 20mg to Effexor XR 150mg?",
+      "Dose adjustment for Lithium in a 72-year-old with mild renal impairment"
+    ]
+  },
+  {
+    "id": "us-advanced-practice-psychiatric-nurses-p02",
+    "title": "Psychiatric Billing & CPT Code Calculator",
+    "problem": "PMHNPs struggle with selecting correct CPT codes for psychiatric evaluations, psychotherapy add-ons, and medication management visits. Incorrect coding leads to claim denials, lost revenue, and audit risk. Combining E/M codes with psychotherapy add-on codes (90833/90836/90838) and knowing when to use 90792 vs 99213-99215 is confusing, especially for those in private practice.",
+    "who": "PMHNPs in private practice and those billing independently",
+    "frequency": "daily",
+    "time_waste_h": 3,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Psychiatric CPT Code & Reimbursement Calculator",
+      "one_liner": "Selects correct CPT codes for psychiatric visits and calculates expected reimbursement",
+      "inputs": [
+        {
+          "name": "visit_type",
+          "type": "string",
+          "label": "Visit type (initial eval/follow-up/crisis)"
+        },
+        {
+          "name": "therapy_minutes",
+          "type": "number",
+          "label": "Psychotherapy time (minutes)"
+        },
+        {
+          "name": "mdm_complexity",
+          "type": "string",
+          "label": "Medical decision-making complexity (low/moderate/high)"
+        },
+        {
+          "name": "total_visit_time",
+          "type": "number",
+          "label": "Total visit time (minutes)"
+        },
+        {
+          "name": "payer_type",
+          "type": "string",
+          "label": "Payer (Medicare/Medicaid/Commercial)"
+        },
+        {
+          "name": "location",
+          "type": "string",
+          "label": "Setting (office/telehealth/facility)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "primary_cpt",
+          "label": "Primary CPT code"
+        },
+        {
+          "name": "addon_cpt",
+          "label": "Add-on CPT code (if applicable)"
+        },
+        {
+          "name": "modifiers",
+          "label": "Required modifiers"
+        },
+        {
+          "name": "estimated_reimbursement",
+          "label": "Estimated reimbursement (USD)"
+        }
+      ],
+      "formula_hint": "Initial psych eval = 90792. Follow-up E/M by MDM complexity: low=99213, moderate=99214, high=99215. Therapy add-ons: 16-37min=90833, 38-52min=90836, 53+min=90838. Medicare rates from CMS fee schedule. Telehealth modifier 95.",
+      "rates": {
+        "medicare_90792": 183.19,
+        "medicare_99214": 127.46,
+        "medicare_90836": 68.47
+      }
+    },
+    "example_queries": [
+      "I did a 30-minute follow-up with 20 minutes of therapy, moderate MDM - what codes do I bill?",
+      "Calculate reimbursement for initial psych eval 90792 with Medicare",
+      "What CPT codes for a 45-minute telehealth med management with psychotherapy?"
+    ]
+  },
+  {
+    "id": "us-advanced-practice-psychiatric-nurses-p03",
+    "title": "Prior Authorization for Psychiatric Medications",
+    "problem": "PMHNPs spend hours weekly on prior authorization (PA) forms for psychotropic medications, especially atypical antipsychotics, brand-name SSRIs/SNRIs, stimulants, and newer agents like Spravato. Each insurer has different PA requirements, and missing criteria leads to denials and treatment delays for patients who may be in crisis.",
+    "who": "All prescribing PMHNPs, especially in outpatient settings",
+    "frequency": "weekly",
+    "time_waste_h": 5,
+    "money_risk_usd": 3000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Psychiatric Prior Authorization Guide",
+      "one_liner": "Step-by-step checklist for completing prior authorizations for common psychotropic medications with payer-specific criteria",
+      "steps": [
+        "Step 1: Verify the medication requires PA - check formulary status on payer portal",
+        "Step 2: Document clinical justification - diagnosis (ICD-10), symptom severity scores (PHQ-9/GAD-7), treatment history",
+        "Step 3: Document step therapy failures - list prior medications tried, doses, duration, and reason for discontinuation",
+        "Step 4: Include lab results if applicable (metabolic panel for antipsychotics, thyroid for lithium, drug levels)",
+        "Step 5: Complete payer-specific PA form - attach clinical notes supporting medical necessity",
+        "Step 6: Submit via CoverMyMeds, Surescripts, or payer portal",
+        "Step 7: Track submission - set 72-hour follow-up reminder",
+        "Step 8: If denied - review denial reason, file peer-to-peer review request within appeal window",
+        "Step 9: Document all PA activity in patient chart for continuity"
+      ],
+      "warnings": [
+        "Warning: Controlled substances (Schedule II stimulants) may require additional DEA documentation",
+        "Warning: Some states require PA decisions within 24-72 hours - know your state's prompt PA law",
+        "Warning: Spravato (esketamine) requires REMS certification documentation"
+      ],
+      "regulatory_refs": [
+        "Mental Health Parity and Addiction Equity Act",
+        "State prompt PA laws",
+        "21st Century Cures Act"
+      ]
+    },
+    "example_queries": [
+      "Walk me through the prior auth process for Vraylar for a patient who failed two SSRIs",
+      "What documentation do I need for a Spravato prior authorization?",
+      "Patient denied PA for Adderall XR - what are my appeal options?"
+    ]
+  },
+  {
+    "id": "us-advanced-practice-psychiatric-nurses-p04",
+    "title": "Suicide Risk Assessment Documentation",
+    "problem": "PMHNPs must conduct and document thorough suicide risk assessments using evidence-based tools (Columbia Suicide Severity Rating Scale, PHQ-9 Item 9). Inadequate documentation is the leading cause of malpractice claims in psychiatry. Under time pressure with 15 patients per day, critical assessment elements may be missed, creating both patient safety and legal exposure risks.",
+    "who": "All PMHNPs, especially those treating depression, PTSD, and substance use disorders",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 100000,
+    "source": "career_psychology",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Suicide Risk Assessment & Safety Plan Checklist",
+      "one_liner": "Comprehensive suicide risk assessment checklist with documentation requirements and safety planning steps",
+      "steps": [
+        "Step 1: Screen with validated tool - PHQ-9 Item 9 or ASQ (Ask Suicide Screening Questions)",
+        "Step 2: If positive screen - administer Columbia Suicide Severity Rating Scale (C-SSRS)",
+        "Step 3: Assess risk factors - prior attempts, family history, access to lethal means, substance use, recent losses",
+        "Step 4: Assess protective factors - social support, reasons for living, engagement in treatment, religious beliefs",
+        "Step 5: Determine risk level - low/moderate/high/imminent based on structured assessment",
+        "Step 6: Document clinical decision-making rationale for level of care determination",
+        "Step 7: For moderate+ risk - create collaborative Safety Plan (Stanley-Brown template)",
+        "Step 8: Address means restriction - document lethal means counseling conversation",
+        "Step 9: Establish follow-up plan - timing, method, emergency contacts",
+        "Step 10: If imminent risk - initiate involuntary hold procedures per state law (Baker Act/5150 equivalent)",
+        "Step 11: Document all elements in EHR with time-stamped entries"
+      ],
+      "warnings": [
+        "Warning: Never use 'no-suicide contracts' - they are not evidence-based and provide no legal protection",
+        "Warning: Document why you did NOT hospitalize moderate-risk patients - this is the most litigated decision",
+        "Warning: State involuntary commitment laws vary - know your state's criteria and time limits"
+      ],
+      "regulatory_refs": [
+        "Joint Commission NPSG 15.01.01",
+        "State Baker Act / involuntary commitment statutes",
+        "42 CFR Part 2 for substance use patients"
+      ]
+    },
+    "example_queries": [
+      "Walk me through a complete suicide risk assessment for a patient with passive SI",
+      "What must I document when I decide NOT to hospitalize a patient with suicidal ideation?",
+      "How do I create a Stanley-Brown Safety Plan with my patient?"
+    ]
+  },
+  {
+    "id": "us-advanced-practice-psychiatric-nurses-p05",
+    "title": "Psychiatric Progress Note Generator (SOAP)",
+    "problem": "PMHNPs spend 1-2 hours daily on documentation, writing SOAP-format progress notes for each of their 15 daily patients. Notes must capture mental status exam findings, medication changes with rationale, risk assessments, and treatment plan updates. Poor notes increase malpractice risk and lead to claim denials. Many PMHNPs document after hours, contributing to burnout.",
+    "who": "All PMHNPs, especially those in high-volume outpatient settings",
+    "frequency": "daily",
+    "time_waste_h": 10,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Psychiatric SOAP Note Generator",
+      "one_liner": "Generates structured psychiatric progress notes in SOAP format with medication management and risk assessment sections",
+      "doc_name": "Psychiatric Progress Note (SOAP)",
+      "variables": [
+        {
+          "name": "patient_initials",
+          "label": "Patient initials"
+        },
+        {
+          "name": "visit_type",
+          "label": "Visit type (med management/therapy/combined)"
+        },
+        {
+          "name": "chief_complaint",
+          "label": "Chief complaint / reason for visit"
+        },
+        {
+          "name": "current_medications",
+          "label": "Current psychiatric medications and doses"
+        },
+        {
+          "name": "medication_changes",
+          "label": "Medication changes made today (if any)"
+        },
+        {
+          "name": "mood_affect",
+          "label": "Mood and affect observations"
+        },
+        {
+          "name": "phq9_score",
+          "label": "PHQ-9 score (if administered)"
+        },
+        {
+          "name": "gad7_score",
+          "label": "GAD-7 score (if administered)"
+        },
+        {
+          "name": "si_hi_assessment",
+          "label": "SI/HI assessment findings"
+        },
+        {
+          "name": "risk_level",
+          "label": "Risk level (low/moderate/high)"
+        },
+        {
+          "name": "therapy_modality",
+          "label": "Therapy modality used (CBT/DBT/supportive)"
+        },
+        {
+          "name": "plan",
+          "label": "Plan and follow-up interval"
+        }
+      ],
+      "structure_hint": "Subjective (chief complaint, self-report, medication adherence, side effects) -> Objective (MSE: appearance, behavior, speech, mood, affect, thought process, thought content, cognition, insight, judgment; vitals if applicable; screening scores) -> Assessment (diagnoses with ICD-10, clinical formulation, risk assessment) -> Plan (medication changes with rationale, therapy plan, labs ordered, follow-up timing, safety plan if applicable)"
+    },
+    "example_queries": [
+      "Generate a SOAP note for a follow-up med management visit - patient on Zoloft 100mg reports improved mood, PHQ-9 dropped from 18 to 9",
+      "Write a progress note for a combined therapy/med check where I started Buspirone 5mg BID for anxiety",
+      "Create a SOAP note template for an initial psychiatric evaluation"
+    ]
+  },
+  {
+    "id": "us-advanced-practice-psychiatric-nurses-p06",
+    "title": "Drug Interaction Checker for Psychotropics",
+    "problem": "Psychiatric polypharmacy is common - many patients take 3+ psychotropic medications plus medical medications. PMHNPs must check for dangerous interactions like serotonin syndrome (SSRI + tramadol), QTc prolongation (multiple antipsychotics), and metabolic interactions (CYP450 inhibitors/inducers). While e-prescribing alerts exist, they generate excessive alerts causing 'alert fatigue', and many critical psychiatric-specific interactions are missed.",
+    "who": "All prescribing PMHNPs, especially those managing complex cases",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 75000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Psychotropic Drug Interaction Analyzer",
+      "one_liner": "Analyzes psychotropic medication combinations for dangerous interactions including serotonin syndrome risk, QTc prolongation, and CYP450 conflicts",
+      "inputs": [
+        {
+          "name": "medications",
+          "type": "string",
+          "label": "List of all current medications with doses"
+        },
+        {
+          "name": "new_medication",
+          "type": "string",
+          "label": "New medication being considered"
+        },
+        {
+          "name": "patient_age",
+          "type": "number",
+          "label": "Patient age"
+        },
+        {
+          "name": "cardiac_history",
+          "type": "string",
+          "label": "Cardiac history (none/arrhythmia/QTc prolongation)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "interaction_severity",
+          "label": "Interaction severity (none/minor/moderate/major/contraindicated)"
+        },
+        {
+          "name": "serotonin_syndrome_risk",
+          "label": "Serotonin syndrome risk assessment"
+        },
+        {
+          "name": "qtc_risk",
+          "label": "QTc prolongation risk"
+        },
+        {
+          "name": "cyp450_conflicts",
+          "label": "CYP450 metabolic interactions"
+        },
+        {
+          "name": "clinical_recommendation",
+          "label": "Clinical recommendation"
+        }
+      ],
+      "formula_hint": "Serotonin risk: count serotonergic agents (SSRIs, SNRIs, triptans, tramadol, MAOIs, St. John's Wort). QTc risk: sum individual drug QTc-prolonging potentials. CYP450: check 2D6, 3A4, 2C19 inhibitor/inducer status of each drug.",
+      "rates": {
+        "high_serotonin_threshold": 2,
+        "qtc_concern_ms": 500
+      }
+    },
+    "example_queries": [
+      "Check interactions between Prozac 40mg, Trazodone 100mg, and Abilify 10mg",
+      "Is it safe to add Wellbutrin to a patient already on Adderall and Lexapro?",
+      "Serotonin syndrome risk if I add Tramadol to a patient on Cymbalta 60mg?"
+    ]
+  },
+  {
+    "id": "us-advanced-practice-psychiatric-nurses-p07",
+    "title": "Controlled Substance Prescribing Compliance",
+    "problem": "PMHNPs prescribing Schedule II-V controlled substances (stimulants, benzodiazepines, Suboxone) must navigate DEA regulations, state PDMP check requirements, prescription limits, and documentation requirements. Rules vary by state - some require PDMP checks before every controlled substance prescription, others every 90 days. Non-compliance can result in DEA license revocation and criminal charges.",
+    "who": "All PMHNPs with DEA registration, especially those prescribing stimulants and benzodiazepines",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Controlled Substance Prescribing Compliance Checklist",
+      "one_liner": "Step-by-step compliance checklist for prescribing controlled substances including PDMP, DEA, and state-specific requirements",
+      "steps": [
+        "Step 1: Verify your DEA registration is active and covers the schedule of the drug being prescribed",
+        "Step 2: Check state PDMP before prescribing - document results in patient chart",
+        "Step 3: Verify patient identity and confirm informed consent for controlled substance treatment",
+        "Step 4: Document clinical indication with ICD-10 diagnosis supporting the prescription",
+        "Step 5: For Schedule II (stimulants, some opioids): no refills permitted, new Rx required each time, max 90-day supply in most states",
+        "Step 6: For benzodiazepines: document risk-benefit analysis, consider benzodiazepine use disorder screening",
+        "Step 7: For buprenorphine/Suboxone: verify X-waiver no longer required post-2023, but document MAT training completion",
+        "Step 8: Conduct and document urine drug screen (UDS) per practice protocol (typically every 3-6 months for chronic CS)",
+        "Step 9: Review and sign controlled substance agreement/treatment contract with patient",
+        "Step 10: E-prescribe via EPCS-certified system (mandatory in most states for Schedule II)",
+        "Step 11: Set follow-up appointment within state-mandated interval for continued prescribing"
+      ],
+      "warnings": [
+        "Warning: PDMP check requirements vary by state - some require checks before EVERY controlled substance Rx",
+        "Warning: Prescribing controlled substances via telehealth has federal and state restrictions post-COVID PHE",
+        "Warning: Co-prescribing benzodiazepines and opioids requires FDA black box warning documentation"
+      ],
+      "regulatory_refs": [
+        "DEA Controlled Substances Act",
+        "State PDMP laws",
+        "Ryan Haight Online Pharmacy Consumer Protection Act",
+        "SUPPORT Act 2018"
+      ]
+    },
+    "example_queries": [
+      "What are the PDMP check requirements for prescribing Adderall in California?",
+      "Can I prescribe Xanax via telehealth to a patient in another state?",
+      "What documentation do I need for continuing a patient on Suboxone?"
+    ]
+  },
+  {
+    "id": "us-advanced-practice-psychiatric-nurses-p08",
+    "title": "PMHNP Credential & License Renewal Tracker",
+    "problem": "PMHNPs must maintain multiple credentials with different renewal cycles: state nursing license (1-2 years), ANCC board certification (every 5 years requiring 75 CE hours + pharmacology hours), DEA license (every 3 years), collaborative practice agreements (state-dependent), malpractice insurance, and NPI. Missing a renewal deadline can mean inability to practice and prescribe, losing income and patient access.",
+    "who": "All PMHNPs, especially those with multi-state licensure",
+    "frequency": "quarterly",
+    "time_waste_h": 8,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "PMHNP Credential & License Renewal Reference",
+      "one_liner": "Quick reference for all PMHNP credential renewal requirements, deadlines, CE requirements, and renewal procedures",
+      "data_domain": "PMHNP licensing, certification, and credentialing renewal requirements",
+      "lookup_keys": [
+        "credential_type",
+        "state",
+        "certification_body",
+        "renewal_cycle"
+      ],
+      "data_hints": {
+        "source_law": "State Nurse Practice Acts, ANCC Certification Renewal Requirements, DEA Registration Rules",
+        "key_sections": [
+          "ANCC PMHNP-BC renewal requirements",
+          "DEA Form 224a",
+          "State Board of Nursing renewal rules",
+          "Nurse Licensure Compact provisions"
+        ]
+      }
+    },
+    "example_queries": [
+      "What are the CE requirements for ANCC PMHNP-BC renewal?",
+      "How many pharmacology CE hours do I need for board recertification?",
+      "When and how do I renew my DEA license?"
+    ]
+  },
+  {
+    "id": "us-advanced-practice-psychiatric-nurses-p09",
+    "title": "Involuntary Psychiatric Hold Procedures by State",
+    "problem": "When a patient presents with imminent danger to self or others, PMHNPs must initiate involuntary psychiatric holds. Every state has different laws (Baker Act in Florida, 5150 in California, etc.) with different criteria, time limits, required documentation, and procedures. Making an error - either failing to hold a dangerous patient or improperly detaining one - carries enormous legal and safety consequences. In crisis moments, PMHNPs need immediate access to their state's specific requirements.",
+    "who": "All PMHNPs, especially those in emergency, inpatient, and crisis settings",
+    "frequency": "monthly",
+    "time_waste_h": 3,
+    "money_risk_usd": 100000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "State Involuntary Hold Law Quick Reference",
+      "one_liner": "Instant lookup of involuntary psychiatric hold criteria, procedures, time limits, and documentation requirements by state",
+      "data_domain": "State-by-state involuntary psychiatric commitment laws and procedures",
+      "lookup_keys": [
+        "state",
+        "hold_type",
+        "patient_age",
+        "criteria"
+      ],
+      "data_hints": {
+        "source_law": "State mental health codes and involuntary commitment statutes",
+        "key_sections": [
+          "Florida Baker Act (394.463)",
+          "California WIC 5150",
+          "New York MHL 9.39",
+          "Texas Health & Safety Code 573",
+          "72-hour hold provisions by state"
+        ]
+      }
+    },
+    "example_queries": [
+      "What are the 5150 criteria and hold duration in California?",
+      "How do I initiate a Baker Act hold in Florida - what forms do I need?",
+      "Can a PMHNP initiate an involuntary hold in Texas or does it require a physician?"
+    ]
+  },
+  {
+    "id": "us-advanced-practice-psychiatric-nurses-p10",
+    "title": "Treatment Plan Generator",
+    "problem": "PMHNPs must create comprehensive treatment plans for every patient, typically reviewed every 90 days. Plans must include DSM-5 diagnoses, measurable goals, treatment modalities, medication rationale, and expected outcomes. Insurance companies and accreditation bodies (Joint Commission) audit treatment plans for compliance. Creating individualized, standards-compliant plans for 15 patients is time-consuming and often done after hours.",
+    "who": "All PMHNPs, especially in outpatient and community mental health settings",
+    "frequency": "weekly",
+    "time_waste_h": 6,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Psychiatric Treatment Plan Generator",
+      "one_liner": "Generates individualized psychiatric treatment plans with measurable goals, interventions, and review timelines",
+      "doc_name": "Psychiatric Treatment Plan",
+      "variables": [
+        {
+          "name": "diagnoses",
+          "label": "DSM-5 diagnoses with ICD-10 codes"
+        },
+        {
+          "name": "presenting_problems",
+          "label": "Current presenting problems"
+        },
+        {
+          "name": "severity",
+          "label": "Severity (mild/moderate/severe)"
+        },
+        {
+          "name": "medications",
+          "label": "Current medications"
+        },
+        {
+          "name": "therapy_modality",
+          "label": "Therapy approach (CBT/DBT/EMDR/supportive)"
+        },
+        {
+          "name": "patient_goals",
+          "label": "Patient-identified goals"
+        },
+        {
+          "name": "barriers",
+          "label": "Barriers to treatment"
+        },
+        {
+          "name": "review_date",
+          "label": "Next review date"
+        }
+      ],
+      "structure_hint": "Patient demographics -> DSM-5 diagnoses (primary and comorbid) -> Problem list with baseline measures (PHQ-9, GAD-7 scores) -> SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound) -> Interventions (medication management, psychotherapy type, frequency) -> Crisis plan -> Discharge criteria -> Review timeline (90 days) -> Patient/provider signatures"
+    },
+    "example_queries": [
+      "Generate a treatment plan for MDD moderate recurrent with GAD comorbidity, starting Lexapro and weekly CBT",
+      "Create a treatment plan for PTSD with substance use disorder, planning EMDR and Prazosin",
+      "Update treatment plan - patient met PHQ-9 goal, need new objectives for maintenance phase"
+    ]
+  },
+  {
+    "id": "us-advanced-practice-psychiatric-nurses-p11",
+    "title": "Psychiatric Medication Side Effect & Monitoring Guide",
+    "problem": "Each class of psychotropic medication requires specific monitoring - metabolic panels for antipsychotics (metabolic syndrome risk), lithium levels and thyroid/renal function for mood stabilizers, liver function for valproate, CBC for clozapine (REMS program). PMHNPs must remember which labs to order, at what intervals, and what values require intervention. Missing monitoring can result in serious adverse events and malpractice liability.",
+    "who": "All prescribing PMHNPs, especially those managing antipsychotics, mood stabilizers, and clozapine",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Psychotropic Medication Monitoring Reference",
+      "one_liner": "Quick reference for required lab monitoring, intervals, and critical values for all major psychotropic medication classes",
+      "data_domain": "Psychotropic medication monitoring requirements, lab schedules, and critical thresholds",
+      "lookup_keys": [
+        "medication_class",
+        "specific_drug",
+        "monitoring_type",
+        "time_interval"
+      ],
+      "data_hints": {
+        "source_law": "FDA prescribing information, APA Practice Guidelines, Clozapine REMS Program requirements",
+        "key_sections": [
+          "Antipsychotic metabolic monitoring (ADA/APA consensus)",
+          "Lithium therapeutic range 0.6-1.2 mEq/L",
+          "Clozapine REMS ANC monitoring",
+          "Valproate hepatic monitoring",
+          "SSRI/SNRI hyponatremia monitoring in elderly"
+        ]
+      }
+    },
+    "example_queries": [
+      "What labs do I need to order before starting Seroquel and how often do I repeat them?",
+      "Clozapine monitoring schedule - when do I check ANC after initiation?",
+      "My patient on Lithium has a level of 1.4 - what do I do?"
+    ]
+  },
+  {
+    "id": "us-advanced-practice-psychiatric-nurses-p12",
+    "title": "Scope of Practice by State Advisor",
+    "problem": "PMHNP scope of practice varies dramatically across states - 28 states + DC allow full practice authority while others require physician collaboration or supervision. Rules differ for prescriptive authority (especially controlled substances), practice agreements, and telehealth across state lines. With the Nurse Licensure Compact and expanding full practice authority (California SB 1451 in 2026), the landscape is constantly changing. PMHNPs expanding into telehealth or relocating need current state-specific guidance.",
+    "who": "PMHNPs considering multi-state practice, telehealth expansion, or relocation",
+    "frequency": "monthly",
+    "time_waste_h": 4,
+    "money_risk_usd": 25000,
+    "source": "regulatory",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "PMHNP Scope of Practice State Advisor",
+      "one_liner": "Advises on state-specific PMHNP scope of practice, prescriptive authority, collaboration requirements, and telehealth rules",
+      "expertise_area": "PMHNP state practice authority, prescriptive authority, collaborative practice agreements, and interstate telehealth regulations",
+      "decision_criteria": [
+        "state",
+        "practice_setting",
+        "controlled_substance_schedule",
+        "telehealth_vs_in_person",
+        "compact_membership"
+      ],
+      "context_needed": [
+        "regulatory.licensing",
+        "regulatory.laws",
+        "regulatory.penalties"
+      ]
+    },
+    "example_queries": [
+      "I'm a PMHNP in Texas - do I need a collaborative physician to prescribe Schedule II medications?",
+      "Can I do telehealth with patients in Florida if I'm licensed in New York?",
+      "What changed with California SB 1451 for PMHNPs in 2026?"
+    ]
+  },
+  {
+    "id": "us-advanced-practice-psychiatric-nurses-p13",
+    "title": "Private Practice Startup Financial Calculator",
+    "problem": "Many experienced PMHNPs want to open private practices but struggle with financial projections. They need to calculate startup costs, monthly overhead, required patient volume to break even, insurance vs cash-pay revenue modeling, and tax obligations as a business owner. Poor financial planning leads to practice failure or unsustainable patient loads.",
+    "who": "PMHNPs transitioning to private practice ownership",
+    "frequency": "quarterly",
+    "time_waste_h": 10,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "PMHNP Private Practice Financial Calculator",
+      "one_liner": "Calculates startup costs, monthly overhead, break-even patient volume, and revenue projections for a PMHNP private practice",
+      "inputs": [
+        {
+          "name": "practice_type",
+          "type": "string",
+          "label": "Practice type (solo/group/telehealth-only)"
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "label": "State"
+        },
+        {
+          "name": "payer_mix",
+          "type": "string",
+          "label": "Payer mix (% insurance vs cash-pay)"
+        },
+        {
+          "name": "avg_session_rate",
+          "type": "number",
+          "label": "Average session rate (USD)"
+        },
+        {
+          "name": "patients_per_day",
+          "type": "number",
+          "label": "Target patients per day"
+        },
+        {
+          "name": "days_per_week",
+          "type": "number",
+          "label": "Days per week"
+        },
+        {
+          "name": "rent_monthly",
+          "type": "number",
+          "label": "Monthly office rent (USD, 0 if telehealth-only)"
+        },
+        {
+          "name": "ehr_monthly",
+          "type": "number",
+          "label": "Monthly EHR cost (USD)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "startup_cost",
+          "label": "Estimated startup costs (USD)"
+        },
+        {
+          "name": "monthly_overhead",
+          "label": "Monthly overhead (USD)"
+        },
+        {
+          "name": "monthly_revenue",
+          "label": "Projected monthly gross revenue (USD)"
+        },
+        {
+          "name": "breakeven_patients",
+          "label": "Break-even patients per month"
+        },
+        {
+          "name": "annual_net_income",
+          "label": "Projected annual net income (USD)"
+        },
+        {
+          "name": "tax_estimate",
+          "label": "Estimated quarterly tax payment (USD)"
+        }
+      ],
+      "formula_hint": "Revenue = patients_per_day * days_per_week * 4.33 * avg_rate * collection_rate(~85% insurance, 98% cash). Overhead = rent + EHR + malpractice($3K-6K/yr) + billing(5-8% revenue) + licensing + CE + phone/internet. Self-employment tax = 15.3% on net. Break-even = monthly_overhead / avg_net_per_visit.",
+      "rates": {
+        "insurance_collection_rate": 0.85,
+        "cash_collection_rate": 0.98,
+        "self_employment_tax": 0.153,
+        "billing_service_pct": 0.06
+      }
+    },
+    "example_queries": [
+      "Calculate break-even for a solo telehealth practice seeing 8 patients per day at $200 average rate",
+      "What are realistic startup costs for opening a PMHNP private practice in California?",
+      "Compare revenue projections for 60% insurance vs 100% cash-pay practice"
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-emergency-medicine-physicians",
+  "profession_name": "Emergency Medicine Physicians",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Work in high-acuity emergency departments seeing critically ill and injured patients. Shifts typically 8-12 hours with variable scheduling (days, nights, weekends). See 2-3 patients per hour. Rapid assessment, stabilization, diagnosis, and treatment. Manage trauma, cardiac arrests, strokes, sepsis, and psychiatric emergencies. Supervise residents, coordinate with specialists for admissions. Heavy documentation burden in EHR between and after patient encounters.",
+    "key_documents": ["Emergency medical records (EHR documentation)", "H&P (History and Physical) notes", "Procedure notes", "Discharge instructions", "Transfer documentation", "Medical screening exams (EMTALA)", "Prescription records", "Toxicology/lab results", "Imaging orders and reads"],
+    "deadlines": "EMTALA compliance (immediate screening requirement). Time-critical diagnoses (STEMI, stroke, sepsis protocols). Board certification maintenance (ABEM). CME credits. State license renewal. DEA registration. Hospital credentialing cycles.",
+    "seasonality": "Flu season increases volume (October-March). Holiday weekends increase trauma. Summer increases pediatric injuries. Mental health crises peak during certain periods. Volume generally higher in winter months."
+  },
+  "regulatory": {
+    "laws_and_standards": ["EMTALA (Emergency Medical Treatment and Labor Act) - mandatory screening and stabilization", "State medical licensing requirements", "ABEM board certification", "CMS Medicare/Medicaid compliance", "HIPAA patient privacy", "MACRA/MIPS quality reporting", "State scope of practice laws for emergency medicine", "Controlled substance prescribing regulations"],
+    "licensing": "MD or DO degree required. Emergency Medicine residency (3-4 years). State medical license. Board certification by ABEM (American Board of Emergency Medicine) or AOBEM. DEA registration. Some states removing invasive mental health questions from licensing (70+ boards by Jan 2026). Maintenance of certification every 10 years.",
+    "penalties": "EMTALA violations: civil monetary penalties up to $119,942 per violation, exclusion from Medicare. Malpractice liability (high-risk specialty). State medical board disciplinary actions. CMS penalties for quality non-compliance. DEA penalties for prescribing violations.",
+    "regulatory_bodies": ["State Medical Boards", "ABEM (American Board of Emergency Medicine)", "CMS (Centers for Medicare & Medicaid Services)", "DEA", "Joint Commission", "OSHA (for workplace safety)"]
+  },
+  "tools": {
+    "software": ["Epic (dominant EHR in large EDs)", "Cerner/Oracle Health", "MEDITECH", "T-System - ED-specific documentation", "MDCalc - clinical decision support calculators", "VisualDx - clinical decision support", "Butterfly iQ - point-of-care ultrasound"],
+    "platforms": ["PACS (picture archiving for imaging)", "UpToDate - clinical reference", "Epocrates - drug reference", "Doximity - physician networking", "Telehealth platforms for telestroke/telecardiology", "Point-of-care ultrasound (POCUS) systems", "Patient tracking boards (ED information systems)"],
+    "gov_portals": ["CMS QPP Portal (MIPS reporting)", "State medical board licensing portals", "DEA registration portal", "NPDB (National Practitioner Data Bank)", "CDC emergency preparedness resources"]
+  },
+  "terminology": {
+    "jargon": ["Triage (ESI levels 1-5)", "Resuscitation / Code Blue", "Trauma activation", "Door-to-balloon time (STEMI)", "Door-to-needle time (stroke)", "EMTALA screening", "Medical screening exam (MSE)", "Boarding (admitted patients waiting in ED)", "Fast track (lower acuity area)", "POCUS (Point-of-Care Ultrasound)"],
+    "abbreviations": ["ED - Emergency Department", "EM - Emergency Medicine", "ABEM - American Board of Emergency Medicine", "EMTALA - Emergency Medical Treatment and Labor Act", "ESI - Emergency Severity Index", "STEMI - ST-Elevation Myocardial Infarction", "tPA - tissue Plasminogen Activator", "RSI - Rapid Sequence Intubation", "GCS - Glasgow Coma Scale", "FAST - Focused Assessment with Sonography in Trauma", "AMS - Altered Mental Status", "LWBS - Left Without Being Seen"]
+  },
+  "career_psychology": {
+    "career_levels": ["Emergency Medicine Resident (3-4 years)", "Early-Career Attending (0-5 years)", "Mid-Career Attending (5-15 years)", "Senior Attending / Medical Director (15+ years)", "Department Chair / CMO", "Academic: Assistant → Associate → Full Professor"],
+    "fears": ["Burnout and emotional exhaustion (historically highest burnout specialty)", "Violence from patients", "Missing critical diagnoses under time pressure", "Malpractice lawsuits (high-risk specialty)", "Workforce oversupply projected by 2030 (~9,400 surplus)", "Declining clinical hours with stagnant pay", "Moral injury from systemic healthcare failures"],
+    "motivation": "Saving lives in acute emergencies; adrenaline and intellectual challenge; variety of cases; shift-based work (no call from home); camaraderie among ED staff. 47% burnout rate improving from 53% (2023→2025). Pay increased 31% over past decade while clinical hours decreased 12%.",
+    "burnout": "EM consistently among highest burnout specialties. 47% report burnout (down from 53% in 2023). Bureaucratic tasks cited as primary cause. ED boarding and crowding major stressors. Violence against ED staff increasing. 70+ state boards removed invasive mental health licensing questions by Jan 2026. Companies and health systems implementing wellness programs."
+  },
+  "community": {
+    "reddit": ["r/emergencymedicine", "r/medicine", "r/Residency", "r/physicians", "r/ems"],
+    "linkedin": ["ACEP community", "Emergency Medicine Physicians group", "Emergency Nursing network"],
+    "associations": ["ACEP (American College of Emergency Physicians)", "AAEM (American Academy of Emergency Medicine)", "SAEM (Society for Academic Emergency Medicine)", "EMRA (Emergency Medicine Residents' Association)", "NAEMSP (National Association of EMS Physicians)"],
+    "conferences": ["ACEP Scientific Assembly - October (ACEP26: Chicago, Oct 5-8, 2026)", "SAEM Annual Meeting - May", "AAEM Scientific Assembly - March", "CORD Academic Assembly - for educators", "Emergency Medicine Update conferences (regional)"]
+  },
+  "market": {
+    "salary_by_level": {
+      "early_career_usd": 300000,
+      "mid_career_community_usd": 374000,
+      "academic_usd": 260000,
+      "senior_director_usd": 432000
+    },
+    "average_salary_usd": 388000,
+    "job_count_estimate": "About 45,500 emergency medicine physicians in the US. 64,109 active job openings. However, workforce projections suggest potential surplus of ~9,400 by 2030. Concentrated in hospital EDs with rural areas underserved.",
+    "work_arrangements": "Hospital-based shift work (8-12 hour shifts). No on-call from home (shift-based). Community hospitals, academic medical centers, freestanding EDs. Locum tenens common ($150-300/hour). Rural positions pay more but harder to fill. Some telehealth (telestroke, tele-EM). CMG (contract management group) employment vs. hospital-employed vs. independent group.",
+    "trends": ["Burnout rates improving (47% in 2025, down from 53% in 2023)", "Workforce surplus projected by 2030 creating job market concern", "Locum tenens growing as flexible work option", "AI-assisted triage and decision support tools", "ED boarding crisis driving policy discussions", "Mental health licensing questions being removed nationwide", "Pay up 31% over decade but satisfaction varies", "Telehealth expanding EM reach to rural areas", "Ranked 15th of 29 specialties in compensation"]
+  },
+  "quality_score": 0.87,
+  "sources_count": 7,
+  "verified_sources": 6
+}

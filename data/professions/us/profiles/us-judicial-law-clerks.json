@@ -1,0 +1,241 @@
+{
+  "profession_id": "us-judicial-law-clerks",
+  "profession_name": "Judicial Law Clerks",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Judicial law clerks assist judges with legal research, opinion drafting, and case preparation. Typically a 1-2 year post-graduate position at federal or state courts. Intensive legal research and writing with long hours during active case cycles.",
+    "typical_tasks": [
+      "Researching legal issues, statutes, and case law for pending cases",
+      "Drafting bench memoranda analyzing legal arguments for the judge",
+      "Drafting judicial opinions, orders, and decisions",
+      "Reviewing attorneys' briefs, motions, and submitted evidence",
+      "Preparing case summaries and recommendations",
+      "Attending oral arguments and trial proceedings",
+      "Proofreading and cite-checking judicial opinions",
+      "Managing the judge's case docket and calendar",
+      "Communicating with attorneys on procedural matters",
+      "Assisting with case management and administrative tasks"
+    ],
+    "key_documents": [
+      "Bench memoranda (internal legal analysis for the judge)",
+      "Draft judicial opinions and orders",
+      "Legal research memoranda",
+      "Case summaries and docket sheets",
+      "Attorney briefs and motions (for review)",
+      "Jury instructions (trial courts)",
+      "Sentencing memoranda (criminal cases)"
+    ],
+    "deadlines": {
+      "bench_memo": "Typically due days before hearing or conference",
+      "draft_opinion": "Varies — weeks to months depending on complexity",
+      "cert_petitions": "SCOTUS clerks: review cycle aligned with Court's conference schedule",
+      "motion_review": "Often same-week turnaround for time-sensitive motions",
+      "term_end": "Push to clear docket before end of clerkship or court term"
+    },
+    "seasonality": "Federal court terms run October-June (SCOTUS). Workload peaks around oral argument schedules and opinion-release periods. State court calendars vary."
+  },
+  "regulatory": {
+    "summary": "No separate professional license required. Must hold J.D. from ABA-accredited law school. Federal clerkships use OSCAR (Online System for Clerkship Application and Review) for hiring. Subject to judicial ethics and confidentiality requirements.",
+    "key_laws": [
+      {
+        "name": "OSCAR (Online System for Clerkship Application and Review)",
+        "description": "Centralized federal clerkship application system",
+        "url": "https://oscar.uscourts.gov"
+      },
+      {
+        "name": "Code of Conduct for Judicial Employees",
+        "description": "Ethical standards for law clerks and other judicial staff"
+      },
+      {
+        "name": "Judiciary Salary Plan (JSP)",
+        "description": "Federal pay scale for judicial employees including law clerks"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Juris Doctor (J.D.) from ABA/AALS-accredited law school",
+        "Typically upper third of law school class",
+        "Strong legal writing skills and law review experience preferred",
+        "Bar admission not always required at start but typically expected",
+        "Federal clerkships: apply through OSCAR",
+        "Security clearance may be required for certain courts"
+      ]
+    },
+    "recent_changes": "New OSCAR positions posted February 2026. Clerkship hiring timelines continue to shift. Some judges moving to earlier hiring cycles. Remote/hybrid clerkship arrangements expanding post-pandemic."
+  },
+  "tools": {
+    "summary": "Legal research databases (Westlaw, LexisNexis) are the primary work tools. Federal courts use CM/ECF for case management. Word processing for opinion drafting.",
+    "primary_tools": [
+      {
+        "name": "Westlaw",
+        "description": "Primary legal research database for case law, statutes, secondary sources"
+      },
+      {
+        "name": "LexisNexis",
+        "description": "Comprehensive legal research platform"
+      },
+      {
+        "name": "CM/ECF",
+        "description": "Federal court electronic case filing and management system"
+      },
+      {
+        "name": "Word processing",
+        "description": "Microsoft Word (most courts) or WordPerfect (some federal courts still use)",
+        "note": "Many federal courts maintain specific formatting requirements"
+      }
+    ],
+    "secondary_tools": [
+      "Bloomberg Law (supplementary legal research)",
+      "HeinOnline (legal periodicals and legislative history)",
+      "Federal Sentencing Guidelines resources",
+      "PACER for accessing court records",
+      "Bluebook citation manual"
+    ],
+    "pain_points": [
+      "Outdated technology in some courthouses",
+      "Some courts still using WordPerfect",
+      "Limited IT support compared to law firms",
+      "Restricted internet access in secure environments",
+      "Volume of research required for complex cases"
+    ]
+  },
+  "terminology": {
+    "summary": "Legal and judicial terminology with emphasis on research, opinion drafting, and court procedure vocabulary.",
+    "terms": {
+      "bench memo": "Internal memorandum from clerk to judge analyzing a pending case or motion",
+      "cert": "Certiorari — SCOTUS process for selecting cases to hear",
+      "cert pool": "Shared law clerk system for reviewing cert petitions (SCOTUS)",
+      "opinion": "Formal written decision of the court",
+      "per curiam": "Opinion issued by the court collectively, not attributed to a single judge",
+      "slip opinion": "Early version of court opinion released before official publication",
+      "term clerk": "Law clerk hired for a defined term (usually 1-2 years)",
+      "career clerk": "Permanent law clerk (no term limit)",
+      "elbow clerk": "Clerk working directly for a single judge (most common)",
+      "staff attorney": "Permanent court employee performing clerk-like research functions",
+      "OSCAR": "Online System for Clerkship Application and Review — federal clerkship hiring portal",
+      "chambers": "Judge's office and the judge's immediate staff",
+      "on the merits": "Substantive legal analysis (as opposed to procedural)",
+      "distinguishing": "Explaining why a cited case doesn't apply to the present case",
+      "Shepardize/KeyCite": "Verify a case is still good law using LexisNexis/Westlaw"
+    }
+  },
+  "career_psychology": {
+    "summary": "Prestigious post-graduate position considered the gold standard of early legal careers. Federal clerkships pay $75K+ and open doors to BigLaw (with signing bonuses of $50-100K+). Intellectually demanding but time-limited, reducing burnout risk.",
+    "career_path": [
+      "Law school (J.D., 3 years) — top of class, law review, moot court",
+      "Apply through OSCAR (federal) or directly (state courts)",
+      "1-2 year clerkship at trial or appellate court",
+      "BigLaw associate (with clerkship bonus: $50,000-$100,000+)",
+      "Government service (DOJ, public interest, U.S. Attorney)",
+      "Additional clerkship at higher court (e.g., circuit → SCOTUS)",
+      "Academic career (law professor)",
+      "Career clerk (permanent position at court)"
+    ],
+    "salary_range": {
+      "federal_jsp_11": "$68,000 - $75,000 (entry, no prior experience)",
+      "federal_jsp_12": "$82,000 - $90,000 (1+ year experience)",
+      "federal_jsp_13": "$97,000 - $107,000 (2+ years experience)",
+      "state_clerkship": "$52,000 - $65,000",
+      "post_clerkship_biglaw_bonus": "$50,000 - $100,000+ signing bonus",
+      "career_clerk": "$90,000 - $130,000"
+    },
+    "fears": [
+      "Not meeting judge's exacting standards",
+      "Making an error in legal analysis that affects a case outcome",
+      "Maintaining confidentiality of deliberations",
+      "Overwhelming workload during busy periods",
+      "Limited time to find post-clerkship employment"
+    ],
+    "motivation": [
+      "Working at the highest level of legal analysis",
+      "Learning directly from experienced judges",
+      "Prestige and career advancement",
+      "Significant BigLaw bonuses post-clerkship",
+      "Intellectual stimulation and variety of cases",
+      "Public service and contribution to justice system"
+    ],
+    "burnout_factors": [
+      "Long hours during active case periods",
+      "Pressure to produce perfect legal analysis",
+      "Isolation from peers (small chambers staff)",
+      "Weight of consequential decisions",
+      "Time-limited nature reduces long-term burnout but intensity is high"
+    ]
+  },
+  "community": {
+    "summary": "Clerkship community built through law school networks, OSCAR, and alumni connections. Federal Judicial Center provides resources. Post-clerkship alumni networks are powerful career assets.",
+    "associations": [
+      {
+        "name": "Federal Judicial Center (FJC)",
+        "url": "https://www.fjc.gov",
+        "type": "Education and orientation for new law clerks"
+      },
+      {
+        "name": "OSCAR",
+        "url": "https://oscar.uscourts.gov",
+        "type": "Federal clerkship application and hiring platform"
+      },
+      {
+        "name": "ABA Judicial Clerkship Section",
+        "type": "Resources and networking for clerks and aspiring clerks"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "r/LawSchool",
+        "url": "https://reddit.com/r/LawSchool",
+        "description": "Reddit community with active clerkship discussions"
+      },
+      {
+        "name": "Above the Law",
+        "url": "https://abovethelaw.com",
+        "description": "Legal news site with clerkship coverage"
+      },
+      {
+        "name": "Law school career services offices",
+        "description": "Primary resource for clerkship guidance"
+      }
+    ],
+    "events": [
+      "FJC Law Clerk Orientation (annual)",
+      "Law school judicial clerkship panels",
+      "OSCAR application cycles"
+    ]
+  },
+  "market": {
+    "summary": "Highly competitive, limited positions. Federal clerkships are the most prestigious. New OSCAR positions posted February 2026. Post-clerkship opportunities are extremely strong — BigLaw, government, and academia all value clerkship experience.",
+    "demand_forecast": {
+      "federal_clerkships": "~2,000 active federal clerkship positions at any time",
+      "state_clerkships": "Thousands more at state courts across 50 states",
+      "competitiveness": "Extremely competitive — top law school grades and credentials required"
+    },
+    "salary_market": {
+      "federal_entry": "$68,000 - $75,000",
+      "state": "$52,000 - $65,000",
+      "post_clerkship_bonus": "$50,000 - $100,000+ at BigLaw"
+    },
+    "market_trends": [
+      "Clerkship hiring timelines continuing to shift",
+      "Remote/hybrid clerkship arrangements growing",
+      "Diversity initiatives expanding clerkship access",
+      "BigLaw clerkship bonuses remaining high",
+      "Growing number of career clerk positions",
+      "Technology changing legal research workflows"
+    ]
+  },
+  "quality_score": 0.79,
+  "sources_count": 24,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "judicial law clerk USA 2025 2026 salary duties career path federal state clerkship hiring",
+      "sources": [
+        {"title": "OSCAR — Qualifications, Salary, Benefits", "url": "https://oscar.uscourts.gov/qualifications_salary_benefits"},
+        {"title": "Judiciary Salary Plan Pay Rates", "url": "https://www.uscourts.gov/careers/compensation/judiciary-salary-plan-pay-rates"},
+        {"title": "Clerkships offer prestige, pay and career value", "url": "https://nationaljurist.com/judicial-clerkships-offer-prestige-pay-and-career-value-for-law-graduates/"},
+        {"title": "Salary.com — Federal Judicial Law Clerk", "url": "https://www.salary.com/research/salary/hiring/federal-judicial-law-clerk-salary"}
+      ]
+    }
+  ]
+}

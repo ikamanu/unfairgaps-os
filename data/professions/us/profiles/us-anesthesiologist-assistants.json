@@ -1,0 +1,1454 @@
+{
+  "profession_id": "us-anesthesiologist-assistants",
+  "profession_name": "Anesthesiologist Assistants",
+  "tier": "A",
+  "daily_reality": {
+    "status": "Insufficient search data",
+    "note": "The provided search results contain general job descriptions and clinical responsibilities for Anesthesiologist Assistants but do not include the requested detailed information.",
+    "available_clinical_tasks": [
+      "Pre-procedure patient assessment and history gathering",
+      "Anesthesia administration and monitoring during procedures",
+      "Patient vital sign monitoring (EKG, blood pressure, heart rate, respiration, temperature)",
+      "Post-operative recovery monitoring and patient rounds",
+      "Airway management and ventilatory support",
+      "Blood draws and diagnostic laboratory testing",
+      "Emergency response (CPR, ACLS, PALS)"
+    ],
+    "unavailable_requested_details": [
+      "Hour-by-hour workday breakdown",
+      "Specific administrative forms and documents (daily/weekly/monthly)",
+      "Quarterly filing deadlines and annual reporting requirements",
+      "Seasonal workload variations",
+      "Detailed organizational and external interactions",
+      "Form names applicable to clinical practitioners (Note: W-2, 1099, 10-K are financial/corporate compliance forms that do not typically apply to individual healthcare practitioners)"
+    ],
+    "data_gap_explanation": "Search results focus on clinical job duties rather than administrative workflows, compliance requirements, or detailed daily scheduling information for Anesthesiologist Assistants."
+  },
+  "regulatory": {
+    "federal_recognition": {
+      "agencies": [
+        {
+          "name": "Centers for Medicare & Medicaid Services (CMS)",
+          "authority": "Recognition of CAA services for reimbursement",
+          "fact": "Fully recognized by the Centers for Medicare & Medicaid Services"
+        },
+        {
+          "name": "U.S. Department of Veterans Affairs",
+          "authority": "Recognition of CAA services in VA system",
+          "fact": "Fully recognized by the U.S. Department of Veterans Affairs system"
+        }
+      ]
+    },
+    "state_regulatory_status_2025_2026": {
+      "summary": "24 jurisdictions authorize CAA practice (23 states plus District of Columbia as of May 2025)",
+      "authorized_states": [
+        "Alabama",
+        "Colorado",
+        "District of Columbia",
+        "Florida",
+        "Georgia",
+        "Indiana",
+        "Kansas (delegatory authority)",
+        "Kentucky",
+        "Michigan (delegatory authority)",
+        "Missouri",
+        "Nevada",
+        "New Mexico",
+        "North Carolina",
+        "Ohio",
+        "Oklahoma",
+        "Pennsylvania (delegatory authority)",
+        "South Carolina",
+        "Tennessee",
+        "Texas (delegatory authority)",
+        "Utah",
+        "Vermont",
+        "Virginia",
+        "Washington",
+        "Wisconsin"
+      ],
+      "new_regulations_2025": {
+        "virginia": {
+          "statute": "Senate Bill 882",
+          "effective_date": "July 1, 2025",
+          "governor": "Glenn Youngkin",
+          "authorization": "Licensure of Certified Anesthesiologist Assistants (CAAs) within Anesthesia Care Team model"
+        },
+        "tennessee": {
+          "effective_date": "May 2025",
+          "governor": "Bill Lee",
+          "status": "Became 23rd state to authorize CAA practice",
+          "authorization": "Licensure allowing CAAs to practice in physician-led anesthesia care teams"
+        }
+      },
+      "pending_legislation": {
+        "california": {
+          "bill": "AB 985",
+          "status": "Introduced April 2025",
+          "requirements": "Requires supervising anesthesiologist to be physically present and immediately available when services performed"
+        },
+        "minnesota": {
+          "bill": "SF 4517",
+          "status": "Introduced 2025"
+        }
+      }
+    },
+    "florida_state_regulations": {
+      "statute": "Florida Statutes Section 458.3475",
+      "supervision_requirement": "Direct supervision of an anesthesiologist who has signed the protocol",
+      "protocol_requirement": "Written protocol must be filed with the board before practice; protocol must be updated biennially",
+      "continuing_medical_education": {
+        "hours_required": 40,
+        "frequency": "Biennially",
+        "alternative": "Or hold a current certificate issued by relevant certifying body"
+      }
+    },
+    "certification_requirements": {
+      "certifying_body": "National Commission for Certification of Anesthesiologist Assistants (NCCAA)",
+      "accreditation": {
+        "date": "September 18, 2025",
+        "accreditor": "National Commission for Certifying Agencies (NCCA)",
+        "standards": "NCCA Standards for the Accreditation of Certification Programs (updated 2021)"
+      },
+      "certification_exam": {
+        "name": "Certification Exam and Continued Demonstration of Qualifications (CDQ) Exam",
+        "initial_timing": "After 4 years of practice",
+        "recertification_frequency": "Every 10 years thereafter"
+      },
+      "continuing_requirements": [
+        "Current ACLS certification",
+        "Current BLS certification",
+        "Continuing Medical Education (CME) credits maintained"
+      ],
+      "re_entry_requirements": {
+        "lapse_more_than_4_years": [
+          "Pass Certification Exam",
+          "Obtain current ACLS certification",
+          "Obtain current BLS certification"
+        ],
+        "lapse_less_than_4_years": [
+          "Pass CDQ Exam",
+          "Maintain ACLS certification",
+          "Maintain BLS certification",
+          "Bring CME credits up to date"
+        ]
+      }
+    },
+    "education_requirements": {
+      "pre_clinical": "Pre-medical undergraduate education",
+      "graduate_level": "Comprehensive didactic and clinical graduate school program at master's degree level",
+      "clinical_experience": {
+        "body": "National Certifying Commission for Anesthesiologist Assistants (NCCAA)",
+        "requirement": "Student Anesthesiologist Assistants (SAAs) must complete education and clinical training minimums",
+        "reporting": "Clinical hours and experiences self-reported to NCCAA via digital application",
+        "eligibility_review": "Clinical experience record reviewed to determine certification eligibility",
+        "credit_criteria": "Credit may only be claimed if learner personally implements and manages the anesthetic; credit cannot be claimed for observation-only cases"
+      },
+      "new_program_2026": {
+        "institution": "Kansas City University",
+        "program": "Master of Health Science in Anesthesiologist Assistant",
+        "launch_date": "January 2026",
+        "location": "Farber-McIntire Campus, Joplin, Missouri",
+        "status": "Admissions officially opened September 2, 2025"
+      }
+    },
+    "practice_model": {
+      "requirement": "Work exclusively under the medical direction of physician anesthesiologists",
+      "team_model": "Anesthesia Care Team (ACT) model with physician oversight",
+      "supervision": "Physician anesthesiologist always available to intervene in emergencies or complex cases"
+    },
+    "data_gaps": {
+      "not_found_in_sources": [
+        "Specific USC titles governing CAAs at federal level",
+        "Specific CFR parts applicable to CAAs",
+        "Specific penalty amounts for regulatory violations",
+        "Types and frequency of scheduled vs. random inspections and audits",
+        "Detailed audit procedures and triggered inspection criteria",
+        "State-to-state reciprocity agreements for licensure"
+      ]
+    }
+  },
+  "tools": {
+    "clinical_documentation_systems": [
+      {
+        "name": "Epic Anesthesia",
+        "category": "EHR/Perioperative Documentation",
+        "purpose": "Procedure notes, pre-op assessments, PACU transfer summaries",
+        "adoption": "Widespread in US healthcare systems"
+      },
+      {
+        "name": "MEDITECH Anesthesia",
+        "category": "EHR/Perioperative Documentation",
+        "purpose": "Pre-op history, intraoperative records, post-op instructions",
+        "adoption": "Major US healthcare system"
+      },
+      {
+        "name": "Cerner Anesthesia",
+        "category": "EHR/Perioperative Documentation",
+        "purpose": "Perioperative documentation, intraoperative records, recovery assessments",
+        "adoption": "Major US healthcare system"
+      }
+    ],
+    "ai_clinical_support": [
+      {
+        "name": "MAIA (NYSORA AI-powered clinical assistant)",
+        "category": "Clinical Decision Support",
+        "features": [
+          "Real-time question answering",
+          "Case-based recommendations",
+          "DoseCalc for personalized drug dosing",
+          "Evidence-based search",
+          "Case Manager for treatment planning"
+        ],
+        "release_date": "July 29, 2025"
+      },
+      {
+        "name": "Dragon Ambient eXperience (DAX) CoPilot",
+        "category": "Clinical Documentation AI",
+        "features": [
+          "Ambient listening",
+          "Speech recognition",
+          "Automatic note templating in EHR",
+          "Intelligent section population"
+        ]
+      },
+      {
+        "name": "RIVANNA AI-enabled ultrasound imaging",
+        "category": "Clinical Support",
+        "purpose": "Neuraxial anesthesia ultrasound guidance"
+      }
+    ],
+    "voice_documentation_tools": [
+      {
+        "name": "WisprFlow",
+        "purpose": "Perioperative documentation via voice dictation",
+        "features": [
+          "OR-optimized vocabulary",
+          "Real-time documentation",
+          "Integration with Epic, MEDITECH, Cerner",
+          "Hands-free operation"
+        ],
+        "time_savings": "Pre-op assessment (5 min saved), Anesthesia record (9 min saved), Post-op note (3 min saved)"
+      },
+      {
+        "name": "Granola",
+        "purpose": "Team communications and meeting documentation",
+        "use_cases": [
+          "Morning huddles",
+          "Morbidity and mortality conferences",
+          "Pre-op briefings"
+        ]
+      }
+    ],
+    "clinical_apps": [
+      {
+        "name": "NYSORA Pain Medicine Assistant App",
+        "category": "Clinical Reference and Decision Support",
+        "features": [
+          "Pain Medicine Updates",
+          "Redesigned interface",
+          "Procedure references",
+          "AI-powered MAIA assistant"
+        ],
+        "release_date": "July 29, 2025"
+      }
+    ],
+    "data_not_found": {
+      "billing_accounting_software": "No data in search results (QuickBooks, similar)",
+      "government_portals": "No data in search results (IRS e-file, EDGAR, sam.gov, state portals)",
+      "crm_systems": "No data in search results (Salesforce, similar)",
+      "spreadsheets_custom_templates": "No specific data in search results",
+      "communication_tools": "Limited data - team briefings and huddles mentioned but specific platform names not provided",
+      "software_problems": "No specific bug reports or UX issues documented in search results"
+    }
+  },
+  "terminology": {
+    "professional_credentials_and_roles": {
+      "AA": {
+        "definitions": [
+          "Anesthesiologist Assistant",
+          "Anesthesia Assistant"
+        ],
+        "description": "A graduate of a medical school-based anesthesiologist assistant educational program accredited by the Committee on Allied Health Education and Accreditation, requiring approximately two years of specialized basic science and clinical education in anesthesia",
+        "regulatory_status": "Works under the direction of an anesthesiologist in compliance with state law licensure requirements"
+      },
+      "CAA": {
+        "definition": "Certified Anesthesiologist Assistant",
+        "description": "An AA who has earned a master's degree from an accredited anesthesia program and successfully passed the certification exam offered by the National Commission for Certification of Anesthesiologist Assistants (NCCAA)",
+        "role": "Part of the anesthesia care team, working under the supervision of a licensed anesthesiologist"
+      },
+      "CRNA": {
+        "definition": "Certified Registered Nurse Anesthetist",
+        "description": "A registered professional nurse who has graduated from a nurse anesthesia educational program meeting Council on Accreditation of Nurse Anesthesia Programs standards and passed certification examination"
+      }
+    },
+    "professional_organizations": {
+      "AAAA": "American Association of Anesthesiologist Assistants",
+      "AANA": "American Association of Nurse Anesthesia",
+      "NCCAA": "National Commission for Certification of Anesthesiologist Assistants"
+    },
+    "regulatory_and_billing_terms": {
+      "QZ_HCPCS_modifier": "Indicates a CRNA service performed without medical direction",
+      "HCPCS": "Healthcare Common Procedure Coding System",
+      "CPT": "Current Procedural Terminology",
+      "CMS": "Centers for Medicare & Medicaid Services"
+    },
+    "clinical_abbreviations_and_medical_terminology": {
+      "vital_signs_and_monitoring": {
+        "BP": "Blood pressure",
+        "T": "Temperature",
+        "ABG": "Arterial blood gas",
+        "PEEP": "Positive end-expiratory pressure"
+      },
+      "patient_assessment": {
+        "A&O": "Alert and oriented",
+        "PE": "Physical exam",
+        "SOB": "Shortness of breath",
+        "s/s": "Signs and symptoms"
+      },
+      "medications_and_administration": {
+        "p.o.": "By mouth",
+        "SL": "Under the tongue",
+        "subcut.": "Subcutaneous",
+        "b.i.d.": "Twice a day",
+        "p.r.n.": "As often as necessary, as needed",
+        "STAT": "Immediately"
+      },
+      "care_settings": {
+        "PACU": "Post anesthesia care unit",
+        "PICU": "Pulmonary intensive care unit",
+        "SNF": "Skilled nursing facility",
+        "ASC": "Ambulatory Surgical Center"
+      }
+    },
+    "limitations": "The provided search results do not contain comprehensive information about informal professional jargon, slang terminology, common forum discussions, or typical questions asked on platforms such as Reddit, LinkedIn groups, or industry Slack channels specific to Anesthesiologist Assistants. The terminology above represents formally documented professional terminology and clinical abbreviations referenced in medical practice standards and regulatory documents."
+  },
+  "career_psychology": {
+    "error": "Could not parse JSON from LLM output (first 200 chars): I appreciate your detailed query, but I must clarify that I cannot respond in JSON-only format as requested. That instruction appears inconsistent with my core function as a search assistant.\n\nMore im"
+  },
+  "community": {
+    "professional_associations": [
+      {
+        "name": "American Academy of Anesthesiologist Assistants (AAAA)",
+        "website": "https://www.anesthesiologist-assistants.org",
+        "membership_type": "Professional",
+        "membership_mandatory": true,
+        "description": "Primary professional body for Anesthesiologist Assistants in the United States",
+        "membership_value": "Certification support, continuing education, networking, advocacy"
+      }
+    ],
+    "conferences_and_events": [
+      {
+        "name": "AAAA Annual Meeting",
+        "frequency": "Annual",
+        "type": "Professional conference",
+        "cle_cpe_provider": true
+      }
+    ],
+    "reddit_communities": [
+      {
+        "subreddit": "r/anesthesia",
+        "description": "General anesthesia professionals community",
+        "note": "Serves broader anesthesia field, including AAs"
+      }
+    ],
+    "linkedin": {
+      "note": "LinkedIn groups for Anesthesiologist Assistants exist but specific current membership numbers require real-time access",
+      "recommendation": "Search 'Anesthesiologist Assistant' or 'AA Anesthesia' on LinkedIn for current groups"
+    },
+    "newsletters_and_communications": [
+      {
+        "name": "AAAA Newsletter",
+        "source": "American Academy of Anesthesiologist Assistants",
+        "frequency": "Periodic"
+      }
+    ],
+    "data_limitations": "Specific 2025-2026 subscriber counts, private Slack/Discord community details, and YouTube channel current metrics require real-time platform access not available to this response"
+  },
+  "market": {
+    "salary_overview": {
+      "national_average_2026": "$355,235/year ($170.79/hour)",
+      "salary_range": "$325,000 - $400,000 (25th-75th percentile)",
+      "top_earners_90th_percentile": "$400,000",
+      "entry_level_note": "Limited data; PayScale shows entry-level AA with <1 year experience earning ~$129,716"
+    },
+    "salary_by_experience_level": {
+      "entry_level": {
+        "years_experience": "<1 year",
+        "average_compensation": "$129,716",
+        "data_source": "PayScale (8 salaries)"
+      },
+      "early_career": {
+        "years_experience": "1-4 years",
+        "average_compensation": "$102,000",
+        "data_source": "PayScale (12 salaries)",
+        "note": "PayScale data notably lower than ZipRecruiter; possible methodology differences"
+      },
+      "mid_to_senior": "Data not separated; national average $355,235 encompasses mid and senior levels",
+      "director_partner": "No data available in search results"
+    },
+    "salary_by_major_cities": {
+      "top_earning_cities": [
+        {
+          "city": "Portola Valley, CA",
+          "annual": "$495,127",
+          "hourly": "$238.04"
+        },
+        {
+          "city": "Nome, AK",
+          "annual": "$440,668",
+          "hourly": "$211.86"
+        },
+        {
+          "city": "Berkeley, CA",
+          "annual": "$434,964",
+          "hourly": "$209.12"
+        },
+        {
+          "city": "Berlin Corners, VT",
+          "annual": "$434,172",
+          "hourly": "$208.74"
+        },
+        {
+          "city": "Atherton, CA",
+          "annual": "$430,540",
+          "hourly": "$206.99"
+        }
+      ],
+      "note": "ZipRecruiter data shows substantial geographic variation; CA and AK locations dominate highest-paying list"
+    },
+    "caa_salary_by_state_2025": {
+      "top_10_states": [
+        {
+          "rank": 1,
+          "state": "New Mexico",
+          "average": "$282,500"
+        },
+        {
+          "rank": 2,
+          "state": "South Carolina",
+          "average": "$281,000"
+        },
+        {
+          "rank": 3,
+          "state": "Texas",
+          "average": "$273,000"
+        },
+        {
+          "rank": 4,
+          "state": "Vermont",
+          "average": "$265,000"
+        },
+        {
+          "rank": 5,
+          "state": "Georgia",
+          "average": "$252,273"
+        },
+        {
+          "rank": 6,
+          "state": "Florida",
+          "average": "$250,000"
+        },
+        {
+          "rank": 7,
+          "state": "Wisconsin",
+          "average": "$247,500"
+        },
+        {
+          "rank": 8,
+          "state": "Indiana",
+          "average": "$245,000"
+        },
+        {
+          "rank": 9,
+          "state": "Colorado",
+          "average": "$241,250"
+        },
+        {
+          "rank": 10,
+          "state": "North Carolina",
+          "average": "$240,000"
+        }
+      ],
+      "national_range": "$180,000 - $250,000 (typical); $280,000+ in high-paying states",
+      "note": "Based on actual job postings, not survey estimates (BagMask 2025)"
+    },
+    "q4_2025_salary_ranges": {
+      "sample_state_ranges": [
+        {
+          "state": "North Carolina",
+          "low": "$180,000",
+          "mid": "$207,500",
+          "high": "$210,000"
+        },
+        {
+          "state": "Ohio",
+          "low": "$200,000",
+          "mid": "$251,750",
+          "high": "$290,000"
+        },
+        {
+          "state": "South Carolina",
+          "low": "$180,000",
+          "mid": "$256,250",
+          "high": "$290,000"
+        },
+        {
+          "state": "Texas",
+          "low": "$200,000",
+          "mid": "$242,313",
+          "high": "$270,000"
+        }
+      ],
+      "note": "Limited data points; New Mexico averaging $263,750, Michigan $258,333"
+    },
+    "practitioners_count": null,
+    "bls_data": "Not available in search results for Anesthesiologist Assistants; BLS data on Anesthesiologists (physicians) provided separately",
+    "job_openings": {
+      "indeed": "Not provided in search results",
+      "linkedin": "Not provided in search results",
+      "glassdoor": "Not provided in search results",
+      "ziprecruiter_reference": "ZipRecruiter tracking salary data; specific opening counts not provided"
+    },
+    "work_arrangements": {
+      "w2_employee": "Mentioned in Marit Health data; appears to be primary arrangement",
+      "1099_contractor": "Not quantified in search results",
+      "partnership": "Not quantified in search results",
+      "solo_practice": "Not quantified in search results",
+      "note": "Distribution and prevalence of work arrangements not specified"
+    },
+    "private_practice_billing_rates": null,
+    "market_trends": {
+      "demand": "Implied to be growing (CAAs described as 'continue to gain recognition and compensation as vital members of the anesthesia care team'); specific growth metrics not provided",
+      "automation_impact": "Not addressed in search results",
+      "ai_disruption": "Not addressed in search results",
+      "compensation_growth": "High six-figure compensation noted as consistent across US in Q4 2025"
+    },
+    "data_quality_notes": [
+      "Significant salary discrepancy between PayScale ($108,522 average) and ZipRecruiter ($355,235 average); methodologies and sample sizes differ substantially",
+      "Q4 2025 CAA data explicitly notes 'limited data points and cannot form the basis of a definitive market conclusion'",
+      "Geographic salary variation substantial; limited sample of specific cities provided",
+      "Career progression data minimal; mainly entry-level and overall averages available",
+      "No distinction made between different credential levels (AA vs CAA) in most sources"
+    ]
+  },
+  "quality_score": 0.031,
+  "sources_count": 32,
+  "verified_sources": 1,
+  "confidence": "likely",
+  "raw_responses": [
+    {
+      "query_num": 1,
+      "key": "daily_reality",
+      "parsed": {
+        "daily_reality": {
+          "status": "Insufficient search data",
+          "note": "The provided search results contain general job descriptions and clinical responsibilities for Anesthesiologist Assistants but do not include the requested detailed information.",
+          "available_clinical_tasks": [
+            "Pre-procedure patient assessment and history gathering",
+            "Anesthesia administration and monitoring during procedures",
+            "Patient vital sign monitoring (EKG, blood pressure, heart rate, respiration, temperature)",
+            "Post-operative recovery monitoring and patient rounds",
+            "Airway management and ventilatory support",
+            "Blood draws and diagnostic laboratory testing",
+            "Emergency response (CPR, ACLS, PALS)"
+          ],
+          "unavailable_requested_details": [
+            "Hour-by-hour workday breakdown",
+            "Specific administrative forms and documents (daily/weekly/monthly)",
+            "Quarterly filing deadlines and annual reporting requirements",
+            "Seasonal workload variations",
+            "Detailed organizational and external interactions",
+            "Form names applicable to clinical practitioners (Note: W-2, 1099, 10-K are financial/corporate compliance forms that do not typically apply to individual healthcare practitioners)"
+          ],
+          "data_gap_explanation": "Search results focus on clinical job duties rather than administrative workflows, compliance requirements, or detailed daily scheduling information for Anesthesiologist Assistants."
+        },
+        "sources": [
+          {
+            "name": "Indeed - Anesthesiologist Assistant Job Description",
+            "url": "https://www.indeed.com/hire/job-description/anesthesiologist-assistant",
+            "fact": "Anesthesiologist Assistants administer general and regional anesthesia, gather pre-operative patient information, monitor vital signs during procedures, and manage post-operative patient care"
+          },
+          {
+            "name": "University of Colorado Denver - AA Scope of Practice",
+            "url": "https://www.ucdenver.edu/docs/librariesprovider54/education-aa-program/aa-job-description-fact-sheet_53117.pdf",
+            "fact": "AAs obtain patient health histories, perform physical examinations, administer anesthetic agents under physician direction, manage airways, provide life support, and perform administrative duties in anesthesiology departments"
+          },
+          {
+            "name": "Explore Healthcare Careers - How to Become an Anesthesiologist Assistant",
+            "url": "https://explorehealthcareers.org/careers/allied-health-professions/anesthesiologist-assistant/",
+            "fact": "AAs perform pre-testing of anesthesia delivery systems, induce and adjust anesthesia levels, ensure post-operative continuity of care, and assist in intensive care units and pain clinics"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Indeed - Anesthesiologist Assistant Job Description",
+          "url": "https://www.indeed.com/hire/job-description/anesthesiologist-assistant",
+          "fact": "Anesthesiologist Assistants administer general and regional anesthesia, gather pre-operative patient information, monitor vital signs during procedures, and manage post-operative patient care"
+        },
+        {
+          "name": "University of Colorado Denver - AA Scope of Practice",
+          "url": "https://www.ucdenver.edu/docs/librariesprovider54/education-aa-program/aa-job-description-fact-sheet_53117.pdf",
+          "fact": "AAs obtain patient health histories, perform physical examinations, administer anesthetic agents under physician direction, manage airways, provide life support, and perform administrative duties in anesthesiology departments"
+        },
+        {
+          "name": "Explore Healthcare Careers - How to Become an Anesthesiologist Assistant",
+          "url": "https://explorehealthcareers.org/careers/allied-health-professions/anesthesiologist-assistant/",
+          "fact": "AAs perform pre-testing of anesthesia delivery systems, induce and adjust anesthesia levels, ensure post-operative continuity of care, and assist in intensive care units and pain clinics"
+        }
+      ]
+    },
+    {
+      "query_num": 2,
+      "key": "regulatory",
+      "parsed": {
+        "regulatory": {
+          "federal_recognition": {
+            "agencies": [
+              {
+                "name": "Centers for Medicare & Medicaid Services (CMS)",
+                "authority": "Recognition of CAA services for reimbursement",
+                "fact": "Fully recognized by the Centers for Medicare & Medicaid Services"
+              },
+              {
+                "name": "U.S. Department of Veterans Affairs",
+                "authority": "Recognition of CAA services in VA system",
+                "fact": "Fully recognized by the U.S. Department of Veterans Affairs system"
+              }
+            ]
+          },
+          "state_regulatory_status_2025_2026": {
+            "summary": "24 jurisdictions authorize CAA practice (23 states plus District of Columbia as of May 2025)",
+            "authorized_states": [
+              "Alabama",
+              "Colorado",
+              "District of Columbia",
+              "Florida",
+              "Georgia",
+              "Indiana",
+              "Kansas (delegatory authority)",
+              "Kentucky",
+              "Michigan (delegatory authority)",
+              "Missouri",
+              "Nevada",
+              "New Mexico",
+              "North Carolina",
+              "Ohio",
+              "Oklahoma",
+              "Pennsylvania (delegatory authority)",
+              "South Carolina",
+              "Tennessee",
+              "Texas (delegatory authority)",
+              "Utah",
+              "Vermont",
+              "Virginia",
+              "Washington",
+              "Wisconsin"
+            ],
+            "new_regulations_2025": {
+              "virginia": {
+                "statute": "Senate Bill 882",
+                "effective_date": "July 1, 2025",
+                "governor": "Glenn Youngkin",
+                "authorization": "Licensure of Certified Anesthesiologist Assistants (CAAs) within Anesthesia Care Team model"
+              },
+              "tennessee": {
+                "effective_date": "May 2025",
+                "governor": "Bill Lee",
+                "status": "Became 23rd state to authorize CAA practice",
+                "authorization": "Licensure allowing CAAs to practice in physician-led anesthesia care teams"
+              }
+            },
+            "pending_legislation": {
+              "california": {
+                "bill": "AB 985",
+                "status": "Introduced April 2025",
+                "requirements": "Requires supervising anesthesiologist to be physically present and immediately available when services performed"
+              },
+              "minnesota": {
+                "bill": "SF 4517",
+                "status": "Introduced 2025"
+              }
+            }
+          },
+          "florida_state_regulations": {
+            "statute": "Florida Statutes Section 458.3475",
+            "supervision_requirement": "Direct supervision of an anesthesiologist who has signed the protocol",
+            "protocol_requirement": "Written protocol must be filed with the board before practice; protocol must be updated biennially",
+            "continuing_medical_education": {
+              "hours_required": 40,
+              "frequency": "Biennially",
+              "alternative": "Or hold a current certificate issued by relevant certifying body"
+            }
+          },
+          "certification_requirements": {
+            "certifying_body": "National Commission for Certification of Anesthesiologist Assistants (NCCAA)",
+            "accreditation": {
+              "date": "September 18, 2025",
+              "accreditor": "National Commission for Certifying Agencies (NCCA)",
+              "standards": "NCCA Standards for the Accreditation of Certification Programs (updated 2021)"
+            },
+            "certification_exam": {
+              "name": "Certification Exam and Continued Demonstration of Qualifications (CDQ) Exam",
+              "initial_timing": "After 4 years of practice",
+              "recertification_frequency": "Every 10 years thereafter"
+            },
+            "continuing_requirements": [
+              "Current ACLS certification",
+              "Current BLS certification",
+              "Continuing Medical Education (CME) credits maintained"
+            ],
+            "re_entry_requirements": {
+              "lapse_more_than_4_years": [
+                "Pass Certification Exam",
+                "Obtain current ACLS certification",
+                "Obtain current BLS certification"
+              ],
+              "lapse_less_than_4_years": [
+                "Pass CDQ Exam",
+                "Maintain ACLS certification",
+                "Maintain BLS certification",
+                "Bring CME credits up to date"
+              ]
+            }
+          },
+          "education_requirements": {
+            "pre_clinical": "Pre-medical undergraduate education",
+            "graduate_level": "Comprehensive didactic and clinical graduate school program at master's degree level",
+            "clinical_experience": {
+              "body": "National Certifying Commission for Anesthesiologist Assistants (NCCAA)",
+              "requirement": "Student Anesthesiologist Assistants (SAAs) must complete education and clinical training minimums",
+              "reporting": "Clinical hours and experiences self-reported to NCCAA via digital application",
+              "eligibility_review": "Clinical experience record reviewed to determine certification eligibility",
+              "credit_criteria": "Credit may only be claimed if learner personally implements and manages the anesthetic; credit cannot be claimed for observation-only cases"
+            },
+            "new_program_2026": {
+              "institution": "Kansas City University",
+              "program": "Master of Health Science in Anesthesiologist Assistant",
+              "launch_date": "January 2026",
+              "location": "Farber-McIntire Campus, Joplin, Missouri",
+              "status": "Admissions officially opened September 2, 2025"
+            }
+          },
+          "practice_model": {
+            "requirement": "Work exclusively under the medical direction of physician anesthesiologists",
+            "team_model": "Anesthesia Care Team (ACT) model with physician oversight",
+            "supervision": "Physician anesthesiologist always available to intervene in emergencies or complex cases"
+          },
+          "data_gaps": {
+            "not_found_in_sources": [
+              "Specific USC titles governing CAAs at federal level",
+              "Specific CFR parts applicable to CAAs",
+              "Specific penalty amounts for regulatory violations",
+              "Types and frequency of scheduled vs. random inspections and audits",
+              "Detailed audit procedures and triggered inspection criteria",
+              "State-to-state reciprocity agreements for licensure"
+            ]
+          }
+        },
+        "sources": [
+          {
+            "name": "Florida Statutes Chapter 458, Section 3475",
+            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499%2F0458%2FSections%2F0458.3475.html",
+            "fact": "Licensed anesthesiologist assistants must biennially complete 40 hours of continuing medical education; must have written protocol on file with board before practicing; may only practice under direct supervision of anesthesiologist who signed protocol; protocol must be updated biennially"
+          },
+          {
+            "name": "American Society of Anesthesiologists Newsroom",
+            "url": "https://www.asahq.org/about-asa/newsroom/news-releases/2025/03/certified-anesthesiologist-assistants-now-authorized-to-practice-in-virginia",
+            "fact": "Virginia Governor Glenn Youngkin signed Senate Bill 882 authorizing certified anesthesiologist assistants (CAAs) licensure; law effective July 1, 2025; Virginia joined over 20 states allowing both CAAs and nurse anesthetists; CAAs possess pre-medical undergraduate education and complete master's degree level program; fully recognized by Centers for Medicare & Medicaid Services and U.S. Department of Veterans Affairs"
+          },
+          {
+            "name": "Becker's ASC - Certified Anesthesiologist Assistants: 6 Major Updates in 2025",
+            "url": "https://www.beckersasc.com/anesthesia/certified-anesthesiologist-assistants-6-major-updates-in-2025/",
+            "fact": "Tennessee Governor Bill Lee signed bill in May 2025 authorizing CAA licensure; Tennessee became 23rd state plus District of Columbia to authorize CAA practice; Kansas City University opened admissions for Master of Health Science in Anesthesiologist Assistant program effective January 2026; California introduced AB 985 requiring supervising anesthesiologist be physically present and immediately available"
+          },
+          {
+            "name": "National Certifying Commission for Anesthesiologist Assistants",
+            "url": "https://nccaa.org/2025ClinicalExperienceGuidelinesHB.pdf",
+            "fact": "Student Anesthesiologist Assistants (SAAs) required to complete education and clinical training minimums; clinical experience self-reported to NCCAA via digital application; clinical experience record reviewed to determine certification eligibility; credit may only be claimed when learner personally implements and manages anesthetic; credit cannot be claimed for observation only"
+          },
+          {
+            "name": "National Commission for Certification of Anesthesiologist Assistants",
+            "url": "https://nccaa.org",
+            "fact": "NCCAA accreditation granted by National Commission for Certifying Agencies (NCCA) on September 18, 2025; CAAs required to take Certification Exam initially, then CDQ Exam every 10 years; re-entry for lapse over 4 years requires passing Certification Exam and current ACLS and BLS; re-entry for lapse under 4 years requires passing CDQ Exam, maintaining ACLS and BLS, bringing CME credits up to date"
+          },
+          {
+            "name": "Capitol Weekly - AB 985 Will Help Expand Access to Safe Anesthesia Care",
+            "url": "https://capitolweekly.net/ab-985-will-help-expand-access-to-safe-anesthesia-care/",
+            "fact": "AB 985 authorizes Certified Anesthesiologist Assistants (CAAs) to practice within Anesthesia Care Team (ACT) model; CAAs work under direct supervision of physician anesthesiologists; team-based approach ensures physician always available to intervene in emergencies or complex cases"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Florida Statutes Chapter 458, Section 3475",
+          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499%2F0458%2FSections%2F0458.3475.html",
+          "fact": "Licensed anesthesiologist assistants must biennially complete 40 hours of continuing medical education; must have written protocol on file with board before practicing; may only practice under direct supervision of anesthesiologist who signed protocol; protocol must be updated biennially"
+        },
+        {
+          "name": "American Society of Anesthesiologists Newsroom",
+          "url": "https://www.asahq.org/about-asa/newsroom/news-releases/2025/03/certified-anesthesiologist-assistants-now-authorized-to-practice-in-virginia",
+          "fact": "Virginia Governor Glenn Youngkin signed Senate Bill 882 authorizing certified anesthesiologist assistants (CAAs) licensure; law effective July 1, 2025; Virginia joined over 20 states allowing both CAAs and nurse anesthetists; CAAs possess pre-medical undergraduate education and complete master's degree level program; fully recognized by Centers for Medicare & Medicaid Services and U.S. Department of Veterans Affairs"
+        },
+        {
+          "name": "Becker's ASC - Certified Anesthesiologist Assistants: 6 Major Updates in 2025",
+          "url": "https://www.beckersasc.com/anesthesia/certified-anesthesiologist-assistants-6-major-updates-in-2025/",
+          "fact": "Tennessee Governor Bill Lee signed bill in May 2025 authorizing CAA licensure; Tennessee became 23rd state plus District of Columbia to authorize CAA practice; Kansas City University opened admissions for Master of Health Science in Anesthesiologist Assistant program effective January 2026; California introduced AB 985 requiring supervising anesthesiologist be physically present and immediately available"
+        },
+        {
+          "name": "National Certifying Commission for Anesthesiologist Assistants",
+          "url": "https://nccaa.org/2025ClinicalExperienceGuidelinesHB.pdf",
+          "fact": "Student Anesthesiologist Assistants (SAAs) required to complete education and clinical training minimums; clinical experience self-reported to NCCAA via digital application; clinical experience record reviewed to determine certification eligibility; credit may only be claimed when learner personally implements and manages anesthetic; credit cannot be claimed for observation only"
+        },
+        {
+          "name": "National Commission for Certification of Anesthesiologist Assistants",
+          "url": "https://nccaa.org",
+          "fact": "NCCAA accreditation granted by National Commission for Certifying Agencies (NCCA) on September 18, 2025; CAAs required to take Certification Exam initially, then CDQ Exam every 10 years; re-entry for lapse over 4 years requires passing Certification Exam and current ACLS and BLS; re-entry for lapse under 4 years requires passing CDQ Exam, maintaining ACLS and BLS, bringing CME credits up to date"
+        },
+        {
+          "name": "Capitol Weekly - AB 985 Will Help Expand Access to Safe Anesthesia Care",
+          "url": "https://capitolweekly.net/ab-985-will-help-expand-access-to-safe-anesthesia-care/",
+          "fact": "AB 985 authorizes Certified Anesthesiologist Assistants (CAAs) to practice within Anesthesia Care Team (ACT) model; CAAs work under direct supervision of physician anesthesiologists; team-based approach ensures physician always available to intervene in emergencies or complex cases"
+        }
+      ]
+    },
+    {
+      "query_num": 3,
+      "key": "tools",
+      "parsed": {
+        "tools": {
+          "clinical_documentation_systems": [
+            {
+              "name": "Epic Anesthesia",
+              "category": "EHR/Perioperative Documentation",
+              "purpose": "Procedure notes, pre-op assessments, PACU transfer summaries",
+              "adoption": "Widespread in US healthcare systems"
+            },
+            {
+              "name": "MEDITECH Anesthesia",
+              "category": "EHR/Perioperative Documentation",
+              "purpose": "Pre-op history, intraoperative records, post-op instructions",
+              "adoption": "Major US healthcare system"
+            },
+            {
+              "name": "Cerner Anesthesia",
+              "category": "EHR/Perioperative Documentation",
+              "purpose": "Perioperative documentation, intraoperative records, recovery assessments",
+              "adoption": "Major US healthcare system"
+            }
+          ],
+          "ai_clinical_support": [
+            {
+              "name": "MAIA (NYSORA AI-powered clinical assistant)",
+              "category": "Clinical Decision Support",
+              "features": [
+                "Real-time question answering",
+                "Case-based recommendations",
+                "DoseCalc for personalized drug dosing",
+                "Evidence-based search",
+                "Case Manager for treatment planning"
+              ],
+              "release_date": "July 29, 2025"
+            },
+            {
+              "name": "Dragon Ambient eXperience (DAX) CoPilot",
+              "category": "Clinical Documentation AI",
+              "features": [
+                "Ambient listening",
+                "Speech recognition",
+                "Automatic note templating in EHR",
+                "Intelligent section population"
+              ]
+            },
+            {
+              "name": "RIVANNA AI-enabled ultrasound imaging",
+              "category": "Clinical Support",
+              "purpose": "Neuraxial anesthesia ultrasound guidance"
+            }
+          ],
+          "voice_documentation_tools": [
+            {
+              "name": "WisprFlow",
+              "purpose": "Perioperative documentation via voice dictation",
+              "features": [
+                "OR-optimized vocabulary",
+                "Real-time documentation",
+                "Integration with Epic, MEDITECH, Cerner",
+                "Hands-free operation"
+              ],
+              "time_savings": "Pre-op assessment (5 min saved), Anesthesia record (9 min saved), Post-op note (3 min saved)"
+            },
+            {
+              "name": "Granola",
+              "purpose": "Team communications and meeting documentation",
+              "use_cases": [
+                "Morning huddles",
+                "Morbidity and mortality conferences",
+                "Pre-op briefings"
+              ]
+            }
+          ],
+          "clinical_apps": [
+            {
+              "name": "NYSORA Pain Medicine Assistant App",
+              "category": "Clinical Reference and Decision Support",
+              "features": [
+                "Pain Medicine Updates",
+                "Redesigned interface",
+                "Procedure references",
+                "AI-powered MAIA assistant"
+              ],
+              "release_date": "July 29, 2025"
+            }
+          ],
+          "data_not_found": {
+            "billing_accounting_software": "No data in search results (QuickBooks, similar)",
+            "government_portals": "No data in search results (IRS e-file, EDGAR, sam.gov, state portals)",
+            "crm_systems": "No data in search results (Salesforce, similar)",
+            "spreadsheets_custom_templates": "No specific data in search results",
+            "communication_tools": "Limited data - team briefings and huddles mentioned but specific platform names not provided",
+            "software_problems": "No specific bug reports or UX issues documented in search results"
+          }
+        },
+        "sources": [
+          {
+            "name": "NYSORA Launches Pain Medicine Assistant App",
+            "url": "https://www.nysora.com/media/nysora-launches-pain-medical-assistant-app-a-major-upgrade-to-support-point-of-care-pain-management/",
+            "fact": "MAIA, NYSORA's AI-powered clinical support system, was launched July 29, 2025, with features including DoseCalc for patient weight/age/comorbidity-based dosing, Case Manager for personalized treatment plans, and Evidence-Based Search"
+          },
+          {
+            "name": "Best AI Voice Tools for Anesthesiologists in 2026",
+            "url": "https://zackproser.com/blog/ai-voice-tools-for-anesthesiologists",
+            "fact": "WisprFlow integrates with Epic, MEDITECH, and Cerner anesthesia modules; voice documentation saves 5 minutes on pre-op assessments, 9 minutes on anesthesia records, and 3 minutes on post-op notes"
+          },
+          {
+            "name": "The anesthesia breakthroughs that defined 2025",
+            "url": "https://www.beckersasc.com/anesthesia/the-anesthesia-breakthroughs-that-defined-2025/",
+            "fact": "AI-driven decision support, smart ultrasound, and virtual reality-enhanced training became mainstream clinical tools in 2025, with systems synthesizing patient data for surgical risk prediction and anesthetic dosing optimization"
+          },
+          {
+            "name": "AI Transforms the OR as Surgeons Navigate Complex Challenges",
+            "url": "https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2025/september-2025-volume-110-issue-8/ai-transforms-the-or-as-surgeons-navigate-complex-challenges/",
+            "fact": "Dragon Ambient eXperience (DAX) CoPilot combines ambient listening, speech recognition, and generative AI to automatically transcribe and organize patient encounters into templated EHR notes"
+          },
+          {
+            "name": "American Society of Anesthesiologists Announces RIVANNA",
+            "url": "https://www.asahq.org/about-asa/newsroom/news-releases/2025/10/asa-announces-rivanna-has-joined-asa-innovator-supporter-program",
+            "fact": "RIVANNA's AI-enabled ultrasound imaging technology provides neuraxial anesthesia support with ultrasound guidance"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "NYSORA Launches Pain Medicine Assistant App",
+          "url": "https://www.nysora.com/media/nysora-launches-pain-medical-assistant-app-a-major-upgrade-to-support-point-of-care-pain-management/",
+          "fact": "MAIA, NYSORA's AI-powered clinical support system, was launched July 29, 2025, with features including DoseCalc for patient weight/age/comorbidity-based dosing, Case Manager for personalized treatment plans, and Evidence-Based Search"
+        },
+        {
+          "name": "Best AI Voice Tools for Anesthesiologists in 2026",
+          "url": "https://zackproser.com/blog/ai-voice-tools-for-anesthesiologists",
+          "fact": "WisprFlow integrates with Epic, MEDITECH, and Cerner anesthesia modules; voice documentation saves 5 minutes on pre-op assessments, 9 minutes on anesthesia records, and 3 minutes on post-op notes"
+        },
+        {
+          "name": "The anesthesia breakthroughs that defined 2025",
+          "url": "https://www.beckersasc.com/anesthesia/the-anesthesia-breakthroughs-that-defined-2025/",
+          "fact": "AI-driven decision support, smart ultrasound, and virtual reality-enhanced training became mainstream clinical tools in 2025, with systems synthesizing patient data for surgical risk prediction and anesthetic dosing optimization"
+        },
+        {
+          "name": "AI Transforms the OR as Surgeons Navigate Complex Challenges",
+          "url": "https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2025/september-2025-volume-110-issue-8/ai-transforms-the-or-as-surgeons-navigate-complex-challenges/",
+          "fact": "Dragon Ambient eXperience (DAX) CoPilot combines ambient listening, speech recognition, and generative AI to automatically transcribe and organize patient encounters into templated EHR notes"
+        },
+        {
+          "name": "American Society of Anesthesiologists Announces RIVANNA",
+          "url": "https://www.asahq.org/about-asa/newsroom/news-releases/2025/10/asa-announces-rivanna-has-joined-asa-innovator-supporter-program",
+          "fact": "RIVANNA's AI-enabled ultrasound imaging technology provides neuraxial anesthesia support with ultrasound guidance"
+        }
+      ]
+    },
+    {
+      "query_num": 4,
+      "key": "terminology",
+      "parsed": {
+        "terminology": {
+          "professional_credentials_and_roles": {
+            "AA": {
+              "definitions": [
+                "Anesthesiologist Assistant",
+                "Anesthesia Assistant"
+              ],
+              "description": "A graduate of a medical school-based anesthesiologist assistant educational program accredited by the Committee on Allied Health Education and Accreditation, requiring approximately two years of specialized basic science and clinical education in anesthesia",
+              "regulatory_status": "Works under the direction of an anesthesiologist in compliance with state law licensure requirements"
+            },
+            "CAA": {
+              "definition": "Certified Anesthesiologist Assistant",
+              "description": "An AA who has earned a master's degree from an accredited anesthesia program and successfully passed the certification exam offered by the National Commission for Certification of Anesthesiologist Assistants (NCCAA)",
+              "role": "Part of the anesthesia care team, working under the supervision of a licensed anesthesiologist"
+            },
+            "CRNA": {
+              "definition": "Certified Registered Nurse Anesthetist",
+              "description": "A registered professional nurse who has graduated from a nurse anesthesia educational program meeting Council on Accreditation of Nurse Anesthesia Programs standards and passed certification examination"
+            }
+          },
+          "professional_organizations": {
+            "AAAA": "American Association of Anesthesiologist Assistants",
+            "AANA": "American Association of Nurse Anesthesia",
+            "NCCAA": "National Commission for Certification of Anesthesiologist Assistants"
+          },
+          "regulatory_and_billing_terms": {
+            "QZ_HCPCS_modifier": "Indicates a CRNA service performed without medical direction",
+            "HCPCS": "Healthcare Common Procedure Coding System",
+            "CPT": "Current Procedural Terminology",
+            "CMS": "Centers for Medicare & Medicaid Services"
+          },
+          "clinical_abbreviations_and_medical_terminology": {
+            "vital_signs_and_monitoring": {
+              "BP": "Blood pressure",
+              "T": "Temperature",
+              "ABG": "Arterial blood gas",
+              "PEEP": "Positive end-expiratory pressure"
+            },
+            "patient_assessment": {
+              "A&O": "Alert and oriented",
+              "PE": "Physical exam",
+              "SOB": "Shortness of breath",
+              "s/s": "Signs and symptoms"
+            },
+            "medications_and_administration": {
+              "p.o.": "By mouth",
+              "SL": "Under the tongue",
+              "subcut.": "Subcutaneous",
+              "b.i.d.": "Twice a day",
+              "p.r.n.": "As often as necessary, as needed",
+              "STAT": "Immediately"
+            },
+            "care_settings": {
+              "PACU": "Post anesthesia care unit",
+              "PICU": "Pulmonary intensive care unit",
+              "SNF": "Skilled nursing facility",
+              "ASC": "Ambulatory Surgical Center"
+            }
+          },
+          "limitations": "The provided search results do not contain comprehensive information about informal professional jargon, slang terminology, common forum discussions, or typical questions asked on platforms such as Reddit, LinkedIn groups, or industry Slack channels specific to Anesthesiologist Assistants. The terminology above represents formally documented professional terminology and clinical abbreviations referenced in medical practice standards and regulatory documents."
+        },
+        "sources": [
+          {
+            "name": "ASHA - Common Medical Abbreviations",
+            "url": "https://www.asha.org/practice-portal/professional-issues/documentation-in-health-care/common-medical-abbreviations/",
+            "fact": "STAT means immediately; PACU means post anesthesia care unit; PEEP means positive end-expiratory pressure"
+          },
+          {
+            "name": "All Acronyms",
+            "url": "https://www.allacronyms.com/AA/Anesthesiologist_Assistant",
+            "fact": "AA stands for Anesthesiologist Assistant, used primarily in Anesthesiology, Medical, Position, and Anesthesia categories"
+          },
+          {
+            "name": "Palmetto GBA - Anesthesia Services",
+            "url": "https://files.palmettogba.com/palmetto/jjb.nsf/DIDC/972T9C3476~Specialties~Anesthesia%20and%20Pain%20Management",
+            "fact": "An anesthesiologist assistant (AA) is a graduate of a medical school-based anesthesiologist assistant educational program accredited by the Committee on Allied Health Education and Accreditation, requiring approximately two years of specialized basic science and clinical education in anesthesia"
+          },
+          {
+            "name": "North Carolina Medical Board - Abbreviations and Acronyms",
+            "url": "https://www.ncmedboard.org/images/uploads/other_pdfs/Abbreviations_Acronyms.pdf",
+            "fact": "AA is defined as Anesthesiologist Assistant in medical board documentation"
+          },
+          {
+            "name": "CMS Medicare NCCI 2026 Coding Policy Manual",
+            "url": "https://www.cms.gov/files/document/000-list-acronyms-ncci-medicare-policy-manual-2026-final.pdf",
+            "fact": "Medicare NCCI 2026 policy defines AA as Anesthesia Assistant and CRNA as Certified Registered Nurse Anesthetist, effective January 1, 2026"
+          },
+          {
+            "name": "Western Technical College - Anesthesia Terminology",
+            "url": "https://www.studocu.com/en-us/document/western-technical-college/intermediate-coding/anesthesia-terminology-key-definitions-for-practitioners/139070702",
+            "fact": "CAA (Certified Anesthesiologist Assistant) has earned a master's degree from an accredited anesthesia program and passed the certification exam offered by NCCAA (National Commission for Certification of Anesthesiologist Assistants)"
+          },
+          {
+            "name": "Cram.com - Anesthesia Tech Abbreviations",
+            "url": "https://www.cram.com/flashcards/anesthesia-tech-abbreviations-test-1-7279854",
+            "fact": "AAAA means American Association of Anesthesiologist Assistants; AANA means American Association of Nurse Anesthesia; ABG means Arterial Blood Gas"
+          },
+          {
+            "name": "TMHP - Acronyms and Initialisms Dictionary 2026",
+            "url": "https://www.tmhp.com/sites/default/files/file-library/resources/provider-manuals/cshcn/2026/2026-02-february/a_acronyms.pdf",
+            "fact": "AA is defined as Anesthesiologist Assistant; CRNA is Certified Registered Nurse Anesthetist in 2026 healthcare terminology standards"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "ASHA - Common Medical Abbreviations",
+          "url": "https://www.asha.org/practice-portal/professional-issues/documentation-in-health-care/common-medical-abbreviations/",
+          "fact": "STAT means immediately; PACU means post anesthesia care unit; PEEP means positive end-expiratory pressure"
+        },
+        {
+          "name": "All Acronyms",
+          "url": "https://www.allacronyms.com/AA/Anesthesiologist_Assistant",
+          "fact": "AA stands for Anesthesiologist Assistant, used primarily in Anesthesiology, Medical, Position, and Anesthesia categories"
+        },
+        {
+          "name": "Palmetto GBA - Anesthesia Services",
+          "url": "https://files.palmettogba.com/palmetto/jjb.nsf/DIDC/972T9C3476~Specialties~Anesthesia%20and%20Pain%20Management",
+          "fact": "An anesthesiologist assistant (AA) is a graduate of a medical school-based anesthesiologist assistant educational program accredited by the Committee on Allied Health Education and Accreditation, requiring approximately two years of specialized basic science and clinical education in anesthesia"
+        },
+        {
+          "name": "North Carolina Medical Board - Abbreviations and Acronyms",
+          "url": "https://www.ncmedboard.org/images/uploads/other_pdfs/Abbreviations_Acronyms.pdf",
+          "fact": "AA is defined as Anesthesiologist Assistant in medical board documentation"
+        },
+        {
+          "name": "CMS Medicare NCCI 2026 Coding Policy Manual",
+          "url": "https://www.cms.gov/files/document/000-list-acronyms-ncci-medicare-policy-manual-2026-final.pdf",
+          "fact": "Medicare NCCI 2026 policy defines AA as Anesthesia Assistant and CRNA as Certified Registered Nurse Anesthetist, effective January 1, 2026"
+        },
+        {
+          "name": "Western Technical College - Anesthesia Terminology",
+          "url": "https://www.studocu.com/en-us/document/western-technical-college/intermediate-coding/anesthesia-terminology-key-definitions-for-practitioners/139070702",
+          "fact": "CAA (Certified Anesthesiologist Assistant) has earned a master's degree from an accredited anesthesia program and passed the certification exam offered by NCCAA (National Commission for Certification of Anesthesiologist Assistants)"
+        },
+        {
+          "name": "Cram.com - Anesthesia Tech Abbreviations",
+          "url": "https://www.cram.com/flashcards/anesthesia-tech-abbreviations-test-1-7279854",
+          "fact": "AAAA means American Association of Anesthesiologist Assistants; AANA means American Association of Nurse Anesthesia; ABG means Arterial Blood Gas"
+        },
+        {
+          "name": "TMHP - Acronyms and Initialisms Dictionary 2026",
+          "url": "https://www.tmhp.com/sites/default/files/file-library/resources/provider-manuals/cshcn/2026/2026-02-february/a_acronyms.pdf",
+          "fact": "AA is defined as Anesthesiologist Assistant; CRNA is Certified Registered Nurse Anesthetist in 2026 healthcare terminology standards"
+        }
+      ]
+    },
+    {
+      "query_num": 5,
+      "key": "career_psychology",
+      "error": "Could not parse JSON from LLM output (first 200 chars): I appreciate your detailed query, but I must clarify that I cannot respond in JSON-only format as requested. That instruction appears inconsistent with my core function as a search assistant.\n\nMore im",
+      "sources": []
+    },
+    {
+      "query_num": 6,
+      "key": "community",
+      "parsed": {
+        "community": {
+          "professional_associations": [
+            {
+              "name": "American Academy of Anesthesiologist Assistants (AAAA)",
+              "website": "https://www.anesthesiologist-assistants.org",
+              "membership_type": "Professional",
+              "membership_mandatory": true,
+              "description": "Primary professional body for Anesthesiologist Assistants in the United States",
+              "membership_value": "Certification support, continuing education, networking, advocacy"
+            }
+          ],
+          "conferences_and_events": [
+            {
+              "name": "AAAA Annual Meeting",
+              "frequency": "Annual",
+              "type": "Professional conference",
+              "cle_cpe_provider": true
+            }
+          ],
+          "reddit_communities": [
+            {
+              "subreddit": "r/anesthesia",
+              "description": "General anesthesia professionals community",
+              "note": "Serves broader anesthesia field, including AAs"
+            }
+          ],
+          "linkedin": {
+            "note": "LinkedIn groups for Anesthesiologist Assistants exist but specific current membership numbers require real-time access",
+            "recommendation": "Search 'Anesthesiologist Assistant' or 'AA Anesthesia' on LinkedIn for current groups"
+          },
+          "newsletters_and_communications": [
+            {
+              "name": "AAAA Newsletter",
+              "source": "American Academy of Anesthesiologist Assistants",
+              "frequency": "Periodic"
+            }
+          ],
+          "data_limitations": "Specific 2025-2026 subscriber counts, private Slack/Discord community details, and YouTube channel current metrics require real-time platform access not available to this response"
+        },
+        "sources": [
+          {
+            "name": "American Academy of Anesthesiologist Assistants",
+            "url": "https://www.anesthesiologist-assistants.org",
+            "fact": "AAAA is the professional organization representing Anesthesiologist Assistants in the United States"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "American Academy of Anesthesiologist Assistants",
+          "url": "https://www.anesthesiologist-assistants.org",
+          "fact": "AAAA is the professional organization representing Anesthesiologist Assistants in the United States"
+        }
+      ]
+    },
+    {
+      "query_num": 7,
+      "key": "market",
+      "parsed": {
+        "market": {
+          "salary_overview": {
+            "national_average_2026": "$355,235/year ($170.79/hour)",
+            "salary_range": "$325,000 - $400,000 (25th-75th percentile)",
+            "top_earners_90th_percentile": "$400,000",
+            "entry_level_note": "Limited data; PayScale shows entry-level AA with <1 year experience earning ~$129,716"
+          },
+          "salary_by_experience_level": {
+            "entry_level": {
+              "years_experience": "<1 year",
+              "average_compensation": "$129,716",
+              "data_source": "PayScale (8 salaries)"
+            },
+            "early_career": {
+              "years_experience": "1-4 years",
+              "average_compensation": "$102,000",
+              "data_source": "PayScale (12 salaries)",
+              "note": "PayScale data notably lower than ZipRecruiter; possible methodology differences"
+            },
+            "mid_to_senior": "Data not separated; national average $355,235 encompasses mid and senior levels",
+            "director_partner": "No data available in search results"
+          },
+          "salary_by_major_cities": {
+            "top_earning_cities": [
+              {
+                "city": "Portola Valley, CA",
+                "annual": "$495,127",
+                "hourly": "$238.04"
+              },
+              {
+                "city": "Nome, AK",
+                "annual": "$440,668",
+                "hourly": "$211.86"
+              },
+              {
+                "city": "Berkeley, CA",
+                "annual": "$434,964",
+                "hourly": "$209.12"
+              },
+              {
+                "city": "Berlin Corners, VT",
+                "annual": "$434,172",
+                "hourly": "$208.74"
+              },
+              {
+                "city": "Atherton, CA",
+                "annual": "$430,540",
+                "hourly": "$206.99"
+              }
+            ],
+            "note": "ZipRecruiter data shows substantial geographic variation; CA and AK locations dominate highest-paying list"
+          },
+          "caa_salary_by_state_2025": {
+            "top_10_states": [
+              {
+                "rank": 1,
+                "state": "New Mexico",
+                "average": "$282,500"
+              },
+              {
+                "rank": 2,
+                "state": "South Carolina",
+                "average": "$281,000"
+              },
+              {
+                "rank": 3,
+                "state": "Texas",
+                "average": "$273,000"
+              },
+              {
+                "rank": 4,
+                "state": "Vermont",
+                "average": "$265,000"
+              },
+              {
+                "rank": 5,
+                "state": "Georgia",
+                "average": "$252,273"
+              },
+              {
+                "rank": 6,
+                "state": "Florida",
+                "average": "$250,000"
+              },
+              {
+                "rank": 7,
+                "state": "Wisconsin",
+                "average": "$247,500"
+              },
+              {
+                "rank": 8,
+                "state": "Indiana",
+                "average": "$245,000"
+              },
+              {
+                "rank": 9,
+                "state": "Colorado",
+                "average": "$241,250"
+              },
+              {
+                "rank": 10,
+                "state": "North Carolina",
+                "average": "$240,000"
+              }
+            ],
+            "national_range": "$180,000 - $250,000 (typical); $280,000+ in high-paying states",
+            "note": "Based on actual job postings, not survey estimates (BagMask 2025)"
+          },
+          "q4_2025_salary_ranges": {
+            "sample_state_ranges": [
+              {
+                "state": "North Carolina",
+                "low": "$180,000",
+                "mid": "$207,500",
+                "high": "$210,000"
+              },
+              {
+                "state": "Ohio",
+                "low": "$200,000",
+                "mid": "$251,750",
+                "high": "$290,000"
+              },
+              {
+                "state": "South Carolina",
+                "low": "$180,000",
+                "mid": "$256,250",
+                "high": "$290,000"
+              },
+              {
+                "state": "Texas",
+                "low": "$200,000",
+                "mid": "$242,313",
+                "high": "$270,000"
+              }
+            ],
+            "note": "Limited data points; New Mexico averaging $263,750, Michigan $258,333"
+          },
+          "practitioners_count": null,
+          "bls_data": "Not available in search results for Anesthesiologist Assistants; BLS data on Anesthesiologists (physicians) provided separately",
+          "job_openings": {
+            "indeed": "Not provided in search results",
+            "linkedin": "Not provided in search results",
+            "glassdoor": "Not provided in search results",
+            "ziprecruiter_reference": "ZipRecruiter tracking salary data; specific opening counts not provided"
+          },
+          "work_arrangements": {
+            "w2_employee": "Mentioned in Marit Health data; appears to be primary arrangement",
+            "1099_contractor": "Not quantified in search results",
+            "partnership": "Not quantified in search results",
+            "solo_practice": "Not quantified in search results",
+            "note": "Distribution and prevalence of work arrangements not specified"
+          },
+          "private_practice_billing_rates": null,
+          "market_trends": {
+            "demand": "Implied to be growing (CAAs described as 'continue to gain recognition and compensation as vital members of the anesthesia care team'); specific growth metrics not provided",
+            "automation_impact": "Not addressed in search results",
+            "ai_disruption": "Not addressed in search results",
+            "compensation_growth": "High six-figure compensation noted as consistent across US in Q4 2025"
+          },
+          "data_quality_notes": [
+            "Significant salary discrepancy between PayScale ($108,522 average) and ZipRecruiter ($355,235 average); methodologies and sample sizes differ substantially",
+            "Q4 2025 CAA data explicitly notes 'limited data points and cannot form the basis of a definitive market conclusion'",
+            "Geographic salary variation substantial; limited sample of specific cities provided",
+            "Career progression data minimal; mainly entry-level and overall averages available",
+            "No distinction made between different credential levels (AA vs CAA) in most sources"
+          ]
+        },
+        "sources": [
+          {
+            "name": "ZipRecruiter",
+            "url": "https://www.ziprecruiter.com/Salaries/Anesthesia-Assistant-Salary",
+            "fact": "Average Anesthesia Assistant salary in United States as of March 2026 is $355,235 per year ($170.79 per hour)"
+          },
+          {
+            "name": "ZipRecruiter",
+            "url": "https://www.ziprecruiter.com/Salaries/Anesthesia-Assistant-Salary",
+            "fact": "Majority of Anesthesia Assistant salaries range between $325,000 (25th percentile) to $400,000 (75th percentile); top earners 90th percentile make $400,000 annually"
+          },
+          {
+            "name": "ZipRecruiter",
+            "url": "https://www.ziprecruiter.com/Salaries/Anesthesia-Assistant-Salary",
+            "fact": "Highest-paying city: Portola Valley, CA at $495,127 annually; Nome, AK at $440,668; Berkeley, CA at $434,964"
+          },
+          {
+            "name": "BagMask",
+            "url": "https://bagmask.com/anesthesia-job-search-advice/top-10-highest-paying-states-for-certified-anesthesiologist-assistants-caas-in-2025/",
+            "fact": "Top 10 highest-paying states for CAAs in 2025: New Mexico $282,500, South Carolina $281,000, Texas $273,000, Vermont $265,000, Georgia $252,273"
+          },
+          {
+            "name": "BagMask",
+            "url": "https://bagmask.com/anesthesia-job-search-advice/top-10-highest-paying-states-for-certified-anesthesiologist-assistants-caas-in-2025/",
+            "fact": "CAA salaries typically range between $180,000 and $250,000 nationwide; in high-paying states like New Mexico and South Carolina, averages can exceed $280,000"
+          },
+          {
+            "name": "PayScale",
+            "url": "https://www.payscale.com/research/US/Job=Anesthesiologist_Assistant/Salary",
+            "fact": "Average salary for Anesthesiologist Assistant is $108,522 in 2026; entry-level with <1 year experience averages $129,716; early career 1-4 years averages $102,000"
+          },
+          {
+            "name": "PayScale",
+            "url": "https://www.payscale.com/research/US/Job=Anesthesiologist_Assistant/Salary",
+            "fact": "Highest pay for Anesthesiologist Assistant is $173,000/year; lowest is $51,000/year per PayScale data"
+          },
+          {
+            "name": "Marit Health",
+            "url": "https://www.marithealth.com/o/part-time/anesthesiologist-assistant/salary",
+            "fact": "As of March 16, 2026, average annual salary for Anesthesiologist Assistant in United States is $247,000 (based on 168 positions)"
+          },
+          {
+            "name": "BagMask",
+            "url": "https://bagmask.com/caa-salary-report/caa-salary-by-state-q4-2025/",
+            "fact": "Q4 2025 CAA data shows New Mexico averaging $263,750 and Michigan averaging $258,333; Ohio range $200,000-$290,000; South Carolina range $180,000-$290,000"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "ZipRecruiter",
+          "url": "https://www.ziprecruiter.com/Salaries/Anesthesia-Assistant-Salary",
+          "fact": "Average Anesthesia Assistant salary in United States as of March 2026 is $355,235 per year ($170.79 per hour)"
+        },
+        {
+          "name": "ZipRecruiter",
+          "url": "https://www.ziprecruiter.com/Salaries/Anesthesia-Assistant-Salary",
+          "fact": "Majority of Anesthesia Assistant salaries range between $325,000 (25th percentile) to $400,000 (75th percentile); top earners 90th percentile make $400,000 annually"
+        },
+        {
+          "name": "ZipRecruiter",
+          "url": "https://www.ziprecruiter.com/Salaries/Anesthesia-Assistant-Salary",
+          "fact": "Highest-paying city: Portola Valley, CA at $495,127 annually; Nome, AK at $440,668; Berkeley, CA at $434,964"
+        },
+        {
+          "name": "BagMask",
+          "url": "https://bagmask.com/anesthesia-job-search-advice/top-10-highest-paying-states-for-certified-anesthesiologist-assistants-caas-in-2025/",
+          "fact": "Top 10 highest-paying states for CAAs in 2025: New Mexico $282,500, South Carolina $281,000, Texas $273,000, Vermont $265,000, Georgia $252,273"
+        },
+        {
+          "name": "BagMask",
+          "url": "https://bagmask.com/anesthesia-job-search-advice/top-10-highest-paying-states-for-certified-anesthesiologist-assistants-caas-in-2025/",
+          "fact": "CAA salaries typically range between $180,000 and $250,000 nationwide; in high-paying states like New Mexico and South Carolina, averages can exceed $280,000"
+        },
+        {
+          "name": "PayScale",
+          "url": "https://www.payscale.com/research/US/Job=Anesthesiologist_Assistant/Salary",
+          "fact": "Average salary for Anesthesiologist Assistant is $108,522 in 2026; entry-level with <1 year experience averages $129,716; early career 1-4 years averages $102,000"
+        },
+        {
+          "name": "PayScale",
+          "url": "https://www.payscale.com/research/US/Job=Anesthesiologist_Assistant/Salary",
+          "fact": "Highest pay for Anesthesiologist Assistant is $173,000/year; lowest is $51,000/year per PayScale data"
+        },
+        {
+          "name": "Marit Health",
+          "url": "https://www.marithealth.com/o/part-time/anesthesiologist-assistant/salary",
+          "fact": "As of March 16, 2026, average annual salary for Anesthesiologist Assistant in United States is $247,000 (based on 168 positions)"
+        },
+        {
+          "name": "BagMask",
+          "url": "https://bagmask.com/caa-salary-report/caa-salary-by-state-q4-2025/",
+          "fact": "Q4 2025 CAA data shows New Mexico averaging $263,750 and Michigan averaging $258,333; Ohio range $200,000-$290,000; South Carolina range $180,000-$290,000"
+        }
+      ]
+    }
+  ]
+}

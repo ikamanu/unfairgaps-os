@@ -1,0 +1,54 @@
+{
+  "profession_id": "us-acute-care-nurses",
+  "profession_name": "Acute Care Nurses",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Acute care nurses work 12-hour shifts (day or night) in hospital critical care, surgical, or emergency departments. They care for patients with urgent medical needs — post-surgery recovery, severe injuries, unstable chronic conditions. Daily tasks include patient assessment, medication administration, monitoring vital signs, wound care, IV management, communicating with physicians, updating electronic health records, and patient/family education. Work is physically demanding with 96% on feet, high-acuity patients requiring constant vigilance.",
+    "documents": ["Patient charts and EHR documentation", "Nursing care plans", "Medication administration records (MAR)", "Physician orders", "Lab and diagnostic results", "Incident reports", "Discharge planning forms", "Patient education materials"],
+    "deadlines": ["Shift handoff reports every 12 hours", "Medication administration windows (time-critical)", "Hourly patient rounding", "Documentation within shift", "Quarterly skills competency assessments", "Annual license renewal", "Continuing education credits (CEU) deadlines"],
+    "seasonality": "Flu season (October-March) increases patient volume significantly. Summer sees more trauma cases. Holiday periods often understaffed. RSV and respiratory illness surges in winter create ICU overflow."
+  },
+  "regulatory": {
+    "laws": ["Nurse Practice Acts (state-specific)", "Nurse Staffing Standards for Hospital Patient Safety and Quality Care Act (2025)", "HIPAA", "EMTALA (Emergency Medical Treatment and Labor Act)", "State nurse-to-patient ratio laws (California mandates)"],
+    "licensing": "RN license required via NCLEX-RN exam. State-by-state licensure through Boards of Nursing. Nurse Licensure Compact (NLC) allows multistate practice in 41+ states. Specialty certifications: CCRN (Critical Care Registered Nurse), ACNP-BC (Acute Care Nurse Practitioner Board Certified). Advanced practice requires MSN/DNP and national certification.",
+    "penalties": "Federal: up to $25,000 for first knowing violation, $50,000 for subsequent violations of staffing standards. California: $15,000 first violation, $30,000 subsequent violations of nurse-to-patient ratios. License revocation/suspension for practice violations. HIPAA violations up to $50,000 per incident.",
+    "regulatory_bodies": ["State Boards of Nursing", "NCSBN (National Council of State Boards of Nursing)", "Joint Commission (JCAHO)", "CMS (Centers for Medicare & Medicaid Services)", "OSHA", "State Health Departments"]
+  },
+  "tools": {
+    "software": ["Epic (dominant hospital EHR)", "Oracle Cerner", "MEDITECH", "Nuance DAX Copilot (AI documentation)", "Suki AI", "Smart Square (workforce management)", "Pyxis MedStation (medication dispensing)", "Alaris IV pumps (smart infusion)"],
+    "platforms": ["PointClickCare", "MatrixCare", "AllNurses forum", "Nursing Network", "UpToDate (clinical reference)", "Lippincott Advisor"],
+    "gov_portals": ["Nursys (license verification)", "State Board of Nursing portals", "CDC NHSN (infection reporting)", "CMS Quality Reporting"]
+  },
+  "terminology": {
+    "jargon": ["Code Blue (cardiac arrest)", "Rapid Response", "Push meds (IV push medication)", "Titrate (adjust medication drip rate)", "Bolus", "NPO (nothing by mouth)", "Tele (telemetry monitoring)", "Step-down (intermediate care)", "Charge nurse", "Bedside shift report", "Patient acuity", "Full code vs DNR"],
+    "abbreviations": ["ACNP-BC - Acute Care Nurse Practitioner Board Certified", "CCRN - Critical Care Registered Nurse", "ACCNS-AG - Acute Care Clinical Nurse Specialist Adult-Gerontology", "ICU - Intensive Care Unit", "ED - Emergency Department", "ABC - Airway Breathing Circulation", "DNR - Do Not Resuscitate", "MAR - Medication Administration Record", "PRN - As Needed", "BID/TID/QID - Twice/Three/Four times daily", "I&O - Intake and Output", "VS - Vital Signs", "SOB - Shortness of Breath", "WNL - Within Normal Limits", "CVP - Central Venous Pressure", "A-line - Arterial Line"]
+  },
+  "career_psychology": {
+    "career_levels": ["New Graduate RN", "Staff Nurse (1-3 years)", "Senior Staff Nurse / Charge Nurse", "Clinical Nurse Leader (CNL)", "Nurse Educator", "Nurse Manager", "Acute Care Nurse Practitioner (ACNP)", "Clinical Nurse Specialist (CNS)", "Director of Nursing", "Chief Nursing Officer (CNO)"],
+    "fears": ["Making a medication error causing patient harm", "Missing critical changes in patient condition", "Understaffing leading to patient deaths", "Losing nursing license", "Workplace violence from patients", "Contracting infectious diseases", "Litigation and malpractice claims"],
+    "motivation": ["Making a direct difference in patients' lives", "Saving lives in critical moments", "Strong camaraderie with nursing teams", "Job security and high demand", "Multiple career advancement paths", "Travel nursing opportunities for higher pay"],
+    "burnout": "54% of nurses suffer from moderate burnout; 86% of ICU nurses show at least one burnout symptom (anxiety, exhaustion, low motivation, cynicism). Emotional exhaustion scores increase 10% after one year on the job. 16% national RN turnover rate with 287,000+ staff RNs leaving positions annually. Longer shifts, sleep deprivation, and high nurse-to-patient ratios are primary contributors."
+  },
+  "community": {
+    "reddit": ["r/nursing (~600k members)", "r/NursePractitioner", "r/StudentNurse", "r/travel_nursing", "r/ICUnursing"],
+    "linkedin": ["AACN (American Association of Critical-Care Nurses) LinkedIn", "ANA (American Nurses Association) LinkedIn", "Nursing Professionals Group", "ICU/Critical Care Nurses Group"],
+    "associations": ["AACN (American Association of Critical-Care Nurses) - 500,000+ nurses", "ANA (American Nurses Association) - represents 5M+ RNs", "AAPACN - 15,000+ post-acute care nurses", "Emergency Nurses Association (ENA)", "Sigma Theta Tau International Honor Society"],
+    "conferences": ["AACN National Teaching Institute (NTI)", "ANA Membership Assembly", "ENA Annual Conference", "Magnet Conference"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "entry_level": "60000-70000",
+      "mid_level": "75000-95000",
+      "senior": "90000-110000",
+      "nurse_practitioner": "100000-140000",
+      "travel_nurse": "80000-150000+",
+      "management": "100000-160000"
+    },
+    "national_average_usd": 88092,
+    "job_count": "Over 3.1 million RNs employed; 500,000+ nurse shortage nationally",
+    "growth_rate": "6% for RNs through 2033; 40% for ACNPs through 2033",
+    "unemployment_rate": "Below 2% — extreme shortage",
+    "work_arrangements": ["Hospital-based (primary)", "Travel nursing contracts", "Per diem / PRN shifts", "Telehealth (limited for acute care)", "Agency staffing"],
+    "trends": ["Healthcare jobs made up 63% of all new US jobs added in January 2026", "Hospitals added 18,000 jobs in January 2026 alone", "Nurse wages up 4% in 2025", "AI documentation tools reducing administrative burden", "Travel nursing demand normalizing post-COVID but still elevated", "Signing bonuses and tuition reimbursement common recruitment tools"]
+  }
+}

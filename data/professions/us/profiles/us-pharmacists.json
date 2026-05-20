@@ -1,0 +1,331 @@
+{
+  "profession_id": "us-pharmacists",
+  "profession_name": "Pharmacists",
+  "soc_code": "29-1051.00",
+  "industry": "healthcare",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Pharmacists dispense prescription medications, counsel patients on drug interactions and side effects, verify prescription accuracy, and coordinate with healthcare providers. Daily reality varies dramatically by setting: retail/community pharmacists handle high-volume dispensing with direct patient interaction, while hospital pharmacists focus on clinical pharmacy, drug therapy management, and interdisciplinary rounds. All pharmacists face significant regulatory documentation requirements and insurance navigation challenges.",
+    "typical_tasks": [
+      "Verifying prescription accuracy - dose, duration, age-appropriateness, allergies, drug interactions",
+      "Dispensing prescription medications and counseling patients on proper use",
+      "Checking customer medication history for dangerous interactions",
+      "Administering vaccines and immunizations (authorized in 48+ states)",
+      "Consulting with physicians and healthcare providers about prescriptions",
+      "Compounding medications (creating custom drug mixtures for individual patients)",
+      "Providing basic wellness screenings and point-of-care testing",
+      "Managing pharmacy inventory and controlled substance tracking",
+      "Training and supervising pharmacy technicians and assistants",
+      "Negotiating with insurance providers and processing prior authorizations",
+      "Maintaining federal, state, and local regulatory compliance records",
+      "Recommending over-the-counter medications and supplements",
+      "Performing medication therapy management (MTM) reviews"
+    ],
+    "key_documents": [
+      "Prescription orders (paper and electronic)",
+      "Patient medication profiles and allergy records",
+      "DEA controlled substance logs (Schedule II-V)",
+      "Insurance claim forms and prior authorization requests",
+      "State board of pharmacy compliance documentation",
+      "DSCSA drug serialization and tracking records",
+      "Compounding logs and quality assurance records",
+      "Immunization administration records",
+      "Adverse drug reaction (ADR) reports",
+      "Medication error incident reports"
+    ],
+    "deadlines": {
+      "daily": "Fill and verify prescriptions within promised timeframes, controlled substance counts, vaccine administration records",
+      "weekly": "Inventory management, expired medication pulls, staff scheduling",
+      "monthly": "Controlled substance reporting, insurance reconciliation, quality metrics review",
+      "annual": "State pharmacy license renewal, DEA registration renewal, immunization certification updates, CE credit completion"
+    },
+    "seasonality": "Flu season (October-March) drives peak vaccine demand and increased cold/flu medication dispensing. Open enrollment period (November-January) creates insurance changes requiring medication coverage adjustments. January sees formulary changes from insurance plans. Back-to-school season (August-September) increases demand for school-required medications and immunizations. End-of-year brings insurance deductible rush for medication fills."
+  },
+  "regulatory": {
+    "summary": "Pharmacists must earn a Doctor of Pharmacy (Pharm.D.) degree from an ACPE-accredited institution, pass the NAPLEX (225-question computer-based exam), and pass state-specific jurisprudence exams (MPJE or state equivalent). Each state maintains its own Board of Pharmacy with unique requirements. DEA registration is required for handling controlled substances. The DSCSA requires package-level drug traceability compliance by 2025-2026. Board of Pharmacy Specialties (BPS) offers voluntary specialty certifications.",
+    "key_laws": [
+      "Federal Food, Drug, and Cosmetic Act (FDCA) - drug safety and labeling standards",
+      "Controlled Substances Act (CSA) - DEA scheduling and dispensing requirements",
+      "Drug Supply Chain Security Act (DSCSA) - serialization and traceability (large dispensers by Nov 2025, small dispensers by Nov 2026)",
+      "HIPAA - patient health information privacy and security",
+      "State Pharmacy Practice Acts - state-specific scope of practice and operational requirements",
+      "USP Chapter 797 - sterile compounding standards",
+      "USP Chapter 795 - non-sterile compounding standards",
+      "Prescription Drug Marketing Act (PDMA) - drug sample distribution",
+      "Ryan Haight Act - online pharmacy and electronic prescribing of controlled substances",
+      "State-specific collaborative practice agreements for expanded clinical services"
+    ],
+    "licensing": {
+      "requirements": [
+        "Doctor of Pharmacy (Pharm.D.) degree from ACPE-accredited institution (4 years post-prerequisite)",
+        "NAPLEX (North American Pharmacist Licensure Examination) - 225 questions, computer-based, administered by NABP",
+        "MPJE (Multistate Pharmacy Jurisprudence Examination) or state-specific law exam",
+        "3-attempt limit per 12-month period for NAPLEX, maximum 5 total attempts",
+        "State Board of Pharmacy license application and approval",
+        "DEA registration for dispensing controlled substances",
+        "NC Board transitioning to Uniform Multistate Jurisprudence Exam effective April 1, 2026",
+        "Optional: BPS Board Certification in specialties (oncology, critical care, ambulatory care, etc.)",
+        "Immunization certification through APhA or equivalent program"
+      ]
+    },
+    "continuing_education": "Most states require 15-30 hours of continuing pharmacy education (CPE) per renewal cycle (typically 1-2 years). ACPE-accredited CE programs are required. Many states mandate specific topics (e.g., opioid education, immunization updates, pharmacy law). BPS-certified pharmacists must complete 100 hours of CE over 7-year recertification cycle. Controlled substance training is increasingly mandated by states. Many pharmacists pursue additional certifications in immunization, MTM, or specialty areas."
+  },
+  "tools": {
+    "summary": "Pharmacy management systems (PMS) are the central technology platform, with the market valued at $101 billion in 2025 and projected to reach $236 billion by 2031 (15% CAGR). Cloud deployment now accounts for 63% of market share. RedSail Technologies became the largest US pharmacy software company serving 16,000 pharmacies after acquiring PrimeRx in February 2026. AI-powered tools are emerging for predictive inventory, drug interaction analysis, and prior authorization automation.",
+    "primary_tools": [
+      "PioneerRx (most installed independent pharmacy software, all-in-one platform)",
+      "RedSail Technologies (serving 16,000 pharmacies post-PrimeRx acquisition Feb 2026)",
+      "PrimeRx (pharmacy management system, now part of RedSail)",
+      "Epic Willow (hospital pharmacy module within Epic EHR)",
+      "Oracle Health/Cerner pharmacy management",
+      "Outcomes/TDS (merged with Cardinal Health, pharmacy management)",
+      "QS/1 (pharmacy management for independent pharmacies)",
+      "Rx30 (pharmacy dispensing and management software)"
+    ],
+    "secondary_tools": [
+      "Clinical decision support systems (drug interaction checking - Clinical Pharmacology, Lexicomp)",
+      "Automated dispensing cabinets (Omnicell, BD Pyxis)",
+      "Robotic dispensing systems for high-volume pharmacies",
+      "E-prescribing platforms (Surescripts network)",
+      "Prior authorization automation tools (House Rx - generates PA responses in ~15 seconds)",
+      "Inventory management and purchasing platforms (McKesson, Cardinal Health, AmerisourceBergen)",
+      "Patient engagement mobile apps for refills and reminders",
+      "Telepharmacy platforms for remote dispensing verification",
+      "DSCSA compliance and serialization tracking systems"
+    ],
+    "pain_points": [
+      "Insurance prior authorization battles consuming hours of staff time",
+      "PBM (Pharmacy Benefit Manager) reimbursement squeezes on independent pharmacies",
+      "DSCSA serialization compliance deadlines and implementation complexity",
+      "Interoperability gaps between pharmacy systems and hospital/clinic EHRs",
+      "High-volume prescription processing with inadequate staffing",
+      "Frequent insurance formulary changes requiring patient medication switches",
+      "Robotic/automation adoption costs for independent pharmacies",
+      "Drug shortage management and alternative sourcing",
+      "Integration of expanded clinical services (vaccines, testing) into existing workflow"
+    ]
+  },
+  "terminology": {
+    "summary": "Pharmacy uses a distinct professional vocabulary spanning drug nomenclature, dosing instructions, compounding procedures, billing codes, and regulatory classifications. Prescription abbreviations (Latin-derived) remain standard in written orders. Understanding drug classifications, controlled substance schedules, and insurance terminology is essential for daily practice.",
+    "terms": {
+      "Compounding": "Creating a custom medication mixture to fit unique patient needs, including both sterile (IV) and non-sterile preparations",
+      "Dispensing": "The process of providing medication as ordered on a prescription, including label preparation, verification, and patient counseling",
+      "Controlled substance": "Drug regulated by federal law (CSA) due to potential for abuse, classified in Schedules I-V based on medical use and abuse potential",
+      "Brand name vs Generic": "Brand name is manufacturer-given (proprietary) name; generic is the nonproprietary name for the same active ingredient",
+      "Mechanism of action (MOA)": "How a drug works in the body at the molecular/cellular level to produce its therapeutic effect",
+      "BID/TID/QID": "Twice daily / Three times daily / Four times daily - standard dosing frequency abbreviations",
+      "AC/PC": "Before meals (ante cibum) / After meals (post cibum) - timing abbreviations for medication administration",
+      "PRN": "Pro re nata - as needed; medication taken only when symptoms require it",
+      "Automated dispensing cabinet (ADC)": "Computerized drug storage device allowing medications to be stored and dispensed near point of care while tracking distribution",
+      "Medication therapy management (MTM)": "Comprehensive review of all medications a patient takes to optimize therapeutic outcomes and reduce adverse events",
+      "Prior authorization (PA)": "Insurance requirement for pre-approval before certain medications are covered, often requiring clinical justification",
+      "Formulary": "List of prescription drugs covered by a health insurance plan, organized in tiers with varying copay levels",
+      "NDC (National Drug Code)": "Unique 10-digit identifier assigned to each medication product for tracking and billing purposes",
+      "USP 797/795": "United States Pharmacopeia standards for sterile (797) and non-sterile (795) compounding practices"
+    }
+  },
+  "career_psychology": {
+    "summary": "Pharmacists face a profession in significant transition, with retail pharmacy employment declining sharply while hospital and specialty pharmacy roles grow. Average salaries of $137,000 have not kept pace with inflation, and 40-60% of pharmacists report job dissatisfaction or burnout. Over 30% would not choose pharmacy again. However, expanded clinical roles (vaccination, testing, MTM) and specialty pharmacy growth offer new career paths. The retail-to-hospital migration is reshaping the workforce.",
+    "career_path": [
+      "Pre-pharmacy undergraduate education (2-4 years of prerequisites)",
+      "Doctor of Pharmacy (Pharm.D.) program (4 years)",
+      "Optional: PGY1 Pharmacy Practice Residency (1 year)",
+      "Optional: PGY2 Specialty Residency (1 year - oncology, critical care, etc.)",
+      "NAPLEX and state licensure exams",
+      "Staff pharmacist (years 0-3)",
+      "Clinical pharmacist or pharmacy manager (years 3-8)",
+      "Clinical specialist, pharmacy director, or pharmacy owner (years 8-15)",
+      "VP of Pharmacy Services, Chief Pharmacy Officer (years 15+)"
+    ],
+    "salary_range": {
+      "entry_level": "$110,000 - $125,000",
+      "mid_career": "$128,000 - $145,000",
+      "senior": "$145,000 - $180,000+",
+      "national_average_2026": "$137,000",
+      "bls_median_2022": "$128,000",
+      "specialty_pharmacy": "$140,000 - $170,000",
+      "pharmacy_director": "$160,000 - $220,000"
+    },
+    "fears": [
+      "Retail pharmacy closures and chain downsizing (Rite Aid liquidation, CVS/Walgreens store closures)",
+      "PBM reimbursement squeezes threatening pharmacy viability",
+      "Automation and telepharmacy reducing pharmacist positions",
+      "Student loan burden with stagnant salary growth",
+      "Scope of practice limitations vs expanded clinical responsibilities",
+      "Medication errors and liability concerns",
+      "Over 30% of pharmacists would not choose pharmacy again",
+      "Pharmacy school oversupply producing more graduates than market can absorb"
+    ],
+    "motivation": [
+      "Direct patient care impact through medication counseling and safety",
+      "Expanding clinical role (vaccination, testing, prescribing in some states)",
+      "Specialty pharmacy growth offering new career opportunities",
+      "Hospital pharmacy offering rewarding interdisciplinary collaboration",
+      "Community pharmacist relationships with regular patients",
+      "Drug therapy expertise valued by healthcare teams",
+      "Flexibility of diverse practice settings and schedules",
+      "Growing role in public health (pandemic response, vaccination campaigns)"
+    ],
+    "burnout_factors": [
+      "High prescription volume with insufficient staffing in retail settings",
+      "Constant insurance and prior authorization battles",
+      "Standing for 10-12 hour shifts with minimal breaks",
+      "Retail metrics pressure (fill speed targets, clinical service quotas)",
+      "Verbal abuse from frustrated patients over insurance/pricing issues",
+      "Corporate directives conflicting with professional judgment",
+      "Salary stagnation not keeping pace with inflation",
+      "Increasing clinical responsibilities without additional staff support"
+    ]
+  },
+  "community": {
+    "summary": "The pharmacy community is organized around the American Pharmacists Association (APhA), the largest pharmacist professional organization, along with setting-specific organizations like ASHP (hospitals) and NCPA (independents). APhA's annual meeting draws 5,000+ attendees. State pharmacy associations provide local networking and advocacy. Online communities are active on pharmacy-focused forums, Reddit, and professional networks.",
+    "associations": [
+      "American Pharmacists Association (APhA) - largest pharmacist professional organization",
+      "American Society of Health-System Pharmacists (ASHP) - hospital and health-system focus",
+      "National Community Pharmacists Association (NCPA) - independent pharmacy advocacy",
+      "Academy of Managed Care Pharmacy (AMCP) - managed care and PBM focus",
+      "American College of Clinical Pharmacy (ACCP) - clinical pharmacy practice and research",
+      "Board of Pharmacy Specialties (BPS) - specialty certification body",
+      "National Association of Boards of Pharmacy (NABP) - regulatory coordination",
+      "Pharmacy Workforce Center - workforce research and data"
+    ],
+    "events": [
+      "APhA Annual Meeting & Exposition 2026 - March 27-30, Los Angeles, CA (5,000+ attendees, theme: 'Redefining Possible')",
+      "ASHP Midyear Clinical Meeting (largest pharmacy gathering, 20,000+ attendees)",
+      "NCPA Annual Convention",
+      "AMCP Annual Meeting",
+      "Hematology/Oncology Pharmacy Association (HOPA) Annual Conference",
+      "State pharmacy association annual meetings (50 states)",
+      "Pharmacy Times conferences and continuing education events",
+      "APhA Institute on Medication Management"
+    ],
+    "online_communities": [
+      "Reddit r/pharmacy (100,000+ members) and r/PharmacyTechnician",
+      "Pharmacist Facebook groups (Pharmacy Alliance, Independent Pharmacy Nation)",
+      "APhA online communities and discussion forums",
+      "ASHP Connect (members-only professional network)",
+      "LinkedIn pharmacy professional groups",
+      "Pharmacy Times online community and webinars",
+      "Student Doctor Network (SDN) pharmacy forums",
+      "The Pharmacist's Letter (continuing education and clinical updates)"
+    ]
+  },
+  "market": {
+    "summary": "The pharmacist job market is experiencing a significant structural shift: retail pharmacy employment is collapsing (8,500 positions lost in 2024 alone) while hospital pharmacy is booming (+7,000 positions in 2024). BLS projects 5% overall growth 2023-2033 with 14,200 annual openings. Specialty pharmacy is the fastest-growing segment. The DSCSA compliance deadlines (2025-2026) are driving technology investment. Pharmacy school graduate oversupply remains a concern, though the retail crisis has paradoxically created staffing shortages due to working condition dissatisfaction.",
+    "job_outlook": {
+      "growth_rate": "5% (2023-2033), about average for all occupations",
+      "projected_openings": "14,200 openings annually (new jobs + replacements)",
+      "bls_category": "Average growth",
+      "demand_trend": "Strong divergence: retail declining, hospital and specialty surging"
+    },
+    "salary_market": {
+      "national_average": "$137,000 (2026)",
+      "bls_median_2022": "$128,000",
+      "entry_range": "$110,000 - $125,000",
+      "experienced_range": "$145,000 - $220,000 (directors)",
+      "retail_vs_hospital": "Hospital pharmacists increasingly earning premiums over retail counterparts"
+    },
+    "demand_drivers": [
+      "Hospital pharmacy expansion (+7,000 positions in 2024, 7.3% growth)",
+      "Specialty pharmacy growth for complex medications and rare diseases",
+      "Expanded vaccination authority in 48+ states creating 4,500-5,000 new jobs by 2028",
+      "Aging population increasing medication management needs",
+      "Point-of-care testing expansion post-pandemic",
+      "Pharmacist prescribing authority expansion in select states",
+      "Clinical pharmacy services growth in ambulatory care settings",
+      "DSCSA compliance driving pharmacy technology investment"
+    ],
+    "market_trends": [
+      "Retail pharmacy employment at lowest level since tracking began in 2010 (-8,500 in 2024)",
+      "Hospital pharmacy employment at all-time high and growing 7.3% annually",
+      "Specialty pharmacy becoming dominant growth sector with complex medication management",
+      "Pharmacy management software market growing from $101B (2025) to $236B (2031) at 15% CAGR",
+      "Cloud pharmacy systems now 63% of market share",
+      "AI tools for prior authorization reducing time from days to seconds",
+      "RedSail Technologies consolidating independent pharmacy software market (16,000 pharmacies)",
+      "Telepharmacy expanding access in rural and underserved areas",
+      "Pharmacy benefit manager (PBM) reform legislation gaining momentum in Congress"
+    ]
+  },
+  "quality_score": 0.84,
+  "sources_count": 32,
+  "verified_sources": 15,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "pharmacist daily routine tasks responsibilities work US 2025 2026",
+      "sources": [
+        "https://www.bls.gov/ooh/healthcare/pharmacists.htm",
+        "https://www.careervillage.org/questions/663443/what-are-pharmacists-daily-tasks",
+        "https://www.coursera.org/articles/pharmacist",
+        "https://www.quadrecruitment.com/insights/blog/a-day-in-the-life-of-a-community-pharmacist---roles--responsibilities--and-insights/",
+        "https://www.quadrecruitment.com/us/insights/blog/hospital-pharmacist-roles-and-responsibilities/",
+        "https://www.medicalnewstoday.com/articles/what-does-a-pharmacist-do"
+      ]
+    },
+    {
+      "query": "pharmacist US regulatory requirements licensing NAPLEX board certification 2025 2026",
+      "sources": [
+        "https://nabp.pharmacy/programs/examinations/naplex/",
+        "https://pharmacy.uworld.com/naplex/exam-registration-and-cost/",
+        "https://www.aacp.org/resource/naplex",
+        "https://pharmacy.uworld.com/naplex/exam-information/",
+        "https://mypharmavision.com/all-blog/guide-to-become-a-licensed-pharmacist-in-usa-naplex-fpgee-and-board-of-pharmacy-examination/"
+      ]
+    },
+    {
+      "query": "pharmacist software tools technology pharmacy management systems 2025 2026",
+      "sources": [
+        "https://intuitionlabs.ai/articles/pharmacy-management-systems-guide",
+        "https://www.primerx.io/",
+        "https://www.ptmreview.com/ptmreview-january-february-2026-issue/",
+        "https://www.gartner.com/reviews/market/pharmacy-management-software",
+        "https://www.pioneerrx.com/",
+        "https://www.redsailtechnologies.com/pharmacy-management-system"
+      ]
+    },
+    {
+      "query": "pharmacy terminology common terms medications dispensing compounding 2025",
+      "sources": [
+        "https://www.sjvc.edu/blog/pharmacy-medical-terminology-glossary/",
+        "https://chartercollege.edu/news-hub/72-abbreviations-every-pharmacy-tech-needs-know/",
+        "https://www.streamrx.co/pharmacy-glossary",
+        "https://www.drugs.com/article/prescription-abbreviations.html",
+        "https://www.pccarx.com/AboutUs/Glossary",
+        "https://www.healthline.com/health/drugs/prescription-pharmacy-glossary-terms"
+      ]
+    },
+    {
+      "query": "pharmacist career path salary burnout job satisfaction US 2025 2026",
+      "sources": [
+        "https://www.roseman.edu/student-experience/news/pharmacy-career-outlook-is-a-career-in-pharmacy-worth-it/",
+        "https://www.pharmacytechnicianguide.com/Pharmacist-Salary/",
+        "https://www.industrypharmacist.org/resources/2d739c86cc7a4e0cabcaca7825773d9f.pdf",
+        "https://www.drugchannels.net/2025/06/pharmacist-salaries-and-employment-in.html",
+        "https://www.pharmacytimes.com/view/combating-the-post-pandemic-pharmacy-workforce-shortage",
+        "https://drugstorenews.com/brain-drain-retail-pharmacy-struggles-retain-pharmacists-pharmacy-technicians"
+      ]
+    },
+    {
+      "query": "pharmacist professional associations conferences APhA communities US 2025 2026",
+      "sources": [
+        "https://aphameeting.pharmacist.com/",
+        "https://www.pharmacist.com/Conferences",
+        "https://www.laconventioncenter.com/events/detail/american-pharmacists-association",
+        "https://aphameeting.pharmacist.com/General-Info",
+        "https://aphameeting.pharmacist.com/Schedule/Full-Schedule"
+      ]
+    },
+    {
+      "query": "pharmacist job outlook market demand salary trends US 2025 2026",
+      "sources": [
+        "https://www.drugchannels.net/2025/06/pharmacist-salaries-and-employment-in.html",
+        "https://www.pharmacytechnicianguide.com/Pharmacist-Salary/",
+        "https://shiftposts.com/pharmacist-job-outlook-statistics-high-demand-roles-in-2025/",
+        "https://research.com/advice/is-demand-for-pharmacy-degree-graduates-growing-or-declining",
+        "https://www.zippia.com/pharmacist-jobs/trends/",
+        "https://www.bls.gov/ooh/healthcare/pharmacists.htm"
+      ]
+    }
+  ]
+}

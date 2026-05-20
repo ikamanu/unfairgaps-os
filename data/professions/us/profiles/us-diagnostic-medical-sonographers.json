@@ -1,0 +1,248 @@
+{
+  "profession_id": "us-diagnostic-medical-sonographers",
+  "profession_name": "Diagnostic Medical Sonographers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Sonographers use ultrasound equipment to create images of body organs and tissues for diagnostic purposes. They work in hospitals, outpatient centers, and physician offices. Standard 40-hour week with possible on-call for emergencies.",
+    "typical_tasks": [
+      "Performing ultrasound examinations: abdominal, OB/GYN, vascular, musculoskeletal",
+      "Positioning patients and applying gel for optimal image acquisition",
+      "Operating ultrasound equipment and adjusting settings for image quality",
+      "Evaluating images for quality and diagnostic value",
+      "Recording findings and preliminary impressions for physician review",
+      "Maintaining and troubleshooting ultrasound equipment",
+      "Entering data into PACS and EHR systems",
+      "Communicating with patients about procedures and providing comfort",
+      "Collaborating with physicians on complex or urgent cases",
+      "Performing point-of-care ultrasound (POCUS) in some settings"
+    ],
+    "key_documents": [
+      "Ultrasound examination reports",
+      "PACS image archives",
+      "Patient medical records in EHR",
+      "Equipment maintenance and quality control logs",
+      "Accreditation documentation (AIUM, ACR)"
+    ],
+    "deadlines": {
+      "stat_exams": "Immediate — emergency cases prioritized",
+      "routine_report": "24-48 hours typical turnaround",
+      "equipment_qc": "Daily/weekly quality control checks per protocol",
+      "ce_credits": "30 CME units every 3 years (ARDMS)"
+    },
+    "seasonality": "No significant seasonality. OB ultrasound volume stable year-round. Emergency cases year-round."
+  },
+  "regulatory": {
+    "summary": "ARDMS certification is the industry standard. Not all states require licensure but most employers mandate ARDMS credentials. CAAHEP/JRC-DMS accredits educational programs. AIUM provides practice guidelines.",
+    "key_laws": [
+      {
+        "name": "State licensure requirements (varies by state)",
+        "description": "Some states require sonographer licensure; most rely on ARDMS certification as employer standard"
+      },
+      {
+        "name": "CAAHEP accreditation standards",
+        "description": "Commission on Accreditation of Allied Health Education Programs accredits sonography programs"
+      },
+      {
+        "name": "AIUM Practice Parameters",
+        "description": "American Institute of Ultrasound in Medicine sets clinical practice standards",
+        "url": "https://www.aium.org"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Associate's degree minimum (bachelor's preferred) from CAAHEP-accredited program",
+        "ARDMS credentials: RDMS (abdomen, OB/GYN), RDCS (cardiac), RVT (vascular)",
+        "SPI (Sonography Principles and Instrumentation) physics exam required",
+        "30 CME units every 3 years for credential renewal",
+        "CPR/BLS certification",
+        "State-specific licensure where required"
+      ]
+    },
+    "recent_changes": "Growing push for standardized national licensure. AIUM updated practice guidelines for multiple exam types. Increasing employer requirements for dual or multi-specialty certification."
+  },
+  "tools": {
+    "summary": "High-end ultrasound systems from GE, Philips, Siemens, Canon. PACS and EHR integration via DICOM. Growing adoption of AI-assisted image analysis and POCUS devices.",
+    "primary_tools": [
+      {
+        "name": "Ultrasound systems",
+        "description": "High-end diagnostic ultrasound machines",
+        "examples": "GE Voluson (OB), GE LOGIQ, Philips EPIQ, Siemens ACUSON, Canon Aplio"
+      },
+      {
+        "name": "PACS (Picture Archiving and Communication Systems)",
+        "description": "Digital image storage and distribution systems"
+      },
+      {
+        "name": "EHR systems",
+        "description": "Electronic health records for patient data and reporting",
+        "examples": "Epic, Cerner, MEDITECH"
+      },
+      {
+        "name": "Reporting/structured reporting software",
+        "description": "Templates and systems for creating standardized ultrasound reports"
+      },
+      {
+        "name": "POCUS devices",
+        "description": "Point-of-care handheld ultrasound devices for bedside exams",
+        "examples": "Butterfly iQ, GE Vscan, Philips Lumify"
+      }
+    ],
+    "secondary_tools": [
+      "3D/4D ultrasound capabilities",
+      "Doppler analysis tools (color, power, spectral)",
+      "AI-assisted measurement and detection tools",
+      "Ergonomic equipment (adjustable tables, monitors)",
+      "Gel warmers and patient comfort supplies"
+    ],
+    "pain_points": [
+      "Repetitive strain injuries from scanning (shoulder, wrist, hand)",
+      "Ergonomic challenges with equipment positioning",
+      "High patient volume and productivity pressure",
+      "Older equipment in some facilities",
+      "PACS downtime affecting workflow"
+    ]
+  },
+  "terminology": {
+    "summary": "Specialized ultrasound and medical imaging vocabulary combining physics, anatomy, and clinical terminology.",
+    "terms": {
+      "RDMS": "Registered Diagnostic Medical Sonographer",
+      "RDCS": "Registered Diagnostic Cardiac Sonographer",
+      "RVT": "Registered Vascular Technologist",
+      "SPI": "Sonography Principles and Instrumentation — physics certification exam",
+      "transducer": "Probe that sends and receives ultrasound waves",
+      "Doppler": "Technique measuring blood flow using frequency shift of reflected sound",
+      "B-mode": "Brightness mode — standard 2D ultrasound imaging",
+      "M-mode": "Motion mode — displays motion over time on a single line",
+      "gain": "Amplification of returning ultrasound signals",
+      "TGC": "Time Gain Compensation — adjusting signal gain at different depths",
+      "acoustic window": "Body surface area providing optimal ultrasound image transmission",
+      "shadowing": "Ultrasound artifact behind dense structures (e.g., gallstones)",
+      "anechoic": "Without echoes — appears black on ultrasound (e.g., fluid)",
+      "hyperechoic": "Bright/white on ultrasound — reflects more sound",
+      "hypoechoic": "Darker than surrounding tissue — reflects less sound",
+      "nuchal translucency": "First-trimester OB measurement for chromosomal abnormality screening",
+      "EF": "Ejection fraction — cardiac function measurement",
+      "DVT": "Deep vein thrombosis — common vascular ultrasound finding",
+      "POCUS": "Point-of-care ultrasound — bedside/portable scanning"
+    }
+  },
+  "career_psychology": {
+    "summary": "Growing profession with strong job security and competitive salary (median $89,340). 13% projected growth rate — much faster than average. Physical demands (repetitive strain) are the primary concern. Multiple specialization paths provide career flexibility.",
+    "career_path": [
+      "Associate's or bachelor's degree in diagnostic medical sonography",
+      "Pass ARDMS SPI exam and specialty exam (abdomen, OB/GYN, etc.)",
+      "Entry-level staff sonographer",
+      "Dual/multi-specialty certified sonographer (higher earning potential)",
+      "Lead sonographer or supervisor",
+      "Chief sonographer / department manager",
+      "Applications specialist for equipment vendor, or educator"
+    ],
+    "salary_range": {
+      "entry_level": "$64,000 - $75,000",
+      "median_bls": "$89,340 (2024 BLS median)",
+      "experienced_multi_specialty": "$90,000 - $110,000",
+      "outpatient_care_centers": "$123,610 average",
+      "top_10_percent": "$123,170+"
+    },
+    "fears": [
+      "Work-related musculoskeletal disorders (WRMSDs) — extremely common",
+      "Repetitive strain ending career early",
+      "Missing critical findings during examination",
+      "Automation/AI replacing some diagnostic functions",
+      "Burnout from high-volume scanning schedules"
+    ],
+    "motivation": [
+      "Direct impact on patient diagnosis and care",
+      "Fascinating imaging technology",
+      "Non-invasive, patient-friendly procedures",
+      "Strong job market and competitive salary",
+      "Multiple specialization options",
+      "Relatively fast educational pathway"
+    ],
+    "burnout_factors": [
+      "Physical strain: scanning-related musculoskeletal injuries",
+      "High patient volume (10-15+ scans per day typical)",
+      "Emotional burden of finding serious pathology",
+      "Lack of ergonomic equipment in some facilities",
+      "On-call requirements at hospitals"
+    ]
+  },
+  "community": {
+    "summary": "Professional community organized through ARDMS, SDMS, AIUM, and specialty societies. Active online forums and study groups.",
+    "associations": [
+      {
+        "name": "American Registry for Diagnostic Medical Sonography (ARDMS)",
+        "url": "https://www.ardms.org",
+        "type": "Primary credentialing organization"
+      },
+      {
+        "name": "Society of Diagnostic Medical Sonography (SDMS)",
+        "url": "https://www.sdms.org",
+        "type": "Professional membership society for sonographers"
+      },
+      {
+        "name": "American Institute of Ultrasound in Medicine (AIUM)",
+        "url": "https://www.aium.org",
+        "type": "Multidisciplinary organization setting ultrasound practice standards"
+      },
+      {
+        "name": "Society of Vascular Ultrasound (SVU)",
+        "url": "https://www.svunet.org",
+        "type": "Specialty society for vascular sonography"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "r/Sonography",
+        "url": "https://reddit.com/r/Sonography",
+        "description": "Reddit community for sonographers"
+      },
+      {
+        "name": "Ultrasound Technician Facebook Groups",
+        "description": "Multiple active groups for sonographers"
+      }
+    ],
+    "events": [
+      "AIUM Annual Convention",
+      "SDMS Annual Conference",
+      "SVU Annual Conference",
+      "ARDMS CE events and webinars"
+    ]
+  },
+  "market": {
+    "summary": "One of the fastest-growing healthcare occupations. BLS projects 13% growth 2024-2034 with ~5,800 annual openings. Driven by aging population, preference for non-invasive imaging, and expanding clinical applications. Outpatient centers pay the highest.",
+    "demand_forecast": {
+      "growth_rate": "13% (2024-2034, BLS — much faster than average)",
+      "annual_openings": "~5,800/year",
+      "driver": "Aging population + non-invasive imaging preference"
+    },
+    "salary_market": {
+      "median_bls": "$89,340 (2024)",
+      "outpatient_centers": "$123,610 average",
+      "top_states": "California, New York, Massachusetts"
+    },
+    "market_trends": [
+      "13% growth rate — among fastest in healthcare",
+      "POCUS expanding sonographer role into new clinical settings",
+      "AI-assisted ultrasound emerging but enhancing, not replacing sonographers",
+      "Multi-specialty certified sonographers commanding premium pay",
+      "Telesonography and remote scanning consultation growing",
+      "Increasing use in primary care and urgent care settings"
+    ]
+  },
+  "quality_score": 0.80,
+  "sources_count": 28,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "diagnostic medical sonographer USA 2025 2026 salary career duties ARDMS certification job outlook shortage",
+      "sources": [
+        {"title": "BLS OOH — Diagnostic Medical Sonographers", "url": "https://www.bls.gov/ooh/healthcare/diagnostic-medical-sonographers.htm"},
+        {"title": "ARDMS Ultrasound Tech Salary Trends 2025", "url": "https://suresultmed.com/ultrasound-tech-salary/"},
+        {"title": "ARDMS Sonography Careers: Demand, Pay & Trends 2025", "url": "https://todopocus.com/career-opportunities-in-ultrasound/"},
+        {"title": "Mayo Clinic — Diagnostic Medical Sonographer Career", "url": "https://college.mayo.edu/academics/explore-health-care-careers/careers-a-z/diagnostic-medical-sonographer/"}
+      ]
+    }
+  ]
+}

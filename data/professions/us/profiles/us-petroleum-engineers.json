@@ -1,0 +1,319 @@
+{
+  "profession_id": "us-petroleum-engineers",
+  "profession_name": "Petroleum Engineers",
+  "soc_code": "17-2171.00",
+  "industry": "engineering",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Petroleum engineers devise methods to improve oil and gas extraction and production, working across office, field, and offshore environments. Daily work involves designing drilling operations, analyzing reservoir data, optimizing production processes, collaborating with geologists and field teams, and ensuring safety and environmental compliance. The role splits between desk-based analysis and modeling and hands-on field work at drilling sites and production facilities.",
+    "typical_tasks": [
+      "Assessing viability and economic potential of drilling sites",
+      "Designing and modifying drilling and extraction equipment and procedures",
+      "Running reservoir simulations and production forecasting models",
+      "Collaborating with geologists on subsurface characterization",
+      "Overseeing exploration, drilling, and production operations",
+      "Analyzing well test data and production performance",
+      "Developing completion and stimulation programs (hydraulic fracturing)",
+      "Ensuring compliance with safety standards and environmental regulations",
+      "Inspecting operations on federal oil and gas leases",
+      "Preparing technical reports and economic analyses",
+      "Optimizing enhanced oil recovery (EOR) techniques",
+      "Managing well plugging and abandonment procedures"
+    ],
+    "key_documents": [
+      "Well plans and drilling programs",
+      "Reservoir simulation models and reports",
+      "Production decline curve analyses",
+      "Environmental impact assessments",
+      "Safety and regulatory compliance reports",
+      "API (American Petroleum Institute) standards documents",
+      "Well completion and workover procedures",
+      "Economic feasibility studies and reserve estimates",
+      "Daily drilling reports (DDR)",
+      "State and federal permit applications"
+    ],
+    "deadlines": {
+      "daily": "Daily drilling reports, production monitoring, real-time operations support",
+      "weekly": "Production reports, team meetings, project status updates",
+      "monthly": "Reserve estimates, production forecasts, regulatory compliance filings",
+      "annual": "Annual reserves reporting (SEC filings), budget planning, PE license renewal, safety training recertification"
+    },
+    "seasonality": "Drilling activity is influenced by oil price cycles and capital budgets set annually. Winter operations in northern regions face weather-related slowdowns. Offshore hurricane season (June-November) affects Gulf of Mexico operations. Budget cycles typically front-load drilling activity in Q1-Q2. Rig counts fluctuate with commodity prices, creating boom-bust employment cycles."
+  },
+  "regulatory": {
+    "summary": "Petroleum engineers operate under extensive federal and state regulatory frameworks governing drilling, production, safety, and environmental protection. While PE licensure is available and valued, it is not universally required for all petroleum engineering roles. The NCEES PE Petroleum exam is offered once per year and requires 4 years of post-college experience. Federal leases are inspected by DOI/BLM engineers. Environmental regulations from EPA and state agencies heavily govern operations.",
+    "key_laws": [
+      "Clean Water Act (CWA) - regulates discharge of pollutants into waters",
+      "Clean Air Act (CAA) - emissions standards for oil and gas operations",
+      "Safe Drinking Water Act (SDWA) - underground injection control for well operations",
+      "Resource Conservation and Recovery Act (RCRA) - hazardous waste management",
+      "National Environmental Policy Act (NEPA) - environmental impact assessments for federal lands",
+      "Mineral Leasing Act - governs oil and gas leasing on federal lands",
+      "OSHA regulations for oil and gas worker safety",
+      "State-specific drilling and production regulations (e.g., Texas Railroad Commission, Oklahoma Corporation Commission)",
+      "SEC reserve reporting requirements for publicly traded companies",
+      "BLM Onshore Orders for federal lease operations"
+    ],
+    "licensing": {
+      "requirements": [
+        "Bachelor's degree in petroleum engineering or related engineering field (ABET-accredited preferred)",
+        "Fundamentals of Engineering (FE) exam - taken during or after college",
+        "4 years minimum post-college progressive engineering experience",
+        "PE Petroleum exam - computer-based, 85 questions, administered one day per year via Pearson VUE",
+        "State-specific PE license application and approval through state board",
+        "SPE Petroleum Engineering Certification (PEC) - globally recognized voluntary credential",
+        "H2S safety certification for field operations",
+        "Well Control certification (IADC WellCAP or IWCF) for drilling engineers"
+      ]
+    },
+    "continuing_education": "PE license renewal requires state-specific continuing professional development (typically 15-30 PDH per renewal cycle). SPE certification requires ongoing professional development tracking. Safety certifications (H2S, well control) require periodic renewal every 2-4 years. Many states require ethics courses as part of renewal. Companies typically mandate annual safety training and regulatory compliance updates."
+  },
+  "tools": {
+    "summary": "Petroleum engineers rely on sophisticated reservoir simulation software, drilling optimization tools, and production analysis platforms. The industry is undergoing significant digital transformation with AI, digital twins, and cloud computing becoming standard. Major software vendors include Schlumberger (SLB), Halliburton, and specialized providers. The digital transformation market in oil and gas is projected to grow by $56.4 billion between 2025-2029 at 14.5% CAGR.",
+    "primary_tools": [
+      "Schlumberger Petrel (integrated E&P platform for reservoir modeling and simulation)",
+      "Halliburton Landmark DecisionSpace (reservoir and production management)",
+      "CMG (Computer Modelling Group) reservoir simulators (IMEX, GEM, STARS)",
+      "Eclipse reservoir simulator (Schlumberger)",
+      "JewelSuite (wellbore modeling, drilling optimization, geomechanics)",
+      "WellPlan (drilling and completion design software)",
+      "Whitson (DCA, PVT, RTA, nodal analysis tools)",
+      "KAPPA (Saphir for well test analysis, Topaze for production analysis)"
+    ],
+    "secondary_tools": [
+      "pengtools.com (online petroleum engineering tools - DCA, PVT, IPR)",
+      "Spotfire/Power BI (data visualization and analytics)",
+      "Python and MATLAB for custom analysis and automation",
+      "OLGA (multiphase flow simulator by Schlumberger)",
+      "Prosper/GAP/MBAL (IPM suite by Petroleum Experts)",
+      "AutoCAD and SolidWorks for equipment design",
+      "Digital twin platforms for real-time asset optimization",
+      "AI/ML platforms for predictive maintenance and production optimization"
+    ],
+    "pain_points": [
+      "High software licensing costs ($50k-$500k+ annually for major platforms)",
+      "Legacy systems and data silos between departments",
+      "Integration challenges between different vendor platforms",
+      "Data quality issues from heterogeneous field sensors and historical records",
+      "Steep learning curves for complex simulation software",
+      "Limited real-time data connectivity from remote field locations",
+      "Difficulty incorporating AI/ML into established engineering workflows",
+      "Managing large datasets from modern well monitoring systems"
+    ]
+  },
+  "terminology": {
+    "summary": "Petroleum engineering uses a highly specialized vocabulary covering drilling operations, reservoir characterization, production optimization, and enhanced recovery. Terms span geological, mechanical, chemical, and financial domains. Industry-specific abbreviations and jargon are used daily in reports, operations, and communication.",
+    "terms": {
+      "Reservoir": "Porous and permeable sedimentary rock formation containing commercial quantities of oil and gas",
+      "Permeability": "Property of formation quantifying fluid flow through pore spaces into the wellbore, measured in darcies or millidarcies",
+      "Hydraulic fracturing (fracking)": "Process of pumping fluids at high pressure into productive formation to create fractures and improve hydrocarbon flow",
+      "Horizontal drilling": "Drilling technique where wellbore is directed through reservoir rock horizontally to maximize contact with hydrocarbon-bearing formations",
+      "Enhanced Oil Recovery (EOR)": "Advanced recovery techniques (chemical, thermal, gas injection) applied after primary and secondary production phases",
+      "Drilling mud/fluid": "Specially formulated fluids lubricating drill bit, controlling formation pressure, and carrying cuttings to surface. Types: water-based, oil-based, gaseous",
+      "Blowout preventer (BOP)": "Critical safety device installed at wellhead to seal, control, and monitor the well to prevent uncontrolled release of formation fluids",
+      "Decline curve analysis (DCA)": "Method of forecasting future production rates based on historical production trends",
+      "Well completion": "Process of finishing a drilled well to make it ready for production, including casing, cementing, perforating, and stimulation",
+      "Rig": "Machine used to drill a wellbore; major components include mud tanks, pumps, derrick/mast, drawworks, rotary table/topdrive, drillstring",
+      "Workover": "Operations on a producing well to restore, maintain, or improve production after initial completion",
+      "PVT analysis": "Pressure-Volume-Temperature analysis of reservoir fluid properties used in simulation and production planning",
+      "Spud": "The initial drilling of a well; the moment the drill bit first penetrates the ground surface",
+      "WOR/GOR": "Water-Oil Ratio / Gas-Oil Ratio - key production metrics indicating well performance and reservoir behavior"
+    }
+  },
+  "career_psychology": {
+    "summary": "Petroleum engineers enjoy one of the highest-paying engineering careers with a median salary around $145,000, but face a cyclical industry with boom-bust employment patterns tied to oil prices. Job satisfaction is driven by the combination of intellectual challenge and hands-on field work, but office-bound roles tend to report lower satisfaction. The energy transition creates long-term career uncertainty. Career progression typically moves from field to office roles over 6-12 years.",
+    "career_path": [
+      "Bachelor's degree in Petroleum Engineering or related field (4 years)",
+      "Entry-level field engineer or operations engineer (years 0-3)",
+      "FE exam and early-career technical specialization",
+      "Mid-career reservoir/drilling/production engineer (years 3-8)",
+      "PE license acquisition (4+ years experience)",
+      "Senior engineer / team lead (years 8-15)",
+      "Principal engineer or engineering manager (years 15-20)",
+      "Vice President of Engineering, CTO, or executive leadership (years 20+)"
+    ],
+    "salary_range": {
+      "entry_level": "$78,000 - $100,000",
+      "mid_career": "$120,000 - $160,000",
+      "senior": "$160,000 - $204,000+",
+      "median_2026": "$144,801 (Indeed), $141,000 (US News)",
+      "top_earners": "$200,000+ (management, specialized roles)"
+    },
+    "fears": [
+      "Oil price crashes causing layoffs (2014-2016 and 2020 downturns traumatized the workforce)",
+      "Energy transition making petroleum engineering skills obsolete",
+      "Industry automation reducing engineering headcount",
+      "Remote/offshore assignments straining personal relationships",
+      "Safety incidents at drilling sites or production facilities",
+      "Declining enrollment in petroleum engineering programs signaling industry decline",
+      "Regulatory changes restricting drilling activity",
+      "Climate activism creating social stigma around fossil fuel careers"
+    ],
+    "motivation": [
+      "High compensation relative to other engineering fields",
+      "Intellectual challenge of subsurface problem-solving",
+      "Hands-on field work combined with analytical desk work",
+      "Working with both mind and hands in challenging environments",
+      "Contributing to energy security and national economy",
+      "Travel opportunities and diverse work environments",
+      "Collaborative work with multidisciplinary teams",
+      "Tangible impact - seeing wells produce and projects succeed"
+    ],
+    "burnout_factors": [
+      "Boom-bust employment cycles creating job insecurity",
+      "Long rotational schedules for offshore or remote assignments (14/14, 28/28)",
+      "High-pressure decision-making with significant financial stakes",
+      "Transition from exciting field work to monotonous office roles",
+      "On-call demands for drilling operations and well emergencies",
+      "Industry consolidation reducing career advancement opportunities",
+      "Geographic relocation requirements to oil-producing regions",
+      "Ethical tensions around environmental impact of operations"
+    ]
+  },
+  "community": {
+    "summary": "The petroleum engineering community is centered around the Society of Petroleum Engineers (SPE), a global professional organization that provides technical resources, networking, and career development. The SPE Annual Technical Conference and Exhibition (ATCE) is the premier industry event. Regional SPE sections and the Society of Petroleum Evaluation Engineers (SPEE) provide additional networking. The Offshore Technology Conference (OTC) is another major gathering.",
+    "associations": [
+      "Society of Petroleum Engineers (SPE) - primary global professional organization",
+      "Society of Petroleum Evaluation Engineers (SPEE) - chapters in 12+ regions",
+      "American Association of Petroleum Geologists (AAPG)",
+      "American Institute of Chemical Engineers (AIChE) - for process-focused engineers",
+      "Association of Energy Engineers (AEE)",
+      "Interstate Oil and Gas Compact Commission (IOGCC)",
+      "American Petroleum Institute (API) - industry standards body"
+    ],
+    "events": [
+      "SPE Annual Technical Conference & Exhibition (ATCE) 2026 - October 21-23, Houston, TX (102nd edition, theme: 'Exploring New Horizons with Innovative Solutions')",
+      "Offshore Technology Conference (OTC) 2026 - Houston, TX",
+      "SPE Hydraulic Fracturing Technology Conference",
+      "SPE International Conference on Oilfield Chemistry",
+      "Unconventional Resources Technology Conference (URTeC)",
+      "SPE/IADC Drilling Conference",
+      "World Petroleum Congress",
+      "Regional SPE section meetings and technical symposiums"
+    ],
+    "online_communities": [
+      "SPE Connect (members-only technical discussion forums)",
+      "SPE OnePetro (technical paper database and knowledge sharing)",
+      "LinkedIn petroleum engineering groups (50,000+ members)",
+      "Reddit r/petroleumengineers and r/oilandgasworkers",
+      "Petro Ninja and other industry data platforms",
+      "SPE Young Professionals programs and chapters",
+      "Drilling Contractor magazine online community",
+      "PetroWiki (SPE's open petroleum engineering wiki)"
+    ]
+  },
+  "market": {
+    "summary": "The petroleum engineering job market shows minimal growth of 1% projected through 2032, well below average, as the industry achieves record production with fewer workers through automation and efficiency improvements. However, salaries remain among the highest in engineering at $141-145K+ median. The energy transition creates long-term uncertainty, but near-term demand persists for deepwater, unconventional, and EOR expertise. Digital transformation is reshaping required skill sets.",
+    "job_outlook": {
+      "growth_rate": "1% (2022-2032), well below average",
+      "projected_openings": "Approximately 2,100 openings annually from retirements and turnover",
+      "bls_category": "Little or no change",
+      "demand_trend": "Flat overall but strong in specialized areas (deepwater, EOR, digital oilfield)"
+    },
+    "salary_market": {
+      "national_median": "$144,801 (2026)",
+      "entry_range": "$78,000 - $100,000",
+      "experienced_range": "$160,000 - $204,000+",
+      "top_paying_locations": ["Houston TX", "Midland TX", "Denver CO", "Oklahoma City OK", "Bakersfield CA"],
+      "bls_median": "$131,800 (2022)"
+    },
+    "demand_drivers": [
+      "Record US oil production requiring operational engineering expertise",
+      "Deepwater exploration in Gulf of Mexico requiring specialized engineers",
+      "Unconventional resource development (shale gas, tight oil)",
+      "Enhanced oil recovery programs extending field life",
+      "Digital transformation requiring engineers with data science skills",
+      "Retirement wave of experienced engineers creating succession gaps",
+      "Carbon capture and storage (CCS) leveraging petroleum engineering skills",
+      "Geothermal energy development using drilling expertise"
+    ],
+    "market_trends": [
+      "Industry producing record oil with fewer workers - automation reducing headcount",
+      "Energy transition driving diversification into CCS, geothermal, and hydrogen",
+      "Digital transformation market growing by $56.4B between 2025-2029 (14.5% CAGR)",
+      "AI and digital twin technology integration into reservoir management",
+      "Declining petroleum engineering program enrollments at universities",
+      "Consolidation of E&P companies reducing total engineering positions",
+      "Growing demand for engineers with both petroleum and data science skills",
+      "Increasing focus on ESG (Environmental, Social, Governance) compliance"
+    ]
+  },
+  "quality_score": 0.79,
+  "sources_count": 29,
+  "verified_sources": 12,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "petroleum engineers daily routine tasks responsibilities work US 2025 2026",
+      "sources": [
+        "https://www.bls.gov/ooh/architecture-and-engineering/petroleum-engineers.htm",
+        "https://www.indeed.com/hire/job-description/petroleum-engineer",
+        "https://www.ziprecruiter.com/e/What-Do-Petroleum-Engineers-Do-on-a-Daily-Basis",
+        "https://careers.doi.gov/occupational-series/petroleum-engineer",
+        "https://www.onetonline.org/link/details/17-2171.00",
+        "https://www.owlguru.com/career/petroleum-engineers/job-description/"
+      ]
+    },
+    {
+      "query": "petroleum engineers US regulatory requirements licensing PE certification 2025 2026",
+      "sources": [
+        "https://www.spe.org/en/training/certification/",
+        "https://ncees.org/exams/pe-exam/petroleum/",
+        "https://ncees.org/exams/pe-exam/",
+        "https://pewise.com/blog/pe-exam-requirements-by-state-2025",
+        "https://pels.texas.gov/lic_basic.htm"
+      ]
+    },
+    {
+      "query": "petroleum engineers software tools technology used daily practice 2025 2026",
+      "sources": [
+        "https://www.pengtools.com",
+        "https://www.capstonees.com/blog/oil-and-gas-software-for-engineers-in-2025",
+        "https://whitson.com/",
+        "https://www.trustradius.com/categories/oil-and-gas",
+        "https://www.kappaeng.com/",
+        "https://www.cflowapps.com/oil-and-gas-industry-technology-trends/"
+      ]
+    },
+    {
+      "query": "petroleum engineering terminology common terms drilling reservoir 2025",
+      "sources": [
+        "https://www.arescotx.com/og-education-resources/oil-and-gas-glossary/",
+        "https://marcellus.psu.edu/resources/glossary-of-terms/",
+        "https://www.osha.gov/etools/oil-and-gas/glossary-of-terms-p",
+        "https://sunitausa.com/blog/top-terminologies-in-oil-gas-industry-glossary/",
+        "https://www.odsi-energy.com/glossary-of-petroleum-engineering-terms/"
+      ]
+    },
+    {
+      "query": "petroleum engineer career path salary burnout job satisfaction US 2025 2026",
+      "sources": [
+        "https://careers.usnews.com/best-jobs/petroleum-engineer",
+        "https://www.bls.gov/ooh/architecture-and-engineering/petroleum-engineers.htm",
+        "https://careers.usnews.com/best-jobs/petroleum-engineer/salary",
+        "https://www.princetonreview.com/careers/109/petroleum-engineer",
+        "https://www.payscale.com/research/US/Job=Petroleum_Engineer/Salary"
+      ]
+    },
+    {
+      "query": "petroleum engineer professional associations conferences SPE communities US 2025 2026",
+      "sources": [
+        "https://www.atce.org/",
+        "https://www.spe.org/en/events/calendar/",
+        "https://www.atce.org/about-atce",
+        "https://2026.otcnet.org/committees/society-of-petroleum-engineers",
+        "https://spee.org/"
+      ]
+    },
+    {
+      "query": "petroleum engineer job outlook market demand salary trends US 2025 2026",
+      "sources": [
+        "https://www.zippia.com/chief-petroleum-engineer-jobs/trends/",
+        "https://www.bls.gov/ooh/architecture-and-engineering/petroleum-engineers.htm",
+        "https://careers.usnews.com/best-jobs/petroleum-engineer/salary",
+        "https://www.progressiverecruitment.com/en-us/knowledge-hub/industry-insights/big-paychecks-in-energy-7-highest-paying-jobs-in-the-oil-and-gas-industry-in-2025/",
+        "https://money.usnews.com/careers/best-jobs/petroleum-engineer"
+      ]
+    }
+  ]
+}

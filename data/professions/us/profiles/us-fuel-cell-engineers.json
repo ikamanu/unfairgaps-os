@@ -1,0 +1,309 @@
+{
+  "profession_id": "us-fuel-cell-engineers",
+  "profession_name": "Fuel Cell Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Fuel cell engineers design, develop, and test fuel cell systems for clean energy applications. They work on cell components, stack assemblies, and balance-of-plant systems in R&D labs, manufacturing facilities, and testing centers. The field is still emerging with limited but growing opportunities.",
+    "typical_tasks": [
+      "Design fuel cell systems, stacks, and components (MEA, bipolar plates, GDLs)",
+      "Build and test prototypes of fuel cell power plants",
+      "Evaluate power output, efficiency, and environmental impact of designs",
+      "Conduct electrochemical testing and performance characterization",
+      "Develop hydrogen storage and delivery systems for fuel cell applications",
+      "Analyze test data and assess progress/setbacks",
+      "Write technical reports and research publications",
+      "Troubleshoot, maintain, and repair fuel cell systems",
+      "Perform safety assessments for hydrogen handling",
+      "Stay current with fuel cell technology literature and advancements"
+    ],
+    "key_documents": [
+      "Fuel cell design specifications",
+      "Test protocols and performance reports",
+      "Safety assessment documentation (hydrogen handling)",
+      "Technical research papers and literature reviews",
+      "Patent applications for novel designs",
+      "DOE grant proposals and progress reports",
+      "Manufacturing process documentation",
+      "Quality control and reliability test reports"
+    ],
+    "deadlines": {
+      "doe_grant_cycles": "DOE FOA deadlines vary, typically quarterly",
+      "prototype_milestones": "Project-dependent, often 6-18 month cycles",
+      "conference_papers": "6-12 months ahead of major conferences",
+      "patent_filings": "Time-sensitive, prior art considerations"
+    },
+    "seasonality": "R&D work is year-round. DOE funding announcements and industry conference seasons create periodic peaks. Government fiscal year (October) affects federal funding cycles."
+  },
+  "regulatory": {
+    "summary": "Fuel cell engineering is governed by DOE safety codes, NFPA hydrogen standards, and evolving national/international hydrogen safety standards. PE licensure follows standard mechanical/chemical engineering paths. The regulatory landscape is still developing alongside the hydrogen economy.",
+    "key_laws": [
+      {
+        "name": "NFPA 2 — Hydrogen Technologies Code",
+        "description": "Comprehensive code for hydrogen systems including fuel cells"
+      },
+      {
+        "name": "DOE Safety, Codes and Standards Program",
+        "description": "Federal coordination of hydrogen and fuel cell safety standards",
+        "agency": "DOE EERE"
+      },
+      {
+        "name": "SAE J2578 — Recommended Practice for Fuel Cell Vehicles",
+        "description": "Safety standards for fuel cell vehicle systems"
+      },
+      {
+        "name": "UL 2703 / IEC 62282",
+        "description": "Product safety and performance standards for fuel cell modules"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Bachelor's degree minimum in mechanical, chemical, or electrical engineering",
+        "Master's/PhD preferred for R&D positions",
+        "PE licensure through standard NCEES path (FE + PE exam)",
+        "No fuel-cell-specific PE discipline — typically PE Mechanical or Chemical"
+      ],
+      "standards_bodies": [
+        "DOE Hydrogen and Fuel Cell Technologies Office",
+        "NREL — Safety, Codes and Standards research",
+        "FCHEA — Industry trade association",
+        "SAE International — Automotive fuel cell standards"
+      ]
+    },
+    "penalties": "Hydrogen safety violations subject to OSHA enforcement. DOE-funded projects must comply with federal safety requirements. Product liability for commercial fuel cell systems."
+  },
+  "tools": {
+    "summary": "Fuel cell engineers rely on multiphysics simulation (COMSOL, ANSYS), CAD design, electrochemical testing equipment, and specialized lab instruments for performance characterization.",
+    "primary_tools": [
+      {
+        "name": "COMSOL Multiphysics (Fuel Cell & Electrolyzer Module)",
+        "description": "Multiphysics simulation for PEM, SOFC, MCFC — models charge transport, electrode reactions, gas diffusion, thermal management"
+      },
+      {
+        "name": "ANSYS Fluent",
+        "description": "CFD and fuel cell modeling for flow distribution, heat transfer, and electrochemistry"
+      },
+      {
+        "name": "MATLAB / Simulink",
+        "description": "System modeling, control algorithms, and PEM fuel cell system simulation"
+      },
+      {
+        "name": "SolidWorks / AutoCAD",
+        "description": "3D CAD design for fuel cell components, stacks, and assemblies"
+      },
+      {
+        "name": "Potentiostat / Galvanostat (Gamry, BioLogic)",
+        "description": "Electrochemical testing instruments for cell performance characterization"
+      },
+      {
+        "name": "Fuel Cell Test Station",
+        "description": "Automated testing systems for measuring IV curves, impedance, durability"
+      }
+    ],
+    "secondary_tools": [
+      "Gas chromatograph — hydrogen purity and composition analysis",
+      "Mass flow controllers — precise gas delivery for testing",
+      "SEM/TEM microscopy — catalyst and membrane characterization",
+      "Humidity and temperature control chambers",
+      "LabVIEW — data acquisition and test automation",
+      "Python / R — data analysis and visualization"
+    ],
+    "pain_points": [
+      "High cost of testing equipment and hydrogen supply",
+      "Long durability testing cycles (thousands of hours)",
+      "Scaling from lab prototypes to commercial production",
+      "Limited standardization across different fuel cell types"
+    ]
+  },
+  "terminology": {
+    "summary": "Fuel cell engineering terminology spans electrochemistry, materials science, and energy systems. Key acronyms relate to fuel cell types, components, performance metrics, and hydrogen handling.",
+    "terms": {
+      "PEM/PEMFC": "Proton Exchange Membrane / Polymer Electrolyte Membrane Fuel Cell",
+      "SOFC": "Solid Oxide Fuel Cell — high-temperature ceramic electrolyte",
+      "MCFC": "Molten Carbonate Fuel Cell",
+      "PAFC": "Phosphoric Acid Fuel Cell",
+      "AFC": "Alkaline Fuel Cell",
+      "DMFC": "Direct Methanol Fuel Cell",
+      "MEA": "Membrane Electrode Assembly — core component (membrane + catalysts + GDLs)",
+      "GDL": "Gas Diffusion Layer — porous carbon material for gas distribution",
+      "BOP": "Balance of Plant — auxiliary systems (pumps, humidifiers, controllers)",
+      "HOR": "Hydrogen Oxidation Reaction — anode half-reaction",
+      "ORR": "Oxygen Reduction Reaction — cathode half-reaction",
+      "OCV": "Open Circuit Voltage — theoretical max voltage of fuel cell",
+      "IV curve": "Current-Voltage performance curve of fuel cell",
+      "EIS": "Electrochemical Impedance Spectroscopy — diagnostic technique",
+      "PFSA": "Perfluorosulfonic Acid — standard PEM membrane material (e.g., Nafion)",
+      "bipolar plate": "Conductive plate connecting cells in a stack, providing gas flow channels",
+      "stack": "Multiple fuel cells connected in series for higher voltage/power",
+      "degradation rate": "Performance loss over time, measured in μV/hour",
+      "humidification": "Water management critical for PEM fuel cell performance",
+      "reforming": "Converting hydrocarbon fuels to hydrogen for fuel cell use"
+    }
+  },
+  "career_psychology": {
+    "summary": "Emerging clean energy career with average salary ~$97K. Driven by mission to develop clean energy solutions. Limited employers but growing with hydrogen economy expansion. Advanced degrees (MS/PhD) strongly preferred for R&D roles.",
+    "career_path": [
+      "Bachelor's in Mechanical/Chemical/Electrical Engineering",
+      "Master's or PhD (strongly preferred for R&D positions)",
+      "Junior Fuel Cell Engineer / Research Associate",
+      "Senior Fuel Cell Engineer (5+ years)",
+      "Principal Engineer / Technical Lead",
+      "Engineering Manager / R&D Director",
+      "VP of Engineering / CTO at fuel cell companies"
+    ],
+    "salary_range": {
+      "entry_level": "$65,000 - $85,000/year",
+      "mid_level": "$85,000 - $110,000/year",
+      "senior": "$110,000 - $140,000/year",
+      "director_level": "$140,000 - $180,000+/year",
+      "average": "$96,666/year (ZipRecruiter 2026)"
+    },
+    "fears": [
+      "Industry not scaling fast enough for career stability",
+      "Funding cuts to clean energy programs",
+      "Technology being displaced by battery electric alternatives",
+      "Limited number of employers in the space",
+      "Long R&D cycles without commercial success"
+    ],
+    "motivation": [
+      "Contributing to clean energy transition and climate solutions",
+      "Working on cutting-edge technology at the frontier of engineering",
+      "Potential for massive industry growth with hydrogen economy",
+      "Intellectually challenging multidisciplinary work",
+      "Being part of a mission-driven community"
+    ],
+    "burnout_factors": [
+      "Pressure to achieve commercial viability with limited budgets",
+      "Long testing and development cycles",
+      "Competition with battery technology for funding and attention",
+      "Small team sizes requiring broad skill coverage",
+      "Grant-writing and funding uncertainty"
+    ]
+  },
+  "community": {
+    "summary": "Professional community organized around FCHEA, the Electrochemical Society, and DOE programs. The Hydrogen & Fuel Cell Seminar is the premier North American conference. Community is specialized but globally connected.",
+    "associations": [
+      {
+        "name": "Fuel Cell and Hydrogen Energy Association (FCHEA)",
+        "url": "https://fchea.org/",
+        "description": "National hydrogen industry trade association, 35+ years of advocacy"
+      },
+      {
+        "name": "The Electrochemical Society (ECS)",
+        "url": "https://www.electrochem.org/",
+        "description": "Scientific society for electrochemistry and solid state science, hosts fuel cell symposia"
+      },
+      {
+        "name": "International Association for Hydrogen Energy (IAHE)",
+        "description": "1,000+ members in 110+ countries, founded 1974"
+      },
+      {
+        "name": "DOE Hydrogen and Fuel Cell Technologies Office",
+        "url": "https://www.energy.gov/eere/fuelcells/hydrogen-and-fuel-cell-technologies-office",
+        "description": "Federal R&D coordination, funding, and industry partnerships"
+      }
+    ],
+    "online_communities": [
+      "LinkedIn hydrogen and fuel cell professional groups",
+      "r/HydrogenSocieties — Reddit community",
+      "Hyfindr — hydrogen knowledge platform",
+      "DOE H2IQ — hydrogen information and resources"
+    ],
+    "conferences": [
+      "Hydrogen & Fuel Cell Seminar — longest-running H2/FC conference in North America (since 1976)",
+      "ECS Biannual Meetings — fuel cell symposia",
+      "Electrolyser and Fuel Cell Forum (EFCF) 2026",
+      "DOE Annual Merit Review — hydrogen and fuel cell projects"
+    ]
+  },
+  "market": {
+    "summary": "Niche but rapidly expanding field driven by hydrogen economy growth. Average salary ~$97K with projected 2-9% growth. Limited employers concentrated in CA, CT, NY. Hydrogen economy could create ~1M US jobs by 2030.",
+    "growth_rate": "2-9% projected (varies by source), hydrogen economy significantly broader",
+    "salary_market": {
+      "average": "$96,666/year",
+      "25th_percentile": "$80,000/year",
+      "75th_percentile": "$109,000 - $143,000/year",
+      "top_earners": "$115,500+/year"
+    },
+    "top_employers": [
+      "Bloom Energy — SOFC systems",
+      "Plug Power — PEM fuel cells and hydrogen infrastructure",
+      "Cummins (Hydrogenics) — electrolyzers and fuel cells",
+      "Toyota / Hyundai / GM — automotive fuel cells",
+      "Ballard Power Systems — PEM fuel cell products",
+      "National Labs (NREL, ANL, LANL, PNNL)",
+      "DOE-funded research universities"
+    ],
+    "top_states": ["California", "Connecticut", "New York", "Colorado", "Ohio", "Massachusetts"],
+    "market_trends": [
+      "Hydrogen economy could create ~1 million new US jobs by 2030",
+      "Inflation Reduction Act hydrogen production tax credits driving investment",
+      "DOE Hydrogen Hubs program creating regional employment centers",
+      "Growing demand for green hydrogen production (electrolyzers)",
+      "Heavy-duty transport (trucks, buses) shifting to fuel cell powertrains",
+      "Competition with battery-electric for transportation market share"
+    ]
+  },
+  "quality_score": 0.73,
+  "sources_count": 26,
+  "verified_sources": 8,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Fuel Cell Engineers USA daily work tasks responsibilities hydrogen fuel cell design testing",
+      "sources": [
+        {"title": "O*NET — Fuel Cell Engineers", "url": "https://www.onetonline.org/link/summary/17-2141.01"},
+        {"title": "CareerExplorer — Fuel Cell Engineer", "url": "https://www.careerexplorer.com/careers/fuel-cell-engineer/"},
+        {"title": "DOE — Hydrogen and Fuel Cell Technologies Office", "url": "https://www.energy.gov/eere/fuelcells/hydrogen-and-fuel-cell-technologies-office"}
+      ]
+    },
+    {
+      "query": "Fuel Cell Engineers USA regulations standards hydrogen safety DOE",
+      "sources": [
+        {"title": "DOE — Safety, Codes and Standards", "url": "https://www.energy.gov/eere/fuelcells/safety-codes-and-standards"},
+        {"title": "FCHEA — Regulations Codes and Standards", "url": "https://fchea.org/our-work/regulations-codes-and-standards/"},
+        {"title": "NREL — Safety, Codes, and Standards", "url": "https://www.nrel.gov/hydrogen/safety-codes-standards"}
+      ]
+    },
+    {
+      "query": "Fuel Cell Engineers software tools COMSOL ANSYS simulation modeling",
+      "sources": [
+        {"title": "COMSOL — Fuel Cell & Electrolyzer Module", "url": "https://www.comsol.com/fuel-cell-and-electrolyzer-module"},
+        {"title": "COMSOL Blog — 4 Examples of Fuel Cell Modeling", "url": "https://www.comsol.com/blogs/4-examples-of-fuel-cell-modeling-in-comsol-multiphysics"},
+        {"title": "ANSYS — Modeling Fuel Cells", "url": "https://ansyshelp.ansys.com/public/account/secured?returnurl=/Views/Secured/corp/v242/en/flu_th/flu_th_models_fuelcells.html"}
+      ]
+    },
+    {
+      "query": "Fuel Cell Engineers terminology PEM SOFC MEA stack hydrogen",
+      "sources": [
+        {"title": "DOE — Parts of a Fuel Cell", "url": "https://www.energy.gov/eere/fuelcells/parts-fuel-cell"},
+        {"title": "Wikipedia — Proton-exchange membrane fuel cell", "url": "https://en.wikipedia.org/wiki/Proton-exchange_membrane_fuel_cell"},
+        {"title": "Hyfindr — Fuel Cell Stack", "url": "https://hyfindr.com/en/hydrogen-knowledge/fuel-cell-stack"}
+      ]
+    },
+    {
+      "query": "Fuel Cell Engineers USA career path salary burnout job outlook",
+      "sources": [
+        {"title": "ZipRecruiter — Fuel Cell Engineer Salary 2026", "url": "https://www.ziprecruiter.com/Salaries/Fuel-Cell-Engineer-Salary"},
+        {"title": "Zippia — Fuel Cell Engineer Job Outlook", "url": "https://www.zippia.com/fuel-cell-engineer-jobs/trends/"},
+        {"title": "DOE — Careers in Fuel Cell Technologies", "url": "https://www.energy.gov/eere/fuelcells/articles/careers-fuel-cell-technologies-fact-sheet"}
+      ]
+    },
+    {
+      "query": "Fuel Cell Engineers USA associations conferences community",
+      "sources": [
+        {"title": "FCHEA", "url": "https://fchea.org/"},
+        {"title": "Hydrogen & Fuel Cell Seminar", "url": "https://www.fuelcellseminar.com/"},
+        {"title": "ECS — Upcoming Meetings", "url": "https://www.electrochem.org/upcoming-meetings"},
+        {"title": "IAHE Wikipedia", "url": "https://en.wikipedia.org/wiki/International_Association_for_Hydrogen_Energy"}
+      ]
+    },
+    {
+      "query": "Fuel Cell Engineers USA job market demand salary trends hydrogen economy",
+      "sources": [
+        {"title": "Recruiter.com — Fuel Cell Engineer Outlook", "url": "https://www.recruiter.com/careers/fuel-cell-engineers/outlook/"},
+        {"title": "Rhodium Group — Clean Hydrogen Workforce", "url": "https://rhg.com/research/clean-hydrogen-workforce-development/"},
+        {"title": "DOE — Explore Hydrogen and Fuel Cell Careers", "url": "https://www.energy.gov/energysaver/explore-hydrogen-and-fuel-cell-careers"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,420 @@
+{
+  "profession_id": "us-transportation-engineers",
+  "profession_name": "Transportation Engineers",
+  "country": "US",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Transportation engineers plan, design, and oversee the construction and operation of transportation systems including highways, streets, bridges, airports, transit systems, and drainage structures. Their work splits between office-based design and analysis, field inspections of construction progress, and coordination meetings with contractors, utility companies, and government agencies. They routinely analyze traffic patterns, prepare design plans, and investigate traffic problems to recommend improvements for flow and safety.",
+    "typical_tasks": [
+      "Develop plans for surface transportation projects per engineering standards and state/federal construction policy",
+      "Prepare designs, specifications, and cost estimates for transportation facilities",
+      "Analyze traffic patterns and perform Level of Service (LOS) analyses",
+      "Plan modifications to existing streets, highways, or freeways to improve traffic flow",
+      "Design drainage, erosion, and sedimentation control systems for transportation projects",
+      "Perform traffic signal timing optimization using Synchro and similar software",
+      "Run microsimulation models (VISSIM, SimTraffic) for traffic impact studies",
+      "Inspect completed transportation projects for safety and regulatory compliance",
+      "Investigate and test construction project materials for specification compliance",
+      "Confer with contractors, utility companies, and government agencies on plans and schedules",
+      "Present data, maps, and information at construction-related public hearings",
+      "Prepare project budgets, schedules, and specifications for labor and materials",
+      "Review Environmental Impact Statements and NEPA documentation for transportation projects",
+      "Coordinate with urban planners, architects, and other engineers on multimodal projects"
+    ],
+    "key_documents": [
+      "Traffic Impact Study (TIS) / Traffic Impact Analysis (TIA)",
+      "Highway Capacity Manual (HCM) analysis reports",
+      "Transportation Improvement Program (TIP) documents",
+      "Environmental Impact Statement (EIS) / NEPA documents",
+      "Engineering drawings and construction specifications",
+      "Signal timing plans and warrant analyses",
+      "Pavement design reports",
+      "Right-of-Way (ROW) acquisition plans",
+      "Stormwater management and drainage reports",
+      "Cost estimates and bid documents",
+      "As-built drawings and inspection reports",
+      "MUTCD-compliant signing and striping plans"
+    ],
+    "deadlines": {
+      "project_milestones": "Tied to construction schedules, often multi-year for major projects",
+      "dot_reporting": "Quarterly and annual reports to state DOTs and FHWA",
+      "permit_applications": "Environmental permits, construction permits with agency-specific timelines",
+      "bid_submissions": "Strict public procurement deadlines for government projects",
+      "tip_cycles": "Transportation Improvement Program updates on 4-year cycles",
+      "pe_license_renewal": "Biennial renewal with continuing education requirements (varies by state)"
+    },
+    "seasonality": "Construction season peaks spring through fall in northern states. Paving and outdoor work limited in winter months. Government fiscal year deadlines (federal ends September 30, most states end June 30) drive project approvals. Traffic counting programs typically conducted during non-holiday periods for representative data."
+  },
+  "regulatory": {
+    "summary": "Transportation engineers operate under a layered federal/state/local regulatory framework. Federal standards from FHWA, AASHTO, and the MUTCD govern design and operations. PE licensure is required to sign and seal engineering documents. NEPA compliance is mandatory for federally-funded projects. State DOTs establish additional design standards and specifications.",
+    "key_laws": [
+      {
+        "name": "Manual on Uniform Traffic Control Devices (MUTCD)",
+        "url": "https://mutcd.fhwa.dot.gov/",
+        "status": "11th Edition published December 2023, compliance deadlines phased through 2026-2028"
+      },
+      {
+        "name": "AASHTO Green Book (A Policy on Geometric Design of Highways and Streets)",
+        "url": "https://www.transportation.org/",
+        "status": "7th Edition (2018) — industry standard for geometric design"
+      },
+      {
+        "name": "Highway Capacity Manual (HCM)",
+        "url": "https://hcm.trb.org/",
+        "status": "7th Edition (HCM7) — standard for capacity and LOS analysis"
+      },
+      {
+        "name": "National Environmental Policy Act (NEPA)",
+        "url": "https://www.environment.fhwa.dot.gov/nepa/trans_decisionmaking.aspx",
+        "status": "Active — required for all federally-funded transportation projects"
+      },
+      {
+        "name": "Americans with Disabilities Act (ADA) — Public Right-of-Way",
+        "url": "https://www.access-board.gov/prowag/",
+        "status": "Active — PROWAG standards for pedestrian facilities"
+      },
+      {
+        "name": "Infrastructure Investment and Jobs Act (IIJA/BIL)",
+        "url": "https://www.transportation.gov/bipartisan-infrastructure-law",
+        "status": "Active — $1.2 trillion funding through 2026, major driver of projects"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "ABET-accredited bachelor's degree in civil or transportation engineering",
+        "Pass Fundamentals of Engineering (FE) exam (~$175) to become EIT",
+        "4 years of supervised professional engineering experience under a licensed PE",
+        "Pass Professional Engineer (PE) exam in Civil: Transportation (~$400)",
+        "State-specific PE license application ($50-$300+ depending on state)",
+        "Optional: PTOE (Professional Traffic Operations Engineer) — requires PE license + 4 years traffic ops experience",
+        "Optional: PTP (Professional Transportation Planner) — broader education/experience path",
+        "Optional: RSP1/RSP2 (Road Safety Professional) — safety-focused certification via TPCB"
+      ],
+      "pe_exam_note": "NCEES updated PE Civil: Transportation exam specifications effective April 2024. Exam covers geometric design, traffic engineering, transportation planning, and construction. Typical timeline to PE: 4-8 years post-graduation.",
+      "certifying_bodies": [
+        "NCEES (National Council of Examiners for Engineering and Surveying)",
+        "TPCB (Transportation Professional Certification Board)",
+        "State Boards of Professional Engineers"
+      ]
+    },
+    "penalties": "Practicing engineering without a PE license is illegal and subject to state fines and prosecution. Professional liability for design errors can result in lawsuits, license suspension or revocation, and state board disciplinary actions. MUTCD non-compliance can lead to loss of federal funding. NEPA violations can halt projects and trigger litigation.",
+    "controlling_bodies": [
+      "Federal Highway Administration (FHWA)",
+      "State Departments of Transportation (DOTs)",
+      "State Boards of Professional Engineers",
+      "NCEES",
+      "American Association of State Highway and Transportation Officials (AASHTO)",
+      "National Committee on Uniform Traffic Control Devices (NCUTCD)",
+      "Transportation Research Board (TRB)"
+    ]
+  },
+  "tools": {
+    "summary": "Transportation engineers rely on specialized traffic analysis and simulation software, CAD platforms for design, and GIS for spatial analysis. The toolset is dominated by proprietary software with high licensing costs, creating barriers for smaller firms. Emerging tools incorporate AI, digital twins, and cloud-based collaboration.",
+    "primary_tools": [
+      {
+        "name": "Synchro / SimTraffic",
+        "description": "Industry-standard signal timing optimization and microsimulation. Synchro analyzes intersections for LOS, delay, and queuing; SimTraffic provides animated microsimulation of traffic operations."
+      },
+      {
+        "name": "PTV VISSIM / Visum",
+        "description": "World-leading microscopic traffic simulation software for modeling multimodal transport systems — vehicles, transit, pedestrians, cyclists, autonomous vehicles in complex networks."
+      },
+      {
+        "name": "Highway Capacity Software (HCS)",
+        "description": "Implements Highway Capacity Manual methodologies for operational analysis of freeways, intersections, roundabouts, and pedestrian/bicycle facilities. HCS 2026 includes redesigned reports."
+      },
+      {
+        "name": "AutoCAD Civil 3D",
+        "description": "Industry-standard CAD platform for roadway design, corridor modeling, grading, and construction documentation. FHWA and DOTs accept deliverables in native Civil 3D format."
+      },
+      {
+        "name": "MicroStation / OpenRoads Designer (Bentley)",
+        "description": "Alternative CAD/BIM platform widely used by state DOTs for infrastructure design. OpenRoads Designer provides integrated roadway and drainage design."
+      },
+      {
+        "name": "ArcGIS / QGIS",
+        "description": "Geographic Information Systems for transportation planning, crash data mapping, accessibility analysis, and spatial data visualization."
+      }
+    ],
+    "secondary_tools": [
+      "CORSIM / TSIS-CORSIM — FHWA microsimulation for freeway and surface street networks",
+      "Sidra Intersection — roundabout and intersection capacity analysis",
+      "TransCAD / TransModeler — travel demand modeling and regional planning",
+      "HEC-RAS — hydraulic modeling for bridge and culvert design",
+      "Bluebeam Revu — PDF markup, plan review, and collaboration",
+      "Microsoft Project / Primavera P6 — project scheduling",
+      "Excel/Python/R — data analysis, crash statistics, and traffic data processing",
+      "Tableau / Power BI — traffic data dashboards and visualization",
+      "Google Earth Pro — site reconnaissance and visualization",
+      "LIDAR and drone survey processing software"
+    ],
+    "pain_points": [
+      "High software licensing costs (VISSIM, Synchro, HCS each $2,000-$10,000+/year)",
+      "Steep learning curves for microsimulation software",
+      "Incompatibility between different CAD platforms (Civil 3D vs MicroStation) across agencies",
+      "Manual data entry from field traffic counts into analysis software",
+      "Version control issues when multiple engineers work on same project files",
+      "Legacy DOT systems with outdated interfaces and limited integration",
+      "Each state DOT may require different software standards and file formats"
+    ]
+  },
+  "terminology": {
+    "summary": "Transportation engineering is heavily acronym-driven, with terminology drawn from traffic engineering, highway design, planning, and federal/state regulatory frameworks. Mastery of these terms is essential for professional communication, report writing, and regulatory compliance.",
+    "terms": {
+      "LOS": "Level of Service — qualitative measure of traffic operating conditions from A (free flow) to F (forced flow/gridlock)",
+      "ADT": "Average Daily Traffic — average number of vehicles passing a point in 24 hours",
+      "AADT": "Annual Average Daily Traffic — ADT averaged over an entire year accounting for seasonal variation",
+      "VMT": "Vehicle Miles Traveled — total distance traveled by all vehicles in a region, key metric for CEQA/NEPA",
+      "V/C": "Volume-to-Capacity ratio — measure of how much of a road's capacity is being used",
+      "PHF": "Peak Hour Factor — ratio of total peak-hour volume to peak 15-minute flow rate",
+      "HCM": "Highway Capacity Manual — TRB publication defining LOS methodologies",
+      "MUTCD": "Manual on Uniform Traffic Control Devices — federal standard for signs, signals, and markings",
+      "ROW": "Right-of-Way — legal right of passage over land for transportation facilities",
+      "TIP": "Transportation Improvement Program — prioritized list of federally-funded transportation projects",
+      "STIP": "State Transportation Improvement Program — statewide version of TIP",
+      "MPO": "Metropolitan Planning Organization — federally-required regional transportation planning body",
+      "NEPA": "National Environmental Policy Act — requires environmental review for federal projects",
+      "EIS": "Environmental Impact Statement — detailed analysis of environmental effects",
+      "AASHTO": "American Association of State Highway and Transportation Officials",
+      "FHWA": "Federal Highway Administration",
+      "NHS": "National Highway System — network of strategic highways including Interstate System",
+      "ITS": "Intelligent Transportation Systems — technology-based solutions for traffic management",
+      "TDM": "Transportation Demand Management — strategies to reduce single-occupancy vehicle travel",
+      "BRT": "Bus Rapid Transit — high-frequency bus service with dedicated lanes",
+      "TOD": "Transit-Oriented Development — mixed-use development near transit stations",
+      "ADA": "Americans with Disabilities Act — accessibility requirements for pedestrian facilities",
+      "PROWAG": "Public Right-of-Way Accessibility Guidelines",
+      "HSIP": "Highway Safety Improvement Program — federal program for safety projects",
+      "CMF": "Crash Modification Factor — expected change in crashes from a safety countermeasure",
+      "RSA": "Road Safety Audit — formal safety examination of a road or intersection",
+      "GHG": "Greenhouse Gas emissions — increasingly relevant metric in transportation planning",
+      "EIT": "Engineer in Training — designation after passing FE exam",
+      "PE": "Professional Engineer — licensed engineer authorized to seal documents",
+      "PTOE": "Professional Traffic Operations Engineer — TPCB certification",
+      "PTP": "Professional Transportation Planner — TPCB certification"
+    }
+  },
+  "career_psychology": {
+    "summary": "Transportation engineering offers a stable career with tangible community impact — the roads, bridges, and transit systems professionals design are used by millions daily. Salary growth is steady, and the PE license is a critical career milestone that significantly boosts earning potential. The field attracts people who want to solve real-world problems, but bureaucratic processes, long project timelines, and high accountability can lead to burnout.",
+    "career_path": [
+      "Bachelor's degree in Civil/Transportation Engineering (ABET-accredited, 4 years)",
+      "Engineer-in-Training (EIT) — pass FE exam during senior year or shortly after",
+      "Junior/Staff Transportation Engineer (0-4 years, working toward PE)",
+      "Professional Engineer (PE) — pass PE exam after 4 years supervised experience",
+      "Senior Transportation Engineer (5-10 years, PE required)",
+      "Project Manager / Lead Engineer (8-15 years)",
+      "Principal Engineer / Associate (15+ years)",
+      "Director of Transportation / VP / Practice Leader"
+    ],
+    "salary_range": {
+      "entry_level": "$60,000 - $75,000/year",
+      "mid_career": "$80,000 - $105,000/year",
+      "senior": "$105,000 - $140,000/year",
+      "principal_director": "$140,000 - $185,000+/year",
+      "average_2026": "$91,000 - $126,000/year (varies by source; ZipRecruiter reports $91,097 avg, Glassdoor reports $125,852 avg including total compensation)"
+    },
+    "fears": [
+      "Design errors leading to traffic fatalities or safety failures",
+      "PE license jeopardy from professional negligence",
+      "Project delays and cost overruns due to unforeseen conditions",
+      "Infrastructure funding uncertainty and political shifts",
+      "Being held responsible for public backlash on controversial projects",
+      "AI and automation replacing routine analysis tasks",
+      "Career stagnation without PE license or advanced certifications"
+    ],
+    "motivation": [
+      "Building tangible infrastructure that serves millions of people daily",
+      "Improving traffic safety and reducing crash fatalities",
+      "Solving complex multimodal transportation challenges",
+      "PE license as a major professional milestone and salary booster",
+      "Strong job security driven by aging infrastructure and federal funding",
+      "Variety of work — design, field, analysis, and public engagement",
+      "Growing opportunities in ITS, autonomous vehicles, and smart cities"
+    ],
+    "burnout_factors": [
+      "Long hours during critical construction phases (regularly exceeding 40 hrs/week)",
+      "Bureaucratic permitting processes and slow government approvals",
+      "Managing multiple stakeholders with conflicting priorities",
+      "Extensive documentation and regulatory compliance requirements",
+      "Public hearings with community opposition to transportation projects",
+      "Pressure to meet tight construction deadlines while maintaining quality",
+      "High responsibility and personal liability for stamped/sealed documents",
+      "Chronic understaffing at state DOTs creating heavier workloads"
+    ]
+  },
+  "community": {
+    "summary": "Transportation engineers have a strong professional community anchored by ITE (Institute of Transportation Engineers), with over 18,000 members across 78 countries. ASCE's Transportation & Development Institute, TRB, and various state DOT-affiliated organizations provide additional networking, technical resources, and career development opportunities.",
+    "associations": [
+      {
+        "name": "Institute of Transportation Engineers (ITE)",
+        "url": "https://www.ite.org/",
+        "type": "Primary professional association — 18,000+ members, founded 1930"
+      },
+      {
+        "name": "ASCE Transportation & Development Institute (T&DI)",
+        "url": "https://www.asce.org/communities/institutes-and-technical-groups/transportation-and-development-institute",
+        "type": "Technical institute within ASCE for transportation professionals"
+      },
+      {
+        "name": "Transportation Research Board (TRB)",
+        "url": "https://www.trb.org/",
+        "type": "Division of the National Academies — research, standards, and annual meeting"
+      },
+      {
+        "name": "American Association of State Highway and Transportation Officials (AASHTO)",
+        "url": "https://www.transportation.org/",
+        "type": "Association of state DOTs — publishes design standards and policy"
+      },
+      {
+        "name": "National Society of Professional Engineers (NSPE)",
+        "url": "https://www.nspe.org/",
+        "type": "Advocacy and professional development for all licensed PEs"
+      },
+      {
+        "name": "Transportation Professional Certification Board (TPCB)",
+        "url": "https://www.tpcb.org/",
+        "type": "Administers PTOE, PTP, and RSP certifications with ITE support"
+      },
+      {
+        "name": "Women's Transportation Seminar (WTS International)",
+        "url": "https://www.wtsinternational.org/",
+        "type": "Advancing women in transportation — networking, scholarships, mentoring"
+      }
+    ],
+    "events": [
+      "ITE Annual Meeting 2025 — August 10-13, Orlando, FL",
+      "ITE Annual Meeting 2026 — July 19-22, Detroit, MI (Huntington Place Convention Center, joint with Great Lakes District)",
+      "TRB Annual Meeting — January, Washington, DC (largest transportation research conference, 15,000+ attendees)",
+      "ASCE International Conference on Transportation & Development (ICTD)",
+      "ITE Spring Conference 2025 — March 25-26, Virtual",
+      "Illinois T.H.E. Conference — March 3-4, 2026, Champaign, IL",
+      "ITE Annual Meeting 2027 — July 25-28, Calgary, AB, Canada"
+    ],
+    "online_communities": [
+      "r/civilengineering — Reddit (transportation topics frequently discussed)",
+      "r/AskEngineers — Reddit (career advice and technical Q&A)",
+      "r/transportation — Reddit (broader transportation policy and planning)",
+      "r/urbanplanning — Reddit (multimodal and transit discussions)",
+      "ITE Community Forum — member-only technical discussions",
+      "ASCE Collaborate — peer-to-peer technical forum",
+      "LinkedIn — ITE, Transportation Engineering, and state DOT groups",
+      "Eng-Tips Transportation Engineering Forum — technical Q&A"
+    ]
+  },
+  "market": {
+    "summary": "Transportation engineering shows solid demand driven by the $1.2 trillion Infrastructure Investment and Jobs Act, aging infrastructure, and growing emphasis on safety, sustainability, and ITS. BLS projects 5-7% employment growth. Salaries are competitive, with PE licensure providing a significant earnings premium. Smart cities, autonomous vehicles, and climate resilience are shaping future demand.",
+    "job_outlook": {
+      "growth_rate": "5-7% projected through 2032-2034 (in line with or slightly above average for all occupations)",
+      "employment_base": "Part of ~316,100 civil engineers in the US (BLS); transportation is a major subspecialty",
+      "demand_drivers": "Infrastructure Investment and Jobs Act ($1.2T), aging infrastructure, population growth, urbanization, Vision Zero safety initiatives"
+    },
+    "salary_market": {
+      "min": "$60,000/year (entry-level, non-PE)",
+      "avg": "$91,000 - $126,000/year (varies by source and total compensation methodology)",
+      "max": "$160,000 - $185,000+/year (principal/director level, major metro areas)",
+      "25th_percentile": "$77,500/year",
+      "75th_percentile": "$102,500 - $157,871/year (varies by source)",
+      "top_earners_90th": "$116,000 - $185,000+/year"
+    },
+    "top_employers": [
+      "Engineering consulting firms (AECOM, WSP, Jacobs, Kimley-Horn, HDR, Stantec, Kittelson & Associates)",
+      "State Departments of Transportation (Caltrans, TXDOT, FDOT, NYSDOT, etc.)",
+      "Federal agencies (FHWA, FTA, FAA)",
+      "Metropolitan Planning Organizations (MPOs)",
+      "County and city transportation departments",
+      "Toll authorities and transit agencies"
+    ],
+    "market_trends": [
+      "Infrastructure Investment and Jobs Act creating surge of federally-funded projects through 2026",
+      "Intelligent Transportation Systems (ITS) and connected/autonomous vehicle integration",
+      "Vision Zero and Safe System approach driving safety-focused projects",
+      "Multimodal transportation and Complete Streets initiatives expanding scope",
+      "Climate resilience and sustainability requirements adding complexity",
+      "AI-assisted design and traffic prediction tools emerging in workflows",
+      "Chronic staffing shortages at state DOTs creating opportunities for consultants",
+      "Digital twins and smart city technologies creating new specializations",
+      "VMT-based environmental review (replacing LOS in California) influencing national practice"
+    ]
+  },
+  "quality_score": 0.78,
+  "sources_count": 35,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Transportation Engineers USA 2025 2026 daily work tasks responsibilities traffic planning",
+      "sources": [
+        {"title": "O*NET — Transportation Engineers 17-2051.01", "url": "https://www.onetonline.org/link/summary/17-2051.01"},
+        {"title": "CareerOneStop — Transportation Engineers Occupation Profile", "url": "https://www.careeronestop.org/Toolkit/Careers/Occupations/occupation-profile.aspx?keyword=Transportation+Engineers&location=US&onetcode=17-2051.01"},
+        {"title": "CareerPlanner — Transportation Engineer Job Description", "url": "https://job-descriptions.careerplanner.com/Transportation-Engineer.cfm"},
+        {"title": "Novatr — What Does a Transportation Engineer Do", "url": "https://www.novatr.com/blog/what-does-a-transportation-engineer-do"},
+        {"title": "OwlGuru — What Do Transportation Engineers Do", "url": "https://www.owlguru.com/career/transportation-engineers/job-description/"}
+      ]
+    },
+    {
+      "query": "Transportation Engineers USA 2025 2026 licensing PE regulations DOT requirements",
+      "sources": [
+        {"title": "Harbor Compliance — Engineer License Requirements 50 State Guide", "url": "https://www.harborcompliance.com/engineer-license-requirements-registration"},
+        {"title": "Research.com — 2026 Professional Engineer License Requirements", "url": "https://research.com/careers/professional-engineer-license-requirements"},
+        {"title": "NCEES — PE Civil Exam Specifications Updated", "url": "https://ncees.org/ncees-updates-specifications-for-pe-civil-exams/"},
+        {"title": "TPCB — PTOE Certification", "url": "https://www.tpcb.org/certification/ptoe/"},
+        {"title": "NSPE — About Professional Engineering", "url": "https://www.nspe.org/resources/licensure"},
+        {"title": "StudyForFE — PE Exam Eligibility by State", "url": "https://www.studyforfe.com/blog/pe-exam-requirements-by-state/"}
+      ]
+    },
+    {
+      "query": "Transportation Engineers USA software tools Synchro HCS VISSIM CAD technology 2025 2026",
+      "sources": [
+        {"title": "Novatr — 10 Essential Software for Transportation Engineer 2026", "url": "https://www.novatr.com/blog/10-essential-software-for-transportation-engineer"},
+        {"title": "American Profession Guide — Software for Transportation Engineering Design", "url": "https://americanprofessionguide.com/software-for-transportation-engineering-design/"},
+        {"title": "McTrans — HCS Overview", "url": "https://mctrans.ce.ufl.edu/highway-capacity-software-hcs/"},
+        {"title": "FHWA — Analytical Simulations", "url": "https://highways.dot.gov/federal-lands/design/visualization/guide/analytical-simulations"},
+        {"title": "Capterra — PTV Vissim Software 2026", "url": "https://www.capterra.com/p/10031498/PTV-Vissim/"},
+        {"title": "CalTAP — Synchro & SimTraffic Training", "url": "https://caltap.org/training-detail.aspx?tid=79"}
+      ]
+    },
+    {
+      "query": "Transportation engineering terminology abbreviations jargon LOS ADT VMT professional",
+      "sources": [
+        {"title": "Arterials — Transportation & Traffic Engineering Abbreviations Glossary", "url": "https://www.arterials.co/transportation-glossary/"},
+        {"title": "MTC — Glossary of Transportation Planning Acronyms", "url": "https://mtc.ca.gov/tools-resources/mtc-abag-library/glossary-transportation-planning-acronyms-terms"},
+        {"title": "FHWA — Transportation Acronyms", "url": "https://www.fhwa.dot.gov/ohim/acronym.htm"},
+        {"title": "US DOT — Glossary of Common Transportation Acronyms", "url": "https://www.transportation.gov/grants/dot-navigator/glossary-common-transportation-acronyms"},
+        {"title": "BTS — Acronyms and Terms Guide", "url": "https://www.bts.gov/learn-about-bts-and-our-work/acronyms-and-terms-guide"},
+        {"title": "FirstCarbon Solutions — LOS and VMT Explained", "url": "https://www.firstcarbonsolutions.com/frequently-asked-questions/what-do-los-and-vmt-mean/"}
+      ]
+    },
+    {
+      "query": "Transportation Engineers USA career path salary 2025 2026 burnout motivation",
+      "sources": [
+        {"title": "PayScale — Transportation Engineer Salary 2026", "url": "https://www.payscale.com/research/US/Job=Transportation_Engineer/Salary"},
+        {"title": "ZipRecruiter — Transportation Engineer Salary Jan 2026", "url": "https://www.ziprecruiter.com/Salaries/Transportation-Engineer-Salary"},
+        {"title": "ZipRecruiter — Entry Level Transportation Engineer Salary Jan 2026", "url": "https://www.ziprecruiter.com/Salaries/Entry-Level-Transportation-Engineer-Salary"},
+        {"title": "Glassdoor — Transportation Engineer Salary Trends 2026", "url": "https://www.glassdoor.com/Salaries/transportation-engineer-salary-SRCH_KO0,23.htm"},
+        {"title": "Salary.com — Transportation Engineer I Salary", "url": "https://www.salary.com/research/salary/benchmark/transportation-engineer-i-salary"},
+        {"title": "EnvironmentalScience.org — Transportation Engineer Career Path", "url": "https://www.environmentalscience.org/career/transportation-engineer"}
+      ]
+    },
+    {
+      "query": "Transportation Engineers USA professional associations ITE conferences 2025 2026",
+      "sources": [
+        {"title": "ITE — Past and Future Meetings", "url": "https://www.ite.org/events-meetings/past-and-future-meetings/"},
+        {"title": "ITE — 2026 Annual Meeting", "url": "https://ite.secure-platform.com/2026am"},
+        {"title": "ITE Annual Meeting and Exhibition", "url": "https://www.iteannualmeeting.org/"},
+        {"title": "ASCE ICTD Conference", "url": "https://www.asce-ictd.org/"},
+        {"title": "Conference Index — Transportation Engineering Conferences USA 2025/2026/2027", "url": "https://conferenceindex.org/conferences/transportation-engineering/united-states"},
+        {"title": "Illinois T.H.E. Conference", "url": "https://www.theconf.com/"}
+      ]
+    },
+    {
+      "query": "Transportation Engineers USA job market demand salary outlook 2025 2026",
+      "sources": [
+        {"title": "Zippia — Transportation Engineer Job Outlook and Growth", "url": "https://www.zippia.com/transportation-engineer-jobs/trends/"},
+        {"title": "BLS — Civil Engineers Occupational Outlook Handbook", "url": "https://www.bls.gov/ooh/architecture-and-engineering/civil-engineers.htm"},
+        {"title": "ZipRecruiter — 5 Highest Paying Transportation Engineer Jobs 2026", "url": "https://www.ziprecruiter.com/g/Highest-Paying-Transportation-Engineer-Jobs"},
+        {"title": "Glassdoor — Transportation Engineer Salary Trends 2026", "url": "https://www.glassdoor.com/Salaries/transportation-engineer-salary-SRCH_KO0,23.htm"},
+        {"title": "BLS — Field of Degree: Transportation", "url": "https://www.bls.gov/ooh/field-of-degree/transportation/transportation-field-of-degree.htm"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,840 @@
+[
+  {
+    "id": "us-acute-care-nurses-p01",
+    "title": "IV Drip Rate and Infusion Dosage Calculator",
+    "problem": "Acute care nurses must calculate IV drip rates, medication dosages based on patient weight, and titration adjustments multiple times per shift. Manual math under time pressure increases risk of medication errors — the #1 fear among nurses. A miscalculation on a vasopressor or heparin drip can cause serious patient harm or death.",
+    "who": "ICU and step-down unit nurses managing multiple drip medications",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 250000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "IV Drip Rate & Dosage Calculator",
+      "one_liner": "Calculates IV drip rates (mL/hr, gtt/min), weight-based dosages, and titration adjustments for common acute care medications.",
+      "inputs": [
+        {
+          "name": "medication_name",
+          "type": "string",
+          "label": "Medication name (e.g., heparin, dopamine, norepinephrine)"
+        },
+        {
+          "name": "ordered_dose",
+          "type": "number",
+          "label": "Ordered dose (mcg/kg/min or units/hr)"
+        },
+        {
+          "name": "patient_weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        },
+        {
+          "name": "concentration",
+          "type": "string",
+          "label": "Drug concentration (e.g., 25,000 units in 500 mL)"
+        },
+        {
+          "name": "tubing_drop_factor",
+          "type": "number",
+          "label": "Tubing drop factor (gtt/mL, default 60)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "rate_ml_hr",
+          "label": "Infusion rate (mL/hr)"
+        },
+        {
+          "name": "rate_gtt_min",
+          "label": "Drip rate (gtt/min)"
+        },
+        {
+          "name": "dose_per_hour",
+          "label": "Total dose per hour"
+        },
+        {
+          "name": "titration_table",
+          "label": "Titration increment table"
+        }
+      ],
+      "formula_hint": "rate_ml_hr = (ordered_dose * weight_kg * 60) / concentration_per_ml; gtt_min = (rate_ml_hr * drop_factor) / 60",
+      "rates": {
+        "standard_drop_factors": [
+          10,
+          15,
+          20,
+          60
+        ]
+      }
+    },
+    "example_queries": [
+      "Calculate dopamine drip at 5 mcg/kg/min for a 78 kg patient, concentration 400 mg in 250 mL D5W",
+      "What's the heparin rate for 18 units/kg/hr, patient weighs 92 kg, bag is 25,000 units in 500 mL?",
+      "Show me a titration table for norepinephrine 2-20 mcg/min, 8 mg in 250 mL"
+    ]
+  },
+  {
+    "id": "us-acute-care-nurses-p02",
+    "title": "Intake and Output (I&O) Fluid Balance Calculator",
+    "problem": "Nurses track all patient fluid intake (IV fluids, oral, tube feeds) and output (urine, drainage, emesis) across a 12-hour shift, then calculate net fluid balance. Errors in I&O documentation lead to missed fluid overload or dehydration, potentially causing pulmonary edema or kidney injury. Manual tallying across multiple sources is tedious and error-prone.",
+    "who": "ICU and medical-surgical acute care nurses",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Fluid Balance I&O Calculator",
+      "one_liner": "Calculates total intake, total output, and net fluid balance over a shift or 24-hour period with running totals.",
+      "inputs": [
+        {
+          "name": "iv_fluids",
+          "type": "array",
+          "label": "IV fluids administered (type and mL)"
+        },
+        {
+          "name": "oral_intake",
+          "type": "number",
+          "label": "Oral intake (mL)"
+        },
+        {
+          "name": "tube_feeds",
+          "type": "number",
+          "label": "Tube feeding volume (mL)"
+        },
+        {
+          "name": "urine_output",
+          "type": "number",
+          "label": "Urine output (mL)"
+        },
+        {
+          "name": "drain_output",
+          "type": "number",
+          "label": "Drain/tube output (mL)"
+        },
+        {
+          "name": "emesis",
+          "type": "number",
+          "label": "Emesis (mL)"
+        },
+        {
+          "name": "blood_loss",
+          "type": "number",
+          "label": "Estimated blood loss (mL)"
+        },
+        {
+          "name": "patient_weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "total_intake",
+          "label": "Total intake (mL)"
+        },
+        {
+          "name": "total_output",
+          "label": "Total output (mL)"
+        },
+        {
+          "name": "net_balance",
+          "label": "Net fluid balance (mL)"
+        },
+        {
+          "name": "urine_output_per_kg_hr",
+          "label": "Urine output (mL/kg/hr)"
+        },
+        {
+          "name": "alert",
+          "label": "Clinical alert if abnormal"
+        }
+      ],
+      "formula_hint": "net_balance = total_intake - total_output; urine_ml_kg_hr = urine / (weight_kg * hours); alert if urine < 0.5 mL/kg/hr or net balance > +1000 mL",
+      "rates": {
+        "min_urine_output_ml_kg_hr": 0.5,
+        "concern_positive_balance_ml": 1000
+      }
+    },
+    "example_queries": [
+      "Patient got 1000 mL NS, 500 mL LR, drank 200 mL. Output: 650 mL urine, 150 mL JP drain. Weight 70 kg, 12-hour shift. What's the balance?",
+      "Is urine output of 180 mL in 6 hours adequate for a 85 kg patient?"
+    ]
+  },
+  {
+    "id": "us-acute-care-nurses-p03",
+    "title": "Nurse-to-Patient Ratio Compliance Checker",
+    "problem": "Hospitals must comply with state and federal nurse-to-patient staffing ratios that vary by unit type (ICU 1:2, med-surg 1:5, ED 1:4). Charge nurses and managers must verify compliance each shift. Violations carry fines up to $15,000-$30,000 in California and risk patient safety. Tracking ratios across census changes mid-shift is complex.",
+    "who": "Charge nurses and nurse managers in hospitals",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 30000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Staffing Ratio Compliance Calculator",
+      "one_liner": "Calculates required nurse staffing based on unit type, patient census, and applicable state regulations.",
+      "inputs": [
+        {
+          "name": "state",
+          "type": "string",
+          "label": "State"
+        },
+        {
+          "name": "unit_type",
+          "type": "string",
+          "label": "Unit type (ICU, med-surg, ED, step-down, tele, peds)"
+        },
+        {
+          "name": "patient_census",
+          "type": "number",
+          "label": "Current patient census"
+        },
+        {
+          "name": "available_nurses",
+          "type": "number",
+          "label": "Available RNs on shift"
+        },
+        {
+          "name": "acuity_level",
+          "type": "string",
+          "label": "Average patient acuity (low/medium/high)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "required_ratio",
+          "label": "Required nurse-to-patient ratio"
+        },
+        {
+          "name": "required_nurses",
+          "label": "Minimum nurses required"
+        },
+        {
+          "name": "compliance_status",
+          "label": "Compliant / Non-compliant"
+        },
+        {
+          "name": "shortage",
+          "label": "Number of nurses short (if any)"
+        },
+        {
+          "name": "penalty_risk",
+          "label": "Potential fine amount"
+        }
+      ],
+      "formula_hint": "required_nurses = ceil(patient_census / ratio_denominator); shortage = max(0, required_nurses - available_nurses); California ICU=1:2, med-surg=1:5, ED=1:4, step-down=1:3, tele=1:4, peds=1:4",
+      "rates": {
+        "ca_first_violation": 15000,
+        "ca_subsequent_violation": 30000,
+        "federal_first_violation": 25000
+      }
+    },
+    "example_queries": [
+      "I have 24 patients on a med-surg floor in California with 4 nurses. Are we compliant?",
+      "ICU census is 14, we have 6 nurses. What's the minimum we need?",
+      "What are the staffing ratio penalties in California for a step-down unit?"
+    ]
+  },
+  {
+    "id": "us-acute-care-nurses-p04",
+    "title": "Medication Administration Safety Checklist",
+    "problem": "Medication errors affect 1.5 million patients annually in the US. Acute care nurses administer dozens of medications per shift including high-alert drugs (insulin, heparin, opioids, vasoactive drips). Missing any of the '10 Rights' of medication administration can result in patient harm, malpractice claims, and license jeopardy. Time pressure and interruptions during med passes increase error risk.",
+    "who": "All acute care nurses, especially new graduates and travel nurses",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 100000,
+    "source": "career_psychology",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "High-Alert Medication Administration Checklist",
+      "one_liner": "Interactive safety checklist for high-alert medication administration using the 10 Rights framework with drug-specific warnings.",
+      "steps": [
+        "Step 1: Verify the RIGHT PATIENT - check two identifiers (name + DOB/MRN)",
+        "Step 2: Verify the RIGHT MEDICATION - compare order to label, check for look-alike/sound-alike drugs",
+        "Step 3: Verify the RIGHT DOSE - calculate weight-based dose if applicable, check dose range",
+        "Step 4: Verify the RIGHT ROUTE - confirm IV vs oral vs IM vs SubQ",
+        "Step 5: Verify the RIGHT TIME - check administration schedule and last dose time",
+        "Step 6: Verify the RIGHT DOCUMENTATION - document in MAR before leaving bedside",
+        "Step 7: Verify the RIGHT REASON - confirm indication matches patient diagnosis",
+        "Step 8: Verify the RIGHT RESPONSE - plan monitoring parameters and timeframe",
+        "Step 9: Verify the RIGHT TO REFUSE - confirm patient consent",
+        "Step 10: Verify the RIGHT EDUCATION - explain medication purpose and side effects to patient",
+        "Step 11: For HIGH-ALERT meds (insulin, heparin, opioids, vasopressors) - perform independent double-check with second RN",
+        "Step 12: Scan medication barcode and patient wristband in EHR",
+        "Step 13: Monitor patient for adverse reactions per drug protocol"
+      ],
+      "warnings": [
+        "WARNING: Never override barcode scanning alerts without pharmacist verification",
+        "WARNING: Insulin and heparin require independent double-check — this is a Joint Commission NPSG",
+        "WARNING: Opioids — assess respiratory rate and sedation scale before AND after administration",
+        "WARNING: Vasopressors — confirm central line placement before infusion"
+      ],
+      "regulatory_refs": [
+        "Joint Commission National Patient Safety Goals (NPSG)",
+        "ISMP High-Alert Medication List",
+        "State Nurse Practice Acts"
+      ]
+    },
+    "example_queries": [
+      "Walk me through the safety checks for giving IV heparin",
+      "What are the steps for a high-alert medication double-check?",
+      "I need to give insulin — what should I verify before administration?"
+    ]
+  },
+  {
+    "id": "us-acute-care-nurses-p05",
+    "title": "Shift Handoff Report (SBAR) Generator",
+    "problem": "Nurses must give detailed shift handoff reports for every patient at each 12-hour transition. A poor handoff leads to missed information, delayed care, and adverse events. Composing structured SBAR reports for 4-6 high-acuity patients takes 30-45 minutes, often done while still managing active patient care. Inconsistent formats between nurses cause critical details to be lost.",
+    "who": "All acute care nurses during shift change",
+    "frequency": "daily",
+    "time_waste_h": 0.75,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "SBAR Shift Handoff Report Generator",
+      "one_liner": "Generates a structured SBAR bedside shift report from patient data inputs.",
+      "doc_name": "SBAR Shift Handoff Report",
+      "variables": [
+        {
+          "name": "patient_initials",
+          "label": "Patient initials/room number"
+        },
+        {
+          "name": "age_sex",
+          "label": "Age and sex"
+        },
+        {
+          "name": "admitting_diagnosis",
+          "label": "Admitting diagnosis"
+        },
+        {
+          "name": "code_status",
+          "label": "Code status (Full code/DNR/DNI)"
+        },
+        {
+          "name": "allergies",
+          "label": "Allergies"
+        },
+        {
+          "name": "iv_access",
+          "label": "IV access (type and location)"
+        },
+        {
+          "name": "current_drips",
+          "label": "Current drips and rates"
+        },
+        {
+          "name": "recent_vitals",
+          "label": "Most recent vital signs"
+        },
+        {
+          "name": "neuro_status",
+          "label": "Neuro status"
+        },
+        {
+          "name": "respiratory",
+          "label": "Respiratory status (O2, vent settings)"
+        },
+        {
+          "name": "cardiac",
+          "label": "Cardiac rhythm and notes"
+        },
+        {
+          "name": "gi_gu",
+          "label": "GI/GU status (diet, I&O, last BM)"
+        },
+        {
+          "name": "skin_wounds",
+          "label": "Skin/wound assessment"
+        },
+        {
+          "name": "labs_pending",
+          "label": "Significant labs and pending orders"
+        },
+        {
+          "name": "plan",
+          "label": "Plan of care and anticipated changes"
+        },
+        {
+          "name": "safety_concerns",
+          "label": "Safety concerns (fall risk, isolation, restraints)"
+        }
+      ],
+      "structure_hint": "Situation (1-2 lines: who, why here, code status) -> Background (history, allergies, IV access) -> Assessment (systems review: neuro, resp, cardiac, GI/GU, skin, labs) -> Recommendation (plan, pending, safety concerns)"
+    },
+    "example_queries": [
+      "Generate a handoff report: 72M, CHF exacerbation, full code, no allergies, left PIV 20g, lasix drip at 10 mg/hr, BP 142/88 HR 92 O2 94% on 2L NC",
+      "Create SBAR for my ICU patient going to step-down: 58F post-CABG day 2",
+      "Help me organize handoff for a trauma patient with multiple drips and chest tubes"
+    ]
+  },
+  {
+    "id": "us-acute-care-nurses-p06",
+    "title": "CEU and License Renewal Deadline Tracker",
+    "problem": "RNs must track continuing education unit (CEU) requirements that vary by state (15-45 contact hours per renewal cycle), specialty certification renewal dates (CCRN every 3 years), and state license renewal deadlines. Missing a deadline means inability to practice — losing income and potentially abandoning patients mid-assignment. Travel nurses with multistate licenses face even more complex tracking across NLC states.",
+    "who": "All RNs, especially travel nurses and those with specialty certifications",
+    "frequency": "quarterly",
+    "time_waste_h": 3,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Nurse License & CEU Renewal Reference",
+      "one_liner": "Quick lookup of state-specific RN license renewal requirements, CEU hours, and specialty certification deadlines.",
+      "data_domain": "State nursing board renewal requirements, CEU mandates, and certification timelines",
+      "lookup_keys": [
+        "state",
+        "license_type",
+        "specialty_certification",
+        "nlc_status"
+      ],
+      "data_hints": {
+        "source_law": "State Nurse Practice Acts, NCSBN Nurse Licensure Compact",
+        "key_sections": [
+          "State-specific CEU requirements",
+          "NLC multistate privilege rules",
+          "AACN CCRN renewal requirements",
+          "ANCC certification renewal"
+        ],
+        "sample_data": {
+          "california": {
+            "renewal_cycle": "2 years",
+            "ceu_hours": 30,
+            "special_requirements": "Implicit bias CEU required"
+          },
+          "texas": {
+            "renewal_cycle": "2 years",
+            "ceu_hours": 20,
+            "special_requirements": "Jurisprudence exam required"
+          },
+          "new_york": {
+            "renewal_cycle": "3 years",
+            "ceu_hours": "3 contact hours infection control + 2 child abuse + course work"
+          }
+        }
+      }
+    },
+    "example_queries": [
+      "What are the CEU requirements for RN license renewal in California?",
+      "When does CCRN certification expire and how many CEUs do I need to renew?",
+      "I'm a travel nurse with an NLC license from Texas — what do I need to practice in Florida?"
+    ]
+  },
+  {
+    "id": "us-acute-care-nurses-p07",
+    "title": "Rapid Patient Deterioration Assessment (Early Warning Score)",
+    "problem": "Missing early signs of patient deterioration is a top fear for acute care nurses. Failure to recognize and escalate changes in vital signs leads to preventable codes and deaths. Modified Early Warning Score (MEWS) and National Early Warning Score (NEWS2) require calculating composite scores from multiple vital sign parameters. Under time pressure with multiple patients, nurses may miss the pattern even when individual vitals seem borderline.",
+    "who": "Med-surg and step-down nurses monitoring multiple patients",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 500000,
+    "source": "career_psychology",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Early Warning Score (NEWS2/MEWS) Calculator",
+      "one_liner": "Calculates NEWS2 and MEWS scores from vital signs and recommends escalation actions based on score severity.",
+      "inputs": [
+        {
+          "name": "respiratory_rate",
+          "type": "number",
+          "label": "Respiratory rate (breaths/min)"
+        },
+        {
+          "name": "spo2",
+          "type": "number",
+          "label": "SpO2 (%)"
+        },
+        {
+          "name": "supplemental_o2",
+          "type": "boolean",
+          "label": "On supplemental oxygen?"
+        },
+        {
+          "name": "temperature",
+          "type": "number",
+          "label": "Temperature (°F or °C)"
+        },
+        {
+          "name": "systolic_bp",
+          "type": "number",
+          "label": "Systolic blood pressure (mmHg)"
+        },
+        {
+          "name": "heart_rate",
+          "type": "number",
+          "label": "Heart rate (bpm)"
+        },
+        {
+          "name": "consciousness",
+          "type": "string",
+          "label": "Consciousness level (Alert/Voice/Pain/Unresponsive)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "news2_score",
+          "label": "NEWS2 total score (0-20)"
+        },
+        {
+          "name": "risk_level",
+          "label": "Risk level (Low/Medium/High)"
+        },
+        {
+          "name": "escalation_action",
+          "label": "Recommended action (routine monitoring / urgent review / emergency response)"
+        },
+        {
+          "name": "parameter_flags",
+          "label": "Individual parameters triggering concern"
+        }
+      ],
+      "formula_hint": "Each parameter scored 0-3 based on ranges. Total 0-4=low, 5-6=medium (urgent review), 7+=high (emergency). Any single parameter score of 3 = urgent review. RR: 12-20=0, 21-24=2, ≥25=3; SpO2: ≥96=0, 94-95=1, 92-93=2, ≤91=3; HR: 51-90=0, 91-110=1, 111-130=2, ≥131=3",
+      "rates": {
+        "low_threshold": 4,
+        "medium_threshold": 6,
+        "high_threshold": 7
+      }
+    },
+    "example_queries": [
+      "Calculate NEWS2: RR 24, SpO2 93% on 3L NC, temp 101.2F, BP 98/62, HR 112, alert",
+      "My patient's vitals are HR 105, RR 22, BP 92/58, SpO2 95% room air, temp 100.8. Should I call a rapid response?",
+      "What NEWS2 score triggers an emergency response?"
+    ]
+  },
+  {
+    "id": "us-acute-care-nurses-p08",
+    "title": "Incident Report Documentation Guide",
+    "problem": "When adverse events occur (medication errors, falls, needle sticks, equipment failures), nurses must file incident reports promptly and accurately. Poor documentation can expose nurses to liability, while good documentation protects both patient and nurse. Many nurses are never trained on proper incident report writing — what to include, what to avoid (no blame language, no speculation), and regulatory requirements.",
+    "who": "All acute care nurses involved in adverse events",
+    "frequency": "monthly",
+    "time_waste_h": 2,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Nursing Incident Report Generator",
+      "one_liner": "Generates a structured, legally-sound incident report from event details following Joint Commission and hospital risk management standards.",
+      "doc_name": "Incident/Occurrence Report",
+      "variables": [
+        {
+          "name": "event_date_time",
+          "label": "Date and time of event"
+        },
+        {
+          "name": "location",
+          "label": "Location (unit, room number)"
+        },
+        {
+          "name": "event_type",
+          "label": "Event type (fall, medication error, needle stick, equipment failure, other)"
+        },
+        {
+          "name": "patient_involved",
+          "label": "Patient involved (yes/no, identifiers)"
+        },
+        {
+          "name": "description_of_event",
+          "label": "Objective description of what happened"
+        },
+        {
+          "name": "immediate_actions",
+          "label": "Immediate actions taken"
+        },
+        {
+          "name": "patient_status_after",
+          "label": "Patient status after event"
+        },
+        {
+          "name": "physician_notified",
+          "label": "Physician notified (name, time)"
+        },
+        {
+          "name": "witnesses",
+          "label": "Witnesses present"
+        },
+        {
+          "name": "contributing_factors",
+          "label": "Contributing factors (staffing, equipment, environment)"
+        }
+      ],
+      "structure_hint": "Event identification (type, date, time, location) -> Objective factual description (no opinions/blame) -> Immediate response actions -> Patient outcome -> Notifications made -> Contributing factors -> Preventive recommendations. Use neutral language. Document facts only. Do not use 'error' or 'mistake' — use 'event' or 'occurrence'."
+    },
+    "example_queries": [
+      "Help me write an incident report for a patient fall from bed — found on floor at 0300, no injuries noted",
+      "I gave the wrong dose of metoprolol — need to document this properly",
+      "Patient pulled out their IV and central line. How do I write this up?"
+    ]
+  },
+  {
+    "id": "us-acute-care-nurses-p09",
+    "title": "HIPAA Compliance Quick Reference",
+    "problem": "Nurses handle protected health information (PHI) constantly — in EHRs, verbal handoffs, phone calls, and physical charts. HIPAA violations carry fines up to $50,000 per incident and can result in criminal charges. Common nurse-specific HIPAA risks include discussing patients in hallways, texting patient info, social media posts, and improper disposal of printed PHI. Many nurses are unclear on what constitutes a violation vs. permitted disclosure.",
+    "who": "All acute care nurses, especially new graduates and travel nurses",
+    "frequency": "weekly",
+    "time_waste_h": 1,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "HIPAA Quick Reference for Nurses",
+      "one_liner": "Instant lookup of HIPAA rules, permitted disclosures, violation penalties, and common nursing scenarios.",
+      "data_domain": "HIPAA Privacy Rule, Security Rule, and Breach Notification Rule as applied to nursing practice",
+      "lookup_keys": [
+        "scenario_type",
+        "disclosure_type",
+        "violation_tier",
+        "penalty_level"
+      ],
+      "data_hints": {
+        "source_law": "Health Insurance Portability and Accountability Act of 1996, HITECH Act",
+        "key_sections": [
+          "45 CFR Part 160 — General Administrative Requirements",
+          "45 CFR Part 164 — Security and Privacy",
+          "Breach Notification Rule"
+        ],
+        "penalty_tiers": {
+          "tier_1": "Unaware: $100-$50,000 per violation",
+          "tier_2": "Reasonable cause: $1,000-$50,000",
+          "tier_3": "Willful neglect corrected: $10,000-$50,000",
+          "tier_4": "Willful neglect not corrected: $50,000+, criminal penalties"
+        }
+      }
+    },
+    "example_queries": [
+      "Can I text a patient's lab results to the physician?",
+      "A family member is asking about a patient's condition — what can I disclose?",
+      "I accidentally sent a fax with PHI to the wrong number — what do I do now?"
+    ]
+  },
+  {
+    "id": "us-acute-care-nurses-p10",
+    "title": "Nursing Care Plan Generator",
+    "problem": "Nurses must develop individualized care plans for each patient using NANDA nursing diagnoses, NIC interventions, and NOC outcomes. Creating evidence-based care plans is time-consuming (20-40 minutes per patient) and often duplicated effort. New nurses struggle to select appropriate diagnoses and link them to interventions. Documentation audits penalize incomplete or generic care plans.",
+    "who": "All acute care nurses, especially new graduates and student preceptors",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Nursing Care Plan Generator",
+      "one_liner": "Generates individualized nursing care plans with NANDA diagnoses, NIC interventions, and NOC outcomes based on patient presentation.",
+      "doc_name": "Nursing Care Plan",
+      "variables": [
+        {
+          "name": "admitting_diagnosis",
+          "label": "Medical admitting diagnosis"
+        },
+        {
+          "name": "patient_age_sex",
+          "label": "Patient age and sex"
+        },
+        {
+          "name": "key_assessment_findings",
+          "label": "Key assessment findings"
+        },
+        {
+          "name": "current_medications",
+          "label": "Current medications"
+        },
+        {
+          "name": "comorbidities",
+          "label": "Comorbidities"
+        },
+        {
+          "name": "patient_goals",
+          "label": "Patient goals and preferences"
+        },
+        {
+          "name": "priority_problems",
+          "label": "Priority nursing problems (top 3)"
+        }
+      ],
+      "structure_hint": "For each nursing problem: NANDA Nursing Diagnosis (with related factors and evidence) -> NOC Expected Outcomes (measurable, time-bound) -> NIC Interventions (specific nursing actions with rationale) -> Evaluation criteria. Prioritize using Maslow's hierarchy: physiological > safety > psychosocial."
+    },
+    "example_queries": [
+      "Generate a care plan for a 65-year-old male with COPD exacerbation, SpO2 88%, productive cough, anxious",
+      "Care plan for post-op total knee replacement day 1, pain 7/10, limited mobility",
+      "My patient has CHF, fluid overload, and fall risk — what nursing diagnoses should I prioritize?"
+    ]
+  },
+  {
+    "id": "us-acute-care-nurses-p11",
+    "title": "Malpractice and Liability Risk Advisor",
+    "problem": "Acute care nurses face increasing litigation risk. Common claims include medication errors, failure to monitor, failure to communicate with physicians, inadequate documentation, and falls. Nurses often don't know their legal exposure, when to notify risk management, or how documentation practices protect them. Malpractice insurance is optional for nurses but claims can exceed $1M.",
+    "who": "All acute care nurses, especially those involved in adverse events",
+    "frequency": "quarterly",
+    "time_waste_h": 2,
+    "money_risk_usd": 1000000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Nursing Malpractice & Liability Advisor",
+      "one_liner": "Advises nurses on legal risk, documentation best practices, and when to escalate to risk management based on their specific situation.",
+      "expertise_area": "Nursing malpractice law, liability protection, and risk management",
+      "decision_criteria": [
+        "event_type",
+        "documentation_quality",
+        "chain_of_command_followed",
+        "state_jurisdiction",
+        "nurse_role"
+      ],
+      "context_needed": [
+        "regulatory.penalties",
+        "regulatory.laws",
+        "career_psychology.fears"
+      ]
+    },
+    "example_queries": [
+      "I followed the physician's order but the dose was wrong — am I liable?",
+      "A patient's family is threatening to sue after a fall. What should I do?",
+      "Do I need personal malpractice insurance as a staff nurse?"
+    ]
+  },
+  {
+    "id": "us-acute-care-nurses-p12",
+    "title": "Code Blue and Emergency Response Checklist",
+    "problem": "During cardiac arrests and rapid responses, acute care nurses must execute complex ACLS protocols under extreme time pressure. Missing a step (defibrillation timing, epinephrine every 3-5 minutes, H's and T's assessment) can directly cause patient death. Even experienced nurses report cognitive overload during codes, especially when serving as code leader or primary nurse.",
+    "who": "All acute care nurses, especially those in ICU, step-down, and med-surg",
+    "frequency": "monthly",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 500000,
+    "source": "career_psychology",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Code Blue ACLS Quick-Reference Checklist",
+      "one_liner": "Step-by-step ACLS code blue protocol with drug dosing, defibrillation timing, rhythm decision tree, and role assignments.",
+      "steps": [
+        "Step 1: Confirm unresponsiveness — tap and shout, check pulse (≤10 seconds)",
+        "Step 2: Call Code Blue — activate emergency response, note TIME",
+        "Step 3: Begin HIGH-QUALITY CPR — 100-120 compressions/min, 2-inch depth, full recoil",
+        "Step 4: Attach defibrillator/monitor — identify rhythm (shockable vs non-shockable)",
+        "Step 5: SHOCKABLE (VF/pVT) — defibrillate 120-200J biphasic, resume CPR immediately for 2 min",
+        "Step 6: NON-SHOCKABLE (Asystole/PEA) — continue CPR, give Epinephrine 1mg IV/IO ASAP",
+        "Step 7: Epinephrine 1mg IV/IO every 3-5 minutes for all rhythms",
+        "Step 8: For refractory VF/pVT — Amiodarone 300mg IV first dose, 150mg second dose",
+        "Step 9: Assess reversible causes (H's and T's) every 2-minute cycle",
+        "Step 10: Rotate compressors every 2 minutes to prevent fatigue",
+        "Step 11: If ROSC achieved — begin post-cardiac arrest care, obtain 12-lead ECG, consider targeted temperature management",
+        "Step 12: Document all interventions with timestamps"
+      ],
+      "warnings": [
+        "WARNING: Minimize interruptions in chest compressions — pauses <10 seconds",
+        "WARNING: Do not delay defibrillation for intubation or IV access",
+        "WARNING: Check for DNR/POLST status before initiating — but if unknown, START code",
+        "WARNING: H's: Hypovolemia, Hypoxia, Hydrogen ion (acidosis), Hypo/Hyperkalemia, Hypothermia",
+        "WARNING: T's: Tension pneumothorax, Tamponade, Toxins, Thrombosis (pulmonary/coronary)"
+      ],
+      "regulatory_refs": [
+        "AHA ACLS Guidelines 2025",
+        "Joint Commission Resuscitation Standards",
+        "Hospital-specific Code Blue Policy"
+      ]
+    },
+    "example_queries": [
+      "Walk me through a code blue — my patient just went into VF",
+      "When do I give epinephrine vs amiodarone during a code?",
+      "What are the H's and T's I should check during a cardiac arrest?"
+    ]
+  },
+  {
+    "id": "us-acute-care-nurses-p13",
+    "title": "Travel Nurse Contract and Pay Package Analyzer",
+    "problem": "Travel nurses receive complex compensation packages mixing taxable hourly wages, tax-free stipends (housing, meals, incidentals), and bonuses. Understanding true pay, tax implications, and contract terms (cancellation clauses, floating policies, guaranteed hours) requires financial and legal knowledge most nurses lack. Bad contracts can result in thousands of dollars lost through hidden clauses or unfavorable stipend structures.",
+    "who": "Travel nurses and those considering travel assignments",
+    "frequency": "monthly",
+    "time_waste_h": 4,
+    "money_risk_usd": 20000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Travel Nurse Pay Package Calculator",
+      "one_liner": "Breaks down travel nurse compensation packages into true hourly rate, estimated take-home pay, and tax implications.",
+      "inputs": [
+        {
+          "name": "taxable_hourly_rate",
+          "type": "number",
+          "label": "Taxable hourly rate (USD)"
+        },
+        {
+          "name": "weekly_housing_stipend",
+          "type": "number",
+          "label": "Weekly housing stipend (USD, tax-free)"
+        },
+        {
+          "name": "weekly_meals_stipend",
+          "type": "number",
+          "label": "Weekly meals & incidentals stipend (USD, tax-free)"
+        },
+        {
+          "name": "travel_reimbursement",
+          "type": "number",
+          "label": "Travel reimbursement (USD)"
+        },
+        {
+          "name": "completion_bonus",
+          "type": "number",
+          "label": "Completion bonus (USD)"
+        },
+        {
+          "name": "guaranteed_hours",
+          "type": "number",
+          "label": "Guaranteed hours per week"
+        },
+        {
+          "name": "contract_weeks",
+          "type": "number",
+          "label": "Contract length (weeks)"
+        },
+        {
+          "name": "tax_home_state",
+          "type": "string",
+          "label": "Tax home state"
+        },
+        {
+          "name": "overtime_rate",
+          "type": "number",
+          "label": "Overtime rate (USD/hr, if different)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "gross_weekly_taxable",
+          "label": "Gross weekly taxable pay"
+        },
+        {
+          "name": "weekly_stipends",
+          "label": "Total weekly tax-free stipends"
+        },
+        {
+          "name": "blended_hourly_rate",
+          "label": "True blended hourly rate"
+        },
+        {
+          "name": "total_contract_value",
+          "label": "Total contract value"
+        },
+        {
+          "name": "estimated_weekly_takehome",
+          "label": "Estimated weekly take-home"
+        },
+        {
+          "name": "gsa_comparison",
+          "label": "Stipend vs GSA rate comparison (tax compliance check)"
+        }
+      ],
+      "formula_hint": "blended_hourly = (taxable_hourly * guaranteed_hours + weekly_stipends) / guaranteed_hours; total_contract = (gross_weekly + weekly_stipends) * contract_weeks + completion_bonus + travel_reimbursement; compare stipends to GSA per diem rates for tax compliance",
+      "rates": {
+        "fica_rate": 0.0765,
+        "estimated_federal_bracket": 0.22
+      }
+    },
+    "example_queries": [
+      "Compare two contracts: Agency A offers $28/hr + $1,200 housing + $500 M&IE for 36 hrs/week 13 weeks. Agency B offers $35/hr + $900 housing + $350 M&IE for 36 hrs/week 13 weeks",
+      "What's my true hourly rate if I get $30/hr taxable plus $1,800/week in stipends for 36 hours?",
+      "Is a $1,500 weekly housing stipend in NYC reasonable or will the IRS flag it?"
+    ]
+  }
+]

@@ -1,0 +1,261 @@
+{
+  "profession_id": "us-histology-technicians",
+  "profession_name": "Histology Technicians",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Histology technicians (histotechnicians) prepare tissue samples for microscopic examination by pathologists. They work in hospital pathology labs, reference labs, research facilities, and pharmaceutical companies. Standard 40-hour week with possible on-call for frozen sections.",
+    "typical_tasks": [
+      "Receiving and accessioning tissue specimens",
+      "Processing tissues through fixation, dehydration, and paraffin embedding",
+      "Cutting thin tissue sections on microtome (4-6 microns)",
+      "Performing routine H&E (hematoxylin and eosin) staining",
+      "Performing special stains for specific tissue components",
+      "Performing immunohistochemistry (IHC) staining procedures",
+      "Preparing frozen sections for intraoperative consultation (stat)",
+      "Coverslipping and labeling slides",
+      "Maintaining staining equipment and quality control",
+      "Documenting specimen tracking and chain of custody",
+      "Troubleshooting staining and sectioning problems"
+    ],
+    "key_documents": [
+      "Specimen requisition forms",
+      "Tissue processing logs",
+      "Quality control records for stains and reagents",
+      "Equipment maintenance and calibration logs",
+      "Safety Data Sheets (SDS) for chemicals",
+      "CAP (College of American Pathologists) inspection checklists",
+      "Standard operating procedures (SOPs)"
+    ],
+    "deadlines": {
+      "frozen_section": "10-20 minutes (intraoperative — surgeon waiting)",
+      "routine_processing": "24-48 hours from receipt to slide completion",
+      "stat_specimens": "Same-day processing and staining",
+      "ihc_staining": "1-3 days depending on protocol",
+      "cap_inspection": "Biennial laboratory accreditation inspections",
+      "ce_credits": "Varies by credential: ASCP HT requires CE for renewal"
+    },
+    "seasonality": "No significant seasonality. Surgical volumes drive workload. Research labs may have grant-cycle-related fluctuations."
+  },
+  "regulatory": {
+    "summary": "ASCP Board of Certification (BOC) is the primary credentialing body. Two levels: HT (Histotechnician) and HTL (Histotechnologist). Some states require licensure. CAP accreditation governs laboratory quality standards.",
+    "key_laws": [
+      {
+        "name": "CLIA '88 (Clinical Laboratory Improvement Amendments)",
+        "description": "Federal law regulating clinical laboratory quality standards"
+      },
+      {
+        "name": "CAP (College of American Pathologists) accreditation",
+        "description": "Laboratory accreditation program setting quality standards for histology labs"
+      },
+      {
+        "name": "State licensure requirements (select states)",
+        "description": "Some states require histology technician licensure (e.g., New York, California, Florida)"
+      },
+      {
+        "name": "OSHA chemical safety standards",
+        "description": "Regulations for handling formaldehyde, xylene, and other histology chemicals"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Associate's degree minimum (HT) or bachelor's degree (HTL)",
+        "Completion of NAACLS-accredited histotechnology program or equivalent experience",
+        "ASCP BOC certification: HT(ASCP) or HTL(ASCP)",
+        "HT route: 1 year clinical experience or 9-month structured program with 480+ clinical hours",
+        "Continuing education for credential maintenance",
+        "State licensure where required"
+      ]
+    },
+    "recent_changes": "Growing demand for IHC and molecular pathology skills. ASCP updating competency requirements. Digital pathology integration changing workflow expectations."
+  },
+  "tools": {
+    "summary": "Specialized histology laboratory equipment: microtomes, tissue processors, staining systems, and embedding centers. Digital pathology and LIS (Laboratory Information Systems) increasingly important.",
+    "primary_tools": [
+      {
+        "name": "Microtome",
+        "description": "Precision cutting instrument for making thin tissue sections",
+        "examples": "Leica RM2235, Thermo Fisher HM355S"
+      },
+      {
+        "name": "Tissue processor",
+        "description": "Automated system for fixation, dehydration, clearing, and paraffin infiltration",
+        "examples": "Leica ASP6025, Sakura Tissue-Tek VIP"
+      },
+      {
+        "name": "Embedding center",
+        "description": "Workstation for orienting and embedding tissue in paraffin blocks",
+        "examples": "Leica EG1150H, Sakura Tissue-Tek TEC"
+      },
+      {
+        "name": "Automated staining systems",
+        "description": "Machines for routine H&E and special stains",
+        "examples": "Leica ST5010, Sakura Prisma, Roche BenchMark (IHC)"
+      },
+      {
+        "name": "Laboratory Information System (LIS)",
+        "description": "Software for specimen tracking, results, and quality management",
+        "examples": "Cerner PathNet, Sunquest, Epic Beaker"
+      },
+      {
+        "name": "Cryostat",
+        "description": "Refrigerated microtome for cutting frozen sections"
+      }
+    ],
+    "secondary_tools": [
+      "Digital pathology scanners (Leica Aperio, Hamamatsu)",
+      "Immunohistochemistry (IHC) automated platforms",
+      "Water bath for section flotation",
+      "Coverslipping machines",
+      "Chemical fume hoods for safety"
+    ],
+    "pain_points": [
+      "Exposure to hazardous chemicals (formaldehyde, xylene)",
+      "Repetitive motion from microtomy",
+      "Older equipment in budget-constrained labs",
+      "Staffing shortages increasing workload per tech",
+      "Transition to digital pathology requiring new skills"
+    ]
+  },
+  "terminology": {
+    "summary": "Pathology laboratory terminology combining tissue processing, staining chemistry, and microscopy language.",
+    "terms": {
+      "HT": "Histotechnician (ASCP credential)",
+      "HTL": "Histotechnologist (ASCP credential, higher level)",
+      "H&E": "Hematoxylin and eosin — routine tissue stain",
+      "IHC": "Immunohistochemistry — antibody-based tissue staining for specific proteins",
+      "microtomy": "Process of cutting thin tissue sections on a microtome",
+      "embedding": "Process of infiltrating tissue with paraffin wax for sectioning",
+      "fixation": "Preserving tissue (typically in formalin) to prevent decomposition",
+      "frozen section": "Rapid tissue preparation for intraoperative diagnosis (10-20 minutes)",
+      "cassette": "Plastic container holding tissue during processing and embedding",
+      "block": "Paraffin-embedded tissue ready for sectioning",
+      "ribbon": "Continuous strip of thin tissue sections from microtome",
+      "special stains": "Non-routine stains highlighting specific tissue components (PAS, trichrome, AFB)",
+      "deparaffinize": "Removing paraffin from tissue sections before staining",
+      "xylene": "Chemical solvent used in tissue processing (being replaced by safer alternatives)",
+      "formalin": "Formaldehyde solution (10% neutral buffered) used for tissue fixation",
+      "FFPE": "Formalin-fixed paraffin-embedded — standard tissue preservation method",
+      "grossing": "Macroscopic examination and dissection of surgical specimens",
+      "CAP": "College of American Pathologists — lab accreditation body"
+    }
+  },
+  "career_psychology": {
+    "summary": "Niche laboratory career with moderate salary ($57K-$80K). Growing demand from cancer diagnostics and precision medicine. Shortage of qualified techs creating opportunities. Rewarding for detail-oriented individuals who enjoy lab work.",
+    "career_path": [
+      "Associate's degree in histotechnology (NAACLS-accredited) or related science + clinical experience",
+      "ASCP HT certification",
+      "Entry-level histotechnician in hospital or reference lab",
+      "Specialization: IHC, molecular, frozen sections, research",
+      "Bachelor's degree → HTL(ASCP) certification",
+      "Lead technician or histology supervisor",
+      "Lab manager, quality assurance, or educator",
+      "Applications specialist for equipment/reagent companies"
+    ],
+    "salary_range": {
+      "entry_ht": "$45,000 - $55,000",
+      "average_ht": "$57,000 - $70,000",
+      "experienced_htl": "$65,000 - $85,000",
+      "travel_histotech": "$75,000 - $100,000+ (temporary/travel positions)",
+      "top_markets": "DC $78,804, CA $78,505, MA $77,459"
+    },
+    "fears": [
+      "Chemical exposure (formaldehyde classified as carcinogen)",
+      "Repetitive strain from microtomy",
+      "Staff shortages increasing pressure and overtime",
+      "Automation reducing need for manual skills",
+      "Missing critical tissue in frozen section"
+    ],
+    "motivation": [
+      "Critical role in cancer diagnosis",
+      "Precise, hands-on laboratory work",
+      "Growing demand for skilled histotechs",
+      "Travel positions offering premium pay",
+      "Contributing to medical research and advances",
+      "Stable healthcare employment"
+    ],
+    "burnout_factors": [
+      "High workload due to staffing shortages",
+      "Chemical exposure concerns",
+      "Repetitive physical motions",
+      "Pressure of stat frozen sections",
+      "Limited career advancement in small labs"
+    ]
+  },
+  "community": {
+    "summary": "Professional community through ASCP, NSH (National Society for Histotechnology), and CAP. Specialized conferences and CE opportunities.",
+    "associations": [
+      {
+        "name": "American Society for Clinical Pathology (ASCP)",
+        "url": "https://www.ascp.org",
+        "type": "Primary professional organization and credentialing body"
+      },
+      {
+        "name": "National Society for Histotechnology (NSH)",
+        "url": "https://www.nsh.org",
+        "type": "Specialty professional society for histotechnology"
+      },
+      {
+        "name": "College of American Pathologists (CAP)",
+        "url": "https://www.cap.org",
+        "type": "Laboratory accreditation and quality organization"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "NSH Online Community",
+        "description": "NSH member forums and networking"
+      },
+      {
+        "name": "Histonet",
+        "description": "Email listserv for histology professionals — long-running community"
+      },
+      {
+        "name": "r/labrats",
+        "url": "https://reddit.com/r/labrats",
+        "description": "Reddit community for laboratory workers (includes histology)"
+      }
+    ],
+    "events": [
+      "NSH Annual Symposium/Convention",
+      "ASCP Annual Meeting",
+      "CAP annual meeting",
+      "Regional histology workshops"
+    ]
+  },
+  "market": {
+    "summary": "Growing demand driven by cancer diagnostics, precision medicine, and IHC/molecular pathology. Staffing shortages creating travel and premium pay opportunities. Digital pathology expanding the field.",
+    "demand_forecast": {
+      "growth_rate": "5% for clinical lab technicians overall (BLS 2023-2033)",
+      "driver": "Cancer diagnostics, precision medicine, aging population",
+      "shortage": "Significant staffing shortages in histology labs nationwide"
+    },
+    "salary_market": {
+      "average_ht": "$57,000 - $70,000",
+      "travel_positions": "$75,000 - $100,000+",
+      "top_states": "DC, CA, MA — highest-paying markets"
+    },
+    "market_trends": [
+      "Staffing shortages driving salary increases and travel opportunities",
+      "IHC and molecular pathology skills increasingly valued",
+      "Digital pathology (whole slide imaging) changing workflows",
+      "Automation of routine processing and staining",
+      "Precision medicine increasing demand for specialized tissue testing",
+      "Xylene-free and formaldehyde-free alternatives being adopted"
+    ]
+  },
+  "quality_score": 0.77,
+  "sources_count": 22,
+  "verified_sources": 8,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "histology technician USA 2025 2026 salary duties HT ASCP certification career outlook laboratory",
+      "sources": [
+        {"title": "PayScale — ASCP HT Salary", "url": "https://www.payscale.com/research/US/Certification=ASCP_Certified_Histotechnician_(HT)/Salary"},
+        {"title": "ASCP — HT Credential", "url": "https://www.ascp.org/boc/explore-credentials/view-all-credentials/HT"},
+        {"title": "Salary.com — Histology Technician Salary 2026", "url": "https://www.salary.com/research/salary/benchmark/histology-technician-salary"},
+        {"title": "HealthcarePathway — Histotechnologist", "url": "https://www.healthcarepathway.com/health-care-careers/histotechnologist/"}
+      ]
+    }
+  ]
+}

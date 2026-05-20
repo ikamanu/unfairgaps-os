@@ -1,0 +1,261 @@
+{
+  "profession_id": "us-photonics-engineers",
+  "profession_name": "Photonics Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Photonics engineers design, integrate, and test systems using light — lasers, fiber optics, LEDs, imaging, and semiconductor devices. Work in R&D environments across telecom, medical devices, defense, and semiconductor industries. Typical work week exceeds 40 hours.",
+    "typical_tasks": [
+      "Design and integrate photonics systems and components (lasers, fiber optics, LEDs)",
+      "Develop optical or imaging systems — products, components, signal processing",
+      "Analyze system performance and operational requirements",
+      "Design gas lasers, solid state lasers, and semiconductor laser systems",
+      "Conduct testing to determine functionality or optimization of photonic devices",
+      "Develop fiber optics for data transmission and telecom applications",
+      "Design LED-based lighting systems (automotive, industrial, consumer)",
+      "Model and simulate optical systems using specialized software",
+      "Collaborate with electrical, mechanical, and materials engineers",
+      "Read current literature and participate in professional conferences"
+    ],
+    "key_documents": [
+      "System design specifications and optical layouts",
+      "Test reports and performance characterization data",
+      "Simulation models and analysis results",
+      "Patent applications and invention disclosures",
+      "Technical publications and conference papers",
+      "Manufacturing process documentation",
+      "Compliance documentation for laser safety (ANSI Z136)"
+    ],
+    "deadlines": {
+      "project_milestones": "Varies by project — typically quarterly design reviews",
+      "prototype_deliverables": "Based on product development timeline",
+      "conference_submissions": "Typically 3-6 months ahead of major photonics conferences",
+      "patent_filings": "Time-sensitive based on prior art considerations"
+    },
+    "seasonality": "Relatively steady year-round. Conference season (January-March for SPIE Photonics West) drives presentation preparation. Government contract cycles (October fiscal year) affect defense photonics projects. Semiconductor industry cycles influence demand."
+  },
+  "regulatory": {
+    "summary": "No specific professional license required for photonics engineering. PE (Professional Engineer) license optional but uncommon. Regulated primarily through laser safety standards (ANSI Z136, IEC 60825), FDA regulations for medical laser devices, and ITAR/export controls for defense photonics.",
+    "key_laws": [
+      {
+        "name": "ANSI Z136 Laser Safety Standards",
+        "description": "American National Standards Institute standards for safe use of lasers in various environments",
+        "status": "Active"
+      },
+      {
+        "name": "FDA 21 CFR 1040 — Laser Products",
+        "description": "Federal regulations for laser product performance standards and safety classifications",
+        "status": "Active"
+      },
+      {
+        "name": "ITAR (International Traffic in Arms Regulations)",
+        "description": "Export control for defense-related photonics and laser systems",
+        "status": "Active"
+      },
+      {
+        "name": "IEC 60825 — Safety of Laser Products",
+        "description": "International standard for laser classification and safety requirements",
+        "status": "Active"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Bachelor's degree in photonics/optical engineering, physics, or electrical engineering (minimum)",
+        "Master's or PhD preferred for advanced R&D positions",
+        "No specific professional license required",
+        "Optional: PE (Professional Engineer) license",
+        "Laser Safety Officer certification for some roles",
+        "Security clearance may be required for defense work"
+      ]
+    },
+    "continuing_education": "Not formally required. Professional development through SPIE, OSA/Optica conferences. Many employers support ongoing education and certifications."
+  },
+  "tools": {
+    "summary": "Specialized optical design software, simulation platforms, and precision laboratory equipment. Heavy use of CAD for optical system layout and ray tracing. Laboratory work with lasers, spectrometers, and precision alignment equipment.",
+    "primary_tools": [
+      {
+        "name": "Zemax OpticStudio",
+        "description": "Industry-standard optical design and simulation software — ray tracing, lens design, imaging system analysis"
+      },
+      {
+        "name": "Lumerical (Ansys)",
+        "description": "Photonics simulation suite — FDTD, MODE, INTERCONNECT for nanophotonic device design"
+      },
+      {
+        "name": "COMSOL Multiphysics",
+        "description": "Finite element simulation for optical/photonic device modeling"
+      },
+      {
+        "name": "CODE V (Synopsys)",
+        "description": "Advanced optical design and analysis software for lens and mirror systems"
+      }
+    ],
+    "secondary_tools": [
+      "MATLAB — numerical analysis, signal processing, data visualization",
+      "Python — scripting, automation, machine learning for optical systems",
+      "SolidWorks/AutoCAD — mechanical design of optical assemblies",
+      "LabVIEW — instrument control and test automation",
+      "Optical spectrum analyzers and power meters",
+      "Interferometers and wavefront sensors",
+      "Laser characterization equipment (beam profilers, spectrometers)",
+      "Clean room fabrication tools for photonic integrated circuits"
+    ],
+    "pain_points": [
+      "High cost of optical simulation software licenses",
+      "Alignment precision requirements make prototyping time-intensive",
+      "Clean room access constraints for nanophotonics work",
+      "Supply chain issues for specialized optical components",
+      "Bridging gap between simulation models and real-world performance"
+    ]
+  },
+  "terminology": {
+    "summary": "Specialized vocabulary spanning optics, laser physics, fiber optics, semiconductor photonics, and imaging science. Heavy use of physics-derived terms and measurement units.",
+    "terms": {
+      "photon": "Quantum of light — fundamental particle of electromagnetic radiation",
+      "wavelength": "Distance between wave crests — determines color in visible spectrum (nm)",
+      "coherence": "Property of laser light — waves in phase, enabling interference",
+      "FWHM": "Full Width at Half Maximum — spectral linewidth measure",
+      "NA": "Numerical Aperture — light-gathering ability of an optical fiber or lens",
+      "mode": "Spatial pattern of light propagating through fiber or waveguide",
+      "single-mode fiber": "Fiber supporting one propagation mode — long-distance telecom",
+      "multimode fiber": "Fiber supporting multiple modes — short-distance data",
+      "WDM": "Wavelength Division Multiplexing — multiple signals on one fiber",
+      "DWDM": "Dense WDM — tightly spaced wavelength channels for high bandwidth",
+      "PIC": "Photonic Integrated Circuit — multiple photonic functions on one chip",
+      "SiPh": "Silicon Photonics — photonic devices on silicon substrates",
+      "VCSEL": "Vertical-Cavity Surface-Emitting Laser — high-volume telecom/sensing laser",
+      "EDFA": "Erbium-Doped Fiber Amplifier — optical signal amplification",
+      "lidar": "Light Detection and Ranging — laser-based 3D mapping/sensing",
+      "quantum photonics": "Photonic systems for quantum computing and communication",
+      "free-space optics": "Optical communication through air rather than fiber",
+      "ray tracing": "Simulation technique modeling light propagation through optical systems",
+      "thin film": "Optical coatings on surfaces for anti-reflection, filtering, etc.",
+      "nonlinear optics": "Light-matter interactions at high intensities (frequency doubling, etc.)"
+    }
+  },
+  "career_psychology": {
+    "summary": "Niche but growing engineering specialty at the intersection of physics and engineering. Strong demand from telecom, AI/datacenter, defense, medical, and autonomous vehicle industries. Moderate to high salary with excellent growth prospects in photonic integrated circuits and quantum technologies.",
+    "career_path": [
+      "Bachelor's degree in optical/photonics engineering, physics, or EE (4 years)",
+      "Master's degree (2 years) — common for R&D positions",
+      "PhD (4-6 years) — required for advanced research and academia",
+      "Entry-level photonics engineer (design, test, or applications)",
+      "Senior photonics engineer / technical lead",
+      "Principal engineer / architect",
+      "R&D director / VP of engineering",
+      "CTO / chief scientist (at photonics companies)"
+    ],
+    "salary_range": {
+      "entry_level": "$75,000 - $95,000/year",
+      "mid_career": "$100,000 - $135,000/year",
+      "senior": "$135,000 - $170,000/year",
+      "principal_architect": "$160,000 - $250,000+/year",
+      "top_markets": "San Jose/Bay Area up to $270,000"
+    },
+    "fears": [
+      "Niche field — limited job openings compared to broader engineering",
+      "Technology obsolescence in rapidly evolving photonics landscape",
+      "Export control restrictions limiting career mobility",
+      "PhD expectations narrowing job prospects for BS/MS holders",
+      "Outsourcing of manufacturing to Asia reducing domestic roles"
+    ],
+    "motivation": [
+      "Working at the frontier of light-based technology",
+      "Applications span exciting fields: quantum computing, lidar, medical imaging",
+      "Strong demand from AI/datacenter buildout for optical interconnects",
+      "Intellectually challenging work combining physics and engineering",
+      "Contribution to transformative technologies (autonomous vehicles, quantum internet)"
+    ],
+    "burnout_factors": [
+      "Long hours in lab for precision alignment and testing",
+      "Pressure from tight project timelines in competitive industries",
+      "Clean room work can be physically demanding and isolating",
+      "Constant need to stay current with rapid technology advances",
+      "Frustration when simulation predictions don't match lab results"
+    ]
+  },
+  "community": {
+    "summary": "Strong professional community centered around SPIE (International Society for Optics and Photonics) and Optica (formerly OSA). SPIE Photonics West is the world's largest photonics conference. Active academic research community with growing industry participation.",
+    "associations": [
+      {
+        "name": "SPIE — International Society for Optics and Photonics",
+        "url": "https://spie.org",
+        "type": "Primary professional society for photonics"
+      },
+      {
+        "name": "Optica (formerly Optical Society of America / OSA)",
+        "url": "https://www.optica.org",
+        "type": "Professional society for optics and photonics research"
+      },
+      {
+        "name": "IEEE Photonics Society",
+        "url": "https://www.photonicssociety.org",
+        "type": "IEEE technical society for photonics"
+      },
+      {
+        "name": "National Photonics Initiative (NPI)",
+        "type": "Alliance of industry, academia, and government for US photonics competitiveness"
+      }
+    ],
+    "events": [
+      "SPIE Photonics West (San Francisco, January — world's largest photonics event, 20,000+ attendees)",
+      "SPIE Optics + Photonics (San Diego, August)",
+      "OFC (Optical Fiber Communication Conference, March)",
+      "CLEO (Conference on Lasers and Electro-Optics, May)",
+      "Optica FiO+LS (Frontiers in Optics + Laser Science, October)"
+    ],
+    "online_communities": [
+      "SPIE Digital Library and community forums",
+      "Optica Publishing Group journals and webinars",
+      "LinkedIn photonics engineering groups",
+      "r/optics and r/photonics on Reddit",
+      "Photonics.com — industry news and resources"
+    ]
+  },
+  "market": {
+    "summary": "Photonics is a $3+ trillion global market enabler. US photonics engineers face 3-5% job growth. Strong demand from AI/datacenter optical interconnects, lidar for autonomous vehicles, quantum photonics, silicon photonics, and medical imaging. Geographic hubs: San Jose, Boston, Rochester, Tucson.",
+    "job_outlook": {
+      "growth_rate": "3-5% projected 2023-2033",
+      "annual_openings": "~10,100 for related engineering occupations",
+      "key_hubs": "San Jose/Bay Area, Boston, Rochester NY, Tucson AZ, Orlando FL"
+    },
+    "salary_market": {
+      "average": "$106,000 - $136,000/year",
+      "range": "$75,000 - $270,000/year (location dependent)",
+      "top_market": "San Jose/Bay Area up to $270,000"
+    },
+    "demand_drivers": [
+      "AI/datacenter buildout requiring massive optical interconnect capacity",
+      "Autonomous vehicles driving lidar development",
+      "Quantum computing and quantum communication",
+      "Silicon photonics (PIC) integration with semiconductor fabs",
+      "5G/6G telecom infrastructure expansion",
+      "Medical imaging and biophotonics innovation",
+      "Defense/military photonics (directed energy, ISR)"
+    ],
+    "market_trends": [
+      "Silicon photonics becoming mainstream for data center interconnects",
+      "Photonic integrated circuits (PICs) gaining scale like electronic ICs",
+      "VCSEL arrays for sensing (3D face recognition, lidar)",
+      "Quantum photonics attracting significant VC and government funding",
+      "AI-assisted optical design tools emerging",
+      "US CHIPS Act indirectly supporting domestic photonics manufacturing"
+    ]
+  },
+  "quality_score": 0.72,
+  "sources_count": 22,
+  "verified_sources": 8,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Photonics Engineer USA 2025 2026 typical day tasks laser optics fiber optics LED semiconductor career salary job market",
+      "sources": [
+        {"title": "Science Buddies - Photonics Engineer", "url": "https://careerdiscovery.sciencebuddies.org/science-engineering-careers/engineering/photonics-engineer"},
+        {"title": "OwlGuru - Photonics Engineers", "url": "https://www.owlguru.com/career/photonics-engineers/job-description/"},
+        {"title": "O*NET - 17-2199.07", "url": "https://www.onetonline.org/link/summary/17-2199.07"},
+        {"title": "CareerExplorer - Photonics Engineer", "url": "https://www.careerexplorer.com/careers/photonics-engineer/"},
+        {"title": "ZipRecruiter - Salary 2026", "url": "https://www.ziprecruiter.com/Salaries/Photonics-Engineer-Salary"},
+        {"title": "SalaryExpert - 2025", "url": "https://www.salaryexpert.com/salary/job/photonics-engineer/united-states"}
+      ]
+    }
+  ]
+}

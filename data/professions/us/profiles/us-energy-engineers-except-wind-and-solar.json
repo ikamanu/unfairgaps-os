@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-energy-engineers-except-wind-and-solar",
+  "profession_name": "Energy Engineers, Except Wind and Solar",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Conduct energy audits of buildings, industrial facilities, and processes. Analyze energy consumption data and identify efficiency improvements. Design energy-efficient systems (HVAC, lighting, building envelope, industrial processes). Review utility bills and energy management system data. Meet with facility managers, building owners, and utility representatives. Prepare reports with energy savings projections and ROI analysis. Field visits for inspections and commissioning.",
+    "key_documents": ["Energy audit reports (ASHRAE Level I/II/III)", "Utility bill analysis", "Energy conservation measure (ECM) proposals", "Building energy models", "Commissioning reports", "ENERGY STAR benchmarking reports", "Energy management plans", "Measurement and verification (M&V) reports", "Regulatory compliance documentation"],
+    "deadlines": "Energy audit report delivery deadlines; utility incentive program application deadlines; building code compliance deadlines; energy performance contract milestones; government grant/incentive program deadlines; certification renewal cycles.",
+    "seasonality": "Heating season (winter) and cooling season (summer) create peak demand for energy analysis. Budget cycles (Q4) drive energy retrofit project approvals. Utility incentive programs often have annual deadlines. Government energy programs tied to fiscal year cycles."
+  },
+  "regulatory": {
+    "laws_and_standards": ["ASHRAE Standard 90.1 (Energy Standard for Buildings)", "IECC (International Energy Conservation Code)", "ENERGY STAR certification requirements", "State energy codes and benchmarking laws", "NERC/FERC standards (for grid-connected systems)", "DOE energy efficiency regulations", "EPA regulations for building emissions", "Local building energy disclosure ordinances"],
+    "licensing": "PE (Professional Engineer) license valued for signing energy audit reports. CEM (Certified Energy Manager) from AEE is the premier credential. Additional certifications: LEED AP, BPI (Building Performance Institute), BEMP (Building Energy Modeling Professional), CEA (Certified Energy Auditor). ABET-accredited engineering degree as foundation.",
+    "penalties": "Building code non-compliance fines. State energy benchmarking law penalties. ENERGY STAR misrepresentation penalties. Professional liability for inaccurate energy savings projections. Government contract compliance failures.",
+    "regulatory_bodies": ["DOE (Department of Energy)", "EPA (ENERGY STAR program)", "State energy offices", "ASHRAE", "Local building departments", "State public utility commissions", "NERC/FERC"]
+  },
+  "tools": {
+    "software": ["EnergyPlus - DOE building energy simulation", "eQUEST - building energy analysis", "TRACE 3D Plus (Trane) - HVAC load analysis", "RETScreen - clean energy project analysis", "MATLAB - data analysis", "AutoCAD/Revit - building design", "HOMER Energy - microgrid optimization", "EnergyCAP - utility bill tracking"],
+    "platforms": ["Building automation systems (BAS): Siemens, Johnson Controls, Honeywell", "Energy management systems (EMS)", "ENERGY STAR Portfolio Manager - benchmarking", "Utility demand response platforms", "IoT sensors for energy monitoring", "Power quality analyzers and data loggers"],
+    "gov_portals": ["DOE Better Buildings Initiative", "ENERGY STAR Portfolio Manager", "DSIRE (Database of State Incentives for Renewables & Efficiency)", "State energy office portals", "EPA greenhouse gas reporting"]
+  },
+  "terminology": {
+    "jargon": ["Energy audit (ASHRAE Level I/II/III)", "Energy conservation measure (ECM)", "Retro-commissioning (RCx)", "Building envelope", "Demand response", "Peak demand reduction", "Energy Use Intensity (EUI)", "Measurement and verification (M&V)", "Net zero energy", "Combined heat and power (CHP/cogeneration)"],
+    "abbreviations": ["CEM - Certified Energy Manager", "EUI - Energy Use Intensity", "ECM - Energy Conservation Measure", "M&V - Measurement and Verification", "IPMVP - International Performance Measurement and Verification Protocol", "BAS - Building Automation System", "CHP - Combined Heat and Power", "ESCO - Energy Service Company", "kWh/kW/MMBtu - energy units", "HVAC - Heating, Ventilation, and Air Conditioning", "LEED - Leadership in Energy and Environmental Design", "VFD - Variable Frequency Drive"]
+  },
+  "career_psychology": {
+    "career_levels": ["Junior Energy Engineer/Analyst (0-3 years)", "Energy Engineer (3-7 years, CEM preferred)", "Senior Energy Engineer (7-12 years, PE + CEM)", "Energy Manager/Director (12+ years)", "VP of Sustainability/Energy", "Independent Consultant/ESCO Principal"],
+    "fears": ["Policy changes reducing energy efficiency incentives", "Budget cuts to energy programs", "Competition from AI-driven energy analytics platforms", "Client skepticism about ROI of energy projects", "Talent poaching by competitors offering higher salaries"],
+    "motivation": "Direct environmental impact through energy savings; growing market driven by sustainability goals and regulations; diverse work (buildings, industry, grid); strong demand from corporate sustainability commitments; combination of engineering and business skills.",
+    "burnout": "Moderate — field visits and travel can be demanding; juggling multiple audit projects simultaneously; client relationship management stress; keeping up with rapidly changing technology and regulations. Retention challenges as experienced professionals are poached by competitors."
+  },
+  "community": {
+    "reddit": ["r/energyengineering", "r/energy", "r/HVAC", "r/sustainability", "r/AskEngineers"],
+    "linkedin": ["AEE (Association of Energy Engineers) community", "Energy Efficiency Professionals", "Building Performance Professionals", "Sustainability Engineers network"],
+    "associations": ["AEE (Association of Energy Engineers)", "ASHRAE (American Society of Heating, Refrigerating and Air-Conditioning Engineers)", "USGBC (US Green Building Council)", "AESP (Association of Energy Services Professionals)", "BPI (Building Performance Institute)"],
+    "conferences": ["AEE World Energy Conference & Expo - September (2026: Sept 16-18)", "AEE East Conference", "AEE West Conference", "ASHRAE Winter and Annual Conferences", "Greenbuild International Conference", "ACEEE Summer Study on Energy Efficiency in Buildings"]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 66000,
+      "mid_level_usd": 90000,
+      "senior_cem_usd": 126000,
+      "director_vp_usd": 167000
+    },
+    "average_salary_usd": 102000,
+    "job_count_estimate": "Energy engineering is a growing niche. BLS projects 5% growth through 2025+ driven by sustainability initiatives. Employed across utilities, ESCOs, consulting firms, government agencies, and large corporations with sustainability programs.",
+    "work_arrangements": "Mix of office work, field audits, and client site visits. Travel required for audits (20-50% depending on role). Some remote/hybrid for analysis and reporting. Government, consulting, utilities, and large corporations are primary employers. ESCO (Energy Service Company) roles common.",
+    "trends": ["Electrification of buildings and industrial processes", "Decarbonization mandates from city/state governments", "AI and IoT transforming energy monitoring and optimization", "Battery storage and microgrid engineering growing", "Salary growth 4.2% average, up to 10% for senior roles", "Corporate ESG commitments driving energy engineering demand", "Hydrogen and fuel cell engineering emerging", "Building energy disclosure laws expanding to more cities", "CEM certification increasingly required for advancement"]
+  },
+  "quality_score": 0.80,
+  "sources_count": 7,
+  "verified_sources": 5
+}

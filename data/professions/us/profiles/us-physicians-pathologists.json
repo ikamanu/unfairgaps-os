@@ -1,0 +1,280 @@
+{
+  "profession_id": "us-physicians-pathologists",
+  "profession_name": "Physicians, Pathologists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Pathologists spend most of their day at the microscope evaluating tissue biopsies, surgical specimens, and cytology slides to diagnose diseases. They generate pathology reports critical for treatment decisions. Work includes 1-2 hours of daily meetings (tumor boards, clinical conferences). Structured schedule with good work-life balance, though on-call duties can disrupt it.",
+    "typical_tasks": [
+      "Examine tissue biopsies and surgical specimens under microscope for disease diagnosis",
+      "Evaluate PAP smears, fine needle aspirations, and cytology specimens",
+      "Generate pathology reports with diagnoses and prognostic information",
+      "Perform or supervise autopsies (anatomic pathology)",
+      "Oversee clinical laboratory operations (clinical pathology)",
+      "Review blood bank procedures, transfusion medicine, and compatibility testing",
+      "Attend tumor boards and multidisciplinary conferences",
+      "Consult with surgeons and clinicians on frozen sections (intraoperative)",
+      "Supervise laboratory technologists and pathology assistants",
+      "Apply immunohistochemistry, molecular pathology, and genetic testing",
+      "Sign out cases and verify accuracy of laboratory results"
+    ],
+    "key_documents": [
+      "Pathology reports (surgical, cytology, autopsy)",
+      "Frozen section consultation reports",
+      "Laboratory quality assurance documentation",
+      "Tumor board case presentations",
+      "Clinical laboratory compliance records (CLIA, CAP)",
+      "Molecular and genetic test interpretations",
+      "Blood bank and transfusion records"
+    ],
+    "deadlines": {
+      "frozen_sections": "Immediate — intraoperative results needed within 15-20 minutes",
+      "routine_surgical_pathology": "24-48 hour turnaround typical",
+      "complex_cases": "3-5 days with special stains/molecular tests",
+      "autopsy_reports": "30-60 days for final report",
+      "board_certification_maintenance": "Continuing certification per ABPath requirements"
+    },
+    "seasonality": "Relatively stable year-round. Surgical pathology volume may dip slightly during holidays when elective surgeries decrease. Autopsy volume unpredictable. End-of-year lab inspections/accreditation reviews create periodic workload spikes."
+  },
+  "regulatory": {
+    "summary": "Board certified through American Board of Pathology (ABPath). Primary certifications in Anatomic Pathology, Clinical Pathology, or combined AP/CP. Must complete ACGME-accredited residency. CLIA and CAP regulations govern laboratory operations. All certificates issued since 2006 require Continuing Certification.",
+    "key_laws": [
+      {
+        "name": "American Board of Pathology (ABPath) Certification",
+        "url": "https://abpath.org",
+        "description": "Primary certification in AP, CP, or AP/CP. Requires ACGME-accredited residency completion and passing board exams. All certificates since 2006 require Continuing Certification.",
+        "status": "Active"
+      },
+      {
+        "name": "CLIA (Clinical Laboratory Improvement Amendments)",
+        "description": "Federal regulations for laboratory testing quality standards — labs must be CLIA certified",
+        "status": "Active"
+      },
+      {
+        "name": "CAP (College of American Pathologists) Accreditation",
+        "url": "https://www.cap.org",
+        "description": "Voluntary lab accreditation that exceeds CLIA requirements — considered gold standard",
+        "status": "Active"
+      },
+      {
+        "name": "State Medical Licensing",
+        "description": "Full unrestricted medical license required for practice",
+        "status": "Active, varies by state"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "MD or DO degree from accredited medical school",
+        "Pathology residency (3-4 years depending on AP, CP, or AP/CP track)",
+        "AP only: 3 years with 24 months AP + 12 months flexible",
+        "CP only: 3 years with 24 months CP + 12 months flexible",
+        "AP/CP combined: 4 years",
+        "Optional fellowship (1-2 years) in subspecialty",
+        "Pass ABPath board examination",
+        "State medical license",
+        "Continuing Certification for all certificates issued since 2006"
+      ]
+    },
+    "continuing_education": "ABPath Continuing Certification program requires ongoing participation with specific requirements and deadlines. State CME requirements vary. CAP accreditation requires proficiency testing participation."
+  },
+  "tools": {
+    "summary": "Microscopy remains the core tool, but digital pathology with whole slide imaging is transforming the field. AI-assisted diagnostic tools are emerging. Molecular pathology platforms (NGS, PCR) increasingly critical. Laboratory information systems (LIS) manage workflow.",
+    "primary_tools": [
+      {
+        "name": "Light Microscope",
+        "description": "Still the primary diagnostic tool — multi-headed for teaching and consultation"
+      },
+      {
+        "name": "Whole Slide Imaging (Digital Pathology)",
+        "description": "Scanners digitize glass slides for remote viewing, AI analysis, and archiving. Vendors: Philips, Leica, Hamamatsu"
+      },
+      {
+        "name": "Laboratory Information Systems (LIS)",
+        "description": "Software managing specimen tracking, result reporting, and workflow (Epic Beaker, Cerner PathNet, Sunquest)"
+      },
+      {
+        "name": "Immunohistochemistry (IHC) Platforms",
+        "description": "Automated staining systems for protein biomarker detection (Ventana, Dako/Agilent)"
+      },
+      {
+        "name": "Next-Generation Sequencing (NGS)",
+        "description": "Molecular profiling platforms for cancer genomics (Illumina, Thermo Fisher)"
+      }
+    ],
+    "secondary_tools": [
+      "Flow cytometry — hematopathology and immunophenotyping",
+      "PCR/RT-PCR platforms — molecular diagnostics",
+      "FISH (Fluorescence In Situ Hybridization) — cytogenetics",
+      "Automated hematology analyzers (Sysmex, Beckman Coulter)",
+      "Chemistry analyzers (Roche, Abbott, Siemens)",
+      "AI-assisted diagnostic tools (Paige AI — FDA-cleared for prostate cancer)",
+      "Telepathology platforms for remote consultation",
+      "Gross dissection imaging and documentation systems"
+    ],
+    "pain_points": [
+      "High cost of digital pathology infrastructure adoption",
+      "AI tools not yet widely validated for clinical use beyond limited applications",
+      "LIS integration challenges across different vendor platforms",
+      "Increasing molecular testing complexity requiring subspecialty expertise",
+      "Reimbursement pressures for laboratory services",
+      "Specimen volume increasing faster than pathologist workforce"
+    ]
+  },
+  "terminology": {
+    "summary": "Dense specialized vocabulary spanning gross and microscopic morphology, molecular markers, laboratory medicine, and disease classification systems. WHO classification guides standardized tumor nomenclature.",
+    "terms": {
+      "H&E": "Hematoxylin and Eosin — standard tissue stain showing cell nuclei (blue) and cytoplasm (pink)",
+      "frozen section": "Rapid intraoperative tissue evaluation (15-20 min) for surgical decision-making",
+      "gross examination": "Macroscopic evaluation of surgical specimens before processing",
+      "sign out": "Pathologist's final review and authorization of pathology report",
+      "IHC": "Immunohistochemistry — antibody-based staining to identify specific proteins",
+      "FISH": "Fluorescence In Situ Hybridization — detects genetic abnormalities",
+      "NGS": "Next-Generation Sequencing — massively parallel DNA/RNA sequencing",
+      "malignant/benign": "Cancerous vs non-cancerous tissue diagnosis",
+      "differentiation": "How much tumor cells resemble normal tissue (well/moderate/poorly)",
+      "margins": "Edges of surgically removed tissue — positive (tumor at edge) vs negative (clear)",
+      "staging": "TNM classification of cancer extent (Tumor, Nodes, Metastasis)",
+      "grading": "Assessment of tumor aggressiveness based on microscopic features",
+      "cytology": "Study of individual cells (PAP smears, body fluids, FNA)",
+      "biopsy": "Tissue sample removed for pathological examination",
+      "AP/CP": "Anatomic Pathology / Clinical Pathology — two main branches",
+      "CAP": "College of American Pathologists — accreditation body",
+      "CLIA": "Clinical Laboratory Improvement Amendments — federal lab regulation",
+      "synoptic report": "Structured pathology report using standardized data elements (CAP protocols)",
+      "Gleason score": "Grading system for prostate cancer (2-10 scale)",
+      "Ki-67": "Proliferation marker — indicates how fast tumor cells are dividing"
+    }
+  },
+  "career_psychology": {
+    "summary": "Intellectual specialty with strong work-life balance. Median compensation $390K. Lower burnout than most specialties due to structured schedule and limited direct patient care stress. However, decreasing autopsy rates, increasing molecular complexity, and AI disruption anxiety are real concerns.",
+    "career_path": [
+      "Bachelor's degree (4 years, pre-med)",
+      "Medical school — MD/DO (4 years)",
+      "Pathology residency — AP, CP, or AP/CP (3-4 years)",
+      "Optional fellowship (1-2 years) — surgical path, dermatopath, hematopath, cytopathology, molecular path, forensic, neuropath",
+      "Staff pathologist — hospital, reference lab, or academic center",
+      "Associate/full professor (academic) or partner (private group)",
+      "Department chair / lab medical director",
+      "Chief medical officer of reference laboratory"
+    ],
+    "salary_range": {
+      "resident": "$60,000 - $75,000/year",
+      "entry_level": "$250,000 - $320,000/year",
+      "mid_career": "$320,000 - $390,000/year",
+      "senior_non_academic": "$400,000 - $500,000+/year",
+      "lab_director_reference_lab": "$450,000 - $600,000+/year"
+    },
+    "fears": [
+      "AI replacing pathologists for routine diagnostic tasks",
+      "Declining autopsy volumes reducing training opportunities",
+      "Consolidation of pathology groups reducing independent practice",
+      "Reimbursement cuts for laboratory services",
+      "Increasing complexity of molecular pathology outpacing training",
+      "Being seen as 'invisible doctor' — limited patient interaction"
+    ],
+    "motivation": [
+      "Intellectual challenge of diagnostic detective work",
+      "Critical role in cancer diagnosis and treatment decisions",
+      "Excellent work-life balance compared to most physician specialties",
+      "Structured, predictable schedule (no office hours, limited emergencies)",
+      "Molecular pathology placing pathologists at center of precision medicine",
+      "Each case is a diagnostic puzzle with real clinical impact"
+    ],
+    "burnout_factors": [
+      "High case volumes with increasing complexity",
+      "On-call responsibilities for frozen sections and urgent cases",
+      "Administrative burden of laboratory compliance and quality",
+      "Isolation from clinical teams and patients",
+      "Pressure from clinicians for faster turnaround times",
+      "Increasing molecular testing workload without additional staff"
+    ]
+  },
+  "community": {
+    "summary": "CAP (College of American Pathologists) is the premier professional organization. USCAP annual meeting is the largest pathology education event. Strong subspecialty societies. Active digital pathology and AI communities emerging.",
+    "associations": [
+      {
+        "name": "College of American Pathologists (CAP)",
+        "url": "https://www.cap.org",
+        "type": "Primary professional organization — also major lab accreditor"
+      },
+      {
+        "name": "American Board of Pathology (ABPath)",
+        "url": "https://abpath.org",
+        "type": "Certifying board"
+      },
+      {
+        "name": "United States and Canadian Academy of Pathology (USCAP)",
+        "type": "Premier educational organization"
+      },
+      {
+        "name": "Association for Molecular Pathology (AMP)",
+        "type": "Molecular diagnostics professional society"
+      },
+      {
+        "name": "American Society for Clinical Pathology (ASCP)",
+        "url": "https://www.ascp.org",
+        "type": "Professional society for pathologists and laboratory professionals"
+      }
+    ],
+    "events": [
+      "USCAP Annual Meeting (March — largest pathology education event)",
+      "CAP Annual Meeting (September-October)",
+      "ASCP Annual Meeting",
+      "AMP Annual Meeting",
+      "Digital Pathology Association conferences"
+    ],
+    "online_communities": [
+      "PathologyOutlines.com — free reference resource",
+      "r/pathology on Reddit",
+      "CAP online community and resources",
+      "Twitter/X #pathology and #PathTwitter community",
+      "PathPresenter — digital slide sharing platform"
+    ]
+  },
+  "market": {
+    "summary": "Strong job market with increasing annual salaries. Demand driven by aging population, cancer diagnosis needs, molecular pathology growth, and pathologist workforce shortage. Digital pathology and AI creating new subspecialty opportunities while raising disruption concerns.",
+    "job_outlook": {
+      "demand_trend": "Expanding — more jobs becoming available with rising salaries",
+      "key_drivers": "Aging population, cancer diagnostics, molecular pathology, laboratory compliance",
+      "workforce_concern": "Pathologist shortage as volume grows faster than workforce"
+    },
+    "salary_market": {
+      "median": "$390,000/year (2026)",
+      "range_25th_75th": "$320,000 - $420,000/year",
+      "non_academic_premium": "Substantially higher than academic positions"
+    },
+    "demand_drivers": [
+      "Aging population increasing cancer diagnosis and biopsy volumes",
+      "Molecular pathology/precision medicine requiring pathologist expertise",
+      "Laboratory consolidation creating larger, more complex operations",
+      "Digital pathology adoption requiring pathologist leadership",
+      "Clinical laboratory compliance requirements (CLIA, CAP)"
+    ],
+    "market_trends": [
+      "Digital pathology/whole slide imaging adoption accelerating",
+      "AI-assisted diagnostics emerging (Paige AI FDA-cleared for prostate)",
+      "Molecular pathology becoming essential for treatment selection",
+      "Telepathology enabling remote consultations and case sharing",
+      "Subspecialization increasing (dermpath, hematopath, molecular)",
+      "Laboratory consolidation into reference lab mega-groups"
+    ]
+  },
+  "quality_score": 0.76,
+  "sources_count": 24,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Pathologist physician USA 2025 2026 typical day tasks autopsy biopsy diagnosis career salary job market board certification",
+      "sources": [
+        {"title": "Your Pathologist - What a Pathologist Does in a Workday", "url": "https://www.yourpathologist.org/pathology-and-you/what-a-pathologist-does-in-a-workday/"},
+        {"title": "AMA - What It's Really Like in Pathology", "url": "https://www.ama-assn.org/medical-students/specialty-profiles/what-its-really-pathology-4-physicians-who-know"},
+        {"title": "AUC - What Does a Pathologist Do", "url": "https://www.aucmed.edu/blog/what-does-a-pathologist-do-and-how-to-become-one"},
+        {"title": "SalaryDr - Pathology 2026", "url": "https://www.salarydr.com/specialty/pathology"},
+        {"title": "CAP - Job Market and Compensation", "url": "https://www.cap.org/member-resources/articles/the-state-of-pathologists-job-market-and-compensation"},
+        {"title": "ABPath - Requirements", "url": "https://abpath.org/requirements/"},
+        {"title": "ABPath - About Certification", "url": "https://abpath.org/about-certification/"},
+        {"title": "WashU - Day in the Life Resident", "url": "https://pathology.wustl.edu/education/residency/day-in-the-life-of-a-resident/"}
+      ]
+    }
+  ]
+}

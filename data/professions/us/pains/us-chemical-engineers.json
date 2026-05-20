@@ -1,0 +1,923 @@
+[
+  {
+    "id": "us-chemical-engineers-p01",
+    "title": "Mass and Energy Balance Calculation",
+    "problem": "Chemical engineers routinely perform mass and energy balances for process design, optimization, and troubleshooting. Manual calculations across multiple unit operations with recycle streams are error-prone and time-consuming. Mistakes can lead to undersized equipment, safety hazards, or failed process designs costing hundreds of thousands in rework.",
+    "who": "Process engineers and senior engineers designing or optimizing chemical processes",
+    "frequency": "weekly",
+    "time_waste_h": 6,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Mass Energy Balance Calculator",
+      "one_liner": "Calculates mass and energy balances across unit operations with recycle streams",
+      "inputs": [
+        {
+          "name": "feed_flow_rate",
+          "type": "number",
+          "label": "Feed flow rate (kg/h)"
+        },
+        {
+          "name": "feed_composition",
+          "type": "text",
+          "label": "Feed composition (component:fraction, comma-separated)"
+        },
+        {
+          "name": "operation_type",
+          "type": "select",
+          "label": "Unit operation type (reactor/distillation/heat_exchanger/mixer/splitter)"
+        },
+        {
+          "name": "conversion_or_split",
+          "type": "number",
+          "label": "Conversion (%) or split ratio"
+        },
+        {
+          "name": "inlet_temp_c",
+          "type": "number",
+          "label": "Inlet temperature (C)"
+        },
+        {
+          "name": "outlet_temp_c",
+          "type": "number",
+          "label": "Outlet temperature (C)"
+        },
+        {
+          "name": "cp_kj_kgk",
+          "type": "number",
+          "label": "Average Cp (kJ/kg·K)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "outlet_flows",
+          "label": "Outlet stream flow rates (kg/h)"
+        },
+        {
+          "name": "outlet_compositions",
+          "label": "Outlet compositions"
+        },
+        {
+          "name": "heat_duty",
+          "label": "Heat duty (kW)"
+        },
+        {
+          "name": "energy_balance_check",
+          "label": "Energy balance closure (%)"
+        }
+      ],
+      "formula_hint": "Mass in = Mass out + Accumulation (steady state: accumulation=0). Q = m*Cp*deltaT. For reactors: extent of reaction * stoichiometry. Recycle streams via iterative convergence.",
+      "rates": {
+        "water_cp_kj_kgk": 4.18,
+        "steam_enthalpy_kj_kg": 2257
+      }
+    },
+    "example_queries": [
+      "Calculate the energy balance for a heat exchanger cooling 5000 kg/h of process fluid from 150C to 40C with Cp of 2.1 kJ/kg·K",
+      "I have a reactor feed of 1000 kg/h with 60% ethylene and 40% oxygen, 85% conversion - what are my outlet flows?",
+      "Mass balance for a distillation column: 2000 kg/h feed, 70% methanol 30% water, need 95% purity distillate"
+    ]
+  },
+  {
+    "id": "us-chemical-engineers-p02",
+    "title": "OSHA PSM Compliance Audit Checklist",
+    "problem": "OSHA Process Safety Management (29 CFR 1910.119) requires compliance across 14 elements. Engineers responsible for PSM often miss elements during internal audits, leading to violations up to $161,323 per willful violation. Preparing for OSHA inspections is stressful and disorganized without a systematic approach.",
+    "who": "Process safety engineers and plant managers at facilities handling highly hazardous chemicals",
+    "frequency": "quarterly",
+    "time_waste_h": 16,
+    "money_risk_usd": 500000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "PSM Compliance Audit Checklist",
+      "one_liner": "Step-by-step checklist covering all 14 PSM elements for OSHA compliance readiness",
+      "steps": [
+        "Step 1: Employee Participation - verify written plan for employee involvement in PHA and other PSM elements",
+        "Step 2: Process Safety Information - confirm current PFDs, P&IDs, chemical hazard data (SDS), equipment design basis documented",
+        "Step 3: Process Hazard Analysis - verify PHA completed for all covered processes, revalidated every 5 years, findings resolved",
+        "Step 4: Operating Procedures - check written procedures for each covered process, annual certification current",
+        "Step 5: Training - verify initial and refresher training (every 3 years) documented for all operators",
+        "Step 6: Contractors - confirm contractor safety programs evaluated, injury logs maintained",
+        "Step 7: Pre-Startup Safety Review (PSSR) - verify PSSR completed for new/modified facilities before startup",
+        "Step 8: Mechanical Integrity - check inspection/testing schedules for pressure vessels, piping, relief systems, controls",
+        "Step 9: Hot Work Permits - verify hot work permit program in place and permits issued properly",
+        "Step 10: Management of Change (MOC) - confirm all process changes documented with hazard evaluation before implementation",
+        "Step 11: Incident Investigation - verify incidents investigated within 48 hours, reports retained 5 years",
+        "Step 12: Emergency Planning and Response - check emergency action plan current, drills conducted",
+        "Step 13: Compliance Audits - verify 3-year audit cycle maintained, findings documented and resolved",
+        "Step 14: Trade Secrets - confirm process safety info available to employees regardless of trade secret claims"
+      ],
+      "warnings": [
+        "Warning: PSM applies to processes with TQ or more of any of 137 listed highly hazardous chemicals, or 10,000+ lbs of flammable liquids/gases",
+        "Warning: OSHA penalties adjusted annually - 2025/2026 maximums: $16,131 serious, $161,323 willful/repeat",
+        "Warning: Failure to abate can result in $16,131 per day penalties"
+      ],
+      "regulatory_refs": [
+        "29 CFR 1910.119",
+        "OSHA Directive CPL 02-02-045"
+      ]
+    },
+    "example_queries": [
+      "Walk me through a full PSM audit checklist for our ammonia refrigeration system",
+      "What are the 14 elements of PSM I need to verify before an OSHA inspection?",
+      "We're doing an internal PSM compliance review - what should I check for Management of Change?"
+    ]
+  },
+  {
+    "id": "us-chemical-engineers-p03",
+    "title": "Heat Exchanger Sizing and Rating",
+    "problem": "Chemical engineers must size and rate heat exchangers for new designs and evaluate existing ones for changed operating conditions. Manual calculation of LMTD, correction factors, overall heat transfer coefficients, and fouling allowances is tedious and error-prone. Undersized exchangers cause production bottlenecks; oversized ones waste capital.",
+    "who": "Process design engineers and project engineers specifying equipment",
+    "frequency": "monthly",
+    "time_waste_h": 8,
+    "money_risk_usd": 75000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Heat Exchanger Sizing Calculator",
+      "one_liner": "Sizes shell-and-tube heat exchangers using LMTD method with correction factors",
+      "inputs": [
+        {
+          "name": "hot_flow_rate",
+          "type": "number",
+          "label": "Hot side flow rate (kg/h)"
+        },
+        {
+          "name": "hot_inlet_temp",
+          "type": "number",
+          "label": "Hot side inlet temp (C)"
+        },
+        {
+          "name": "hot_outlet_temp",
+          "type": "number",
+          "label": "Hot side outlet temp (C)"
+        },
+        {
+          "name": "hot_cp",
+          "type": "number",
+          "label": "Hot side Cp (kJ/kg·K)"
+        },
+        {
+          "name": "cold_flow_rate",
+          "type": "number",
+          "label": "Cold side flow rate (kg/h)"
+        },
+        {
+          "name": "cold_inlet_temp",
+          "type": "number",
+          "label": "Cold side inlet temp (C)"
+        },
+        {
+          "name": "cold_cp",
+          "type": "number",
+          "label": "Cold side Cp (kJ/kg·K)"
+        },
+        {
+          "name": "u_overall",
+          "type": "number",
+          "label": "Overall U (W/m2·K) - leave blank for estimate"
+        },
+        {
+          "name": "fouling_factor",
+          "type": "number",
+          "label": "Fouling resistance (m2·K/W)"
+        },
+        {
+          "name": "exchanger_type",
+          "type": "select",
+          "label": "Configuration (counterflow/parallel/1-2_shell_tube/2-4_shell_tube)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "heat_duty_kw",
+          "label": "Heat duty (kW)"
+        },
+        {
+          "name": "cold_outlet_temp",
+          "label": "Cold side outlet temp (C)"
+        },
+        {
+          "name": "lmtd",
+          "label": "LMTD (C)"
+        },
+        {
+          "name": "correction_factor",
+          "label": "LMTD correction factor F"
+        },
+        {
+          "name": "required_area",
+          "label": "Required heat transfer area (m2)"
+        },
+        {
+          "name": "ntu",
+          "label": "Number of Transfer Units"
+        }
+      ],
+      "formula_hint": "Q = m_hot*Cp_hot*(T_hot_in - T_hot_out). LMTD = (dT1-dT2)/ln(dT1/dT2). A = Q/(U*F*LMTD). For 1-2 shell&tube: F from R,P charts. R=(T1-T2)/(t2-t1), P=(t2-t1)/(T1-t1). Include fouling: 1/U_dirty = 1/U_clean + Rf",
+      "rates": {
+        "typical_u_water_water": 1000,
+        "typical_u_oil_water": 350,
+        "typical_u_gas_liquid": 50,
+        "typical_fouling_clean": 0.0001,
+        "typical_fouling_dirty": 0.0005
+      }
+    },
+    "example_queries": [
+      "Size a shell-and-tube exchanger to cool 10,000 kg/h of process oil from 120C to 60C using cooling water at 25C",
+      "What heat transfer area do I need if U is 500 W/m2K, duty is 200 kW, and LMTD is 30C?",
+      "Rate my existing 50 m2 exchanger - can it handle 15% more throughput with same temperatures?"
+    ]
+  },
+  {
+    "id": "us-chemical-engineers-p04",
+    "title": "EPA Emissions Reporting and TRI Calculation",
+    "problem": "Chemical engineers at manufacturing facilities must calculate and report toxic chemical releases to EPA under the Toxics Release Inventory (TRI) program and Clean Air Act. Calculating emission factors, mass balances for releases, and determining reporting thresholds is complex. Late or inaccurate reporting results in EPA enforcement actions and significant fines.",
+    "who": "Environmental compliance engineers and plant environmental coordinators",
+    "frequency": "yearly",
+    "time_waste_h": 40,
+    "money_risk_usd": 100000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "EPA Emissions and TRI Calculator",
+      "one_liner": "Calculates toxic chemical releases, emission factors, and TRI reporting thresholds",
+      "inputs": [
+        {
+          "name": "chemical_name",
+          "type": "text",
+          "label": "Chemical name or CAS number"
+        },
+        {
+          "name": "annual_usage_lbs",
+          "type": "number",
+          "label": "Annual chemical usage (lbs)"
+        },
+        {
+          "name": "process_type",
+          "type": "select",
+          "label": "Process type (manufacturing/processing/otherwise_use)"
+        },
+        {
+          "name": "emission_source",
+          "type": "select",
+          "label": "Emission source (stack/fugitive/water/land/underground_injection)"
+        },
+        {
+          "name": "control_efficiency_pct",
+          "type": "number",
+          "label": "Control device efficiency (%)"
+        },
+        {
+          "name": "operating_hours",
+          "type": "number",
+          "label": "Annual operating hours"
+        },
+        {
+          "name": "flow_rate",
+          "type": "number",
+          "label": "Exhaust flow rate (acfm) - for stack emissions"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "reporting_threshold",
+          "label": "TRI reporting threshold (lbs)"
+        },
+        {
+          "name": "threshold_exceeded",
+          "label": "Threshold exceeded (yes/no)"
+        },
+        {
+          "name": "estimated_release_lbs",
+          "label": "Estimated annual release (lbs)"
+        },
+        {
+          "name": "controlled_emissions",
+          "label": "Emissions after control (lbs)"
+        },
+        {
+          "name": "form_type",
+          "label": "TRI Form R or Form A eligible"
+        }
+      ],
+      "formula_hint": "TRI thresholds: 25,000 lbs manufactured/processed, 10,000 lbs otherwise used. PBT chemicals have lower thresholds (10-100 lbs). Emissions = usage * emission_factor * (1 - control_efficiency/100). Form A eligible if <500 lbs total release. Stack emissions = concentration * flow_rate * operating_hours * conversion_factor.",
+      "rates": {
+        "tri_manufacture_threshold_lbs": 25000,
+        "tri_otherwise_use_threshold_lbs": 10000,
+        "tri_pbt_lead_threshold_lbs": 100,
+        "tri_pbt_mercury_threshold_lbs": 10
+      }
+    },
+    "example_queries": [
+      "We used 30,000 lbs of toluene in manufacturing last year - do we need to file TRI Form R?",
+      "Calculate our stack emissions for methanol: 50 ppm concentration, 10,000 acfm, 8,000 hours, 95% scrubber efficiency",
+      "What's the TRI reporting threshold for lead compounds at our facility?"
+    ]
+  },
+  {
+    "id": "us-chemical-engineers-p05",
+    "title": "Management of Change (MOC) Procedure",
+    "problem": "Any process change - equipment, chemistry, procedures, or operating parameters - requires a formal Management of Change review per OSHA PSM. Engineers often struggle with determining what constitutes a 'change' vs 'replacement in kind', miss required reviews, or fail to document properly. Incomplete MOC is one of the top PSM citation categories.",
+    "who": "Process engineers and operations managers at PSM-covered facilities",
+    "frequency": "monthly",
+    "time_waste_h": 5,
+    "money_risk_usd": 200000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Management of Change Guide",
+      "one_liner": "Walks through MOC determination and documentation per OSHA PSM 29 CFR 1910.119(l)",
+      "steps": [
+        "Step 1: Change Classification - determine if modification is a 'change' or 'replacement in kind' (RIK). RIK = same specification, no MOC required.",
+        "Step 2: If change - complete MOC request form with description, technical basis, and justification",
+        "Step 3: Identify impact areas - process safety info, P&IDs, operating procedures, training, emergency plans",
+        "Step 4: Conduct hazard evaluation - PHA/HAZOP review of proposed change, document findings",
+        "Step 5: Review with affected personnel - operations, maintenance, safety, management",
+        "Step 6: Update documentation - P&IDs, PFDs, operating procedures, training materials BEFORE implementation",
+        "Step 7: Training - train all affected employees on change before startup",
+        "Step 8: Pre-Startup Safety Review (PSSR) - if change triggers PSSR requirements, complete before operation",
+        "Step 9: Implementation - execute change per approved MOC, document actual implementation",
+        "Step 10: Close out - verify all action items completed, documentation updated, MOC file archived"
+      ],
+      "warnings": [
+        "Warning: Temporary changes also require MOC - define duration and reversion plan",
+        "Warning: 'Emergency changes' still need MOC completed within a defined timeframe after implementation",
+        "Warning: Software/control system changes (DCS logic) require MOC even if no physical modification",
+        "Warning: Changing operating parameters beyond defined safe operating limits requires MOC"
+      ],
+      "regulatory_refs": [
+        "29 CFR 1910.119(l)",
+        "CCPS Guidelines for Management of Change",
+        "API RP 750"
+      ]
+    },
+    "example_queries": [
+      "We're changing our reactor operating temperature from 150C to 175C - does this need a full MOC?",
+      "Walk me through the MOC process for replacing a control valve with a different trim material",
+      "Is changing DCS alarm setpoints considered a change requiring MOC?"
+    ]
+  },
+  {
+    "id": "us-chemical-engineers-p06",
+    "title": "Pipe Sizing and Pressure Drop Calculation",
+    "problem": "Chemical engineers frequently need to size pipes and calculate pressure drops for process design. Getting pipe sizes wrong leads to either excessive capital cost (oversized) or flow restrictions and pump failures (undersized). Manual Darcy-Weisbach calculations with friction factor lookups are tedious for multi-segment systems.",
+    "who": "Process design engineers and project engineers",
+    "frequency": "weekly",
+    "time_waste_h": 4,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Pipe Sizing and Pressure Drop Calculator",
+      "one_liner": "Calculates pipe diameter, velocity, Reynolds number, friction factor, and pressure drop using Darcy-Weisbach",
+      "inputs": [
+        {
+          "name": "flow_rate",
+          "type": "number",
+          "label": "Volumetric flow rate (gpm or m3/h)"
+        },
+        {
+          "name": "fluid_density",
+          "type": "number",
+          "label": "Fluid density (kg/m3)"
+        },
+        {
+          "name": "fluid_viscosity",
+          "type": "number",
+          "label": "Dynamic viscosity (cP)"
+        },
+        {
+          "name": "pipe_length",
+          "type": "number",
+          "label": "Pipe length (ft or m)"
+        },
+        {
+          "name": "pipe_diameter",
+          "type": "number",
+          "label": "Pipe ID (inches) - leave blank to auto-size"
+        },
+        {
+          "name": "pipe_material",
+          "type": "select",
+          "label": "Pipe material (carbon_steel/stainless/PVC/copper)"
+        },
+        {
+          "name": "fittings",
+          "type": "text",
+          "label": "Fittings list (e.g., 3 elbows, 1 tee, 2 gate valves)"
+        },
+        {
+          "name": "elevation_change",
+          "type": "number",
+          "label": "Elevation change (ft or m)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "recommended_diameter",
+          "label": "Recommended pipe size (NPS)"
+        },
+        {
+          "name": "velocity",
+          "label": "Flow velocity (ft/s)"
+        },
+        {
+          "name": "reynolds_number",
+          "label": "Reynolds number"
+        },
+        {
+          "name": "friction_factor",
+          "label": "Darcy friction factor"
+        },
+        {
+          "name": "pressure_drop_psi",
+          "label": "Total pressure drop (psi)"
+        },
+        {
+          "name": "pressure_drop_components",
+          "label": "Breakdown: friction + fittings + elevation"
+        }
+      ],
+      "formula_hint": "Re = rho*v*D/mu. Colebrook: 1/sqrt(f) = -2*log10(e/D/3.7 + 2.51/(Re*sqrt(f))). dP = f*L/D*rho*v^2/2. K-method for fittings. Velocity guidelines: liquids 3-10 ft/s, gases 30-100 ft/s. Schedule from pressure rating.",
+      "rates": {
+        "roughness_carbon_steel_mm": 0.046,
+        "roughness_stainless_mm": 0.015,
+        "roughness_pvc_mm": 0.0015,
+        "water_density_kg_m3": 998,
+        "water_viscosity_cp": 1.0
+      }
+    },
+    "example_queries": [
+      "What pipe size do I need for 500 gpm of water over 200 feet of carbon steel pipe?",
+      "Calculate pressure drop for 3-inch Schedule 40 pipe carrying 100 gpm of 30 cP fluid over 150 ft with 4 elbows",
+      "I need velocity check for our 6-inch line carrying 1200 gpm - is it within acceptable range?"
+    ]
+  },
+  {
+    "id": "us-chemical-engineers-p07",
+    "title": "Process Hazard Analysis (PHA/HAZOP) Facilitation",
+    "problem": "Process Hazard Analyses must be conducted for all covered processes and revalidated every 5 years. Engineers leading HAZOP studies struggle with systematic guide word application, risk ranking consistency, and proper documentation of scenarios. Poor PHAs miss critical hazards and expose facilities to catastrophic incidents and regulatory penalties.",
+    "who": "Process safety engineers and senior engineers facilitating HAZOP studies",
+    "frequency": "quarterly",
+    "time_waste_h": 20,
+    "money_risk_usd": 1000000,
+    "source": "regulatory",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "PHA HAZOP Advisor",
+      "one_liner": "Guides HAZOP study facilitation with node analysis, guide word application, and risk ranking",
+      "expertise_area": "Process Hazard Analysis methodology, HAZOP guide word systematic application, risk matrix usage, safeguard identification",
+      "decision_criteria": [
+        "process_type",
+        "chemicals_involved",
+        "operating_conditions",
+        "existing_safeguards",
+        "consequence_severity",
+        "likelihood_category"
+      ],
+      "context_needed": [
+        "regulatory.laws_and_standards",
+        "regulatory.penalties",
+        "terminology.jargon"
+      ]
+    },
+    "example_queries": [
+      "I'm facilitating a HAZOP for a reactor section - what guide words should I apply to temperature deviation?",
+      "How do I rank the risk for a scenario: loss of cooling water to exothermic reactor with high-temperature alarm but no automatic shutdown?",
+      "What safeguards should I consider for a high-pressure deviation on a distillation column?"
+    ]
+  },
+  {
+    "id": "us-chemical-engineers-p08",
+    "title": "OSHA and EPA Penalty Reference",
+    "problem": "Chemical engineers and plant managers need quick access to current OSHA and EPA penalty amounts, violation categories, and penalty calculation methodologies when assessing compliance risks, preparing budgets for compliance improvements, or responding to citations. Penalty amounts are adjusted annually and differ by violation type, making it hard to track current figures.",
+    "who": "Plant managers, safety engineers, and environmental compliance engineers",
+    "frequency": "monthly",
+    "time_waste_h": 2,
+    "money_risk_usd": 161323,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "OSHA EPA Penalty Reference",
+      "one_liner": "Quick lookup of current OSHA and EPA penalty amounts, violation types, and adjustment factors",
+      "data_domain": "OSHA and EPA penalty schedules, violation categories, and penalty calculation factors for chemical facilities",
+      "lookup_keys": [
+        "violation_type",
+        "regulatory_agency",
+        "penalty_year",
+        "severity_level"
+      ],
+      "data_hints": {
+        "source_law": "OSH Act Section 17, Clean Air Act Section 113, Clean Water Act Section 309, TSCA Section 16",
+        "key_sections": [
+          "OSHA serious: up to $16,131 (2025)",
+          "OSHA willful/repeat: up to $161,323 (2025)",
+          "OSHA failure to abate: up to $16,131/day",
+          "EPA CAA: up to $120,824/day per violation",
+          "EPA CWA: up to $64,618/day per violation",
+          "EPA TSCA: up to $49,527/day per violation",
+          "EPA RMP: penalties per 40 CFR Part 68",
+          "Gravity-based penalty calculation includes: nature, extent, circumstances, economic benefit of noncompliance"
+        ]
+      }
+    },
+    "example_queries": [
+      "What's the current maximum OSHA fine for a willful PSM violation in 2026?",
+      "How much can EPA fine us per day for a Clean Air Act violation?",
+      "What are the penalty ranges for an OSHA serious vs other-than-serious violation?"
+    ]
+  },
+  {
+    "id": "us-chemical-engineers-p09",
+    "title": "Reactor Sizing and Conversion Calculation",
+    "problem": "Chemical engineers design and evaluate reactor performance by calculating required volumes, residence times, and conversions for CSTR, PFR, and batch reactors. These calculations involve reaction kinetics, thermodynamics, and mass transfer - errors lead to undersized reactors (production shortfall) or oversized ones (wasted capital). Quick checks during meetings or troubleshooting require rapid calculation.",
+    "who": "Process design engineers and R&D engineers scaling up reactions",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 100000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Reactor Sizing Calculator",
+      "one_liner": "Calculates reactor volume, residence time, and conversion for CSTR, PFR, and batch reactors",
+      "inputs": [
+        {
+          "name": "reactor_type",
+          "type": "select",
+          "label": "Reactor type (CSTR/PFR/batch)"
+        },
+        {
+          "name": "feed_flow_rate",
+          "type": "number",
+          "label": "Volumetric feed flow rate (L/min) - for continuous"
+        },
+        {
+          "name": "feed_concentration",
+          "type": "number",
+          "label": "Feed concentration of limiting reagent (mol/L)"
+        },
+        {
+          "name": "target_conversion",
+          "type": "number",
+          "label": "Target conversion (fraction 0-1)"
+        },
+        {
+          "name": "rate_constant",
+          "type": "number",
+          "label": "Rate constant k (units depend on order)"
+        },
+        {
+          "name": "reaction_order",
+          "type": "number",
+          "label": "Reaction order (0, 1, or 2)"
+        },
+        {
+          "name": "temperature_c",
+          "type": "number",
+          "label": "Operating temperature (C)"
+        },
+        {
+          "name": "activation_energy",
+          "type": "number",
+          "label": "Activation energy Ea (kJ/mol) - for temperature sensitivity"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "reactor_volume",
+          "label": "Required reactor volume (L)"
+        },
+        {
+          "name": "residence_time",
+          "label": "Space time / residence time (min)"
+        },
+        {
+          "name": "actual_conversion",
+          "label": "Actual conversion at given volume"
+        },
+        {
+          "name": "cstr_vs_pfr_ratio",
+          "label": "Volume ratio CSTR/PFR at same conversion"
+        },
+        {
+          "name": "temperature_sensitivity",
+          "label": "Conversion change per 10C (if Ea provided)"
+        }
+      ],
+      "formula_hint": "CSTR: V/F0 = X/(k*Ca0^(n-1)*(1-X)^n). PFR: V/F0 = integral(dX/(k*Ca0^(n-1)*(1-X)^n)). Batch: t = integral(dX/(k*Ca0^(n-1)*(1-X)^n)). 1st order: tau_CSTR = X/(k*(1-X)), tau_PFR = -ln(1-X)/k. Arrhenius: k = A*exp(-Ea/RT).",
+      "rates": {
+        "gas_constant_kj_mol_k": 0.008314
+      }
+    },
+    "example_queries": [
+      "Size a CSTR for 90% conversion of a first-order reaction with k=0.1 min-1 and feed rate 50 L/min",
+      "Compare CSTR vs PFR volume needed for 95% conversion of a second-order reaction",
+      "How does conversion change if I increase reactor temperature from 80C to 100C with Ea = 50 kJ/mol?"
+    ]
+  },
+  {
+    "id": "us-chemical-engineers-p10",
+    "title": "Incident Investigation Report Template",
+    "problem": "When process safety incidents occur, chemical engineers must complete thorough investigation reports within 48 hours per OSHA PSM requirements. Under time pressure, engineers often produce incomplete reports that miss root causes or fail to document corrective actions adequately. Poor reports lead to repeat incidents and regulatory findings.",
+    "who": "Process safety engineers and plant operations managers",
+    "frequency": "quarterly",
+    "time_waste_h": 10,
+    "money_risk_usd": 250000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "PSM Incident Investigation Report",
+      "one_liner": "Generates structured incident investigation reports compliant with OSHA PSM 29 CFR 1910.119(m)",
+      "doc_name": "Process Safety Incident Investigation Report",
+      "variables": [
+        {
+          "name": "incident_date",
+          "label": "Date and time of incident"
+        },
+        {
+          "name": "facility_name",
+          "label": "Facility name and location"
+        },
+        {
+          "name": "process_unit",
+          "label": "Process unit/area involved"
+        },
+        {
+          "name": "incident_description",
+          "label": "Brief incident description"
+        },
+        {
+          "name": "injuries_damages",
+          "label": "Injuries, damages, or environmental releases"
+        },
+        {
+          "name": "immediate_causes",
+          "label": "Immediate/direct causes identified"
+        },
+        {
+          "name": "root_causes",
+          "label": "Root causes (use 5-Why or fault tree findings)"
+        },
+        {
+          "name": "contributing_factors",
+          "label": "Contributing factors"
+        },
+        {
+          "name": "corrective_actions",
+          "label": "Recommended corrective actions with responsible parties and deadlines"
+        },
+        {
+          "name": "investigation_team",
+          "label": "Investigation team members and roles"
+        }
+      ],
+      "structure_hint": "Header (facility, date, report number) -> Executive Summary -> Incident Description (timeline) -> Process Description -> Immediate Causes -> Root Cause Analysis (5-Why / Fault Tree) -> Contributing Factors -> Corrective Actions (table: action, responsible, deadline, status) -> Lessons Learned -> Appendices (photos, P&IDs, data logs) -> Sign-off"
+    },
+    "example_queries": [
+      "Generate an incident investigation report for a pressure relief valve discharge event in our reactor section",
+      "Help me write a PSM incident report - we had a small chemical release from a flange leak during startup",
+      "Create an incident report template for a near-miss where a control valve failed to close on high-level alarm"
+    ]
+  },
+  {
+    "id": "us-chemical-engineers-p11",
+    "title": "Relief Valve and PSV Sizing",
+    "problem": "Pressure safety valves (PSVs) must be properly sized per API 520/521 to protect equipment from overpressure scenarios. Undersized relief devices risk catastrophic vessel failure; oversized ones cause chatter and premature wear. Calculations require identifying credible overpressure scenarios, determining required relief rate, and selecting orifice size - a complex multi-step process.",
+    "who": "Process design engineers and mechanical integrity engineers",
+    "frequency": "quarterly",
+    "time_waste_h": 8,
+    "money_risk_usd": 200000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Relief Valve Sizing Calculator",
+      "one_liner": "Sizes pressure relief valves per API 520 for vapor, liquid, and two-phase service",
+      "inputs": [
+        {
+          "name": "service_type",
+          "type": "select",
+          "label": "Service type (vapor/liquid/two_phase/steam)"
+        },
+        {
+          "name": "required_relief_rate",
+          "type": "number",
+          "label": "Required relief rate (lb/h for vapor, gpm for liquid)"
+        },
+        {
+          "name": "set_pressure_psig",
+          "type": "number",
+          "label": "PSV set pressure (psig)"
+        },
+        {
+          "name": "backpressure_psig",
+          "type": "number",
+          "label": "Total backpressure (psig)"
+        },
+        {
+          "name": "operating_temp_f",
+          "type": "number",
+          "label": "Relieving temperature (F)"
+        },
+        {
+          "name": "molecular_weight",
+          "type": "number",
+          "label": "Molecular weight (vapor service)"
+        },
+        {
+          "name": "compressibility_z",
+          "type": "number",
+          "label": "Compressibility factor Z"
+        },
+        {
+          "name": "specific_gravity",
+          "type": "number",
+          "label": "Specific gravity (liquid service)"
+        },
+        {
+          "name": "viscosity_cp",
+          "type": "number",
+          "label": "Viscosity at relieving conditions (cP, liquid service)"
+        },
+        {
+          "name": "overpressure_pct",
+          "type": "number",
+          "label": "Allowable overpressure (%, typically 10 or 21)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "required_area_sqin",
+          "label": "Required effective discharge area (in2)"
+        },
+        {
+          "name": "selected_orifice",
+          "label": "Selected API orifice letter and area"
+        },
+        {
+          "name": "kd_coefficient",
+          "label": "Discharge coefficient used"
+        },
+        {
+          "name": "capacity_check",
+          "label": "Rated capacity vs required (%)"
+        }
+      ],
+      "formula_hint": "Vapor: A = W*sqrt(TZ)/(C*Kd*P1*Kb*Kc*sqrt(M)). Liquid: A = Q*sqrt(G)/(38*Kd*Kw*Kc*Kv*sqrt(P1-P2)). C from k (Cp/Cv). API orifice letters: D(0.110), E(0.196), F(0.307), G(0.503), H(0.785), J(1.287), K(1.838), L(2.853), M(3.60), N(4.34), P(6.38), Q(11.05), R(16.0), T(26.0).",
+      "rates": {
+        "kd_vapor": 0.975,
+        "kd_liquid": 0.65,
+        "kb_conventional_10pct": 1.0,
+        "standard_overpressure_pct": 10,
+        "fire_overpressure_pct": 21
+      }
+    },
+    "example_queries": [
+      "Size a PSV for 50,000 lb/h of nitrogen at 150 psig set pressure and 200F",
+      "What orifice size do I need for a liquid relief valve: 500 gpm, SG 0.9, set at 100 psig, 10 psig backpressure?",
+      "Our blocked outlet scenario requires relieving 20,000 lb/h of propane at 250 psig - what size PSV?"
+    ]
+  },
+  {
+    "id": "us-chemical-engineers-p12",
+    "title": "Environmental Compliance Deadlines Calendar",
+    "problem": "Chemical engineers managing environmental compliance must track numerous EPA and state filing deadlines: TRI Form R (July 1), Tier II reports (March 1), air emissions reports, wastewater DMRs (monthly), RMP updates (every 5 years or after changes), and various state-specific deadlines. Missing a deadline triggers enforcement actions and penalties.",
+    "who": "Environmental compliance engineers and EHS managers",
+    "frequency": "monthly",
+    "time_waste_h": 3,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Environmental Compliance Calendar",
+      "one_liner": "Quick reference for EPA, OSHA, and state environmental filing deadlines for chemical facilities",
+      "data_domain": "Federal and state environmental and safety compliance deadlines for chemical manufacturing facilities",
+      "lookup_keys": [
+        "report_type",
+        "regulatory_agency",
+        "filing_frequency",
+        "facility_type"
+      ],
+      "data_hints": {
+        "source_law": "Clean Air Act, Clean Water Act, EPCRA, RCRA, TSCA, OSHA PSM",
+        "key_sections": [
+          "TRI Form R/A: July 1 annually (EPCRA Section 313)",
+          "Tier II Chemical Inventory: March 1 annually (EPCRA Section 312)",
+          "RCRA Biennial Report: March 1 even years (RCRA Section 3002)",
+          "Air emissions inventory: varies by state, typically March-April",
+          "Wastewater DMR: monthly, due 28th of following month",
+          "Stormwater monitoring: quarterly during discharge events",
+          "RMP: within 5 years of last submission or within 1 year of change",
+          "OSHA 300A posting: February 1 - April 30",
+          "OSHA electronic injury reporting: March 2 annually",
+          "PSM compliance audit: every 3 years",
+          "PHA revalidation: every 5 years"
+        ]
+      }
+    },
+    "example_queries": [
+      "What are all the EPA filing deadlines I need to track for a chemical plant in 2026?",
+      "When is the TRI Form R deadline and what triggers the reporting requirement?",
+      "Give me a calendar of all environmental compliance deadlines for Q1 2026"
+    ]
+  },
+  {
+    "id": "us-chemical-engineers-p13",
+    "title": "Scale-Up Factor and Pilot-to-Plant Estimation",
+    "problem": "Chemical engineers scaling processes from lab or pilot scale to production face complex calculations for power-per-volume, heat transfer area, mixing time, and Reynolds number scaling. Wrong scale-up factors lead to failed production runs, wasted raw materials, and delayed product launches. Quick estimation during project review meetings is frequently needed.",
+    "who": "R&D engineers, process development engineers, and project engineers",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 150000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Scale-Up Calculator",
+      "one_liner": "Estimates scale-up parameters from pilot to plant scale for mixing, heat transfer, and reaction systems",
+      "inputs": [
+        {
+          "name": "pilot_volume_l",
+          "type": "number",
+          "label": "Pilot vessel volume (L)"
+        },
+        {
+          "name": "production_volume_l",
+          "type": "number",
+          "label": "Target production volume (L)"
+        },
+        {
+          "name": "pilot_impeller_rpm",
+          "type": "number",
+          "label": "Pilot impeller speed (RPM)"
+        },
+        {
+          "name": "pilot_impeller_diameter_m",
+          "type": "number",
+          "label": "Pilot impeller diameter (m)"
+        },
+        {
+          "name": "scale_up_criterion",
+          "type": "select",
+          "label": "Scale-up criterion (constant_power_per_volume/constant_tip_speed/constant_reynolds/constant_mixing_time)"
+        },
+        {
+          "name": "pilot_heat_transfer_area_m2",
+          "type": "number",
+          "label": "Pilot heat transfer area (m2) - optional"
+        },
+        {
+          "name": "fluid_density",
+          "type": "number",
+          "label": "Fluid density (kg/m3)"
+        },
+        {
+          "name": "fluid_viscosity",
+          "type": "number",
+          "label": "Fluid viscosity (Pa·s)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "scale_factor",
+          "label": "Geometric scale factor"
+        },
+        {
+          "name": "production_rpm",
+          "label": "Production impeller speed (RPM)"
+        },
+        {
+          "name": "production_impeller_diameter",
+          "label": "Production impeller diameter (m)"
+        },
+        {
+          "name": "power_per_volume",
+          "label": "Power per volume comparison (W/m3)"
+        },
+        {
+          "name": "tip_speed",
+          "label": "Tip speed comparison (m/s)"
+        },
+        {
+          "name": "reynolds_number",
+          "label": "Reynolds number at both scales"
+        },
+        {
+          "name": "heat_transfer_area_ratio",
+          "label": "Heat transfer area-to-volume ratio change"
+        }
+      ],
+      "formula_hint": "Scale factor S = (V_prod/V_pilot)^(1/3). Constant P/V: N2 = N1*(D1/D2)^(2/3). Constant tip speed: N2 = N1*(D1/D2). Constant Re: N2 = N1*(D1/D2)^2. Power: P = Np*rho*N^3*D^5. A/V ratio decreases as scale increases: (A/V)_2 = (A/V)_1 * (V1/V2)^(1/3).",
+      "rates": {
+        "np_rushton_turbine": 5.0,
+        "np_pitched_blade": 1.27,
+        "np_marine_propeller": 0.35
+      }
+    },
+    "example_queries": [
+      "Scale up from 10L pilot to 5000L production reactor - what RPM if I keep constant power per volume?",
+      "How does the surface area to volume ratio change going from 50L to 10,000L?",
+      "I have a pilot reactor at 500 RPM with 5cm impeller in 2L vessel - what speed for 200L at constant tip speed?"
+    ]
+  }
+]

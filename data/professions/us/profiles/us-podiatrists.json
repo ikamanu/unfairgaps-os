@@ -1,0 +1,461 @@
+{
+  "profession_id": "us-podiatrists",
+  "profession_name": "Podiatrists",
+  "soc_code": "29-1081.00",
+  "sector": "healthcare",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Podiatrists diagnose illnesses, treat injuries, and perform surgery for patients with foot, ankle, and lower leg problems. A typical day involves patient consultations, diagnostic imaging review, prescribing orthotics, performing minor and major surgical procedures, and collaborating with other healthcare specialists. The day often ends with administrative duties including updating patient records and planning upcoming treatments.",
+    "typical_tasks": [
+      "Perform patient consultations and physical examinations of feet, ankles, and lower legs",
+      "Review x-rays, MRIs, and medical laboratory test results",
+      "Diagnose conditions such as plantar fasciitis, bunions, hammertoes, and diabetic foot ulcers",
+      "Prescribe and fit custom orthotics and special shoe inserts to improve mobility",
+      "Perform surgical procedures including bone spur removal, fracture repair, and bunionectomies",
+      "Administer nonsurgical treatments such as injections, wound care, and casting",
+      "Collaborate with orthopedic surgeons, physical therapists, and endocrinologists",
+      "Counsel patients on foot care, diabetic foot management, and injury prevention",
+      "Update electronic health records and document treatment plans",
+      "Manage practice operations including scheduling and billing oversight"
+    ],
+    "key_documents": [
+      "Patient medical histories and intake forms",
+      "Diagnostic imaging reports (X-ray, MRI, CT scan)",
+      "Surgical operative reports",
+      "Prescription orders for orthotics and medications",
+      "Insurance pre-authorization forms",
+      "CME (Continuing Medical Education) documentation",
+      "State licensing renewal applications",
+      "Referral letters to/from other specialists"
+    ],
+    "deadlines": {
+      "patient_follow_ups": "Typically 2-6 weeks post-procedure",
+      "CME_requirements": "Varies by state, typically 50 hours per 2-year cycle",
+      "license_renewal": "Biennial in most states",
+      "insurance_claims": "Must be filed within 90-365 days depending on payer",
+      "board_certification_renewal": "Every 10 years through ABFAS or ABPM"
+    },
+    "seasonality": "Podiatrists see seasonal variations: summer brings more sports injuries and trauma cases due to increased outdoor activities and open footwear; winter increases cases of frostbite, dry/cracked skin, and slip-and-fall injuries. Back-to-school season in fall drives pediatric visits for gait assessments and flat feet evaluations. Diabetic foot care is year-round but intensifies around the holidays when patients are less compliant with diet and exercise."
+  },
+  "regulatory": {
+    "summary": "Every US state requires podiatrists to be licensed. Licensure mandates a Doctor of Podiatric Medicine (DPM) degree from an accredited institution, passage of national board exams (APMLE), and completion of a 3-year residency. The APMA has endorsed the Federation of Podiatric Medical Boards' Interstate Podiatric Medical Licensure Compact to modernize cross-state licensure. Each state sets its own scope-of-practice laws, continuing education requirements, and renewal cycles.",
+    "key_laws": [
+      "State Podiatric Medical Practice Acts (vary by state)",
+      "Medicare/Medicaid podiatric coverage regulations (CMS guidelines)",
+      "HIPAA (Health Insurance Portability and Accountability Act) for patient data protection",
+      "Controlled Substances Act for prescribing authority",
+      "OSHA regulations for clinical and surgical safety",
+      "Interstate Podiatric Medical Licensure Compact (endorsed by APMA in 2025)",
+      "ADA (Americans with Disabilities Act) for clinic accessibility",
+      "State-specific scope-of-practice laws defining surgical and prescribing privileges"
+    ],
+    "licensing": {
+      "requirements": [
+        "Bachelor's degree (minimum 3 years undergraduate with science emphasis, though most hold a bachelor's)",
+        "Doctor of Podiatric Medicine (DPM) degree from one of 7 CPME-accredited colleges (4-year program)",
+        "Passage of APMLE Parts I, II, and III (American Podiatric Medical Licensing Examination)",
+        "Completion of a 3-year podiatric medicine and surgery residency (PMSR)",
+        "State-specific licensing application and examination",
+        "Board certification through ABFAS (American Board of Foot and Ankle Surgery) or ABPM (American Board of Podiatric Medicine) is voluntary but recommended",
+        "DEA registration for prescribing controlled substances",
+        "Continuing medical education (CME) credits for license renewal"
+      ]
+    },
+    "continuing_education": "CME requirements vary by state but typically range from 40-50 hours per biennial renewal cycle. Most states accept credits from APMA-approved programs. Some states require specific hours in topics such as pharmacology, infection control, or ethics. Online CME is increasingly accepted, with platforms like Podiatry.com offering state-approved courses."
+  },
+  "tools": {
+    "summary": "Podiatrists use a combination of specialized EMR/EHR software, diagnostic imaging equipment, surgical instruments, and biomechanical assessment tools. The podiatry EMR market is valued at approximately $450 million (2023) and growing at 9% CAGR. Cloud-based solutions now account for over half of new installations, and AI-driven tools are emerging for wound care management and clinical decision support.",
+    "primary_tools": [
+      {
+        "name": "ModMed (Modernizing Medicine) Podiatry EHR",
+        "category": "EMR/EHR",
+        "description": "Ranked #1 podiatry-specific EHR by Black Book Survey 2025, offering cloud-based charting, billing, and practice management with podiatry-specific templates"
+      },
+      {
+        "name": "NextGen Healthcare EHR",
+        "category": "EMR/EHR",
+        "description": "APMA's preferred EHR for podiatrists, featuring integrated practice management and patient portal capabilities"
+      },
+      {
+        "name": "Digital X-ray and Imaging Systems",
+        "category": "Diagnostic Equipment",
+        "description": "Digital radiography systems for in-office foot and ankle imaging including weight-bearing X-rays"
+      },
+      {
+        "name": "Doppler Ultrasound",
+        "category": "Diagnostic Equipment",
+        "description": "Used for vascular assessment of lower extremities, critical for diabetic foot evaluations"
+      },
+      {
+        "name": "CAD/CAM Orthotic Systems",
+        "category": "Orthotics Technology",
+        "description": "3D scanning and computer-aided design/manufacturing systems for custom orthotic fabrication"
+      },
+      {
+        "name": "Surgical Instrument Sets",
+        "category": "Surgical Tools",
+        "description": "Specialized podiatric surgical instruments for bunionectomy, hammertoe correction, fracture fixation, and soft tissue procedures"
+      }
+    ],
+    "secondary_tools": [
+      {
+        "name": "athenahealth EMR",
+        "category": "EMR/EHR",
+        "description": "Cloud-based EHR with four 2024 Best in KLAS awards, used by multi-specialty practices including podiatry"
+      },
+      {
+        "name": "eClinicalWorks",
+        "category": "EMR/EHR",
+        "description": "Trusted by 850,000+ medical professionals, offering podiatry-compatible EMR and practice management"
+      },
+      {
+        "name": "PrognoCIS Podiatry EMR",
+        "category": "EMR/EHR",
+        "description": "Specialized podiatry EMR with interactive foot diagrams, templates for common podiatric concerns, and detailed examination plans"
+      },
+      {
+        "name": "AI Ambient Scribing (e.g., Populate)",
+        "category": "Clinical Documentation AI",
+        "description": "AI-powered ambient listening that drafts clinical notes during patient encounters, reducing manual entry time"
+      },
+      {
+        "name": "Force Plates and Gait Analysis Systems",
+        "category": "Biomechanical Assessment",
+        "description": "Pressure mapping and gait analysis technology for orthotic design and biomechanical evaluation"
+      },
+      {
+        "name": "Laser Therapy Systems",
+        "category": "Treatment Equipment",
+        "description": "Used for fungal nail treatment, wound healing, and pain management"
+      },
+      {
+        "name": "Extracorporeal Shockwave Therapy (ESWT)",
+        "category": "Treatment Equipment",
+        "description": "Non-invasive treatment for plantar fasciitis and Achilles tendinopathy"
+      }
+    ],
+    "pain_points": [
+      "Insurance reimbursement complexity and prior authorization delays, especially for surgical procedures and custom orthotics",
+      "EMR documentation burden consuming significant clinical time away from patient care",
+      "Lack of interoperability between podiatry-specific EMRs and hospital systems",
+      "High cost of digital imaging equipment upgrades and maintenance",
+      "Complex billing codes (CPT/ICD-10) specific to podiatric procedures leading to claim denials",
+      "Administrative overhead of managing a small practice without dedicated billing staff",
+      "Keeping up with rapidly changing state-by-state scope-of-practice regulations",
+      "Integration challenges when 46% of EMRs lack advanced wound care modules needed for diabetic foot care"
+    ]
+  },
+  "terminology": {
+    "summary": "Podiatry uses a specialized medical vocabulary combining general orthopedic, dermatologic, and vascular terminology with foot- and ankle-specific terms. Practitioners must be fluent in anatomical terminology, biomechanical concepts, surgical nomenclature, and coding systems (CPT/ICD-10) specific to lower extremity conditions.",
+    "terms": {
+      "Plantar Fasciitis": "Inflammation of the plantar fascia, the thick band of tissue running across the base of the foot connecting the heel bone to the toes; the most common cause of heel pain",
+      "Hallux Valgus": "Lateral angulation of the great toe toward the other toes, commonly known as a bunion",
+      "Bunionectomy": "Surgical procedure to remove or realign a bunion deformity of the first metatarsophalangeal joint",
+      "Metatarsalgia": "Pain and inflammation in the ball of the foot, commonly affecting the metatarsal heads",
+      "Plantar Flexion": "Downward motion of the ankle joint (pointing the foot down), the opposite of dorsiflexion",
+      "Dorsiflexion": "Upward motion of the ankle joint (pulling the foot toward the shin)",
+      "Pronation": "Inward rolling of the foot during gait; some pronation is normal, but overpronation can stress ankle ligaments and cause alignment issues",
+      "Supination": "Outward rolling of the foot during gait; excessive supination leads to increased stress on the lateral ankle and foot structures",
+      "Pes Planus": "Flat feet; a condition where the arch of the foot collapses, causing the entire sole to contact the ground",
+      "Pes Cavus": "Abnormally high arch of the foot, which can cause pain and instability",
+      "Onychomycosis": "Fungal infection of the toenails causing discoloration, thickening, and brittleness",
+      "Tinea Pedis": "Athlete's foot; a fungal infection of the skin of the foot causing itching, blisters, and cracking",
+      "Neuroma (Morton's Neuroma)": "Thickening of nerve tissue between the metatarsal heads, most commonly between the third and fourth toes, causing pain and numbness",
+      "Charcot Foot": "A serious condition involving progressive weakening of bones, joints, and soft tissues in the foot, most commonly associated with diabetic neuropathy",
+      "Orthotic": "A custom-designed shoe insert or device prescribed to correct biomechanical foot issues, redistribute pressure, or support the arch",
+      "Ankle Instability": "Chronic condition of repetitive ankle sprains often due to improperly healed injuries, weak ligaments, or varus heel alignment",
+      "Hammertoe": "A deformity of the second, third, fourth, or fifth toes in which the toe bends at the middle joint, resembling a hammer",
+      "Diabetic Foot Ulcer": "An open wound on the foot of a diabetic patient, often resulting from neuropathy and poor circulation, requiring specialized wound management",
+      "APMLE": "American Podiatric Medical Licensing Examination, the three-part national board exam required for podiatric licensure",
+      "DPM": "Doctor of Podiatric Medicine, the professional degree for podiatrists"
+    }
+  },
+  "career_psychology": {
+    "summary": "Podiatrists occupy a unique niche in medicine as specialists focused exclusively on the foot, ankle, and lower extremity. Career satisfaction is moderate, with practitioners rating salary satisfaction at 3.2/5 and personality-career fit at 3.8/5. Work meaningfulness is rated relatively low (2.9/5) compared to other medical specialties. Burnout rates are significant, with studies showing approximately 31.6% experiencing burnout. The profession offers good work-life balance compared to many medical specialties, with most podiatrists working full-time in private practice settings.",
+    "career_path": [
+      "Undergraduate education (3-4 years) with strong science foundation (biology, chemistry, physics, math)",
+      "Doctor of Podiatric Medicine (DPM) program at one of 7 accredited colleges (4 years)",
+      "Podiatric Medicine and Surgery Residency (3 years) in a hospital setting",
+      "State licensure and optional board certification (ABFAS or ABPM)",
+      "Associate/employed podiatrist in a group practice or hospital (1-5 years)",
+      "Solo or group private practice ownership",
+      "Subspecialization options: sports medicine, diabetic wound care, pediatric podiatry, podiatric surgery",
+      "Academic/teaching roles at colleges of podiatric medicine",
+      "Leadership positions in professional organizations (APMA, state societies)"
+    ],
+    "salary_range": {
+      "entry_level": "$114,000 - $130,000 per year (new graduates entering practice)",
+      "mid_career": "$150,000 - $165,000 per year (5-10 years experience)",
+      "senior": "$200,000 - $282,000 per year (established practice owners or surgical specialists)",
+      "median": "$152,800 per year (BLS May 2024 data)",
+      "average": "$163,960 per year (2024 average)"
+    },
+    "fears": [
+      "Malpractice lawsuits, particularly related to surgical complications or misdiagnosis",
+      "Declining insurance reimbursement rates making private practice economically challenging",
+      "Scope-of-practice encroachment by orthopedic surgeons and nurse practitioners",
+      "Keeping up with evolving surgical techniques and technology",
+      "Student loan debt burden (DPM programs can cost $200,000+)",
+      "Being perceived as 'lesser' compared to MDs/DOs in the medical hierarchy",
+      "Practice viability in an increasingly competitive healthcare market",
+      "Regulatory changes limiting prescribing authority or surgical scope"
+    ],
+    "motivation": [
+      "Improving patients' mobility, quality of life, and pain relief",
+      "Autonomy of private practice ownership and clinical decision-making",
+      "Tangible, visible results of treatment (especially surgical outcomes)",
+      "Good work-life balance compared to many other medical specialties",
+      "Variety of practice settings from conservative care to complex surgery",
+      "Growing demand driven by aging population and diabetes epidemic",
+      "Ability to develop subspecialty expertise in areas of personal interest",
+      "Relatively predictable schedule without frequent overnight emergencies"
+    ],
+    "burnout_factors": [
+      "High administrative and documentation burden from EMR systems and insurance paperwork",
+      "Insurance claim denials and pre-authorization requirements consuming clinical time",
+      "Emotional strain from managing chronic non-healing wounds, especially in diabetic patients",
+      "Financial pressure of running a private practice with increasing overhead costs",
+      "Student loan debt relative to salary (lower than many physician specialties)",
+      "Feeling undervalued within the broader medical community",
+      "Repetitive nature of some common conditions (nail care, calluses) leading to monotony",
+      "Work-related physical strain from performing procedures in awkward positions"
+    ]
+  },
+  "community": {
+    "summary": "The US podiatry community is well-organized with strong national and state-level professional associations, annual conferences offering CME credits, and growing online communities. The American Podiatric Medical Association (APMA) serves as the primary national organization, while multiple specialized conferences throughout the year provide education and networking opportunities.",
+    "associations": [
+      {
+        "name": "American Podiatric Medical Association (APMA)",
+        "description": "The leading national professional organization for podiatrists, providing advocacy, education, and practice resources",
+        "url": "https://www.apma.org"
+      },
+      {
+        "name": "American College of Foot and Ankle Surgeons (ACFAS)",
+        "description": "Professional society for foot and ankle surgeons promoting surgical education and research",
+        "url": "https://www.acfas.org"
+      },
+      {
+        "name": "American Board of Foot and Ankle Surgery (ABFAS)",
+        "description": "Board certification body for podiatric surgeons",
+        "url": "https://www.abfas.org"
+      },
+      {
+        "name": "American Board of Podiatric Medicine (ABPM)",
+        "description": "Board certification body for podiatric medicine",
+        "url": "https://podiatryboard.org"
+      },
+      {
+        "name": "American Association of Colleges of Podiatric Medicine (AACPM)",
+        "description": "Organization representing the 7 accredited colleges of podiatric medicine",
+        "url": "https://aacpm.org"
+      },
+      {
+        "name": "State Podiatric Medical Associations",
+        "description": "State-level organizations (e.g., NYSPMA, California Podiatric Medical Association) providing local advocacy and education"
+      }
+    ],
+    "events": [
+      {
+        "name": "APMA Annual Scientific Meeting 2026",
+        "date": "August 6-9, 2026",
+        "location": "Nashville, Tennessee",
+        "description": "Four days of networking and educational programs covering the latest in podiatric medicine"
+      },
+      {
+        "name": "New York Podiatric Clinical Conference (NY26)",
+        "date": "January 22-25, 2026",
+        "location": "New York, NY",
+        "description": "Premier education conference for podiatric medicine and surgery"
+      },
+      {
+        "name": "Science & Management Symposium (SAM)",
+        "date": "January 28 - February 1, 2026",
+        "location": "Orlando, Florida",
+        "description": "Research-based gathering on lower limb extremity care and patient care advancements"
+      },
+      {
+        "name": "Midwest Foot & Ankle Conference",
+        "date": "March 26-29, 2026",
+        "location": "Chicago, Illinois",
+        "description": "Major regional conference with ABPM and ABFAS review courses"
+      },
+      {
+        "name": "ACFAS Annual Scientific Conference",
+        "date": "February 24-26, 2026",
+        "location": "Las Vegas, Nevada",
+        "description": "Annual conference focused on foot and ankle surgery education and research"
+      },
+      {
+        "name": "Winter Conference on Cutting Edge Topics",
+        "date": "February 5-7, 2026",
+        "location": "Park City, Utah",
+        "description": "33rd Annual Winter Conference on Cutting Edge Topics and Techniques in Foot & Ankle Surgery"
+      },
+      {
+        "name": "Western Foot and Ankle Conference",
+        "date": "2026 (dates TBA)",
+        "location": "Disneyland area, California",
+        "description": "Regional conference offering 26.25 CECH for doctors' general sessions"
+      },
+      {
+        "name": "Desert Foot Conference",
+        "date": "December 9-12, 2026",
+        "location": "Sheraton Phoenix Downtown, Arizona",
+        "description": "Major conference focused on diabetic foot and wound care"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "PodiatryMeetings.com",
+        "description": "Trusted resource for thousands of podiatrists providing up-to-date meeting information and podiatric news"
+      },
+      {
+        "name": "Podiatry.com",
+        "description": "Online platform for podiatric CME courses, state-specific CE requirements, and professional resources"
+      },
+      {
+        "name": "APMA Online Community",
+        "description": "Member-only forums and resources through the APMA website"
+      },
+      {
+        "name": "r/Podiatry (Reddit)",
+        "description": "Reddit community for podiatry students and professionals to discuss clinical cases and career topics"
+      },
+      {
+        "name": "Podiatric Medicine LinkedIn Groups",
+        "description": "Professional networking groups for podiatrists on LinkedIn including 'Podiatry Network' and specialty-specific groups"
+      },
+      {
+        "name": "Student Doctor Network - Podiatry Forum",
+        "description": "Active forum for pre-podiatry students, DPM students, and residents discussing admissions, training, and career advice"
+      }
+    ]
+  },
+  "market": {
+    "summary": "Employment of podiatrists is projected to grow 2% from 2024 to 2034, slower than average for all occupations. However, the broader podiatry services market is growing more robustly, projected to reach $21.20 billion by 2034 at a 4.81% CAGR. Demand is driven primarily by an aging population, rising diabetes and obesity rates, and increasing sports injuries among youth. About 300 podiatrist openings are projected annually, mostly from replacement needs. The podiatry EMR market alone is projected to nearly double to $950 million by 2032.",
+    "job_outlook": {
+      "growth_rate": "2% projected growth from 2024 to 2034 (slower than average)",
+      "annual_openings": "Approximately 300 openings per year over the decade",
+      "primary_drivers": "Aging population, rising chronic disease prevalence, replacement of retiring practitioners",
+      "bls_source": "Bureau of Labor Statistics, Occupational Outlook Handbook 2024-2034"
+    },
+    "salary_market": {
+      "median_annual": "$152,800 (May 2024, BLS)",
+      "average_annual": "$163,960 (2024)",
+      "range": "$114,000 - $282,000+ depending on experience, location, and practice type",
+      "highest_paying_settings": "Private surgical practices and metropolitan areas with high cost of living"
+    },
+    "demand_drivers": [
+      "Aging US population increasing foot and mobility problems requiring podiatric care",
+      "Growing rates of diabetes (37+ million Americans) driving demand for diabetic foot care and ulcer management",
+      "Rising obesity rates leading to increased biomechanical stress on feet and lower extremities",
+      "Over 30 million US children in youth sports creating significant demand for sports injury treatment",
+      "Increased health insurance coverage expanding patient access to podiatric services",
+      "Growing awareness of preventive foot care and early intervention benefits",
+      "Expansion of podiatric scope of practice in several states"
+    ],
+    "market_trends": [
+      "Podiatry service market growing from $13.89 billion (2025) to projected $21.20 billion by 2034 (4.81% CAGR)",
+      "Podiatry EMR market valued at $450 million (2023), projected to reach $950 million by 2032 (9% CAGR)",
+      "Cloud-based EMR solutions now accounting for over 50% of new installations",
+      "AI integration in clinical tools including ambient scribing and wound care prediction",
+      "Interstate licensure compact movement to simplify multi-state practice",
+      "Growing telemedicine adoption for initial consultations and follow-up care",
+      "Consolidation trend with more podiatrists joining multi-specialty groups versus solo practice",
+      "Increased focus on diabetic limb salvage programs in hospital settings"
+    ]
+  },
+  "quality_score": 0.82,
+  "sources_count": 30,
+  "verified_sources": 12,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "podiatrists daily tasks responsibilities typical day US 2025 2026",
+      "sources": [
+        "https://modernfootankle.com/foot-and-ankle-care/career-in-podiatry/",
+        "https://healthevolves.com/our-guides/career-in-podiatry-what-does-a-podiatrist-do/",
+        "https://www.lgfootandankle.com/blogs/item/276-a-typical-day-for-a-podiatrist.html",
+        "https://www.bls.gov/ooh/healthcare/podiatrists.htm",
+        "https://www.truity.com/career-profile/podiatrist",
+        "https://jobdescriptionandresumeexamples.com/podiatrist-job-description-duties-and-responsibilities/",
+        "https://www.betterteam.com/podiatrist-job-description"
+      ]
+    },
+    {
+      "query": "podiatrist regulations licensing requirements US states 2025 2026",
+      "sources": [
+        "https://www.apma.org/about-apma/news/news-releases/2025/",
+        "https://www.op.nysed.gov/professions/podiatry/license-requirements",
+        "https://aacpm.org/becoming-a-podiatric-physician/",
+        "https://www.bls.gov/ooh/healthcare/podiatrists.htm",
+        "https://www.podiatry.com/State-Online-Podiatry-CME-Laws",
+        "https://floridaspodiatricmedicine.gov/podiatric-physician/",
+        "https://www.inspiraadvantage.com/blog/how-to-become-a-podiatrist-steps-to-take",
+        "https://podiatryboard.org/board-examinations/"
+      ]
+    },
+    {
+      "query": "podiatrist software tools EMR technology equipment 2025 2026",
+      "sources": [
+        "https://www.findemr.com/resources/best-emr-for-podiatry/",
+        "https://transcure.net/medical-billing/software/emr/best-podiatry/",
+        "https://www.capterra.com/podiatry-emr-software/",
+        "https://emrfinder.com/blog/podiatry-emr-software-guide-2025/",
+        "https://www.emrsystems.net/podiatry-emr/",
+        "https://www.practiceehr.com/specialty-specific-ehr-solution/podiatry-ehr",
+        "https://www.modmed.com/specialties/podiatry/ehr/",
+        "https://www.adsc.com/podiatry"
+      ]
+    },
+    {
+      "query": "podiatry medical terminology common terms foot ankle conditions",
+      "sources": [
+        "https://www.footcaremd.org/resources/glossary",
+        "https://footeducation.com/glossary-of-foot-and-ankle-terms/",
+        "https://bvfootclinic.com/glossary/",
+        "https://pittsburghfootandankle.com/foot-care-glossary/",
+        "https://www.bestfootdoc.com/library/glossary-of-podiatry-terms.cfm",
+        "https://www.chicagofootcareclinic.com/foot-terminology/",
+        "https://www.anklefootmd.com/basic-foot-ankle-medical-terminology-part-2/"
+      ]
+    },
+    {
+      "query": "podiatrist career path salary burnout job satisfaction US 2025 2026",
+      "sources": [
+        "https://money.usnews.com/careers/best-jobs/podiatrist",
+        "https://www.payscale.com/research/US/Job=Podiatrist/Salary",
+        "https://careers.usnews.com/best-jobs/podiatrist/salary",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11080839/",
+        "https://www.careerexplorer.com/careers/podiatrist/satisfaction/",
+        "https://www.indeed.com/career/podiatrist/salaries",
+        "https://www.bls.gov/ooh/healthcare/podiatrists.htm"
+      ]
+    },
+    {
+      "query": "podiatry professional associations conferences communities US 2025 2026",
+      "sources": [
+        "https://www.nyspma.org/aws/NYSPMA/pt/sp/conference_about",
+        "https://www.getweave.com/podiatry-conferences-events/",
+        "https://themidwestfac.org/",
+        "https://podiatryboard.org/events/",
+        "https://www.cmelist.com/podiatry-cme-conferences/",
+        "https://www.podiatry.com/Podiatry-CME-Conferences",
+        "https://podiatrymeetings.com/podiatry-meeting-calendar/"
+      ]
+    },
+    {
+      "query": "podiatrist job outlook demand market trends US 2025 2026",
+      "sources": [
+        "https://www.bls.gov/ooh/healthcare/podiatrists.htm",
+        "https://www.zippia.com/podiatrist-jobs/trends/",
+        "https://money.usnews.com/careers/best-jobs/podiatrist",
+        "https://www.bls.gov/oes/2023/may/oes291081.htm",
+        "https://job-outlook.careerplanner.com/Podiatrists.cfm",
+        "https://www.careerexplorer.com/careers/podiatrist/job-market/",
+        "https://www.cognitivemarketresearch.com/podiatry-market-report",
+        "https://www.marketresearchfuture.com/reports/podiatry-service-market-29489"
+      ]
+    }
+  ]
+}

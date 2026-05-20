@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-bioengineers-and-biomedical-engineers",
+  "profession_name": "Bioengineers and Biomedical Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Review daily goals and project deadlines; communicate with leadership on priorities. Core work includes developing prototypes, creating blueprints, selecting materials for medical devices, conducting research on biological systems. Participate in cross-functional meetings with other engineers, medical professionals, and regulatory specialists. Afternoon involves documentation, compliance checks, and regulatory submissions (FDA, EU MDR). End of day: document progress, update design specifications, note troubleshooting steps.",
+    "key_documents": ["FDA regulatory submissions (510(k), PMA)", "Design specifications and blueprints", "Test protocols and validation reports", "Quality management system documents (ISO 13485)", "Design History File (DHF)", "Risk analysis documents (ISO 14971)", "Engineering change orders", "Clinical trial protocols"],
+    "deadlines": "Project timelines driven by regulatory submission schedules, clinical trial phases, and product launch dates. FDA review cycles are 90-180+ days. Unpredictable hours during intense R&D or clinical trial phases.",
+    "seasonality": "Major regulatory submission windows; conference season (October-November for BMES); budget cycles affect R&D funding. Less seasonal than other engineering fields."
+  },
+  "regulatory": {
+    "laws_and_standards": ["FDA 21 CFR Part 820 (Quality System Regulation) - transitioned to QMSR in Feb 2026", "ISO 13485:2016 (Quality Management Systems for Medical Devices)", "ISO 14971 (Risk Management)", "FDA 510(k) premarket notification", "FDA PMA (Premarket Approval)", "EU MDR (Medical Device Regulation)", "HIPAA for patient data"],
+    "licensing": "Professional Engineer (PE) license optional but beneficial. ABET-accredited degree in biomedical engineering or related field required. No specific state license required to practice as a biomedical engineer. Some roles require additional certifications (e.g., BMET for clinical engineers).",
+    "penalties": "FDA enforcement actions include Warning Letters, consent decrees, product seizures, injunctions, and civil/criminal penalties for non-compliance. Quality system failures can result in product recalls. QMSR (effective Feb 2, 2026) replaces previous CGMP inspection approach.",
+    "regulatory_bodies": ["FDA (Food and Drug Administration)", "NIBIB (National Institute of Biomedical Imaging and Bioengineering)", "ISO (International Organization for Standardization)", "OSHA", "CMS (Centers for Medicare & Medicaid Services)"]
+  },
+  "tools": {
+    "software": ["SolidWorks - standard CAD for medical devices", "CATIA - complex device design", "ANSYS - FEA/CFD simulation", "MATLAB - data analysis and modeling", "COMSOL Multiphysics - multiphysics simulation", "Python/R - data analysis and bioinformatics", "LabVIEW - instrumentation and testing", "Fusion 360 - integrated CAD/CAE"],
+    "platforms": ["Arena PLM - product lifecycle management", "MasterControl - quality management system", "Greenlight Guru - QMS for medical devices", "JIRA/Confluence - project management", "Veeva Vault - regulatory document management"],
+    "gov_portals": ["FDA CDRH portal", "FDA eSTAR (electronic submission)", "ClinicalTrials.gov", "FDA MAUDE (adverse event database)"]
+  },
+  "terminology": {
+    "jargon": ["510(k) - premarket notification", "PMA - Premarket Approval", "DHF - Design History File", "V&V - Verification and Validation", "Biocompatibility", "Class I/II/III device classification", "Design controls", "Risk analysis (FMEA)", "Scaffold fabrication", "Microfluidics", "Neuroengineering"],
+    "abbreviations": ["BME - Biomedical Engineering", "FDA - Food and Drug Administration", "GMP/CGMP - Good Manufacturing Practice", "QMSR - Quality Management System Regulation", "QMS - Quality Management System", "DHF - Design History File", "DMR - Device Master Record", "DHR - Device History Record", "IFU - Instructions for Use", "MDR - Medical Device Regulation (EU)", "CAPA - Corrective and Preventive Action", "OUS - Outside United States"]
+  },
+  "career_psychology": {
+    "career_levels": ["Entry-Level Engineer (0-3 years)", "Engineer II (3-5 years)", "Senior Engineer (5-10 years)", "Staff/Principal Engineer (10+ years)", "Engineering Manager/Director", "VP of R&D / CTO"],
+    "fears": ["FDA rejection of device submissions", "Product recalls due to design or manufacturing defects", "Liability from patient harm", "Rapid technology changes making skills obsolete", "Job market competition from adjacent fields"],
+    "motivation": "Making direct impact on patient health and quality of life; 27% motivated by practical work experience; working at the intersection of engineering and medicine; advancing medical imaging, prosthetics, and AI-driven healthcare.",
+    "burnout": "Pressure from regulatory compliance timelines; extended hours during clinical trials; heavy documentation burden; emotional weight of safety-critical work. Job satisfaction driven by meaningful impact on human health."
+  },
+  "community": {
+    "reddit": ["r/biomedicalengineering", "r/AskEngineers", "r/medicaldevices", "r/engineering", "r/biotech"],
+    "linkedin": ["Biomedical Engineering group", "Medical Device Professionals", "BMES network", "IEEE EMBS community"],
+    "associations": ["BMES (Biomedical Engineering Society) - 6,700+ members, 25,000+ network", "IEEE-EMBS (Engineering in Medicine and Biology Society)", "AIMBE (American Institute for Medical and Biological Engineering)", "ASME Bioengineering Division"],
+    "conferences": ["BMES Annual Meeting - October (2026: Orlando, FL)", "IEEE-EMBS BHI Conference", "MD&M (Medical Design & Manufacturing)", "BSN Conference (Body Sensor Networks)", "AdvaMed MedTech Conference"]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 72000,
+      "mid_level_usd": 95000,
+      "senior_level_usd": 134000,
+      "principal_management_usd": 165000
+    },
+    "average_salary_usd": 107000,
+    "job_count_estimate": "About 17,200 bioengineers and biomedical engineers employed in the US (BLS). Concentrated in California, Massachusetts, Minnesota, New Jersey, and Pennsylvania.",
+    "work_arrangements": "Mix of lab, office, and manufacturing environments. Some hybrid options for design/simulation work. Clinical roles require on-site presence. R&D centers increasingly offer flexible arrangements.",
+    "trends": ["AI and machine learning in medical imaging and diagnostics", "Personalized medicine and patient-specific devices", "Wearable health monitoring technology", "3D bioprinting and tissue engineering", "5% projected job growth 2024-2034 (faster than average)", "QMSR transition (Feb 2026) creating demand for quality/regulatory expertise"]
+  },
+  "quality_score": 0.82,
+  "sources_count": 7,
+  "verified_sources": 5
+}

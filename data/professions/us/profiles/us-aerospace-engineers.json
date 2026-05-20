@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-aerospace-engineers",
+  "profession_name": "Aerospace Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Standard 40-hour workweek nominal, but 27% work 1-4 extra hours and 26% work 5-10 extra hours weekly. More than 85% of non-union professionals don't receive pay for overtime. Daily tasks: CAD design work (CATIA, SolidWorks), running simulations (CFD, FEA), analyzing test data, laboratory testing (wind tunnels, vibration tables), documentation and compliance, meetings with project managers and stakeholders. Work spikes during pre-launch testing, final design reviews, and deadline approaches.",
+    "documents": ["Technical design documents", "Simulation reports (CFD, FEA)", "Test data analysis reports", "ITAR compliance documentation", "FAR/FAA regulatory submissions", "CDRLs (Contract Data Requirements Lists)", "PDR/CDR review packages", "Flight test reports", "Safety analyses", "Requirements traceability matrices"],
+    "deadlines": ["Design review milestones (PDR, CDR)", "Contract deliverable deadlines (CDRLs)", "FAA/EASA certification timelines", "ITAR export license submissions", "Test campaign schedules", "Program milestone gates", "Annual CMMC compliance assessments", "PE license renewal (if applicable)", "Security clearance renewals"],
+    "seasonality": "Less seasonal than many professions. Government fiscal year (October 1) affects defense contract awards. Launch windows create intense periods. Q4 budget spending surges. Hiring ramps in fall for summer internships. Defense budget cycles influence project starts."
+  },
+  "regulatory": {
+    "laws": ["ITAR (International Traffic in Arms Regulations)", "EAR (Export Administration Regulations)", "FAR (Federal Aviation Regulations)", "CMMC (Cybersecurity Maturity Model Certification) — final rule Nov 2025", "FAA certification requirements", "DFARS (Defense Federal Acquisition Regulation Supplement)", "OSHA workplace safety"],
+    "licensing": "PE (Professional Engineer) license not mandatory for most roles but beneficial for consulting and leadership. Requires FE exam, 4+ years experience, then PE exam. ABET-accredited degree required (BS minimum, MS/PhD preferred). Security clearance required for most defense roles (Secret or Top Secret). ITAR restricts foreign nationals from controlled projects. CMMC Level 2 requires third-party assessment as of 2025.",
+    "penalties": "ITAR civil penalties: up to $1,271,078 per violation. ITAR criminal: up to $1,000,000 per violation + 20 years imprisonment. Debarment from government contracts. Recent major penalties: Raytheon $950M (2024). CMMC non-compliance disqualifies from DoD contracts. FAA violations can ground aircraft/halt programs.",
+    "regulatory_bodies": ["FAA (Federal Aviation Administration)", "DDTC (Directorate of Defense Trade Controls — ITAR)", "BIS (Bureau of Industry and Security — EAR)", "NASA", "DoD (Department of Defense)", "EASA (European Aviation Safety Agency)", "ABET (engineering accreditation)"]
+  },
+  "tools": {
+    "software": ["CATIA (Dassault — industry leader, Boeing/Airbus/Lockheed)", "SolidWorks", "Siemens NX (GE Aviation)", "PTC Creo", "ANSYS (CFD/FEA)", "SIMULIA/Abaqus (Dassault)", "MATLAB/Simulink", "AutoCAD", "OpenVSP (NASA aircraft design)", "COMSOL Multiphysics", "Python", "C++"],
+    "platforms": ["Siemens Teamcenter (PLM)", "PTC Windchill (PLM)", "Dassault ENOVIA/3DEXPERIENCE", "Jira/Confluence (project management)", "DOORS (requirements management)", "Valispace (collaborative systems engineering)"],
+    "gov_portals": ["FAA regulatory portal", "DDTC (ITAR licensing)", "SAM.gov (government contracts)", "DCSA (security clearance)", "NASA technical reports server", "Defense Logistics Agency"]
+  },
+  "terminology": {
+    "jargon": ["Mach number", "Angle of attack (AOA)", "Thrust-to-weight ratio", "Computational Fluid Dynamics (CFD)", "Finite Element Analysis (FEA)", "Technology Readiness Level (TRL)", "Preliminary/Critical Design Review (PDR/CDR)", "Fly-by-wire", "Thermal Protection System (TPS)", "Digital twin", "Payload integration", "Avionics", "Propulsion system", "Aerodynamic drag"],
+    "abbreviations": ["AIAA - American Institute of Aeronautics and Astronautics", "FAA - Federal Aviation Administration", "ITAR - International Traffic in Arms Regulations", "CFD - Computational Fluid Dynamics", "FEA - Finite Element Analysis", "CAD - Computer-Aided Design", "TRL - Technology Readiness Level", "PDR - Preliminary Design Review", "CDR - Critical Design Review", "LEO - Low Earth Orbit", "FADEC - Full Authority Digital Engine Control", "APU - Auxiliary Power Unit", "GCS - Glasgow Coma Scale (flight test)", "TOGW - Takeoff Gross Weight", "GLOW - Gross Liftoff Weight", "DARPA - Defense Advanced Research Projects Agency"]
+  },
+  "career_psychology": {
+    "career_levels": ["Engineering Intern/Co-op", "Entry-Level Engineer (0-2 years)", "Engineer II/III (3-7 years)", "Senior Engineer (8-15 years)", "Principal Engineer / Technical Fellow", "Engineering Manager", "Director of Engineering", "VP of Engineering", "Chief Engineer", "CTO"],
+    "fears": ["Layoffs and restructuring (industry attrition ~13% vs 3.8% national)", "25% of workforce is 55+ nearing retirement — skills gap", "Career stagnation without advancement", "Being made redundant by AI or automation", "Project failure or safety incidents", "Loss of security clearance", "ITAR violation consequences", "Work-life balance erosion during critical phases"],
+    "motivation": ["Contributing to space exploration and national defense", "Working on cutting-edge technology", "Intellectual challenge of complex engineering problems", "Collaboration with brilliant colleagues", "Meaningful work with tangible outcomes", "Strong compensation and job stability", "Pride in building aircraft, spacecraft, defense systems"],
+    "burnout": "22% of engineering leaders face critical burnout levels (2025). 24% experience moderate burnout. Only 21% categorized as healthy. 38% working longer hours than previous year. 40% of teams less motivated. Key drivers: tight deadlines, safety-critical precision requirements, extended overtime without compensation (85% non-union), scope creep (65% report expanded responsibilities), post-layoff survivor's syndrome, inadequate resources (48% lack right tools)."
+  },
+  "community": {
+    "reddit": ["r/AerospaceEngineering", "r/aerospace", "r/engineering", "r/SpaceX", "r/nasa"],
+    "linkedin": ["AIAA LinkedIn (large following)", "Aerospace professionals groups", "Defense industry networks", "NASA alumni groups"],
+    "associations": ["AIAA (American Institute of Aeronautics and Astronautics) — 128,000+ members, world's largest aerospace society", "AIA (Aerospace Industries Association)", "SAE International — 128,000+ engineers", "ASME Aerospace Division", "AUVSI (unmanned systems) — 6,000+ members", "Society of Flight Test Engineers"],
+    "conferences": ["AIAA SciTech Forum", "AIAA Aviation Forum", "AIA Annual Meeting", "Space Symposium", "Farnborough/Paris Air Show", "AUVSI XPONENTIAL"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "entry_level": "78000-89000",
+      "early_career": "89000-110000",
+      "mid_career": "100000-150000",
+      "senior": "150000-200000",
+      "principal_fellow": "200000+"
+    },
+    "national_average_usd": 134830,
+    "job_count": "71,600 employed; 42,086 active job openings; ~4,200 annual openings",
+    "growth_rate": "6% projected 2024-2034 (faster than average)",
+    "unemployment_rate": "Low — high demand especially in defense and commercial space",
+    "work_arrangements": ["Defense contractor offices", "NASA/government labs", "Commercial space companies (SpaceX, Blue Origin)", "Airlines/manufacturers (Boeing, Lockheed Martin)", "Research institutions", "Some hybrid/remote for analysis work"],
+    "trends": ["Salaries up 8% over last 5 years", "Top states: DC ($152K), Maryland ($152K), Washington ($150K)", "SpaceX/Blue Origin driving commercial space hiring", "CMMC compliance reshaping contractor requirements", "1/3 of workforce 55+ — massive retirement wave coming", "AI/digital twin technologies transforming workflows", "Drone/UAV sector growing rapidly", "US citizenship required for most defense roles (ITAR)"]
+  }
+}

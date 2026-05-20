@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-computer-hardware-engineers",
+  "profession_name": "Computer Hardware Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Design, develop, and test computer hardware components (circuit boards, processors, memory devices, routers). Morning: team meetings, reviewing design specs. Core work: schematic design, PCB layout, FPGA programming, hardware debugging with oscilloscopes and logic analyzers. Afternoon: testing prototypes, writing documentation, collaborating with firmware/software teams. Lab work alternating with office-based design and simulation.",
+    "key_documents": ["Hardware design specifications", "Schematic diagrams", "PCB layout files", "Test plans and results", "Bill of Materials (BOM)", "Design review documents", "Compliance documentation (FCC, UL, CE)", "Engineering change orders (ECOs)", "Datasheets and technical manuals"],
+    "deadlines": "Product development milestones; tape-out deadlines for chip design; prototype review cycles; compliance testing schedules; product launch dates. Crunch periods before tape-out or product launch can require extended hours.",
+    "seasonality": "Product launch cycles (often tied to CES in January, back-to-school, holiday season). Budget and planning cycles in Q4. Data center buildout cycles increasingly year-round."
+  },
+  "regulatory": {
+    "laws_and_standards": ["FCC Part 15 (electromagnetic emissions)", "UL safety standards", "CE marking (for exports)", "RoHS (Restriction of Hazardous Substances)", "WEEE (electronic waste)", "IEEE standards (802.x, etc.)", "ITAR/EAR (export controls for defense/sensitive hardware)", "ENERGY STAR efficiency standards"],
+    "licensing": "No mandatory professional license required. ABET-accredited degree in computer engineering, electrical engineering, or related field typical. Optional certifications: CompTIA, Cisco, vendor-specific certs. PE license rare but available through NCEES.",
+    "penalties": "FCC fines for emissions non-compliance. Product recalls for safety violations. ITAR/EAR violations carry severe criminal and civil penalties. Patent infringement litigation common in hardware industry.",
+    "regulatory_bodies": ["FCC (Federal Communications Commission)", "UL (Underwriters Laboratories)", "IEEE Standards Association", "NIST", "DoD/ITAR (for defense hardware)", "EPA (for environmental compliance)"]
+  },
+  "tools": {
+    "software": ["Altium Designer - PCB design", "Cadence Allegro/OrCAD - IC and PCB design", "Mentor Graphics (Siemens EDA) - electronic design automation", "Xilinx Vivado/Intel Quartus - FPGA development", "MATLAB/Simulink - signal processing and modeling", "ANSYS - thermal and structural simulation", "SolidWorks/Creo - mechanical enclosure design", "SPICE simulators - circuit simulation", "Verilog/VHDL - hardware description languages"],
+    "platforms": ["JIRA/Confluence - project management", "GitHub/GitLab - version control for hardware design files", "PLM systems (Teamcenter, Arena)", "Lab equipment: oscilloscopes, logic analyzers, spectrum analyzers", "Jenkins/CI - automated testing"],
+    "gov_portals": ["FCC equipment authorization portal", "ITAR/DDTC registration", "EPA compliance portals", "NIST standards database"]
+  },
+  "terminology": {
+    "jargon": ["Tape-out (final chip design sent to fab)", "FPGA (Field-Programmable Gate Array)", "ASIC (Application-Specific Integrated Circuit)", "PCB (Printed Circuit Board)", "SoC (System on Chip)", "Thermal throttling", "Signal integrity", "Power integrity", "DFM (Design for Manufacturing)", "Bring-up (first power-on of prototype)"],
+    "abbreviations": ["PCB - Printed Circuit Board", "FPGA - Field-Programmable Gate Array", "ASIC - Application-Specific Integrated Circuit", "SoC - System on Chip", "GPIO - General Purpose Input/Output", "EMI/EMC - Electromagnetic Interference/Compatibility", "BGA - Ball Grid Array", "DMA - Direct Memory Access", "RTL - Register Transfer Level", "HDL - Hardware Description Language", "BOM - Bill of Materials", "NRE - Non-Recurring Engineering"]
+  },
+  "career_psychology": {
+    "career_levels": ["Junior Hardware Engineer (0-3 years)", "Hardware Engineer (3-6 years)", "Senior Hardware Engineer (6-12 years)", "Staff/Principal Engineer (12+ years)", "Hardware Engineering Manager/Director", "VP of Hardware Engineering / CTO"],
+    "fears": ["Chip design commoditization and offshoring", "Rapid technology obsolescence", "Long development cycles with uncertain ROI", "Supply chain disruptions", "AI/ML expertise becoming required", "Layoffs in tech industry downturns"],
+    "motivation": "Creating physical products that millions use; cutting-edge technology (AI chips, quantum computing); strong compensation in tech sector; intellectual challenge of hardware-software co-design.",
+    "burnout": "Crunch periods before tape-out and product launches; high stakes of hardware errors (can't easily patch like software); pressure to keep pace with Moore's Law successors; nearly three-quarters of tech workers experience burnout at some point."
+  },
+  "community": {
+    "reddit": ["r/ECE (Electrical and Computer Engineering)", "r/FPGA", "r/AskElectronics", "r/hardware", "r/chipdesign"],
+    "linkedin": ["IEEE community", "Hardware Engineering Professionals", "Semiconductor industry groups", "FPGA Design Engineers"],
+    "associations": ["IEEE (Institute of Electrical and Electronics Engineers)", "IEEE Computer Society", "ACM (Association for Computing Machinery)", "CompTIA", "NSBE (National Society of Black Engineers)"],
+    "conferences": ["CES - Las Vegas, January", "IEEE International Solid-State Circuits Conference (ISSCC)", "Design Automation Conference (DAC)", "IEEE International Test Conference", "Hot Chips - August (Stanford)", "Embedded Systems Conference"]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 77000,
+      "mid_level_usd": 120000,
+      "senior_level_usd": 155000,
+      "principal_staff_usd": 192000
+    },
+    "average_salary_usd": 148000,
+    "job_count_estimate": "About 72,600 computer hardware engineers employed in the US (BLS). Concentrated in Silicon Valley, Austin, Seattle, Portland, and Boston/Cambridge. Employment projected to grow 7% through 2034.",
+    "work_arrangements": "Primarily on-site due to lab and equipment needs. Some hybrid options for design/simulation work. Major employers: Intel, Apple, NVIDIA, AMD, Qualcomm, Google, Amazon (hardware divisions). Startups in AI chip space growing.",
+    "trends": ["AI/ML hardware (GPUs, TPUs, custom accelerators) driving massive demand", "Data center expansion requiring custom hardware solutions", "CHIPS Act fueling domestic semiconductor investment", "Rising software licensing costs for EDA tools", "7% job growth projected through 2034", "Hardware-software co-design becoming essential skill", "Edge computing and IoT expanding hardware roles"]
+  },
+  "quality_score": 0.82,
+  "sources_count": 7,
+  "verified_sources": 5
+}

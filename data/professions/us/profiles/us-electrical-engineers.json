@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-electrical-engineers",
+  "profession_name": "Electrical Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Design, develop, and test electrical systems (power generation, distribution, controls, communications). Office work: circuit design, simulation, documentation, code review. Lab/field work: testing prototypes, commissioning equipment, troubleshooting. Meetings with cross-functional teams, project managers, and clients. Standard 40-hour week with overtime during project deadlines or commissioning.",
+    "key_documents": ["Electrical schematics and one-line diagrams", "Load calculations and power system studies", "Control system specifications", "Test procedures and commissioning reports", "Design basis documents", "NEC code compliance documentation", "Equipment specifications and datasheets", "Project schedules and budgets"],
+    "deadlines": "Project milestones and construction schedules; equipment procurement lead times; regulatory compliance deadlines; PE license maintenance and continuing education; commissioning and energization schedules.",
+    "seasonality": "Construction/commissioning seasons (spring-fall). Utility planning cycles. Budget approval cycles in Q4. Data center buildout creating year-round demand. Conference season in spring and fall."
+  },
+  "regulatory": {
+    "laws_and_standards": ["NEC (National Electrical Code) - NFPA 70", "IEEE Standards (hundreds covering power, electronics, communications)", "NESC (National Electrical Safety Code)", "OSHA electrical safety standards", "UL standards for equipment", "State building codes", "NERC/FERC standards (for power grid)", "ADA accessibility for electrical systems"],
+    "licensing": "PE (Professional Engineer) license highly valued, sometimes required. ABET-accredited BS in electrical engineering → FE exam → 4+ years experience → PE exam. PE license increases salary to ~$135k average. Additional certifications: CEM (Certified Energy Manager), PMP, CSEP (Certified Systems Engineer).",
+    "penalties": "Practicing without PE license where required is illegal. OSHA fines for electrical safety violations. Professional liability for design failures. NEC code violations result in stop-work orders. NERC/FERC fines for power grid reliability violations can be substantial.",
+    "regulatory_bodies": ["State Boards of Professional Engineers", "NCEES", "OSHA", "NFPA (National Fire Protection Association)", "IEEE Standards Association", "NERC/FERC (for power systems)", "UL"]
+  },
+  "tools": {
+    "software": ["AutoCAD Electrical - electrical design", "ETAP - power system analysis", "SKM PowerTools - power system modeling", "MATLAB/Simulink - modeling and simulation", "PSpice/LTspice - circuit simulation", "Revit MEP - BIM for electrical", "EPLAN - industrial electrical design", "Python/C++ - automation and embedded systems"],
+    "platforms": ["PLM systems (Teamcenter, Windchill)", "SCADA systems (Siemens, Schneider, ABB)", "PLC programming (Allen-Bradley, Siemens)", "JIRA/MS Project - project management", "Bluebeam Revu - PDF markup"],
+    "gov_portals": ["OSHA compliance portal", "NERC compliance portal", "State PE licensing boards", "DOE energy program portals", "EPA Energy Star"]
+  },
+  "terminology": {
+    "jargon": ["Load flow analysis", "Short circuit study", "Arc flash analysis", "Power factor correction", "Grounding and bonding", "Relay protection", "VFD (Variable Frequency Drive)", "Switchgear", "Transformer sizing", "Single-line diagram"],
+    "abbreviations": ["PE - Professional Engineer", "NEC - National Electrical Code", "VFD - Variable Frequency Drive", "PLC - Programmable Logic Controller", "SCADA - Supervisory Control and Data Acquisition", "kV/kW/kVA - kilovolt/kilowatt/kilovolt-ampere", "MCC - Motor Control Center", "UPS - Uninterruptible Power Supply", "EMI - Electromagnetic Interference", "IEEE - Institute of Electrical and Electronics Engineers", "FE - Fundamentals of Engineering", "P&C - Protection and Controls"]
+  },
+  "career_psychology": {
+    "career_levels": ["EIT/Graduate Engineer (0-4 years)", "Electrical Engineer (PE, 4-8 years)", "Senior Electrical Engineer (8-15 years)", "Principal/Staff Engineer (15+ years)", "Engineering Manager/Director", "VP of Engineering / CTO"],
+    "fears": ["Rapid technology change requiring constant upskilling", "AI and automation potentially replacing design tasks", "Industry downsizing in traditional sectors", "Liability for electrical safety failures", "Three jobs per qualified candidate creating talent wars"],
+    "motivation": "Essential role in power infrastructure, AI/data centers, and electrification; strong job market (3 jobs per candidate); salary growth outpacing inflation (4.2%); PE license as career milestone; tangible impact on modern society.",
+    "burnout": "66% of American workers report burnout (2025 Modern Health study); nearly 45% of construction/engineering workers take time off for mental health; extended hours during commissioning and project deadlines; companies increasingly offering flexible work arrangements to combat burnout."
+  },
+  "community": {
+    "reddit": ["r/electricalengineering", "r/AskEngineers", "r/ECE", "r/engineering", "r/PowerEngineering"],
+    "linkedin": ["IEEE community", "Electrical Engineering Professionals", "Power Systems Engineers", "Renewable Energy Engineers"],
+    "associations": ["IEEE (Institute of Electrical and Electronics Engineers)", "NFPA (National Fire Protection Association)", "NSPE (National Society of Professional Engineers)", "ASHRAE (for building electrical systems)", "IES (Illuminating Engineering Society)"],
+    "conferences": ["IEEE PES General Meeting - July", "IEEE ECCE (Energy Conversion Congress) - October", "NFPA Conference & Expo - June", "DistribuTECH - February", "IEEE IAS Annual Meeting"]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 75000,
+      "mid_level_usd": 112000,
+      "senior_pe_usd": 135000,
+      "principal_director_usd": 175000
+    },
+    "average_salary_usd": 112000,
+    "job_count_estimate": "About 192,100 electrical engineers employed in the US (BLS). ~20,100 new openings per year. Three jobs per qualified candidate. Concentrated in tech hubs, energy sector, manufacturing, and consulting.",
+    "work_arrangements": "Mix of office, lab, and field work. Power/utility engineers often travel to substations and generation facilities. Design-focused roles increasingly hybrid. Data center and AI infrastructure roles booming. Consulting firms, utilities, tech companies, and manufacturers are primary employers.",
+    "trends": ["AI infrastructure and data center expansion driving massive demand", "Electrification of transportation and buildings", "Grid modernization and smart grid technology", "Salary growth averaging 4.2% into 2026, up to 10% for senior roles", "3 jobs per qualified candidate — severe talent shortage", "Renewable energy integration requiring grid expertise", "CHIPS Act boosting semiconductor and electronics manufacturing", "Software skills (Python, AI tools) becoming essential for EEs"]
+  },
+  "quality_score": 0.84,
+  "sources_count": 7,
+  "verified_sources": 5
+}

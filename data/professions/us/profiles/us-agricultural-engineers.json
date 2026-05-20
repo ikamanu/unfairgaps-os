@@ -1,0 +1,52 @@
+{
+  "profession_id": "us-agricultural-engineers",
+  "profession_name": "Agricultural Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Mixed office and field schedule. Most time in offices and laboratories conducting research, designing equipment, and analyzing data, with frequent field visits to farms, labs, or rural areas. Daily activities: preparing reports, sketches, working drawings, specifications, proposals, and budgets. Visiting sites to observe environmental problems and monitor construction activities. Meeting with clients (farmers, regional councils, developers). Testing agricultural machinery and equipment for performance and safety. Designing machines (tractors, cultivators, harvesters, irrigation systems). Conducting feasibility studies and environmental impact assessments. Collaborating with agronomists, food scientists, and environmental scientists.",
+    "documents": ["Engineering design specifications", "Equipment test reports", "Environmental impact assessments", "Feasibility study reports", "Working drawings and sketches", "Project proposals and budgets", "Site visit reports", "USDA compliance documentation", "PE stamp documents", "ASABE standards compliance reports"],
+    "deadlines": ["PE license renewal (state-specific cycles)", "ASABE standards compliance deadlines", "USDA regulatory submission deadlines", "Project milestone deliverables", "Environmental permit applications", "Equipment safety certification timelines", "OSHA compliance reporting", "Grant and research funding deadlines"],
+    "seasonality": "Planting season (spring) and harvest season (fall) drive peak field work for irrigation and equipment projects. USDA regulatory deadlines follow federal fiscal year. Construction projects peak in summer months. Equipment testing aligns with crop cycles. Year-round office design and research work."
+  },
+  "regulatory": {
+    "laws": ["State Professional Engineering Practice Acts", "USDA biotechnology and bioengineered foods regulations (7 CFR)", "OSHA workplace safety standards including heat exposure rules", "EPA herbicide and pesticide regulations (Endangered Species Act compliance)", "Clean Water Act (irrigation and drainage)", "ASABE engineering standards", "State environmental protection laws"],
+    "licensing": "Bachelor's degree in agricultural engineering or related field from ABET-accredited program. FE (Fundamentals of Engineering) exam after graduation. 4+ years supervised experience. PE (Professional Engineer) license via state board exam. PE required for signing/sealing engineering documents. ASABE membership voluntary but standard. Continuing education requirements vary by state.",
+    "penalties": "State board penalties for practicing without PE license. OSHA penalties for workplace safety violations (heat exposure enforcement extended through April 2026). EPA penalties for environmental non-compliance. Civil penalties up to $500/day for beneficial ownership reporting violations (Corporate Transparency Act). Professional liability for design failures.",
+    "regulatory_bodies": ["State Boards of Professional Engineers", "ASABE (American Society of Agricultural and Biological Engineers — standards)", "USDA (APHIS, AMS — agricultural regulations)", "OSHA (workplace safety)", "EPA (environmental compliance)", "NCEES (National Council of Examiners for Engineering and Surveying)"]
+  },
+  "tools": {
+    "software": ["AutoCAD/Civil 3D (design and drafting)", "MATLAB (data analysis and modeling)", "ArcGIS/QGIS (geospatial analysis)", "SolidWorks (3D mechanical design)", "EPANET (water distribution modeling)", "HEC-RAS (hydraulic modeling)", "Precision agriculture software platforms", "IoT sensor management dashboards"],
+    "platforms": ["ASABE technical resources and standards library", "USDA NIFA research databases", "AI-powered crop monitoring platforms", "Drone mapping and field analysis tools", "Farm management software (integration testing)", "Cloud computing for agricultural data analytics"],
+    "gov_portals": ["State PE licensing board portals", "USDA grants and regulatory portals", "EPA environmental permitting systems", "OSHA compliance portals", "SAM.gov (federal contracts)", "NCEES portal (PE exam registration)"]
+  },
+  "terminology": {
+    "jargon": ["Precision agriculture", "Irrigation efficiency", "Soil conservation", "Drainage design", "Biosystems engineering", "Crop processing", "Agricultural structures", "Farm power and machinery", "Dairy effluent schemes", "Flood control systems", "Food processing engineering", "Sustainable agriculture", "Variable rate technology", "GPS-guided systems"],
+    "abbreviations": ["PE - Professional Engineer", "FE - Fundamentals of Engineering", "ASABE - American Society of Agricultural and Biological Engineers", "ABET - Accreditation Board for Engineering and Technology", "USDA - United States Department of Agriculture", "NRCS - Natural Resources Conservation Service", "AMS - Agricultural Marketing Service", "FGIS - Federal Grain Inspection Service", "NOP - National Organic Program", "GAP - Good Agricultural Practices", "ACRE - Average Crop Revenue Election", "BMP - Best Management Practices", "ET - Evapotranspiration", "VRT - Variable Rate Technology"]
+  },
+  "career_psychology": {
+    "career_levels": ["Engineering Student (ABET program)", "EIT/Engineer Intern (passed FE exam)", "Junior Agricultural Engineer (entry-level)", "Agricultural Engineer (4+ years, PE eligible)", "Senior Agricultural Engineer (PE licensed, 10+ years)", "Engineering Manager / Project Director", "Principal Engineer / Consultant", "Academic Faculty / Researcher", "Sales Engineer (technical-commercial path)"],
+    "fears": ["Niche field with limited job openings (~100 annual openings per BLS)", "Competition from broader engineering disciplines (civil, mechanical, environmental)", "Rural work locations limiting lifestyle options", "Climate change uncertainty affecting agricultural planning", "Automation potentially reducing traditional engineering roles", "Low public awareness of agricultural engineering as a career"],
+    "motivation": ["Solving real-world food production and sustainability challenges", "Diverse work combining office design with field implementation", "Growing demand for precision agriculture and sustainable systems", "PE licensure enabling independent practice and higher responsibility", "Competitive salary ($84K median, up to $178K senior)", "Job growth projected at 6-9% through 2034", "Impact on global food security and environmental protection"],
+    "burnout": "Limited burnout-specific data for agricultural engineers. General engineering concerns apply: project deadline pressure, balancing office and field demands, rural isolation for field-based roles. Seasonal intensity peaks during planting and harvest. Government research positions tend to offer better work-life balance than private consulting."
+  },
+  "community": {
+    "reddit": ["r/engineering", "r/AgriculturalEngineering", "r/agriculture", "r/farming"],
+    "linkedin": ["ASABE LinkedIn group", "Agricultural Engineering professionals", "Precision Agriculture groups", "AgTech professionals"],
+    "associations": ["ASABE (American Society of Agricultural and Biological Engineers) — primary US professional organization", "IAgrE (Institution of Agricultural Engineers — international)", "NSPE (National Society of Professional Engineers)", "State engineering societies"],
+    "conferences": ["ASABE Annual International Meeting (2025: Toronto with CSABE)", "Agricultural Equipment Technology Conference (February, Louisville KY)", "Commodity Classic", "Esri User Conference Agriculture SIG", "IAgrE Annual Conference"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "entry_level": "50000-68000",
+      "early_mid_career": "68000-87000",
+      "senior_experienced": "87000-128000",
+      "top_earners": "Up to 178000"
+    },
+    "national_average_usd": 84630,
+    "job_count": "~2,600 employed; ~100 annual openings (BLS)",
+    "growth_rate": "6% projected through 2034 (faster than average)",
+    "unemployment_rate": "Low — niche but stable demand",
+    "work_arrangements": ["Federal government agencies (USDA, NRCS)", "Engineering consulting firms", "Agricultural equipment manufacturers", "University research and teaching", "State extension services", "Private agricultural operations", "Environmental consulting"],
+    "trends": ["BLS median salary $84,630 (May 2024)", "Salary growth 4.4% year-over-year 2024-2025", "Top state salaries: Wisconsin $100,800, Georgia $99,280", "Precision agriculture and AI driving new demand", "IoT sensors and drone technology integration", "Sustainability and climate adaptation projects growing", "OSHA heat standard expansion affecting agricultural workplaces", "USDA bioengineered food regulations creating compliance engineering needs"]
+  }
+}

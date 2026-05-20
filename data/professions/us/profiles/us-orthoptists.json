@@ -1,0 +1,290 @@
+{
+  "profession_id": "us-orthoptists",
+  "profession_name": "Orthoptists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Orthoptists are specialized eye care professionals who diagnose and manage disorders of binocular vision, eye movement, and eye alignment. Work primarily with pediatric patients in exam office settings within hospitals, academic medical centers, and ophthalmology practices. Standard 40-hour work week.",
+    "typical_tasks": [
+      "Perform diagnostic tests — cover test, prism measurements, visual acuity, lensometry",
+      "Evaluate strabismus (eye misalignment) in children and adults",
+      "Assess and treat amblyopia (lazy eye) with patching and exercises",
+      "Diagnose diplopia (double vision) and binocular vision disorders",
+      "Administer synoptophore and stereoacuity testing",
+      "Provide nonsurgical treatment — corrective lenses, prisms, patches, fusion exercises",
+      "Collaborate with ophthalmologists on surgical planning for strabismus",
+      "Monitor pre- and post-operative alignment in strabismus surgery patients",
+      "Assess eye motility in craniofacial syndrome patients",
+      "Educate patients and families about vision conditions and treatment"
+    ],
+    "key_documents": [
+      "Patient assessment records and measurements",
+      "Diagnostic test results (cover test, prism, stereoacuity)",
+      "Treatment plans and progress notes",
+      "Pre- and post-surgical evaluations",
+      "Referral communications with ophthalmologists",
+      "Continuing education documentation"
+    ],
+    "deadlines": {
+      "certification_renewal": "Every 3 years (AOC)",
+      "continuing_education": "Ongoing CE including scientific meeting attendance",
+      "patient_evaluations": "Typically 1500+ patients during 24-month training"
+    },
+    "seasonality": "Relatively stable year-round. Slight uptick in school-age referrals during back-to-school season (August-September) when vision screenings identify issues. Summer may see more availability for pediatric scheduling."
+  },
+  "regulatory": {
+    "summary": "Certified by the American Orthoptic Council (AOC, est. 1935). Requires bachelor's degree followed by 24-month accredited orthoptic training program. National certification via written and oral/practical exams. Recertification every 3 years.",
+    "key_laws": [
+      {
+        "name": "American Orthoptic Council (AOC) Certification",
+        "url": "https://www.orthoptist.org",
+        "description": "National certifying body since 1935. Written exam in June + oral/practical exam in fall. Sets and monitors education standards.",
+        "status": "Active"
+      },
+      {
+        "name": "AACO Practice Standards",
+        "url": "https://www.orthoptics.org",
+        "description": "American Association of Certified Orthoptists sets practice guidelines and continuing education requirements",
+        "status": "Active"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Bachelor's degree (preferably in science or healthcare)",
+        "24-month accredited orthoptic training program (fellowship)",
+        "Evaluate minimum 1,500 patients during training",
+        "Pass AOC written examination (administered in June)",
+        "Pass AOC oral/practical examination (administered in fall)",
+        "Recertify every 3 years with continuing education evidence"
+      ]
+    },
+    "continuing_education": "Required for 3-year recertification; includes attendance at scientific meetings; ~80% of AACO members attend meetings at least annually"
+  },
+  "tools": {
+    "summary": "Specialized diagnostic instruments for measuring eye alignment, binocular function, and visual acuity. Transitioning to digital platforms but still relies on classic ophthalmological diagnostic tools.",
+    "primary_tools": [
+      {
+        "name": "Synoptophore (Major Amblyoscope)",
+        "description": "Haploscopic device with two tubes for measuring angles of deviation, assessing fusion, and stereoscopic vision testing"
+      },
+      {
+        "name": "Prism Bar and Loose Prisms",
+        "description": "Essential for cover test measurements and quantifying eye deviation in prism diopters"
+      },
+      {
+        "name": "Phoroptor/Refraction Systems",
+        "description": "For assessing refractive error; modern digital refraction systems (e.g., Reichert Phoroptor VRx) improving workflow"
+      },
+      {
+        "name": "Stereoacuity Tests",
+        "description": "Titmus, Randot, Lang — standardized tests for binocular depth perception"
+      },
+      {
+        "name": "Worth 4-Dot Test",
+        "description": "Assesses binocular fusion and suppression at distance and near"
+      }
+    ],
+    "secondary_tools": [
+      "Retinoscope and trial lens set",
+      "Lensometer for measuring existing spectacle prescriptions",
+      "Digital orthoptic platforms (emerging — integrating multiple tests)",
+      "EMR/EHR systems for ophthalmology (Epic Ophthalmology, NextGen)",
+      "Ocular motility photography and videography",
+      "Color vision testing plates (Ishihara)"
+    ],
+    "pain_points": [
+      "Limited availability of modern digital orthoptic platforms in the US",
+      "Aging equipment in many clinical settings",
+      "EMR systems not optimized for orthoptic documentation workflows",
+      "Small profession — limited vendor attention for specialized tools",
+      "Need for child-friendly testing environments and equipment"
+    ]
+  },
+  "terminology": {
+    "summary": "Highly specialized ophthalmic vocabulary focused on eye alignment, binocular vision, and ocular motility. Heavy use of Latin/Greek-derived terms and precise measurement units.",
+    "terms": {
+      "strabismus": "Misalignment of the eyes — umbrella term for eye turning disorders",
+      "esotropia": "Eye turns inward (toward nose) — 'crossed eyes'",
+      "exotropia": "Eye turns outward (away from nose) — 'wall-eyed'",
+      "hypertropia": "Eye turns upward",
+      "hypotropia": "Eye turns downward",
+      "amblyopia": "Reduced vision in one eye ('lazy eye') due to abnormal visual development",
+      "diplopia": "Double vision — seeing two images of a single object",
+      "binocular vision": "Coordinated use of both eyes together for depth perception",
+      "fusion": "Brain's ability to merge images from both eyes into single percept",
+      "stereopsis": "3D depth perception from binocular vision",
+      "suppression": "Brain ignoring input from one eye (adaptation to misalignment)",
+      "prism diopter (PD)": "Unit measuring angle of eye deviation",
+      "heterophoria": "Latent eye deviation controlled by fusion (phoria)",
+      "heterotropia": "Manifest eye deviation (tropia)",
+      "convergence insufficiency": "Eyes struggle to turn inward for near tasks",
+      "accommodative esotropia": "Inward eye turn caused by focusing effort",
+      "cover test": "Gold standard clinical test for detecting and measuring strabismus",
+      "alternate cover test": "Breaking fusion to reveal total deviation",
+      "orthophoria": "Perfect alignment of both eyes (ideal state)",
+      "comitant": "Deviation same in all gaze directions (vs. incomitant)"
+    }
+  },
+  "career_psychology": {
+    "summary": "Small, specialized profession with high demand due to nationwide shortage. Strong job security in a niche field. Rewarding work with pediatric patients. Moderate salary but excellent work-life balance with standard 40-hour weeks.",
+    "career_path": [
+      "Bachelor's degree in science or healthcare (4 years)",
+      "Orthoptic training fellowship (24 months at accredited program)",
+      "AOC certification (written + oral/practical exam)",
+      "Staff orthoptist — hospital, academic center, or private practice",
+      "Senior orthoptist / clinical lead",
+      "Program director / educator at orthoptic training program",
+      "Research orthoptist (academic settings)"
+    ],
+    "salary_range": {
+      "entry_level": "$57,000 - $65,000/year",
+      "mid_career": "$70,000 - $85,000/year",
+      "senior": "$90,000 - $130,000/year",
+      "top_earners": "Up to $265,000/year in specialized settings"
+    },
+    "fears": [
+      "Small profession — limited career advancement paths",
+      "Confusion with optometrists/opticians by patients and employers",
+      "Low public awareness of the orthoptic profession",
+      "Limited number of training programs restricting growth",
+      "Scope of practice challenges in some states"
+    ],
+    "motivation": [
+      "Direct impact on children's visual development and quality of life",
+      "Excellent work-life balance (standard 40-hour week, no on-call)",
+      "High demand due to nationwide shortage — strong job security",
+      "Close collaboration with ophthalmologists in specialized settings",
+      "Intellectually engaging diagnostic problem-solving"
+    ],
+    "burnout_factors": [
+      "Repetitive diagnostic testing routines",
+      "Working with uncooperative young children all day",
+      "Lack of professional recognition compared to other eye care roles",
+      "Limited salary growth compared to peers in medicine",
+      "Small community can feel isolating"
+    ]
+  },
+  "community": {
+    "summary": "Tight-knit small profession — ~90% of certified orthoptists maintain AACO membership, ~80% attend annual meetings. Strong internal community despite small numbers. Founded 1940.",
+    "associations": [
+      {
+        "name": "American Association of Certified Orthoptists (AACO)",
+        "url": "https://www.orthoptics.org",
+        "type": "Primary professional association (est. 1940)",
+        "note": "~90% membership rate among certified orthoptists"
+      },
+      {
+        "name": "American Orthoptic Council (AOC)",
+        "url": "https://www.orthoptist.org",
+        "type": "Certifying body (est. 1935)"
+      },
+      {
+        "name": "International Orthoptic Association (IOA)",
+        "type": "International organization"
+      },
+      {
+        "name": "American Academy of Ophthalmology (AAO)",
+        "url": "https://www.aao.org",
+        "type": "Allied organization — orthoptists participate in AAO meetings"
+      }
+    ],
+    "events": [
+      "AACO Annual Scientific Meeting (80% attendance rate)",
+      "AAO Annual Meeting (orthoptist sessions included)",
+      "AAPOS Annual Meeting (pediatric ophthalmology + strabismus)"
+    ],
+    "online_communities": [
+      "AACO Facebook group",
+      "AACO LinkedIn page",
+      "AACO job postings and member resources"
+    ]
+  },
+  "market": {
+    "summary": "Small but growing profession with strong demand driven by ophthalmology workforce shortage. Projected 13,330 new jobs by 2029 (4.11% annual growth). Ophthalmology supply projected to decline 12% while demand increases 24% by 2035, creating opportunities for orthoptists.",
+    "job_outlook": {
+      "projected_new_jobs": "13,330 by 2029",
+      "annual_growth": "4.11%",
+      "ophthalmology_shortage": "30% workforce inadequacy projected by 2035"
+    },
+    "salary_market": {
+      "average": "$70,000 - $85,000/year",
+      "range": "$57,000 - $265,000/year"
+    },
+    "demand_drivers": [
+      "Ophthalmology workforce shortage (12% supply decline by 2035)",
+      "Aging population increasing eye disease prevalence",
+      "20 million more routine/medical eye exams needed by 2025 vs 2015",
+      "Growing pediatric strabismus and amblyopia referrals",
+      "Limited training program seats creating supply constraints"
+    ],
+    "market_trends": [
+      "Ophthalmologists delegating more diagnostic work to orthoptists",
+      "Telehealth expanding access for remote vision assessments",
+      "Digital orthoptic platforms modernizing diagnostic workflow",
+      "Growing recognition of orthoptist role in multidisciplinary teams",
+      "Academic medical centers expanding orthoptist positions"
+    ]
+  },
+  "quality_score": 0.72,
+  "sources_count": 24,
+  "verified_sources": 8,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Orthoptist USA 2025 2026 typical day tasks strabismus binocular vision eye alignment assessment",
+      "sources": [
+        {"title": "Mayo Clinic - Orthoptist Career", "url": "https://college.mayo.edu/academics/explore-health-care-careers/careers-a-z/orthoptist/"},
+        {"title": "EyeWiki - Orthoptist", "url": "https://eyewiki.org/Orthoptist"},
+        {"title": "AAO - Adult Strabismus Orthoptist Perspective", "url": "https://www.aao.org/education/disease-review/adult-strabismus-orthoptist-perspective"},
+        {"title": "OwlGuru - What Do Orthoptists Do", "url": "https://www.owlguru.com/career/orthoptists/job-description/"}
+      ]
+    },
+    {
+      "query": "Orthoptist USA licensing certification American Orthoptic Council requirements training program 2025",
+      "sources": [
+        {"title": "AACO", "url": "https://www.orthoptics.org/"},
+        {"title": "Pearson VUE - AOC Certification", "url": "https://www.pearsonvue.com/us/en/aoc.html"},
+        {"title": "VUMC - Orthoptist Certification", "url": "https://www.vumc.org/ophthalmology/orthoptist-certification"},
+        {"title": "AACO - Become an Orthoptist", "url": "https://www.orthoptics.org/site/become-an-orthoptist"}
+      ]
+    },
+    {
+      "query": "Orthoptist USA tools equipment synoptophore prism cover test digital imaging software 2025",
+      "sources": [
+        {"title": "ClinicalTrials - Digital Orthoptic Platform", "url": "https://classic.clinicaltrials.gov/ct2/show/NCT02651389"},
+        {"title": "Reichert Phoroptor VRx", "url": "https://precision-vision.com/products/diagnostic-tools/refraction/phoroptor-vrx-digital-refraction-system-by-reichert/"}
+      ]
+    },
+    {
+      "query": "Orthoptist terminology jargon strabismus esotropia exotropia amblyopia diplopia prism diopter",
+      "sources": [
+        {"title": "StatPearls - Exotropia", "url": "https://www.ncbi.nlm.nih.gov/books/NBK578185/"},
+        {"title": "StatPearls - Esotropia", "url": "https://www.ncbi.nlm.nih.gov/books/NBK578207/"},
+        {"title": "AAO - Accommodative Esotropia", "url": "https://www.aao.org/education/disease-review/strabismus-accommodative-esotropia"},
+        {"title": "StatPearls - Strabismus", "url": "https://www.ncbi.nlm.nih.gov/books/NBK560782/"}
+      ]
+    },
+    {
+      "query": "Orthoptist USA salary 2025 2026 career path job prospects training fellowship eye care",
+      "sources": [
+        {"title": "ZipRecruiter - Orthoptist Salary 2026", "url": "https://www.ziprecruiter.com/Salaries/Orthoptist-Salary"},
+        {"title": "Duke - Orthoptic Fellowship", "url": "https://dukeeyecenter.duke.edu/education-and-training/orthoptic-fellowship-program"},
+        {"title": "PayScale - Orthoptist 2025", "url": "https://www.payscale.com/research/US/Job=Orthoptist/Salary"}
+      ]
+    },
+    {
+      "query": "Orthoptist professional associations American Association Certified Orthoptists AACO community 2025",
+      "sources": [
+        {"title": "AACO", "url": "https://www.orthoptics.org/"},
+        {"title": "AACO Facebook", "url": "https://www.facebook.com/aacoorthoptics/"},
+        {"title": "PubMed - History of Orthoptics in US", "url": "https://pubmed.ncbi.nlm.nih.gov/26564918/"}
+      ]
+    },
+    {
+      "query": "Orthoptist USA job market 2025 2026 demand outlook growth shortage eye care workforce",
+      "sources": [
+        {"title": "Recruiter - Orthoptist Outlook", "url": "https://www.recruiter.com/careers/orthoptists/outlook/"},
+        {"title": "Review of Ophthalmology - Workforce Deficit", "url": "https://www.reviewofophthalmology.com/article/contemplating-the-workforce-deficit"}
+      ]
+    }
+  ]
+}

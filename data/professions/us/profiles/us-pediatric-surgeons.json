@@ -1,0 +1,298 @@
+{
+  "profession_id": "us-pediatric-surgeons",
+  "profession_name": "Pediatric Surgeons",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Pediatric surgeons operate on children from premature neonates to young adults, managing congenital anomalies, trauma, and acquired diseases. Long days (morning rounds 5:30 AM, OR 7 AM-2:30 PM, office hours, evening rounds). Average workload ~62 hours/week. Lowest burnout rate among surgical subspecialties.",
+    "typical_tasks": [
+      "Morning rounds — examine hospitalized patients, review labs and imaging",
+      "OR cases — congenital defect repairs, appendectomies, tumor resections",
+      "Neonatal surgery — gastroschisis, CDH, NEC, intestinal atresias",
+      "Minimally invasive/laparoscopic and robotic-assisted procedures",
+      "Fetal counseling for congenital conditions (CDH, abdominal wall defects)",
+      "Write operative notes and post-op care orders",
+      "Office hours — new patient consultations, follow-up visits",
+      "Communicate with parents (anxiety management, treatment expectations)",
+      "Collaborate with pediatricians, NICU teams, and subspecialists",
+      "Evening rounds — check on post-op patients, update families"
+    ],
+    "key_documents": [
+      "Operative reports and surgical notes",
+      "Pre-operative assessment and consent forms",
+      "NICU consultation notes",
+      "Imaging reports (ultrasound, CT, MRI)",
+      "Discharge summaries and follow-up plans",
+      "Tumor board presentations",
+      "Insurance pre-authorizations for complex procedures"
+    ],
+    "deadlines": {
+      "board_certification_window": "7 years post-fellowship to complete PSQE and PSCE",
+      "abs_certification_maintenance": "Per ABS continuous certification requirements",
+      "cme_requirements": "Varies by state; typically 50+ hours per cycle",
+      "operative_notes": "Immediate post-procedure documentation required"
+    },
+    "seasonality": "Congenital cases are year-round. Appendicitis peaks slightly in summer. Trauma increases during school breaks and summer activities. NICU surgical cases are steady throughout the year."
+  },
+  "regulatory": {
+    "summary": "Board certified through ABS (American Board of Surgery) with secondary certification in pediatric surgery. Requires general surgery residency (5 years) plus pediatric surgery fellowship (2 years). Must hold unrestricted medical license.",
+    "key_laws": [
+      {
+        "name": "ABS Pediatric Surgery Certification",
+        "url": "https://www.absurgery.org/get-certified/pediatric-surgery/",
+        "description": "Qualifying Exam (PSQE) + Certifying Exam (PSCE). Must complete within 7 years post-fellowship. Requires initial certification in general surgery.",
+        "status": "Active"
+      },
+      {
+        "name": "ACGME Fellowship Standards",
+        "description": "Accreditation standards for 2-year pediatric surgery fellowship programs. Requires 48 weeks full-time clinical activity per training year (96 weeks total).",
+        "status": "Active"
+      },
+      {
+        "name": "State Medical Licensing",
+        "description": "Full and unrestricted medical license required. Temporary/educational licenses not accepted for board certification.",
+        "status": "Active"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "MD or DO degree from accredited medical school",
+        "General surgery residency (5 years, ACGME-accredited)",
+        "ABS certification in general surgery",
+        "Pediatric surgery fellowship (2 years, ACGME/RCPSC-accredited)",
+        "Full unrestricted state medical license",
+        "Pass PSQE and PSCE within 7 years of fellowship completion",
+        "DEA registration for controlled substances"
+      ]
+    },
+    "continuing_education": "ABS continuous certification program; state-dependent CME; fellowship training directors association provides ongoing education"
+  },
+  "tools": {
+    "summary": "Advanced minimally invasive surgery is central — laparoscopy and da Vinci robotic systems. Specialized pediatric-sized instruments. NICU equipment for neonatal cases. Growing adoption of robotic single-site surgery for cosmetic outcomes.",
+    "primary_tools": [
+      {
+        "name": "da Vinci Surgical System",
+        "description": "Robotic platform for minimally invasive pediatric surgery — 10x magnification, 3D HD view, tremor elimination, wristed instruments"
+      },
+      {
+        "name": "Pediatric Laparoscopic Instruments",
+        "description": "Downsized surgical instruments (3mm and 5mm) designed for small body cavities"
+      },
+      {
+        "name": "NICU Surgical Equipment",
+        "description": "Specialized equipment for bedside and OR procedures on premature/neonatal patients"
+      },
+      {
+        "name": "EMR/EHR Systems (Epic, Cerner)",
+        "description": "Electronic documentation for operative notes, orders, and patient records"
+      }
+    ],
+    "secondary_tools": [
+      "Ultrasound — for bedside assessment and guided procedures",
+      "Fluoroscopy — for GI procedures and catheter placement",
+      "Energy devices (Harmonic, LigaSure) for pediatric hemostasis",
+      "Endoscopic equipment for GI procedures",
+      "3D printing for pre-operative planning in complex cases",
+      "Telemedicine platforms for rural consultations"
+    ],
+    "pain_points": [
+      "da Vinci instruments not always optimally sized for smallest patients",
+      "EMR documentation burden",
+      "Limited robotic platforms designed specifically for pediatric use",
+      "Cost constraints at children's hospitals limiting technology adoption",
+      "Coordination complexity with multiple subspecialty teams"
+    ]
+  },
+  "terminology": {
+    "summary": "Blend of general surgery and neonatology vocabulary. Heavy focus on congenital anomalies, neonatal conditions, and pediatric-specific surgical approaches.",
+    "terms": {
+      "NEC": "Necrotizing Enterocolitis — life-threatening bowel necrosis in premature infants",
+      "CDH": "Congenital Diaphragmatic Hernia — abdominal organs in chest through diaphragm defect",
+      "gastroschisis": "Abdominal wall defect with intestines outside body at birth",
+      "omphalocele": "Abdominal wall defect with organs in sac outside body",
+      "Hirschsprung": "Absence of ganglion cells in bowel causing obstruction",
+      "pyloric stenosis": "Hypertrophied pyloric muscle causing gastric outlet obstruction",
+      "pyloromyotomy": "Ramstedt procedure — incising pyloric muscle (cure for pyloric stenosis)",
+      "intussusception": "Bowel telescoping into itself — surgical emergency if reduction fails",
+      "Nuss procedure": "Minimally invasive repair of pectus excavatum (sunken chest)",
+      "NICU": "Neonatal Intensive Care Unit",
+      "ECMO": "Extracorporeal Membrane Oxygenation — heart-lung bypass for neonates",
+      "appy": "Appendectomy (surgical slang)",
+      "lap appy": "Laparoscopic appendectomy",
+      "pull-through": "Surgical procedure removing aganglionic bowel (Hirschsprung repair)",
+      "feeding intolerance": "Inability to tolerate enteral feeds (common NICU concern)",
+      "malrotation": "Abnormal bowel rotation during fetal development",
+      "volvulus": "Bowel twisting on itself — surgical emergency",
+      "CPAM": "Congenital Pulmonary Airway Malformation (1 in 5,000 births)",
+      "Wilms tumor": "Most common childhood kidney cancer",
+      "neuroblastoma": "Most common extracranial solid tumor in children"
+    }
+  },
+  "career_psychology": {
+    "summary": "Among the longest training paths in medicine (13+ years after college). Lowest burnout rate among surgical subspecialties. Median salary $675K. Driven by the rewarding nature of helping children. Work-life balance challenges from 62-hour weeks but high career satisfaction (4.1/5).",
+    "career_path": [
+      "Bachelor's degree (4 years, pre-med)",
+      "Medical school — MD/DO (4 years)",
+      "General surgery residency (5 years)",
+      "ABS certification in general surgery",
+      "Pediatric surgery fellowship (2 years)",
+      "Pediatric surgeon — academic children's hospital or practice",
+      "Program director / department chief / research faculty"
+    ],
+    "salary_range": {
+      "fellowship": "$90,000 - $95,000/year (PGY6-7)",
+      "starting_salary": "$354,500/year median ($140K-$506K range)",
+      "mid_career": "$500,000 - $675,000/year",
+      "senior_established": "$700,000 - $900,000+/year"
+    },
+    "fears": [
+      "Losing a child patient — highest emotional stakes in surgery",
+      "Complications in premature/neonatal patients (extremely fragile)",
+      "Malpractice related to surgical outcomes in children",
+      "Missing a diagnosis in a pediatric emergency",
+      "Burnout from emotional demands of pediatric cases"
+    ],
+    "motivation": [
+      "Saving children's lives — profoundly meaningful work",
+      "Incredible variety — neonatal to adolescent, congenital to trauma",
+      "Lowest burnout rate among surgical subspecialties",
+      "Strong camaraderie in a small specialty community",
+      "Long-term patient relationships (watching children grow up healthy)",
+      "Career satisfaction rating 4.1/5"
+    ],
+    "burnout_factors": [
+      "Administrative burden (45.2% cite as top stressor)",
+      "Work-life balance challenges (42.3%) — 62-hour average weeks",
+      "Emotional exhaustion from pediatric cases and family communication",
+      "On-call demands for trauma and NICU emergencies",
+      "Depersonalization from high patient volume"
+    ]
+  },
+  "community": {
+    "summary": "APSA is the nation's largest pediatric surgical professional organization. Annual meetings provide key networking and CE. Small, tight-knit specialty community (~34 fellowship graduates per year).",
+    "associations": [
+      {
+        "name": "American Pediatric Surgical Association (APSA)",
+        "url": "https://apsapedsurg.org",
+        "type": "Primary professional association — nation's largest for the specialty"
+      },
+      {
+        "name": "Pacific Association of Pediatric Surgeons (PAPS)",
+        "url": "https://www.papsmeeting.com",
+        "type": "One of the world's largest pediatric surgery associations"
+      },
+      {
+        "name": "Association of Pediatric Surgery Training Directors (APSTPD)",
+        "url": "https://apstpd.apsapedsurg.org",
+        "type": "Fellowship training directors organization"
+      },
+      {
+        "name": "American Board of Surgery (ABS)",
+        "url": "https://www.absurgery.org",
+        "type": "Certifying board"
+      }
+    ],
+    "events": [
+      "APSA Annual Meeting 2025 — Montreal, May 7-10",
+      "APSA Annual Meeting 2026 — Chicago, May 6-9",
+      "PAPS 59th Annual Meeting 2026 — Houston, April 12-16",
+      "APSTPD Pediatric Colorectal Conference — Denver, January 2026"
+    ],
+    "online_communities": [
+      "APSA PedSurg Library — educational resources and handbook",
+      "Pediatric surgery professional groups on social media",
+      "r/surgery and r/residency for training discussions"
+    ]
+  },
+  "market": {
+    "summary": "All recent fellowship graduates find employment, though some wait 6+ months. Workforce growth exceeds pediatric population growth by 50%, but geographic distribution creates access gaps in rural areas. Median salary $675K with average $702K.",
+    "job_outlook": {
+      "fellowship_graduates_per_year": "~34",
+      "employment_rate": "100% of graduates find positions",
+      "workforce_vs_population": "50% faster workforce growth than pediatric population",
+      "geographic_challenge": "Significant rural access disparities"
+    },
+    "salary_market": {
+      "median": "$675,000/year",
+      "average": "$702,000/year",
+      "starting_median": "$354,500/year",
+      "clinical_heavy_starting": "$427,500/year (>90% clinical)"
+    },
+    "demand_drivers": [
+      "Congenital anomalies requiring surgical intervention (steady incidence)",
+      "Neonatal surgical care in NICUs",
+      "Pediatric trauma centers needing surgical coverage",
+      "Fetal surgery expanding indications",
+      "Robotic surgery creating new capabilities"
+    ],
+    "market_trends": [
+      "Academic vs. private practice balance shifting toward academic",
+      "Minimally invasive and robotic surgery growing",
+      "Telemedicine consultations for rural access",
+      "Subspecialization within pediatric surgery (fetal, oncology, colorectal)",
+      "Fellowship entry rate (34/year) may slow workforce growth after 2025"
+    ]
+  },
+  "quality_score": 0.80,
+  "sources_count": 30,
+  "verified_sources": 12,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Pediatric Surgeon USA 2025 2026 typical day tasks procedures cases neonatal congenital children surgery",
+      "sources": [
+        {"title": "PedSurgical - Day in the Life", "url": "https://www.pedsurgical.com/day-life-pediatric-surgeon/"},
+        {"title": "CHOC - Day in the Life", "url": "https://inside.choc.org/day-in-the-life-pediatric-surgeon-dr-yu/"},
+        {"title": "O*NET - 29-1243.00", "url": "https://www.onetonline.org/link/summary/29-1243.00"},
+        {"title": "Hopkins - Pediatric Surgery Procedures", "url": "https://www.hopkinsmedicine.org/all-childrens-hospital/services/pediatric-general-surgery/procedures"}
+      ]
+    },
+    {
+      "query": "Pediatric Surgeon USA licensing board certification ABS fellowship requirements 2025",
+      "sources": [
+        {"title": "ABS - Pediatric Surgery", "url": "https://www.absurgery.org/get-certified/pediatric-surgery/"},
+        {"title": "ABS - Training Requirements", "url": "https://www.absurgery.org/get-certified/pediatric-surgery/training-requirements/"},
+        {"title": "ABS - Qualifying Exam", "url": "https://www.absurgery.org/get-certified/pediatric-surgery/qualifying-exam/"}
+      ]
+    },
+    {
+      "query": "Pediatric surgery tools technology robotic surgery da Vinci minimally invasive laparoscopic 2025",
+      "sources": [
+        {"title": "Children's Colorado - Robotic Surgery", "url": "https://www.childrenscolorado.org/doctors-and-departments/departments/robotic-surgery-program/"},
+        {"title": "Cleveland Clinic - da Vinci", "url": "https://my.clevelandclinic.org/health/treatments/16908-da-vinci-surgery"},
+        {"title": "Springer - Robotic Single Site in Pediatrics 2025", "url": "https://link.springer.com/article/10.1007/s11701-025-02276-7"}
+      ]
+    },
+    {
+      "query": "Pediatric surgery terminology jargon abbreviations NEC Hirschsprung pyloric stenosis appendectomy NICU",
+      "sources": [
+        {"title": "WashU - Hirschsprung Disease", "url": "https://pediatricsurgery.wustl.edu/patient-care/congenital-and-pediatric-conditions/hirschsprungs-disease/"},
+        {"title": "PedSurg Library - Handbook", "url": "https://www.pedsurglibrary.com/apsa/view/PedSurg%20Resource/1884019/all/Resident_and_Student_Handbook"},
+        {"title": "WashU - Pyloric Stenosis", "url": "https://pediatricsurgery.wustl.edu/patient-care/congenital-and-pediatric-conditions/pyloric-stenosis/"}
+      ]
+    },
+    {
+      "query": "Pediatric Surgeon USA salary 2025 2026 career path burnout fellowship compensation",
+      "sources": [
+        {"title": "SalaryDr - Pediatric Surgery 2026", "url": "https://www.salarydr.com/specialty/pediatric-surgery"},
+        {"title": "PayScale - Pediatric Surgeon 2026", "url": "https://www.payscale.com/research/US/Job=Pediatric_Surgeon/Salary"},
+        {"title": "ScienceDirect - Drivers of Distress in Pediatric Surgeons", "url": "https://www.sciencedirect.com/science/article/abs/pii/S0022346821000130"}
+      ]
+    },
+    {
+      "query": "Pediatric surgery professional associations APSA conferences community 2025 2026",
+      "sources": [
+        {"title": "APSA - Annual Meeting", "url": "https://apsapedsurg.org/continuing-education/events/annual-meeting/"},
+        {"title": "APSA 2026 Chicago", "url": "https://www.emedevents.com/c/medical-conferences-2026/american-pediatric-surgical-association-apsa-2026-annual-meeting"},
+        {"title": "PAPS 2026 Houston", "url": "https://www.papsmeeting.com/"}
+      ]
+    },
+    {
+      "query": "Pediatric Surgeon USA job market 2025 2026 demand outlook growth shortage workforce",
+      "sources": [
+        {"title": "PubMed - Future Supply", "url": "https://pubmed.ncbi.nlm.nih.gov/27280514/"},
+        {"title": "ScienceDirect - Current Job Market", "url": "https://www.sciencedirect.com/science/article/abs/pii/S002234682300132X"},
+        {"title": "BLS - Physicians and Surgeons", "url": "https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm"}
+      ]
+    }
+  ]
+}

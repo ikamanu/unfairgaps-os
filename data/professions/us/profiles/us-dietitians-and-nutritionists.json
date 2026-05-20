@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-dietitians-and-nutritionists",
+  "profession_name": "Dietitians and Nutritionists",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Hospital/clinical dietitians: assess patients' nutritional needs, develop meal plans, provide nutrition counseling, chart in EHR, attend interdisciplinary rounds. Community/outpatient: individual and group counseling sessions, develop educational materials, conduct cooking demonstrations. Administrative time for documentation, care plans, and continuing education. Typical 40-hour work week.",
+    "key_documents": ["Nutrition assessment forms", "Medical nutrition therapy (MNT) plans", "Patient diet orders", "Clinical documentation in EHR (ADIME or SOAP notes)", "Calorie/nutrient calculations", "Education handouts", "Insurance billing documentation (MNT billing codes)", "Quality improvement reports"],
+    "deadlines": "CDR credential renewal every 5 years with 75 CPEUs. State license renewal cycles. Patient discharge diet planning timelines. Research grant deadlines for academic dietitians. Quality reporting deadlines for hospital dietitians.",
+    "seasonality": "New Year's resolution period (January) drives demand for counseling. National Nutrition Month (March) increases visibility. Holiday season creates demand for weight management. Diabetes awareness month (November) drives screenings."
+  },
+  "regulatory": {
+    "laws_and_standards": ["State dietitian/nutritionist licensing laws (varies — some states license, others certify or have title protection)", "Medicare MNT benefit regulations", "HIPAA patient privacy", "Joint Commission standards (hospital dietitians)", "CMS Conditions of Participation (dietary services)", "State scope of practice laws"],
+    "licensing": "RDN (Registered Dietitian Nutritionist) credential through CDR (Commission on Dietetic Registration). Starting 2024, graduate degree required for new RDNs (master's minimum). Complete ACEND-accredited didactic program and supervised practice. Pass CDR registration exam. State licensure required in most states (varies). 75 CPEUs every 5 years for renewal.",
+    "penalties": "State board actions for practicing without license. Loss of RDN credential for CE non-compliance. Malpractice liability for adverse nutrition outcomes. CMS penalties for billing fraud. Title protection violations in states with certification laws.",
+    "regulatory_bodies": ["CDR (Commission on Dietetic Registration)", "ACEND (Accreditation Council for Education in Nutrition and Dietetics)", "State dietetics licensing boards", "CMS (for Medicare MNT benefit)", "Joint Commission (hospital standards)"]
+  },
+  "tools": {
+    "software": ["CBORD - foodservice and nutrition management", "Computrition - healthcare nutrition software", "Epic/Cerner - EHR documentation (nutrition modules)", "Nutritics - nutrient analysis", "ESHA Genesis - food formulation and labeling", "Cronometer - nutrition tracking", "MyFitnessPal Pro - patient counseling tool"],
+    "platforms": ["Academy of Nutrition and Dietetics eatrightPRO - professional resources", "CDR credential management portal", "Telehealth platforms (Zoom, Doxy.me) for virtual counseling", "Healthie - practice management for private practice RDNs", "SimplePractice - telehealth and billing"],
+    "gov_portals": ["CMS Medicare MNT benefit portal", "USDA nutrition databases (FoodData Central)", "State dietetics licensing portals", "NIH dietary supplement database"]
+  },
+  "terminology": {
+    "jargon": ["Medical Nutrition Therapy (MNT)", "Enteral nutrition (tube feeding)", "Parenteral nutrition (IV feeding)", "Malnutrition screening", "Renal diet", "Cardiac diet", "Glycemic index", "Macronutrient distribution", "ADIME documentation (Assessment, Diagnosis, Intervention, Monitoring, Evaluation)", "NCP (Nutrition Care Process)"],
+    "abbreviations": ["RDN - Registered Dietitian Nutritionist", "RD - Registered Dietitian", "CDR - Commission on Dietetic Registration", "MNT - Medical Nutrition Therapy", "CPEU - Continuing Professional Education Unit", "TPN - Total Parenteral Nutrition", "PEG - Percutaneous Endoscopic Gastrostomy", "BMI - Body Mass Index", "REE - Resting Energy Expenditure", "IDDSI - International Dysphagia Diet Standardisation Initiative", "AND - Academy of Nutrition and Dietetics", "ACEND - Accreditation Council for Education in Nutrition and Dietetics"]
+  },
+  "career_psychology": {
+    "career_levels": ["Entry-Level Clinical Dietitian (0-3 years)", "Clinical Dietitian II/Senior (3-7 years)", "Clinical Nutrition Manager (7-12 years)", "Director of Nutrition Services (12+ years)", "Private Practice Owner", "Specialized: Renal, Oncology, Pediatric, Sports, etc."],
+    "fears": ["Low pay relative to education and credential requirements (master's degree now required)", "Scope creep from unqualified 'nutritionists' and health coaches", "Insurance reimbursement challenges for MNT", "Student loan burden for master's degree", "Being undervalued in clinical settings"],
+    "motivation": "Direct impact on patient health through food and nutrition; growing recognition of diet's role in chronic disease; flexible career paths (clinical, community, private practice, corporate wellness, food industry); 7% job growth projected — faster than average.",
+    "burnout": "Moderate burnout in hospital settings due to high patient loads and time pressure. Documentation burden in EHR. Emotional labor of counseling patients with chronic conditions. Better work-life balance in outpatient/private practice settings. Staffing shortages in hospital foodservice departments."
+  },
+  "community": {
+    "reddit": ["r/dietetics", "r/RegisteredDietitians", "r/nutrition", "r/clinicalnutrition"],
+    "linkedin": ["Academy of Nutrition and Dietetics", "Clinical Nutrition Professionals", "Sports Dietitians group", "Private Practice Dietitians"],
+    "associations": ["AND (Academy of Nutrition and Dietetics) — largest, >112,000 members", "ASPEN (American Society for Parenteral and Enteral Nutrition)", "SCAN (Sports, Cardiovascular, and Wellness Nutrition)", "State dietetic associations", "Dietitians in Integrative and Functional Medicine (DIFM)"],
+    "conferences": ["AND FNCE (Food & Nutrition Conference & Expo) - annual, October", "ASPEN Nutrition Science & Practice Conference", "State dietetic association meetings", "Academy Integrative Health and Medicine Conference"]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 52000,
+      "mid_level_usd": 68000,
+      "senior_level_usd": 79000,
+      "director_specialist_usd": 102000
+    },
+    "average_salary_usd": 74000,
+    "job_count_estimate": "About 84,000 dietitians and nutritionists in the US (BLS). 7% projected growth 2023-2033 (faster than average). Growing demand in hospitals, outpatient clinics, corporate wellness, and private practice.",
+    "work_arrangements": "Hospitals (largest employer), outpatient clinics, long-term care, community health centers, private practice, corporate wellness programs, food industry. Standard 40-hour weeks. Growing telehealth/virtual counseling options. Part-time and flexible scheduling common.",
+    "trends": ["Master's degree requirement for new RDNs (effective 2024)", "Telehealth nutrition counseling expanding rapidly", "7% job growth projected through 2033", "Aging population driving demand for MNT", "Precision nutrition and nutrigenomics emerging", "AI tools for meal planning and nutrient analysis", "Growing private practice and direct-to-consumer models", "RDN Salary Calculator from Academy helping negotiate compensation"]
+  },
+  "quality_score": 0.80,
+  "sources_count": 7,
+  "verified_sources": 5
+}

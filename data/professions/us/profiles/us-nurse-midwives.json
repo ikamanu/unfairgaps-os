@@ -1,0 +1,98 @@
+{
+  "profession_id": "us-nurse-midwives",
+  "profession_name": "Nurse Midwives",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "CNMs work irregular hours including nights, weekends, and on-call shifts, as births are unpredictable. A typical day begins with reviewing patient charts and prenatal schedules. Core tasks: conducting prenatal visits (measuring fundal height, fetal heart tones, blood pressure), ordering and interpreting lab work and ultrasounds, providing labor and delivery support (monitoring contractions, fetal heart rate, cervical dilation), managing pain with pharmacologic and non-pharmacologic methods, performing deliveries (vaginal births, occasionally assisting in cesareans), postpartum care and newborn assessments up to 28 days, gynecological exams (Pap smears, breast exams, STI screening), family planning counseling, prescribing medications. Hospital-based CNMs typically work 12-hour shifts or 24-hour call; outpatient/birth center CNMs work 8-10 hour clinic days plus on-call coverage. Approximately 12,000 CNMs practice in the US across hospitals (94% of births), birth centers, home birth practices, and private clinics.",
+    "documents": ["Prenatal care records", "Labor and delivery notes", "Partograms (labor progress charts)", "Newborn assessment forms", "Postpartum discharge summaries", "Informed consent forms", "Birth certificates", "Medication prescriptions", "Lab order requisitions", "Ultrasound reports", "Patient education materials", "Collaborative practice agreements (state-dependent)", "Insurance billing documentation (CPT/ICD-10 codes)", "Peer review documentation"],
+    "deadlines": ["Prenatal visit schedules (monthly to weekly as pregnancy progresses)", "Lab work timing (first trimester screening, glucose tolerance test at 24-28 weeks, GBS culture at 35-37 weeks)", "Postpartum follow-up visits (3-6 weeks post-delivery)", "Birth certificate filing (varies by state, typically within 5-10 days)", "AMCB certification renewal every 5 years", "State license renewal (every 1-3 years depending on state)", "Continuing education requirements (varies by state, typically 20-40 hours per cycle)", "Collaborative practice agreement renewals", "Malpractice insurance renewal annually", "Mandated reporting deadlines for adverse events"],
+    "seasonality": "Birth volumes peak in late summer and early fall (August-October) due to conception patterns. January also sees increased births. Holiday periods (Thanksgiving, Christmas, New Year) often have reduced elective inductions but emergent deliveries continue. Flu season (October-March) requires additional vaccination counseling for pregnant patients. Annual Well-Woman visits cluster around insurance renewal periods (January, open enrollment). GYN visits increase in spring for annual exam scheduling."
+  },
+  "regulatory": {
+    "laws": ["State Nurse Practice Acts", "HIPAA (Health Insurance Portability and Accountability Act)", "EMTALA (Emergency Medical Treatment and Labor Act)", "Nurse Licensure Compact (NLC)", "State-specific CNM practice authority statutes", "Born-Alive Infants Protection Act", "Newborns' and Mothers' Health Protection Act (48-hour postpartum hospital stay)", "Title XIX Medicaid CNM reimbursement mandate", "DEA registration requirements for prescriptive authority", "State controlled substance prescribing regulations", "OSHA workplace safety standards", "Title V Maternal and Child Health Block Grant provisions"],
+    "licensing": "Master's or doctoral degree (MSN, DNP, or PhD) from an ACME-accredited nurse-midwifery program required. Must hold active RN license. Pass AMCB national certification exam ($500 fee as of October 2025). Certification expires December 31 of the fifth year following issuance; renewal requires completion of AMCB Certificate Maintenance Program (CMP) with continuing education and practice hours. Nearly 40 states mandate graduate-level education for licensure. 19 states require written collaborative practice agreements with physicians. 7 states allow independent practice but without prescriptive authority unless under collaborative agreement. Full independent practice authority (including prescribing) available in approximately 24 states and growing. DEA registration required for prescribing controlled substances. NPI number required for billing. State-specific requirements vary significantly.",
+    "penalties": "Practicing without valid CNM license/certification: fines, criminal misdemeanor/felony charges, permanent license revocation. HIPAA violations: $100-$50,000 per incident, up to $1.5M annually per violation category. Practicing outside scope without collaborative agreement (in required states): license suspension, fines up to $10,000. DEA violations for improper prescribing: license revocation, criminal prosecution. Failure to report adverse events: disciplinary action, license suspension. Malpractice liability: average OB malpractice claims $500K-$1M+; CNM malpractice insurance $5,000-$15,000/year. Failure to file birth certificates: state-specific fines. EMTALA violations for refusing emergency obstetric care: $50,000+ per incident.",
+    "regulatory_bodies": ["State Boards of Nursing", "American Midwifery Certification Board (AMCB)", "ACME (Accreditation Commission for Midwifery Education)", "NCSBN (National Council of State Boards of Nursing)", "DEA (Drug Enforcement Administration)", "CMS (Centers for Medicare & Medicaid Services)", "Joint Commission", "State Health Departments", "OSHA"]
+  },
+  "tools": {
+    "software": ["Epic (dominant hospital EHR for L&D documentation)", "Oracle Cerner (hospital EHR with OB module)", "Maternity Neighborhood (midwife-specific EHR for birth centers and independent practices)", "Mobile Midwife EHR (iPad-based charting for independent/home birth practices)", "ClientCare (midwifery practice EHR with AI-assisted notes and offline charting)", "Pario Health (OB/GYN and midwifery EMR for high-volume clinics)", "athenahealth (outpatient practice management)", "AdvancedMD (outpatient billing and scheduling)", "Praxis EMR (women's health-focused EHR)", "MEDITECH (hospital EHR)", "Accuro EMR (midwives specialty module)", "Pyxis MedStation (medication dispensing in hospitals)", "UpToDate/DynaMed (clinical decision support)", "Lexicomp (drug reference for prescribing)", "Telehealth platforms (Doxy.me, Zoom for Healthcare)"],
+    "platforms": ["ACNM Connect (American College of Nurse-Midwives member community)", "Midwifery Today Online", "UpToDate (clinical reference)", "Journal of Midwifery & Women's Health (JMWH — peer-reviewed journal)", "Medscape OB/GYN", "Gold Midwifery (continuing education platform)", "ACOG Practice Bulletins (obstetric guidelines reference)", "Cochrane Pregnancy & Childbirth (evidence-based reviews)"],
+    "gov_portals": ["Nursys (license verification — NCSBN)", "State Board of Nursing portals", "DEA CSOS (Controlled Substances Ordering System)", "CDC Perinatal Quality Collaboratives portal", "State immunization registries", "CMS PECOS (provider enrollment)", "NPI Registry (NPPES)", "State vital records/birth certificate systems"]
+  },
+  "terminology": {
+    "jargon": ["Scope of practice", "Collaborative practice agreement", "Full practice authority", "Prescriptive authority", "Low-risk pregnancy", "Physiologic birth", "Evidence-based practice", "Shared decision-making", "Midwifery model of care", "Continuity of care", "Caseload midwifery", "Centering Pregnancy (group prenatal care model)", "Waterbirth", "Skin-to-skin (golden hour)", "Informed consent/refusal", "Expectant management", "Active management of third stage", "Hands and knees (positioning)", "Birth plan", "Shared management/co-management", "Risk-out/transfer of care", "Catching babies (delivering)", "Laboring down", "Rupture of membranes (ROM/AROM/SROM/PPROM)", "Bishop score", "Fundal height"],
+    "abbreviations": ["CNM - Certified Nurse-Midwife", "CM - Certified Midwife", "CPM - Certified Professional Midwife", "APRN - Advanced Practice Registered Nurse", "AMCB - American Midwifery Certification Board", "ACNM - American College of Nurse-Midwives", "ACME - Accreditation Commission for Midwifery Education", "FHT - Fetal Heart Tones", "FHR - Fetal Heart Rate", "EFM - Electronic Fetal Monitoring", "EDD - Estimated Date of Delivery", "LMP - Last Menstrual Period", "G/P - Gravida/Para (pregnancy/birth history)", "GTPAL - Gravida Term Preterm Abortions Living", "GBS - Group B Streptococcus", "GDM - Gestational Diabetes Mellitus", "PIH - Pregnancy-Induced Hypertension", "HELLP - Hemolysis Elevated Liver enzymes Low Platelets", "VBAC - Vaginal Birth After Cesarean", "TOLAC - Trial of Labor After Cesarean", "SVD - Spontaneous Vaginal Delivery", "NSVD - Normal Spontaneous Vaginal Delivery", "PPH - Postpartum Hemorrhage", "PPROM - Preterm Premature Rupture of Membranes", "AROM - Artificial Rupture of Membranes", "SROM - Spontaneous Rupture of Membranes", "IOL - Induction of Labor", "APGAR - Appearance Pulse Grimace Activity Respiration", "NRP - Neonatal Resuscitation Program", "L&D - Labor and Delivery", "PP - Postpartum", "MVU - Montevideo Units", "BPP - Biophysical Profile", "NST - Non-Stress Test", "AFI - Amniotic Fluid Index", "IUD/IUC - Intrauterine Device/Contraception", "LARC - Long-Acting Reversible Contraception"]
+  },
+  "career_psychology": {
+    "career_levels": ["BSN/RN (prerequisite nursing experience, typically 1-2 years L&D or women's health)", "MSN/DNP Student in Nurse-Midwifery", "New Graduate CNM (first 1-2 years)", "Staff CNM (3-5 years, building autonomous caseload)", "Senior CNM / Lead Midwife (5-10 years, mentoring, complex cases)", "CNM Practice Director / Clinical Director", "CNM Educator / Faculty (university programs)", "CNM Researcher / PhD track", "Director of Midwifery Services", "Independent Practice Owner / Birth Center Director", "Policy Advocate / ACNM Leadership", "DNP-prepared CNM (clinical doctorate, leadership roles)"],
+    "fears": ["Maternal or neonatal mortality/morbidity during birth — the weight of two lives", "Missing warning signs of preeclampsia, hemorrhage, or fetal distress", "Being sued for malpractice (OB has highest malpractice rates in medicine)", "Losing prescriptive authority or practice rights due to legislative changes", "Scope of practice restrictions forcing physician dependency", "Being blamed for adverse outcomes in a litigious culture", "Inadequate backup physician support during emergencies", "Not being taken seriously by physician colleagues or hospital administrators", "Insurance companies denying CNM-attended birth reimbursement", "Burnout from on-call lifestyle disrupting family life"],
+    "motivation": ["Deep personal connection with patients through pregnancy and birth journey", "87% of practicing CNMs would choose the same career path again", "Promoting physiologic birth and reducing unnecessary interventions", "Improving maternal outcomes (CNM-attended births show lower cesarean rates)", "Autonomy in clinical decision-making", "Addressing maternal health disparities in underserved communities", "Strong evidence base supporting midwifery model of care", "Growing recognition and expanded practice authority nationwide", "Competitive salary ($130K-$140K median) with strong job security", "Meaningful work witnessing new life and supporting families"],
+    "burnout": "Burnout is a significant concern driven by unpredictable on-call schedules, sleep deprivation from overnight births, emotional weight of maternal/neonatal outcomes, high patient volumes, and documentation burden. Many CNMs report compensation does not fully match workload demands, fueling debates about pay equity and retention. Work-life balance is the top challenge — births happen 24/7 and on-call responsibilities strain personal relationships. Caseload midwifery models (where one CNM follows patients through pregnancy to birth) intensify emotional investment but improve satisfaction. Staffing shortages in hospitals increase per-provider patient loads. Key improvement levers: group practice models sharing call, scheduled time off after births, mental health support, reduced administrative burden through AI-assisted documentation, flexible scheduling, and fair on-call compensation."
+  },
+  "community": {
+    "reddit": ["r/Midwifery", "r/NursePractitioner (overlapping APRN community)", "r/nursing (general nursing discussion)", "r/BabyBumps (patient perspective, CNMs contribute)", "r/StudentNurse (prospective CNMs)"],
+    "linkedin": ["ACNM (American College of Nurse-Midwives) LinkedIn", "Midwifery Business Network", "Advanced Practice Provider groups", "Women's Health Nurse Practitioners groups", "Nurse-Midwifery faculty/education networks"],
+    "associations": ["ACNM (American College of Nurse-Midwives) — primary professional association for CNMs and CMs in the US", "AMCB (American Midwifery Certification Board) — certification body", "ACOG (collaborative relationship — American College of Obstetricians and Gynecologists)", "AWHONN (Association of Women's Health, Obstetric and Neonatal Nurses)", "AABC (American Association of Birth Centers)", "MANA (Midwives Alliance of North America — broader midwifery community)", "Midwifery Business Network (ACNM affiliate)", "National Association of Certified Professional Midwives (NACPM)", "State-level midwifery chapters and affiliates"],
+    "conferences": ["ACNM 70th Annual Meeting & Exhibition — October 10-13, 2025, Palm Springs, CA", "ACNM 71st Annual Meeting & Exhibition — October 9-12, 2026, Kansas City, MO", "ACNM Health Policy Summit & Hill Day — May 4-5, 2026, Washington, D.C.", "Midwifery Works (ACNM business skills conference)", "AWHONN Annual Convention", "AABC Birth Institute", "Gold Midwifery Continuing Education programs", "State-level midwifery association conferences", "SMFM (Society for Maternal-Fetal Medicine) Annual Meeting (interdisciplinary)"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "new_graduate_cnm": "105000-112000",
+      "staff_cnm_3_5_years": "120000-135000",
+      "senior_cnm_experienced": "135000-160000",
+      "practice_director_leadership": "150000-180000",
+      "high_demand_states_ca_az_ny": "160000-225000+",
+      "independent_practice_owner": "140000-200000+ (variable)"
+    },
+    "national_average_usd": 131570,
+    "job_count": "Approximately 12,000 CNMs employed in the US; ~500 new positions projected 2023-2033",
+    "growth_rate": "7-12% projected growth 2022-2034 (faster than average for all occupations); BLS reports 11.1% through 2034",
+    "unemployment_rate": "Very low — strong demand especially in underserved and rural areas",
+    "work_arrangements": ["Hospitals (largest employer — L&D units, OB departments)", "Birth centers (freestanding, accredited)", "Physician group practices (OB/GYN groups)", "Federally Qualified Health Centers (FQHCs)", "Independent midwifery practices", "Home birth practices", "Academic medical centers", "Military and VA healthcare systems", "Telehealth (prenatal consultations, postpartum follow-up)", "Community health centers", "Public health departments"],
+    "trends": ["Healthcare added 82,000 jobs in January 2026, comprising 63% of all new US jobs — strong tailwind for CNMs", "Expanding full practice authority across states reduces physician collaboration barriers", "Growing consumer demand for midwifery model of care and physiologic birth", "Rising cesarean rates (32%+) driving interest in CNM-led care to reduce interventions", "Maternal mortality crisis (US has highest maternal death rate among developed nations) increasing demand for midwifery", "Medicaid expansion covering more births increases CNM-eligible patient population", "Birth center growth — AABC reports 30%+ increase in accredited birth centers since 2020", "Telehealth integration for prenatal/postpartum visits post-COVID", "AI-assisted documentation reducing charting burden", "DNP (Doctor of Nursing Practice) becoming preferred terminal degree for CNMs", "Rural maternal care deserts creating high demand for CNMs in underserved areas", "Insurance parity laws advancing — more states mandating equal reimbursement for CNM services"]
+  },
+  "soc_code": "29-1161.00",
+  "job_zone": 5,
+  "category": "healthcare",
+  "quality_score": 92,
+  "sources_count": 35,
+  "verified_sources": 28,
+  "confidence": 0.91,
+  "sources": [
+    "https://nurse.org/education/what-nurse-midwives-do/",
+    "https://www.indeed.com/hire/job-description/certified-nursing-midwife",
+    "https://nurseslabs.com/certified-nurse-midwife/",
+    "https://nursing.jnj.com/specialty/certified-nurse-midwife",
+    "https://www.nurse.com/solutions/resources/job-descriptions/certified-nurse-midwife-cnm-job-description-template",
+    "https://www.careeronestop.org/Toolkit/Careers/Occupations/occupation-profile.aspx?keyword=Nurse+Midwives&location=US&onetcode=29116100",
+    "https://www.graduatenursingedu.org/careers/certified-nurse-midwife/what-does-a-midwife-do/",
+    "https://www.midwifeschooling.com/blog/midwife-licensing-laws-by-state/",
+    "https://www.midwifeschooling.com/independent-practice-and-collaborative-agreement-states/",
+    "https://www.midwifeschooling.com/midwifery-roles-and-credentials/",
+    "https://nursinglicensemap.com/advanced-practice-nursing/certified-nurse-midwife-cnm/",
+    "https://midwife.org/certified-midwife-credential/",
+    "https://www.amcbmidwife.org/amcb-certification",
+    "https://research.com/advice/nurse-midwifery-masters-degree-licensure-requirements-by-state",
+    "https://maternityneighborhood.com/",
+    "http://www.mobilemidwifeehr.com/",
+    "https://clientcare.net/",
+    "https://www.pariohealth.com/",
+    "https://www.praxisemr.com/best-ehr-for-womens-health-and-wellness.html",
+    "https://healthcareitskills.com/top-ehr-systems-2026-epic-cerner-oracle-meditech-allscripts/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK326680/",
+    "https://nurse.org/resources/nursing-acronyms-abbreviations/",
+    "https://www.blackwellpublishing.com/pdf/jmwh_styleguide.pdf",
+    "https://www.registerednursing.org/articles/is-nurse-midwifery-right-for-you/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10443294/",
+    "https://research.com/careers/how-to-become-a-midwife-salary-and-career-paths",
+    "https://nursingeducation.org/careers/certified-nurse-midwife/",
+    "https://midwife.org/conferences/",
+    "https://annualmeeting.midwife.org/",
+    "https://www.midwife.org/default.aspx",
+    "https://www.midwifeschooling.com/salaries/",
+    "https://www.bls.gov/oes/2023/may/oes291161.htm",
+    "https://www.intelycare.com/career-advice/nurse-midwife-salary-facts-figures-and-salaries-by-state/",
+    "https://research.com/advice/is-demand-for-nurse-midwifery-degree-graduates-growing-or-declining",
+    "https://nurse.org/news/healthcare-jobs-added-january/"
+  ]
+}

@@ -1,0 +1,644 @@
+[
+  {
+    "id": "us-cytotechnologists-p01",
+    "title": "CLIA Workload Tracking & Compliance Calculator",
+    "problem": "Cytotechnologists must track daily slide counts to comply with CLIA's 100-slide per 24-hour limit (42 CFR 493.1274). Manual tracking across gynecological, non-gynecological, and FNA cases is error-prone. Exceeding the limit risks CLIA sanctions, fines, and potential lab certificate revocation.",
+    "who": "All cytotechnologists in CLIA-regulated labs",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 25000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "CLIA Slide Workload Calculator",
+      "one_liner": "Tracks daily slide screening counts against CLIA workload limits and calculates remaining capacity",
+      "inputs": [
+        {
+          "name": "gyn_slides",
+          "type": "number",
+          "label": "Gynecological slides screened today"
+        },
+        {
+          "name": "non_gyn_slides",
+          "type": "number",
+          "label": "Non-gynecological slides screened today"
+        },
+        {
+          "name": "fna_cases",
+          "type": "number",
+          "label": "FNA cases reviewed today"
+        },
+        {
+          "name": "qc_rescreens",
+          "type": "number",
+          "label": "QC re-screens performed today"
+        },
+        {
+          "name": "shift_hours",
+          "type": "number",
+          "label": "Shift length (hours)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "total_slides",
+          "label": "Total slide count for 24-hour period"
+        },
+        {
+          "name": "remaining_capacity",
+          "label": "Remaining slides allowed under CLIA limit"
+        },
+        {
+          "name": "compliance_status",
+          "label": "CLIA compliance status (OK/Warning/Violation)"
+        },
+        {
+          "name": "hourly_rate",
+          "label": "Average slides per hour screened"
+        }
+      ],
+      "formula_hint": "Total = gyn + non_gyn + fna + qc. CLIA max = 100/24h. Warning at 80. FNA cases may count as multiple slides depending on prep type. Calculate hourly rate = total / shift_hours.",
+      "rates": {
+        "clia_max_slides_24h": 100,
+        "warning_threshold": 80,
+        "fna_slide_multiplier": 1.5
+      }
+    },
+    "example_queries": [
+      "I've screened 45 Paps, 12 non-gyn, and 3 FNA cases so far today - how many more slides can I do?",
+      "Calculate my CLIA workload compliance for 78 gyn slides and 15 non-gyn in an 8-hour shift"
+    ]
+  },
+  {
+    "id": "us-cytotechnologists-p02",
+    "title": "Proficiency Testing Schedule & Deadline Tracker",
+    "problem": "Cytotechnologists must pass proficiency testing events on strict schedules to maintain CLIA compliance and CAP accreditation. Missing PT deadlines or failing to document results can trigger lab sanctions. Tracking multiple PT cycles, CE deadlines, and ASCP renewal dates across different systems is burdensome.",
+    "who": "All certified cytotechnologists and lab supervisors",
+    "frequency": "quarterly",
+    "time_waste_h": 3,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Cytology Compliance Calendar",
+      "one_liner": "Quick lookup of proficiency testing deadlines, ASCP renewal dates, CLIA inspection cycles, and CE requirements",
+      "data_domain": "CLIA proficiency testing schedules, ASCP certification renewal cycles, CAP accreditation timelines for cytology labs",
+      "lookup_keys": [
+        "deadline_type",
+        "certification_body",
+        "renewal_year",
+        "state"
+      ],
+      "data_hints": {
+        "source_law": "42 CFR 493.1274, ASCP BOC certification maintenance",
+        "key_sections": [
+          "CLIA PT requirements",
+          "ASCP 3-year renewal cycle",
+          "CAP inspection timeline",
+          "CMS March 2026 remote review deadline"
+        ]
+      }
+    },
+    "example_queries": [
+      "When is the next proficiency testing deadline for our cytology lab?",
+      "What are the ASCP CT certification renewal requirements and CE hours needed?",
+      "What's the CMS deadline for separate CLIA certificates for remote digital slide review?"
+    ]
+  },
+  {
+    "id": "us-cytotechnologists-p03",
+    "title": "Bethesda System Classification Advisor",
+    "problem": "Cytotechnologists encounter borderline cellular abnormalities that are difficult to classify under the Bethesda System. Distinguishing ASCUS from LSIL or LSIL from HSIL requires nuanced criteria. Misclassification can lead to missed cancer diagnoses or unnecessary patient interventions, with medicolegal consequences.",
+    "who": "Junior and mid-level cytotechnologists screening Pap smears",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Bethesda Classification Advisor",
+      "one_liner": "Guides cytotechnologists through Bethesda System criteria for borderline cervical cytology findings",
+      "expertise_area": "Bethesda System classification criteria for cervical cytology",
+      "decision_criteria": [
+        "cell morphology description",
+        "nuclear-to-cytoplasmic ratio",
+        "chromatin pattern",
+        "specimen adequacy",
+        "patient HPV status"
+      ],
+      "context_needed": [
+        "terminology.jargon",
+        "regulatory.laws_and_standards"
+      ]
+    },
+    "example_queries": [
+      "I see cells with slightly enlarged nuclei and mild hyperchromasia but no koilocytosis - ASCUS or LSIL?",
+      "What are the key Bethesda criteria to distinguish HSIL from LSIL on a ThinPrep slide?"
+    ]
+  },
+  {
+    "id": "us-cytotechnologists-p04",
+    "title": "QC 10% Re-screen Documentation Generator",
+    "problem": "CLIA requires mandatory 10% random re-screening of negative Pap smears as quality control. Cytotechnologists must document which cases were selected, re-screening results, discrepancies found, and corrective actions. Creating these QC logs manually is tedious and error-prone, but incomplete documentation fails CAP inspections.",
+    "who": "Lead and supervisory cytotechnologists responsible for QC programs",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "QC Re-screen Log Generator",
+      "one_liner": "Generates standardized CLIA-compliant 10% re-screen quality control documentation",
+      "doc_name": "Cytology QC Re-screen Log",
+      "variables": [
+        {
+          "name": "lab_name",
+          "label": "Laboratory name"
+        },
+        {
+          "name": "review_period",
+          "label": "Review period (date range)"
+        },
+        {
+          "name": "total_negative_cases",
+          "label": "Total negative cases in period"
+        },
+        {
+          "name": "cases_rescreened",
+          "label": "Number of cases re-screened"
+        },
+        {
+          "name": "discrepancies_found",
+          "label": "Number of discrepancies found"
+        },
+        {
+          "name": "reviewer_name",
+          "label": "Reviewing cytotechnologist name"
+        },
+        {
+          "name": "corrective_actions",
+          "label": "Corrective actions taken (if any)"
+        }
+      ],
+      "structure_hint": "Header (lab info, period) -> Selection method -> Cases reviewed table -> Discrepancy details -> Concordance rate calculation -> Corrective actions -> Reviewer signature -> Supervisor sign-off"
+    },
+    "example_queries": [
+      "Generate a QC re-screen log for 500 negative Paps reviewed this month with 2 discrepancies",
+      "Create a 10% random re-screen documentation template for our CAP inspection"
+    ]
+  },
+  {
+    "id": "us-cytotechnologists-p05",
+    "title": "CAP Accreditation Inspection Checklist",
+    "problem": "Preparing for CAP laboratory accreditation inspections requires verifying compliance across dozens of cytology-specific checklist items covering personnel qualifications, QC procedures, workload records, PT documentation, and SOPs. Labs often scramble before inspections, discovering gaps too late. Failed inspections can result in loss of accreditation and inability to bill Medicare.",
+    "who": "Cytology lab managers and supervisory cytotechnologists",
+    "frequency": "biannually",
+    "time_waste_h": 20,
+    "money_risk_usd": 100000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "CAP Cytology Inspection Prep Checklist",
+      "one_liner": "Step-by-step preparation checklist for CAP cytology laboratory accreditation inspection",
+      "steps": [
+        "Step 1: Verify all cytotechnologist CT(ASCP) certifications are current",
+        "Step 2: Confirm CLIA certificate is valid and posted",
+        "Step 3: Review workload records - ensure no staff exceeded 100 slides/24h",
+        "Step 4: Audit 10% QC re-screen logs for completeness",
+        "Step 5: Verify proficiency testing records for all screening personnel",
+        "Step 6: Check that SOPs are current, signed, and accessible",
+        "Step 7: Confirm specimen tracking and labeling compliance",
+        "Step 8: Review turnaround time metrics against benchmarks",
+        "Step 9: Verify equipment maintenance and calibration logs",
+        "Step 10: Audit continuing education records for all staff",
+        "Step 11: Review correlation studies (cyto-histo correlation)",
+        "Step 12: Confirm competency assessment documentation for each staff member"
+      ],
+      "warnings": [
+        "Warning: Missing PT records for even one technologist can trigger citation",
+        "Warning: Workload limit violations are the most common cytology-specific deficiency",
+        "Warning: New CMS guidance on remote review - verify CLIA certificate status by March 2026"
+      ],
+      "regulatory_refs": [
+        "42 CFR 493.1274",
+        "CAP Cytopathology Checklist",
+        "CLIA Certificate of Compliance requirements"
+      ]
+    },
+    "example_queries": [
+      "Our CAP inspection is in 3 months - give me a complete preparation checklist for our cytology lab",
+      "What are the most common cytology-specific CAP deficiencies we need to check?"
+    ]
+  },
+  {
+    "id": "us-cytotechnologists-p06",
+    "title": "ASCP Continuing Education Hours Calculator",
+    "problem": "CT(ASCP) certification requires continuing education credits every 3 years for renewal. Cytotechnologists must track CE hours across multiple categories (cytology-specific, general lab, safety) from various providers. Miscounting hours or missing category requirements leads to certification lapse, which means inability to practice.",
+    "who": "All ASCP-certified cytotechnologists approaching renewal",
+    "frequency": "quarterly",
+    "time_waste_h": 2,
+    "money_risk_usd": 5000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "ASCP CE Hours Tracker & Calculator",
+      "one_liner": "Calculates continuing education hours progress toward ASCP CT certification renewal requirements",
+      "inputs": [
+        {
+          "name": "renewal_date",
+          "type": "string",
+          "label": "ASCP certification renewal date"
+        },
+        {
+          "name": "cyto_specific_hours",
+          "type": "number",
+          "label": "Cytology-specific CE hours completed"
+        },
+        {
+          "name": "general_lab_hours",
+          "type": "number",
+          "label": "General laboratory CE hours completed"
+        },
+        {
+          "name": "safety_hours",
+          "type": "number",
+          "label": "Safety/compliance CE hours completed"
+        },
+        {
+          "name": "conference_hours",
+          "type": "number",
+          "label": "Conference attendance hours"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "total_ce_hours",
+          "label": "Total CE hours completed"
+        },
+        {
+          "name": "hours_remaining",
+          "label": "Hours still needed by category"
+        },
+        {
+          "name": "months_until_renewal",
+          "label": "Months until renewal deadline"
+        },
+        {
+          "name": "monthly_pace_needed",
+          "label": "CE hours per month needed to meet deadline"
+        }
+      ],
+      "formula_hint": "Total required varies by ASCP pathway. Standard CT requires specific cyto hours + general. Calculate remaining = required - completed per category. Pace = remaining / months_left.",
+      "rates": {
+        "standard_total_ce_required": 36,
+        "cyto_specific_minimum": 18,
+        "renewal_cycle_years": 3
+      }
+    },
+    "example_queries": [
+      "I have 12 cytology CE hours and 8 general hours - my renewal is in 14 months, am I on track?",
+      "Calculate how many more continuing education hours I need for my ASCP CT renewal in September 2027"
+    ]
+  },
+  {
+    "id": "us-cytotechnologists-p07",
+    "title": "Specimen Adequacy Assessment Guide",
+    "problem": "Determining whether a cytology specimen is adequate for evaluation is a critical first step that impacts all downstream diagnosis. Inadequate specimens must be correctly identified and reported per Bethesda criteria, but borderline adequacy calls are subjective. Incorrectly calling a specimen satisfactory when it's not can lead to missed pathology; calling it unsatisfactory creates unnecessary repeat procedures.",
+    "who": "All cytotechnologists performing initial screening",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Specimen Adequacy Quick Reference",
+      "one_liner": "Quick lookup of Bethesda System specimen adequacy criteria for gynecological and non-gynecological cytology",
+      "data_domain": "Bethesda System adequacy criteria, minimum cellularity requirements, obscuring factors assessment",
+      "lookup_keys": [
+        "specimen_type",
+        "preparation_method",
+        "obscuring_factor",
+        "cellularity_level"
+      ],
+      "data_hints": {
+        "source_law": "The Bethesda System for Reporting Cervical Cytology (3rd edition)",
+        "key_sections": [
+          "Satisfactory for evaluation criteria",
+          "Unsatisfactory criteria",
+          "Endocervical/transformation zone component",
+          "Minimum squamous cellularity thresholds"
+        ]
+      }
+    },
+    "example_queries": [
+      "What's the minimum squamous cellularity for a satisfactory ThinPrep Pap?",
+      "Slide has 60% obscuring blood - is this satisfactory or unsatisfactory per Bethesda?"
+    ]
+  },
+  {
+    "id": "us-cytotechnologists-p08",
+    "title": "FNA Rapid On-Site Evaluation Checklist",
+    "problem": "Fine needle aspiration rapid on-site evaluation (ROSE) requires cytotechnologists to quickly assess specimen adequacy during procedures. The process is high-pressure with the patient on the table and clinician waiting. Missing steps or failing to communicate adequacy properly leads to repeat passes, patient discomfort, and wasted procedure time.",
+    "who": "Cytotechnologists performing FNA ROSE procedures",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 8000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "FNA ROSE Procedure Checklist",
+      "one_liner": "Step-by-step checklist for rapid on-site evaluation of fine needle aspiration specimens",
+      "steps": [
+        "Step 1: Confirm patient identification and specimen site/laterality",
+        "Step 2: Prepare slides - air-dry for Diff-Quik, fix in alcohol for Pap stain",
+        "Step 3: Stain Diff-Quik slide (fixative 10 sec, stain I 10 sec, stain II 10 sec, rinse)",
+        "Step 4: Assess cellularity - is target tissue represented?",
+        "Step 5: Evaluate for diagnostic material vs. blood/necrosis only",
+        "Step 6: Communicate preliminary adequacy to proceduralist",
+        "Step 7: If inadequate, recommend additional pass with technique adjustment",
+        "Step 8: Triage remaining material for cell block, flow cytometry, or molecular testing",
+        "Step 9: Label all slides with patient ID, site, pass number",
+        "Step 10: Document number of passes, adequacy assessment, and triage decisions"
+      ],
+      "warnings": [
+        "Warning: Never give a definitive diagnosis at ROSE - adequacy assessment only",
+        "Warning: Ensure two patient identifiers on all specimens per CAP requirements",
+        "Warning: Save material for cell block before making additional smears"
+      ],
+      "regulatory_refs": [
+        "CAP FNA adequacy guidelines",
+        "CLIA specimen handling requirements"
+      ]
+    },
+    "example_queries": [
+      "Walk me through the ROSE procedure checklist for a thyroid FNA",
+      "What's the step-by-step for rapid on-site evaluation of an FNA specimen?"
+    ]
+  },
+  {
+    "id": "us-cytotechnologists-p09",
+    "title": "Cyto-Histo Correlation Report Generator",
+    "problem": "Labs must perform cytology-histology correlation studies comparing cytology diagnoses to subsequent biopsy results. This is required for QC and CAP accreditation. Compiling correlation data, calculating discrepancy rates, and generating reports is manual and time-consuming but critical for identifying diagnostic accuracy issues.",
+    "who": "Lead cytotechnologists and cytology lab managers",
+    "frequency": "monthly",
+    "time_waste_h": 5,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Cyto-Histo Correlation Calculator",
+      "one_liner": "Calculates cytology-histology correlation rates, false negative rates, and discrepancy statistics for QC reporting",
+      "inputs": [
+        {
+          "name": "total_cases_correlated",
+          "type": "number",
+          "label": "Total cases with cyto-histo correlation"
+        },
+        {
+          "name": "concordant_cases",
+          "type": "number",
+          "label": "Concordant cases (cyto matched histo)"
+        },
+        {
+          "name": "minor_discrepancies",
+          "type": "number",
+          "label": "Minor discrepancies (e.g., ASCUS vs LSIL)"
+        },
+        {
+          "name": "major_discrepancies",
+          "type": "number",
+          "label": "Major discrepancies (e.g., negative vs HSIL+)"
+        },
+        {
+          "name": "false_negatives",
+          "type": "number",
+          "label": "False negative cases"
+        },
+        {
+          "name": "false_positives",
+          "type": "number",
+          "label": "False positive cases"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "concordance_rate",
+          "label": "Overall concordance rate (%)"
+        },
+        {
+          "name": "major_discrepancy_rate",
+          "label": "Major discrepancy rate (%)"
+        },
+        {
+          "name": "false_negative_rate",
+          "label": "False negative rate (%)"
+        },
+        {
+          "name": "sensitivity",
+          "label": "Screening sensitivity (%)"
+        },
+        {
+          "name": "specificity",
+          "label": "Screening specificity (%)"
+        },
+        {
+          "name": "benchmark_comparison",
+          "label": "Comparison to published benchmarks"
+        }
+      ],
+      "formula_hint": "Concordance = concordant / total * 100. FN rate = false_neg / (true_pos + false_neg) * 100. Sensitivity = TP / (TP + FN). Industry FN rate benchmark: < 5%. Major discrepancy benchmark: < 2%.",
+      "rates": {
+        "benchmark_fn_rate": 0.05,
+        "benchmark_major_discrepancy": 0.02,
+        "acceptable_concordance": 0.9
+      }
+    },
+    "example_queries": [
+      "We had 200 cyto-histo correlations this quarter: 185 concordant, 10 minor discrepancies, 5 major - calculate our rates",
+      "What's our false negative rate if we had 3 false negatives out of 150 positive histology cases?"
+    ]
+  },
+  {
+    "id": "us-cytotechnologists-p10",
+    "title": "CMS Remote Review CLIA Compliance Advisor",
+    "problem": "New CMS guidance (September 2025) discontinues enforcement discretion for remote digital slide review, requiring labs to obtain separate CLIA certificates by March 2026. Many cytotechnologists and labs doing telepathology are confused about requirements. Non-compliance means inability to perform remote screening, disrupting workflows and staffing models.",
+    "who": "Cytotechnologists and lab directors using telepathology/remote review",
+    "frequency": "monthly",
+    "time_waste_h": 4,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "CMS Remote Review Compliance Advisor",
+      "one_liner": "Guides labs through CMS remote digital slide review CLIA requirements and March 2026 compliance deadline",
+      "expertise_area": "CMS CLIA requirements for remote/digital cytology slide review and telepathology",
+      "decision_criteria": [
+        "current remote review setup",
+        "CLIA certificate type",
+        "number of remote sites",
+        "state licensure requirements",
+        "timeline to March 2026 deadline"
+      ],
+      "context_needed": [
+        "regulatory.penalties",
+        "regulatory.laws_and_standards",
+        "market.trends"
+      ]
+    },
+    "example_queries": [
+      "Our cytotechs review digital slides from home - what do we need for the March 2026 CMS deadline?",
+      "Do we need a separate CLIA certificate for each remote screening location?"
+    ]
+  },
+  {
+    "id": "us-cytotechnologists-p11",
+    "title": "Turnaround Time Calculator & SLA Monitor",
+    "problem": "Cytology labs must meet turnaround time (TAT) benchmarks for Pap smears (typically 1-2 weeks) and urgent specimens. Calculating average TAT, identifying bottlenecks, and reporting TAT metrics for accreditation is a recurring task. Labs exceeding TAT thresholds risk patient care delays and accreditation deficiencies.",
+    "who": "Lab managers and supervisory cytotechnologists",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 8000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Cytology TAT Calculator",
+      "one_liner": "Calculates turnaround time statistics and identifies cases exceeding target SLAs for cytology specimens",
+      "inputs": [
+        {
+          "name": "total_cases",
+          "type": "number",
+          "label": "Total cases in reporting period"
+        },
+        {
+          "name": "within_target",
+          "type": "number",
+          "label": "Cases reported within target TAT"
+        },
+        {
+          "name": "target_tat_days",
+          "type": "number",
+          "label": "Target turnaround time (business days)"
+        },
+        {
+          "name": "sum_tat_days",
+          "type": "number",
+          "label": "Sum of all case TAT values (days)"
+        },
+        {
+          "name": "max_tat_days",
+          "type": "number",
+          "label": "Longest single case TAT (days)"
+        },
+        {
+          "name": "stat_cases_total",
+          "type": "number",
+          "label": "STAT/urgent cases total"
+        },
+        {
+          "name": "stat_within_target",
+          "type": "number",
+          "label": "STAT cases within 24h target"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "average_tat",
+          "label": "Average turnaround time (days)"
+        },
+        {
+          "name": "compliance_rate",
+          "label": "TAT compliance rate (%)"
+        },
+        {
+          "name": "stat_compliance",
+          "label": "STAT case compliance rate (%)"
+        },
+        {
+          "name": "outlier_count",
+          "label": "Cases exceeding 2x target TAT"
+        }
+      ],
+      "formula_hint": "Avg TAT = sum_tat / total. Compliance = within_target / total * 100. CAP benchmark: 90% of routine Paps within 10 business days. STAT within 24h.",
+      "rates": {
+        "routine_pap_target_days": 10,
+        "stat_target_hours": 24,
+        "cap_compliance_benchmark": 0.9
+      }
+    },
+    "example_queries": [
+      "We processed 800 Paps this month with average TAT of 7.2 days, 92% within 10 days - how do we compare to benchmarks?",
+      "Calculate our turnaround time compliance if 45 out of 50 STAT cases were reported within 24 hours"
+    ]
+  },
+  {
+    "id": "us-cytotechnologists-p12",
+    "title": "Ergonomic Injury Prevention Checklist",
+    "problem": "Microscopy work causes significant musculoskeletal disorders and eye strain. Cytotechnologists spend 6-8 hours daily at the microscope, leading to neck, back, shoulder, and wrist problems. Proper ergonomic setup and break schedules are critical but often neglected under workload pressure. Work-related injuries lead to lost productivity and workers' compensation claims.",
+    "who": "All cytotechnologists performing daily microscopy work",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 5000,
+    "source": "career_psychology",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Microscopy Ergonomic Safety Checklist",
+      "one_liner": "Daily ergonomic setup verification and break schedule for cytotechnologists to prevent repetitive strain injuries",
+      "steps": [
+        "Step 1: Adjust chair height - feet flat on floor, thighs parallel to ground",
+        "Step 2: Set microscope eyepiece height - no neck flexion beyond 15 degrees",
+        "Step 3: Position arm rests to support forearms during slide manipulation",
+        "Step 4: Verify monitor height for LIS/digital system at eye level",
+        "Step 5: Apply 20-20-20 rule - every 20 minutes, look 20 feet away for 20 seconds",
+        "Step 6: Take micro-break every 30 minutes (30-second stretch)",
+        "Step 7: Take full break every 2 hours (5-10 minute walk/stretch)",
+        "Step 8: Perform neck rolls, shoulder shrugs, and wrist circles during breaks",
+        "Step 9: Check lighting - reduce glare on microscope and screens",
+        "Step 10: End of day - log any discomfort or symptoms for tracking"
+      ],
+      "warnings": [
+        "Warning: Report persistent numbness, tingling, or pain to occupational health immediately",
+        "Warning: OSHA requires employers to address known ergonomic hazards under General Duty Clause"
+      ],
+      "regulatory_refs": [
+        "OSHA General Duty Clause Section 5(a)(1)",
+        "OSHA ergonomic guidelines for microscopy"
+      ]
+    },
+    "example_queries": [
+      "Give me a daily ergonomic checklist for my microscopy workstation",
+      "What's the recommended break schedule for cytotechnologists to prevent repetitive strain?"
+    ]
+  },
+  {
+    "id": "us-cytotechnologists-p13",
+    "title": "AI/Automation Impact Career Transition Advisor",
+    "problem": "With AI-assisted screening (ThinPrep Imaging, FocalPoint) reducing manual Pap smear volumes and HPV primary screening changing the profession, many cytotechnologists fear job displacement. They need guidance on transitioning to molecular cytology, digital pathology, FNA specialization, or management roles to remain relevant in an evolving field.",
+    "who": "Mid-career cytotechnologists concerned about automation",
+    "frequency": "quarterly",
+    "time_waste_h": 3,
+    "money_risk_usd": 20000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Cytotechnology Career Transition Advisor",
+      "one_liner": "Provides personalized career development guidance for cytotechnologists navigating AI automation and industry changes",
+      "expertise_area": "Cytotechnology career development, molecular diagnostics transition, digital pathology skills, advanced certification paths",
+      "decision_criteria": [
+        "years of experience",
+        "current specialization",
+        "education level",
+        "geographic location",
+        "interest areas"
+      ],
+      "context_needed": [
+        "career_psychology.fears",
+        "market.trends",
+        "career_psychology.career_levels"
+      ]
+    },
+    "example_queries": [
+      "I've been screening Paps for 10 years and our volume is dropping - what specializations should I pursue?",
+      "Is the Master's degree requirement worth it if I'm 8 years from retirement?"
+    ]
+  }
+]

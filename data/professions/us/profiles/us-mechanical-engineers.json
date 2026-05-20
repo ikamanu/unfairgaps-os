@@ -1,0 +1,87 @@
+{
+  "profession_id": "us-mechanical-engineers",
+  "profession_name": "Mechanical Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Mechanical engineers design, develop, build, and test mechanical and thermal devices including tools, engines, and machines. One of the broadest engineering disciplines, they work across nearly every industry from automotive and aerospace to energy and biomedical.",
+    "typical_tasks": ["Design mechanical systems and components using CAD software", "Perform engineering analysis (FEA, CFD, thermal, dynamics)", "Develop prototypes and oversee testing programs", "Create engineering drawings and specifications (GD&T)", "Conduct design reviews and failure mode analysis (DFMEA)", "Manage product development projects from concept to production", "Collaborate with manufacturing on design for manufacturability", "Perform root cause analysis on field failures", "Write technical reports and documentation", "Ensure designs meet industry codes and standards (ASME, SAE)"],
+    "key_documents": ["Engineering drawings with GD&T", "Design specifications and requirements", "FEA/CFD analysis reports", "Test plans and test reports", "DFMEA documents", "Bill of materials (BOM)", "Engineering change orders (ECOs)", "Patent applications"],
+    "deadlines": {"design_reviews": "Gate reviews per product development schedule", "prototype_builds": "Aligned with project milestones", "testing": "Weeks to months per test program", "production_launch": "Fixed launch dates driving all milestones"},
+    "seasonality": "Automotive model year cycles. Aerospace program milestones. Consumer product holiday season deadlines."
+  },
+  "regulatory": {
+    "summary": "ASME codes and standards govern many mechanical designs. PE licensure available and valued for career advancement (10-15% salary premium). Industry-specific regulations (FAA, FDA, NRC) apply to respective sectors.",
+    "key_laws": [
+      {"name": "ASME Boiler and Pressure Vessel Code", "description": "Standards for pressure equipment design and fabrication"},
+      {"name": "SAE Standards", "description": "Automotive and aerospace engineering standards"},
+      {"name": "FAA Regulations (14 CFR)", "description": "Aerospace product certification requirements"},
+      {"name": "FDA 21 CFR", "description": "Medical device design and manufacturing regulations"}
+    ],
+    "licensing": {
+      "requirements": ["ABET-accredited bachelor's in Mechanical Engineering", "FE exam ($175)", "4 years supervised experience", "PE exam — Mechanical ($400)"],
+      "certifications": ["PE in Mechanical Engineering (NCEES)", "Six Sigma Green Belt / Black Belt", "PMP (Project Management Professional)", "ASME certifications in specific codes"]
+    },
+    "penalties": "PE license required for stamping certain designs. Product liability for design failures. FAA enforcement for aerospace non-compliance."
+  },
+  "tools": {
+    "summary": "3D CAD, FEA, CFD, and engineering analysis software combined with testing equipment for product design and validation.",
+    "primary_tools": [
+      {"name": "SolidWorks / CATIA / NX / Creo", "description": "3D CAD for mechanical design"},
+      {"name": "ANSYS / ABAQUS / Nastran", "description": "FEA for structural, thermal, and dynamic analysis"},
+      {"name": "ANSYS Fluent / Star-CCM+", "description": "CFD for fluid flow and thermal analysis"},
+      {"name": "MATLAB / Simulink", "description": "Engineering calculations and system simulation"},
+      {"name": "AutoCAD", "description": "2D drafting and drawing production"},
+      {"name": "3D printers / rapid prototyping", "description": "Physical prototype fabrication"}
+    ],
+    "secondary_tools": ["Keyence / Zeiss CMM for dimensional inspection", "Testing equipment (MTS, Instron) for validation", "Altium / OrCAD for mechatronic designs", "Microsoft Excel for engineering calculations", "PLM systems (Teamcenter, Windchill) for data management"],
+    "pain_points": ["Increasing complexity of multi-physics designs", "Software licensing costs and compatibility issues", "Long simulation run times for complex models", "Balancing design innovation with manufacturing constraints"]
+  },
+  "terminology": {
+    "summary": "Broad mechanical engineering terminology spanning design, analysis, thermodynamics, dynamics, and manufacturing.",
+    "terms": {
+      "GD&T": "Geometric Dimensioning and Tolerancing", "FEA": "Finite Element Analysis",
+      "CFD": "Computational Fluid Dynamics", "CAD": "Computer-Aided Design",
+      "BOM": "Bill of Materials", "ECO": "Engineering Change Order",
+      "DFMEA": "Design Failure Mode and Effects Analysis",
+      "DFM": "Design for Manufacturability", "DFA": "Design for Assembly",
+      "stress": "Internal force per unit area", "strain": "Deformation relative to original dimensions",
+      "fatigue": "Progressive failure under cyclic loading", "creep": "Time-dependent deformation under load",
+      "FOS": "Factor of Safety", "yield strength": "Stress at permanent deformation onset",
+      "thermal expansion": "Dimensional change due to temperature",
+      "tolerance stackup": "Cumulative effect of individual part tolerances",
+      "ASME": "American Society of Mechanical Engineers",
+      "PE": "Professional Engineer", "EIT": "Engineer in Training"
+    }
+  },
+  "career_psychology": {
+    "summary": "One of the most versatile and in-demand engineering disciplines. Median salary $102K with 9% projected growth. PE licensure provides 10-15% salary premium. Three job openings per qualified engineer.",
+    "career_path": ["Bachelor's in Mechanical Engineering (ABET-accredited)", "Junior Mechanical Engineer / EIT", "PE licensure (4+ years experience)", "Senior Mechanical Engineer (5-10 years)", "Principal Engineer / Technical Lead", "Engineering Manager / Director", "VP of Engineering / CTO"],
+    "salary_range": {"entry_level": "$65,000 - $80,000/year", "mid_level": "$90,000 - $115,000/year", "senior": "$115,000 - $145,000/year", "director": "$145,000 - $200,000+/year", "median_bls": "$102,320/year (BLS May 2024)", "pe_premium": "+10-15%"},
+    "fears": ["Design failure causing safety incident", "Career stagnation in routine design roles", "AI/automation reducing engineering design jobs", "Outsourcing of engineering work overseas", "Keeping technical skills current across broad discipline"],
+    "motivation": ["Designing tangible products people use daily", "Broad applicability across virtually every industry", "Strong job market with 3 openings per qualified engineer", "Intellectual challenge of solving complex physical problems", "Clear career progression with PE and management tracks"],
+    "burnout_factors": ["Tight product development schedules and deadlines", "Repetitive design iterations and documentation updates", "Cross-functional coordination overhead", "Travel requirements for manufacturing support and testing", "Constant technology evolution requiring ongoing learning"]
+  },
+  "community": {
+    "summary": "ASME is the primary professional society (over 85,000 members). SAE International for automotive/aerospace. Strong industry-academia partnership ecosystem.",
+    "associations": [
+      {"name": "ASME (American Society of Mechanical Engineers)", "url": "https://www.asme.org/", "description": "85,000+ members, codes and standards, conferences, publications"},
+      {"name": "SAE International", "description": "Automotive and aerospace engineering standards and events"},
+      {"name": "IEEE (for mechatronics/robotics overlap)", "description": "Electrical and electronics engineering crossover"},
+      {"name": "AIAA (for aerospace focus)", "description": "American Institute of Aeronautics and Astronautics"}
+    ],
+    "online_communities": ["r/mechanicalengineering — Reddit (300K+ members)", "ASME online communities", "LinkedIn mechanical engineering groups", "Eng-Tips Forums"],
+    "conferences": ["ASME International Mechanical Engineering Congress (IMECE)", "SAE WCX World Congress Experience", "Design Engineering Conference", "ASME Turbo Expo"]
+  },
+  "market": {
+    "summary": "Strong 9% projected growth 2024-2034 adding ~32,100 jobs. Three openings per qualified engineer. Median salary $102K. Growth driven by renewable energy, EVs, aerospace, and advanced manufacturing.",
+    "growth_rate": "9% projected 2024-2034 (much faster than average)",
+    "salary_market": {"median": "$102,320/year", "range": "$64,560 - $161,240/year", "top_industries": "Computer and electronic products ($107,890 median)"},
+    "top_employers": ["Aerospace (Boeing, Lockheed Martin, SpaceX, RTX)", "Automotive (Tesla, GM, Ford, Toyota)", "Energy (GE, Siemens, renewable energy companies)", "Technology (Apple, Google, Meta — hardware divisions)", "Medical devices (Medtronic, J&J, Boston Scientific)", "Consulting firms (AECOM, Bechtel, Jacobs)"],
+    "market_trends": ["Renewable energy and clean technology driving demand", "Electric vehicle development requiring new thermal and powertrain designs", "Robotics and automation expanding mechanical engineering roles", "Additive manufacturing changing design paradigms", "3 job openings per qualified engineer indicating strong demand"]
+  },
+  "quality_score": 0.80,
+  "sources_count": 20,
+  "verified_sources": 8,
+  "confidence": "verified",
+  "raw_responses": [{"query": "Mechanical Engineers USA salary career outlook ASME PE certification", "sources": [{"title": "ASME — Demand and Salaries for Mechanical Engineers", "url": "https://www.asme.org/topics-resources/content/demand-and-salaries-grow-for-mechanical-engineers"}, {"title": "BLS — Mechanical Engineers", "url": "https://www.bls.gov/ooh/architecture-and-engineering/mechanical-engineers.htm"}, {"title": "US News — Mechanical Engineer", "url": "https://careers.usnews.com/best-jobs/mechanical-engineer"}]}]
+}

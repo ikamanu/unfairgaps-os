@@ -5,4 +5,7 @@ report-*.md
 validation-*.md
 audit-*.md
 pains-*.md
-launch/
+pains-*.json
+scope-*.json
+manifest-*.json
+/launch/

@@ -1,0 +1,246 @@
+{
+  "profession_id": "us-respiratory-therapists",
+  "profession_name": "Respiratory Therapists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Respiratory therapists manage patients' breathing through ventilator management, oxygen therapy, airway management, and pulmonary diagnostics. They work in hospitals (ICU, ER, NICU), outpatient clinics, and home care settings providing critical respiratory care.",
+    "typical_tasks": [
+      "Set up and manage mechanical ventilators for patients who cannot breathe independently",
+      "Perform arterial blood gas (ABG) sampling and analysis",
+      "Administer inhaled medications (bronchodilators, steroids)",
+      "Perform chest physiotherapy and airway clearance techniques",
+      "Respond to emergency codes for airway management and intubation assistance",
+      "Monitor and adjust ventilator settings based on patient response",
+      "Conduct pulmonary function tests (PFTs) for diagnostic evaluation",
+      "Educate patients on inhaler use, breathing exercises, and home equipment",
+      "Set up and maintain oxygen delivery systems",
+      "Perform tracheostomy care and suctioning",
+      "Manage BiPAP/CPAP for sleep apnea and acute respiratory failure",
+      "Document respiratory assessments and treatment in EHR"
+    ],
+    "key_documents": [
+      "Respiratory therapy treatment records",
+      "Ventilator parameter logs",
+      "ABG results documentation",
+      "Pulmonary function test reports",
+      "Patient education documentation",
+      "Equipment maintenance logs",
+      "Infection control documentation"
+    ],
+    "deadlines": {
+      "vent_checks": "Every 2-4 hours for ventilator patients",
+      "abg_results": "Results within 10-15 minutes of draw",
+      "emergency_response": "Immediate for code blue/airway emergencies",
+      "equipment_checks": "Per shift for life support equipment",
+      "nbrc_renewal": "Every 5 years for RRT recertification"
+    },
+    "seasonality": "Respiratory caseload spikes during flu season (November-March), RSV season (fall-winter), wildfire season (summer-fall), and COVID surges. NICU workload relatively steady year-round.",
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/respiratory-therapists.htm", "fact": "BLS Occupational Outlook Handbook for respiratory therapists"},
+      {"url": "https://college.mayo.edu/academics/explore-health-care-careers/careers-a-z/respiratory-therapist/", "fact": "Mayo Clinic respiratory therapist career overview"}
+    ]
+  },
+  "regulatory": {
+    "summary": "NBRC (National Board for Respiratory Care) provides CRT and RRT credentials. State licensure required in all 50 states. AARC (American Association for Respiratory Care) is the primary professional body. Scope expanding in many states.",
+    "key_laws": [
+      {
+        "name": "State Respiratory Care Practice Acts",
+        "detail": "All 50 states, DC, and Puerto Rico require respiratory therapists to be licensed",
+        "status": "Active in all jurisdictions"
+      },
+      {
+        "name": "CMS Conditions of Participation",
+        "detail": "Hospitals must provide respiratory care services meeting quality standards",
+        "reference": "42 CFR Part 482"
+      },
+      {
+        "name": "Joint Commission Standards",
+        "detail": "Quality and safety standards for respiratory care departments",
+        "status": "Active for accredited facilities"
+      },
+      {
+        "name": "HIPAA",
+        "detail": "Patient health information protection",
+        "reference": "45 CFR Parts 160, 164"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Associate's degree minimum (bachelor's increasingly preferred)",
+        "Graduate from CoARC-accredited respiratory therapy program",
+        "CRT credential (entry) — pass NBRC Therapist Multiple-Choice exam",
+        "RRT credential (advanced) — pass additional Clinical Simulation Examination",
+        "State licensure required in all states (most accept NBRC credentials)",
+        "ACLS/PALS/NRP certifications for clinical practice",
+        "Specialty certifications: ACCS (Adult Critical Care), NPS (Neonatal/Pediatric), SDS (Sleep Disorders)"
+      ],
+      "certifying_bodies": [
+        "NBRC — National Board for Respiratory Care",
+        "CoARC — Commission on Accreditation for Respiratory Care (program accreditation)",
+        "State licensing boards"
+      ]
+    },
+    "penalties": "State board can suspend/revoke license for negligence or scope violations. CMS deficiency citations for respiratory care failures. Malpractice liability for ventilator mismanagement.",
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/respiratory-therapists.htm", "fact": "BLS: all states require licensure, associate's degree minimum"},
+      {"url": "https://research.com/careers/how-to-become-a-respiratory-therapist", "fact": "CRT/RRT certification pathway and specialty credentials"}
+    ]
+  },
+  "tools": {
+    "summary": "Respiratory therapists manage mechanical ventilators (Medtronic, Hamilton, Draeger), oxygen delivery systems, ABG analyzers, and pulmonary function testing equipment. EHR documentation critical.",
+    "primary_software": [
+      {"name": "Mechanical ventilators (Medtronic PB 980, Hamilton G5/C6, Draeger Evita, Servo-i)", "purpose": "Invasive and non-invasive mechanical ventilation"},
+      {"name": "BiPAP/CPAP devices (Philips, ResMed)", "purpose": "Non-invasive positive pressure ventilation"},
+      {"name": "ABG analyzers (Radiometer ABL, Siemens RAPIDPoint)", "purpose": "Arterial blood gas and electrolyte analysis"},
+      {"name": "Pulmonary function testing systems (ndd, CareFusion)", "purpose": "Spirometry, lung volumes, DLCO testing"},
+      {"name": "Oxygen delivery equipment (high-flow nasal cannula, Vapotherm)", "purpose": "Oxygen therapy delivery systems"},
+      {"name": "EHR (Epic, Cerner) with respiratory therapy modules", "purpose": "Documentation of assessments, ventilator settings, and treatments"},
+      {"name": "Bronchoscopy equipment", "purpose": "Assisting physicians with airway visualization procedures"},
+      {"name": "Metabolic carts (Vyaire VMAX)", "purpose": "Indirect calorimetry for nutrition assessment in ventilated patients"}
+    ],
+    "pain_points": [
+      "Multiple ventilator brands requiring different expertise",
+      "EHR documentation burden during high-acuity care",
+      "Equipment alarms creating alarm fatigue",
+      "Home care equipment troubleshooting remotely",
+      "Integration gaps between monitoring devices and EHR"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/respiratory-therapists.htm", "fact": "BLS describes respiratory therapy equipment and work environment"},
+      {"url": "https://www.leaderstat.com/respiratory-therapist-job-description", "fact": "Respiratory therapist job description with equipment details"}
+    ]
+  },
+  "terminology": {
+    "summary": "Respiratory therapists use extensive pulmonary physiology, ventilator management, and critical care terminology including gas exchange parameters, ventilator modes, and respiratory pharmacology.",
+    "key_terms": [
+      {"term": "ABG", "meaning": "Arterial Blood Gas — measures pH, PaO2, PaCO2, HCO3, SaO2"},
+      {"term": "FiO2", "meaning": "Fraction of Inspired Oxygen — concentration of oxygen delivered"},
+      {"term": "PEEP", "meaning": "Positive End-Expiratory Pressure — prevents alveolar collapse"},
+      {"term": "Tidal volume (Vt)", "meaning": "Volume of air delivered per breath on ventilator"},
+      {"term": "AC/VC/PC", "meaning": "Assist-Control / Volume Control / Pressure Control — ventilator modes"},
+      {"term": "SIMV", "meaning": "Synchronized Intermittent Mandatory Ventilation — weaning mode"},
+      {"term": "CPAP/BiPAP", "meaning": "Continuous/Bilevel Positive Airway Pressure — non-invasive ventilation"},
+      {"term": "SpO2", "meaning": "Peripheral oxygen saturation — pulse oximetry reading"},
+      {"term": "ETCO2", "meaning": "End-tidal CO2 — capnography monitoring of ventilation"},
+      {"term": "PFT", "meaning": "Pulmonary Function Test — spirometry and lung volume measurement"},
+      {"term": "FEV1/FVC", "meaning": "Forced Expiratory Volume / Forced Vital Capacity — key PFT metrics"},
+      {"term": "Bronchodilator", "meaning": "Inhaled medication that opens airways (albuterol, ipratropium)"},
+      {"term": "Weaning", "meaning": "Gradual reduction of ventilator support toward extubation"},
+      {"term": "Extubation", "meaning": "Removal of endotracheal tube from patient's airway"},
+      {"term": "HFNC", "meaning": "High-Flow Nasal Cannula — heated humidified high-flow oxygen delivery"}
+    ],
+    "common_abbreviations": ["RT", "CRT", "RRT", "NBRC", "AARC", "ABG", "FiO2", "PEEP", "Vt", "PFT", "ARDS", "COPD", "NIV"],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/respiratory-therapists.htm", "fact": "BLS respiratory therapist scope and clinical terminology"},
+      {"url": "https://nursa.com/blog/what-is-a-respiratory-therapist", "fact": "Respiratory therapist duties and terminology overview"}
+    ]
+  },
+  "career_psychology": {
+    "summary": "Respiratory therapists are critical care professionals managing life-support equipment. 13% job growth (much faster than average) reflects strong demand. Post-COVID awareness elevated profession's visibility. Burnout from ICU intensity.",
+    "career_levels": [
+      {"level": "CRT (entry)", "salary_range": "$55,000-$65,000", "responsibilities": "General respiratory care, treatments, monitoring under supervision"},
+      {"level": "RRT (registered)", "salary_range": "$65,000-$82,000", "responsibilities": "Independent practice, ventilator management, critical care, PFTs"},
+      {"level": "Senior RT / Specialty (ACCS, NPS)", "salary_range": "$80,000-$100,000", "responsibilities": "ICU/NICU specialist, complex ventilator management, protocols"},
+      {"level": "Director of Respiratory Care", "salary_range": "$100,000-$130,000+", "responsibilities": "Department management, budgets, staffing, quality improvement"}
+    ],
+    "main_fears": [
+      "Ventilator mismanagement leading to patient harm",
+      "Failed intubation or airway emergency",
+      "Equipment failure during critical care",
+      "Infectious disease exposure (COVID, TB, flu)",
+      "License revocation for clinical errors",
+      "Alarm fatigue leading to missed critical events"
+    ],
+    "burnout_causes": [
+      "ICU intensity with critically ill and dying patients",
+      "COVID pandemic impact on workforce (PTSD, exhaustion)",
+      "Staffing shortages increasing patient-to-RT ratios",
+      "Night/weekend/holiday shifts and call requirements",
+      "High-stakes decision-making under pressure",
+      "Physical demands of emergency response",
+      "Emotional toll of neonatal/pediatric critical care"
+    ],
+    "growth_motivation": [
+      "Specialty credentials (ACCS, NPS, SDS) for higher pay and expertise",
+      "Advanced practice RT roles (emerging in some states)",
+      "Management/director positions",
+      "Education and program director track",
+      "Pulmonary function/sleep lab specialist",
+      "Transition to PA or nursing with bridge programs"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/respiratory-therapists.htm", "fact": "BLS: median $80,450, 13% growth 2023-2033"},
+      {"url": "https://advantismed.com/blog/respiratory-therapist-salary", "fact": "Respiratory therapist salary guide with progression factors"}
+    ]
+  },
+  "community": {
+    "summary": "AARC (American Association for Respiratory Care) is the primary professional organization. NBRC provides certification. Strong Reddit community. AARC Congress is the major annual conference.",
+    "professional_associations": [
+      {"name": "AARC — American Association for Respiratory Care", "url": "https://www.aarc.org", "membership_value": "Discount licensure renewal, mentors, publications, advocacy, AARC Congress", "mandatory": false},
+      {"name": "NBRC — National Board for Respiratory Care", "url": "https://www.nbrc.org", "membership_value": "CRT/RRT certification, specialty credentials", "mandatory": true},
+      {"name": "State respiratory care societies", "detail": "Local networking and advocacy", "mandatory": false}
+    ],
+    "conferences": [
+      {"name": "AARC Congress", "detail": "Largest respiratory care conference with education, research, and networking", "frequency": "Annual (November)"},
+      {"name": "SCCM Critical Care Congress", "detail": "Multidisciplinary critical care — relevant for ICU RTs", "frequency": "Annual (January)"},
+      {"name": "State society meetings", "detail": "Regional CE and networking", "frequency": "Annual/biannual"}
+    ],
+    "online_communities": [
+      "Reddit r/respiratorytherapy (active community)",
+      "AARC online community",
+      "Facebook respiratory therapy groups",
+      "LinkedIn respiratory care professionals",
+      "RCJournal.com (Respiratory Care journal website)"
+    ],
+    "publications": [
+      "Respiratory Care (AARC journal — peer-reviewed)",
+      "AARC Times magazine",
+      "RT Magazine"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/respiratory-therapists.htm", "fact": "BLS respiratory therapist professional context including AARC"},
+      {"url": "https://www.bls.gov/oes/2023/may/oes291126.htm", "fact": "BLS OES employment data for respiratory therapists"}
+    ]
+  },
+  "market": {
+    "summary": "Median salary $80,450 (BLS). 13% growth projected 2023-2033 (much faster than average). About 135,700 employed. Post-COVID demand surge continuing with aging population and chronic respiratory disease prevalence.",
+    "salary_by_level": {
+      "entry_crt": "$55,000-$65,000",
+      "mid_rrt": "$68,000-$82,000",
+      "senior_specialist": "$82,000-$100,000",
+      "director": "$100,000-$130,000+"
+    },
+    "geographic_variation": {
+      "national_average": "$80,450 (BLS)",
+      "california": "Highest paying state (~$100,000+)",
+      "lowest_10_percent": "Less than $61,900",
+      "highest_10_percent": "More than $108,820"
+    },
+    "estimated_practitioners": "135,700 respiratory therapists employed in US (BLS 2023)",
+    "job_outlook": "13% growth 2023-2033, much faster than average. Strong demand from aging population, COPD prevalence, and post-COVID respiratory awareness.",
+    "work_arrangements": {
+      "dominant": "W-2 employees at hospitals (75%+)",
+      "outpatient": "Pulmonary clinics and PFT labs",
+      "home_care": "Home health agencies for ventilator and oxygen patients",
+      "travel": "Travel RT positions with premium pay",
+      "sleep_lab": "Sleep disorder centers"
+    },
+    "market_trends": [
+      "Post-COVID respiratory awareness driving demand",
+      "Aging population increasing COPD/asthma/lung disease prevalence",
+      "Advanced practice RT roles emerging in several states",
+      "Telehealth monitoring for home ventilator patients",
+      "AI-assisted ventilator management protocols",
+      "Chronic disease management expanding RT scope to outpatient settings"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/respiratory-therapists.htm", "fact": "BLS: 135,700 employed, median $80,450, 13% growth 2023-2033"},
+      {"url": "https://www.bls.gov/oes/2023/may/oes291126.htm", "fact": "BLS OES: mean wage $80,450, employment 135,700"}
+    ]
+  },
+  "quality_score": 0.6,
+  "sources_count": 14,
+  "verified_sources": 8,
+  "confidence": "verified",
+  "raw_responses": []
+}

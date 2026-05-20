@@ -1,0 +1,141 @@
+{
+  "profession_id": "us-speech-language-pathologists",
+  "profession_name": "Speech-Language Pathologists",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "SLPs work 8-hour days in most settings, with some flexibility for part-time or school-based schedules. Day starts with reviewing patient files and schedules, followed by staff meetings to discuss appointments or medical complications. Core tasks: conducting screenings and evaluations of speech/language/swallowing disorders, delivering individual and group therapy sessions, writing treatment plans, documenting progress notes (SOAP format), attending IEP meetings in schools, consulting with teachers/physicians/families, and managing billing/Medicaid documentation. School-based SLPs manage caseloads of 40-80+ students; medical SLPs see 6-10 patients daily. Administrative duties consume 25-40% of the workday. Over 180,800 SLPs employed in the US (2023); projected to reach 214,100 by 2033.",
+    "documents": ["Evaluation reports and assessment summaries", "Individualized Education Programs (IEPs)", "Treatment/therapy plans", "SOAP progress notes", "Daily/weekly session notes", "Discharge summaries", "Medicaid billing records", "Insurance authorization requests", "Referral documentation", "Screening reports", "Case conference reports", "Clinical fellowship supervision logs"],
+    "deadlines": ["IEP annual reviews and triennial re-evaluations", "Progress report deadlines (quarterly/semester)", "Insurance pre-authorization timelines", "Medicaid billing submission windows", "State license renewal (varies by state, typically every 1-2 years)", "ASHA CCC-SLP certification maintenance (30 PDHs per 3-year cycle)", "Clinical fellowship completion (minimum 36 weeks)", "Treatment plan review dates", "School-year evaluation completion deadlines"],
+    "seasonality": "School-based SLPs follow the academic calendar with heavy evaluation periods in fall (September-October) and spring (March-April) for IEP meetings. Summer may offer reduced caseloads or extended school year (ESY) services. Medical settings maintain year-round demand. Flu season and stroke season (winter) increase hospital-based referrals. Back-to-school screenings spike in August-September. Medicare year-end therapy cap considerations in November-December."
+  },
+  "regulatory": {
+    "laws": ["State Speech-Language Pathology Practice Acts", "HIPAA (Health Insurance Portability and Accountability Act)", "IDEA (Individuals with Disabilities Education Act)", "FERPA (Family Educational Rights and Privacy Act)", "Medicare/Medicaid regulations for therapy services", "ASHA Code of Ethics", "ASLP Interstate Compact (37 jurisdictions as of 2025)", "State telepractice regulations", "Section 504 of the Rehabilitation Act"],
+    "licensing": "Master's degree from a CAA-accredited program required. Must complete 400+ supervised clinical practicum hours. Pass the Praxis Examination in Speech-Language Pathology (minimum score 162 for ASHA certification). Complete a 36-week Clinical Fellowship Year (CFY) with approximately 1,260 hours of professional experience. All 50 states and DC require state licensure. Five states (Alaska, Delaware, Massachusetts, Rhode Island, Virginia) require CCC-SLP for state licensure. School-based SLPs may need an additional teaching license/certificate. ASHA CCC-SLP certification requires 30 Professional Development Hours (PDHs) per 3-year maintenance interval, including 1 PDH in ethics and 2 PDHs in culturally responsive services. Effective January 1, 2026, updated certification standards clarify professional development content areas. New 2027 Certification Standards in Speech-Language Pathology are being developed by ASHA.",
+    "penalties": "Practicing without a license: state-specific fines and potential criminal charges. HIPAA violations: up to $50,000 per incident. ASHA Code of Ethics violations: CCC-SLP revocation, public reprimand, or suspension. Medicare/Medicaid fraud: federal criminal prosecution, fines up to $50,000 per false claim. Failure to maintain continuing education: license suspension. Inadequate supervision of SLPAs: disciplinary action.",
+    "regulatory_bodies": ["ASHA (American Speech-Language-Hearing Association)", "State Boards of Speech-Language Pathology and Audiology", "State Departments of Education (for school-based SLPs)", "CFCC (Council for Clinical Certification in Audiology and Speech-Language Pathology)", "CAA (Council on Academic Accreditation in Audiology and Speech-Language Pathology)", "CMS (Centers for Medicare & Medicaid Services)", "State Health Departments", "ASLP Interstate Compact Commission"]
+  },
+  "tools": {
+    "software": ["SPRY Therapeutics (AI-powered SLP-specific EHR, 40% documentation time reduction)", "TheraPlatform (telepractice + documentation, from $39/month)", "SimplePractice (telehealth, billing, scheduling)", "Fusion by Ensora Health (rehab therapy EHR)", "WebPT (SLP-specific templates)", "Ambiki (practice management for SLPs, OTs, PTs)", "PresenceLearning (school-based teletherapy platform)", "Virtual Speech Center (therapy apps and software)", "Boardmaker (AAC and visual supports)", "LAMP Words for Life (AAC app)", "Proloquo2Go (AAC app)", "Articulation Station (therapy app)"],
+    "platforms": ["ASHA ProFind (job board and directory)", "SpeechPathology.com (CEU courses and resources)", "The Informed SLP (research summaries)", "Medbridge (online CEU platform)", "Speech Therapy PD (professional development)", "Tactus Therapy (therapy tools and apps)", "Teachers Pay Teachers (school SLP materials)", "Boom Cards (digital therapy activities)"],
+    "gov_portals": ["ASHA Practice Portal (clinical guidelines)", "State licensing board portals", "Medicaid provider enrollment portals", "Medicare PECOS (Provider Enrollment)", "State Department of Education portals (school SLPs)", "ASHA ProFind (credential verification)", "National Provider Identifier (NPI) Registry"]
+  },
+  "terminology": {
+    "jargon": ["Caseload vs workload", "Artic therapy (articulation therapy)", "Pull-out vs push-in services", "Therapy minutes", "Service delivery model", "Functional communication", "Carryover (skill generalization)", "Baseline data", "Probe data", "Treatment fidelity", "Dismissal criteria", "Response to Intervention (RTI)", "Multi-Tiered System of Supports (MTSS)", "Evidence-based practice (EBP)", "Clinical fellowship (CF)"],
+    "abbreviations": ["SLP - Speech-Language Pathologist", "CCC-SLP - Certificate of Clinical Competence in Speech-Language Pathology", "CF - Clinical Fellowship", "CFY - Clinical Fellowship Year", "SLPA - Speech-Language Pathology Assistant", "AAC - Augmentative and Alternative Communication", "AOS - Apraxia of Speech", "CAS - Childhood Apraxia of Speech", "ASD - Autism Spectrum Disorder", "IEP - Individualized Education Program", "IFSP - Individualized Family Service Plan", "EI - Early Intervention", "SSD - Speech Sound Disorder", "FEES - Fiberoptic Endoscopic Evaluation of Swallowing", "MBS - Modified Barium Swallow", "VFSS - Videofluoroscopic Swallow Study", "SOAP - Subjective Objective Assessment Plan", "Tx - Treatment/Therapy", "Dx - Diagnosis", "Hx - History", "WNL - Within Normal Limits", "ENT - Ear Nose Throat", "IPA - International Phonetic Alphabet", "PDH - Professional Development Hours", "CAA - Council on Academic Accreditation", "CFCC - Council for Clinical Certification", "ASHA - American Speech-Language-Hearing Association", "BLS - Bureau of Labor Statistics", "IDEA - Individuals with Disabilities Education Act", "ABA - Applied Behavior Analysis", "CI - Cochlear Implant", "TBI - Traumatic Brain Injury", "CVA - Cerebrovascular Accident (Stroke)", "PO - Per Os (by mouth)", "NPO - Nil Per Os (nothing by mouth)", "MLU - Mean Length of Utterance"]
+  },
+  "career_psychology": {
+    "career_levels": ["Graduate Student (Master's in SLP)", "Clinical Fellow (CF/CFY — 36+ weeks supervised)", "Staff SLP / School SLP (CCC-SLP, 1-3 years)", "Senior SLP / Lead SLP (3-7 years)", "Specialized SLP (dysphagia, AAC, voice, fluency, pediatric, neurogenic)", "SLP Supervisor / Clinical Coordinator", "SLP Program Director / Department Head", "Private Practice Owner", "University Faculty / Researcher", "Director of Rehabilitation Services", "Travel SLP", "Telepractice SLP"],
+    "fears": ["High caseloads leading to inadequate service quality", "Excessive paperwork and documentation reducing therapy time", "Burnout from emotional demands of working with vulnerable populations", "School SLP caseloads exceeding ASHA-recommended maximums", "Losing CCC-SLP certification or state license", "Insurance denials limiting patient access to therapy", "Not keeping up with evidence-based practice changes", "Workplace isolation (only SLP in a school or facility)", "Student loan debt relative to salary (especially school-based)", "Liability for incorrect dysphagia recommendations (aspiration risk)"],
+    "motivation": ["Making a meaningful difference in clients' communication abilities", "Ranked #9 on US News 100 Best Jobs 2025", "Strong job security with 15-18% projected growth", "Diverse work settings and specialization options", "Helping children reach developmental milestones", "Restoring communication after stroke or brain injury", "Low unemployment rate", "Growing demand and shortage creating leverage for better conditions", "Flexibility for part-time, travel, or telepractice work", "Intellectually stimulating and constantly evolving field"],
+    "burnout": "SLP burnout is driven by high caseloads (school SLPs average 50+ students, some exceeding 80), excessive paperwork consuming 25-40% of work time, productivity requirements in medical settings (often 85-90% billable), emotional toll of working with patients who have severe disabilities, and workplace isolation. School-based SLPs report highest burnout due to large varied caseloads and IEP meeting demands. Specialized SLPs experience less burnout due to focused practice areas. Hospital SLPs face burnout from varied and intense caseloads. Contributing factors include student loan debt ($60,000-$100,000+ for master's degree) relative to school-based salaries, lack of administrative support, and feeling undervalued by employers. Self-care strategies and specialization are key protective factors."
+  },
+  "community": {
+    "reddit": ["r/slp (~70k+ members)", "r/slpGradSchool", "r/speechpathology", "r/CommunicationSciences"],
+    "linkedin": ["ASHA LinkedIn page", "SLP specialty groups", "Speech-Language Pathology Networking groups", "School-based SLP communities", "Travel SLP groups"],
+    "associations": ["ASHA (American Speech-Language-Hearing Association) — 247,000+ members, certificate holders, and affiliates; the national professional, scientific, and credentialing association", "State Speech-Language-Hearing Associations (e.g., CSHA - California Speech-Language-Hearing Association)", "NSSLHA (National Student Speech Language Hearing Association)", "ANCDS (Academy of Neurologic Communication Disorders and Sciences)", "AANE (American Academy of Audiology — related field)", "Division-specific ASHA Special Interest Groups (SIGs) — 19 specialty areas", "Council of Academic Programs in Communication Sciences and Disorders (CAPCSD)"],
+    "conferences": ["ASHA Convention 2026 — November 19-21, Indianapolis, IN (Indiana Convention Center, ~15,000 attendees)", "ASHA Convention 2025 — annual event", "CSHA Convergence 2026 — March 12-15, 2026", "State association annual conferences", "ASHA SIG-specific webinars and events", "SpeechPathology.com online conferences", "Medbridge virtual learning events", "ASHA Schools Connect Conference"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "entry_level_cf": "60000-75000",
+      "school_based_slp": "65000-86320",
+      "medical_slp_2_5_years": "85000-96900",
+      "hospital_based_slp": "93378-100990",
+      "skilled_nursing_facility": "96900-113630",
+      "senior_experienced_15_plus": "100000-137620",
+      "private_practice_owner": "90000-150000+",
+      "travel_slp": "85000-120000+"
+    },
+    "national_average_usd": 95980,
+    "job_count": "180,800 employed (2023); 214,100 projected by 2033; ~13,300 annual openings projected",
+    "growth_rate": "15-18% projected 2024-2034 (much faster than average for all occupations)",
+    "unemployment_rate": "Below 2% — significant nationwide shortage, especially in rural areas and schools",
+    "work_arrangements": ["Public and private schools (largest employer segment)", "Hospitals", "Skilled nursing facilities (SNFs)", "Outpatient clinics / Rehabilitation centers", "Home health agencies", "Private practice", "Telepractice / Teletherapy", "Early intervention programs", "University clinics", "Travel SLP assignments", "Corporate/voice coaching (emerging)"],
+    "trends": ["Median salary $95,980 (2024 BLS data); top earners $137,620+", "California offers highest state median at $116,000", "School-based SLPs earn significantly less ($74,849 median for 9-10 month academic year) than medical SLPs ($90,000+ median)", "15-18% job growth 2024-2034, much faster than average", "Severe SLP shortage especially in rural areas and schools", "AI-powered documentation tools (SPRY, etc.) reducing administrative burden by 40%", "Telepractice becoming mainstream post-COVID, expanding rural access", "ASLP Interstate Compact (37 jurisdictions) improving mobility", "Increasing demand driven by aging population (stroke, dementia), autism diagnosis rates, and early intervention awareness", "Student loan debt ($60K-$100K+) vs school salaries creating financial strain", "SLP programs facing limited admissions capacity and faculty shortages", "Travel SLP positions offering premium pay for shortage areas", "Ranked #9 on US News 100 Best Jobs 2025"]
+  },
+  "quality_score": 0.72,
+  "sources_count": 38,
+  "verified_sources": 7,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Speech-Language Pathologists USA 2025 2026 daily work tasks responsibilities caseload",
+      "sources": [
+        {"title": "Speech-Language Pathologists : Occupational Outlook Handbook - BLS", "url": "https://www.bls.gov/ooh/healthcare/speech-language-pathologists.htm"},
+        {"title": "Medical Speech-Language Pathologist - Mayo Clinic", "url": "https://college.mayo.edu/academics/explore-health-care-careers/careers-a-z/medical-speech-language-pathologist/"},
+        {"title": "29-1127.00 - Speech-Language Pathologists - O*NET", "url": "https://www.onetonline.org/link/summary/29-1127.00"},
+        {"title": "Speech-Language Pathologists - ASHA", "url": "https://www.asha.org/students/speech-language-pathologists/"},
+        {"title": "A Day in the Life of a Speech Pathologist - Indeed", "url": "https://www.indeed.com/career-advice/finding-a-job/day-in-the-life-of-speech-pathologist"},
+        {"title": "What Do Speech-Language Pathologists Do - OwlGuru", "url": "https://www.owlguru.com/career/speech-language-pathologists/job-description/"},
+        {"title": "What is a Speech Pathologist (SLP) - USAHS", "url": "https://www.usa.edu/blog/what-is-a-speech-pathologist/"}
+      ]
+    },
+    {
+      "query": "Speech-Language Pathologists USA 2025 2026 licensing CCC-SLP ASHA regulations requirements",
+      "sources": [
+        {"title": "Audiology and Speech-Language Pathology Certification - ASHA", "url": "https://www.asha.org/certification/"},
+        {"title": "CCC-SLP Certification: Requirements & Exam Guide [2025]", "url": "https://www.speechpathologygraduateprograms.org/speech-language-pathology-certification/"},
+        {"title": "SLP Licensing Requirements by State: Complete 2025 Guide", "url": "https://www.speechpathologygraduateprograms.org/state-licensing-overview/"},
+        {"title": "2026 Guide to Speech Pathology State-by-State License Requirements", "url": "https://speechpathologymastersprograms.com/become-speech-pathologist/speech-pathology-state-license-guide/"},
+        {"title": "2020 Certification Standards in Speech-Language Pathology - ASHA", "url": "https://www.asha.org/certification/2020-slp-certification-standards/"},
+        {"title": "2027 Certification Standards in Speech-Language Pathology - ASHA", "url": "https://www.asha.org/certification/2027-slp-certification-standards/"}
+      ]
+    },
+    {
+      "query": "Speech-Language Pathologists USA software tools telepractice EHR technology 2025 2026",
+      "sources": [
+        {"title": "2026 Top Tools and Software Used in Online SLP Courses - Research.com", "url": "https://research.com/speech-language-pathology/top-tools-and-software-used-in-online-slp-courses"},
+        {"title": "7 Best Speech Therapy EMR Systems | 2026 Rankings + Pricing", "url": "https://www.sprypt.com/blog/best-emr-for-speech-therapy"},
+        {"title": "Fusion by Ensora Health", "url": "https://ensorahealth.com/product/fusion-rehab-therapy/"},
+        {"title": "Best Speech Therapy Software - 2026 Reviews & Pricing", "url": "https://www.softwareadvice.com/medical/speech-therapy-comparison/"},
+        {"title": "Speech Therapy Practice Management Software: 2025 Complete Guide", "url": "https://www.sprypt.com/blog/speech-therapy-management-software"},
+        {"title": "Telehealth Software for Speech-Language Pathologists - SimplePractice", "url": "https://www.simplepractice.com/specialty/telehealth-software-for-speech-language-pathologists/"},
+        {"title": "Practice Management Software for SLPs, OTs, and PTs - Ambiki", "url": "https://ambiki.com/"}
+      ]
+    },
+    {
+      "query": "speech-language pathology terminology abbreviations jargon SLP professional",
+      "sources": [
+        {"title": "Speech Language Pathology Acronyms & Abbreviations - SPRY", "url": "https://www.sprypt.com/blog/speech-language-pathology-abbreviations"},
+        {"title": "Speech-Language Pathology Abbreviations - WebPT", "url": "https://www.webpt.com/blog/speech-language-pathology-abbreviations"},
+        {"title": "SLP Acronyms & Abbreviations - Clinicient", "url": "https://www.clinicient.com/guide/speech-language-pathology-acronyms/"},
+        {"title": "Glossary: Speech Therapy Terms Defined & Explained - Tactus Therapy", "url": "https://tactustherapy.com/speech-therapy-terms-defined/"},
+        {"title": "The Most Common SLP Abbreviations - Medbridge", "url": "https://www.medbridge.com/blog/the-most-common-speech-language-pathology-abbreviations/"},
+        {"title": "Glossary of Abbreviations & Speech Jargon", "url": "https://annaospeech.com/blog/glossary-of-abbreviations-amp-speech-jargon"}
+      ]
+    },
+    {
+      "query": "Speech-Language Pathologists USA career path salary 2025 2026 burnout",
+      "sources": [
+        {"title": "Speech-Language Pathologists : Occupational Outlook Handbook - BLS", "url": "https://www.bls.gov/ooh/healthcare/speech-language-pathologists.htm"},
+        {"title": "Are Speech Pathologists in Demand? SLP Job Growth & Shortage - Research.com", "url": "https://research.com/careers/are-speech-pathologists-in-demand-slp-job-growth-and-shortage"},
+        {"title": "Speech Language Pathologist Salary: Your 2026 Salary Guide - Coursera", "url": "https://www.coursera.org/articles/speech-language-pathologist-salary"},
+        {"title": "SLP Salary Guide 2026: Average Pay by State & Setting", "url": "https://www.speechpathologygraduateprograms.org/salaries/"},
+        {"title": "Highest Paying States for Speech-Language Pathologists - Research.com", "url": "https://research.com/careers/highest-paying-states-for-speech-language-pathologists-jobs-and-salaries"},
+        {"title": "Is Speech-Language Pathology a Good Career? (2026 Guide) - Pepperdine", "url": "https://healthscience.pepperdine.edu/online-masters-in-speech-language-pathology/article/is-speech-language-pathology-a-good-career-2026-guide.htm"}
+      ]
+    },
+    {
+      "query": "Speech-Language Pathologists USA professional associations ASHA conferences 2025 2026",
+      "sources": [
+        {"title": "Conferences and Events - ASHA", "url": "https://www.asha.org/events/"},
+        {"title": "ASHA Convention", "url": "https://convention.asha.org/"},
+        {"title": "American Speech-Language-Hearing Association", "url": "https://www.asha.org/"},
+        {"title": "About the ASHA Convention", "url": "https://convention.asha.org/about-the-convention/"},
+        {"title": "2026 ASHA Convention - Events in America", "url": "https://m.eventsinamerica.com/events-trade-shows/2026-asha-convention-american-speech-language-hearing-association-2026/medical-pharma/disabilities"},
+        {"title": "CSHA - California Speech-Language-Hearing Association", "url": "https://www.csha.org/"}
+      ]
+    },
+    {
+      "query": "Speech-Language Pathologists USA job market demand salary shortage outlook 2025 2026",
+      "sources": [
+        {"title": "Speech-Language Pathologists : Occupational Outlook Handbook - BLS", "url": "https://www.bls.gov/ooh/healthcare/speech-language-pathologists.htm"},
+        {"title": "Are Speech Pathologists in Demand? SLP Job Growth & Shortage - Research.com", "url": "https://research.com/careers/are-speech-pathologists-in-demand-slp-job-growth-and-shortage"},
+        {"title": "Market Trends in Audiology and Speech-Language Pathology - ASHA", "url": "https://www.asha.org/careers/market-trends/"},
+        {"title": "What's Driving the Demand for Speech-Language Pathologists - AMN Healthcare", "url": "https://www.amnhealthcare.com/amn-insights/news/speech-language-pathologists/"},
+        {"title": "Supply and Demand Resource List for SLPs - ASHA PDF", "url": "https://www.asha.org/siteassets/surveys/supply-demand-slp.pdf"},
+        {"title": "Speech Pathologist Salary and SLP Jobs Outlook | 2026 Guide - Teach.com", "url": "https://teach.com/online-ed/healthcare-degrees/online-masters-speech-language-pathology/career-salary/"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,735 @@
+[
+  {
+    "id": "us-lawyers-p01",
+    "title": "Billable Hours & Fee Calculation",
+    "problem": "Lawyers spend significant time calculating billable hours, applying different rates for different tasks, and reconciling time entries against retainers. Manual calculation leads to underbilling or overbilling, both of which damage client relationships. Errors in fee calculations can trigger bar complaints and malpractice claims.",
+    "who": "Solo practitioners and small firm attorneys without dedicated billing staff",
+    "frequency": "daily",
+    "time_waste_h": 5,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Legal Fee Calculator",
+      "one_liner": "Calculates total billable fees from time entries with blended rates, retainer deductions, and expense allocation",
+      "inputs": [
+        {
+          "name": "hourly_rate",
+          "type": "number",
+          "label": "Hourly rate (USD)"
+        },
+        {
+          "name": "time_entries",
+          "type": "text",
+          "label": "Time entries (task: hours, one per line)"
+        },
+        {
+          "name": "retainer_balance",
+          "type": "number",
+          "label": "Current retainer balance (USD)"
+        },
+        {
+          "name": "expenses",
+          "type": "number",
+          "label": "Reimbursable expenses (USD)"
+        },
+        {
+          "name": "discount_pct",
+          "type": "number",
+          "label": "Client discount percentage"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "total_hours",
+          "label": "Total billable hours"
+        },
+        {
+          "name": "gross_fees",
+          "label": "Gross fees (USD)"
+        },
+        {
+          "name": "discount_amount",
+          "label": "Discount amount (USD)"
+        },
+        {
+          "name": "net_fees",
+          "label": "Net fees after discount (USD)"
+        },
+        {
+          "name": "retainer_remaining",
+          "label": "Retainer balance remaining (USD)"
+        },
+        {
+          "name": "amount_due",
+          "label": "Amount due from client (USD)"
+        }
+      ],
+      "formula_hint": "gross_fees = sum(hours * rate per entry), discount = gross_fees * discount_pct / 100, net_fees = gross_fees - discount + expenses, amount_due = max(0, net_fees - retainer_balance), retainer_remaining = max(0, retainer_balance - net_fees)",
+      "rates": {}
+    },
+    "example_queries": [
+      "I billed 12.5 hours at $350/hr with a 10% client discount. What's the total fee?",
+      "Calculate my invoice: 3 hours research at $300, 5 hours drafting at $350, 2 hours court at $400, retainer balance is $2,000"
+    ]
+  },
+  {
+    "id": "us-lawyers-p02",
+    "title": "Statute of Limitations Lookup",
+    "problem": "Lawyers must constantly verify statutes of limitations across different jurisdictions and claim types. Missing a SOL deadline is one of the top causes of legal malpractice claims. Each state has different limitation periods for contracts, torts, fraud, and specialized claims, making manual tracking error-prone.",
+    "who": "Litigation attorneys, personal injury lawyers, solo practitioners",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 500000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Statute of Limitations Reference",
+      "one_liner": "Instant lookup of statutes of limitations by state, claim type, and special circumstances",
+      "data_domain": "Statutes of limitations for all 50 states plus federal claims",
+      "lookup_keys": [
+        "state",
+        "claim_type",
+        "plaintiff_type",
+        "special_circumstances"
+      ],
+      "data_hints": {
+        "source_law": "State civil procedure codes, 28 USC (federal)",
+        "key_sections": [
+          "State civil procedure statutes",
+          "28 USC 1658",
+          "Discovery rule exceptions",
+          "Tolling provisions"
+        ],
+        "categories": [
+          "Contract (written/oral)",
+          "Personal injury",
+          "Medical malpractice",
+          "Fraud",
+          "Property damage",
+          "Employment",
+          "Products liability",
+          "Professional malpractice",
+          "Defamation",
+          "Federal civil rights"
+        ]
+      }
+    },
+    "example_queries": [
+      "What is the statute of limitations for breach of written contract in California?",
+      "SOL for medical malpractice in New York with discovery rule?",
+      "How long do I have to file a fraud claim in Texas?"
+    ]
+  },
+  {
+    "id": "us-lawyers-p03",
+    "title": "IOLTA Trust Account Reconciliation",
+    "problem": "Lawyers holding client funds must maintain IOLTA trust accounts with strict monthly reconciliation requirements. Errors in trust accounting - commingling funds, overdrafts, or misallocation - can result in disbarment and criminal charges. Manual reconciliation across multiple client matters is tedious and high-stakes.",
+    "who": "Solo practitioners, small firm managing partners, any attorney handling client funds",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 100000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "IOLTA Trust Account Reconciler",
+      "one_liner": "Reconciles client trust account balances against bank statements and flags discrepancies",
+      "inputs": [
+        {
+          "name": "bank_balance",
+          "type": "number",
+          "label": "Bank statement ending balance (USD)"
+        },
+        {
+          "name": "client_ledgers",
+          "type": "text",
+          "label": "Client ledger balances (client: amount, one per line)"
+        },
+        {
+          "name": "outstanding_deposits",
+          "type": "number",
+          "label": "Outstanding deposits (USD)"
+        },
+        {
+          "name": "outstanding_checks",
+          "type": "number",
+          "label": "Outstanding checks (USD)"
+        },
+        {
+          "name": "bank_fees",
+          "type": "number",
+          "label": "Bank fees charged (USD)"
+        },
+        {
+          "name": "interest_earned",
+          "type": "number",
+          "label": "Interest earned (USD)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "adjusted_bank_balance",
+          "label": "Adjusted bank balance (USD)"
+        },
+        {
+          "name": "total_client_balances",
+          "label": "Total client ledger balances (USD)"
+        },
+        {
+          "name": "discrepancy",
+          "label": "Discrepancy amount (USD)"
+        },
+        {
+          "name": "reconciled",
+          "label": "Reconciled (yes/no)"
+        },
+        {
+          "name": "warnings",
+          "label": "Trust account warnings"
+        }
+      ],
+      "formula_hint": "adjusted_bank = bank_balance + outstanding_deposits - outstanding_checks - bank_fees + interest_earned, discrepancy = adjusted_bank - total_client_balances, reconciled = discrepancy == 0, warn if any client ledger < 0 or if bank_fees deducted from trust",
+      "rates": {}
+    },
+    "example_queries": [
+      "Bank balance is $45,230. Client ledgers: Smith $12,000, Jones $18,500, Davis $14,730. Outstanding check $500. Is my trust account reconciled?",
+      "Reconcile my IOLTA: bank says $100,000, I have 5 client matters totaling $98,500, pending deposit of $2,000, bank fee of $25"
+    ]
+  },
+  {
+    "id": "us-lawyers-p04",
+    "title": "Engagement Letter Drafting",
+    "problem": "Every new client matter requires a detailed engagement letter specifying scope, fees, billing practices, and terms. Lawyers spend 30-60 minutes per letter customizing terms for different practice areas. Poor engagement letters lead to fee disputes and malpractice exposure.",
+    "who": "All practicing attorneys, especially solo and small firm lawyers",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Engagement Letter Generator",
+      "one_liner": "Generates customized client engagement letters with proper fee structures and ethical disclosures",
+      "doc_name": "Client Engagement Letter",
+      "variables": [
+        {
+          "name": "firm_name",
+          "label": "Law firm name"
+        },
+        {
+          "name": "attorney_name",
+          "label": "Attorney name and bar number"
+        },
+        {
+          "name": "client_name",
+          "label": "Client name"
+        },
+        {
+          "name": "matter_description",
+          "label": "Description of legal matter"
+        },
+        {
+          "name": "practice_area",
+          "label": "Practice area (litigation, corporate, family, etc.)"
+        },
+        {
+          "name": "fee_type",
+          "label": "Fee arrangement (hourly, flat fee, contingency, hybrid)"
+        },
+        {
+          "name": "hourly_rate",
+          "label": "Hourly rate(s) (USD)"
+        },
+        {
+          "name": "retainer_amount",
+          "label": "Retainer amount (USD)"
+        },
+        {
+          "name": "state",
+          "label": "State of practice"
+        }
+      ],
+      "structure_hint": "Header with firm info -> Client identification -> Scope of representation -> Fee arrangement details -> Billing practices -> Retainer terms -> Client responsibilities -> Termination provisions -> Conflict waiver (if applicable) -> State-specific disclosures -> Signature blocks"
+    },
+    "example_queries": [
+      "Generate an engagement letter for a personal injury contingency case in Florida, 33% fee",
+      "I need an engagement letter for corporate M&A advisory at $450/hour with a $10,000 retainer"
+    ]
+  },
+  {
+    "id": "us-lawyers-p05",
+    "title": "Court Filing Deadline Calculator",
+    "problem": "Lawyers must calculate precise filing deadlines based on triggering events, court rules, and jurisdiction-specific counting methods. Federal and state rules differ on how weekends, holidays, and service methods affect deadlines. Missing a deadline is the #1 cause of malpractice claims, and manual calculation is error-prone.",
+    "who": "Litigation attorneys, paralegals, solo practitioners",
+    "frequency": "daily",
+    "time_waste_h": 3,
+    "money_risk_usd": 250000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Court Deadline Calculator",
+      "one_liner": "Calculates filing deadlines based on triggering event, rule period, service method, and jurisdiction-specific counting rules",
+      "inputs": [
+        {
+          "name": "triggering_event_date",
+          "type": "date",
+          "label": "Date of triggering event"
+        },
+        {
+          "name": "rule_period_days",
+          "type": "number",
+          "label": "Rule period (days)"
+        },
+        {
+          "name": "jurisdiction",
+          "type": "select",
+          "label": "Jurisdiction (Federal / State name)"
+        },
+        {
+          "name": "service_method",
+          "type": "select",
+          "label": "Service method (personal, mail, electronic)"
+        },
+        {
+          "name": "count_type",
+          "type": "select",
+          "label": "Calendar or business days"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "raw_deadline",
+          "label": "Calculated deadline (before adjustments)"
+        },
+        {
+          "name": "adjusted_deadline",
+          "label": "Adjusted deadline (after weekends/holidays)"
+        },
+        {
+          "name": "safe_deadline",
+          "label": "Recommended safe filing date (2 days before)"
+        },
+        {
+          "name": "service_days_added",
+          "label": "Additional days for service method"
+        }
+      ],
+      "formula_hint": "Start counting day after triggering event. For periods < 11 days (federal), exclude weekends/holidays. Add 3 days for mail service (FRCP 6(d)), 0 for electronic. If deadline falls on weekend/holiday, move to next business day. Federal holidays per 5 USC 6103.",
+      "rates": {
+        "mail_service_days": 3,
+        "electronic_service_days": 0
+      }
+    },
+    "example_queries": [
+      "I was served a complaint on March 15, 2026 by mail in federal court. When is my answer due?",
+      "Calculate the deadline for a 30-day response period starting April 1 in California state court, served electronically"
+    ]
+  },
+  {
+    "id": "us-lawyers-p06",
+    "title": "Conflict of Interest Check Procedure",
+    "problem": "Before taking on any new client or matter, lawyers must conduct thorough conflict checks across all current and former clients, adverse parties, and related entities. Failure to identify conflicts violates Model Rules 1.7-1.10 and can lead to disqualification, malpractice liability, and disciplinary action. Solo and small firms often lack systematic procedures.",
+    "who": "All practicing attorneys, especially solo and small firm lawyers without conflict-check software",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 75000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Conflict of Interest Check Procedure",
+      "one_liner": "Step-by-step conflict checking procedure compliant with ABA Model Rules 1.7-1.10",
+      "steps": [
+        "Step 1: Identify all parties to the new matter (client, adverse parties, related entities, subsidiaries, affiliates)",
+        "Step 2: Identify all attorneys and staff who may work on the matter",
+        "Step 3: Search current client database for name matches and variations",
+        "Step 4: Search former client database for name matches and variations",
+        "Step 5: Check adverse party lists across all open matters",
+        "Step 6: Check for business/financial relationships with any party",
+        "Step 7: Check for family/personal relationships with any party",
+        "Step 8: Review for positional conflicts (taking contrary legal positions in different cases)",
+        "Step 9: If potential conflict found - analyze under Rule 1.7 (current client) or 1.9 (former client)",
+        "Step 10: Determine if conflict is consentable under Rule 1.7(b)",
+        "Step 11: If consentable - prepare informed consent letter with full disclosure",
+        "Step 12: Obtain written consent from all affected clients",
+        "Step 13: Document the conflict check results and file in matter record",
+        "Step 14: If conflict is non-consentable - decline representation"
+      ],
+      "warnings": [
+        "Warning: Imputed disqualification (Rule 1.10) extends conflicts to all firm attorneys",
+        "Warning: Some conflicts cannot be waived even with client consent",
+        "Warning: Government attorney conflicts have special rules (Rule 1.11)",
+        "Warning: Lateral hire conflicts require screening procedures"
+      ],
+      "regulatory_refs": [
+        "ABA Model Rule 1.7",
+        "ABA Model Rule 1.8",
+        "ABA Model Rule 1.9",
+        "ABA Model Rule 1.10",
+        "ABA Model Rule 1.11"
+      ]
+    },
+    "example_queries": [
+      "Walk me through a conflict check for a new divorce client whose spouse is represented by my former colleague",
+      "How do I check for conflicts when a new corporate client has subsidiaries I might have dealt with before?"
+    ]
+  },
+  {
+    "id": "us-lawyers-p07",
+    "title": "CLE Requirement Tracking",
+    "problem": "Every state has different CLE (Continuing Legal Education) requirements - different total hours, ethics hours, specialty credits, and reporting periods. Lawyers admitted in multiple jurisdictions must track separate requirements simultaneously. Failure to complete CLE results in suspension of license.",
+    "who": "All licensed attorneys, especially those admitted in multiple states",
+    "frequency": "quarterly",
+    "time_waste_h": 2,
+    "money_risk_usd": 10000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "CLE Requirements by State",
+      "one_liner": "Quick lookup of CLE requirements by state including total hours, ethics hours, reporting periods, and special requirements",
+      "data_domain": "CLE requirements for all 50 states and DC",
+      "lookup_keys": [
+        "state",
+        "requirement_type",
+        "reporting_period"
+      ],
+      "data_hints": {
+        "source_law": "State bar CLE rules and regulations",
+        "key_sections": [
+          "Total hours required",
+          "Ethics/professionalism hours",
+          "Reporting period",
+          "New attorney requirements",
+          "Carryover rules",
+          "Exemptions"
+        ],
+        "categories": [
+          "General CLE hours",
+          "Ethics/Professional Responsibility",
+          "Diversity/Inclusion",
+          "Technology/Cybersecurity",
+          "Mental Health/Substance Abuse",
+          "Bias Elimination"
+        ]
+      }
+    },
+    "example_queries": [
+      "What are the CLE requirements for California and New York?",
+      "How many ethics hours do I need in Texas? When is the reporting deadline?",
+      "I'm newly admitted in Illinois - are there additional CLE requirements for new lawyers?"
+    ]
+  },
+  {
+    "id": "us-lawyers-p08",
+    "title": "Contingency Fee & Settlement Distribution",
+    "problem": "Personal injury and plaintiff attorneys must accurately calculate contingency fee splits, lien reductions, and net client recovery from settlements. Errors lead to bar complaints, malpractice claims, and trust account violations. Calculations involve fee percentages that may change at different stages, medical liens, costs, and subrogation claims.",
+    "who": "Personal injury attorneys, plaintiff-side litigators",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Settlement Distribution Calculator",
+      "one_liner": "Calculates attorney fees, cost deductions, lien payments, and net client recovery from settlement proceeds",
+      "inputs": [
+        {
+          "name": "settlement_amount",
+          "type": "number",
+          "label": "Gross settlement amount (USD)"
+        },
+        {
+          "name": "contingency_pct",
+          "type": "number",
+          "label": "Contingency fee percentage"
+        },
+        {
+          "name": "case_costs",
+          "type": "number",
+          "label": "Case costs/expenses advanced (USD)"
+        },
+        {
+          "name": "medical_liens",
+          "type": "number",
+          "label": "Total medical liens (USD)"
+        },
+        {
+          "name": "other_liens",
+          "type": "number",
+          "label": "Other liens (child support, Medicaid, etc.) (USD)"
+        },
+        {
+          "name": "costs_from",
+          "type": "select",
+          "label": "Costs deducted from (gross/net after fee)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attorney_fee",
+          "label": "Attorney fee (USD)"
+        },
+        {
+          "name": "total_costs",
+          "label": "Total costs deducted (USD)"
+        },
+        {
+          "name": "total_liens",
+          "label": "Total liens paid (USD)"
+        },
+        {
+          "name": "net_to_client",
+          "label": "Net to client (USD)"
+        },
+        {
+          "name": "distribution_breakdown",
+          "label": "Full distribution statement"
+        }
+      ],
+      "formula_hint": "If costs from gross: attorney_fee = (settlement - costs) * pct OR settlement * pct depending on agreement. Typical: fee = settlement * contingency_pct, then deduct costs, then deduct liens. net_to_client = settlement - attorney_fee - costs - liens. Always verify net_to_client > 0.",
+      "rates": {
+        "typical_pi_contingency": 0.33,
+        "post_filing_contingency": 0.4
+      }
+    },
+    "example_queries": [
+      "Settlement is $500,000 at 33%, I advanced $15,000 in costs, medical liens are $45,000. What does the client get?",
+      "Calculate distribution on a $1.2M settlement, 40% contingency post-filing, $50K costs from gross, $120K in liens"
+    ]
+  },
+  {
+    "id": "us-lawyers-p09",
+    "title": "Legal Memorandum Drafting",
+    "problem": "Attorneys draft internal legal memoranda to analyze legal issues, predict outcomes, and advise clients. Each memo requires structured analysis (IRAC/CREAC format), proper citation, and balanced discussion of authorities. Junior associates spend 8-15 hours per memo, and quality varies significantly.",
+    "who": "Junior and mid-level associates, solo practitioners",
+    "frequency": "weekly",
+    "time_waste_h": 10,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Legal Memorandum Generator",
+      "one_liner": "Generates structured legal memoranda in IRAC format with proper issue framing, rule statements, and analysis",
+      "doc_name": "Legal Memorandum",
+      "variables": [
+        {
+          "name": "to",
+          "label": "Addressed to (supervising attorney)"
+        },
+        {
+          "name": "from",
+          "label": "From (drafting attorney)"
+        },
+        {
+          "name": "client_matter",
+          "label": "Client/Matter name"
+        },
+        {
+          "name": "issue",
+          "label": "Legal issue(s) presented"
+        },
+        {
+          "name": "facts",
+          "label": "Key facts of the matter"
+        },
+        {
+          "name": "jurisdiction",
+          "label": "Applicable jurisdiction"
+        },
+        {
+          "name": "practice_area",
+          "label": "Practice area"
+        },
+        {
+          "name": "favorable_authorities",
+          "label": "Known favorable cases/statutes"
+        },
+        {
+          "name": "adverse_authorities",
+          "label": "Known adverse cases/statutes"
+        }
+      ],
+      "structure_hint": "Header (To, From, Date, Re) -> Question(s) Presented -> Brief Answer -> Statement of Facts -> Discussion (IRAC for each issue: Issue -> Rule -> Application -> Conclusion) -> Overall Conclusion -> Recommendations"
+    },
+    "example_queries": [
+      "Draft a memo analyzing whether my client's non-compete clause is enforceable in California",
+      "I need a legal memo on premises liability for a slip-and-fall at a grocery store in Georgia"
+    ]
+  },
+  {
+    "id": "us-lawyers-p10",
+    "title": "Ethics & Disciplinary Risk Advisor",
+    "problem": "Lawyers face complex ethical situations daily - potential conflicts, dual representation, fee disputes, social media conduct, AI use in practice. Missteps lead to bar complaints, public reprimand, suspension, or disbarment. The 2026 landscape adds new complexities around AI disclosure requirements and emerging regulations.",
+    "who": "All practicing attorneys, especially solo practitioners without firm ethics counsel",
+    "frequency": "monthly",
+    "time_waste_h": 3,
+    "money_risk_usd": 200000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Legal Ethics Advisor",
+      "one_liner": "Analyzes ethical dilemmas under ABA Model Rules and state-specific rules with risk assessment and recommended actions",
+      "expertise_area": "Legal ethics, professional responsibility, bar disciplinary rules, AI in legal practice compliance",
+      "decision_criteria": [
+        "applicable Model Rule(s)",
+        "state-specific variations",
+        "type of ethical issue",
+        "severity of potential violation",
+        "client impact",
+        "remedial options"
+      ],
+      "context_needed": [
+        "regulatory.penalties",
+        "regulatory.laws",
+        "career_psychology.fears"
+      ]
+    },
+    "example_queries": [
+      "A prospective client told me details about their case before I ran a conflict check, and now I found a conflict. What do I do?",
+      "Can I use AI to draft a brief without disclosing it to the court? What are the 2026 rules?",
+      "My former client's new matter is adversarial to a current client. Is this a conflict under Rule 1.9?"
+    ]
+  },
+  {
+    "id": "us-lawyers-p11",
+    "title": "Discovery Response Checklist",
+    "problem": "Responding to discovery requests (interrogatories, document requests, requests for admission) involves multiple procedural steps, objection deadlines, privilege review, and meet-and-confer requirements. Missing steps or deadlines can result in sanctions, adverse inferences, or waiver of objections.",
+    "who": "Litigation attorneys, associates handling discovery",
+    "frequency": "weekly",
+    "time_waste_h": 4,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Discovery Response Procedure",
+      "one_liner": "Complete step-by-step procedure for responding to written discovery requests under federal and state rules",
+      "steps": [
+        "Step 1: Calendar the response deadline (30 days federal/varies state) from date of service",
+        "Step 2: Determine service method and calculate any additional time (FRCP 6(d))",
+        "Step 3: Review each request individually for scope, relevance, and proportionality",
+        "Step 4: Identify proper objections (privilege, work product, overbroad, unduly burdensome, relevance)",
+        "Step 5: Draft objections - preserve all objections even if also providing responsive information",
+        "Step 6: Conduct reasonable search for responsive documents and information",
+        "Step 7: Review documents for privilege - create privilege log",
+        "Step 8: Prepare responses to interrogatories (verify under oath)",
+        "Step 9: Organize document production with Bates numbering",
+        "Step 10: Client review and verification of interrogatory answers",
+        "Step 11: Meet and confer on disputed requests before filing motions",
+        "Step 12: Serve responses and production within deadline",
+        "Step 13: Retain copies of all served responses and document production",
+        "Step 14: Calendar supplementation obligations (FRCP 26(e))"
+      ],
+      "warnings": [
+        "Warning: Failure to timely object waives most objections",
+        "Warning: Interrogatory answers must be verified under oath by the party",
+        "Warning: Inadvertent privilege disclosure - invoke clawback under FRE 502(b) immediately",
+        "Warning: ESI preservation obligations begin when litigation is reasonably anticipated"
+      ],
+      "regulatory_refs": [
+        "FRCP 33 (Interrogatories)",
+        "FRCP 34 (Document Requests)",
+        "FRCP 36 (Requests for Admission)",
+        "FRCP 26(b) (Scope of Discovery)",
+        "FRCP 26(e) (Supplementation)",
+        "FRE 502 (Privilege Waiver)"
+      ]
+    },
+    "example_queries": [
+      "I received interrogatories and document requests in federal court 5 days ago. Walk me through the response process.",
+      "What's my checklist for responding to requests for admission? Can I object to some?"
+    ]
+  },
+  {
+    "id": "us-lawyers-p12",
+    "title": "Malpractice Risk Assessment",
+    "problem": "Lawyers need to identify and mitigate malpractice exposure in real-time. The top causes of claims are administrative errors (deadlines), inadequate investigation, failure to know the law, planning errors, and inadequate discovery. Most attorneys lack a systematic way to evaluate their risk on active matters.",
+    "who": "All practicing attorneys, especially solo and small firm lawyers",
+    "frequency": "monthly",
+    "time_waste_h": 2,
+    "money_risk_usd": 300000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Malpractice Risk Advisor",
+      "one_liner": "Evaluates malpractice risk on active matters and recommends preventive actions based on common claim patterns",
+      "expertise_area": "Legal malpractice prevention, risk management, professional liability",
+      "decision_criteria": [
+        "practice area",
+        "matter complexity",
+        "deadline sensitivity",
+        "client sophistication",
+        "fee arrangement",
+        "staffing adequacy",
+        "documentation quality"
+      ],
+      "context_needed": [
+        "regulatory.penalties",
+        "career_psychology.fears",
+        "daily_reality.deadlines"
+      ]
+    },
+    "example_queries": [
+      "I'm handling a complex commercial litigation solo - what are my biggest malpractice risks?",
+      "I missed sending a demand letter before the SOL. What are my options and exposure?",
+      "What malpractice prevention steps should I take for a contingency fee personal injury case?"
+    ]
+  },
+  {
+    "id": "us-lawyers-p13",
+    "title": "Settlement Agreement Drafting",
+    "problem": "Settlement agreements must be comprehensive, covering releases, indemnification, confidentiality, payment terms, and tax implications. Incomplete or ambiguous settlement agreements lead to post-settlement disputes, enforcement actions, and malpractice claims. Each practice area has specific required provisions.",
+    "who": "Litigation attorneys, mediators, personal injury lawyers, employment lawyers",
+    "frequency": "monthly",
+    "time_waste_h": 4,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Settlement Agreement Generator",
+      "one_liner": "Generates comprehensive settlement agreements with appropriate releases, payment terms, and practice-area-specific provisions",
+      "doc_name": "Settlement Agreement and Release",
+      "variables": [
+        {
+          "name": "plaintiff_name",
+          "label": "Plaintiff/Claimant name"
+        },
+        {
+          "name": "defendant_name",
+          "label": "Defendant/Respondent name"
+        },
+        {
+          "name": "case_caption",
+          "label": "Case caption and number"
+        },
+        {
+          "name": "court",
+          "label": "Court name"
+        },
+        {
+          "name": "settlement_amount",
+          "type": "number",
+          "label": "Settlement amount (USD)"
+        },
+        {
+          "name": "payment_structure",
+          "label": "Payment structure (lump sum, structured, installments)"
+        },
+        {
+          "name": "practice_area",
+          "label": "Practice area (PI, employment, commercial, etc.)"
+        },
+        {
+          "name": "confidentiality",
+          "label": "Confidentiality required (yes/no)"
+        },
+        {
+          "name": "state",
+          "label": "Governing law state"
+        }
+      ],
+      "structure_hint": "Recitals -> Definitions -> Settlement payment terms -> General release of claims -> Carve-outs from release -> Confidentiality provisions -> Non-disparagement -> Tax provisions (1099 reporting) -> Representations and warranties -> Indemnification -> Dismissal with prejudice stipulation -> Governing law -> Entire agreement -> Signature blocks -> Notarization (if required)"
+    },
+    "example_queries": [
+      "Draft a settlement agreement for a $250,000 employment discrimination case in New York with confidentiality",
+      "I need a PI settlement agreement for $150K structured payment over 3 years in Texas"
+    ]
+  }
+]

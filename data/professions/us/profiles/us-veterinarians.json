@@ -1,0 +1,493 @@
+{
+  "profession_id": "us-veterinarians",
+  "profession_name": "Veterinarians",
+  "country": "US",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Veterinarians examine, diagnose, and treat animals in clinical settings, performing surgeries, administering vaccines, interpreting diagnostics, and educating pet owners. Most work 8-10 hour days seeing 15-30 patients, splitting time between consultations and surgical procedures. About 75% work in small animal companion practice. Practice owners also handle business operations, staff management, inventory, and regulatory compliance.",
+    "typical_tasks": [
+      "Perform physical examinations on animals to assess health status",
+      "Diagnose diseases and injuries through examination, lab tests, and imaging",
+      "Administer vaccinations (rabies, distemper, parvovirus, etc.)",
+      "Perform surgeries: spay/neuter, tumor removal, orthopedic, dental extractions, emergency procedures",
+      "Prescribe and dispense medications including controlled substances",
+      "Interpret diagnostic tests: blood panels, urinalysis, radiographs, ultrasound",
+      "Review patient medical histories and update records in PIMS",
+      "Communicate with pet owners about diagnoses, treatment plans, and prognosis",
+      "Supervise veterinary technicians, assistants, and support staff",
+      "Provide emergency and critical care when needed",
+      "Perform dental cleanings and dental procedures",
+      "Euthanize animals humanely when necessary and counsel grieving owners",
+      "Order supplies, manage inventory, and maintain equipment",
+      "Ensure compliance with DEA, OSHA, and state veterinary board regulations"
+    ],
+    "key_documents": [
+      "Patient medical records (SOAP notes in PIMS)",
+      "Vaccination certificates and rabies tags",
+      "Surgery reports and anesthesia logs",
+      "Prescription records and controlled substance logs",
+      "Laboratory results (CBC, chemistry panels, urinalysis)",
+      "Radiograph/imaging reports",
+      "Client consent forms (surgery, anesthesia, euthanasia)",
+      "DEA controlled substance inventory records",
+      "State veterinary license and CE documentation",
+      "OSHA compliance records",
+      "Insurance claim forms",
+      "Euthanasia and cremation authorization forms",
+      "Health certificates for travel/export"
+    ],
+    "deadlines": {
+      "medical_records": "Complete SOAP notes same day or within 24 hours per practice policy",
+      "controlled_substance_logs": "Updated daily; DEA inventory every 2 years minimum",
+      "state_license_renewal": "Varies by state, typically biennial",
+      "dea_registration_renewal": "Every 3 years",
+      "continuing_education": "Varies by state, typically 15-30 hours per renewal period",
+      "rabies_vaccination_certificates": "Must be issued at time of vaccination per state law",
+      "health_certificates": "Valid for 10-30 days depending on destination and type"
+    },
+    "seasonality": "Spring: spike in puppy/kitten visits, heartworm testing, flea/tick prevention starts. Summer: trauma cases (hit-by-car, heat stroke), travel health certificates, boarding pre-checks. Fall: routine wellness exams before holidays, dental month promotions. Winter: holiday toxin ingestions (chocolate, plants), slower routine visits. Year-end rush for clients using pet insurance benefits.",
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/veterinarians.htm", "fact": "BLS Occupational Outlook Handbook for Veterinarians"},
+      {"url": "https://www.vetandtech.com/blogs/10-key-veterinarian-job-responsibilities", "fact": "10 key veterinarian job responsibilities"},
+      {"url": "https://www.eliteveterinarycare.com/blog/a-typical-workday-in-the-veterinary-career", "fact": "Typical workday structure for veterinarians"},
+      {"url": "https://hiddenbrookveterinary.com/what-does-a-veterinarian-do-daily-understanding-the-day-to", "fact": "Daily tasks and responsibilities breakdown"}
+    ]
+  },
+  "regulatory": {
+    "summary": "Veterinarians must hold a DVM/VMD degree from an AVMA-accredited college, pass the NAVLE, and obtain state licensure. DEA registration is required for prescribing controlled substances. Each state has its own veterinary practice act enforced by a state veterinary board. USDA accreditation is needed for health certificates and interstate/international animal transport.",
+    "key_laws": [
+      {
+        "name": "State Veterinary Practice Acts",
+        "url": "https://www.avma.org/advocacy/state-local-issues/state-legislative-resources",
+        "status": "Active in all 50 states — define scope of practice, supervision requirements, and professional standards"
+      },
+      {
+        "name": "Controlled Substances Act (DEA Registration)",
+        "url": "https://www.deadiversion.usdoj.gov/",
+        "status": "Active — separate DEA registration required for each practice location; renewed every 3 years"
+      },
+      {
+        "name": "Veterinary Medicine Mobility Act of 2014",
+        "url": "https://www.avma.org/advocacy/veterinary-medicine-mobility-act",
+        "status": "Active — allows emergency and temporary practice across state lines under specific conditions"
+      },
+      {
+        "name": "Animal Welfare Act (AWA)",
+        "url": "https://www.aphis.usda.gov/aphis/ourfocus/animalwelfare",
+        "status": "Active — USDA enforced, applies to research facilities, breeders, dealers, exhibitors"
+      },
+      {
+        "name": "HIPAA-equivalent: Veterinary-Client-Patient Relationship (VCPR)",
+        "url": "https://www.avma.org/resources-tools/pet-owners/petcare/veterinarian-client-patient-relationship-vcpr",
+        "status": "Active — required in all states before diagnosing, treating, or prescribing"
+      },
+      {
+        "name": "OSHA Workplace Safety Standards",
+        "url": "https://www.osha.gov/veterinary",
+        "status": "Active — radiation safety, anesthetic gas exposure, sharps, zoonotic disease protocols"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Doctor of Veterinary Medicine (DVM) or Veterinariae Medicinae Doctoris (VMD) from AVMA-accredited veterinary college (4 years post-undergraduate)",
+        "Pass the North American Veterinary Licensing Examination (NAVLE) — computer-based, 360 questions",
+        "Obtain state veterinary license (most states accept NAVLE scores; many require state jurisprudence exam)",
+        "Establish valid Veterinary-Client-Patient Relationship (VCPR) before practicing",
+        "DEA registration for prescribing, dispensing, or administering controlled substances",
+        "State controlled substance license (separate from federal DEA in many states)",
+        "Continuing education: 15-30 hours per renewal period (varies by state, typically biennial)",
+        "USDA National Veterinary Accreditation (optional but needed for health certificates and federal programs)",
+        "Specialty board certification through AVMA-recognized specialty colleges (optional, 3-5 year residency after DVM)"
+      ],
+      "certifying_bodies": [
+        "State Veterinary Boards — primary licensing authority",
+        "NBVME — National Board of Veterinary Medical Examiners (administers NAVLE)",
+        "DEA — Drug Enforcement Administration (controlled substance registration)",
+        "USDA-APHIS — veterinary accreditation for federal programs",
+        "AVMA-recognized specialty boards (ACVS, ACVIM, ACVECC, etc.)"
+      ]
+    },
+    "penalties": "State board disciplinary actions: reprimand, probation, suspension, or revocation of veterinary license. DEA penalties for controlled substance violations including fines and criminal prosecution. Malpractice liability. OSHA fines for workplace safety violations. Practicing without a valid VCPR can result in board action. Fraudulent health certificates carry federal penalties.",
+    "controlling_bodies": [
+      "State Boards of Veterinary Medicine",
+      "AVMA — American Veterinary Medical Association (standards and accreditation)",
+      "DEA — Drug Enforcement Administration",
+      "USDA-APHIS — Animal and Plant Health Inspection Service",
+      "OSHA — Occupational Safety and Health Administration",
+      "State Pharmacy Boards (controlled substance oversight in some states)"
+    ],
+    "sources": [
+      {"url": "https://www.roo.vet/roo4you/dea-registration-compliance-for-relief-veterinarians", "fact": "DEA registration requirements for relief vets"},
+      {"url": "https://www.avma.org/blog/veterinarians-exempt-new-dea-education-requirement", "fact": "Veterinarians exempt from new DEA education requirement"},
+      {"url": "https://veterinarian-contract-attorney.com/dea-license-for-veterinarians-4-crucial-steps/", "fact": "DEA license steps for veterinarians"},
+      {"url": "https://www.roo.vet/resources/vet-and-tech-resources/dvm-licensing-guides", "fact": "DVM licensing guides by state"}
+    ]
+  },
+  "tools": {
+    "summary": "Veterinary practices rely on Practice Information Management Systems (PIMS) for patient records, scheduling, billing, and inventory. The market is shifting from legacy server-based systems to cloud-native platforms. Cloud-based solutions now account for over 80% market share. Diagnostic equipment integration (lab analyzers, digital radiography) and client communication platforms are essential.",
+    "primary_tools": [
+      {"name": "Cornerstone (IDEXX)", "description": "Leading legacy PIMS for large hospital teams; deep integration with IDEXX diagnostics; server-based with cloud add-ons"},
+      {"name": "AVImark (Covetrus/Patterson)", "description": "Long-established server-based PIMS with comprehensive features for busy hospitals"},
+      {"name": "Vetspire", "description": "Cloud-based PIMS popular with corporate groups; strong reporting and multi-location management; customizable workflows"},
+      {"name": "EzyVet", "description": "Cloud-based PIMS popular with specialty and emergency clinics; integrates with Smart Flow for treatment sheets; robust feature set"},
+      {"name": "Digitail", "description": "Modern cloud-based PIMS with AI-enabled tools; subscription model; attractive for smaller practices"},
+      {"name": "Hippo Manager", "description": "Cloud-based PIMS focused on affordability and simplicity; strong for smaller clinics and mobile vets"},
+      {"name": "Shepherd Veterinary Software", "description": "Cloud-native PIMS designed for modern workflows; intuitive interface"},
+      {"name": "IDEXX Diagnostic Suite", "description": "In-house laboratory analyzers (Catalyst, ProCyte, SediVue) with PIMS integration for CBC, chemistry, urinalysis"},
+      {"name": "Digital Radiography Systems (Sound/Antech, IDEXX)", "description": "Digital X-ray and PACS systems integrated with PIMS for image storage and sharing"}
+    ],
+    "secondary_tools": [
+      {"name": "Weave", "description": "Client communication platform — texting, reminders, reviews, phones, payments"},
+      {"name": "PetDesk", "description": "Client engagement app — online booking, reminders, loyalty programs"},
+      {"name": "Talkatoo", "description": "AI-powered veterinary dictation software for medical records"},
+      {"name": "Smart Flow (IDEXX)", "description": "Digital treatment sheets for hospitalized patients"},
+      {"name": "Antech/Sound Diagnostics", "description": "Reference laboratory services and in-house analyzers"},
+      {"name": "VetConnect PLUS (IDEXX)", "description": "Cloud-based diagnostic results portal"},
+      {"name": "Plumb's Veterinary Drugs", "description": "Drug reference database for dosing and interactions"},
+      {"name": "VIN (Veterinary Information Network)", "description": "Online CE, message boards, clinical tools, and drug calculators"}
+    ],
+    "pain_points": [
+      "Legacy PIMS systems are slow, outdated, and expensive to maintain",
+      "Poor interoperability between PIMS, lab systems, and imaging platforms",
+      "Mobile staff access remains surprisingly limited across most platforms",
+      "Data migration between PIMS systems is painful and risky",
+      "Client communication fragmented across multiple tools",
+      "Medical records documentation is time-consuming — many vets chart after hours",
+      "Controlled substance logging and DEA compliance adds administrative burden",
+      "Cloud-based systems depend on internet — outages can halt operations",
+      "Integration of telehealth workflows is still immature in most PIMS"
+    ],
+    "sources": [
+      {"url": "https://software.idexx.com/top-veterinary-software-solutions-a-2025-comparison-guide", "fact": "IDEXX 2025 comparison guide for veterinary software solutions"},
+      {"url": "https://www.co.vet/post/veterinary-management-software", "fact": "Veterinary practice software options for 2026"},
+      {"url": "https://withcherry.com/blog/veterinary-practice-management-software", "fact": "Best veterinary software for 2026"},
+      {"url": "https://www.nectarvet.com/post/best-pims-for-startup-veterinary-clinics-in-2025", "fact": "Best PIMS for startup veterinary clinics in 2025"},
+      {"url": "https://acurovet.com/blog/what-is-a-vet-pims", "fact": "What is a vet PIMS explanation and 2025 overview"}
+    ]
+  },
+  "terminology": {
+    "summary": "Veterinary medicine uses extensive medical terminology, Latin-derived abbreviations, and profession-specific jargon for charting, communication, and clinical documentation. Many abbreviations are shared with human medicine but with animal-specific context.",
+    "terms": {
+      "DVM": "Doctor of Veterinary Medicine — primary professional degree",
+      "VMD": "Veterinariae Medicinae Doctoris — equivalent degree (University of Pennsylvania)",
+      "NAVLE": "North American Veterinary Licensing Examination — required for licensure",
+      "VCPR": "Veterinary-Client-Patient Relationship — must be established before treatment",
+      "SOAP": "Subjective, Objective, Assessment, Plan — standard medical record format",
+      "Sx": "Surgery",
+      "Dx": "Diagnosis",
+      "Tx": "Treatment",
+      "Rx": "Prescription",
+      "Hx": "History",
+      "PE": "Physical Examination",
+      "CBC": "Complete Blood Count — routine blood test",
+      "BMP/CMP": "Basic/Comprehensive Metabolic Panel — blood chemistry",
+      "UA": "Urinalysis",
+      "HW": "Heartworm",
+      "FeLV": "Feline Leukemia Virus",
+      "FIV": "Feline Immunodeficiency Virus",
+      "DHLPP": "Distemper, Hepatitis, Leptospirosis, Parainfluenza, Parvovirus — combo vaccine",
+      "FVRCP": "Feline Viral Rhinotracheitis, Calicivirus, Panleukopenia — combo vaccine",
+      "OVH": "Ovariohysterectomy (spay)",
+      "OHE": "Ovariohysterectomy (alternative abbreviation)",
+      "SF": "Spayed Female",
+      "NM": "Neutered Male",
+      "FS": "Female Spayed",
+      "MN": "Male Neutered",
+      "MI": "Male Intact",
+      "FI": "Female Intact",
+      "K9": "Canine/Dog",
+      "DSH": "Domestic Short Hair (cat)",
+      "DLH": "Domestic Long Hair (cat)",
+      "DMH": "Domestic Medium Hair (cat)",
+      "BID": "Twice daily (medication dosing)",
+      "TID": "Three times daily",
+      "SID/QD": "Once daily",
+      "QOD": "Every other day",
+      "PO": "Per os (by mouth)",
+      "SQ/SC": "Subcutaneous (injection route)",
+      "IM": "Intramuscular",
+      "IV": "Intravenous",
+      "NPO": "Nothing by mouth (nil per os — pre-surgery fasting)",
+      "BAR": "Bright, Alert, Responsive — normal mentation",
+      "QAR": "Quiet, Alert, Responsive — mildly depressed mentation",
+      "ADR": "Ain't Doin' Right — colloquial for nonspecific illness",
+      "HBC": "Hit By Car",
+      "GDV": "Gastric Dilatation-Volvulus (bloat) — surgical emergency",
+      "TPLO": "Tibial Plateau Leveling Osteotomy — common orthopedic surgery for ACL repair in dogs",
+      "FHO": "Femoral Head Ostectomy — hip surgery",
+      "CPR": "Cardiopulmonary Resuscitation",
+      "BDLD": "Big Dog-Little Dog (bite wound scenario)",
+      "E-collar": "Elizabethan collar (cone of shame) — prevents licking wounds",
+      "Bordetella": "Kennel cough vaccine",
+      "Parvo": "Canine parvovirus — highly contagious and deadly",
+      "PIMS": "Practice Information Management System",
+      "CE": "Continuing Education",
+      "ACVS": "American College of Veterinary Surgeons (board-certified specialist)",
+      "ACVIM": "American College of Veterinary Internal Medicine",
+      "ACVECC": "American College of Veterinary Emergency and Critical Care",
+      "DACVS": "Diplomate of the American College of Veterinary Surgeons"
+    },
+    "sources": [
+      {"url": "https://www.library.illinois.edu/vex/vetabbrev/", "fact": "University of Illinois veterinary abbreviations and acronyms guide"},
+      {"url": "https://www.aspcapetinsurance.com/resources/vet-acronyms/", "fact": "ASPCA top acronyms and abbreviations in veterinary medicine"},
+      {"url": "https://www.petmd.com/veterinaryterms", "fact": "PetMD glossary of veterinary terms"},
+      {"url": "https://www.merckvetmanual.com/resourcespages/abbreviations", "fact": "Merck Veterinary Manual abbreviations"}
+    ]
+  },
+  "career_psychology": {
+    "summary": "Veterinary medicine is a high-demand, emotionally taxing profession with rising salaries driven by workforce shortages. Entry-level salaries now exceed $100,000 but are offset by average student debt of $150,000-$300,000+. Burnout rate reaches 50-59%, with disproportionately high rates of depression and suicide compared to the general population. Work-life balance has become the #1 job satisfaction factor, surpassing salary.",
+    "career_path": [
+      {"level": "Veterinary Student", "duration": "4 years DVM program", "description": "Clinical rotations, didactic coursework, board preparation"},
+      {"level": "Associate Veterinarian (Entry)", "duration": "0-3 years post-graduation", "description": "Building clinical skills under mentorship, handling routine cases and surgeries"},
+      {"level": "Associate Veterinarian (Experienced)", "duration": "3-7 years", "description": "Independent clinical decision-making, developing specialization interests, mentoring new graduates"},
+      {"level": "Practice Owner / Partner", "duration": "7+ years", "description": "Business ownership, full clinical and management responsibility, highest earning potential"},
+      {"level": "Board-Certified Specialist", "duration": "3-5 year residency after DVM", "description": "Specialty practice (surgery, internal medicine, oncology, dermatology, emergency/critical care, etc.)"},
+      {"level": "Corporate/Group Practice Veterinarian", "duration": "Any career stage", "description": "Employment with corporate groups (Mars/VCA, NVA, Thrive, etc.) — structured career ladders, less business risk"},
+      {"level": "Academic/Research Veterinarian", "duration": "After residency/PhD", "description": "Teaching, research, and clinical service at veterinary colleges"},
+      {"level": "Industry/Regulatory Veterinarian", "duration": "Any career stage", "description": "Pharmaceutical companies, USDA, FDA, state agencies, public health"}
+    ],
+    "salary_range": {
+      "entry_level": "$100,000-$120,000",
+      "mid_career": "$130,000-$170,000",
+      "senior": "$170,000-$198,000+",
+      "specialist": "$200,000-$350,000+",
+      "practice_owner": "$150,000-$500,000+ (varies widely by practice size and location)",
+      "average_2026": "$157,000 (mid-range median, January 2026 salary survey)"
+    },
+    "fears": [
+      "Overwhelming student debt ($150,000-$300,000+) relative to early-career income",
+      "Making a clinical error that harms or kills a patient",
+      "Euthanasia burden — emotional toll of ending lives regularly",
+      "Aggressive or hostile clients and online review harassment",
+      "Compassion fatigue from repeated emotional encounters",
+      "Malpractice lawsuits",
+      "State board complaints and license jeopardy",
+      "Physical injury from animal bites, kicks, or needle sticks",
+      "Being unable to help due to client financial constraints",
+      "Corporate consolidation threatening independent practice viability"
+    ],
+    "motivation": [
+      "Deep love for animals and desire to help them",
+      "Tangible impact — seeing sick animals recover",
+      "Intellectual challenge and diagnostic problem-solving",
+      "Variety of cases and species",
+      "Strong human-animal bond relationships with clients",
+      "Practice ownership and entrepreneurship opportunities",
+      "Rising compensation due to workforce demand",
+      "Specialty paths for those seeking advanced clinical challenges",
+      "Community respect and trust"
+    ],
+    "burnout_factors": [
+      "Burnout rate 50-59% (Merck Animal Health study: 59% moderate-to-high burnout)",
+      "Compassion fatigue from euthanasia, dying patients, and grieving owners",
+      "Client-related stress: financial constraints, non-compliance, abusive behavior",
+      "Long hours (often 50+ hours/week) with emergency on-call duties",
+      "Student debt-to-income ratio creates financial stress",
+      "Staffing shortages increasing workload per veterinarian",
+      "Administrative burden: charting, compliance, insurance paperwork",
+      "Physical toll: standing all day, restraining animals, repetitive strain",
+      "Disproportionately high suicide rate compared to general population",
+      "Younger veterinarians at even greater burnout risk",
+      "Self-employed veterinarians report higher satisfaction and lower burnout than associates"
+    ],
+    "sources": [
+      {"url": "https://research.com/careers/vet-careers-guide-to-career-paths-options-and-salary", "fact": "2026 vet careers guide with salary and career path data"},
+      {"url": "https://petdesk.com/blog/2025-veterinary-industry-stats", "fact": "2025 veterinary industry statistics including burnout data"},
+      {"url": "https://hardhat.careers/articles/is-veterinarian-a-good-career-2026", "fact": "Veterinarian career outlook and salary 2026"},
+      {"url": "https://suveto.com/what-veterinarians-really-want-from-their-employers-in-2026/", "fact": "What veterinarians want from employers in 2026 — work-life balance #1 factor"},
+      {"url": "https://www.myvetcandy.com/blog/2025/1/15/veterinary-medicine-the-fastest-growing-career-of-2025-and-why-its-worth-the-hype", "fact": "Veterinary medicine fastest-growing career of 2025"}
+    ]
+  },
+  "community": {
+    "summary": "The AVMA (American Veterinary Medical Association) is the primary professional association with 105,000+ members. Strong online communities exist on Reddit, VIN (Veterinary Information Network), and Facebook groups. Major conferences include AVMA Convention, VMX, and WVC. The profession has a tight-knit culture with growing emphasis on mental health support and peer networks.",
+    "associations": [
+      {"name": "AVMA — American Veterinary Medical Association", "url": "https://www.avma.org", "type": "Primary professional association — advocacy, CE, standards, 105,000+ members"},
+      {"name": "AAVMC — Association of American Veterinary Medical Colleges", "url": "https://www.aavmc.org", "type": "Academic — represents veterinary colleges and promotes veterinary education"},
+      {"name": "State Veterinary Medical Associations", "url": "https://www.avma.org/resources-tools/avma-directories/affiliated-organizations", "type": "State-level advocacy, CE, and networking (e.g., CVMA, TVMA, NYVMA)"},
+      {"name": "AAHA — American Animal Hospital Association", "url": "https://www.aaha.org", "type": "Accreditation body for companion animal hospitals — practice standards"},
+      {"name": "VIN — Veterinary Information Network", "url": "https://www.vin.com", "type": "Online community, CE, clinical resources, message boards — 'the social network for vets'"},
+      {"name": "NAVC — North American Veterinary Community", "url": "https://navc.com", "type": "Education-focused organization — hosts VMX conference"},
+      {"name": "WVC — Western Veterinary Conference", "url": "https://www.viticusgroup.org", "type": "Major CE provider and conference organizer (now Viticus Group)"},
+      {"name": "Not One More Vet (NOMV)", "url": "https://www.nomv.org", "type": "Mental health support and suicide prevention — peer support network for veterinary professionals"}
+    ],
+    "events": [
+      {"name": "AVMA Convention 2026", "detail": "July 10-14, 2026, Anaheim, CA — combined with 40th World Veterinary Association Congress. Keynote by Mark Penning (Disney). World-class CE, networking, and special events."},
+      {"name": "VMX (Veterinary Meeting & Expo)", "detail": "January, Orlando, FL — over 1,000 hours of CE, hundreds of program tracks, largest veterinary conference in the world. Hosted by NAVC."},
+      {"name": "WVC Annual Conference (Viticus Group)", "detail": "February-March, Las Vegas — major CE conference with wet labs and networking."},
+      {"name": "ACVIM Forum", "detail": "Annual — specialty conference covering internal medicine, oncology, nutrition, neurology, cardiology."},
+      {"name": "Fetch Veterinary Conference (dvm360)", "detail": "Multiple dates/locations annually — regional CE conferences."},
+      {"name": "AAHA Annual Conference", "detail": "Annual — focus on practice management and standards of care."}
+    ],
+    "online_communities": [
+      "Reddit r/veterinary (veterinary professionals discussion)",
+      "Reddit r/VetTech (veterinary technicians)",
+      "Reddit r/AskVet (public Q&A moderated by vets)",
+      "VIN (Veterinary Information Network) — premier online professional community with message boards, consultants, and clinical tools",
+      "Facebook: Veterinary Professionals group, Not One More Vet (NOMV) support group, specialty-specific groups",
+      "dvm360 online — news, CE, and clinical resources",
+      "Veterinary Partner (client education resource)",
+      "LinkedIn veterinary professional groups",
+      "Today's Veterinary Practice / Today's Veterinary Nurse online publications"
+    ],
+    "sources": [
+      {"url": "https://www.avma.org/events/avma-convention", "fact": "AVMA Convention 2026 details — Anaheim, July 10-14"},
+      {"url": "https://www.dvmelite.com/top-veterinary-conferences-2025", "fact": "Top veterinary conferences guide"},
+      {"url": "https://instinct.vet/blog/top-veterinary-conferences-2026/", "fact": "Top 15 veterinary conferences 2026"},
+      {"url": "https://www.avma.org/blog/share-your-expertise-avma-convention-2026", "fact": "AVMA Convention 2026 call for speakers"},
+      {"url": "https://www.globalvetlink.com/blog/your-2026-veterinary-conferences-guide/", "fact": "2026 veterinary conference planning guide"}
+    ]
+  },
+  "market": {
+    "summary": "The veterinary job market is strong with 19-20% projected growth, driven by increased pet ownership, workforce shortages, and rising demand for veterinary services. Over 500 US counties lack sufficient veterinary services. Compensation is rising significantly, especially at mid and senior levels (9% and 8.2% annual growth respectively). Corporate consolidation continues with groups like Mars/VCA, NVA, and Thrive acquiring practices.",
+    "job_outlook": {
+      "growth_rate": "19-20% projected growth through 2032 (much faster than average)",
+      "annual_openings": "~4,600 openings per year (BLS)",
+      "total_employed": "~87,800 veterinarians in the US (BLS)",
+      "shortage": "Nearly 55,000 additional veterinarians needed by 2030 for companion animal care; projected shortage of 24,000 veterinarians by 2030",
+      "underserved_areas": "Over 500 US counties lack sufficient veterinary services, especially rural areas",
+      "high_demand_states": "Colorado, Michigan, West Virginia, North Carolina, Arizona, Washington, Maine, Florida, Utah, South Carolina"
+    },
+    "salary_market": {
+      "min": "$100,000 (low range median, entry-level)",
+      "avg": "$157,000 (mid-range median, January 2026)",
+      "max": "$198,000+ (high-range median; specialists $250,000-$350,000+)",
+      "entry_level_growth": "Entry-level salaries now consistently surpass $100,000",
+      "mid_career_growth": "9.0% annual growth at mid-level",
+      "senior_growth": "8.2% annual growth at senior level",
+      "median_bls": "$119,100 (BLS May 2024 median annual wage)"
+    },
+    "market_trends": [
+      "Workforce shortage driving rapid compensation increases — especially mid-career and senior levels",
+      "Corporate consolidation: Mars (Banfield, VCA, BluePearl), NVA, Thrive Pet Healthcare, Pathway Vet Alliance acquiring independent practices",
+      "Pet ownership surge post-COVID sustaining demand for veterinary services",
+      "Telehealth/telemedicine expanding — states updating VCPR rules to allow virtual visits",
+      "AI integration in diagnostics (radiology, pathology) beginning to impact workflows",
+      "Veterinary school expansion — new schools opening but graduate supply still insufficient",
+      "Work-life balance now the #1 factor in job satisfaction (68% of associates per 2024 AVMA Census)",
+      "Mental health initiatives: NOMV, AVMA resources, employer-sponsored counseling becoming standard",
+      "Rural veterinary shortage persisting — USDA loan repayment programs incentivizing rural placement",
+      "Younger veterinarians reshaping work expectations — prefer employment over ownership, demand flexible scheduling",
+      "Specialty and emergency medicine growing fastest — higher compensation and demand",
+      "Cloud-based PIMS adoption accelerating — over 80% market share"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/veterinarians.htm", "fact": "BLS: median $119,100, 19% growth projected, ~4,600 annual openings"},
+      {"url": "https://www.veterinaryjobsmarketplace.com/resources/veterinarian-salary-survey-usa/", "fact": "January 2026 salary survey: low $100K, mid $157K, high $198K"},
+      {"url": "https://petdesk.com/blog/2025-veterinary-industry-stats", "fact": "2025 veterinary industry statistics"},
+      {"url": "https://www.zippia.com/veterinarian-jobs/trends/", "fact": "Veterinarian job outlook and growth 2026"},
+      {"url": "https://thevetrecruiter.com/key-insights-and-strategies-for-hiring-veterinarians-in-2026/", "fact": "Key insights for hiring veterinarians in 2026"},
+      {"url": "https://todaysveterinarynurse.com/news/why-veterinary-jobs-are-expected-to-grow-19-by-2026/", "fact": "Why veterinary jobs expected to grow 19% by 2026"},
+      {"url": "https://vetpartners.org/news/675994/Veterinary-Job-Market-Update-Trends-Challenges-and-Opportunities.htm", "fact": "Veterinary job market update: trends, challenges, and opportunities"},
+      {"url": "https://www.avma.org/news/no-dire-shortage-veterinarians-anticipated-coming-years", "fact": "AVMA analysis on veterinarian supply projections"}
+    ]
+  },
+  "quality_score": 0.70,
+  "sources_count": 25,
+  "verified_sources": 6,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Veterinarians USA 2025 2026 daily work tasks responsibilities typical day",
+      "sources": [
+        {"title": "Understanding Veterinarian Daily Duties", "url": "https://www.petscare.com/news/post/veterinarian-daily-duties-guide"},
+        {"title": "FAQ: What Are the Work Hours of Veterinarians?", "url": "https://www.indeed.com/career-advice/finding-a-job/work-hours-of-veterinarian"},
+        {"title": "10 Key Veterinarian Job Responsibilities", "url": "https://www.vetandtech.com/blogs/10-key-veterinarian-job-responsibilities"},
+        {"title": "What Does a Typical Daily Routine of a Vet Look Like?", "url": "https://thevetservice.com/what-does-a-typical-daily-routine-of-a-vet-look-like/"},
+        {"title": "A Typical Workday in the Veterinary Career", "url": "https://www.eliteveterinarycare.com/blog/a-typical-workday-in-the-veterinary-career"},
+        {"title": "What Does a Veterinarian Do Daily?", "url": "https://hiddenbrookveterinary.com/what-does-a-veterinarian-do-daily-understanding-the-day-to"},
+        {"title": "What Does a Small Animal Vet Do?", "url": "https://veterinary.rossu.edu/about/blog/what-does-a-small-animal-veterinarian-do"},
+        {"title": "Veterinarians: Occupational Outlook Handbook (BLS)", "url": "https://www.bls.gov/ooh/healthcare/veterinarians.htm"},
+        {"title": "What Is Life Like as a Veterinarian?", "url": "https://veterinary.stmatthews.edu/blog/what-is-life-like-as-a-vet"},
+        {"title": "What Do Veterinarians Do?", "url": "https://www.owlguru.com/career/veterinarians/job-description/"}
+      ]
+    },
+    {
+      "query": "Veterinarians USA 2025 2026 licensing state veterinary board DEA regulations requirements",
+      "sources": [
+        {"title": "DEA Registration & Compliance for Relief Veterinarians", "url": "https://www.roo.vet/roo4you/dea-registration-compliance-for-relief-veterinarians"},
+        {"title": "California Veterinarian License Requirements (2026)", "url": "https://getlicensemap.com/states/veterinarian/california"},
+        {"title": "Delving into DEA regulations for veterinary practices (dvm360)", "url": "https://www.dvm360.com/view/delving-into-dea-regulations-for-veterinary-practices"},
+        {"title": "Who Needs a DEA License? - VetSnap", "url": "https://go.vetsnap.com/who-needs-dea-license/"},
+        {"title": "Board of Veterinary Medicine (Idaho)", "url": "https://dopl.idaho.gov/vet/"},
+        {"title": "Veterinarians exempt from new DEA education requirement (AVMA)", "url": "https://www.avma.org/blog/veterinarians-exempt-new-dea-education-requirement"},
+        {"title": "DEA License for Veterinarians: 4 CRUCIAL Steps", "url": "https://veterinarian-contract-attorney.com/dea-license-for-veterinarians-4-crucial-steps/"},
+        {"title": "DEA Controlled Substance Licenses Registration", "url": "https://titangroupdea.com/controlled-substance-license-registration/"},
+        {"title": "Controlled Substance DEA FAQ – CVMA Watchdog", "url": "https://cvma-watchdog.net/regulatory-compliance/pharmaceutical/controlled-substance-dea/controlled-substance-dea-faq/"},
+        {"title": "DVM Licensing Guides", "url": "https://www.roo.vet/resources/vet-and-tech-resources/dvm-licensing-guides"}
+      ]
+    },
+    {
+      "query": "Veterinarians USA practice management software tools PIMS technology 2025 2026",
+      "sources": [
+        {"title": "Top Veterinary Software Solutions: A 2025 Comparison Guide (IDEXX)", "url": "https://software.idexx.com/top-veterinary-software-solutions-a-2025-comparison-guide"},
+        {"title": "Veterinary Practice Software Options for 2026", "url": "https://www.co.vet/post/veterinary-management-software"},
+        {"title": "The Best Veterinary Software for 2026 (Cherry)", "url": "https://withcherry.com/blog/veterinary-practice-management-software"},
+        {"title": "Digitail: All-in-one Veterinary Practice Management Software", "url": "https://digitail.com/"},
+        {"title": "Best PIMS for Startup Veterinary Clinics in 2025 (NectarVet)", "url": "https://www.nectarvet.com/post/best-pims-for-startup-veterinary-clinics-in-2025"},
+        {"title": "Top Cloud Veterinary Practice Management Software (Passpaw)", "url": "https://passpaw.com/blog/veterinary-practice-management-software"},
+        {"title": "10 Top Veterinary Practice Management Software (Hello Rache)", "url": "https://hellorache.com/10-best-veterinary-practice-management-software/"},
+        {"title": "Provet Cloud", "url": "https://www.provet.com/"},
+        {"title": "What is a Vet PIMS? (Acurovet)", "url": "https://acurovet.com/blog/what-is-a-vet-pims"},
+        {"title": "Best Veterinary Practice Management Software of 2026", "url": "https://www.vetsoftwarehub.com/category/practice-management"}
+      ]
+    },
+    {
+      "query": "Veterinary medicine terminology abbreviations jargon DVM spay neuter professional",
+      "sources": [
+        {"title": "Veterinary Abbreviations & Acronyms Guide (University of Illinois)", "url": "https://www.library.illinois.edu/vex/vetabbrev/"},
+        {"title": "Top Acronyms and Abbreviations in Veterinary Medicine (ASPCA)", "url": "https://www.aspcapetinsurance.com/resources/vet-acronyms/"},
+        {"title": "The Importance of Abbreviations in Veterinary Medicine (CareerStep)", "url": "https://careerstep.my.site.com/s/article/The-Importance-of-Abbreviations-in-Veterinary-Medicine"},
+        {"title": "Glossary of Vet and Veterinary Terms (PetMD)", "url": "https://www.petmd.com/veterinaryterms"},
+        {"title": "Guide to Veterinary Abbreviations (PetPlace)", "url": "https://www.petplace.com/article/cats/pet-health/what-do-those-veterinary-abbreviations-mean"},
+        {"title": "Common Veterinary Medical Abbreviations (Course Sidekick)", "url": "https://www.coursesidekick.com/medicine/3719033"},
+        {"title": "Standard Abbreviations For Veterinary Medical Records, 3rd Edition", "url": "https://www.scribd.com/document/350472882/Standard-Abbreviations-for-Veterinary-Medical-Records-3rd-Edition"},
+        {"title": "Abbreviations - Merck Veterinary Manual", "url": "https://www.merckvetmanual.com/resourcespages/abbreviations"},
+        {"title": "Vet Acronyms - CVMA", "url": "https://cvma.net/resources/careers/veterinary-students/vet-acronyms/"}
+      ]
+    },
+    {
+      "query": "Veterinarians USA career path salary 2025 2026 burnout mental health",
+      "sources": [
+        {"title": "2026 Vet Careers: Guide to Career Paths, Options & Salary (Research.com)", "url": "https://research.com/careers/vet-careers-guide-to-career-paths-options-and-salary"},
+        {"title": "2025 Veterinary Industry Stats In The U.S. (PetDesk)", "url": "https://petdesk.com/blog/2025-veterinary-industry-stats"},
+        {"title": "Veterinarian Job Outlook And Growth In The US 2026 (Zippia)", "url": "https://www.zippia.com/veterinarian-jobs/trends/"},
+        {"title": "Is Veterinarian a Good Career in 2026? (Hardhat)", "url": "https://hardhat.careers/articles/is-veterinarian-a-good-career-2026"},
+        {"title": "Are career path programs the solution to a clinician shortage? (dvm360)", "url": "https://www.dvm360.com/view/are-career-path-programs-the-solution-to-a-clinician-shortage-in-veterinary-medicine-"},
+        {"title": "What Veterinarians Really Want From Their Employers in 2026 (Suveto)", "url": "https://suveto.com/what-veterinarians-really-want-from-their-employers-in-2026/"},
+        {"title": "Veterinary Medicine: The Fastest-Growing Career of 2025 (VetCandy)", "url": "https://www.myvetcandy.com/blog/2025/1/15/veterinary-medicine-the-fastest-growing-career-of-2025-and-why-its-worth-the-hype"},
+        {"title": "Veterinarians: Salary, career path, job outlook (RaiseMe)", "url": "https://www.raise.me/careers/healthcare/veterinarians/"},
+        {"title": "Key Insights and Strategies for Hiring Veterinarians in 2026 (TVR)", "url": "https://thevetrecruiter.com/key-insights-and-strategies-for-hiring-veterinarians-in-2026/"}
+      ]
+    },
+    {
+      "query": "Veterinarians USA professional associations AVMA conferences 2025 2026",
+      "sources": [
+        {"title": "AVMA Convention", "url": "https://www.avma.org/events/avma-convention"},
+        {"title": "Top Veterinary Conferences in the US (2026 Guide)", "url": "https://www.dvmelite.com/top-veterinary-conferences-2025"},
+        {"title": "Conferences and Meetings - AAVMC", "url": "https://www.aavmc.org/news/conferences-meetings/"},
+        {"title": "Events - AVMA", "url": "https://www.avma.org/events"},
+        {"title": "Top 15 Veterinary Conferences to Attend in 2026", "url": "https://instinct.vet/blog/top-veterinary-conferences-2026/"},
+        {"title": "40th World Veterinary Association Congress with AVMA Convention 2025", "url": "https://worldvet.org/news/the-40th-world-veterinary-association-congress-in-conjunction-with-avma-convention-2025/"},
+        {"title": "6 Veterinary Conferences That Will Level Up Your Care (Wedgewood)", "url": "https://www.wedgewood.com/blog/6-veterinary-conferences-that-will-level-up-your-care/"},
+        {"title": "Share your expertise at AVMA Convention 2026", "url": "https://www.avma.org/blog/share-your-expertise-avma-convention-2026"},
+        {"title": "Veterinary Conferences to Attend in 2025 (Weave)", "url": "https://www.getweave.com/veterinary-conferences/"},
+        {"title": "2026 Veterinary Conference Planning Guide (GlobalVetLink)", "url": "https://www.globalvetlink.com/blog/your-2026-veterinary-conferences-guide/"}
+      ]
+    },
+    {
+      "query": "Veterinarians USA job market demand salary shortage outlook 2025 2026",
+      "sources": [
+        {"title": "2025 Veterinary Industry Stats In The U.S. (PetDesk)", "url": "https://petdesk.com/blog/2025-veterinary-industry-stats"},
+        {"title": "Veterinarian Job Outlook And Growth In The US 2026 (Zippia)", "url": "https://www.zippia.com/veterinarian-jobs/trends/"},
+        {"title": "Veterinarian Salary Survey USA - January 2026 (VJM)", "url": "https://www.veterinaryjobsmarketplace.com/resources/veterinarian-salary-survey-usa/"},
+        {"title": "No dire shortage of veterinarians anticipated (AVMA)", "url": "https://www.avma.org/news/no-dire-shortage-veterinarians-anticipated-coming-years"},
+        {"title": "2024 Veterinary Stats (Otto)", "url": "https://otto.vet/2024-veterinary-stats/"},
+        {"title": "Why Veterinary Jobs Are Expected to Grow 19% by 2026", "url": "https://todaysveterinarynurse.com/news/why-veterinary-jobs-are-expected-to-grow-19-by-2026/"},
+        {"title": "Large Animal Veterinarian Job Outlook 2026 (Zippia)", "url": "https://www.zippia.com/large-animal-veterinarian-jobs/trends/"},
+        {"title": "Veterinary Job Market Update (VetPartners)", "url": "https://vetpartners.org/news/675994/Veterinary-Job-Market-Update-Trends-Challenges-and-Opportunities.htm"},
+        {"title": "Key Insights and Strategies for Hiring Veterinarians in 2026 (TVR)", "url": "https://thevetrecruiter.com/key-insights-and-strategies-for-hiring-veterinarians-in-2026/"},
+        {"title": "Veterinarian Facts: Key Stats, Trends 2025", "url": "https://www.co.vet/post/veterinarian-facts"}
+      ]
+    }
+  ]
+}

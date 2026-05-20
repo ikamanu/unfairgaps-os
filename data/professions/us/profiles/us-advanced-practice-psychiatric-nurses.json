@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-advanced-practice-psychiatric-nurses",
+  "profession_name": "Advanced Practice Psychiatric Nurses",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Full-time PMHNPs see an average of 15 patients per day. Work settings include behavioral health/addiction clinics, psychiatric facilities, private practices, hospitals, and telehealth. Daily activities: psychiatric evaluations, diagnosing mental health disorders using DSM-5 criteria, prescribing psychotropic medications, conducting individual/group/family psychotherapy, monitoring medication efficacy and side effects, collaborating with psychiatrists and interdisciplinary teams, and documentation in EHR systems. May work nights, weekends, holidays, and be on call.",
+    "documents": ["Psychiatric evaluations", "Treatment plans", "Medication management records", "Progress notes (SOAP format)", "PHQ-9 and GAD-7 screening tools", "Prior authorization forms for medications", "Referral letters", "Discharge summaries", "Collaborative practice agreements (state-dependent)"],
+    "deadlines": ["Treatment plan reviews (typically every 90 days)", "Prior authorization renewals for medications", "Continuing education requirements (varies by state)", "Board certification renewal every 5 years (ANCC)", "DEA license renewal", "State license renewal", "Collaborative practice agreement updates"],
+    "seasonality": "Mental health demand peaks during holiday seasons (November-January) with increased depression and suicide risk. Back-to-school period (August-September) increases child/adolescent referrals. Seasonal Affective Disorder increases caseload in winter months. Post-pandemic ongoing elevated demand year-round."
+  },
+  "regulatory": {
+    "laws": ["State Nurse Practice Acts", "Mental Health Parity and Addiction Equity Act", "HIPAA", "42 CFR Part 2 (substance abuse confidentiality)", "State prescriptive authority laws", "DEA regulations for controlled substances", "Baker Act / involuntary commitment laws (state-specific)"],
+    "licensing": "Requires MSN or DNP with PMHNP specialization from CCNE/ACEN-accredited program. Must pass PMHNP-BC certification exam (ANCC) or AANPCB exam. 28 states + DC grant full practice authority; others require physician collaboration. DEA registration required for prescribing controlled substances. California SB 1451 streamlining independent practice — first eligible NPs on track for full independence in 2026.",
+    "penalties": "License revocation/suspension for practice violations. Prescribing violations can result in DEA license revocation and criminal charges. HIPAA violations up to $50,000 per incident. State-specific penalties for practice outside scope. Malpractice liability for misdiagnosis or inappropriate medication management.",
+    "regulatory_bodies": ["State Boards of Nursing", "ANCC (American Nurses Credentialing Center)", "AANPCB (American Academy of Nurse Practitioners Certification Board)", "DEA (Drug Enforcement Administration)", "State mental health authorities", "CMS", "Joint Commission"]
+  },
+  "tools": {
+    "software": ["TherapyNotes (psychiatric-specific EHR)", "SimplePractice", "ICANotes (click-based psychiatric documentation)", "Valant (behavioral health EHR)", "Epic (hospital settings)", "DrFirst / DoseSpot (e-prescribing)", "Measurement-Based Care tools (PHQ-9, GAD-7 integrated)", "AdvancedMD"],
+    "platforms": ["Talkiatry (telepsych platform)", "Cerebral", "Done (ADHD telehealth)", "Headway (insurance credentialing)", "Alma (group practice platform)", "UpToDate", "Epocrates (drug reference)", "Stahl's Essential Psychopharmacology Online"],
+    "gov_portals": ["DEA CSOS (Controlled Substance Ordering System)", "State prescription drug monitoring programs (PDMP)", "NPPES (NPI Registry)", "State Board of Nursing portals", "SAMHSA treatment locator"]
+  },
+  "terminology": {
+    "jargon": ["Med management (medication management visit)", "Psychopharmacology", "Therapeutic alliance", "CBT (Cognitive Behavioral Therapy)", "DBT (Dialectical Behavior Therapy)", "EMDR (Eye Movement Desensitization)", "Titration (medication dose adjustment)", "Augmentation strategy", "Treatment-resistant", "Involuntary hold / 5150", "SI/HI (Suicidal/Homicidal Ideation)", "Psychoeducation"],
+    "abbreviations": ["PMHNP-BC - Psychiatric Mental Health Nurse Practitioner Board Certified", "APRN - Advanced Practice Registered Nurse", "DNP - Doctor of Nursing Practice", "MSN - Master of Science in Nursing", "DSM-5 - Diagnostic and Statistical Manual 5th Edition", "ICD-10 - International Classification of Diseases", "PHQ-9 - Patient Health Questionnaire", "GAD-7 - Generalized Anxiety Disorder Scale", "SSRI - Selective Serotonin Reuptake Inhibitor", "SNRI - Serotonin-Norepinephrine Reuptake Inhibitor", "PRN - As Needed", "BID/TID/QD - Twice/Three times/Once daily", "NPI - National Provider Identifier", "CPT - Current Procedural Terminology"]
+  },
+  "career_psychology": {
+    "career_levels": ["RN (Registered Nurse)", "Psychiatric RN", "PMHNP Student", "New Graduate PMHNP", "Experienced PMHNP (3-5 years)", "Senior PMHNP / Lead Provider", "PMHNP Practice Owner", "Clinical Director / Program Director", "PMHNP Educator / Faculty", "Chief Behavioral Health Officer"],
+    "fears": ["Patient suicide or self-harm", "Misdiagnosis leading to harm", "Prescribing errors with psychotropic medications", "Becoming emotionally invested and taking patient relapses personally", "Malpractice litigation", "Regulatory changes restricting practice scope", "Burnout from emotional weight of psychiatric work", "Violence from unstable patients"],
+    "motivation": ["Positively impacting lives of people suffering from mental illness", "Growing demand and job security", "High earning potential ($155K+ average)", "Autonomy in clinical decision-making", "Telehealth flexibility", "Long-term therapeutic relationships with patients", "Addressing mental health crisis in America"],
+    "burnout": "PMHNPs face burnout from managing complex cases in fast-paced environments. Emotional investment in patients' progress is a major challenge — relapses can feel personal. Regulatory hurdles and varying state laws add administrative burden. Student loan debt from graduate education adds financial stress. PMHNP-specific burnout research is limited, but general NP burnout rates are significant. Peer networking and professional development identified as key prevention strategies."
+  },
+  "community": {
+    "reddit": ["r/nursepractitioner", "r/PMHNP", "r/psychiatry", "r/nursing", "r/mentalhealth"],
+    "linkedin": ["Association of Psychiatric Mental Health Nurse Practitioners (aPMHNP) LinkedIn", "APNA LinkedIn", "AAPPN LinkedIn", "Psychiatric NP Groups"],
+    "associations": ["APNA (American Psychiatric Nurses Association) — inclusive of all PMH nurses", "aPMHNP (Association of Psychiatric Mental Health Nurse Practitioners) — founded 2021", "AAPPN (American Association of Advanced Practice Psychiatric Nurses)", "SPAPN (Society of Psychiatric Advanced Practice Nurses) — founded 1972", "ISPN (International Society of Psychiatric-Mental Health Nurses)", "AANP Psych and Mental Health Community"],
+    "conferences": ["APNA Annual Conference", "AANP National Conference", "APA (American Psychiatric Association) Annual Meeting", "Psych Congress", "ISPN Annual Conference"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "new_graduate": "115000-145000",
+      "experienced_3_5_years": "145000-180000",
+      "senior_specialist": "180000-210000",
+      "telehealth": "130000-215000",
+      "practice_owner": "200000-350000+"
+    },
+    "national_average_usd": 155000,
+    "job_count": "38,599+ job openings in first half of 2024; 118,600 new jobs projected over next decade",
+    "growth_rate": "45% projected through 2032 — one of fastest-growing healthcare professions",
+    "unemployment_rate": "Near 0% — over 137 million Americans live in mental health professional shortage areas",
+    "work_arrangements": ["Private practice", "Telehealth/telepsychiatry (rapidly growing)", "Hospital-based", "Community mental health centers", "Substance abuse treatment facilities", "Correctional facilities", "VA healthcare system"],
+    "trends": ["Telehealth fundamentally changing the job market — allows treating rural patients from urban areas", "Multi-state licensure via Nurse Licensure Compact expanding opportunities", "Specialization rewarded over generalist approach in 2026 market", "Full practice authority expanding to more states", "Student loan debt remains significant barrier ($100K+ for DNP programs)", "Companies like Talkiatry paying $180K-$215K+ for experienced PMHNPs"]
+  }
+}

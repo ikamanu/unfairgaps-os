@@ -39,7 +39,7 @@ The most profitable software businesses solve painfully boring problems for indu
 
 AI can't replace you if your customers are plumbing contractors who barely use email. **The boring niches are where the money is.** This tool finds them.
 
-## The 4 Pipelines
+## The 5 Pipelines
 
 | Pipeline | Input | Output | Use case |
 |----------|-------|--------|----------|
@@ -47,6 +47,21 @@ AI can't replace you if your customers are plumbing contractors who barely use e
 | **Idea Validator** | Business idea + Country | Verdict: VALIDATED / WEAK / NO_EVIDENCE / SATURATED | "Does my SaaS idea have real pain behind it?" |
 | **Site Pain Audit** | URL | Claims vs reality report | "Is this competitor solving real problems or selling vitamins?" |
 | **Customer Pain Finder** | URL | Your customers' documented pain points | "What are my customers actually losing money on?" |
+| **Profession Scan** | Profession + Country (e.g. "lawyers in US", "Steuerberater in DE", "адвокат in KZ") | 8-15 pains with AI skill specs (calculator / checklist / template / reference / advisor) | "What AI tools should I build for accountants? What does a Rechtsanwalt spend hours on every week?" |
+
+**Bonus: the repo ships with a US profession dataset.** 130 SCOPE profiles + 25 ready-made pain bundles in `data/professions/us/`. Clone and grep - no API calls needed to start. Other countries: not yet pre-generated, but the operation works for any country - run it and PR the result.
+
+## Live example - Auto Detailers (US)
+
+To make this concrete: one run of `profession-scan auto detailers in US` produced [13 specific pains](data/professions/us/pains/us-auto-detailers.json), each paired with a structured `skill_spec` (a buildable AI tool). Total money-at-risk if unmanaged: ~$158,000/yr per operator. 81 hours/week of work that AI could automate. All 5 skill types used.
+
+Top three:
+
+1. **Detail Job Price Calculator** (calculator). Most detailers eyeball pricing and undercut by 25%. The spec includes 10 inputs (vehicle_type, services, hourly_target_rate, monthly_overhead, miles_to_job, ...), the cost-plus formula with the 2026 IRS mileage rate ($0.67/mile) and 15.3% SE tax buffer, and outputs minimum + recommended price plus tax set-aside. Ship this as a $19/mo SaaS.
+2. **EPA Stormwater Compliance Checklist** (checklist, $64,618/day at risk). Clean Water Act civil penalties for runoff into storm drains. The spec is a 12-step procedure with warnings ("biodegradable soap is NOT a defense") and citations (33 USC 1311, 40 CFR 122.26, EPA 2026 MSGP).
+3. **California Car Wash Act Compliance** (checklist, $36,500/yr at risk). $300/yr registration + $15K surety bond + AB 5 worker classification ($25K+/worker penalty for misclassification). 11-step compliance walkthrough with statutory references (Labor Code §§ 2050-2067).
+
+None of these are "lawyers experience burnout" platitudes. Each is a focused AI tool with input/output schema, formulas, and statute citations.
 
 ## The Philosophy
 
@@ -56,20 +71,49 @@ Most "market research" finds annoyances. UnfairGaps finds liabilities - places w
 
 ## How It Works
 
-Each pipeline is a chain of AI prompts that:
+There are two architectures depending on the pipeline:
+
+### Event-collection pipelines (industry-scan, validate-idea, site-audit, customer-pains)
+
+These find pains from court filings + enforcement events. 4-phase protocol:
 
 1. **Compose targeted search queries** - Claude determines the right regulatory agencies, court systems, and search language for your country
-2. **Search the web** - Sonar finds lawsuits, fines, enforcement actions, industry reports
-3. **Extract evidence** - Claude pulls structured findings: who, what, how much, source URL
-4. **Analyze & report** - Clustering, deduplication, scoring, opportunity generation
+2. **Search the web** - finds lawsuits, fines, enforcement actions, industry reports
+3. **Extract evidence** - structured findings: who, what, how much, source URL
+4. **Analyze & report** - clustering, deduplication, scoring, opportunity generation
+
+Use these when the source of pain is "someone paid for breaking the rules."
+
+### profession-scan - two-stage architecture
+
+Professional pain doesn't live in court filings. It lives in regulation + daily routine. Different problem, different solution:
+
+**Stage 1 - Web search for regulatory facts (NOT for pains).**
+
+7 targeted WebSearch queries pull facts from `.gov` / `law.cornell.edu` / BLS / professional associations:
+- `daily_reality` - hourly workday, documents, deadlines, seasonality
+- `regulatory` - statutes, licensing bodies, penalty amounts
+- `tools` - software, gov portals, what's broken
+- `terminology` - jargon, abbreviations
+- `career_psychology` - levels, fears, burnout
+- `community` - subreddits, associations, conferences
+- `market` - salary, headcount, trends
+
+Output: a single JSON profile with ~30 specific facts + source URLs. Web search is asked for **facts**, not insights.
+
+**Stage 2 - Claude Opus 4.7 deduces the pains (no web search at this stage).**
+
+The model reads the regulatory profile and figures out which specific recurring task is painful given that combination of documents, deadlines, penalties, and tools - and what AI skill would obliterate it. Output: 8-15 pains with structured `skill_spec` (calculator inputs + formula, or checklist steps + warnings, or template variables, or reference lookup keys, or advisor decision criteria).
+
+Why split it. Web search gives facts but no insight. LLM alone gives insight but no facts. Stack them in order with structured handoffs (JSON, not free text), and you get output quality neither could produce alone: fact-grounded pains that read like a senior consultant wrote them.
 
 All prompts are in `prompts/` - fully transparent, fully customizable.
 
-## Quick Start — two ways to run it
+## Quick Start - two ways to run it
 
 There are **two equivalent modes**. Pick one. You can mix them per-task.
 
-### Option A — Run it in Claude Code / Cursor / Codex for free (no API key)
+### Option A - Run it in Claude Code / Cursor / Codex for free (no API key)
 
 If you use any agent that supports the [skills.sh ecosystem](https://skills.sh) (Claude Code, Cursor, Codex, VSCode, Cline, and others), install with one command:
 
@@ -77,16 +121,19 @@ If you use any agent that supports the [skills.sh ecosystem](https://skills.sh) 
 npx skills add AyanbekDos/unfairgaps-os
 ```
 
-That installs one skill — `unfairgaps` — which bundles all four operations of the methodology. Call them in any agent session:
+That installs one skill - `unfairgaps` - which bundles all five operations of the methodology. Call them in any agent session:
 
 ```
 /unfairgaps industry-scan construction in US
 /unfairgaps validate-idea "SaaS for warehouse ergonomic compliance" in US
 /unfairgaps site-audit https://competitor.com
 /unfairgaps customer-pains https://my-saas.com
+/unfairgaps profession-scan lawyers in US
 ```
 
-The four operations share the same 4-phase unfairgap-detection protocol (research plan → candidate pool → evidence ledger → unfairgap pattern synthesis → report). Only the input and the final-report shape differ per operation.
+The first four operations share the same 4-phase unfairgap-detection protocol (research plan -> candidate pool -> evidence ledger -> unfairgap pattern synthesis -> report). Only the input and the final-report shape differ per operation.
+
+`profession-scan` uses a different 3-phase protocol (SCOPE builder -> pain generator -> bundle formatter) because professional pains live in regulation + daily routine, not in court filings. It's native-only (no Perplexity / no API key) and country-aware (auto-localizes regulators, statutory citation format, language, and currency for any country).
 
 No Perplexity API key, no Python environment, no config. The skill uses your agent's built-in `WebSearch` and `WebFetch` tools.
 
@@ -101,9 +148,9 @@ Claude Code runs the 4-phase protocol (research plan → candidate pool → evid
 
 This is the recommended path for single-run analysis, iteration, and anyone who doesn't want to manage API keys.
 
-### Option B — Run it via CLI with a Perplexity API key (for automation / batch)
+### Option B - Run it via CLI with a Perplexity API key (for automation / batch)
 
-If you want to script it, run it in CI, or run overnight batches, use the CLI path. It's the same 4 pipelines, same output schema — just deterministic and non-interactive.
+If you want to script it, run it in CI, or run overnight batches, use the CLI path. It's the same 4 pipelines, same output schema - just deterministic and non-interactive.
 
 Requirements:
 - Python 3.10+
@@ -119,7 +166,7 @@ cp .env.example .env
 # Edit .env and paste your PERPLEXITY_API_KEY
 ```
 
-When the skill files from Option A detect `PERPLEXITY_API_KEY` in the environment, they automatically delegate to the CLI — so you can still invoke via `/unfairgaps-industry-scan` in Claude Code and it will take the faster CLI path.
+When the skill files from Option A detect `PERPLEXITY_API_KEY` in the environment, they automatically delegate to the CLI - so you can still invoke via `/unfairgaps-industry-scan` in Claude Code and it will take the faster CLI path.
 
 ### Run
 
@@ -139,7 +186,7 @@ python run.py customer-pains --url "https://your-site.com"
 
 ### AI Agent support
 
-Native skill flow works in any agent on the [skills.sh ecosystem](https://skills.sh) — Claude Code, Cursor, Codex, VSCode, Cline, and others. Install via `npx skills add AyanbekDos/unfairgaps-os` (see Option A).
+Native skill flow works in any agent on the [skills.sh ecosystem](https://skills.sh) - Claude Code, Cursor, Codex, VSCode, Cline, and others. Install via `npx skills add AyanbekDos/unfairgaps-os` (see Option A).
 
 Agents outside the skills.sh ecosystem: copy-paste the `SKILL.md` content into your agent and run the 4-phase protocol manually. Results depend on the agent's WebSearch/WebFetch support.
 
@@ -157,15 +204,16 @@ No code required. Works with any LLM that can search the web.
 
 ## Country Support
 
-Works worldwide. When you specify a country, Claude automatically determines:
+**All 5 pipelines work worldwide.** When you specify a country, Claude automatically determines:
 
-- Regulatory agencies (OSHA in US, BG BAU in Germany, GASK in Kazakhstan...)
+- Regulatory agencies (OSHA in US, BG BAU + Finanzamt in Germany, HMRC + HSE in UK, КГД + Минтруда in Kazakhstan, URSSAF + DGFiP in France...)
 - Court systems and legal databases
-- Search language
-- Local currency
-- Industry-specific regulations
+- Statutory citation format (USC/CFR, BGB/StGB, НК РК, Code général des impôts...)
+- Search language (native + English fallback)
+- Local currency (with USD conversion for cross-country comparison)
+- Industry-specific and profession-specific regulations
 
-Tested with: US, DE, KZ, RU, UK, BR, IN, AU, and more.
+Tested with: US, DE, KZ, RU, UK, BR, IN, AU, FR, and more. Quality is highest for countries with strong online regulatory presence and degrades gracefully (with explicit `coverage_gap` notes) for low-online-coverage countries.
 
 ## How is this different from ChatGPT?
 
@@ -173,7 +221,7 @@ Tested with: US, DE, KZ, RU, UK, BR, IN, AU, and more.
 |---|---|---|
 | Source | "I think there might be problems..." | SEC filing #2024-03847, $2.3M fine |
 | Evidence | Opinions and general knowledge | Court records, regulatory actions, documented losses |
-| Structure | Free-form chat | 4 specialized pipelines with defined outputs |
+| Structure | Free-form chat | 5 specialized pipelines with defined outputs |
 | Verification | Trust the AI | Every finding has a source URL |
 | Country-aware | Sometimes | Always - regulatory agencies, language, courts |
 
@@ -205,15 +253,23 @@ One pipeline run costs roughly $0.50-1.50 depending on complexity.
 ```
 unfairgaps-os/
   README.md
-  .env.example          # Just one key: PERPLEXITY_API_KEY
-  run.py                # CLI entry point
+  .env.example          # Just one key: PERPLEXITY_API_KEY (not needed for profession-scan)
+  run.py                # CLI entry point (covers 4 pipelines; profession-scan is native-only)
   prompts/
     shared/             # Reusable across all pipelines
     industry-scan/      # Pipeline 1: Find industry pain points
     idea-validator/     # Pipeline 2: Validate business ideas
     site-audit/         # Pipeline 3: Claims vs reality
     customer-pains/     # Pipeline 4: Your customers' pain points
+    profession-scan/    # Pipeline 5: Pain bundles for professions (country-aware)
   skills/               # AI agent skill files (Claude Code, Cursor, etc.)
+  data/
+    professions/
+      us/
+        profiles/       # 130 US profession SCOPE profiles (BLS / O*NET / .gov)
+        pains/          # 25 ready-made pain bundles with skill specs
+        README.md       # Dataset docs
+        _FORMAT.md      # JSON schema reference
 ```
 
 ## Help Wanted
@@ -221,9 +277,11 @@ unfairgaps-os/
 I'm not a professional programmer. I built this because I needed it. Here's where I need help:
 
 - **Direct database connectors** - Right now we search through Perplexity. Building direct connectors to PACER, SEC EDGAR, EPA ECHO, and OSHA databases would make results 10x more reliable and faster.
-- **Prompt engineering** - The 17 prompts work, but they're not perfect. I'd love prompt engineers to tear them apart.
+- **Prompt engineering** - The 20 prompts work, but they're not perfect. I'd love prompt engineers to tear them apart.
 - **Python improvements** - The CLI runs but it's not elegant. Any Pythonista who wants to refactor - please do.
 - **Country adapters** - Every country has its own regulatory databases. I know US and Kazakhstan well. Help me add yours.
+- **Fill the profession dataset** - 130 US profiles are shipped, only 25 have pain bundles. Run `/unfairgaps profession-scan <slug> in US` on the others and PR the resulting JSON to `data/professions/us/pains/`.
+- **Generate other-country datasets** - The `profession-scan` operation is country-aware. Pick a country, run `/unfairgaps profession-scan <profession> in <country>`, and PR the resulting profiles + pains to `data/professions/<cc>/`. UK, DE, FR, IN, BR, AU, NL especially welcome.
 - **Bug reports** - Run it on your industry and tell me what breaks.
 
 ## License

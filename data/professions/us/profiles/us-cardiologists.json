@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-cardiologists",
+  "profession_name": "Cardiologists",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Early morning hospital rounds: assess in-patients, analyze test outcomes, discuss treatment strategies with medical team. Move to clinic for patient consultations — cornerstone of daily work. Prescribe and interpret ECGs, echocardiograms, stress tests, cardiac catheterizations. In a 57.8-hour workweek, only 27.2 hours on direct patient care; 13 hours on indirect care (order entry, referrals); 7.3 hours on prior authorization and insurance tasks. Documentation and EHR work consumes significant time.",
+    "key_documents": ["Patient medical records (EHR)", "ECG/EKG reports", "Echocardiogram reports", "Cardiac catheterization reports", "Prior authorization forms", "Referral documentation", "Procedure notes", "Discharge summaries", "CME documentation for board maintenance"],
+    "deadlines": "Board certification maintenance cycles (MOC); CME credit deadlines; prior authorization turnaround times; hospital credentialing renewals; research grant deadlines for academic cardiologists.",
+    "seasonality": "Heart attack rates peak in winter months; flu season increases cardiac complications; conference season October-November (AHA Scientific Sessions); budget and insurance enrollment cycles affect patient volume."
+  },
+  "regulatory": {
+    "laws_and_standards": ["State medical licensing requirements", "ABIM/ABCVM board certification", "CMS Medicare/Medicaid compliance", "HIPAA patient privacy", "Stark Law and Anti-Kickback Statute", "MACRA/MIPS quality reporting", "FDA device regulations for implantable cardiac devices", "State malpractice laws (new 2026 laws in multiple states)"],
+    "licensing": "MD or DO degree required; completion of internal medicine residency (3 years) + cardiology fellowship (3 years); state medical license from state medical board; board certification through ABIM (American Board of Internal Medicine) in cardiovascular disease. New ABCVM (American Board of Cardiovascular Medicine) being created by ACC/AHA for modern certification approach. Subspecialty certification for interventional, electrophysiology, etc.",
+    "penalties": "Malpractice liability with climbing awards (new state laws in 2026); medical board disciplinary actions (suspension, restriction, revocation); CMS penalties for quality reporting non-compliance; potential criminal liability for fraud. Board certification revocation for misconduct.",
+    "regulatory_bodies": ["State Medical Boards", "ABIM (American Board of Internal Medicine)", "ABCVM (new cardiovascular board)", "CMS (Centers for Medicare & Medicaid Services)", "FDA", "DEA (Drug Enforcement Administration)", "Joint Commission"]
+  },
+  "tools": {
+    "software": ["Epic - dominant EHR platform", "Cerner/Oracle Health - EHR with advanced cardiac imaging", "Merge Cardio - #1 KLAS ranked cardiology EHR", "eClinicalWorks - cardiology-specific templates", "OmniMD - AI-powered cardiology EHR", "Philips Cardiovascular Workspace - cardiac imaging", "GE HealthCare MUSE - ECG management"],
+    "platforms": ["Doximity - physician networking", "UpToDate - clinical decision support", "Epocrates - drug reference", "ACC.org - guidelines and education", "MDCalc - clinical calculators", "Zoom/Teams - telehealth"],
+    "gov_portals": ["CMS QPP Portal (Quality Payment Program)", "NPDB (National Practitioner Data Bank)", "DEA registration portal", "State medical board licensing portals"]
+  },
+  "terminology": {
+    "jargon": ["EF (Ejection Fraction)", "Cath lab (Catheterization Laboratory)", "Stent", "CABG (Coronary Artery Bypass Grafting) - pronounced 'cabbage'", "PCI (Percutaneous Coronary Intervention)", "Code Blue", "Troponin levels", "STEMI/NSTEMI (ST-Elevation/Non-ST-Elevation MI)", "Wall motion abnormality", "Hemodynamics"],
+    "abbreviations": ["MI - Myocardial Infarction", "AF/AFib - Atrial Fibrillation", "CHF - Congestive Heart Failure", "SVT - Supraventricular Tachycardia", "PVC - Premature Ventricular Contraction", "ICD - Implantable Cardioverter Defibrillator", "CRT - Cardiac Resynchronization Therapy", "TEE - Transesophageal Echocardiogram", "LVAD - Left Ventricular Assist Device", "BNP - B-type Natriuretic Peptide", "CAD - Coronary Artery Disease", "ATP - Antitachycardia Pacing"]
+  },
+  "career_psychology": {
+    "career_levels": ["Cardiology Fellow (3 years after residency)", "Early-Career Cardiologist (0-5 years post-fellowship)", "Mid-Career Cardiologist (5-15 years)", "Senior/Established Cardiologist (15+ years)", "Division Chief / Department Head", "Academic: Assistant → Associate → Full Professor"],
+    "fears": ["Malpractice lawsuits with climbing awards", "Missing a critical diagnosis (STEMI, aortic dissection)", "Burnout leading to medical errors", "Forced recertification costs and time", "Declining reimbursements despite rising costs", "AI replacing diagnostic roles"],
+    "motivation": "Saving lives in acute cardiac events; long-term patient relationships; 77% would choose same career again; high intellectual stimulation; procedural variety (interventional). Job satisfaction rose to 72.1% in latest survey.",
+    "burnout": "72% of physicians experienced burnout feelings; cardiology burnout stems from administrative friction — insurance approvals and documentation more than patient care; high patient volumes (3,500-4,000 patient panels); 50-60 hour workweeks; shortage expected to reach 17% by 2035 (over half practicing cardiologists are 55+)."
+  },
+  "community": {
+    "reddit": ["r/cardiology", "r/medicine", "r/Residency", "r/medicalschool", "r/physicians"],
+    "linkedin": ["American College of Cardiology", "American Heart Association", "Cardiology professionals groups", "Interventional Cardiology Network"],
+    "associations": ["ACC (American College of Cardiology)", "AHA (American Heart Association)", "HRS (Heart Rhythm Society)", "SCAI (Society for Cardiovascular Angiography and Interventions)", "HFSA (Heart Failure Society of America)", "ASE (American Society of Echocardiography)"],
+    "conferences": ["AHA Scientific Sessions - November (New Orleans 2025)", "ACC Annual Scientific Session - March/April", "Heart Rhythm (HRS) - April (Chicago 2026)", "TCT (Transcatheter Cardiovascular Therapeutics) - October", "ASE Scientific Sessions - June (Aurora, CO 2026)", "SCCT Annual Scientific Meeting - July (San Diego 2026)"]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 350000,
+      "mid_level_usd": 500000,
+      "senior_level_usd": 650000,
+      "interventional_usd": 850000
+    },
+    "average_salary_usd": 421000,
+    "job_count_estimate": "Approximately 30,000 practicing cardiologists in the US. Over 46% of US counties have no cardiologist. Shortage could reach 17% by 2035.",
+    "work_arrangements": "Primarily hospital-based or office-based practice. Call schedules for acute care. Growing telehealth for follow-ups and chronic disease management. Private practice, employed by health systems, or academic positions.",
+    "trends": ["Critical cardiologist shortage projected through 2035", "AI in cardiac imaging and diagnostics (ECG, echo interpretation)", "Structural heart interventions growing (TAVR, MitraClip)", "Remote patient monitoring for heart failure", "New ABCVM certification pathway", "Rising compensation hitting all-time highs", "Telehealth expansion for routine follow-ups"]
+  },
+  "quality_score": 0.88,
+  "sources_count": 7,
+  "verified_sources": 6
+}

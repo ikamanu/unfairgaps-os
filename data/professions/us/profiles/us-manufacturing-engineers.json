@@ -1,0 +1,87 @@
+{
+  "profession_id": "us-manufacturing-engineers",
+  "profession_name": "Manufacturing Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Manufacturing engineers design, implement, and improve manufacturing processes to increase efficiency and productivity. They work on production floor optimization, tooling design, automation integration, and quality systems. Industry 4.0 and AI are transforming the role.",
+    "typical_tasks": ["Design and optimize manufacturing processes and workflows", "Develop tooling, fixtures, and production equipment specifications", "Implement lean manufacturing and continuous improvement initiatives", "Troubleshoot production issues and conduct root cause analysis", "Program and integrate CNC machines, robots, and automation systems", "Develop manufacturing cost estimates and ROI analyses", "Create work instructions and standard operating procedures", "Conduct capability studies and statistical process control (SPC)", "Collaborate with design engineering on design for manufacturability (DFM)", "Manage new product introduction (NPI) and process validation"],
+    "key_documents": ["Process flow diagrams and routing sheets", "Work instructions and SOPs", "PFMEA (Process Failure Mode and Effects Analysis)", "Control plans and inspection criteria", "Equipment qualification protocols (IQ/OQ/PQ)", "Bill of materials and tooling specifications", "Cost estimation reports"],
+    "deadlines": {"npi_milestones": "Aligned with product launch schedules", "ppap_submissions": "Per customer requirements (automotive)", "production_targets": "Daily/weekly/monthly output goals", "quality_audits": "Annual ISO/AS9100/IATF16949 audits"},
+    "seasonality": "Product launch cycles create peaks. Q4 production pushes for year-end targets. Automotive model year changeovers."
+  },
+  "regulatory": {
+    "summary": "Quality management systems (ISO 9001, AS9100, IATF 16949) govern manufacturing processes. PE licensure optional. Six Sigma and CMfgE certifications valued. OSHA regulations apply to factory floor safety.",
+    "key_laws": [
+      {"name": "ISO 9001", "description": "Quality management system standard"},
+      {"name": "IATF 16949", "description": "Automotive quality management system standard"},
+      {"name": "AS9100", "description": "Aerospace quality management system standard"},
+      {"name": "OSHA Standards (29 CFR 1910)", "description": "General industry workplace safety regulations"}
+    ],
+    "licensing": {
+      "requirements": ["Bachelor's degree in Manufacturing, Mechanical, or Industrial Engineering", "PE licensure optional", "Six Sigma certification increasingly expected"],
+      "certifications": ["CMfgE — Certified Manufacturing Engineer (SME)", "Six Sigma Green Belt / Black Belt (ASQ)", "Lean Certification (SME/AME)", "Certified Quality Engineer (CQE — ASQ)"]
+    },
+    "penalties": "Quality system non-conformances can result in loss of certification, customer penalties, and product recalls. OSHA citations for safety violations."
+  },
+  "tools": {
+    "summary": "CAD/CAM software, ERP systems, CNC programming, simulation tools, and quality management software for manufacturing process design and optimization.",
+    "primary_tools": [
+      {"name": "SolidWorks / CATIA / NX", "description": "3D CAD for tooling and fixture design"},
+      {"name": "Mastercam / GibbsCAM", "description": "CAM software for CNC programming"},
+      {"name": "SAP / Oracle ERP", "description": "Enterprise resource planning and production management"},
+      {"name": "Minitab / JMP", "description": "Statistical analysis for SPC and Six Sigma"},
+      {"name": "Arena / Plant Simulation", "description": "Manufacturing process simulation"},
+      {"name": "MES (Manufacturing Execution Systems)", "description": "Real-time production monitoring and control"}
+    ],
+    "secondary_tools": ["CMM (Coordinate Measuring Machine) programming", "AutoCAD for layout design", "Power BI / Tableau for production dashboards", "PLC programming (Allen-Bradley, Siemens)", "Microsoft Excel for data analysis and cost modeling"],
+    "pain_points": ["Legacy equipment integration with modern automation", "Resistance to process changes from production staff", "Balancing quality requirements with production speed", "Supply chain disruptions affecting material availability"]
+  },
+  "terminology": {
+    "summary": "Manufacturing engineering terminology spans process optimization, quality management, production planning, and automation.",
+    "terms": {
+      "DFM": "Design for Manufacturability", "NPI": "New Product Introduction", "PPAP": "Production Part Approval Process",
+      "APQP": "Advanced Product Quality Planning", "PFMEA": "Process Failure Mode and Effects Analysis",
+      "SPC": "Statistical Process Control", "GD&T": "Geometric Dimensioning and Tolerancing",
+      "CNC": "Computer Numerical Control", "CMM": "Coordinate Measuring Machine",
+      "IQ/OQ/PQ": "Installation/Operational/Performance Qualification",
+      "BOM": "Bill of Materials", "MES": "Manufacturing Execution System",
+      "OEE": "Overall Equipment Effectiveness", "TPM": "Total Productive Maintenance",
+      "SMED": "Single-Minute Exchange of Die — quick changeover methodology",
+      "Cpk": "Process Capability Index", "PPM": "Parts Per Million (defect rate)",
+      "CMfgE": "Certified Manufacturing Engineer", "SME": "Society of Manufacturing Engineers",
+      "Industry 4.0": "Fourth industrial revolution — smart manufacturing with IoT/AI",
+      "MRP": "Material Requirements Planning"
+    }
+  },
+  "career_psychology": {
+    "summary": "Solid engineering career with median salary ~$86K. Industry 4.0 knowledge commands 20-30% premium. Hands-on work combining design, production, and problem-solving. Growing demand driven by reshoring and automation.",
+    "career_path": ["Bachelor's in Manufacturing/Mechanical/Industrial Engineering", "Junior Manufacturing Engineer", "CMfgE / Six Sigma Green Belt certification", "Senior Manufacturing Engineer (5+ years)", "Manufacturing Engineering Manager", "Director of Manufacturing / VP Operations"],
+    "salary_range": {"entry_level": "$60,000 - $70,000/year", "mid_level": "$80,000 - $100,000/year", "senior": "$100,000 - $130,000/year", "manager_director": "$120,000 - $170,000+/year", "industry_4.0_premium": "+20-30% for smart manufacturing skills"},
+    "fears": ["Production downtime caused by process changes", "Automation eliminating manufacturing jobs", "Quality escapes reaching customers", "Offshore competition reducing domestic manufacturing"],
+    "motivation": ["Seeing tangible products result from process design", "Solving hands-on production challenges daily", "Direct impact on company profitability", "Growing reshoring trend bringing manufacturing back to US", "Industry 4.0 creating exciting new opportunities"],
+    "burnout_factors": ["Production floor emergencies disrupting planned work", "Pressure to reduce costs while maintaining quality", "Long hours during product launches and line changeovers", "Multiple concurrent projects across production lines"]
+  },
+  "community": {
+    "summary": "SME (Society of Manufacturing Engineers) is the primary professional society. ASQ provides quality certifications. Strong industry-academia partnerships.",
+    "associations": [
+      {"name": "SME (Society of Manufacturing Engineers)", "description": "Primary professional society, CMfgE certification, events"},
+      {"name": "ASQ (American Society for Quality)", "description": "Six Sigma and quality certifications"},
+      {"name": "AME (Association for Manufacturing Excellence)", "description": "Lean manufacturing community"},
+      {"name": "IISE (Institute of Industrial and Systems Engineers)", "description": "Industrial engineering professional society"}
+    ],
+    "online_communities": ["r/manufacturing — Reddit", "SME online communities", "LinkedIn manufacturing engineering groups", "Tooling U-SME online learning platform"],
+    "conferences": ["FABTECH — largest metal fabricating event in North America", "SME/NAMRC Annual Conference", "AME International Conference", "IMTS — International Manufacturing Technology Show"]
+  },
+  "market": {
+    "summary": "Growing demand with median salary ~$86K. Industry 4.0, reshoring, and automation driving need for modern manufacturing engineers. Strong outlook across automotive, aerospace, medical devices, and electronics.",
+    "growth_rate": "Aligned with industrial engineering growth (~12%)",
+    "salary_market": {"median": "$85,613/year", "entry": "$63,000/year", "senior": "$105,000+/year", "industry_4.0": "+20-30% premium"},
+    "top_employers": ["Automotive manufacturers (GM, Ford, Toyota, Tesla)", "Aerospace (Boeing, Lockheed Martin, SpaceX)", "Medical device companies (Medtronic, J&J, Abbott)", "Semiconductor/electronics (Intel, Apple suppliers)", "Contract manufacturers (Jabil, Flex, Foxconn)"],
+    "market_trends": ["Reshoring and nearshoring driving domestic manufacturing growth", "Industry 4.0 / smart manufacturing requiring new skills", "Additive manufacturing (3D printing) integration", "Automation and robotics expanding manufacturing engineer roles", "Sustainable manufacturing and circular economy focus"]
+  },
+  "quality_score": 0.76,
+  "sources_count": 18,
+  "verified_sources": 6,
+  "confidence": "verified",
+  "raw_responses": [{"query": "Manufacturing Engineers USA 2025 2026 salary career outlook SME certification", "sources": [{"title": "PayScale — Manufacturing Engineer Salary 2026", "url": "https://www.payscale.com/research/US/Job=Manufacturing_Engineer/Salary"}, {"title": "Research.com — Manufacturing Engineer Careers 2026", "url": "https://research.com/advice/manufacturing-engineer-careers-skills-education-salary-job-outlook"}, {"title": "Glassdoor — Manufacturing Engineer Salary 2026", "url": "https://www.glassdoor.com/Salaries/manufacturing-engineer-salary-SRCH_KO0,22.htm"}]}]
+}

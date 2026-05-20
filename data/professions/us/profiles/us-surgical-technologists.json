@@ -1,0 +1,242 @@
+{
+  "profession_id": "us-surgical-technologists",
+  "profession_name": "Surgical Technologists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Surgical technologists prepare operating rooms, sterilize instruments, maintain the sterile field, pass instruments to surgeons during procedures, and assist with patient positioning and wound closure. They work in hospitals, ambulatory surgery centers, and specialty clinics.",
+    "typical_tasks": [
+      "Prepare the operating room by setting up surgical instruments, equipment, and supplies",
+      "Sterilize instruments using autoclaves and chemical sterilants",
+      "Arrange sterile drapes, instruments, and supplies on the back table and Mayo stand",
+      "Scrub in and maintain the sterile field throughout the surgical procedure",
+      "Pass instruments, sutures, and supplies to surgeons and surgical assistants",
+      "Hold retractors and assist with tissue manipulation during surgery",
+      "Count sponges, needles, and instruments before and after procedures",
+      "Prepare and handle specimens for pathology",
+      "Apply dressings and bandages post-procedure",
+      "Clean and restock the operating room between cases",
+      "Transport patients to and from the operating room",
+      "Assist with patient positioning on the operating table"
+    ],
+    "key_documents": [
+      "Surgical count sheets (sponges, sharps, instruments)",
+      "Surgeon preference cards",
+      "Sterilization logs and biological indicator results",
+      "Operative/procedure documentation",
+      "Specimen handling records",
+      "Implant logs",
+      "Equipment and supply requisitions"
+    ],
+    "deadlines": {
+      "room_setup": "Complete before patient arrives in OR (typically 30-60 minutes)",
+      "surgical_counts": "Before incision, before closure, at skin closure",
+      "sterilization_cycles": "Per instrument manufacturer IFU and AAMI standards",
+      "case_turnover": "15-30 minutes between cases per facility standards"
+    },
+    "seasonality": "Elective surgeries may decrease during holidays and summer vacations. Emergency and trauma surgeries are year-round. End-of-year insurance deductible utilization creates Q4 elective surgery surge.",
+    "sources": [
+      {"url": "https://research.com/careers/what-to-know-about-being-a-surgical-technologist", "fact": "2026 surgical technologist career overview with daily responsibilities"},
+      {"url": "https://www.nbstsa.org/", "fact": "NBSTSA as national certifying body for surgical technologists"}
+    ]
+  },
+  "regulatory": {
+    "summary": "CST (Certified Surgical Technologist) from NBSTSA is the primary national certification. State requirements vary — some require certification, others do not. CAAHEP accredits surgical technology programs. Strict infection control and counting protocols.",
+    "key_laws": [
+      {
+        "name": "CMS Conditions of Participation — Surgical Services",
+        "detail": "Standards for OR operations, sterile technique, and personnel qualifications",
+        "reference": "42 CFR § 482.51"
+      },
+      {
+        "name": "State Surgical Technologist Certification/Registration Laws",
+        "detail": "Some states require CST certification; others have no requirements",
+        "status": "Varies by state — trend toward requiring certification"
+      },
+      {
+        "name": "OSHA Bloodborne Pathogens Standard",
+        "detail": "OR personnel exposure prevention and sharps safety",
+        "reference": "29 CFR 1910.1030"
+      },
+      {
+        "name": "AAMI Standards for Sterilization",
+        "detail": "Standards for instrument processing and sterilization validation",
+        "status": "Active industry standards"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Complete CAAHEP-accredited surgical technology program",
+        "CST certification from NBSTSA (75 CE credits every 4 years for renewal)",
+        "CPR/BLS certification",
+        "Some states require certification or registration",
+        "Clinical rotations covering general, orthopedic, OB/GYN, and other specialties",
+        "Trend toward states requiring CST or equivalent for employment"
+      ],
+      "certifying_bodies": [
+        "NBSTSA — National Board of Surgical Technology and Surgical Assisting",
+        "CAAHEP — Commission on Accreditation of Allied Health Education Programs",
+        "NCCT — National Center for Competency Testing (alternative TS-C credential)"
+      ]
+    },
+    "penalties": "Retained surgical items (sponges, instruments) create major liability. Infection control violations lead to facility citations. State board actions for practicing without required credentials.",
+    "sources": [
+      {"url": "https://www.nbstsa.org/cst-certification", "fact": "CST certification requirements: CAAHEP-accredited program + exam + 75 CE credits/4 years"},
+      {"url": "https://www.nbstsa.org/sites/nbstsa/files/pdf/2025_CST.pdf", "fact": "2025 CST candidate handbook with exam content and requirements"}
+    ]
+  },
+  "tools": {
+    "summary": "Surgical technologists work with a vast array of surgical instruments, sterilization equipment, electrosurgical units, and OR management systems. Knowledge of specialty-specific instrumentation is essential.",
+    "primary_software": [
+      {"name": "Surgical instruments (thousands of types by specialty)", "purpose": "Cutting, clamping, retracting, suturing — organized on back table and Mayo stand"},
+      {"name": "Autoclaves/Steam sterilizers (STERIS, Getinge)", "purpose": "Instrument sterilization between cases"},
+      {"name": "Electrosurgical units (Bovie, Covidien)", "purpose": "Cutting and coagulation during surgery"},
+      {"name": "OR scheduling/management systems", "purpose": "Case scheduling, preference cards, supply management"},
+      {"name": "Instrument tracking systems (Censis, CensiTrac)", "purpose": "Barcode tracking of instrument sets through sterilization cycle"},
+      {"name": "Surgical robotics (da Vinci systems)", "purpose": "Assist with robotic-assisted surgery setup and instrument management"},
+      {"name": "Power tools (drills, saws for orthopedics)", "purpose": "Bone cutting and drilling during orthopedic procedures"},
+      {"name": "C-arm fluoroscopy", "purpose": "Intraoperative imaging for orthopedic and vascular cases"}
+    ],
+    "pain_points": [
+      "Instrument set complexity (some sets have 100+ pieces)",
+      "Supply chain issues for specialty instruments and implants",
+      "Preference card management across multiple surgeons",
+      "Quick room turnover pressure between cases",
+      "Learning new instruments for emerging surgical technologies"
+    ],
+    "sources": [
+      {"url": "https://www.nbstsa.org/", "fact": "NBSTSA certification content areas defining instrument and technology competencies"},
+      {"url": "https://stellarcollege.edu/2025/04/14/surgical-technologist-diploma-career-guide-2026/", "fact": "2026 surgical technologist career guide with equipment overview"}
+    ]
+  },
+  "terminology": {
+    "summary": "Surgical technologists use extensive surgical, anatomical, and sterile processing terminology covering instrumentation, suture types, surgical approaches, and sterile technique.",
+    "key_terms": [
+      {"term": "Scrubbed in", "meaning": "Sterile gowned and gloved, working within the sterile field"},
+      {"term": "Sterile field", "meaning": "Area around the surgical site maintained free of contamination"},
+      {"term": "Back table", "meaning": "Large sterile table for organizing instruments and supplies"},
+      {"term": "Mayo stand", "meaning": "Small sterile tray positioned over the patient for frequently used instruments"},
+      {"term": "Bovie/ESU", "meaning": "Electrosurgical unit for cutting and coagulation"},
+      {"term": "Hemostat", "meaning": "Clamp used to control bleeding"},
+      {"term": "Retractor", "meaning": "Instrument used to hold back tissue for surgical access"},
+      {"term": "Suture", "meaning": "Thread used to close wounds (absorbable vs non-absorbable)"},
+      {"term": "Lap sponge/Ray-Tec", "meaning": "Surgical sponges requiring strict counting protocols"},
+      {"term": "Sharps count", "meaning": "Mandatory counting of needles, blades, and sharps before/during/after surgery"},
+      {"term": "Time out", "meaning": "Safety pause to verify correct patient, site, and procedure"},
+      {"term": "Break in sterile technique", "meaning": "Contamination event requiring corrective action"},
+      {"term": "Specimen", "meaning": "Tissue removed during surgery sent to pathology"},
+      {"term": "Preference card", "meaning": "Surgeon-specific list of preferred instruments, sutures, and supplies"},
+      {"term": "Case cart", "meaning": "Pre-assembled cart of supplies for a specific procedure"}
+    ],
+    "common_abbreviations": ["CST", "OR", "ASC", "ESU", "RN (circulating nurse)", "RNFA", "SA (surgical assistant)", "SPD (Sterile Processing Department)", "IFU"],
+    "sources": [
+      {"url": "https://www.nbstsa.org/cst-certification", "fact": "CST exam content areas with surgical terminology"},
+      {"url": "https://research.com/careers/what-to-know-about-being-a-surgical-technologist", "fact": "Surgical technologist role description with terminology context"}
+    ]
+  },
+  "career_psychology": {
+    "summary": "Surgical technologists work in high-stakes OR environments where attention to detail is critical. Median salary $62,830 with 5% growth. Physical demands and emotional intensity of surgery. Clear advancement to surgical first assistant.",
+    "career_levels": [
+      {"level": "Entry Surgical Technologist", "salary_range": "$42,000-$52,000", "responsibilities": "General surgery cases, basic instrument handling, learning specialty procedures"},
+      {"level": "Certified Surgical Technologist (CST)", "salary_range": "$52,000-$65,000", "responsibilities": "Independent scrubbing, multiple specialties, complex cases"},
+      {"level": "Senior/Specialty ST", "salary_range": "$65,000-$80,000", "responsibilities": "Cardiac, neuro, robotic surgery specialist, mentoring"},
+      {"level": "Surgical First Assistant (CSFA)", "salary_range": "$75,000-$100,000+", "responsibilities": "Active surgical assisting, retraction, suturing, hemostasis"}
+    ],
+    "main_fears": [
+      "Retained surgical items (sponge, needle left in patient)",
+      "Break in sterile technique causing surgical site infection",
+      "Wrong-site surgery participation",
+      "Sharps injury/needlestick",
+      "Instrument malfunction during critical procedure",
+      "Being blamed for counts that don't reconcile"
+    ],
+    "burnout_causes": [
+      "Standing for 8-12+ hour shifts in the OR",
+      "High-stress surgical emergencies",
+      "Surgeon temperament and OR dynamics",
+      "Repetitive strain from holding retractors",
+      "On-call requirements for emergencies",
+      "Keeping up with rapidly changing surgical technology",
+      "Limited advancement without additional education"
+    ],
+    "growth_motivation": [
+      "Certified Surgical First Assistant (CSFA) for higher pay and expanded role",
+      "Specialty focus (cardiac, neuro, orthopedic, robotic)",
+      "Surgical technology education/instructor",
+      "Central sterile processing management",
+      "Bridge to PA or nursing programs",
+      "Industry roles in surgical device sales"
+    ],
+    "sources": [
+      {"url": "https://nurse.org/healthcare/surgical-tech-salary/", "fact": "Surgical tech salary data for 2026"},
+      {"url": "https://www.brooklinecollege.edu/blog/how-to-become-a-surgical-technologist/", "fact": "Surgical technologist career path and growth options"}
+    ]
+  },
+  "community": {
+    "summary": "AST (Association of Surgical Technologists) is the primary professional organization. NBSTSA provides certification. Relatively limited dedicated online communities compared to nursing.",
+    "professional_associations": [
+      {"name": "AST — Association of Surgical Technologists", "url": "https://www.ast.org", "membership_value": "CE courses, publications, advocacy, annual conference, career resources", "mandatory": false},
+      {"name": "NBSTSA", "url": "https://www.nbstsa.org", "membership_value": "CST and CSFA certification", "mandatory": false},
+      {"name": "AORN — Association of periOperative Registered Nurses", "url": "https://www.aorn.org", "membership_value": "Perioperative standards (overlapping community for OR professionals)", "mandatory": false}
+    ],
+    "conferences": [
+      {"name": "AST National Conference", "detail": "Surgical technology education and networking", "frequency": "Annual"},
+      {"name": "AORN Global Surgical Conference", "detail": "Perioperative practice with surgical tech tracks", "frequency": "Annual (March)"}
+    ],
+    "online_communities": [
+      "Reddit r/surgicaltechnology (small community)",
+      "Facebook surgical technologist groups",
+      "LinkedIn surgical technology professionals",
+      "AST online community",
+      "Allnurses.com OR forums (relevant)"
+    ],
+    "publications": [
+      "The Surgical Technologist (AST journal)",
+      "AORN Journal (perioperative nursing — relevant)",
+      "OR Manager newsletter"
+    ],
+    "sources": [
+      {"url": "https://www.nbstsa.org/", "fact": "NBSTSA certification and professional resources"},
+      {"url": "https://research.com/careers/what-to-know-about-being-a-surgical-technologist", "fact": "Surgical technologist career and community overview"}
+    ]
+  },
+  "market": {
+    "summary": "Median salary $62,830 (BLS May 2024). 5% growth projected 2024-2034 with ~8,700 annual openings. About 119,200 employed. Growing demand from aging population and minimally invasive surgery expansion.",
+    "salary_by_level": {
+      "entry": "$42,000-$52,000",
+      "certified_cst": "$52,000-$65,000",
+      "senior_specialty": "$65,000-$80,000",
+      "first_assistant_csfa": "$75,000-$100,000+"
+    },
+    "geographic_variation": {
+      "national_median": "$62,830 (BLS May 2024)",
+      "highest_earners": "Top 10% earn $82,310+",
+      "entry_level": "$41,750 (lowest 10%)",
+      "high_cost_markets": "$70,000-$90,000 (CA, NY, DC)"
+    },
+    "estimated_practitioners": "~119,200 surgical technologists employed in US (BLS)",
+    "job_outlook": "5% growth 2024-2034, faster than average. ~8,700 annual openings.",
+    "work_arrangements": {
+      "dominant": "W-2 employees at hospitals (70%+) and ambulatory surgery centers",
+      "asc": "Ambulatory surgery centers (growing, often better hours)",
+      "travel": "Travel surgical tech positions available",
+      "shift_patterns": "Weekday schedules common but on-call for emergencies required"
+    },
+    "market_trends": [
+      "Robotic surgery (da Vinci, Intuitive) creating new ST roles",
+      "Minimally invasive surgery growth increasing procedure complexity",
+      "ASC migration of cases from hospitals changing work environment",
+      "States increasingly requiring CST certification for employment",
+      "Aging population driving orthopedic and cardiac surgical volume",
+      "Instrument tracking technology improving efficiency and safety"
+    ],
+    "sources": [
+      {"url": "https://nurse.org/healthcare/surgical-tech-salary/", "fact": "Surgical tech salary: average $62,830 (BLS May 2024), range $41,750-$82,310"},
+      {"url": "https://www.brooklinecollege.edu/blog/how-to-become-a-surgical-technologist/", "fact": "BLS projects 5% growth 2024-2034 with 8,700 annual openings"}
+    ]
+  },
+  "quality_score": 0.45,
+  "sources_count": 12,
+  "verified_sources": 5,
+  "confidence": "likely",
+  "raw_responses": []
+}

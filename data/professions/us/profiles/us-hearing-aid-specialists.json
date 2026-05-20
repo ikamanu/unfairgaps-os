@@ -1,0 +1,246 @@
+{
+  "profession_id": "us-hearing-aid-specialists",
+  "profession_name": "Hearing Aid Specialists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Hearing aid specialists (HIS) test hearing, select, fit, and adjust hearing aids for patients. They work in audiology offices, hearing aid retail stores, and healthcare facilities. Typical 40-hour week with patient appointments throughout the day.",
+    "typical_tasks": [
+      "Administering hearing tests and interpreting audiogram results",
+      "Consulting with patients about hearing loss and treatment options",
+      "Taking ear impressions for custom hearing aids",
+      "Selecting appropriate hearing aid models based on patient needs and budget",
+      "Programming and fitting hearing aids using manufacturer software",
+      "Adjusting and fine-tuning hearing aids for optimal performance",
+      "Training patients on hearing aid use, care, and maintenance",
+      "Performing follow-up visits and adjustments",
+      "Repairing and servicing hearing aids",
+      "Managing patient records and insurance documentation",
+      "Staying current with new hearing aid technology from manufacturers"
+    ],
+    "key_documents": [
+      "Audiogram results and hearing test reports",
+      "Patient hearing aid selection and fitting records",
+      "Ear impression documentation",
+      "Hearing aid programming records",
+      "Warranty and repair documentation",
+      "Insurance and billing records",
+      "State licensing documentation"
+    ],
+    "deadlines": {
+      "patient_appointments": "30-60 minutes per appointment",
+      "hearing_aid_fitting": "Typically 1-2 weeks from order to fitting",
+      "follow_up": "30-day and 60-day follow-up visits standard",
+      "trial_period": "30-60 day trial period required by most states",
+      "license_renewal": "Varies by state, typically annually or biennially",
+      "ce_credits": "24 hours every 36 months (NBC-HIS)"
+    },
+    "seasonality": "Slight increase during fall/winter when holiday gatherings highlight hearing difficulties. OTC hearing aid market changes creating more year-round awareness."
+  },
+  "regulatory": {
+    "summary": "State-licensed in most states with varying requirements. NBC-HIS voluntary national certification adds credibility. 2022 OTC hearing aid rule changed the market landscape. FDA oversight of hearing devices.",
+    "key_laws": [
+      {
+        "name": "State hearing aid specialist licensing laws",
+        "description": "Most states require licensure to dispense hearing aids; requirements vary significantly"
+      },
+      {
+        "name": "FDA OTC Hearing Aid Rule (2022)",
+        "description": "Established new category of over-the-counter hearing aids, impacting the professional dispensing market"
+      },
+      {
+        "name": "FDA regulation of hearing aids (21 CFR Part 801)",
+        "description": "Federal regulation of hearing aid devices as medical devices"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "State-specific licensure (required in most states)",
+        "Apprenticeship (6 months to 2 years) or associate's degree program",
+        "Pass state licensing examination",
+        "NBC-HIS certification optional but recommended (requires 2+ years dispensing experience)",
+        "24 CE hours every 36 months for NBC-HIS renewal",
+        "Annual state CE requirements vary"
+      ]
+    },
+    "recent_changes": "OTC hearing aid rule (2022) created a new market category for mild-moderate hearing loss, changing the competitive landscape. Some states updating licensing requirements in response. Growing scope overlap with audiologists."
+  },
+  "tools": {
+    "summary": "Audiometric testing equipment, hearing aid programming software from manufacturers, ear impression materials, and practice management systems.",
+    "primary_tools": [
+      {
+        "name": "Audiometer",
+        "description": "Calibrated device for conducting pure-tone and speech audiometry"
+      },
+      {
+        "name": "Hearing aid programming software",
+        "description": "Manufacturer-specific software for fitting and adjusting hearing aids",
+        "examples": "Phonak Target, Oticon Genie, Signia Connexx, Starkey Inspire"
+      },
+      {
+        "name": "Real-ear measurement (REM) equipment",
+        "description": "Probe microphone system for verifying hearing aid output in the ear canal",
+        "examples": "Audioscan Verifit, Interacoustics Affinity"
+      },
+      {
+        "name": "Otoscope",
+        "description": "Instrument for examining the ear canal and eardrum"
+      },
+      {
+        "name": "Practice management software",
+        "description": "Patient scheduling, records, and billing systems",
+        "examples": "CounselEAR, Sycle, Blueprint OMS"
+      }
+    ],
+    "secondary_tools": [
+      "Tympanometer for middle ear testing",
+      "Ear impression materials and gun",
+      "Hearing aid cleaning and repair tools",
+      "Patient communication apps (manufacturer companion apps)",
+      "Insurance verification and billing tools"
+    ],
+    "pain_points": [
+      "Multiple proprietary software systems (one per manufacturer)",
+      "OTC hearing aid competition impacting traditional dispensing",
+      "Technology changing rapidly requiring constant learning",
+      "Insurance reimbursement complexity",
+      "Patient resistance to hearing aid adoption"
+    ]
+  },
+  "terminology": {
+    "summary": "Audiology and hearing aid terminology combining medical, technical, and consumer-facing language.",
+    "terms": {
+      "HIS": "Hearing Instrument Specialist",
+      "BC-HIS": "Board Certified Hearing Instrument Specialist (NBC-HIS credential)",
+      "audiogram": "Graph showing hearing sensitivity at different frequencies",
+      "pure-tone audiometry": "Standard hearing test using tones at various frequencies and volumes",
+      "sensorineural hearing loss": "Hearing loss from inner ear or nerve damage (most common type)",
+      "conductive hearing loss": "Hearing loss from outer or middle ear problems",
+      "dB HL": "Decibels Hearing Level — unit measuring hearing sensitivity",
+      "REM": "Real-ear measurement — verification of hearing aid performance in ear",
+      "gain": "Amount of amplification provided by a hearing aid",
+      "feedback": "Whistling sound from hearing aid caused by sound leaking and re-amplifying",
+      "OTC": "Over-the-counter — hearing aids sold without professional fitting (FDA 2022 rule)",
+      "BTE": "Behind-the-ear — hearing aid style worn behind the ear",
+      "RIC/RITE": "Receiver-in-canal/Receiver-in-the-ear — popular hearing aid style",
+      "ITE": "In-the-ear — custom hearing aid style",
+      "CIC": "Completely-in-canal — small custom hearing aid",
+      "earmold": "Custom-made insert that directs sound from hearing aid into ear canal",
+      "occlusion effect": "Boomy sensation of own voice when ear canal is blocked",
+      "telecoil": "Hearing aid feature picking up electromagnetic signals from phone or loop system"
+    }
+  },
+  "career_psychology": {
+    "summary": "Rewarding patient-facing career helping people improve quality of life. Starting salary ~$50K, experienced specialists earn $60-80K+. OTC hearing aid market creating uncertainty. Strong patient relationships are key to success.",
+    "career_path": [
+      "Apprenticeship with licensed hearing aid specialist (6 months-2 years) or associate's degree",
+      "Pass state licensing exam",
+      "Entry-level hearing aid specialist at retail or clinic",
+      "Gain 2+ years experience → pursue NBC-HIS (BC-HIS) certification",
+      "Senior specialist or practice manager",
+      "Business owner (own hearing aid practice)",
+      "Manufacturer representative or trainer"
+    ],
+    "salary_range": {
+      "entry_level": "$38,000 - $50,000",
+      "average": "$50,000 - $65,000",
+      "experienced_bc_his": "$60,000 - $80,000",
+      "practice_owner": "$80,000 - $120,000+",
+      "commission_based": "Many positions include commission on hearing aid sales"
+    },
+    "fears": [
+      "OTC hearing aids reducing demand for professional fitting",
+      "Competition from audiologists with broader scope",
+      "Technology changing faster than skills can keep up",
+      "Patient dissatisfaction with hearing aid performance",
+      "Decreasing insurance reimbursement"
+    ],
+    "motivation": [
+      "Helping patients hear better and improve quality of life",
+      "Building long-term patient relationships",
+      "Fascinating technology constantly evolving",
+      "Good work-life balance (standard business hours)",
+      "Commission potential boosting income",
+      "Growing market due to aging population"
+    ],
+    "burnout_factors": [
+      "Sales pressure in retail hearing aid environments",
+      "Patient frustration and unrealistic expectations",
+      "Keeping up with rapidly changing technology",
+      "Administrative burden of insurance paperwork",
+      "OTC market creating professional uncertainty"
+    ]
+  },
+  "community": {
+    "summary": "Professional community through IHS (International Hearing Society), NBC-HIS, and state licensing boards. Manufacturer training programs provide ongoing education.",
+    "associations": [
+      {
+        "name": "International Hearing Society (IHS)",
+        "url": "https://ihsinfo.org",
+        "type": "Primary professional membership organization for hearing aid specialists"
+      },
+      {
+        "name": "National Board for Certification in Hearing Instrument Sciences (NBC-HIS)",
+        "url": "https://www.nbc-his.com",
+        "type": "National certification body for hearing aid specialists"
+      },
+      {
+        "name": "Hearing Loss Association of America (HLAA)",
+        "url": "https://www.hearingloss.org",
+        "type": "Consumer advocacy organization (professional interaction)"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "r/audiology",
+        "url": "https://reddit.com/r/audiology",
+        "description": "Reddit community for hearing healthcare professionals"
+      },
+      {
+        "name": "Hearing Aid Forum",
+        "description": "Online forums for hearing aid professionals and users"
+      }
+    ],
+    "events": [
+      "IHS Annual Convention",
+      "AudiologyNOW! (AAA annual conference)",
+      "Manufacturer-sponsored training events (Phonak, Oticon, etc.)"
+    ]
+  },
+  "market": {
+    "summary": "Growing demand driven by aging population — 1 in 3 people over 65 have hearing loss. OTC hearing aids (2022) disrupted market but professional fitting still valued. Technology advances in Bluetooth and AI creating new opportunities.",
+    "demand_forecast": {
+      "growth_rate": "Faster than average growth projected (BLS)",
+      "driver": "Aging population, increased hearing loss awareness",
+      "otc_impact": "OTC hearing aids for mild-moderate loss changing market dynamics"
+    },
+    "salary_market": {
+      "average": "$50,000 - $65,000",
+      "bc_his": "$60,000 - $80,000",
+      "commission_potential": "Significant commission income possible"
+    },
+    "market_trends": [
+      "OTC hearing aids creating new market segment but professional fitting remains essential for moderate-severe loss",
+      "Bluetooth and smartphone-connected hearing aids transforming user experience",
+      "AI-driven sound processing improving hearing aid performance",
+      "Teleaudiology and remote adjustments growing",
+      "Aging baby boomers driving demand increase",
+      "Costco and retail audiology expanding market access",
+      "Integration of hearing health with overall wellness"
+    ]
+  },
+  "quality_score": 0.77,
+  "sources_count": 22,
+  "verified_sources": 8,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "hearing aid specialist USA 2025 2026 salary duties licensing certification NBC-HIS career outlook dispensing",
+      "sources": [
+        {"title": "NBC-HIS Certification Process", "url": "https://www.nbc-his.com/certification-process/"},
+        {"title": "CareerOneStop — Hearing Aid Specialists", "url": "https://www.careeronestop.org/Toolkit/Careers/Occupations/occupation-profile.aspx?keyword=Hearing+Aid+Specialists&location=United+States&onetcode=29-2092.00"},
+        {"title": "BLS OES — Hearing Aid Specialists", "url": "https://www.bls.gov/oes/2023/may/oes292092.htm"},
+        {"title": "IHS — Become a Hearing Aid Specialist", "url": "https://myhome.ihsinfo.org/myhome/myhome/Become_Hearing_Aid_Specialist.aspx"}
+      ]
+    }
+  ]
+}

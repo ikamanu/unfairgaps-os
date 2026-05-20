@@ -1,0 +1,854 @@
+[
+  {
+    "id": "us-agricultural-engineers-p01",
+    "title": "Irrigation System Design Calculator",
+    "problem": "Agricultural engineers spend hours manually calculating irrigation system parameters including pipe sizing, flow rates, pressure losses, and water application rates. Errors in these calculations lead to over- or under-watering, wasting water resources and reducing crop yields. Each project requires recalculating for different field sizes, soil types, and crop water requirements.",
+    "who": "Agricultural engineers designing irrigation systems for farms and rural developments",
+    "frequency": "weekly",
+    "time_waste_h": 6,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Irrigation System Design Calculator",
+      "one_liner": "Calculates pipe sizing, flow rates, pressure losses, and water application rates for irrigation system design",
+      "inputs": [
+        {
+          "name": "field_area_acres",
+          "type": "number",
+          "label": "Field area (acres)"
+        },
+        {
+          "name": "crop_type",
+          "type": "select",
+          "label": "Crop type"
+        },
+        {
+          "name": "soil_type",
+          "type": "select",
+          "label": "Soil type (sandy/loam/clay)"
+        },
+        {
+          "name": "peak_et",
+          "type": "number",
+          "label": "Peak evapotranspiration (inches/day)"
+        },
+        {
+          "name": "water_source_gpm",
+          "type": "number",
+          "label": "Available water supply (GPM)"
+        },
+        {
+          "name": "system_type",
+          "type": "select",
+          "label": "System type (center pivot/drip/sprinkler)"
+        },
+        {
+          "name": "pipe_length_ft",
+          "type": "number",
+          "label": "Main pipe length (feet)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "total_water_demand_gpm",
+          "label": "Total water demand (GPM)"
+        },
+        {
+          "name": "pipe_diameter_in",
+          "label": "Recommended pipe diameter (inches)"
+        },
+        {
+          "name": "friction_loss_psi",
+          "label": "Friction loss (PSI)"
+        },
+        {
+          "name": "application_rate_in_hr",
+          "label": "Application rate (in/hr)"
+        },
+        {
+          "name": "runtime_hours",
+          "label": "Daily runtime (hours)"
+        },
+        {
+          "name": "irrigation_efficiency_pct",
+          "label": "Estimated irrigation efficiency (%)"
+        }
+      ],
+      "formula_hint": "Hazen-Williams for friction loss: hf = 10.67 * L * Q^1.852 / (C^1.852 * D^4.87). Application rate = GPM * 96.3 / (spacing * rows). ET-based demand = ET * area * 27154 / efficiency.",
+      "rates": {
+        "sprinkler_efficiency": 0.75,
+        "drip_efficiency": 0.9,
+        "pivot_efficiency": 0.85,
+        "hazen_williams_c_pvc": 150
+      }
+    },
+    "example_queries": [
+      "Calculate pipe size for a 120-acre corn field with center pivot irrigation and 800 GPM water supply",
+      "What flow rate do I need for drip irrigation on 40 acres of tomatoes with peak ET of 0.3 inches/day?",
+      "Estimate friction loss for 2000 feet of 8-inch PVC mainline at 500 GPM"
+    ]
+  },
+  {
+    "id": "us-agricultural-engineers-p02",
+    "title": "Drainage System Sizing Calculator",
+    "problem": "Designing agricultural drainage systems requires complex calculations involving drain spacing, depth, flow capacity, and soil hydraulic conductivity. Engineers often rely on outdated nomographs or spreadsheets prone to errors. Incorrect drainage design leads to waterlogged fields, crop loss, and potential environmental violations under the Clean Water Act.",
+    "who": "Agricultural engineers designing subsurface drainage and flood control systems",
+    "frequency": "monthly",
+    "time_waste_h": 8,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Agricultural Drainage Design Calculator",
+      "one_liner": "Calculates drain spacing, pipe sizing, and flow rates for subsurface agricultural drainage systems",
+      "inputs": [
+        {
+          "name": "field_area_acres",
+          "type": "number",
+          "label": "Field area (acres)"
+        },
+        {
+          "name": "hydraulic_conductivity",
+          "type": "number",
+          "label": "Soil hydraulic conductivity (in/hr)"
+        },
+        {
+          "name": "drain_depth_ft",
+          "type": "number",
+          "label": "Drain depth (feet)"
+        },
+        {
+          "name": "impermeable_layer_depth_ft",
+          "type": "number",
+          "label": "Depth to impermeable layer (feet)"
+        },
+        {
+          "name": "drainage_coefficient",
+          "type": "number",
+          "label": "Drainage coefficient (in/day)"
+        },
+        {
+          "name": "drain_grade_pct",
+          "type": "number",
+          "label": "Drain grade (%)"
+        },
+        {
+          "name": "pipe_material",
+          "type": "select",
+          "label": "Pipe material (corrugated/smooth)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "drain_spacing_ft",
+          "label": "Recommended drain spacing (feet)"
+        },
+        {
+          "name": "pipe_diameter_in",
+          "label": "Minimum pipe diameter (inches)"
+        },
+        {
+          "name": "peak_flow_cfs",
+          "label": "Peak drain flow (CFS)"
+        },
+        {
+          "name": "total_drain_length_ft",
+          "label": "Total drain length (feet)"
+        },
+        {
+          "name": "outlet_capacity_cfs",
+          "label": "Required outlet capacity (CFS)"
+        }
+      ],
+      "formula_hint": "Hooghoudt equation for drain spacing: S^2 = (8*K*d*m + 4*K*m^2) / q. Manning's equation for pipe flow: Q = (1.486/n)*A*R^(2/3)*S^(1/2). Drainage coefficient typically 3/8 to 1/2 inch/day for Midwest.",
+      "rates": {
+        "mannings_n_corrugated": 0.015,
+        "mannings_n_smooth": 0.009,
+        "typical_dc_midwest": 0.375
+      }
+    },
+    "example_queries": [
+      "Calculate drain spacing for a 80-acre field with hydraulic conductivity of 0.5 in/hr and drains at 4 feet depth",
+      "What pipe size do I need for a 160-acre drainage system with 3/8 inch drainage coefficient?",
+      "Estimate peak flow for a subsurface drainage outlet serving 200 acres"
+    ]
+  },
+  {
+    "id": "us-agricultural-engineers-p03",
+    "title": "Project Budget and Cost Estimator",
+    "problem": "Agricultural engineers regularly prepare project proposals and budgets for equipment installations, irrigation projects, and facility construction. Estimating costs requires pulling together equipment prices, labor rates, material costs, and contingencies. Underestimating leads to budget overruns and client dissatisfaction; overestimating loses bids.",
+    "who": "Agricultural engineers in consulting firms and project managers preparing proposals",
+    "frequency": "weekly",
+    "time_waste_h": 5,
+    "money_risk_usd": 20000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Agricultural Project Cost Estimator",
+      "one_liner": "Estimates project costs for agricultural engineering projects including materials, labor, equipment, and contingencies",
+      "inputs": [
+        {
+          "name": "project_type",
+          "type": "select",
+          "label": "Project type (irrigation/drainage/structure/equipment)"
+        },
+        {
+          "name": "field_area_acres",
+          "type": "number",
+          "label": "Project area (acres)"
+        },
+        {
+          "name": "pipe_length_ft",
+          "type": "number",
+          "label": "Total pipe/conduit length (feet)"
+        },
+        {
+          "name": "equipment_count",
+          "type": "number",
+          "label": "Number of major equipment units"
+        },
+        {
+          "name": "region",
+          "type": "select",
+          "label": "US region (Midwest/West/South/Northeast)"
+        },
+        {
+          "name": "labor_hours",
+          "type": "number",
+          "label": "Estimated labor hours"
+        },
+        {
+          "name": "contingency_pct",
+          "type": "number",
+          "label": "Contingency percentage (%)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "material_cost",
+          "label": "Material cost (USD)"
+        },
+        {
+          "name": "labor_cost",
+          "label": "Labor cost (USD)"
+        },
+        {
+          "name": "equipment_cost",
+          "label": "Equipment cost (USD)"
+        },
+        {
+          "name": "engineering_fees",
+          "label": "Engineering fees (USD)"
+        },
+        {
+          "name": "contingency",
+          "label": "Contingency (USD)"
+        },
+        {
+          "name": "total_project_cost",
+          "label": "Total project cost (USD)"
+        }
+      ],
+      "formula_hint": "Engineering fees typically 8-15% of construction cost. Contingency 10-20%. Regional labor multipliers: Midwest 1.0, West 1.15, Northeast 1.20, South 0.95.",
+      "rates": {
+        "engineering_fee_pct": 0.1,
+        "default_contingency": 0.15,
+        "avg_labor_rate_usd_hr": 45
+      }
+    },
+    "example_queries": [
+      "Estimate total cost for a 200-acre center pivot irrigation installation in Nebraska",
+      "What's the budget for a grain storage facility project with 500 labor hours in Iowa?",
+      "Generate a cost estimate for a 3-mile drainage tile project in Indiana"
+    ]
+  },
+  {
+    "id": "us-agricultural-engineers-p04",
+    "title": "Environmental Impact Assessment Checklist",
+    "problem": "Agricultural engineers must prepare environmental impact assessments for projects involving irrigation, drainage, land clearing, and facility construction. Missing a required assessment category or regulatory requirement can delay permits by months and trigger EPA or state environmental agency enforcement. The requirements span multiple federal and state regulations.",
+    "who": "Agricultural engineers preparing permit applications and environmental documentation",
+    "frequency": "monthly",
+    "time_waste_h": 10,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Agricultural EIA Checklist",
+      "one_liner": "Step-by-step environmental impact assessment checklist for agricultural engineering projects ensuring EPA and state compliance",
+      "steps": [
+        "Step 1: Identify project scope and determine NEPA categorical exclusion or full EIS requirement",
+        "Step 2: Delineate wetlands and waters of the US (Clean Water Act Section 404 screening)",
+        "Step 3: Assess soil erosion potential and develop SWPPP if >1 acre disturbance",
+        "Step 4: Evaluate endangered species impacts (ESA Section 7 consultation check)",
+        "Step 5: Assess cultural/historical resources (NHPA Section 106)",
+        "Step 6: Analyze water quality impacts - nutrient loading, sediment, pesticide runoff",
+        "Step 7: Evaluate air quality impacts - dust, emissions from equipment",
+        "Step 8: Assess noise impacts on surrounding communities",
+        "Step 9: Review floodplain impacts (Executive Order 11988)",
+        "Step 10: Document cumulative impacts assessment",
+        "Step 11: Develop mitigation measures for each identified impact",
+        "Step 12: Prepare public notice and comment period documentation if required",
+        "Step 13: Submit to lead agency and obtain permits before construction"
+      ],
+      "warnings": [
+        "Warning: Projects in wetlands require Army Corps Section 404 permit - do not proceed without",
+        "Warning: NRCS-funded projects require additional environmental review under 7 CFR 799",
+        "Warning: State environmental requirements may exceed federal - check state EPA equivalent"
+      ],
+      "regulatory_refs": [
+        "NEPA (42 USC 4321)",
+        "Clean Water Act Section 404",
+        "ESA Section 7",
+        "7 CFR 799 (NRCS Environmental Compliance)"
+      ]
+    },
+    "example_queries": [
+      "What environmental assessments do I need for a new irrigation reservoir project in California?",
+      "Walk me through the EIA process for a USDA-funded drainage improvement project",
+      "Do I need a Section 404 permit for installing drainage tiles in a field adjacent to wetlands?"
+    ]
+  },
+  {
+    "id": "us-agricultural-engineers-p05",
+    "title": "PE License Renewal Requirements Reference",
+    "problem": "PE license renewal requirements vary significantly by state - different continuing education hours, ethics requirements, renewal cycles, and deadlines. Agricultural engineers licensed in multiple states struggle to track varying requirements. Missing a renewal deadline means inability to stamp documents, halting project deliverables.",
+    "who": "PE-licensed agricultural engineers, especially those licensed in multiple states",
+    "frequency": "yearly",
+    "time_waste_h": 4,
+    "money_risk_usd": 10000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "PE License Renewal Guide",
+      "one_liner": "Quick reference for PE license renewal requirements, continuing education, and deadlines by state",
+      "data_domain": "State PE license renewal requirements for all 50 states and territories",
+      "lookup_keys": [
+        "state",
+        "renewal_cycle",
+        "ce_hours_required",
+        "ethics_requirement"
+      ],
+      "data_hints": {
+        "source_law": "State Professional Engineering Practice Acts",
+        "key_sections": [
+          "NCEES Model Law",
+          "Individual state engineering practice acts"
+        ],
+        "typical_data": "Renewal cycles 1-2 years, CE hours 15-30 per cycle, some states require ethics hours, online vs in-person requirements vary"
+      }
+    },
+    "example_queries": [
+      "What are the PE renewal requirements for Iowa - how many CE hours and when is the deadline?",
+      "I'm licensed in Texas and Nebraska - compare the continuing education requirements",
+      "Does California require ethics-specific PDH hours for PE renewal?"
+    ]
+  },
+  {
+    "id": "us-agricultural-engineers-p06",
+    "title": "OSHA Agricultural Safety Compliance Checklist",
+    "problem": "OSHA has expanded enforcement of workplace safety standards in agricultural settings, including the new heat exposure rules extended through April 2026. Agricultural engineers must ensure their project designs and site operations comply with OSHA standards covering machinery guarding, confined spaces, fall protection, and heat illness prevention. Violations result in significant penalties.",
+    "who": "Agricultural engineers managing field projects, equipment installations, and facility design",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 70000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "OSHA Agricultural Safety Checklist",
+      "one_liner": "Comprehensive OSHA compliance checklist for agricultural engineering worksites and equipment design",
+      "steps": [
+        "Step 1: Verify heat illness prevention plan in place (water, rest, shade protocol per OSHA NEP)",
+        "Step 2: Inspect machine guarding on all agricultural equipment (29 CFR 1910 Subpart O)",
+        "Step 3: Identify confined spaces (grain bins, manure pits, silos) and verify permit-required procedures",
+        "Step 4: Verify fall protection for work above 6 feet (grain bin tops, structure construction)",
+        "Step 5: Check electrical safety for irrigation pumps and equipment (NFPA 70E)",
+        "Step 6: Verify lockout/tagout procedures for equipment maintenance",
+        "Step 7: Assess respiratory hazards (grain dust, manure gases, pesticide exposure)",
+        "Step 8: Review PTO and rotating shaft guarding on all field equipment",
+        "Step 9: Verify rollover protective structures (ROPS) on tractors",
+        "Step 10: Document training records for all workers on site hazards",
+        "Step 11: Post required OSHA notices and maintain injury/illness logs (Form 300)"
+      ],
+      "warnings": [
+        "Warning: OSHA heat exposure enforcement extended through April 2026 - enhanced inspections in agriculture",
+        "Warning: Grain bin engulfment is a leading cause of agricultural fatalities - never enter without permit",
+        "Warning: Farms with 10 or fewer employees may be exempt from some OSHA standards but not all"
+      ],
+      "regulatory_refs": [
+        "29 CFR 1910 (General Industry)",
+        "29 CFR 1928 (Agriculture)",
+        "OSHA Heat Injury and Illness Prevention NEP"
+      ]
+    },
+    "example_queries": [
+      "What OSHA requirements apply to my grain handling facility design?",
+      "Walk me through the heat illness prevention requirements for a summer field project",
+      "What are the confined space entry requirements for a manure storage pit inspection?"
+    ]
+  },
+  {
+    "id": "us-agricultural-engineers-p07",
+    "title": "Equipment Test Report Generator",
+    "problem": "Agricultural engineers regularly write equipment test reports documenting performance, safety, and compliance testing of agricultural machinery. Each report follows a standard structure but requires customization for the specific equipment and test parameters. Writing these reports from scratch each time wastes hours that could be spent on actual engineering work.",
+    "who": "Agricultural engineers testing equipment for manufacturers, USDA, and consulting clients",
+    "frequency": "weekly",
+    "time_waste_h": 4,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Equipment Test Report Generator",
+      "one_liner": "Generates structured agricultural equipment test reports from test parameters and results data",
+      "doc_name": "Equipment Performance Test Report",
+      "variables": [
+        {
+          "name": "equipment_type",
+          "label": "Equipment type and model"
+        },
+        {
+          "name": "manufacturer",
+          "label": "Manufacturer name"
+        },
+        {
+          "name": "test_date",
+          "label": "Test date"
+        },
+        {
+          "name": "test_location",
+          "label": "Test location"
+        },
+        {
+          "name": "test_parameters",
+          "label": "Test parameters measured"
+        },
+        {
+          "name": "test_results",
+          "label": "Key test results and measurements"
+        },
+        {
+          "name": "pass_fail_criteria",
+          "label": "Pass/fail criteria per ASABE standard"
+        },
+        {
+          "name": "engineer_name",
+          "label": "Testing engineer name and PE number"
+        }
+      ],
+      "structure_hint": "Cover page -> Executive summary -> Equipment description -> Test methodology (ASABE standard ref) -> Test conditions -> Results and data tables -> Analysis and discussion -> Conclusions -> Recommendations -> Appendices (raw data, photos)"
+    },
+    "example_queries": [
+      "Generate a test report for a John Deere center pivot irrigation system performance evaluation",
+      "Create an equipment test report template for a grain dryer efficiency test per ASABE S248",
+      "Write a safety compliance test report for a new PTO-driven auger system"
+    ]
+  },
+  {
+    "id": "us-agricultural-engineers-p08",
+    "title": "USDA Grant Proposal Template",
+    "problem": "Agricultural engineers in research and consulting frequently apply for USDA NIFA grants, NRCS EQIP funding, and other federal/state agricultural programs. Each proposal requires specific formatting, budget justification, and compliance language. Missing required sections or formatting errors result in automatic rejection, wasting weeks of preparation.",
+    "who": "Agricultural engineers at universities, USDA, and consulting firms seeking research or project funding",
+    "frequency": "quarterly",
+    "time_waste_h": 20,
+    "money_risk_usd": 100000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "USDA Grant Proposal Generator",
+      "one_liner": "Generates structured USDA/NIFA grant proposals with required sections, budget templates, and compliance language",
+      "doc_name": "USDA Research/Project Grant Proposal",
+      "variables": [
+        {
+          "name": "program_name",
+          "label": "Grant program (NIFA AFRI, EQIP, CIG, etc.)"
+        },
+        {
+          "name": "project_title",
+          "label": "Project title"
+        },
+        {
+          "name": "pi_name",
+          "label": "Principal investigator name and institution"
+        },
+        {
+          "name": "project_duration",
+          "label": "Project duration (years)"
+        },
+        {
+          "name": "budget_total",
+          "label": "Total budget requested (USD)"
+        },
+        {
+          "name": "research_objectives",
+          "label": "Research objectives (2-4)"
+        },
+        {
+          "name": "methodology_summary",
+          "label": "Methodology summary"
+        },
+        {
+          "name": "expected_outcomes",
+          "label": "Expected outcomes and impacts"
+        }
+      ],
+      "structure_hint": "Project summary (250 words) -> Project narrative: introduction/justification -> objectives -> methodology -> timeline/milestones -> evaluation plan -> dissemination plan -> Budget and budget justification -> Facilities and equipment -> Personnel qualifications -> Data management plan -> Letters of support"
+    },
+    "example_queries": [
+      "Generate a NIFA AFRI proposal outline for a precision irrigation research project with $500K budget",
+      "Create an EQIP application for a conservation drainage installation project",
+      "Write a budget justification section for a 3-year agricultural automation research grant"
+    ]
+  },
+  {
+    "id": "us-agricultural-engineers-p09",
+    "title": "Evapotranspiration and Crop Water Demand Calculator",
+    "problem": "Calculating crop water requirements is fundamental to irrigation design and water resource management. Engineers must compute reference evapotranspiration using weather data, then adjust for specific crops, growth stages, and local conditions. Manual calculation using Penman-Monteith or similar methods is error-prone and time-consuming.",
+    "who": "Agricultural engineers working on irrigation design, water resource planning, and drought management",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Crop ET and Water Demand Calculator",
+      "one_liner": "Calculates reference and crop evapotranspiration and seasonal water demand using FAO Penman-Monteith method",
+      "inputs": [
+        {
+          "name": "latitude",
+          "type": "number",
+          "label": "Site latitude (degrees)"
+        },
+        {
+          "name": "elevation_ft",
+          "type": "number",
+          "label": "Elevation (feet)"
+        },
+        {
+          "name": "temp_max_f",
+          "type": "number",
+          "label": "Max temperature (F)"
+        },
+        {
+          "name": "temp_min_f",
+          "type": "number",
+          "label": "Min temperature (F)"
+        },
+        {
+          "name": "humidity_pct",
+          "type": "number",
+          "label": "Relative humidity (%)"
+        },
+        {
+          "name": "wind_speed_mph",
+          "type": "number",
+          "label": "Wind speed at 2m (mph)"
+        },
+        {
+          "name": "solar_radiation",
+          "type": "number",
+          "label": "Solar radiation (MJ/m2/day)"
+        },
+        {
+          "name": "crop_type",
+          "type": "select",
+          "label": "Crop type"
+        },
+        {
+          "name": "growth_stage",
+          "type": "select",
+          "label": "Growth stage (initial/development/mid/late)"
+        },
+        {
+          "name": "field_area_acres",
+          "type": "number",
+          "label": "Field area (acres)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "eto_in_day",
+          "label": "Reference ET (inches/day)"
+        },
+        {
+          "name": "kc",
+          "label": "Crop coefficient (Kc)"
+        },
+        {
+          "name": "etc_in_day",
+          "label": "Crop ET (inches/day)"
+        },
+        {
+          "name": "daily_water_demand_gal",
+          "label": "Daily water demand (gallons)"
+        },
+        {
+          "name": "seasonal_water_demand_af",
+          "label": "Seasonal water demand (acre-feet)"
+        }
+      ],
+      "formula_hint": "FAO-56 Penman-Monteith: ETo = [0.408*Δ*(Rn-G) + γ*(900/(T+273))*u2*(es-ea)] / [Δ + γ*(1+0.34*u2)]. ETc = ETo * Kc. 1 acre-inch = 27,154 gallons.",
+      "rates": {
+        "kc_corn_mid": 1.2,
+        "kc_soybean_mid": 1.15,
+        "kc_wheat_mid": 1.15,
+        "kc_alfalfa_mid": 0.95
+      }
+    },
+    "example_queries": [
+      "Calculate crop ET for corn at mid-season in central Iowa with max temp 92F, min 68F",
+      "What is the daily water demand for 500 acres of soybeans at development stage?",
+      "Estimate seasonal water needs for alfalfa in the San Joaquin Valley"
+    ]
+  },
+  {
+    "id": "us-agricultural-engineers-p10",
+    "title": "ASABE Standards Quick Reference",
+    "problem": "Agricultural engineers must reference ASABE standards for equipment design, testing procedures, and safety requirements. There are hundreds of ASABE standards, and finding the right standard number, scope, and key requirements takes significant time. Engineers often work in the field without easy access to the full standards library.",
+    "who": "All practicing agricultural engineers, especially those in equipment design and testing",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "ASABE Standards Quick Reference",
+      "one_liner": "Quick lookup of ASABE standards by topic, equipment type, or standard number with key requirements summary",
+      "data_domain": "ASABE engineering standards and practices for agricultural equipment, structures, and systems",
+      "lookup_keys": [
+        "standard_number",
+        "equipment_type",
+        "topic_area",
+        "keyword"
+      ],
+      "data_hints": {
+        "source_law": "ASABE Standards, Engineering Practices, and Data",
+        "key_sections": [
+          "S (Standards)",
+          "EP (Engineering Practices)",
+          "D (Data)"
+        ],
+        "typical_data": "Standard number, title, scope, key requirements, related standards, revision date. Categories: power and machinery, soil and water, structures, energy, food/process engineering, information technology"
+      }
+    },
+    "example_queries": [
+      "What ASABE standard covers rollover protective structures for tractors?",
+      "Find the ASABE standard for grain bin design loads and structural requirements",
+      "Which ASABE engineering practice covers irrigation sprinkler testing procedures?"
+    ]
+  },
+  {
+    "id": "us-agricultural-engineers-p11",
+    "title": "EPA and Clean Water Act Compliance Advisor",
+    "problem": "Agricultural engineering projects involving irrigation, drainage, and land modification must comply with EPA regulations and the Clean Water Act. Engineers face complex decisions about whether projects trigger Section 404 permits, NPDES permits, or state water quality certifications. Misjudging regulatory applicability results in project delays, fines, or required remediation.",
+    "who": "Agricultural engineers working on water management, drainage, and land development projects",
+    "frequency": "monthly",
+    "time_waste_h": 5,
+    "money_risk_usd": 75000,
+    "source": "regulatory",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Agricultural EPA Compliance Advisor",
+      "one_liner": "Advises on EPA and Clean Water Act regulatory requirements for agricultural engineering projects",
+      "expertise_area": "EPA environmental compliance for agricultural water management and land modification projects",
+      "decision_criteria": [
+        "project_type",
+        "proximity_to_waters",
+        "acreage_disturbed",
+        "state_location",
+        "federal_funding_involved"
+      ],
+      "context_needed": [
+        "regulatory.laws",
+        "regulatory.penalties",
+        "regulatory.regulatory_bodies"
+      ]
+    },
+    "example_queries": [
+      "Does my drainage tile installation project need a Section 404 permit if it's 500 feet from a creek?",
+      "What EPA permits do I need for constructing a tailwater recovery pond in Arkansas?",
+      "A farmer wants to convert 200 acres of wetland to cropland - what are the regulatory implications?"
+    ]
+  },
+  {
+    "id": "us-agricultural-engineers-p12",
+    "title": "Soil Erosion and Conservation Calculator",
+    "problem": "Agricultural engineers must calculate soil erosion rates and design conservation measures to meet NRCS and state requirements. Using the Revised Universal Soil Loss Equation (RUSLE) manually requires looking up multiple factors and performing iterative calculations. Incorrect erosion estimates lead to inadequate conservation plans and potential regulatory violations.",
+    "who": "Agricultural engineers working with NRCS, conservation districts, and land development projects",
+    "frequency": "monthly",
+    "time_waste_h": 4,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Soil Erosion and RUSLE Calculator",
+      "one_liner": "Calculates soil erosion rates using RUSLE and recommends conservation practices to meet tolerable soil loss limits",
+      "inputs": [
+        {
+          "name": "rainfall_factor_r",
+          "type": "number",
+          "label": "Rainfall-runoff erosivity factor (R)"
+        },
+        {
+          "name": "soil_erodibility_k",
+          "type": "number",
+          "label": "Soil erodibility factor (K)"
+        },
+        {
+          "name": "slope_length_ft",
+          "type": "number",
+          "label": "Slope length (feet)"
+        },
+        {
+          "name": "slope_steepness_pct",
+          "type": "number",
+          "label": "Slope steepness (%)"
+        },
+        {
+          "name": "cover_management",
+          "type": "select",
+          "label": "Cover management practice"
+        },
+        {
+          "name": "support_practice",
+          "type": "select",
+          "label": "Support practice (contour/strip/terrace/none)"
+        },
+        {
+          "name": "soil_tolerance_t",
+          "type": "number",
+          "label": "Tolerable soil loss T (tons/acre/year)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "ls_factor",
+          "label": "Topographic factor (LS)"
+        },
+        {
+          "name": "c_factor",
+          "label": "Cover management factor (C)"
+        },
+        {
+          "name": "p_factor",
+          "label": "Support practice factor (P)"
+        },
+        {
+          "name": "soil_loss_tons_ac_yr",
+          "label": "Predicted soil loss (tons/acre/year)"
+        },
+        {
+          "name": "exceeds_tolerance",
+          "label": "Exceeds tolerable soil loss?"
+        },
+        {
+          "name": "reduction_needed_pct",
+          "label": "Reduction needed (%)"
+        }
+      ],
+      "formula_hint": "RUSLE: A = R * K * LS * C * P. LS = (slope_length/72.6)^m * (65.41*sin^2(theta) + 4.56*sin(theta) + 0.065). T values typically 1-5 tons/acre/year.",
+      "rates": {
+        "c_no_till": 0.25,
+        "c_conventional_till": 0.5,
+        "c_continuous_grass": 0.01,
+        "p_contour": 0.5,
+        "p_strip_crop": 0.25,
+        "p_terrace": 0.1
+      }
+    },
+    "example_queries": [
+      "Calculate soil erosion for a field with K=0.32, 8% slope, 300-foot slope length, conventional tillage",
+      "Will contour farming reduce erosion below T=5 tons/acre/year on my 6% slope field?",
+      "Compare erosion rates between no-till and conventional tillage on a 4% slope in Iowa"
+    ]
+  },
+  {
+    "id": "us-agricultural-engineers-p13",
+    "title": "Feasibility Study Report Template",
+    "problem": "Agricultural engineers conduct feasibility studies for new irrigation systems, agricultural facilities, and equipment investments. Each study requires financial analysis, technical assessment, environmental review, and risk evaluation. Creating these reports from scratch is repetitive and inconsistent, and missing key sections undermines client confidence and decision-making.",
+    "who": "Consulting agricultural engineers and project managers preparing investment analysis for clients",
+    "frequency": "monthly",
+    "time_waste_h": 12,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Agricultural Feasibility Study Generator",
+      "one_liner": "Generates comprehensive feasibility study reports for agricultural engineering projects with financial and technical analysis sections",
+      "doc_name": "Agricultural Project Feasibility Study",
+      "variables": [
+        {
+          "name": "project_name",
+          "label": "Project name"
+        },
+        {
+          "name": "client_name",
+          "label": "Client/farm name"
+        },
+        {
+          "name": "project_type",
+          "label": "Project type (irrigation/facility/equipment/processing)"
+        },
+        {
+          "name": "estimated_cost",
+          "label": "Estimated capital cost (USD)"
+        },
+        {
+          "name": "expected_benefit",
+          "label": "Expected annual benefit (USD)"
+        },
+        {
+          "name": "project_life_years",
+          "label": "Expected project life (years)"
+        },
+        {
+          "name": "location",
+          "label": "Project location"
+        },
+        {
+          "name": "water_source",
+          "label": "Water source (if applicable)"
+        }
+      ],
+      "structure_hint": "Executive summary -> Project description and objectives -> Site assessment -> Technical analysis (engineering design, capacity, performance) -> Financial analysis (NPV, IRR, payback period, benefit-cost ratio) -> Environmental assessment -> Risk analysis -> Regulatory requirements -> Alternatives analysis -> Conclusions and recommendations -> Appendices"
+    },
+    "example_queries": [
+      "Generate a feasibility study outline for converting flood irrigation to drip on 500 acres at $800K",
+      "Create a feasibility report template for a new grain drying and storage facility",
+      "Write a feasibility study for installing solar-powered irrigation pumps on a 1000-acre farm"
+    ]
+  },
+  {
+    "id": "us-agricultural-engineers-p14",
+    "title": "Climate Adaptation Planning Advisor",
+    "problem": "Agricultural engineers increasingly must design systems resilient to climate variability - changing precipitation patterns, more extreme heat events, and shifting growing seasons. Engineers struggle to incorporate climate projections into design parameters for irrigation, drainage, and structures. Under-designing for future conditions leads to premature system failure and costly redesigns.",
+    "who": "Agricultural engineers designing long-life infrastructure and advising on farm resilience planning",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 40000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Agricultural Climate Adaptation Advisor",
+      "one_liner": "Advises on incorporating climate projections and resilience strategies into agricultural engineering designs",
+      "expertise_area": "Climate-resilient agricultural infrastructure design and adaptation planning",
+      "decision_criteria": [
+        "project_type",
+        "design_life_years",
+        "geographic_region",
+        "current_climate_zone",
+        "crop_types",
+        "water_source_reliability"
+      ],
+      "context_needed": [
+        "career_psychology.fears",
+        "daily_reality.seasonality",
+        "market.trends"
+      ]
+    },
+    "example_queries": [
+      "How should I adjust my irrigation system design parameters for a 30-year project in the Texas Panhandle given climate projections?",
+      "What drainage capacity safety factor should I use in Illinois to account for increasing extreme rainfall events?",
+      "Advise on climate-resilient design strategies for a new grain storage facility in the Midwest"
+    ]
+  }
+]

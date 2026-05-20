@@ -1,0 +1,254 @@
+{
+  "profession_id": "us-licensed-practical-and-licensed-vocational-nurses",
+  "profession_name": "Licensed Practical and Licensed Vocational Nurses",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "LPNs/LVNs provide basic nursing care under supervision of RNs and physicians. They work in nursing homes, hospitals, clinics, and home health. Tasks include monitoring vitals, wound care, medication administration, and patient comfort. Shifts are typically 8-12 hours with rotating schedules.",
+    "typical_tasks": [
+      "Monitoring patients' vital signs (blood pressure, temperature, pulse, respiration)",
+      "Administering medications (oral, injections, IV per state scope)",
+      "Providing wound care: cleaning, dressing changes, assessment",
+      "Assisting patients with activities of daily living (bathing, dressing, feeding)",
+      "Inserting and managing catheters and IVs (where scope allows)",
+      "Documenting patient status, treatments, and observations in EHR",
+      "Reporting changes in patient condition to RNs and physicians",
+      "Educating patients and families on care plans and medications",
+      "Collecting lab samples (blood, urine)",
+      "Supervising Certified Nursing Assistants (CNAs)"
+    ],
+    "key_documents": [
+      "Patient care plans and nursing notes",
+      "Medication administration records (MAR)",
+      "Vital signs flow sheets",
+      "Incident/event reports",
+      "Patient education documentation",
+      "Shift change/handoff reports"
+    ],
+    "deadlines": {
+      "vital_signs": "Per care plan — typically every 4-8 hours or as ordered",
+      "medication_passes": "Scheduled medication times with 30-minute window",
+      "documentation": "Real-time or within shift for most charting",
+      "incident_reports": "Immediately upon occurrence",
+      "license_renewal": "Varies by state — typically biennially",
+      "nclex_pn": "Must pass before practicing"
+    },
+    "seasonality": "Flu season (fall/winter) increases demand in long-term care. Holiday periods create staffing challenges. Summer travel nurse demand may increase overtime opportunities."
+  },
+  "regulatory": {
+    "summary": "Licensed in all 50 states after passing NCLEX-PN exam. Scope of practice varies significantly by state (IV therapy, medication administration). Supervised by RNs in most settings. LPN in 48 states; LVN in Texas and California.",
+    "key_laws": [
+      {
+        "name": "State Nurse Practice Acts",
+        "description": "Each state's Board of Nursing defines LPN/LVN scope of practice and supervision requirements"
+      },
+      {
+        "name": "NCLEX-PN Examination",
+        "description": "National Council Licensure Examination for Practical Nurses — required for all states"
+      },
+      {
+        "name": "CMS Conditions of Participation",
+        "description": "Medicare/Medicaid standards for nursing care in long-term care facilities"
+      },
+      {
+        "name": "Nurse Licensure Compact (NLC)",
+        "description": "Allows practice in compact states with one multistate license"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Complete state-approved LPN/LVN program (typically 12 months)",
+        "Pass NCLEX-PN examination",
+        "State licensure through Board of Nursing",
+        "Background check",
+        "CPR/BLS certification",
+        "Continuing education per state requirements (varies)",
+        "License renewal typically every 2 years"
+      ]
+    },
+    "recent_changes": "Nurse Licensure Compact expanding to more states. Some states expanding LPN scope of practice. Growing emphasis on transition to RN through LPN-to-RN bridge programs."
+  },
+  "tools": {
+    "summary": "Clinical tools for basic nursing care, EHR systems for documentation, medication dispensing systems, and vital signs monitoring equipment.",
+    "primary_tools": [
+      {
+        "name": "Electronic Health Record (EHR) systems",
+        "description": "Digital patient charting and documentation",
+        "examples": "Epic, Cerner, PointClickCare (long-term care), MatrixCare"
+      },
+      {
+        "name": "Vital signs monitoring equipment",
+        "description": "Blood pressure cuffs, thermometers, pulse oximeters, glucometers"
+      },
+      {
+        "name": "Medication dispensing systems",
+        "description": "Automated medication cabinets and scanning verification",
+        "examples": "Pyxis MedStation, Omnicell"
+      },
+      {
+        "name": "Wound care supplies and equipment",
+        "description": "Dressings, irrigation supplies, wound vacs, assessment tools"
+      },
+      {
+        "name": "IV pumps and infusion equipment",
+        "description": "Where scope allows — IV therapy equipment and supplies"
+      }
+    ],
+    "secondary_tools": [
+      "Injection supplies (needles, syringes)",
+      "Catheterization kits",
+      "Patient lifting and transfer equipment (Hoyer lifts)",
+      "Communication tools (nurse call systems, VOIP phones)",
+      "Drug reference apps (Lexicomp, Epocrates)"
+    ],
+    "pain_points": [
+      "EHR documentation burden taking time from patient care",
+      "Outdated equipment in long-term care facilities",
+      "Staffing shortages increasing patient-to-nurse ratios",
+      "Scope of practice limitations varying by state",
+      "Physical demands of patient care (lifting, standing)"
+    ]
+  },
+  "terminology": {
+    "summary": "Nursing terminology combining medical vocabulary, abbreviations, and care documentation language.",
+    "terms": {
+      "LPN": "Licensed Practical Nurse (48 states)",
+      "LVN": "Licensed Vocational Nurse (Texas and California)",
+      "NCLEX-PN": "National Council Licensure Exam for Practical Nurses",
+      "scope of practice": "Legal boundaries of what an LPN/LVN can do in their state",
+      "MAR": "Medication Administration Record",
+      "ADLs": "Activities of Daily Living (bathing, dressing, eating, toileting)",
+      "vitals": "Vital signs: blood pressure, pulse, temperature, respirations, SpO2",
+      "I&O": "Intake and Output — tracking fluid balance",
+      "PRN": "As needed (Pro Re Nata) — medication or intervention as situation requires",
+      "IV": "Intravenous — into the vein",
+      "IM": "Intramuscular — injection into muscle",
+      "SubQ": "Subcutaneous — injection under the skin",
+      "CNA": "Certified Nursing Assistant — supervised by LPNs",
+      "charge nurse": "Nurse responsible for unit management during a shift",
+      "handoff": "Shift change report between outgoing and incoming nurses",
+      "SBAR": "Situation-Background-Assessment-Recommendation — communication tool",
+      "care plan": "Documented plan of nursing interventions for a patient",
+      "NLC": "Nurse Licensure Compact — multistate license agreement"
+    }
+  },
+  "career_psychology": {
+    "summary": "Essential nursing role with moderate salary (median $62,340). Fastest pathway into nursing (1 year). Strong demand — 54,400 annual openings. Often used as stepping stone to RN. Physical and emotional demands are significant. Long-term care is the largest employer.",
+    "career_path": [
+      "LPN/LVN program (12 months, certificate or diploma)",
+      "Pass NCLEX-PN and obtain state license",
+      "Entry-level LPN in long-term care, clinic, or hospital",
+      "Experienced LPN with specialty focus (wound care, IV therapy, pediatrics)",
+      "Charge nurse or unit supervisor",
+      "LPN-to-RN bridge program (ADN or BSN completion)",
+      "Registered Nurse (RN) with expanded scope and pay"
+    ],
+    "salary_range": {
+      "entry_level": "$45,000 - $55,000",
+      "median_bls": "$62,340 (2024 BLS median)",
+      "experienced": "$55,000 - $70,000",
+      "california_lvn": "$79,090 average",
+      "travel_lpn": "$60,000 - $80,000+ with housing stipends"
+    },
+    "fears": [
+      "Medication errors causing patient harm",
+      "Being blamed for adverse events beyond their scope",
+      "Physical injuries from patient handling",
+      "Scope of practice limitations frustrating career growth",
+      "Losing license due to documentation errors",
+      "Violence from patients (especially in long-term care and psych)"
+    ],
+    "motivation": [
+      "Caring for patients and making a difference",
+      "Quick entry into nursing career (1 year)",
+      "Stable employment and job security",
+      "Gateway to RN career through bridge programs",
+      "Multiple work settings and flexibility",
+      "Growing demand and competitive pay in some regions"
+    ],
+    "burnout_factors": [
+      "Heavy patient loads in understaffed facilities",
+      "Physical demands: lifting, standing 12-hour shifts",
+      "Emotional toll of patient illness and death",
+      "Feeling undervalued compared to RNs",
+      "Mandatory overtime in short-staffed settings",
+      "Documentation burden reducing patient care time"
+    ]
+  },
+  "community": {
+    "summary": "Part of the broader nursing community through NFLPN, state nursing associations, and online nursing forums. Strong camaraderie among nursing staff.",
+    "associations": [
+      {
+        "name": "National Federation of Licensed Practical Nurses (NFLPN)",
+        "url": "https://www.nflpn.org",
+        "type": "Primary professional organization for LPNs"
+      },
+      {
+        "name": "National Association for Practical Nurse Education and Service (NAPNES)",
+        "type": "Organization focused on LPN education and advancement"
+      },
+      {
+        "name": "State Boards of Nursing",
+        "type": "Regulatory bodies for nursing licensure in each state"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "allnurses.com",
+        "url": "https://allnurses.com",
+        "description": "Major online nursing community with active LPN forums"
+      },
+      {
+        "name": "r/nursing",
+        "url": "https://reddit.com/r/nursing",
+        "description": "Reddit nursing community (includes LPN discussions)"
+      },
+      {
+        "name": "Nurse.org",
+        "url": "https://nurse.org",
+        "description": "Nursing career resources and community"
+      }
+    ],
+    "events": [
+      "National Nurses Week (May 6-12)",
+      "NFLPN Annual Conference",
+      "State nursing association meetings"
+    ]
+  },
+  "market": {
+    "summary": "Stable demand with 54,400 annual openings projected. 3% growth 2024-2034. Aging population driving demand especially in long-term care. Nurse Licensure Compact improving mobility. LPN-to-RN bridge programs expanding.",
+    "demand_forecast": {
+      "growth_rate": "3% (2024-2034, BLS — about as fast as average)",
+      "annual_openings": "~54,400/year",
+      "driver": "Aging population, long-term care expansion"
+    },
+    "salary_market": {
+      "median_bls": "$62,340 (2024)",
+      "range": "$45,000 - $79,000 (varies by state)",
+      "california_lvn": "$79,090 average"
+    },
+    "market_trends": [
+      "Aging population increasing long-term care demand",
+      "Nurse Licensure Compact expanding across states",
+      "LPN-to-RN bridge programs growing",
+      "Telehealth creating new LPN roles in some settings",
+      "Staffing shortages in rural and underserved areas",
+      "Some hospitals reducing LPN positions in favor of RNs",
+      "Home health growing as a major employment sector for LPNs"
+    ]
+  },
+  "quality_score": 0.81,
+  "sources_count": 26,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "LPN LVN licensed practical vocational nurse USA 2025 2026 salary shortage duties scope career NCLEX-PN",
+      "sources": [
+        {"title": "BLS OOH — Licensed Practical and Vocational Nurses", "url": "https://www.bls.gov/ooh/healthcare/licensed-practical-and-licensed-vocational-nurses.htm"},
+        {"title": "LPN Salary by State 2025", "url": "https://nightingale.edu/blog/lpn-salary.html"},
+        {"title": "2025 LPN/LVN Salary Guide — Nursa", "url": "https://nursa.com/salary/lpn"},
+        {"title": "LPN Guide 2026 — Nurse.org", "url": "https://nurse.org/resources/licensed-practical-nurse-lpn-lvn/"}
+      ]
+    }
+  ]
+}

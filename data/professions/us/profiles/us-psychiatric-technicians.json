@@ -1,0 +1,248 @@
+{
+  "profession_id": "us-psychiatric-technicians",
+  "profession_name": "Psychiatric Technicians",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Psychiatric technicians work in mental health facilities, psychiatric hospitals, and residential treatment centers. They monitor patients' behavior and vital signs, administer medications, lead therapeutic activities, and assist with daily living tasks for patients with mental health disorders.",
+    "typical_tasks": [
+      "Monitor and document patients' behavior, mood, and vital signs",
+      "Administer medications following physician orders",
+      "Lead therapeutic and recreational activities (group sessions, art therapy, exercise)",
+      "Assist patients with activities of daily living (bathing, dressing, grooming)",
+      "Observe and report changes in patient behavior to medical staff",
+      "Implement safety protocols including suicide precautions",
+      "De-escalate agitated or aggressive patients using crisis intervention techniques",
+      "Maintain therapeutic milieu and safe environment",
+      "Escort patients to appointments and activities",
+      "Document patient interactions in medical records",
+      "Participate in treatment team meetings",
+      "Conduct patient searches and contraband checks"
+    ],
+    "key_documents": [
+      "Patient behavior observation logs",
+      "Medication administration records (MAR)",
+      "Incident/restraint reports",
+      "Treatment plan documentation",
+      "Vital signs records",
+      "Group therapy notes",
+      "Shift reports"
+    ],
+    "deadlines": {
+      "patient_rounds": "Every 15-30 minutes for suicide watch, hourly for general observation",
+      "medication_administration": "Per physician-ordered schedule",
+      "documentation": "Real-time or within 1 hour of observation",
+      "incident_reporting": "Immediate for restraints, elopements, injuries",
+      "shift_reporting": "End of each shift"
+    },
+    "seasonality": "Mental health crises can spike during holidays (November-January), seasonal depression (winter), and during societal stressors. Involuntary commitment volumes may fluctuate regionally.",
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/psychiatric-technicians-and-aides.htm", "fact": "BLS Occupational Outlook Handbook for psychiatric technicians and aides"},
+      {"url": "https://www.indeed.com/hire/job-description/mental-health-technician", "fact": "Mental health technician job description updated 2025"}
+    ]
+  },
+  "regulatory": {
+    "summary": "Some states require licensure for psychiatric technicians (notably California). Voluntary certifications include MHTC (AMCA), CMHT (NCCB), and NCPT (AAPT). CMS Conditions of Participation govern psychiatric facility standards.",
+    "key_laws": [
+      {
+        "name": "CMS Conditions of Participation for Psychiatric Hospitals",
+        "detail": "Federal standards for patient rights, staffing, restraint use, and treatment planning",
+        "reference": "42 CFR Part 482.61-62"
+      },
+      {
+        "name": "State Mental Health Licensing Laws",
+        "detail": "Some states (e.g., California) require psychiatric technician licensure; others require certification or have no requirements",
+        "status": "Varies by state"
+      },
+      {
+        "name": "Joint Commission Standards",
+        "detail": "Behavioral health care standards including restraint/seclusion policies",
+        "status": "Active for accredited facilities"
+      },
+      {
+        "name": "HIPAA",
+        "detail": "Patient mental health information is subject to heightened privacy protections",
+        "reference": "45 CFR Parts 160, 164"
+      },
+      {
+        "name": "42 CFR Part 2",
+        "detail": "Special confidentiality protections for substance use disorder treatment records",
+        "status": "Active, updated 2024"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "State-dependent: California requires Licensed Psychiatric Technician (LPT)",
+        "Postsecondary certificate typically required (12-18 months)",
+        "Voluntary certifications: MHTC (AMCA), CMHT (NCCB), NCPT (AAPT)",
+        "CPR/First Aid certification required",
+        "CPI (Crisis Prevention Institute) or similar de-escalation training",
+        "Background check required in all states",
+        "Some states require continuing education for renewal"
+      ],
+      "certifying_bodies": [
+        "AMCA — American Medical Certification Association (MHTC)",
+        "NCCB — National Career Certification Board (CMHT)",
+        "AAPT — American Association of Psychiatric Technicians (NCPT)",
+        "California BVNPT — Board of Vocational Nursing and Psychiatric Technicians"
+      ]
+    },
+    "penalties": "State licensing boards can revoke credentials for patient abuse/neglect. CMS deficiency citations for restraint/seclusion violations. Criminal charges possible for patient abuse.",
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/psychiatric-technicians-and-aides.htm", "fact": "BLS: some states require licensure, postsecondary certificate typically needed"},
+      {"url": "https://www.coursera.org/articles/psychiatric-technician", "fact": "Psychiatric technician certification options: MHTC, CMHT, NCPT"}
+    ]
+  },
+  "tools": {
+    "summary": "Psychiatric technicians use electronic health records for behavioral documentation, medication administration systems, crisis intervention equipment, and patient monitoring tools in institutional settings.",
+    "primary_software": [
+      {"name": "EHR Systems (Epic, Cerner, Netsmart)", "purpose": "Behavioral health documentation, treatment plans, medication records"},
+      {"name": "eMAR (Electronic Medication Administration Record)", "purpose": "Barcode-scanned medication administration documentation"},
+      {"name": "Patient observation/rounding tools", "purpose": "Electronic tracking of patient safety rounds"},
+      {"name": "Crisis intervention equipment", "purpose": "Restraint devices, seclusion room monitoring, alarm systems"},
+      {"name": "Vital signs equipment", "purpose": "Blood pressure, pulse oximetry, temperature monitoring"},
+      {"name": "Communication systems (two-way radios, panic buttons)", "purpose": "Staff safety and emergency communication"}
+    ],
+    "pain_points": [
+      "Documentation burden taking time away from patient care",
+      "Outdated behavioral health EHR systems",
+      "Staff safety equipment limitations",
+      "Lack of integrated crisis documentation tools",
+      "Limited technology adoption in state psychiatric hospitals"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/psychiatric-technicians-and-aides.htm", "fact": "BLS describes work environment and tools used by psychiatric technicians"},
+      {"url": "https://psychologyjobs.com/psychiatric-technician-jobs/", "fact": "Psychiatric technician job guide with technology context"}
+    ]
+  },
+  "terminology": {
+    "summary": "Psychiatric technicians use mental health, behavioral health, and crisis intervention terminology including diagnostic classifications, treatment modalities, and safety protocols.",
+    "key_terms": [
+      {"term": "1:1", "meaning": "One-on-one patient observation (constant suicide watch)"},
+      {"term": "Milieu therapy", "meaning": "Therapeutic environment approach — using structured setting as treatment"},
+      {"term": "De-escalation", "meaning": "Verbal and non-verbal techniques to reduce agitation"},
+      {"term": "Seclusion", "meaning": "Involuntary confinement in locked room (heavily regulated)"},
+      {"term": "Restraint", "meaning": "Physical or chemical restriction of movement (requires physician order)"},
+      {"term": "5150/5250", "meaning": "California involuntary psychiatric hold codes (72-hour/14-day)"},
+      {"term": "AMA", "meaning": "Against Medical Advice — patient leaving without clinical approval"},
+      {"term": "Elopement", "meaning": "Patient leaving facility without authorization"},
+      {"term": "SI/HI", "meaning": "Suicidal Ideation / Homicidal Ideation"},
+      {"term": "PRN", "meaning": "Pro re nata — as-needed medication (often for agitation)"},
+      {"term": "DSM-5-TR", "meaning": "Diagnostic and Statistical Manual — psychiatric diagnosis reference"},
+      {"term": "Therapeutic hold", "meaning": "Approved physical intervention for safety"},
+      {"term": "Level system", "meaning": "Patient privilege levels based on behavior progress"},
+      {"term": "Group", "meaning": "Group therapy session led by technician or therapist"}
+    ],
+    "common_abbreviations": ["MHT", "LPT", "MHTC", "MAR", "SI/HI", "AMA", "PRN", "CPI", "MHA (Mental Health Associate)", "BHT (Behavioral Health Technician)"],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/psychiatric-technicians-and-aides.htm", "fact": "BLS psychiatric technician work description"},
+      {"url": "https://laopcenter.com/mental-health/technician/", "fact": "Mental health technician role definition and terminology"}
+    ]
+  },
+  "career_psychology": {
+    "summary": "Psychiatric technicians face high rates of physical assault, emotional stress from patient crises, and secondary trauma. Work in locked units requires constant vigilance. Career path limited without further education.",
+    "career_levels": [
+      {"level": "Psychiatric Aide", "salary_range": "$28,000-$35,000", "responsibilities": "Basic patient care, observation, ADL assistance"},
+      {"level": "Psychiatric Technician", "salary_range": "$36,000-$45,000", "responsibilities": "Medication administration, group facilitation, documentation"},
+      {"level": "Senior Psych Tech/Lead", "salary_range": "$45,000-$55,000", "responsibilities": "Shift supervision, crisis response lead, training"},
+      {"level": "Behavioral Health Supervisor", "salary_range": "$50,000-$65,000+", "responsibilities": "Unit management, staffing, quality improvement"}
+    ],
+    "main_fears": [
+      "Physical assault by agitated patients",
+      "Patient suicide or self-harm on their watch",
+      "Allegations of patient abuse or excessive force",
+      "Exposure to bodily fluids and infectious diseases",
+      "Licensing/certification loss",
+      "PTSD from traumatic patient events"
+    ],
+    "burnout_causes": [
+      "Physical danger from violent patients",
+      "Emotional burden of working with severe mental illness",
+      "Mandatory overtime due to chronic understaffing",
+      "Low pay for high-risk work",
+      "Rotating shifts disrupting sleep and personal life",
+      "Compassion fatigue from chronic patient suffering",
+      "Limited advancement without additional degrees"
+    ],
+    "growth_motivation": [
+      "Licensed Psychiatric Technician (LPT) in California for higher pay",
+      "Transition to nursing (RN/LPN) through bridge programs",
+      "Behavioral health counselor certification",
+      "Social work or psychology degree pathway",
+      "Correctional mental health (often higher pay)",
+      "Supervisory and management roles"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/psychiatric-technicians-and-aides.htm", "fact": "BLS median wage $42,590 (May 2024) for psychiatric technicians"},
+      {"url": "https://www.trustedhealth.com/allied-career-guide/mental-health-technician", "fact": "Mental health technician career guide with progression paths"}
+    ]
+  },
+  "community": {
+    "summary": "AAPT (American Association of Psychiatric Technicians) is the primary dedicated organization. APA Division 18 covers public service psychology. Limited dedicated online communities, often grouped with general mental health professionals.",
+    "professional_associations": [
+      {"name": "AAPT — American Association of Psychiatric Technicians", "url": "https://www.aapt.net", "membership_value": "NCPT certification, CE courses, advocacy for psych tech profession", "mandatory": false},
+      {"name": "NAMI — National Alliance on Mental Illness", "url": "https://www.nami.org", "membership_value": "Mental health advocacy and education (broader community)", "mandatory": false},
+      {"name": "CPI — Crisis Prevention Institute", "url": "https://www.crisisprevention.com", "membership_value": "De-escalation training and certification", "mandatory": false}
+    ],
+    "conferences": [
+      {"name": "AAPT Annual Conference", "detail": "Dedicated psychiatric technician professional development", "frequency": "Annual"},
+      {"name": "CPI Symposium", "detail": "Crisis prevention and de-escalation training", "frequency": "Annual"}
+    ],
+    "online_communities": [
+      "Reddit r/BehavioralHealth",
+      "Reddit r/psychotherapists (limited tech-specific content)",
+      "Facebook psychiatric technician groups",
+      "LinkedIn behavioral health professionals",
+      "Allnurses.com psychiatric nursing forums (relevant)"
+    ],
+    "publications": [
+      "Psychiatric Services (APA journal)",
+      "Community Mental Health Journal",
+      "AAPT newsletters"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/psychiatric-technicians-and-aides.htm", "fact": "BLS psychiatric technician professional context"},
+      {"url": "https://psychologyjobs.com/psychiatric-technician-jobs/", "fact": "Psychiatric technician career and community resources"}
+    ]
+  },
+  "market": {
+    "summary": "Median salary $42,590 (BLS May 2024). 5% growth projected 2024-2034 with ~17,000 annual openings. About 73,900 psychiatric technicians employed. Mental health crisis expanding demand.",
+    "salary_by_level": {
+      "entry_aide": "$28,000-$35,000",
+      "certified_tech": "$36,000-$45,000",
+      "senior_lead": "$45,000-$55,000",
+      "supervisor": "$50,000-$65,000+"
+    },
+    "geographic_variation": {
+      "national_median": "$42,590 (BLS May 2024)",
+      "california": "Highest employment and pay (LPT licensure)",
+      "state_hospitals": "Often higher pay than private facilities",
+      "lowest_10_percent": "Less than $30,000",
+      "highest_10_percent": "More than $65,000+"
+    },
+    "estimated_practitioners": "73,900 psychiatric technicians employed in US (BLS 2023)",
+    "job_outlook": "5% growth 2024-2034 with ~17,000 annual openings. Mental health awareness and crisis response expansion driving demand.",
+    "work_arrangements": {
+      "dominant": "W-2 employees at psychiatric hospitals, residential facilities, state mental health systems",
+      "correctional": "Correctional mental health facilities (often higher pay)",
+      "community": "Community mental health centers and group homes",
+      "shift_patterns": "12-hour shifts, rotating days/nights, weekends/holidays"
+    },
+    "market_trends": [
+      "Mental health crisis driving increased demand",
+      "988 Suicide & Crisis Lifeline expansion creating positions",
+      "Opioid crisis increasing behavioral health staffing needs",
+      "Telehealth expanding but not replacing in-person psych tech roles",
+      "Correctional mental health expanding",
+      "Crisis stabilization units growing as alternative to ER"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/psychiatric-technicians-and-aides.htm", "fact": "BLS: median $42,590, 5% growth, ~17,000 annual openings"},
+      {"url": "https://www.bls.gov/oes/2023/may/oes292053.htm", "fact": "BLS OES: 73,900 psychiatric technicians employed in May 2023"}
+    ]
+  },
+  "quality_score": 0.5,
+  "sources_count": 12,
+  "verified_sources": 6,
+  "confidence": "verified",
+  "raw_responses": []
+}

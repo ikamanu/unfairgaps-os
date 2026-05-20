@@ -1,0 +1,474 @@
+[
+  {
+    "id": "us-auto-detailers-p01",
+    "title": "Price a detail job profitably (cost-plus, not guess)",
+    "problem": "Most detailers eyeball pricing or copy competitors and undercut by 25%+, losing money once you account for labor, chemicals, equipment depreciation, fuel (mobile), insurance, and self-employment tax. Without a cost-plus formula they cannot tell whether a $250 full detail actually nets $80 or -$30.",
+    "who": "Solo mobile detailers, new shop owners (first 3 years), part-time detailers transitioning to full-time",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 8000,
+    "source": "tools.pain_points",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Detail Job Price Calculator",
+      "one_liner": "Computes minimum profitable price for a detail job using cost-plus formula with vehicle type, services, location, and target margin",
+      "inputs": [
+        {"name": "vehicle_type", "type": "select", "label": "Vehicle type", "options": ["sedan", "suv", "truck", "van", "exotic"]},
+        {"name": "service_type", "type": "multi-select", "label": "Services", "options": ["exterior_wash", "interior_full", "clay_bar", "single_stage_polish", "two_stage_correction", "ceramic_coating_1yr", "ceramic_coating_5yr", "ppf_partial_front", "ppf_full_vehicle", "engine_bay", "ozone_odor"]},
+        {"name": "labor_hours_est", "type": "number", "label": "Estimated labor hours"},
+        {"name": "hourly_target_rate", "type": "number", "label": "Target hourly rate USD (default $65)"},
+        {"name": "material_cost", "type": "number", "label": "Chemicals + consumables cost USD"},
+        {"name": "is_mobile", "type": "boolean", "label": "Mobile job?"},
+        {"name": "miles_to_job", "type": "number", "label": "Round-trip miles (if mobile)"},
+        {"name": "monthly_overhead", "type": "number", "label": "Monthly overhead USD (insurance, rent, software, depreciation)"},
+        {"name": "monthly_jobs_avg", "type": "number", "label": "Average monthly jobs"},
+        {"name": "target_margin_pct", "type": "number", "label": "Target net margin % (default 30)"}
+      ],
+      "outputs": [
+        {"name": "minimum_price", "label": "Minimum profitable price USD"},
+        {"name": "recommended_price", "label": "Recommended price with target margin USD"},
+        {"name": "breakdown", "label": "Labor / Materials / Overhead / Fuel / Tax allocation"},
+        {"name": "se_tax_set_aside", "label": "Self-employment tax to set aside (15.3%) USD"}
+      ],
+      "formula_hint": "price = (labor_hours * hourly_target_rate) + material_cost + (monthly_overhead / monthly_jobs_avg) + (miles * 0.67 IRS rate) + se_tax_buffer; then markup by target_margin_pct",
+      "rates": {"se_tax_rate": 0.153, "irs_mileage_2026": 0.67, "default_target_hourly": 65}
+    },
+    "example_queries": [
+      "Price a 2-stage paint correction + 5yr ceramic on a black Audi Q5, 12 hours labor, $180 in chemicals, mobile job 18 miles round-trip",
+      "What should I charge for an interior detail on an SUV with pet hair, 3 hours work?",
+      "Am I making money at $200 for a full detail with 4 hours of labor and $35 in supplies?"
+    ]
+  },
+  {
+    "id": "us-auto-detailers-p02",
+    "title": "Quarterly estimated tax + self-employment tax calculation",
+    "problem": "Solo mobile detailers and shop owners are 1099 self-employed and owe 15.3% SE tax plus federal income tax on net profit. Most don't set aside cash quarterly, miss Form 1040-ES deadlines (Apr/Jun/Sep/Jan), and face penalty + interest plus a 5-figure April surprise bill.",
+    "who": "Solo mobile detailers, 1099 shop owners, side-hustle detailers earning >$400/year net",
+    "frequency": "quarterly",
+    "time_waste_h": 3,
+    "money_risk_usd": 4000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Detailer Quarterly Tax Estimator",
+      "one_liner": "Computes quarterly federal estimated tax, SE tax, and state income tax with deductible expenses for auto detailers",
+      "inputs": [
+        {"name": "gross_revenue_ytd", "type": "number", "label": "Gross revenue year-to-date USD"},
+        {"name": "deductible_expenses_ytd", "type": "number", "label": "Deductible business expenses USD (chemicals, equipment, mileage, insurance, software)"},
+        {"name": "mileage_ytd", "type": "number", "label": "Business miles driven YTD (mobile detailers)"},
+        {"name": "state", "type": "select", "label": "State of residence"},
+        {"name": "filing_status", "type": "select", "label": "Filing status", "options": ["single", "mfj", "mfs", "hoh"]},
+        {"name": "quarter", "type": "select", "label": "Which quarterly payment", "options": ["Q1_Apr15", "Q2_Jun15", "Q3_Sep15", "Q4_Jan15"]}
+      ],
+      "outputs": [
+        {"name": "net_profit", "label": "Net profit (Schedule C) USD"},
+        {"name": "se_tax_due", "label": "SE tax due (15.3% on 92.35% of net) USD"},
+        {"name": "federal_income_tax", "label": "Federal income tax estimated USD"},
+        {"name": "state_income_tax", "label": "State income tax estimated USD"},
+        {"name": "quarterly_payment", "label": "Quarterly payment due USD"},
+        {"name": "underpayment_penalty_risk", "label": "Safe harbor status (90% current / 100-110% prior year)"}
+      ],
+      "formula_hint": "se_taxable = net_profit * 0.9235; se_tax = se_taxable * 0.153; quarterly = (annual_proj_tax * 0.25) - paid_prior_quarters",
+      "rates": {"se_tax_rate": 0.153, "se_adj": 0.9235, "fed_brackets_2026": "10/12/22/24/32/35/37"}
+    },
+    "example_queries": [
+      "I'm a mobile detailer in Texas, $48K gross YTD, $18K expenses, what's my Q3 estimated payment?",
+      "Solo detailer California, made $85K so far this year - how much should I send IRS by Sep 15?",
+      "What's my SE tax if my Schedule C net is $62,000?"
+    ]
+  },
+  {
+    "id": "us-auto-detailers-p03",
+    "title": "EPA stormwater compliance checklist (avoid wash-water Clean Water Act fines)",
+    "problem": "Mobile detailers and shops dumping wash water into storm drains face Clean Water Act civil penalties up to $64,618/day per violation. Most owners don't know the BMP rules (water-containment mats, reclamation, sanitary sewer disposal), local stormwater ordinance specifics, or when NPDES permit is required. EPA has shut down mobile detailers.",
+    "who": "All mobile detailers, shop owners with parking-lot bays, body shop detail divisions",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 64618,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Detailer Stormwater Compliance Checklist",
+      "one_liner": "Step-by-step Clean Water Act compliance for wash water capture, reuse, and disposal customized by state and operation type",
+      "steps": [
+        "Step 1: Identify if operation is mobile, fixed shop, or hybrid - determines BMP requirements",
+        "Step 2: Check state stormwater authority (EPA direct or state-delegated NPDES) - varies by state",
+        "Step 3: Determine if NPDES permit (MSGP) required - generally yes for industrial facilities, no for residential mobile under exemption",
+        "Step 4: Install water containment - berms, mats (CycloneVac, Water Wall), or dedicated wash pad with sump",
+        "Step 5: Set up wash water reclamation OR sanitary-sewer discharge agreement with POTW (publicly owned treatment works)",
+        "Step 6: NEVER discharge to storm drains, curbs, gutters, creeks - violation regardless of soap type",
+        "Step 7: Document BMPs in written Stormwater Pollution Prevention Plan (SWPPP) if MSGP-permitted",
+        "Step 8: Train all employees on BMPs and document training annually",
+        "Step 9: Audit chemical inventory - phase out PFAS-containing products by 2025-2027 in CA/ME/MN/NY",
+        "Step 10: Keep SDS binder for all chemicals (also OSHA 1910.1200 requirement)",
+        "Step 11: For mobile: carry water reclamation system (vacuum + filtration) on rig OR work only on permeable surfaces (grass, gravel) with biodegradable soap (still risky)",
+        "Step 12: Photograph job site before/after - proof of no runoff if disputed"
+      ],
+      "warnings": [
+        "Biodegradable soap is NOT a defense - CWA prohibits ANY non-stormwater discharge to drains regardless of toxicity",
+        "Working on customer's driveway is YOUR liability if runoff reaches storm drain",
+        "CA, NY enforcement most aggressive; TX, FL less but penalties same federal",
+        "PFAS bans (CA AB 2771 cosmetics analog being extended) - check label for PFOS/PFOA"
+      ],
+      "regulatory_refs": ["33 USC 1311 (CWA Section 301 - discharge prohibition)", "33 USC 1342 (NPDES)", "40 CFR 122.26 (stormwater)", "EPA 2026 Proposed MSGP", "State analog statutes"]
+    },
+    "example_queries": [
+      "Mobile detailer in California - how do I stay legal on driveway washes?",
+      "Do I need an NPDES permit for my 3-bay detail shop in Houston?",
+      "What's the actual fine if EPA catches me washing on a customer's driveway with no containment?"
+    ]
+  },
+  {
+    "id": "us-auto-detailers-p04",
+    "title": "California Car Wash and Polishing Act registration + bond compliance",
+    "problem": "California requires annual $300 registration + $15,000 surety wage bond for any car wash/detail business with employees under the Car Washing and Polishing Act. Solo mobile = exempt. Operators routinely miss renewal, skip the bond, or misunderstand exemption - resulting in $100/day penalties, back-wage liability, and Labor Commissioner investigations.",
+    "who": "California shop owners, mobile detailers with 1+ employee or 1099 helper, dealership detail managers",
+    "frequency": "annually + on hire",
+    "time_waste_h": 4,
+    "money_risk_usd": 36500,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "California Car Wash Act Compliance",
+      "one_liner": "Walks through annual registration, bond filing, wage compliance, and renewal requirements under Labor Code 2050-2067",
+      "steps": [
+        "Step 1: Determine if Car Wash Act applies - business that washes/polishes vehicles for compensation with 1+ employee in California",
+        "Step 2: Confirm exemption status - solo mobile no-employee = exempt; charities, dealerships own lot, self-serve washes = exempt",
+        "Step 3: Obtain $15,000 surety bond minimum (higher if >$50K monthly wages) from authorized surety bond company",
+        "Step 4: File Form CWP-1 Application for Registration with DLSE - $300 annual fee",
+        "Step 5: Post Notice to Employees at workplace in English, Spanish, Mandarin, Vietnamese, Korean, Tagalog as applicable",
+        "Step 6: Maintain payroll records 4+ years - pay stubs, hours, deductions, piece rate if applicable",
+        "Step 7: Pay employees per California minimum wage ($16+/hr 2026, higher in some cities) - no piece-rate workarounds without compliant rest/recovery pay",
+        "Step 8: Provide written paystubs every pay period (Labor Code 226)",
+        "Step 9: Submit annual renewal by anniversary date - missing = $100/day penalty + closure risk",
+        "Step 10: Display registration certificate visibly in workplace",
+        "Step 11: If hiring 1099 'independent contractor' detailer - apply AB 5 ABC test; likely misclassification, treat as W-2"
+      ],
+      "warnings": [
+        "Bond covers unpaid wages - if employee files claim, surety pays then comes after you for reimbursement",
+        "Misclassifying detailers as 1099 contractors under AB 5 = ~$25,000+/worker penalties + back wages + benefits",
+        "Labor Commissioner has subpoena power and investigates wage complaints aggressively",
+        "Bond amount increases with payroll size - check threshold annually"
+      ],
+      "regulatory_refs": ["California Labor Code 2050-2067", "AB 1066 (2017)", "AB 5 (2019)", "Cal Code Regs Title 8 Section 13690-13693"]
+    },
+    "example_queries": [
+      "I just hired my first detailer in LA - what do I file with the state?",
+      "My CA car wash registration expired last month, what penalties am I looking at?",
+      "Am I exempt as a solo mobile detailer with one 1099 helper on weekends?"
+    ]
+  },
+  {
+    "id": "us-auto-detailers-p05",
+    "title": "Vehicle intake / pre-inspection form (protect against damage claims)",
+    "problem": "Customer claims detailer scratched/damaged car days after job. No pre-inspection photos = he-said-she-said dispute, GL insurance claim, possible small-claims suit. Most detailers use a quick verbal walkaround or sloppy paper form. Need standardized intake doc with photo prompts and customer signature.",
+    "who": "All detailers - mobile and shop; especially high-end / luxury car focus",
+    "frequency": "daily (per job)",
+    "time_waste_h": 0.25,
+    "money_risk_usd": 3500,
+    "source": "career_psychology.fears",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Vehicle Intake & Pre-Inspection Form Generator",
+      "one_liner": "Generates printable PDF / digital intake form with vehicle details, existing damage photo grid, service scope, liability waiver, and signature lines",
+      "doc_name": "Vehicle Intake & Pre-Inspection Form",
+      "variables": [
+        {"name": "shop_name", "label": "Shop / business name"},
+        {"name": "shop_address", "label": "Business address + phone"},
+        {"name": "customer_name", "label": "Customer name"},
+        {"name": "customer_phone_email", "label": "Customer contact"},
+        {"name": "vehicle_year_make_model", "label": "Year / Make / Model"},
+        {"name": "vehicle_vin", "label": "VIN (last 8 digits)"},
+        {"name": "vehicle_color", "label": "Color"},
+        {"name": "odometer", "label": "Odometer reading"},
+        {"name": "services_requested", "label": "Services contracted (multi-select)"},
+        {"name": "agreed_price", "label": "Agreed total USD"},
+        {"name": "deposit_amount", "label": "Deposit collected"},
+        {"name": "estimated_completion", "label": "Estimated pickup time"},
+        {"name": "existing_damage_photo_count", "label": "Number of intake photos (min 12: 4 corners + 4 panels + interior 4)"},
+        {"name": "noted_pre_existing", "label": "Pre-existing defects (text)"}
+      ],
+      "structure_hint": "Header (logo + shop info) -> customer info -> vehicle info + VIN + photos -> services contracted with itemized prices -> liability waiver clause (no responsibility for pre-existing damage / soft top water entry / aftermarket electronics / mechanical issues) -> ceramic coating warranty terms if applicable -> deposit + balance terms -> customer + technician signatures with date+time"
+    },
+    "example_queries": [
+      "Generate an intake form for a 2023 Tesla Model Y, full interior + 2-stage polish, $850 job",
+      "Customer wants ceramic coating on a Porsche - need bulletproof intake doc",
+      "Make me a mobile detail intake form I can email to client before arrival"
+    ]
+  },
+  {
+    "id": "us-auto-detailers-p06",
+    "title": "Ceramic coating warranty + service agreement template",
+    "problem": "Ceramic coating jobs are $450-$2000 with 1-7 year warranties. Detailers either skip the warranty doc or copy a vague template that doesn't address streaking, spider-webbing, owner maintenance failures, or warranty registration with manufacturer (Gtechniq, CarPro CQuartz, Gyeon). When coating fails, customer demands free redo. Need airtight doc.",
+    "who": "Detailers offering ceramic / graphene coatings, authorized installers (CQuartz Finest, Crystal Serum Ultra, IGL Quartz+)",
+    "frequency": "weekly",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 1500,
+    "source": "career_psychology.fears",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Ceramic Coating Service Agreement + Warranty",
+      "one_liner": "Generates ceramic coating service contract with coating brand specs, warranty terms, owner maintenance requirements, and exclusions",
+      "doc_name": "Ceramic Coating Service Agreement & Limited Warranty",
+      "variables": [
+        {"name": "shop_name", "label": "Shop / installer name"},
+        {"name": "installer_credentials", "label": "Manufacturer authorization (CQuartz Finest / Crystal Serum / etc.)"},
+        {"name": "customer_name", "label": "Customer name"},
+        {"name": "vehicle_info", "label": "Year/Make/Model/VIN"},
+        {"name": "coating_brand_product", "label": "Coating product (e.g., Gtechniq Crystal Serum Ultra)"},
+        {"name": "coating_layers", "label": "Layers applied (1, 2, base+topper)"},
+        {"name": "warranty_years", "label": "Warranty duration years"},
+        {"name": "paint_correction_included", "label": "Paint correction stage(s) performed"},
+        {"name": "agreed_price", "label": "Total service price USD"},
+        {"name": "annual_inspection_required", "label": "Annual inspection required for warranty (yes/no)"},
+        {"name": "manufacturer_warranty_registration", "label": "Mfr warranty ID / registration #"}
+      ],
+      "structure_hint": "Header -> parties + vehicle -> scope (decon/correction/coating layers/cure time) -> price + payment -> WHAT IS COVERED (loss of hydrophobicity, chemical staining, swirl protection per spec) -> WHAT IS NOT COVERED (rock chips, scratches > X micron, hard water spots not removed within 24h, automatic carwash damage, accident damage, owner-applied wax/sealant on top) -> OWNER MAINTENANCE REQUIREMENTS (no automatic brush wash, pH-neutral shampoo only, annual inspection, decontamination wash every 6 months) -> claim procedure -> manufacturer warranty pass-through -> signatures"
+    },
+    "example_queries": [
+      "Need a warranty doc for a Gtechniq Crystal Serum Ultra 9-year install on a McLaren",
+      "Generate service agreement for CQuartz UK 3.0 2-layer with topper, 3-year warranty",
+      "Make me a maintenance terms doc customers must sign for ceramic warranty"
+    ]
+  },
+  {
+    "id": "us-auto-detailers-p07",
+    "title": "Sales tax on detailing services - state-by-state lookup",
+    "problem": "Most states tax tangible products but not services - except sales tax DOES apply to detailing services in WA, HI, NM, SD, WV, plus mixed treatment in CT, TX, IA. Many detailers either over-collect (compliance overhead, customer pushback) or under-collect (state DOR audit, back taxes + penalties). Rules vary by state and even local jurisdiction.",
+    "who": "Detailers operating in WA/HI/NM/SD/WV/CT/TX/IA, multi-state mobile detailers, dealership recon contractors",
+    "frequency": "monthly",
+    "time_waste_h": 1,
+    "money_risk_usd": 6000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Detail Service Sales Tax Lookup",
+      "one_liner": "Quick lookup of sales tax treatment for car detailing services by state, with local rates and product-vs-service split rules",
+      "data_domain": "US state sales tax rules applied to auto detailing services and products",
+      "lookup_keys": ["state", "service_type", "is_product_sold_separately", "customer_type_b2b_b2c"],
+      "data_hints": {
+        "source_law": "State Department of Revenue rulings, state tax codes",
+        "key_states_taxing_services": ["Washington (Retail Sales Tax applies)", "Hawaii (GET 4-4.5%)", "New Mexico (GRT)", "South Dakota", "West Virginia", "Connecticut (limited)", "Texas (some - $1500+ trigger)", "Iowa"],
+        "key_states_taxing_products_only": ["California (parts/wax retail = tax; pure labor service = no tax)", "Florida (services exempt, products taxed)", "New York (limited tax on services)", "Most other states"],
+        "resale_exemption_dealer": "Dealership recon contracts often exempt with resale certificate",
+        "rates_2026": "Combined state+local rates 0%-10.5%"
+      }
+    },
+    "example_queries": [
+      "Do I charge sales tax on a full detail in Texas?",
+      "Washington state mobile detailer - what rate applies to ceramic coating?",
+      "California - do I tax just the wax or the whole detail service?"
+    ]
+  },
+  {
+    "id": "us-auto-detailers-p08",
+    "title": "Mobile detailer route optimization + travel cost recovery",
+    "problem": "Mobile detailers underprice by ignoring travel time and fuel between jobs. A '$200 detail' becomes $130 net once you add 45 min drive + 18 miles round-trip. Most schedule jobs randomly, drive 80+ miles/day, and don't bill mileage. Need route-planning logic and per-job mileage cost computation.",
+    "who": "Solo mobile detailers, multi-tech mobile operations, fleet detailers",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 1800,
+    "source": "tools.pain_points",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Mobile Route Cost Calculator",
+      "one_liner": "Calculates true cost per mobile job including travel time, fuel, vehicle depreciation, and recommends route order + minimum job radius",
+      "inputs": [
+        {"name": "jobs_today", "type": "array", "label": "Job list (address + service revenue + est duration)"},
+        {"name": "home_base_address", "type": "string", "label": "Starting address"},
+        {"name": "vehicle_mpg", "type": "number", "label": "Service vehicle MPG"},
+        {"name": "fuel_price", "type": "number", "label": "Fuel price USD/gal"},
+        {"name": "tech_hourly_cost", "type": "number", "label": "Tech effective hourly cost USD (wage + payroll tax + comp)"},
+        {"name": "vehicle_op_cost_per_mile", "type": "number", "label": "Vehicle operating cost USD/mi (maintenance + insurance + depreciation)"}
+      ],
+      "outputs": [
+        {"name": "optimized_route_order", "label": "Recommended job order (minimize total miles)"},
+        {"name": "total_miles", "label": "Total daily miles"},
+        {"name": "travel_time_minutes", "label": "Total travel time"},
+        {"name": "travel_cost_per_job", "label": "Travel cost allocated per job USD"},
+        {"name": "net_revenue_per_job", "label": "Revenue minus all costs per job"},
+        {"name": "loss_makers", "label": "Jobs that net < $X (flag)"}
+      ],
+      "formula_hint": "travel_cost_per_job = (miles_to_job * fuel_cost_per_mile) + (travel_minutes/60 * tech_hourly_cost) + (miles * vehicle_op_cost); fuel_cost_per_mile = fuel_price/mpg; use TSP/nearest-neighbor for route order",
+      "rates": {"irs_2026_mileage": 0.67, "typical_vehicle_op_per_mile": 0.20}
+    },
+    "example_queries": [
+      "I have 4 jobs tomorrow - Burbank, Glendale, Pasadena, Long Beach. Best order from home in Van Nuys?",
+      "Is a $150 detail 28 miles away actually profitable in my van that gets 18 mpg?",
+      "What should my minimum travel surcharge be for jobs outside a 15-mile radius?"
+    ]
+  },
+  {
+    "id": "us-auto-detailers-p09",
+    "title": "Chemical inventory + reorder + PFAS compliance tracker",
+    "problem": "Detailers waste 10-20% on chemicals via over-ordering, expiration, and theft. They also need to track which products contain PFAS (banned in CA/ME/MN/NY starting 2025-2027) and maintain SDS binder for OSHA HazCom. Manual spreadsheet tracking fails. Result: surprise stock-outs, expired product, OSHA fines $16K+/violation.",
+    "who": "Shop owners with $500+/mo chemical spend, ceramic/PPF installers, multi-tech operations",
+    "frequency": "weekly",
+    "time_waste_h": 1.5,
+    "money_risk_usd": 16131,
+    "source": "tools.pain_points",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Chemical Inventory + Compliance Tracker",
+      "one_liner": "Weekly inventory routine with PFAS flagging, SDS verification, expiration tracking, and reorder-point logic",
+      "steps": [
+        "Step 1: Pull current SDS from manufacturer for every chemical SKU (annual refresh per OSHA 1910.1200)",
+        "Step 2: Tag each product with state-applicability flag - check Section 3 (Composition) for PFAS/PFOS/PFOA",
+        "Step 3: Photograph or scan each bottle - lot number, mfr date, expiration if printed",
+        "Step 4: Measure current volume (visual or weight) vs full container",
+        "Step 5: Compare to weekly usage rate - flag low-stock SKUs against reorder point (usage_rate * lead_time_days * safety_factor 1.5)",
+        "Step 6: Discard expired or visually degraded product - log disposal route (sanitary sewer permitted? hazardous waste pickup?)",
+        "Step 7: Update SDS binder with any new product additions before first use",
+        "Step 8: Verify GHS labels on all secondary containers (spray bottles) - product name + hazard pictograms required",
+        "Step 9: Quarterly: review for PFAS phase-out compliance in affected states",
+        "Step 10: Annual: confirm employee HazCom training documented (date + topics + employee signature)"
+      ],
+      "warnings": [
+        "OSHA inspection finds unlabeled secondary spray bottle = serious violation up to $16,131",
+        "PFAS in tire dressing / glass coating common - check labels carefully",
+        "Hydrofluoric acid wheel cleaners - high-hazard, special handling, often regulated locally",
+        "Mixing ammonia + bleach (some interior cleaners) = chloramine gas - never combine"
+      ],
+      "regulatory_refs": ["29 CFR 1910.1200 (HazCom)", "CA AB 2771 + analogs (PFAS bans)", "EPA TSCA Section 8(a)(7) PFAS reporting"]
+    },
+    "example_queries": [
+      "What chemicals in my shop need to be replaced before California's 2025 PFAS ban?",
+      "I have a labor commissioner visit next week - is my SDS binder compliant?",
+      "Build me a weekly inventory routine for my 5-tech ceramic install studio"
+    ]
+  },
+  {
+    "id": "us-auto-detailers-p10",
+    "title": "Paint correction estimate from photos + paint depth gauge",
+    "problem": "Estimating paint correction time/price requires assessing swirls, RIDS, oxidation, and clear coat thickness. Mobile detailers can't bring a $400 paint depth gauge to every estimate, often guess wrong, then either lose money on understated jobs or scare customers with overstated quotes. Need photo-based assessment + measurement protocol.",
+    "who": "Detailers offering paint correction, ceramic prep, PPF prep; especially mobile estimators",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 800,
+    "source": "tools.pain_points",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Paint Correction Estimator",
+      "one_liner": "Analyzes vehicle paint condition from customer photos + measurement steps, recommends correction stage (1/1.5/2/3-stage), estimated hours, and price range",
+      "expertise_area": "Paint correction assessment - defect classification (swirls, marring, RIDS, holograms, oxidation, water spots, etching), clear coat depth (microns), correction methodology selection, polish/pad pairing",
+      "decision_criteria": [
+        "Defect type severity (swirl < RIDS < holograms < strike-through risk)",
+        "Paint color (black/dark = swirl-prone, light = forgiving)",
+        "Paint type (single-stage soft / two-stage hard / waterborne)",
+        "Clear coat depth reading microns",
+        "Customer expectation (80% / 95% / 99% correction)",
+        "Subsequent coating (ceramic vs PPF requires different prep level)",
+        "Vehicle value vs job price ceiling"
+      ],
+      "context_needed": ["tools.software", "regulatory.penalties (worker safety chemical exposure)", "career_psychology.fears (clear coat strike-through)", "market.shop_revenue_per_car"]
+    },
+    "example_queries": [
+      "Customer sent photos of a black BMW with heavy swirls and some RIDS - what's my correction plan and quote?",
+      "How much should I charge for prep before ceramic coating on a Tesla with 18-month-old paint?",
+      "Paint gauge reads 95 microns on a Porsche - safe for two-stage correction?"
+    ]
+  },
+  {
+    "id": "us-auto-detailers-p11",
+    "title": "Winter cash flow + slow-season pricing strategy",
+    "problem": "Northern detailers face 50-70% revenue drop Dec-Feb. Most owners don't prepare cash reserves and either bleed savings, take seasonal W-2 work (losing customers to competitors), or fail entirely. Need cash-flow projection + slow-season service mix (salt removal, interior detail, indoor ceramic, dealership recon contracts).",
+    "who": "Shop owners and mobile detailers in northern US states (Northeast, Midwest, Mountain West)",
+    "frequency": "annually",
+    "time_waste_h": 4,
+    "money_risk_usd": 12000,
+    "source": "career_psychology.burnout",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Detailer Seasonal Cash Flow Advisor",
+      "one_liner": "Builds annual cash flow projection accounting for seasonal revenue swing and recommends slow-season service mix + reserve targets",
+      "expertise_area": "Detail business financial planning - seasonal demand modeling, reserve fund sizing, winter-appropriate service offerings, dealership/fleet recurring contracts",
+      "decision_criteria": [
+        "Geographic location (snow zone vs sunbelt)",
+        "Current revenue mix (mobile vs shop vs ceramic specialty)",
+        "Fixed monthly overhead",
+        "Owner draw needs",
+        "Indoor bay availability for cold-weather ceramic",
+        "Local dealership/fleet pipeline",
+        "Marketing budget for winter promos"
+      ],
+      "context_needed": ["daily_reality.seasonality", "market.profit_margin", "market.shop_revenue_per_car", "regulatory.penalties"]
+    },
+    "example_queries": [
+      "I do $14K/mo Apr-Oct and $4K/mo Nov-Mar in Chicago - how much reserve do I need by October?",
+      "What services should I push in January when nobody wants exterior detail?",
+      "Should I take a part-time W-2 job through winter or expand to dealership contracts?"
+    ]
+  },
+  {
+    "id": "us-auto-detailers-p12",
+    "title": "Damage claim response (customer alleges scratches/damage)",
+    "problem": "Customer calls 2 days after detail claiming scratches/dents/electronic issue caused by detailer. Owner panics, GL deductible $500-$1000, possible insurance claim history affecting renewal. Wrong response (refunding without investigation, admitting fault in text) makes it worse. Need step-by-step protocol.",
+    "who": "All detailers - mobile and shop",
+    "frequency": "monthly",
+    "time_waste_h": 3,
+    "money_risk_usd": 2500,
+    "source": "career_psychology.fears",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Customer Damage Claim Response Protocol",
+      "one_liner": "Step-by-step response when a customer alleges post-service damage, protecting business while resolving fairly",
+      "steps": [
+        "Step 1: STAY CALM - acknowledge claim, do NOT admit fault in writing or text yet",
+        "Step 2: Schedule in-person inspection within 24-48 hours - in daylight, outdoors",
+        "Step 3: Pull intake photos from job - compare against claimed damage location",
+        "Step 4: Photograph current condition thoroughly - all angles, close-up of claim area, wide context",
+        "Step 5: Verify alignment - does claimed damage match a tool/process actually used? (e.g., swirls vs PPF edge)",
+        "Step 6: If pre-existing (visible in intake photos) - politely show evidence to customer with copies of intake doc",
+        "Step 7: If genuinely caused by detail - acknowledge, propose remedy (repair quote from body shop, redo service, partial refund) - get written agreement before payment",
+        "Step 8: For claims >$1000 or insurance involvement - notify GL carrier within policy notice window (usually 30 days)",
+        "Step 9: Document everything in writing - timeline, photos, communications - email summary back to customer",
+        "Step 10: If customer threatens chargeback - contact payment processor with evidence package immediately",
+        "Step 11: Small claims threshold - varies by state ($5K-$25K) - know your state's process",
+        "Step 12: Update intake process - what gap let this through? More photos? Better waiver?"
+      ],
+      "warnings": [
+        "Never text 'I'm so sorry' or 'I'll cover whatever you need' - these are admissions",
+        "Refunding without investigation invites pattern abuse (customer tells friends)",
+        "Insurance claims affect renewal - low-dollar settle out of pocket if clearly your fault",
+        "Defamation note: customer leaving false review = potential legal claim but usually not worth pursuing"
+      ],
+      "regulatory_refs": ["State consumer protection statutes", "State small claims court rules", "GL policy notice provisions"]
+    },
+    "example_queries": [
+      "Customer says I scratched her hood - texted me a photo. What do I do?",
+      "Pulled the intake form, swirl marks customer is now complaining about were there before. How do I handle this?",
+      "Customer is threatening chargeback on a $1200 ceramic job claiming streaks - what's my move?"
+    ]
+  },
+  {
+    "id": "us-auto-detailers-p13",
+    "title": "IDA Certified Detailer (CD/SV-CD) exam prep + study tracker",
+    "problem": "International Detailing Association Certified Detailer requires passing 10 written exams (Phase I) covering chemistry, paint correction, interiors, business, etc. Most detailers don't know what's covered, don't have a study plan, waste $50-$75 per exam attempt failing. Need structured prep guide + practice questions.",
+    "who": "Detailers pursuing IDA certification, dealership detail managers required to certify, studio owners seeking SV-CD credential",
+    "frequency": "one-time pursuit (over 3-12 months)",
+    "time_waste_h": 60,
+    "money_risk_usd": 750,
+    "source": "career_psychology.motivation",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "IDA Certified Detailer Exam Guide",
+      "one_liner": "Comprehensive reference covering all 10 IDA Phase I exam topics with key facts, formulas, and practice questions",
+      "data_domain": "International Detailing Association certification curriculum - chemistry, paint composition, wash methodology, decontamination, polishing, interior care, business operations, safety, customer service, professional standards",
+      "lookup_keys": ["exam_topic", "concept", "question_type"],
+      "data_hints": {
+        "source_law": "IDA Certification Program standards (the-ida.com)",
+        "exam_topics": ["Detailing Chemistry", "Vehicle Wash", "Paint Correction Theory", "Interior Detailing", "Wheels and Tires", "Glass and Trim", "Coatings and Protection", "Business Operations", "Customer Service", "Safety and OSHA"],
+        "exam_format": "Multiple choice, ~50-75 questions per exam, online proctored",
+        "passing_score": "Typically 70-80% required",
+        "cost_per_exam": "$50-$75 for members, higher for non-members",
+        "phase_2_practical": "SV-CD Skills-Validated requires hands-on practical demonstration after Phase I",
+        "renewal": "Annual IDA membership maintains certification"
+      }
+    },
+    "example_queries": [
+      "What's covered on the Detailing Chemistry IDA exam?",
+      "Quiz me on paint correction theory - 10 practice questions",
+      "Give me a 3-month study plan to knock out all 10 IDA Phase I exams"
+    ]
+  }
+]

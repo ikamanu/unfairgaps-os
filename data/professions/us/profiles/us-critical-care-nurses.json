@@ -1,0 +1,54 @@
+{
+  "profession_id": "us-critical-care-nurses",
+  "profession_name": "Critical Care Nurses",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "ICU nurses work 12-hour shifts (7AM-7PM or 7PM-7AM), typically three shifts per week (36 hours). They care for 1-2 critically ill patients per shift (vs 5-6 on general floors). Daily tasks: head-to-toe assessments every 4 hours, hourly vital signs and fluid balance monitoring, titrating medications at bedside, managing ventilators and IV drips, monitoring critical support equipment, wound care, communicating with physicians and families, performing or assisting in emergency codes, and thorough EHR documentation. Physically demanding — on feet entire shift, lifting patients, pushing equipment.",
+    "documents": ["ICU flowsheets", "Ventilator settings logs", "Medication drip titration records", "Hemodynamic monitoring data", "Code documentation", "Nursing care plans", "Patient assessment notes", "Lab and ABG results", "Physician orders", "Incident/event reports"],
+    "deadlines": ["Hourly patient monitoring and documentation", "Shift handoff reports every 12 hours", "Medication administration windows", "CCRN certification renewal (every 3 years)", "Annual competency assessments", "BLS/ACLS recertification", "State license renewal"],
+    "seasonality": "Flu and respiratory virus season (October-March) dramatically increases ICU admissions. Summer trauma season increases surgical ICU volume. Holiday staffing challenges. Year-round high demand due to chronic conditions, post-surgical care, and aging population."
+  },
+  "regulatory": {
+    "laws": ["State Nurse Practice Acts", "Nurse Staffing Standards for Hospital Patient Safety and Quality Care Act (2025)", "California nurse-to-patient ratios (1:2 in ICU)", "Oregon ratios tightening to 1:4 by June 2026", "HIPAA", "EMTALA", "State-specific staffing mandates"],
+    "licensing": "RN license via NCLEX-RN. CCRN certification (Critical Care Registered Nurse) through AACN — requires 1,750 hours of direct bedside care of acutely/critically ill patients. Additional certifications: ACLS, BLS, PALS, TNCC. Oregon mandates $200 penalty per missed nurse break; federal staffing violations up to $25,000-$50,000.",
+    "penalties": "Federal: up to $25,000 first violation, $50,000 subsequent for staffing violations. Oregon: $200 per missed break when nurse files complaint. California: $15,000-$30,000 for ratio violations. License suspension/revocation for practice violations. Medical error liability.",
+    "regulatory_bodies": ["State Boards of Nursing", "AACN (American Association of Critical-Care Nurses)", "Joint Commission", "CMS", "OSHA", "State Health Departments"]
+  },
+  "tools": {
+    "software": ["Epic (hospital EHR with ICU modules)", "Oracle Cerner", "MEDITECH Critical Care", "Picis Critical Care Manager", "Etiometry (clinical intelligence)", "Bayesian Health (AI sepsis detection)", "Nuance DAX Copilot", "Smart Square (scheduling)"],
+    "platforms": ["AACN online resources", "UpToDate", "Lippincott Procedures", "AllNurses ICU forums", "Nursing Network"],
+    "gov_portals": ["Nursys (license verification)", "CDC NHSN (infection reporting)", "State Board of Nursing portals", "CMS Quality Reporting"]
+  },
+  "terminology": {
+    "jargon": ["Titrate (adjust medication drip)", "Wean (gradually reduce ventilator support)", "Code Blue/Rapid Response", "Hemodynamic monitoring", "Vasopressors (blood pressure medications)", "Intubation/Extubation", "Sedation vacation", "Proning (positioning face-down for ARDS)", "A-line (arterial line)", "Central line", "Swan-Ganz catheter", "Bolus (rapid fluid/med administration)", "Step-down (transfer to lower acuity)"],
+    "abbreviations": ["CCRN - Critical Care Registered Nurse", "ICU - Intensive Care Unit", "MICU/SICU/CVICU - Medical/Surgical/Cardiovascular ICU", "ABG - Arterial Blood Gas", "CRRT - Continuous Renal Replacement Therapy", "ECMO - Extracorporeal Membrane Oxygenation", "PEEP - Positive End Expiratory Pressure", "VAP - Ventilator-Associated Pneumonia", "DIC - Disseminated Intravascular Coagulation", "APACHE II - Acute Physiology and Chronic Health Evaluation", "MAP - Mean Arterial Pressure", "CVP - Central Venous Pressure", "IABP - Intra-Aortic Balloon Pump", "GCS - Glasgow Coma Scale", "RASS - Richmond Agitation-Sedation Scale"]
+  },
+  "career_psychology": {
+    "career_levels": ["New Graduate RN (ICU residency)", "Staff ICU Nurse (1-3 years)", "Senior ICU Nurse / Charge Nurse", "ICU Educator", "ICU Clinical Nurse Specialist", "ICU Nurse Manager", "Critical Care NP (ACNP)", "Director of Critical Care", "Travel ICU Nurse", "Chief Nursing Officer"],
+    "fears": ["Patient death on their watch", "Making a critical medication error", "Missing subtle deterioration signs", "ECMO/ventilator equipment malfunction", "Understaffing leading to preventable deaths", "Moral distress from futile care situations", "Violence from agitated/delirious patients", "Contracting infectious diseases", "Litigation from adverse outcomes"],
+    "motivation": ["Saving lives in the most critical moments", "Intellectual challenge of complex physiology", "Immense gratification from successful patient discharges", "Strong team camaraderie in high-stakes environment", "Travel ICU nursing opportunities (high pay)", "Clear specialization and career advancement paths", "Being the last line of defense for patients"],
+    "burnout": "25-33% of critical care nurses show severe burnout; up to 86% have at least one symptom. Emotional exhaustion most common (73%), followed by lack of personal accomplishment (60%) and depersonalization (48%). Younger, less experienced nurses at higher risk. Moral distress from inability to act according to values linked to burnout. Burnout associated with reduced care quality, lower patient satisfaction, increased medical errors, higher infection rates, and higher 30-day mortality."
+  },
+  "community": {
+    "reddit": ["r/nursing", "r/ICUnursing", "r/NursingStudents", "r/travel_nursing", "r/CriticalCare"],
+    "linkedin": ["AACN (American Association of Critical-Care Nurses) - 181,985 followers", "SCCM (Society of Critical Care Medicine) - 46,253 followers", "ICU Nursing Professionals groups"],
+    "associations": ["AACN (American Association of Critical-Care Nurses) - 500,000+ nurses", "SCCM (Society of Critical Care Medicine)", "Critical Care Societies Collaborative", "ANA (American Nurses Association)", "Emergency Nurses Association (related)", "DAISY Foundation (recognition)"],
+    "conferences": ["AACN National Teaching Institute (NTI)", "SCCM Critical Care Congress", "ANA Membership Assembly", "Magnet Conference"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "entry_level_new_grad": "65000-80000",
+      "staff_icu": "80000-100000",
+      "senior_charge": "90000-115000",
+      "travel_icu": "120000-180000",
+      "nurse_practitioner": "100000-150000",
+      "management": "110000-160000"
+    },
+    "national_average_usd": 91000,
+    "job_count": "594,859 active job openings; high demand across all US regions",
+    "growth_rate": "6% for RNs through 2033; ICU demand expected to grow faster due to aging population",
+    "unemployment_rate": "Near 0% — severe shortage",
+    "work_arrangements": ["Hospital ICU (primary)", "Travel ICU contracts", "Per diem / PRN shifts", "Agency staffing", "Tele-ICU (remote monitoring, growing)"],
+    "trends": ["Staff ICU nurses average $91K+; travel ICU nurses ~$150K in 2025", "Night/weekend/holiday shifts command premium pay", "CCRN certification boosts salary and employability", "AI-powered sepsis detection and clinical decision support expanding", "Tele-ICU remote monitoring growing as supplementary coverage model", "California ICU nurses average $51/hr vs Alabama $25.49/hr — massive regional variation", "Post-COVID burnout driving many experienced nurses out, increasing demand"]
+  }
+}

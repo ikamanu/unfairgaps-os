@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-cytogenetic-technologists",
+  "profession_name": "Cytogenetic Technologists",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Laboratory-based work analyzing chromosomes in biological samples. Process patient specimens (blood, bone marrow, tissue). Culture cells, prepare chromosome spreads, perform banding techniques. Analyze karyotypes to identify chromosomal abnormalities. Use fluorescence in situ hybridization (FISH) and molecular cytogenetic techniques. Document findings, prepare reports for pathologists. Quality control checks throughout the day.",
+    "key_documents": ["Karyotype analysis reports", "FISH analysis reports", "Laboratory worksheets and logs", "Quality control documentation", "Standard operating procedures (SOPs)", "Proficiency testing records", "Patient specimen tracking records", "Instrument calibration logs"],
+    "deadlines": "Turnaround times for test results (critical for cancer diagnosis and prenatal testing). FISH results typically 24-48 hours; full karyotype 7-14 days. Proficiency testing deadlines. CAP accreditation inspection cycles.",
+    "seasonality": "Relatively consistent year-round workload. Prenatal testing may have slight seasonal variation. Research lab work may follow academic/grant cycles."
+  },
+  "regulatory": {
+    "laws_and_standards": ["CLIA (Clinical Laboratory Improvement Amendments)", "CAP (College of American Pathologists) accreditation standards", "State clinical laboratory personnel licensing (varies by state)", "HIPAA patient privacy", "AABB standards (for bone marrow/stem cell labs)", "ISO 15189 (medical laboratory quality)"],
+    "licensing": "ASCP certification required: CG(ASCP) for cytogenetic technologists. Bachelor's degree in biology, genetics, or related field required. Completion of accredited cytogenetics training program. Some states require additional state laboratory personnel licensure. Continuing education required for certification maintenance.",
+    "penalties": "CLIA sanctions for laboratory non-compliance (fines, suspension, revocation). Loss of ASCP certification for failure to maintain CE requirements. CAP accreditation loss affecting lab operations. Personal liability for reporting errors in critical diagnoses.",
+    "regulatory_bodies": ["CMS/CLIA (Centers for Medicare & Medicaid Services)", "CAP (College of American Pathologists)", "ASCP (American Society for Clinical Pathology)", "State departments of health (laboratory licensing)", "FDA (for diagnostic test kits and reagents)"]
+  },
+  "tools": {
+    "software": ["CytoVision (Leica Biosystems) - karyotyping software", "GenASIs (Applied Spectral Imaging) - automated chromosome analysis", "MetaSystems - cytogenetic imaging platform", "FISH analysis software", "Laboratory Information Systems (LIS) - Epic Beaker, Cerner PathNet, Sunquest", "Microsoft Office/Excel - data tracking"],
+    "platforms": ["Hospital/reference lab LIS systems", "Digital imaging microscopy platforms", "Telepathology systems for remote consultation", "ASCP Learning Center - continuing education"],
+    "gov_portals": ["CMS CLIA certification portal", "CAP accreditation portal", "State laboratory licensing portals", "FDA device registration database"]
+  },
+  "terminology": {
+    "jargon": ["Karyotype", "Chromosome banding (G-banding, Q-banding)", "FISH (Fluorescence In Situ Hybridization)", "Translocation", "Deletion", "Inversion", "Trisomy", "Monosomy", "Metaphase spread", "Probe", "Array CGH (Comparative Genomic Hybridization)"],
+    "abbreviations": ["CG - Cytogenetics", "FISH - Fluorescence In Situ Hybridization", "CGH - Comparative Genomic Hybridization", "SNP - Single Nucleotide Polymorphism", "ALL - Acute Lymphoblastic Leukemia", "AML - Acute Myeloid Leukemia", "CML - Chronic Myeloid Leukemia", "Ph+ - Philadelphia chromosome positive", "QC - Quality Control", "SOPs - Standard Operating Procedures", "CLIA - Clinical Laboratory Improvement Amendments", "CAP - College of American Pathologists"]
+  },
+  "career_psychology": {
+    "career_levels": ["Cytogenetic Technologist I (0-3 years)", "Cytogenetic Technologist II/Senior (3-7 years)", "Lead/Supervisor Technologist (7-12 years)", "Laboratory Manager/Director (12+ years)", "Transition to molecular genetics/genomics roles"],
+    "fears": ["Automation and AI replacing manual karyotype analysis", "NGS (Next Generation Sequencing) replacing traditional cytogenetics", "Staffing shortages increasing workload", "Errors in critical cancer/prenatal diagnoses", "Limited career advancement in niche field"],
+    "motivation": "Direct impact on patient diagnosis (cancer, genetic disorders, prenatal conditions); detective-like analytical work; contributing to precision medicine; niche expertise valued in healthcare.",
+    "burnout": "Repetitive microscopy work causing eye strain and physical fatigue; staffing shortages increasing workloads; high-stakes results (cancer diagnosis); limited career ceiling without transitioning to molecular or management roles. 70.8% of cytogenetic technologists are female."
+  },
+  "community": {
+    "reddit": ["r/medlabprofessionals", "r/labrats", "r/genetics", "r/pathology"],
+    "linkedin": ["ASCP community", "Clinical Laboratory Scientists group", "Cytogenetics professionals", "Genetics and Genomics network"],
+    "associations": ["ASCP (American Society for Clinical Pathology)", "AGT (Association of Genetic Technologists)", "ACMG (American College of Medical Genetics and Genomics)", "CAP (College of American Pathologists)"],
+    "conferences": ["ASCP Annual Meeting", "AGT Annual Conference", "ACMG Annual Clinical Genetics Meeting", "ASHG (American Society of Human Genetics) Annual Meeting", "CAP Conference"]
+  },
+  "market": {
+    "salary_by_level": {
+      "entry_level_usd": 62000,
+      "mid_level_usd": 78000,
+      "senior_level_usd": 97000,
+      "supervisor_director_usd": 128000
+    },
+    "average_salary_usd": 78000,
+    "job_count_estimate": "Small niche workforce within medical laboratory technologists (~340,000 total). Concentrated in hospital-based cytogenetics labs, reference laboratories, and academic medical centers. 85% hold bachelor's degrees.",
+    "work_arrangements": "Primarily laboratory-based on-site work. Standard daytime shifts in most cytogenetics labs. Some reference labs may have evening/weekend coverage. Remote work possible for image analysis and reporting via telepathology.",
+    "trends": ["ASCP wage survey shows increased wages after inflation adjustment", "Transition from traditional cytogenetics to molecular genetics/genomics", "Automation of karyotyping with AI-assisted imaging", "Integration of NGS panels alongside FISH and karyotyping", "Staffing shortages in clinical laboratory workforce", "Array CGH and microarray replacing some conventional cytogenetic testing"]
+  },
+  "quality_score": 0.76,
+  "sources_count": 7,
+  "verified_sources": 4
+}

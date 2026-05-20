@@ -1,0 +1,136 @@
+{
+  "profession_id": "us-insurance-sales-agents",
+  "profession_name": "Insurance Sales Agents",
+  "tier": "B",
+  "daily_reality": {
+    "typical_day": "Insurance agents start at 8:30 AM. Morning (7-9 AM): review schedule, check emails, browse news. Mid-morning (9-11 AM): phone calls to clients/prospects. Late morning (11 AM-1 PM): client meetings, lunch appointments. Afternoon (1-3 PM): paperwork, marketing materials. Late afternoon (3-5 PM): more calls, research, proposal prep.",
+    "key_tasks": "Prospecting and lead generation (calling overnight leads), client meetings to discuss insurance needs, administrative work (paperwork, policy processing, CRM updates), email management, time-blocking by task type or region.",
+    "work_hours": "Typically 8:30 AM start, end times vary by season. Schedule flexibility based on client availability.",
+    "sources": [
+      "https://www.insureuniversity.com/insurance-agent-daily-schedule/",
+      "https://www.agencyperformancepartners.com/blog/a-winning-formula-insurance-producer-daily-activity-schedule/",
+      "https://www.bls.gov/ooh/sales/insurance-sales-agents.htm",
+      "https://learn.everquote.com/what-do-insurance-agents-do-daily"
+    ]
+  },
+  "regulatory": {
+    "licensing": "All states require producer license. Must complete educational courses and pass exam before applying. Each state has its own Department of Insurance (DOI), licensing requirements, renewal processes.",
+    "compliance_trends_2025_2026": "757 regulatory changes tracked in 2025 across US. 2026: NAIC Uniform Application updates, expanded electronic submission requirements. NAIC Uniform Licensing Technology Framework (ULTF) introduced in 2026. 92%+ states require online portals for renewal by mid-2026.",
+    "emerging_areas": "Stricter data security and management protocols. AML rules expanding to annuities, life insurance, cash-value policies.",
+    "sources": [
+      "https://content.naic.org/insurance-topics/producer-licensing",
+      "https://www.wolterskluwer.com/en/expert-insights/insurance-business-license-requirements-by-state",
+      "https://www.vertafore.com/resources/blog/insurance-compliance-distribution-trends-2026",
+      "https://agenzee.com/insurance-license-management-the-compliance-backbone-for-modern-agencies-carriers-and-mgas/"
+    ]
+  },
+  "tools": {
+    "ams_platforms": "Applied Epic (large-scale), AMS360, QQCatalyst, HawkSoft, NowCerts. Vertafore offers AMS360 and QQCatalyst (widely used, automate billing, policy lifecycle, compliance).",
+    "crm_platforms": "Zoho (flexible, supports sales/service/marketing), AgencyBloc (life/health, CRM + commissions + workflow), Assur3d (all-in-one for brokers), EZLynx (comparative rater + AMS + CRM with AI), Foliume (AI platform, integrates with CRM/AMS), Strada (Salesforce integration).",
+    "integration_strategy": "AMS runs agency, CRM grows it. Agencies integrating both effectively in 2026 have competitive advantage.",
+    "sources": [
+      "https://www.foliume.com/post/insurance-software",
+      "https://www.decerto.com/us/post/best-crm-for-insurance-agents-2026-navigating-the-future-of-agency-management",
+      "https://www.ezlynx.com/",
+      "https://www.insuredmine.com/ams-vs-crm-where-each-fits-in-your-2026-tech-plan/"
+    ]
+  },
+  "market": {
+    "national_avg_salary_usd": 84953,
+    "entry_level_usd": 72458,
+    "mid_level_usd": 125955,
+    "senior_director_usd": 125979,
+    "cities": {
+      "San Jose": 107176,
+      "San Francisco": 106122,
+      "New York": 98475,
+      "Los Angeles": 94124,
+      "Chicago": 87811
+    },
+    "market_insights": "Salaries vary by location, experience, insurance type. NY and CA higher than less populated areas.",
+    "sources": [
+      "https://www.payscale.com/research/US/Job=Insurance_Agent/Salary",
+      "https://www.ziprecruiter.com/Salaries/Entry-Level-Insurance-Agent-Salary",
+      "https://www.salary.com/research/salary/listing/insurance-sales-agent-salary",
+      "https://www.glassdoor.com/Salaries/insurance-sales-agent-salary-SRCH_KO0,21.htm"
+    ]
+  },
+  "automation_potential": {
+    "tasks_automated": "Submission processing, policy checking, client communications (manual document handling down 75%, claims resolution 30d → 7.5d, routine claims 7-10d → 24-48h, policy verification 15-20min → seconds).",
+    "tasks_augmented": "Automated claims ecosystems with triage + damage assessment + automated payments for simple claims, human-in-the-loop for complex cases (negotiation, empathy).",
+    "market_growth": "AI in insurance: $8.63B in 2025, CAGR 27.32%, $59.5B by 2033. Insurers using AI agents: cost reduction 30%, policy issuance accelerated 40%, revenue increase 50%+ in specific cases.",
+    "outlook_2026": "McKinsey: AI will reshape existing models, not disintermediate. AI will not kill brokers.",
+    "sources": [
+      "https://www.decerto.com/post/future-trends-in-insurance-crm-ai-automation-and-predictive-analytics",
+      "https://www.heffnetwork.com/how-ai-is-reshaping-insurance-distribution-how-agencies-can-prepare-in-2026/",
+      "https://chatcenter.net/ai-agents-insurance-revenue-growth-2026/",
+      "https://datagrid.com/blog/ai-agent-for-insurance-statistics"
+    ]
+  },
+  "compliance_calendar": {
+    "renewal_cycle": "Biennial in most states. 92%+ states require online portals by mid-2026. NIPR Compliance Sync API 2.0 enables real-time CE, appointment, background check updates.",
+    "state_specific_2026": "Georgia (Apr 1): new resident applications via state system. Guam (Apr 1-Jun 30): appointment renewal invoices. New Jersey (Apr 1-Jun 3): appointment renewal invoices, Mar 25 termination deadline.",
+    "regulatory_pace": "757 changes in 2025, pace not slowing in 2026. NAIC Uniform Application updates, expanded electronic submissions.",
+    "sources": [
+      "https://www.commenda.io/blog/us-compliance-calendar-2025",
+      "https://agentsync.io/compliance-library",
+      "https://agenzee.com/how-often-must-an-insurance-agent-license-be-renewed-in-2026/",
+      "https://www.deloitte.com/us/en/services/consulting/articles/insurance-regulatory-outlook.html"
+    ]
+  },
+  "error_patterns": {
+    "compliance_violations": "Selling in unlicensed states, failing to renew licenses/CE on time, ignoring state-specific forms/disclosures.",
+    "professional_service_errors": "Unfulfilled duties (failing to file paperwork), forgetting to inform clients about essential coverage (coverage gaps).",
+    "misrepresentation": "Most frequent violation (intentional or accidental). Incorrect advice, failing to recommend appropriate coverage, misrepresenting policy terms, missing deadlines, paperwork errors, not explaining exclusions.",
+    "health_insurance_marketplace": "Clients waiting until last minute during Open Enrollment Period, risking deadline miss and financial help loss.",
+    "operational_issues": "Licensed team members handling non-licensed tasks. Too many people in client info flow (communication errors). Should assign agents to specific clients for full process.",
+    "coverage_gaps": "E&O insurance excludes issues agent knew before policy. Basic E&O often excludes/limits data breaches and cyber incidents.",
+    "sources": [
+      "https://isu-armac.com/errors-and-omissions-insurance-for-insurance-agents/",
+      "https://www.agencyheight.com/insurance-agent-compliance-mistakes/",
+      "https://www.insureon.com/blog/common-errors-and-omissions-claims-against-insurance-agents",
+      "https://www.insureuniversity.com/marketplace-plan-mistakes-agents-prevent/"
+    ]
+  },
+  "quality_score": 0.85,
+  "sources_count": 43,
+  "verified_sources": 3,
+  "confidence": "likely",
+  "raw_responses": [
+    {
+      "query": "Typical workday of Insurance Sales Agents United States 2025-2026",
+      "timestamp": "2026-03-20",
+      "key_findings": "8:30 AM start, time-blocked schedule: morning prep/calls, midday client meetings, afternoon admin/research"
+    },
+    {
+      "query": "Insurance Sales Agents regulatory environment 2025-2026",
+      "timestamp": "2026-03-20",
+      "key_findings": "State-level licensing, 757 changes in 2025, NAIC ULTF framework, 92%+ online portals by mid-2026"
+    },
+    {
+      "query": "Insurance Sales Agents software tools 2025-2026",
+      "timestamp": "2026-03-20",
+      "key_findings": "AMS (Applied Epic, AMS360, QQCatalyst), CRM (Zoho, AgencyBloc, EZLynx), integration critical"
+    },
+    {
+      "query": "Insurance Sales Agents labor market salary 2025-2026",
+      "timestamp": "2026-03-20",
+      "key_findings": "$84,953 national avg, entry $72,458, mid $125,955, senior/director $125,979, top cities $100K+"
+    },
+    {
+      "query": "Insurance Sales Agents automation AI impact 2025-2026",
+      "timestamp": "2026-03-20",
+      "key_findings": "75% reduction in manual tasks, claims 30d→7.5d, AI market $8.63B→$59.5B by 2033, brokers not replaced"
+    },
+    {
+      "query": "Insurance Sales Agents compliance calendar 2025-2026",
+      "timestamp": "2026-03-20",
+      "key_findings": "Biennial renewal, state-specific Apr/Jun deadlines (GA/NJ/Guam), 92%+ online portals, NIPR API 2.0"
+    },
+    {
+      "query": "Insurance Sales Agents common mistakes errors 2025-2026",
+      "timestamp": "2026-03-20",
+      "key_findings": "Unlicensed sales, missed renewals, misrepresentation, coverage gaps, E&O claims from unfulfilled duties"
+    }
+  ]
+}

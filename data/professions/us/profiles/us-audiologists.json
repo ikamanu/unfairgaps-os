@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-audiologists",
+  "profession_name": "Audiologists",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "8-9 hour days (9AM-5PM typical) in clinics or private practice. 70-80% of day on direct patient care. Morning: patient assessments using audiometers, tympanometry, otoacoustic emissions (OAE), balance evaluations, newborn screenings. Midday: fitting, programming, and verifying hearing aids, cochlear implants, and assistive devices. Patient counseling on hearing loss prevention, device maintenance, and lifestyle adjustments. Collaboration with ENT specialists, SLPs, and primary care providers. Specialized duties: workplace hearing tests for OSHA compliance. Afternoon: professional development, administrative work, next-day preparation.",
+    "documents": ["Audiometric test results", "Tympanometry reports", "Hearing aid fitting verification (real-ear measurements)", "Patient treatment plans", "OSHA compliance reports", "Insurance authorization forms", "Cochlear implant evaluations", "Vestibular assessment reports", "Medical necessity letters", "Referral letters to ENT"],
+    "deadlines": ["AuD clinical experience hours (1,820 hours including 375 post-graduate)", "CCC-A certification maintenance", "State license renewal", "OSHA compliance reporting deadlines", "Insurance claim submission deadlines", "CEU requirements", "Hearing aid warranty and return periods", "Equipment calibration schedules"],
+    "seasonality": "Back-to-school hearing screenings peak in August-September. Newborn screening year-round. Holiday season increases hearing aid purchases (gifts). Better Hearing and Speech Month (May) drives awareness and appointments. Year-round demand from aging population. OSHA workplace testing follows annual compliance schedules."
+  },
+  "regulatory": {
+    "laws": ["State audiology practice acts (all 50 states regulate)", "OSHA hearing conservation standards", "FDA hearing aid regulations", "Medicare Audiology Access Improvement Act (pending)", "HIPAA", "State hearing aid dispensing laws", "Newborn hearing screening mandates"],
+    "licensing": "AuD (Doctor of Audiology) — 7-8 years total education. Pass Praxis exam. State licensure in all 50 states. CCC-A (ASHA Certificate of Clinical Competence) — voluntary but widely expected. 1,820 supervised clinical hours required. ASLP Interstate Compact: 37 jurisdictions as of November 2025 — CompactConnect launched September 2025. Nevada (July 2025) and Ohio onboarding into 2026. ABA (American Board of Audiology) certification also available.",
+    "penalties": "State board penalties: fines, probation, suspension, revocation for practice violations. Practicing without license carries state-specific penalties. OSHA non-compliance penalties for workplace hearing programs. Hearing aid dispensing violations. Medicare fraud penalties for improper billing.",
+    "regulatory_bodies": ["State Audiology Licensing Boards", "ASHA (American Speech-Language-Hearing Association — CCC-A)", "ABA (American Board of Audiology — certification)", "AAA (American Academy of Audiology)", "FDA (hearing aid regulation)", "OSHA (workplace hearing)", "CMS (Medicare/Medicaid)"]
+  },
+  "tools": {
+    "software": ["Auditdata Manage (launched late 2025 — cloud PMS for US audiology)", "Starkey Pro Fit (with TeleHear remote programming)", "Phonak Target (hearing aid programming)", "Oticon Genie (hearing aid programming)", "NOAH (audiological data management standard)", "Sycle (practice management)", "CounselEAR (practice management)"],
+    "platforms": ["GeoAxon Kuduwave (portable audiometer — first simultaneous bilateral tympanometry)", "Real Ear Measurement systems", "Hearing aid companion apps (AI-powered)", "Live Transcribe (free captioning)", "AudioCardio Hearing & Tinnitus app", "ASHA Practice Portal"],
+    "gov_portals": ["State audiology board portals", "ASHA certification portal", "CompactConnect (ASLP Interstate Compact)", "CMS provider enrollment", "OSHA compliance portals", "FDA hearing device database"]
+  },
+  "terminology": {
+    "jargon": ["Pure tone audiometry", "Speech audiometry", "Tympanometry", "Otoacoustic emissions (OAE)", "Auditory brainstem response (ABR)", "Real ear measurement", "Hearing aid programming/fitting", "Aural rehabilitation", "Vestibular assessment", "Tinnitus management", "Cochlear implant mapping", "Sound booth testing", "Noise-induced hearing loss (NIHL)", "Presbycusis (age-related hearing loss)"],
+    "abbreviations": ["AuD - Doctor of Audiology", "CCC-A - Certificate of Clinical Competence in Audiology", "F-AAA - Fellow of American Academy of Audiology", "ASHA - American Speech-Language-Hearing Association", "AAA - American Academy of Audiology", "ADA - Academy of Doctors of Audiology", "SNHL - Sensorineural Hearing Loss", "CHL - Conductive Hearing Loss", "PTA - Pure Tone Average", "ABR - Auditory Brainstem Response", "SRT - Speech Reception Threshold", "WRS - Word Recognition Score", "OAE - Otoacoustic Emissions", "BTE - Behind The Ear (hearing aid)", "RIC - Receiver In Canal", "CI - Cochlear Implant", "BAHA - Bone Anchored Hearing Aid", "SPL - Sound Pressure Level", "RECD - Real Ear to Coupler Difference"]
+  },
+  "career_psychology": {
+    "career_levels": ["Audiology Student (AuD program)", "Clinical Fellow (4th year externship)", "Staff Audiologist (entry-level)", "Senior Audiologist (5-10 years)", "Lead/Supervising Audiologist", "Practice Owner", "Audiology Director / Department Head", "Academic Faculty / Researcher", "Specializations: pediatric, vestibular, cochlear implant, educational, forensic, humanitarian"],
+    "fears": ["Over-the-counter (OTC) hearing aids reducing professional role", "Declining reimbursement from insurance/Medicare", "High student debt relative to salary (7-8 years education for ~$92K)", "Competition from hearing aid retail chains (Costco, etc.)", "Scope of practice encroachment", "Technology making some diagnostic functions obsolete", "Limited public awareness of audiology as a profession"],
+    "motivation": ["Rewarding patient impact — improving hearing and quality of life across all ages", "Diverse settings (hospitals, schools, private practice, VA)", "Competitive pay relative to allied health professions", "Job security from aging population and hearing health awareness", "Innovation in hearing aids, cochlear implants, and AI-powered devices", "Passion for communication disorders", "Growing demand (9-13% job growth projected)"],
+    "burnout": "No extensive audiologist-specific burnout data in literature. Common allied health concerns apply: high patient loads, administrative demands, insurance authorization frustrations, and emotional aspects of working with hearing loss patients. OTC hearing aid disruption creating professional identity anxiety. ASHA offers mental health support resources for members."
+  },
+  "community": {
+    "reddit": ["r/audiology", "r/hearing", "r/HearingAids", "r/deaf"],
+    "linkedin": ["AAA (American Academy of Audiology) LinkedIn", "ASHA LinkedIn", "ADA LinkedIn", "Audiology professionals groups"],
+    "associations": ["AAA (American Academy of Audiology) — 12,000+ members", "ASHA (American Speech-Language-Hearing Association) — 191,500 members/affiliates (includes SLPs)", "ADA (Academy of Doctors of Audiology) — practice ownership focus", "ARA (Academy of Rehabilitative Audiology)", "Educational Audiology Association", "State audiology associations (e.g., ArSHA)"],
+    "conferences": ["AAA Annual Conference (AudiologyNOW!)", "ASHA Convention", "ADA Annual Conference", "State association conferences"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "entry_level": "61000-72000",
+      "early_mid_career": "74000-92000",
+      "senior_experienced": "92000-130000",
+      "health_system_top": "Up to 219000 (top employers)",
+      "private_practice_owner": "Varies widely — 80000-200000+"
+    },
+    "national_average_usd": 92120,
+    "job_count": "~14,000 employed; 700-1,500 annual openings",
+    "growth_rate": "9-13% projected through 2034 (much faster than average)",
+    "unemployment_rate": "Low — growing demand from aging population",
+    "work_arrangements": ["Private practice / group practice", "Hospital audiology departments", "ENT physician offices", "VA healthcare system", "School systems", "Cochlear implant centers", "Occupational health (OSHA programs)", "Teleaudiology (emerging)"],
+    "trends": ["BLS median salary $92,120 (May 2024)", "Top states: Nevada ($110K), California ($107K), DC ($107K)", "Salary growth: 4.2% year-over-year 2024-2025", "Auditdata Manage launched late 2025 — first cloud PMS for US audiology", "ASLP Interstate Compact: 37 jurisdictions enabling multistate practice", "GeoAxon Kuduwave enabling portable testing outside sound booths", "AI-powered hearing aids with real-time adjustments", "OTC hearing aids disrupting traditional dispensing model", "Teleaudiology/remote programming expanding access to rural areas", "Top employers paying $200K+ (Gundersen Lutheran, Scripps Health)"]
+  }
+}

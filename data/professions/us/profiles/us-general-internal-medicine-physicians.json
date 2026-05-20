@@ -1,0 +1,304 @@
+{
+  "profession_id": "us-general-internal-medicine-physicians",
+  "profession_name": "General Internal Medicine Physicians",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Internal medicine physicians (internists) provide comprehensive adult care in primary care and hospital settings. They spend significant time on EHR documentation (~7.3 hours per 8 hours of patient time), patient encounters, rounds, and care coordination. Burnout from documentation burden is a major concern.",
+    "typical_tasks": [
+      "Conduct patient encounters (history, physical exam, assessment, plan)",
+      "Document in EHR systems (chart review, notes, orders — ~16 min per encounter)",
+      "Round on hospitalized patients (hospitalist track)",
+      "Order and interpret diagnostic tests (labs, imaging)",
+      "Prescribe medications and manage chronic disease regimens",
+      "Coordinate care with specialists and allied health professionals",
+      "Conduct preventive health screenings and wellness visits",
+      "Review and respond to patient messages and test results",
+      "Participate in care conferences, tumor boards, and quality meetings",
+      "Complete after-hours documentation ('pajama time' — avg 1.4 hrs/day outside clinic)"
+    ],
+    "key_documents": [
+      "H&P (History and Physical) documentation",
+      "SOAP notes (Subjective, Objective, Assessment, Plan)",
+      "Progress notes and discharge summaries",
+      "Prescription orders and medication reconciliation",
+      "Referral letters and consultation notes",
+      "Prior authorization requests (insurance)",
+      "Quality measures and MIPS reporting documentation",
+      "Death certificates and disability paperwork"
+    ],
+    "deadlines": {
+      "documentation": "Within 24-48 hours of patient encounter (best practice)",
+      "lab_result_review": "Same day or next business day",
+      "discharge_summary": "Within 24-48 hours of hospital discharge",
+      "mips_reporting": "Annual reporting by March 31 for prior year",
+      "cme_hours": "Ongoing, 50+ hours/year typical state requirement"
+    },
+    "seasonality": "Flu season (Oct-March) increases patient volume. January brings new insurance/deductible resets driving appointment surges. Holiday periods create coverage challenges. Medicare annual wellness visits cluster in Q4."
+  },
+  "regulatory": {
+    "summary": "Requires MD/DO degree, 3-year residency, state medical license, and ABIM board certification. Maintenance of Certification (MOC) requires 100 points every 5 years and assessment every 10 years. 260,000+ ABIM-certified physicians in the US.",
+    "key_laws": [
+      {
+        "name": "State Medical Practice Acts",
+        "description": "Each state's medical board governs physician licensing, renewal, and discipline"
+      },
+      {
+        "name": "MACRA / MIPS",
+        "description": "Medicare payment reform tying reimbursement to quality measures, cost, interoperability, and improvement activities"
+      },
+      {
+        "name": "HIPAA",
+        "description": "Patient privacy and health information security requirements"
+      },
+      {
+        "name": "Stark Law / Anti-Kickback Statute",
+        "description": "Physician self-referral and financial relationship regulations"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "MD or DO degree from accredited medical school (4 years)",
+        "3-year Internal Medicine residency (ACGME-accredited)",
+        "USMLE Steps 1, 2, 3 (or COMLEX for DOs)",
+        "State medical license (renewal every 1-3 years by state)",
+        "ABIM Board Certification in Internal Medicine",
+        "DEA registration for prescribing controlled substances"
+      ],
+      "moc_requirements": "100 MOC points every 5 years; assessment every 10 years (traditional exam or LKA — Longitudinal Knowledge Assessment preferred 4:1)",
+      "cme": "50+ CME hours annually (varies by state); up to 164 credits available at ACP Annual Meeting 2026"
+    },
+    "penalties": "State medical board discipline (probation, suspension, revocation). CMS penalties for MIPS non-compliance. Malpractice liability. DEA enforcement for controlled substance violations."
+  },
+  "tools": {
+    "summary": "EHR systems (Epic leads with 38% hospital market share) dominate daily workflow. AI documentation assistants are emerging rapidly. Diagnostic equipment and clinical decision support tools supplement clinical work.",
+    "primary_tools": [
+      {
+        "name": "Epic EHR",
+        "description": "Leading hospital EHR system (3,600+ US hospitals, 38% market share). Embedding generative AI for documentation assistance."
+      },
+      {
+        "name": "Oracle Health (formerly Cerner)",
+        "description": "Major EHR system with Clinical AI Agent reducing documentation time by ~30%"
+      },
+      {
+        "name": "NextGen Healthcare",
+        "description": "Ranked #1 EHR vendor in internal medicine for ambulatory practices"
+      },
+      {
+        "name": "UpToDate",
+        "description": "Evidence-based clinical decision support — most widely used point-of-care resource"
+      },
+      {
+        "name": "Epocrates / DynaMed",
+        "description": "Drug reference and clinical information at point of care"
+      }
+    ],
+    "secondary_tools": [
+      "Stethoscope, otoscope, ophthalmoscope — physical exam basics",
+      "EKG machine — cardiac rhythm assessment",
+      "Point-of-care ultrasound (POCUS) — bedside imaging",
+      "AI scribes (Nuance DAX, Freed AI, Abridge) — ambient documentation",
+      "Athenahealth, eClinicalWorks, Practice Fusion — ambulatory EHRs",
+      "Telehealth platforms (Doxy.me, Zoom Health, Amwell)"
+    ],
+    "pain_points": [
+      "EHR documentation burden (7.3 hours per 8 hours of patient time)",
+      "Prior authorization requirements consuming physician time",
+      "Interoperability issues between different EHR systems",
+      "Alert fatigue from excessive clinical decision support notifications",
+      "After-hours documentation ('pajama time') affecting work-life balance"
+    ]
+  },
+  "terminology": {
+    "summary": "Internal medicine uses extensive medical terminology, documentation abbreviations, and clinical assessment frameworks. SOAP notes and H&P format are fundamental documentation structures.",
+    "terms": {
+      "H&P": "History and Physical — formal comprehensive patient assessment document",
+      "SOAP": "Subjective, Objective, Assessment, Plan — standard note format",
+      "ROS": "Review of Systems — checklist assessment of symptoms by organ system",
+      "HPI": "History of Present Illness — detailed current complaint narrative",
+      "CC": "Chief Complaint — main reason for the visit",
+      "PMH": "Past Medical History",
+      "FH": "Family History",
+      "SH": "Social History",
+      "HEENT": "Head, Eyes, Ears, Nose, Throat — physical exam section",
+      "A&P": "Assessment and Plan",
+      "R/O": "Rule Out — differential diagnosis consideration",
+      "DDx": "Differential Diagnosis",
+      "PRN": "Pro Re Nata — as needed (medication dosing)",
+      "BID/TID/QID": "Twice/Three times/Four times daily",
+      "NPO": "Nil Per Os — nothing by mouth",
+      "MIPS": "Merit-based Incentive Payment System",
+      "MOC": "Maintenance of Certification",
+      "LKA": "Longitudinal Knowledge Assessment (ABIM)",
+      "CME": "Continuing Medical Education",
+      "PCP": "Primary Care Physician"
+    }
+  },
+  "career_psychology": {
+    "summary": "High-demand, high-stress specialty with average salary ~$345K. Burnout exceeds 50% driven by documentation burden and administrative tasks. The field faces a projected shortfall of 14,900-35,600 physicians. Meaningful patient relationships provide core satisfaction.",
+    "career_path": [
+      "Pre-med undergraduate (4 years)",
+      "Medical school — MD or DO (4 years)",
+      "Internal Medicine Residency (3 years)",
+      "Board Certification (ABIM)",
+      "General Internist / Hospitalist (or fellowship for subspecialty)",
+      "Senior Attending / Medical Director",
+      "Department Chair / Chief Medical Officer"
+    ],
+    "salary_range": {
+      "resident": "$60,000 - $75,000/year",
+      "early_career": "$200,000 - $280,000/year",
+      "mid_career": "$300,000 - $400,000/year",
+      "experienced": "$400,000 - $725,000/year",
+      "average_2026": "$390,984/year (median $345,000)"
+    },
+    "fears": [
+      "Medical malpractice lawsuit",
+      "Missing a critical diagnosis",
+      "Burnout leading to career exit",
+      "Student loan debt ($200K+ average)",
+      "Loss of clinical autonomy to administrative mandates",
+      "Prior authorization denials affecting patient care"
+    ],
+    "motivation": [
+      "Long-term patient relationships and trust",
+      "Intellectual challenge of complex diagnostic medicine",
+      "Making a difference in patient health outcomes",
+      "Respected profession with high social value",
+      "Financial stability (despite debt burden)"
+    ],
+    "burnout_factors": [
+      "EHR documentation burden (~11.4 hour effective workdays)",
+      "Administrative tasks (prior auth, billing, compliance)",
+      "Patient volume pressure reducing per-patient time",
+      "After-hours work (in-basket, messages, documentation)",
+      "Burnout costs US healthcare $4.6 billion/year in turnover"
+    ]
+  },
+  "community": {
+    "summary": "Large, established professional community led by ACP (163,000 members) and SGIM (3,300+ academic internists). Rich conference ecosystem, subspecialty organizations, and online communities.",
+    "associations": [
+      {
+        "name": "American College of Physicians (ACP)",
+        "url": "https://www.acponline.org/",
+        "description": "163,000 members worldwide — largest medical specialty society, advocacy, CME, clinical guidance"
+      },
+      {
+        "name": "Society of General Internal Medicine (SGIM)",
+        "url": "https://www.sgim.org/",
+        "description": "3,300+ academic general internists, 70+ Interest Groups on GIM Connect platform"
+      },
+      {
+        "name": "American Board of Internal Medicine (ABIM)",
+        "url": "https://www.abim.org/",
+        "description": "Board certification for 260,000+ internists across 20 disciplines"
+      },
+      {
+        "name": "Association of Chiefs and Leaders of GIM (ACLGIM)",
+        "description": "SGIM sub-group for leadership development in academic GIM"
+      }
+    ],
+    "online_communities": [
+      "GIM Connect — SGIM member-only online platform (70+ Interest Groups)",
+      "r/medicine and r/residency — Reddit communities",
+      "Medscape Internal Medicine forums",
+      "Figure 1 — clinical image sharing platform",
+      "Doximity — physician networking and telehealth platform"
+    ],
+    "conferences": [
+      "ACP Internal Medicine Meeting 2026 (San Francisco, April 16-18)",
+      "SGIM Annual Meeting",
+      "ACP Internal Medicine Board Review Course",
+      "Update in Internal Medicine (Dec 6-11, 2026)"
+    ]
+  },
+  "market": {
+    "summary": "Critical physician shortage with projected 14,900-35,600 internist deficit. Internal medicine is most in-demand specialty for locum tenens. Average salary ~$345K-$391K with strong geographic variation. 3% employment growth projected 2024-2034.",
+    "growth_rate": "3% projected 2024-2034 (23,600 annual openings across all physicians)",
+    "physician_shortage": "14,900 - 35,600 projected primary care physician shortfall; up to 86,000 total physician shortage by 2036 (AAMC)",
+    "salary_market": {
+      "average": "$295,000 - $391,000/year",
+      "top_range": "$500,000 - $725,000/year",
+      "highest_paying_states": "Alaska ($402K), California, New York, Texas"
+    },
+    "top_employers": [
+      "Hospital systems (academic and community)",
+      "Large physician groups and health networks",
+      "Federally Qualified Health Centers (FQHCs)",
+      "VA Healthcare System",
+      "Locum tenens agencies",
+      "Private practice (declining)"
+    ],
+    "market_trends": [
+      "Most in-demand locum tenens specialty in 2024",
+      "2026 Medicare conversion factor increase to ~$33.57 (first real increase in years)",
+      "AI documentation assistants reducing EHR burden",
+      "Shift from private practice to employed physician models",
+      "Telehealth integration expanding access and practice flexibility",
+      "Value-based care models changing reimbursement structure"
+    ]
+  },
+  "quality_score": 0.82,
+  "sources_count": 32,
+  "verified_sources": 12,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "General Internal Medicine Physicians USA daily work tasks EHR documentation",
+      "sources": [
+        {"title": "O*NET — General Internal Medicine Physicians", "url": "https://www.onetonline.org/link/summary/29-1216.00"},
+        {"title": "ACP — About Internal Medicine", "url": "https://www.acponline.org/about-acp/about-internal-medicine"},
+        {"title": "AMA — Five Specialties Spending Most Time in EHR", "url": "https://www.ama-assn.org/practice-management/digital-health/five-physician-specialties-spend-most-time-ehr"},
+        {"title": "JAMA — Physician EHR Time", "url": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2822382"}
+      ]
+    },
+    {
+      "query": "Internal Medicine Physicians ABIM board certification CME MOC requirements",
+      "sources": [
+        {"title": "ABIM", "url": "https://www.abim.org/"},
+        {"title": "ACP — MOC Points", "url": "https://www.acponline.org/cme-moc/moc/earn-abim-moc-points"},
+        {"title": "CMEList — Internal Medicine MOC Requirements 2026", "url": "https://www.cmelist.com/internal-medicine-moc-requirements-and-courses/"}
+      ]
+    },
+    {
+      "query": "Internal Medicine Physicians EHR software Epic Cerner tools",
+      "sources": [
+        {"title": "HealthcareITSkills — Top EHR Systems 2026", "url": "https://healthcareitskills.com/top-ehr-systems-2026-epic-cerner-oracle-meditech-allscripts/"},
+        {"title": "EHR In Practice — Epic vs Cerner 2025", "url": "https://www.ehrinpractice.com/epic-ehr-vs-cerner-ehr-comparison.html"},
+        {"title": "GetFreed — Best EHR Software 2026", "url": "https://www.getfreed.ai/resources/best-ehr-software"}
+      ]
+    },
+    {
+      "query": "Internal Medicine Physicians terminology H&P ROS abbreviations",
+      "sources": [
+        {"title": "DirkMD — What is H&P", "url": "https://www.dirkstanley.com/2024/11/clinical-terminology-what-is-history.html"},
+        {"title": "MedicineNet — Medical Abbreviations A-Z", "url": "https://www.medicinenet.com/common_medical_abbreviations_and_terms/article.htm"},
+        {"title": "Docus AI — ROS Medical Abbreviation", "url": "https://docus.ai/glossary/medical-abbreviations/ros-medical-abbreviation"}
+      ]
+    },
+    {
+      "query": "Internal Medicine Physicians USA salary career path burnout",
+      "sources": [
+        {"title": "SalaryDr — Internal Medicine Salary 2026", "url": "https://www.salarydr.com/specialty/internal-medicine"},
+        {"title": "MD Preferred Network — Physician Burnout 2026", "url": "https://www.themdpreferrednetwork.com/physician-burnout-2026/"},
+        {"title": "AMN Healthcare — Internal Medicine Salary Guide", "url": "https://www.amnhealthcare.com/blog/physician/perm/internal-medicine-salary-guide/"}
+      ]
+    },
+    {
+      "query": "Internal Medicine Physicians USA associations ACP SGIM conferences",
+      "sources": [
+        {"title": "ACP", "url": "https://www.acponline.org/"},
+        {"title": "SGIM", "url": "https://www.sgim.org/"},
+        {"title": "ACP Internal Medicine Meeting 2026", "url": "https://annualmeeting.acponline.org/"}
+      ]
+    },
+    {
+      "query": "Internal Medicine Physicians USA job market outlook demand shortage trends",
+      "sources": [
+        {"title": "LADHS — US Physician Employment 2026 Outlook", "url": "https://ladhsphysicianjobs.com/trends-in-u-s-physician-employment-the-2026-outlook/"},
+        {"title": "BLS — Physicians and Surgeons", "url": "https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm"},
+        {"title": "DocCafe — Physician Job Market Trends 2025", "url": "https://www.doccafe.com/physician-job-market-trends"}
+      ]
+    }
+  ]
+}

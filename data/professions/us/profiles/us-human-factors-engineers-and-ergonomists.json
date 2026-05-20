@@ -1,0 +1,209 @@
+{
+  "profession_id": "us-human-factors-engineers-and-ergonomists",
+  "profession_name": "Human Factors Engineers and Ergonomists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Human factors engineers and ergonomists optimize human-technology interaction by studying usability, safety, and efficiency. They design interfaces, workplaces, and products that account for human capabilities and limitations. Work spans tech, healthcare, defense, and manufacturing.",
+    "typical_tasks": [
+      "Conduct user research and usability testing",
+      "Design human-machine interfaces (HMI) and control panels",
+      "Perform ergonomic workplace assessments and injury risk analysis",
+      "Analyze human error patterns and design error-prevention systems",
+      "Develop user requirements and specifications for products/systems",
+      "Create task analyses and workflow optimization studies",
+      "Apply anthropometric data to product and workspace design",
+      "Conduct cognitive task analysis for complex systems",
+      "Prepare reports on human performance findings and recommendations",
+      "Collaborate with engineering teams on human systems integration (HSI)"
+    ],
+    "key_documents": [
+      "Usability test reports and findings",
+      "Ergonomic risk assessments (RULA, REBA, NIOSH Lifting Equation)",
+      "Human factors analysis and classification system (HFACS) reports",
+      "Task analysis documentation",
+      "Human-computer interaction (HCI) design specifications",
+      "User requirements documents",
+      "Safety and incident investigation reports (human factors focus)",
+      "Regulatory compliance documentation (FDA human factors for medical devices)"
+    ],
+    "deadlines": {
+      "usability_studies": "Project milestone-driven, typically weeks-months",
+      "fda_submissions": "Pre-market submission timelines for medical devices",
+      "ergonomic_assessments": "As needed, often annual for workplace evaluations",
+      "project_milestones": "Aligned with product development cycles"
+    },
+    "seasonality": "Generally no strong seasonality. Defense contracting follows government fiscal year. Consumer product cycles may create Q3-Q4 peaks."
+  },
+  "regulatory": {
+    "summary": "FDA requires human factors testing for medical devices. OSHA ergonomic guidelines apply to workplace design. CPE certification from BCPE is the gold-standard credential. HFES provides professional standards.",
+    "key_laws": [
+      {"name": "FDA Human Factors Guidance", "description": "Requires usability testing for medical devices to ensure safe use"},
+      {"name": "OSHA Ergonomic Guidelines", "description": "Workplace ergonomic recommendations (industry-specific)"},
+      {"name": "MIL-STD-1472 — Human Engineering", "description": "DoD standard for human factors in defense systems design"},
+      {"name": "ISO 9241 — Ergonomics of Human-System Interaction", "description": "International standard for usability and user experience"}
+    ],
+    "licensing": {
+      "requirements": [
+        "Graduate degree (MS/PhD) in Human Factors, Ergonomics, or related field",
+        "Or bachelor's + 24 semester hours covering specific topics",
+        "3 years full-time work experience in the field",
+        "BCPE certification exam"
+      ],
+      "certifications": [
+        "CPE — Certified Professional Ergonomist (BCPE)",
+        "CHF — Certified Human Factors Professional (BCPE)",
+        "CHFP — Certified Human Factors Professional (Board of Certification)"
+      ]
+    },
+    "penalties": "FDA warning letters and product recalls for inadequate human factors testing. OSHA citations for ergonomic hazards. Product liability for design-related injuries."
+  },
+  "tools": {
+    "summary": "Usability testing platforms, eye-tracking systems, motion capture, ergonomic assessment tools, and simulation software for modeling human-system interaction.",
+    "primary_tools": [
+      {"name": "Eye-tracking systems (Tobii, SMI)", "description": "Track visual attention during usability studies"},
+      {"name": "JACK / Siemens Tecnomatix", "description": "Digital human modeling for ergonomic simulation"},
+      {"name": "RAMSIS", "description": "Automotive ergonomic design and occupant packaging"},
+      {"name": "Morae / UserZoom / Lookback", "description": "Usability testing and user research platforms"},
+      {"name": "Motion capture systems", "description": "Track body movements for ergonomic assessment"},
+      {"name": "Statistical software (SPSS, R, JMP)", "description": "Experimental data analysis for human factors research"}
+    ],
+    "secondary_tools": [
+      "RULA/REBA/NIOSH calculators for ergonomic risk assessment",
+      "Figma / Sketch / Adobe XD for interface prototyping",
+      "SolidWorks / CAD for product design review",
+      "Force gauges and EMG for biomechanical measurement",
+      "Survey tools (Qualtrics, SurveyMonkey) for user research",
+      "VR/AR headsets for immersive prototype testing"
+    ],
+    "pain_points": [
+      "Difficulty quantifying ROI of human factors work to stakeholders",
+      "Being included too late in the design process",
+      "Balancing user needs with engineering and business constraints",
+      "Recruiting representative participants for usability studies"
+    ]
+  },
+  "terminology": {
+    "summary": "Blends engineering, psychology, and design terminology with ergonomic assessment methods and human performance metrics.",
+    "terms": {
+      "HFE": "Human Factors Engineering",
+      "HCI": "Human-Computer Interaction",
+      "UX": "User Experience",
+      "UI": "User Interface",
+      "HSI": "Human Systems Integration",
+      "HMI": "Human-Machine Interface",
+      "CTA": "Cognitive Task Analysis",
+      "HFACS": "Human Factors Analysis and Classification System",
+      "RULA": "Rapid Upper Limb Assessment — ergonomic risk tool",
+      "REBA": "Rapid Entire Body Assessment — ergonomic risk tool",
+      "NIOSH Lifting Equation": "Tool for assessing manual material handling risk",
+      "anthropometry": "Study of human body measurements for design",
+      "affordance": "Design property suggesting how an object should be used",
+      "cognitive load": "Amount of mental effort required to perform a task",
+      "situation awareness": "Understanding of the current environment and task state",
+      "Fitts' Law": "Model predicting time to reach a target based on size and distance",
+      "heuristic evaluation": "Expert review of interface against usability principles",
+      "think-aloud protocol": "User verbalization method during usability testing",
+      "CPE": "Certified Professional Ergonomist",
+      "BCPE": "Board of Certification in Professional Ergonomics"
+    }
+  },
+  "career_psychology": {
+    "summary": "Growing specialty with salary range $91K-$132K+ (or higher in tech). Rapid growth of 9.7% projected. Intellectually diverse work combining psychology, engineering, and design. CPE certification increasingly important.",
+    "career_path": [
+      "Bachelor's degree in Human Factors, Psychology, Industrial Engineering, or related field",
+      "Master's or PhD in Human Factors / Ergonomics (preferred for most positions)",
+      "Junior Human Factors Engineer (0-3 years)",
+      "CPE Certification (3+ years experience)",
+      "Senior Human Factors Engineer / Ergonomist",
+      "Principal / Lead Human Factors Engineer",
+      "Director of UX / Human Factors / Ergonomics"
+    ],
+    "salary_range": {
+      "entry_level": "$65,000 - $85,000/year",
+      "mid_level": "$91,000 - $132,000/year",
+      "senior": "$130,000 - $180,000/year",
+      "tech_sector": "$150,000 - $226,000+/year (Glassdoor)"
+    },
+    "fears": [
+      "Design decisions leading to user errors and injuries",
+      "Work being deprioritized or cut from project budgets",
+      "Difficulty demonstrating impact to engineering leadership",
+      "Keeping up with rapidly evolving technology interfaces",
+      "FDA audit findings for medical device usability"
+    ],
+    "motivation": [
+      "Making technology and workplaces safer and more usable",
+      "Interdisciplinary work blending psychology, design, and engineering",
+      "Direct impact on user safety and satisfaction",
+      "Growing recognition and demand for human-centered design",
+      "Variety of industries and applications"
+    ],
+    "burnout_factors": [
+      "Advocating for user needs against tight schedules and budgets",
+      "Repetitive testing cycles with incremental improvements",
+      "Being a lone HF specialist on large engineering teams",
+      "Documentation and regulatory compliance demands (medical devices)",
+      "Travel requirements for on-site ergonomic assessments"
+    ]
+  },
+  "community": {
+    "summary": "Primary community centered around HFES (3,500 members in 58 countries) and BCPE for certification. Strong academic and applied research community.",
+    "associations": [
+      {"name": "Human Factors and Ergonomics Society (HFES)", "url": "https://www.hfes.org/", "description": "3,500+ members, 58 countries, founded 1957, world's largest HF/E society"},
+      {"name": "Board of Certification in Professional Ergonomics (BCPE)", "url": "https://bcpe.org/", "description": "CPE and CHFP certification body"},
+      {"name": "International Ergonomics Association (IEA)", "description": "Global federation of ergonomics/human factors societies"},
+      {"name": "Association for Computing Machinery SIGCHI", "description": "Special interest group on human-computer interaction"}
+    ],
+    "online_communities": [
+      "HFES technical groups and committees",
+      "r/userexperience and r/humanfactors — Reddit",
+      "LinkedIn Human Factors and Ergonomics groups",
+      "UXPA (User Experience Professionals Association) forums"
+    ],
+    "conferences": [
+      "HFES Annual Meeting — primary professional conference",
+      "IEA Triennial Congress",
+      "ACM CHI Conference on Human Factors in Computing",
+      "Applied Ergonomics Conference"
+    ]
+  },
+  "market": {
+    "summary": "Growing field with 9.7% projected job growth, driven by technology complexity, medical device regulation, and workplace safety focus. Strong salary potential especially in tech sector. 25,100 new jobs projected by 2026.",
+    "growth_rate": "9.7% above national average, 25,100 new jobs projected",
+    "salary_market": {
+      "average": "$91,000 - $132,000/year",
+      "tech_sector": "$150,000 - $226,000+/year",
+      "top_growth_states": "Nevada, Utah, Alabama"
+    },
+    "top_employers": [
+      "Technology companies (Apple, Google, Meta, Microsoft)",
+      "Defense contractors (Lockheed Martin, Raytheon, Boeing)",
+      "Medical device companies (FDA human factors requirements)",
+      "Automotive manufacturers (Tesla, GM, Ford)",
+      "Consulting firms (Exponent, Human Factors Research Group)",
+      "Government agencies (DoD, NASA, FAA)"
+    ],
+    "market_trends": [
+      "FDA human factors requirements driving medical device demand",
+      "Autonomous vehicles and AI systems requiring HFE expertise",
+      "Remote work ergonomics creating new consulting opportunities",
+      "Increasing regulatory focus on human factors in safety-critical systems",
+      "AR/VR interaction design opening new specialization paths"
+    ]
+  },
+  "quality_score": 0.76,
+  "sources_count": 20,
+  "verified_sources": 7,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Human Factors Engineers Ergonomists USA salary career outlook HFES certification",
+      "sources": [
+        {"title": "HFES", "url": "https://www.hfes.org/"},
+        {"title": "BCPE", "url": "https://bcpe.org/"},
+        {"title": "PayScale — Human Factors Engineer Salary 2026", "url": "https://www.payscale.com/research/US/Job=Human_Factors_Engineer/Salary"},
+        {"title": "Glassdoor — HFE Salary 2026", "url": "https://www.glassdoor.com/Salaries/human-factors-engineer-salary-SRCH_KO0,22.htm"}
+      ]
+    }
+  ]
+}

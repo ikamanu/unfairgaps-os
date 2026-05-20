@@ -1,0 +1,759 @@
+[
+  {
+    "id": "us-automotive-engineers-p01",
+    "title": "DFMEA Risk Priority Number Calculation",
+    "problem": "Automotive engineers must calculate Risk Priority Numbers (RPNs) for every potential failure mode in DFMEA documents, multiplying severity, occurrence, and detection ratings across dozens or hundreds of components. Manual calculation in spreadsheets is error-prone and time-consuming, and incorrect RPNs can lead to missed safety-critical failures that result in recalls.",
+    "who": "Mid-level and senior design engineers responsible for DFMEA documentation",
+    "frequency": "weekly",
+    "time_waste_h": 6,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "DFMEA RPN Calculator",
+      "one_liner": "Calculates Risk Priority Numbers and Action Priority rankings for DFMEA failure modes per SAE J1739/AIAG-VDA methodology",
+      "inputs": [
+        {
+          "name": "failure_mode",
+          "type": "text",
+          "label": "Failure mode description"
+        },
+        {
+          "name": "severity",
+          "type": "number",
+          "label": "Severity rating (1-10)"
+        },
+        {
+          "name": "occurrence",
+          "type": "number",
+          "label": "Occurrence rating (1-10)"
+        },
+        {
+          "name": "detection",
+          "type": "number",
+          "label": "Detection rating (1-10)"
+        },
+        {
+          "name": "method",
+          "type": "select",
+          "label": "Method: classic RPN or AIAG-VDA Action Priority"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "rpn",
+          "label": "Risk Priority Number"
+        },
+        {
+          "name": "action_priority",
+          "label": "Action Priority (High/Medium/Low)"
+        },
+        {
+          "name": "recommendation",
+          "label": "Recommended action level"
+        }
+      ],
+      "formula_hint": "Classic: RPN = S * O * D. AIAG-VDA: use severity-occurrence-detection lookup table for Action Priority (H/M/L). Flag RPN > 100 or severity >= 9 as critical.",
+      "rates": {
+        "rpn_critical_threshold": 100,
+        "severity_safety_threshold": 9
+      }
+    },
+    "example_queries": [
+      "Calculate RPN for a brake caliper seal failure with severity 9, occurrence 4, detection 6",
+      "I have 5 failure modes for a steering column - rate them using AIAG-VDA action priority method",
+      "Is an RPN of 120 on a fuel line connector considered critical?"
+    ]
+  },
+  {
+    "id": "us-automotive-engineers-p02",
+    "title": "BOM Cost Estimation and Rollup",
+    "problem": "Engineers frequently need to estimate component and assembly costs for Bill of Materials during design reviews, RFQ responses, and cost reduction initiatives. Manually rolling up costs across multi-level BOMs with hundreds of parts, factoring in material costs, tooling amortization, and supplier markups is tedious and often inaccurate, leading to budget overruns.",
+    "who": "Design engineers and cost estimators preparing for PDR/CDR reviews",
+    "frequency": "weekly",
+    "time_waste_h": 8,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "BOM Cost Rollup Calculator",
+      "one_liner": "Calculates total assembly cost from component costs, tooling amortization, labor, and supplier markup across BOM levels",
+      "inputs": [
+        {
+          "name": "components",
+          "type": "list",
+          "label": "List of components with unit costs"
+        },
+        {
+          "name": "quantity_per_assembly",
+          "type": "number",
+          "label": "Quantity per assembly"
+        },
+        {
+          "name": "tooling_cost",
+          "type": "number",
+          "label": "Total tooling investment (USD)"
+        },
+        {
+          "name": "annual_volume",
+          "type": "number",
+          "label": "Annual production volume"
+        },
+        {
+          "name": "tooling_life_years",
+          "type": "number",
+          "label": "Tooling amortization period (years)"
+        },
+        {
+          "name": "labor_rate_per_hour",
+          "type": "number",
+          "label": "Labor rate (USD/hour)"
+        },
+        {
+          "name": "assembly_time_minutes",
+          "type": "number",
+          "label": "Assembly time (minutes)"
+        },
+        {
+          "name": "supplier_markup_pct",
+          "type": "number",
+          "label": "Supplier markup (%)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "piece_cost",
+          "label": "Piece cost per unit (USD)"
+        },
+        {
+          "name": "tooling_amortized",
+          "label": "Tooling cost per unit (USD)"
+        },
+        {
+          "name": "labor_cost",
+          "label": "Labor cost per unit (USD)"
+        },
+        {
+          "name": "total_unit_cost",
+          "label": "Total cost per unit (USD)"
+        },
+        {
+          "name": "annual_total",
+          "label": "Annual total cost (USD)"
+        }
+      ],
+      "formula_hint": "Piece cost = sum(component_costs * qty). Tooling/unit = tooling_cost / (annual_volume * life_years). Labor/unit = (assembly_time/60) * labor_rate. Total = (piece + tooling + labor) * (1 + markup%)",
+      "rates": {
+        "typical_oem_markup": 0.1,
+        "typical_tier1_markup": 0.15
+      }
+    },
+    "example_queries": [
+      "Estimate unit cost for a bracket assembly: 3 stamped parts at $2.50 each, $180K tooling over 5 years, 100K annual volume",
+      "What's the cost per unit if tooling is $500K amortized over 3 years at 200K units per year with 12% supplier markup?",
+      "Roll up BOM cost for a door module with 15 components totaling $47 in piece cost plus $8 labor"
+    ]
+  },
+  {
+    "id": "us-automotive-engineers-p03",
+    "title": "Engineering Change Notice (ECN) Process",
+    "problem": "Engineering Change Notices require coordinating across design, manufacturing, quality, purchasing, and supplier teams. Missing a step - like failing to update the BOM, notify affected suppliers, or get proper sign-offs - can delay production, create inventory waste, or introduce quality defects. Engineers spend hours tracking the status of ECNs across departments.",
+    "who": "All automotive engineers initiating or impacted by design changes",
+    "frequency": "weekly",
+    "time_waste_h": 5,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "ECN Processing Checklist",
+      "one_liner": "Step-by-step Engineering Change Notice workflow ensuring all stakeholders, documents, and systems are updated",
+      "steps": [
+        "Step 1: Document change request with rationale (cost, quality, safety, regulation)",
+        "Step 2: Perform impact analysis - affected parts, assemblies, tooling, and suppliers",
+        "Step 3: Update CAD models and engineering drawings with new revision level",
+        "Step 4: Update BOM in PLM system (Teamcenter/Windchill/3DEXPERIENCE)",
+        "Step 5: Run DFMEA update for affected failure modes",
+        "Step 6: Obtain cross-functional sign-offs (Design, Manufacturing, Quality, Purchasing)",
+        "Step 7: Notify affected suppliers with updated specs and timeline",
+        "Step 8: Determine effectivity date and inventory disposition plan",
+        "Step 9: Update test/validation plan if design intent changed",
+        "Step 10: Release ECN in PLM and distribute to all stakeholders",
+        "Step 11: Verify PPAP re-submission requirements with suppliers",
+        "Step 12: Archive superseded documentation"
+      ],
+      "warnings": [
+        "Warning: Safety-critical changes (FMVSS-related) require additional regulatory review before release",
+        "Warning: Changes after design freeze require program director approval",
+        "Warning: Supplier tooling changes may require new PPAP submission per AIAG guidelines"
+      ],
+      "regulatory_refs": [
+        "IATF 16949 Section 8.5.6",
+        "AIAG PPAP Manual 4th Edition",
+        "AIAG APQP Manual"
+      ]
+    },
+    "example_queries": [
+      "I need to change a brake rotor material from cast iron to carbon ceramic - what's the full ECN process?",
+      "What approvals do I need for an ECN after design freeze?",
+      "Checklist for processing an engineering change on a safety-critical suspension component"
+    ]
+  },
+  {
+    "id": "us-automotive-engineers-p04",
+    "title": "FMVSS Compliance Requirements Lookup",
+    "problem": "Federal Motor Vehicle Safety Standards span hundreds of regulations across crashworthiness, crash avoidance, and post-crash survivability. Engineers waste significant time searching through NHTSA documents to find which FMVSS applies to their component, what the specific test requirements are, and what the pass/fail criteria are. Misinterpreting a standard can lead to costly test failures or non-compliance.",
+    "who": "Design and validation engineers working on safety-relevant components",
+    "frequency": "monthly",
+    "time_waste_h": 4,
+    "money_risk_usd": 100000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "FMVSS Quick Reference Guide",
+      "one_liner": "Quick lookup of applicable Federal Motor Vehicle Safety Standards by component, system, or vehicle type with test requirements and pass/fail criteria",
+      "data_domain": "Federal Motor Vehicle Safety Standards (49 CFR Part 571) - all active FMVSS numbers, applicable vehicle categories, test procedures, and performance requirements",
+      "lookup_keys": [
+        "fmvss_number",
+        "component_type",
+        "vehicle_category",
+        "safety_system"
+      ],
+      "data_hints": {
+        "source_law": "49 CFR Part 571 - Federal Motor Vehicle Safety Standards",
+        "key_sections": [
+          "FMVSS 208 (Occupant Crash Protection)",
+          "FMVSS 214 (Side Impact)",
+          "FMVSS 301 (Fuel System Integrity)",
+          "FMVSS 126 (ESC)",
+          "FMVSS 135 (Brake Systems)",
+          "FMVSS 305 (EV Electrolyte Spillage)"
+        ],
+        "categories": [
+          "100-series (Crash Avoidance)",
+          "200-series (Crashworthiness)",
+          "300-series (Post-Crash)"
+        ]
+      }
+    },
+    "example_queries": [
+      "Which FMVSS standards apply to a new EV battery enclosure?",
+      "What are the FMVSS 208 frontal crash test requirements for passenger cars?",
+      "What's the minimum performance requirement for FMVSS 135 brake systems?"
+    ]
+  },
+  {
+    "id": "us-automotive-engineers-p05",
+    "title": "Tolerance Stack-Up Analysis",
+    "problem": "Engineers must calculate worst-case and statistical tolerance stack-ups for assemblies to ensure parts fit and function correctly. Manual stack-up calculations across 10-20 contributing dimensions are tedious, error-prone, and critical - a wrong tolerance can mean parts don't assemble on the production line, causing line stoppages costing $10K+ per minute.",
+    "who": "Design engineers and dimensional engineers working on multi-part assemblies",
+    "frequency": "weekly",
+    "time_waste_h": 5,
+    "money_risk_usd": 40000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Tolerance Stack-Up Calculator",
+      "one_liner": "Performs worst-case and RSS (Root Sum Square) statistical tolerance stack-up analysis for linear dimension chains",
+      "inputs": [
+        {
+          "name": "dimensions",
+          "type": "list",
+          "label": "List of nominal dimensions with +/- tolerances"
+        },
+        {
+          "name": "direction",
+          "type": "list",
+          "label": "Direction for each dimension (positive/negative in chain)"
+        },
+        {
+          "name": "method",
+          "type": "select",
+          "label": "Analysis method: Worst-Case or RSS Statistical"
+        },
+        {
+          "name": "sigma_level",
+          "type": "number",
+          "label": "Sigma level for statistical (default 3)"
+        },
+        {
+          "name": "gap_requirement",
+          "type": "number",
+          "label": "Required minimum gap/clearance (mm)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "nominal_gap",
+          "label": "Nominal gap/result (mm)"
+        },
+        {
+          "name": "worst_case_min",
+          "label": "Worst-case minimum (mm)"
+        },
+        {
+          "name": "worst_case_max",
+          "label": "Worst-case maximum (mm)"
+        },
+        {
+          "name": "rss_min",
+          "label": "RSS statistical minimum (mm)"
+        },
+        {
+          "name": "rss_max",
+          "label": "RSS statistical maximum (mm)"
+        },
+        {
+          "name": "pass_fail",
+          "label": "Pass/Fail vs. requirement"
+        },
+        {
+          "name": "cpk_estimate",
+          "label": "Estimated Cpk"
+        }
+      ],
+      "formula_hint": "Worst-case: total_tol = sum(all tolerances). RSS: total_tol = sqrt(sum(tol_i^2)). Cpk = min((USL-mean)/(3*sigma), (mean-LSL)/(3*sigma)). Gap = nominal_sum(positive) - nominal_sum(negative).",
+      "rates": {
+        "automotive_cpk_target": 1.33,
+        "safety_critical_cpk": 1.67
+      }
+    },
+    "example_queries": [
+      "Stack-up analysis for 5 parts in a door hinge assembly: 10mm +/-0.1, 25mm +/-0.2, 8mm +/-0.05, 15mm +/-0.15, 12mm +/-0.1",
+      "Will a 0.5mm minimum gap requirement pass with RSS method at 3-sigma for these 8 contributing tolerances?",
+      "Calculate Cpk for a stack-up with nominal gap 1.2mm and RSS tolerance of 0.45mm"
+    ]
+  },
+  {
+    "id": "us-automotive-engineers-p06",
+    "title": "PPAP Submission Preparation",
+    "problem": "Production Part Approval Process requires assembling 18 specific elements (design records, process flow diagrams, measurement system analysis, etc.) in the correct format for customer submission. Engineers and quality teams frequently miss elements or submit incorrect levels, causing rejections that delay SoP and strain supplier relationships.",
+    "who": "Quality engineers and design engineers at Tier 1/Tier 2 suppliers",
+    "frequency": "monthly",
+    "time_waste_h": 10,
+    "money_risk_usd": 20000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "PPAP Submission Checklist",
+      "one_liner": "Complete checklist for PPAP submission levels 1-5 per AIAG PPAP Manual 4th Edition with all 18 required elements",
+      "steps": [
+        "Step 1: Confirm PPAP submission level (1-5) required by customer",
+        "Step 2: Prepare design records (drawings with ballooned dimensions)",
+        "Step 3: Document authorized engineering changes",
+        "Step 4: Obtain customer engineering approval (if required)",
+        "Step 5: Create DFMEA document",
+        "Step 6: Create process flow diagram",
+        "Step 7: Create PFMEA (Process FMEA)",
+        "Step 8: Create control plan",
+        "Step 9: Perform Measurement System Analysis (MSA/GR&R)",
+        "Step 10: Collect dimensional results (minimum 30 parts for initial study)",
+        "Step 11: Document material and performance test results",
+        "Step 12: Perform initial process study (Cpk/Ppk calculations)",
+        "Step 13: Complete qualified laboratory documentation",
+        "Step 14: Prepare Appearance Approval Report (AAR) if applicable",
+        "Step 15: Collect sample production parts",
+        "Step 16: Prepare master sample",
+        "Step 17: Document checking aids",
+        "Step 18: Document customer-specific requirements",
+        "Step 19: Complete Part Submission Warrant (PSW) and obtain signatures",
+        "Step 20: Submit package and track customer disposition"
+      ],
+      "warnings": [
+        "Warning: Level 3 (default) requires all 18 elements submitted to customer",
+        "Warning: Cpk < 1.33 requires corrective action plan before submission",
+        "Warning: Safety/regulatory characteristics (CC/SC) require 100% inspection documentation"
+      ],
+      "regulatory_refs": [
+        "AIAG PPAP Manual 4th Edition",
+        "AIAG MSA Manual 4th Edition",
+        "AIAG SPC Manual 2nd Edition",
+        "IATF 16949:2016"
+      ]
+    },
+    "example_queries": [
+      "What documents do I need for a PPAP Level 3 submission?",
+      "Our Cpk came in at 1.1 on a critical dimension - can we still submit PPAP?",
+      "Checklist for PPAP resubmission after an engineering change on a stamped bracket"
+    ]
+  },
+  {
+    "id": "us-automotive-engineers-p07",
+    "title": "EPA Emissions Compliance Standards Lookup",
+    "problem": "With rapidly changing EPA emissions regulations (Tier 3, LEV IV, and new EV-related standards), engineers struggle to find current emission limits, test procedures, and phase-in schedules for their specific vehicle class and model year. Non-compliance can result in massive fines, production halts, and mandatory recalls.",
+    "who": "Powertrain engineers and emissions calibration engineers",
+    "frequency": "monthly",
+    "time_waste_h": 3,
+    "money_risk_usd": 200000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "EPA Emissions Standards Reference",
+      "one_liner": "Quick lookup of EPA Tier 3/LEV IV emission limits, test procedures, and phase-in schedules by vehicle class and model year",
+      "data_domain": "EPA Light-Duty Vehicle Emissions Standards (40 CFR Part 86), Tier 3 and greenhouse gas regulations, CARB LEV IV standards",
+      "lookup_keys": [
+        "vehicle_class",
+        "model_year",
+        "pollutant_type",
+        "test_cycle",
+        "state_standard"
+      ],
+      "data_hints": {
+        "source_law": "Clean Air Act, 40 CFR Parts 86 and 1066",
+        "key_sections": [
+          "Tier 3 Bin Standards",
+          "NMOG+NOx fleet average",
+          "PM standards",
+          "Evaporative emissions",
+          "GHG standards (CO2 g/mi)"
+        ],
+        "carb_standards": [
+          "LEV IV (Super Ultra Low Emission Vehicle)",
+          "ZEV mandate"
+        ]
+      }
+    },
+    "example_queries": [
+      "What are the Tier 3 Bin 70 emission limits for a 2026 model year light-duty truck?",
+      "What's the EPA fleet average NMOG+NOx target for MY2026?",
+      "What are CARB LEV IV SULEV30 standards for a passenger car?"
+    ]
+  },
+  {
+    "id": "us-automotive-engineers-p08",
+    "title": "FEA Simulation Results Validation Report",
+    "problem": "After running FEA or CFD simulations, engineers must document results in a standardized report format for design reviews (PDR/CDR). Writing these reports from scratch is time-consuming and inconsistent across teams. Missing key sections (boundary conditions, mesh convergence, safety factors) leads to review rejections and rework.",
+    "who": "CAE analysts and design engineers presenting at PDR/CDR reviews",
+    "frequency": "weekly",
+    "time_waste_h": 4,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "FEA/CFD Simulation Report Generator",
+      "one_liner": "Generates a standardized simulation report for design reviews including all required sections for PDR/CDR presentation",
+      "doc_name": "Simulation Analysis Report",
+      "variables": [
+        {
+          "name": "analysis_type",
+          "label": "Analysis type (Static FEA, Modal, Thermal, CFD, Fatigue)"
+        },
+        {
+          "name": "component_name",
+          "label": "Component/assembly name"
+        },
+        {
+          "name": "part_number",
+          "label": "Part number and revision"
+        },
+        {
+          "name": "software_used",
+          "label": "Software and version (ANSYS, Abaqus, etc.)"
+        },
+        {
+          "name": "load_cases",
+          "label": "Load cases and boundary conditions"
+        },
+        {
+          "name": "material_properties",
+          "label": "Material and properties used"
+        },
+        {
+          "name": "mesh_details",
+          "label": "Mesh type, element count, quality metrics"
+        },
+        {
+          "name": "results_summary",
+          "label": "Key results (max stress, displacement, safety factor)"
+        },
+        {
+          "name": "pass_fail_criteria",
+          "label": "Acceptance criteria and margin of safety"
+        }
+      ],
+      "structure_hint": "Executive Summary -> Objective -> Model Description (geometry, material, mesh) -> Boundary Conditions & Load Cases -> Results (contour plots description, max values, locations) -> Convergence Study -> Safety Factor Analysis -> Conclusions & Recommendations -> Appendix (detailed data)"
+    },
+    "example_queries": [
+      "Generate a simulation report for static FEA of a control arm under 3G braking load",
+      "I need a PDR-ready report template for thermal analysis of a battery enclosure",
+      "Create a CFD report for underhood airflow analysis on a new front-end design"
+    ]
+  },
+  {
+    "id": "us-automotive-engineers-p09",
+    "title": "Bolt Torque and Joint Calculation",
+    "problem": "Automotive engineers constantly calculate bolt torque specifications, clamping force, and joint integrity for threaded fastener connections. Wrong torque specs can lead to joint failure, loosening under vibration, or bolt fracture - all safety-critical in automotive applications. Engineers reference VDI 2230 guidelines and perform manual calculations that are prone to unit conversion errors.",
+    "who": "Design engineers working on structural and chassis components",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 35000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Bolt Torque & Clamping Force Calculator",
+      "one_liner": "Calculates target torque, clamping force, and bolt stress for threaded fastener joints per VDI 2230 methodology",
+      "inputs": [
+        {
+          "name": "bolt_size",
+          "type": "text",
+          "label": "Bolt size (e.g., M8x1.25)"
+        },
+        {
+          "name": "bolt_grade",
+          "type": "select",
+          "label": "Bolt grade/class (8.8, 10.9, 12.9)"
+        },
+        {
+          "name": "friction_coefficient",
+          "type": "number",
+          "label": "Friction coefficient (thread and under-head)"
+        },
+        {
+          "name": "required_clamp_force",
+          "type": "number",
+          "label": "Required minimum clamping force (kN)"
+        },
+        {
+          "name": "external_load",
+          "type": "number",
+          "label": "External tensile load on joint (kN)"
+        },
+        {
+          "name": "joint_type",
+          "type": "select",
+          "label": "Joint type (through-bolt, tapped hole, stud)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "target_torque",
+          "label": "Target torque (Nm)"
+        },
+        {
+          "name": "clamp_force",
+          "label": "Assembly clamping force (kN)"
+        },
+        {
+          "name": "bolt_stress_pct",
+          "label": "Bolt utilization (% of proof load)"
+        },
+        {
+          "name": "safety_factor_yield",
+          "label": "Safety factor against yield"
+        },
+        {
+          "name": "safety_factor_separation",
+          "label": "Safety factor against joint separation"
+        },
+        {
+          "name": "torque_range",
+          "label": "Torque range min-max (Nm)"
+        }
+      ],
+      "formula_hint": "T = F_clamp * d * (0.16*p + 0.58*d2*mu_th + D_bearing/2*mu_uh). Bolt stress = F/(A_stress). SF_yield = Rp0.2*A_stress/F_bolt_max. SF_separation = F_clamp_residual/F_external. Use VDI 2230 systematic approach.",
+      "rates": {
+        "mu_typical_oiled": 0.12,
+        "mu_typical_dry": 0.18,
+        "utilization_target": 0.9
+      }
+    },
+    "example_queries": [
+      "What torque for an M10x1.5 grade 10.9 bolt with 0.14 friction coefficient and 25kN required clamping force?",
+      "Calculate if an M8 class 8.8 bolt can handle 12kN external load with adequate safety factor",
+      "Torque spec for M6x1.0 grade 12.9 in a tapped aluminum housing"
+    ]
+  },
+  {
+    "id": "us-automotive-engineers-p10",
+    "title": "ISO 26262 Functional Safety ASIL Determination",
+    "problem": "Engineers developing safety-critical automotive systems must determine the Automotive Safety Integrity Level (ASIL) for each hazard per ISO 26262. The ASIL classification involves evaluating severity, exposure probability, and controllability for each operational scenario - a structured but complex process where errors can lead to under-engineering safety measures or over-engineering costs.",
+    "who": "Systems engineers and functional safety engineers working on ADAS, braking, steering, or EV systems",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 75000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "ISO 26262 ASIL Calculator",
+      "one_liner": "Determines ASIL classification (A/B/C/D/QM) from severity, exposure, and controllability ratings per ISO 26262 Part 3",
+      "inputs": [
+        {
+          "name": "hazard_description",
+          "type": "text",
+          "label": "Hazard event description"
+        },
+        {
+          "name": "severity",
+          "type": "select",
+          "label": "Severity (S0-S3: no injuries to life-threatening)"
+        },
+        {
+          "name": "exposure",
+          "type": "select",
+          "label": "Exposure probability (E0-E4: incredible to high probability)"
+        },
+        {
+          "name": "controllability",
+          "type": "select",
+          "label": "Controllability (C0-C3: controllable to uncontrollable)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "asil_level",
+          "label": "ASIL classification (QM, A, B, C, or D)"
+        },
+        {
+          "name": "safety_requirements",
+          "label": "Summary of required safety measures for this ASIL"
+        },
+        {
+          "name": "decomposition_options",
+          "label": "ASIL decomposition possibilities"
+        }
+      ],
+      "formula_hint": "ASIL lookup table: S3+E4+C3=ASIL D, S3+E4+C2=ASIL C, etc. QM = no automotive safety requirement. ASIL D is most stringent. Decomposition: ASIL D can split into ASIL C(D) + ASIL A(D) on redundant paths.",
+      "rates": {}
+    },
+    "example_queries": [
+      "Determine ASIL for unintended acceleration at highway speed: severity S3, exposure E4, controllability C2",
+      "What ASIL level if severity is S2, exposure E3, controllability C3?",
+      "Can I decompose an ASIL D requirement for a redundant braking system?"
+    ]
+  },
+  {
+    "id": "us-automotive-engineers-p11",
+    "title": "8D Problem-Solving Report",
+    "problem": "When quality issues arise in production or from customer complaints, engineers must complete 8D (Eight Disciplines) problem-solving reports. These reports require a structured methodology that many engineers struggle with - particularly defining the root cause analysis, containment actions, and verification steps. Incomplete or poorly written 8Ds get rejected by OEM customers.",
+    "who": "Quality engineers and design engineers at suppliers responding to customer complaints",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "8D Report Generator",
+      "one_liner": "Generates a structured 8D problem-solving report with all eight disciplines properly documented for OEM customer submission",
+      "doc_name": "8D Problem-Solving Report",
+      "variables": [
+        {
+          "name": "problem_description",
+          "label": "Problem description (what, where, when, how many)"
+        },
+        {
+          "name": "part_number",
+          "label": "Affected part number(s)"
+        },
+        {
+          "name": "customer",
+          "label": "Customer/OEM name"
+        },
+        {
+          "name": "team_members",
+          "label": "Team members and roles"
+        },
+        {
+          "name": "containment_actions",
+          "label": "Immediate containment actions taken"
+        },
+        {
+          "name": "root_cause",
+          "label": "Root cause (from 5-Why or Ishikawa analysis)"
+        },
+        {
+          "name": "corrective_actions",
+          "label": "Permanent corrective actions"
+        },
+        {
+          "name": "verification_method",
+          "label": "How corrective actions were verified"
+        }
+      ],
+      "structure_hint": "D0: Awareness/Emergency Response -> D1: Team Formation -> D2: Problem Description (IS/IS NOT) -> D3: Interim Containment Actions -> D4: Root Cause Analysis (5-Why, Fishbone) -> D5: Permanent Corrective Actions -> D6: Implementation & Validation -> D7: Preventive Actions (systemic) -> D8: Team Recognition & Close-out"
+    },
+    "example_queries": [
+      "Generate an 8D report for a cracked weld on a suspension crossmember found at customer assembly plant",
+      "Help me write D4 root cause analysis for a dimensional issue on stamped brackets using 5-Why method",
+      "Create 8D template for a paint adhesion failure on exterior trim parts"
+    ]
+  },
+  {
+    "id": "us-automotive-engineers-p12",
+    "title": "EV Transition Career and Skills Advisor",
+    "problem": "With the rapid shift to electric vehicles, many ICE-focused automotive engineers fear obsolescence. They need guidance on which skills to develop (battery systems, power electronics, BMS, thermal management), which certifications matter, and how to position their existing experience for EV roles. The transition path is unclear and anxiety-inducing.",
+    "who": "Mid-career powertrain and mechanical engineers (5-15 years experience) in traditional ICE roles",
+    "frequency": "quarterly",
+    "time_waste_h": 3,
+    "money_risk_usd": 10000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "EV Transition Career Advisor",
+      "one_liner": "Provides personalized guidance for ICE automotive engineers transitioning to EV roles including skills mapping, certifications, and career positioning",
+      "expertise_area": "Automotive engineering career transition from ICE to EV/electrification",
+      "decision_criteria": [
+        "current_specialization",
+        "years_of_experience",
+        "target_role",
+        "geographic_location",
+        "education_level"
+      ],
+      "context_needed": [
+        "market.trends",
+        "career_psychology.fears",
+        "career_psychology.career_levels",
+        "tools.software"
+      ]
+    },
+    "example_queries": [
+      "I'm a 10-year ICE powertrain calibration engineer - what EV skills should I develop first?",
+      "Which certifications are worth getting for battery systems engineering?",
+      "How do I position my NVH experience for an EV role at Rivian or Tesla?"
+    ]
+  },
+  {
+    "id": "us-automotive-engineers-p13",
+    "title": "Material Selection and Properties Reference",
+    "problem": "Engineers frequently need to look up material properties (yield strength, fatigue limit, thermal conductivity, density) for automotive-grade steels, aluminum alloys, polymers, and composites during design and simulation work. Searching through material datasheets and standards is slow, and using wrong properties in FEA leads to invalid simulation results.",
+    "who": "Design engineers and CAE analysts selecting materials for components",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Automotive Materials Properties Reference",
+      "one_liner": "Quick lookup of mechanical, thermal, and fatigue properties for common automotive-grade materials (steels, aluminum, polymers, composites)",
+      "data_domain": "Automotive engineering materials: AHSS, HSLA steels, aluminum 5xxx/6xxx/7xxx series, engineering polymers (PA6, PA66-GF, PBT, PP), CFRP, magnesium alloys",
+      "lookup_keys": [
+        "material_grade",
+        "material_family",
+        "property_type",
+        "application"
+      ],
+      "data_hints": {
+        "source_law": "SAE material standards, ASTM standards",
+        "key_sections": [
+          "SAE J2340 (AHSS)",
+          "SAE J403 (carbon steels)",
+          "ASTM B209 (aluminum sheet)",
+          "SAE J1000 series"
+        ],
+        "common_grades": [
+          "DP590",
+          "DP780",
+          "DP980",
+          "TRIP780",
+          "AA6061-T6",
+          "AA5182",
+          "PA66-GF30",
+          "PBT-GF30"
+        ]
+      }
+    },
+    "example_queries": [
+      "What are the mechanical properties of DP780 dual-phase steel?",
+      "Compare yield strength and density of AA6061-T6 vs DP590 for a lightweighting study",
+      "What's the fatigue limit of SAE 4140 QT steel for a suspension component?"
+    ]
+  }
+]

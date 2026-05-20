@@ -1,0 +1,961 @@
+[
+  {
+    "id": "us-critical-care-nurses-p01",
+    "title": "IV Medication Drip Rate Calculation",
+    "problem": "ICU nurses continuously titrate high-risk IV drips (vasopressors, sedatives, insulin, heparin) based on patient response. Manual calculation of mcg/kg/min to mL/hr under time pressure leads to dosing errors. A single miscalculation with a vasopressor can cause fatal hypotension or hypertensive crisis.",
+    "who": "Staff ICU nurses and new grad ICU nurses titrating multiple drips simultaneously",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "ICU Drip Rate Calculator",
+      "one_liner": "Converts medication dose orders (mcg/kg/min, units/hr, mg/hr) to IV pump rate in mL/hr and vice versa",
+      "inputs": [
+        {
+          "name": "medication",
+          "type": "select",
+          "label": "Medication (e.g. norepinephrine, propofol, insulin, heparin)"
+        },
+        {
+          "name": "patient_weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        },
+        {
+          "name": "ordered_dose",
+          "type": "number",
+          "label": "Ordered dose value"
+        },
+        {
+          "name": "dose_unit",
+          "type": "select",
+          "label": "Dose unit (mcg/kg/min, mg/hr, units/hr)"
+        },
+        {
+          "name": "concentration_mg",
+          "type": "number",
+          "label": "Drug concentration - amount (mg or units)"
+        },
+        {
+          "name": "volume_ml",
+          "type": "number",
+          "label": "Drug concentration - volume (mL)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pump_rate_ml_hr",
+          "label": "IV pump rate (mL/hr)"
+        },
+        {
+          "name": "dose_per_min",
+          "label": "Actual dose per minute"
+        },
+        {
+          "name": "dose_per_hour",
+          "label": "Actual dose per hour"
+        },
+        {
+          "name": "time_to_empty",
+          "label": "Estimated time until bag runs out"
+        }
+      ],
+      "formula_hint": "rate_mL_hr = (ordered_dose * weight_kg * 60) / (concentration_mg / volume_ml * 1000) for mcg/kg/min; adjust formula per dose_unit type",
+      "rates": {
+        "standard_concentrations": {
+          "norepinephrine": "4mg/250mL or 8mg/250mL",
+          "vasopressin": "20units/100mL",
+          "propofol": "10mg/mL",
+          "insulin": "100units/100mL",
+          "heparin": "25000units/250mL"
+        }
+      }
+    },
+    "example_queries": [
+      "Calculate drip rate for norepinephrine 0.15 mcg/kg/min, patient 82kg, concentration 4mg in 250mL",
+      "I have propofol running at 25 mL/hr, concentration 10mg/mL, patient weighs 70kg - what's the mcg/kg/min?",
+      "Heparin 25,000 units in 250mL, ordered at 1,200 units/hr - what pump rate?"
+    ]
+  },
+  {
+    "id": "us-critical-care-nurses-p02",
+    "title": "Fluid Balance and I&O Calculation",
+    "problem": "ICU nurses track all intake (IV fluids, medications, blood products, tube feeds) and output (urine, drainage, blood loss) hourly. End-of-shift totals require adding dozens of entries across 12 hours. Errors in fluid balance calculation can mask fluid overload or dehydration, leading to pulmonary edema or renal failure.",
+    "who": "All ICU nurses managing critically ill patients with complex fluid needs",
+    "frequency": "daily",
+    "time_waste_h": 1.5,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "ICU Fluid Balance Calculator",
+      "one_liner": "Calculates total intake, output, net fluid balance, and cumulative balance over shift with itemized breakdown",
+      "inputs": [
+        {
+          "name": "iv_fluids",
+          "type": "array",
+          "label": "IV fluids administered (name, mL)"
+        },
+        {
+          "name": "iv_medications",
+          "type": "array",
+          "label": "IV medication volumes (name, mL)"
+        },
+        {
+          "name": "blood_products",
+          "type": "array",
+          "label": "Blood products (type, mL)"
+        },
+        {
+          "name": "tube_feeds",
+          "type": "number",
+          "label": "Tube feed volume (mL)"
+        },
+        {
+          "name": "oral_intake",
+          "type": "number",
+          "label": "Oral intake (mL)"
+        },
+        {
+          "name": "urine_output",
+          "type": "number",
+          "label": "Urine output (mL)"
+        },
+        {
+          "name": "drainage",
+          "type": "array",
+          "label": "Drainage (type, mL)"
+        },
+        {
+          "name": "blood_loss",
+          "type": "number",
+          "label": "Estimated blood loss (mL)"
+        },
+        {
+          "name": "emesis",
+          "type": "number",
+          "label": "Emesis/NG suction (mL)"
+        },
+        {
+          "name": "patient_weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "total_intake",
+          "label": "Total intake (mL)"
+        },
+        {
+          "name": "total_output",
+          "label": "Total output (mL)"
+        },
+        {
+          "name": "net_balance",
+          "label": "Net fluid balance (mL)"
+        },
+        {
+          "name": "urine_output_ml_kg_hr",
+          "label": "Urine output (mL/kg/hr)"
+        },
+        {
+          "name": "balance_status",
+          "label": "Fluid status assessment (positive/negative/balanced)"
+        }
+      ],
+      "formula_hint": "net_balance = total_intake - total_output; urine_ml_kg_hr = urine_output / (weight_kg * hours); flag if UO < 0.5 mL/kg/hr",
+      "rates": {
+        "min_urine_output_ml_kg_hr": 0.5,
+        "oliguria_threshold": 0.3
+      }
+    },
+    "example_queries": [
+      "Calculate 12-hour fluid balance: 2000mL LR, 500mL albumin, 150mL med volume, urine 850mL, JP drain 200mL, patient 75kg",
+      "My patient got 3 liters total intake and put out 1100mL urine in 12 hours, weight 68kg - what's the balance and urine output per kg?",
+      "Is urine output of 25mL/hr adequate for an 80kg patient?"
+    ]
+  },
+  {
+    "id": "us-critical-care-nurses-p03",
+    "title": "Hemodynamic Parameter Calculation",
+    "problem": "Nurses monitoring Swan-Ganz catheters and arterial lines must calculate MAP, SVR, cardiac index, oxygen delivery, and other derived hemodynamic values to guide vasopressor and fluid management. These calculations involve multiple variables and formulas that are easy to miscalculate at 3 AM during a code.",
+    "who": "ICU nurses managing hemodynamically unstable patients with invasive monitoring",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 40000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Hemodynamic Parameter Calculator",
+      "one_liner": "Calculates MAP, SVR, SVRI, CI, DO2, VO2, and other derived hemodynamic values from monitored inputs",
+      "inputs": [
+        {
+          "name": "systolic_bp",
+          "type": "number",
+          "label": "Systolic BP (mmHg)"
+        },
+        {
+          "name": "diastolic_bp",
+          "type": "number",
+          "label": "Diastolic BP (mmHg)"
+        },
+        {
+          "name": "heart_rate",
+          "type": "number",
+          "label": "Heart rate (bpm)"
+        },
+        {
+          "name": "cvp",
+          "type": "number",
+          "label": "CVP (mmHg)"
+        },
+        {
+          "name": "cardiac_output",
+          "type": "number",
+          "label": "Cardiac output (L/min)"
+        },
+        {
+          "name": "height_cm",
+          "type": "number",
+          "label": "Patient height (cm)"
+        },
+        {
+          "name": "weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        },
+        {
+          "name": "hemoglobin",
+          "type": "number",
+          "label": "Hemoglobin (g/dL)"
+        },
+        {
+          "name": "sao2",
+          "type": "number",
+          "label": "SaO2 (%)"
+        },
+        {
+          "name": "svo2",
+          "type": "number",
+          "label": "SvO2 (%)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "map",
+          "label": "Mean Arterial Pressure (mmHg)"
+        },
+        {
+          "name": "svr",
+          "label": "Systemic Vascular Resistance (dynes)"
+        },
+        {
+          "name": "cardiac_index",
+          "label": "Cardiac Index (L/min/m2)"
+        },
+        {
+          "name": "bsa",
+          "label": "Body Surface Area (m2)"
+        },
+        {
+          "name": "do2",
+          "label": "Oxygen Delivery (mL/min)"
+        },
+        {
+          "name": "vo2",
+          "label": "Oxygen Consumption (mL/min)"
+        },
+        {
+          "name": "stroke_volume",
+          "label": "Stroke Volume (mL)"
+        },
+        {
+          "name": "interpretation",
+          "label": "Clinical interpretation with normal ranges"
+        }
+      ],
+      "formula_hint": "MAP = (SBP + 2*DBP)/3; SVR = (MAP-CVP)/CO * 80; CI = CO/BSA; BSA = 0.007184 * height^0.725 * weight^0.425; DO2 = CO * (Hgb * 1.34 * SaO2) * 10",
+      "rates": {
+        "normal_map": "70-105 mmHg",
+        "normal_svr": "800-1200 dynes",
+        "normal_ci": "2.5-4.0 L/min/m2",
+        "normal_do2": "950-1150 mL/min"
+      }
+    },
+    "example_queries": [
+      "Calculate MAP, SVR and cardiac index: BP 88/52, HR 112, CVP 14, CO 3.8, height 170cm, weight 80kg",
+      "Patient has CO of 5.2, Hgb 9.2, SaO2 94% - what's the oxygen delivery?",
+      "SVR for MAP 62, CVP 8, cardiac output 4.5?"
+    ]
+  },
+  {
+    "id": "us-critical-care-nurses-p04",
+    "title": "ABG Interpretation and Acid-Base Analysis",
+    "problem": "ICU nurses receive ABG results multiple times per shift and must quickly interpret pH, PaCO2, PaO2, HCO3, base excess, and lactate to identify acid-base disorders and oxygenation status. Mixed disorders (e.g., combined metabolic acidosis and respiratory alkalosis) are common in ICU patients and difficult to interpret. Delayed recognition can delay ventilator adjustments or treatment of sepsis.",
+    "who": "All ICU nurses, especially those managing ventilated patients",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "ABG Interpreter and Acid-Base Analyzer",
+      "one_liner": "Interprets arterial blood gas results, identifies primary and mixed acid-base disorders, calculates A-a gradient and P/F ratio",
+      "inputs": [
+        {
+          "name": "ph",
+          "type": "number",
+          "label": "pH"
+        },
+        {
+          "name": "paco2",
+          "type": "number",
+          "label": "PaCO2 (mmHg)"
+        },
+        {
+          "name": "pao2",
+          "type": "number",
+          "label": "PaO2 (mmHg)"
+        },
+        {
+          "name": "hco3",
+          "type": "number",
+          "label": "HCO3 (mEq/L)"
+        },
+        {
+          "name": "base_excess",
+          "type": "number",
+          "label": "Base excess (mEq/L)"
+        },
+        {
+          "name": "lactate",
+          "type": "number",
+          "label": "Lactate (mmol/L)"
+        },
+        {
+          "name": "fio2",
+          "type": "number",
+          "label": "FiO2 (fraction or %)"
+        },
+        {
+          "name": "sodium",
+          "type": "number",
+          "label": "Sodium (mEq/L)"
+        },
+        {
+          "name": "chloride",
+          "type": "number",
+          "label": "Chloride (mEq/L)"
+        },
+        {
+          "name": "albumin",
+          "type": "number",
+          "label": "Albumin (g/dL)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "primary_disorder",
+          "label": "Primary acid-base disorder"
+        },
+        {
+          "name": "compensation",
+          "label": "Compensation status (expected vs actual)"
+        },
+        {
+          "name": "mixed_disorders",
+          "label": "Mixed disorders identified"
+        },
+        {
+          "name": "anion_gap",
+          "label": "Anion gap (corrected for albumin)"
+        },
+        {
+          "name": "aa_gradient",
+          "label": "A-a gradient"
+        },
+        {
+          "name": "pf_ratio",
+          "label": "P/F ratio (PaO2/FiO2)"
+        },
+        {
+          "name": "ards_classification",
+          "label": "ARDS severity if applicable"
+        },
+        {
+          "name": "clinical_interpretation",
+          "label": "Clinical summary and suggested actions"
+        }
+      ],
+      "formula_hint": "AG = Na - (Cl + HCO3); corrected AG = AG + 2.5*(4.0 - albumin); A-a gradient = (FiO2*(713) - PaCO2/0.8) - PaO2; P/F = PaO2/FiO2; Winter's formula: expected PaCO2 = 1.5*HCO3 + 8 +/- 2",
+      "rates": {
+        "normal_ph": "7.35-7.45",
+        "normal_paco2": "35-45",
+        "normal_hco3": "22-26",
+        "normal_ag": "8-12",
+        "ards_mild_pf": 300,
+        "ards_moderate_pf": 200,
+        "ards_severe_pf": 100
+      }
+    },
+    "example_queries": [
+      "Interpret ABG: pH 7.28, PaCO2 32, PaO2 68, HCO3 15, lactate 4.2, Na 140, Cl 104, albumin 2.8, FiO2 60%",
+      "Patient on vent FiO2 50%, PaO2 88 - what's the P/F ratio and does this qualify as ARDS?",
+      "ABG shows pH 7.52, PaCO2 28, HCO3 22 - is this pure respiratory alkalosis or mixed?"
+    ]
+  },
+  {
+    "id": "us-critical-care-nurses-p05",
+    "title": "Ventilator Settings and Weaning Assessment",
+    "problem": "ICU nurses must understand and monitor ventilator settings (mode, tidal volume, PEEP, FiO2, respiratory rate) and assess patient readiness for weaning. Incorrect tidal volume calculations based on ideal body weight can cause ventilator-induced lung injury. Missed weaning windows prolong ventilation and increase VAP risk.",
+    "who": "ICU nurses managing mechanically ventilated patients",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 35000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Ventilator Calculator and Weaning Readiness Tool",
+      "one_liner": "Calculates ideal body weight, lung-protective tidal volumes, static/dynamic compliance, RSBI, and assesses weaning readiness",
+      "inputs": [
+        {
+          "name": "gender",
+          "type": "select",
+          "label": "Gender (male/female)"
+        },
+        {
+          "name": "height_inches",
+          "type": "number",
+          "label": "Patient height (inches)"
+        },
+        {
+          "name": "current_tv",
+          "type": "number",
+          "label": "Current tidal volume (mL)"
+        },
+        {
+          "name": "respiratory_rate",
+          "type": "number",
+          "label": "Respiratory rate (breaths/min)"
+        },
+        {
+          "name": "plateau_pressure",
+          "type": "number",
+          "label": "Plateau pressure (cmH2O)"
+        },
+        {
+          "name": "peak_pressure",
+          "type": "number",
+          "label": "Peak inspiratory pressure (cmH2O)"
+        },
+        {
+          "name": "peep",
+          "type": "number",
+          "label": "PEEP (cmH2O)"
+        },
+        {
+          "name": "fio2",
+          "type": "number",
+          "label": "FiO2 (%)"
+        },
+        {
+          "name": "pao2",
+          "type": "number",
+          "label": "PaO2 (mmHg)"
+        },
+        {
+          "name": "spontaneous_rr",
+          "type": "number",
+          "label": "Spontaneous RR on CPAP/PS (for RSBI)"
+        },
+        {
+          "name": "spontaneous_tv",
+          "type": "number",
+          "label": "Spontaneous tidal volume (L, for RSBI)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "ideal_body_weight_kg",
+          "label": "Ideal body weight (kg)"
+        },
+        {
+          "name": "target_tv_range",
+          "label": "Lung-protective TV range (6-8 mL/kg IBW)"
+        },
+        {
+          "name": "static_compliance",
+          "label": "Static compliance (mL/cmH2O)"
+        },
+        {
+          "name": "dynamic_compliance",
+          "label": "Dynamic compliance (mL/cmH2O)"
+        },
+        {
+          "name": "rsbi",
+          "label": "Rapid Shallow Breathing Index"
+        },
+        {
+          "name": "weaning_readiness",
+          "label": "Weaning readiness assessment"
+        },
+        {
+          "name": "pf_ratio",
+          "label": "P/F ratio"
+        }
+      ],
+      "formula_hint": "IBW male = 50 + 2.3*(height_in - 60); IBW female = 45.5 + 2.3*(height_in - 60); Target TV = IBW * 6-8 mL/kg; Static compliance = TV/(Pplat - PEEP); RSBI = spontaneous_RR / spontaneous_TV; weaning likely if RSBI < 105",
+      "rates": {
+        "target_tv_ml_per_kg": "6-8",
+        "max_plateau_pressure": 30,
+        "rsbi_threshold": 105,
+        "min_pf_for_weaning": 150
+      }
+    },
+    "example_queries": [
+      "Calculate ideal body weight and target tidal volume for a 5'9 male on the vent",
+      "Patient on CPAP/PS has spontaneous RR 28 and tidal volume 0.22L - what's the RSBI? Ready to extubate?",
+      "Static compliance with TV 450, plateau 28, PEEP 10?"
+    ]
+  },
+  {
+    "id": "us-critical-care-nurses-p06",
+    "title": "High-Risk Medication Double-Check",
+    "problem": "ICU nurses administer high-alert medications (vasopressors, insulin, heparin, paralytics, potassium) that have narrow therapeutic windows. Independent double-checks are required by policy but often rushed or skipped during emergencies. Medication errors in ICU settings have higher mortality rates than on general floors.",
+    "who": "All ICU nurses, especially during night shifts with limited pharmacist availability",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 100000,
+    "source": "career_psychology",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "ICU High-Alert Medication Verification Checklist",
+      "one_liner": "Step-by-step independent double-check process for high-alert ICU medications with dose range verification",
+      "steps": [
+        "Step 1: Verify correct patient (two identifiers - name and DOB/MRN)",
+        "Step 2: Confirm medication matches order (drug name, route, dose, frequency)",
+        "Step 3: Check medication concentration against standard ICU concentrations",
+        "Step 4: Verify dose is within safe range for patient weight",
+        "Step 5: Confirm IV pump rate calculation matches ordered dose",
+        "Step 6: Check compatibility if running with other IV lines",
+        "Step 7: Verify monitoring parameters are in place (e.g., glucose checks for insulin, PTT for heparin)",
+        "Step 8: Confirm allergies reviewed",
+        "Step 9: Assess current vitals against medication parameters (hold parameters)",
+        "Step 10: Document second nurse verification with time and initials"
+      ],
+      "warnings": [
+        "WARNING: Insulin and heparin are the #1 and #2 causes of ICU medication errors",
+        "WARNING: Neuromuscular blockers must NEVER be given without sedation verification",
+        "WARNING: Concentrated potassium (>20 mEq/hr) requires cardiac monitoring",
+        "WARNING: Vasopressor concentration changes require complete rate recalculation"
+      ],
+      "regulatory_refs": [
+        "ISMP High-Alert Medications List",
+        "Joint Commission NPSG.03.04.01",
+        "CMS Conditions of Participation"
+      ]
+    },
+    "example_queries": [
+      "Walk me through the double-check process for starting a vasopressin drip",
+      "What's the verification checklist for hanging a new heparin bag?",
+      "I'm about to give IV push potassium 20 mEq - what do I need to verify?"
+    ]
+  },
+  {
+    "id": "us-critical-care-nurses-p07",
+    "title": "ICU Shift Handoff Report",
+    "problem": "ICU shift handoffs (every 12 hours) require communicating massive amounts of critical patient data - ventilator settings, drip rates, labs, procedures, family wishes, code status, and pending orders. Incomplete handoffs are a leading cause of ICU adverse events. Nurses spend 30-45 minutes preparing and giving report.",
+    "who": "All ICU nurses during shift change",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 20000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "ICU SBAR Shift Handoff Report Generator",
+      "one_liner": "Generates a structured ICU handoff report using SBAR format with all critical systems and pending items",
+      "doc_name": "ICU Shift Handoff Report",
+      "variables": [
+        {
+          "name": "patient_initials",
+          "label": "Patient initials"
+        },
+        {
+          "name": "age_gender",
+          "label": "Age/Gender"
+        },
+        {
+          "name": "admitting_diagnosis",
+          "label": "Admitting diagnosis"
+        },
+        {
+          "name": "code_status",
+          "label": "Code status (Full/DNR/DNI/CMO)"
+        },
+        {
+          "name": "allergies",
+          "label": "Allergies"
+        },
+        {
+          "name": "neuro_status",
+          "label": "Neuro: GCS, RASS, sedation, pupils"
+        },
+        {
+          "name": "respiratory",
+          "label": "Respiratory: vent settings, ABG, airway"
+        },
+        {
+          "name": "cardiovascular",
+          "label": "CV: rhythm, drips, lines, hemodynamics"
+        },
+        {
+          "name": "renal_fluid",
+          "label": "Renal/Fluid: I&O, labs, CRRT if applicable"
+        },
+        {
+          "name": "gi_nutrition",
+          "label": "GI/Nutrition: diet, tube feeds, bowel function"
+        },
+        {
+          "name": "skin_wounds",
+          "label": "Skin/Wounds: Braden score, pressure injuries, drains"
+        },
+        {
+          "name": "labs_pending",
+          "label": "Pending labs/tests/procedures"
+        },
+        {
+          "name": "family_communication",
+          "label": "Family communication and concerns"
+        },
+        {
+          "name": "plan_of_care",
+          "label": "Plan for next shift"
+        }
+      ],
+      "structure_hint": "SBAR format -> Situation (1 line summary) -> Background (diagnosis, hx, hospital course) -> Assessment (head-to-toe by system) -> Recommendation (plan, pending, watch-for items)"
+    },
+    "example_queries": [
+      "Help me organize my handoff report for a septic shock patient on 3 vasopressors and CRRT",
+      "Generate a shift report template: 68yo M, CABG post-op day 1, on vent, neo drip, chest tubes",
+      "I need to give report on my ARDS patient - help me structure it by body system"
+    ]
+  },
+  {
+    "id": "us-critical-care-nurses-p08",
+    "title": "Sepsis Screening and Bundle Compliance",
+    "problem": "Sepsis is the #1 killer in ICUs. CMS requires hospitals to follow SEP-1 sepsis bundle with strict time-based metrics (lactate within 6 hours, blood cultures before antibiotics, 30mL/kg crystalloid within 3 hours). Nurses are responsible for recognizing sepsis early and ensuring all bundle elements are completed on time. Missing a single element affects hospital quality scores and reimbursement.",
+    "who": "All ICU nurses, especially those receiving new admissions and transfers",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 75000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "ICU Sepsis Bundle Compliance Tracker",
+      "one_liner": "Tracks all CMS SEP-1 bundle elements with time stamps, calculates fluid resuscitation volumes, and flags overdue items",
+      "steps": [
+        "Step 1: Screen for SIRS criteria (temp >38.3 or <36, HR >90, RR >20, WBC >12k or <4k)",
+        "Step 2: Identify suspected infection source",
+        "Step 3: HOUR 1 BUNDLE - obtain lactate level",
+        "Step 4: HOUR 1 BUNDLE - obtain blood cultures (2 sets) BEFORE antibiotics",
+        "Step 5: HOUR 1 BUNDLE - administer broad-spectrum antibiotics",
+        "Step 6: HOUR 3 BUNDLE - if lactate >= 4 or hypotension: begin 30mL/kg crystalloid bolus",
+        "Step 7: Calculate 30mL/kg fluid volume for patient weight",
+        "Step 8: If hypotension persists after fluids: initiate vasopressors (target MAP >= 65)",
+        "Step 9: HOUR 6 - repeat lactate if initial was >= 2",
+        "Step 10: Document all bundle elements with exact times in EHR",
+        "Step 11: Reassess volume status and tissue perfusion",
+        "Step 12: Notify physician of any missed bundle element immediately"
+      ],
+      "warnings": [
+        "WARNING: Blood cultures MUST be drawn before first antibiotic dose",
+        "WARNING: Each hour delay in antibiotics increases mortality ~7.6%",
+        "WARNING: 30mL/kg fluid calculation uses actual body weight - document if physician modifies for heart failure",
+        "WARNING: CMS audits exact timestamps - late documentation = non-compliance"
+      ],
+      "regulatory_refs": [
+        "CMS SEP-1 Severe Sepsis/Septic Shock Early Management Bundle",
+        "Surviving Sepsis Campaign 2021 Guidelines",
+        "Joint Commission infection measures"
+      ]
+    },
+    "example_queries": [
+      "My patient is 92kg with suspected UTI sepsis, lactate 4.8 - walk me through the sepsis bundle and fluid volume",
+      "When does the sepsis clock start? What needs to happen in the first hour?",
+      "Patient had blood cultures drawn at 14:00 and antibiotics at 14:45 - are we compliant with SEP-1?"
+    ]
+  },
+  {
+    "id": "us-critical-care-nurses-p09",
+    "title": "CCRN Certification and License Renewal Tracking",
+    "problem": "ICU nurses juggle multiple certifications with different renewal cycles: CCRN every 3 years (requires 100 CERPs or retesting), ACLS/BLS every 2 years, PALS every 2 years, state RN license annually or biennially. Missing a renewal can result in inability to work, loss of pay differential, or legal liability for practicing with expired credentials.",
+    "who": "All certified ICU nurses, especially travel nurses with multi-state licenses",
+    "frequency": "quarterly",
+    "time_waste_h": 3,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "ICU Nurse Certification and License Renewal Guide",
+      "one_liner": "Quick reference for renewal requirements, deadlines, CE hours, and costs for all ICU nursing certifications and licenses",
+      "data_domain": "Nursing certification and licensure renewal requirements for critical care nurses",
+      "lookup_keys": [
+        "certification_type",
+        "state",
+        "renewal_cycle",
+        "ce_requirements"
+      ],
+      "data_hints": {
+        "source_law": "State Nurse Practice Acts, AACN Certification Corporation",
+        "key_sections": [
+          "CCRN renewal requirements",
+          "Nurse Licensure Compact (NLC)",
+          "State-specific CE mandates"
+        ],
+        "key_data_points": {
+          "ccrn_renewal": "Every 3 years, 100 CERPs or retest, ~$175 renewal fee",
+          "acls_bls": "Every 2 years, AHA certification",
+          "rn_license": "Varies by state - annual or biennial, 20-30 CE hours typical",
+          "compact_license": "NLC allows practice in 41 member states with one license"
+        }
+      }
+    },
+    "example_queries": [
+      "When does CCRN expire and how many CERPs do I need to renew?",
+      "What are the CE requirements for RN license renewal in California vs Texas?",
+      "I'm a travel nurse - do I need separate licenses for each state or can I use a compact license?"
+    ]
+  },
+  {
+    "id": "us-critical-care-nurses-p10",
+    "title": "ICU Nurse Staffing Ratio Compliance",
+    "problem": "Multiple states now mandate nurse-to-patient ratios in ICUs (California 1:2, Oregon tightening to 1:4 by June 2026 for general and specific ICU ratios). Federal legislation is pending. Charge nurses must track ratios in real-time, document violations, and understand reporting requirements. Violations carry fines up to $30,000 per incident in California.",
+    "who": "Charge nurses, nurse managers, and staff nurses in states with ratio mandates",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 30000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "ICU Staffing Ratio Compliance Reference",
+      "one_liner": "State-by-state ICU nurse staffing ratio requirements, penalties, reporting obligations, and federal pending legislation",
+      "data_domain": "State and federal nurse staffing ratio laws for ICU settings",
+      "lookup_keys": [
+        "state",
+        "icu_type",
+        "ratio_requirement",
+        "penalty_amount",
+        "reporting_requirement"
+      ],
+      "data_hints": {
+        "source_law": "State Nurse Practice Acts, Nurse Staffing Standards for Hospital Patient Safety and Quality Care Act (2025)",
+        "key_sections": [
+          "California Title 22 Section 70217",
+          "Oregon HB 2697",
+          "Federal staffing bill provisions"
+        ],
+        "key_data_points": {
+          "california_icu": "1:2 nurse-to-patient, fines $15,000-$30,000",
+          "oregon_icu": "Tightening to 1:4 by June 2026, $200 per missed break",
+          "federal_penalty": "Up to $25,000 first violation, $50,000 subsequent",
+          "reporting": "Most states require written staffing plans filed annually"
+        }
+      }
+    },
+    "example_queries": [
+      "What's the required nurse-to-patient ratio for ICU in California?",
+      "What are the penalties if our unit is running 1:3 in California ICU?",
+      "What are Oregon's new staffing requirements taking effect in 2026?"
+    ]
+  },
+  {
+    "id": "us-critical-care-nurses-p11",
+    "title": "Rapid Response and Code Blue Documentation",
+    "problem": "During a code blue or rapid response, one nurse is designated as the recorder. They must document exact times of interventions, medications given (with doses), rhythm changes, vital signs, and team roles - all while chaos unfolds in real-time. Incomplete code documentation creates legal liability and hinders post-code quality review.",
+    "who": "ICU nurses participating in or leading code blue events",
+    "frequency": "weekly",
+    "time_waste_h": 1.5,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Code Blue Documentation Generator",
+      "one_liner": "Generates a structured code blue/rapid response documentation record with ACLS algorithm prompts and timestamp tracking",
+      "doc_name": "Code Blue / Rapid Response Record",
+      "variables": [
+        {
+          "name": "event_type",
+          "label": "Event type (Code Blue / Rapid Response / MET)"
+        },
+        {
+          "name": "patient_info",
+          "label": "Patient name, MRN, location"
+        },
+        {
+          "name": "event_time",
+          "label": "Time event called"
+        },
+        {
+          "name": "initial_rhythm",
+          "label": "Initial rhythm (VF/pVT/PEA/Asystole/Other)"
+        },
+        {
+          "name": "interventions",
+          "label": "Interventions with timestamps (CPR, defib, meds)"
+        },
+        {
+          "name": "medications",
+          "label": "Medications given (drug, dose, route, time)"
+        },
+        {
+          "name": "airway_management",
+          "label": "Airway management (intubation, time, ETT size)"
+        },
+        {
+          "name": "rhythm_changes",
+          "label": "Rhythm changes with timestamps"
+        },
+        {
+          "name": "team_members",
+          "label": "Code team members and roles"
+        },
+        {
+          "name": "outcome",
+          "label": "Outcome (ROSC / expired / transferred / ongoing)"
+        },
+        {
+          "name": "rosc_time",
+          "label": "Time of ROSC if applicable"
+        },
+        {
+          "name": "family_notified",
+          "label": "Family notification status"
+        }
+      ],
+      "structure_hint": "Header (patient, event type, time) -> Initial assessment (rhythm, vitals) -> Chronological intervention log (time-stamped) -> Medication log -> Airway management -> Outcome -> Post-event orders -> Team members -> Family communication"
+    },
+    "example_queries": [
+      "Help me document a code blue - patient found in VF at 02:15, 3 rounds of CPR, 2 shocks, epi x3, ROSC at 02:28",
+      "Generate a rapid response record for a patient with new-onset SVT, rate 180, who converted with adenosine",
+      "What should be included in code documentation for legal protection?"
+    ]
+  },
+  {
+    "id": "us-critical-care-nurses-p12",
+    "title": "Early Deterioration Warning Signs Assessment",
+    "problem": "Missing subtle signs of clinical deterioration is one of the top fears of ICU nurses. Recognizing early sepsis, impending respiratory failure, neurological decline, or hemodynamic instability before a full crisis requires integrating multiple data points. New ICU nurses especially struggle with pattern recognition that experienced nurses develop over years.",
+    "who": "New graduate ICU nurses and nurses in their first 1-3 years of ICU practice",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 100000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "ICU Patient Deterioration Advisor",
+      "one_liner": "Analyzes current vital signs, labs, and clinical findings to identify early warning patterns of deterioration and recommend escalation actions",
+      "expertise_area": "Early recognition of clinical deterioration patterns in critically ill patients",
+      "decision_criteria": [
+        "vital sign trends",
+        "lab value changes",
+        "urine output trends",
+        "mental status changes",
+        "respiratory pattern changes",
+        "vasopressor requirements"
+      ],
+      "context_needed": [
+        "current vitals vs baseline",
+        "trending lab values",
+        "medication changes",
+        "recent procedures",
+        "underlying diagnosis"
+      ]
+    },
+    "example_queries": [
+      "My patient's MAP has been trending down from 72 to 65 over 4 hours, urine output dropped to 20mL/hr, lactate went from 1.8 to 3.2 - should I be worried?",
+      "Patient is increasingly agitated, RR went from 18 to 28, SpO2 dropped from 96 to 92 on 4L NC - what could be happening?",
+      "Post-op CABG patient has new-onset AFib with RVR rate 142, BP holding at 100/60 - what's my priority assessment and when do I escalate?"
+    ]
+  },
+  {
+    "id": "us-critical-care-nurses-p13",
+    "title": "ICU Sedation and Pain Assessment Scoring",
+    "problem": "ICU nurses must continuously assess sedation depth (RASS scale), pain (CPOT or BPS for intubated patients), and delirium (CAM-ICU) to titrate sedatives and analgesics. Over-sedation prolongs ventilation and increases delirium risk. Under-sedation causes self-extubation and line removal. Balancing these scores with daily sedation vacations is complex.",
+    "who": "ICU nurses managing sedated and mechanically ventilated patients",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "ICU Sedation, Pain, and Delirium Assessment Guide",
+      "one_liner": "Quick reference for RASS, CPOT, BPS, and CAM-ICU scoring with target ranges, sedation vacation protocols, and titration guidance",
+      "data_domain": "ICU sedation assessment scales, pain scoring for non-verbal patients, and delirium screening",
+      "lookup_keys": [
+        "assessment_scale",
+        "score_interpretation",
+        "target_range",
+        "medication_class"
+      ],
+      "data_hints": {
+        "source_law": "PADIS Guidelines 2018 (Pain, Agitation/Sedation, Delirium, Immobility, Sleep), SCCM Clinical Practice Guidelines",
+        "key_sections": [
+          "RASS scoring -5 to +4",
+          "CPOT scoring 0-8",
+          "CAM-ICU positive/negative",
+          "Daily awakening trial protocol"
+        ],
+        "key_data_points": {
+          "rass_target": "-2 to 0 for most ICU patients",
+          "cpot_pain_threshold": ">=3 indicates significant pain",
+          "cam_icu_delirium": "Feature 1+2 plus Feature 3 or 4 = positive",
+          "sedation_vacation": "Daily spontaneous awakening trial unless contraindicated"
+        }
+      }
+    },
+    "example_queries": [
+      "How do I score RASS? My patient opens eyes to voice but doesn't sustain eye contact",
+      "Patient is intubated and grimacing, pulling at tubes - how do I score CPOT?",
+      "Walk me through CAM-ICU assessment - patient seems confused and inattentive after sedation vacation"
+    ]
+  },
+  {
+    "id": "us-critical-care-nurses-p14",
+    "title": "Moral Distress and Burnout Self-Assessment",
+    "problem": "25-33% of critical care nurses experience severe burnout, with 86% having at least one symptom. Moral distress from futile care situations, repeated patient deaths, and understaffing compounds over time. Nurses often don't recognize burnout until they're already in crisis. No structured self-assessment tools are readily available at the bedside.",
+    "who": "All ICU nurses, especially those with 1-5 years of ICU experience",
+    "frequency": "monthly",
+    "time_waste_h": 2,
+    "money_risk_usd": 10000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "ICU Nurse Burnout and Moral Distress Advisor",
+      "one_liner": "Provides confidential burnout self-assessment, identifies moral distress triggers, and recommends evidence-based coping strategies and resources",
+      "expertise_area": "Critical care nurse mental health, burnout prevention, moral distress management, and resilience building",
+      "decision_criteria": [
+        "emotional exhaustion level",
+        "depersonalization indicators",
+        "sense of personal accomplishment",
+        "moral distress frequency",
+        "physical symptoms",
+        "sleep quality"
+      ],
+      "context_needed": [
+        "years of ICU experience",
+        "recent patient outcomes",
+        "staffing conditions",
+        "work schedule",
+        "support system availability"
+      ]
+    },
+    "example_queries": [
+      "I've been dreading going to work for the past month and I can't stop thinking about a patient who died on my shift - is this burnout?",
+      "We've had 5 deaths in my unit this week and I feel nothing anymore - is that normal?",
+      "What resources are available for ICU nurses dealing with moral distress from prolonged futile care?"
+    ]
+  }
+]

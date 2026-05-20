@@ -1,0 +1,734 @@
+[
+  {
+    "id": "us-family-medicine-physicians-p01",
+    "title": "E/M Coding Level Calculator",
+    "problem": "Family medicine physicians see 15-20 patients daily and must assign correct E/M (Evaluation and Management) CPT codes for each encounter. Undercoding loses revenue ($20-50 per visit), overcoding triggers audits and fraud penalties. Manually determining the correct level based on medical decision-making complexity, time, and documentation is tedious and error-prone.",
+    "who": "All family medicine physicians, especially early-career and employed physicians",
+    "frequency": "daily",
+    "time_waste_h": 5,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "E/M Code Level Calculator",
+      "one_liner": "Determines correct E/M CPT code level based on visit complexity, medical decision-making, and time spent",
+      "inputs": [
+        {
+          "name": "visit_type",
+          "type": "select",
+          "label": "Visit type (new patient / established patient)"
+        },
+        {
+          "name": "number_of_problems",
+          "type": "number",
+          "label": "Number of problems addressed"
+        },
+        {
+          "name": "problem_severity",
+          "type": "select",
+          "label": "Highest problem severity (minimal / low / moderate / high)"
+        },
+        {
+          "name": "data_reviewed",
+          "type": "select",
+          "label": "Amount of data reviewed (minimal / limited / moderate / extensive)"
+        },
+        {
+          "name": "risk_level",
+          "type": "select",
+          "label": "Risk of complications (minimal / low / moderate / high)"
+        },
+        {
+          "name": "total_time_minutes",
+          "type": "number",
+          "label": "Total time spent (minutes, including documentation)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "recommended_cpt",
+          "label": "Recommended CPT code"
+        },
+        {
+          "name": "mdm_level",
+          "label": "Medical Decision-Making level"
+        },
+        {
+          "name": "time_based_code",
+          "label": "Time-based CPT code (if applicable)"
+        },
+        {
+          "name": "expected_reimbursement",
+          "label": "Expected Medicare reimbursement (USD)"
+        }
+      ],
+      "formula_hint": "MDM determined by 2-of-3 rule: problems, data, risk. Time-based coding uses total time thresholds: 99212=10-19min, 99213=20-29min, 99214=30-39min, 99215=40-54min. Higher of MDM-based or time-based code applies.",
+      "rates": {
+        "99211_medicare": 23,
+        "99212_medicare": 58,
+        "99213_medicare": 97,
+        "99214_medicare": 143,
+        "99215_medicare": 193,
+        "99202_medicare": 75,
+        "99203_medicare": 112,
+        "99204_medicare": 167,
+        "99205_medicare": 224
+      }
+    },
+    "example_queries": [
+      "I saw an established patient with 3 chronic conditions, reviewed outside records and labs, moderate risk — what code?",
+      "Spent 45 minutes total on a complex new patient visit, what E/M level should I bill?"
+    ]
+  },
+  {
+    "id": "us-family-medicine-physicians-p02",
+    "title": "RVU and Compensation Calculator",
+    "problem": "Family physicians in employed settings are compensated based on work RVUs (Relative Value Units). Tracking productivity, understanding how each visit type contributes to RVU targets, and projecting annual compensation requires complex calculations across different CPT codes and conversion factors. Many physicians don't realize they're leaving money on the table until year-end reconciliation.",
+    "who": "Employed family physicians with RVU-based compensation",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "RVU Productivity & Compensation Calculator",
+      "one_liner": "Calculates work RVUs from visit mix and projects annual compensation based on conversion factor",
+      "inputs": [
+        {
+          "name": "visits_99213",
+          "type": "number",
+          "label": "Number of 99213 visits per week"
+        },
+        {
+          "name": "visits_99214",
+          "type": "number",
+          "label": "Number of 99214 visits per week"
+        },
+        {
+          "name": "visits_99215",
+          "type": "number",
+          "label": "Number of 99215 visits per week"
+        },
+        {
+          "name": "visits_99203",
+          "type": "number",
+          "label": "Number of new patient 99203 visits per week"
+        },
+        {
+          "name": "visits_99204",
+          "type": "number",
+          "label": "Number of new patient 99204 visits per week"
+        },
+        {
+          "name": "procedures_per_week",
+          "type": "number",
+          "label": "Procedure RVUs per week"
+        },
+        {
+          "name": "conversion_factor",
+          "type": "number",
+          "label": "Dollars per RVU (your contract)"
+        },
+        {
+          "name": "annual_rvu_target",
+          "type": "number",
+          "label": "Annual RVU target (if applicable)"
+        },
+        {
+          "name": "weeks_worked",
+          "type": "number",
+          "label": "Clinical weeks per year"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "weekly_wrvus",
+          "label": "Weekly work RVUs"
+        },
+        {
+          "name": "annual_wrvus",
+          "label": "Projected annual work RVUs"
+        },
+        {
+          "name": "projected_compensation",
+          "label": "Projected annual compensation (USD)"
+        },
+        {
+          "name": "target_gap",
+          "label": "RVUs above/below target"
+        },
+        {
+          "name": "revenue_per_visit_avg",
+          "label": "Average RVU per visit"
+        }
+      ],
+      "formula_hint": "wRVU per CPT: 99213=1.30, 99214=1.92, 99215=2.80, 99203=1.60, 99204=2.60. Weekly wRVU = sum(visits * wRVU_each). Annual = weekly * weeks_worked. Compensation = annual_wrvus * conversion_factor. National median conversion factor ~$55-65/RVU for FM.",
+      "rates": {
+        "wrvu_99213": 1.3,
+        "wrvu_99214": 1.92,
+        "wrvu_99215": 2.8,
+        "wrvu_99203": 1.6,
+        "wrvu_99204": 2.6,
+        "wrvu_99205": 3.5,
+        "median_conversion_factor": 60
+      }
+    },
+    "example_queries": [
+      "I see 12 99213s, 5 99214s, and 2 new patients per week at $58/RVU. What's my projected annual comp?",
+      "I need to hit 4,800 RVUs this year. I'm at 2,100 through May — am I on track?"
+    ]
+  },
+  {
+    "id": "us-family-medicine-physicians-p03",
+    "title": "MIPS Score Estimator",
+    "problem": "Family physicians must report MIPS (Merit-based Incentive Payment System) quality measures annually or face Medicare payment adjustments of up to -9%. Calculating the composite score across Quality, Improvement Activities, Promoting Interoperability, and Cost categories is confusing. Many small practices lose thousands in reimbursement due to poor MIPS performance they didn't track proactively.",
+    "who": "All Medicare-participating family physicians, especially small/independent practices",
+    "frequency": "quarterly",
+    "time_waste_h": 8,
+    "money_risk_usd": 25000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "MIPS Composite Score Estimator",
+      "one_liner": "Estimates MIPS composite score and projected Medicare payment adjustment from category scores",
+      "inputs": [
+        {
+          "name": "quality_points",
+          "type": "number",
+          "label": "Quality category points earned (out of 70 max)"
+        },
+        {
+          "name": "quality_measures_reported",
+          "type": "number",
+          "label": "Number of quality measures reported"
+        },
+        {
+          "name": "pi_score",
+          "type": "number",
+          "label": "Promoting Interoperability score (0-100)"
+        },
+        {
+          "name": "ia_activities",
+          "type": "number",
+          "label": "Number of Improvement Activities completed (high-weighted count double)"
+        },
+        {
+          "name": "cost_score",
+          "type": "number",
+          "label": "Cost category score (CMS calculated, 0-100)"
+        },
+        {
+          "name": "medicare_revenue",
+          "type": "number",
+          "label": "Annual Medicare Part B revenue (USD)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "composite_score",
+          "label": "MIPS Composite Score (0-100)"
+        },
+        {
+          "name": "payment_adjustment",
+          "label": "Projected payment adjustment percentage"
+        },
+        {
+          "name": "dollar_impact",
+          "label": "Estimated dollar impact on Medicare revenue"
+        },
+        {
+          "name": "category_breakdown",
+          "label": "Score breakdown by category"
+        },
+        {
+          "name": "improvement_recommendations",
+          "label": "Areas to improve score"
+        }
+      ],
+      "formula_hint": "Composite = Quality(30%)*quality_pct + Cost(30%)*cost_pct + PI(25%)*pi_pct + IA(15%)*ia_pct. Quality_pct = points/max_points. IA: need 40 points (high=20, medium=10). Performance threshold ~75 points for neutral adjustment. Exceptional bonus above 89.",
+      "rates": {
+        "quality_weight": 0.3,
+        "cost_weight": 0.3,
+        "pi_weight": 0.25,
+        "ia_weight": 0.15,
+        "max_negative_adjustment": -0.09,
+        "exceptional_threshold": 89
+      }
+    },
+    "example_queries": [
+      "I reported 6 quality measures averaging 8 points each, did 4 improvement activities, and got 85 on Promoting Interoperability. What's my MIPS score?",
+      "My MIPS composite score is 45 — how much will I lose on Medicare payments?"
+    ]
+  },
+  {
+    "id": "us-family-medicine-physicians-p04",
+    "title": "Prior Authorization Request Generator",
+    "problem": "Family physicians spend an average of 14 hours per week on prior authorizations. Each PA requires specific clinical justification language that matches insurer criteria. Denied PAs delay patient care and require time-consuming appeals. Having a properly structured PA letter with medical necessity language dramatically increases approval rates.",
+    "who": "All family medicine physicians and their office staff",
+    "frequency": "daily",
+    "time_waste_h": 14,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Prior Authorization Letter Generator",
+      "one_liner": "Generates a prior authorization request letter with medical necessity justification for medications, procedures, and referrals",
+      "doc_name": "Prior Authorization Request Letter",
+      "variables": [
+        {
+          "name": "patient_age_sex",
+          "label": "Patient age and sex"
+        },
+        {
+          "name": "diagnosis",
+          "label": "Primary diagnosis with ICD-10 code"
+        },
+        {
+          "name": "requested_item",
+          "label": "Medication/procedure/referral being requested"
+        },
+        {
+          "name": "clinical_rationale",
+          "label": "Clinical rationale and symptoms"
+        },
+        {
+          "name": "prior_treatments",
+          "label": "Prior treatments tried and failed (step therapy)"
+        },
+        {
+          "name": "insurer_name",
+          "label": "Insurance company name"
+        },
+        {
+          "name": "urgency",
+          "label": "Urgency level (routine / urgent / emergent)"
+        }
+      ],
+      "structure_hint": "Header (physician info, date, insurer) -> Patient demographics -> Diagnosis and clinical history -> Medical necessity statement -> Prior treatments tried/failed (step therapy documentation) -> Specific request with CPT/HCPCS/NDC codes -> Supporting evidence/guidelines -> Urgency statement if applicable -> Physician signature block"
+    },
+    "example_queries": [
+      "Write a prior auth letter for Ozempic for a type 2 diabetic who failed metformin and glipizide, BMI 34",
+      "Generate PA request for MRI lumbar spine, patient with 6 weeks of radiculopathy not responding to PT and NSAIDs"
+    ]
+  },
+  {
+    "id": "us-family-medicine-physicians-p05",
+    "title": "Chronic Care Management Billing Checklist",
+    "problem": "Chronic Care Management (CCM) codes (99490, 99491, 99487) represent significant additional revenue ($42-$130+ per patient per month) but require specific documentation, time tracking, and patient consent. Many family physicians leave this revenue on the table because the requirements seem complex. Those who bill CCM improperly face audit risk and clawbacks.",
+    "who": "Family physicians managing patients with 2+ chronic conditions",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 100000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "CCM Billing Compliance Checklist",
+      "one_liner": "Step-by-step checklist ensuring proper documentation and billing for Chronic Care Management services",
+      "steps": [
+        "Step 1: Confirm patient has 2+ chronic conditions expected to last 12+ months",
+        "Step 2: Obtain and document verbal or written patient consent for CCM (required before first billing)",
+        "Step 3: Confirm only one provider is billing CCM for this patient this month",
+        "Step 4: Create or update comprehensive care plan in EHR",
+        "Step 5: Track non-face-to-face clinical staff time (minimum 20 minutes for 99490)",
+        "Step 6: Document all care coordination activities with dates and times",
+        "Step 7: Ensure 24/7 access to care team is available to patient",
+        "Step 8: For complex CCM (99487): verify 60+ minutes of clinical staff time",
+        "Step 9: Submit claim with appropriate ICD-10 codes for qualifying chronic conditions",
+        "Step 10: Verify no same-day billing conflicts with TCM or other care management codes"
+      ],
+      "warnings": [
+        "Warning: Patient consent must be documented BEFORE first CCM billing — retroactive consent is not valid",
+        "Warning: Only ONE practitioner can bill CCM per patient per calendar month",
+        "Warning: Time spent during face-to-face visits does NOT count toward CCM time requirements",
+        "Warning: General supervision required — billing physician must be available, not necessarily present"
+      ],
+      "regulatory_refs": [
+        "CPT 99490",
+        "CPT 99491",
+        "CPT 99487",
+        "CPT 99489",
+        "CMS MLN Booklet ICN 909188"
+      ]
+    },
+    "example_queries": [
+      "What do I need to document to bill CCM 99490 for a diabetic/hypertensive patient?",
+      "Can I bill CCM and TCM in the same month for the same patient?"
+    ]
+  },
+  {
+    "id": "us-family-medicine-physicians-p06",
+    "title": "Medication Dosage and Interaction Checker",
+    "problem": "Family physicians prescribe across all organ systems and age groups, managing complex polypharmacy in elderly patients. Calculating weight-based pediatric doses, renal-adjusted doses, and checking multi-drug interactions across a patient's full medication list is high-stakes work. A missed interaction or dosing error can result in adverse events and malpractice claims.",
+    "who": "All family medicine physicians, especially those managing elderly patients with polypharmacy",
+    "frequency": "daily",
+    "time_waste_h": 3,
+    "money_risk_usd": 250000,
+    "source": "career_psychology",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Dosage Calculator & Interaction Checker",
+      "one_liner": "Calculates weight-based and renal-adjusted medication doses and flags common dangerous interactions",
+      "inputs": [
+        {
+          "name": "medication",
+          "type": "text",
+          "label": "Medication name"
+        },
+        {
+          "name": "indication",
+          "type": "text",
+          "label": "Indication / diagnosis"
+        },
+        {
+          "name": "patient_weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        },
+        {
+          "name": "patient_age",
+          "type": "number",
+          "label": "Patient age (years)"
+        },
+        {
+          "name": "creatinine_clearance",
+          "type": "number",
+          "label": "Creatinine clearance (mL/min, if applicable)"
+        },
+        {
+          "name": "current_medications",
+          "type": "text",
+          "label": "Current medication list (comma-separated)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "recommended_dose",
+          "label": "Recommended dose and frequency"
+        },
+        {
+          "name": "renal_adjusted_dose",
+          "label": "Renal-adjusted dose (if applicable)"
+        },
+        {
+          "name": "pediatric_dose",
+          "label": "Weight-based pediatric dose (if applicable)"
+        },
+        {
+          "name": "max_daily_dose",
+          "label": "Maximum daily dose"
+        },
+        {
+          "name": "interactions",
+          "label": "Flagged drug interactions with severity"
+        },
+        {
+          "name": "monitoring",
+          "label": "Recommended monitoring labs"
+        }
+      ],
+      "formula_hint": "Pediatric dose = weight_kg * mg_per_kg_per_day / doses_per_day. Renal adjustment: CrCl 30-60 reduce by 50%, CrCl <30 reduce by 75% (drug-specific). Flag interactions by class: ACEi+K-sparing=hyperkalemia, warfarin+NSAID=bleeding, statin+macrolide=rhabdomyolysis.",
+      "rates": {}
+    },
+    "example_queries": [
+      "What's the amoxicillin dose for a 22kg child with otitis media?",
+      "Patient on warfarin, metoprolol, lisinopril, and amlodipine — I want to add azithromycin. Any interactions?"
+    ]
+  },
+  {
+    "id": "us-family-medicine-physicians-p07",
+    "title": "Preventive Care Screening Schedule Reference",
+    "problem": "Family physicians must track age-specific and risk-based preventive screening recommendations from USPSTF, CDC, ACIP, and ACS. Guidelines update frequently (e.g., lung cancer screening expanded in 2021, anxiety screening added 2023). Missing a recommended screening exposes patients to harm and the physician to malpractice risk. It also impacts MIPS quality measures.",
+    "who": "All family medicine physicians performing annual wellness visits",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Preventive Care Screening Schedule",
+      "one_liner": "Quick lookup of age/sex/risk-appropriate preventive screenings based on current USPSTF and CDC guidelines",
+      "data_domain": "USPSTF, CDC, ACIP, and ACS preventive care recommendations for primary care",
+      "lookup_keys": [
+        "patient_age",
+        "patient_sex",
+        "risk_factors",
+        "screening_type"
+      ],
+      "data_hints": {
+        "source_law": "USPSTF A/B recommendations, Affordable Care Act Section 2713",
+        "key_sections": [
+          "Colorectal cancer: 45-75 years",
+          "Breast cancer: 40+ biennial mammography",
+          "Cervical cancer: 21-65 Pap/HPV",
+          "Lung cancer: 50-80, 20+ pack-year history",
+          "Diabetes: 35-70 overweight/obese",
+          "Depression screening: all adults",
+          "Anxiety screening: adults under 65",
+          "AAA: men 65-75 who ever smoked",
+          "Hepatitis C: all adults 18-79",
+          "HIV: 15-65 years",
+          "Immunization schedule: ACIP current year"
+        ]
+      }
+    },
+    "example_queries": [
+      "What screenings are due for a 52-year-old female with no significant history?",
+      "When should I start lung cancer screening? Patient is 55, smoked 1 pack/day for 25 years, quit 3 years ago"
+    ]
+  },
+  {
+    "id": "us-family-medicine-physicians-p08",
+    "title": "SOAP Note Generator",
+    "problem": "Family physicians spend 1-2 hours after clinic completing documentation. Each encounter requires a structured SOAP note with proper medical terminology, assessment, and plan that supports the E/M code billed. Poor documentation leads to audit failures, denied claims, and malpractice vulnerability. This is the #1 driver of physician burnout.",
+    "who": "All family medicine physicians, especially those without AI scribes",
+    "frequency": "daily",
+    "time_waste_h": 10,
+    "money_risk_usd": 20000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "SOAP Note Generator",
+      "one_liner": "Generates structured SOAP encounter notes from key clinical inputs that support proper E/M coding",
+      "doc_name": "SOAP Encounter Note",
+      "variables": [
+        {
+          "name": "visit_type",
+          "label": "Visit type (follow-up / new patient / AWV / well-child)"
+        },
+        {
+          "name": "chief_complaint",
+          "label": "Chief complaint"
+        },
+        {
+          "name": "hpi_elements",
+          "label": "HPI key elements (onset, location, duration, severity, context)"
+        },
+        {
+          "name": "exam_findings",
+          "label": "Key physical exam findings"
+        },
+        {
+          "name": "assessment",
+          "label": "Assessment / diagnoses with ICD-10"
+        },
+        {
+          "name": "plan",
+          "label": "Plan (medications, tests, referrals, follow-up)"
+        },
+        {
+          "name": "chronic_conditions",
+          "label": "Active chronic conditions addressed"
+        }
+      ],
+      "structure_hint": "Subjective (CC, HPI, ROS, PMH/PSH/FH/SH) -> Objective (Vitals, Physical Exam by system) -> Assessment (numbered problem list with ICD-10) -> Plan (per problem: medications, labs, imaging, referrals, patient education, follow-up timeline) -> Time statement if billing by time"
+    },
+    "example_queries": [
+      "Generate a SOAP note for a 58-year-old male follow-up for uncontrolled type 2 diabetes, A1c 8.9, currently on metformin 1000mg BID",
+      "Write an encounter note for a well-child visit, 4-year-old, routine immunizations due"
+    ]
+  },
+  {
+    "id": "us-family-medicine-physicians-p09",
+    "title": "HIPAA Breach Response Checklist",
+    "problem": "Family medicine practices handle thousands of patient records and a single HIPAA breach can cost $50,000+ per incident. When a potential breach occurs (lost laptop, misdirected fax, staff accessing records improperly), physicians often don't know the required response timeline or notification obligations. The 60-day notification rule and state-specific requirements add complexity.",
+    "who": "Practice owners, medical directors, and privacy officers in family medicine practices",
+    "frequency": "yearly",
+    "time_waste_h": 20,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "HIPAA Breach Response Protocol",
+      "one_liner": "Step-by-step breach response checklist with notification timelines and documentation requirements",
+      "steps": [
+        "Step 1: Identify and contain the breach immediately — stop ongoing disclosure, recover data if possible",
+        "Step 2: Document discovery date (this starts the 60-day clock for notifications)",
+        "Step 3: Conduct risk assessment: nature of PHI, who accessed it, whether it was actually acquired/viewed, extent of mitigation",
+        "Step 4: Apply the 4-factor test to determine if breach exception applies (unintentional, authorized person, unable to retain)",
+        "Step 5: If breach confirmed — notify affected individuals within 60 days of discovery (written notice)",
+        "Step 6: If 500+ individuals affected — notify HHS immediately and local media",
+        "Step 7: If fewer than 500 — log and report to HHS annually (by March 1 of following year)",
+        "Step 8: Check state breach notification laws (may have shorter timelines than HIPAA)",
+        "Step 9: Document all response actions and corrective measures taken",
+        "Step 10: Update HIPAA policies and provide staff retraining to prevent recurrence"
+      ],
+      "warnings": [
+        "Warning: The 60-day clock starts at DISCOVERY, not when investigation concludes",
+        "Warning: Failure to notify HHS for 500+ person breaches can result in separate penalties",
+        "Warning: State laws may require faster notification (e.g., California: 15 days for some entities)",
+        "Warning: Business associates must notify covered entity within 60 days of discovering breach"
+      ],
+      "regulatory_refs": [
+        "45 CFR 164.400-414",
+        "HITECH Act Section 13402",
+        "HHS Breach Notification Rule"
+      ]
+    },
+    "example_queries": [
+      "A staff member accessed a patient record without authorization — is this a reportable HIPAA breach?",
+      "We sent lab results to the wrong patient by fax — what do we need to do?"
+    ]
+  },
+  {
+    "id": "us-family-medicine-physicians-p10",
+    "title": "Disability and FMLA Documentation Generator",
+    "problem": "Family physicians frequently complete disability certifications, FMLA paperwork, and return-to-work forms. These forms require specific functional limitation language that matches legal definitions. Improperly completed forms delay patient benefits, generate rework, and can expose the physician to liability if language is too vague or too definitive.",
+    "who": "All family medicine physicians seeing working-age adults",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Disability & FMLA Form Completion Guide",
+      "one_liner": "Generates functional limitation language and clinical justification for disability, FMLA, and return-to-work documentation",
+      "doc_name": "Medical Certification / Disability Statement",
+      "variables": [
+        {
+          "name": "form_type",
+          "label": "Form type (FMLA / short-term disability / long-term disability / ADA accommodation / return-to-work)"
+        },
+        {
+          "name": "diagnosis",
+          "label": "Diagnosis with ICD-10"
+        },
+        {
+          "name": "functional_limitations",
+          "label": "Specific functional limitations (lifting, standing, sitting, cognitive)"
+        },
+        {
+          "name": "treatment_plan",
+          "label": "Current treatment plan"
+        },
+        {
+          "name": "expected_duration",
+          "label": "Expected duration of limitations"
+        },
+        {
+          "name": "work_restrictions",
+          "label": "Specific work restrictions"
+        }
+      ],
+      "structure_hint": "Patient identification -> Diagnosis and clinical findings -> Specific functional limitations (use measurable terms: 'cannot lift >10 lbs', 'cannot stand >30 min') -> Treatment plan and prognosis -> Expected duration -> Work restrictions with specificity -> Physician attestation"
+    },
+    "example_queries": [
+      "Help me fill out FMLA certification for a patient with major depression who can't work full days",
+      "Write disability language for a patient with lumbar disc herniation — what functional limitations should I document?"
+    ]
+  },
+  {
+    "id": "us-family-medicine-physicians-p11",
+    "title": "Malpractice Risk Advisor",
+    "problem": "Malpractice lawsuits are among family physicians' greatest fears. The most common claims involve diagnostic errors, medication errors, and failure to follow up on test results. Physicians often don't know whether specific clinical scenarios put them at elevated legal risk or what documentation practices protect them. Average malpractice payout for family medicine exceeds $300,000.",
+    "who": "All family medicine physicians, especially early-career and those in high-risk states",
+    "frequency": "monthly",
+    "time_waste_h": 2,
+    "money_risk_usd": 300000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Malpractice Risk Advisor",
+      "one_liner": "Analyzes clinical scenarios for malpractice risk and recommends documentation and follow-up practices to mitigate liability",
+      "expertise_area": "Medical malpractice risk assessment and mitigation for family medicine",
+      "decision_criteria": [
+        "clinical_scenario",
+        "documentation_completeness",
+        "follow_up_system",
+        "informed_consent",
+        "referral_patterns",
+        "state_jurisdiction"
+      ],
+      "context_needed": [
+        "career_psychology.fears",
+        "regulatory.penalties",
+        "regulatory.laws"
+      ]
+    },
+    "example_queries": [
+      "Patient refused colonoscopy referral — how do I document this to protect myself?",
+      "I found an incidental lung nodule on chest X-ray. What's my follow-up obligation and liability if I miss tracking it?"
+    ]
+  },
+  {
+    "id": "us-family-medicine-physicians-p12",
+    "title": "CME Tracker and Board Recertification Reference",
+    "problem": "Family physicians must complete 50+ CME hours per cycle, maintain ABFM certification (recertification every 7-10 years), and track state-specific CME requirements (many states require specific topics like opioid prescribing, pain management, or cultural competency). Missing deadlines risks license lapse or board certification expiration. Requirements vary significantly by state.",
+    "who": "All board-certified family physicians, especially those licensed in multiple states",
+    "frequency": "quarterly",
+    "time_waste_h": 4,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "CME & Recertification Requirements Reference",
+      "one_liner": "Quick lookup of state-specific CME requirements, ABFM recertification milestones, and mandatory topic hours",
+      "data_domain": "State medical board CME requirements, ABFM continuing certification requirements",
+      "lookup_keys": [
+        "state",
+        "license_type",
+        "certification_board",
+        "specialty_topic"
+      ],
+      "data_hints": {
+        "source_law": "State Medical Practice Acts, ABFM Continuing Certification Program",
+        "key_sections": [
+          "ABFM: 50 CME points per 3-year stage",
+          "ABFM Knowledge Self-Assessment (KSA): quarterly",
+          "ABFM Performance Improvement: ongoing",
+          "State-mandated topics: opioid/pain (most states), suicide prevention (some), implicit bias (CA, MI)",
+          "DEA: 8 hours opioid training for DEA renewal (DEA MATE Act)",
+          "Renewal cycles: 1-3 years depending on state"
+        ]
+      }
+    },
+    "example_queries": [
+      "What CME requirements do I need for Texas license renewal?",
+      "I'm due for ABFM recertification in 2027 — what do I need to complete this year?"
+    ]
+  },
+  {
+    "id": "us-family-medicine-physicians-p13",
+    "title": "Annual Wellness Visit (AWV) Documentation Checklist",
+    "problem": "The Medicare Annual Wellness Visit is a key revenue and quality opportunity but has specific required elements that differ from a standard physical exam. Many family physicians confuse AWV with a regular annual physical, leading to denied claims or missed billing opportunities. Properly structured AWVs also feed MIPS quality measures and HCC risk adjustment coding.",
+    "who": "Family physicians seeing Medicare patients",
+    "frequency": "daily",
+    "time_waste_h": 3,
+    "money_risk_usd": 40000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Medicare AWV Documentation Checklist",
+      "one_liner": "Ensures all required elements of Initial and Subsequent Annual Wellness Visits are documented for clean billing",
+      "steps": [
+        "Step 1: Verify patient eligibility (Medicare Part B, 12+ months since Welcome to Medicare or last AWV)",
+        "Step 2: Update Health Risk Assessment (HRA) questionnaire — required element",
+        "Step 3: Review and update medical/surgical history and family history",
+        "Step 4: Update current medications and providers list",
+        "Step 5: Measure height, weight, BMI, blood pressure",
+        "Step 6: Assess cognitive function (observation or structured tool)",
+        "Step 7: Screen for depression (PHQ-2 or PHQ-9)",
+        "Step 8: Assess functional ability and safety (fall risk, ADL/IADL)",
+        "Step 9: Update personalized prevention plan with screening schedule",
+        "Step 10: Provide advance care planning discussion if appropriate (bill G0505 separately)",
+        "Step 11: Capture all active diagnoses for HCC coding — review problem list thoroughly",
+        "Step 12: Bill G0438 (Initial AWV) or G0439 (Subsequent AWV) — do NOT bill with 99213-99215 for same problems"
+      ],
+      "warnings": [
+        "Warning: AWV is NOT a head-to-toe physical exam — avoid documenting it as such",
+        "Warning: Do NOT bill E/M and AWV for the same conditions — separate modifier-25 E/M only for distinct new problems",
+        "Warning: Health Risk Assessment is REQUIRED — missing HRA = denied claim",
+        "Warning: HCC coding during AWV directly impacts practice's risk-adjusted revenue in value-based contracts"
+      ],
+      "regulatory_refs": [
+        "SSA Section 1861(hhh)",
+        "CMS MLN006724",
+        "CPT G0438",
+        "CPT G0439"
+      ]
+    },
+    "example_queries": [
+      "What elements are required for a subsequent Medicare Annual Wellness Visit?",
+      "Can I bill a 99214 on the same day as an AWV?"
+    ]
+  }
+]

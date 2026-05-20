@@ -1,0 +1,701 @@
+[
+  {
+    "id": "us-anesthesiologist-assistants-p01",
+    "title": "Anesthesia Drug Dosage Calculator",
+    "problem": "Anesthesiologist Assistants must calculate precise drug dosages for induction, maintenance, and emergency medications based on patient weight, age, comorbidities, and renal/hepatic function. Manual calculation under time pressure in the OR increases risk of dosing errors, which can lead to adverse patient outcomes, malpractice claims, and regulatory action.",
+    "who": "CAAs administering anesthesia in operating rooms and ambulatory surgical centers",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Anesthesia Dosage Calculator",
+      "one_liner": "Calculates weight-based and adjusted dosages for common anesthesia induction, maintenance, and emergency drugs",
+      "inputs": [
+        {
+          "name": "patient_weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        },
+        {
+          "name": "patient_age",
+          "type": "number",
+          "label": "Patient age (years)"
+        },
+        {
+          "name": "drug_name",
+          "type": "string",
+          "label": "Drug name (e.g., propofol, fentanyl, succinylcholine)"
+        },
+        {
+          "name": "renal_impairment",
+          "type": "boolean",
+          "label": "Renal impairment (yes/no)"
+        },
+        {
+          "name": "hepatic_impairment",
+          "type": "boolean",
+          "label": "Hepatic impairment (yes/no)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "induction_dose",
+          "label": "Induction dose (mg or mcg)"
+        },
+        {
+          "name": "maintenance_range",
+          "label": "Maintenance dose range"
+        },
+        {
+          "name": "max_dose",
+          "label": "Maximum recommended dose"
+        },
+        {
+          "name": "adjustment_notes",
+          "label": "Dose adjustment notes"
+        }
+      ],
+      "formula_hint": "propofol induction = 1.5-2.5 mg/kg; fentanyl = 1-2 mcg/kg; succinylcholine = 1-1.5 mg/kg; adjust for age >65 (reduce 20-30%), renal/hepatic impairment",
+      "rates": {
+        "propofol_induction_low": 1.5,
+        "propofol_induction_high": 2.5,
+        "fentanyl_mcg_per_kg": 1.5,
+        "succinylcholine_mg_per_kg": 1.0,
+        "elderly_reduction": 0.25
+      }
+    },
+    "example_queries": [
+      "Calculate propofol induction dose for an 80 kg patient age 72 with mild renal impairment",
+      "What's the fentanyl dose for a 65 kg healthy 40 year old for a laparoscopic cholecystectomy?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologist-assistants-p02",
+    "title": "IV Fluid and Blood Product Calculator",
+    "problem": "CAAs must calculate intraoperative fluid requirements including maintenance fluids, deficit replacement, third-space losses, and blood product transfusion triggers. Errors in fluid management can cause hypovolemia, fluid overload, or transfusion reactions. Calculations vary by procedure type, patient weight, NPO duration, and estimated blood loss.",
+    "who": "CAAs managing intraoperative fluid therapy in surgical cases",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Perioperative Fluid Calculator",
+      "one_liner": "Calculates maintenance IV fluids, NPO deficit replacement, estimated blood loss replacement, and transfusion triggers",
+      "inputs": [
+        {
+          "name": "patient_weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        },
+        {
+          "name": "npo_hours",
+          "type": "number",
+          "label": "NPO duration (hours)"
+        },
+        {
+          "name": "surgery_type",
+          "type": "string",
+          "label": "Surgery type (minimal/moderate/severe trauma)"
+        },
+        {
+          "name": "estimated_blood_loss_ml",
+          "type": "number",
+          "label": "Estimated blood loss (mL)"
+        },
+        {
+          "name": "preop_hemoglobin",
+          "type": "number",
+          "label": "Pre-op hemoglobin (g/dL)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "maintenance_rate_ml_hr",
+          "label": "Maintenance rate (mL/hr)"
+        },
+        {
+          "name": "npo_deficit_ml",
+          "label": "NPO deficit (mL)"
+        },
+        {
+          "name": "third_space_loss_ml_hr",
+          "label": "Third-space loss (mL/hr)"
+        },
+        {
+          "name": "total_first_hour_ml",
+          "label": "Total first hour volume (mL)"
+        },
+        {
+          "name": "transfusion_trigger",
+          "label": "Transfusion recommended (yes/no)"
+        },
+        {
+          "name": "prbc_units",
+          "label": "Estimated pRBC units needed"
+        }
+      ],
+      "formula_hint": "4-2-1 rule: 4mL/kg first 10kg + 2mL/kg next 10kg + 1mL/kg remaining; NPO deficit = maintenance * NPO hours; third-space: minimal 2-4 mL/kg/hr, moderate 4-6, severe 6-8; transfusion trigger Hgb <7 g/dL",
+      "rates": {
+        "rule_first_10kg": 4,
+        "rule_next_10kg": 2,
+        "rule_remaining": 1,
+        "transfusion_trigger_hgb": 7.0
+      }
+    },
+    "example_queries": [
+      "Calculate fluid requirements for a 70 kg patient, NPO 8 hours, undergoing open abdominal surgery with EBL 500 mL",
+      "Does a patient with hemoglobin 7.5 and 800 mL blood loss need a transfusion?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologist-assistants-p03",
+    "title": "Pre-Operative Assessment Checklist",
+    "problem": "CAAs must complete thorough pre-operative assessments covering patient history, airway evaluation, lab results, medication reconciliation, consent verification, and anesthesia machine checks. Missing any step can delay surgery, compromise patient safety, or create liability. The checklist varies by procedure type and patient risk factors.",
+    "who": "CAAs performing pre-procedure patient assessments in hospitals and ASCs",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Pre-Op Assessment Checklist",
+      "one_liner": "Comprehensive pre-operative assessment checklist covering patient evaluation, equipment checks, and documentation requirements",
+      "steps": [
+        "Step 1: Review patient medical history - allergies, medications, prior anesthesia reactions",
+        "Step 2: Perform airway assessment - Mallampati score, neck mobility, thyromental distance, BMI",
+        "Step 3: Review and verify laboratory results - CBC, BMP, coagulation studies, type & screen if applicable",
+        "Step 4: Medication reconciliation - NPO compliance, held medications (anticoagulants, diabetic meds), continuation meds",
+        "Step 5: Verify informed consent signed and procedure site marked",
+        "Step 6: Check anesthesia machine - pipeline pressures, vaporizer levels, circuit integrity, suction, monitors calibrated",
+        "Step 7: Prepare emergency airway equipment - backup plan (video laryngoscope, LMA, surgical airway kit)",
+        "Step 8: Confirm IV access and fluid setup",
+        "Step 9: Prepare and label all medications per ASTM standards",
+        "Step 10: Brief supervising anesthesiologist on assessment findings and anesthetic plan",
+        "Step 11: Complete time-out with surgical team"
+      ],
+      "warnings": [
+        "Warning: Never proceed without verified allergy status",
+        "Warning: Document Mallampati score and any anticipated difficult airway",
+        "Warning: Confirm NPO status - aspiration risk if non-compliant"
+      ],
+      "regulatory_refs": [
+        "ASA Practice Guidelines for Preanesthesia Evaluation",
+        "Joint Commission Universal Protocol",
+        "CMS Conditions of Participation"
+      ]
+    },
+    "example_queries": [
+      "What's the full pre-op checklist for a general anesthesia case?",
+      "I have a patient with a history of difficult intubation, what extra steps do I need in my pre-op assessment?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologist-assistants-p04",
+    "title": "CME and Certification Tracker",
+    "problem": "CAAs must maintain multiple concurrent certifications (NCCAA certification, ACLS, BLS) and track CME credit requirements that vary by state. Florida requires 40 CME hours biennially, other states have different requirements. Missing renewal deadlines means loss of practice privileges. The CDQ exam must be passed every 10 years after initial 4-year period.",
+    "who": "All practicing CAAs managing multi-state licensure and certification renewals",
+    "frequency": "quarterly",
+    "time_waste_h": 4,
+    "money_risk_usd": 15000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "CAA Certification & CME Tracker",
+      "one_liner": "Quick reference for CME requirements, certification renewal timelines, and state-specific licensure deadlines",
+      "data_domain": "NCCAA certification requirements, state CME mandates, ACLS/BLS renewal schedules",
+      "lookup_keys": [
+        "state",
+        "certification_type",
+        "years_since_certification"
+      ],
+      "data_hints": {
+        "source_law": "State practice acts, NCCAA Standards",
+        "key_sections": [
+          "Florida Statutes 458.3475",
+          "NCCAA Certification Standards",
+          "NCCA Accreditation Standards 2021"
+        ],
+        "key_data": {
+          "florida_cme": "40 hours biennially",
+          "cdq_exam": "After 4 years of practice, then every 10 years",
+          "acls_renewal": "Every 2 years",
+          "bls_renewal": "Every 2 years",
+          "nccaa_accreditation": "September 18, 2025 by NCCA",
+          "authorized_states_count": 24
+        }
+      }
+    },
+    "example_queries": [
+      "When do I need to take my CDQ exam if I was certified in 2022?",
+      "What are the CME requirements for Florida CAA license renewal?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologist-assistants-p05",
+    "title": "State Licensure Requirements Reference",
+    "problem": "With 24 jurisdictions authorizing CAA practice and new states adding legislation (Virginia July 2025, Tennessee May 2025, California AB 985 pending), CAAs relocating or seeking multi-state employment must navigate varying supervision requirements, protocol filing rules, and delegatory authority models. Getting it wrong means practicing without proper authorization.",
+    "who": "CAAs considering relocation, new graduates, and CAAs seeking multi-state practice",
+    "frequency": "monthly",
+    "time_waste_h": 3,
+    "money_risk_usd": 20000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "CAA State Licensure Guide",
+      "one_liner": "State-by-state reference for CAA practice authorization, supervision models, and licensure requirements",
+      "data_domain": "CAA state practice authorization, supervision requirements, and pending legislation",
+      "lookup_keys": [
+        "state",
+        "supervision_model",
+        "licensure_status"
+      ],
+      "data_hints": {
+        "source_law": "Individual state practice acts and medical board regulations",
+        "key_sections": [
+          "Florida Statutes 458.3475",
+          "Virginia SB 882",
+          "California AB 985"
+        ],
+        "key_data": {
+          "authorized_states": 24,
+          "delegatory_states": [
+            "Kansas",
+            "Michigan",
+            "Pennsylvania",
+            "Texas"
+          ],
+          "new_2025": [
+            "Virginia (July 2025)",
+            "Tennessee (May 2025)"
+          ],
+          "pending": [
+            "California AB 985",
+            "Minnesota SF 4517"
+          ],
+          "florida_protocol": "Written protocol filed with board, updated biennially"
+        }
+      }
+    },
+    "example_queries": [
+      "Can I practice as a CAA in California?",
+      "What are the supervision requirements for CAAs in Texas vs Florida?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologist-assistants-p06",
+    "title": "Anesthesia Billing Code Reference",
+    "problem": "CAAs and their practices must use correct HCPCS modifiers and CPT codes for anesthesia services billed to CMS and private insurers. Incorrect coding (e.g., wrong modifier for medical direction vs. supervision) leads to claim denials, delayed reimbursement, and potential fraud allegations. The distinction between QZ, QX, QY, and AA modifiers is critical.",
+    "who": "CAAs documenting cases for billing, practice administrators, billing specialists working with CAA services",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 10000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Anesthesia Billing Code Guide",
+      "one_liner": "Quick lookup for anesthesia CPT codes, HCPCS modifiers, and CMS billing rules for CAA services",
+      "data_domain": "CMS anesthesia billing rules, HCPCS modifiers, CPT anesthesia codes",
+      "lookup_keys": [
+        "modifier_code",
+        "procedure_type",
+        "supervision_level"
+      ],
+      "data_hints": {
+        "source_law": "CMS Medicare Claims Processing Manual, CPT Guidelines",
+        "key_sections": [
+          "CMS Chapter 12 - Physicians/Nonphysician Practitioners",
+          "ASA Relative Value Guide"
+        ],
+        "key_data": {
+          "QZ": "CRNA without medical direction",
+          "QX": "CRNA with medical direction",
+          "QY": "Medical direction of one CRNA/AA",
+          "AA": "Anesthesia services performed personally by anesthesiologist",
+          "AD": "Medical supervision by a physician"
+        }
+      }
+    },
+    "example_queries": [
+      "Which modifier do I use when the anesthesiologist is directing my case?",
+      "What's the difference between QX and QY modifiers for CAA billing?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologist-assistants-p07",
+    "title": "Malignant Hyperthermia Emergency Protocol",
+    "problem": "Malignant hyperthermia (MH) is a rare but life-threatening emergency triggered by volatile anesthetics or succinylcholine. CAAs must respond within minutes with the correct sequence of interventions: stop triggering agent, administer dantrolene (dose calculation), hyperventilate, cool patient, treat hyperkalemia. Delays or wrong dosing are often fatal.",
+    "who": "All CAAs administering general anesthesia with triggering agents",
+    "frequency": "yearly",
+    "time_waste_h": 0,
+    "money_risk_usd": 500000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "MH Emergency Response Protocol",
+      "one_liner": "Step-by-step malignant hyperthermia crisis protocol with dantrolene dosing and team role assignments",
+      "steps": [
+        "Step 1: STOP all triggering agents immediately (volatile anesthetics, succinylcholine)",
+        "Step 2: Call for help - activate MH hotline (1-800-644-9737) and assign team roles",
+        "Step 3: Hyperventilate with 100% O2 at high fresh gas flows (>=10 L/min)",
+        "Step 4: Administer dantrolene 2.5 mg/kg IV push, repeat every 5 min up to 10 mg/kg",
+        "Step 5: Active cooling - cold IV saline, ice packs to groin/axillae/neck, lavage if available",
+        "Step 6: Treat hyperkalemia - calcium chloride 10 mg/kg, insulin/glucose, sodium bicarbonate",
+        "Step 7: Treat arrhythmias - avoid calcium channel blockers with dantrolene",
+        "Step 8: Monitor ABGs, electrolytes, CK, myoglobin, coagulation q15 min",
+        "Step 9: Insert urinary catheter - monitor for myoglobinuria, maintain UO >2 mL/kg/hr",
+        "Step 10: Continue dantrolene 1 mg/kg q4-6h for 24-48 hours post-event",
+        "Step 11: Transfer to ICU, monitor for recrudescence for 72 hours"
+      ],
+      "warnings": [
+        "Warning: DO NOT use calcium channel blockers - fatal hyperkalemia with dantrolene",
+        "Warning: Each vial of dantrolene requires 60 mL sterile water - reconstitution is time-consuming, assign dedicated person",
+        "Warning: Monitor for recrudescence up to 72 hours post-event"
+      ],
+      "regulatory_refs": [
+        "MHAUS Guidelines",
+        "ASA Difficult Airway Algorithm",
+        "ACLS Protocols"
+      ]
+    },
+    "example_queries": [
+      "Walk me through the MH protocol step by step",
+      "How much dantrolene do I give for a 90 kg patient with suspected malignant hyperthermia?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologist-assistants-p08",
+    "title": "Anesthesia Time Unit Calculator",
+    "problem": "Anesthesia billing requires precise calculation of time units from anesthesia start to end, plus base units and modifying units per the ASA Relative Value Guide. Each 15-minute increment equals one time unit. Incorrect time documentation or unit calculation directly reduces reimbursement or triggers audit flags from CMS.",
+    "who": "CAAs completing anesthesia records and case documentation for billing",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Anesthesia Time & Billing Unit Calculator",
+      "one_liner": "Calculates total anesthesia units (base + time + modifying) and estimated reimbursement from case times",
+      "inputs": [
+        {
+          "name": "cpt_code",
+          "type": "string",
+          "label": "Anesthesia CPT code"
+        },
+        {
+          "name": "anesthesia_start",
+          "type": "string",
+          "label": "Anesthesia start time (HH:MM)"
+        },
+        {
+          "name": "anesthesia_end",
+          "type": "string",
+          "label": "Anesthesia end time (HH:MM)"
+        },
+        {
+          "name": "physical_status",
+          "type": "string",
+          "label": "ASA Physical Status (P1-P6)"
+        },
+        {
+          "name": "qualifying_circumstances",
+          "type": "string",
+          "label": "Qualifying circumstances codes (if any)"
+        },
+        {
+          "name": "conversion_factor",
+          "type": "number",
+          "label": "Medicare/payer conversion factor (USD)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "total_minutes",
+          "label": "Total anesthesia minutes"
+        },
+        {
+          "name": "time_units",
+          "label": "Time units (15 min each)"
+        },
+        {
+          "name": "base_units",
+          "label": "Base units"
+        },
+        {
+          "name": "modifier_units",
+          "label": "Physical status modifier units"
+        },
+        {
+          "name": "total_units",
+          "label": "Total billable units"
+        },
+        {
+          "name": "estimated_reimbursement",
+          "label": "Estimated reimbursement (USD)"
+        }
+      ],
+      "formula_hint": "time_units = total_minutes / 15; total_units = base_units + time_units + physical_status_modifier + qualifying_circumstances; reimbursement = total_units * conversion_factor",
+      "rates": {
+        "minutes_per_unit": 15,
+        "p3_modifier": 1,
+        "p4_modifier": 2,
+        "p5_modifier": 3,
+        "medicare_cf_2026": 21.56
+      }
+    },
+    "example_queries": [
+      "Calculate billing units for CPT 00140, anesthesia start 08:15 end 10:45, ASA P3",
+      "How many time units for a 2 hour 20 minute case?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologist-assistants-p09",
+    "title": "Difficult Airway Management Decision Guide",
+    "problem": "When encountering an unexpected difficult airway, CAAs must rapidly decide between multiple rescue techniques (video laryngoscopy, supraglottic airway, fiberoptic intubation, surgical airway). Wrong decisions under pressure lead to hypoxic brain injury or death. The ASA Difficult Airway Algorithm has multiple decision branches that are hard to recall under stress.",
+    "who": "CAAs managing airways in OR, emergency, and procedural settings",
+    "frequency": "weekly",
+    "time_waste_h": 0,
+    "money_risk_usd": 250000,
+    "source": "daily_reality",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Difficult Airway Decision Advisor",
+      "one_liner": "Guides through the ASA Difficult Airway Algorithm with situation-specific recommendations for rescue techniques",
+      "expertise_area": "Difficult airway management and rescue techniques",
+      "decision_criteria": [
+        "Mallampati score",
+        "failed attempt count",
+        "can ventilate status",
+        "available equipment",
+        "patient factors (obesity, C-spine, facial trauma)"
+      ],
+      "context_needed": [
+        "ASA Difficult Airway Algorithm 2022",
+        "Available airway equipment",
+        "Patient airway assessment findings"
+      ]
+    },
+    "example_queries": [
+      "I can't intubate and can barely mask ventilate a Mallampati 4 patient, what's my next step?",
+      "What's the algorithm for anticipated difficult airway in an obese patient with limited neck extension?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologist-assistants-p10",
+    "title": "Supervision Protocol Documentation Template",
+    "problem": "CAAs in Florida and other states must maintain written supervision protocols filed with the medical board, updated biennially. The protocol must specify the supervising anesthesiologist, scope of delegated tasks, and emergency procedures. Failing to file or update protocols can result in loss of practice authorization and board discipline.",
+    "who": "CAAs in states requiring filed supervision protocols (Florida and similar)",
+    "frequency": "yearly",
+    "time_waste_h": 6,
+    "money_risk_usd": 10000,
+    "source": "regulatory",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "CAA Supervision Protocol Generator",
+      "one_liner": "Generates a state-compliant written supervision protocol for CAA practice authorization filing",
+      "doc_name": "CAA Written Supervision Protocol",
+      "variables": [
+        {
+          "name": "caa_name",
+          "label": "CAA full name and credentials"
+        },
+        {
+          "name": "caa_license_number",
+          "label": "CAA license/certification number"
+        },
+        {
+          "name": "supervising_anesthesiologist",
+          "label": "Supervising anesthesiologist name and license number"
+        },
+        {
+          "name": "practice_facility",
+          "label": "Practice facility name and address"
+        },
+        {
+          "name": "state",
+          "label": "State of practice"
+        },
+        {
+          "name": "delegated_procedures",
+          "label": "List of delegated procedures/tasks"
+        },
+        {
+          "name": "effective_date",
+          "label": "Protocol effective date"
+        },
+        {
+          "name": "expiration_date",
+          "label": "Protocol expiration date"
+        }
+      ],
+      "structure_hint": "Header with parties -> Scope of delegated authority -> Specific procedures authorized -> Supervision requirements -> Emergency protocols -> Communication procedures -> Signatures -> Board filing instructions"
+    },
+    "example_queries": [
+      "Generate a supervision protocol for Florida board filing",
+      "I need to update my written protocol for biennial renewal - what should be included?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologist-assistants-p11",
+    "title": "Post-Anesthesia Recovery Assessment Checklist",
+    "problem": "CAAs conducting post-operative rounds must systematically assess patient recovery using Aldrete scoring, check for common complications (PONV, respiratory depression, emergence delirium, hypothermia), verify pain control, and document readiness for discharge or transfer. Missed complications in PACU can result in patient harm, readmission, and liability.",
+    "who": "CAAs performing post-operative patient rounds and PACU assessments",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 20000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "PACU Recovery Assessment Checklist",
+      "one_liner": "Systematic post-anesthesia recovery assessment with Aldrete scoring and complication screening",
+      "steps": [
+        "Step 1: Assess airway patency and oxygen saturation - SpO2 >94% on room air or baseline",
+        "Step 2: Evaluate respiratory pattern - rate, depth, adequacy of ventilation",
+        "Step 3: Check hemodynamic stability - BP within 20% of baseline, heart rate, rhythm",
+        "Step 4: Assess level of consciousness - orientation, response to commands, Aldrete score",
+        "Step 5: Evaluate pain level - numeric rating scale, assess surgical site",
+        "Step 6: Screen for PONV - administer antiemetics per protocol if needed",
+        "Step 7: Check temperature - treat hypothermia (<36°C) with forced-air warming",
+        "Step 8: Assess motor function - movement of all extremities, regional block regression",
+        "Step 9: Review IV fluids, urine output, and drainage",
+        "Step 10: Calculate total Aldrete score - discharge criteria met when score >=9",
+        "Step 11: Document assessment and communicate with PACU nursing staff",
+        "Step 12: Report significant findings to supervising anesthesiologist"
+      ],
+      "warnings": [
+        "Warning: Respiratory depression may occur 30-60 min after opioid administration",
+        "Warning: Do not discharge patient with Aldrete score <9 without anesthesiologist approval",
+        "Warning: Monitor regional anesthesia patients for delayed block resolution and urinary retention"
+      ],
+      "regulatory_refs": [
+        "ASA Standards for Postanesthesia Care",
+        "CMS Conditions of Participation - Anesthesia Services",
+        "Joint Commission PC.03.01.07"
+      ]
+    },
+    "example_queries": [
+      "What's the full PACU assessment checklist after general anesthesia?",
+      "My patient has an Aldrete score of 7, can they be discharged from PACU?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologist-assistants-p12",
+    "title": "Anesthesia Machine Pre-Use Checkout",
+    "problem": "Before every first case of the day, CAAs must perform a comprehensive anesthesia machine checkout per ASA guidelines. This includes testing pipeline and cylinder gas supplies, verifying vaporizer function, checking the breathing circuit for leaks, testing ventilator, confirming scavenging system, and calibrating monitors. Skipping steps can result in intraoperative equipment failure.",
+    "who": "CAAs setting up and checking anesthesia workstations before daily cases",
+    "frequency": "daily",
+    "time_waste_h": 0.5,
+    "money_risk_usd": 100000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Anesthesia Machine Checkout Procedure",
+      "one_liner": "Step-by-step anesthesia workstation pre-use checkout per 2008 ASA recommendations",
+      "steps": [
+        "Step 1: Verify auxiliary oxygen cylinder and self-inflating manual ventilation device available",
+        "Step 2: Verify patient suction is adequate",
+        "Step 3: Turn on anesthesia delivery system and confirm AC power",
+        "Step 4: Verify pipeline gas pressures (O2 50 psi, N2O 50 psi, Air 50 psi)",
+        "Step 5: Verify backup O2 cylinder supply is adequate (>1000 psi) and turn off",
+        "Step 6: Verify correct vaporizer filling level and seated properly, filler ports closed",
+        "Step 7: Verify CO2 absorbent is adequate and not exhausted (color indicator)",
+        "Step 8: Perform breathing system pressure and leak test",
+        "Step 9: Verify gas flows through correct flowmeters - test O2 flush",
+        "Step 10: Calibrate O2 monitor and check low O2 alarm",
+        "Step 11: Verify ventilator settings and test all modes",
+        "Step 12: Check scavenging system connections and function",
+        "Step 13: Verify all monitors functional - SpO2, ETCO2, ECG, NIBP, temperature",
+        "Step 14: Set all alarms to appropriate limits",
+        "Step 15: Document checkout completion"
+      ],
+      "warnings": [
+        "Warning: NEVER use a machine that fails the leak test",
+        "Warning: Exhausted CO2 absorbent can cause hypercapnia - check color indicator",
+        "Warning: Test backup O2 cylinder but leave closed during case to prevent undetected pipeline failure"
+      ],
+      "regulatory_refs": [
+        "ASA 2008 Recommendations for Pre-Anesthesia Checkout",
+        "ASTM F1850-00 Standard for Anesthesia Workstations"
+      ]
+    },
+    "example_queries": [
+      "What's the correct order for anesthesia machine checkout?",
+      "My machine failed the leak test - what do I need to check?"
+    ]
+  },
+  {
+    "id": "us-anesthesiologist-assistants-p13",
+    "title": "Local Anesthetic Systemic Toxicity Calculator",
+    "problem": "CAAs administering regional anesthesia must calculate maximum safe doses of local anesthetics (lidocaine, bupivacaine, ropivacaine) based on patient weight, with and without epinephrine. Exceeding maximum doses causes Local Anesthetic Systemic Toxicity (LAST) - seizures, cardiac arrest, and death. Multiple injection sites in a single case require cumulative tracking.",
+    "who": "CAAs performing regional anesthesia blocks and local anesthetic administration",
+    "frequency": "daily",
+    "time_waste_h": 0.25,
+    "money_risk_usd": 100000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Local Anesthetic Max Dose & LAST Calculator",
+      "one_liner": "Calculates maximum safe local anesthetic doses by weight and tracks cumulative dosing across multiple injection sites",
+      "inputs": [
+        {
+          "name": "patient_weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        },
+        {
+          "name": "local_anesthetic",
+          "type": "string",
+          "label": "Local anesthetic (lidocaine/bupivacaine/ropivacaine)"
+        },
+        {
+          "name": "with_epinephrine",
+          "type": "boolean",
+          "label": "With epinephrine (yes/no)"
+        },
+        {
+          "name": "concentration_percent",
+          "type": "number",
+          "label": "Concentration (%)"
+        },
+        {
+          "name": "prior_dose_mg",
+          "type": "number",
+          "label": "Prior cumulative dose already given (mg)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "max_dose_mg",
+          "label": "Maximum dose (mg)"
+        },
+        {
+          "name": "max_volume_ml",
+          "label": "Maximum volume at given concentration (mL)"
+        },
+        {
+          "name": "remaining_dose_mg",
+          "label": "Remaining allowable dose (mg)"
+        },
+        {
+          "name": "lipid_emulsion_dose",
+          "label": "Intralipid 20% dose if LAST occurs (mL)"
+        }
+      ],
+      "formula_hint": "lidocaine max = 4.5 mg/kg (7 mg/kg with epi); bupivacaine max = 2.5 mg/kg (3 mg/kg with epi); ropivacaine max = 3 mg/kg; volume = dose / (concentration% * 10); Intralipid bolus = 1.5 mL/kg",
+      "rates": {
+        "lidocaine_plain": 4.5,
+        "lidocaine_epi": 7.0,
+        "bupivacaine_plain": 2.5,
+        "bupivacaine_epi": 3.0,
+        "ropivacaine": 3.0,
+        "intralipid_bolus_ml_per_kg": 1.5
+      }
+    },
+    "example_queries": [
+      "What's the max dose of 0.25% bupivacaine with epi for a 60 kg patient?",
+      "I've already given 150 mg lidocaine, how much more can I give to a 70 kg patient?"
+    ]
+  }
+]

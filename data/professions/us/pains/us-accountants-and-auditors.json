@@ -1,0 +1,758 @@
+[
+  {
+    "id": "us-accountants-and-auditors-p01",
+    "title": "Payroll Tax Withholding Calculation",
+    "problem": "Accountants manually calculate federal income tax withholding, FICA, Medicare, and state taxes for every payroll cycle. Errors lead to IRS penalties under Section 6656 (up to 15% of underpayment) and employee complaints. During peak periods with 50-80 hour weeks, calculation mistakes multiply.",
+    "who": "Staff and senior accountants handling payroll for small to mid-size businesses",
+    "frequency": "biweekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Payroll Tax Withholding Calculator",
+      "one_liner": "Calculates net pay including federal income tax, FICA, Medicare, and state withholdings from gross salary",
+      "inputs": [
+        {
+          "name": "gross_pay",
+          "type": "number",
+          "label": "Gross pay per period (USD)"
+        },
+        {
+          "name": "pay_frequency",
+          "type": "select",
+          "label": "Pay frequency (weekly/biweekly/semi-monthly/monthly)"
+        },
+        {
+          "name": "filing_status",
+          "type": "select",
+          "label": "Filing status (single/married/head_of_household)"
+        },
+        {
+          "name": "federal_allowances",
+          "type": "number",
+          "label": "Federal allowances / W-4 adjustments"
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "label": "State of employment"
+        },
+        {
+          "name": "pre_tax_deductions",
+          "type": "number",
+          "label": "Pre-tax deductions (401k, HSA, etc.)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "federal_income_tax",
+          "label": "Federal income tax withheld"
+        },
+        {
+          "name": "social_security_tax",
+          "label": "Social Security tax"
+        },
+        {
+          "name": "medicare_tax",
+          "label": "Medicare tax"
+        },
+        {
+          "name": "state_tax",
+          "label": "State income tax"
+        },
+        {
+          "name": "net_pay",
+          "label": "Net pay (USD)"
+        }
+      ],
+      "formula_hint": "Taxable income = gross - pre_tax_deductions. Federal tax from 2026 brackets. Social Security = 6.2% up to wage base ($176,100 for 2026). Medicare = 1.45% + 0.9% additional over $200k. State tax by state brackets.",
+      "rates": {
+        "social_security_rate": 0.062,
+        "social_security_wage_base": 176100,
+        "medicare_rate": 0.0145,
+        "additional_medicare_rate": 0.009,
+        "additional_medicare_threshold": 200000
+      }
+    },
+    "example_queries": [
+      "Calculate net pay for an employee earning $85,000 annually, paid biweekly, single filer in California",
+      "How much federal and state tax should I withhold from a $4,200 biweekly paycheck for a married employee in Texas?",
+      "What's the total employer payroll tax cost for a $120,000 salary?"
+    ]
+  },
+  {
+    "id": "us-accountants-and-auditors-p02",
+    "title": "IRS Penalty and Interest Estimation",
+    "problem": "When clients file late or underpay taxes, accountants must manually calculate penalties and interest using complex IRS rules (failure-to-file, failure-to-pay, accuracy-related penalties). Getting these wrong means either overpaying or getting a surprise IRS notice. Penalty calculations compound daily and reference fluctuating federal rates.",
+    "who": "Tax accountants and CPAs handling individual and business returns",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 25000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "IRS Penalty & Interest Calculator",
+      "one_liner": "Estimates IRS penalties and accrued interest for late filing, late payment, and underpayment of estimated taxes",
+      "inputs": [
+        {
+          "name": "penalty_type",
+          "type": "select",
+          "label": "Penalty type (failure-to-file / failure-to-pay / underpayment-of-estimated / accuracy-related)"
+        },
+        {
+          "name": "tax_owed",
+          "type": "number",
+          "label": "Tax amount owed (USD)"
+        },
+        {
+          "name": "due_date",
+          "type": "date",
+          "label": "Original due date"
+        },
+        {
+          "name": "payment_date",
+          "type": "date",
+          "label": "Actual or expected payment date"
+        },
+        {
+          "name": "return_type",
+          "type": "select",
+          "label": "Return type (1040/1120/1065/941)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "penalty_amount",
+          "label": "Penalty amount (USD)"
+        },
+        {
+          "name": "interest_amount",
+          "label": "Interest accrued (USD)"
+        },
+        {
+          "name": "total_due",
+          "label": "Total amount due including penalty and interest"
+        },
+        {
+          "name": "breakdown",
+          "label": "Monthly breakdown of penalty accrual"
+        }
+      ],
+      "formula_hint": "Failure-to-file: 5% per month up to 25%. Failure-to-pay: 0.5% per month up to 25%. Interest: federal short-term rate + 3%, compounded daily. Accuracy-related: 20% of underpayment under Section 6662.",
+      "rates": {
+        "failure_to_file_monthly": 0.05,
+        "failure_to_file_max": 0.25,
+        "failure_to_pay_monthly": 0.005,
+        "failure_to_pay_max": 0.25,
+        "accuracy_penalty_rate": 0.2,
+        "interest_adder": 0.03
+      }
+    },
+    "example_queries": [
+      "My client owes $15,000 on their 1040 and filed 3 months late. What's the total penalty and interest?",
+      "Estimate the failure-to-pay penalty for a $50,000 corporate tax balance due April 15 if paid September 30",
+      "What's the accuracy-related penalty on a $30,000 understatement?"
+    ]
+  },
+  {
+    "id": "us-accountants-and-auditors-p03",
+    "title": "Depreciation Schedule Calculation",
+    "problem": "Accountants spend hours building and maintaining depreciation schedules for client assets using MACRS, Section 179, and bonus depreciation rules. The 2026 phase-down of bonus depreciation (now 40%) and varying recovery periods by asset class make this error-prone. Mistakes directly impact taxable income and financial statements.",
+    "who": "Tax and corporate accountants managing fixed assets for businesses",
+    "frequency": "monthly",
+    "time_waste_h": 4,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "MACRS Depreciation Calculator",
+      "one_liner": "Calculates depreciation expense using MACRS, Section 179 deduction, and bonus depreciation with full multi-year schedule",
+      "inputs": [
+        {
+          "name": "asset_cost",
+          "type": "number",
+          "label": "Asset cost basis (USD)"
+        },
+        {
+          "name": "placed_in_service_date",
+          "type": "date",
+          "label": "Date placed in service"
+        },
+        {
+          "name": "asset_class",
+          "type": "select",
+          "label": "MACRS property class (3/5/7/10/15/20/27.5/39 year)"
+        },
+        {
+          "name": "convention",
+          "type": "select",
+          "label": "Convention (half-year / mid-quarter / mid-month)"
+        },
+        {
+          "name": "section_179_amount",
+          "type": "number",
+          "label": "Section 179 deduction elected (USD)"
+        },
+        {
+          "name": "bonus_depreciation",
+          "type": "boolean",
+          "label": "Apply bonus depreciation?"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "annual_schedule",
+          "label": "Year-by-year depreciation schedule"
+        },
+        {
+          "name": "current_year_deduction",
+          "label": "Current year total depreciation deduction"
+        },
+        {
+          "name": "remaining_basis",
+          "label": "Remaining depreciable basis"
+        },
+        {
+          "name": "book_vs_tax_difference",
+          "label": "Book vs. tax depreciation difference"
+        }
+      ],
+      "formula_hint": "MACRS percentages by class (e.g., 7-year: 14.29/24.49/17.49/12.49/8.93/8.92/8.93/4.46). Bonus depreciation 40% for 2026. Section 179 limit ~$1.25M for 2026. Apply Section 179 first, then bonus, then MACRS on remainder.",
+      "rates": {
+        "bonus_depreciation_2026": 0.4,
+        "section_179_limit_2026": 1250000,
+        "section_179_phaseout_2026": 3130000
+      }
+    },
+    "example_queries": [
+      "Calculate MACRS depreciation for a $250,000 piece of equipment placed in service in March 2026, 7-year property",
+      "What's the first-year deduction if I take Section 179 plus bonus depreciation on a $500,000 asset?",
+      "Generate a full depreciation schedule for a $1.2M commercial building placed in service this year"
+    ]
+  },
+  {
+    "id": "us-accountants-and-auditors-p04",
+    "title": "Tax Filing Deadline Calendar",
+    "problem": "Accountants juggle dozens of federal and state filing deadlines across multiple entity types (individuals, S-Corps, C-Corps, partnerships, nonprofits, payroll). Missing a single deadline triggers automatic penalties. With 50-80 hour weeks during tax season, tracking all deadlines across clients is a constant source of anxiety - it's the #1 fear reported by professionals.",
+    "who": "All tax accountants and CPAs, especially those managing multiple clients",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Tax Filing Deadline Reference",
+      "one_liner": "Instant lookup of all federal and state tax filing deadlines, extension dates, and estimated payment due dates by entity type",
+      "data_domain": "Federal and state tax filing deadlines for all entity types in 2026",
+      "lookup_keys": [
+        "entity_type",
+        "form_number",
+        "state",
+        "fiscal_year_end"
+      ],
+      "data_hints": {
+        "source_law": "Internal Revenue Code, various sections",
+        "key_sections": [
+          "IRC Section 6072 (filing deadlines)",
+          "IRC Section 6081 (extensions)",
+          "IRC Section 6654/6655 (estimated taxes)"
+        ],
+        "key_dates": {
+          "1040_individual": "April 15 (ext: October 15)",
+          "1120_c_corp": "April 15 (ext: October 15)",
+          "1120s_s_corp": "March 15 (ext: September 15)",
+          "1065_partnership": "March 15 (ext: September 15)",
+          "990_nonprofit": "May 15 (ext: November 15)",
+          "941_payroll": "End of month following quarter",
+          "estimated_taxes": "April 15, June 15, September 15, January 15"
+        }
+      }
+    },
+    "example_queries": [
+      "When is the filing deadline for a partnership return in 2026?",
+      "What are all the estimated tax payment due dates for 2026?",
+      "My S-Corp client has a fiscal year ending June 30 - when is the return due?"
+    ]
+  },
+  {
+    "id": "us-accountants-and-auditors-p05",
+    "title": "Year-End Financial Close Checklist",
+    "problem": "Year-end close involves 30+ steps across multiple accounts, departments, and systems. Missing a step (unrecorded accruals, unreconciled accounts, missed cutoff adjustments) leads to material misstatements, restatements, and potential SOX violations for public companies. The December-January crunch leaves little room for error.",
+    "who": "Corporate accountants and controllers managing year-end close",
+    "frequency": "yearly",
+    "time_waste_h": 40,
+    "money_risk_usd": 100000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Year-End Financial Close Checklist",
+      "one_liner": "Comprehensive step-by-step checklist for year-end close covering all accounts, reconciliations, adjustments, and compliance requirements",
+      "steps": [
+        "Step 1: Verify all sub-ledgers are posted to the general ledger",
+        "Step 2: Complete bank reconciliations for all accounts",
+        "Step 3: Reconcile intercompany accounts and eliminate intercompany transactions",
+        "Step 4: Review and adjust accrued expenses (wages, interest, utilities, taxes)",
+        "Step 5: Verify revenue recognition cutoff - ensure proper period assignment",
+        "Step 6: Calculate and record depreciation and amortization for the period",
+        "Step 7: Perform inventory count and adjust for obsolescence/write-downs",
+        "Step 8: Reconcile accounts receivable and assess allowance for doubtful accounts",
+        "Step 9: Reconcile accounts payable and search for unrecorded liabilities (SURL)",
+        "Step 10: Review and adjust prepaid expenses and deferred revenue",
+        "Step 11: Calculate and record income tax provision (ASC 740)",
+        "Step 12: Prepare trial balance and review for unusual balances",
+        "Step 13: Record all adjusting journal entries with proper documentation",
+        "Step 14: Prepare financial statements (BS, P&L, Cash Flow, Equity)",
+        "Step 15: Perform flux analysis - compare to prior year and budget",
+        "Step 16: Prepare footnote disclosures and management discussion",
+        "Step 17: Obtain management review and sign-off",
+        "Step 18: Archive workpapers and supporting documentation"
+      ],
+      "warnings": [
+        "Warning: SOX Section 302/404 requires CEO/CFO certification of internal controls - ensure all control testing is documented",
+        "Warning: Revenue recognition must comply with ASC 606 - review contract modifications",
+        "Warning: Lease accounting under ASC 842 - verify all leases are properly recorded"
+      ],
+      "regulatory_refs": [
+        "Sarbanes-Oxley Act Sections 302, 404",
+        "ASC 606 (Revenue Recognition)",
+        "ASC 842 (Leases)",
+        "ASC 740 (Income Taxes)"
+      ]
+    },
+    "example_queries": [
+      "Give me a complete year-end close checklist for a mid-size company",
+      "What steps should I follow for year-end close at a public company with SOX requirements?",
+      "What are the most commonly missed items in year-end financial close?"
+    ]
+  },
+  {
+    "id": "us-accountants-and-auditors-p06",
+    "title": "Engagement Letter Generator",
+    "problem": "CPAs must issue engagement letters for every new client and service - audit, review, compilation, tax preparation. Each letter requires specific AICPA-compliant language, scope definitions, fee structures, and limitation of liability clauses. Writing these from scratch or adapting old templates is time-consuming and risks omitting required provisions.",
+    "who": "CPAs and firm managers onboarding new clients or changing engagement scope",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 20000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "CPA Engagement Letter Generator",
+      "one_liner": "Generates AICPA-compliant engagement letters for audit, review, compilation, and tax preparation services",
+      "doc_name": "Engagement Letter",
+      "variables": [
+        {
+          "name": "client_name",
+          "label": "Client name"
+        },
+        {
+          "name": "client_entity_type",
+          "label": "Entity type (individual/corporation/partnership/nonprofit)"
+        },
+        {
+          "name": "engagement_type",
+          "label": "Engagement type (audit/review/compilation/tax preparation/advisory)"
+        },
+        {
+          "name": "fiscal_year_end",
+          "label": "Fiscal year end date"
+        },
+        {
+          "name": "fee_structure",
+          "label": "Fee structure (fixed/hourly/retainer)"
+        },
+        {
+          "name": "fee_amount",
+          "label": "Fee amount or rate"
+        },
+        {
+          "name": "firm_name",
+          "label": "Firm name"
+        },
+        {
+          "name": "special_terms",
+          "label": "Special terms or conditions"
+        }
+      ],
+      "structure_hint": "Letterhead -> Date -> Client address -> Engagement objective and scope -> Management responsibilities -> Auditor/CPA responsibilities -> Deliverables -> Fee and billing terms -> Limitation of liability -> Dispute resolution -> Signature blocks. Must reference applicable AICPA standards (AU-C 210 for audits, AR-C 80/90 for compilations/reviews)."
+    },
+    "example_queries": [
+      "Generate an audit engagement letter for ABC Corporation, fiscal year ending December 31, 2026, fixed fee of $45,000",
+      "Create a tax preparation engagement letter for an individual client",
+      "Draft a compilation engagement letter for a small partnership"
+    ]
+  },
+  {
+    "id": "us-accountants-and-auditors-p07",
+    "title": "Audit Procedures and Substantive Testing Checklist",
+    "problem": "Auditors must design and execute substantive procedures for every significant account balance and transaction class. Missing a key procedure or failing to document it properly leads to PCAOB inspection deficiencies. With 39 enforcement actions in 2025 and continuing PCAOB scrutiny, incomplete audit documentation is a career-threatening risk.",
+    "who": "External auditors at all levels, especially seniors planning audit fieldwork",
+    "frequency": "quarterly",
+    "time_waste_h": 8,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Audit Substantive Testing Checklist",
+      "one_liner": "Generates a tailored checklist of substantive audit procedures by account area with PCAOB/AICPA compliance requirements",
+      "steps": [
+        "Step 1: Obtain understanding of the entity and its environment (AS 2110)",
+        "Step 2: Assess risk of material misstatement for each significant account",
+        "Step 3: Design substantive procedures responsive to identified risks",
+        "Step 4: Cash - confirm bank balances, test reconciling items, perform cutoff testing",
+        "Step 5: Receivables - confirm balances, test aging, evaluate allowance estimate",
+        "Step 6: Inventory - observe physical count, test pricing, evaluate obsolescence",
+        "Step 7: Fixed assets - vouch additions/disposals, recalculate depreciation, test for impairment",
+        "Step 8: Payables - search for unrecorded liabilities (SURL), confirm significant balances",
+        "Step 9: Revenue - test transactions near period end for cutoff, agree to contracts (ASC 606)",
+        "Step 10: Expenses - perform analytical procedures, vouch unusual items",
+        "Step 11: Evaluate audit evidence sufficiency and appropriateness",
+        "Step 12: Document conclusions for each significant account in workpapers"
+      ],
+      "warnings": [
+        "Warning: PCAOB AS 1215 requires documentation sufficient for an experienced auditor to understand the work performed",
+        "Warning: All confirmations must be controlled by the auditor per AS 2310",
+        "Warning: Fraud risk procedures required per AS 2401 - test journal entries and estimates"
+      ],
+      "regulatory_refs": [
+        "PCAOB AS 2110 (Risk Assessment)",
+        "PCAOB AS 2301 (Substantive Procedures)",
+        "PCAOB AS 1215 (Audit Documentation)",
+        "PCAOB AS 2401 (Fraud)",
+        "PCAOB AS 2310 (Confirmations)"
+      ]
+    },
+    "example_queries": [
+      "What substantive procedures should I perform for accounts receivable in an audit?",
+      "Give me a complete audit testing checklist for a manufacturing company",
+      "What are the PCAOB documentation requirements for substantive testing?"
+    ]
+  },
+  {
+    "id": "us-accountants-and-auditors-p08",
+    "title": "Estimated Tax Payment Calculator",
+    "problem": "Accountants calculate quarterly estimated tax payments for clients to avoid underpayment penalties under IRC 6654 (individuals) and 6655 (corporations). The safe harbor rules (100% or 110% of prior year tax), annualized income method, and varying state requirements make this calculation complex. Getting it wrong means penalties or clients overpaying and losing cash flow.",
+    "who": "Tax accountants managing quarterly estimated payments for self-employed and business clients",
+    "frequency": "quarterly",
+    "time_waste_h": 3,
+    "money_risk_usd": 8000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Estimated Tax Payment Calculator",
+      "one_liner": "Calculates required quarterly estimated tax payments using safe harbor rules to avoid IRS underpayment penalties",
+      "inputs": [
+        {
+          "name": "entity_type",
+          "type": "select",
+          "label": "Entity type (individual/corporation)"
+        },
+        {
+          "name": "prior_year_tax",
+          "type": "number",
+          "label": "Prior year total tax liability (USD)"
+        },
+        {
+          "name": "prior_year_agi",
+          "type": "number",
+          "label": "Prior year AGI (USD)"
+        },
+        {
+          "name": "current_year_estimated_income",
+          "type": "number",
+          "label": "Current year estimated total income (USD)"
+        },
+        {
+          "name": "withholding_credits",
+          "type": "number",
+          "label": "Expected withholding and credits for current year (USD)"
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "label": "State for state estimated taxes"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "safe_harbor_amount",
+          "label": "Safe harbor quarterly payment amount"
+        },
+        {
+          "name": "current_year_method_amount",
+          "label": "Current year method quarterly amount"
+        },
+        {
+          "name": "recommended_payment",
+          "label": "Recommended quarterly payment"
+        },
+        {
+          "name": "quarterly_schedule",
+          "label": "Payment schedule with due dates"
+        },
+        {
+          "name": "penalty_risk",
+          "label": "Underpayment penalty risk assessment"
+        }
+      ],
+      "formula_hint": "Individual safe harbor: lesser of 90% current year tax or 100% prior year (110% if AGI > $150k). Corporate: lesser of 100% current year or 100% prior year. Quarterly = annual required / 4. Subtract withholding. Penalty under IRC 6654 uses federal short-term rate + 3%.",
+      "rates": {
+        "individual_current_year_pct": 0.9,
+        "individual_prior_year_pct": 1.0,
+        "individual_high_income_prior_year_pct": 1.1,
+        "high_income_threshold": 150000,
+        "corporate_current_year_pct": 1.0
+      }
+    },
+    "example_queries": [
+      "My client had $50,000 tax liability last year and AGI of $200,000. What should their quarterly estimated payments be?",
+      "Calculate safe harbor estimated payments for a corporation with $300,000 prior year tax",
+      "Will my client owe an underpayment penalty if they paid $10,000 per quarter but owe $55,000 total?"
+    ]
+  },
+  {
+    "id": "us-accountants-and-auditors-p09",
+    "title": "Bank Reconciliation Discrepancy Advisor",
+    "problem": "Bank reconciliations are performed daily or weekly, and discrepancies are inevitable - outstanding checks, deposits in transit, bank errors, unauthorized transactions, timing differences. Identifying the cause and correct adjustment requires experience. Junior staff waste hours investigating routine variances, while missed discrepancies can signal fraud or errors.",
+    "who": "Staff accountants and bookkeepers performing regular bank reconciliations",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Bank Reconciliation Troubleshooter",
+      "one_liner": "Diagnoses common bank reconciliation discrepancies and recommends the correct adjusting entries",
+      "expertise_area": "Bank reconciliation discrepancy analysis and resolution",
+      "decision_criteria": [
+        "discrepancy amount",
+        "discrepancy direction (book vs bank)",
+        "timing of transactions",
+        "transaction type",
+        "recurrence pattern"
+      ],
+      "context_needed": [
+        "common reconciling items",
+        "fraud indicators",
+        "GAAP treatment of reconciling items",
+        "internal control requirements"
+      ]
+    },
+    "example_queries": [
+      "My bank reconciliation is off by $1,247.50 - the bank balance is higher than the book balance. What should I check?",
+      "I have an outstanding check from 6 months ago that still hasn't cleared. What should I do?",
+      "How do I handle a bank error on the reconciliation?"
+    ]
+  },
+  {
+    "id": "us-accountants-and-auditors-p10",
+    "title": "IRS Audit Response Advisor",
+    "problem": "When a client receives an IRS audit notice, accountants must quickly determine the audit type (correspondence, office, field), assess the risk, gather documentation, and respond within tight deadlines. Fear of audit deficiencies is a top professional concern. Wrong responses can escalate issues, trigger broader examinations, or waive client rights.",
+    "who": "Tax CPAs and Enrolled Agents representing clients before the IRS",
+    "frequency": "monthly",
+    "time_waste_h": 10,
+    "money_risk_usd": 75000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "IRS Audit Response Advisor",
+      "one_liner": "Guides CPAs through IRS audit response strategy including documentation requirements, taxpayer rights, and resolution options",
+      "expertise_area": "IRS examination response and taxpayer representation",
+      "decision_criteria": [
+        "notice type (CP2000, audit letter, etc.)",
+        "audit scope",
+        "tax year(s) under examination",
+        "issue type (income, deductions, credits)",
+        "taxpayer entity type"
+      ],
+      "context_needed": [
+        "IRS examination procedures (IRM)",
+        "Taxpayer Bill of Rights",
+        "Circular 230 practitioner requirements",
+        "Appeals process",
+        "Statute of limitations rules"
+      ]
+    },
+    "example_queries": [
+      "My client got a CP2000 notice for unreported 1099 income of $25,000. What's the best response strategy?",
+      "How should I prepare for an IRS field audit of a small business?",
+      "The IRS is proposing to disallow $40,000 in business deductions. Should we agree, protest, or go to Appeals?"
+    ]
+  },
+  {
+    "id": "us-accountants-and-auditors-p11",
+    "title": "Management Representation Letter Generator",
+    "problem": "At the conclusion of every audit, management must provide a representation letter confirming key assertions. Auditors must ensure the letter covers all required representations per AU-C 580 / AS 2805 and includes engagement-specific items. Omitting required representations is an audit deficiency frequently cited in PCAOB inspections.",
+    "who": "Audit seniors and managers preparing for audit completion",
+    "frequency": "quarterly",
+    "time_waste_h": 2,
+    "money_risk_usd": 30000,
+    "source": "regulatory",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Management Representation Letter Generator",
+      "one_liner": "Generates AU-C 580 / PCAOB AS 2805 compliant management representation letters tailored to the specific audit engagement",
+      "doc_name": "Management Representation Letter",
+      "variables": [
+        {
+          "name": "company_name",
+          "label": "Company name"
+        },
+        {
+          "name": "fiscal_year_end",
+          "label": "Fiscal year end date"
+        },
+        {
+          "name": "auditor_firm",
+          "label": "Audit firm name"
+        },
+        {
+          "name": "engagement_type",
+          "label": "Engagement type (audit/review)"
+        },
+        {
+          "name": "is_public_company",
+          "label": "Public company (PCAOB standards)?"
+        },
+        {
+          "name": "special_matters",
+          "label": "Special matters to address (litigation, related parties, subsequent events, going concern)"
+        }
+      ],
+      "structure_hint": "Date -> Addressed to auditor -> Opening paragraph identifying financial statements -> Standard representations (completeness, GAAP compliance, estimates, fraud, subsequent events, related parties, litigation, going concern) -> Engagement-specific representations -> CEO/CFO signatures. Reference AU-C 580 for nonissuers, AS 2805 for issuers."
+    },
+    "example_queries": [
+      "Generate a management representation letter for a public company audit, fiscal year ending December 31, 2026",
+      "What representations must be included in a management letter for a company with pending litigation?",
+      "Create a rep letter for a nonprofit audit under AU-C 580"
+    ]
+  },
+  {
+    "id": "us-accountants-and-auditors-p12",
+    "title": "SOX Compliance Internal Controls Reference",
+    "problem": "Public company auditors must evaluate internal controls over financial reporting per SOX Section 404. Identifying which controls are key, understanding control objectives for each assertion, and mapping controls to COSO framework components requires constant reference to standards. Misclassifying a control deficiency (deficiency vs. significant deficiency vs. material weakness) has major consequences.",
+    "who": "External and internal auditors at public companies",
+    "frequency": "quarterly",
+    "time_waste_h": 5,
+    "money_risk_usd": 200000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "SOX Internal Controls Reference Guide",
+      "one_liner": "Quick reference for SOX 404 compliance including COSO framework mapping, control classifications, deficiency evaluation criteria, and PCAOB inspection focus areas",
+      "data_domain": "Sarbanes-Oxley Section 404 internal control requirements and PCAOB auditing standards",
+      "lookup_keys": [
+        "control_area",
+        "assertion_type",
+        "deficiency_classification",
+        "coso_component",
+        "pcaob_standard"
+      ],
+      "data_hints": {
+        "source_law": "Sarbanes-Oxley Act of 2002, PCAOB Auditing Standards",
+        "key_sections": [
+          "SOX Section 302",
+          "SOX Section 404",
+          "PCAOB AS 2201 (Audit of Internal Control)",
+          "COSO 2013 Framework"
+        ],
+        "deficiency_levels": {
+          "deficiency": "Control does not allow timely prevention/detection but likelihood of misstatement is remote",
+          "significant_deficiency": "Less severe than material weakness but important enough to merit attention",
+          "material_weakness": "Reasonable possibility that a material misstatement will not be prevented or detected"
+        }
+      }
+    },
+    "example_queries": [
+      "What's the difference between a significant deficiency and a material weakness under SOX?",
+      "What are the five COSO components and what controls map to each?",
+      "What are the PCAOB's most common SOX 404 inspection findings in 2025-2026?"
+    ]
+  },
+  {
+    "id": "us-accountants-and-auditors-p13",
+    "title": "Lease Accounting Calculator (ASC 842)",
+    "problem": "ASC 842 requires lessees to recognize right-of-use assets and lease liabilities on the balance sheet. Accountants must calculate present value of lease payments, determine lease classification (operating vs finance), and generate amortization schedules. The calculations involve discount rates, variable payments, and modification accounting that are tedious and error-prone in spreadsheets.",
+    "who": "Corporate accountants and auditors dealing with lease accounting",
+    "frequency": "monthly",
+    "time_waste_h": 5,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "ASC 842 Lease Accounting Calculator",
+      "one_liner": "Calculates right-of-use asset, lease liability, and generates full amortization schedule under ASC 842",
+      "inputs": [
+        {
+          "name": "lease_type",
+          "type": "select",
+          "label": "Lease classification (operating/finance)"
+        },
+        {
+          "name": "monthly_payment",
+          "type": "number",
+          "label": "Monthly lease payment (USD)"
+        },
+        {
+          "name": "lease_term_months",
+          "type": "number",
+          "label": "Lease term in months"
+        },
+        {
+          "name": "commencement_date",
+          "type": "date",
+          "label": "Lease commencement date"
+        },
+        {
+          "name": "discount_rate",
+          "type": "number",
+          "label": "Incremental borrowing rate (%)"
+        },
+        {
+          "name": "initial_direct_costs",
+          "type": "number",
+          "label": "Initial direct costs (USD)"
+        },
+        {
+          "name": "lease_incentives",
+          "type": "number",
+          "label": "Lease incentives received (USD)"
+        },
+        {
+          "name": "residual_value_guarantee",
+          "type": "number",
+          "label": "Residual value guarantee (USD)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "rou_asset",
+          "label": "Right-of-use asset at commencement"
+        },
+        {
+          "name": "lease_liability",
+          "label": "Lease liability at commencement"
+        },
+        {
+          "name": "amortization_schedule",
+          "label": "Full monthly amortization schedule"
+        },
+        {
+          "name": "annual_expense",
+          "label": "Annual lease expense (P&L impact)"
+        },
+        {
+          "name": "journal_entries",
+          "label": "Initial and recurring journal entries"
+        }
+      ],
+      "formula_hint": "Lease liability = PV of lease payments at discount rate. ROU asset = lease liability + initial direct costs + prepaid rent - lease incentives. Operating: straight-line expense. Finance: amortization of ROU asset + interest on liability. Interest = beginning liability * monthly rate.",
+      "rates": {}
+    },
+    "example_queries": [
+      "Calculate the ROU asset and lease liability for a 5-year office lease at $8,000/month with a 5% discount rate",
+      "Generate an ASC 842 amortization schedule for a finance lease of $120,000 over 48 months",
+      "What journal entries do I record at lease commencement for an operating lease?"
+    ]
+  }
+]

@@ -1,0 +1,311 @@
+{
+  "profession_id": "us-orthodontists",
+  "profession_name": "Orthodontists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Orthodontists see 50-60 patients per day in a fast-paced clinical environment, hopping between chairs. Mix of braces adjustments, aligner check-ins, new patient consultations, and appliance placements. Heavily team-dependent with trained assistants handling most chairside work.",
+    "typical_tasks": [
+      "Morning huddle — review patient charts, plan day's procedures",
+      "Bracket bonding and braces placement on new patients",
+      "Wire changes and archwire adjustments (most common appointment type)",
+      "Clear aligner check-ins — attachment placement, IPR, tracking assessment",
+      "Deband appointments — braces removal and retainer delivery",
+      "New patient consultations with records (photos, scans, X-rays)",
+      "Review 3D scans and digital treatment plans (ClinCheck, etc.)",
+      "Treatment planning using cephalometric analysis and digital models",
+      "Manage emergencies — broken brackets, poking wires",
+      "Staff training and clinical oversight of orthodontic assistants"
+    ],
+    "key_documents": [
+      "Treatment plans and case presentations",
+      "Informed consent forms",
+      "Progress notes and clinical records",
+      "Digital impressions and 3D models",
+      "Cephalometric analyses and radiograph reports",
+      "Insurance pre-authorizations and claims",
+      "Referral letters to/from general dentists"
+    ],
+    "deadlines": {
+      "board_certification_renewal": "Every 10 years (ABO)",
+      "state_license_renewal": "Biennial in most states",
+      "cme_requirements": "Varies by state, typically 30-50 hours per cycle",
+      "aligner_treatment_plans": "24-48 hours turnaround for ClinCheck review",
+      "insurance_preauth": "2-4 weeks for response"
+    },
+    "seasonality": "Strong seasonal pattern: new patient starts peak in summer (school break) and January (New Year resolutions). Slower during holidays. Orthodontic practices often schedule longer appointments during summer break."
+  },
+  "regulatory": {
+    "summary": "Licensed as dental specialists through state dental boards. Board certification through ABO (American Board of Orthodontics) is voluntary but prestigious. Must complete accredited orthodontic residency after dental school.",
+    "key_laws": [
+      {
+        "name": "State Dental Practice Acts",
+        "description": "Regulate orthodontic licensure, scope of practice, and delegation to assistants",
+        "status": "Active, varies by state"
+      },
+      {
+        "name": "American Board of Orthodontics (ABO) Certification",
+        "url": "https://www.americanboardortho.com",
+        "description": "Written Exam (240 questions) + Scenario-based Clinical Exam. First dental specialty board (est. 1929)",
+        "status": "Active"
+      },
+      {
+        "name": "CODA Accreditation",
+        "description": "Commission on Dental Accreditation standards for orthodontic residency programs",
+        "status": "Active"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Bachelor's degree (4 years, pre-dental)",
+        "DMD or DDS degree (4 years dental school)",
+        "Orthodontic residency (2-3 years, CODA-accredited)",
+        "State dental license + orthodontic specialty registration",
+        "ABO board certification (voluntary, highly competitive — only 4% residency admission rate)"
+      ]
+    },
+    "continuing_education": "30-50 CE hours per biennial cycle (varies by state); ABO requires ongoing certification maintenance activities"
+  },
+  "tools": {
+    "summary": "Digital transformation is central to modern orthodontics. iTero scanning, ClinCheck treatment planning, and 3D printing are standard. Invisalign/clear aligners have fundamentally changed workflow alongside traditional bracket-and-wire systems.",
+    "primary_tools": [
+      {
+        "name": "iTero Intraoral Scanner",
+        "url": "https://itero.com",
+        "description": "High-resolution 3D digital impressions replacing traditional molds, integrates with Invisalign"
+      },
+      {
+        "name": "ClinCheck Treatment Planning Software",
+        "url": "https://www.invisalign.com/provider/align-digital-platform/clincheck",
+        "description": "3D treatment simulation for Invisalign — real-time plan modifications, multiple treatment plan comparison"
+      },
+      {
+        "name": "Invisalign Smile Architect",
+        "description": "Multi-treatment plan comparison, ortho-restorative planning, side-by-side visualization (2025 update)"
+      },
+      {
+        "name": "iTero Design Suite",
+        "description": "In-practice 3D printing workflow for retainers, models, and appliances (2025 innovation)"
+      },
+      {
+        "name": "Dolphin Imaging & Management",
+        "description": "Cephalometric analysis, treatment planning, patient communication, and practice management"
+      },
+      {
+        "name": "3Shape OrthoAnalyzer",
+        "description": "Digital model analysis, Bolton analysis, space analysis, and virtual setups"
+      }
+    ],
+    "secondary_tools": [
+      "CBCT scanners (for complex cases — impactions, airway, skeletal assessment)",
+      "Digital photography systems (Canon, Nikon with ring flash)",
+      "Practice management software (Ortho2, Cloud 9, Dolphin Management)",
+      "3D printers (Formlabs, SprintRay) for retainers, models, aligners",
+      "Patient communication platforms (Dental Monitoring, Grin)",
+      "OrthoFi — financial/insurance management platform"
+    ],
+    "pain_points": [
+      "Invisalign ClinCheck workflow can be slow — back-and-forth with technicians",
+      "High cost of aligner systems and scanner subscriptions",
+      "Integration between different software platforms is poor",
+      "Digital records management across multiple systems",
+      "Competition from general dentists offering Invisalign for simple cases"
+    ]
+  },
+  "terminology": {
+    "summary": "Rich clinical vocabulary combining dental anatomy, biomechanics, and appliance-specific jargon. Heavy use of classification systems (Angle, skeletal) and abbreviations.",
+    "terms": {
+      "Class I/II/III": "Angle classification of malocclusion based on molar relationship",
+      "malocclusion": "Bad bite — teeth don't fit together properly",
+      "overbite": "Vertical overlap of upper teeth over lower (deep bite)",
+      "overjet": "Horizontal distance upper teeth protrude beyond lower",
+      "crossbite": "Upper teeth bite inside lower teeth (anterior or posterior)",
+      "open bite": "Gap between upper and lower teeth when biting",
+      "IPR": "Interproximal Reduction — shaving between teeth for space",
+      "archwire": "Metal wire connecting brackets that guides tooth movement",
+      "bracket": "Small square bonded to tooth that holds archwire",
+      "power chain": "Connected elastics to close spaces between teeth",
+      "TADs": "Temporary Anchorage Devices — mini-screws for anchorage",
+      "bonding": "Adhering brackets to teeth with dental adhesive",
+      "deband": "Removing braces at end of treatment",
+      "retainer": "Appliance worn after treatment to maintain results",
+      "ceph": "Cephalometric radiograph — lateral skull X-ray for analysis",
+      "pano": "Panoramic radiograph",
+      "headgear": "Extraoral appliance for growth modification",
+      "RPE/expander": "Rapid Palatal Expander — widens upper jaw",
+      "tracking": "How well aligners are fitting/moving teeth as planned",
+      "refinement": "Additional aligners ordered to fine-tune results"
+    }
+  },
+  "career_psychology": {
+    "summary": "Highly competitive to enter (4% residency admission rate). Rewarding career with strong income but facing market pressures from DTC aligners and GP competition. Business skills increasingly important alongside clinical expertise.",
+    "career_path": [
+      "Bachelor's degree (pre-dental, 4 years)",
+      "Dental school — DMD/DDS (4 years)",
+      "Orthodontic residency (2-3 years, extremely competitive)",
+      "Associate orthodontist (1-3 years, learning the business)",
+      "Practice owner / partner (traditional private practice)",
+      "DSO/OSO employment (growing trend, especially for younger orthodontists)",
+      "Academic orthodontist — residency director, researcher"
+    ],
+    "salary_range": {
+      "resident": "$55,000 - $70,000/year",
+      "entry_level": "$150,000 - $230,000/year (associate, first 1-4 years)",
+      "mid_career": "$240,000 - $350,000/year",
+      "senior_practice_owner": "$400,000 - $700,000+/year",
+      "top_earners": "$1,000,000+/year (high-volume multi-location owners)"
+    },
+    "fears": [
+      "Direct-to-consumer aligners stealing market share",
+      "General dentists offering Invisalign for simple cases",
+      "Student loan debt ($300K-$500K+ from dental school + residency)",
+      "DSO consolidation reducing practice values",
+      "Treatment failures and patient dissatisfaction",
+      "Declining reimbursement rates from insurance"
+    ],
+    "motivation": [
+      "Transforming smiles — high patient satisfaction and visible results",
+      "Predictable schedule (mostly elective, planned treatments)",
+      "Strong income potential with practice ownership",
+      "Growing children and watching development over 2+ year treatments",
+      "Creative problem-solving in complex cases",
+      "Good work-life balance compared to other dental specialties"
+    ],
+    "burnout_factors": [
+      "High patient volume (50-60 per day) creates hectic pace",
+      "Need constant new patient flow (finite treatment timelines)",
+      "Business management stress (marketing, staffing, overhead)",
+      "Repetitive nature of many adjustments",
+      "Insurance hassles and pre-authorization delays",
+      "Keeping up with rapid technology changes"
+    ]
+  },
+  "community": {
+    "summary": "Tight-knit specialty community organized around AAO (the primary professional association). Active continuing education through annual sessions, winter conferences, and online learning. Growing online presence.",
+    "associations": [
+      {
+        "name": "American Association of Orthodontists (AAO)",
+        "url": "https://aaoinfo.org",
+        "type": "Primary professional association"
+      },
+      {
+        "name": "American Board of Orthodontics (ABO)",
+        "url": "https://www.americanboardortho.com",
+        "type": "Certifying board (est. 1929)"
+      },
+      {
+        "name": "American Orthodontic Society (AOS)",
+        "url": "https://orthodontics.com",
+        "type": "Professional society"
+      },
+      {
+        "name": "World Federation of Orthodontists (WFO)",
+        "type": "International organization"
+      }
+    ],
+    "events": [
+      "AAO Annual Session (April 2025 — Philadelphia)",
+      "AAO | AAPD Winter Conference (Marco Island 2025)",
+      "AOS Annual Meeting (September 2025 — Las Colinas, TX)",
+      "State and regional orthodontic society meetings"
+    ],
+    "online_communities": [
+      "r/orthodontics and r/dentistry on Reddit",
+      "Orthodontic Facebook groups (various specialty groups)",
+      "AAO virtual learning and webinars",
+      "LinkedIn orthodontic professional networks"
+    ]
+  },
+  "market": {
+    "summary": "US orthodontics market worth $4.1 billion (2026). Job growth projected at 8.1%. Facing disruption from DTC aligners and GP Invisalign providers. DSO employment growing (14% of members). 91% of orthodontists optimistic about 2025 production.",
+    "job_outlook": {
+      "growth_rate": "8.1% projected growth",
+      "market_size": "$4.1 billion (2026)",
+      "businesses": "2,711 orthodontic practices in the US",
+      "optimism": "91% expect increased production in 2025"
+    },
+    "salary_market": {
+      "average": "$240,000 - $335,000/year",
+      "practice_owner": "$400,000 - $700,000+/year",
+      "top_earners": "$1,000,000+/year"
+    },
+    "demand_drivers": [
+      "Aging population seeking orthodontic treatment (adult orthodontics growing)",
+      "Social media driving demand for perfect smiles",
+      "Clear aligner technology expanding treatable patient pool",
+      "Underserved rural areas with limited orthodontic access"
+    ],
+    "market_trends": [
+      "DSO/OSO employment growing — 14% of members (up from 6% in 2018)",
+      "Under-35 orthodontists 28% in DSOs vs 12% for 35+",
+      "Direct-to-consumer aligners (mixed results, some companies struggling)",
+      "General dentists encroaching on simple aligner cases",
+      "Digital workflow and in-office 3D printing reducing lab dependence",
+      "AI-assisted treatment planning emerging"
+    ]
+  },
+  "quality_score": 0.80,
+  "sources_count": 28,
+  "verified_sources": 10,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Orthodontist USA 2025 2026 typical day tasks procedures patients braces aligners caseload",
+      "sources": [
+        {"title": "A Day in the Life of an Orthodontist – AFO", "url": "https://afobraces.com/a-day-in-the-life-of-an-orthodontist/"},
+        {"title": "CDP - Day in the Life", "url": "https://www.communitydentalpartners.com/articles/day-in-the-life-orthodontist-cdp/"},
+        {"title": "AAO - Treatment Methods", "url": "https://aaoinfo.org/treatments/"},
+        {"title": "Indeed - What Does an Orthodontist Do", "url": "https://www.indeed.com/career-advice/careers/what-does-an-orthodontist-do"}
+      ]
+    },
+    {
+      "query": "Orthodontist USA 2025 2026 licensing board certification ABO state requirements regulations",
+      "sources": [
+        {"title": "ABO - Become Certified", "url": "https://www.americanboardortho.com/orthodontists/become-certified/"},
+        {"title": "ABO 2026 Written Exam Study Guide", "url": "https://www.americanboardortho.com/media/cldlud0j/2026abowrittenexamstudyguide.pdf"},
+        {"title": "ABO - Renew Certification", "url": "https://www.americanboardortho.com/orthodontists/renew-certification/"}
+      ]
+    },
+    {
+      "query": "Orthodontist USA software tools digital workflow 3D scanning Invisalign ClinCheck iTero 2025",
+      "sources": [
+        {"title": "Align Technology 2025 Innovations", "url": "https://investor.aligntech.com/news-releases/news-release-details/align-technology-showcases-digital-dentistry-innovations-greater"},
+        {"title": "ClinCheck Provider", "url": "https://www.invisalign.com/provider/align-digital-platform/clincheck"},
+        {"title": "iTero for Orthodontics", "url": "https://itero.com/grow-your-practice/orthodontic"}
+      ]
+    },
+    {
+      "query": "Orthodontics terminology jargon abbreviations slang malocclusion Class II brackets archwire",
+      "sources": [
+        {"title": "AAO Glossary of Orthodontic Terms", "url": "https://aaoinfo.org/resources/glossary-of-orthodontic-terms/"},
+        {"title": "Oral-B Orthodontic Glossary", "url": "https://oralb.com/en-us/oral-health/life-stages/braces/orthodontic-glossary/"},
+        {"title": "Dentalcare - Ortho 101 Terminology", "url": "https://www.dentalcare.com/en-us/ce-courses/ce413/terminology"}
+      ]
+    },
+    {
+      "query": "Orthodontist USA salary 2025 2026 career path burnout residency private practice income",
+      "sources": [
+        {"title": "SalaryDr - Orthodontist 2026", "url": "https://www.salarydr.com/blog/orthodontist-salary-2025"},
+        {"title": "US News - Orthodontist Salary 2026", "url": "https://careers.usnews.com/best-jobs/orthodontist/salary"},
+        {"title": "CDP - Job Growth for Orthodontists", "url": "https://www.communitydentalpartners.com/articles/job-growth-for-orthodontists/"},
+        {"title": "ZipRecruiter - Orthodontist Salary 2026", "url": "https://www.ziprecruiter.com/Salaries/Orthodontist-Salary"}
+      ]
+    },
+    {
+      "query": "Orthodontics professional associations AAO conferences community forums 2025",
+      "sources": [
+        {"title": "AAO Meetings and Conferences", "url": "https://www2.aaoinfo.org/meetings/"},
+        {"title": "AAO Annual Session 2025", "url": "https://www2.aaoinfo.org/meetings/annual-session-2025/"},
+        {"title": "AOS 2025 Annual Meeting", "url": "https://orthodontics.com/annual-meeting-2025/"}
+      ]
+    },
+    {
+      "query": "Orthodontist USA job market 2025 2026 demand outlook growth DSO competition direct-to-consumer",
+      "sources": [
+        {"title": "IBISWorld - Orthodontists US 2025", "url": "https://www.ibisworld.com/united-states/industry/orthodontists/6039/"},
+        {"title": "AAO Economics Survey Report", "url": "https://www2.aaoinfo.org/aao-economic-survey-report-patient-data-similar-to-pre-covid-reports-continued-growth-in-dso-oso-employment/"},
+        {"title": "UCFS - Orthodontic Market Trends 2025", "url": "https://www.ucfs.net/orthodontic-industry-trends/"},
+        {"title": "OrthoSynetics - Future Demand", "url": "https://www.orthosynetics.com/the-future-demand-for-orthodontists/"}
+      ]
+    }
+  ]
+}

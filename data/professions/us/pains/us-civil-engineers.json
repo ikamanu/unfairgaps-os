@@ -1,0 +1,792 @@
+[
+  {
+    "id": "us-civil-engineers-p01",
+    "title": "Structural load and beam sizing calculations",
+    "problem": "Civil engineers spend hours manually calculating dead loads, live loads, wind loads, and seismic forces per ASCE 7, then sizing beams and columns per ACI 318 or AISC standards. Errors in these calculations can lead to structural failures, stop-work orders, and personal liability for the PE who stamped the documents.",
+    "who": "Project Engineers and Senior Engineers (PE) doing structural design",
+    "frequency": "weekly",
+    "time_waste_h": 6,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Structural Load Calculator",
+      "one_liner": "Calculates combined design loads (dead, live, wind, snow, seismic) per ASCE 7 load combinations and checks beam/column capacity",
+      "inputs": [
+        {
+          "name": "dead_load_psf",
+          "type": "number",
+          "label": "Dead load (psf)"
+        },
+        {
+          "name": "live_load_psf",
+          "type": "number",
+          "label": "Live load (psf)"
+        },
+        {
+          "name": "wind_speed_mph",
+          "type": "number",
+          "label": "Basic wind speed (mph)"
+        },
+        {
+          "name": "snow_load_psf",
+          "type": "number",
+          "label": "Ground snow load (psf)"
+        },
+        {
+          "name": "seismic_sds",
+          "type": "number",
+          "label": "Seismic design parameter SDS"
+        },
+        {
+          "name": "tributary_area_sqft",
+          "type": "number",
+          "label": "Tributary area (sq ft)"
+        },
+        {
+          "name": "occupancy_category",
+          "type": "string",
+          "label": "Risk Category (I-IV)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "factored_load_combinations",
+          "label": "ASCE 7 load combinations (kips)"
+        },
+        {
+          "name": "governing_combination",
+          "label": "Governing load combination"
+        },
+        {
+          "name": "total_factored_load",
+          "label": "Total factored load (kips)"
+        }
+      ],
+      "formula_hint": "ASCE 7-22 load combos: 1.4D, 1.2D+1.6L, 1.2D+1.0W+L, etc. Apply importance factors by risk category. Return governing combo.",
+      "rates": {
+        "wind_exposure_factors": "B/C/D per ASCE 7",
+        "importance_factors": {
+          "I": 1.0,
+          "II": 1.0,
+          "III": 1.25,
+          "IV": 1.5
+        }
+      }
+    },
+    "example_queries": [
+      "Calculate the governing load combination for a floor with 20 psf dead load, 50 psf live load, and 30 psf ground snow load, Risk Category II",
+      "What is the total factored load on a beam with 400 sq ft tributary area, 25 psf dead load and 100 psf live load?"
+    ]
+  },
+  {
+    "id": "us-civil-engineers-p02",
+    "title": "Cut and fill earthwork volume estimation",
+    "problem": "Calculating earthwork quantities for grading projects requires computing cut and fill volumes from cross-sections or contour data. Engineers often do this manually or in spreadsheets before feeding into Civil 3D, leading to errors in bid estimates that cause cost overruns of tens of thousands of dollars on mid-size projects.",
+    "who": "Site development and transportation engineers preparing grading plans and cost estimates",
+    "frequency": "weekly",
+    "time_waste_h": 5,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Cut and Fill Earthwork Calculator",
+      "one_liner": "Estimates cut/fill volumes using average end area method from station cross-section data, with shrink/swell factors",
+      "inputs": [
+        {
+          "name": "stations",
+          "type": "array",
+          "label": "Station intervals (ft)"
+        },
+        {
+          "name": "cut_areas",
+          "type": "array",
+          "label": "Cut cross-section areas (sq ft) at each station"
+        },
+        {
+          "name": "fill_areas",
+          "type": "array",
+          "label": "Fill cross-section areas (sq ft) at each station"
+        },
+        {
+          "name": "shrink_factor",
+          "type": "number",
+          "label": "Shrink factor (e.g. 1.25 for clay)"
+        },
+        {
+          "name": "swell_factor",
+          "type": "number",
+          "label": "Swell factor (e.g. 1.30 for rock)"
+        },
+        {
+          "name": "haul_cost_per_cy",
+          "type": "number",
+          "label": "Haul cost per cubic yard (USD)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "total_cut_cy",
+          "label": "Total cut volume (cubic yards)"
+        },
+        {
+          "name": "total_fill_cy",
+          "label": "Total fill volume (cubic yards)"
+        },
+        {
+          "name": "net_volume_cy",
+          "label": "Net import/export volume (cubic yards)"
+        },
+        {
+          "name": "estimated_cost",
+          "label": "Estimated earthwork cost (USD)"
+        }
+      ],
+      "formula_hint": "Average end area: V = (A1+A2)/2 * L / 27 (convert cu ft to cu yd). Apply shrink/swell to adjust compacted fill needs.",
+      "rates": {
+        "cu_ft_per_cu_yd": 27,
+        "typical_shrink_clay": 1.25,
+        "typical_swell_rock": 1.3
+      }
+    },
+    "example_queries": [
+      "I have 5 stations at 100 ft intervals with cut areas of 120, 200, 180, 90, 40 sq ft. What's the total cut volume?",
+      "Estimate earthwork cost for 5,000 CY of cut and 3,200 CY of fill with $12/CY haul cost and 1.25 shrink factor"
+    ]
+  },
+  {
+    "id": "us-civil-engineers-p03",
+    "title": "Stormwater detention pond sizing",
+    "problem": "Engineers must size stormwater detention/retention basins to meet local and EPA NPDES requirements. This involves calculating pre- and post-development runoff using the Rational Method or SCS/NRCS method, then determining required storage volume. Undersizing means permit denial or flooding; oversizing wastes land and money.",
+    "who": "Site civil engineers and stormwater designers working on land development projects",
+    "frequency": "monthly",
+    "time_waste_h": 8,
+    "money_risk_usd": 25000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Stormwater Detention Pond Calculator",
+      "one_liner": "Sizes detention basins using Rational Method or SCS CN method to meet pre/post-development peak flow matching requirements",
+      "inputs": [
+        {
+          "name": "drainage_area_acres",
+          "type": "number",
+          "label": "Drainage area (acres)"
+        },
+        {
+          "name": "pre_dev_cn",
+          "type": "number",
+          "label": "Pre-development curve number (CN)"
+        },
+        {
+          "name": "post_dev_cn",
+          "type": "number",
+          "label": "Post-development curve number (CN)"
+        },
+        {
+          "name": "design_storm_inches",
+          "type": "number",
+          "label": "Design storm rainfall (inches)"
+        },
+        {
+          "name": "storm_duration_hours",
+          "type": "number",
+          "label": "Storm duration (hours)"
+        },
+        {
+          "name": "time_of_concentration_min",
+          "type": "number",
+          "label": "Time of concentration (minutes)"
+        },
+        {
+          "name": "allowable_release_rate_cfs",
+          "type": "number",
+          "label": "Allowable release rate (cfs)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pre_dev_peak_cfs",
+          "label": "Pre-development peak flow (cfs)"
+        },
+        {
+          "name": "post_dev_peak_cfs",
+          "label": "Post-development peak flow (cfs)"
+        },
+        {
+          "name": "required_storage_cf",
+          "label": "Required detention storage (cubic feet)"
+        },
+        {
+          "name": "required_storage_acft",
+          "label": "Required detention storage (acre-feet)"
+        }
+      ],
+      "formula_hint": "SCS method: Q = (P - 0.2*S)^2 / (P + 0.8*S) where S = 1000/CN - 10. Peak flow: qp = qu * A * Q. Storage = (post_peak - pre_peak) * duration approximation.",
+      "rates": {
+        "cubic_feet_per_acre_foot": 43560
+      }
+    },
+    "example_queries": [
+      "Size a detention pond for a 15-acre site, pre-dev CN 65, post-dev CN 85, 6-inch design storm",
+      "What storage volume do I need if post-development runoff is 45 cfs but allowable release is 20 cfs for a 24-hour storm?"
+    ]
+  },
+  {
+    "id": "us-civil-engineers-p04",
+    "title": "Construction cost estimating for bid preparation",
+    "problem": "Civil engineers preparing bids and cost estimates must assemble unit costs for dozens of line items - concrete, asphalt, earthwork, utilities, drainage structures - and apply regional cost factors, mobilization percentages, and contingencies. A miscalculation or missed line item can mean losing the bid or eating a loss on the project.",
+    "who": "Project engineers and estimators at consulting firms and contractors preparing bids",
+    "frequency": "monthly",
+    "time_waste_h": 12,
+    "money_risk_usd": 100000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Civil Construction Cost Estimator",
+      "one_liner": "Builds construction cost estimates from quantities and unit prices with mobilization, overhead, contingency, and regional adjustments",
+      "inputs": [
+        {
+          "name": "line_items",
+          "type": "array",
+          "label": "Line items: [{item, quantity, unit, unit_cost_usd}]"
+        },
+        {
+          "name": "mobilization_pct",
+          "type": "number",
+          "label": "Mobilization (% of subtotal, typically 5-10%)"
+        },
+        {
+          "name": "overhead_profit_pct",
+          "type": "number",
+          "label": "Overhead & profit (% typically 15-25%)"
+        },
+        {
+          "name": "contingency_pct",
+          "type": "number",
+          "label": "Contingency (% typically 10-20%)"
+        },
+        {
+          "name": "regional_factor",
+          "type": "number",
+          "label": "Regional cost adjustment factor (1.0 = national average)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "subtotal",
+          "label": "Direct cost subtotal (USD)"
+        },
+        {
+          "name": "mobilization_cost",
+          "label": "Mobilization cost (USD)"
+        },
+        {
+          "name": "overhead_profit",
+          "label": "Overhead & profit (USD)"
+        },
+        {
+          "name": "contingency",
+          "label": "Contingency (USD)"
+        },
+        {
+          "name": "total_estimate",
+          "label": "Total project estimate (USD)"
+        }
+      ],
+      "formula_hint": "Subtotal = sum(qty * unit_cost * regional_factor). Add mobilization, O&P, contingency as percentages. Provide per-item and total breakdown.",
+      "rates": {
+        "typical_mobilization": 0.08,
+        "typical_overhead_profit": 0.2,
+        "typical_contingency": 0.15
+      }
+    },
+    "example_queries": [
+      "Estimate cost for: 5,000 CY excavation at $15/CY, 2,000 tons asphalt at $95/ton, 500 LF storm pipe at $85/LF with 8% mobilization and 15% contingency",
+      "What's the total bid price with 20% overhead and profit on a $450,000 direct cost subtotal?"
+    ]
+  },
+  {
+    "id": "us-civil-engineers-p05",
+    "title": "Retaining wall design and stability check",
+    "problem": "Designing retaining walls requires checking sliding, overturning, and bearing capacity failures with appropriate safety factors. Engineers perform these calculations by hand or in spreadsheets for every wall segment. Missing a stability check or using wrong soil parameters risks structural failure and PE license jeopardy.",
+    "who": "Geotechnical and structural engineers designing retaining walls",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 75000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Retaining Wall Stability Calculator",
+      "one_liner": "Checks sliding, overturning, and bearing capacity safety factors for gravity and cantilever retaining walls",
+      "inputs": [
+        {
+          "name": "wall_height_ft",
+          "type": "number",
+          "label": "Wall height (ft)"
+        },
+        {
+          "name": "wall_type",
+          "type": "string",
+          "label": "Wall type (gravity/cantilever)"
+        },
+        {
+          "name": "soil_unit_weight_pcf",
+          "type": "number",
+          "label": "Soil unit weight (pcf)"
+        },
+        {
+          "name": "friction_angle_deg",
+          "type": "number",
+          "label": "Soil friction angle (degrees)"
+        },
+        {
+          "name": "cohesion_psf",
+          "type": "number",
+          "label": "Soil cohesion (psf)"
+        },
+        {
+          "name": "surcharge_psf",
+          "type": "number",
+          "label": "Surcharge load (psf)"
+        },
+        {
+          "name": "base_width_ft",
+          "type": "number",
+          "label": "Footing base width (ft)"
+        },
+        {
+          "name": "wall_weight_plf",
+          "type": "number",
+          "label": "Wall weight per linear foot (lb/ft)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "active_pressure_plf",
+          "label": "Active earth pressure resultant (lb/ft)"
+        },
+        {
+          "name": "fs_sliding",
+          "label": "Factor of safety - sliding (min 1.5)"
+        },
+        {
+          "name": "fs_overturning",
+          "label": "Factor of safety - overturning (min 2.0)"
+        },
+        {
+          "name": "bearing_pressure_psf",
+          "label": "Max bearing pressure (psf)"
+        },
+        {
+          "name": "pass_fail",
+          "label": "Pass/Fail for each check"
+        }
+      ],
+      "formula_hint": "Ka = tan²(45 - φ/2). Pa = 0.5 * γ * H² * Ka + q * H * Ka. FS_sliding = (W * tan(δ)) / Pa. FS_overturn = (W * x_w) / (Pa * H/3). Check bearing: q_max = (V/B)(1 + 6e/B).",
+      "rates": {
+        "min_fs_sliding": 1.5,
+        "min_fs_overturning": 2.0,
+        "min_fs_bearing": 3.0
+      }
+    },
+    "example_queries": [
+      "Check stability for a 10 ft cantilever wall with 120 pcf soil, 30 degree friction angle, 6 ft base width",
+      "Is my retaining wall safe? Height 8 ft, base 5 ft, soil unit weight 110 pcf, friction angle 28 degrees, 200 psf surcharge"
+    ]
+  },
+  {
+    "id": "us-civil-engineers-p06",
+    "title": "PE license renewal and continuing education tracking",
+    "problem": "PE license renewal requirements vary by state - different PDH/CEU requirements (typically 15-30 PDH per renewal cycle), varying cycle lengths (1-2 years), and different accepted activity types. Missing renewal deadlines means inability to practice and stamp documents, directly impacting income and firm operations.",
+    "who": "All licensed Professional Engineers (PE) across all states",
+    "frequency": "yearly",
+    "time_waste_h": 4,
+    "money_risk_usd": 40000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "PE License Renewal Reference",
+      "one_liner": "Quick lookup of state-by-state PE license renewal requirements including PDH hours, deadlines, and accepted activities",
+      "data_domain": "State PE board renewal requirements for all 50 states and territories",
+      "lookup_keys": [
+        "state",
+        "renewal_cycle",
+        "pdh_required",
+        "deadline"
+      ],
+      "data_hints": {
+        "source_law": "Individual state PE licensing statutes and NCEES Model Law",
+        "key_sections": [
+          "NCEES Model Rules",
+          "State Board administrative codes"
+        ],
+        "key_data_points": [
+          "PDH/CEU required per cycle",
+          "Renewal cycle length",
+          "Deadline dates",
+          "Carryover allowances",
+          "Ethics hours required",
+          "Accepted activity types"
+        ]
+      }
+    },
+    "example_queries": [
+      "What are the PE license renewal requirements for Texas?",
+      "How many PDH hours do I need in California and when is the deadline?",
+      "Which states require ethics-specific continuing education hours?"
+    ]
+  },
+  {
+    "id": "us-civil-engineers-p07",
+    "title": "NPDES stormwater permit compliance checklist",
+    "problem": "Construction sites over 1 acre require NPDES stormwater permits with specific BMPs, inspection schedules, and documentation. Missing a BMP installation or inspection triggers EPA enforcement actions with fines up to $64,618 per day per violation. Engineers managing multiple sites struggle to keep all compliance items on track.",
+    "who": "Civil engineers and construction managers overseeing sites requiring NPDES permits",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 64618,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "NPDES Construction Stormwater Compliance Checklist",
+      "one_liner": "Step-by-step compliance checklist for NPDES Construction General Permit including SWPPP, BMPs, inspections, and reporting",
+      "steps": [
+        "Step 1: Verify SWPPP is prepared and on-site before land disturbance begins",
+        "Step 2: Submit Notice of Intent (NOI) to EPA or state agency at least 14 days before construction",
+        "Step 3: Install perimeter sediment controls (silt fence, inlet protection) before grading",
+        "Step 4: Implement erosion controls (stabilized construction entrance, dust control)",
+        "Step 5: Conduct site inspections every 7 days AND within 24 hours of 0.25-inch rain events",
+        "Step 6: Document all inspections on standardized forms with date, inspector, findings, corrective actions",
+        "Step 7: Maintain and repair BMPs within 24 hours of identified deficiency",
+        "Step 8: Update SWPPP whenever site conditions change or BMPs are modified",
+        "Step 9: Stabilize disturbed areas within 14 days of final grading",
+        "Step 10: Submit Notice of Termination (NOT) after final stabilization achieved"
+      ],
+      "warnings": [
+        "Warning: Fines up to $64,618 per day per violation (2026 adjusted)",
+        "Warning: SWPPP must be accessible on-site at all times during construction",
+        "Warning: Some states have stricter requirements than federal CGP - check state-specific permit",
+        "Warning: Concrete washout must have dedicated containment area"
+      ],
+      "regulatory_refs": [
+        "40 CFR 122.26",
+        "EPA Construction General Permit (CGP)",
+        "Clean Water Act Section 402"
+      ]
+    },
+    "example_queries": [
+      "What are the NPDES stormwater inspection requirements for my construction site?",
+      "Give me the full compliance checklist for a construction stormwater permit",
+      "When do I need to submit the Notice of Termination for my NPDES permit?"
+    ]
+  },
+  {
+    "id": "us-civil-engineers-p08",
+    "title": "Construction site inspection report generation",
+    "problem": "Engineers conduct site inspections weekly or more frequently and must document observations, deficiencies, photos, and corrective actions in formal reports. Writing these reports is repetitive and time-consuming - 1-2 hours per report - but they are legally required documentation that can be subpoenaed in disputes or regulatory actions.",
+    "who": "Field engineers and construction inspectors doing regular site visits",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Construction Inspection Report Generator",
+      "one_liner": "Generates a professional construction site inspection report from field notes including observations, deficiencies, and required corrective actions",
+      "doc_name": "Construction Site Inspection Report",
+      "variables": [
+        {
+          "name": "project_name",
+          "label": "Project name"
+        },
+        {
+          "name": "project_number",
+          "label": "Project number"
+        },
+        {
+          "name": "inspection_date",
+          "label": "Inspection date"
+        },
+        {
+          "name": "inspector_name",
+          "label": "Inspector name and PE number"
+        },
+        {
+          "name": "weather_conditions",
+          "label": "Weather conditions"
+        },
+        {
+          "name": "contractor_name",
+          "label": "Contractor on site"
+        },
+        {
+          "name": "work_observed",
+          "label": "Description of work observed"
+        },
+        {
+          "name": "deficiencies",
+          "label": "Deficiencies noted"
+        },
+        {
+          "name": "corrective_actions",
+          "label": "Required corrective actions and deadlines"
+        },
+        {
+          "name": "percent_complete",
+          "label": "Estimated percent complete"
+        }
+      ],
+      "structure_hint": "Header (project info, date, weather) -> Work in Progress -> Observations -> Deficiencies Table (item, location, severity, corrective action, deadline) -> Photos placeholder -> Conformance Statement -> Inspector Signature Block"
+    },
+    "example_queries": [
+      "Generate an inspection report for the Elm Street widening project, inspected today, found rebar spacing non-conforming in the retaining wall footing",
+      "Create a site inspection report noting concrete pour observed, compaction test results pending, and erosion control BMPs need repair"
+    ]
+  },
+  {
+    "id": "us-civil-engineers-p09",
+    "title": "Building code and design standard quick reference",
+    "problem": "Civil engineers constantly need to look up specific provisions across multiple codes - IBC for building requirements, ASCE 7 for loads, ACI 318 for concrete, AISC for steel, ADA for accessibility. Flipping through thousands of pages or searching PDFs wastes significant time and wrong code references risk plan check rejections.",
+    "who": "Design engineers referencing building codes and standards during design work",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Civil Engineering Code Quick Reference",
+      "one_liner": "Quick lookup of key provisions, tables, and requirements from IBC, ASCE 7, ACI 318, AISC, and ADA standards",
+      "data_domain": "Building codes and civil engineering design standards commonly referenced in US practice",
+      "lookup_keys": [
+        "code_name",
+        "section_number",
+        "topic",
+        "requirement_type"
+      ],
+      "data_hints": {
+        "source_law": "IBC 2021/2024, ASCE 7-22, ACI 318-19, AISC 360-22, ADA Standards",
+        "key_sections": [
+          "IBC Chapter 16 (Structural)",
+          "ASCE 7 Chapters 2-22",
+          "ACI 318 Chapters 9-22",
+          "AISC Chapter B-J",
+          "ADA Chapter 4"
+        ],
+        "key_data_points": [
+          "Load values and combinations",
+          "Material strength requirements",
+          "Minimum dimensions",
+          "Reinforcement ratios",
+          "Deflection limits",
+          "Accessibility clearances"
+        ]
+      }
+    },
+    "example_queries": [
+      "What is the minimum live load for office buildings per ASCE 7?",
+      "What are the ACI 318 minimum concrete cover requirements for footings?",
+      "What are the ADA ramp slope requirements?"
+    ]
+  },
+  {
+    "id": "us-civil-engineers-p10",
+    "title": "Concrete mix design and strength verification",
+    "problem": "Engineers must verify concrete mix designs meet specification requirements and evaluate cylinder break test results against ACI 318 acceptance criteria. When test results fall below f'c, the engineer must quickly determine if the concrete is acceptable, needs coring, or requires removal - decisions with major cost and schedule impact.",
+    "who": "Structural and materials engineers evaluating concrete quality on construction projects",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Concrete Strength Acceptance Calculator",
+      "one_liner": "Evaluates concrete cylinder break test results against ACI 318 acceptance criteria and determines pass/fail/action required",
+      "inputs": [
+        {
+          "name": "specified_fc_psi",
+          "type": "number",
+          "label": "Specified compressive strength f'c (psi)"
+        },
+        {
+          "name": "test_results_psi",
+          "type": "array",
+          "label": "Cylinder break test results (psi) - array of values"
+        },
+        {
+          "name": "test_ages_days",
+          "type": "array",
+          "label": "Test ages (days) - typically 7 and 28"
+        },
+        {
+          "name": "exposure_category",
+          "type": "string",
+          "label": "ACI exposure category (F0-F3, S0-S3, W0-W2, C0-C2)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "average_strength",
+          "label": "Average of test results (psi)"
+        },
+        {
+          "name": "individual_check",
+          "label": "Individual test check (no result below f'c - 500 psi)"
+        },
+        {
+          "name": "running_average_check",
+          "label": "Running 3-test average check (avg >= f'c)"
+        },
+        {
+          "name": "acceptance_status",
+          "label": "Accept / Investigate / Reject"
+        },
+        {
+          "name": "recommended_action",
+          "label": "Recommended next steps per ACI 318"
+        }
+      ],
+      "formula_hint": "ACI 318-19 Section 26.12.3: Strength acceptable if (1) every arithmetic average of 3 consecutive tests >= f'c AND (2) no individual test falls below f'c by more than 500 psi. If fail, investigate per 26.12.4.",
+      "rates": {
+        "individual_min_offset_psi": 500,
+        "min_running_avg_tests": 3
+      }
+    },
+    "example_queries": [
+      "My 28-day breaks came back at 3,800, 4,100, and 3,650 psi for 4,000 psi specified concrete. Does it pass?",
+      "Evaluate these cylinder results against f'c = 5,000 psi: 4,900, 4,400, 5,200, 4,850"
+    ]
+  },
+  {
+    "id": "us-civil-engineers-p11",
+    "title": "QA/QC plan review checklist for drawings",
+    "problem": "Before stamping and submitting engineering drawings, PEs must perform thorough QA/QC reviews checking dimensions, notes, code references, title block info, and coordination with other disciplines. Missed errors on stamped documents create professional liability exposure and costly plan check resubmittals that delay projects by weeks.",
+    "who": "Senior engineers and PEs performing quality reviews before stamping/sealing documents",
+    "frequency": "weekly",
+    "time_waste_h": 4,
+    "money_risk_usd": 20000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Engineering Drawing QA/QC Review Checklist",
+      "one_liner": "Comprehensive quality review checklist for civil engineering drawings before PE stamp and submittal",
+      "steps": [
+        "Step 1: Verify title block - project name, number, date, revision number, PE seal and signature",
+        "Step 2: Check drawing scale consistency - verify graphic scale bar matches stated scale",
+        "Step 3: Review general notes for current code references (IBC 2021, ASCE 7-22, ACI 318-19)",
+        "Step 4: Verify all dimensions are shown, consistent, and close properly",
+        "Step 5: Check coordinate system and datum references match survey and geotech reports",
+        "Step 6: Verify structural details match calculations (member sizes, reinforcement, connections)",
+        "Step 7: Check grading plan - verify slopes, elevations, drainage patterns, and contour labeling",
+        "Step 8: Review utility plans for conflicts - check horizontal and vertical clearances",
+        "Step 9: Verify ADA accessibility compliance on all pedestrian facilities",
+        "Step 10: Cross-check quantities on plans against quantity takeoff/estimate",
+        "Step 11: Review specification references on drawings match project manual",
+        "Step 12: Confirm all sheets are cross-referenced and detail callouts match detail sheets"
+      ],
+      "warnings": [
+        "Warning: PE stamp on documents creates personal legal liability for accuracy",
+        "Warning: Code references must be current - outdated code citations cause plan check rejections",
+        "Warning: CAD layers from imported files may contain hidden elements - plot check required"
+      ],
+      "regulatory_refs": [
+        "State PE board rules of professional conduct",
+        "IBC Section 107 (Submittal Documents)"
+      ]
+    },
+    "example_queries": [
+      "Give me the QA/QC checklist for reviewing civil drawings before I stamp them",
+      "What should I check before sealing a set of site development plans?",
+      "Provide a quality control review checklist for structural drawings"
+    ]
+  },
+  {
+    "id": "us-civil-engineers-p12",
+    "title": "Responding to plan check comments from building departments",
+    "problem": "After submitting plans, engineers receive comment letters from building departments and plan reviewers citing code sections that need to be addressed. Crafting formal responses requires referencing the correct code sections, explaining compliance, and noting drawing revisions. Poor responses lead to multiple review cycles, each adding 2-4 weeks to the permit timeline.",
+    "who": "Project engineers responding to municipal plan review comments",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Plan Check Response Letter Generator",
+      "one_liner": "Generates a formal response letter to building department plan review comments with code references and drawing revision notes",
+      "doc_name": "Plan Check Comment Response Letter",
+      "variables": [
+        {
+          "name": "project_name",
+          "label": "Project name"
+        },
+        {
+          "name": "permit_number",
+          "label": "Permit/plan check number"
+        },
+        {
+          "name": "reviewer_name",
+          "label": "Plan reviewer name and department"
+        },
+        {
+          "name": "review_date",
+          "label": "Date of plan review comments"
+        },
+        {
+          "name": "comments",
+          "label": "List of plan review comments (numbered)"
+        },
+        {
+          "name": "responses",
+          "label": "Response to each comment with code references"
+        },
+        {
+          "name": "revised_sheets",
+          "label": "List of revised drawing sheets"
+        },
+        {
+          "name": "engineer_name",
+          "label": "Responding engineer name and PE number"
+        }
+      ],
+      "structure_hint": "Header (project info, permit number) -> Reference to comment letter -> Numbered comment-response table (Comment # | Reviewer Comment | Response | Revised Sheet) -> Summary of revisions -> PE signature block"
+    },
+    "example_queries": [
+      "Help me draft a response to plan check comments - reviewer wants ASCE 7 wind speed basis and ADA ramp compliance shown on sheet C-3",
+      "Generate a plan review response letter for 5 comments on the Maple Avenue project, permit #2026-1234"
+    ]
+  },
+  {
+    "id": "us-civil-engineers-p13",
+    "title": "Project delay and liquidated damages risk assessment",
+    "problem": "When construction projects fall behind schedule, engineers and project managers need to quickly assess exposure to liquidated damages, evaluate whether delays are excusable, and determine if time extensions are warranted. Mishandling delay claims can cost the firm tens of thousands in LD penalties or lost client trust.",
+    "who": "Project managers and engineers managing construction schedules and change orders",
+    "frequency": "monthly",
+    "time_waste_h": 4,
+    "money_risk_usd": 50000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Construction Delay & Liquidated Damages Advisor",
+      "one_liner": "Analyzes construction delays to determine excusability, time extension eligibility, and liquidated damages exposure",
+      "expertise_area": "Construction schedule delay analysis and liquidated damages assessment",
+      "decision_criteria": [
+        "delay cause (weather, owner change, contractor issue, force majeure)",
+        "contract LD rate per day",
+        "number of delay days",
+        "concurrent delays",
+        "notice requirements met",
+        "critical path impact"
+      ],
+      "context_needed": [
+        "contract LD provisions",
+        "state construction law",
+        "AIA/EJCDC contract terms",
+        "schedule analysis methods (CPM)"
+      ]
+    },
+    "example_queries": [
+      "We're 15 days behind on a DOT project with $2,500/day liquidated damages. Rain caused 8 days of delay. What's our exposure?",
+      "Is a design change by the owner grounds for a time extension under an AIA A201 contract?",
+      "How do I document an excusable delay claim for weather on a public works project?"
+    ]
+  }
+]

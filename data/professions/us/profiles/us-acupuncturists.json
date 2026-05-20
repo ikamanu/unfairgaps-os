@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-acupuncturists",
+  "profession_name": "Acupuncturists",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Acupuncturists work a typical 40-hour week, seeing 15-30 patients per week in smaller practices. First-time appointments take ~70 minutes for in-depth health history analysis. Daily tasks: patient intake and health history review, pulse and tongue diagnosis, checking vital signs, inserting acupuncture needles, formulating herbal preparations, applying cups/acupressure/massage, documenting treatment plans and progress notes. Significant time on practice management — scheduling, ordering supplies, billing, insurance claims, and marketing. Most are solo or small-practice owners.",
+    "documents": ["Patient intake forms", "Health history questionnaires", "Treatment plans and SOAP notes", "Herbal formula prescriptions", "Insurance claim forms (CMS-1500)", "Superbills", "Informed consent forms", "Progress notes", "Referral letters", "NCCAOM certification documentation"],
+    "deadlines": ["Patient appointment scheduling", "Insurance claim submission (timely filing limits)", "NCCAOM recertification (every 4 years)", "State license renewal (varies by state)", "Continuing education requirements (typically 60 PDA points per recertification)", "Malpractice insurance renewal", "Business tax filings (quarterly for self-employed)"],
+    "seasonality": "Seasonal allergy treatment peaks in spring/fall. Pain management demand steady year-round. Holiday stress and seasonal affective disorder increase visits in winter. Fertility/IVF support cycles create treatment clusters. Insurance deductible resets in January drive new patient influx."
+  },
+  "regulatory": {
+    "laws": ["State Acupuncture Practice Acts (47 states + DC regulate acupuncture)", "State-specific scope of practice definitions", "HIPAA (if accepting insurance)", "State clean needle technique requirements", "Herbal medicine prescribing regulations (varies by state)", "Dry needling scope battles with physical therapists"],
+    "licensing": "Master's degree (MSAOM/MAOM) or Doctorate (DACM/DAOM) from CCAOM-accredited program. NCCAOM certification required by 22 states, exam used by 26 more. State licensure varies: LAc, Lic.Ac, AP (Florida), CA. 47 states + DC regulate acupuncture; Alabama, Oklahoma, South Dakota do not. NCCAOM recertification every 4 years with 60 PDA points. 3 states have no regulation for acupuncturists.",
+    "penalties": "Practicing without license: fines and potential criminal charges. State board investigations from patient complaints. License suspension/revocation for violations. Malpractice liability for needle injuries or adverse reactions. Clean needle technique violations. Herbal medicine adverse events liability.",
+    "regulatory_bodies": ["NCCAOM (National Certification Commission for Acupuncture and Oriental Medicine) — established 1982", "State Acupuncture Boards or Medical Boards", "CCAOM (Council of Colleges of Acupuncture and Herbal Medicine)", "State Health Departments", "FDA (for herbal product safety)"]
+  },
+  "tools": {
+    "software": ["Unified Practice (acupuncture-specific EHR with iPad charting)", "Acusimple (billing and EHR)", "Jane App (practice management)", "AcuBliss (multi-disciplinary)", "zHealth (all-in-one cloud EHR)", "Carepatron", "OptiMantra (integrative practice EMR)", "ChiroTouch (if co-locating with chiropractors)"],
+    "platforms": ["NCCAOM Find a Practitioner directory", "Acufinder.com", "Psychology Today (for some practitioners)", "Yelp/Google Business (patient acquisition)", "Social media (Instagram, Facebook for marketing)"],
+    "gov_portals": ["State acupuncture board portals", "NCCAOM certification portal", "CMS provider enrollment (for Medicare)", "State insurance commissioner portals", "IRS (self-employment tax portal)"]
+  },
+  "terminology": {
+    "jargon": ["Qi (vital energy)", "Yin and Yang (opposing forces)", "Meridians (energy channels)", "Acupoints", "De Qi (needle sensation)", "Moxibustion (moxa)", "Cupping", "Tui Na (therapeutic massage)", "Five Elements theory", "Pattern differentiation", "Tongue and pulse diagnosis", "Stagnation", "Deficiency/Excess", "Shen (spirit/mind)", "Jing (essence)"],
+    "abbreviations": ["LAc - Licensed Acupuncturist", "DACM - Doctor of Acupuncture and Chinese Medicine", "DAOM - Doctor of Acupuncture and Oriental Medicine", "MSAOM - Master of Science in Acupuncture and Oriental Medicine", "NCCAOM - National Certification Commission for Acupuncture and Oriental Medicine", "Dipl.OM - Diplomate in Oriental Medicine", "Dipl.Ac - Diplomate in Acupuncture", "Dipl.CH - Diplomate in Chinese Herbology", "TCM - Traditional Chinese Medicine", "AP - Acupuncture Physician (Florida)", "PDA - Professional Development Activity", "CCAOM - Council of Colleges of Acupuncture and Herbal Medicine"]
+  },
+  "career_psychology": {
+    "career_levels": ["Acupuncture Student", "New Graduate / Associate Acupuncturist", "Licensed Acupuncturist (solo practice)", "Experienced Practitioner (5+ years)", "Practice Owner (multi-practitioner)", "Integrative clinic acupuncturist (hospital/VA)", "DAOM/Doctorate holder", "Acupuncture Educator/Faculty", "Researcher", "Community acupuncture practitioner"],
+    "fears": ["Financial instability — practice not generating enough revenue", "Patients expecting quick fixes for chronic conditions", "Insurance reimbursement challenges and denials", "Dry needling scope encroachment by physical therapists/chiropractors", "Being seen as 'alternative' rather than mainstream healthcare", "Adverse needle events (pneumothorax, nerve damage)", "Student loan debt with relatively modest earning potential", "Regulatory changes reducing scope of practice"],
+    "motivation": ["Helping people heal holistically", "Treating root causes not just symptoms", "Growing public acceptance and insurance coverage", "Autonomy of private practice", "Integration into mainstream healthcare (VA, hospitals)", "Intellectual depth of TCM philosophy", "Building long-term patient relationships", "Growing demand for drug-free pain management"],
+    "burnout": "Burnout driven by juggling clinical practice with business management responsibilities. Financial stress from lower patient volumes and insurance challenges. Smaller practices (15-30 patients/week) create pressure on revenue. Alternative practitioners often feel uncomfortable with business/marketing. Patient expectations for quick fixes vs reality of TCM's gradual approach causes frustration. Physical demands of standing and performing treatments all day contribute to fatigue."
+  },
+  "community": {
+    "reddit": ["r/acupuncture", "r/ChineseMedicine", "r/TCM", "r/alternativemedicine"],
+    "linkedin": ["American Society of Acupuncturists (ASA) LinkedIn", "NCCAOM LinkedIn", "Acupuncture and Oriental Medicine professionals groups"],
+    "associations": ["ASA (American Society of Acupuncturists) — federation of state associations", "AAAOM (American Association of Acupuncture and Oriental Medicine) — oldest and largest US organization", "NCCAOM (certification body, established 1982)", "NADA (National Acupuncture Detoxification Association)", "NGAOM (National Guild of Acupuncture and Oriental Medicine)", "CCAOM (Council of Colleges)", "State acupuncture associations", "POCA (People's Organization of Community Acupuncture)"],
+    "conferences": ["ASA Annual Conference", "Pacific Symposium", "AAAOM Conference", "TCM Kongress", "State association conferences"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "new_graduate": "45000-60000",
+      "established_practice": "65000-90000",
+      "high_demand_markets": "90000-130000",
+      "integrative_clinic_hospital": "75000-110000",
+      "practice_owner_successful": "100000-200000+"
+    },
+    "national_average_usd": 78000,
+    "job_count": "11,710 active job openings; growing but niche market",
+    "growth_rate": "5% projected (as fast as average); growing public awareness and insurance coverage",
+    "unemployment_rate": "Moderate — many are self-employed, so underemployment is the bigger concern",
+    "work_arrangements": ["Solo private practice (most common)", "Group integrative practice", "Hospital/VA system", "Community acupuncture clinics", "Wellness centers/spas", "Athletic/sports medicine facilities", "Mobile/house call practice"],
+    "trends": ["Growing insurance coverage expanding patient base", "Integration into VA healthcare system", "Opioid crisis driving demand for drug-free pain management", "California, New York, Washington highest-paying states", "Dry needling scope battles with PTs ongoing", "Community acupuncture model making care more accessible", "Telehealth consultations for herbal medicine (emerging)", "Salaries up 3% in last 5 years"]
+  }
+}

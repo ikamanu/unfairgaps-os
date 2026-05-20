@@ -1,0 +1,679 @@
+[
+  {
+    "id": "us-audiologists-p01",
+    "title": "OSHA Noise Exposure Dose Calculation",
+    "problem": "Audiologists conducting workplace hearing conservation programs must calculate Time-Weighted Average (TWA) noise exposure and dose percentages for each employee based on varying noise levels throughout the shift. Manual calculation using OSHA's exchange rate formula is error-prone and time-consuming, especially for complex multi-exposure scenarios. Errors can lead to OSHA citations and missed hearing protection requirements.",
+    "who": "Audiologists running occupational hearing conservation programs",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "OSHA Noise Exposure Calculator",
+      "one_liner": "Calculates TWA, noise dose percentage, and required hearing protection based on employee exposure data per OSHA 29 CFR 1910.95.",
+      "inputs": [
+        {
+          "name": "exposures",
+          "type": "array",
+          "label": "List of noise levels (dBA) and durations (hours)"
+        },
+        {
+          "name": "exchange_rate",
+          "type": "number",
+          "label": "Exchange rate (default 5 dB for OSHA, 3 dB for NIOSH)"
+        },
+        {
+          "name": "criterion_level",
+          "type": "number",
+          "label": "Criterion level (default 90 dBA OSHA)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dose_percent",
+          "label": "Noise dose (%)"
+        },
+        {
+          "name": "twa",
+          "label": "8-hour Time-Weighted Average (dBA)"
+        },
+        {
+          "name": "action_required",
+          "label": "Required action (hearing conservation program, protection, etc.)"
+        },
+        {
+          "name": "max_exposure_time",
+          "label": "Maximum allowable exposure time at given level"
+        }
+      ],
+      "formula_hint": "D = 100 * sum(C_i / T_i), where T_i = 8 / 2^((L_i - 90)/5) for OSHA. TWA = 16.61 * log10(D/100) + 90. Action level at 50% dose / 85 dBA TWA.",
+      "rates": {
+        "osha_pel": 90,
+        "osha_action_level": 85,
+        "osha_exchange_rate": 5,
+        "niosh_rel": 85,
+        "niosh_exchange_rate": 3
+      }
+    },
+    "example_queries": [
+      "Employee exposed to 92 dBA for 4 hours and 85 dBA for 4 hours - what's the TWA?",
+      "Calculate noise dose for a factory worker: 95 dB for 2 hours, 88 dB for 6 hours",
+      "What's the maximum allowed exposure time at 100 dBA under OSHA?"
+    ]
+  },
+  {
+    "id": "us-audiologists-p02",
+    "title": "Hearing Aid Cost and Insurance Coverage Estimation",
+    "problem": "Patients always ask about total out-of-pocket costs for hearing aids before committing to treatment. Audiologists must mentally juggle device costs, fitting fees, follow-up visits, insurance coverage limits, Medicare limitations, and state mandates for hearing aid coverage. Inaccurate estimates lead to patient frustration, abandoned fittings, and lost revenue.",
+    "who": "Private practice and clinic audiologists counseling patients on hearing aid options",
+    "frequency": "daily",
+    "time_waste_h": 5,
+    "money_risk_usd": 8000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Hearing Aid Cost Estimator",
+      "one_liner": "Estimates total patient cost for hearing aids including device, fitting, follow-ups, and insurance/benefit offsets.",
+      "inputs": [
+        {
+          "name": "device_tier",
+          "type": "select",
+          "label": "Device tier (basic/mid/premium)"
+        },
+        {
+          "name": "bilateral",
+          "type": "boolean",
+          "label": "Bilateral (both ears)?"
+        },
+        {
+          "name": "insurance_type",
+          "type": "select",
+          "label": "Insurance type (Medicare, Medicaid, private, VA, none)"
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "label": "Patient's state (for state mandate lookup)"
+        },
+        {
+          "name": "insurance_benefit_usd",
+          "type": "number",
+          "label": "Insurance hearing aid benefit amount (USD, if known)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "device_cost",
+          "label": "Device cost (USD)"
+        },
+        {
+          "name": "professional_fees",
+          "label": "Professional/fitting fees (USD)"
+        },
+        {
+          "name": "insurance_coverage",
+          "label": "Estimated insurance coverage (USD)"
+        },
+        {
+          "name": "out_of_pocket",
+          "label": "Estimated out-of-pocket (USD)"
+        },
+        {
+          "name": "financing_monthly",
+          "label": "Monthly payment if financed (12/24 months)"
+        }
+      ],
+      "formula_hint": "Total = device_cost * quantity + fitting_fee + follow_up_visits * visit_fee. Out_of_pocket = total - insurance_benefit. Basic: $1,000-2,000/ear, Mid: $2,000-4,000/ear, Premium: $4,000-7,000/ear. Professional fees: $200-500.",
+      "rates": {
+        "basic_range": [
+          1000,
+          2000
+        ],
+        "mid_range": [
+          2000,
+          4000
+        ],
+        "premium_range": [
+          4000,
+          7000
+        ],
+        "fitting_fee_range": [
+          200,
+          500
+        ],
+        "follow_up_visits": 4,
+        "follow_up_fee": 75
+      }
+    },
+    "example_queries": [
+      "How much will a pair of mid-tier hearing aids cost a patient with Blue Cross in Texas?",
+      "Patient has Medicare and wants premium hearing aids - what's the out of pocket?",
+      "Estimate cost for bilateral basic hearing aids, no insurance, with 24-month financing"
+    ]
+  },
+  {
+    "id": "us-audiologists-p03",
+    "title": "Hearing Aid Fitting Verification Checklist",
+    "problem": "Hearing aid fitting involves 15+ verification steps including real-ear measurements, electroacoustic analysis, speech mapping, patient subjective feedback, and documentation. Skipping steps (especially real-ear measurement) leads to poor outcomes, patient returns, and potential liability. Studies show only 30-40% of audiologists consistently perform real-ear measurements despite being best practice.",
+    "who": "All dispensing audiologists, especially newer clinicians",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Hearing Aid Fitting Verification Protocol",
+      "one_liner": "Complete step-by-step checklist for hearing aid fitting verification ensuring best-practice compliance including real-ear measurements.",
+      "steps": [
+        "Step 1: Review audiogram and confirm hearing aid selection matches prescription (NAL-NL2 or DSL v5)",
+        "Step 2: Perform otoscopy - check for cerumen, canal conditions",
+        "Step 3: Verify hearing aid electroacoustic performance (ANSI S3.22 coupler measurements)",
+        "Step 4: Place probe tube in ear canal - mark at tragus + 28-30mm for adults",
+        "Step 5: Measure REUR (Real Ear Unaided Response)",
+        "Step 6: Insert hearing aid and measure REAR (Real Ear Aided Response) at 55, 65, 75 dB input",
+        "Step 7: Compare REAR to prescriptive targets - adjust gain if deviation >5 dB at key frequencies",
+        "Step 8: Run speech mapping with live speech or recorded passage",
+        "Step 9: Verify MPO (Maximum Power Output) with 85-90 dB sweep - must not exceed UCL",
+        "Step 10: Perform aided speech-in-noise testing (QuickSIN or HINT)",
+        "Step 11: Counsel patient on device use, insertion, cleaning, battery/charging",
+        "Step 12: Set up smartphone app and connectivity features",
+        "Step 13: Schedule follow-up appointments (1 week, 1 month, 3 months)",
+        "Step 14: Document all measurements and settings in patient record",
+        "Step 15: Confirm warranty registration and review return/trial period policy"
+      ],
+      "warnings": [
+        "Warning: Never skip real-ear measurement - subjective-only fitting leads to 10-15 dB prescription errors",
+        "Warning: Check MPO against UCL to prevent acoustic trauma",
+        "Warning: Document trial period start date - most states mandate 30-60 day return window"
+      ],
+      "regulatory_refs": [
+        "FDA 21 CFR Part 801.420 (hearing aid labeling)",
+        "State hearing aid dispensing regulations",
+        "AAA Clinical Practice Guidelines"
+      ]
+    },
+    "example_queries": [
+      "Walk me through the complete hearing aid fitting verification process",
+      "What are the steps for real-ear measurement during a fitting?",
+      "Give me the fitting checklist - I want to make sure I'm not missing anything"
+    ]
+  },
+  {
+    "id": "us-audiologists-p04",
+    "title": "Medical Necessity Letter for Hearing Aids",
+    "problem": "Insurance companies frequently deny hearing aid claims, requiring audiologists to write detailed medical necessity letters. Each letter must include specific audiometric data, functional impact documentation, and cite relevant diagnosis codes. Writing these letters from scratch takes 30-60 minutes per patient and delays patient access to devices. Poorly written letters result in denials.",
+    "who": "All audiologists dealing with insurance, especially private practice",
+    "frequency": "weekly",
+    "time_waste_h": 4,
+    "money_risk_usd": 6000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Medical Necessity Letter Generator",
+      "one_liner": "Generates insurance-ready medical necessity letters for hearing aids with audiometric data, ICD-10 codes, and functional impact documentation.",
+      "doc_name": "Letter of Medical Necessity for Hearing Aids",
+      "variables": [
+        {
+          "name": "patient_name",
+          "label": "Patient name"
+        },
+        {
+          "name": "patient_dob",
+          "label": "Date of birth"
+        },
+        {
+          "name": "insurance_company",
+          "label": "Insurance company"
+        },
+        {
+          "name": "policy_number",
+          "label": "Policy number"
+        },
+        {
+          "name": "diagnosis_codes",
+          "label": "ICD-10 codes (e.g., H90.3 bilateral SNHL)"
+        },
+        {
+          "name": "pta_right",
+          "label": "PTA right ear (dB HL)"
+        },
+        {
+          "name": "pta_left",
+          "label": "PTA left ear (dB HL)"
+        },
+        {
+          "name": "wrs_right",
+          "label": "Word recognition score right (%)"
+        },
+        {
+          "name": "wrs_left",
+          "label": "Word recognition score left (%)"
+        },
+        {
+          "name": "hearing_aid_model",
+          "label": "Recommended hearing aid model"
+        },
+        {
+          "name": "functional_limitations",
+          "label": "Functional limitations described by patient"
+        },
+        {
+          "name": "previous_amplification",
+          "label": "Previous hearing aid use history"
+        }
+      ],
+      "structure_hint": "Professional letterhead -> Date -> Insurance company address -> Re: Patient/Policy -> Medical history summary -> Audiometric findings (PTA, WRS, tympanometry) -> Functional impact on daily life/work/safety -> Recommended treatment and device -> Medical necessity justification citing AAA guidelines -> ICD-10 and CPT codes -> Provider signature with credentials"
+    },
+    "example_queries": [
+      "Write a medical necessity letter for a patient with bilateral moderate SNHL, PTA 52 dB both ears",
+      "I need a prior authorization letter for hearing aids - patient has Aetna",
+      "Generate a medical necessity letter for a 68-year-old with bilateral hearing loss and word recognition of 72%"
+    ]
+  },
+  {
+    "id": "us-audiologists-p05",
+    "title": "OSHA Hearing Conservation Program Compliance Checklist",
+    "problem": "Audiologists managing workplace hearing conservation programs must ensure full compliance with OSHA 29 CFR 1910.95. The standard has 8 major components, each with specific requirements for noise monitoring, audiometric testing, hearing protection, training, and recordkeeping. Missing any element during an OSHA inspection leads to citations ranging from $16,131 to $161,323 per violation.",
+    "who": "Industrial/occupational audiologists and audiologists consulting for employers",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "OSHA Hearing Conservation Compliance Checklist",
+      "one_liner": "Complete compliance checklist for OSHA 29 CFR 1910.95 hearing conservation programs with all required elements and documentation.",
+      "steps": [
+        "Step 1: Noise monitoring - Confirm area/personal noise surveys performed, identify all workers exposed ≥85 dBA TWA (action level)",
+        "Step 2: Audiometric testing program - Baseline audiogram within 6 months of first exposure (or 1 year if mobile van used with interim HPD), annual audiograms for all included employees",
+        "Step 3: Standard Threshold Shift (STS) evaluation - Compare annual to baseline, flag ≥10 dB average shift at 2000/3000/4000 Hz in either ear, age-correct per Appendix F if desired",
+        "Step 4: STS follow-up - Notify employee within 21 days of determination, refit/retrain HPD, refer for clinical evaluation if needed, record on OSHA 300 log if work-related and meets criteria",
+        "Step 5: Hearing protection - Make HPDs available at no cost to all workers ≥85 dBA TWA, mandatory use ≥90 dBA TWA or after STS, ensure NRR-based attenuation achieves <85 dBA exposure",
+        "Step 6: Training program - Annual training on: effects of noise, purpose of HPDs and audiometric testing, proper HPD use and care",
+        "Step 7: Recordkeeping - Maintain audiometric records for duration of employment, noise exposure records per 29 CFR 1910.95(m)",
+        "Step 8: Audiometer calibration - Daily biological check, annual acoustic calibration, exhaustive calibration every 2 years per ANSI S3.6"
+      ],
+      "warnings": [
+        "Warning: OSHA penalties up to $16,131/serious violation, $161,323/willful violation (2026 adjusted rates)",
+        "Warning: Baseline audiogram must be preceded by 14 hours of quiet (no workplace noise exposure or HPD use during quiet period)",
+        "Warning: Audiometric testing must be performed by licensed/certified audiologist, physician, or technician under their supervision"
+      ],
+      "regulatory_refs": [
+        "29 CFR 1910.95 (OSHA Occupational Noise Exposure)",
+        "ANSI S3.6 (Audiometer Standards)",
+        "OSHA Penalty Adjustment per Federal Civil Penalties Inflation Adjustment Act"
+      ]
+    },
+    "example_queries": [
+      "What do I need for a complete OSHA hearing conservation program?",
+      "We have an OSHA inspection next month - run me through the hearing conservation checklist",
+      "What are the audiometric testing requirements under 1910.95?"
+    ]
+  },
+  {
+    "id": "us-audiologists-p06",
+    "title": "Audiology CPT and ICD-10 Billing Code Reference",
+    "problem": "Audiologists must select correct CPT and ICD-10 codes for every service - audiometry, tympanometry, OAE, ABR, hearing aid fitting, vestibular testing, etc. Using wrong codes leads to claim denials, delayed payments, and potential fraud allegations. Medicare and private insurers have different coverage rules, and codes update annually. Audiologists lose significant revenue to coding errors and denials.",
+    "who": "All audiologists who bill insurance, especially private practice owners and billing staff",
+    "frequency": "daily",
+    "time_waste_h": 3,
+    "money_risk_usd": 20000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Audiology Billing Code Quick Reference",
+      "one_liner": "Quick lookup of CPT procedure codes, ICD-10 diagnosis codes, and Medicare/insurance coverage rules for audiology services.",
+      "data_domain": "CPT codes, ICD-10 codes, and payer coverage rules for audiology services",
+      "lookup_keys": [
+        "service_type",
+        "cpt_code",
+        "icd10_code",
+        "payer_type"
+      ],
+      "data_hints": {
+        "source_law": "AMA CPT Code Set, ICD-10-CM, CMS Medicare Physician Fee Schedule",
+        "key_sections": [
+          "CPT 92550-92700 (audiologic function tests)",
+          "CPT 92507-92526 (speech/language)",
+          "CPT 92601-92633 (cochlear implant)",
+          "ICD-10 H90-H95 (diseases of ear)",
+          "V5000-V5299 (hearing aid codes for some payers)"
+        ],
+        "common_codes": {
+          "92557": "Comprehensive audiometry (air, bone, speech - SRT + WRS)",
+          "92550": "Tympanometry and acoustic reflex",
+          "92558": "Evoked otoacoustic emissions (comprehensive)",
+          "92585": "Auditory brainstem response (ABR)",
+          "92590": "Hearing aid exam, monaural",
+          "92591": "Hearing aid exam, binaural",
+          "92626": "Evaluation for cochlear implant candidacy"
+        }
+      }
+    },
+    "example_queries": [
+      "What CPT code do I use for comprehensive audiometry with tympanometry?",
+      "Which ICD-10 code for bilateral sensorineural hearing loss - moderate?",
+      "Can I bill 92557 and 92550 together on the same visit for Medicare?"
+    ]
+  },
+  {
+    "id": "us-audiologists-p07",
+    "title": "CEU and License Renewal Deadline Tracker",
+    "problem": "Audiologists must track multiple overlapping deadlines: state license renewal (varies by state, 1-3 year cycles), CCC-A maintenance (3-year cycle, 30 CEU hours), ABA certification renewal, and OSHA-related certifications. Each state has different CEU requirements (10-30 hours), accepted providers, and required topics (e.g., ethics). Missing a deadline means inability to practice, lost income, and potential board penalties.",
+    "who": "All licensed audiologists, especially those licensed in multiple states",
+    "frequency": "quarterly",
+    "time_waste_h": 3,
+    "money_risk_usd": 10000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Audiology License & CEU Deadline Reference",
+      "one_liner": "State-by-state lookup of audiology license renewal dates, CEU requirements, accepted providers, and CCC-A/ABA maintenance schedules.",
+      "data_domain": "State audiology licensing requirements, CEU mandates, and certification maintenance schedules",
+      "lookup_keys": [
+        "state",
+        "certification_type",
+        "renewal_cycle"
+      ],
+      "data_hints": {
+        "source_law": "State Audiology Practice Acts, ASHA CCC-A Standards, ABA Certification Requirements",
+        "key_sections": [
+          "State board renewal cycles and CEU hours",
+          "CCC-A: 30 certification maintenance hours per 3-year cycle",
+          "ABA: 45 CEUs per 3-year cycle",
+          "ASLP Compact privilege requirements"
+        ],
+        "key_data": {
+          "ccca_cycle": "3 years, 30 hours, at least 1 hour ethics",
+          "aba_cycle": "3 years, 45 CEUs",
+          "state_range": "10-30 CEU hours depending on state, 1-3 year cycles",
+          "compact_states": "37 jurisdictions as of November 2025 via CompactConnect"
+        }
+      }
+    },
+    "example_queries": [
+      "What are the CEU requirements for audiology license renewal in California?",
+      "When does my CCC-A certification need to be renewed and how many hours do I need?",
+      "I'm licensed in Texas and want to add New York through the compact - what do I need?"
+    ]
+  },
+  {
+    "id": "us-audiologists-p08",
+    "title": "Standard Threshold Shift Calculation and OSHA Recordability",
+    "problem": "After annual audiometric testing, audiologists must compare results to baselines to identify Standard Threshold Shifts (STS). The calculation requires averaging threshold changes at 2000, 3000, and 4000 Hz, optionally applying age correction factors from OSHA Appendix F, and determining OSHA 300 log recordability. Errors in STS determination lead to missed notifications (required within 21 days), incorrect OSHA logs, and potential citations.",
+    "who": "Audiologists managing occupational hearing conservation programs",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 10000,
+    "source": "regulatory",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "STS Calculator with OSHA Age Correction",
+      "one_liner": "Calculates Standard Threshold Shift per OSHA 29 CFR 1910.95 with optional age correction (Appendix F) and determines recordability.",
+      "inputs": [
+        {
+          "name": "baseline_2k",
+          "type": "number",
+          "label": "Baseline threshold at 2000 Hz (dB HL)"
+        },
+        {
+          "name": "baseline_3k",
+          "type": "number",
+          "label": "Baseline threshold at 3000 Hz (dB HL)"
+        },
+        {
+          "name": "baseline_4k",
+          "type": "number",
+          "label": "Baseline threshold at 4000 Hz (dB HL)"
+        },
+        {
+          "name": "annual_2k",
+          "type": "number",
+          "label": "Annual threshold at 2000 Hz (dB HL)"
+        },
+        {
+          "name": "annual_3k",
+          "type": "number",
+          "label": "Annual threshold at 3000 Hz (dB HL)"
+        },
+        {
+          "name": "annual_4k",
+          "type": "number",
+          "label": "Annual threshold at 4000 Hz (dB HL)"
+        },
+        {
+          "name": "age_at_baseline",
+          "type": "number",
+          "label": "Age at baseline test"
+        },
+        {
+          "name": "age_at_annual",
+          "type": "number",
+          "label": "Age at annual test"
+        },
+        {
+          "name": "sex",
+          "type": "select",
+          "label": "Sex (male/female) for age correction"
+        },
+        {
+          "name": "apply_age_correction",
+          "type": "boolean",
+          "label": "Apply OSHA Appendix F age correction?"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "avg_shift_raw",
+          "label": "Average threshold shift (dB) without age correction"
+        },
+        {
+          "name": "avg_shift_corrected",
+          "label": "Average threshold shift (dB) with age correction"
+        },
+        {
+          "name": "sts_detected",
+          "label": "STS detected (Yes/No)"
+        },
+        {
+          "name": "osha_recordable",
+          "label": "OSHA 300 log recordable (Yes/No)"
+        },
+        {
+          "name": "required_actions",
+          "label": "Required follow-up actions"
+        }
+      ],
+      "formula_hint": "Shift at each freq = annual - baseline. Avg shift = (shift_2k + shift_3k + shift_4k) / 3. Age correction = Appendix F value at annual age minus Appendix F value at baseline age for each freq. STS = avg shift ≥ 10 dB. Recordable if STS + 25 dB average hearing level at 2k/3k/4k in same ear.",
+      "rates": {
+        "sts_threshold": 10,
+        "recordability_hl_threshold": 25
+      }
+    },
+    "example_queries": [
+      "Calculate STS for a 45-year-old male: baseline 10/15/20, annual 20/30/35 at 2k/3k/4k",
+      "Is this a standard threshold shift? Baseline: 15/20/25, Annual: 25/30/40 with age correction for female age 38 to 42",
+      "Worker had a 12 dB average shift - is this recordable on the OSHA 300 log?"
+    ]
+  },
+  {
+    "id": "us-audiologists-p09",
+    "title": "ENT Referral Letter Generator",
+    "problem": "Audiologists frequently need to write referral letters to ENT physicians for patients with asymmetric hearing loss, sudden hearing loss, chronic otitis media, vestibular disorders, or other medical conditions. Each referral must include relevant audiometric data, clinical findings, and specific reason for referral. Writing detailed referrals from scratch is time-consuming and inconsistent formatting can delay patient care.",
+    "who": "All clinical audiologists",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 2000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "ENT Referral Letter Generator",
+      "one_liner": "Generates professional ENT referral letters with audiometric findings, clinical observations, and specific referral indications.",
+      "doc_name": "ENT Physician Referral Letter",
+      "variables": [
+        {
+          "name": "patient_name",
+          "label": "Patient name"
+        },
+        {
+          "name": "patient_dob",
+          "label": "Date of birth"
+        },
+        {
+          "name": "referring_audiologist",
+          "label": "Referring audiologist name and credentials"
+        },
+        {
+          "name": "ent_physician",
+          "label": "ENT physician name"
+        },
+        {
+          "name": "referral_reason",
+          "label": "Reason for referral (asymmetric loss, sudden loss, tinnitus, vertigo, etc.)"
+        },
+        {
+          "name": "audiometric_summary",
+          "label": "Key audiometric findings"
+        },
+        {
+          "name": "tympanometry_results",
+          "label": "Tympanometry results"
+        },
+        {
+          "name": "clinical_observations",
+          "label": "Otoscopic and other clinical observations"
+        },
+        {
+          "name": "urgency",
+          "label": "Urgency level (routine/urgent/emergent)"
+        }
+      ],
+      "structure_hint": "Professional letterhead -> Date -> ENT physician address -> Re: Patient referral -> Chief complaint -> Audiometric findings (PTA, WRS, tympanometry, OAE if applicable) -> Clinical observations -> Referral indication with specific concern -> Requested evaluation -> Audiologist signature with AuD, CCC-A credentials"
+    },
+    "example_queries": [
+      "Write a referral to ENT for a patient with sudden unilateral hearing loss in the left ear",
+      "I need a referral letter for a patient with asymmetric SNHL - 25 dB difference at 4kHz",
+      "Generate an urgent ENT referral for a patient with pulsatile tinnitus and conductive hearing loss"
+    ]
+  },
+  {
+    "id": "us-audiologists-p10",
+    "title": "Newborn Hearing Screening Protocol and Follow-Up",
+    "problem": "Audiologists conducting newborn hearing screenings must follow strict JCIH (Joint Committee on Infant Hearing) guidelines with specific timelines: screen by 1 month, diagnose by 3 months, intervene by 6 months (1-3-6 rule). Each step has required procedures, documentation, and follow-up actions. Missed follow-ups are the biggest gap in early hearing detection - nearly 50% of infants who fail screening are lost to follow-up.",
+    "who": "Hospital-based and pediatric audiologists",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 15000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Newborn Hearing Screening & Follow-Up Protocol",
+      "one_liner": "Step-by-step protocol for newborn hearing screening, diagnostic follow-up, and early intervention referral per JCIH 2019 guidelines.",
+      "steps": [
+        "Step 1: Initial screening - OAE and/or automated ABR before hospital discharge (by 1 month of age)",
+        "Step 2: Document results in medical record and state EHDI (Early Hearing Detection and Intervention) system",
+        "Step 3: PASS both ears - Provide parent education, document, schedule routine follow-up per risk factors",
+        "Step 4: REFER one or both ears - Schedule outpatient rescreen within 2 weeks, counsel parents (not a diagnosis)",
+        "Step 5: Outpatient rescreen - Repeat OAE/ABR in diagnostic setting",
+        "Step 6: If rescreen = REFER - Schedule comprehensive diagnostic ABR by 3 months of age",
+        "Step 7: Diagnostic ABR - Frequency-specific ABR, bone conduction ABR, tympanometry, determine type/degree/configuration",
+        "Step 8: Confirmed hearing loss - Refer to early intervention (Part C) within 2 days, audiology follow-up within 1 month",
+        "Step 9: Hearing aid fitting by 6 months of age (1 month after diagnosis if possible)",
+        "Step 10: Ongoing monitoring - Audiologic evaluation every 3 months for first year, every 6 months ages 1-3",
+        "Step 11: Risk factor monitoring - Children with CMV, NICU stay >5 days, family history: monitor even if passed initial screen"
+      ],
+      "warnings": [
+        "Warning: Lost-to-follow-up rate is ~45% nationally - implement tracking system and follow-up calls",
+        "Warning: NICU infants must receive ABR (not OAE alone) to detect auditory neuropathy spectrum disorder",
+        "Warning: State reporting to EHDI system is mandated - check state-specific requirements"
+      ],
+      "regulatory_refs": [
+        "JCIH 2019 Position Statement",
+        "State newborn hearing screening mandates (all 50 states + DC)",
+        "IDEA Part C Early Intervention",
+        "CDC EHDI Program Guidelines"
+      ]
+    },
+    "example_queries": [
+      "What's the protocol when a newborn refers on the hearing screening?",
+      "Walk me through the JCIH 1-3-6 timeline for failed newborn screening",
+      "Baby failed OAE in right ear before discharge - what are the next steps?"
+    ]
+  },
+  {
+    "id": "us-audiologists-p11",
+    "title": "OTC vs Professional Hearing Aid Candidacy Advisor",
+    "problem": "Since the FDA OTC hearing aid rule took effect in October 2022, audiologists face constant questions from patients about whether OTC devices are appropriate for them. Making the wrong recommendation risks patient safety (missing medical conditions requiring referral) or patient trust (seeming biased toward expensive professional devices). Audiologists need a systematic framework to evaluate candidacy based on audiometric results, age, medical history, and functional needs.",
+    "who": "All dispensing audiologists, especially those competing with OTC retail",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 3000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "OTC vs Professional Hearing Aid Advisor",
+      "one_liner": "Evaluates whether a patient is a candidate for OTC hearing aids or requires professional fitting based on FDA criteria, audiometric data, and clinical factors.",
+      "expertise_area": "OTC hearing aid candidacy evaluation and patient counseling",
+      "decision_criteria": [
+        "Age (OTC only for 18+)",
+        "Degree of hearing loss (OTC: perceived mild-moderate)",
+        "Type of hearing loss (conductive/mixed requires medical evaluation)",
+        "Asymmetry (>15 dB asymmetry = red flag)",
+        "Sudden onset",
+        "Tinnitus characteristics",
+        "History of ear surgery or drainage",
+        "Cognitive status and dexterity",
+        "Communication needs and environments"
+      ],
+      "context_needed": [
+        "FDA OTC hearing aid rule (21 CFR Part 800)",
+        "ASHA Position Statement on OTC hearing aids",
+        "AAA Guidelines on OTC devices",
+        "FDA red flag conditions requiring medical evaluation"
+      ]
+    },
+    "example_queries": [
+      "Patient is 72 with mild bilateral SNHL and good word recognition - is OTC appropriate?",
+      "When should I recommend against OTC hearing aids?",
+      "Patient wants to try OTC first - what should I counsel them about?"
+    ]
+  },
+  {
+    "id": "us-audiologists-p12",
+    "title": "Insurance Authorization Denial Appeal Advisor",
+    "problem": "Hearing aid and audiology service claims are denied at high rates by insurance companies. Audiologists must navigate complex appeal processes with specific deadlines (typically 30-180 days depending on payer), required documentation, and legal frameworks (state insurance mandates, ERISA for employer plans, Medicare appeals). Many audiologists accept denials without appealing, losing thousands in revenue. Successful appeals require knowing the right regulatory leverage for each payer type.",
+    "who": "Private practice audiologists and practice managers handling insurance",
+    "frequency": "weekly",
+    "time_waste_h": 4,
+    "money_risk_usd": 12000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Insurance Denial Appeal Advisor",
+      "one_liner": "Guides audiologists through insurance denial appeals with payer-specific strategies, required documentation, deadlines, and regulatory leverage points.",
+      "expertise_area": "Insurance claim denial appeals for audiology services and hearing aids",
+      "decision_criteria": [
+        "Payer type (Medicare, Medicaid, commercial, ERISA/self-funded, VA/Tricare)",
+        "Denial reason (not medically necessary, not covered, coding error, authorization missing)",
+        "Service type (diagnostic vs treatment vs device)",
+        "State hearing aid mandate applicability",
+        "Appeal level (internal first level, internal second level, external review, state insurance commissioner)",
+        "Timeline since denial"
+      ],
+      "context_needed": [
+        "State hearing aid insurance mandates",
+        "Medicare Audiology Access Improvement Act status",
+        "ERISA preemption rules",
+        "CMS Medicare appeals process (5 levels)",
+        "State external review processes",
+        "Common denial reason codes and rebuttals"
+      ]
+    },
+    "example_queries": [
+      "Aetna denied hearing aids as not medically necessary - how do I appeal?",
+      "What's the Medicare appeal process for a denied audiology claim?",
+      "Patient's employer plan denied hearing aids - does the state mandate apply to ERISA plans?"
+    ]
+  }
+]

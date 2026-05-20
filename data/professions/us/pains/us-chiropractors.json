@@ -1,0 +1,642 @@
+[
+  {
+    "id": "us-chiropractors-p01",
+    "title": "Insurance Reimbursement Estimator",
+    "problem": "Chiropractors spend significant time estimating expected insurance reimbursements for different CPT codes and payers. Incorrect estimates lead to cash flow surprises and difficulty setting patient financial expectations. Underbilling or overbilling can trigger audits or lost revenue.",
+    "who": "Solo practitioners and small group practice owners managing their own billing",
+    "frequency": "daily",
+    "time_waste_h": 5,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Chiropractic Reimbursement Estimator",
+      "one_liner": "Calculates expected insurance reimbursement for chiropractic CPT codes by payer type and region.",
+      "inputs": [
+        {
+          "name": "cpt_codes",
+          "type": "text",
+          "label": "CPT code(s) (e.g. 98940, 98941, 98942)"
+        },
+        {
+          "name": "payer_type",
+          "type": "select",
+          "label": "Payer type (Medicare, Medicaid, BCBS, Aetna, UHC, Cigna, Cash)"
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "label": "State (e.g. CA, TX, FL)"
+        },
+        {
+          "name": "num_visits",
+          "type": "number",
+          "label": "Number of visits per month"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "per_visit_reimbursement",
+          "label": "Expected reimbursement per visit (USD)"
+        },
+        {
+          "name": "monthly_revenue",
+          "label": "Projected monthly revenue (USD)"
+        },
+        {
+          "name": "patient_copay_estimate",
+          "label": "Estimated patient copay (USD)"
+        }
+      ],
+      "formula_hint": "Base Medicare rate by CPT code * geographic adjustment factor (GPCI). Commercial payers typically 110-150% of Medicare rates. Apply modifier adjustments for 25, 59, etc.",
+      "rates": {
+        "medicare_98940_base": 30.1,
+        "medicare_98941_base": 42.07,
+        "medicare_98942_base": 50.44,
+        "commercial_multiplier_range": [
+          1.1,
+          1.5
+        ]
+      }
+    },
+    "example_queries": [
+      "How much will Medicare reimburse for 98941 in California?",
+      "Estimate my monthly revenue for 80 visits with a mix of BCBS and UHC patients using 98940 and 98941",
+      "What's the typical reimbursement difference between Medicare and Aetna for a CMT visit?"
+    ]
+  },
+  {
+    "id": "us-chiropractors-p02",
+    "title": "SOAP Note Generator",
+    "problem": "Chiropractors must complete SOAP notes for every patient encounter, often 20-30 per day. Same-day documentation is required for compliance, but writing detailed notes is time-consuming and repetitive. Incomplete or vague SOAP notes lead to claim denials and audit failures.",
+    "who": "All practicing chiropractors, especially high-volume solo practitioners",
+    "frequency": "daily",
+    "time_waste_h": 8,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Chiropractic SOAP Note Generator",
+      "one_liner": "Generates compliant, detailed SOAP notes from brief clinical inputs for chiropractic visits.",
+      "doc_name": "SOAP Note",
+      "variables": [
+        {
+          "name": "patient_complaint",
+          "label": "Chief complaint / subjective report"
+        },
+        {
+          "name": "region_treated",
+          "label": "Spinal region(s) treated (cervical, thoracic, lumbar, sacral)"
+        },
+        {
+          "name": "technique_used",
+          "label": "Technique (Diversified, Activator, Thompson, Flexion-Distraction, etc.)"
+        },
+        {
+          "name": "rom_findings",
+          "label": "Range of motion findings"
+        },
+        {
+          "name": "pain_scale",
+          "label": "Pain level (0-10)"
+        },
+        {
+          "name": "assessment",
+          "label": "Assessment / diagnosis codes"
+        },
+        {
+          "name": "plan",
+          "label": "Plan (frequency, next visit, home exercises)"
+        }
+      ],
+      "structure_hint": "S: Patient reported [complaint], pain [scale]/10, aggravating/relieving factors -> O: ROM [findings], palpation findings, orthopedic tests, adjustment performed [technique] to [regions] -> A: [diagnosis] improving/stable/worsening, functional progress -> P: Continue [frequency], reassess in [timeframe], home exercises [list]"
+    },
+    "example_queries": [
+      "Write a SOAP note for a lumbar adjustment using diversified technique, patient reports 6/10 low back pain radiating to left leg",
+      "Generate a progress note for cervical and thoracic adjustment, patient improving from MVA, pain down from 8 to 4",
+      "Create a SOAP note for a new patient with chronic neck pain, restricted ROM, treated with Activator method"
+    ]
+  },
+  {
+    "id": "us-chiropractors-p03",
+    "title": "CPT and ICD-10 Code Lookup for Chiropractic",
+    "problem": "Selecting correct CPT procedure codes and ICD-10 diagnosis codes is critical for claim approval. Chiropractors frequently second-guess code selection, especially with the new 2026 diagnosis codes. Wrong codes cause denials, delays, and potential fraud allegations.",
+    "who": "Chiropractors handling their own billing and front-office staff",
+    "frequency": "daily",
+    "time_waste_h": 3,
+    "money_risk_usd": 10000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Chiropractic Billing Code Reference",
+      "one_liner": "Quick lookup of CPT procedure codes and ICD-10 diagnosis codes commonly used in chiropractic practice.",
+      "data_domain": "CPT codes for chiropractic manipulative treatment, evaluation, therapeutic procedures, and modalities; ICD-10-CM codes for musculoskeletal conditions",
+      "lookup_keys": [
+        "condition_type",
+        "body_region",
+        "procedure_type",
+        "cpt_code",
+        "icd10_code"
+      ],
+      "data_hints": {
+        "source_law": "AMA CPT Manual 2026, ICD-10-CM 2026",
+        "key_sections": [
+          "CPT 98940-98943 (CMT)",
+          "CPT 97110-97542 (Therapeutic)",
+          "CPT 99201-99215 (E/M)",
+          "ICD-10 M54 (Dorsalgia)",
+          "ICD-10 M99 (Subluxation)",
+          "New 2026 abdominal/pelvic pain codes"
+        ]
+      }
+    },
+    "example_queries": [
+      "What CPT code do I use for a 3-4 region spinal adjustment?",
+      "What ICD-10 codes pair best with 98941 for low back pain with radiculopathy?",
+      "What are the new 2026 ICD-10 codes relevant to chiropractic?"
+    ]
+  },
+  {
+    "id": "us-chiropractors-p04",
+    "title": "Continuing Education Requirements by State",
+    "problem": "CE requirements vary dramatically by state - different hour counts, mandatory topics, approved providers, and renewal cycles. Chiropractors licensed in multiple states struggle to track what's needed where. Missing CE deadlines means license lapse and inability to practice.",
+    "who": "All licensed chiropractors, especially those licensed in multiple states",
+    "frequency": "quarterly",
+    "time_waste_h": 4,
+    "money_risk_usd": 20000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Chiropractic CE Requirements by State",
+      "one_liner": "Look up continuing education requirements, mandatory topics, and renewal deadlines for any US state chiropractic license.",
+      "data_domain": "State-by-state chiropractic CE requirements, renewal cycles, mandatory topics, approved providers",
+      "lookup_keys": [
+        "state",
+        "license_type",
+        "renewal_cycle",
+        "mandatory_topics"
+      ],
+      "data_hints": {
+        "source_law": "State Chiropractic Practice Acts, State Board of Chiropractic Examiners regulations",
+        "key_sections": [
+          "CE hour requirements (12-48 hours depending on state)",
+          "Mandatory topics (ethics, opioid awareness, HIPAA)",
+          "Renewal cycle (annual or biennial)",
+          "Approved CE providers"
+        ]
+      }
+    },
+    "example_queries": [
+      "What are the CE requirements for chiropractic license renewal in Texas?",
+      "How many CE hours does California require and are there mandatory topics?",
+      "I'm licensed in FL and NY - what CE courses would satisfy both states?"
+    ]
+  },
+  {
+    "id": "us-chiropractors-p05",
+    "title": "Insurance Claim Denial Resolution Checklist",
+    "problem": "Chiropractic claims have high denial rates, especially from Medicare and managed care. Each denied claim requires investigation, appeal preparation, and resubmission. Many chiropractors write off denied claims rather than appeal, losing thousands in legitimate revenue.",
+    "who": "Solo practitioners and billing staff in chiropractic offices",
+    "frequency": "weekly",
+    "time_waste_h": 6,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Chiropractic Claim Denial Resolution",
+      "one_liner": "Step-by-step process to identify denial reason, prepare documentation, and file appeals for denied chiropractic insurance claims.",
+      "steps": [
+        "Step 1: Identify denial reason code from ERA/EOB (CO-4, CO-11, CO-16, CO-50, CO-97, PR-1, etc.)",
+        "Step 2: Verify patient eligibility and benefits were active on date of service",
+        "Step 3: Check CPT-ICD code pairing - ensure diagnosis supports medical necessity for CMT",
+        "Step 4: Review SOAP note for date of service - confirm documentation supports codes billed",
+        "Step 5: Check if prior authorization was required and obtained",
+        "Step 6: Verify timely filing - check payer-specific deadline (typically 90-365 days)",
+        "Step 7: For medical necessity denials - prepare Letter of Medical Necessity with clinical rationale",
+        "Step 8: Gather supporting documentation (X-rays, ROM measurements, functional outcome scores)",
+        "Step 9: Submit corrected claim or formal appeal with cover letter within appeal deadline",
+        "Step 10: Track appeal status - follow up at 30/60/90 days",
+        "Step 11: If appeal denied, consider external review or state insurance commissioner complaint"
+      ],
+      "warnings": [
+        "Warning: Medicare appeals have strict 120-day deadline from date of initial determination",
+        "Warning: Do not rebill denied claims as new claims - this can be flagged as duplicate billing fraud",
+        "Warning: Document all phone calls with payer (date, time, rep name, reference number)"
+      ],
+      "regulatory_refs": [
+        "42 CFR 405.900-405.986 (Medicare Appeals)",
+        "State insurance regulations for commercial appeal rights"
+      ]
+    },
+    "example_queries": [
+      "My 98941 claim was denied with code CO-16, what do I do?",
+      "How do I appeal a Medicare denial for medical necessity on chiropractic care?",
+      "Step by step - how to handle a claim denied for no prior authorization?"
+    ]
+  },
+  {
+    "id": "us-chiropractors-p06",
+    "title": "Treatment Plan Generator",
+    "problem": "Creating individualized treatment plans with proper frequency, duration, and measurable goals is required by insurers for reimbursement. Poorly written plans trigger audits and denials. Chiropractors rewrite similar plans repeatedly with minor variations.",
+    "who": "All practicing chiropractors, especially those dealing with PI and WC cases",
+    "frequency": "daily",
+    "time_waste_h": 5,
+    "money_risk_usd": 8000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Chiropractic Treatment Plan Generator",
+      "one_liner": "Generates insurance-compliant treatment plans with measurable goals, visit frequency, and duration based on diagnosis and clinical findings.",
+      "doc_name": "Treatment Plan",
+      "variables": [
+        {
+          "name": "patient_age",
+          "label": "Patient age"
+        },
+        {
+          "name": "diagnosis",
+          "label": "Primary and secondary diagnoses (ICD-10)"
+        },
+        {
+          "name": "onset_type",
+          "label": "Onset type (acute, subacute, chronic, MVA, work injury)"
+        },
+        {
+          "name": "pain_level",
+          "label": "Current pain level (0-10)"
+        },
+        {
+          "name": "rom_deficit",
+          "label": "ROM deficit percentage"
+        },
+        {
+          "name": "functional_limitations",
+          "label": "Functional limitations (ADLs affected)"
+        },
+        {
+          "name": "treatment_techniques",
+          "label": "Planned techniques (CMT, therapy, modalities)"
+        },
+        {
+          "name": "case_type",
+          "label": "Case type (insurance, PI, WC, cash)"
+        }
+      ],
+      "structure_hint": "Patient demographics -> Diagnosis and clinical findings -> Treatment goals (measurable: pain reduction, ROM improvement, functional milestones) -> Treatment frequency and duration (Phase 1: acute 3x/week x 4 weeks, Phase 2: corrective 2x/week x 6 weeks, Phase 3: maintenance 1x/month) -> Modalities and techniques per visit -> Re-evaluation schedule -> Discharge criteria"
+    },
+    "example_queries": [
+      "Create a treatment plan for acute lumbar disc herniation, 45-year-old, pain 8/10, 40% ROM loss",
+      "Generate a PI treatment plan for a 32-year-old MVA patient with cervical whiplash",
+      "Write a treatment plan for chronic low back pain patient transitioning to maintenance care"
+    ]
+  },
+  {
+    "id": "us-chiropractors-p07",
+    "title": "Practice Revenue and Overhead Calculator",
+    "problem": "Most chiropractors are practice owners but lack business training. They struggle to calculate true profitability after overhead (rent, staff, supplies, malpractice insurance, student loans). Poor financial visibility leads to undercharging, overspending, or inability to scale.",
+    "who": "Solo practitioners and small group practice owners",
+    "frequency": "monthly",
+    "time_waste_h": 4,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Chiropractic Practice Profitability Calculator",
+      "one_liner": "Calculates practice profitability, overhead ratio, and per-visit profit based on revenue, expenses, and patient volume.",
+      "inputs": [
+        {
+          "name": "monthly_patient_visits",
+          "type": "number",
+          "label": "Monthly patient visits"
+        },
+        {
+          "name": "avg_collection_per_visit",
+          "type": "number",
+          "label": "Average collection per visit (USD)"
+        },
+        {
+          "name": "rent",
+          "type": "number",
+          "label": "Monthly rent (USD)"
+        },
+        {
+          "name": "staff_payroll",
+          "type": "number",
+          "label": "Monthly staff payroll (USD)"
+        },
+        {
+          "name": "supplies_equipment",
+          "type": "number",
+          "label": "Monthly supplies & equipment (USD)"
+        },
+        {
+          "name": "malpractice_insurance",
+          "type": "number",
+          "label": "Annual malpractice insurance (USD)"
+        },
+        {
+          "name": "student_loan_payment",
+          "type": "number",
+          "label": "Monthly student loan payment (USD)"
+        },
+        {
+          "name": "other_overhead",
+          "type": "number",
+          "label": "Other monthly overhead (USD)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "gross_revenue",
+          "label": "Monthly gross revenue (USD)"
+        },
+        {
+          "name": "total_overhead",
+          "label": "Total monthly overhead (USD)"
+        },
+        {
+          "name": "overhead_ratio",
+          "label": "Overhead ratio (%)"
+        },
+        {
+          "name": "net_profit",
+          "label": "Monthly net profit (USD)"
+        },
+        {
+          "name": "profit_per_visit",
+          "label": "Profit per visit (USD)"
+        },
+        {
+          "name": "annual_take_home",
+          "label": "Projected annual take-home (USD)"
+        },
+        {
+          "name": "breakeven_visits",
+          "label": "Break-even visits per month"
+        }
+      ],
+      "formula_hint": "Gross revenue = visits * avg_collection. Total overhead = rent + payroll + supplies + (malpractice/12) + loan + other. Overhead ratio = overhead/revenue * 100. Net = revenue - overhead. Breakeven = overhead / avg_collection. Industry benchmark overhead ratio: 50-65%.",
+      "rates": {
+        "benchmark_overhead_ratio": 0.55,
+        "benchmark_collection_per_visit": 65
+      }
+    },
+    "example_queries": [
+      "I see 320 patients/month collecting $60 average, rent is $3500, one CA at $3200/mo - what's my profit?",
+      "Calculate my overhead ratio - I'm bringing in $22k/month with $13k in expenses",
+      "How many patients per month do I need to break even with $8,000 in fixed costs?"
+    ]
+  },
+  {
+    "id": "us-chiropractors-p08",
+    "title": "Medicare Compliance Checklist for Chiropractors",
+    "problem": "Medicare covers only manual spinal subluxation correction (98940-98943) with strict documentation requirements. Chiropractors frequently get audited by Medicare and face recoupment demands. Non-compliant billing can result in exclusion from the Medicare program.",
+    "who": "All chiropractors who accept Medicare patients",
+    "frequency": "daily",
+    "time_waste_h": 3,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Medicare Chiropractic Compliance Checklist",
+      "one_liner": "Ensures every Medicare chiropractic visit meets CMS documentation and billing requirements to prevent audit failures and recoupment.",
+      "steps": [
+        "Step 1: Confirm subluxation is documented - must be identified by X-ray or physical exam (2 of 4 PART criteria: Pain/tenderness, Asymmetry, Range of motion abnormality, Tissue/tone changes)",
+        "Step 2: Verify only covered CPT codes billed to Medicare (98940, 98941, 98942, 98943 only)",
+        "Step 3: Ensure AT modifier is used for active/corrective treatment (not maintenance care)",
+        "Step 4: Document medical necessity - treatment must demonstrate expected functional improvement",
+        "Step 5: Verify SOAP note includes: specific subluxation level(s), treatment rendered, patient response",
+        "Step 6: Check that initial visit includes history, exam findings, and diagnosis with subluxation level",
+        "Step 7: Confirm treatment plan is on file with frequency, duration, and measurable goals",
+        "Step 8: Verify re-evaluation documented every 30 days or 12 visits (whichever comes first)",
+        "Step 9: Do NOT bill Medicare for maintenance care - must use ABN (Advance Beneficiary Notice) if continuing",
+        "Step 10: Ensure all modifiers correct: AT (active treatment), GA (ABN on file), GY (excluded service)"
+      ],
+      "warnings": [
+        "Warning: Medicare does NOT cover X-rays, exams, therapies, or modalities when billed by chiropractors - only CMT",
+        "Warning: Maintenance care billed as active treatment is the #1 cause of Medicare chiropractic audits",
+        "Warning: Failure to use AT modifier correctly can trigger 100% recoupment of claims"
+      ],
+      "regulatory_refs": [
+        "Medicare Benefit Policy Manual Ch.15 §240",
+        "LCD for Chiropractic Manipulative Treatment",
+        "42 CFR 410.21"
+      ]
+    },
+    "example_queries": [
+      "What documentation does Medicare require for each chiropractic visit?",
+      "When do I need to use the AT modifier vs GA modifier for Medicare?",
+      "How do I properly transition a Medicare patient from active care to maintenance with an ABN?"
+    ]
+  },
+  {
+    "id": "us-chiropractors-p09",
+    "title": "Malpractice Risk Advisor for Cervical Manipulation",
+    "problem": "Cervical manipulation carries the highest malpractice risk in chiropractic, with rare but serious complications (vertebral artery dissection). Chiropractors fear lawsuits but often lack clear protocols for informed consent, screening, and documentation that protect them legally.",
+    "who": "All chiropractors performing cervical adjustments",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 100000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Cervical Manipulation Risk Advisor",
+      "one_liner": "Provides evidence-based risk assessment, screening protocols, and documentation guidance for cervical manipulation to minimize malpractice exposure.",
+      "expertise_area": "Malpractice risk management for cervical chiropractic manipulation",
+      "decision_criteria": [
+        "patient_age",
+        "symptom_presentation",
+        "vascular_risk_factors",
+        "prior_history",
+        "technique_selection"
+      ],
+      "context_needed": [
+        "regulatory.penalties",
+        "career_psychology.fears",
+        "state malpractice law changes 2026"
+      ]
+    },
+    "example_queries": [
+      "What screening should I do before cervical manipulation on a 55-year-old with dizziness?",
+      "How should I document informed consent for upper cervical adjustments?",
+      "A patient had a headache after cervical adjustment - what should I do and document?"
+    ]
+  },
+  {
+    "id": "us-chiropractors-p10",
+    "title": "Personal Injury Case Value Estimator",
+    "problem": "PI (personal injury) and MVA (motor vehicle accident) cases are highly profitable for chiropractors but require careful documentation and billing strategy. Undervaluing cases means lost revenue; overbilling risks fraud allegations. Chiropractors need to estimate reasonable case values for attorney communications.",
+    "who": "Chiropractors who treat PI/MVA patients",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 20000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "PI/MVA Case Value Estimator",
+      "one_liner": "Estimates reasonable chiropractic treatment costs for personal injury cases based on injury type, treatment duration, and regional averages.",
+      "inputs": [
+        {
+          "name": "injury_type",
+          "type": "select",
+          "label": "Primary injury (cervical whiplash, lumbar sprain, disc herniation, multi-region)"
+        },
+        {
+          "name": "severity",
+          "type": "select",
+          "label": "Severity (mild, moderate, severe)"
+        },
+        {
+          "name": "treatment_weeks",
+          "type": "number",
+          "label": "Expected treatment duration (weeks)"
+        },
+        {
+          "name": "visits_per_week",
+          "type": "number",
+          "label": "Visits per week"
+        },
+        {
+          "name": "includes_imaging",
+          "type": "boolean",
+          "label": "Includes X-rays/MRI?"
+        },
+        {
+          "name": "includes_therapy",
+          "type": "boolean",
+          "label": "Includes therapeutic modalities?"
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "label": "State"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "total_treatment_cost",
+          "label": "Estimated total treatment cost (USD)"
+        },
+        {
+          "name": "cmt_cost",
+          "label": "CMT charges (USD)"
+        },
+        {
+          "name": "therapy_cost",
+          "label": "Therapy/modality charges (USD)"
+        },
+        {
+          "name": "imaging_cost",
+          "label": "Imaging charges (USD)"
+        },
+        {
+          "name": "exam_cost",
+          "label": "Examination charges (USD)"
+        },
+        {
+          "name": "typical_range",
+          "label": "Typical case value range for this injury type (USD)"
+        }
+      ],
+      "formula_hint": "Total visits = weeks * frequency. CMT cost = visits * regional CMT rate ($50-150). Therapy = visits * modality rate ($30-80). Initial exam $150-350. X-ray $75-300. MRI referral $500-2500. Typical whiplash case: $3,000-$15,000. Disc herniation: $8,000-$30,000.",
+      "rates": {
+        "avg_cmt_rate": 85,
+        "avg_therapy_rate": 50,
+        "avg_exam_rate": 250,
+        "avg_xray_rate": 175
+      }
+    },
+    "example_queries": [
+      "Estimate total chiropractic cost for a moderate cervical whiplash, 12 weeks treatment at 3x/week",
+      "What's a reasonable case value for a lumbar disc herniation from MVA with 6 months of care?",
+      "How much should I expect to bill for a mild whiplash PI case in Florida?"
+    ]
+  },
+  {
+    "id": "us-chiropractors-p11",
+    "title": "State Scope of Practice Quick Reference",
+    "problem": "Chiropractic scope of practice varies enormously by state - some allow acupuncture, physiotherapy, nutrition counseling, while others restrict to spinal adjustment only. Practicing outside scope is a criminal offense. Chiropractors relocating or licensed in multiple states risk violations.",
+    "who": "Chiropractors licensed in multiple states or considering relocation",
+    "frequency": "monthly",
+    "time_waste_h": 2,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Chiropractic Scope of Practice by State",
+      "one_liner": "Quick reference for what chiropractors can and cannot do in each US state, including permitted modalities, diagnostic privileges, and restrictions.",
+      "data_domain": "State-by-state chiropractic scope of practice: permitted techniques, modalities, diagnostic imaging, adjunctive therapies, restrictions",
+      "lookup_keys": [
+        "state",
+        "modality",
+        "procedure_type",
+        "diagnostic_privilege"
+      ],
+      "data_hints": {
+        "source_law": "State Chiropractic Practice Acts",
+        "key_sections": [
+          "Permitted adjustment techniques",
+          "Physiotherapy modalities allowed",
+          "Acupuncture/dry needling privileges",
+          "Nutritional counseling scope",
+          "X-ray ordering authority",
+          "Extremity adjustment authority",
+          "Telehealth regulations by state"
+        ]
+      }
+    },
+    "example_queries": [
+      "Can chiropractors perform dry needling in Texas?",
+      "What modalities are chiropractors allowed to use in New York?",
+      "I'm moving from California to Arizona - what scope of practice differences should I know?"
+    ]
+  },
+  {
+    "id": "us-chiropractors-p12",
+    "title": "Informed Consent Form Generator",
+    "problem": "Informed consent is legally required before chiropractic treatment, especially for cervical manipulation. Each state has different requirements for what must be disclosed. Generic forms may not meet state-specific standards, creating liability exposure.",
+    "who": "All practicing chiropractors, especially new practice owners",
+    "frequency": "monthly",
+    "time_waste_h": 2,
+    "money_risk_usd": 25000,
+    "source": "regulatory",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Chiropractic Informed Consent Generator",
+      "one_liner": "Generates state-compliant informed consent forms covering risks, benefits, alternatives, and patient acknowledgment for chiropractic care.",
+      "doc_name": "Informed Consent for Chiropractic Treatment",
+      "variables": [
+        {
+          "name": "practice_name",
+          "label": "Practice name"
+        },
+        {
+          "name": "doctor_name",
+          "label": "Doctor name and credentials"
+        },
+        {
+          "name": "state",
+          "label": "State of practice"
+        },
+        {
+          "name": "treatment_types",
+          "label": "Treatment types offered (CMT, modalities, extremities, etc.)"
+        },
+        {
+          "name": "includes_cervical",
+          "label": "Includes cervical manipulation (yes/no)"
+        },
+        {
+          "name": "includes_minors",
+          "label": "Treats minors (yes/no)"
+        }
+      ],
+      "structure_hint": "Practice header -> Nature of chiropractic treatment description -> Specific techniques to be used -> Benefits of treatment -> Material risks (general and cervical-specific if applicable) -> Alternative treatments available -> Patient's right to refuse/withdraw -> State-specific required disclosures -> Patient signature and date -> Minor/guardian consent section if applicable"
+    },
+    "example_queries": [
+      "Generate an informed consent form for my California chiropractic practice that includes cervical manipulation",
+      "Create a consent form for a Texas practice that treats children",
+      "What must be included in a chiropractic informed consent form in Florida?"
+    ]
+  }
+]

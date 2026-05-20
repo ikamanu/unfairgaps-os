@@ -1,0 +1,764 @@
+[
+  {
+    "id": "us-allergists-and-immunologists-p01",
+    "title": "Immunotherapy Dosing Schedule Calculator",
+    "problem": "Allergists must manually calculate and adjust subcutaneous immunotherapy (SCIT) dosing schedules for each patient, accounting for build-up phases, maintenance doses, vial mixing concentrations, and missed-dose adjustments. Errors in dosing can cause anaphylaxis. Each new patient plan takes 15-30 minutes to build, and adjustments for missed appointments add more time.",
+    "who": "Allergists managing immunotherapy patients in private practice and clinic settings",
+    "frequency": "daily",
+    "time_waste_h": 5,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Immunotherapy Dosing Calculator",
+      "one_liner": "Calculates SCIT build-up and maintenance dosing schedules with missed-dose adjustment protocols",
+      "inputs": [
+        {
+          "name": "allergens",
+          "type": "text",
+          "label": "Allergen extracts (comma-separated)"
+        },
+        {
+          "name": "concentrations",
+          "type": "text",
+          "label": "Vial concentrations (w/v)"
+        },
+        {
+          "name": "protocol",
+          "type": "select",
+          "label": "Build-up protocol (conventional/cluster/rush)"
+        },
+        {
+          "name": "current_dose",
+          "type": "number",
+          "label": "Current dose (mL)"
+        },
+        {
+          "name": "days_since_last",
+          "type": "number",
+          "label": "Days since last injection (for missed dose)"
+        },
+        {
+          "name": "prior_reactions",
+          "type": "select",
+          "label": "Prior local/systemic reactions (none/local/systemic)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "next_dose",
+          "label": "Recommended next dose (mL)"
+        },
+        {
+          "name": "schedule",
+          "label": "Full build-up schedule with dates"
+        },
+        {
+          "name": "maintenance_dose",
+          "label": "Target maintenance dose"
+        },
+        {
+          "name": "dose_adjustment",
+          "label": "Missed-dose adjustment recommendation"
+        }
+      ],
+      "formula_hint": "Conventional build-up: start 0.05mL of 1:10000, increase 0.05-0.1mL per visit. Missed dose >7 days at build-up: reduce 25-50%. Missed >28 days at maintenance: reduce to last tolerated build-up dose. Cluster: multiple injections per visit.",
+      "rates": {
+        "build_up_weeks_conventional": 16,
+        "build_up_weeks_cluster": 8,
+        "maintenance_interval_weeks": 4
+      }
+    },
+    "example_queries": [
+      "Patient missed allergy shots for 3 weeks during build-up phase, currently at 0.3mL of 1:100. What dose should I restart at?",
+      "Calculate a conventional build-up schedule for dust mite and cat dander immunotherapy starting today",
+      "Patient had a large local reaction at 0.4mL maintenance dose. What's the adjusted next dose?"
+    ]
+  },
+  {
+    "id": "us-allergists-and-immunologists-p02",
+    "title": "Biologic Prior Authorization Letter Generator",
+    "problem": "Prior authorization for biologic medications (omalizumab, dupilumab, mepolizumab, etc.) requires detailed clinical documentation proving medical necessity. Each letter takes 20-45 minutes to write and must include specific ICD-10 codes, failed step-therapy documentation, lab values, and payer-specific criteria. Denials delay treatment and require appeals, consuming even more time.",
+    "who": "Allergists prescribing biologics for asthma, urticaria, atopic dermatitis, and eosinophilic conditions",
+    "frequency": "weekly",
+    "time_waste_h": 4,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Biologic Prior Auth Letter Generator",
+      "one_liner": "Generates payer-specific prior authorization and appeal letters for biologic medications with medical necessity documentation",
+      "doc_name": "Prior Authorization Letter for Biologic Therapy",
+      "variables": [
+        {
+          "name": "patient_name",
+          "label": "Patient name"
+        },
+        {
+          "name": "dob",
+          "label": "Date of birth"
+        },
+        {
+          "name": "insurance_plan",
+          "label": "Insurance plan name"
+        },
+        {
+          "name": "medication",
+          "label": "Biologic medication (e.g., Xolair, Dupixent)"
+        },
+        {
+          "name": "diagnosis",
+          "label": "Primary diagnosis with ICD-10"
+        },
+        {
+          "name": "failed_therapies",
+          "label": "Prior failed therapies (step therapy documentation)"
+        },
+        {
+          "name": "ige_level",
+          "label": "Total IgE level (if applicable)"
+        },
+        {
+          "name": "eosinophil_count",
+          "label": "Eosinophil count (if applicable)"
+        },
+        {
+          "name": "severity_score",
+          "label": "Disease severity score (ACT, SCORAD, UAS7)"
+        },
+        {
+          "name": "is_appeal",
+          "label": "Is this an appeal? (yes/no)"
+        }
+      ],
+      "structure_hint": "Letterhead -> Patient demographics -> Diagnosis with ICD-10 -> Clinical history and severity -> Failed step therapy documentation -> Lab values supporting medical necessity -> FDA-approved indication citation -> Payer criteria alignment -> Request for approval -> Provider signature block"
+    },
+    "example_queries": [
+      "Write a prior auth letter for Dupixent for a patient with severe atopic dermatitis who failed topical steroids and cyclosporine",
+      "Generate an appeal letter for Xolair denial - patient has chronic urticaria with UAS7 score of 32",
+      "I need a prior authorization for mepolizumab for severe eosinophilic asthma, eosinophils at 450"
+    ]
+  },
+  {
+    "id": "us-allergists-and-immunologists-p03",
+    "title": "Allergy Skin Test Result Interpretation Calculator",
+    "problem": "Allergists perform 20-80 skin prick tests per patient and must measure wheal/flare sizes, compare to positive/negative controls, grade reactions, and determine clinical significance vs. sensitization. Manual measurement and interpretation is time-consuming and subjective. Inconsistent grading between providers affects treatment decisions and immunotherapy formulations.",
+    "who": "Allergists and allergy nurses performing and interpreting skin testing in clinic",
+    "frequency": "daily",
+    "time_waste_h": 3,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Skin Test Result Interpreter",
+      "one_liner": "Grades allergy skin test results, calculates wheal-to-control ratios, and determines clinical significance",
+      "inputs": [
+        {
+          "name": "positive_control_wheal",
+          "type": "number",
+          "label": "Histamine positive control wheal (mm)"
+        },
+        {
+          "name": "negative_control_wheal",
+          "type": "number",
+          "label": "Saline negative control wheal (mm)"
+        },
+        {
+          "name": "test_results",
+          "type": "text",
+          "label": "Allergen results: name:wheal_mm (comma-separated, e.g., 'Dust mite:8, Cat:5, Grass:3')"
+        },
+        {
+          "name": "patient_age",
+          "type": "number",
+          "label": "Patient age"
+        },
+        {
+          "name": "antihistamine_status",
+          "type": "select",
+          "label": "Antihistamine discontinued? (yes/no/unknown)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "graded_results",
+          "label": "Graded results (0 to 4+) for each allergen"
+        },
+        {
+          "name": "clinically_significant",
+          "label": "List of clinically significant positives"
+        },
+        {
+          "name": "validity_check",
+          "label": "Test validity assessment (control adequacy)"
+        },
+        {
+          "name": "cross_reactivity_flags",
+          "label": "Potential cross-reactivity alerts"
+        }
+      ],
+      "formula_hint": "Positive: wheal >= 3mm above negative control. Grading: 1+ = wheal equals histamine control, 2+ = up to 2x, 3+ = 2-3x, 4+ = >3x with pseudopods. Invalid if positive control <3mm or negative control >3mm. Flag antihistamine interference if controls abnormal.",
+      "rates": {
+        "positive_threshold_mm": 3,
+        "valid_positive_control_min_mm": 3,
+        "valid_negative_control_max_mm": 3
+      }
+    },
+    "example_queries": [
+      "Histamine control 5mm, saline 0mm. Dust mite 8mm, cat 6mm, dog 3mm, grass 2mm, tree 4mm. Grade these results.",
+      "Is a 3mm wheal to peanut clinically significant if my histamine control is 4mm?",
+      "Patient has positive control of only 2mm - are these skin test results valid?"
+    ]
+  },
+  {
+    "id": "us-allergists-and-immunologists-p04",
+    "title": "Anaphylaxis Emergency Response Checklist",
+    "problem": "Anaphylaxis is the highest-liability event in allergy practice. It can occur during immunotherapy injections, food challenges, or drug desensitization. Staff must execute a precise sequence of interventions within minutes. Errors in epinephrine dosing, delayed recognition, or failure to observe post-injection can result in patient death and malpractice claims averaging $1-5M.",
+    "who": "Allergists and clinical staff administering immunotherapy, oral food challenges, and drug desensitizations",
+    "frequency": "monthly",
+    "time_waste_h": 2,
+    "money_risk_usd": 2000000,
+    "source": "career_psychology",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Anaphylaxis Emergency Protocol",
+      "one_liner": "Step-by-step anaphylaxis recognition and treatment checklist with weight-based epinephrine dosing",
+      "steps": [
+        "Step 1: Recognize anaphylaxis symptoms (skin, respiratory, GI, cardiovascular - 2+ organ systems)",
+        "Step 2: Call for help, activate office emergency protocol",
+        "Step 3: Administer epinephrine IM (anterolateral thigh) - Adult: 0.3-0.5mg (1:1000), Pediatric: 0.01mg/kg max 0.3mg",
+        "Step 4: Place patient supine, elevate legs (if not vomiting/dyspneic)",
+        "Step 5: Administer supplemental oxygen",
+        "Step 6: Establish IV access, normal saline bolus if hypotensive (20mL/kg)",
+        "Step 7: Call 911/EMS",
+        "Step 8: Monitor vitals every 2-5 minutes",
+        "Step 9: Repeat epinephrine every 5-15 minutes if symptoms persist (up to 3 doses)",
+        "Step 10: Consider adjunctive therapy: albuterol nebulizer, H1/H2 blockers, corticosteroids",
+        "Step 11: Observe minimum 4-6 hours for biphasic reaction (up to 72 hours for severe)",
+        "Step 12: Document event, prescribe EpiPen, provide anaphylaxis action plan",
+        "Step 13: Report to practice risk management, complete incident report"
+      ],
+      "warnings": [
+        "WARNING: NEVER delay epinephrine for antihistamines - epinephrine is FIRST-LINE",
+        "WARNING: Biphasic reactions occur in up to 20% of cases - do not discharge early",
+        "WARNING: Beta-blocker patients may be refractory to epinephrine - consider glucagon 1-5mg IV",
+        "WARNING: Pregnant patients - epinephrine is NOT contraindicated in anaphylaxis"
+      ],
+      "regulatory_refs": [
+        "AAAAI/ACAAI Anaphylaxis Practice Parameter 2024",
+        "WAO Anaphylaxis Guidelines"
+      ]
+    },
+    "example_queries": [
+      "Patient developing hives and wheezing 20 minutes after allergy shot - what's the protocol?",
+      "What's the pediatric epinephrine dose for a 25kg child in anaphylaxis?",
+      "Patient on atenolol having anaphylaxis and not responding to epinephrine - what next?"
+    ]
+  },
+  {
+    "id": "us-allergists-and-immunologists-p05",
+    "title": "MIPS Quality Measure Reporting Reference",
+    "problem": "Allergists must track and report MIPS quality measures to avoid negative Medicare payment adjustments (up to -9% in 2026). Solo practitioners face the highest penalty rates (49.16%). Understanding which measures apply to allergy practice, meeting thresholds, and navigating the QPP portal is confusing and time-consuming. Missing deadlines or selecting wrong measures results in automatic penalties.",
+    "who": "Solo and small-group allergists participating in MIPS, especially practice owners",
+    "frequency": "quarterly",
+    "time_waste_h": 8,
+    "money_risk_usd": 30000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Allergy MIPS Reporting Guide",
+      "one_liner": "Quick reference for allergy-relevant MIPS quality measures, deadlines, and penalty avoidance strategies",
+      "data_domain": "CMS MIPS/QPP quality measures applicable to allergy and immunology practices",
+      "lookup_keys": [
+        "measure_id",
+        "measure_name",
+        "category",
+        "reporting_deadline",
+        "penalty_rate"
+      ],
+      "data_hints": {
+        "source_law": "MACRA (Medicare Access and CHIP Reauthorization Act)",
+        "key_sections": [
+          "Quality measures for allergy (asthma control, medication management)",
+          "Cost category",
+          "Improvement activities",
+          "Promoting interoperability"
+        ],
+        "allergy_relevant_measures": [
+          "Asthma: Pharmacologic Therapy for Persistent Asthma",
+          "Medication Reconciliation",
+          "Preventive Care and Screening",
+          "Documentation of Current Medications",
+          "BMI Screening"
+        ],
+        "penalty_schedule": "2026: up to -9% payment adjustment for non-compliance"
+      }
+    },
+    "example_queries": [
+      "What MIPS quality measures should I report as a solo allergist to avoid penalties?",
+      "When is the MIPS reporting deadline for 2026 performance year?",
+      "What's the maximum MIPS penalty for a solo allergist who doesn't report?"
+    ]
+  },
+  {
+    "id": "us-allergists-and-immunologists-p06",
+    "title": "Epinephrine Auto-Injector Weight-Based Dosing Calculator",
+    "problem": "Allergists prescribe epinephrine auto-injectors for every anaphylaxis-risk patient. Determining correct device (EpiPen Jr vs EpiPen vs Auvi-Q dosing), appropriate weight thresholds, and insurance-covered alternatives is a frequent task. Dosing errors in pediatric patients are particularly dangerous. Parents need clear action plans with exact dosing.",
+    "who": "Allergists managing food allergy, venom allergy, and drug allergy patients across all ages",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 100000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Epinephrine Dosing & Device Selector",
+      "one_liner": "Calculates weight-based epinephrine dosing and recommends appropriate auto-injector device",
+      "inputs": [
+        {
+          "name": "patient_weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        },
+        {
+          "name": "patient_age",
+          "type": "number",
+          "label": "Patient age (years)"
+        },
+        {
+          "name": "indication",
+          "type": "select",
+          "label": "Indication (food allergy/venom/drug/idiopathic)"
+        },
+        {
+          "name": "insurance_type",
+          "type": "select",
+          "label": "Insurance type (commercial/Medicare/Medicaid/uninsured)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "recommended_dose_mg",
+          "label": "Recommended epinephrine dose (mg)"
+        },
+        {
+          "name": "device_recommendation",
+          "label": "Recommended auto-injector device and strength"
+        },
+        {
+          "name": "alternative_devices",
+          "label": "Alternative devices with cost comparison"
+        },
+        {
+          "name": "prescription_quantity",
+          "label": "Recommended quantity (2-pack minimum)"
+        }
+      ],
+      "formula_hint": "Standard dose: 0.01mg/kg IM, max 0.5mg adult. EpiPen Jr (0.15mg): 15-30kg. EpiPen (0.3mg): >30kg. Auvi-Q has 0.1mg for 7.5-15kg. Consider 2 devices for patients >30min from ER. Generics available for cost savings.",
+      "rates": {
+        "dose_per_kg": 0.01,
+        "max_adult_dose_mg": 0.5,
+        "epipen_jr_range_kg": "15-30",
+        "epipen_range_kg": "30+"
+      }
+    },
+    "example_queries": [
+      "What epinephrine auto-injector should I prescribe for a 22kg child with peanut allergy?",
+      "Patient weighs 12kg - is there an auto-injector option smaller than EpiPen Jr?",
+      "What's the cheapest epinephrine auto-injector option for an uninsured patient?"
+    ]
+  },
+  {
+    "id": "us-allergists-and-immunologists-p07",
+    "title": "Oral Food Challenge Protocol Checklist",
+    "problem": "Oral food challenges (OFC) are the gold standard for diagnosing food allergy but carry significant risk of anaphylaxis. Each challenge requires precise dosing escalation, timing intervals, staff readiness, consent documentation, and post-challenge monitoring. Protocols vary by food, patient age, and risk level. Errors in protocol execution create liability and patient safety risks.",
+    "who": "Allergists performing diagnostic and therapeutic oral food challenges in office settings",
+    "frequency": "weekly",
+    "time_waste_h": 3,
+    "money_risk_usd": 500000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Oral Food Challenge Protocol",
+      "one_liner": "Complete oral food challenge preparation, dosing escalation, and monitoring checklist by food type and risk level",
+      "steps": [
+        "Step 1: Review patient eligibility - confirm no recent anaphylaxis, asthma controlled (FEV1 >80%), no beta-blockers, antihistamines held 7 days",
+        "Step 2: Obtain written informed consent documenting risks including anaphylaxis",
+        "Step 3: Verify emergency equipment: epinephrine, oxygen, IV supplies, suction, crash cart",
+        "Step 4: Baseline vitals, lung exam, skin assessment",
+        "Step 5: Prepare food portions per protocol (typically 6-7 escalating doses over 2-3 hours)",
+        "Step 6: Dose 1 - lip touch, observe 15 minutes",
+        "Step 7: Dose 2-6 - escalating doses (e.g., 1mg, 3mg, 10mg, 30mg, 100mg, 300mg, 1000mg protein), observe 15-30 min between doses",
+        "Step 8: Monitor for objective signs: urticaria, angioedema, vomiting, wheezing, hypotension",
+        "Step 9: If reaction occurs: stop challenge, treat per anaphylaxis protocol, document failing dose",
+        "Step 10: If challenge passed: observe 1-2 hours post final dose",
+        "Step 11: Document results, update allergy list, provide guidance on food introduction",
+        "Step 12: Schedule follow-up, provide written dietary guidance"
+      ],
+      "warnings": [
+        "WARNING: IV access recommended for high-risk challenges (prior anaphylaxis, low threshold)",
+        "WARNING: Never perform OFC on patients with uncontrolled asthma",
+        "WARNING: Challenge must be supervised by physician trained in anaphylaxis management",
+        "WARNING: Late-phase reactions can occur 4-6 hours post-challenge"
+      ],
+      "regulatory_refs": [
+        "AAAAI/ACAAI OFC Practice Parameter",
+        "PRACTALL Consensus Report"
+      ]
+    },
+    "example_queries": [
+      "What's the dosing schedule for a peanut oral food challenge in a 6-year-old?",
+      "Patient is on atenolol - can I still do the food challenge?",
+      "What pre-challenge labs and criteria do I need to check before an egg OFC?"
+    ]
+  },
+  {
+    "id": "us-allergists-and-immunologists-p08",
+    "title": "Allergy/Immunology CPT Coding and Billing Reference",
+    "problem": "Allergy practices use specialized CPT codes for skin testing (95004, 95024, 95017), immunotherapy (95115, 95117, 95165), spirometry (94010, 94060), and biologics administration (96401). Incorrect coding leads to claim denials (15-20% denial rate), underbilling, and audit risk. Modifier usage, bundling rules, and payer-specific requirements add complexity.",
+    "who": "Allergists, billing staff, and practice managers in private allergy practices",
+    "frequency": "daily",
+    "time_waste_h": 3,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Allergy CPT Coding Quick Reference",
+      "one_liner": "Quick lookup for allergy-specific CPT codes, modifiers, bundling rules, and common billing errors",
+      "data_domain": "CPT codes, ICD-10 codes, and billing rules specific to allergy and immunology practice",
+      "lookup_keys": [
+        "cpt_code",
+        "procedure_name",
+        "icd10_code",
+        "modifier",
+        "payer_type"
+      ],
+      "data_hints": {
+        "source_law": "AMA CPT Manual, CMS Medicare Physician Fee Schedule",
+        "key_sections": [
+          "Allergy testing codes (95004-95079)",
+          "Immunotherapy codes (95115-95199)",
+          "Spirometry codes (94010-94070)",
+          "E/M codes with allergy modifiers",
+          "Biologic administration codes"
+        ],
+        "common_errors": [
+          "Billing 95004 and 95024 on same day without modifier",
+          "Underbilling immunotherapy mixing (95165)",
+          "Missing 95117 for multiple injection visits"
+        ]
+      }
+    },
+    "example_queries": [
+      "What CPT code do I use for percutaneous skin prick testing with 40 allergens?",
+      "Can I bill 95004 and 95024 on the same day?",
+      "What's the correct code for mixing and preparing allergy immunotherapy vials?"
+    ]
+  },
+  {
+    "id": "us-allergists-and-immunologists-p09",
+    "title": "Drug Allergy Cross-Reactivity Advisor",
+    "problem": "When a patient reports a drug allergy, the allergist must determine which alternative medications are safe and which carry cross-reactivity risk. Penicillin allergy (reported by 10% of patients, confirmed in <5%) affects antibiotic selection across all of medicine. Beta-lactam cross-reactivity patterns, sulfonamide distinctions, and NSAID cross-reactivity require specialized knowledge that changes with new evidence.",
+    "who": "Allergists consulted for drug allergy evaluation and safe alternative recommendations",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 20000,
+    "source": "daily_reality",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Drug Allergy Cross-Reactivity Advisor",
+      "one_liner": "Analyzes drug allergy reports and recommends safe alternatives based on cross-reactivity evidence",
+      "expertise_area": "Drug allergy cross-reactivity patterns, delabeling strategies, and safe alternative selection",
+      "decision_criteria": [
+        "reported_drug",
+        "reaction_type",
+        "reaction_severity",
+        "timing_of_reaction",
+        "needed_drug_class",
+        "patient_age"
+      ],
+      "context_needed": [
+        "Beta-lactam side chain cross-reactivity data",
+        "NSAID COX-1 vs COX-2 selectivity",
+        "Sulfonamide antibiotic vs non-antibiotic distinction",
+        "Current AAAAI drug allergy practice parameters",
+        "Penicillin skin testing and delabeling protocols"
+      ]
+    },
+    "example_queries": [
+      "Patient allergic to amoxicillin with hives - can they safely take cephalexin?",
+      "Patient reports penicillin allergy as a child but doesn't remember details - what's the delabeling protocol?",
+      "Patient had anaphylaxis to ibuprofen - which NSAIDs are safe alternatives?"
+    ]
+  },
+  {
+    "id": "us-allergists-and-immunologists-p10",
+    "title": "Spirometry (PFT) Result Interpretation Calculator",
+    "problem": "Allergists perform spirometry regularly for asthma patients but interpreting results requires calculating percent predicted values based on age, height, sex, and ethnicity using GLI-2012 reference equations. Determining obstruction severity, bronchodilator response significance, and tracking trends over time is calculation-intensive. Misinterpretation affects asthma severity classification and treatment decisions.",
+    "who": "Allergists managing asthma patients who perform in-office spirometry",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Spirometry Result Interpreter",
+      "one_liner": "Calculates percent predicted values, grades obstruction severity, and assesses bronchodilator response from spirometry data",
+      "inputs": [
+        {
+          "name": "age",
+          "type": "number",
+          "label": "Patient age (years)"
+        },
+        {
+          "name": "height_cm",
+          "type": "number",
+          "label": "Height (cm)"
+        },
+        {
+          "name": "sex",
+          "type": "select",
+          "label": "Sex (male/female)"
+        },
+        {
+          "name": "ethnicity",
+          "type": "select",
+          "label": "Ethnicity (Caucasian/African-American/Asian/Hispanic)"
+        },
+        {
+          "name": "fev1_pre",
+          "type": "number",
+          "label": "Pre-bronchodilator FEV1 (liters)"
+        },
+        {
+          "name": "fvc_pre",
+          "type": "number",
+          "label": "Pre-bronchodilator FVC (liters)"
+        },
+        {
+          "name": "fev1_post",
+          "type": "number",
+          "label": "Post-bronchodilator FEV1 (liters, optional)"
+        },
+        {
+          "name": "fvc_post",
+          "type": "number",
+          "label": "Post-bronchodilator FVC (liters, optional)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "fev1_percent_predicted",
+          "label": "FEV1 % predicted"
+        },
+        {
+          "name": "fvc_percent_predicted",
+          "label": "FVC % predicted"
+        },
+        {
+          "name": "fev1_fvc_ratio",
+          "label": "FEV1/FVC ratio"
+        },
+        {
+          "name": "obstruction_severity",
+          "label": "Obstruction severity grade (ATS/ERS)"
+        },
+        {
+          "name": "bronchodilator_response",
+          "label": "Bronchodilator response (significant if >=12% AND >=200mL)"
+        },
+        {
+          "name": "asthma_severity",
+          "label": "Suggested asthma severity classification (NAEPP)"
+        }
+      ],
+      "formula_hint": "GLI-2012 reference equations for predicted values. Obstruction: FEV1/FVC < LLN. Severity by FEV1%predicted: Mild >=70%, Moderate 60-69%, Moderately Severe 50-59%, Severe 35-49%, Very Severe <35%. Significant BD response: >=12% AND >=200mL improvement in FEV1.",
+      "rates": {
+        "bd_response_percent_threshold": 12,
+        "bd_response_volume_threshold_ml": 200
+      }
+    },
+    "example_queries": [
+      "45-year-old male, 175cm, FEV1 2.8L pre and 3.3L post-bronchodilator, FVC 4.2L. Interpret these PFTs.",
+      "Is a 10% improvement in FEV1 after albuterol considered a significant bronchodilator response?",
+      "What asthma severity classification for FEV1 at 65% predicted?"
+    ]
+  },
+  {
+    "id": "us-allergists-and-immunologists-p11",
+    "title": "CME and Board Recertification Tracker",
+    "problem": "Allergists must track complex MOC requirements: 25 CME credits annually, 150 allergy-specific credits per 5-year cycle, Continuous Qualification Examination (CQE) at $2,500/year, and 10-year recertification cycles. Missing deadlines risks loss of board certification, which disqualifies from insurance panels and hospital privileges. Requirements differ between ABAI, ABIM, and state boards.",
+    "who": "Board-certified allergists maintaining ABAI certification and state licensure",
+    "frequency": "quarterly",
+    "time_waste_h": 4,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Allergist Certification & CME Tracker",
+      "one_liner": "Tracks MOC requirements, CME credits, CQE deadlines, and state license renewals with reminders",
+      "steps": [
+        "Step 1: Verify current ABAI certification status and expiration date",
+        "Step 2: Calculate CME credits earned this year vs 25 required annually",
+        "Step 3: Calculate allergy-specific CME credits this cycle vs 150 per 5-year requirement",
+        "Step 4: Confirm CQE enrollment status and annual fee payment ($2,500)",
+        "Step 5: Check ABIM internal medicine MOC status (if dual-boarded)",
+        "Step 6: Verify DEA registration expiration date",
+        "Step 7: Check state medical license renewal deadline",
+        "Step 8: Verify malpractice insurance renewal date",
+        "Step 9: Review hospital privilege renewal requirements",
+        "Step 10: Document all deadlines in single calendar view"
+      ],
+      "warnings": [
+        "WARNING: Lapsed ABAI certification may require re-examination ($2,650 fee)",
+        "WARNING: CQE replaces the previous 10-year exam - mandatory for all diplomates",
+        "WARNING: Some states require specific CME topics (opioid prescribing, ethics)"
+      ],
+      "regulatory_refs": [
+        "ABAI MOC Program Requirements",
+        "ABIM MOC Requirements",
+        "State Medical Practice Acts"
+      ]
+    },
+    "example_queries": [
+      "I have 18 CME credits so far this year - how many more do I need for ABAI requirements?",
+      "What's the difference between the CQE and the old 10-year recertification exam?",
+      "My ABAI certification expires in 8 months - what do I need to complete before then?"
+    ]
+  },
+  {
+    "id": "us-allergists-and-immunologists-p12",
+    "title": "Venom Immunotherapy Dosing and Schedule Calculator",
+    "problem": "Venom immunotherapy (VIT) for insect sting allergy has specific protocols distinct from aeroallergen immunotherapy. Dosing schedules vary by venom type (honeybee, yellow jacket, wasp, hornet, fire ant), with different maintenance doses and duration recommendations based on reaction severity. Mixed venom formulations add complexity. Guidelines on when to stop VIT depend on patient risk factors.",
+    "who": "Allergists managing patients with Hymenoptera venom allergy and anaphylaxis history",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 75000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Venom Immunotherapy Calculator",
+      "one_liner": "Calculates venom immunotherapy build-up schedules, maintenance doses, and duration recommendations by venom type and risk level",
+      "inputs": [
+        {
+          "name": "venom_types",
+          "type": "text",
+          "label": "Venom type(s) (honeybee/yellow jacket/wasp/hornet/fire ant)"
+        },
+        {
+          "name": "reaction_severity",
+          "type": "select",
+          "label": "Sting reaction severity (large local/mild systemic/moderate systemic/severe anaphylaxis)"
+        },
+        {
+          "name": "protocol_type",
+          "type": "select",
+          "label": "Build-up protocol (conventional/rush/ultrarush)"
+        },
+        {
+          "name": "mastocytosis",
+          "type": "select",
+          "label": "Mast cell disorder? (yes/no)"
+        },
+        {
+          "name": "years_on_vit",
+          "type": "number",
+          "label": "Years on VIT (if considering discontinuation)"
+        },
+        {
+          "name": "elevated_tryptase",
+          "type": "select",
+          "label": "Elevated baseline tryptase? (yes/no)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "build_up_schedule",
+          "label": "Complete build-up dosing schedule"
+        },
+        {
+          "name": "maintenance_dose",
+          "label": "Target maintenance dose per venom"
+        },
+        {
+          "name": "maintenance_interval",
+          "label": "Maintenance injection interval"
+        },
+        {
+          "name": "recommended_duration",
+          "label": "Recommended total duration of VIT"
+        },
+        {
+          "name": "discontinuation_safety",
+          "label": "Safety assessment for stopping VIT"
+        }
+      ],
+      "formula_hint": "Standard maintenance: 100mcg per venom. Mixed vespid counts as one. Honeybee separate. Conventional build-up: 16 weeks. Rush: 1-2 days. Duration: minimum 5 years, indefinite if mastocytosis, very severe reaction, or honeybee. Consider 3 years if mild systemic and normal tryptase.",
+      "rates": {
+        "standard_maintenance_mcg": 100,
+        "min_duration_years": 5,
+        "elevated_dose_mcg": 200
+      }
+    },
+    "example_queries": [
+      "Patient had anaphylaxis to yellow jacket and wasp stings - what's the VIT maintenance dose for mixed venom?",
+      "Patient has been on honeybee VIT for 5 years with normal tryptase - can we stop?",
+      "Calculate a rush venom immunotherapy schedule for yellow jacket allergy"
+    ]
+  },
+  {
+    "id": "us-allergists-and-immunologists-p13",
+    "title": "Referral Letter Generator for Complex Cases",
+    "problem": "Allergists frequently write referral letters to and from primary care, pulmonology, dermatology, GI, and ENT. Each letter must summarize allergy workup, test results, treatment plan, and specific recommendations. Well-written referrals improve care coordination but take 15-20 minutes each. Poor referral communication leads to duplicate testing and treatment delays.",
+    "who": "Allergists in all practice settings communicating with referring and consulting physicians",
+    "frequency": "daily",
+    "time_waste_h": 3,
+    "money_risk_usd": 2000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Allergy Consultation Letter Generator",
+      "one_liner": "Generates professional consultation and referral letters summarizing allergy workup, findings, and treatment recommendations",
+      "doc_name": "Allergy Consultation Letter",
+      "variables": [
+        {
+          "name": "referring_physician",
+          "label": "Referring physician name and specialty"
+        },
+        {
+          "name": "patient_name",
+          "label": "Patient name"
+        },
+        {
+          "name": "reason_for_referral",
+          "label": "Reason for referral"
+        },
+        {
+          "name": "allergy_history",
+          "label": "Allergy history summary"
+        },
+        {
+          "name": "tests_performed",
+          "label": "Tests performed and results (SPT, IgE, spirometry)"
+        },
+        {
+          "name": "diagnoses",
+          "label": "Diagnoses with ICD-10 codes"
+        },
+        {
+          "name": "treatment_plan",
+          "label": "Treatment plan and recommendations"
+        },
+        {
+          "name": "follow_up",
+          "label": "Follow-up plan and timeline"
+        }
+      ],
+      "structure_hint": "Date and provider info -> Thank you for referral -> Chief complaint and history -> Physical exam findings -> Diagnostic results (skin tests, labs, PFTs) -> Assessment with diagnoses -> Treatment plan with specific medication recommendations -> Follow-up plan -> Contact for questions -> Signature"
+    },
+    "example_queries": [
+      "Write a consultation letter to Dr. Smith (PCP) about a patient with newly diagnosed allergic rhinitis and positive skin tests to dust mite and cat",
+      "Generate a referral letter to GI for a patient with suspected eosinophilic esophagitis",
+      "Create a follow-up letter to referring ENT about a patient with recurrent sinusitis and negative allergy workup"
+    ]
+  }
+]

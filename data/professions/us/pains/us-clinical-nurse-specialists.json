@@ -1,0 +1,697 @@
+[
+  {
+    "id": "us-clinical-nurse-specialists-p01",
+    "title": "Patient outcomes data analysis and reporting",
+    "problem": "CNSs spend significant time manually collecting, analyzing, and reporting nurse-sensitive indicators (NDNQI, HCAHPS) to demonstrate quality improvement. Calculating rates for falls, pressure injuries, CAUTI, CLABSI across units requires pulling data from multiple EHR sources and performing statistical analysis. Errors in calculation can misrepresent unit performance and lead to incorrect QI interventions.",
+    "who": "Hospital-based CNSs responsible for quality improvement reporting",
+    "frequency": "monthly",
+    "time_waste_h": 8,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Nurse-Sensitive Indicator Calculator",
+      "one_liner": "Calculates nurse-sensitive quality indicators (fall rates, infection rates, pressure injury prevalence) per 1,000 patient days with benchmarking",
+      "inputs": [
+        {
+          "name": "indicator_type",
+          "type": "select",
+          "label": "Indicator type (falls, CAUTI, CLABSI, pressure injury, restraint use)"
+        },
+        {
+          "name": "event_count",
+          "type": "number",
+          "label": "Number of events in reporting period"
+        },
+        {
+          "name": "patient_days",
+          "type": "number",
+          "label": "Total patient days in reporting period"
+        },
+        {
+          "name": "device_days",
+          "type": "number",
+          "label": "Device days (for CAUTI/CLABSI, optional)"
+        },
+        {
+          "name": "unit_type",
+          "type": "select",
+          "label": "Unit type (ICU, Med-Surg, Step-down, Rehab)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "rate_per_1000",
+          "label": "Rate per 1,000 patient/device days"
+        },
+        {
+          "name": "national_benchmark",
+          "label": "NDNQI national benchmark comparison"
+        },
+        {
+          "name": "percentile_rank",
+          "label": "Estimated percentile rank"
+        },
+        {
+          "name": "trend_assessment",
+          "label": "Above/below/at benchmark assessment"
+        }
+      ],
+      "formula_hint": "Rate = (event_count / patient_days) * 1000; for device-associated = (event_count / device_days) * 1000; compare against NDNQI benchmark tables by unit type",
+      "rates": {
+        "ndnqi_fall_benchmark_medsurg": 3.56,
+        "ndnqi_cauti_benchmark_icu": 1.2,
+        "ndnqi_clabsi_benchmark_icu": 0.8,
+        "ndnqi_pressure_injury_benchmark": 2.4
+      }
+    },
+    "example_queries": [
+      "We had 7 patient falls on a 30-bed med-surg unit with 840 patient days last month. What's our fall rate and how does it compare to the national benchmark?",
+      "Calculate our CAUTI rate: 3 infections, 1,200 catheter days in the ICU",
+      "What's the pressure injury prevalence rate if we found 12 cases during a survey of 200 patients?"
+    ]
+  },
+  {
+    "id": "us-clinical-nurse-specialists-p02",
+    "title": "CNS role ROI calculation for administrators",
+    "problem": "CNSs struggle to demonstrate their financial value to hospital administrators, especially during budget cuts. They need to quantify cost savings from reduced complications, shorter lengths of stay, decreased readmissions, and staff turnover reduction. Without clear ROI data, CNS positions are often the first eliminated during cost-cutting, despite generating significant savings.",
+    "who": "All CNSs, especially those in organizations questioning CNS value",
+    "frequency": "quarterly",
+    "time_waste_h": 12,
+    "money_risk_usd": 120000,
+    "source": "career_psychology",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "CNS Role ROI Calculator",
+      "one_liner": "Calculates the financial return on investment of a CNS position by quantifying cost avoidance from prevented complications, reduced LOS, and decreased turnover",
+      "inputs": [
+        {
+          "name": "cns_salary",
+          "type": "number",
+          "label": "CNS total compensation (salary + benefits, USD)"
+        },
+        {
+          "name": "prevented_falls",
+          "type": "number",
+          "label": "Falls prevented per year (estimated)"
+        },
+        {
+          "name": "prevented_cauti",
+          "type": "number",
+          "label": "CAUTIs prevented per year"
+        },
+        {
+          "name": "prevented_clabsi",
+          "type": "number",
+          "label": "CLABSIs prevented per year"
+        },
+        {
+          "name": "prevented_pressure_injuries",
+          "type": "number",
+          "label": "Pressure injuries prevented per year"
+        },
+        {
+          "name": "los_reduction_days",
+          "type": "number",
+          "label": "Total LOS days reduced across patients"
+        },
+        {
+          "name": "prevented_readmissions",
+          "type": "number",
+          "label": "30-day readmissions prevented"
+        },
+        {
+          "name": "nurses_retained",
+          "type": "number",
+          "label": "Nurses retained (who would have left without CNS mentoring)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "total_cost_avoidance",
+          "label": "Total cost avoidance (USD)"
+        },
+        {
+          "name": "roi_ratio",
+          "label": "ROI ratio (savings : cost)"
+        },
+        {
+          "name": "net_savings",
+          "label": "Net savings after CNS compensation (USD)"
+        },
+        {
+          "name": "breakdown",
+          "label": "Savings breakdown by category"
+        }
+      ],
+      "formula_hint": "Fall with injury cost ~$14,000; CAUTI ~$13,000; CLABSI ~$48,000; pressure injury ~$26,000; daily hospital bed cost ~$2,500; readmission penalty ~$15,000; RN turnover cost ~$56,000; ROI = (total_savings - cns_cost) / cns_cost * 100",
+      "rates": {
+        "fall_injury_cost": 14000,
+        "cauti_cost": 13000,
+        "clabsi_cost": 48000,
+        "pressure_injury_cost": 26000,
+        "daily_bed_cost": 2500,
+        "readmission_penalty": 15000,
+        "rn_turnover_cost": 56000
+      }
+    },
+    "example_queries": [
+      "I make $130,000 with benefits. This year I prevented an estimated 10 falls, 4 CAUTIs, and reduced LOS by 50 days total. What's my ROI?",
+      "Help me build a business case for keeping my CNS position - our unit reduced CLABSIs from 8 to 2 this year and retained 3 nurses who were planning to leave",
+      "Calculate ROI for a CNS earning $140K who prevented 15 pressure injuries and 6 readmissions"
+    ]
+  },
+  {
+    "id": "us-clinical-nurse-specialists-p03",
+    "title": "Staff competency assessment tracking",
+    "problem": "CNSs are responsible for developing and tracking competency assessments for nursing staff across multiple units. Managing who has been assessed, what competencies are due, tracking expiration dates, and ensuring compliance with Joint Commission requirements involves extensive spreadsheet management. Missed competency validations can result in accreditation citations.",
+    "who": "CNSs responsible for staff education and competency validation",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Staff Competency Assessment Tracker",
+      "one_liner": "Generates a competency validation checklist with regulatory requirements, assessment methods, and documentation standards per Joint Commission and specialty requirements",
+      "steps": [
+        "Step 1: Identify competency domain (clinical skill, equipment, medication, population-specific)",
+        "Step 2: Determine regulatory requirement source (Joint Commission HR.01.06.01, state BON, specialty standard)",
+        "Step 3: Define competency criteria and performance expectations",
+        "Step 4: Select assessment method (direct observation, simulation, written test, case study, peer review)",
+        "Step 5: Create competency assessment tool with measurable criteria",
+        "Step 6: Schedule initial and ongoing assessment intervals (annual, biannual, or trigger-based)",
+        "Step 7: Document assessment results with date, assessor, score, and remediation plan if needed",
+        "Step 8: Track completion rates by unit and identify overdue assessments",
+        "Step 9: File documentation in employee competency record",
+        "Step 10: Report aggregate compliance data to nursing leadership"
+      ],
+      "warnings": [
+        "Warning: Joint Commission requires competency assessment at hire and ongoing - not just annual",
+        "Warning: High-risk/low-volume competencies require more frequent validation",
+        "Warning: Agency/travel nurses require competency verification before patient care assignment",
+        "Warning: Competency assessment must match actual job responsibilities, not generic checklists"
+      ],
+      "regulatory_refs": [
+        "Joint Commission HR.01.06.01",
+        "State Nurse Practice Acts",
+        "CMS Conditions of Participation"
+      ]
+    },
+    "example_queries": [
+      "What competencies do I need to validate for new ICU nurses per Joint Commission standards?",
+      "Create a competency assessment checklist for chemotherapy administration",
+      "What are the required steps to document a competency validation for blood product administration?"
+    ]
+  },
+  {
+    "id": "us-clinical-nurse-specialists-p04",
+    "title": "Evidence-based practice guideline development",
+    "problem": "CNSs spend 26.5% of their time on evidence-based practice projects but struggle with the systematic process of translating research into clinical protocols. The process from literature search to policy implementation involves multiple steps that are easy to skip or do out of order, risking adoption of weak evidence or failure to get organizational buy-in.",
+    "who": "CNSs leading EBP projects and practice change initiatives",
+    "frequency": "monthly",
+    "time_waste_h": 10,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "EBP Project Implementation Checklist",
+      "one_liner": "Step-by-step guide for implementing an evidence-based practice change using the Iowa Model or Johns Hopkins EBP framework",
+      "steps": [
+        "Step 1: Identify clinical problem using PICOT format (Population, Intervention, Comparison, Outcome, Time)",
+        "Step 2: Form interprofessional EBP team with stakeholder representation",
+        "Step 3: Conduct systematic literature search (PubMed, CINAHL, Cochrane, UpToDate)",
+        "Step 4: Critically appraise evidence using hierarchy of evidence (Level I-VII)",
+        "Step 5: Synthesize evidence and determine strength of recommendation",
+        "Step 6: Develop clinical protocol/guideline draft based on evidence synthesis",
+        "Step 7: Obtain organizational approvals (nursing practice council, medical staff, compliance)",
+        "Step 8: Design pilot implementation plan with measurable outcomes",
+        "Step 9: Implement pilot on selected unit(s) with staff education",
+        "Step 10: Collect and analyze outcome data using PDSA cycle",
+        "Step 11: Revise protocol based on pilot results",
+        "Step 12: Scale to organization-wide implementation",
+        "Step 13: Develop sustainability plan with auditing schedule",
+        "Step 14: Disseminate results (poster, presentation, publication)"
+      ],
+      "warnings": [
+        "Warning: Do not skip critical appraisal - weak evidence leads to harmful practice changes",
+        "Warning: Stakeholder buy-in before pilot prevents implementation failure",
+        "Warning: IRB review may be required if outcomes will be published as research",
+        "Warning: Allow minimum 3-month pilot period for meaningful outcome measurement"
+      ],
+      "regulatory_refs": [
+        "Joint Commission LD.03.01.01",
+        "Magnet Recognition Program",
+        "ANCC Pathway to Excellence"
+      ]
+    },
+    "example_queries": [
+      "Walk me through implementing an EBP project to reduce CAUTI rates using the Iowa Model",
+      "I want to change our fall prevention protocol based on new evidence - what steps do I need to follow?",
+      "How do I critically appraise the evidence for early mobility in the ICU and build a protocol?"
+    ]
+  },
+  {
+    "id": "us-clinical-nurse-specialists-p05",
+    "title": "Joint Commission accreditation survey preparation",
+    "problem": "Accreditation surveys create peak preparation periods requiring CNSs to ensure all clinical protocols, competency records, and quality data are survey-ready. Missing or outdated documentation can result in citations, conditional accreditation, or loss of accreditation - directly threatening hospital CMS reimbursement. CNSs must coordinate across multiple departments under tight deadlines.",
+    "who": "CNSs involved in accreditation preparation at hospitals and health systems",
+    "frequency": "yearly",
+    "time_waste_h": 40,
+    "money_risk_usd": 500000,
+    "source": "regulatory",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Joint Commission Survey Readiness Checklist",
+      "one_liner": "Comprehensive checklist for CNS-led Joint Commission survey preparation covering nursing-specific standards, documentation, and tracer readiness",
+      "steps": [
+        "Step 1: Review current Joint Commission National Patient Safety Goals (NPSGs) and verify unit compliance",
+        "Step 2: Audit clinical protocols and policies for currency (updated within required timeframe)",
+        "Step 3: Verify staff competency files are complete (HR.01.06.01) - all staff, including agency",
+        "Step 4: Review quality metrics and ensure data collection methodology is documented",
+        "Step 5: Conduct mock tracer activities: individual patient tracer, system tracer, program-specific tracer",
+        "Step 6: Verify medication management compliance (MM chapter) - labeling, storage, high-alert meds",
+        "Step 7: Audit infection prevention practices (IC chapter) - hand hygiene, isolation, device bundles",
+        "Step 8: Review restraint usage documentation and policies (PC.03.05.01-PC.03.05.19)",
+        "Step 9: Verify pain assessment and management documentation compliance",
+        "Step 10: Ensure fall prevention program documentation is current with outcome data",
+        "Step 11: Review nursing documentation for completeness in EHR (assessments, care plans, education)",
+        "Step 12: Prepare staff for surveyor interviews - key talking points for bedside nurses",
+        "Step 13: Verify emergency equipment checks are documented and current",
+        "Step 14: Compile evidence binder/digital folder with QI data, EBP projects, and outcomes"
+      ],
+      "warnings": [
+        "Warning: Joint Commission surveys are unannounced - maintain continuous readiness",
+        "Warning: Loss of accreditation can terminate CMS reimbursement",
+        "Warning: Surveyors interview frontline staff - preparation must extend beyond leadership",
+        "Warning: Documentation gaps are the #1 citation category"
+      ],
+      "regulatory_refs": [
+        "Joint Commission Hospital Standards",
+        "CMS Conditions of Participation",
+        "National Patient Safety Goals"
+      ]
+    },
+    "example_queries": [
+      "What nursing-specific areas do I need to prepare for a Joint Commission survey?",
+      "Give me a checklist for conducting mock tracer activities on my unit",
+      "What are the most common Joint Commission citations CNSs should watch for?"
+    ]
+  },
+  {
+    "id": "us-clinical-nurse-specialists-p06",
+    "title": "Clinical protocol and policy document generation",
+    "problem": "CNSs regularly write and update clinical protocols, policies, and practice guidelines. Each document requires a standardized format including purpose, scope, definitions, procedure steps, evidence references, approval signatures, and review dates. Writing these from scratch is time-consuming and inconsistency in format can cause confusion and compliance issues.",
+    "who": "CNSs responsible for developing and maintaining clinical policies and protocols",
+    "frequency": "monthly",
+    "time_waste_h": 5,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Clinical Protocol Generator",
+      "one_liner": "Generates standardized clinical protocol/policy documents with evidence-based content, regulatory references, and proper organizational formatting",
+      "doc_name": "Clinical Protocol / Nursing Policy",
+      "variables": [
+        {
+          "name": "protocol_title",
+          "label": "Protocol/policy title"
+        },
+        {
+          "name": "clinical_area",
+          "label": "Clinical area (ICU, Med-Surg, OR, ED, etc.)"
+        },
+        {
+          "name": "target_population",
+          "label": "Target patient population"
+        },
+        {
+          "name": "purpose",
+          "label": "Purpose statement"
+        },
+        {
+          "name": "key_procedure_steps",
+          "label": "Key procedure steps (brief description)"
+        },
+        {
+          "name": "evidence_sources",
+          "label": "Evidence sources (guidelines, studies)"
+        },
+        {
+          "name": "responsible_parties",
+          "label": "Responsible roles"
+        },
+        {
+          "name": "review_cycle",
+          "label": "Review cycle (annual, biennial)"
+        },
+        {
+          "name": "effective_date",
+          "label": "Effective date"
+        }
+      ],
+      "structure_hint": "Header (title, number, dates) -> Purpose -> Scope -> Definitions -> Policy Statement -> Procedure (numbered steps) -> Evidence/References -> Related Policies -> Approval Signatures -> Review History"
+    },
+    "example_queries": [
+      "Generate a clinical protocol template for central line dressing change in the ICU",
+      "Create a nursing policy document for early mobility in mechanically ventilated patients",
+      "Write a protocol for nurse-driven urinary catheter removal based on current evidence"
+    ]
+  },
+  {
+    "id": "us-clinical-nurse-specialists-p07",
+    "title": "Quality improvement project report generation",
+    "problem": "CNSs must regularly produce QI reports documenting project progress, outcome data, statistical analysis, and recommendations for leadership. These reports must follow specific formats expected by quality committees, Magnet documentation, and accreditation bodies. Creating these reports from scratch each time is repetitive and delays project advancement.",
+    "who": "CNSs leading quality improvement initiatives",
+    "frequency": "monthly",
+    "time_waste_h": 6,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "QI Project Report Generator",
+      "one_liner": "Generates structured quality improvement project reports using PDSA framework with data visualization guidance and executive summary",
+      "doc_name": "Quality Improvement Project Report",
+      "variables": [
+        {
+          "name": "project_title",
+          "label": "QI project title"
+        },
+        {
+          "name": "problem_statement",
+          "label": "Problem statement with baseline data"
+        },
+        {
+          "name": "aim_statement",
+          "label": "SMART aim statement"
+        },
+        {
+          "name": "intervention",
+          "label": "Intervention description"
+        },
+        {
+          "name": "outcome_measures",
+          "label": "Outcome measures and data"
+        },
+        {
+          "name": "process_measures",
+          "label": "Process measures and data"
+        },
+        {
+          "name": "balancing_measures",
+          "label": "Balancing measures"
+        },
+        {
+          "name": "pdsa_cycle_number",
+          "label": "PDSA cycle number"
+        },
+        {
+          "name": "results_summary",
+          "label": "Results summary"
+        },
+        {
+          "name": "next_steps",
+          "label": "Recommended next steps"
+        }
+      ],
+      "structure_hint": "Executive Summary -> Background/Problem Statement -> SMART Aim -> Team Members -> Methodology (PDSA) -> Intervention Description -> Data Collection Methods -> Results (with run chart/control chart guidance) -> Analysis -> Lessons Learned -> Next Steps -> Appendices"
+    },
+    "example_queries": [
+      "Generate a QI report for our CAUTI reduction project - baseline was 3.2/1000 catheter days, now 1.1 after 6 months",
+      "Create a PDSA cycle report template for our fall prevention initiative",
+      "Write up our QI results on reducing hospital-acquired pressure injuries for the quality committee"
+    ]
+  },
+  {
+    "id": "us-clinical-nurse-specialists-p08",
+    "title": "APRN scope of practice by state lookup",
+    "problem": "CNS scope of practice varies dramatically by state - 28 states plus DC have full practice authority, while others require physician collaboration or supervision. Prescriptive authority laws are actively changing (Maryland 2025 allows CNS prescribing). CNSs moving between states, consulting across state lines, or advocating for legislative changes need quick, accurate reference to current state-specific regulations.",
+    "who": "All CNSs, especially those in multi-state practice, telehealth, or legislative advocacy",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 75000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "CNS Scope of Practice State Reference",
+      "one_liner": "Quick lookup of CNS/APRN scope of practice, prescriptive authority, and collaboration requirements by state with recent legislative changes",
+      "data_domain": "State-by-state APRN/CNS scope of practice regulations, prescriptive authority, and practice authority classifications",
+      "lookup_keys": [
+        "state",
+        "practice_authority_level",
+        "prescriptive_authority",
+        "collaboration_requirement"
+      ],
+      "data_hints": {
+        "source_law": "State Nurse Practice Acts, APRN Consensus Model",
+        "key_sections": [
+          "Full Practice Authority states",
+          "Reduced Practice states",
+          "Restricted Practice states"
+        ],
+        "recent_changes": "Maryland 2025 CNS prescribing authority, Wisconsin full practice authority bill pending",
+        "categories": "Full Practice (28 states + DC), Reduced Practice, Restricted Practice"
+      }
+    },
+    "example_queries": [
+      "Can a CNS prescribe medications in Maryland under the new 2025 law?",
+      "Which states have full practice authority for APRNs and what does that mean for CNS practice?",
+      "I'm a CNS in Texas considering a move to California - how does scope of practice differ?"
+    ]
+  },
+  {
+    "id": "us-clinical-nurse-specialists-p09",
+    "title": "CNS certification and license renewal requirements",
+    "problem": "CNSs must maintain multiple credentials - state nursing license, APRN license, national certification (ANCC or specialty board), and continuing education requirements. Each has different renewal cycles, CE requirements, and documentation standards. Missing a renewal deadline can result in inability to practice, loss of prescriptive authority, and employment termination.",
+    "who": "All practicing CNSs managing multiple certifications and licenses",
+    "frequency": "quarterly",
+    "time_waste_h": 3,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "CNS Credential Renewal Reference",
+      "one_liner": "Reference guide for CNS certification renewal requirements including CE hours, practice hours, and deadlines by certifying body",
+      "data_domain": "APRN/CNS certification and license renewal requirements by certifying body and state",
+      "lookup_keys": [
+        "certification_body",
+        "certification_type",
+        "state",
+        "renewal_cycle"
+      ],
+      "data_hints": {
+        "source_law": "ANCC Certification Requirements, State Nurse Practice Acts",
+        "key_sections": [
+          "ANCC renewal requirements",
+          "Specialty board renewal",
+          "State CE requirements"
+        ],
+        "certifying_bodies": "ANCC, AACN (critical care), ONS (oncology), NCC (neonatal)",
+        "common_requirements": "75 CE hours/5 years for ANCC, 1000 practice hours, pharmacology CE for prescribers"
+      }
+    },
+    "example_queries": [
+      "What are the ANCC renewal requirements for my Adult-Gerontology CNS certification?",
+      "How many CE hours do I need for CNS certification renewal and how many must be pharmacology?",
+      "My ANCC certification expires in 6 months - what do I need to have completed?"
+    ]
+  },
+  {
+    "id": "us-clinical-nurse-specialists-p10",
+    "title": "Staff education program development",
+    "problem": "CNSs spend 26.5% of their day teaching nurses and staff but creating education materials from scratch for each topic is time-consuming. Education programs must include learning objectives, content aligned with evidence, competency evaluation methods, and documentation for accreditation. Poorly designed education leads to knowledge gaps and patient safety issues.",
+    "who": "CNSs responsible for nursing staff education and professional development",
+    "frequency": "weekly",
+    "time_waste_h": 4,
+    "money_risk_usd": 8000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Nursing Education Program Generator",
+      "one_liner": "Generates structured nursing education program outlines with learning objectives, evidence-based content, teaching strategies, and competency evaluation plans",
+      "doc_name": "Nursing Education Program Plan",
+      "variables": [
+        {
+          "name": "topic",
+          "label": "Education topic"
+        },
+        {
+          "name": "target_audience",
+          "label": "Target audience (new grads, experienced RNs, all staff)"
+        },
+        {
+          "name": "clinical_area",
+          "label": "Clinical area/unit"
+        },
+        {
+          "name": "learning_objectives",
+          "label": "Key learning objectives (2-4)"
+        },
+        {
+          "name": "evidence_base",
+          "label": "Evidence base for content"
+        },
+        {
+          "name": "duration",
+          "label": "Program duration"
+        },
+        {
+          "name": "delivery_method",
+          "label": "Delivery method (classroom, simulation, online, bedside)"
+        }
+      ],
+      "structure_hint": "Title/Date -> Needs Assessment Justification -> Learning Objectives (SMART) -> Content Outline -> Teaching Strategies -> Materials Needed -> Competency Evaluation Method -> Documentation Requirements -> Post-Education Follow-up Plan"
+    },
+    "example_queries": [
+      "Create an education program on sepsis early recognition for med-surg nurses",
+      "Design a simulation-based education plan for rapid response team activation",
+      "Generate a staff education outline for new insulin pump protocol implementation"
+    ]
+  },
+  {
+    "id": "us-clinical-nurse-specialists-p11",
+    "title": "Medication dosage and drip rate calculations",
+    "problem": "CNSs frequently need to verify complex medication calculations including weight-based dosing, drip rates, titration parameters, and pediatric/neonatal dosing. While pharmacists are available, CNSs need rapid independent verification during clinical consultations, simulation teaching, and when developing medication protocols. Errors in dosage calculations are a leading cause of preventable patient harm.",
+    "who": "CNSs with prescriptive authority and those developing medication protocols",
+    "frequency": "weekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 100000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Clinical Dosage Calculator",
+      "one_liner": "Calculates weight-based medication dosages, IV drip rates, and titration parameters with safety range verification",
+      "inputs": [
+        {
+          "name": "medication",
+          "type": "text",
+          "label": "Medication name"
+        },
+        {
+          "name": "patient_weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        },
+        {
+          "name": "ordered_dose",
+          "type": "text",
+          "label": "Ordered dose (e.g., 5 mcg/kg/min)"
+        },
+        {
+          "name": "concentration",
+          "type": "text",
+          "label": "Drug concentration (e.g., 400mg in 250mL)"
+        },
+        {
+          "name": "dose_unit",
+          "type": "select",
+          "label": "Dose unit (mg/kg, mcg/kg/min, units/hr, mg/m2)"
+        },
+        {
+          "name": "bsa",
+          "type": "number",
+          "label": "Body surface area m2 (if applicable)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "calculated_dose",
+          "label": "Calculated dose"
+        },
+        {
+          "name": "drip_rate_ml_hr",
+          "label": "IV drip rate (mL/hr)"
+        },
+        {
+          "name": "drip_rate_gtts_min",
+          "label": "Drip rate (gtts/min for gravity)"
+        },
+        {
+          "name": "safe_dose_range",
+          "label": "Safe dose range verification"
+        },
+        {
+          "name": "max_dose_alert",
+          "label": "Maximum dose alert if applicable"
+        }
+      ],
+      "formula_hint": "Weight-based: dose = ordered_dose * weight; Drip rate (mL/hr) = (dose_per_min * 60 * volume) / drug_amount; gtts/min = (volume * drop_factor) / (time_min); verify against safe dose range",
+      "rates": {
+        "standard_drop_factor": 15,
+        "micro_drop_factor": 60
+      }
+    },
+    "example_queries": [
+      "Calculate dopamine drip rate: ordered 5 mcg/kg/min, patient weighs 80kg, concentration is 400mg in 250mL D5W",
+      "What's the correct dose of vancomycin 15mg/kg for a 92kg patient and what's the infusion rate?",
+      "Verify this heparin calculation: 18 units/kg/hr for a 70kg patient, concentration 25,000 units in 500mL"
+    ]
+  },
+  {
+    "id": "us-clinical-nurse-specialists-p12",
+    "title": "Root cause analysis facilitation",
+    "problem": "When sentinel events or near-misses occur, CNSs are often tasked with leading root cause analysis (RCA). The RCA process is complex, requiring systematic investigation, fishbone diagrams, contributing factor identification, and corrective action plans. Incomplete RCAs lead to recurring events and potential Joint Commission citations. CNSs need guidance on proper methodology and documentation.",
+    "who": "CNSs involved in patient safety and quality management",
+    "frequency": "quarterly",
+    "time_waste_h": 8,
+    "money_risk_usd": 200000,
+    "source": "daily_reality",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Root Cause Analysis Advisor",
+      "one_liner": "Guides CNSs through conducting root cause analysis for patient safety events with structured methodology, contributing factor identification, and corrective action planning",
+      "expertise_area": "Patient safety event investigation and root cause analysis methodology",
+      "decision_criteria": [
+        "event type (sentinel, adverse, near-miss, hazardous condition)",
+        "severity level",
+        "department involved",
+        "system vs human factors",
+        "regulatory reporting requirements"
+      ],
+      "context_needed": [
+        "regulatory.regulatory_bodies",
+        "regulatory.penalties",
+        "daily_reality.documents"
+      ]
+    },
+    "example_queries": [
+      "A patient fell and fractured their hip despite being on fall precautions. Walk me through conducting the RCA.",
+      "How do I structure a fishbone diagram for a medication error involving wrong-dose administration?",
+      "What corrective actions should I recommend after our RCA found communication failures during a rapid response?"
+    ]
+  },
+  {
+    "id": "us-clinical-nurse-specialists-p13",
+    "title": "Navigating role ambiguity and organizational positioning",
+    "problem": "CNS role ambiguity is the top career fear - many CNSs are seen as overhead rather than essential. They struggle to articulate their unique value compared to NPs, nurse educators, and quality coordinators. Without clear role definition and strategic positioning, CNSs face job elimination during budget cuts and lack career advancement pathways.",
+    "who": "New and experienced CNSs facing role ambiguity or organizational restructuring",
+    "frequency": "monthly",
+    "time_waste_h": 3,
+    "money_risk_usd": 140000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "CNS Role Strategy Advisor",
+      "one_liner": "Advises CNSs on defining, communicating, and protecting their organizational role using the three spheres of influence framework and outcome metrics",
+      "expertise_area": "CNS role definition, organizational positioning, and career strategy within healthcare systems",
+      "decision_criteria": [
+        "organizational structure",
+        "current role expectations",
+        "sphere of influence (patient, nursing, organization)",
+        "available outcome data",
+        "budget environment"
+      ],
+      "context_needed": [
+        "career_psychology.fears",
+        "career_psychology.motivation",
+        "career_psychology.career_levels",
+        "market.salary_by_level_usd"
+      ]
+    },
+    "example_queries": [
+      "My hospital is considering eliminating my CNS position to hire another NP. How do I make the case to keep my role?",
+      "How do I explain the difference between a CNS and a nurse educator to my nursing director?",
+      "I feel like I'm being used as a staff nurse rather than functioning in my CNS role. How do I reset expectations with my manager?"
+    ]
+  }
+]

@@ -1,0 +1,206 @@
+{
+  "profession_id": "us-hospitalists",
+  "profession_name": "Hospitalists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Hospitalists are physicians specializing in the care of hospitalized patients. They manage admissions, discharges, and coordinate inpatient care. Most common schedule is 7-on/7-off with 12-hour shifts. They face growing patient complexity and volume as the field expands rapidly.",
+    "typical_tasks": [
+      "Conduct morning rounds on assigned patients (15-20 patients typical)",
+      "Admit new patients from emergency department",
+      "Order and interpret diagnostic tests and imaging",
+      "Coordinate care with specialists, nurses, and case managers",
+      "Perform bedside procedures (central lines, lumbar punctures, paracentesis)",
+      "Document encounters in EHR (admission notes, progress notes, discharge summaries)",
+      "Participate in rapid response and code blue teams",
+      "Conduct discharge planning and medication reconciliation",
+      "Communicate with families about patient status and care plans",
+      "Participate in quality improvement and utilization review committees"
+    ],
+    "key_documents": [
+      "Admission history and physical (H&P)",
+      "Daily progress notes (SOAP format)",
+      "Discharge summaries",
+      "Medication reconciliation forms",
+      "Code/rapid response documentation",
+      "Procedure notes",
+      "Consultation requests and notes",
+      "Transfer documentation"
+    ],
+    "deadlines": {
+      "admission_note": "Within 24 hours of admission",
+      "discharge_summary": "Within 24-48 hours of discharge",
+      "orders": "Immediate for critical/urgent orders",
+      "signout": "End of each shift for handoff",
+      "quality_metrics": "Monthly/quarterly reporting to SHM"
+    },
+    "seasonality": "Winter flu/respiratory season (Nov-March) dramatically increases admissions. Holiday periods create staffing challenges. Summer may see reduced elective admissions."
+  },
+  "regulatory": {
+    "summary": "Requires MD/DO, completed Internal Medicine residency, board certification. Hospital credentialing and privileging required. Governed by CMS Conditions of Participation, Joint Commission standards, and state medical practice acts.",
+    "key_laws": [
+      {"name": "CMS Conditions of Participation", "description": "Federal requirements for hospitals participating in Medicare/Medicaid"},
+      {"name": "Joint Commission Standards", "description": "Hospital accreditation standards affecting medical staff practice"},
+      {"name": "State Medical Practice Acts", "description": "State-level physician licensing and practice regulation"},
+      {"name": "EMTALA", "description": "Emergency Medical Treatment and Labor Act — requires emergency screening and stabilization"}
+    ],
+    "licensing": {
+      "requirements": [
+        "MD or DO degree",
+        "3-year Internal Medicine residency",
+        "ABIM Board Certification",
+        "State medical license",
+        "Hospital credentialing and privileging",
+        "DEA registration",
+        "Ongoing CME and MOC"
+      ],
+      "certifications": [
+        "ABIM Board Certification in Internal Medicine",
+        "Focused Practice in Hospital Medicine (FPHM) — recognition from ABIM",
+        "BLS/ACLS certification"
+      ]
+    },
+    "penalties": "Malpractice liability, hospital peer review actions, medical board discipline, CMS penalties for quality metrics non-compliance."
+  },
+  "tools": {
+    "summary": "EHR systems (Epic, Cerner) are the primary daily tool. Point-of-care ultrasound, clinical decision support, and communication platforms are increasingly important.",
+    "primary_tools": [
+      {"name": "Epic / Oracle Health (Cerner)", "description": "EHR for documentation, orders, medication management"},
+      {"name": "POCUS (Point-of-Care Ultrasound)", "description": "Bedside diagnostic imaging for rapid assessment"},
+      {"name": "UpToDate / DynaMed", "description": "Evidence-based clinical decision support"},
+      {"name": "Vocera / Spectralink", "description": "In-hospital communication devices"},
+      {"name": "I-PASS / SBAR", "description": "Standardized patient handoff communication frameworks"}
+    ],
+    "secondary_tools": [
+      "Telehealth platforms for specialist consultations",
+      "AI-powered clinical decision support emerging",
+      "Procedure simulation trainers",
+      "Secure messaging platforms (TigerConnect, PerfectServe)",
+      "Quality dashboards and analytics tools"
+    ],
+    "pain_points": [
+      "EHR documentation burden during shifts",
+      "Alert fatigue from excessive notifications",
+      "Interruption-driven workflow reducing focus time",
+      "Fragmented communication across disciplines"
+    ]
+  },
+  "terminology": {
+    "summary": "Hospital medicine terminology blends general medical terms with hospital-specific workflow and quality terminology.",
+    "terms": {
+      "rounding": "Systematic patient review and bedside assessment",
+      "signout/handoff": "Transfer of patient care responsibility between shifts",
+      "boarder": "Patient waiting in ED for an inpatient bed",
+      "LOS": "Length of Stay — key hospital quality metric",
+      "readmission": "Patient returning to hospital within 30 days of discharge",
+      "RRT": "Rapid Response Team — for deteriorating patients",
+      "code blue": "Cardiac/respiratory arrest requiring CPR",
+      "throughput": "Patient flow efficiency through admission-discharge cycle",
+      "discharge planning": "Coordinated preparation for safe patient release",
+      "med rec": "Medication Reconciliation — verifying medication accuracy",
+      "NPO": "Nothing by mouth — pre-procedure dietary restriction",
+      "FPHM": "Focused Practice in Hospital Medicine (ABIM)",
+      "SHM": "Society of Hospital Medicine",
+      "CDI": "Clinical Documentation Improvement",
+      "UM/UR": "Utilization Management/Utilization Review",
+      "nocturnist": "Hospitalist working night shifts",
+      "census": "Number of patients assigned to a hospitalist",
+      "disposition": "Decision about next level of care for patient",
+      "SNF": "Skilled Nursing Facility — common discharge destination",
+      "AMA": "Against Medical Advice — patient-initiated discharge"
+    }
+  },
+  "career_psychology": {
+    "summary": "Fast-growing specialty with average salary $265K-$280K. 7-on/7-off schedule offers blocks of time off but grueling on-weeks. Burnout is significant concern due to high patient loads and 12-hour shifts. 26% projected growth by 2030.",
+    "career_path": [
+      "Medical school (MD/DO — 4 years)",
+      "Internal Medicine residency (3 years)",
+      "Junior Hospitalist (Year 1-3)",
+      "Senior Hospitalist (3-7 years)",
+      "Lead Hospitalist / Section Chief",
+      "Medical Director of Hospital Medicine",
+      "Chief Medical Officer / VP of Medical Affairs"
+    ],
+    "salary_range": {
+      "starting": "$250,000 - $280,000/year",
+      "experienced": "$280,000 - $340,000/year",
+      "medical_director": "$340,000 - $400,000+/year",
+      "average_2026": "$265,554/year (PayScale)"
+    },
+    "fears": [
+      "Medical error affecting critically ill patient",
+      "Burnout from 12-hour shifts and high census",
+      "Malpractice lawsuit from complex inpatient care",
+      "Losing work-life balance due to demanding schedule",
+      "Compassion fatigue from high-acuity patient care"
+    ],
+    "motivation": [
+      "Direct impact on acutely ill patients' outcomes",
+      "Blocks of time off (7 days on / 7 days off)",
+      "Intellectual challenge of managing complex cases",
+      "Strong job market and career security",
+      "Leadership opportunities in hospital systems"
+    ],
+    "burnout_factors": [
+      "Heavy patient census (15-20+ patients per shift)",
+      "12-hour shifts for 7 consecutive days",
+      "Night/weekend/holiday coverage requirements",
+      "Growing complexity and acuity of hospitalized patients",
+      "Administrative burden alongside clinical duties"
+    ]
+  },
+  "community": {
+    "summary": "Society of Hospital Medicine (SHM) is the primary professional organization. Rapidly growing specialty with strong community identity and advocacy.",
+    "associations": [
+      {"name": "Society of Hospital Medicine (SHM)", "url": "https://www.hospitalmedicine.org/", "description": "Primary professional society, 20,000+ members, advocacy, education"},
+      {"name": "American College of Physicians (ACP)", "description": "Parent organization for internal medicine"},
+      {"name": "ABIM", "description": "Board certification and FPHM recognition"}
+    ],
+    "online_communities": [
+      "SHM Connect — online professional community",
+      "r/medicine and r/hospitalist — Reddit",
+      "Doximity hospitalist networks",
+      "LinkedIn hospital medicine groups"
+    ],
+    "conferences": [
+      "SHM Converge — Annual Conference",
+      "SHM State of Hospital Medicine Report",
+      "ACP Internal Medicine Meeting"
+    ]
+  },
+  "market": {
+    "summary": "One of the fastest-growing medical specialties with 26% projected growth by 2030. Average salary $265K-$280K. Driven by aging population, hospital efficiency demands, and shift toward employed physician models.",
+    "growth_rate": "26% projected growth by 2030",
+    "salary_market": {
+      "average": "$265,000 - $280,000/year",
+      "range": "$182,000 - $400,000/year"
+    },
+    "top_employers": [
+      "Hospital systems (academic and community)",
+      "Hospitalist management groups (Sound Physicians, TeamHealth, Envision)",
+      "Academic medical centers",
+      "VA Healthcare System"
+    ],
+    "market_trends": [
+      "26% projected growth making it fastest-growing medical specialty",
+      "Aging population driving increased inpatient volume",
+      "Shift from private practice model to employed hospitalist model",
+      "Co-management with surgical services expanding scope",
+      "Telemedicine integration for rural hospital coverage"
+    ]
+  },
+  "quality_score": 0.79,
+  "sources_count": 20,
+  "verified_sources": 7,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Hospitalists USA 2025 2026 salary daily work hospital medicine career burnout",
+      "sources": [
+        {"title": "AMN Healthcare — Hospitalist Salary Guide 2025", "url": "https://www.amnhealthcare.com/blog/physician/perm/hospitalist-salary-guide-2025/"},
+        {"title": "PayScale — Hospitalist Salary 2026", "url": "https://www.payscale.com/research/US/Job=Hospitalist/Salary"},
+        {"title": "SHM — State of Hospital Medicine Report", "url": "https://www.hospitalmedicine.org/practice-management/shms-state-of-hospital-medicine2/"},
+        {"title": "Research.com — How to Become a Hospitalist", "url": "https://research.com/advice/how-to-become-a-hospitalist-education-salary-and-job-outlook"}
+      ]
+    }
+  ]
+}

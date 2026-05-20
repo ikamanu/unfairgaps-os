@@ -1,0 +1,413 @@
+{
+  "profession_id": "us-solar-energy-systems-engineers",
+  "profession_name": "Solar Energy Systems Engineers",
+  "country": "US",
+  "soc_code": "17-2199.11",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Solar Energy Systems Engineers design, develop, and oversee photovoltaic and solar thermal systems for residential, commercial, and utility-scale applications. They perform site assessments, conduct energy yield calculations, create system designs compliant with NEC and local codes, manage project timelines from conception to commissioning, and coordinate with installers, utilities, and permitting authorities.",
+    "typical_tasks": [
+      "Design photovoltaic (PV) systems for residential, commercial, and utility-scale projects",
+      "Conduct engineering site audits to collect structural, electrical, and solar resource data",
+      "Perform energy yield simulations using PVsyst, SAM, or HelioScope",
+      "Create electrical single-line diagrams and system schematics",
+      "Review and approve equipment specifications (modules, inverters, racking, BOS)",
+      "Prepare interconnection applications for utility approval",
+      "Ensure designs comply with NEC, local building codes, and fire setback requirements",
+      "Coordinate with AHJ (Authority Having Jurisdiction) for permitting",
+      "Oversee construction and commissioning of solar installations",
+      "Perform performance monitoring, troubleshooting, and O&M planning",
+      "Design solar domestic hot water and space heating systems",
+      "Evaluate energy storage integration (battery sizing, hybrid inverter selection)",
+      "Prepare proposals, feasibility studies, and cost-benefit analyses for clients"
+    ],
+    "key_documents": [
+      "System design package (single-line diagram, layout drawings, structural calcs)",
+      "Interconnection application (utility-specific forms)",
+      "Building permit application package",
+      "Structural engineering letter / PE stamp",
+      "Equipment specification sheets and datasheets",
+      "Energy yield report (P50/P90 analysis)",
+      "Operations & Maintenance (O&M) plan",
+      "Commissioning report and as-built drawings",
+      "Permission to Operate (PTO) application",
+      "Fire safety setback compliance documentation",
+      "Environmental impact assessment (for utility-scale projects)"
+    ],
+    "deadlines": {
+      "interconnection_applications": "Varies by utility; typically 15-60 business days for review",
+      "building_permits": "2-8 weeks for municipal review depending on jurisdiction",
+      "pto_approval": "1-4 weeks after inspection passes",
+      "itc_safe_harbor": "Must meet IRS commence-construction deadlines for Investment Tax Credit eligibility",
+      "nec_code_updates": "NEC 2026 adoption varies by state; engineers must track local adoption timelines",
+      "nabcep_recertification": "Every 3 years with continuing education requirements"
+    },
+    "seasonality": "Installation activity peaks in spring through fall due to favorable weather. Q4 often sees a rush to complete projects before year-end tax credit deadlines. Utility-scale project development follows longer 12-24 month cycles. Permit application volumes spike in Q1 as developers plan new-year projects."
+  },
+  "regulatory": {
+    "summary": "Solar energy engineers operate under a layered regulatory framework including the National Electrical Code (NEC), state electrical and building codes, utility interconnection standards (IEEE 1547), and federal tax incentive requirements. PE licensure is required for stamping engineering designs in most states. NABCEP certification is the premier industry credential and is required or preferred for certain state rebate programs.",
+    "key_laws": [
+      {
+        "name": "National Electrical Code (NEC) - Article 690 (Solar PV Systems)",
+        "description": "Primary electrical code governing PV system installation, wiring, grounding, and safety. NEC 2026 introduces updated requirements for PV, ESS, EVs, and power control systems.",
+        "agency": "NFPA"
+      },
+      {
+        "name": "NEC Article 705 - Interconnected Electric Power Production Sources",
+        "description": "Covers requirements for connecting distributed generation to the utility grid",
+        "agency": "NFPA"
+      },
+      {
+        "name": "IEEE 1547 - Standard for Interconnection of Distributed Resources",
+        "description": "Technical standard for interconnecting distributed energy resources with electric power systems",
+        "agency": "IEEE"
+      },
+      {
+        "name": "Inflation Reduction Act (IRA) - Solar Tax Credits",
+        "description": "Federal Investment Tax Credit (ITC) of 30% for solar installations; subject to ongoing legislative changes in 2025-2026 with partial IRA repeal affecting long-term incentives",
+        "agency": "IRS / DOE"
+      },
+      {
+        "name": "UL 1741 - Inverter Safety Standard",
+        "description": "Standard for inverters, converters, controllers, and interconnection system equipment for use with distributed energy resources",
+        "agency": "UL"
+      },
+      {
+        "name": "State Net Metering / Net Billing Rules",
+        "description": "State-specific regulations governing how solar customers are compensated for exported electricity; varies significantly by state",
+        "agency": "State PUCs"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "ABET-accredited bachelor's degree in electrical, mechanical, or related engineering",
+        "Pass Fundamentals of Engineering (FE) exam (~$175)",
+        "4 years of supervised engineering experience under a licensed PE",
+        "Pass Professional Engineer (PE) exam in Electrical and Computer or related discipline ($300-$400)",
+        "State-specific PE license application and registration",
+        "NABCEP PV Associate credential (recommended entry-level certification)",
+        "NABCEP PV Design Specialist or PV Installation Professional certification (requires training + field experience)",
+        "OSHA 10/30 safety training (commonly required for site work)"
+      ],
+      "nabcep_details": "NABCEP (North American Board of Certified Energy Practitioners) is the gold-standard certification body for solar professionals. States like Minnesota, Maine, and Wisconsin require NABCEP-certified professionals for state rebate eligibility. California, Massachusetts, and Delaware prefer NABCEP certification. Utah requires NABCEP certification for state solar contractor licensing.",
+      "board_certification": "NABCEP offers Board Certifications including PV Installation Professional, PV Design Specialist, PV Technical Sales, PV Commissioning & Maintenance Specialist, and Solar Heating Installer"
+    },
+    "penalties": "Non-compliance with NEC or local codes can result in failed inspections, project shutdowns, permit revocation, and liability for property damage or injuries. Operating without a required PE license is a misdemeanor in most states. Utility interconnection violations can result in disconnection and fines.",
+    "controlling_bodies": [
+      "NFPA (National Fire Protection Association) - publishes NEC",
+      "NABCEP (North American Board of Certified Energy Practitioners)",
+      "NCEES (National Council of Examiners for Engineering and Surveying) - PE licensing",
+      "State licensing boards for Professional Engineers",
+      "Local AHJ (Authority Having Jurisdiction) - building/electrical permits",
+      "State Public Utility Commissions - interconnection and net metering rules",
+      "OSHA - workplace safety regulations"
+    ]
+  },
+  "tools": {
+    "summary": "Solar energy engineers rely on specialized simulation, design, and monitoring software. PVsyst is the industry gold standard for bankability analysis, while NREL's SAM provides free comprehensive modeling. CAD tools are essential for layout design, and monitoring platforms track system performance post-installation.",
+    "primary_tools": [
+      {
+        "name": "PVsyst",
+        "description": "Industry-standard PV simulation software for bankability analyses, performance predictions, shading analysis, and acceptance testing. Pricing starts at ~EUR 585/year for standard license."
+      },
+      {
+        "name": "SAM (System Advisor Model)",
+        "description": "Free, open-source software from NREL for modeling solar PV, CSP, wind, geothermal, and biomass with comprehensive financial analysis. Used for utility-scale feasibility studies."
+      },
+      {
+        "name": "HelioScope (by Aurora Solar)",
+        "description": "Web-based PV design tool for commercial and utility-scale systems with satellite imagery integration, 3D modeling, and automated stringing and wiring calculations."
+      },
+      {
+        "name": "Aurora Solar",
+        "description": "AI-powered residential and commercial solar design platform with remote shading analysis, permit-ready plan sets, and sales proposal generation."
+      },
+      {
+        "name": "AutoCAD / AutoCAD Electrical",
+        "description": "Industry-standard CAD software for creating electrical single-line diagrams, site layouts, and construction drawings."
+      },
+      {
+        "name": "HOMER Pro",
+        "description": "Microgrid and hybrid system optimization software for designing systems with solar, storage, wind, and generators."
+      }
+    ],
+    "secondary_tools": [
+      "PV*SOL — detailed PV simulation with 3D visualization and shading analysis",
+      "RETScreen — clean energy project analysis software from Natural Resources Canada",
+      "SketchUp / Google Earth Pro — 3D site modeling and preliminary layout",
+      "SolarEdge Designer / Enphase Enlighten — manufacturer-specific design and monitoring tools",
+      "Bluebeam Revu — PDF markup and plan review for construction documents",
+      "Microsoft Excel / Google Sheets — financial modeling, BOS calculations, production estimates",
+      "Python / MATLAB — custom data analysis, performance modeling, and automation scripts",
+      "GIS tools (ArcGIS, QGIS) — site selection, resource assessment, land-use analysis",
+      "SCADA systems — real-time monitoring and control for utility-scale solar plants",
+      "IV curve tracers and thermal imaging cameras — field commissioning and troubleshooting equipment"
+    ],
+    "pain_points": [
+      "PVsyst licensing costs ($585-$2,799+/year) can be prohibitive for small firms",
+      "Inconsistent AHJ requirements across jurisdictions requiring redesign work",
+      "Manual data transfer between design tools, permitting systems, and utility portals",
+      "Keeping simulation models updated with latest module/inverter databases",
+      "Integrating energy storage modeling with existing PV design workflows",
+      "Lack of standardized digital permitting across municipalities",
+      "Weather data quality and granularity affecting energy yield predictions"
+    ]
+  },
+  "terminology": {
+    "summary": "Solar energy engineering uses extensive technical terminology spanning photovoltaics, power electronics, grid interconnection, and project finance. Professionals must fluently navigate abbreviations from NEC codes, utility standards, and manufacturing specifications.",
+    "terms": {
+      "PV": "Photovoltaic — technology that converts sunlight directly into electricity using semiconductor materials",
+      "kW": "Kilowatt — 1,000 watts; standard unit for sizing solar systems (e.g., a 10 kW residential system)",
+      "kWh": "Kilowatt-hour — unit of energy; 1 kW acting over 1 hour. Used to measure solar production and consumption",
+      "MW": "Megawatt — 1,000 kW; used for utility-scale solar farm capacity",
+      "DC": "Direct Current — type of electricity produced by solar panels",
+      "AC": "Alternating Current — type of electricity used in homes and the grid; requires inverter conversion from DC",
+      "MPPT": "Maximum Power Point Tracking — algorithm/controller that optimizes power extraction from PV panels",
+      "STC": "Standard Test Conditions — laboratory conditions (25C, 1000 W/m2, AM1.5) used to rate PV module output",
+      "PTC": "PVUSA Test Conditions — more realistic rating conditions (20C ambient, 1000 W/m2, 1 m/s wind)",
+      "BOS": "Balance of System — all system components except the PV modules (inverters, racking, wiring, combiner boxes)",
+      "AHJ": "Authority Having Jurisdiction — the local entity enforcing building, electrical, and fire codes",
+      "PTO": "Permission to Operate — utility's final approval to energize a grid-tied solar system",
+      "NEM": "Net Energy Metering — billing arrangement crediting solar owners for exported electricity",
+      "ITC": "Investment Tax Credit — federal tax credit (currently 30%) for solar installations under the IRA",
+      "LCOE": "Levelized Cost of Energy — total lifecycle cost divided by total energy produced; key financial metric",
+      "P50/P90": "Probability estimates for energy yield — P50 means 50% chance of exceeding predicted output; P90 is more conservative (90% confidence)",
+      "GHI": "Global Horizontal Irradiance — total solar radiation on a horizontal surface; key input for energy modeling",
+      "TMY": "Typical Meteorological Year — standardized weather dataset used for solar simulations",
+      "String": "Series-connected group of PV modules wired together to achieve required voltage",
+      "Microinverter": "Small inverter installed on individual panels, converting DC to AC at the module level",
+      "String Inverter": "Central inverter that converts DC from a string of panels to AC in one location",
+      "Rapid Shutdown": "NEC-required feature to de-energize PV conductors within 30 seconds for firefighter safety",
+      "Clipping": "Energy loss when inverter limits output because DC input exceeds its rated AC capacity (DC/AC ratio > 1)",
+      "DC/AC Ratio": "Ratio of PV array DC capacity to inverter AC capacity; typically 1.1-1.3 for optimal performance",
+      "Degradation Rate": "Annual decrease in PV module output, typically 0.5-0.7% per year for crystalline silicon",
+      "BMS": "Battery Management System — monitors and controls battery charging, discharging, and temperature",
+      "ESS": "Energy Storage System — battery-based system for storing solar energy",
+      "EPC": "Engineering, Procurement, and Construction — the full-service delivery model for solar projects",
+      "PPA": "Power Purchase Agreement — contract where a third party owns the solar system and sells electricity to the host",
+      "REC": "Renewable Energy Certificate — tradeable proof of 1 MWh of renewable energy generation",
+      "SREC": "Solar Renewable Energy Certificate — state-specific REC for solar generation",
+      "O&M": "Operations and Maintenance — ongoing system monitoring, cleaning, and repair services",
+      "NEC": "National Electrical Code — primary US electrical safety standard published by NFPA",
+      "UL": "Underwriters Laboratories — safety certification organization for electrical equipment",
+      "NABCEP": "North American Board of Certified Energy Practitioners — premier solar certification body"
+    }
+  },
+  "career_psychology": {
+    "summary": "Solar energy systems engineering offers a mission-driven career at the intersection of environmental impact and technical innovation. The field attracts engineers passionate about clean energy transition. Rapid industry growth creates strong advancement opportunities, but policy uncertainty, project delays, and keeping pace with evolving technology can create stress.",
+    "career_path": [
+      "Bachelor's degree in Electrical, Mechanical, or Civil Engineering (ABET-accredited)",
+      "Junior Solar Engineer / Solar Design Engineer (0-3 years) — NABCEP PV Associate credential",
+      "Engineer-in-Training (EIT) — pass FE exam",
+      "Mid-level Solar Engineer / Project Engineer (3-7 years) — NABCEP Professional Certification",
+      "Professional Engineer (PE) — pass PE exam after 4 years experience",
+      "Senior Solar Engineer / Lead Design Engineer (7-12 years)",
+      "Principal Engineer / Engineering Manager (12+ years)",
+      "Director of Engineering / VP of Solar Development",
+      "Chief Technical Officer (CTO) at solar development or EPC firm"
+    ],
+    "salary_range": {
+      "entry_level": "$65,000 - $90,000/year",
+      "mid_career": "$85,000 - $120,000/year",
+      "senior": "$110,000 - $150,000/year",
+      "principal_director": "$130,000 - $200,000+/year",
+      "average_2026": "$105,000 - $114,000/year (national average, multiple sources)"
+    },
+    "fears": [
+      "Design errors leading to system failures, fires, or safety hazards",
+      "Policy changes (IRA repeal, tariff shifts) destabilizing the industry and project pipeline",
+      "Career stagnation without PE license or NABCEP certification",
+      "Liability for code non-compliance or failed inspections",
+      "Technology obsolescence — keeping up with rapidly evolving PV, inverter, and storage tech",
+      "Project cancellations due to interconnection queue delays or permitting bottlenecks"
+    ],
+    "motivation": [
+      "Direct contribution to clean energy transition and climate change mitigation",
+      "Working with cutting-edge technology (bifacial modules, AI-optimized designs, battery storage)",
+      "Strong job market demand and above-average salary growth",
+      "Variety of work — design, field work, client interaction, financial analysis",
+      "Seeing tangible results — completed solar installations producing clean energy",
+      "Entrepreneurial opportunities in a growing industry"
+    ],
+    "burnout_factors": [
+      "Navigating inconsistent permitting requirements across hundreds of AHJs",
+      "Policy uncertainty creating boom-bust cycles in project pipeline",
+      "Tight project deadlines driven by tax credit expiration dates",
+      "Managing multiple projects simultaneously across different development stages",
+      "Extensive documentation and repetitive permit application processes",
+      "Supply chain disruptions and equipment procurement delays",
+      "Keeping certifications current while managing full workload"
+    ]
+  },
+  "community": {
+    "summary": "The solar energy engineering community is well-organized with strong national trade associations, certification bodies, and a vibrant conference circuit. SEIA and NABCEP serve as primary hubs. The field benefits from overlap with broader renewable energy, electrical engineering, and clean tech communities.",
+    "associations": [
+      {
+        "name": "Solar Energy Industries Association (SEIA)",
+        "url": "https://seia.org/",
+        "type": "Trade association — national non-profit representing 1,200+ solar member companies since 1974"
+      },
+      {
+        "name": "NABCEP (North American Board of Certified Energy Practitioners)",
+        "url": "https://www.nabcep.org/",
+        "type": "Certification body — gold-standard professional certifications for solar practitioners"
+      },
+      {
+        "name": "Solar Energy International (SEI)",
+        "url": "https://www.solarenergy.org/",
+        "type": "Education and training — NABCEP-recognized training provider and solar education nonprofit"
+      },
+      {
+        "name": "Smart Electric Power Alliance (SEPA)",
+        "url": "https://sepapower.org/",
+        "type": "Research and education — facilitates the utility industry's smart transition to clean energy"
+      },
+      {
+        "name": "Interstate Renewable Energy Council (IREC)",
+        "url": "https://irecusa.org/",
+        "type": "Workforce development — publishes the National Solar Jobs Census"
+      },
+      {
+        "name": "American Solar Energy Society (ASES)",
+        "url": "https://ases.org/",
+        "type": "Nonprofit — promotes solar energy adoption through education and advocacy since 1954"
+      },
+      {
+        "name": "IEEE Power & Energy Society",
+        "url": "https://www.ieee-pes.org/",
+        "type": "Technical society — standards development (IEEE 1547) and technical resources for power engineers"
+      }
+    ],
+    "events": [
+      "RE+ (formerly Solar Power International) — largest clean energy event in North America; Las Vegas Convention Center, November 16-19, 2026",
+      "RE+ Northeast — regional RE+ event for the northeastern US market",
+      "SEIA Annual Conference — New York City, June 2026",
+      "SEIA Conference — Savannah, October 11-17, 2026",
+      "Intersolar North America — major international solar exhibition and conference",
+      "Solar Power Finance & Investment Summit",
+      "NABCEP Continuing Education workshops and webinars",
+      "WASEIA Pacific Northwest Solar Conference — April 2026"
+    ],
+    "online_communities": [
+      "r/solar — Reddit community for solar professionals and enthusiasts (400K+ members)",
+      "r/SolarDIY — DIY solar installation community",
+      "r/electricians — overlapping community for electrical code discussions",
+      "NABCEP LinkedIn Group — certified professionals networking",
+      "Solar Energy Industries Association LinkedIn page and group",
+      "EnergySage Community — consumer and professional solar forum",
+      "Solar Professional Facebook Groups (Solar Pros, Solar Installers, etc.)",
+      "SolarEdge and Enphase installer communities and forums"
+    ]
+  },
+  "market": {
+    "summary": "The US solar energy engineering job market shows strong underlying demand driven by continued deployment growth, though facing headwinds from 2025-2026 policy changes including partial IRA repeal. Despite political uncertainty, a large majority of solar firms report difficulty finding qualified engineers. The sector is evolving toward battery storage integration, AI-driven optimization, and utility-scale development.",
+    "job_outlook": {
+      "growth_rate": "7% projected 2022-2032 for electrical/electronics engineers (BLS); solar-specific growth expected higher",
+      "policy_impact": "2025 IRA rollback estimated to reduce solar deployment by 20%+ vs. pre-repeal projections by 2030, but industry remains substantial",
+      "workforce_status": "Large majority of solar firms continue to report difficulty finding qualified workers",
+      "emerging_roles": "Battery storage engineers, AI/ML specialists for grid optimization, digital twin engineers, cybersecurity for energy systems"
+    },
+    "salary_market": {
+      "min": "$65,000/year (entry-level, lower cost-of-living areas)",
+      "avg": "$105,000 - $114,000/year (national average, 2026)",
+      "max": "$200,000 - $280,000/year (senior engineers, high-cost markets, specialized roles)",
+      "25th_percentile": "$79,000/year",
+      "75th_percentile": "$113,500/year",
+      "90th_percentile": "$131,000/year",
+      "top_paying_locations": "District of Columbia ($126,260), California ($125,781), Massachusetts ($124,104)"
+    },
+    "market_trends": [
+      "Battery energy storage integration creating new engineering demand and higher-value roles",
+      "Operations & Maintenance (O&M) sector growing as installed base expands — long-term career opportunities",
+      "AI and machine learning applications in solar forecasting, grid optimization, and predictive maintenance",
+      "Utility-scale solar projects dominating new capacity additions; driving demand for PE-licensed engineers",
+      "Bifacial modules, tracking systems, and agrivoltaics creating new design complexity",
+      "Supply chain reshoring (domestic module manufacturing) under IRA provisions creating new opportunities",
+      "Permitting reform and digital permitting initiatives (SolarAPP+) streamlining residential deployment",
+      "Rising demand for engineers skilled in hybrid solar+storage system design",
+      "Cybersecurity for distributed energy resources becoming a critical emerging skill",
+      "Despite policy headwinds, solar remains cost-competitive with fossil fuels in most US markets"
+    ]
+  },
+  "quality_score": 0.75,
+  "sources_count": 28,
+  "verified_sources": 7,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Solar Energy Systems Engineers USA 2025 2026 daily work tasks responsibilities",
+      "sources": [
+        {"title": "O*NET — Solar Energy Systems Engineers 17-2199.11", "url": "https://www.onetonline.org/link/summary/17-2199.11"},
+        {"title": "Columbus State Community College — Solar Energy Systems Engineers", "url": "https://explore.cscc.edu/careers/17-2199.11/solar-energy-systems-engineers"},
+        {"title": "CareerOneStop — Solar Energy Systems Engineers", "url": "https://www.careeronestop.org/Toolkit/Careers/Occupations/occupation-profile.aspx?keyword=Solar+Energy+Systems+Engineers&location=UNITED+STATES&onetcode=17-2199.11"},
+        {"title": "MyPlan — Solar Energy Systems Engineers Job Description", "url": "https://www.myplan.com/careers/solar-energy-systems-engineers/description-17-2199.11.html"},
+        {"title": "Renewable Energy Engineering Jobs: Complete 2025 Career Guide", "url": "https://solartechonline.com/blog/renewable-energy-engineering-jobs-guide/"},
+        {"title": "EnvironmentalScience.org — Solar Engineer Salary & Career Guide", "url": "https://www.environmentalscience.org/career/solar-engineer"}
+      ]
+    },
+    {
+      "query": "Solar energy engineers USA 2025 2026 licensing PE regulations NABCEP requirements",
+      "sources": [
+        {"title": "NABCEP — Certifications", "url": "https://www.nabcep.org/certifications/"},
+        {"title": "NABCEP — Board Certifications", "url": "https://www.nabcep.org/certifications/nabcep-board-certifications/"},
+        {"title": "NABCEP Home", "url": "https://www.nabcep.org/"},
+        {"title": "Solar Energy International — NABCEP Certification", "url": "https://www.solarenergy.org/nabcep/"},
+        {"title": "NABCEP Course — 2026 NEC Changes: PV, ESS, EVs, PCS", "url": "https://coursecatalog.nabcep.org/classes/2026-national-electrical-code-necr-changes-pv-ess-evs-pcs-and-more"},
+        {"title": "GreenLancer — How to Become a Certified Solar Installer in 2026", "url": "https://www.greenlancer.com/post/solar-installer-certification"}
+      ]
+    },
+    {
+      "query": "Solar energy engineers USA software tools PVsyst SAM design technology 2025 2026",
+      "sources": [
+        {"title": "PurePowr — When to Use PVsyst, HelioScope, and SAM", "url": "https://www.purepower.com/blog/when-to-use-pvsyst-helioscope-and-sam"},
+        {"title": "SurgePV — SAM Review: Industry-Standard Energy Simulation Software (2026)", "url": "https://www.surgepv.com/reviews/sam"},
+        {"title": "PVsyst Official", "url": "https://www.pvsyst.com/en/"},
+        {"title": "SolarCC — Top Solar Software Companies to Consider in 2026", "url": "https://solarcc.com/solar-software/"},
+        {"title": "EnergyScape Renewables — Top Solar Software Tools Every Engineer Should Use", "url": "https://energyscaperenewables.com/post/the-top-solar-software-tools-every-engineer-use/"},
+        {"title": "ScienceDirect — Comprehensive Evaluation of PV Simulation Software", "url": "https://www.sciencedirect.com/science/article/pii/S2211467X25000264"}
+      ]
+    },
+    {
+      "query": "Solar energy engineering terminology abbreviations PV inverter kWh jargon professional",
+      "sources": [
+        {"title": "SolarEdge — Solar Energy Terminology Guide & Glossary", "url": "https://www.solaredge.com/us/home/glossary"},
+        {"title": "GreenLancer — Solar Abbreviation Guide: Essential Acronyms", "url": "https://www.greenlancer.com/post/solar-terms"},
+        {"title": "NAZ Solar Electric — Glossary of Photovoltaic Terms", "url": "https://www.solar-electric.com/learning-center/photovoltaic-solar-power-glossary.html/"},
+        {"title": "Uprise Solar — Common Solar Words and Acronyms Defined", "url": "https://www.uprisesolar.com/blog/common-solar-words-and-acronyms-defined/"},
+        {"title": "Palmetto — Solar Glossary: Key Solar Terms Defined", "url": "https://palmetto.com/solar/solar-energy-glossary"},
+        {"title": "Enphase — Solar Glossary A to Z", "url": "https://enphase.com/blog/homeowners/solar-a-to-z-glossary"}
+      ]
+    },
+    {
+      "query": "Solar Energy Systems Engineers USA career path salary 2025 2026",
+      "sources": [
+        {"title": "Glassdoor — Solar Engineer Average Salary & Pay Trends 2026", "url": "https://www.glassdoor.com/Salaries/solar-engineer-salary-SRCH_KO0,14.htm"},
+        {"title": "ZipRecruiter — Solar Energy Systems Engineer Salary (Mar 2026)", "url": "https://www.ziprecruiter.com/Salaries/Solar-Energy-Systems-Engineer-Salary"},
+        {"title": "Salary.com — Solar Engineer Salary (Feb 2026)", "url": "https://www.salary.com/research/salary/recruiting/solar-engineer-salary"},
+        {"title": "ERI — Solar Energy Systems Engineer Compensation", "url": "https://www.erieri.com/salary/job/solar-energy-systems-engineer"},
+        {"title": "My Next Move — Solar Energy Systems Engineers", "url": "https://www.mynextmove.org/profile/summary/17-2199.11"}
+      ]
+    },
+    {
+      "query": "Solar energy engineers USA professional associations SEIA conferences 2025 2026",
+      "sources": [
+        {"title": "SEIA — Solar Energy Industries Association", "url": "https://seia.org/"},
+        {"title": "SEIA — Events", "url": "https://seia.org/events/"},
+        {"title": "RE+ — Largest Clean Energy Event in North America", "url": "https://www.re-plus.com/"},
+        {"title": "SEIA — RE+ 2026", "url": "https://seia.org/events/re-2026/"},
+        {"title": "SEIA Conference 2026", "url": "https://www.webmobi.com/discovery/events/solar-energy-industries-association-seia-conference-2026-1769618606323"}
+      ]
+    },
+    {
+      "query": "Solar Energy Systems Engineers USA job market demand salary outlook 2025 2026",
+      "sources": [
+        {"title": "IREC — Census Solar Job Trends", "url": "https://irecusa.org/census-solar-job-trends/"},
+        {"title": "SolarReviews — 2025 Solar Workforce Statistics: Salaries, Job Trends", "url": "https://www.solarreviews.com/blog/solar-workforce-statistics"},
+        {"title": "Recruiter.com — Career Outlook for Solar Energy Systems Engineers", "url": "https://www.recruiter.com/careers/solar-energy-systems-engineers/outlook/"},
+        {"title": "Goodwin Recruiting — Careers in Solar Energy to Power Up in 2026", "url": "https://www.goodwinrecruiting.com/careers-in-solar-energy-to-power-up-in-2026"},
+        {"title": "BLS — Careers in Solar Power", "url": "https://www.bls.gov/green/solar_power/"},
+        {"title": "Global BioEnergy — Renewable Energy Hiring Trends 2025 and Beyond", "url": "https://www.globalbioenergy.org/renewable-energy-hiring-trends/"}
+      ]
+    }
+  ]
+}

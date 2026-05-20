@@ -1,0 +1,397 @@
+{
+  "profession_id": "us-wind-energy-engineers",
+  "profession_name": "Wind Energy Engineers",
+  "country": "US",
+  "soc_code": "17-2199.10",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Wind energy engineers design, develop, test, and oversee wind energy systems including turbine components, wind farm layouts, and electrical collection systems. They split time between office-based CAD/simulation work (60-70%) and field visits to wind farm sites, labs, and manufacturing facilities (30-40%). Work varies significantly by specialization (mechanical, electrical, civil) and project phase (development, construction, operations).",
+    "typical_tasks": [
+      "Design wind turbine components including rotors, nacelles, towers, and drivetrain systems",
+      "Develop active control algorithms, electronics, and electromechanical systems for wind turbines",
+      "Create and optimize wind farm layouts including access roads, crane pads, collection systems, substations, and transmission lines",
+      "Design underground or overhead wind farm collector systems and prepare site specifications",
+      "Conduct wind resource assessments using meteorological data and site-specific measurements",
+      "Perform aerodynamic analysis of rotor performance and structural load calculations",
+      "Run CFD simulations and finite element analysis for turbine component design",
+      "Direct balance of plant (BOP) construction, generator installation, and commissioning",
+      "Configure and monitor SCADA (Supervisory Control and Data Acquisition) systems",
+      "Analyze operational performance data to optimize energy production and identify failures",
+      "Develop feasibility studies for new wind project sites",
+      "Write technical reports, engineering specifications, and regulatory compliance documentation",
+      "Coordinate with environmental consultants on permitting (ESA, FAA, noise, visual impact)",
+      "Attend design review meetings and project status updates with cross-functional teams"
+    ],
+    "key_documents": [
+      "Wind farm design specifications and layout drawings",
+      "Wind resource assessment reports (WRA)",
+      "Turbine performance and reliability reports",
+      "SCADA data logs and operational performance dashboards",
+      "Environmental impact assessments (EIA)",
+      "Power purchase agreements (PPA) technical annexes",
+      "Interconnection study reports (FERC/ISO requirements)",
+      "NERC compliance documentation for grid-connected facilities",
+      "FAA obstruction evaluation / airspace analysis (Form 7460-1)",
+      "Foundation and structural engineering calculations",
+      "Geotechnical investigation reports",
+      "Construction management plans and commissioning procedures"
+    ],
+    "deadlines": {
+      "permitting_cycles": "Environmental and FAA permits: 6-24 months before construction",
+      "interconnection_queue": "ISO/RTO queue positions and milestone payments on strict timelines",
+      "nerc_registration": "New IBR registration: May 2025 - May 2026 for facilities >= 20 MVA at >= 60 kV",
+      "ppa_commercial_operation_dates": "Contractual COD deadlines with financial penalties for delays",
+      "itc_ptc_deadlines": "IRA tax credit safe harbor deadlines for construction start",
+      "seasonal_construction": "Construction windows constrained by weather and ground conditions"
+    },
+    "seasonality": "Construction peaks in spring through fall due to weather constraints. Wind resource campaigns run 1-2 years for data collection. Year-end rushes for tax credit qualification deadlines. Operations and maintenance is year-round, with higher loads during windy seasons (varies by region). NERC compliance filings follow regulatory calendar."
+  },
+  "regulatory": {
+    "summary": "Wind energy engineering is governed by a complex web of federal (FERC, NERC, FAA, USFWS), state (PUCs, environmental agencies), and local regulations. FERC oversees wholesale electricity markets and interstate transmission, while NERC sets mandatory reliability standards for bulk power systems. FERC recently expanded NERC registration requirements to include smaller inverter-based resources (IBRs) like wind farms. PE licensure follows standard state engineering board requirements.",
+    "key_laws": [
+      {
+        "name": "Inflation Reduction Act (IRA) of 2022 — Clean Energy Tax Credits",
+        "url": "https://www.energy.gov/clean-energy-tax-provisions",
+        "status": "Active, extended PTC/ITC through 2032+"
+      },
+      {
+        "name": "FERC Order on IBR Registration (NERC Expanded Requirements)",
+        "url": "https://www.ferc.gov/industries-data/electric/industry-activities/nerc-standards",
+        "status": "Active, registration May 2025 - May 2026"
+      },
+      {
+        "name": "NERC Reliability Standards (FAC, MOD, PRC, CIP)",
+        "url": "https://www.nerc.com/who-we-are/regulatory/ferc-orders-and-rules/2025",
+        "status": "Active, CIP standards updated March 2025 for cybersecurity"
+      },
+      {
+        "name": "FAA Obstruction Evaluation (14 CFR Part 77)",
+        "url": "https://www.faa.gov/air_traffic/obstruction_evaluation",
+        "status": "Active, required for structures over 200 feet AGL"
+      },
+      {
+        "name": "Endangered Species Act (ESA) — USFWS Wind Energy Guidelines",
+        "url": "https://www.fws.gov/program/wind-energy",
+        "status": "Active, voluntary guidelines with enforcement for take violations"
+      },
+      {
+        "name": "National Environmental Policy Act (NEPA)",
+        "url": "https://ceq.doe.gov/",
+        "status": "Active, required for federal actions (BLM leases, federal funding)"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Bachelor's degree in mechanical, electrical, civil, or aerospace engineering from ABET-accredited program",
+        "FE (Fundamentals of Engineering) exam — typically taken during senior year",
+        "4 years progressive engineering experience under a licensed PE",
+        "PE (Principles and Practice of Engineering) exam in relevant discipline",
+        "PE license is state-specific; multi-state practice requires comity licensing",
+        "No wind-energy-specific PE discipline — typically PE Mechanical, Electrical, Civil, or Structural",
+        "PE stamp required for signing off on structural, electrical, and foundation designs",
+        "Some employers require PE licensure; many R&D and manufacturer roles do not"
+      ]
+    },
+    "penalties": "NERC violations can result in penalties up to $1 million per violation per day. FERC enforcement actions for non-compliance with interconnection and market rules. FAA violations for improper obstruction marking/lighting. ESA violations (incidental take) can result in civil penalties up to $25,000 per incident. OSHA penalties for workplace safety violations at wind farm construction and operations sites.",
+    "controlling_bodies": [
+      "Federal Energy Regulatory Commission (FERC)",
+      "North American Electric Reliability Corporation (NERC)",
+      "Federal Aviation Administration (FAA)",
+      "U.S. Fish & Wildlife Service (USFWS)",
+      "Bureau of Land Management (BLM) — for projects on federal land",
+      "State Public Utility Commissions (PUCs)",
+      "State Engineering Licensing Boards (via NCEES)",
+      "Occupational Safety and Health Administration (OSHA)",
+      "Army Corps of Engineers — wetlands and waterways permits"
+    ]
+  },
+  "tools": {
+    "summary": "Wind energy engineers use a combination of specialized wind modeling software, general-purpose CAD/FEA/CFD tools, and SCADA/data analysis platforms. WindPRO and WAsP are industry-standard for wind resource assessment and farm layout, while tools like OpenFAST (NREL) handle turbine aeroelastic simulation. SCADA systems are central to operations monitoring.",
+    "primary_tools": [
+      {
+        "name": "WindPRO",
+        "description": "Comprehensive wind farm planning and design software by EMD International. 6,000+ activations in 100+ countries. Modules for energy yield, noise, shadow flicker, visual impact, electrical grid design, and GIS integration."
+      },
+      {
+        "name": "WAsP (Wind Atlas Analysis and Application Program)",
+        "description": "Wind climate and resource prediction tool developed by DTU Wind Energy (Denmark). Industry standard for microscale wind modeling, wind atlas generation, and energy yield estimation."
+      },
+      {
+        "name": "OpenFAST",
+        "description": "Open-source aeroelastic wind turbine simulation tool developed by NREL. Integrates aerodynamics, hydrodynamics (offshore), control systems, and structural dynamics for comprehensive turbine simulations."
+      },
+      {
+        "name": "SCADA Systems (GE Vernova, Siemens Gamesa, Vestas)",
+        "description": "Supervisory Control and Data Acquisition systems for real-time monitoring, control, and data collection from wind turbines. Central to operations, performance tracking, and predictive maintenance."
+      },
+      {
+        "name": "AutoCAD / SolidWorks / CATIA",
+        "description": "CAD software for detailed turbine component design, wind farm civil/electrical layouts, and 3D modeling of mechanical assemblies."
+      },
+      {
+        "name": "ANSYS (Mechanical, Fluent, CFX)",
+        "description": "Finite element analysis and CFD for structural load analysis, aerodynamic simulation, thermal management, and fatigue life prediction of turbine components."
+      },
+      {
+        "name": "MATLAB / Simulink",
+        "description": "System modeling and control algorithm development for turbine controllers, grid integration studies, and performance data analysis."
+      }
+    ],
+    "secondary_tools": [
+      "PSCAD / PowerFactory / ETAP — power systems and grid integration studies",
+      "PLAXIS / GeoStudio — geotechnical analysis for turbine foundations",
+      "PVsyst — for hybrid wind-solar projects",
+      "Python (NumPy, Pandas, Scikit-learn) — data analysis, ML for predictive maintenance",
+      "R — statistical analysis of wind resource and performance data",
+      "GIS software (ArcGIS, QGIS) — site selection, environmental mapping, land use analysis",
+      "Vaisala / AWS Truepower — wind resource assessment consulting tools",
+      "SAP / Maximo — asset management and maintenance scheduling",
+      "Microsoft Project / Primavera P6 — project management and scheduling",
+      "Bladed (DNV) — aeroelastic simulation for certification"
+    ],
+    "pain_points": [
+      "WindPRO and WAsP licensing costs are significant for small firms",
+      "SCADA data integration across multi-OEM fleets is fragmented and non-standardized",
+      "Wind resource uncertainty persists even with 2+ years of on-site data",
+      "Legacy SCADA systems lack modern analytics capabilities; costly to upgrade",
+      "CFD and aeroelastic simulations require massive computational resources",
+      "Lack of standardized data formats between turbine OEMs complicates fleet-wide analysis",
+      "Environmental compliance software is disconnected from engineering design tools",
+      "Grid interconnection modeling tools require specialized expertise and are expensive"
+    ]
+  },
+  "terminology": {
+    "summary": "Wind energy engineering terminology spans aerodynamics, structural engineering, power systems, meteorology, and regulatory compliance. Key abbreviations relate to turbine components, performance metrics, wind resource assessment, and grid interconnection.",
+    "terms": {
+      "CF": "Capacity Factor — ratio of actual energy produced to theoretical maximum; typically 25-45% for onshore, 40-55% for offshore wind",
+      "AEP": "Annual Energy Production — total energy expected from a wind farm per year (MWh/year)",
+      "BOP": "Balance of Plant — everything excluding the turbines: civil works, SCADA, internal electrical system, grid connection",
+      "SCADA": "Supervisory Control and Data Acquisition — real-time monitoring and control system for wind farm operations",
+      "WRA": "Wind Resource Assessment — measurement and analysis of wind conditions at a potential site",
+      "MET tower": "Meteorological tower — instrumented tower for collecting wind speed, direction, temperature, and pressure data on-site",
+      "LiDAR": "Light Detection and Ranging — remote sensing technology used for wind profiling as alternative to MET towers",
+      "TSR": "Tip Speed Ratio — ratio of blade tip speed to wind speed, key design parameter",
+      "Cp": "Power Coefficient — fraction of wind energy captured by the turbine (Betz limit = 0.593)",
+      "Betz limit": "Theoretical maximum power extraction efficiency of 59.3% (16/27) for any wind turbine",
+      "LCOE": "Levelized Cost of Energy — total lifecycle cost per unit of energy produced ($/MWh)",
+      "PPA": "Power Purchase Agreement — long-term contract to buy electricity at a set price",
+      "COD": "Commercial Operation Date — contractual date when a wind project begins delivering power",
+      "ITC/PTC": "Investment Tax Credit / Production Tax Credit — federal tax incentives for renewable energy",
+      "IBR": "Inverter-Based Resource — generation using power electronics (wind, solar, storage) vs. synchronous generators",
+      "FEED": "Front-End Engineering and Design — detailed engineering study before procurement and construction",
+      "EPCI": "Engineer, Procure, Construct, and Install — turnkey contracting model common in offshore wind",
+      "O&M": "Operations and Maintenance — ongoing activities to keep a wind farm running",
+      "nacelle": "Enclosed housing atop the tower containing generator, gearbox (if present), and power electronics",
+      "yaw system": "Mechanism that rotates the nacelle to face the wind direction",
+      "pitch control": "System that adjusts blade angle to control rotor speed and power output",
+      "wake effect": "Reduced wind speed and increased turbulence downwind of a turbine affecting neighboring turbines",
+      "curtailment": "Intentional reduction of power output due to grid constraints, noise limits, or environmental requirements",
+      "GW / MW / kW": "Gigawatt / Megawatt / Kilowatt — units of power capacity (1 GW = 1,000 MW)",
+      "hub height": "Height of the rotor center above ground — modern turbines typically 80-120m onshore, 100-150m+ offshore",
+      "rotor diameter": "Full diameter of the swept area of the blades — modern onshore 120-170m, offshore 200m+",
+      "GO/GOP": "Generator Owner / Generator Operator — NERC registration categories for power plant owners/operators",
+      "ISO/RTO": "Independent System Operator / Regional Transmission Organization — manages regional electric grid"
+    }
+  },
+  "career_psychology": {
+    "summary": "Wind energy engineering offers a mission-driven career path with strong growth prospects and competitive salaries averaging $108K-$136K. Engineers are motivated by clean energy impact but face challenges from project-based travel, remote site locations, and the pressure of tight construction deadlines. The field requires hybrid office/field work and benefits from advanced degrees and PE licensure for career advancement.",
+    "career_path": [
+      "Bachelor's degree in Mechanical, Electrical, Civil, or Aerospace Engineering (ABET-accredited)",
+      "Optional: Master's or PhD for R&D-focused roles or specialized positions",
+      "Junior/Associate Wind Energy Engineer (0-3 years)",
+      "Wind Energy Engineer / Project Engineer (3-7 years)",
+      "Senior Wind Energy Engineer / Technical Lead (7-12 years)",
+      "Principal Engineer / Engineering Manager (12-18 years)",
+      "Director of Engineering / VP of Engineering (18+ years)",
+      "Alternative paths: Project Development Manager, Asset Management Director, Consulting Principal, CTO at wind energy companies"
+    ],
+    "salary_range": {
+      "entry_level": "$60,000 - $85,000/year",
+      "mid_career": "$85,000 - $130,000/year",
+      "senior": "$130,000 - $178,000/year",
+      "director_plus": "$178,000 - $220,000+/year",
+      "average_2026": "$108,970 - $135,620/year (varies by source: CareerExplorer vs Glassdoor 2026)"
+    },
+    "fears": [
+      "Policy uncertainty: changes in federal tax credits (ITC/PTC) or state RPS mandates could slow project pipelines",
+      "Project cancellations due to permitting delays, NIMBYism, or interconnection queue congestion",
+      "Technology obsolescence as turbine platforms evolve rapidly",
+      "Offshore wind development delays undermining career specialization investments",
+      "Supply chain disruptions (blades, nacelles, transformers) stalling projects",
+      "Grid interconnection bottlenecks limiting new project opportunities",
+      "Career stagnation in small companies with flat organizational structures"
+    ],
+    "motivation": [
+      "Direct contribution to clean energy transition and climate change mitigation",
+      "Working on large-scale infrastructure projects with visible real-world impact",
+      "Intellectually stimulating multidisciplinary work (aero, structural, electrical, environmental)",
+      "Strong job market growth and career security in renewable energy",
+      "Competitive compensation with opportunity for advancement",
+      "Collaborative culture within a mission-driven industry",
+      "International opportunities with transferable skills"
+    ],
+    "burnout_factors": [
+      "Extensive travel to remote wind farm sites, often in rural areas far from home",
+      "Pressure of strict COD deadlines with financial penalties for delays",
+      "Managing multiple projects simultaneously across different development stages",
+      "Irregular work schedules during construction and commissioning phases",
+      "Long hours during seasonal construction peaks",
+      "Navigating complex and overlapping federal/state/local regulatory requirements",
+      "Dealing with community opposition (NIMBYism) during project development",
+      "Physical demands of site work including tower climbing and harsh weather conditions"
+    ]
+  },
+  "community": {
+    "summary": "The US wind energy professional community is anchored by the American Clean Power Association (ACP, formerly AWEA), which hosts the flagship CLEANPOWER conference. Engineers also engage through IEEE Power & Energy Society, ASME, and regional wind energy organizations. The community is growing rapidly with the industry's expansion.",
+    "associations": [
+      {
+        "name": "American Clean Power Association (ACP)",
+        "url": "https://cleanpower.org/",
+        "type": "National trade association (formerly AWEA), representing wind, solar, storage, and transmission industries"
+      },
+      {
+        "name": "IEEE Power & Energy Society (PES)",
+        "url": "https://www.ieee-pes.org/",
+        "type": "Professional technical society for power and energy engineering"
+      },
+      {
+        "name": "American Society of Mechanical Engineers (ASME)",
+        "url": "https://www.asme.org/",
+        "type": "Professional engineering society with wind energy technical committees"
+      },
+      {
+        "name": "National Renewable Energy Laboratory (NREL)",
+        "url": "https://www.nrel.gov/wind/",
+        "type": "DOE national lab — wind energy research, data, and collaboration"
+      },
+      {
+        "name": "Women of Wind Energy (WoWE) / Women in Clean Energy",
+        "url": "https://cleanpower.org/",
+        "type": "Diversity and inclusion initiative within the wind energy sector"
+      },
+      {
+        "name": "Distributed Wind Energy Association (DWEA)",
+        "url": "https://distributedwind.org/",
+        "type": "Trade association focused on small and community wind"
+      }
+    ],
+    "events": [
+      "CLEANPOWER 2025 — May 19-21, 2025, Phoenix, AZ (ACP flagship conference)",
+      "CLEANPOWER 2026 — June 1-4, 2026, Houston, TX (George R. Brown Convention Center)",
+      "AWEA Wind Project Siting and Environmental Compliance Conference 2026 — March 30 - April 1, 2026",
+      "DOE WINDExchange Collegiate Wind Competition — held annually at CLEANPOWER",
+      "AWEA Offshore WINDPOWER Conference — annual offshore-focused event",
+      "Wind Energy Finance & Investment Conference — annual",
+      "WindEurope Annual Event — international event for US engineers with global roles"
+    ],
+    "online_communities": [
+      "LinkedIn: American Clean Power Association group and Wind Energy professionals groups",
+      "r/windpower and r/RenewableEnergy — Reddit communities",
+      "Wind Energy Wiki (Fandom) — collaborative knowledge base",
+      "WINDExchange (DOE) — wind energy information and stakeholder resources",
+      "NREL Wind Research — publications, datasets, and tools",
+      "Wind Systems Magazine — industry publication and online community",
+      "Windpower Engineering & Development — trade publication"
+    ]
+  },
+  "market": {
+    "summary": "The US wind energy engineering job market is experiencing exceptional growth driven by the Inflation Reduction Act tax incentives, state renewable portfolio standards, and the expansion into offshore wind. BLS projects 50% growth for wind turbine technicians by 2034, with engineering roles growing proportionally. A projected 124,000 worker shortfall by 2030 highlights massive demand. Average wind engineer salary is $108K-$136K with senior roles exceeding $178K.",
+    "job_outlook": {
+      "growth_rate": "Wind turbine technician: 49.9% growth projected 2024-2034 (BLS #1 fastest-growing occupation). Engineering roles expected to grow 10-15%+ driven by industry expansion.",
+      "new_jobs_annually": "~2,300 wind technician openings/year; engineering roles proportionally fewer but high-demand",
+      "worker_shortfall": "NREL projects 124,000 worker shortfall in wind energy by 2030; 570+ new training programs needed",
+      "employer_difficulty": "68% of wind energy employers report difficulty finding qualified applicants",
+      "ira_impact": "DOE 2026 forecast for new wind installations increased 60% to ~18,000 MW following IRA passage"
+    },
+    "salary_market": {
+      "min": "$60,465/year (entry-level, CareerExplorer)",
+      "avg": "$108,970 - $135,620/year (CareerExplorer / Glassdoor 2026)",
+      "max": "$196,385+/year (senior/director level, CareerExplorer)",
+      "25th_percentile": "$104,343/year (Glassdoor)",
+      "75th_percentile": "$178,004/year (Glassdoor)",
+      "ziprecruiter_avg": "$83,125/year (broader 'Wind Engineer' category, Dec 2025)"
+    },
+    "market_trends": [
+      "Inflation Reduction Act extended PTC/ITC through 2032+, driving $352B+ cumulative investment in US wind",
+      "DOE 2026 forecast: ~18,000 MW new wind installations (60% increase from pre-IRA projections)",
+      "Offshore wind emerging as major growth sector with 30+ GW in development pipeline along East Coast",
+      "124,000 worker shortfall projected by 2030 creating strong demand for qualified engineers",
+      "68% of employers struggle to find qualified wind energy workers — skills gap is critical",
+      "Grid modernization and interconnection queue reforms opening new project opportunities",
+      "Hybrid wind-solar-storage projects becoming standard, requiring broader engineering skill sets",
+      "Repowering aging wind farms (1st generation turbines reaching end of 20-year life) creating new engineering demand",
+      "Clean energy jobs growing at 4.2% annually vs. 2.0% for overall employment",
+      "11+ new manufacturing facility announcements tied to IRA incentives creating domestic supply chain jobs",
+      "AI and machine learning adoption for predictive maintenance and performance optimization"
+    ]
+  },
+  "quality_score": 0.70,
+  "sources_count": 25,
+  "verified_sources": 6,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Wind Energy Engineers USA 2025 2026 daily work tasks responsibilities",
+      "sources": [
+        {"title": "CareerExplorer — Wind Energy Engineer", "url": "https://www.careerexplorer.com/careers/wind-energy-engineer/"},
+        {"title": "O*NET — 17-2199.10 Wind Energy Engineers", "url": "https://www.onetonline.org/link/summary/17-2199.10"},
+        {"title": "OwlGuru — What Do Wind Energy Engineers Do", "url": "https://www.owlguru.com/career/wind-energy-engineers/job-description/"},
+        {"title": "ZipRecruiter — Wind Energy Consultant Tasks", "url": "https://www.ziprecruiter.com/e/What-are-typical-daily-tasks-and-responsibilities-for-a-Wind-Energy-Consultant"}
+      ]
+    },
+    {
+      "query": "Wind Energy Engineers USA 2025 2026 licensing PE regulations NERC FERC requirements",
+      "sources": [
+        {"title": "FERC Approves NERC Expanded IBR Registration Requirements", "url": "https://www.climatesolutionslaw.com/2024/09/ferc-approves-nercs-expanded-registration-requirements/"},
+        {"title": "FERC/NERC 2025 Long-Term Reliability Assessment", "url": "https://www.ferc.gov/news-events/news/ferc-nerc-presentation-2025-long-term-reliability-assessment"},
+        {"title": "NERC and FERC Compliance 2025 Utility Guide", "url": "https://www.thinkpowersolutions.com/blogs/nerc-and-ferc-compliance-2025/"},
+        {"title": "Utility Dive — FERC Orders Reliability Standards for IBRs", "url": "https://www.utilitydive.com/news/ferc-reliability-standards-wind-solar-inverter-based-resources-nerc/636909/"}
+      ]
+    },
+    {
+      "query": "Wind Energy Engineers USA software tools WindPRO SCADA WAsP technology 2025 2026",
+      "sources": [
+        {"title": "EMD International — windPRO", "url": "https://www.emd-international.com/software/windpro"},
+        {"title": "WAsP vs WindPRO Comparison", "url": "https://eureka.patsnap.com/article/wasp-vs-windpro-which-tool-should-you-choose-for-wind-modeling"},
+        {"title": "DTU — WAsP", "url": "https://wasp.dtu.dk/"},
+        {"title": "Wikipedia — Wind Energy Software", "url": "https://en.wikipedia.org/wiki/Wind_energy_software"}
+      ]
+    },
+    {
+      "query": "Wind energy engineering terminology abbreviations jargon capacity factor turbine professional",
+      "sources": [
+        {"title": "WIND WORKS — Glossary of Wind Energy Terminology", "url": "https://wind-works.org/glossary-of-wind-energy-terminology/"},
+        {"title": "Enerpac Blog — Wind Power Terms and Definitions", "url": "https://blog.enerpac.com/essential-guide-to-wind-power-terms-and-definitions/"},
+        {"title": "Wind Energy The Facts — Glossary", "url": "https://www.wind-energy-the-facts.org/glossary.html"},
+        {"title": "Offshore Wind Terminology & Definitions", "url": "https://www.karatzas.auction/post/offshore-wind-osw-terminology-definitions"}
+      ]
+    },
+    {
+      "query": "Wind Energy Engineers USA career path salary 2025 2026",
+      "sources": [
+        {"title": "BLS — Careers in Wind Energy", "url": "https://www.bls.gov/green/wind_energy/"},
+        {"title": "Glassdoor — Wind Engineer Salary 2026", "url": "https://www.glassdoor.com/Salaries/wind-engineer-salary-SRCH_KO0,13.htm"},
+        {"title": "ZipRecruiter — Wind Energy Engineer Salary", "url": "https://www.ziprecruiter.com/Salaries/Wind-Energy-Engineer-Salary"},
+        {"title": "CareerExplorer — Wind Energy Engineer Salary", "url": "https://www.careerexplorer.com/careers/wind-energy-engineer/salary/"}
+      ]
+    },
+    {
+      "query": "Wind energy engineers USA professional associations AWEA CLEANPOWER conferences 2025 2026",
+      "sources": [
+        {"title": "ACP — CLEANPOWER Conference", "url": "https://cleanpower.org/expo/"},
+        {"title": "CLEANPOWER 2026 Conference — Houston TX", "url": "https://eventsinamerica.com/events-trade-shows/cleanpower-2026-conference-exhibition-american-wind-energy-association-2023-2024-2025-2026/energy/renewable-energy"},
+        {"title": "AWEA Wind Project Siting Conference 2026", "url": "https://eventsinamerica.com/events-trade-shows/awea-wind-project-siting-and-environmental-compliance-conference-2026-american-wind-energy-association-2023-2024-2025-2026/energy/"},
+        {"title": "Offshore Wind Energy Collaborative — CLEANPOWER 2025", "url": "https://osw.rutgers.edu/event/cleanpower-2025/"}
+      ]
+    },
+    {
+      "query": "Wind Energy Engineers USA job market demand salary outlook 2025 2026",
+      "sources": [
+        {"title": "BLS — Wind Turbine Technicians Employment Outlook", "url": "https://www.bls.gov/opub/ted/2025/employment-for-wind-turbine-service-technicians-expected-to-increase-49-9-percent-by-2034.htm"},
+        {"title": "Weather Guard — Wind Turbine Technician Jobs 2026 Outlook", "url": "https://weatherguardwind.com/wind-turbine-technician-jobs-2026-outlook/"},
+        {"title": "Green Fuel Journal — Renewable Energy Jobs 2026", "url": "https://www.greenfueljournal.com/post/renewable-energy-jobs-in-2026-global-market-growth-skills-gap-career-pathways"},
+        {"title": "Glassdoor — Wind Engineer Salary Trends 2026", "url": "https://www.glassdoor.com/Salaries/wind-engineer-salary-SRCH_KO0,13.htm"}
+      ]
+    }
+  ]
+}

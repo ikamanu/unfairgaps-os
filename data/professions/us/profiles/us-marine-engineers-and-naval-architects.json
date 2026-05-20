@@ -1,0 +1,88 @@
+{
+  "profession_id": "us-marine-engineers-and-naval-architects",
+  "profession_name": "Marine Engineers and Naval Architects",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Marine engineers design internal ship systems (propulsion, electrical, steering). Naval architects design hull form, structure, and stability. They work in offices, manufacturing floors, and at sea, designing everything from cargo ships to military vessels and recreational boats.",
+    "typical_tasks": ["Design ship hull forms, structures, and stability systems (naval architects)", "Design propulsion, electrical, and mechanical systems (marine engineers)", "Conduct hydrodynamic analysis and computational fluid dynamics (CFD)", "Perform structural analysis using finite element methods (FEA)", "Develop ship specifications and contract documentation", "Oversee construction and sea trials", "Ensure compliance with classification society rules and regulations", "Conduct damage stability and intact stability assessments", "Design marine renewable energy systems (offshore wind, wave energy)", "Prepare weight estimates and trim/stability calculations"],
+    "key_documents": ["Ship design specifications", "General arrangement drawings", "Structural drawings and scantling calculations", "Stability booklets and loading manuals", "Classification society submission packages", "Sea trial reports", "Contract and bid documentation"],
+    "deadlines": {"design_milestones": "Aligned with shipbuilding contracts (months-years)", "classification_submissions": "Per classification society review schedules", "sea_trials": "Pre-delivery testing deadlines", "regulatory_compliance": "IMO convention implementation dates"},
+    "seasonality": "Long project cycles (years for major vessels). Government contracting follows fiscal year. Yacht/recreational boat design may have seasonal patterns."
+  },
+  "regulatory": {
+    "summary": "Regulated by USCG, classification societies (ABS, DNV, Lloyd's), and international maritime conventions (IMO SOLAS, MARPOL). PE licensure available in naval architecture/marine engineering.",
+    "key_laws": [
+      {"name": "SOLAS (Safety of Life at Sea)", "description": "International maritime safety convention"},
+      {"name": "MARPOL", "description": "International Convention for the Prevention of Pollution from Ships"},
+      {"name": "USCG Regulations (46 CFR)", "description": "US Coast Guard vessel safety and inspection standards"},
+      {"name": "Classification Society Rules (ABS, DNV, Lloyd's)", "description": "Vessel design, construction, and maintenance standards"}
+    ],
+    "licensing": {
+      "requirements": ["Bachelor's degree in Naval Architecture, Marine Engineering, or Ocean Engineering", "PE licensure optional (FE + PE Naval Architecture/Marine Engineering exam)", "USCG license for seagoing marine engineers"],
+      "certifications": ["PE in Naval Architecture and Marine Engineering", "USCG Marine Engineer License (for seagoing engineers)", "Classification society surveyor certifications"]
+    },
+    "penalties": "Non-compliance with classification rules prevents vessel operation. USCG deficiencies can result in vessel detention. IMO flag state enforcement."
+  },
+  "tools": {
+    "summary": "Specialized naval architecture and marine engineering CAD, CFD, FEA, and stability software for vessel design and analysis.",
+    "primary_tools": [
+      {"name": "Rhino + Orca3D", "description": "Hull form design and fairing"},
+      {"name": "NAPA / Maxsurf", "description": "Naval architecture design suite — stability, resistance, structural analysis"},
+      {"name": "ANSYS / ABAQUS", "description": "Finite element analysis for structural design"},
+      {"name": "Star-CCM+ / OpenFOAM", "description": "CFD for hydrodynamic analysis"},
+      {"name": "AutoCAD / ShipConstructor", "description": "2D/3D ship design and production engineering"},
+      {"name": "GHS (General HydroStatics)", "description": "Hydrostatic and stability calculations"}
+    ],
+    "secondary_tools": ["MATLAB for engineering calculations", "Microsoft Excel for weight tracking and stability", "Aveva Marine / Cadmatic for 3D ship design", "SESAM for offshore structural analysis", "SolidWorks for component design"],
+    "pain_points": ["Long design cycles requiring patience and attention to detail", "Integration between different software tools in the design chain", "Limited number of specialized naval architecture software vendors", "Translating complex regulations into design requirements"]
+  },
+  "terminology": {
+    "summary": "Maritime and naval architecture terminology with specific focus on vessel design, stability, and classification.",
+    "terms": {
+      "displacement": "Weight of water displaced by vessel (equals vessel weight)", "deadweight": "Carrying capacity of vessel",
+      "draught/draft": "Depth of vessel below waterline", "freeboard": "Height of deck above waterline",
+      "metacentric height (GM)": "Measure of initial stability", "intact stability": "Stability with no damage to hull",
+      "damage stability": "Stability after flooding from hull breach",
+      "scantlings": "Dimensions of structural members", "hull girder": "Ship structure treated as a beam",
+      "resistance": "Force opposing vessel motion through water", "propulsion": "System providing thrust",
+      "CFD": "Computational Fluid Dynamics", "FEA": "Finite Element Analysis",
+      "SOLAS": "Safety of Life at Sea", "MARPOL": "Marine Pollution convention",
+      "IMO": "International Maritime Organization", "ABS": "American Bureau of Shipping",
+      "USCG": "United States Coast Guard", "tonnage": "Vessel size measurement",
+      "classification": "Process of verifying vessel meets safety standards", "flag state": "Country of vessel registration",
+      "SNAME": "Society of Naval Architects and Marine Engineers"
+    }
+  },
+  "career_psychology": {
+    "summary": "Niche engineering specialty with median salary $106K and 6% projected growth. Combines engineering with maritime industry passion. Long project cycles provide deep engagement. Limited number of programs and employers.",
+    "career_path": ["Bachelor's in Naval Architecture / Marine Engineering / Ocean Engineering", "Junior Naval Architect / Marine Engineer", "PE licensure (optional but valued)", "Senior Engineer (5-10 years)", "Principal Engineer / Project Manager", "Chief Naval Architect / Engineering Director"],
+    "salary_range": {"entry_level": "$65,000 - $80,000/year", "mid_level": "$90,000 - $110,000/year", "senior": "$110,000 - $150,000/year", "director": "$150,000 - $200,000+/year", "median_bls": "$105,670/year (BLS May 2024)"},
+    "fears": ["Design error leading to vessel structural failure", "Declining US shipbuilding industry", "Long project cycles with delayed career advancement", "Geographic limitation to coastal areas"],
+    "motivation": ["Designing complex vessels that operate in extreme environments", "Combining multiple engineering disciplines in one role", "Contributing to maritime safety and environmental protection", "Niche expertise creating career security", "Passion for maritime industry and vessels"],
+    "burnout_factors": ["Long and complex project cycles (multi-year)", "Regulatory complexity across multiple jurisdictions", "Travel requirements for construction oversight and sea trials", "Small teams requiring broad technical coverage"]
+  },
+  "community": {
+    "summary": "SNAME (Society of Naval Architects and Marine Engineers) is the primary US professional society. Strong ties to classification societies and maritime industry.",
+    "associations": [
+      {"name": "SNAME (Society of Naval Architects and Marine Engineers)", "description": "Primary US professional society, conferences, publications"},
+      {"name": "American Bureau of Shipping (ABS)", "description": "Classification society, standards development"},
+      {"name": "RINA (Royal Institution of Naval Architects)", "description": "International professional body for naval architecture"},
+      {"name": "Marine Technology Society (MTS)", "description": "Ocean engineering and marine technology community"}
+    ],
+    "online_communities": ["SNAME sections and committees", "r/navalarchitecture — Reddit", "LinkedIn marine engineering groups", "Boat Design Net forums"],
+    "conferences": ["SNAME Maritime Convention", "SNAME Annual Meeting and Expo", "Offshore Technology Conference (OTC)", "International Conference on Ocean, Offshore and Arctic Engineering (OMAE)"]
+  },
+  "market": {
+    "summary": "Niche market with 6% projected growth 2024-2034. ~600 annual openings. Median salary $106K. Driven by Navy shipbuilding programs, offshore wind, and commercial fleet modernization.",
+    "growth_rate": "6% projected 2024-2034 (faster than average)",
+    "annual_openings": 600,
+    "salary_market": {"median": "$105,670/year", "range": "$71,000 - $365,000/year"},
+    "top_employers": ["US Navy shipyards (HII, General Dynamics NASSCO, Bath Iron Works)", "Commercial shipbuilders", "Classification societies (ABS, DNV)", "Offshore oil & gas companies", "Offshore wind energy developers", "Naval architecture consulting firms"],
+    "market_trends": ["US Navy shipbuilding programs driving strong demand", "Offshore wind industry creating new design opportunities", "Decarbonization of shipping requiring new propulsion designs", "Autonomous vessel technology emerging", "Arctic shipping routes opening new design challenges"]
+  },
+  "quality_score": 0.75,
+  "sources_count": 16,
+  "verified_sources": 5,
+  "confidence": "verified",
+  "raw_responses": [{"query": "Marine Engineers Naval Architects USA salary career outlook SNAME", "sources": [{"title": "BLS — Marine Engineers and Naval Architects", "url": "https://www.bls.gov/ooh/architecture-and-engineering/marine-engineers-and-naval-architects.htm"}, {"title": "CollegeGrad — Marine Engineers", "url": "https://collegegrad.com/careers/marine-engineers-and-naval-architects"}, {"title": "Data USA — Marine Engineers", "url": "https://datausa.io/profile/soc/marine-engineers-naval-architects"}]}]
+}

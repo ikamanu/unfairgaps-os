@@ -1,0 +1,300 @@
+{
+  "profession_id": "us-dental-hygienists",
+  "profession_name": "Dental Hygienists",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Dental hygienists provide preventive oral care: cleanings, scaling, root planing, radiographs, fluoride treatments, sealants, and patient education. Typically see 8-10 patients/day with 45-60 minute appointments. Most work 3-4 days/week.",
+    "typical_tasks": [
+      "Performing dental cleanings: scaling and polishing teeth using hand and ultrasonic instruments",
+      "Taking and developing dental radiographs (X-rays)",
+      "Applying fluoride treatments and dental sealants",
+      "Performing scaling and root planing for periodontal patients",
+      "Screening patients for oral cancer and gum disease",
+      "Educating patients on oral hygiene techniques (brushing, flossing, nutrition)",
+      "Reviewing and updating patient medical histories",
+      "Charting periodontal measurements and recording clinical findings",
+      "Administering local anesthesia (all 50 states now permit)",
+      "Setting up and sterilizing operatories between patients",
+      "Documenting clinical notes in practice management software"
+    ],
+    "key_documents": [
+      "Patient medical/dental history forms",
+      "Periodontal charting records",
+      "Radiograph series and reports",
+      "Treatment plans and progress notes",
+      "Informed consent forms",
+      "Insurance claim documentation",
+      "Infection control logs"
+    ],
+    "deadlines": {
+      "patient_appointments": "45-60 minutes per patient, 8-10 patients/day",
+      "radiograph_schedule": "Bitewings annually; full-mouth series every 3-5 years per ADA guidelines",
+      "license_renewal": "Every 1-3 years depending on state",
+      "continuing_education": "6-45 hours per renewal period (varies by state)",
+      "infection_control_compliance": "Daily sterilization logs, weekly spore testing"
+    },
+    "seasonality": "Slightly busier in summer (families scheduling during school break) and December (year-end insurance benefits). Otherwise relatively stable year-round."
+  },
+  "regulatory": {
+    "summary": "Licensed in all 50 states with significant state-by-state variation in scope of practice, supervision levels, and CE requirements. 43 states allow direct access. All 50 states permit local anesthesia administration. ADHA rolling out major 2026 policy updates emphasizing technology integration and expanded scope.",
+    "key_laws": [
+      {
+        "name": "State Dental Practice Acts",
+        "description": "Each state's Board of Dentistry defines scope of practice, supervision levels, and licensure requirements for dental hygienists"
+      },
+      {
+        "name": "Interstate Dental Hygiene Licensure Compact",
+        "description": "Allows hygienists to practice in compact states with one license and one set of CE requirements"
+      },
+      {
+        "name": "ADHA 2026 Policy Updates",
+        "description": "10 new/updated policies reshaping education, licensure, and scope of practice standards",
+        "url": "https://www.adha.org"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Associate's degree in dental hygiene from CODA-accredited program (minimum)",
+        "Pass National Board Dental Hygiene Examination (NBDHE)",
+        "Pass regional or state clinical licensing examination",
+        "CPR/BLS certification",
+        "State-specific licensure (renewal every 1-3 years)",
+        "Continuing education: 6-45 hours per renewal period (varies by state)",
+        "Local anesthesia certification (permitted in all 50 states)",
+        "Nitrous oxide administration (35 states permit, requires additional training)"
+      ]
+    },
+    "recent_changes": "2026: ADHA comprehensive policy overhaul emphasizing technology integration, expanded scope, and advanced clinical competencies. 43 states now allow direct access. Interstate Licensure Compact expanding. Growing movement to allow hygienists to practice independently in underserved areas."
+  },
+  "tools": {
+    "summary": "Mix of hand instruments, ultrasonic scalers, radiographic equipment, and dental practice management software. AI-driven technologies and salivary diagnostics emerging in 2025-2026.",
+    "primary_tools": [
+      {
+        "name": "Ultrasonic scalers",
+        "description": "Cavitron/Piezo scalers for efficient calculus and biofilm removal"
+      },
+      {
+        "name": "Hand instruments (scalers, curettes)",
+        "description": "Gracey curettes, sickle scalers, explorers for manual instrumentation"
+      },
+      {
+        "name": "Digital radiography systems",
+        "description": "Digital sensors and phosphor plate systems for dental X-rays",
+        "examples": "Dexis, Schick, Carestream"
+      },
+      {
+        "name": "Air polishing devices",
+        "description": "Prophy-Jet systems for stain removal using air/water/powder combination"
+      },
+      {
+        "name": "Dental practice management software",
+        "description": "Scheduling, charting, billing, and patient communication systems",
+        "examples": "Dentrix, Eaglesoft, Open Dental, Curve Dental"
+      },
+      {
+        "name": "Intraoral cameras",
+        "description": "Camera for patient education and documentation of oral conditions"
+      }
+    ],
+    "secondary_tools": [
+      "Dental lasers (diode lasers for soft tissue procedures)",
+      "AI-driven caries detection (Pearl AI, Overjet)",
+      "Salivary diagnostics for systemic disease screening",
+      "Cone Beam CT (CBCT) in advanced settings",
+      "Patient communication platforms (Weave, Demandforce)",
+      "Teledentistry platforms"
+    ],
+    "pain_points": [
+      "Repetitive strain injuries from manual instrumentation",
+      "Outdated equipment in smaller private practices",
+      "Multiple non-integrated software systems",
+      "Limited autonomy in states with restrictive supervision requirements",
+      "Exposure to aerosols and infection risk"
+    ]
+  },
+  "terminology": {
+    "summary": "Dental hygiene terminology combines medical/dental vocabulary with insurance coding and periodontal-specific language.",
+    "terms": {
+      "prophylaxis": "Routine dental cleaning (prophy) — preventive scaling and polishing",
+      "SRP": "Scaling and root planing — deep cleaning for periodontal disease",
+      "perio": "Periodontal — relating to gums and supporting structures",
+      "probing depths": "Measurements in millimeters around each tooth to assess gum health (normal: 1-3mm)",
+      "BOP": "Bleeding on probing — indicator of gum inflammation",
+      "CAL": "Clinical attachment loss — measurement of periodontal tissue destruction",
+      "bitewing": "Type of dental X-ray showing crowns of upper and lower teeth",
+      "FMX": "Full-mouth X-ray series — complete set of dental radiographs",
+      "pano": "Panoramic radiograph — single image showing all teeth and jaws",
+      "calculus": "Hardened plite/tartar on teeth requiring scaling for removal",
+      "biofilm": "Bacterial colony adhering to tooth surfaces (modern term for plaque)",
+      "D-codes": "CDT (Current Dental Terminology) procedure codes for insurance billing",
+      "D1110": "CDT code for adult prophylaxis cleaning",
+      "D4341": "CDT code for periodontal scaling and root planing per quadrant",
+      "RDH": "Registered Dental Hygienist",
+      "direct access": "Legal authorization for hygienists to treat patients without dentist supervision",
+      "operatory": "Individual treatment room in a dental office",
+      "cavitron": "Brand name ultrasonic scaler (often used generically)",
+      "fluoride varnish": "Topical fluoride applied to teeth for caries prevention"
+    }
+  },
+  "career_psychology": {
+    "summary": "High-demand profession with strong job satisfaction (90% would choose again) but significant burnout (63% report experiencing it). Median salary ~$87K with some areas exceeding $100K. Physical demands and benefits gaps are major concerns. 33% expected to retire within 5 years.",
+    "career_path": [
+      "Associate's degree in dental hygiene (2-3 years, CODA-accredited)",
+      "Pass NBDHE and clinical licensing exams",
+      "Entry-level clinical hygienist in private practice or clinic",
+      "Bachelor's degree completion (optional, opens teaching/research paths)",
+      "Specialized hygienist: periodontics, pediatric, public health",
+      "Master's degree → educator, researcher, or public health role",
+      "Practice management, dental sales/consulting, or independent practice (where permitted)"
+    ],
+    "salary_range": {
+      "entry_level": "$60,000 - $70,000",
+      "median_bls": "$87,530 (2024 BLS median)",
+      "experienced": "$80,000 - $100,000",
+      "high_cost_areas": "$100,000 - $142,000 (Bay Area, Pacific region)",
+      "national_average_2025": "$126,030 (full-time equivalent)",
+      "hourly_range": "$35 - $70/hour"
+    },
+    "fears": [
+      "Repetitive strain injuries (carpal tunnel, musculoskeletal disorders)",
+      "Burnout from high patient volume and production pressure",
+      "Lack of employer-provided benefits (health insurance, retirement)",
+      "Stagnant wages despite increasing workloads (44% no raise in 2 years)",
+      "Limited career advancement in clinical role",
+      "Exposure to infectious diseases and aerosols"
+    ],
+    "motivation": [
+      "90% would choose dental hygiene again",
+      "Meaningful patient relationships and preventive health impact",
+      "Flexible schedule (3-4 days/week common)",
+      "Strong job market and demand",
+      "Good compensation relative to education investment",
+      "Work-life balance potential"
+    ],
+    "burnout_factors": [
+      "63% report experiencing burnout at some point in career",
+      "Physical demands: standing, repetitive hand motions, ergonomic strain",
+      "Production pressure and tight scheduling",
+      "Lack of benefits in many private practice settings",
+      "21% plan to leave profession due to burnout/limited growth",
+      "67% have changed practices seeking better compensation/conditions"
+    ]
+  },
+  "community": {
+    "summary": "ADHA is the primary professional organization (220,000+ RDHs). Active online community through Today's RDH, Hygienist Hub, Reddit, and Facebook groups. Strong CE and advocacy ecosystem.",
+    "associations": [
+      {
+        "name": "American Dental Hygienists' Association (ADHA)",
+        "url": "https://www.adha.org",
+        "type": "Primary professional organization — 220,000+ members, 400+ local chapters"
+      },
+      {
+        "name": "National Network of Healthcare Hygienists (NNHH)",
+        "type": "Support organization for RDHs in integrated healthcare settings"
+      },
+      {
+        "name": "American Dental Association (ADA)",
+        "url": "https://www.ada.org",
+        "type": "Umbrella dental organization (hygienists interact with ADA standards)"
+      }
+    ],
+    "online_communities": [
+      {
+        "name": "Today's RDH",
+        "url": "https://www.todaysrdh.com",
+        "description": "Leading online publication for dental hygienists — articles, CE, community"
+      },
+      {
+        "name": "ADHA Hygienist Hub",
+        "description": "ADHA's community platform and newsletters"
+      },
+      {
+        "name": "Hygiene Rising Podcast",
+        "description": "ADHA's official podcast (rebranded October 2025)"
+      },
+      {
+        "name": "Dental Hygiene Facebook Groups",
+        "description": "Multiple active groups (Dental Hygienists, RDH Connect, etc.)"
+      },
+      {
+        "name": "r/DentalHygiene",
+        "url": "https://reddit.com/r/DentalHygiene",
+        "description": "Reddit community for dental hygienists"
+      }
+    ],
+    "events": [
+      "ADHA Annual Conference",
+      "RDH Under One Roof (major CE event)",
+      "ADA SmileCon (general dental conference)",
+      "State and local dental hygiene association meetings"
+    ]
+  },
+  "market": {
+    "summary": "Strong demand with 7,000+ dental professional shortage areas nationwide. BLS projects 9% growth 2023-2033 (~16,400 openings/year). 33% of current RDHs expected to retire within 5 years. Two-thirds of dentists report recruiting hygienists as extremely/very difficult.",
+    "demand_forecast": {
+      "growth_rate": "9% (2023-2033, BLS — faster than average)",
+      "annual_openings": "~16,400/year",
+      "shortage_areas": "7,000+ dental professional shortage areas (ADA, 2025)",
+      "retirement_wave": "33% expected to retire within 5 years (median age 51.5)"
+    },
+    "salary_market": {
+      "median_bls": "$87,530 (2024)",
+      "average_2025": "$126,030 (full-time)",
+      "pacific_region": "$98,910 average",
+      "entry": "$60,000 - $70,000"
+    },
+    "market_trends": [
+      "Severe hygienist shortage — 2/3 of dentists report extreme difficulty recruiting",
+      "AI-driven caries detection and radiograph analysis entering clinical practice",
+      "Expanded scope of practice in more states (direct access now in 43 states)",
+      "Teledentistry creating new access models",
+      "Corporate/DSO practices offering better benefits than traditional private practice",
+      "Salivary diagnostics expanding hygienist's role in systemic health screening",
+      "Interstate Licensure Compact improving mobility"
+    ]
+  },
+  "quality_score": 0.84,
+  "sources_count": 34,
+  "verified_sources": 14,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "dental hygienist USA 2025 2026 typical workday tasks duties patient care cleaning scaling root planing",
+      "sources": [
+        {"title": "BLS OOH — Dental Hygienists", "url": "https://www.bls.gov/ooh/healthcare/dental-hygienists.htm"},
+        {"title": "Day-to-Day Responsibilities of Dental Hygienists", "url": "https://www.fortis.edu/blog/healthcare/day-to-day-responsibilities-of-dental-hygienists.html"},
+        {"title": "A Day in the Life of a Dental Hygienist", "url": "https://salemdentistma.com/a-day-in-the-life-of-a-dental-hygienist/"},
+        {"title": "ADA — Dental Hygienist Job Description", "url": "https://www.ada.org/-/media/project/ada-organization/ada/ada-org/files/publications/guidelines-for-practice-success/gps-dental-team/dental-hygienist.pdf"}
+      ]
+    },
+    {
+      "query": "dental hygienist USA 2025 2026 licensure requirements state regulations scope of practice continuing education",
+      "sources": [
+        {"title": "ADHA Licensure Maps", "url": "https://www.adha.org/resources/licensure-maps/"},
+        {"title": "Dental Hygienist CE Requirements Overhaul 2026", "url": "https://ce.edu.dental/blog/dental-hygienist-ce-requirements-overhaul-2026-cha/"},
+        {"title": "CE Requirements by State 2026 Guide", "url": "https://ce.edu.dental/blog/dental-hygienist-ce-requirements-by-state-2026-gui/"},
+        {"title": "50 States of Dentistry: Hygienists' Responsibilities", "url": "https://www.todaysrdh.com/50-states-of-dentistry-hygienists-different-responsibilities-across-the-country/"}
+      ]
+    },
+    {
+      "query": "dental hygienist USA salary career path 2025 2026 burnout job satisfaction shortage demand",
+      "sources": [
+        {"title": "Dental Hygienist Shortage in the US", "url": "https://www.agasolutionsgroup.com/2025/10/15/dental-hygienist-shortage-in-the-us/"},
+        {"title": "GoTu 2025 State of Work: Dental Hygiene Report", "url": "https://gotu.com/news-trends/2025-state-of-work-dental-hygiene-report/"},
+        {"title": "Dental Hygienist Job Satisfaction 2025", "url": "https://www.teero.com/blog/dental-hygienist-job-satisfaction"},
+        {"title": "How Dental Hygiene Went from Thriving to Threatened", "url": "https://dimensionsofdentalhygiene.com/how-dental-hygiene-went-from-thriving-to-threatened/"},
+        {"title": "SF Standard — Dental Hygienists Leaving", "url": "https://sfstandard.com/2025/12/11/dental-hygienist-ai-recession-proof/"},
+        {"title": "80+ RDH Statistics", "url": "https://workforcedentalstaffing.com/80-rdh-statistics/"}
+      ]
+    },
+    {
+      "query": "dental hygienist USA professional associations ADHA communities forums tools technology 2025",
+      "sources": [
+        {"title": "ADHA Official Site", "url": "https://www.adha.org/"},
+        {"title": "ADHA At Work For You", "url": "https://www.adha.org/adha-at-work-for-you/"},
+        {"title": "Navigating Trends — Inside Dental Hygiene", "url": "https://insidedentalhygiene.com/2025/12/navigating-trends/"},
+        {"title": "ADHA Wikipedia", "url": "https://en.wikipedia.org/wiki/American_Dental_Hygienists'_Association"}
+      ]
+    }
+  ]
+}

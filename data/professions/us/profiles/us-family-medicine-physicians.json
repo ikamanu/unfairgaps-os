@@ -1,0 +1,53 @@
+{
+  "profession_id": "us-family-medicine-physicians",
+  "profession_name": "Family Medicine Physicians",
+  "tier": "A",
+  "daily_reality": {
+    "typical_workday": "Family medicine physicians work approximately 44 hours per week, typically 8AM-4:30PM or 9AM-5PM. They see an average of 78 patients per week (~15-20 per day). Daily activities: patient consultations for acute and chronic conditions, physical exams, health maintenance visits, writing prescriptions, reviewing lab results, managing chronic diseases (diabetes, hypertension, heart disease), performing minor procedures, referrals to specialists, and extensive after-hours EHR documentation. Many handle patient records from home after hours.",
+    "documents": ["Patient encounter notes (SOAP format)", "Prescription orders", "Lab orders and results review", "Referral letters to specialists", "Prior authorization forms", "Preventive care screening results", "Patient education handouts", "Insurance claim forms (CMS-1500)", "Disability/FMLA paperwork", "Quality measure reports (MIPS/HEDIS)"],
+    "deadlines": ["Daily patient documentation completion", "Prescription refill requests (24-48 hour turnaround)", "Lab result follow-up", "Prior authorization responses", "MIPS quality reporting (annual)", "CME requirements (50+ hours per cycle)", "Board recertification every 7-10 years", "DEA license renewal", "State medical license renewal"],
+    "seasonality": "Flu season (October-March) increases visit volume significantly. Back-to-school physicals peak in July-August. Annual wellness visits cluster in Q4 as patients hit deductibles. January surge as new insurance plans activate. Medicare Annual Wellness Visit push in Q1."
+  },
+  "regulatory": {
+    "laws": ["State Medical Practice Acts", "HIPAA", "Stark Law (physician self-referral)", "Anti-Kickback Statute", "MACRA/MIPS (quality payment program)", "State prescriptive authority laws", "21st Century Cures Act (information blocking)", "AI in clinical settings regulations (2026)"],
+    "licensing": "MD or DO degree from accredited medical school. 3-year family medicine residency. ABFM (American Board of Family Medicine) board certification. State medical license. DEA registration for prescribing controlled substances. Board recertification every 7-10 years with ongoing CME. 2026: California expanding oversight of healthcare transactions including practice acquisitions.",
+    "penalties": "Malpractice settlements trigger state board investigations. Multiple malpractice incidents can lead to license revocation. HIPAA violations up to $50,000 per incident. Stark Law violations: $15,000 per claim + treble damages. Anti-Kickback Statute: criminal penalties up to $100,000 and 10 years imprisonment. MIPS non-compliance results in negative payment adjustments. 2026 malpractice risk landscape evolving with AI documentation regulations.",
+    "regulatory_bodies": ["State Medical Boards", "FSMB (Federation of State Medical Boards)", "ABFM (American Board of Family Medicine)", "CMS (Centers for Medicare & Medicaid Services)", "DEA", "OIG (Office of Inspector General)", "State Health Departments"]
+  },
+  "tools": {
+    "software": ["Epic (dominant hospital/large practice EHR)", "Praxis EMR (#1 in AAFP user satisfaction for 12 years)", "Elation Health (purpose-built for primary care)", "athenahealth", "eClinicalWorks", "NextGen Healthcare", "Practice Fusion", "Nuance DAX Copilot (ambient AI documentation)", "DrChrono", "CharmHealth"],
+    "platforms": ["UpToDate (clinical reference)", "Epocrates (drug reference)", "DynaMed", "Doximity (physician networking)", "Sermo (physician community)", "Medscape", "AAFP.org resources"],
+    "gov_portals": ["CMS QPP Portal (MIPS reporting)", "DEA CSOS", "State PDMP (prescription drug monitoring)", "State medical board portals", "CDC immunization schedules", "Medicare.gov provider enrollment"]
+  },
+  "terminology": {
+    "jargon": ["Well-child visit", "Annual wellness visit (AWV)", "Chronic care management (CCM)", "Transitional care management (TCM)", "Preventive care", "Anticipatory guidance", "Medical home (PCMH)", "Continuity of care", "Scope of practice", "Prior authorization (PA)", "Formulary", "Step therapy", "Value-based care", "Quality measures"],
+    "abbreviations": ["PCP - Primary Care Provider", "AAFP - American Academy of Family Physicians", "ABFM - American Board of Family Medicine", "DO - Doctor of Osteopathic Medicine", "MD - Medical Doctor", "PCMH - Patient-Centered Medical Home", "MIPS - Merit-based Incentive Payment System", "MACRA - Medicare Access and CHIP Reauthorization Act", "CME - Continuing Medical Education", "RVU - Relative Value Unit", "E/M - Evaluation and Management", "ICD-10 - International Classification of Diseases", "CPT - Current Procedural Terminology", "HCC - Hierarchical Condition Category", "AWV - Annual Wellness Visit"]
+  },
+  "career_psychology": {
+    "career_levels": ["Medical Student", "Family Medicine Resident (PGY-1 to PGY-3)", "Early-Career Physician (1-5 years)", "Mid-Career Physician (6-15 years)", "Senior Physician (15+ years)", "Practice Partner/Owner", "Medical Director", "Department Chair", "Chief Medical Officer", "Locum Tenens (flexible/travel)"],
+    "fears": ["Malpractice lawsuits", "Diagnostic errors or missed diagnoses", "Administrative burden drowning clinical time", "Being replaced or devalued by AI tools", "Losing autonomy to corporate medicine", "Burnout leading to career exit", "Prior authorization denials harming patients", "Income stagnation relative to specialists"],
+    "motivation": ["Long-term relationships with patients and families", "Treating whole person across lifespan", "Variety of clinical conditions daily", "Community impact and trust", "Intellectual breadth of generalist medicine", "Growing recognition of primary care importance", "Telemedicine flexibility opportunities"],
+    "burnout": "Over 50% of family physicians experience burnout. Administrative/documentation burden is the #1 driver. Mid-career physicians (6-10 years post-training) most vulnerable at 59% burnout rate. Family physicians are least likely of all specialties to talk about burnout with others. However, improvement trend: overall physician burnout dropped from 53% (2022) to 43.2% (2024). Early-career satisfaction highest at 80.4%."
+  },
+  "community": {
+    "reddit": ["r/FamilyMedicine", "r/medicine", "r/Residency", "r/physicians", "r/medicalschool"],
+    "linkedin": ["AAFP (American Academy of Family Physicians) - 27,520+ followers", "Family Medicine physician groups", "Doximity (physician social network)"],
+    "associations": ["AAFP (American Academy of Family Physicians) - 131,000+ members, founded 1947", "STFM (Society of Teachers of Family Medicine) - founded 1967", "NAPCRG (North American Primary Care Research Group) - founded 1972", "ADFM (Association of Departments of Family Medicine) - founded 1978", "ABFM (American Board of Family Medicine)"],
+    "conferences": ["AAFP Family Medicine Experience (FMX)", "STFM Annual Conference", "NAPCRG Annual Meeting", "AMA Annual Meeting", "WONCA World Conference (international)"]
+  },
+  "market": {
+    "salary_by_level_usd": {
+      "starting_non_academic": "274000-290000",
+      "average_full_time": "242000-315000",
+      "experienced": "300000-400000",
+      "locum_tenens": "250000-350000+",
+      "telehealth_hourly": "80-100 per hour"
+    },
+    "national_average_usd": 315000,
+    "job_count": "73,309 active job openings; 13,000+ primary care positions currently unfilled",
+    "growth_rate": "3% projected through 2032 for physicians overall; primary care demand increasing faster",
+    "unemployment_rate": "Near 0% — severe shortage especially in rural areas",
+    "work_arrangements": ["Private practice (declining)", "Employed by health systems (growing)", "Locum tenens (travel)", "Telehealth (rapidly growing)", "Direct primary care (DPC) model", "Concierge medicine", "Academic/teaching"],
+    "trends": ["Starting salaries up 1.3% YoY driven by non-academic jobs ($274K to $290K)", "Rural communities offering premium compensation with housing and loan repayment", "Telehealth reshaping care delivery — virtual consults in high demand", "Corporate medicine acquisition of practices accelerating", "AI documentation tools (Nuance DAX) reducing after-hours paperwork", "Value-based care models shifting compensation from volume to outcomes", "13,000+ unfilled primary care positions nationally"]
+  }
+}

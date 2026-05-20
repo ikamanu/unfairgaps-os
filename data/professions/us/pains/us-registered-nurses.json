@@ -1,0 +1,732 @@
+[
+  {
+    "id": "us-registered-nurses-p01",
+    "title": "Medication Dosage Calculation",
+    "problem": "RNs perform multiple dosage calculations every shift for weight-based, concentration-based, and pediatric medications. Manual math under time pressure and fatigue leads to errors - medication errors are among the top fears for 49% of nurses who worry exhaustion could cause a grave mistake. Wrong dosages can cause patient harm, license jeopardy, and potential criminal liability.",
+    "who": "Staff nurses, new graduate RNs, float pool nurses working unfamiliar units",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 50000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Nursing Dosage Calculator",
+      "one_liner": "Calculates medication dosages for weight-based, concentration-based, and unit conversion scenarios",
+      "inputs": [
+        {
+          "name": "ordered_dose",
+          "type": "number",
+          "label": "Ordered dose (mg, mcg, or units)"
+        },
+        {
+          "name": "dose_unit",
+          "type": "string",
+          "label": "Dose unit (mg, mcg, units, mEq)"
+        },
+        {
+          "name": "patient_weight_kg",
+          "type": "number",
+          "label": "Patient weight (kg)"
+        },
+        {
+          "name": "available_concentration",
+          "type": "string",
+          "label": "Available concentration (e.g., 250mg/5mL)"
+        },
+        {
+          "name": "dose_per_kg",
+          "type": "number",
+          "label": "Dose per kg (if weight-based)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "volume_to_administer",
+          "label": "Volume to administer (mL)"
+        },
+        {
+          "name": "total_dose",
+          "label": "Total dose based on weight"
+        },
+        {
+          "name": "safe_dose_check",
+          "label": "Safe dose range verification"
+        }
+      ],
+      "formula_hint": "volume = (ordered_dose / available_strength) * available_volume; weight_based_dose = dose_per_kg * patient_weight_kg; verify against max safe dose",
+      "rates": {}
+    },
+    "example_queries": [
+      "Patient weighs 72kg, order is 15mg/kg of vancomycin, available 500mg/10mL. How much do I give?",
+      "Doctor ordered 0.5mg atropine, I have 1mg/mL. How many mL do I draw up?",
+      "Peds patient 22kg needs amoxicillin 25mg/kg/day divided q8h, available 250mg/5mL"
+    ]
+  },
+  {
+    "id": "us-registered-nurses-p02",
+    "title": "IV Drip Rate and Infusion Calculator",
+    "problem": "RNs must calculate IV drip rates (gtt/min), infusion times, and flow rates for pumps multiple times per shift. Errors in drip rate calculations can lead to fluid overload, under-dosing, or dangerous medication concentrations. Calculations vary by tubing drop factor, total volume, and time constraints. Under 12-hour shift fatigue, simple math errors become high-risk.",
+    "who": "Hospital floor nurses, ICU nurses, new graduate RNs",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "IV Drip Rate Calculator",
+      "one_liner": "Calculates IV flow rates in mL/hr and gtt/min, infusion duration, and total volume",
+      "inputs": [
+        {
+          "name": "total_volume_ml",
+          "type": "number",
+          "label": "Total volume to infuse (mL)"
+        },
+        {
+          "name": "time_hours",
+          "type": "number",
+          "label": "Infusion time (hours)"
+        },
+        {
+          "name": "drop_factor",
+          "type": "number",
+          "label": "Tubing drop factor (gtt/mL) - 10, 15, 20, or 60"
+        },
+        {
+          "name": "drug_concentration",
+          "type": "string",
+          "label": "Drug concentration if medicated (e.g., 400mg/250mL)"
+        },
+        {
+          "name": "ordered_rate",
+          "type": "string",
+          "label": "Ordered rate (e.g., 5mcg/kg/min)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "flow_rate_ml_hr",
+          "label": "Flow rate (mL/hr)"
+        },
+        {
+          "name": "drip_rate_gtt_min",
+          "label": "Drip rate (gtt/min)"
+        },
+        {
+          "name": "infusion_duration",
+          "label": "Total infusion time"
+        },
+        {
+          "name": "total_drug_dose",
+          "label": "Total drug delivered"
+        }
+      ],
+      "formula_hint": "mL/hr = total_volume / time_hours; gtt/min = (total_volume * drop_factor) / (time_hours * 60); for medicated: mL/hr = (ordered_mcg_per_min * 60 * weight_kg) / concentration_mcg_per_mL",
+      "rates": {
+        "micro_drip_factor": 60,
+        "macro_drip_factors": [
+          10,
+          15,
+          20
+        ]
+      }
+    },
+    "example_queries": [
+      "1000mL NS over 8 hours with 15gtt/mL tubing - what's the drip rate?",
+      "Dopamine 400mg in 250mL D5W, patient 80kg, ordered 5mcg/kg/min. What mL/hr on the pump?",
+      "I need to infuse 500mL at 125mL/hr - how long will it take?"
+    ]
+  },
+  {
+    "id": "us-registered-nurses-p03",
+    "title": "Nurse-to-Patient Ratio Compliance Check",
+    "problem": "California mandates specific nurse-to-patient ratios (e.g., 1:2 ICU, 1:4 med-surg, 1:6 psych), Oregon passed similar laws, and the federal Nurse Staffing Standards Act (2025) adds new requirements. Charge nurses must verify compliance every shift. Violations carry $15,000-$50,000 fines. Understaffing is a top fear - nurses worry it leads to preventable patient harm.",
+    "who": "Charge nurses, nurse managers, directors of nursing",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "Nurse Staffing Ratio Reference",
+      "one_liner": "Quick lookup of required nurse-to-patient ratios by state, unit type, and shift",
+      "data_domain": "State and federal nurse staffing ratio requirements",
+      "lookup_keys": [
+        "state",
+        "unit_type",
+        "shift_type",
+        "acuity_level"
+      ],
+      "data_hints": {
+        "source_law": "California Health & Safety Code 1276.4, Oregon HB 2697, federal Nurse Staffing Standards Act 2025",
+        "key_sections": [
+          "CA Title 22 ratios by unit type",
+          "Federal minimum staffing standards",
+          "Oregon staffing committee requirements"
+        ],
+        "unit_types": [
+          "ICU",
+          "Med-Surg",
+          "ER",
+          "L&D",
+          "Psych",
+          "Pediatrics",
+          "Step-down",
+          "Telemetry",
+          "NICU",
+          "OR"
+        ]
+      }
+    },
+    "example_queries": [
+      "What's the required nurse-to-patient ratio for a med-surg unit in California?",
+      "My unit has 18 patients on night shift in Texas - how many RNs do we need under the new federal law?",
+      "What are the staffing ratio penalties in California if we're short one nurse?"
+    ]
+  },
+  {
+    "id": "us-registered-nurses-p04",
+    "title": "CE/CEU Tracking and License Renewal Requirements",
+    "problem": "RNs must complete 20+ CE hours per renewal cycle, which varies by state (1-2 year cycles). Requirements differ by state - some mandate specific topics (infection control, pain management, opioid prescribing). Travel nurses and NLC compact nurses face multi-state tracking. Missing deadlines means inability to practice, potential fines, and criminal charges for practicing without a license.",
+    "who": "All RNs, especially travel nurses and NLC compact license holders",
+    "frequency": "quarterly",
+    "time_waste_h": 4,
+    "money_risk_usd": 10000,
+    "source": "daily_reality",
+    "skill_type": "reference",
+    "skill_spec": {
+      "name": "RN License Renewal & CE Requirements Guide",
+      "one_liner": "State-by-state CE requirements, mandatory topics, renewal deadlines, and NLC compact rules",
+      "data_domain": "State nursing board CE and license renewal requirements",
+      "lookup_keys": [
+        "state",
+        "license_type",
+        "specialty_certification",
+        "nlc_status"
+      ],
+      "data_hints": {
+        "source_law": "Individual State Nurse Practice Acts, NLC Interstate Commission rules",
+        "key_sections": [
+          "CE hour requirements by state",
+          "Mandatory CE topics",
+          "Renewal cycle length",
+          "NLC participating states"
+        ],
+        "states_with_special_requirements": [
+          "California (30 CEU/2yr)",
+          "New York (3 CEU infection control)",
+          "Florida (24 CEU + laws/rules)",
+          "Texas (20 CEU/2yr)"
+        ]
+      }
+    },
+    "example_queries": [
+      "What are the CE requirements to renew my RN license in Florida?",
+      "I have a compact license from Virginia - which states can I practice in and what are the CE rules?",
+      "My California RN license expires in 3 months - what mandatory topics do I need?"
+    ]
+  },
+  {
+    "id": "us-registered-nurses-p05",
+    "title": "SBAR Shift Handoff Report Generator",
+    "problem": "Nurses complete shift handoff reports for every patient at every shift change. A thorough SBAR (Situation-Background-Assessment-Recommendation) report takes 5-15 minutes per patient and handoff for a typical 4-6 patient load takes 30-60 minutes. Incomplete handoffs are a leading cause of medical errors and sentinel events flagged by the Joint Commission.",
+    "who": "All bedside RNs, charge nurses",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 15000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "SBAR Handoff Report Generator",
+      "one_liner": "Generates structured SBAR shift handoff reports from key patient data points",
+      "doc_name": "SBAR Shift Handoff Report",
+      "variables": [
+        {
+          "name": "patient_initials",
+          "label": "Patient initials or room number"
+        },
+        {
+          "name": "diagnosis",
+          "label": "Primary diagnosis/reason for admission"
+        },
+        {
+          "name": "relevant_history",
+          "label": "Relevant medical history"
+        },
+        {
+          "name": "current_status",
+          "label": "Current condition/changes this shift"
+        },
+        {
+          "name": "vitals_summary",
+          "label": "Key vitals and trends"
+        },
+        {
+          "name": "meds_ivs",
+          "label": "Current medications and IV status"
+        },
+        {
+          "name": "labs_pending",
+          "label": "Recent labs or pending orders"
+        },
+        {
+          "name": "concerns",
+          "label": "Concerns or things to watch"
+        },
+        {
+          "name": "plan",
+          "label": "Plan for next shift"
+        }
+      ],
+      "structure_hint": "Situation (who, what, why here) -> Background (history, context) -> Assessment (current status, vitals, changes) -> Recommendation (plan, watch-fors, pending items)"
+    },
+    "example_queries": [
+      "Generate a handoff report: Room 412, CHF exacerbation, admitted 2 days ago, O2 sats dropping to 89% on room air, started on 2L NC, pending cardiology consult",
+      "Help me write an SBAR for a post-op hip replacement patient day 1, vitals stable, pain 6/10 on morphine PCA",
+      "I need a quick shift report for 5 patients on my med-surg unit"
+    ]
+  },
+  {
+    "id": "us-registered-nurses-p06",
+    "title": "Incident Report Documentation",
+    "problem": "When adverse events occur (falls, medication errors, equipment failures, needlesticks, workplace violence), RNs must file detailed incident reports. These reports must be objective, factual, timely, and follow specific facility and regulatory formats. Poorly written reports increase legal liability. Nurses fear documentation errors almost as much as the incidents themselves, and 19% avoid seeking help fearing career harm.",
+    "who": "All RNs, especially new graduates and staff nurses",
+    "frequency": "monthly",
+    "time_waste_h": 2,
+    "money_risk_usd": 25000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Nursing Incident Report Generator",
+      "one_liner": "Generates objective, legally sound incident reports from event details",
+      "doc_name": "Incident / Occurrence Report",
+      "variables": [
+        {
+          "name": "incident_type",
+          "label": "Type of incident (fall, med error, injury, violence, equipment)"
+        },
+        {
+          "name": "date_time",
+          "label": "Date and time of incident"
+        },
+        {
+          "name": "location",
+          "label": "Location (unit, room)"
+        },
+        {
+          "name": "persons_involved",
+          "label": "Persons involved (roles only, no names)"
+        },
+        {
+          "name": "description",
+          "label": "What happened (facts only)"
+        },
+        {
+          "name": "patient_condition",
+          "label": "Patient condition before and after"
+        },
+        {
+          "name": "actions_taken",
+          "label": "Immediate actions taken"
+        },
+        {
+          "name": "notifications",
+          "label": "Who was notified (physician, supervisor, family)"
+        },
+        {
+          "name": "contributing_factors",
+          "label": "Contributing factors identified"
+        }
+      ],
+      "structure_hint": "Header (type, date, location) -> Factual description (no opinions/blame) -> Patient status -> Immediate interventions -> Notifications -> Contributing factors -> Follow-up plan"
+    },
+    "example_queries": [
+      "Patient in 302B fell getting out of bed at 0230, found on floor, no visible injury, oriented x4. Help me write the incident report",
+      "I gave the wrong dose of metoprolol - 50mg instead of 25mg. I need to document this incident properly",
+      "A patient's family member pushed me during a disagreement about discharge. How do I write this up?"
+    ]
+  },
+  {
+    "id": "us-registered-nurses-p07",
+    "title": "Medication Error Prevention Checklist",
+    "problem": "Medication errors are the #1 fear for nurses, with 49% worrying weekly that exhaustion could cause a grave mistake. The 'Five Rights' (right patient, drug, dose, route, time) must be verified for every administration across a typical 20-30+ med passes per shift. Errors can result in patient harm, disciplinary action, license revocation, and in extreme cases criminal liability. A systematic checklist approach reduces errors by up to 50%.",
+    "who": "All RNs, especially new graduates, float pool, and per diem nurses",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 50000,
+    "source": "career_psychology",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Safe Medication Administration Checklist",
+      "one_liner": "Step-by-step medication safety verification covering the 10 Rights and high-alert medications",
+      "steps": [
+        "Step 1: Verify physician order in EHR - check for allergies, interactions, duplicates",
+        "Step 2: Right Patient - check two identifiers (name + DOB/MRN), scan wristband",
+        "Step 3: Right Drug - compare order to MAR, check drug name (brand and generic), look-alike/sound-alike alert",
+        "Step 4: Right Dose - calculate if weight-based, verify units (mg vs mcg vs mL), use dosage calculator for high-alert meds",
+        "Step 5: Right Route - verify PO/IV/IM/SubQ/topical matches order, check line patency for IV",
+        "Step 6: Right Time - within administration window, check last dose timing",
+        "Step 7: Right Documentation - document in MAR immediately after administration, never pre-chart",
+        "Step 8: Right Reason - verify indication matches patient diagnosis",
+        "Step 9: Right Response - assess patient response within appropriate timeframe",
+        "Step 10: Right to Refuse - if patient refuses, document and notify physician"
+      ],
+      "warnings": [
+        "Warning: HIGH-ALERT medications (insulin, heparin, opioids, potassium) require independent double-check by second RN",
+        "Warning: Never override Pyxis without pharmacist verification except in emergencies",
+        "Warning: Look-alike/sound-alike drugs (hydralazine/hydroxyzine, metformin/metronidazole) - always verify",
+        "Warning: If dose seems unusual, ALWAYS verify with pharmacy before administering"
+      ],
+      "regulatory_refs": [
+        "State Nurse Practice Acts",
+        "Joint Commission NPSG.03.04.01",
+        "ISMP High-Alert Medication List"
+      ]
+    },
+    "example_queries": [
+      "Walk me through the safety checks before giving IV push morphine",
+      "I'm a new grad about to do my first insulin drip - what's the verification process?",
+      "Patient has similar name to another patient on my unit - extra safety steps?"
+    ]
+  },
+  {
+    "id": "us-registered-nurses-p08",
+    "title": "HIPAA Compliance Quick Reference",
+    "problem": "HIPAA violations carry fines up to $50,000 per incident and can result in license action. RNs handle protected health information (PHI) constantly - in conversations, charting, phone calls, and electronic communications. Common violations include discussing patients in public areas, texting PHI, improper EHR access, and social media posts. New nurses frequently struggle with gray areas around information sharing with families and between providers.",
+    "who": "All RNs, especially new graduates, travel nurses adapting to new facilities",
+    "frequency": "weekly",
+    "time_waste_h": 1,
+    "money_risk_usd": 50000,
+    "source": "regulatory",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "HIPAA Compliance Advisor for Nurses",
+      "one_liner": "Answers HIPAA questions specific to nursing situations - what you can share, with whom, and how",
+      "expertise_area": "HIPAA Privacy and Security Rules as applied to nursing practice",
+      "decision_criteria": [
+        "type_of_information",
+        "who_is_requesting",
+        "method_of_communication",
+        "treatment_vs_non_treatment_purpose",
+        "patient_consent_status"
+      ],
+      "context_needed": [
+        "regulatory.laws",
+        "regulatory.penalties",
+        "daily_reality.documents"
+      ]
+    },
+    "example_queries": [
+      "A patient's adult daughter is calling asking about her mom's condition - the patient is sedated and can't consent. What can I tell her?",
+      "Can I text a photo of a wound to the on-call physician using my personal phone?",
+      "I accidentally opened the wrong patient's chart in Epic - do I need to report this?"
+    ]
+  },
+  {
+    "id": "us-registered-nurses-p09",
+    "title": "Nursing Care Plan Generator",
+    "problem": "RNs must create individualized care plans using NANDA nursing diagnoses, NOC outcomes, and NIC interventions for each patient. A thorough care plan takes 20-45 minutes and must be updated with each assessment. New graduates spend excessive time on care plans while experienced nurses rush through them. Poor care plans lead to fragmented care, missed interventions, and Joint Commission citations.",
+    "who": "New graduate RNs, nursing students, staff nurses on high-acuity units",
+    "frequency": "daily",
+    "time_waste_h": 2,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "template",
+    "skill_spec": {
+      "name": "Nursing Care Plan Generator",
+      "one_liner": "Generates evidence-based care plans with NANDA diagnoses, NOC outcomes, and NIC interventions",
+      "doc_name": "Individualized Nursing Care Plan",
+      "variables": [
+        {
+          "name": "primary_diagnosis",
+          "label": "Primary medical diagnosis"
+        },
+        {
+          "name": "nursing_problems",
+          "label": "Key nursing problems identified"
+        },
+        {
+          "name": "patient_age",
+          "label": "Patient age"
+        },
+        {
+          "name": "relevant_history",
+          "label": "Relevant medical/surgical history"
+        },
+        {
+          "name": "current_assessment",
+          "label": "Current assessment findings"
+        },
+        {
+          "name": "patient_goals",
+          "label": "Patient-stated goals"
+        },
+        {
+          "name": "barriers",
+          "label": "Barriers to recovery (mobility, cognition, social)"
+        }
+      ],
+      "structure_hint": "Assessment data -> NANDA Nursing Diagnosis -> NOC Expected Outcomes (measurable, time-bound) -> NIC Interventions (specific nursing actions) -> Rationale -> Evaluation criteria"
+    },
+    "example_queries": [
+      "Create a care plan for a 68-year-old CHF patient with fluid overload, dyspnea, and limited mobility",
+      "I need a care plan for a post-op CABG patient day 2, pain management and early mobilization",
+      "Help me write a care plan for a diabetic patient with a non-healing foot ulcer being discharged home"
+    ]
+  },
+  {
+    "id": "us-registered-nurses-p10",
+    "title": "Overtime and Shift Differential Pay Calculator",
+    "problem": "RN compensation involves complex calculations: base hourly rate, overtime (time-and-a-half after 8 or 12 hours depending on state), double-time, shift differentials (evening/night/weekend), holiday pay, on-call rates, and per diem premiums. Travel nurses add stipends, housing, and tax-free components. Nurses frequently can't verify if their paycheck is correct. Payroll errors are common and often underpay nurses.",
+    "who": "All RNs, travel nurses, per diem nurses, nurses picking up extra shifts",
+    "frequency": "biweekly",
+    "time_waste_h": 2,
+    "money_risk_usd": 5000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "RN Pay & Overtime Calculator",
+      "one_liner": "Calculates total nurse compensation including overtime, shift differentials, and travel stipends",
+      "inputs": [
+        {
+          "name": "base_hourly_rate",
+          "type": "number",
+          "label": "Base hourly rate (USD)"
+        },
+        {
+          "name": "regular_hours",
+          "type": "number",
+          "label": "Regular hours worked"
+        },
+        {
+          "name": "overtime_hours",
+          "type": "number",
+          "label": "Overtime hours"
+        },
+        {
+          "name": "shift_differential_pct",
+          "type": "number",
+          "label": "Shift differential (%, e.g., 10 for evening, 15 for night)"
+        },
+        {
+          "name": "differential_hours",
+          "type": "number",
+          "label": "Hours on differential"
+        },
+        {
+          "name": "weekend_differential_pct",
+          "type": "number",
+          "label": "Weekend differential (%)"
+        },
+        {
+          "name": "weekend_hours",
+          "type": "number",
+          "label": "Weekend hours"
+        },
+        {
+          "name": "holiday_hours",
+          "type": "number",
+          "label": "Holiday hours worked"
+        },
+        {
+          "name": "is_travel",
+          "type": "boolean",
+          "label": "Travel nurse? (includes stipend calculation)"
+        },
+        {
+          "name": "weekly_stipend",
+          "type": "number",
+          "label": "Weekly tax-free stipend (travel nurses)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "gross_pay",
+          "label": "Gross pay for period"
+        },
+        {
+          "name": "overtime_pay",
+          "label": "Overtime pay breakdown"
+        },
+        {
+          "name": "differential_pay",
+          "label": "Shift differential pay"
+        },
+        {
+          "name": "total_compensation",
+          "label": "Total compensation including stipends"
+        },
+        {
+          "name": "effective_hourly_rate",
+          "label": "Effective hourly rate"
+        }
+      ],
+      "formula_hint": "OT = base * 1.5 * OT_hours; differential = base * diff_pct/100 * diff_hours; holiday = base * 1.5 or 2.0 * holiday_hours; travel total = taxable pay + tax-free stipend",
+      "rates": {
+        "overtime_multiplier": 1.5,
+        "double_time_multiplier": 2.0
+      }
+    },
+    "example_queries": [
+      "I worked 3 twelve-hour night shifts plus picked up a weekend day shift. Base rate $42/hr, night diff 15%, weekend diff 10%. What should my paycheck be?",
+      "Travel nurse contract: $35/hr taxable, $1,200/week stipend, worked 48 hours this week. What's my total?",
+      "I worked 14 hours on Christmas Day at $38/hr with double-time holiday pay. How much did I earn?"
+    ]
+  },
+  {
+    "id": "us-registered-nurses-p11",
+    "title": "Patient Fall Risk Assessment and Prevention",
+    "problem": "Patient falls are the most common adverse event in hospitals. RNs must assess fall risk using standardized tools (Morse Fall Scale, Hendrich II) on admission and every shift, then implement appropriate interventions. Falls lead to injury, extended stays, CMS non-reimbursement (falls are a 'never event'), and litigation. Documentation of risk assessment and prevention measures is critical for legal protection.",
+    "who": "All bedside RNs, especially med-surg, geriatric, and rehabilitation nurses",
+    "frequency": "daily",
+    "time_waste_h": 1,
+    "money_risk_usd": 30000,
+    "source": "daily_reality",
+    "skill_type": "calculator",
+    "skill_spec": {
+      "name": "Fall Risk Assessment Calculator",
+      "one_liner": "Calculates Morse Fall Scale and Hendrich II scores with evidence-based intervention recommendations",
+      "inputs": [
+        {
+          "name": "history_of_falling",
+          "type": "boolean",
+          "label": "History of falling (current admission or within 3 months)"
+        },
+        {
+          "name": "secondary_diagnosis",
+          "type": "boolean",
+          "label": "Secondary diagnosis (2+ medical diagnoses)"
+        },
+        {
+          "name": "ambulatory_aid",
+          "type": "string",
+          "label": "Ambulatory aid (none, crutches/cane/walker, furniture)"
+        },
+        {
+          "name": "iv_heparin_lock",
+          "type": "boolean",
+          "label": "IV therapy or heparin lock"
+        },
+        {
+          "name": "gait",
+          "type": "string",
+          "label": "Gait (normal, weak, impaired)"
+        },
+        {
+          "name": "mental_status",
+          "type": "string",
+          "label": "Mental status (oriented to own ability, overestimates/forgets limitations)"
+        },
+        {
+          "name": "medications",
+          "type": "string",
+          "label": "High-risk medications (sedatives, opioids, antihypertensives, diuretics)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "morse_score",
+          "label": "Morse Fall Scale score"
+        },
+        {
+          "name": "risk_level",
+          "label": "Risk level (low/moderate/high)"
+        },
+        {
+          "name": "interventions",
+          "label": "Recommended interventions by risk level"
+        },
+        {
+          "name": "documentation_note",
+          "label": "Pre-formatted assessment note for charting"
+        }
+      ],
+      "formula_hint": "Morse: history(25) + secondary_dx(15) + ambulatory_aid(0/15/30) + IV(20) + gait(0/10/20) + mental_status(0/15). Low <25, Moderate 25-44, High >=45. Map to universal + specific interventions.",
+      "rates": {
+        "low_risk_threshold": 25,
+        "high_risk_threshold": 45
+      }
+    },
+    "example_queries": [
+      "82-year-old patient, fell last week, uses a walker, on Lasix and oxycodone, oriented but forgetful. What's the fall risk score?",
+      "New admission, no fall history, came in for pneumonia, has IV antibiotics, gait is weak. Score and interventions?",
+      "Post-op patient on PCA morphine, unsteady gait, two diagnoses. What precautions do I need?"
+    ]
+  },
+  {
+    "id": "us-registered-nurses-p12",
+    "title": "Rapid Response / Code Blue Procedure",
+    "problem": "When a patient deteriorates rapidly, RNs must act within seconds following established protocols. Hesitation or missed steps during a Rapid Response or Code Blue can be fatal. New nurses and nurses floating to unfamiliar units are especially vulnerable. The stress of emergencies combined with fatigue (58% report burnout most days) makes systematic response protocols essential for patient survival.",
+    "who": "All bedside RNs, new graduate RNs, float pool nurses",
+    "frequency": "weekly",
+    "time_waste_h": 1,
+    "money_risk_usd": 100000,
+    "source": "career_psychology",
+    "skill_type": "checklist",
+    "skill_spec": {
+      "name": "Rapid Response & Code Blue Checklist",
+      "one_liner": "Step-by-step emergency response protocol for patient deterioration, Rapid Response, and Code Blue",
+      "steps": [
+        "Step 1: ASSESS - Check responsiveness, airway, breathing, circulation (ABCs). Check pulse for 10 seconds max",
+        "Step 2: CALL FOR HELP - Activate Rapid Response (early warning) or Code Blue (cardiac/respiratory arrest). Call bedside help",
+        "Step 3: POSITION - Flat on back, head of bed down, firm surface. Get backboard if on mattress",
+        "Step 4: START BLS - If pulseless/apneic: begin CPR 30:2 ratio, attach AED/defibrillator",
+        "Step 5: OXYGEN - Apply high-flow O2, bag-valve-mask if not breathing. Have suction ready",
+        "Step 6: ACCESS - Ensure IV access (18G preferred). Draw rainbow labs. Prepare for IO if no IV",
+        "Step 7: MONITOR - Attach continuous cardiac monitoring, pulse oximetry, BP cuff",
+        "Step 8: MEDICATIONS - Have crash cart open. Prepare epinephrine 1mg, amiodarone, atropine per ACLS algorithm",
+        "Step 9: COMMUNICATE - SBAR to responding team. One person documents timing of all interventions",
+        "Step 10: POST-EVENT - Debrief with team, complete incident documentation, notify family, self-care check"
+      ],
+      "warnings": [
+        "Warning: Early warning signs - call Rapid Response BEFORE Code Blue when possible (new confusion, HR >120 or <50, RR >28 or <8, SpO2 <90%, systolic BP <90)",
+        "Warning: Know your unit's crash cart location and check it every shift",
+        "Warning: Never delay CPR to get equipment - compressions first",
+        "Warning: Document exact times of all interventions during code"
+      ],
+      "regulatory_refs": [
+        "AHA ACLS Guidelines 2025",
+        "Joint Commission NPSG.02.03.01",
+        "EMTALA requirements"
+      ]
+    },
+    "example_queries": [
+      "My patient just became unresponsive - walk me through what to do step by step",
+      "What are the early warning signs I should call a Rapid Response for?",
+      "I'm a new grad and just had my first code - what should I document and is there a debrief process?"
+    ]
+  },
+  {
+    "id": "us-registered-nurses-p13",
+    "title": "Burnout Self-Assessment and Prevention",
+    "problem": "58% of nurses feel burnout most days and 74% feel emotionally drained multiple times weekly. 39.9% intend to leave the workforce within 5 years. Yet 19% avoid seeking mental health services fearing career harm. Nurses need a confidential, judgment-free way to assess their burnout level, understand their risk factors, and get actionable prevention strategies specific to nursing - not generic wellness advice.",
+    "who": "All RNs, especially staff nurses, new graduates, and nurses considering leaving",
+    "frequency": "monthly",
+    "time_waste_h": 3,
+    "money_risk_usd": 15000,
+    "source": "career_psychology",
+    "skill_type": "advisor",
+    "skill_spec": {
+      "name": "Nurse Burnout Assessment & Prevention Advisor",
+      "one_liner": "Confidential burnout risk assessment with nursing-specific coping strategies and career path options",
+      "expertise_area": "Nursing burnout, compassion fatigue, moral injury, and career sustainability",
+      "decision_criteria": [
+        "burnout_severity",
+        "work_setting",
+        "career_stage",
+        "specific_stressors",
+        "support_availability"
+      ],
+      "context_needed": [
+        "career_psychology.burnout",
+        "career_psychology.fears",
+        "career_psychology.career_levels",
+        "market.work_arrangements"
+      ]
+    },
+    "example_queries": [
+      "I've been a bedside nurse for 5 years and I dread going to work every day. Is this burnout or am I just done with nursing?",
+      "I'm crying in my car before shifts and having nightmares about work. What are my options besides quitting?",
+      "What nursing roles have less burnout? I love nursing but I can't do 3 twelve-hour shifts on a short-staffed floor anymore"
+    ]
+  }
+]

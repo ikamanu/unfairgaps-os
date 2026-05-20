@@ -1,0 +1,314 @@
+{
+  "profession_id": "us-fire-prevention-and-protection-engineers",
+  "profession_name": "Fire-Prevention and Protection Engineers",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Fire protection engineers research fire causes, design fire prevention/suppression systems, review building plans for code compliance, and investigate fire incidents. They work across consulting firms, government agencies, insurance companies, and industrial facilities.",
+    "typical_tasks": [
+      "Review building plans for fire code compliance (NFPA, IBC)",
+      "Design fire sprinkler, suppression, and alarm systems",
+      "Conduct fire safety inspections of buildings during construction and occupancy",
+      "Perform fire risk assessments and hazard analyses",
+      "Investigate fire sites and determine system failures",
+      "Prepare technical reports on fire protection systems",
+      "Advise on fire prevention codes and standards development",
+      "Witness acceptance tests for fire protection systems",
+      "Evaluate new fire protection products, materials, and equipment",
+      "Coordinate with architects, contractors, and fire marshals"
+    ],
+    "key_documents": [
+      "Fire protection engineering design reports",
+      "Sprinkler system hydraulic calculations",
+      "Fire and life safety code compliance reviews",
+      "Fire risk/hazard assessment reports",
+      "Fire investigation reports",
+      "Performance-based fire safety design analyses",
+      "Fire alarm system design specifications",
+      "Fire Protection Plans (per IBC/NFPA)",
+      "Smoke control system design documents"
+    ],
+    "deadlines": {
+      "plan_review": "Typically 2-4 weeks for municipal reviews",
+      "nfpa_code_cycle": "3-year revision cycle for most NFPA standards",
+      "system_inspection": "Annual inspections required per NFPA 25",
+      "fire_investigation": "Reports typically within 30-90 days of incident",
+      "pe_license_renewal": "Every 1-2 years depending on state"
+    },
+    "seasonality": "Construction seasons (spring-fall) bring peak plan review and inspection work. Year-end budget deadlines drive project completions. Code edition updates (e.g., 2026 NFPA cycle) create periodic compliance review surges."
+  },
+  "regulatory": {
+    "summary": "Governed by NFPA codes (300+ standards), International Building Code (IBC), and state/local fire codes. PE licensure in Fire Protection is critical for career advancement. 2026 NFPA updates require risk assessments to be directed by registered PEs.",
+    "key_laws": [
+      {
+        "name": "NFPA 13 — Standard for Installation of Sprinkler Systems",
+        "description": "Primary standard for automatic fire sprinkler system design and installation"
+      },
+      {
+        "name": "NFPA 72 — National Fire Alarm and Signaling Code",
+        "description": "Standards for fire alarm and emergency communication systems"
+      },
+      {
+        "name": "NFPA 101 — Life Safety Code",
+        "description": "Addresses building construction, protection, and occupancy features to minimize fire danger"
+      },
+      {
+        "name": "NFPA 25 — Inspection, Testing, and Maintenance",
+        "description": "Standards for water-based fire protection system ITM"
+      },
+      {
+        "name": "International Building Code (IBC)",
+        "description": "Model building code adopted by most US jurisdictions, includes fire safety provisions"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "ABET-accredited engineering degree (fire protection, mechanical, civil, or related)",
+        "Pass Fundamentals of Engineering (FE) exam",
+        "4 years supervised engineering experience",
+        "Pass PE Fire Protection exam ($400, computer-based, once per year)",
+        "State PE license application and approval"
+      ],
+      "pe_premium": "Licensed PEs earn 36% more on average",
+      "certifications": [
+        "PE in Fire Protection (NCEES)",
+        "Certified Fire Protection Specialist (CFPS) — NFPA ($499)",
+        "NICET Fire Protection certifications (Levels I-IV)"
+      ],
+      "nfpa_2026_update": "2026 NFPA codes now require risk assessment design to be directed by a registered design professional (PE) experienced in fire protection engineering"
+    },
+    "penalties": "Non-compliance with fire codes can result in stop-work orders, building closure, fines, and criminal liability in case of fire deaths. PE stamp misuse carries license revocation."
+  },
+  "tools": {
+    "summary": "Fire protection engineers use specialized sprinkler design software, BIM tools, fire modeling programs, and hydraulic calculation tools for system design and code compliance analysis.",
+    "primary_tools": [
+      {
+        "name": "AutoSPRINK",
+        "description": "Purpose-built fire sprinkler system design software with Revit/BIM integration"
+      },
+      {
+        "name": "SprinkCAD / SprinkCALC",
+        "description": "Comprehensive sprinkler system design, hydraulic calculation, and fabrication software"
+      },
+      {
+        "name": "Autodesk Revit (MEP/Fire Protection)",
+        "description": "BIM platform for 3D fire protection system modeling and coordination"
+      },
+      {
+        "name": "MicroBIM Fire",
+        "description": "Professional fire design software for Revit — modeling, hydraulic calculations, fabrication"
+      },
+      {
+        "name": "FDS (Fire Dynamics Simulator)",
+        "description": "NIST computational fluid dynamics tool for fire modeling and smoke movement"
+      },
+      {
+        "name": "Pathfinder / EVACNET",
+        "description": "Egress modeling and evacuation simulation software"
+      }
+    ],
+    "secondary_tools": [
+      "AutoCAD — 2D drafting and design",
+      "Navisworks — BIM coordination and clash detection",
+      "Revizto — issue tracking and BIM collaboration",
+      "Microsoft Excel — hydraulic calculations and data analysis",
+      "Bluebeam Revu — PDF plan review markup",
+      "NFPA code books and online access (nfpa.org)"
+    ],
+    "pain_points": [
+      "Coordinating fire protection models with other MEP trades in BIM",
+      "Keeping up with NFPA code revision cycles (300+ standards)",
+      "Integration between sprinkler design software and general BIM tools",
+      "Legacy projects without existing digital documentation"
+    ]
+  },
+  "terminology": {
+    "summary": "Fire protection engineering terminology revolves around NFPA standards, sprinkler system types, fire suppression methods, and code compliance classifications.",
+    "terms": {
+      "NFPA": "National Fire Protection Association — publisher of 300+ fire safety codes/standards",
+      "AHJ": "Authority Having Jurisdiction — local code enforcement body",
+      "SFPE": "Society of Fire Protection Engineers",
+      "IBC": "International Building Code",
+      "FPE": "Fire Protection Engineer",
+      "CFPS": "Certified Fire Protection Specialist",
+      "NICET": "National Institute for Certification in Engineering Technologies",
+      "wet system": "Sprinkler system with water-filled pipes, ready for immediate discharge",
+      "dry system": "Sprinkler pipes filled with pressurized air/nitrogen, water released when sprinkler activates",
+      "pre-action": "Sprinkler system requiring two triggers (detection + sprinkler head activation)",
+      "deluge": "System where all sprinkler heads are open, flooding entire area simultaneously",
+      "clean agent": "Gaseous fire suppression (FM-200, Novec) that leaves no residue",
+      "hydraulic calculation": "Mathematical analysis of water flow and pressure in sprinkler piping",
+      "commodity class": "NFPA 13 classification of stored materials (Class I-IV) by fire vulnerability",
+      "occupancy hazard": "Light/Ordinary/Extra Hazard classification per NFPA 13",
+      "standpipe": "Permanently installed piping for firefighter hose connections (NFPA 14)",
+      "ITM": "Inspection, Testing, and Maintenance (per NFPA 25)",
+      "egress": "Means of escape from a building during fire emergency",
+      "fire load": "Total combustible material in a given area",
+      "ESFR": "Early Suppression Fast Response — high-output ceiling sprinklers for storage"
+    }
+  },
+  "career_psychology": {
+    "summary": "Niche engineering specialty with strong demand and above-average salaries ($85K-$120K median). PE licensure is a career-defining milestone. The field offers meaningful work protecting lives but involves pressure from code complexity and liability.",
+    "career_path": [
+      "Bachelor's degree in Fire Protection Engineering (only 3 ABET-accredited programs in US: UMD, WPI, OSU)",
+      "Or related engineering degree (mechanical, civil) with fire protection focus",
+      "Engineer-in-Training (EIT) — pass FE exam",
+      "Junior Fire Protection Engineer (0-4 years)",
+      "PE in Fire Protection (after 4 years experience)",
+      "Senior Fire Protection Engineer / Project Manager",
+      "Principal Engineer / Associate / Department Manager",
+      "VP of Engineering / Partner (consulting firms)"
+    ],
+    "salary_range": {
+      "entry_level": "$60,000 - $75,000/year",
+      "mid_level": "$85,000 - $110,000/year",
+      "senior": "$110,000 - $150,000/year",
+      "principal_director": "$140,000 - $200,000+/year",
+      "median": "$85,000 - $120,000/year (varies by source)"
+    },
+    "fears": [
+      "Design failure leading to fire deaths and legal liability",
+      "Missing a code requirement in plan review",
+      "PE license revocation due to errors",
+      "Keeping up with 300+ NFPA standards and revision cycles",
+      "Scope creep and project budget overruns"
+    ],
+    "motivation": [
+      "Directly protecting lives and property from fire",
+      "Intellectually challenging work combining engineering and codes",
+      "Niche specialty with high demand and low competition",
+      "Above-average engineering salaries with PE premium",
+      "Variety of project types (buildings, industrial, healthcare)"
+    ],
+    "burnout_factors": [
+      "Complex regulatory landscape with constantly evolving codes",
+      "High liability and pressure of life-safety responsibilities",
+      "Deadline pressure from construction schedules",
+      "Plan review backlogs in high-demand markets",
+      "Limited number of FPE programs creating talent shortages"
+    ]
+  },
+  "community": {
+    "summary": "Tight-knit professional community centered around SFPE (5,000+ members, 120+ chapters worldwide) and NFPA, with regular conferences, technical publications, and local chapter networking.",
+    "associations": [
+      {
+        "name": "Society of Fire Protection Engineers (SFPE)",
+        "url": "https://www.sfpe.org/",
+        "description": "World's leading professional society for FPE, 5,000+ members, 120+ chapters, 20+ student chapters"
+      },
+      {
+        "name": "National Fire Protection Association (NFPA)",
+        "url": "https://www.nfpa.org/",
+        "description": "Publisher of 300+ fire safety codes/standards, certifications, training"
+      },
+      {
+        "name": "National Society of Professional Engineers (NSPE)",
+        "description": "Broader PE advocacy, joint positions with SFPE on FPE qualifications"
+      },
+      {
+        "name": "NICET — National Institute for Certification in Engineering Technologies",
+        "description": "Technical certifications for fire protection system designers and inspectors"
+      }
+    ],
+    "online_communities": [
+      "SFPE local chapter events and webinars",
+      "r/fireprotection — Reddit community",
+      "LinkedIn SFPE and fire protection groups",
+      "NFPA online learning and forums"
+    ],
+    "conferences": [
+      "SFPE Annual Conference & Expo (400+ professionals globally)",
+      "SFPE Europe Conference on Fire Safety Engineering",
+      "NFPA Conference & Expo",
+      "SFPE International Performance-Based Design Conference"
+    ],
+    "key_publication": "SFPE Handbook of Fire Protection Engineering — authoritative reference"
+  },
+  "market": {
+    "summary": "Niche but growing specialty with strong demand due to limited FPE graduates and increasing code complexity. Median salaries range $85K-$120K. PE licensure significantly boosts earning potential (36% premium).",
+    "growth_rate": "4% projected growth (aligned with Health & Safety Engineers category)",
+    "salary_market": {
+      "entry_level": "$60,000 - $75,000/year",
+      "average": "$85,000 - $100,000/year",
+      "median_senior": "$119,822/year",
+      "75th_percentile": "$150,000+/year"
+    },
+    "top_employers": [
+      "Fire protection engineering consulting firms (Jensen Hughes, Arup, Rolf Jensen)",
+      "Large MEP firms with FPE divisions",
+      "Insurance companies (FM Global, Hartford)",
+      "Government agencies (fire marshals, DOD, GSA)",
+      "Industrial facilities (oil & gas, manufacturing, data centers)"
+    ],
+    "market_trends": [
+      "Talent shortage due to only 3 ABET-accredited FPE programs in US",
+      "2026 NFPA code updates requiring PE oversight for risk assessments",
+      "Growing energy storage (lithium-ion) fire safety demand",
+      "Mass timber construction creating new fire engineering challenges",
+      "Data center boom driving fire suppression system demand"
+    ]
+  },
+  "quality_score": 0.76,
+  "sources_count": 28,
+  "verified_sources": 9,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Fire Prevention Protection Engineers USA daily work tasks fire safety design",
+      "sources": [
+        {"title": "O*NET — Fire-Prevention and Protection Engineers", "url": "https://www.onetonline.org/link/summary/17-2111.02"},
+        {"title": "CareerOneStop — Occupation Profile", "url": "https://www.careeronestop.org/Toolkit/Careers/Occupations/occupation-profile.aspx?keyword=Fire-Prevention+and+Protection+Engineers&location=US&onetcode=17-2111.02"},
+        {"title": "OwlGuru — Day In The Life", "url": "https://www.owlguru.com/day-in-life-of-fire-prevention-and-protection-engineers/"}
+      ]
+    },
+    {
+      "query": "Fire Protection Engineers USA NFPA codes licensing PE certification",
+      "sources": [
+        {"title": "NCEES — PE Fire Protection", "url": "https://ncees.org/exams/pe-exam/fire-protection/"},
+        {"title": "SFPE — Licensing & PE Exam", "url": "https://www.sfpe.org/advocacy-qualifications/licensure/licensing--pe-exam-review"},
+        {"title": "NFPA 855 Changes 2026", "url": "https://www.telgian.com/nfpa-855-changes-in-2026/"},
+        {"title": "2026 NFPA Code Updates", "url": "https://profireandsafety.com/blogs/news/update-nfpa-code-2026"}
+      ]
+    },
+    {
+      "query": "Fire Protection Engineers USA software tools BIM sprinkler design",
+      "sources": [
+        {"title": "SprinkCAD", "url": "https://www.sprinkcad.com/"},
+        {"title": "Enginerio — AutoSPRINK vs AutoCAD", "url": "https://enginerio.com/blog/software-to-design-fire-sprinkler-systems/"},
+        {"title": "MicroBIM Fire", "url": "https://www.microbim.com/"},
+        {"title": "VERTEX — Fire Protection Design and BIM", "url": "https://vertexeng.com/insights/fire-protection-design-and-bim/"}
+      ]
+    },
+    {
+      "query": "Fire Protection Engineers terminology NFPA sprinkler suppression codes",
+      "sources": [
+        {"title": "NFPA 13 Standard", "url": "https://www.nfpa.org/codes-and-standards/nfpa-13-standard-development/13"},
+        {"title": "NY Engineers — NFPA 13 Overview", "url": "https://www.ny-engineers.com/blog/overview-of-nfpa-13-the-standard-for-fire-sprinkler-systems"},
+        {"title": "NFPA Complete List of Standards", "url": "https://www.nfpa.org/for-professionals/codes-and-standards/list-of-codes-and-standards"}
+      ]
+    },
+    {
+      "query": "Fire Protection Engineers USA career path salary burnout",
+      "sources": [
+        {"title": "PayScale — FPE Salary 2026", "url": "https://www.payscale.com/research/US/Job=Fire_Protection_Engineer/Salary"},
+        {"title": "SFPE — FPE Career Salary Facts", "url": "https://www.sfpe.org/career/fpe-career-salary-facts"},
+        {"title": "EHS Careers — How to Become FPE", "url": "https://ehscareers.com/employer-blog/become-fire-protection-engineer/"}
+      ]
+    },
+    {
+      "query": "Fire Protection Engineers USA associations SFPE NFPA conferences",
+      "sources": [
+        {"title": "SFPE Home", "url": "https://www.sfpe.org/home"},
+        {"title": "SFPE About", "url": "https://www.sfpe.org/about-sfpe/about"},
+        {"title": "SFPE Wikipedia", "url": "https://en.wikipedia.org/wiki/Society_of_Fire_Protection_Engineers"}
+      ]
+    },
+    {
+      "query": "Fire Protection Engineers USA job market outlook demand salary trends",
+      "sources": [
+        {"title": "Zippia — FPE Job Outlook", "url": "https://www.zippia.com/fire-protection-engineer-jobs/trends/"},
+        {"title": "Salary.com — FPE Salary 2026", "url": "https://www.salary.com/research/salary/listing/fire-protection-engineer-salary"},
+        {"title": "Recruiter.com — FPE Career Outlook", "url": "https://www.recruiter.com/careers/fire-prevention-and-protection-engineers/outlook/"}
+      ]
+    }
+  ]
+}

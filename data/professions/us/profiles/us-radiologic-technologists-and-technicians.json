@@ -1,0 +1,239 @@
+{
+  "profession_id": "us-radiologic-technologists-and-technicians",
+  "profession_name": "Radiologic Technologists and Technicians",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Radiologic technologists perform diagnostic imaging examinations including X-rays, CT scans, fluoroscopy, and mammography. They position patients, operate imaging equipment, ensure image quality, and follow radiation safety protocols in hospitals, outpatient centers, and physician offices.",
+    "typical_tasks": [
+      "Position patients for X-ray, CT, and fluoroscopy examinations",
+      "Operate radiographic and CT equipment to produce diagnostic images",
+      "Adjust equipment settings based on patient size, anatomy, and clinical indication",
+      "Evaluate image quality and repeat if necessary",
+      "Follow radiation safety protocols including ALARA principles",
+      "Administer contrast media for CT and fluoroscopy studies",
+      "Maintain patient records and image documentation in PACS",
+      "Perform daily quality control checks on equipment",
+      "Assist radiologists during fluoroscopic and interventional procedures",
+      "Educate patients about examination procedures",
+      "Monitor patients for adverse reactions to contrast",
+      "Maintain radiation exposure records"
+    ],
+    "key_documents": [
+      "Imaging examination requisitions/orders",
+      "Image quality assessment records",
+      "Radiation dose reports (DLP, CTDIvol)",
+      "Equipment QC logs",
+      "Contrast administration records",
+      "Patient allergy/consent documentation",
+      "PACS image archives"
+    ],
+    "deadlines": {
+      "daily_qa": "Equipment QC before first patient each morning",
+      "stat_exams": "Immediate results for emergency/STAT orders",
+      "routine_exams": "Images available within 1-2 hours for reading",
+      "arrt_renewal": "Annual with biennial CE (24 credits/2 years)",
+      "dose_tracking": "ACR Dose Index Registry submissions per policy"
+    },
+    "seasonality": "ER imaging increases with seasonal accidents, sports injuries, and flu-related complications. Screening mammography campaigns may create seasonal peaks. Otherwise relatively steady year-round.",
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/radiologic-technologists.htm", "fact": "BLS Occupational Outlook Handbook for radiologic and MRI technologists"},
+      {"url": "https://www.bls.gov/oes/current/oes292034.htm", "fact": "BLS OES data for radiologic technologists SOC 29-2034.00"}
+    ]
+  },
+  "regulatory": {
+    "summary": "ARRT certification required in most states. State licensure required in majority of states. Must complete JRCERT-accredited program. Radiation dose monitoring and safety regulations under state and federal law.",
+    "key_laws": [
+      {
+        "name": "Mammography Quality Standards Act (MQSA)",
+        "detail": "FDA regulation requiring certification of mammography facilities and qualified personnel",
+        "reference": "21 CFR Part 900"
+      },
+      {
+        "name": "State Radiation Control Programs",
+        "detail": "State licensing and inspection of radiographic equipment and personnel",
+        "status": "Active in all states"
+      },
+      {
+        "name": "10 CFR Part 20",
+        "detail": "NRC radiation protection standards (for facilities with NRC-regulated sources)",
+        "status": "Active"
+      },
+      {
+        "name": "HIPAA",
+        "detail": "Patient imaging data and PHI protection",
+        "reference": "45 CFR Parts 160, 164"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Associate's degree (minimum) from JRCERT-accredited program",
+        "ARRT R.T.(R) certification — Registered Technologist in Radiography",
+        "State licensure required in most states",
+        "24 CE credits every 2 years for ARRT renewal",
+        "Advanced certifications available: CT, mammography, fluoroscopy, bone densitometry",
+        "CPR certification"
+      ],
+      "certifying_bodies": [
+        "ARRT — American Registry of Radiologic Technologists",
+        "JRCERT — Joint Review Committee on Education in Radiologic Technology",
+        "State radiation control programs"
+      ]
+    },
+    "penalties": "State can revoke license for unsafe practices. MQSA violations can shut down mammography facilities. ARRT certification loss for ethical violations. Facilities cited for radiation safety violations.",
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/radiologic-technologists.htm", "fact": "BLS: ARRT certification required, associate's degree minimum"},
+      {"url": "https://ccitraining.edu/blog/radiology-technician-salary-and-job-outlook-in-the-usa/", "fact": "2025 radiology technician certification and salary guide"}
+    ]
+  },
+  "tools": {
+    "summary": "Radiologic technologists operate X-ray, CT, fluoroscopy, and mammography equipment from manufacturers like GE, Siemens, Philips, and Canon. PACS systems store and distribute images. AI-assisted tools increasingly used for image quality and dose optimization.",
+    "primary_software": [
+      {"name": "X-ray systems (GE, Siemens, Philips, Canon)", "purpose": "General radiographic imaging (portable and fixed)"},
+      {"name": "CT scanners (GE Revolution, Siemens SOMATOM, Philips Incisive)", "purpose": "Cross-sectional imaging for diagnostics"},
+      {"name": "Digital fluoroscopy systems", "purpose": "Real-time X-ray imaging for GI, cardiac, interventional procedures"},
+      {"name": "Mammography systems (Hologic, GE, Siemens)", "purpose": "Breast imaging including 3D tomosynthesis"},
+      {"name": "PACS (Sectra, GE Centricity, Philips IntelliSpace)", "purpose": "Picture Archiving and Communication System for image storage"},
+      {"name": "RIS (Radiology Information System)", "purpose": "Scheduling, reporting, and workflow management"},
+      {"name": "Dose tracking software (DoseWatch, Radimetrics)", "purpose": "Radiation dose monitoring and optimization"}
+    ],
+    "pain_points": [
+      "Aging equipment in some facilities",
+      "PACS/RIS integration challenges",
+      "Portable equipment limitations in ER/ICU",
+      "Keeping up with rapidly evolving CT technology",
+      "Dose optimization balancing image quality"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/radiologic-technologists.htm", "fact": "BLS describes radiologic equipment and technology use"},
+      {"url": "https://research.com/careers/radiologic-technology-careers", "fact": "2026 radiologic technology career overview with equipment context"}
+    ]
+  },
+  "terminology": {
+    "summary": "Radiologic technologists use medical imaging, radiation physics, and anatomy terminology covering positioning, exposure parameters, and image quality.",
+    "key_terms": [
+      {"term": "kVp", "meaning": "Kilovoltage Peak — controls X-ray beam penetration"},
+      {"term": "mAs", "meaning": "Milliampere-seconds — controls X-ray beam quantity (radiation dose)"},
+      {"term": "ALARA", "meaning": "As Low As Reasonably Achievable — radiation safety principle"},
+      {"term": "PACS", "meaning": "Picture Archiving and Communication System"},
+      {"term": "CR/DR", "meaning": "Computed Radiography / Digital Radiography — digital X-ray systems"},
+      {"term": "Collimation", "meaning": "Restricting X-ray beam to area of interest to reduce dose"},
+      {"term": "AP/PA/Lateral", "meaning": "Standard radiographic projections (front/back/side)"},
+      {"term": "Contrast media", "meaning": "Injected/ingested agents to enhance visibility of structures"},
+      {"term": "CTDIvol", "meaning": "CT Dose Index — measure of radiation dose per CT scan"},
+      {"term": "DLP", "meaning": "Dose Length Product — total radiation dose for CT examination"},
+      {"term": "Artifact", "meaning": "Unwanted image degradation from motion, metal, or technique"},
+      {"term": "Window/Level", "meaning": "Image display settings for viewing different tissue types"},
+      {"term": "Fluoro", "meaning": "Fluoroscopy — real-time X-ray imaging"},
+      {"term": "C-arm", "meaning": "Mobile fluoroscopy unit for OR and bedside procedures"},
+      {"term": "Tomo/DBT", "meaning": "Tomosynthesis/Digital Breast Tomosynthesis (3D mammography)"}
+    ],
+    "common_abbreviations": ["RT(R)", "ARRT", "CT", "MRI", "PACS", "RIS", "kVp", "mAs", "MQSA", "ACR", "ASRT"],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/radiologic-technologists.htm", "fact": "BLS radiologic technologist scope and terminology"},
+      {"url": "https://www.allalliedhealthschools.com/radiology-technician/salary/", "fact": "Radiology technologist career and terminology context"}
+    ]
+  },
+  "career_psychology": {
+    "summary": "Radiologic technologists have a clear certification advancement path with specialty credentials (CT, MRI, mammography). Median salary $77,660 with good growth outlook. Physical demands and radiation exposure are ongoing concerns.",
+    "career_levels": [
+      {"level": "Entry RT(R)", "salary_range": "$52,000-$62,000", "responsibilities": "General X-ray, portable imaging, fluoroscopy assistance"},
+      {"level": "Experienced RT with CT specialty", "salary_range": "$65,000-$80,000", "responsibilities": "CT scanning, contrast administration, complex positioning"},
+      {"level": "Senior/Multi-modality Tech", "salary_range": "$80,000-$100,000", "responsibilities": "Multiple modalities (CT+MRI+fluoro), student supervision, QA"},
+      {"level": "Lead Technologist/Manager", "salary_range": "$90,000-$120,000+", "responsibilities": "Department management, protocol development, equipment procurement"}
+    ],
+    "main_fears": [
+      "Cumulative radiation exposure over career",
+      "Imaging wrong body part or wrong patient",
+      "Contrast reaction or extravasation",
+      "MQSA violations in mammography",
+      "Equipment malfunction affecting patient care"
+    ],
+    "burnout_causes": [
+      "Physical demands of positioning patients and moving portable equipment",
+      "High patient volume in busy ER departments",
+      "Night/weekend/on-call shifts",
+      "Radiation exposure anxiety",
+      "Repetitive nature of routine radiography",
+      "Challenging patients (combative, confused, bariatric)"
+    ],
+    "growth_motivation": [
+      "Advanced ARRT credentials (CT, MRI, mammography, interventional)",
+      "Modality specialist positions",
+      "Management/supervisory roles",
+      "Education/clinical instructor track",
+      "Vendor applications specialist",
+      "Medical dosimetry or radiology PA pathway"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/radiologic-technologists.htm", "fact": "BLS: median $77,660 (May 2024), 5% growth 2024-2034"},
+      {"url": "https://www.trustedhealth.com/allied-career-guide/radiologic-tech/salary-guide", "fact": "Radiologic tech salary guide with career progression"}
+    ]
+  },
+  "community": {
+    "summary": "ASRT (American Society of Radiologic Technologists) is the primary professional organization with 150,000+ members. ARRT provides certification. Strong online presence on Reddit r/Radiology.",
+    "professional_associations": [
+      {"name": "ASRT — American Society of Radiologic Technologists", "url": "https://www.asrt.org", "membership_value": "CE courses, advocacy, publications, annual conference, career resources", "members": "150,000+", "mandatory": false},
+      {"name": "ARRT — American Registry of Radiologic Technologists", "url": "https://www.arrt.org", "membership_value": "Certification in 15+ disciplines, CE tracking", "mandatory": true},
+      {"name": "ACR — American College of Radiology", "url": "https://www.acr.org", "membership_value": "Practice guidelines, accreditation programs, dose registry", "mandatory": false}
+    ],
+    "conferences": [
+      {"name": "RSNA Annual Meeting", "detail": "World's largest radiology conference, major vendor exhibits and education", "frequency": "Annual (December)"},
+      {"name": "ASRT Annual Conference", "detail": "Radiologic technology education and networking", "frequency": "Annual"},
+      {"name": "AHRA Annual Meeting", "detail": "Radiology management focus", "frequency": "Annual"}
+    ],
+    "online_communities": [
+      "Reddit r/Radiology (large, active community)",
+      "Reddit r/RadTech",
+      "ASRT online community",
+      "Facebook radiology technologist groups",
+      "LinkedIn imaging professionals"
+    ],
+    "publications": [
+      "Radiologic Technology (ASRT journal)",
+      "ASRT Scanner newsletter",
+      "Radiology Today"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/radiologic-technologists.htm", "fact": "BLS radiologic technologist professional context"},
+      {"url": "https://www.asrt.org", "fact": "ASRT as primary professional society with 150,000+ members"}
+    ]
+  },
+  "market": {
+    "summary": "Median salary $77,660 (BLS May 2024). 5% growth projected 2024-2034 with ~15,400 annual openings. About 235,200 employed. One of the largest medical imaging professions.",
+    "salary_by_level": {
+      "entry": "$52,000-$62,000",
+      "mid_ct_specialty": "$65,000-$80,000",
+      "senior_multi_modality": "$80,000-$100,000",
+      "lead_manager": "$90,000-$120,000+"
+    },
+    "geographic_variation": {
+      "national_median": "$77,660 (BLS May 2024)",
+      "california": "Highest paying state (~$100,000+)",
+      "lowest_10_percent": "Less than $52,360",
+      "highest_10_percent": "More than $106,990"
+    },
+    "estimated_practitioners": "235,200 radiologic technologists and technicians (BLS 2024)",
+    "job_outlook": "5% growth 2024-2034, faster than average. ~15,400 annual openings.",
+    "work_arrangements": {
+      "dominant": "W-2 employees at hospitals (55%+), outpatient imaging centers, physician offices",
+      "travel": "Travel RT positions with premium pay through staffing agencies",
+      "shift_patterns": "Evenings, weekends, and overnight shifts common, especially in hospitals"
+    },
+    "market_trends": [
+      "AI-assisted image interpretation and quality optimization",
+      "Point-of-care ultrasound expanding (some RTs cross-training)",
+      "Portable/mobile imaging growing in ambulatory settings",
+      "Dual-energy CT and spectral imaging creating advanced skill requirements",
+      "Dose reduction technology reducing cumulative technologist exposure"
+    ],
+    "sources": [
+      {"url": "https://www.bls.gov/ooh/healthcare/radiologic-technologists.htm", "fact": "BLS: 235,200 employed, median $77,660, 5% growth 2024-2034, 15,400 annual openings"},
+      {"url": "https://www.bls.gov/oes/current/oes292034.htm", "fact": "BLS OES current employment and wage statistics"}
+    ]
+  },
+  "quality_score": 0.55,
+  "sources_count": 12,
+  "verified_sources": 7,
+  "confidence": "verified",
+  "raw_responses": []
+}

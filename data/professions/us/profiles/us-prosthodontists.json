@@ -1,0 +1,304 @@
+{
+  "profession_id": "us-prosthodontists",
+  "profession_name": "Prosthodontists",
+  "country": "US",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Prosthodontists evaluate patients' oral health, design and fabricate dental prostheses (crowns, bridges, dentures, implant-supported restorations), and perform complex restorative procedures. They work in private practices, academic settings, and hospital dental departments.",
+    "typical_tasks": [
+      "Examine patients and assess oral health needs for prosthetic restoration",
+      "Take impressions and measurements using face bows, dental articulators, and intraoral scanners",
+      "Design and fabricate dental prostheses (crowns, bridges, dentures, implant-supported prostheses)",
+      "Place and adjust permanent fixtures including implant-supported restorations",
+      "Fit removable prostheses (complete/partial dentures) with adjustments",
+      "Interpret diagnostic imaging (X-rays, CBCT scans)",
+      "Collaborate with dental technicians and lab workers on prosthesis fabrication",
+      "Consult with general dentists and other specialists on complex cases",
+      "Perform digital workflow tasks using CAD/CAM systems",
+      "Maintain patient records and process insurance documentation"
+    ],
+    "key_documents": [
+      "Patient treatment plans and consent forms",
+      "Dental prosthesis prescriptions and lab orders",
+      "Insurance pre-authorization and claims forms",
+      "HIPAA-compliant patient records (electronic health records)",
+      "Diagnostic imaging reports (X-rays, CBCT)",
+      "Referral letters to/from general dentists and specialists",
+      "CE documentation and board certification records"
+    ],
+    "deadlines": {
+      "emergency_cases": "Same-day for dental trauma or acute prosthetic failure",
+      "lab_fabrication": "1-3 weeks typical turnaround for custom prostheses",
+      "insurance_claims": "Within 30-90 days of service depending on payer",
+      "ce_requirements": "125 CE credits every 5 years for board certification",
+      "license_renewal": "Every 1-3 years depending on state"
+    },
+    "seasonality": "Relatively stable year-round. Slight increase in elective cosmetic procedures before holidays and summer. Insurance-driven rush at year-end as patients use remaining benefits."
+  },
+  "regulatory": {
+    "summary": "Prosthodontists must hold a DDS/DMD degree plus 3-year specialty residency. Licensing is state-by-state through state dental boards. Board certification through ABP is voluntary but highly valued. 2026 sees the new Interstate Dental Compact and updated ADA CERP standards.",
+    "key_laws": [
+      {
+        "name": "State Dental Practice Acts (vary by state)",
+        "url": "https://www.ada.org/resources/careers/licensure/dental-licensure-by-state-map",
+        "status": "Active — each state regulates independently"
+      },
+      {
+        "name": "American Board of Prosthodontics (ABP) Certification",
+        "url": "https://www.abpros.org/",
+        "status": "Active — new alternate pathway for 2026 certification"
+      },
+      {
+        "name": "Dentist and Dental Hygienist Compact (Interstate)",
+        "url": "https://www.ada.org",
+        "status": "10 states enacted as of March 2025"
+      },
+      {
+        "name": "ADA CERP Standards Update",
+        "url": "https://ce.edu.dental/blog/2026-state-ce-requirements-what-changed-for-dentis/",
+        "status": "Effective June 2026 — reduced from 14 to 5 standards"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "DDS or DMD degree from accredited dental school",
+        "3-year ADA-accredited prosthodontics residency",
+        "National Board Dental Examination (NBDE) or INBDE",
+        "State/regional clinical licensing examination",
+        "State dental license (renewed every 1-3 years)",
+        "Continuing education (varies by state, typically 20-40 hours/year)",
+        "Board certification through ABP (voluntary but recommended)"
+      ]
+    },
+    "penalties": "Practicing without a license: varies by state — misdemeanor to felony charges, fines up to $10,000+, loss of license. HIPAA violations: $100-$50,000 per incident. Malpractice claims average $200K+ settlements in dental specialties.",
+    "controlling_bodies": [
+      "State Dental Boards (licensing authority)",
+      "American Board of Prosthodontics (ABP — voluntary certification)",
+      "American Dental Association (ADA — standards and CE accreditation)",
+      "DEA (for practitioners prescribing controlled substances)"
+    ]
+  },
+  "tools": {
+    "summary": "Prosthodontists heavily rely on CAD/CAM digital workflow, intraoral scanners, CBCT imaging, and practice management software. Digital dentistry is now standard with nearly all labs using CAD/CAM.",
+    "primary_tools": [
+      {
+        "name": "Intraoral Scanners (iTero, 3Shape TRIOS, Medit)",
+        "description": "Digital impressions replacing traditional molds — standard in modern prosthodontic practice"
+      },
+      {
+        "name": "CAD/CAM Milling Systems (CEREC, exocad, 3Shape)",
+        "description": "Computer-aided design and manufacturing for crowns, bridges, inlays, onlays, and full-arch prostheses"
+      },
+      {
+        "name": "CBCT Imaging (Cone Beam CT)",
+        "description": "3D diagnostic imaging for implant planning and complex case assessment"
+      },
+      {
+        "name": "3D Printers (surgical guides, temporary prostheses)",
+        "description": "Additive manufacturing for surgical guides, models, and temporary restorations"
+      },
+      {
+        "name": "Practice Management Software (Dentrix, Eaglesoft, Open Dental)",
+        "description": "Patient scheduling, billing, insurance claims, and EHR management"
+      }
+    ],
+    "secondary_tools": [
+      "Digital Smile Design (DSD) software for cosmetic planning",
+      "PACS for managing diagnostic images",
+      "Dental lab management software (LabStar, Labtrac)",
+      "Patient communication platforms (Weave, RevenueWell)",
+      "Dental implant planning software (Nobel Clinician, BlueSkyPlan)"
+    ],
+    "pain_points": [
+      "High cost of CAD/CAM equipment ($100K-$200K+ investment)",
+      "Interoperability issues between different digital systems and file formats",
+      "Learning curve for digital workflows — transitioning from analog",
+      "Insurance reimbursement not keeping pace with cost of advanced materials",
+      "Lab communication challenges in digital workflow handoffs"
+    ]
+  },
+  "terminology": {
+    "summary": "Prosthodontics uses standardized terminology from the Glossary of Prosthodontic Terms (GPT-10, 2023), combined with dental abbreviations and clinical jargon.",
+    "terms": {
+      "FPD": "Fixed Partial Denture (commonly called a 'bridge')",
+      "RPD": "Removable Partial Denture",
+      "PFM": "Porcelain-Fused-to-Metal crown",
+      "CAD/CAM": "Computer-Aided Design / Computer-Aided Manufacturing",
+      "CBCT": "Cone Beam Computed Tomography",
+      "implant-supported": "Prosthesis anchored to dental implants rather than natural teeth",
+      "abutment": "Connector piece between dental implant and prosthetic crown",
+      "occlusion": "How upper and lower teeth come together (bite relationship)",
+      "TMD": "Temporomandibular Disorder (jaw joint dysfunction)",
+      "edentulous": "Having no natural teeth (complete tooth loss)",
+      "full-arch": "Prosthesis replacing all teeth in upper or lower jaw",
+      "zirconia": "High-strength ceramic material used for crowns and frameworks",
+      "e.max": "Lithium disilicate ceramic — popular for aesthetic restorations",
+      "prep": "Tooth preparation — shaping tooth to receive a crown or veneer",
+      "impression": "Mold of teeth/oral structures for fabricating prostheses",
+      "GPT": "Glossary of Prosthodontic Terms (official terminology reference)",
+      "IOS": "Intraoral Scanner"
+    }
+  },
+  "career_psychology": {
+    "summary": "Long training path (11+ years) but among the highest-earning dental specialties ($216K-$429K). Rewarding specialty with visible patient transformations. Relatively small specialty with ~3,500 active prosthodontists in the US.",
+    "career_path": [
+      "Bachelor's degree (4 years — pre-dental sciences)",
+      "Dental school — DDS or DMD (4 years)",
+      "Prosthodontics residency (3 years — ADA-accredited)",
+      "Associate Prosthodontist (early career, 0-5 years)",
+      "Board Certification through ABP (optional but prestigious)",
+      "Practice Owner / Senior Associate (5-15 years)",
+      "Academic faculty / Program Director / Department Chair"
+    ],
+    "salary_range": {
+      "entry_level": "$180,000 - $220,000/year (new graduate)",
+      "mid_career": "$220,000 - $330,000/year (5-10 years)",
+      "senior": "$330,000 - $429,000+/year (practice owners, high-volume)",
+      "average_2026": "$222,972 - $330,066/year (varies by source)"
+    },
+    "fears": [
+      "Malpractice lawsuits from prosthetic failures or complications",
+      "High student debt ($300K-$500K average for dental school + residency)",
+      "Technology becoming obsolete quickly — constant need to upgrade",
+      "Competition from general dentists doing more prosthodontic work",
+      "Patient dissatisfaction with cosmetic outcomes"
+    ],
+    "motivation": [
+      "Transformative impact on patients' quality of life (eating, speaking, confidence)",
+      "Among the highest-paid dental specialties",
+      "Intellectual challenge of complex treatment planning",
+      "Blend of art and science in prosthesis design",
+      "Growing demand driven by aging population and implant awareness"
+    ],
+    "burnout_factors": [
+      "Extremely long training pathway (11+ years before independent practice)",
+      "High student debt burden relative to starting salary",
+      "Precision-demanding work with no margin for error",
+      "Insurance administrative burden and reimbursement battles",
+      "Isolation — small specialty with few peers in most practice settings"
+    ]
+  },
+  "community": {
+    "summary": "Active professional community centered around the American College of Prosthodontists (ACP) and American Prosthodontic Society (APS), with multiple annual conferences and growing digital presence.",
+    "associations": [
+      {
+        "name": "American College of Prosthodontists (ACP)",
+        "url": "https://www.prosthodontics.org",
+        "type": "Primary professional organization for prosthodontists"
+      },
+      {
+        "name": "American Prosthodontic Society (APS)",
+        "url": "https://www.prostho.org",
+        "type": "Scientific society focused on prosthodontic education"
+      },
+      {
+        "name": "American Academy of Fixed Prosthodontics (AAFP)",
+        "url": "https://www.fixedprosthodontics.org",
+        "type": "Subspecialty organization for fixed prosthodontics"
+      },
+      {
+        "name": "American Board of Prosthodontics (ABP)",
+        "url": "https://www.abpros.org",
+        "type": "Certifying board for prosthodontic specialists"
+      }
+    ],
+    "events": [
+      "ACP Annual Session (October, major national conference)",
+      "APS Annual Meeting (February, Chicago — Swissôtel)",
+      "AAFP Annual Scientific Session (February, Chicago)",
+      "ADA SmileCon (annual, rotating cities)",
+      "ICP — International College of Prosthodontists conferences"
+    ],
+    "online_communities": [
+      "Dentaltown forums — prosthodontics section",
+      "Reddit r/dentistry",
+      "ACP Connect (members-only online community)",
+      "Facebook groups for prosthodontists and dental implant professionals"
+    ]
+  },
+  "market": {
+    "summary": "Strong and growing demand for prosthodontists driven by aging population, implant awareness, and digital dentistry adoption. Over 1,200 current job openings. Salary $216K-$429K with top earners exceeding $429K.",
+    "job_outlook": {
+      "growth_rate": "4% projected growth for dentists overall (BLS)",
+      "current_openings": "1,200+ job openings across the US (2026)",
+      "total_practitioners": "~3,500 active prosthodontists in the US",
+      "demand_drivers": "Aging population, implant technology adoption, cosmetic awareness"
+    },
+    "salary_market": {
+      "min": "$180,000",
+      "avg": "$222,972 - $330,066",
+      "max": "$429,000+",
+      "top_paying_states": ["District of Columbia", "California", "Massachusetts"]
+    },
+    "market_trends": [
+      "Digital dentistry and CAD/CAM becoming universal in prosthodontic practice",
+      "Full-arch implant restorations (All-on-4/All-on-X) driving demand",
+      "Interstate Dental Compact enabling easier multi-state practice",
+      "Nanotechnology and smart materials emerging in denture fabrication",
+      "Growing patient demand for aesthetic and implant-based restorations",
+      "ADA CERP simplification (June 2026) reducing CE compliance burden"
+    ]
+  },
+  "quality_score": 0.72,
+  "sources_count": 30,
+  "verified_sources": 8,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Prosthodontists USA 2025 2026 daily work tasks responsibilities typical day",
+      "sources": [
+        {"title": "CareerExplorer — Prosthodontist", "url": "https://www.careerexplorer.com/careers/prosthodontist/"},
+        {"title": "O*NET — 29-1024.00 Prosthodontists", "url": "https://www.onetonline.org/link/summary/29-1024.00"},
+        {"title": "OwlGuru — Day In The Life", "url": "https://www.owlguru.com/day-in-life-of-prosthodontists/"}
+      ]
+    },
+    {
+      "query": "Prosthodontists USA 2025 2026 licensing regulations state board requirements penalties",
+      "sources": [
+        {"title": "ADA Dental Licensure by State", "url": "https://www.ada.org/resources/careers/licensure/dental-licensure-by-state-map"},
+        {"title": "ABP — American Board of Prosthodontics", "url": "https://www.abpros.org/"},
+        {"title": "2026 State CE Requirements Changes", "url": "https://ce.edu.dental/blog/2026-state-ce-requirements-what-changed-for-dentis/"}
+      ]
+    },
+    {
+      "query": "Prosthodontists USA software tools CAD CAM digital dentistry technology 2025 2026",
+      "sources": [
+        {"title": "Dental Plus USA — CAD CAM Technology", "url": "https://www.dentalplususa.com/blogs/news/cad-cam-technology-in-dentistry"},
+        {"title": "3Shape — Dental Software", "url": "https://www.3shape.com/en-us/blog/digital-dentistry/dental-software"},
+        {"title": "Digital Dentistry in Prosthodontics", "url": "https://fdentalcenter.com/digital-dentistry-in-modern-prosthodontic/"}
+      ]
+    },
+    {
+      "query": "Prosthodontists dental terminology jargon abbreviations slang professional",
+      "sources": [
+        {"title": "ADA Glossary of Dental Terms", "url": "https://www.ada.org/publications/cdt/glossary-dental-terms"},
+        {"title": "GPT-10 Glossary of Prosthodontic Terms", "url": "https://pubmed.ncbi.nlm.nih.gov/37914441/"}
+      ]
+    },
+    {
+      "query": "Prosthodontists USA career path salary 2025 2026 burnout motivation",
+      "sources": [
+        {"title": "ACP — Careers in Prosthodontics", "url": "https://www.prosthodontics.org/careers/careers-in-prosthodontics/"},
+        {"title": "BLS — Dentists Outlook", "url": "https://www.bls.gov/ooh/healthcare/dentists.htm"},
+        {"title": "ZipRecruiter Prosthodontist Salary 2026", "url": "https://www.ziprecruiter.com/Salaries/Prosthodontist-Salary"},
+        {"title": "PayScale Prosthodontist 2026", "url": "https://www.payscale.com/research/US/Job=Prosthodontist/Salary"}
+      ]
+    },
+    {
+      "query": "Prosthodontists USA professional associations communities forums conferences 2025 2026",
+      "sources": [
+        {"title": "APS Annual Meeting", "url": "https://www.prostho.org/annual_meeting/"},
+        {"title": "ACP Digital Dentistry Symposium 2025", "url": "https://www.prosthodontics.org/continuing-education/2025-digital-dentistry-symposium/"},
+        {"title": "AAFP Annual Meeting", "url": "https://www.fixedprosthodontics.org/annual_meeting/"}
+      ]
+    },
+    {
+      "query": "Prosthodontists USA job market trends demand salary outlook 2025 2026",
+      "sources": [
+        {"title": "BLS Dentists Occupational Outlook", "url": "https://www.bls.gov/ooh/healthcare/dentists.htm"},
+        {"title": "HireSmiles Prosthodontist Salary Report 2026", "url": "https://hiresmiles.com/salary-report/prosthodontist-salary-in-us/"},
+        {"title": "Salary.com Prosthodontist 2026", "url": "https://www.salary.com/research/salary/recruiting/prosthodontist-salary"}
+      ]
+    }
+  ]
+}

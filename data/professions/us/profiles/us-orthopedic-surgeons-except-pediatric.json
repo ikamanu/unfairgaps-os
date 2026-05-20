@@ -1,0 +1,310 @@
+{
+  "profession_id": "us-orthopedic-surgeons-except-pediatric",
+  "profession_name": "Orthopedic Surgeons, Except Pediatric",
+  "tier": "A",
+  "daily_reality": {
+    "summary": "Orthopedic surgeons treat musculoskeletal conditions through surgery and nonsurgical care. Split between OR days (joint replacements, fracture repairs, arthroscopy) and clinic days (patient evaluations, follow-ups). On-call for trauma. Over 1.4 million hip/knee arthroplasties annually in the US.",
+    "typical_tasks": [
+      "Perform total knee arthroplasty (TKA) and total hip arthroplasty (THA)",
+      "Fracture fixation — ORIF with plates, screws, and intramedullary nails",
+      "Arthroscopic surgery — ACL reconstruction, meniscus repair, rotator cuff",
+      "Spine surgery — disc herniation, fusion, decompression",
+      "Shoulder replacement (TSA, reverse shoulder arthroplasty)",
+      "Pre-operative planning with CT-based 3D software and robotic systems",
+      "Clinic evaluations — physical exam, imaging review, treatment planning",
+      "Post-operative follow-up and rehabilitation monitoring",
+      "Emergency trauma call — fractures, dislocations, open injuries",
+      "Dictating operative notes and managing documentation in EMR"
+    ],
+    "key_documents": [
+      "Operative reports and surgical notes",
+      "Pre-operative clearance and consent forms",
+      "Imaging reports (X-ray, MRI, CT)",
+      "Physical therapy referrals and protocols",
+      "Insurance pre-authorizations (especially for joint replacements)",
+      "Implant selection documentation",
+      "Disability and workers' compensation reports"
+    ],
+    "deadlines": {
+      "board_certification_part_I": "Taken in July after residency completion",
+      "board_certification_part_II": "Must pass within 5 years of Part I",
+      "certification_maintenance": "Every 10 years",
+      "cme_requirements": "Varies by state; AAOS provides up to 100 CME per annual meeting",
+      "operative_notes": "Typically within 24 hours of procedure"
+    },
+    "seasonality": "Joint replacements increase in spring/fall (patients prefer recovery during mild weather). Trauma is year-round but spikes in summer (outdoor activities) and winter (ice/falls). Sports injuries peak in fall (football season)."
+  },
+  "regulatory": {
+    "summary": "Board certified through ABOS (American Board of Orthopaedic Surgery). Requires 5-year residency after medical school. Subspecialty certifications available in sports medicine and hand surgery. State medical license required.",
+    "key_laws": [
+      {
+        "name": "ABOS Board Certification",
+        "url": "https://www.abos.org/certification/",
+        "description": "Part I Written Exam (320 MCQ in July) + Part II Oral Exam. Board eligible for 5 years after Part I.",
+        "status": "Active"
+      },
+      {
+        "name": "ABOS Subspecialty Certifications",
+        "url": "https://www.abos.org/subspecialties/",
+        "description": "Orthopaedic Sports Medicine (est. 2007, 115 operative + 10 non-operative cases) and Surgery of the Hand (est. 1989)",
+        "status": "Active — eligibility recently expanded to post-Part I candidates"
+      },
+      {
+        "name": "State Medical Licensing Boards",
+        "description": "Require active state medical license for practice; renewal biennial",
+        "status": "Active, varies by state"
+      },
+      {
+        "name": "ACGME Residency Standards",
+        "description": "Accreditation Council for GME sets training standards for orthopedic residencies",
+        "status": "Active"
+      }
+    ],
+    "licensing": {
+      "requirements": [
+        "Bachelor's degree (4 years)",
+        "Medical school — MD or DO (4 years)",
+        "Orthopedic surgery residency (5 years, ACGME-accredited)",
+        "Optional: fellowship (1-2 years) — sports, hand, spine, trauma, shoulder/elbow, foot/ankle, oncology",
+        "State medical license (USMLE/COMLEX + state exam)",
+        "ABOS Part I and Part II certification",
+        "DEA registration for controlled substances"
+      ]
+    },
+    "continuing_education": "State-dependent CME requirements; AAOS annual meeting offers up to 100 CME credits; ABOS 10-year recertification cycle"
+  },
+  "tools": {
+    "summary": "Rapidly adopting robotic surgery (Mako SmartRobotics is market leader), computer-assisted navigation, and 3D CT-based planning. EMR systems central to workflow. Implant companies provide extensive technology platforms.",
+    "primary_tools": [
+      {
+        "name": "Stryker Mako SmartRobotics",
+        "url": "https://www.stryker.com/us/en/joint-replacement/systems/Mako_SmartRobotics_Overview.html",
+        "description": "4th gen robotic system for total hip, total knee, partial knee, and spine. CT-based 3D planning with AccuStop haptic technology"
+      },
+      {
+        "name": "Mako RPS (Robotic Power System)",
+        "description": "New intuitive handheld robotic system for total knee — limited market release 2025"
+      },
+      {
+        "name": "PACS (Picture Archiving and Communication System)",
+        "description": "Digital imaging storage and retrieval — essential for pre-op planning and intra-op reference"
+      },
+      {
+        "name": "EMR Systems (Epic, Cerner, athenahealth)",
+        "description": "Electronic medical records for documentation, ordering, billing — significant time burden"
+      }
+    ],
+    "secondary_tools": [
+      "Smith+Nephew CORI Surgical System (robotic-assisted knee surgery)",
+      "Zimmer Biomet ROSA Knee/Hip System",
+      "Exactech ExactechGPS navigation",
+      "OrthoGrid hip replacement navigation",
+      "3D printing for patient-specific instruments and guides",
+      "Arthrex surgical technique platforms",
+      "Dictation software (Dragon, M*Modal) for operative notes"
+    ],
+    "pain_points": [
+      "EMR documentation burden — 20+ hours/week on records",
+      "Prior authorization delays for joint replacements",
+      "High cost of robotic systems and implants",
+      "Learning curve for new robotic platforms",
+      "Supply chain issues for implants and instruments"
+    ]
+  },
+  "terminology": {
+    "summary": "Extensive abbreviation-heavy vocabulary. Procedures, anatomical structures, and implant types all have standard shorthand used universally in OR and clinic notes.",
+    "terms": {
+      "ORIF": "Open Reduction Internal Fixation — fracture repair with plates/screws",
+      "TKA": "Total Knee Arthroplasty (replacement)",
+      "THA": "Total Hip Arthroplasty (replacement)",
+      "UKA": "Unicompartmental Knee Arthroplasty (partial knee)",
+      "ACL": "Anterior Cruciate Ligament (knee)",
+      "PCL": "Posterior Cruciate Ligament",
+      "MCL": "Medial Collateral Ligament",
+      "RCR": "Rotator Cuff Repair",
+      "TSA": "Total Shoulder Arthroplasty",
+      "RSA": "Reverse Shoulder Arthroplasty",
+      "IMN": "Intramedullary Nail — rod inside bone canal for fracture",
+      "SLAP": "Superior Labrum Anterior to Posterior (shoulder tear)",
+      "MUA": "Manipulation Under Anesthesia",
+      "DVT": "Deep Vein Thrombosis — common post-op complication",
+      "PE": "Pulmonary Embolism",
+      "ROM": "Range of Motion",
+      "PT": "Physical Therapy",
+      "WB": "Weight Bearing (NWB/WBAT/FWB)",
+      "fx": "Fracture (common shorthand in notes)",
+      "scope": "Arthroscopy (slang)",
+      "total": "Joint replacement (slang — 'doing a total knee today')"
+    }
+  },
+  "career_psychology": {
+    "summary": "Highest-paid medical specialty. Extremely competitive residency. Long training (13+ years post-high school). 38% resident burnout rate. 60% of surgeons are 55+ creating looming retirement cliff. Strong career satisfaction despite demands.",
+    "career_path": [
+      "Bachelor's degree (4 years, pre-med)",
+      "Medical school — MD/DO (4 years)",
+      "Orthopedic surgery residency (5 years, highly competitive — ~3% match rate)",
+      "Fellowship (1-2 years) — sports medicine, spine, trauma, hand, joint reconstruction, oncology, shoulder/elbow, foot/ankle",
+      "Early-career surgeon (hospital employed or group practice)",
+      "Partner / practice owner / academic faculty",
+      "Department chief / program director"
+    ],
+    "salary_range": {
+      "resident": "$65,000 - $80,000/year",
+      "starting_academic": "$442,500/year average",
+      "starting_private": "$576,000 - $629,000/year average",
+      "mid_career": "$696,000 - $900,000/year",
+      "senior_established": "$800,000 - $1,200,000+/year",
+      "spine_subspecialty": "$720,000 - $1,050,000/year"
+    },
+    "fears": [
+      "Malpractice lawsuits (high-risk specialty)",
+      "Surgical complications — infection, nerve damage, implant failure",
+      "Being replaced by robotic/AI-assisted systems",
+      "Prior authorization denials delaying patient care",
+      "Physical demands declining with age (standing 6-10 hours in OR)",
+      "Student debt ($241,600 average total education debt)"
+    ],
+    "motivation": [
+      "Dramatic improvement in patients' quality of life",
+      "Highest compensation among medical specialties",
+      "Technically challenging and varied surgical cases",
+      "Cutting-edge technology adoption (robotics, navigation)",
+      "Strong fellowship camaraderie and specialty pride"
+    ],
+    "burnout_factors": [
+      "80+ hour work weeks (especially residency)",
+      "EMR documentation burden (20+ hours/week)",
+      "On-call trauma responsibilities",
+      "Verbal abuse during training (3.7x burnout odds)",
+      "Work-life balance challenges, especially early career",
+      "38% burnout rate among residents"
+    ]
+  },
+  "community": {
+    "summary": "AAOS (American Academy of Orthopaedic Surgeons) is the world's largest musculoskeletal organization. Extensive subspecialty societies. Annual meetings are major professional events with up to 100 CME credits.",
+    "associations": [
+      {
+        "name": "American Academy of Orthopaedic Surgeons (AAOS)",
+        "url": "https://www.aaos.org",
+        "type": "Primary professional association — world's largest musculoskeletal organization"
+      },
+      {
+        "name": "American Board of Orthopaedic Surgery (ABOS)",
+        "url": "https://www.abos.org",
+        "type": "Certifying board"
+      },
+      {
+        "name": "American Orthopaedic Association (AOA)",
+        "type": "Leadership society"
+      },
+      {
+        "name": "Subspecialty societies",
+        "description": "AOSSM (sports), ASSH (hand), SRS (spine), OTA (trauma), AAHKS (hip/knee), ASES (shoulder/elbow)"
+      }
+    ],
+    "events": [
+      "AAOS Annual Meeting 2026 — New Orleans, March 2-6 (up to 100 CME)",
+      "AAOS Annual Meeting 2027 — Las Vegas, March 3-6",
+      "Subspecialty society annual meetings (AOSSM, OTA, etc.)",
+      "State and regional orthopedic society meetings"
+    ],
+    "online_communities": [
+      "r/orthopaedics on Reddit",
+      "Orthobullets — case-based learning platform",
+      "AAOS OrthoInfo for patient education",
+      "LinkedIn orthopedic surgery groups"
+    ]
+  },
+  "market": {
+    "summary": "Highest-paid medical specialty with severe projected shortage (5,000+ by 2025). 60% of surgeons are 55+ creating retirement cliff. Robotic surgery adoption accelerating. Outpatient joint replacement projected at 51% by 2026.",
+    "job_outlook": {
+      "shortage": "5,000+ surgeon shortage projected",
+      "retirement_cliff": "60% of orthopedic surgeons are 55+ years old",
+      "broader_surgical_shortage": "23,000 surgeon shortage by 2032",
+      "outpatient_trend": "51% of joint replacements projected outpatient by 2026"
+    },
+    "salary_market": {
+      "average_starting": "$576,000/year (non-academic)",
+      "average_mid_career": "$696,000 - $900,000/year",
+      "top_earners": "$1,200,000+/year",
+      "highest_paid_specialty": "Yes — orthopedics ranked #1 in physician compensation"
+    },
+    "demand_drivers": [
+      "Aging population — 1.4M+ hip/knee arthroplasties annually",
+      "Sports injuries and active lifestyle demand",
+      "Robotic surgery expanding procedure access",
+      "Retirement wave of current surgeons",
+      "Rural/underserved access gaps"
+    ],
+    "market_trends": [
+      "Robotic-assisted surgery adoption accelerating (Mako, ROSA, CORI)",
+      "Shift to outpatient ASC (ambulatory surgery center) settings",
+      "Value-based payment models replacing fee-for-service",
+      "AI-assisted pre-operative planning tools emerging",
+      "Physician employment by hospitals growing (vs. private practice)",
+      "3D-printed patient-specific implants and instruments"
+    ]
+  },
+  "quality_score": 0.82,
+  "sources_count": 32,
+  "verified_sources": 14,
+  "confidence": "verified",
+  "raw_responses": [
+    {
+      "query": "Orthopedic Surgeon USA 2025 2026 typical day tasks procedures cases OR schedule hip knee replacement",
+      "sources": [
+        {"title": "Cleveland Clinic - Orthopedic Surgeon", "url": "https://my.clevelandclinic.org/health/articles/orthopedic-surgeon-orthopedist"},
+        {"title": "AAOS - Outpatient Joint Replacement", "url": "https://orthoinfo.aaos.org/en/treatment/outpatient-joint-replacement-surgery/"},
+        {"title": "Conway Medical - Common Procedures", "url": "https://www.conwaymedicalcenter.com/news/procedures-orthopedic-surgeons"}
+      ]
+    },
+    {
+      "query": "Orthopedic Surgeon USA 2025 licensing board certification ABOS requirements fellowship subspecialty",
+      "sources": [
+        {"title": "ABOS Certification", "url": "https://www.abos.org/certification/"},
+        {"title": "ABOS Subspecialties", "url": "https://www.abos.org/subspecialties/"},
+        {"title": "Healio - Subspecialty Exams Earlier", "url": "https://www.healio.com/news/orthopedics/20250711/orthopedic-surgeons-can-take-abos-subspecialty-examinations-earlier"}
+      ]
+    },
+    {
+      "query": "Orthopedic Surgeon USA software tools PACS robotic surgery Mako navigation digital planning 2025",
+      "sources": [
+        {"title": "Stryker Mako SmartRobotics", "url": "https://www.stryker.com/us/en/joint-replacement/systems/Mako_SmartRobotics_Overview.html"},
+        {"title": "OrthoFeed - 5 Game-Changing Startups 2025", "url": "https://orthofeed.com/2025/01/25/5-game-changing-orthopedic-startups-revolutionizing-healthcare-in-2025/"}
+      ]
+    },
+    {
+      "query": "Orthopedic surgery terminology jargon abbreviations slang ORIF TKA THA ACL rotator cuff",
+      "sources": [
+        {"title": "Princeton Orthopaedic - Acronyms", "url": "https://www.princetonorthopaedic.com/orthopaedic-acronyms/"},
+        {"title": "Nailed It Ortho - Common Terms", "url": "https://naileditortho.com/orthoterms/"},
+        {"title": "Ortho Conditioning - Acronyms", "url": "https://orthoconditioning.com/ortho-acronyms/"}
+      ]
+    },
+    {
+      "query": "Orthopedic Surgeon USA salary 2025 2026 career path burnout residency fellowship compensation",
+      "sources": [
+        {"title": "SalaryDr - Orthopedic Surgery 2026", "url": "https://www.salarydr.com/specialty/orthopedic-surgery"},
+        {"title": "Beckers - Orthopedic Pay 2025", "url": "https://www.beckershospitalreview.com/orthopedics/orthopedic-pay-in-2025-5-notes/"},
+        {"title": "AMN - Orthopedic Salary Guide 2025", "url": "https://www.amnhealthcare.com/blog/physician/locums/orthopedic-surgeon-salary-guide-2025/"},
+        {"title": "PMC - Worsening Burnout Since 2019", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11572459/"}
+      ]
+    },
+    {
+      "query": "Orthopedic surgery professional associations AAOS conferences community 2025 2026",
+      "sources": [
+        {"title": "AAOS Annual Meeting", "url": "https://www.aaos.org/annual/"},
+        {"title": "AAOS 2026", "url": "https://aaos2026.org/"},
+        {"title": "AAOS Future Meetings", "url": "https://www.aaos.org/annual/attend/future-meetings/"}
+      ]
+    },
+    {
+      "query": "Orthopedic Surgeon USA job market 2025 2026 demand outlook growth shortage vacancies",
+      "sources": [
+        {"title": "Caliber Health - Job Market", "url": "https://www.caliberhealth.com/blog/orthopedic-surgeon-job-market"},
+        {"title": "AMN - Shortage Looming", "url": "https://www.amnhealthcare.com/blog/physician/perm/a-shortage-of-orthopedic-surgeons-is-looming/"},
+        {"title": "Caliber Health - Shortage Impact", "url": "https://www.caliberhealth.com/blog/orthopedic-surgeon-shortage"}
+      ]
+    }
+  ]
+}
